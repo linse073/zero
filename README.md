@@ -1,2 +1,2 @@
 # zero
-server
+game server based on skynet

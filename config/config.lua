@@ -1,0 +1,10 @@
+root = "./../../"
+thread = 8
+logger = nil
+harbor = 0
+start = "main"
+bootstrap = "snlua bootstrap"	-- The service for bootstrap
+lualoader = "lualib/loader.lua"
+luaservice = root.."service/?.lua;./service/?.lua"
+snax = root.."service/?.lua;./service/?.lua"
+cpath = root.."cservice/?.so;./cservice/?.so"

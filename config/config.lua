@@ -7,4 +7,5 @@ bootstrap = "snlua bootstrap"	-- The service for bootstrap
 lualoader = "lualib/loader.lua"
 luaservice = root.."service/?.lua;./service/?.lua"
 snax = root.."service/?.lua;./service/?.lua"
-cpath = root.."cservice/?.so;./cservice/?.so"
+cpath = "./cservice/?.so"
+lua_path = root.."lib/?.lua;./lualib/?.lua;./lualib/?/init.lua"

@@ -9,3 +9,4 @@ luaservice = root.."service/?.lua;./service/?.lua"
 snax = root.."service/?.lua;./service/?.lua"
 cpath = "./cservice/?.so"
 lua_path = root.."lib/?.lua;./lualib/?.lua;./lualib/?/init.lua"
+l = 1

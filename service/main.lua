@@ -10,7 +10,7 @@ skynet.start(function()
 		servername = "sample",
 	})
 
-    local dbmaster = snax.newservice("dbmaster")
+    local dbmaster = snax.uniqueservice("dbmaster")
     local accountdb = snax.newservice("dbslave", {
         host = "127.0.0.1",
         port = 6379,

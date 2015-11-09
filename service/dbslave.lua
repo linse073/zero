@@ -14,6 +14,3 @@ function exit()
     
 end
 
-function response.load()
-    
-end

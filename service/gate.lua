@@ -50,7 +50,7 @@ function server.logout_handler(uid, subid)
 		msgserver.logout(u.username)
 		users[uid] = nil
 		username_map[u.username] = nil
-		skynet.call(loginservice, "lua", "logout",uid, subid)
+		skynet.call(loginservice, "lua", "logout", uid, servername, subid)
 	end
 end
 

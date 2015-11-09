@@ -40,7 +40,7 @@ function server.login_handler(server, uid, secret)
 	end
 
 	local subid = tostring(skynet.call(gameserver, "lua", "login", uid, secret))
-	user_online[id] = {address = gameserver, subid = subid , server = server}
+	user_online[id] = {address = gameserver, subid = subid, server = server}
 	return subid
 end
 

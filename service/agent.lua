@@ -1,4 +1,5 @@
 local skynet = require "skynet"
+local snax = require "snax"
 
 skynet.register_protocol {
 	name = "client",
@@ -18,6 +19,7 @@ function CMD.login(source, uid, sid, secret)
 	userid = uid
 	subid = sid
 	-- you may load user data from database
+    local master = snax.queryservice("dbmaster")
 end
 
 local function logout()

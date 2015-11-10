@@ -9,6 +9,8 @@ skynet.register_protocol {
 
 local gate
 local userid, subid
+local accdb, userdb, tradedb
+local account
 
 local CMD = {}
 
@@ -20,6 +22,19 @@ function CMD.login(source, uid, sid, secret)
 	subid = sid
 	-- you may load user data from database
     local master = snax.queryservice("dbmaster")
+    local handle, typename = master.req.get_slave("accountdb")
+    accdb = snax.bind(handle, typename)
+    handle, typename = master.req.get_slave("userdb")
+    userdb = snax.bind(handle, typename)
+    handle, typename = master.req.get_slave("tradedb")
+    tradedb = snax.bind(handle, typename)
+    account = accdb.req.get(uid)
+    if account then
+        account = skynet.unpack(account)
+    else
+        account = {}
+        accdb.req.set(uid, skynet.packstring(account))
+    end
 end
 
 local function logout()
@@ -41,15 +56,17 @@ function CMD.afk(source)
 end
 
 skynet.start(function()
-	-- If you want to fork a work thread , you MUST do it in CMD.login
+	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])
 		skynet.ret(skynet.pack(f(source, ...)))
 	end)
 
-	skynet.dispatch("client", function(_,_, msg)
+	skynet.dispatch("client", function(_, _, msg)
 		-- the simple ehco service
 		skynet.sleep(10)	-- sleep a while
 		skynet.ret(msg)
+
+        local id = msg:byte(1) * 256 + msg:byte(2)
 	end)
 end)

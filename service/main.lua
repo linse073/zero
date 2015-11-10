@@ -2,6 +2,11 @@ local skynet = require "skynet"
 local snax = require "snax"
 
 skynet.start(function()
+	print("Server start")
+	skynet.uniqueservice("proto.protoloader")
+	skynet.newservice("console")
+	skynet.newservice("debug_console", 8000)
+
 	local loginserver = skynet.newservice("login")
 	local gate = skynet.newservice("gate", loginserver)
 	skynet.call(gate, "lua", "open" , {
@@ -10,25 +15,27 @@ skynet.start(function()
 		servername = "sample",
 	})
 
-    local dbmaster = snax.uniqueservice("dbmaster")
-    local accountdb = snax.newservice("dbslave", {
+    snax.uniqueservice("dbmaster")
+    snax.newservice("dbslave", {
         host = "127.0.0.1",
         port = 6379,
         db = 0,
-        name = "account"
+        name = "accountdb"
     })
-    local userdb = snax.newservice("dbslave", {
+    snax.newservice("dbslave", {
         host = "127.0.0.1",
         port = 6380,
         db = 0,
-        name = "user"
+        name = "userdb"
     })
-    local tradedb = snax.newservice("dbslave", {
+    snax.newservice("dbslave", {
         host = "127.0.0.1",
         port = 6381,
         db = 0,
-        name = "trade"
+        name = "tradedb"
     })
+
+    snax.uniqueservice("proto")
     
     skynet.exit()
 end)

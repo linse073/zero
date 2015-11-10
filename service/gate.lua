@@ -21,7 +21,7 @@ function server.login_handler(uid, secret)
 	local username = msgserver.username(uid, id, servername)
 
 	-- you can use a pool to alloc new agent
-	local agent = skynet.newservice "msgagent"
+	local agent = skynet.newservice "agent"
 	local u = {
 		username = username,
 		agent = agent,

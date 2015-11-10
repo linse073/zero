@@ -1,5 +1,3 @@
-local skynet = require "skynet"
-
 local slave_list = {}
 
 function init()

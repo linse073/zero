@@ -1,17 +1,19 @@
 local skynet = require "skynet"
 local snax = require "snax"
+local proto = require "proto"
+local sprotoloader = require "sprotoloader"
 
 skynet.register_protocol {
 	name = "client",
 	id = skynet.PTYPE_CLIENT,
-	unpack = skynet.tostring,
+    unpack = skynet.tostring,
 }
 
+local sproto
+local accdb, userdb, tradedb
 local gate
 local userid, subid
-local accdb, userdb, tradedb
 local account
-local proto
 
 local CMD = {}
 
@@ -22,6 +24,10 @@ function CMD.login(source, uid, sid, secret)
 	userid = uid
 	subid = sid
 	-- you may load user data from database
+    local master = snax.queryservice("dbmaster")
+    accdb = snax.bind(master.req.get_slave("accountdb"))
+    userdb = snax.bind(master.req.get_slave("userdb"))
+    tradedb = snax.bind(master.req.get_slave("tradedb"))
     account = accdb.req.get(uid)
     if account then
         account = skynet.unpack(account)
@@ -49,12 +55,14 @@ function CMD.afk(source)
 	skynet.error(string.format("AFK"))
 end
 
+local MSG = {}
+
+function MSG.get_account_info(msg)
+    return "account_info", account
+end
+
 skynet.start(function()
-    local master = snax.queryservice("dbmaster")
-    accdb = snax.bind(master.req.get_slave("accountdb"))
-    userdb = snax.bind(master.req.get_slave("userdb"))
-    tradedb = snax.bind(master.req.get_slave("tradedb"))
-    proto = snax.queryservice("proto")
+    sproto = sprotoloader.load(1)
 
 	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)
@@ -63,10 +71,22 @@ skynet.start(function()
 	end)
 
 	skynet.dispatch("client", function(_, _, msg)
-		-- the simple ehco service
-		skynet.sleep(10)	-- sleep a while
-		skynet.ret(msg)
-
         local id = msg:byte(1) * 256 + msg:byte(2)
+        local arg = msg:sub(3)
+        local msgname = assert(proto.get_name(id))
+        if sproto:exist_type(msgname) then
+            arg = sproto:pdecode(msgname, arg)
+        end
+        local f = assert(MSG[msgname])
+        local ok, rmsg, info = pcall(f, arg)
+        if not ok then
+            info = rmsg
+            rmsg = "error_code"
+        end
+        local rid = assert(proto.get_id(rmsg))
+        if sproto:exist_type(rmsg) then
+            info = sproto:pencode(rmsg, info)
+        end
+        return string.pack(">I2", rid) .. info
 	end)
 end)

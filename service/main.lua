@@ -35,7 +35,7 @@ skynet.start(function()
         name = "tradedb"
     })
 
-    snax.uniqueservice("proto")
+    snax.uniqueservice("message")
     
     skynet.exit()
 end)

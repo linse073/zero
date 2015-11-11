@@ -11,6 +11,7 @@ local gate
 local userid, subid
 local accdb, userdb, tradedb
 local account
+local proto
 
 local CMD = {}
 
@@ -21,13 +22,6 @@ function CMD.login(source, uid, sid, secret)
 	userid = uid
 	subid = sid
 	-- you may load user data from database
-    local master = snax.queryservice("dbmaster")
-    local handle, typename = master.req.get_slave("accountdb")
-    accdb = snax.bind(handle, typename)
-    handle, typename = master.req.get_slave("userdb")
-    userdb = snax.bind(handle, typename)
-    handle, typename = master.req.get_slave("tradedb")
-    tradedb = snax.bind(handle, typename)
     account = accdb.req.get(uid)
     if account then
         account = skynet.unpack(account)
@@ -56,6 +50,12 @@ function CMD.afk(source)
 end
 
 skynet.start(function()
+    local master = snax.queryservice("dbmaster")
+    accdb = snax.bind(master.req.get_slave("accountdb"))
+    userdb = snax.bind(master.req.get_slave("userdb"))
+    tradedb = snax.bind(master.req.get_slave("tradedb"))
+    proto = snax.queryservice("proto")
+
 	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

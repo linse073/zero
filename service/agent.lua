@@ -14,6 +14,7 @@ local accdb, userdb, tradedb
 local gate
 local userid, subid
 local account
+local user
 
 local CMD = {}
 
@@ -59,6 +60,13 @@ local MSG = {}
 
 function MSG.get_account_info(msg)
     return "account_info", account
+end
+
+function MSG.create_user(msg)
+end
+
+function MSG.enter_game(msg)
+    
 end
 
 skynet.start(function()

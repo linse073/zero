@@ -34,7 +34,8 @@ function CMD.login(source, uid, sid, secret)
         account = skynet.unpack(account)
     else
         account = {}
-        accdb.req.set(uid, skynet.packstring(account))
+        -- save account after create user
+        -- accdb.req.set(uid, skynet.packstring(account))
     end
 end
 

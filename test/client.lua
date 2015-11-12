@@ -1,11 +1,20 @@
+local root = "./../../"
 package.cpath = "luaclib/?.so"
+package.path = root.."lib/?.lua;./lualib/?.lua;./lualib/?/init.lua"
 
 local socket = require "clientsocket"
 local crypt = require "crypt"
+local sprotoloader = require "sprotoloader"
+local proto = require "proto"
 
 if _VERSION ~= "Lua 5.3" then
 	error "Use lua 5.3"
 end
+
+proto.init()
+local spfile = root.."lib/proto/proto.sp"
+sprotoloader.register(file, 1)
+local sproto = sprotoloader.load(1)
 
 local fd = assert(socket.connect("127.0.0.1", 8001))
 
@@ -94,17 +103,32 @@ print("login ok, subid=", subid)
 
 ----- connect to game server
 
-local function send_request(v, session)
-	local size = #v + 4
-	local package = string.pack(">I2", size)..v..string.pack(">I4", session)
+local function send_request(session, msgname, msg)
+    if sproto:exist_type(msgname) then
+        msg = sproto:pencode(msgname, msg)
+    end
+    local id = assert(proto.get_id(msgname))
+    local content = string.pack(">I2", id) .. msg
+	local size = #content + 4
+	local package = string.pack(">I2", size)..content..string.pack(">I4", session)
 	socket.send(fd, package)
-	return v, session
+	return msgname, session
 end
 
 local function recv_response(v)
 	local size = #v - 5
 	local content, ok, session = string.unpack("c"..tostring(size).."B>I4", v)
-	return ok ~=0 , content, session
+    if ok ~= 0 then
+        local id = content:byte(1) * 256 + msg:byte(2)
+        local msg = content:sub(3)
+        local msgname = assert(proto.get_name(id))
+        if sproto:exist_type(msgname) then
+            msg = sproto:pdecode(msgname, msg)
+        end
+        return true, msgname, session
+    else
+        return false, session
+    end
 end
 
 local function unpack_package(text)
@@ -116,8 +140,7 @@ local function unpack_package(text)
 	if size < s+2 then
 		return nil, text
 	end
-
-	return text:sub(3,2+s), text:sub(3+s)
+	return text:sub(3, 2+s), text:sub(3+s)
 end
 
 local readpackage = unpack_f(unpack_package)
@@ -127,45 +150,20 @@ local function send_package(fd, pack)
 	socket.send(fd, package)
 end
 
-local text = "echo"
 local index = 1
 
 print("connect")
 fd = assert(socket.connect("127.0.0.1", 8888))
 last = ""
 
-local handshake = string.format("%s@%s#%s:%d", crypt.base64encode(token.user), crypt.base64encode(token.server),crypt.base64encode(subid) , index)
-local hmac = crypt.hmac64(crypt.hashkey(handshake), secret)
-
-
-send_package(fd, handshake .. ":" .. crypt.base64encode(hmac))
-
-print(readpackage())
-print("===>",send_request(text,0))
--- don't recv response
--- print("<===",recv_response(readpackage()))
-
-print("disconnect")
-socket.close(fd)
-
-index = index + 1
-
-print("connect again")
-fd = assert(socket.connect("127.0.0.1", 8888))
-last = ""
-
-local handshake = string.format("%s@%s#%s:%d", crypt.base64encode(token.user), crypt.base64encode(token.server),crypt.base64encode(subid) , index)
+local handshake = string.format("%s@%s#%s:%d", crypt.base64encode(token.user), crypt.base64encode(token.server), crypt.base64encode(subid), index)
 local hmac = crypt.hmac64(crypt.hashkey(handshake), secret)
 
 send_package(fd, handshake .. ":" .. crypt.base64encode(hmac))
 
 print(readpackage())
-print("===>",send_request("fake",0))	-- request again (use last session 0, so the request message is fake)
-print("===>",send_request("again",1))	-- request again (use new session)
-print("<===",recv_response(readpackage()))
-print("<===",recv_response(readpackage()))
-
+print("===>", send_request(0, "get_account_info"))
+print("<===", recv_response(readpackage()))
 
 print("disconnect")
 socket.close(fd)
-

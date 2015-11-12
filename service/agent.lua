@@ -83,10 +83,10 @@ skynet.start(function()
             info = rmsg
             rmsg = "error_code"
         end
-        local rid = assert(proto.get_id(rmsg))
         if sproto:exist_type(rmsg) then
             info = sproto:pencode(rmsg, info)
         end
+        local rid = assert(proto.get_id(rmsg))
         return string.pack(">I2", rid) .. info
 	end)
 end)

@@ -3,9 +3,9 @@ local snax = require "snax"
 
 skynet.start(function()
 	print("Server start")
-	skynet.uniqueservice("proto.protoloader")
 	skynet.newservice("console")
 	skynet.newservice("debug_console", 8000)
+	skynet.uniqueservice("proto.protoloader")
 
 	local loginserver = skynet.newservice("login")
 	local gate = skynet.newservice("gate", loginserver)
@@ -24,15 +24,32 @@ skynet.start(function()
     })
     snax.newservice("dbslave", {
         host = "127.0.0.1",
-        port = 6380,
-        db = 0,
+        port = 6379,
+        db = 1,
         name = "userdb"
     })
     snax.newservice("dbslave", {
         host = "127.0.0.1",
-        port = 6381,
-        db = 0,
+        port = 6379,
+        db = 2,
+        name = "namedb"
+    })
+    snax.newservice("dbslave", {
+        host = "127.0.0.1",
+        port = 6379,
+        db = 3,
         name = "tradedb"
+    })
+    snax.newservice("dbslave", {
+        host = "127.0.0.1",
+        port = 6379,
+        db = 4,
+        name = "rankdb"
+    })
+
+    snax.uniqueservice("server_mgr")
+    snax.newservice("server", {
+        serverid = 1,
     })
     
     skynet.exit()

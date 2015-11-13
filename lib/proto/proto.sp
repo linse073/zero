@@ -27,8 +27,8 @@
 
 .item_info {
     .rand_prop {
-        rand_type 0 : integer
-        rand_value 1 : integer
+        type 0 : integer
+        value 1 : integer
     }
 
     id 0 : integer
@@ -93,7 +93,8 @@
 }
 
 .error_code {
-    code 0 : integer
+    id 0 : integer
+    code 1 : integer
 }
 
 .create_user {

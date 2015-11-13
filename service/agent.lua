@@ -2,6 +2,8 @@ local skynet = require "skynet"
 local snax = require "snax"
 local proto = require "proto"
 local sprotoloader = require "sprotoloader"
+local error_code = require "error"
+local base = require "base"
 
 skynet.register_protocol {
 	name = "client",
@@ -12,6 +14,7 @@ skynet.register_protocol {
 local sproto
 local accdb, userdb, tradedb
 local gate
+local server
 local userid, subid
 local account
 local user
@@ -24,6 +27,8 @@ function CMD.login(source, uid, sid, secret)
 	gate = source
 	userid = uid
 	subid = sid
+    local server_mgr = snax.queryservice("server_mgr")
+    server = snax.bind(server_mgr.req.get_server(1))
 	-- you may load user data from database
     local master = snax.queryservice("dbmaster")
     accdb = snax.bind(master.req.get_slave("accountdb"))
@@ -64,10 +69,64 @@ function MSG.get_account_info(msg)
 end
 
 function MSG.create_user(msg)
+    if #account >= base.MAX_ROLE then
+        error(error_code.MAX_ROLE)
+    end
+    local roleid = server.req.gen_role(msg.name)
+    if roleid == 0 then
+        error(error_code.ROLE_NAME_EXIST)
+    end
+    local su = {
+        name = msg.name,
+        id = roleid,
+        prof = msg.prof,
+        level = 1,
+    }
+    account[#account+1] = su
+    accdb.req.save(userid, skynet.packstring(account))
+    local u = {
+        name = msg.name,
+        id = roleid,
+        prof = msg.prof,
+        level = 1,
+        exp = 0,
+        charge = 0,
+        vip = 0,
+        rmb = 0,
+        money = 0,
+        rank = 0,
+        arena_count = 0,
+        charge_arena = 0,
+        fight_point = 0,
+        login_time = 0,
+        last_login_time = 0,
+        logout_time = 0,
+
+        item = {},
+        card = {},
+        stage = {},
+        task = {},
+        friend = {},
+    }
+    userdb.req.save(roleid, skynet.packstring(u))
+    return "simple_user", su
 end
 
 function MSG.enter_game(msg)
-    
+    local has = false
+    for k, v in ipairs(account) do
+        if v.id == msg.id then
+            has = true
+            break
+        end
+    end
+    if not has then
+        error(error_code.ROLE_NOT_EXIST)
+    end
+    user = userdb.req.get(msg.id)
+    if not user then
+        error(error_code.ROLE_NOT_EXIST)
+    end
 end
 
 skynet.start(function()
@@ -89,7 +148,10 @@ skynet.start(function()
         local f = assert(MSG[msgname])
         local ok, rmsg, info = pcall(f, arg)
         if not ok then
-            info = rmsg
+            info = {
+                id = id,
+                code = rmsg,
+            }
             rmsg = "error_code"
         end
         if sproto:exist_type(rmsg) then

@@ -14,8 +14,12 @@ function exit()
     
 end
 
+function response.has(key)
+    return db:exists(key)
+end
+
 function response.get(key)
-    if db:exits(key) then
+    if db:exists(key) then
         return db:get(key)
     end
 end

@@ -116,24 +116,25 @@ function role.enter_game(msg)
         friend = {},
     }
     for k, v in pairs(user.item) do
-        data.item[k] = {v, assert(itemdata[v.itemid])}
+        data.item[k] = {v, assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))}
         ret.item[#ret.item+1] = v
     end
     for k, v in pairs(user.card) do
-        data.card[k] = {v, assert(carddata[v.id])}
+        data.card[k] = {v, assert(carddata[v.id], string.format("No card data %d.", v.id))}
         ret.card[#ret.card+1] = v
     end
     for k, v in pairs(user.stage) do
-        data.stage[k] = {v, assert(stagedata[v.id])}
+        data.stage[k] = {v, assert(stagedata[v.id], string.format("No stage data %d.", v.id))}
         ret.stage[#ret.stage+1] = v
     end
     for k, v in pairs(user.task) do
-        data.task[k] = {v, assert(taskdata[v.id])}
+        data.task[k] = {v, assert(taskdata[v.id], string.format("No task data %d.", v.id))}
         ret.task[#ret.task+1] = v
     end
     for k, v in pairs(user.friend) do
         ret.friend[#ret.friend+1] = v
     end
+    -- TODO: correct logic error
     return "user_all", ret
 end
 

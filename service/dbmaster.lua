@@ -19,6 +19,6 @@ end
 
 function response.get_slave(name)
     local slave = slave_list[name]
-    assert(slave, string.format("Has not database slave %s.", name))
+    assert(slave, string.format("No database slave %s.", name))
     return slave.handle, slave.typename
 end

@@ -19,6 +19,6 @@ end
 
 function response.get_server(serverid)
     local server = server_list[serverid]
-    assert(server, string.format("Has not server %d.", serverid))
+    assert(server, string.format("No server %d.", serverid))
     return server.handle, server.typename
 end

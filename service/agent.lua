@@ -30,7 +30,8 @@ local function logout()
 	if gate then
 		skynet.call(gate, "lua", "logout", data.userid, data.subid)
 	end
-	skynet.exit()
+    proc.exit()
+	-- skynet.exit()
 end
 
 function CMD.logout(source)

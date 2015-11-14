@@ -37,6 +37,13 @@ function role.init(userdata)
     end
 end
 
+function role.exit()
+    data = nil
+    for k, v in ipairs({card, friend, item, stage, task}) do
+        v.exit()
+    end
+end
+
 function role.get_account_info(msg)
     return "account_info", data.account
 end

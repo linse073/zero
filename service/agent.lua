@@ -12,7 +12,7 @@ skynet.register_protocol {
 local sproto
 local gate
 local data
-local proc = role.get_proc()
+local proc
 
 local CMD = {}
 
@@ -48,6 +48,7 @@ end
 
 skynet.start(function()
     sproto = sprotoloader.load(1)
+    proc = role.get_proc()
 
 	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)

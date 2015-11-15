@@ -9,14 +9,18 @@ local item = require "role.item"
 local stage = require "role.stage"
 local task = require "role.task"
 
-local carddata = require "data.card"
-local itemdata = require "data.item"
-local stagedata = require "data.stage"
-local taskdata = require "data.task"
+local module = {card, friend, item, stage, task}
 
 local data
 
 local role = {}
+local proc = {}
+
+for k, v in ipairs(module) do
+    for k1, v1 in pairs(v.get_proc()) do
+        proc[k1] = v1
+    end
+end
 
 function role.init(userdata)
     data = userdata
@@ -32,23 +36,29 @@ function role.init(userdata)
     else
         data.account = {} -- save account after create user
     end
-    for k, v in ipairs({card, friend, item, stage, task}) do
+    for k, v in ipairs(module) do
         v.init(data)
     end
 end
 
 function role.exit()
     data = nil
-    for k, v in ipairs({card, friend, item, stage, task}) do
+    for k, v in ipairs(module) do
         v.exit()
     end
 end
 
-function role.get_account_info(msg)
+function role.get_proc()
+    return proc
+end
+
+-------------------protocol process--------------------------
+
+function proc.get_account_info(msg)
     return "account_info", data.account
 end
 
-function role.create_user(msg)
+function proc.create_user(msg)
     local account = data.account
     if #account >= base.MAX_ROLE then
         error(error_code.MAX_ROLE)
@@ -93,7 +103,7 @@ function role.create_user(msg)
     return "simple_user", su
 end
 
-function role.enter_game(msg)
+function proc.enter_game(msg)
     local has = false
     for k, v in ipairs(data.account) do
         if v.id == msg.id then
@@ -109,47 +119,18 @@ function role.enter_game(msg)
         error(error_code.ROLE_NOT_EXIST)
     end
     data.user = user
-    data.friend = user.friend
-    data.item = {}
-    data.card = {}
-    data.stage = {}
-    data.task = {}
-    local ret = {
-        user = user,
-        item = {},
-        card = {},
-        stage = {},
-        task = {},
-        friend = {},
-    }
-    for k, v in pairs(user.item) do
-        data.item[k] = {v, assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))}
-        ret.item[#ret.item+1] = v
+    for k, v in ipairs(module) do
+        v.enter()
     end
-    for k, v in pairs(user.card) do
-        data.card[k] = {v, assert(carddata[v.id], string.format("No card data %d.", v.id))}
-        ret.card[#ret.card+1] = v
+    local ret = {user = user}
+    for k, v in ipairs({"item", "card", "stage", "task", "friend"}) do
+        local t = {}
+        for k1, v1 in pairs(user[v]) do
+            t[#t+1] = v1
+        end
+        ret[v] = t
     end
-    for k, v in pairs(user.stage) do
-        data.stage[k] = {v, assert(stagedata[v.id], string.format("No stage data %d.", v.id))}
-        ret.stage[#ret.stage+1] = v
-    end
-    for k, v in pairs(user.task) do
-        data.task[k] = {v, assert(taskdata[v.id], string.format("No task data %d.", v.id))}
-        ret.task[#ret.task+1] = v
-    end
-    for k, v in pairs(user.friend) do
-        ret.friend[#ret.friend+1] = v
-    end
-    -- TODO: correct logic error
     return "user_all", ret
 end
 
-local proc = {}
-for k, v in ipairs({card, friend, item, stage, task, role}) do
-    for k1, v1 in pairs(v) do
-        proc[k1] = v1
-    end
-end
-
-return proc
+return role

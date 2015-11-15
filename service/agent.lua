@@ -1,7 +1,7 @@
 local skynet = require "skynet"
 local proto = require "proto"
 local sprotoloader = require "sprotoloader"
-local proc = require "role.role"
+local role = require "role.role"
 
 skynet.register_protocol {
 	name = "client",
@@ -12,6 +12,7 @@ skynet.register_protocol {
 local sproto
 local gate
 local data
+local proc = role.get_proc()
 
 local CMD = {}
 
@@ -23,14 +24,14 @@ function CMD.login(source, uid, sid, secret)
         userid = uid,
         subid = sid,
     }
-    proc.init(data)
+    role.init(data)
 end
 
 local function logout()
 	if gate then
 		skynet.call(gate, "lua", "logout", data.userid, data.subid)
 	end
-    proc.exit()
+    role.exit()
 	-- skynet.exit()
 end
 

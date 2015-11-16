@@ -53,6 +53,7 @@ skynet.start(function()
     })
 
     snax.uniqueservice("routine")
+    snax.uniqueservice("role_mgr")
     
     skynet.exit()
 end)

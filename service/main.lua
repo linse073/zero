@@ -54,6 +54,7 @@ skynet.start(function()
 
     snax.uniqueservice("routine")
     snax.uniqueservice("role_mgr")
+    snax.uniqueservice("data_mgr")
     
     skynet.exit()
 end)

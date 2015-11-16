@@ -1,10 +1,13 @@
 local taskdata = require "data.task"
-local base = require "base"
+local snax = require "sanx"
 
 local data
 
 local task = {}
 local proc = {}
+
+local data_mgr = snax.queryservice("data_mgr")
+local achi_task, day_task = data_mgr.req.get_task_data()
 
 function task.init(userdata)
     data = userdata

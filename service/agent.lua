@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local proto = require "proto"
 local sprotoloader = require "sprotoloader"
 local role = require "role.role"
+local timer = require "timer"
 
 skynet.register_protocol {
 	name = "client",
@@ -44,6 +45,10 @@ end
 function CMD.afk(source)
 	-- the connection is broken, but the user may back
 	skynet.error(string.format("AFK"))
+end
+
+function CMD.routine(source, key)
+    timer.call_routine(key)
 end
 
 skynet.start(function()

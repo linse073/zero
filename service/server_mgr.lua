@@ -18,7 +18,6 @@ function response.register_server(conf, handle, typename)
 end
 
 function response.get_server(serverid)
-    local server = server_list[serverid]
-    assert(server, string.format("No server %d.", serverid))
+    local server = assert(server_list[serverid], string.format("No server %d.", serverid))
     return server.handle, server.typename
 end

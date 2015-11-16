@@ -18,7 +18,6 @@ function response.register_slave(conf, handle, typename)
 end
 
 function response.get_slave(name)
-    local slave = slave_list[name]
-    assert(slave, string.format("No database slave %s.", name))
+    local slave = assert(slave_list[name], string.format("No database slave %s.", name))
     return slave.handle, slave.typename
 end

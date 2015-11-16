@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local snax = require "snax"
 local error_code = require "error"
 local base = require "base"
+local timer = require "timer"
 
 local card = require "role.card"
 local friend = require "role.friend"
@@ -9,12 +10,11 @@ local item = require "role.item"
 local stage = require "role.stage"
 local task = require "role.task"
 
-local module = {card, friend, item, stage, task}
-
 local data
-
+local module = {card, friend, item, stage, task}
 local role = {}
 local proc = {}
+local role_mgr = snax.queryservice("role_mgr")
 
 for k, v in ipairs(module) do
     for k1, v1 in pairs(v.get_proc()) do
@@ -42,14 +42,29 @@ function role.init(userdata)
 end
 
 function role.exit()
+    local user = data.user
     data = nil
     for k, v in ipairs(module) do
         v.exit()
+    end
+    timer.del_routine("save_role")
+    if user then
+        role_mgr.req.role_exit(user.id)
     end
 end
 
 function role.get_proc()
     return proc
+end
+
+function role.save_routine()
+    local user = data.user
+    if user then
+        if data.suser.level ~= user.level then
+            data.accdb.req.save(data.userid, skynet.packstring(data.account))
+        end
+        data.userdb.req.save(user.id, skynet.packstring(user))
+    end
 end
 
 -------------------protocol process--------------------------
@@ -104,20 +119,21 @@ function proc.create_user(msg)
 end
 
 function proc.enter_game(msg)
-    local has = false
+    local suser
     for k, v in ipairs(data.account) do
         if v.id == msg.id then
-            has = true
+            suser = v
             break
         end
     end
-    if not has then
+    if not suser then
         error(error_code.ROLE_NOT_EXIST)
     end
     local user = data.userdb.req.get(msg.id)
     if not user then
         error(error_code.ROLE_NOT_EXIST)
     end
+    data.suser = suser
     data.user = user
     for k, v in ipairs(module) do
         v.enter()
@@ -130,6 +146,8 @@ function proc.enter_game(msg)
         end
         ret[v] = t
     end
+    timer.add_routine("save_role", role.save_routine, 30000)
+    role_mgr.req.role_enter(user.id, skynet.self())
     return "user_all", ret
 end
 

@@ -51,6 +51,8 @@ skynet.start(function()
     snax.newservice("server", {
         serverid = 1,
     })
+
+    snax.uniqueservice("routine")
     
     skynet.exit()
 end)

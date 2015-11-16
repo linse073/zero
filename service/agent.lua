@@ -51,6 +51,9 @@ function CMD.routine(source, key)
     timer.call_routine(key)
 end
 
+function CMD.update_day(source)
+end
+
 skynet.start(function()
     sproto = sprotoloader.load(1)
     proc = role.get_proc()

@@ -1,4 +1,5 @@
 local taskdata = require "data.task"
+local base = require "base"
 
 local data
 
@@ -13,7 +14,7 @@ function task.exit()
     data = nil
 end
 
-function task.repair()
+function task.enter()
     data.task = {}
     for k, v in pairs(user.task) do
         data.task[k] = {v, assert(taskdata[v.id], string.format("No task data %d.", v.id))}

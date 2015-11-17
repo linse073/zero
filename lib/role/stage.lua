@@ -1,5 +1,6 @@
-local stagedata = require "data.stage"
+local share = require "share"
 
+local stagedata = share.stagedata
 local data
 
 local stage = {}

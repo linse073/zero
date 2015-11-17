@@ -1,5 +1,6 @@
-local carddata = require "data.card"
+local share = require "share"
 
+local carddata = share.carddata
 local data
 
 local card = {}

@@ -1,8 +1,7 @@
 local skynet = require "skynet"
 local snax = require "snax"
-local error_code = require "error"
-local base = require "base"
 local timer = require "timer"
+local share = require "share"
 
 local card = require "role.card"
 local friend = require "role.friend"
@@ -10,6 +9,8 @@ local item = require "role.item"
 local stage = require "role.stage"
 local task = require "role.task"
 
+local error_code = share.error_code
+local base = share.base
 local data
 local module = {card, friend, item, stage, task}
 local role = {}
@@ -139,13 +140,13 @@ function proc.enter_game(msg)
         v.enter()
     end
     local ret = {user = user}
-    for k, v in ipairs({"item", "card", "stage", "task", "friend"}) do
-        local t = {}
-        for k1, v1 in pairs(user[v]) do
-            t[#t+1] = v1
-        end
-        ret[v] = t
-    end
+    -- for k, v in ipairs({"item", "card", "stage", "task", "friend"}) do
+    --     local t = {}
+    --     for k1, v1 in pairs(user[v]) do
+    --         t[#t+1] = v1
+    --     end
+    --     ret[v] = t
+    -- end
     timer.add_routine("save_role", role.save_routine, 30000)
     role_mgr.req.role_enter(user.id, skynet.self())
     return "user_all", ret

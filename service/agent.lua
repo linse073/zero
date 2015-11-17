@@ -1,8 +1,8 @@
 local skynet = require "skynet"
-local proto = require "proto"
 local sprotoloader = require "sprotoloader"
 local role = require "role.role"
 local timer = require "timer"
+local share = require "share"
 
 skynet.register_protocol {
 	name = "client",
@@ -14,6 +14,8 @@ local sproto
 local gate
 local data
 local proc
+local msg
+local name_msg
 
 local CMD = {}
 
@@ -51,12 +53,15 @@ function CMD.routine(source, key)
     timer.call_routine(key)
 end
 
-function CMD.update_day(source)
+function CMD.day_routine(source, key)
+    timer.call_day_routine(key)
 end
 
 skynet.start(function()
     sproto = sprotoloader.load(1)
     proc = role.get_proc()
+    msg = share.msg
+    name_msg = share.name_msg
 
 	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)
@@ -67,7 +72,7 @@ skynet.start(function()
 	skynet.dispatch("client", function(_, _, msg)
         local id = msg:byte(1) * 256 + msg:byte(2)
         local arg = msg:sub(3)
-        local msgname = assert(proto.get_name(id), string.format("No protocol %d.", id))
+        local msgname = assert(msg[id], string.format("No protocol %d.", id))
         if sproto:exist_type(msgname) then
             arg = sproto:pdecode(msgname, arg)
         end
@@ -83,7 +88,7 @@ skynet.start(function()
         if sproto:exist_type(rmsg) then
             info = sproto:pencode(rmsg, info)
         end
-        local rid = assert(proto.get_id(rmsg), string.format("No protocol %s.", rmsg))
+        local rid = assert(name_msg[rmsg], string.format("No protocol %s.", rmsg))
         return string.pack(">I2", rid) .. info
 	end)
 end)

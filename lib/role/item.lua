@@ -1,5 +1,6 @@
-local itemdata = require "data.item"
+local share = require "share"
 
+local itemdata = share.itemdata
 local data
 
 local item = {}

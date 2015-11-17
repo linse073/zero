@@ -13,7 +13,12 @@ function friend.exit()
 end
 
 function friend.enter()
+    local pack = {}
     data.friend = data.user.friend
+    for k, v in pairs(data.friend) do
+        pack[#pack+1] = v
+    end
+    return "friend", pack
 end
 
 function friend.get_proc()

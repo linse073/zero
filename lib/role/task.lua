@@ -45,6 +45,7 @@ function task.enter()
         pack[#pack+1] = v
     end
     timer.add_day_routine("day_task", task.update_day)
+    return "task", pack
 end
 
 function task.add(v)

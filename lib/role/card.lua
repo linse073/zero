@@ -15,10 +15,13 @@ function card.exit()
 end
 
 function card.enter()
+    local pack = {}
     data.card = {}
     for k, v in pairs(data.user.card) do
         data.card[k] = {v, assert(carddata[v.id], string.format("No card data %d.", v.id))}
+        pack[#pack+1] = v
     end
+    return "card", pack
 end
 
 function card.get_proc()

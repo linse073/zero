@@ -138,15 +138,9 @@ function proc.enter_game(msg)
     data.user = user
     local ret = {user = user}
     for k, v in ipairs(module) do
-        v.enter()
+        local key, pack = v.enter()
+        ret[key] = pack
     end
-    -- for k, v in ipairs({"item", "card", "stage", "task", "friend"}) do
-    --     local t = {}
-    --     for k1, v1 in pairs(user[v]) do
-    --         t[#t+1] = v1
-    --     end
-    --     ret[v] = t
-    -- end
     timer.add_routine("save_role", role.save_routine, 30000)
     role_mgr.req.role_enter(user.id, skynet.self())
     return "user_all", ret

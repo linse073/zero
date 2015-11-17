@@ -41,7 +41,8 @@ function task.enter()
             status = base.TASK_STATUS_ACCEPT,
             count = 0,
         }
-        t = task.add(v)
+        task.add(v)
+        pack[#pack+1] = v
     end
     timer.add_day_routine("day_task", task.update_day)
 end

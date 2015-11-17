@@ -136,10 +136,10 @@ function proc.enter_game(msg)
     end
     data.suser = suser
     data.user = user
+    local ret = {user = user}
     for k, v in ipairs(module) do
         v.enter()
     end
-    local ret = {user = user}
     -- for k, v in ipairs({"item", "card", "stage", "task", "friend"}) do
     --     local t = {}
     --     for k1, v1 in pairs(user[v]) do

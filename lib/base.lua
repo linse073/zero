@@ -52,6 +52,9 @@ local base = {
     ITEM_TYPE_MAP = 26,
     ITEM_TYPE_STAGE = 27,
 
+    ITEM_DEFENCE = 1,
+    ITEM_ATTACK = 2,
+
     ITEM_STATUS_NORMAL = 0,
     ITEM_STATUS_SELLING = 1,
     ITEM_STATUS_SELLED = 2,
@@ -74,31 +77,18 @@ function base.is_equip(itemtype)
     return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
 end
 
-function base.is_defence(itemtype)
-    return itemtype == base.ITEM_TYPE_HEAD or itemtype == base.ITEM_TYPE_BODY
-        or itemtype == base.ITEM_TYPE_FOOT or itemtype == base.ITEM_TYPE_HAND
+local item_category = {
+    [base.ITEM_TYPE_HEAD] = base.ITEM_DEFENCE,
+    [base.ITEM_TYPE_BODY] = base.ITEM_DEFENCE,
+    [base.ITEM_TYPE_WEAPON] = base.ITEM_ATTACK,
+    [base.ITEM_TYPE_ACCESSORY] = base.ITEM_ATTACK,
+    [base.ITEM_TYPE_FOOT] = base.ITEM_DEFENCE,
+    [base.ITEM_TYPE_HAND] = base.ITEM_DEFENCE,
+    [base.ITEM_TYPE_RING] = base.ITEM_ATTACK,
+    [base.ITEM_TYPE_NECKLACE] = base.ITEM_ATTACK,
+}
+function base.item_category(itemtype)
+    return item_category[itemtype]
 end
 
-function base.is_attack(itemtype)
-    return itemtype == base.ITEM_TYPE_WEAPON or itemtype == base.ITEM_TYPE_ACCESSORY
-        or itemtype == base.ITEM_TYPE_RING or itemtype == base.ITEM_TYPE_NECKLACE
-end
-
-function Base.rangeRandom(t, s, f1, f2)
-    local l = #t
-    for i = 1, s do
-        local n = math.random(i, l)
-        t[i], t[n] = t[n], t[i]
-    end
-    if f1 then
-        for i = 1, s do
-            f1(t[i])
-        end
-    end
-    if f2 then
-        for i = s+1, l do
-            f2(t[i])
-        end
-    end
-end
 return base

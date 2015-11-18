@@ -2,6 +2,7 @@ local share = require "share"
 
 local itemdata = share.itemdata
 local base = share.base
+local random = math.random
 local data
 
 local item = {}
@@ -86,7 +87,7 @@ function item.add_by_itemid(itemid, num)
             end
         end
     end
-    local is_equip = base.is_equip(d.itemType)
+    local category = base.item_category(d.itemType)
     local ui = data.user.item
     while num > 0 do
         local diff = num
@@ -105,26 +106,33 @@ function item.add_by_itemid(itemid, num)
             status_time = 0,
             price = 0,
         }
-        if is_equip then
-            v.rand_prop = {}
-            item.rand_prop(v, base.is_defence(d.itemType))
+        if category == base.ITEM_DEFENCE then
+            v.rand_prop = {{}, {}}
+            item.rand_prop(v, {1, 2, 3, 4}) -- defence, tenacity, hard, offset
+        elseif category == base.ITEM_ATTACK then
+            v.rand_prop = {{}, {}}
+            item.rand_prop(v, {5, 6, 7, 8}) -- break, crit, impale, hit
         end
         item.add(v, d)
         ui[v.id] = v
         pack[#pack+1] = v
     end
+    -- TODO: send to client
 end
 
-function item.rand_prop(v, is_defence)
+function item.rand_prop(v, r)
     local rand_prop = v.rand_prop
-    for i = 1, base.MAX_RAND_PROP do
-        local rp = rand_prop[i]
-        if not rp then
-            local r
-            if is_defence then
-                
-            end
+    if r then
+        local l = #r
+        for i = 1, base.MAX_RAND_PROP do
+            local n = random(i, l)
+            t[i], t[n] = t[n], t[i]
+            rand_prop[i].type = t[i]
         end
+    end
+    for i = 1, base.MAX_RAND_PROP do
+        rand_prop[i].value = 1
+        -- TODO: calculate value
     end
 end
 

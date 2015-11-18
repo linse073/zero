@@ -125,12 +125,14 @@ function task.update_day()
         count = l
     end
     for i = 1, count do
-        local r = random(l)
-        td[l], td[r] = td[r], td[l]
-        l = l - 1
+        local r = random(i, l)
+        td[1], td[r] = td[r], td[i]
     end
-    for i = l+1, #td do
-        pack[#pack+1] = td[i]
+    for i = 1, count do
+        local v = td[i]
+        v.status = base.TASK_STATUS_ACCEPT
+        pack[#pack+1] = v.id
+        -- TODO: add a new message 
     end
     -- TODO: send to client
 end

@@ -58,6 +58,7 @@ function CMD.day_routine(source, key)
 end
 
 skynet.start(function()
+    math.randomseed(skynet.time())
     sproto = sprotoloader.load(1)
     proc = role.get_proc()
     msg = share.msg

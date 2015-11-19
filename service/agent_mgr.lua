@@ -5,23 +5,33 @@ local pcall = pcall
 local string = string
 
 local free_list = {}
+local agent_list = {}
+local fork_new
+local fork_del
 
 local function new_agent(num)
     local l = #free_list + 1
     for i = 1, num do
-        free_list[l] = skynet.newservice("agent")
+        local agent = skynet.newservice("agent") 
+        free_list[l] = agent
+        agent_list[agent] = l
         l = l + 1
     end
+    fork_new = false
 end
 
 local function del_agent(num)
     local l = #free_list
-    assert(num < l, string.format("Delete agent %d exceed max free agent %d.", num, l))
+    assert(num < l, string.format("Delete agent error %d, free agent %d.", num, l))
     local t = {}
     for i = 1, num do
-        t[i], free_list[l] = free_list[l], nil
+        local agent = free_list[l]
+        t[i] = agent
+        free_list[l] = nil
+        agent_list[agent] = nil
         l = l - 1
     end
+    fork_del = false
     for k, v in ipairs(t) do
         -- NOTICE: logout may call skynet.exit, so you should use pcall.
         pcall(skynet.call, v, "lua", "exit")
@@ -38,18 +48,30 @@ end
 
 function response.get_agent()
     local l = #free_list
-    local agent = free_list[l]
-    free_list[l] = nil
-    if l - 1 < 10 then
-        skynet.fork(new_agent, 10)
+    local agent
+    if l > 0 then
+        agent = free_list[l]
+        free_list[l] = nil
+        agent_list[agent] = 0
+        if not fork_new and l <= 10 then
+            skynet.fork(new_agent, 10)
+            fork_new = true
+        end
+    else
+        agent = skynet.newservice("agent")
+        agent_list[agent] = 0
     end
     return agent
 end
 
 function response.free_agent(agent)
-    local l = #free_list + 1
-    free_list[l] = agent
-    if l >= 100 then
-        skynet.fork(del_agent, 50)
+    if agent_list[agent] == 0 then
+        local l = #free_list + 1
+        free_list[l] = agent
+        agent_list[agent] = l
+        if not fork_del and l >= 150 then
+            skynet.fork(del_agent, 50)
+            fork_del = true
+        end
     end
 end

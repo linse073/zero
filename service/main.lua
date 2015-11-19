@@ -6,6 +6,9 @@ local pairs = pairs
 
 skynet.start(function()
 	print("Server start")
+    -- debug service
+	skynet.newservice("console")
+	skynet.newservice("debug_console", 8000)
 
     -- share data
     sharedata.new("carddata", "@data.card")
@@ -65,9 +68,12 @@ skynet.start(function()
     sharedata.new("name_msg", name_msg)
 
     -- service
-	skynet.newservice("console")
-	skynet.newservice("debug_console", 8000)
 	skynet.uniqueservice("proto.protoloader")
+    snax.uniqueservice("dbmaster")
+    snax.uniqueservice("server_mgr")
+    snax.uniqueservice("routine")
+    snax.uniqueservice("role_mgr")
+    snax.uniqueservice("agent_mgr")
 
 	local loginserver = skynet.newservice("login")
 	local gate = skynet.newservice("gate", loginserver)
@@ -77,7 +83,6 @@ skynet.start(function()
 		servername = "sample",
 	})
 
-    snax.uniqueservice("dbmaster")
     snax.newservice("dbslave", {
         host = "127.0.0.1",
         port = 6379,
@@ -109,14 +114,9 @@ skynet.start(function()
         name = "rankdb"
     })
 
-    snax.uniqueservice("server_mgr")
     snax.newservice("server", {
         serverid = 1,
     })
-
-    snax.uniqueservice("routine")
-    snax.uniqueservice("role_mgr")
-    snax.uniqueservice("agent_mgr")
     
     skynet.exit()
 end)

@@ -1,6 +1,7 @@
 local msgserver = require "snax.msgserver"
 local crypt = require "crypt"
 local skynet = require "skynet"
+local snax = require "sanx"
 
 local error = error
 local assert = assert
@@ -12,6 +13,7 @@ local server = {}
 local users = {}
 local username_map = {}
 local internal_id = 0
+local agent_mgr = snax.queryservice("agent_mgr")
 
 -- login server disallow multi login, so login_handler never be reentry
 -- call by login server
@@ -25,7 +27,7 @@ function server.login_handler(uid, secret)
 	local username = msgserver.username(uid, id, servername)
 
 	-- you can use a pool to alloc new agent
-	local agent = skynet.newservice "agent"
+    local agent = agent_mgr.req.get_agent()
 	local u = {
 		username = username,
 		agent = agent,

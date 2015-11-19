@@ -8,23 +8,18 @@ local assert = assert
 local pcall = pcall
 local string = string
 
-local msg = share.msg
-local name_msg = share.name_msg
-local sproto = share.sproto
-local proc = role.get_proc()
-
 skynet.register_protocol {
 	name = "client",
 	id = skynet.PTYPE_CLIENT,
     unpack = skynet.tostring,
 }
 
-local sproto
+local msg = share.msg
+local name_msg = share.name_msg
+local sproto = share.sproto
+local proc = role.get_proc()
 local gate
 local data
-local proc
-local msg
-local name_msg
 
 local CMD = {}
 

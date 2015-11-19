@@ -1,5 +1,4 @@
 local share = require "share"
-local timer = require "timer"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -23,7 +22,6 @@ end
 
 function task.exit()
     data = nil
-    timer.del_day_routine("day_task")
 end
 
 function task.enter()
@@ -77,7 +75,6 @@ function task.enter()
             end
         end
     end
-    timer.add_day_routine("day_task", task.update_day)
     return "task", pack
 end
 
@@ -132,15 +129,12 @@ function task.update_day()
     end
     for i = 1, count do
         local r = random(i, l)
-        td[1], td[r] = td[r], td[i]
-    end
-    for i = 1, count do
+        td[i], td[r] = td[r], td[i]
         local v = td[i]
         v.status = base.TASK_STATUS_ACCEPT
         pack[#pack+1] = v.id
-        -- TODO: add a new message 
     end
-    -- TODO: send to client
+    return pack
 end
 
 function task.update_level(ol, nl)

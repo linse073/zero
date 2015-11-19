@@ -92,6 +92,10 @@
     friend 5 : *friend_info
 }
 
+.update_day {
+    task 0 : *integer
+}
+
 .error_code {
     id 0 : integer
     code 1 : integer

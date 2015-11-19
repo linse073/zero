@@ -39,6 +39,8 @@ skynet.start(function()
 
     local msg = {
         [1000] = "error_code",
+        [1001] = "notify_info",
+        [1002] = "nope",
 
         [1100] = "simple_user",
         [1101] = "account_info",

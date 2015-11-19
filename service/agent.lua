@@ -8,6 +8,11 @@ local assert = assert
 local pcall = pcall
 local string = string
 
+local msg = share.msg
+local name_msg = share.name_msg
+local sproto = share.sproto
+local proc = role.get_proc()
+
 skynet.register_protocol {
 	name = "client",
 	id = skynet.PTYPE_CLIENT,
@@ -62,12 +67,6 @@ function CMD.day_routine(source, key)
 end
 
 skynet.start(function()
-    math.randomseed(skynet.time())
-    sproto = sprotoloader.load(1)
-    proc = role.get_proc()
-    msg = share.msg
-    name_msg = share.name_msg
-
 	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

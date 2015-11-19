@@ -1,6 +1,7 @@
 
 local error_code = {
     OK = 0,
+    ALREADY_NOTIFY = 1,
 
     MAX_ROLE = 1000,
     ROLE_NAME_EXIST = 1001,

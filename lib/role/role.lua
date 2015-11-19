@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local snax = require "snax"
 local timer = require "timer"
 local share = require "share"
+local notify = require "notify"
 
 local card = require "role.card"
 local friend = require "role.friend"
@@ -14,6 +15,7 @@ local ipairs = ipairs
 local assert = assert
 local error = error
 local string = string
+local math = math
 
 local error_code = share.error_code
 local base = share.base
@@ -55,13 +57,16 @@ function role.exit()
         v.exit()
     end
     timer.del_routine("save_role")
+    timer.del_day_routine("update_day")
     if user then
         role_mgr.req.role_exit(user.id)
     end
+    notify.exit()
 end
 
-function role.get_proc()
-    return proc
+function role.update_day()
+    local pt = task.update_day()
+    notify.add("update_day", {task = pt})
 end
 
 function role.save_routine()
@@ -74,7 +79,15 @@ function role.save_routine()
     end
 end
 
+function role.get_proc()
+    return proc
+end
+
 -------------------protocol process--------------------------
+
+function proc.notify_info()
+    return notify.send()
+end
 
 function proc.get_account_info(msg)
     return "account_info", data.account
@@ -140,6 +153,7 @@ function proc.enter_game(msg)
     if not user then
         error(error_code.ROLE_NOT_EXIST)
     end
+    math.randomseed(skynet.time() + msg.id)
     data.suser = suser
     data.user = user
     local ret = {user = user}
@@ -148,6 +162,7 @@ function proc.enter_game(msg)
         ret[key] = pack
     end
     timer.add_routine("save_role", role.save_routine, 30000)
+    timer.add_day_routine("update_day", role.update_day)
     role_mgr.req.role_enter(user.id, skynet.self())
     return "user_all", ret
 end

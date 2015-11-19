@@ -35,16 +35,18 @@ function CMD.login(source, uid, sid, secret)
 end
 
 local function logout()
-	if gate then
-		skynet.call(gate, "lua", "logout", data.userid, data.subid)
-	end
+    skynet.call(gate, "lua", "logout", data.userid, data.subid)
     role.exit()
+    gate = nil
+    data = nil
 end
 
 function CMD.logout(source)
 	-- NOTICE: The logout MAY be reentry
-	skynet.error(string.format("%s is logout", data.userid))
-	logout()
+    if data then
+        skynet.error(string.format("%s is logout", data.userid))
+        logout()
+    end
 end
 
 function CMD.afk(source)

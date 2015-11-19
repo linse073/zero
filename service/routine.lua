@@ -9,7 +9,6 @@ local string = string
 local routine_list = {}
 local day_routine_list = {}
 local running
-local role_mgr
 local cur_day
 
 local function time_routine()
@@ -33,7 +32,6 @@ local function time_routine()
 end
 
 function init()
-    role_mgr = snax.queryservice("role_mgr")
     cur_day = date("%j", skynet.time())
     running = true
     skynet.timeout(100, time_routine)

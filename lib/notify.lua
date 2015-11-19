@@ -20,8 +20,11 @@ local function pack()
     if l > 0 then
         local content = ""
         for k, v in ipairs(notify_queue) do
-            local c = sproto:pencode(v[1], v[2])
-            local id = assert(name_msg[v[1]], string.format("No protocol %s.", v[1]))
+            local m, c = v[1], v[2]
+            if sproto:exist_type(m) then
+                c = sproto:pencode(m, c)
+            end
+            local id = assert(name_msg[m], string.format("No protocol %s.", m))
             c = string.pack(">s2", string.pack(">I2", id) .. c)
             content = content .. c
         end

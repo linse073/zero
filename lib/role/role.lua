@@ -85,7 +85,7 @@ end
 
 -------------------protocol process--------------------------
 
-function proc.notify_info()
+function proc.notify_info(msg)
     return notify.send()
 end
 

@@ -64,8 +64,7 @@ function server.kick_handler(uid, subid)
 	if u then
 		local username = msgserver.username(uid, subid, servername)
 		assert(u.username == username)
-		-- NOTICE: logout may call skynet.exit, so you should use pcall.
-		pcall(skynet.call, u.agent, "lua", "logout")
+        skynet.call(u.agent, "lua", "logout")
 	end
 end
 

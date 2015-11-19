@@ -116,6 +116,7 @@ skynet.start(function()
 
     snax.uniqueservice("routine")
     snax.uniqueservice("role_mgr")
+    snax.uniqueservice("agent_mgr")
     
     skynet.exit()
 end)

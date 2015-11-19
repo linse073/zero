@@ -44,7 +44,6 @@ local function logout()
 		skynet.call(gate, "lua", "logout", data.userid, data.subid)
 	end
     role.exit()
-	-- skynet.exit()
 end
 
 function CMD.logout(source)
@@ -56,6 +55,10 @@ end
 function CMD.afk(source)
 	-- the connection is broken, but the user may back
 	skynet.error(string.format("AFK"))
+end
+
+function CMD.exit(source)
+	skynet.exit()
 end
 
 function CMD.routine(source, key)

@@ -9,6 +9,12 @@ local item = require "role.item"
 local stage = require "role.stage"
 local task = require "role.task"
 
+local pairs = pairs
+local ipairs = ipairs
+local assert = assert
+local error = error
+local string = string
+
 local error_code = share.error_code
 local base = share.base
 local data

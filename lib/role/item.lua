@@ -1,5 +1,11 @@
 local share = require "share"
 
+local pairs = pairs
+local ipairs = ipairs
+local assert = assert
+local error = error
+local string = string
+
 local itemdata = share.itemdata
 local base = share.base
 local random = math.random

@@ -2,6 +2,8 @@ local skynet = require "skynet"
 local snax = require "snax"
 local sharedata = require "sharedata"
 
+local pairs = pairs
+
 skynet.start(function()
 	print("Server start")
 

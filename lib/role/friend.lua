@@ -1,4 +1,10 @@
 
+local pairs = pairs
+local ipairs = ipairs
+local assert = assert
+local error = error
+local string = string
+
 local data
 
 local friend = {}
@@ -19,6 +25,10 @@ function friend.enter()
         pack[#pack+1] = v
     end
     return "friend", pack
+end
+
+function friend.add(v)
+    data.friend[v.id] = v
 end
 
 function friend.get_proc()

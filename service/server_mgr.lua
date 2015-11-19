@@ -1,3 +1,7 @@
+
+local assert = assert
+local string = string
+
 local server_list = {}
 
 function init()

@@ -1,6 +1,12 @@
 local share = require "share"
 local timer = require "timer"
 
+local pairs = pairs
+local ipairs = ipairs
+local assert = assert
+local error = error
+local string = string
+
 local random = math.random
 local taskdata = share.taskdata
 local achi_task = share.achi_task

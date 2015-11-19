@@ -1,5 +1,11 @@
 local share = require "share"
 
+local pairs = pairs
+local ipairs = ipairs
+local assert = assert
+local error = error
+local string = string
+
 local carddata = share.carddata
 local base = share.base
 local data

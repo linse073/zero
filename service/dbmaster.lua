@@ -1,3 +1,7 @@
+
+local assert = assert
+local string = string
+
 local slave_list = {}
 
 function init()

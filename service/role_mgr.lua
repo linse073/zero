@@ -1,4 +1,7 @@
 
+local assert = assert
+local string = string
+
 local role_list = {}
 
 function init()

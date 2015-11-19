@@ -2,6 +2,9 @@ local snax = require "snax"
 local skynet = require "skynet"
 
 local date = os.date
+local pairs = pairs
+local assert = assert
+local string = string
 
 local routine_list = {}
 local day_routine_list = {}

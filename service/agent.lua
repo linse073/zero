@@ -4,6 +4,10 @@ local role = require "role.role"
 local timer = require "timer"
 local share = require "share"
 
+local assert = assert
+local pcall = pcall
+local string = string
+
 skynet.register_protocol {
 	name = "client",
 	id = skynet.PTYPE_CLIENT,

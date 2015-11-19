@@ -1,6 +1,9 @@
 local snax = require "snax"
 local skynet = require "skynet"
 
+local assert = assert
+local string = string
+
 local timer = {}
 
 local routine = snax.queryservice("routine")

@@ -2,6 +2,10 @@ local msgserver = require "snax.msgserver"
 local crypt = require "crypt"
 local skynet = require "skynet"
 
+local error = error
+local assert = assert
+local string = string
+
 local loginservice = tonumber(...)
 
 local server = {}

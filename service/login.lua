@@ -2,6 +2,11 @@ local login = require "snax.loginserver"
 local crypt = require "crypt"
 local skynet = require "skynet"
 
+local assert = assert
+local print = print
+local error = error
+local string = string
+
 local server = {
 	host = "127.0.0.1",
 	port = 8001,

@@ -1,11 +1,14 @@
 
 local error_code = {
     OK = 0,
-    ALREADY_NOTIFY = 1,
 
-    MAX_ROLE = 1000,
-    ROLE_NAME_EXIST = 1001,
-    ROLE_NOT_EXIST = 1002,
+    INTERNAL_ERROR = 1000,
+
+    ALREADY_NOTIFY = 1100,
+
+    MAX_ROLE = 2000,
+    ROLE_NAME_EXIST = 2001,
+    ROLE_NOT_EXIST = 2002,
 }
 
 return error_code

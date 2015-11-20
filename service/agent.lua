@@ -1,4 +1,5 @@
 local skynet = require "skynet"
+local snax = require "snax"
 local sprotoloader = require "sprotoloader"
 local role = require "role.role"
 local timer = require "timer"
@@ -16,6 +17,7 @@ skynet.register_protocol {
 
 local msg = share.msg
 local name_msg = share.name_msg
+local base = share.base
 local sproto = share.sproto
 local proc = role.get_proc()
 local gate
@@ -35,31 +37,45 @@ function CMD.login(source, uid, sid, secret)
 end
 
 local function logout()
-    skynet.call(gate, "lua", "logout", data.userid, data.subid)
-    role.exit()
-    gate = nil
+    local d = data
+    local g = gate
     data = nil
+    gate = nil
+    role.exit()
+    timer.del_once_routine("afk")
+    skynet.error(string.format("%s is logout", d.userid))
+    skynet.call(g, "lua", "logout", d.userid, d.subid)
 end
 
-function CMD.logout(source)
-	-- NOTICE: The logout MAY be reentry
+local function logout_routine()
     if data then
-        skynet.error(string.format("%s is logout", data.userid))
+        logout()
+    end
+end
+
+function CMD.logout(source, uid, sid)
+	-- NOTICE: The logout MAY be reentry
+    if data and data.userid == uid and data.subid == sid then
         logout()
     end
 end
 
 function CMD.afk(source)
 	-- the connection is broken, but the user may back
-	skynet.error(string.format("AFK"))
+    timer.add_once_routine("afk", logout_routine, 30000)
 end
 
 function CMD.exit(source)
+    assert(not data, string.format("Agent exit error %s.", data.userid))
 	skynet.exit()
 end
 
 function CMD.routine(source, key)
     timer.call_routine(key)
+end
+
+function CMD.once_routine(source, key)
+    timer.call_once_routine(key)
 end
 
 function CMD.day_routine(source, key)
@@ -83,6 +99,10 @@ skynet.start(function()
         local f = assert(proc[msgname], string.format("No protocol procedure %s.", msgname))
         local ok, rmsg, info = pcall(f, arg)
         if not ok then
+            if type(rmsg) == string then
+                skynet.error(rmsg)
+                rmsg = base.INTERNAL_ERROR
+            end
             info = {
                 id = id,
                 code = rmsg,

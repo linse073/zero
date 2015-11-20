@@ -96,6 +96,15 @@
     task 0 : *integer
 }
 
+.heart_beat {
+    time 0 : integer
+}
+
+.heart_beat_response {
+    time 0 : integer
+    server_time 1 : integer
+}
+
 .error_code {
     id 0 : integer
     code 1 : integer

@@ -7,19 +7,27 @@ local assert = assert
 local string = string
 
 local routine_list = {}
+local once_routine_list = {}
 local day_routine_list = {}
 local running
 local cur_day
 
 local function time_routine()
-    for k, v in pairs(process) do
-        v.time = v.time + 100
-        if v.time >= v.interval then
-            v.time = v.time - v.interval
+    local now = skynet.time()
+    for k, v in pairs(routine_list) do
+        if now >= v.time then
+            v.time = v.time + v.interval
             skynet.send(v.address, "lua", "routine", k)
         end
     end
-    local day = date("%j", skynet.time())
+    for k, v in pairs(once_routine_list) do
+        if now >= v.time then
+            v.time = v.time + v.interval
+            once_routine_list[k] = nil
+            skynet.send(v.address, "lua", "once_routine", k)
+        end
+    end
+    local day = date("%j", now)
     if day ~= cur_day then
         cur_day = day
         for k, v in pairs(day_routine_list) do
@@ -46,12 +54,25 @@ function response.add_routine(address, key, interval)
     routine_list[key] = {
         address = address,
         interval = interval,
-        time = 0,
+        time = skynet.time() + interval,
     }
 end
 
 function response.del_routine(key)
     routine_list[key] = nil
+end
+
+function response.add_once_routine(address, key, interval)
+    assert(not once_routine_list[key], string.format("Already has once routine %s.", key))
+    once_routine_list[key] = {
+        address = address,
+        interval = interval,
+        time = skynet.time() + interval,
+    }
+end
+
+function response.del_once_routine(key)
+    once_routine_list[key] = nil
 end
 
 function response.add_day_routine(address, key)

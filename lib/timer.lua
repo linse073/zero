@@ -8,6 +8,7 @@ local timer = {}
 
 local routine = snax.queryservice("routine")
 local routine_list = {}
+local once_routine_list = {}
 local day_routine_list = {}
 
 local function gen_key(key)
@@ -23,13 +24,35 @@ end
 
 function timer.del_routine(key)
     key = gen_key(key)
-    routine.req.del_routine(key)
-    routine_list[key] = nil
+    if routine_list[key] then
+        routine_list[key] = nil
+        routine.req.del_routine(key)
+    end
 end
 
 function timer.call_routine(key)
     key = gen_key(key)
     assert(routine_list[key], string.format("No routine %s.", key))()
+end
+
+function timer.add_once_routine(key, func, interval)
+    key = gen_key(key)
+    assert(not once_routine_list[key], string.format("Already has once routine %s.", key))
+    once_routine_list[key] = func
+    routine.req.add_once_routine(skynet.self(), key, interval)
+end
+
+function timer.del_once_routine(key)
+    key = gen_key(key)
+    if once_routine_list[key] then
+        once_routine_list[key] = nil
+        routine.req.del_once_routine(key)
+    end
+end
+
+function timer.call_once_routine(key)
+    key = gen_key(key)
+    assert(once_routine_list[key], string.format("No once routine %s.", key))()
 end
 
 function timer.add_day_routine(key, func)
@@ -41,8 +64,10 @@ end
 
 function timer.del_day_routine(key)
     key = gen_key(key)
-    routine.req.del_day_routine(key)
-    day_routine_list[key] = nil
+    if day_routine_list[key] then
+        day_routine_list[key] = nil
+        routine.req.del_day_routine(key)
+    end
 end
 
 function timer.call_day_routine(key)

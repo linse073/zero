@@ -16,6 +16,7 @@ local server = {
 
 local server_list = {}
 local user_online = {}
+local user_login = {}
 
 function server.id(uid, server)
     return string.format("%s@%s", uid, server)
@@ -36,16 +37,22 @@ function server.login_handler(server, uid, secret)
 	local gameserver = assert(server_list[server], "Unknown server")
     -- allow same user login different server
     local id = server.id(uid, server)
-	local last = user_online[id]
-	if last then
-		skynet.call(last.address, "lua", "kick", uid, last.subid)
-	end
-	if user_online[id] then
-		error(string.format("user %s is already online", id))
-	end
-
-	local subid = tostring(skynet.call(gameserver, "lua", "login", uid, secret))
-	user_online[id] = {address = gameserver, subid = subid, server = server}
+    local subid
+    if user_login[id] then
+        error(string.format("user %s is already login", id))
+    else
+        user_login[id] = true
+        local last = user_online[id]
+        if last then
+            skynet.call(last.address, "lua", "kick", uid, last.subid)
+        end
+        if user_online[id] then
+            error(string.format("user %s is already online", id))
+        end
+        subid = tostring(skynet.call(gameserver, "lua", "login", uid, secret))
+    end
+    user_login[id] = nil
+    user_online[id] = {address = gameserver, subid = subid, server = server}
 	return subid
 end
 

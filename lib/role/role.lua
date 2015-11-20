@@ -51,17 +51,18 @@ function role.init(userdata)
 end
 
 function role.exit()
-    local user = data.user
-    data = nil
     for k, v in ipairs(module) do
         v.exit()
     end
     timer.del_routine("save_role")
     timer.del_day_routine("update_day")
+    local user = data.user
     if user then
         role_mgr.req.role_exit(user.id)
     end
     notify.exit()
+    role.save_routine()
+    data = nil
 end
 
 function role.update_day()
@@ -87,6 +88,11 @@ end
 
 function proc.notify_info(msg)
     return notify.send()
+end
+
+function proc.heart_beat(msg)
+    timer.del_day_routine("afk")
+    return "heart_beat_response", {time = msg.time, server_time = skynet.time()}
 end
 
 function proc.get_account_info(msg)

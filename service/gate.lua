@@ -56,6 +56,7 @@ function server.logout_handler(uid, subid)
 		msgserver.logout(u.username)
 		users[uid] = nil
 		username_map[u.username] = nil
+        agent_mgr.req.free_agent(u.agent)
 		skynet.call(loginservice, "lua", "logout", uid, servername, subid)
 	end
 end
@@ -66,7 +67,7 @@ function server.kick_handler(uid, subid)
 	if u then
 		local username = msgserver.username(uid, subid, servername)
 		assert(u.username == username)
-        skynet.call(u.agent, "lua", "logout")
+        skynet.call(u.agent, "lua", "logout", uid, subid)
 	end
 end
 

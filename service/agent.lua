@@ -41,9 +41,9 @@ local function logout()
     local g = gate
     data = nil
     gate = nil
+    skynet.error(string.format("%s is logout", d.userid))
     role.exit()
     timer.del_once_routine("afk")
-    skynet.error(string.format("%s is logout", d.userid))
     skynet.call(g, "lua", "logout", d.userid, d.subid)
 end
 

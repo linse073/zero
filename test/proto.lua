@@ -36,3 +36,5 @@ end
 function proto.get_name(id)
     return msg[id]
 end
+
+return proto

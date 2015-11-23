@@ -7,6 +7,7 @@ local pairs = pairs
 skynet.start(function()
 	print("Server start")
     -- debug service
+    skynet.newservice("monitor", 9000)
 	skynet.newservice("console")
 	skynet.newservice("debug_console", 8000)
 
@@ -70,7 +71,7 @@ skynet.start(function()
     sharedata.new("name_msg", name_msg)
 
     -- service
-	skynet.uniqueservice("proto.protoloader")
+	skynet.uniqueservice("protoloader")
     snax.uniqueservice("dbmaster")
     snax.uniqueservice("server_mgr")
     snax.uniqueservice("routine")

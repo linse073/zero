@@ -7,6 +7,7 @@ local share = require "share"
 
 local assert = assert
 local pcall = pcall
+local type = type
 local string = string
 
 skynet.register_protocol {
@@ -65,7 +66,10 @@ function CMD.afk(source)
     timer.add_once_routine("afk", logout_routine, 30000)
 end
 
-function CMD.exit(source)
+function CMD.exit(source, shutdown)
+    if shutdown and data then
+        logout()
+    end
     assert(not data, string.format("Agent exit error %s.", data.userid))
 	skynet.exit()
 end
@@ -99,7 +103,7 @@ skynet.start(function()
         local f = assert(proc[msgname], string.format("No protocol procedure %s.", msgname))
         local ok, rmsg, info = pcall(f, arg)
         if not ok then
-            if type(rmsg) == string then
+            if type(rmsg) == "string" then
                 skynet.error(rmsg)
                 rmsg = base.INTERNAL_ERROR
             end

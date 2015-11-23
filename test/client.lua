@@ -1,6 +1,6 @@
 local root = "./../../"
 package.cpath = "luaclib/?.so"
-package.path = root.."lib/?.lua;./lualib/?.lua;./lualib/?/init.lua"
+package.path = root.."lib/?.lua;"..root.."test./?.lua;./lualib/?.lua;./lualib/?/init.lua"
 
 local socket = require "clientsocket"
 local crypt = require "crypt"
@@ -11,7 +11,6 @@ if _VERSION ~= "Lua 5.3" then
 	error "Use lua 5.3"
 end
 
-proto.init()
 local spfile = root.."lib/proto/proto.sp"
 sprotoloader.register(file, 1)
 local sproto = sprotoloader.load(1)

@@ -72,23 +72,4 @@ local base = {
     MAX_RAND_PROP = 2,
 }
 
--- item
-function base.is_equip(itemtype)
-    return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
-end
-
-local item_category = {
-    [base.ITEM_TYPE_HEAD] = base.ITEM_DEFENCE,
-    [base.ITEM_TYPE_BODY] = base.ITEM_DEFENCE,
-    [base.ITEM_TYPE_WEAPON] = base.ITEM_ATTACK,
-    [base.ITEM_TYPE_ACCESSORY] = base.ITEM_ATTACK,
-    [base.ITEM_TYPE_FOOT] = base.ITEM_DEFENCE,
-    [base.ITEM_TYPE_HAND] = base.ITEM_DEFENCE,
-    [base.ITEM_TYPE_RING] = base.ITEM_ATTACK,
-    [base.ITEM_TYPE_NECKLACE] = base.ITEM_ATTACK,
-}
-function base.item_category(itemtype)
-    return item_category[itemtype]
-end
-
 return base

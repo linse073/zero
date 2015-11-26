@@ -8,6 +8,8 @@ local string = string
 
 local itemdata = share.itemdata
 local base = share.base
+local is_equip = share.is_equip
+local item_category = share.item_category
 local random = math.random
 local data
 
@@ -42,7 +44,7 @@ function item.add(v, d)
     local i = {v, d}
     if v.pos ~= 0 then
         local equip_item = data.equip_item
-        if base.is_equip(d.itemType) then
+        if is_equip(d.itemType) then
             local pos = d.itemType - base.ITEM_TYPE_HEAD + 1
             if pos ~= v.pos then
                 skynet.error(string.format("Equip %d illegal position %d.", v.id, v.pos))
@@ -93,7 +95,7 @@ function item.add_by_itemid(itemid, num)
             end
         end
     end
-    local category = base.item_category(d.itemType)
+    local category = item_category(d.itemType)
     local ui = data.user.item
     while num > 0 do
         local diff = num

@@ -12,13 +12,13 @@ skynet.start(function()
 	skynet.newservice("debug_console", 8000)
 
     -- share data
-    sharedata.new("carddata", "@data.card")
-    sharedata.new("itemdata", "@data.item")
-    sharedata.new("stagedata", "@data.stage")
-    sharedata.new("taskdata", "@data.task")
+    sharedata.new("carddata", require("data.card"))
+    sharedata.new("itemdata", require("data.item"))
+    sharedata.new("stagedata", require("data.stage"))
+    sharedata.new("taskdata", require("data.task"))
 
-    sharedata.new("base", "@base")
-    sharedata.new("error_code", "@error_code")
+    sharedata.new("base", require("base"))
+    sharedata.new("error_code", require("error_code"))
 
     local taskdata = sharedata.query("taskdata")
     local base = sharedata.query("base")

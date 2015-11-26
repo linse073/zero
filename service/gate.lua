@@ -14,6 +14,7 @@ local users = {}
 local username_map = {}
 local internal_id = 0
 local agent_mgr = snax.queryservice("agent_mgr")
+local servername
 
 -- login server disallow multi login, so login_handler never be reentry
 -- call by login server
@@ -36,7 +37,7 @@ function server.login_handler(uid, secret)
 	}
 
 	-- trash subid (no used)
-	skynet.call(agent, "lua", "login", uid, id, secret)
+	skynet.call(agent, "lua", "login", uid, id, secret, servername)
 
 	users[uid] = u
 	username_map[username] = u
@@ -86,9 +87,9 @@ function server.request_handler(username, msg)
 end
 
 -- call by self (when gate open)
-function server.register_handler(name)
-	servername = name
-	skynet.call(loginservice, "lua", "register_gate", servername, skynet.self())
+function server.register_handler(conf)
+    servername = assert(conf.servername)
+	skynet.call(loginservice, "lua", "register_gate", conf, skynet.self())
 end
 
 msgserver.start(server)

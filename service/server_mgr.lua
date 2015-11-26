@@ -13,15 +13,15 @@ function exit()
 end
 
 function response.register_server(conf, handle, typename)
-    assert(not server_list[conf.serverid], string.format("Already register server %d.", conf.serverid))
+    assert(not server_list[conf.servername], string.format("Already register server %s.", conf.servername))
     local server = {
         handle = handle,
-        typename = typename
+        typename = typename,
     }
-    server_list[conf.serverid] = server
+    server_list[conf.servername] = server
 end
 
-function response.get_server(serverid)
-    local server = assert(server_list[serverid], string.format("No server %d.", serverid))
+function response.get_server(servername)
+    local server = assert(server_list[servername], string.format("No server %s.", servername))
     return server.handle, server.typename
 end

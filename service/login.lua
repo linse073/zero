@@ -18,8 +18,19 @@ local server_list = {}
 local user_online = {}
 local user_login = {}
 
-function server.id(uid, server)
+function gen_id(uid, server)
     return string.format("%s@%s", uid, server)
+end
+
+function get_gate(servername)
+    local l = assert(server_list[servername], string.format("Unknown server %s.", servername))
+    local gate
+    for k, v in ipairs(l) do
+        if not gate or gate.count > v.count then
+            gate = v
+        end
+    end
+    return gate
 end
 
 function server.auth_handler(token)
@@ -34,9 +45,9 @@ end
 
 function server.login_handler(server, uid, secret)
 	print(string.format("%s@%s is login, secret is %s", uid, server, crypt.hexencode(secret)))
-	local gameserver = assert(server_list[server], "Unknown server")
+	local gameserver = assert(get_gate(server), "Unknown server")
     -- allow same user login different server
-    local id = server.id(uid, server)
+    local id = gen_id(uid, server)
     local subid
     if user_login[id] then
         error(string.format("user %s is already login", id))
@@ -49,21 +60,32 @@ function server.login_handler(server, uid, secret)
         if user_online[id] then
             error(string.format("user %s is already online", id))
         end
-        subid = tostring(skynet.call(gameserver, "lua", "login", uid, secret))
+        subid = tostring(skynet.call(gameserver.address, "lua", "login", uid, secret))
     end
     user_login[id] = nil
-    user_online[id] = {address = gameserver, subid = subid, server = server}
-	return subid
+    user_online[id] = {address = gameserver.address, subid = subid, server = server}
+    return string.format("%s@%s:%s", subid, gameserver.ip, gameserver.port)
 end
 
 local CMD = {}
 
-function CMD.register_gate(server, address)
-	server_list[server] = address
+function CMD.register_gate(conf, address)
+    local i = {
+        ip = conf.address,
+        port = conf.port,
+        address = address,
+        count = 0,
+    }
+    local l = server_list[conf.servername]
+    if l then
+        l[#l+1] = i
+    else
+        server_list[conf.servername] = {i}
+    end
 end
 
 function CMD.logout(uid, server, subid)
-    local id = server.id(uid, server)
+    local id = gen_id(uid, server)
 	local u = user_online[id]
 	if u then
 		print(string.format("%s is logout", id))

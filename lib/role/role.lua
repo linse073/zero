@@ -34,7 +34,7 @@ end
 function role.init(userdata)
     data = userdata
     local server_mgr = snax.queryservice("server_mgr")
-    data.server = snax.bind(server_mgr.req.get_server(1))
+    data.server = snax.bind(server_mgr.req.get_server(data.servername))
 	-- you may load user data from database
     local master = snax.queryservice("dbmaster")
     data.accdb = snax.bind(master.req.get_slave("accountdb"))

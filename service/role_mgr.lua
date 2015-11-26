@@ -22,5 +22,5 @@ function response.role_exit(roleid)
 end
 
 function response.get_role(roleid)
-    return assert(role_list[roleid])
+    return assert(role_list[roleid], string.format("No role %d.", roleid))
 end

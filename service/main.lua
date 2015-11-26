@@ -81,7 +81,14 @@ skynet.start(function()
 	local loginserver = skynet.newservice("login")
 	local gate = skynet.newservice("gate", loginserver)
 	skynet.call(gate, "lua", "open" , {
+        address = "127.0.0.1",
 		port = 8888,
+		maxclient = 64,
+		servername = "sample",
+	})
+	skynet.call(gate, "lua", "open" , {
+        address = "127.0.0.1",
+		port = 8889,
 		maxclient = 64,
 		servername = "sample",
 	})
@@ -119,6 +126,7 @@ skynet.start(function()
 
     snax.newservice("server", {
         serverid = 1,
+        servername = "sample",
     })
     
     skynet.exit()

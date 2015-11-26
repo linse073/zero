@@ -26,13 +26,14 @@ local data
 
 local CMD = {}
 
-function CMD.login(source, uid, sid, secret)
+function CMD.login(source, uid, sid, secret, servername)
 	-- you may use secret to make a encrypted data stream
 	skynet.error(string.format("%s is login", uid))
 	gate = source
     data = {
         userid = uid,
         subid = sid,
+        servername = servername,
     }
     role.init(data)
 end

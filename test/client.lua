@@ -102,6 +102,7 @@ print("login ok, subid=", subid)
 ----- connect to game server
 
 local function send_request(session, msgname, msg)
+    msg = msg or ""
     if sproto:exist_type(msgname) then
         msg = sproto:pencode(msgname, msg)
     end

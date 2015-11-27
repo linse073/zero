@@ -117,7 +117,7 @@ local function recv_response(v)
 	local size = #v - 5
 	local content, ok, session = string.unpack("c"..tostring(size).."B>I4", v)
     if ok ~= 0 then
-        local id = content:byte(1) * 256 + msg:byte(2)
+        local id = content:byte(1) * 256 + content:byte(2)
         local msg = content:sub(3)
         local msgname = assert(proto.get_name(id))
         if sproto:exist_type(msgname) then

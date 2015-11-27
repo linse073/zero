@@ -45,7 +45,7 @@ end
 
 function server.login_handler(server, uid, secret)
 	print(string.format("%s@%s is login, secret is %s", uid, server, crypt.hexencode(secret)))
-	local gameserver = assert(get_gate(server), "Unknown server")
+	local gate = assert(get_gate(server), "Unknown server")
     -- allow same user login different server
     local id = gen_id(uid, server)
     local subid
@@ -55,16 +55,17 @@ function server.login_handler(server, uid, secret)
         user_login[id] = true
         local last = user_online[id]
         if last then
-            skynet.call(last.address, "lua", "kick", uid, last.subid)
+            skynet.call(last.gate.address, "lua", "kick", uid, last.subid)
         end
         if user_online[id] then
             error(string.format("user %s is already online", id))
         end
-        subid = tostring(skynet.call(gameserver.address, "lua", "login", uid, secret))
+        subid = tostring(skynet.call(gate.address, "lua", "login", uid, secret))
+        gate.count = gate.count + 1
     end
     user_login[id] = nil
-    user_online[id] = {address = gameserver.address, subid = subid, server = server}
-    return string.format("%s@%s:%s", subid, gameserver.ip, gameserver.port)
+    user_online[id] = {gate = gate, subid = subid, server = server}
+    return string.format("%s@%s:%s", subid, gate.ip, gate.port)
 end
 
 local CMD = {}
@@ -89,6 +90,8 @@ function CMD.logout(uid, server, subid)
 	local u = user_online[id]
 	if u then
 		print(string.format("%s is logout", id))
+        local gate = u.gate
+        gate.count = gate.count - 1
 		user_online[id] = nil
 	end
 end

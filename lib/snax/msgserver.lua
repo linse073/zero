@@ -139,8 +139,8 @@ function server.start(conf)
 		return f(...)
 	end
 
-	function handler.open(source, gateconf)
-		return conf.register_handler(gateconf)
+	function handler.open(source, gateconf, servername)
+		return conf.register_handler(gateconf, servername)
 	end
 
 	function handler.connect(fd, addr)

@@ -1,6 +1,5 @@
 local skynet = require "skynet"
 local socket = require "socket"
-local snax = require "snax"
 
 local pcall = pcall
 local select = select
@@ -114,6 +113,6 @@ skynet.start(function()
 end)
 
 function COMMAND.shutdown()
-    sanx.kill(snax.queryservice("agent_mgr"))
+    pcall(skynet.call(skynet.queryservice("agent_mgr"), "lua", "exit"))
     skynet.exit()
 end

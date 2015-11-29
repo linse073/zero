@@ -23,7 +23,7 @@ local data
 local module = {card, friend, item, stage, task}
 local role = {}
 local proc = {}
-local role_mgr = snax.queryservice("role_mgr")
+local role_mgr = skynet.queryservice("role_mgr")
 
 for k, v in ipairs(module) do
     for k1, v1 in pairs(v.get_proc()) do

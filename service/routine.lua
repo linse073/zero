@@ -1,15 +1,15 @@
-local snax = require "snax"
 local skynet = require "skynet"
 
-local date = os.date
 local pairs = pairs
 local assert = assert
 local string = string
+local date = os.date
+local floor = math.floor
 
 local routine_list = {}
 local once_routine_list = {}
 local day_routine_list = {}
-local running
+local running = false
 local cur_day
 
 local function time_routine()
@@ -27,7 +27,7 @@ local function time_routine()
             skynet.send(v.address, "lua", "once_routine", k)
         end
     end
-    local day = date("%j", now)
+    local day = date("%j", floor(now))
     if day ~= cur_day then
         cur_day = day
         for k, v in pairs(day_routine_list) do
@@ -39,17 +39,13 @@ local function time_routine()
     end
 end
 
-function init()
-    cur_day = date("%j", skynet.time())
-    running = true
-    skynet.timeout(100, time_routine)
-end
+local CMD = {}
 
-function exit()
+function CMD.exit()
     running = false
 end
 
-function response.add_routine(address, key, interval)
+function CMD.add(address, key, interval)
     assert(not routine_list[key], string.format("Already has routine %s.", key))
     routine_list[key] = {
         address = address,
@@ -58,11 +54,11 @@ function response.add_routine(address, key, interval)
     }
 end
 
-function response.del_routine(key)
+function CMD.del(key)
     routine_list[key] = nil
 end
 
-function response.add_once_routine(address, key, interval)
+function CMD.add_once(address, key, interval)
     assert(not once_routine_list[key], string.format("Already has once routine %s.", key))
     once_routine_list[key] = {
         address = address,
@@ -71,15 +67,26 @@ function response.add_once_routine(address, key, interval)
     }
 end
 
-function response.del_once_routine(key)
+function CMD.del_once(key)
     once_routine_list[key] = nil
 end
 
-function response.add_day_routine(address, key)
+function CMD.add_day(address, key)
     assert(not day_routine_list[key], string.format("Already has day routine %s.", key))
     day_routine_list[key] = address
 end
 
-function response.del_day_routine(key)
+function CMD.del_day(key)
     day_routine_list[key] = nil
 end
+
+skynet.start(function()
+    cur_day = date("%j", floor(skynet.time()))
+    running = true
+    skynet.timeout(100, time_routine)
+    
+	skynet.dispatch("lua", function(session, source, command, ...)
+		local f = assert(CMD[command])
+        skynet.retpack(f(...))
+	end)
+end)

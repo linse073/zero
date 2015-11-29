@@ -6,8 +6,8 @@ local string = string
 
 local free_list = {}
 local agent_list = {}
-local fork_new
-local fork_del
+local fork_new = false
+local fork_del = false
 
 local function new_agent(num)
     local l = #free_list + 1
@@ -38,17 +38,9 @@ local function del_agent(num)
     end
 end
 
-function init()
-    new_agent(100)
-end
+local CMD = {}
 
-function exit()
-    for k, v in pairs(agent_list) do
-        pcall(skynet.call, v, "lua", "exit", true)
-    end
-end
-
-function response.get_agent()
+function CMD.get()
     local l = #free_list
     local agent
     if l > 0 then
@@ -66,7 +58,7 @@ function response.get_agent()
     return agent
 end
 
-function response.free_agent(agent)
+function CMD.free(agent)
     if agent_list[agent] == 0 then
         local l = #free_list + 1
         free_list[l] = agent
@@ -77,3 +69,19 @@ function response.free_agent(agent)
         end
     end
 end
+
+function CMD.exit()
+    for k, v in pairs(agent_list) do
+        pcall(skynet.call, v, "lua", "exit", true)
+    end
+    skynet.exit()
+end
+
+skynet.start(function()
+    new_agent(100)
+
+	skynet.dispatch("lua", function(session, source, command, ...)
+		local f = assert(CMD[command])
+        skynet.retpack(f(...))
+	end)
+end)

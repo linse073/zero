@@ -1,6 +1,4 @@
 local skynet = require "skynet"
-local snax = require "snax"
-local sprotoloader = require "sprotoloader"
 local role = require "role.role"
 local timer = require "timer"
 local share = require "share"

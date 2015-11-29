@@ -14,6 +14,8 @@ local share = {
     day_task = sharedata.query("day_task"),
     achi_task = sharedata.query("achi_task"),
 
+    item_category = sharedata.query("item_category"),
+
     msg = sharedata.query("msg"),
     name_msg = sharedata.query("name_msg"),
 
@@ -22,23 +24,14 @@ local share = {
 }
 
 local base = share.base
+local item_category = share.item_category
 
 -- item
 function share.is_equip(itemtype)
     return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
 end
 
-local item_category = {
-    [base.ITEM_TYPE_HEAD] = base.ITEM_DEFENCE,
-    [base.ITEM_TYPE_BODY] = base.ITEM_DEFENCE,
-    [base.ITEM_TYPE_WEAPON] = base.ITEM_ATTACK,
-    [base.ITEM_TYPE_ACCESSORY] = base.ITEM_ATTACK,
-    [base.ITEM_TYPE_FOOT] = base.ITEM_DEFENCE,
-    [base.ITEM_TYPE_HAND] = base.ITEM_DEFENCE,
-    [base.ITEM_TYPE_RING] = base.ITEM_ATTACK,
-    [base.ITEM_TYPE_NECKLACE] = base.ITEM_ATTACK,
-}
-function share.item_category(itemtype)
+function share.get_item_category(itemtype)
     return item_category[itemtype]
 end
 

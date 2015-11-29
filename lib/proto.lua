@@ -27,7 +27,10 @@ for k, v in pairs(msg) do
     name_msg[v] = k
 end
 
-local proto = {}
+local proto = {
+    msg = msg,
+    name_msg = name_msg,
+}
 
 function proto.get_id(name)
     return name_msg[name]

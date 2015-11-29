@@ -9,7 +9,7 @@ local string = string
 local itemdata = share.itemdata
 local base = share.base
 local is_equip = share.is_equip
-local item_category = share.item_category
+local get_item_category = share.get_item_category
 local random = math.random
 local data
 
@@ -95,7 +95,7 @@ function item.add_by_itemid(itemid, num)
             end
         end
     end
-    local category = item_category(d.itemType)
+    local category = get_item_category(d.itemType)
     local ui = data.user.item
     while num > 0 do
         local diff = num

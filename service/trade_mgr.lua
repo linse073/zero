@@ -1,8 +1,5 @@
+local skynet = require "skynet"
 
-function init()
+skynet.start(function()
     
-end
-
-function exit()
-    
-end
+end)

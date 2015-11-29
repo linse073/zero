@@ -1,7 +1,5 @@
 local msgserver = require "snax.msgserver"
-local crypt = require "crypt"
 local skynet = require "skynet"
-local snax = require "sanx"
 
 local error = error
 local assert = assert
@@ -13,7 +11,7 @@ local server = {}
 local users = {}
 local username_map = {}
 local internal_id = 0
-local agent_mgr = snax.queryservice("agent_mgr")
+local agent_mgr
 local servername
 
 -- login server disallow multi login, so login_handler never be reentry
@@ -28,7 +26,7 @@ function server.login_handler(uid, secret)
 	local username = msgserver.username(uid, id, servername)
 
 	-- you can use a pool to alloc new agent
-    local agent = agent_mgr.req.get_agent()
+    local agent = skynet.call(agent_mgr, "lua", "get")
 	local u = {
 		username = username,
 		agent = agent,
@@ -57,7 +55,7 @@ function server.logout_handler(uid, subid)
 		msgserver.logout(u.username)
 		users[uid] = nil
 		username_map[u.username] = nil
-        agent_mgr.req.free_agent(u.agent)
+        skynet.call(agent_mgr, "lua", "free", u.agent)
 		skynet.call(loginservice, "lua", "logout", uid, servername, subid)
 	end
 end
@@ -87,9 +85,10 @@ function server.request_handler(username, msg)
 end
 
 -- call by self (when gate open)
-function server.register_handler(conf)
-    servername = assert(conf.servername)
-	skynet.call(loginservice, "lua", "register_gate", conf, skynet.self())
+function server.register_handler(conf, name)
+    servername = name
+    agent_mgr = skyne.queryservice("agent_mgr")
+	skynet.call(loginservice, "lua", "register_gate", conf, name, skynet.self())
 end
 
 msgserver.start(server)

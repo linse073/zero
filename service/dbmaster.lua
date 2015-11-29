@@ -1,27 +1,41 @@
+local skynet = require "skynet"
 
 local assert = assert
 local string = string
 
 local slave_list = {}
 
-function init()
-    
+local CMD = {}
+
+function CMD.register(server, name, address)
+    local l = slave_list[server]
+    if not l then
+        l = {}
+        slave_list[server] = l
+    end
+    assert(not l[name], string.format("Already register database slave %s %s.", server, name))
+    l[name] = address
 end
 
-function exit()
-    
+function CMD.get(server, name)
+    local address
+    local l = slave_list[server]
+    if l then
+        address = l[name]
+    end
+    if not address then
+        local g = slave_list["global"]
+        if g then
+            address = g[name]
+        end
+    end
+    assert(address, string.format("No database slave %s %s.", server, name))
+    return address
 end
 
-function response.register_slave(conf, handle, typename)
-    assert(not slave_list[conf.name], string.format("Already register database slave %s.", conf.name))
-    local slave = {
-        handle = handle, 
-        typename = typename
-    }
-    slave_list[conf.name] = slave
-end
-
-function response.get_slave(name)
-    local slave = assert(slave_list[name], string.format("No database slave %s.", name))
-    return slave.handle, slave.typename
-end
+skynet.start(function()
+	skynet.dispatch("lua", function(session, source, command, ...)
+		local f = assert(CMD[command])
+        skynet.retpack(f(...))
+	end)
+end)

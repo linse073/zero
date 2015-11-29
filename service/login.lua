@@ -7,12 +7,7 @@ local print = print
 local error = error
 local string = string
 
-local server = {
-	host = "127.0.0.1",
-	port = 8001,
-    multilogin = true, -- allow same user login different server
-	name = "login_master",
-}
+local server = require("config").login
 
 local server_list = {}
 local user_online = {}
@@ -70,18 +65,18 @@ end
 
 local CMD = {}
 
-function CMD.register_gate(conf, address)
+function CMD.register_gate(conf, servername, address)
     local i = {
         ip = conf.address,
         port = conf.port,
         address = address,
         count = 0,
     }
-    local l = server_list[conf.servername]
+    local l = server_list[servername]
     if l then
         l[#l+1] = i
     else
-        server_list[conf.servername] = {i}
+        server_list[servername] = {i}
     end
 end
 

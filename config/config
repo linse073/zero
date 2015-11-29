@@ -1,4 +1,4 @@
-root = "./../../"
+root = "../../"
 thread = 8
 logger = nil
 harbor = 0
@@ -8,4 +8,4 @@ lualoader = "lualib/loader.lua"
 luaservice = root.."service/?.lua;./service/?.lua"
 snax = root.."service/?.lua;./service/?.lua"
 cpath = "./cservice/?.so"
-lua_path = root.."lib/?.lua;./lualib/?.lua;./lualib/?/init.lua"
+lua_path = root.."lib/?.lua;"..root.."lib/?/init.lua;./lualib/?.lua;./lualib/?/init.lua"

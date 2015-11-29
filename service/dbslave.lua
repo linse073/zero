@@ -1,33 +1,37 @@
 local skynet = require "skynet"
 local redis = require "redis"
-local snax = require "snax"
 
 local db
 
-function init(conf)
+local CMD = {}
+
+function CMD.open(conf, server)
     db = redis.connect(conf)
-    local master = snax.queryservice("dbmaster")
-    master.req.register_slave(conf, skynet.self(), SERVER_NAME)
+    local master = skynet.queryservice("dbmaster")
+    skynet.call(conf.name, "lua", "register", server, conf.name, skynet.self())
 end
 
-function exit()
-    
-end
-
-function response.has(key)
+function CMD.has(key)
     return db:exists(key)
 end
 
-function response.get(key)
+function CMD.get(key)
     if db:exists(key) then
         return db:get(key)
     end
 end
 
-function response.save(key, value)
+function CMD.save(key, value)
     db:set(key, value)
 end
 
-function response.del(key)
+function CMD.del(key)
     db:del(key)
 end
+
+skynet.start(function()
+	skynet.dispatch("lua", function(session, source, command, ...)
+		local f = assert(CMD[command])
+        skynet.retpack(f(...))
+	end)
+end)

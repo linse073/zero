@@ -1,27 +1,24 @@
+local skynet = require "skynet"
 
 local assert = assert
 local string = string
 
 local server_list = {}
 
-function init()
-    
+local CMD = {}
+
+function CMD.register(servername, address)
+    assert(not server_list[servername], string.format("Already register server %s.", servername))
+    server_list[servername] = address
 end
 
-function exit()
-    
+function CMD.get(servername)
+    return assert(server_list[servername], string.format("No server %s.", servername))
 end
 
-function response.register_server(conf, handle, typename)
-    assert(not server_list[conf.servername], string.format("Already register server %s.", conf.servername))
-    local server = {
-        handle = handle,
-        typename = typename,
-    }
-    server_list[conf.servername] = server
-end
-
-function response.get_server(servername)
-    local server = assert(server_list[servername], string.format("No server %s.", servername))
-    return server.handle, server.typename
-end
+skynet.start(function()
+	skynet.dispatch("lua", function(session, source, command, ...)
+		local f = assert(CMD[command])
+        skynet.retpack(f(...))
+	end)
+end)

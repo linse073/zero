@@ -95,7 +95,8 @@ local code = tonumber(string.sub(result, 1, 3))
 assert(code == 200)
 socket.close(fd)
 
-local subid = crypt.base64decode(string.sub(result, 5))
+local subid, gate_ip, gate_port = crypt.base64decode(string.sub(msg, 5)):match("([^@]+)@([^:]+):(.+)")
+gate_port = tonumber(gate_port)
 
 print("login ok, subid=", subid)
 
@@ -152,7 +153,7 @@ end
 local index = 1
 
 print("connect")
-fd = assert(socket.connect("127.0.0.1", 8888))
+fd = assert(socket.connect(gate_ip, gate_port))
 last = ""
 
 local handshake = string.format("%s@%s#%s:%d", crypt.base64encode(token.user), crypt.base64encode(token.server), crypt.base64encode(subid), index)

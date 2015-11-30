@@ -98,7 +98,7 @@ end
 
 function proc.heart_beat(msg)
     timer.del_day_routine("afk")
-    return "heart_beat_response", {time = msg.time, server_time = skynet.time()}
+    return "heart_beat_response", {time = msg.time, server_time = skynet.time()*100}
 end
 
 function proc.get_account_info(msg)

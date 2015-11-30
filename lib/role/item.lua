@@ -111,7 +111,7 @@ function item.add_by_itemid(itemid, num)
             diff = overlay
         end
         local v = {
-            id = data.server.req.gen_item(),
+            id = skynet.call(data.server, "lua", "gen_item"),
             itemid = itemid,
             owner = 0,
             num = diff,

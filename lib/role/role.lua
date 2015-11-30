@@ -1,5 +1,4 @@
 local skynet = require "skynet"
-local snax = require "snax"
 local timer = require "timer"
 local share = require "share"
 local notify = require "notify"
@@ -39,13 +38,13 @@ end)
 
 function role.init(userdata)
     data = userdata
-    local server_mgr = snax.queryservice("server_mgr")
-    data.server = snax.bind(server_mgr.req.get_server(data.servername))
+    local server_mgr = skynet.queryservice("server_mgr")
+    date.server = skynet.call(server_mgr, "lua", "get", date.servername)
 	-- you may load user data from database
-    local master = snax.queryservice("dbmaster")
-    data.accdb = snax.bind(master.req.get_slave("accountdb"))
-    data.userdb = snax.bind(master.req.get_slave("userdb"))
-    local account = data.accdb.req.get(uid)
+    local master = skynet.queryservice("dbmaster")
+    data.accdb = skynet.call(master, "lua", "get", data.servername, "accountdb")
+    data.userdb = skynet.call(master, "lua", "get", data.servername, "userdb")
+    local account = skynet.call(data.accdb, "lua", "get", uid)
     if account then
         data.account = skynet.unpack(account)
     else
@@ -80,9 +79,9 @@ function role.save_routine()
     local user = data.user
     if user then
         if data.suser.level ~= user.level then
-            data.accdb.req.save(data.userid, skynet.packstring(data.account))
+            skynet.call(data.accdb, "lua", "save", data.userid, skynet.packstring(data.account))
         end
-        data.userdb.req.save(user.id, skynet.packstring(user))
+        skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
     end
 end
 
@@ -110,7 +109,7 @@ function proc.create_user(msg)
     if #account >= base.MAX_ROLE then
         error(error_code.MAX_ROLE)
     end
-    local roleid = data.server.req.gen_role(msg.name)
+    local roleid = skynet.call(data.server, "lua", "gen_role", msg.name)
     if roleid == 0 then
         error(error_code.ROLE_NAME_EXIST)
     end
@@ -121,7 +120,7 @@ function proc.create_user(msg)
         level = 1,
     }
     account[#account+1] = su
-    data.accdb.req.save(data.userid, skynet.packstring(account))
+    skynet.call(data.accdb, "lua", "save", data.userid, skynet.packstring(account))
     local u = {
         name = msg.name,
         id = roleid,
@@ -146,7 +145,7 @@ function proc.create_user(msg)
         task = {},
         friend = {},
     }
-    data.userdb.req.save(roleid, skynet.packstring(u))
+    skynet.call(data.userdb, "lua", "save", roleid, skynet.packstring(u))
     return "simple_user", su
 end
 
@@ -161,7 +160,7 @@ function proc.enter_game(msg)
     if not suser then
         error(error_code.ROLE_NOT_EXIST)
     end
-    local user = data.userdb.req.get(msg.id)
+    local user = skynet.call(data.userdb, "lua", "get", msg.id)
     if not user then
         error(error_code.ROLE_NOT_EXIST)
     end

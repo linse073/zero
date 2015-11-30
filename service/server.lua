@@ -10,12 +10,12 @@ local cs
 local CMD = {}
 
 local function check_name(name)
-    if namedb.req.has(name) then
+    if skynet.call(namedb, "lua", "has", name) then
         return 0
     else
         local roleid = status.roleid * 10000 + 1000 + serverid
         status.roleid = status.roleid + 1
-        namedb.req.save(name, roleid)
+        skynet.call(namedb, "lua", "save", name, roleid)
         return roleid
     end
 end
@@ -52,7 +52,7 @@ end
 function CMD.gen_role(name)
     local roleid = cs(check_name(name))
     if roleid ~= 0 then
-        userdb.req.set("status", skynet.packstring(status))
+        skynet.call(userdb, "lua", "save", "status", skynet.packstring(status))
     end
     return roleid
 end
@@ -60,7 +60,7 @@ end
 function CMD.gen_item()
     local itemid = status.itemid * 10000 + 2000 + serverid
     status.itemid = status.itemid + 1
-    userdb.req.set("status", skynet.packstring(status))
+    skynet.call(userdb, "lua", "save", "status", skynet.packstring(status))
     return itemid
 end
 

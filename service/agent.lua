@@ -14,11 +14,12 @@ skynet.register_protocol {
     unpack = skynet.tostring,
 }
 
-local msg = share.msg
-local name_msg = share.name_msg
-local base = share.base
-local sproto = share.sproto
 local proc = role.get_proc()
+local msg
+local name_msg
+local base
+local sproto
+
 local gate
 local data
 
@@ -86,6 +87,11 @@ function CMD.day_routine(source, key)
 end
 
 skynet.start(function()
+    msg = share.msg
+    name_msg = share.name_msg
+    base = share.base
+    sproto = share.sproto
+
 	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

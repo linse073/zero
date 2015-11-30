@@ -6,12 +6,17 @@ local assert = assert
 local error = error
 local string = string
 
-local carddata = share.carddata
-local base = share.base
+local carddata
+local base
 local data
 
 local card = {}
 local proc = {}
+
+skynet.init(function()
+    carddata = share.carddata
+    base = share.base
+end)
 
 function card.init(userdata)
     data = userdata

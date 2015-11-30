@@ -6,11 +6,15 @@ local assert = assert
 local error = error
 local string = string
 
-local stagedata = share.stagedata
+local stagedata
 local data
 
 local stage = {}
 local proc = {}
+
+skynet.init(function()
+    stagedata = share.stagedata
+end)
 
 function stage.init(userdata)
     data = userdata

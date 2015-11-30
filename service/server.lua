@@ -20,9 +20,9 @@ local function check_name(name)
     end
 end
 
-function CMD.open(conf)
+function CMD.open(conf, loginserver)
     for k, v in ipairs(conf.gate) do
-        local gate = skynet.newservice("gate")
+        local gate = skynet.newservice("gate", loginserver)
         skynet.call(gate, "lua", "open", v, conf.servername)
     end
     for k, v in ipairs(conf.db) do

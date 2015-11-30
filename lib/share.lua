@@ -1,38 +1,37 @@
 local sharedata = require "sharedata"
 local sprotoloader = require "sprotoloader"
 
-local share = {
-    -- share with all service
-    cardata = sharedata.query("carddata"),
-    itemdata = sharedata.query("itemdata"),
-    stagedata = sharedata.query("stagedata"),
-    taskdata = sharedata.query("taskdata"),
-
-    base = sharedata.query("base"),
-    error_code = sharedata.query("error_code"),
-
-    day_task = sharedata.query("day_task"),
-    achi_task = sharedata.query("achi_task"),
-
-    item_category = sharedata.query("item_category"),
-
-    msg = sharedata.query("msg"),
-    name_msg = sharedata.query("name_msg"),
-
-    -- share in current service
-    sproto = sprotoloader.load(1)
-}
-
-local base = share.base
-local item_category = share.item_category
+local share = {}
+local base
 
 -- item
 function share.is_equip(itemtype)
     return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
 end
 
-function share.get_item_category(itemtype)
-    return item_category[itemtype]
-end
+skynet.init(function()
+    -- share with all service
+    share.cardata = sharedata.query("carddata")
+    share.itemdata = sharedata.query("itemdata")
+    share.stagedata = sharedata.query("stagedata")
+    share.taskdata = sharedata.query("taskdata")
+
+    share.base = sharedata.query("base")
+    share.error_code = sharedata.query("error_code")
+
+    share.day_task = sharedata.query("day_task")
+    share.achi_task = sharedata.query("achi_task")
+
+    share.item_category = sharedata.query("item_category")
+
+    share.msg = sharedata.query("msg")
+    share.name_msg = sharedata.query("name_msg")
+
+    -- share in current service
+    share.sproto = sprotoloader.load(1)
+
+    -- local variable
+    base = share.base
+end)
 
 return share

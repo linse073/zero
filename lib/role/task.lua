@@ -5,16 +5,23 @@ local ipairs = ipairs
 local assert = assert
 local error = error
 local string = string
-
 local random = math.random
-local taskdata = share.taskdata
-local achi_task = share.achi_task
-local day_task = share.day_task
-local base = share.base
+
+local taskdata
+local achi_task
+local day_task
+local base
 local data
 
 local task = {}
 local proc = {}
+
+skynet.init(function()
+    taskdata = share.taskdata
+    achi_task = share.achi_task
+    day_task = share.day_task
+    base = share.base
+end)
 
 function task.init(userdata)
     data = userdata

@@ -6,14 +6,21 @@ local assert = assert
 local ipairs = ipairs
 local coroutine = coroutine
 local string = string
-local error_code = share.error_code
-local name_msg = share.name_msg
-local sproto = share.sproto
+
+local error_code
+local name_msg
+local sproto
 
 local notify = {}
 
 local notify_queue = {}
 local notify_coroutine
+
+skynet.init(function()
+    error_code = share.error_code
+    name_msg = share.name_msg
+    sproto = share.sproto
+end)
 
 local function pack()
     local l = #notify_queue

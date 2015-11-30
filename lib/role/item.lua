@@ -5,16 +5,23 @@ local ipairs = ipairs
 local assert = assert
 local error = error
 local string = string
-
-local itemdata = share.itemdata
-local base = share.base
-local is_equip = share.is_equip
-local get_item_category = share.get_item_category
 local random = math.random
+
+local itemdata
+local base
+local is_equip
+local item_category
 local data
 
 local item = {}
 local proc = {}
+
+skynet.init(function()
+    itemdata = share.itemdata
+    base = share.base
+    is_equip = share.is_equip
+    item_category = share.item_category
+end)
 
 function item.init(userdata)
     data = userdata
@@ -95,7 +102,7 @@ function item.add_by_itemid(itemid, num)
             end
         end
     end
-    local category = get_item_category(d.itemType)
+    local category = item_category[d.itemType]
     local ui = data.user.item
     while num > 0 do
         local diff = num

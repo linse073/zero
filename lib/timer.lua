@@ -1,4 +1,3 @@
-local snax = require "snax"
 local skynet = require "skynet"
 
 local assert = assert
@@ -6,10 +5,14 @@ local string = string
 
 local timer = {}
 
-local routine = snax.queryservice("routine")
+local routine
 local routine_list = {}
 local once_routine_list = {}
 local day_routine_list = {}
+
+skynet.init(function()
+    routine = skynet.queryservice("routine")
+end)
 
 local function gen_key(key)
     return string.format("%d_%s", skynet.self(), key)
@@ -19,14 +22,14 @@ function timer.add_routine(key, func, interval)
     key = gen_key(key)
     assert(not routine_list[key], string.format("Already has routine %s.", key))
     routine_list[key] = func
-    routine.req.add_routine(skynet.self(), key, interval)
+    skynet.call(routine, "lua", "add", skynet.self(), key, interval)
 end
 
 function timer.del_routine(key)
     key = gen_key(key)
     if routine_list[key] then
         routine_list[key] = nil
-        routine.req.del_routine(key)
+        skynet.call(routine, "lua", "del", key)
     end
 end
 
@@ -39,14 +42,14 @@ function timer.add_once_routine(key, func, interval)
     key = gen_key(key)
     assert(not once_routine_list[key], string.format("Already has once routine %s.", key))
     once_routine_list[key] = func
-    routine.req.add_once_routine(skynet.self(), key, interval)
+    skynet.call(routine, "lua", "add_once", skynet.self(), key, interval)
 end
 
 function timer.del_once_routine(key)
     key = gen_key(key)
     if once_routine_list[key] then
         once_routine_list[key] = nil
-        routine.req.del_once_routine(key)
+        skynet.call(routine, "lua", "del_once", key)
     end
 end
 
@@ -59,14 +62,14 @@ function timer.add_day_routine(key, func)
     key = gen_key(key)
     assert(not day_routine_list[key], string.format("Already has day routine %s.", key))
     day_routine_list[key] = func
-    routine.req.add_day_routine(skynet.self(), key)
+    skynet.call(routine, "lua", "add_day", skynet.self(), key)
 end
 
 function timer.del_day_routine(key)
     key = gen_key(key)
     if day_routine_list[key] then
         day_routine_list[key] = nil
-        routine.req.del_day_routine(key)
+        skynet.call(routine, "lua", "del_day", key)
     end
 end
 

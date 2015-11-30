@@ -1,3 +1,4 @@
+local skynet = require "skynet"
 local sharedata = require "sharedata"
 local sprotoloader = require "sprotoloader"
 

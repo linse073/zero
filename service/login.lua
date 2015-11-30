@@ -7,7 +7,7 @@ local print = print
 local error = error
 local string = string
 
-local server = require("config").login
+local server = require(skynet.getenv("config")).login
 
 local server_list = {}
 local user_online = {}

@@ -87,7 +87,7 @@ end
 -- call by self (when gate open)
 function server.register_handler(conf, name)
     servername = name
-    agent_mgr = skyne.queryservice("agent_mgr")
+    agent_mgr = skynet.queryservice("agent_mgr")
 	skynet.call(loginservice, "lua", "register_gate", conf, name, skynet.self())
 end
 

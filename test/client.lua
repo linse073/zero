@@ -1,4 +1,4 @@
-local root = "../../"
+local root = "./../../"
 package.cpath = "luaclib/?.so"
 package.path = root.."lib/?.lua;"..root.."test./?.lua;./lualib/?.lua;./lualib/?/init.lua"
 

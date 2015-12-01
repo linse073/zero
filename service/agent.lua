@@ -86,6 +86,15 @@ function CMD.day_routine(source, key)
     timer.call_day_routine(key)
 end
 
+local function exist_type(msgname)
+    local r, c = pcall(sproto:exist_type(msgname))
+    if r then
+        return c
+    else
+        return false
+    end
+end
+
 skynet.start(function()
     msg = share.msg
     name_msg = share.name_msg
@@ -102,7 +111,7 @@ skynet.start(function()
         local id = msg:byte(1) * 256 + msg:byte(2)
         local arg = msg:sub(3)
         local msgname = assert(msg[id], string.format("No protocol %d.", id))
-        if sproto:exist_type(msgname) then
+        if exist_type(msgname) then
             arg = sproto:pdecode(msgname, arg)
         end
         local f = assert(proc[msgname], string.format("No protocol procedure %s.", msgname))
@@ -118,7 +127,7 @@ skynet.start(function()
             }
             rmsg = "error_code"
         end
-        if sproto:exist_type(rmsg) then
+        if exist_type(rmsg) then
             info = sproto:pencode(rmsg, info)
         end
         local rid = assert(name_msg[rmsg], string.format("No protocol %s.", rmsg))

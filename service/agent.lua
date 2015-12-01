@@ -98,9 +98,9 @@ skynet.start(function()
 		skynet.ret(skynet.pack(f(source, ...)))
 	end)
 
-	skynet.dispatch("client", function(_, _, msg)
-        local id = msg:byte(1) * 256 + msg:byte(2)
-        local arg = msg:sub(3)
+	skynet.dispatch("client", function(_, _, content)
+        local id = content:byte(1) * 256 + content:byte(2)
+        local arg = content:sub(3)
         local msgname = assert(msg[id], string.format("No protocol %d.", id))
         if sproto:exist_type(msgname) then
             arg = sproto:pdecode(msgname, arg)
@@ -122,6 +122,6 @@ skynet.start(function()
             info = sproto:pencode(rmsg, info)
         end
         local rid = assert(name_msg[rmsg], string.format("No protocol %s.", rmsg))
-        return string.pack(">I2", rid) .. info
+        skynet.ret(string.pack(">I2", rid) .. info)
 	end)
 end)

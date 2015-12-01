@@ -98,7 +98,7 @@ socket.close(fd)
 local subid, gate_ip, gate_port = crypt.base64decode(string.sub(result, 5)):match("([^@]+)@([^:]+):(.+)")
 gate_port = tonumber(gate_port)
 
-print("login ok, subid=", subid)
+print(string.format("login ok, subid=%s, gate ip=%s, gate port=%d.", subid, gate_ip, gate_port))
 
 ----- connect to game server
 

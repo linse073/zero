@@ -1,6 +1,6 @@
 local root = "../../"
 package.cpath = "luaclib/?.so"
-package.path = root.."lib/?.lua;"..root.."test./?.lua;./lualib/?.lua;./lualib/?/init.lua"
+package.path = root.."lib/?.lua;./lualib/?.lua;./lualib/?/init.lua"
 
 local socket = require "clientsocket"
 local crypt = require "crypt"
@@ -9,7 +9,6 @@ local proto = require "proto"
 
 local assert = assert
 local print = print
-local pcall = pcall
 local tonumber = tonumber
 local error = error
 local string = string
@@ -109,18 +108,9 @@ print(string.format("login ok, subid=%s, gate ip=%s, gate port=%d.", subid, gate
 
 ----- connect to game server
 
-local function exist_type(msgname)
-    local r, c = pcall(sproto:exist_type(msgname))
-    if r then
-        return c
-    else
-        return false
-    end
-end
-
 local function send_request(session, msgname, msg)
     msg = msg or ""
-    if exist_type(msgname) then
+    if sproto:exist_type(msgname) then
         msg = sproto:pencode(msgname, msg)
     end
     local id = assert(proto.get_id(msgname))
@@ -138,7 +128,7 @@ local function recv_response(v)
         local id = content:byte(1) * 256 + content:byte(2)
         local msg = content:sub(3)
         local msgname = assert(proto.get_name(id))
-        if exist_type(msgname) then
+        if sproto:exist_type(msgname) then
             msg = sproto:pdecode(msgname, msg)
         end
         return true, msgname, session

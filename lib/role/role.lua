@@ -39,7 +39,7 @@ end)
 function role.init(userdata)
     data = userdata
     local server_mgr = skynet.queryservice("server_mgr")
-    date.server = skynet.call(server_mgr, "lua", "get", date.servername)
+    data.server = skynet.call(server_mgr, "lua", "get", data.servername)
 	-- you may load user data from database
     local master = skynet.queryservice("dbmaster")
     data.accdb = skynet.call(master, "lua", "get", data.servername, "accountdb")

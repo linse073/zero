@@ -11,8 +11,8 @@ if _VERSION ~= "Lua 5.3" then
 	error "Use lua 5.3"
 end
 
-local spfile = root.."lib/proto/proto.sp"
-sprotoloader.register(file, 1)
+local spfile = root.."proto/proto.sp"
+sprotoloader.register(spfile, 1)
 local sproto = sprotoloader.load(1)
 
 local fd = assert(socket.connect("127.0.0.1", 8001))
@@ -95,7 +95,7 @@ local code = tonumber(string.sub(result, 1, 3))
 assert(code == 200)
 socket.close(fd)
 
-local subid, gate_ip, gate_port = crypt.base64decode(string.sub(msg, 5)):match("([^@]+)@([^:]+):(.+)")
+local subid, gate_ip, gate_port = crypt.base64decode(string.sub(result, 5)):match("([^@]+)@([^:]+):(.+)")
 gate_port = tonumber(gate_port)
 
 print("login ok, subid=", subid)

@@ -77,3 +77,5 @@ function timer.call_day_routine(key)
     key = gen_key(key)
     assert(day_routine_list[key], string.format("No day routine %s.", key))()
 end
+
+return timer

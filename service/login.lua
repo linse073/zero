@@ -55,12 +55,12 @@ function server.login_handler(server, uid, secret)
         if user_online[id] then
             error(string.format("user %s is already online", id))
         end
-        subid = tostring(skynet.call(gate.address, "lua", "login", uid, secret))
+        subid = skynet.call(gate.address, "lua", "login", uid, secret)
         gate.count = gate.count + 1
     end
     user_login[id] = nil
     user_online[id] = {gate = gate, subid = subid, server = server}
-    return string.format("%s@%s:%s", subid, gate.ip, gate.port)
+    return string.format("%d@%s:%s", subid, gate.ip, gate.port)
 end
 
 local CMD = {}

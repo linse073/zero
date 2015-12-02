@@ -21,7 +21,7 @@ local spfile = root.."proto/proto.sp"
 sprotoloader.register(spfile, 1)
 local sproto = sprotoloader.load(1)
 
-local fd = assert(socket.connect("127.0.0.1", 8001))
+local fd = assert(socket.connect("192.168.1.202", 8001))
 
 local function writeline(fd, text)
 	socket.send(fd, text .. "\n")

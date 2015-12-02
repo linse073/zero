@@ -109,6 +109,11 @@ print(string.format("login ok, subid=%s, gate ip=%s, gate port=%d.", subid, gate
 ----- connect to game server
 
 local function send_request(session, msgname, msg)
+if type(msg) == "table" then
+ for k, v in pairs(msg) do
+  print(k, v)
+ end
+end
     msg = msg or ""
     if sproto:exist_type(msgname) then
         msg = sproto:pencode(msgname, msg)
@@ -131,6 +136,11 @@ local function recv_response(v)
         if sproto:exist_type(msgname) then
             msg = sproto:pdecode(msgname, msg)
         end
+if type(msg) == "table" then
+ for k, v in pairs(msg) do
+  print(k, v)
+ end
+end
         return true, msgname, session
     else
         return false, session
@@ -169,6 +179,8 @@ send_package(fd, handshake .. ":" .. crypt.base64encode(hmac))
 
 print(readpackage())
 print("===>", send_request(0, "get_account_info"))
+print("<===", recv_response(readpackage()))
+print("===>", send_request(1, "heart_beat", {time=os.time()*10000}))
 print("<===", recv_response(readpackage()))
 
 print("disconnect")

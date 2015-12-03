@@ -164,6 +164,7 @@ function proc.enter_game(msg)
     if not user then
         error({code = error_code.ROLE_NOT_EXIST})
     end
+    user = skynet.unpack(user)
     math.randomseed(skynet.time() + msg.id)
     data.suser = suser
     data.user = user

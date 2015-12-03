@@ -101,7 +101,7 @@ function proc.heart_beat(msg)
 end
 
 function proc.get_account_info(msg)
-    return "account_info", data.account
+    return "account_info", {user = data.account}
 end
 
 function proc.create_user(msg)

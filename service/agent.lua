@@ -19,6 +19,7 @@ local msg
 local name_msg
 local base
 local sproto
+local error_code
 
 local gate
 local data
@@ -91,6 +92,7 @@ skynet.start(function()
     name_msg = share.name_msg
     base = share.base
     sproto = share.sproto
+    error_code = share.error_code
 
 	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)
@@ -110,7 +112,7 @@ skynet.start(function()
         if not ok then
             if type(rmsg) == "string" then
                 skynet.error(rmsg)
-                rmsg = base.INTERNAL_ERROR
+                rmsg = error_code.INTERNAL_ERROR
             end
             info = {
                 id = id,

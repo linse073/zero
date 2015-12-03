@@ -112,12 +112,12 @@ skynet.start(function()
         if not ok then
             if type(rmsg) == "string" then
                 skynet.error(rmsg)
-                rmsg = error_code.INTERNAL_ERROR
+                info = {code = error_code.INTERNAL_ERROR}
+            else
+                assert(type(rmsg) == "table")
+                info = rmsg
             end
-            info = {
-                id = id,
-                code = rmsg,
-            }
+            info.id = id
             rmsg = "error_code"
         end
         if sproto:exist_type(rmsg) then

@@ -50,7 +50,7 @@ function CMD.open(conf, loginserver)
 end
 
 function CMD.gen_role(name)
-    local roleid = cs(check_name(name))
+    local roleid = cs(check_name, name)
     if roleid ~= 0 then
         skynet.call(userdb, "lua", "save", "status", skynet.packstring(status))
     end

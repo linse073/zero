@@ -44,7 +44,7 @@ function role.init(userdata)
     local master = skynet.queryservice("dbmaster")
     data.accdb = skynet.call(master, "lua", "get", data.servername, "accountdb")
     data.userdb = skynet.call(master, "lua", "get", data.servername, "userdb")
-    local account = skynet.call(data.accdb, "lua", "get", uid)
+    local account = skynet.call(data.accdb, "lua", "get", data.userid)
     if account then
         data.account = skynet.unpack(account)
     else

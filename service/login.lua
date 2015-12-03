@@ -8,6 +8,7 @@ local error = error
 local string = string
 
 local server = require(skynet.getenv("config")).login
+local ip = skynet.getenv("ip")
 
 local server_list = {}
 local user_online = {}
@@ -60,14 +61,13 @@ function server.login_handler(server, uid, secret)
     end
     user_login[id] = nil
     user_online[id] = {gate = gate, subid = subid, server = server}
-    return string.format("%d@%s:%s", subid, gate.ip, gate.port)
+    return string.format("%d@%s:%s", subid, ip, gate.port)
 end
 
 local CMD = {}
 
 function CMD.register_gate(conf, servername, address)
     local i = {
-        ip = conf.address,
         port = conf.port,
         address = address,
         count = 0,

@@ -2,7 +2,6 @@
 local config = {}
 
 local login = {
-	host = "0.0.0.0",
 	port = 8001,
     multilogin = true, -- allow same user login different server
 	name = "login_master",
@@ -13,12 +12,10 @@ local sample = {
     servername = "sample",
     gate = {
         {
-            address = "192.168.1.202",
             port = 8888,
             maxclient = 64,
         },
         {
-            address = "192.168.1.202",
             port = 8889,
             maxclient = 64,
         },

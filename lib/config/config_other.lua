@@ -1,8 +1,8 @@
 
 local config = {}
 
-local base = 8000
-local db_base = 0
+local base = 9000
+local db_base = 10
 
 local login = {
 	port = base + 1,

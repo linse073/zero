@@ -11,3 +11,5 @@ lua_path = root.."lib/?.lua;"..root.."lib/?/init.lua;./lualib/?.lua;./lualib/?/i
 
 config = "config.config"
 ip = "192.168.1.202"
+monitor = 8100
+debug_console = 8101

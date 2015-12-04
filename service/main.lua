@@ -3,9 +3,9 @@ local skynet = require "skynet"
 skynet.start(function()
 	skynet.error("Server start")
     -- debug service
-    skynet.newservice("monitor", 9000)
+    skynet.newservice("monitor", skynet.getenv("monitor"))
 	skynet.newservice("console")
-	skynet.newservice("debug_console", 8000)
+	skynet.newservice("debug_console", skynet.getenv("debug_console"))
 
     -- service
 	skynet.uniqueservice("cache")

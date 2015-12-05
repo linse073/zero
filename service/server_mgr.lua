@@ -12,6 +12,12 @@ function CMD.register(servername, address)
     server_list[servername] = address
 end
 
+function CMD.shutdown()
+    for k, v in pairs(server_list) do
+        skynet.call(v, "lua", "shutdown")
+    end
+end
+
 function CMD.get(servername)
     return assert(server_list[servername], string.format("No server %s.", servername))
 end

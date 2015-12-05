@@ -70,6 +70,12 @@ function server.kick_handler(uid, subid)
 	end
 end
 
+function server.shutdown_handler()
+    for k, v in pairs(users) do
+        skynet.call(u.agent, "lua", "logout", u.uid, u.subid)
+    end
+end
+
 -- call by self (when socket disconnect)
 function server.disconnect_handler(username)
 	local u = username_map[username]

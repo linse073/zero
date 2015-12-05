@@ -67,10 +67,7 @@ function CMD.afk(source)
     timer.add_once_routine("afk", logout_routine, 30000)
 end
 
-function CMD.exit(source, shutdown)
-    if shutdown and data then
-        logout()
-    end
+function CMD.exit(source)
     assert(not data, string.format("Agent exit error %s.", data.userid))
 	skynet.exit()
 end

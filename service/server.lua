@@ -6,6 +6,7 @@ local namedb
 local status
 local serverid
 local cs
+local gate_list = {}
 
 local CMD = {}
 
@@ -24,6 +25,7 @@ function CMD.open(conf, loginserver)
     for k, v in ipairs(conf.gate) do
         local gate = skynet.newservice("gate", loginserver)
         skynet.call(gate, "lua", "open", v, conf.servername)
+        gate_list[#gate_list] = gate
     end
     for k, v in ipairs(conf.db) do
         local db = skynet.newservice("dbslave")
@@ -47,6 +49,13 @@ function CMD.open(conf, loginserver)
     serverid = conf.serverid
     local server_mgr = skynet.queryservice("server_mgr")
     skynet.call(server_mgr, "lua", "register", conf.servername, skynet.self())
+end
+
+function CMD.shutdown()
+    for k, v in ipairs(gate_list) do
+        skynet.call(v, "lua", "close")
+        skynet.call(v, "lua", "shutdown")
+    end
 end
 
 function CMD.gen_role(name)

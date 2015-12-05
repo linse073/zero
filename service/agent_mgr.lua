@@ -34,7 +34,7 @@ local function del_agent(num)
     fork_del = false
     for k, v in ipairs(t) do
         -- NOTICE: logout may call skynet.exit, so you should use pcall.
-        pcall(skynet.call, v, "lua", "exit", false)
+        pcall(skynet.call, v, "lua", "exit")
     end
 end
 
@@ -68,13 +68,6 @@ function CMD.free(agent)
             fork_del = true
         end
     end
-end
-
-function CMD.exit()
-    for k, v in pairs(agent_list) do
-        pcall(skynet.call, v, "lua", "exit", true)
-    end
-    skynet.exit()
 end
 
 skynet.start(function()

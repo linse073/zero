@@ -74,6 +74,7 @@ function server.shutdown_handler()
     for k, v in pairs(users) do
         skynet.call(u.agent, "lua", "logout", u.uid, u.subid)
     end
+    skynet.exit()
 end
 
 -- call by self (when socket disconnect)

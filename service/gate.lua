@@ -72,7 +72,7 @@ end
 
 function server.shutdown_handler()
     for k, v in pairs(users) do
-        skynet.call(u.agent, "lua", "logout", u.uid, u.subid)
+        skynet.call(v.agent, "lua", "logout", v.uid, v.subid)
     end
     skynet.exit()
 end

@@ -168,7 +168,7 @@ end
 
 local index = 1
 
-print("connect")
+print("connect", gate_ip, gate_port)
 fd = assert(socket.connect(gate_ip, gate_port))
 last = ""
 

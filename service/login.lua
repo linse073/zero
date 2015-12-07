@@ -3,7 +3,6 @@ local crypt = require "crypt"
 local skynet = require "skynet"
 
 local assert = assert
-local print = print
 local error = error
 local string = string
 
@@ -46,7 +45,7 @@ function server.auth_handler(token)
 end
 
 function server.login_handler(server, uid, secret)
-	print(string.format("%s@%s is login, secret is %s", uid, server, crypt.hexencode(secret)))
+	skynet.error(string.format("%s@%s is login, secret is %s", uid, server, crypt.hexencode(secret)))
 	local gate = get_gate(server)
     -- allow same user login different server
     local id = gen_id(uid, server)
@@ -95,7 +94,7 @@ function CMD.logout(uid, server, subid)
     local id = gen_id(uid, server)
 	local u = user_online[id]
 	if u then
-		print(string.format("%s is logout", id))
+		skynet.error(string.format("%s is logout", id))
         local gate = u.gate
         gate.count = gate.count - 1
 		user_online[id] = nil

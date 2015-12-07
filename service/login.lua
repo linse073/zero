@@ -19,12 +19,18 @@ function gen_id(uid, server)
 end
 
 function get_gate(servername)
-    local l = assert(server_list[servername], string.format("Unknown server %s.", servername))
+    local l = server_list[servername]
+    if not l then
+        error(string.format("Unknown server %s.", servername))
+    end
     local gate
-    for k, v in ipairs(l) do
+    for k, v in pairs(l) do
         if not gate or gate.count > v.count then
             gate = v
         end
+    end
+    if not gate then
+        error(string.format("Unknown server %s.", servername))
     end
     return gate
 end
@@ -41,7 +47,7 @@ end
 
 function server.login_handler(server, uid, secret)
 	print(string.format("%s@%s is login, secret is %s", uid, server, crypt.hexencode(secret)))
-	local gate = assert(get_gate(server), "Unknown server")
+	local gate = get_gate(server)
     -- allow same user login different server
     local id = gen_id(uid, server)
     local subid
@@ -73,11 +79,16 @@ function CMD.register_gate(conf, servername, address)
         count = 0,
     }
     local l = server_list[servername]
-    if l then
-        l[#l+1] = i
-    else
-        server_list[servername] = {i}
+    if not l then
+        l = {}
+        server_list[servername] = l
     end
+    l[address] = i
+end
+
+function CMD.unregister_gate(servername, address)
+    local l = assert(server_list[servername], string.format("Unknown server %s.", servername))
+    l[address] = nil
 end
 
 function CMD.logout(uid, server, subid)

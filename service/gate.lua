@@ -71,6 +71,7 @@ function server.kick_handler(uid, subid)
 end
 
 function server.shutdown_handler()
+    skynet.call(loginservice, "lua", "unregister_gate", servername, skynet.self())
     for k, v in pairs(users) do
         skynet.call(v.agent, "lua", "logout", v.uid, v.subid)
     end

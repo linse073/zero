@@ -3,7 +3,9 @@ local skynet = require "skynet"
 skynet.start(function()
 	skynet.error("Server start")
     -- debug service
-	skynet.newservice("console")
+    if not skynet.getenv("daemon") then
+        skynet.newservice("console")
+    end
 	skynet.newservice("debug_console", skynet.getenv("debug_console"))
 
     -- service

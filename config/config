@@ -1,10 +1,11 @@
 root = "../../"
 thread = 8
-logger = nil
+logger = "./log"
 harbor = 0
 start = "main"
 bootstrap = "snlua bootstrap"	-- The service for bootstrap
 lualoader = "lualib/loader.lua"
+daemon = "./skynet.pid"
 luaservice = root.."service/?.lua;./service/?.lua"
 cpath = "./cservice/?.so"
 lua_path = root.."lib/?.lua;"..root.."lib/?/init.lua;./lualib/?.lua;./lualib/?/init.lua"

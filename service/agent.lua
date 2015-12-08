@@ -45,14 +45,7 @@ local function logout()
     gate = nil
     skynet.error(string.format("%s is logout", d.userid))
     role.exit()
-    timer.del_once_routine("afk")
     skynet.call(g, "lua", "logout", d.userid, d.subid)
-end
-
-local function logout_routine()
-    if data then
-        logout()
-    end
 end
 
 function CMD.logout(source, uid, sid)
@@ -64,7 +57,7 @@ end
 
 function CMD.afk(source)
 	-- the connection is broken, but the user may back
-    timer.add_once_routine("afk", logout_routine, 30000)
+    skynet.error(string.format("%s afk", d.userid))
 end
 
 function CMD.exit(source)

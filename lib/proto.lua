@@ -2,7 +2,7 @@
 local msg = {
     [1000] = "error_code",
     [1001] = "notify_info",
-    [1002] = "nope",
+    [1002] = "logout",
     [1003] = "heart_beat",
     [1004] = "heart_beat_response",
 

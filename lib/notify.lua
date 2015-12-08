@@ -23,23 +23,18 @@ skynet.init(function()
 end)
 
 local function pack()
-    local l = #notify_queue
-    if l > 0 then
-        local content = ""
-        for k, v in ipairs(notify_queue) do
-            local m, c = v[1], v[2]
-            if sproto:exist_type(m) then
-                c = sproto:pencode(m, c)
-            end
-            local id = assert(name_msg[m], string.format("No protocol %s.", m))
-            c = string.pack(">s2", string.pack(">I2", id) .. c)
-            content = content .. c
+    local content = ""
+    for k, v in ipairs(notify_queue) do
+        local m, c = v[1], v[2]
+        if sproto:exist_type(m) then
+            c = sproto:pencode(m, c)
         end
-        notify_queue = {}
-        return "notofy_info", content
-    else
-        return "nope", ""
+        local id = assert(name_msg[m], string.format("No protocol %s.", m))
+        c = string.pack(">s2", string.pack(">I2", id) .. c)
+        content = content .. c
     end
+    notify_queue = {}
+    return "notofy_info", content
 end
 
 function notify.send()
@@ -63,7 +58,7 @@ end
 
 function notify.exit()
     if notify_coroutine then
-        skynet.wakeup(notify_coroutine)
+        notify.add("logout", "")
     end
 end
 

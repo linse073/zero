@@ -38,6 +38,8 @@ end)
 
 function role.init(userdata)
     data = userdata
+    data.heart_beat = 0
+    timer.add_routine("heart_beat", role.heart_beat, 30000)
     local server_mgr = skynet.queryservice("server_mgr")
     data.server = skynet.call(server_mgr, "lua", "get", data.servername)
 	-- you may load user data from database
@@ -61,6 +63,7 @@ function role.exit()
     end
     timer.del_routine("save_role")
     timer.del_day_routine("update_day")
+    timer.del_routine("heart_beat")
     local user = data.user
     if user then
         skynet.call(role_mgr, "lua", "logout", user.id)
@@ -85,6 +88,15 @@ function role.save_routine()
     end
 end
 
+function role.heart_beat()
+    if data.heart_beat == 0 then
+        skynet.error("heart beat logout")
+        skynet.call(skynet.self(), "lua", "logout", data.userid, data.subid) -- data is nil
+    else
+        skynet.error(string.format("heart beat %d", data.heart_beat))
+    end
+end
+
 function role.get_proc()
     return proc
 end
@@ -96,7 +108,8 @@ function proc.notify_info(msg)
 end
 
 function proc.heart_beat(msg)
-    timer.del_day_routine("afk")
+    data.heart_beat = data.heart_beat + 1
+    skynet.error(string.format("heart beat message %d", data.heart_beat))
     return "heart_beat_response", {time = msg.time, server_time = skynet.time()*100}
 end
 

@@ -34,7 +34,7 @@ local function pack()
         content = content .. c
     end
     notify_queue = {}
-    return "notofy_info", content
+    return "notify_info", content
 end
 
 function notify.send()

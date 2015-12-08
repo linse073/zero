@@ -57,7 +57,9 @@ end
 
 function CMD.afk(source)
 	-- the connection is broken, but the user may back
-    skynet.error(string.format("%s afk", d.userid))
+    if data then
+        skynet.error(string.format("%s afk", data.userid))
+    end
 end
 
 function CMD.exit(source)

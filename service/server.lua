@@ -23,7 +23,7 @@ end
 
 function CMD.open(conf, loginserver)
     for k, v in ipairs(conf.gate) do
-        local gate = skynet.newservice("gate", loginserver)
+        local gate = skynet.newservice("gated", loginserver)
         skynet.call(gate, "lua", "open", v, conf.servername)
         gate_list[#gate_list+1] = gate
     end

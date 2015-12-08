@@ -21,7 +21,7 @@ skynet.start(function()
         local dbslave = skynet.newservice("dbslave")
         skynet.call(dbslave, "lua", "open", v, "global")
     end
-	local loginserver = skynet.newservice("login")
+	local loginserver = skynet.newservice("logind")
     for k, v in ipairs(config.game) do
         local server = skynet.newservice("server")
         skynet.call(server, "lua", "open", v, loginserver)

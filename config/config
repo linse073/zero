@@ -1,6 +1,7 @@
 root = "../../"
 thread = 8
-logger = nil
+logger = "userlog"
+logservice = "snlua"
 harbor = 0
 start = "main"
 bootstrap = "snlua bootstrap"	-- The service for bootstrap

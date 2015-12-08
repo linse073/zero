@@ -34,7 +34,6 @@ function timer.del_routine(key)
 end
 
 function timer.call_routine(key)
-    key = gen_key(key)
     assert(routine_list[key], string.format("No routine %s.", key))()
 end
 
@@ -54,7 +53,6 @@ function timer.del_once_routine(key)
 end
 
 function timer.call_once_routine(key)
-    key = gen_key(key)
     assert(once_routine_list[key], string.format("No once routine %s.", key))()
 end
 
@@ -74,7 +72,6 @@ function timer.del_day_routine(key)
 end
 
 function timer.call_day_routine(key)
-    key = gen_key(key)
     assert(day_routine_list[key], string.format("No day routine %s.", key))()
 end
 

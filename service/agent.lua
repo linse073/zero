@@ -21,7 +21,6 @@ local base
 local sproto
 local error_code
 
-local gate
 local data
 
 local CMD = {}
@@ -29,8 +28,8 @@ local CMD = {}
 function CMD.login(source, uid, sid, secret, servername)
 	-- you may use secret to make a encrypted data stream
 	skynet.error(string.format("%s is login", uid))
-	gate = source
     data = {
+        gate = source,
         userid = uid,
         subid = sid,
         servername = servername,
@@ -40,12 +39,10 @@ end
 
 local function logout()
     local d = data
-    local g = gate
     data = nil
-    gate = nil
     skynet.error(string.format("%s is logout", d.userid))
     role.exit()
-    skynet.call(g, "lua", "logout", d.userid, d.subid)
+    skynet.call(d.gate, "lua", "logout", d.userid, d.subid)
 end
 
 function CMD.logout(source, uid, sid)
@@ -59,6 +56,7 @@ function CMD.afk(source)
 	-- the connection is broken, but the user may back
     if data then
         skynet.error(string.format("%s afk", data.userid))
+        role.lost()
     end
 end
 

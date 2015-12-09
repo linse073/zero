@@ -34,7 +34,6 @@ skynet.start(function()
 	skynet.register ".logger"
     if skynet.getenv("daemon") then
         change_log()
-        skynet.timeout(8640000, change_log) -- one day
         p = print_file
     else
         p = print

@@ -94,6 +94,7 @@ end
 
 function role.heart_beat()
     if data.heart_beat == 0 then
+        skynet.error(string.format("heart beat kick user %s %d.", data.userid, data.subid))
         skynet.call(data.gate, "lua", "kick", data.userid, data.subid) -- data is nil
     else
         data.heart_beat = 0

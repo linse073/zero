@@ -62,6 +62,7 @@ end
 
 -- call by login server
 function server.kick_handler(uid, subid)
+    skynet.error(string.format("kick user %s %d.", uid, subid))
 	local u = users[uid]
 	if u then
 		local username = msgserver.username(uid, subid, servername)

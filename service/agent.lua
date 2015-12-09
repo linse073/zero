@@ -56,7 +56,6 @@ function CMD.afk(source)
 	-- the connection is broken, but the user may back
     if data then
         skynet.error(string.format("%s afk", data.userid))
-        role.lost()
     end
 end
 

@@ -73,10 +73,6 @@ function role.exit()
     data = nil
 end
 
-function role.lost()
-    data.heart_beat = 0
-end
-
 function role.update_day()
     local pt = task.update_day()
     notify.add("update_day", {task = pt})

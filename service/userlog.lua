@@ -20,13 +20,13 @@ local function change_log()
     if f then
         f:close()
     end
-    local name = skynet.getenv(root).."log/"..date("%m_%d_%Y.log", floor(skynet.time()))
+    local name = skynet.getenv("root").."log/"..date("%m_%d_%Y.log", floor(skynet.time()))
     f = assert(io.open(name, "a"), string.format("Can't open log file %s.", name))
     skynet.timeout(8640000, change_log) -- one day
 end
 
 local function print_file(msg)
-    f:write(msg)
+    f:write(msg .. "\n")
     f:flush()
 end
 
@@ -39,8 +39,4 @@ skynet.start(function()
     else
         p = print
     end
-
-	skynet.dispatch("lua", function(session, source, command, ...)
-		assert(CMD[command])(...)
-	end)
 end)

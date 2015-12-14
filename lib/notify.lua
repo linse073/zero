@@ -39,7 +39,7 @@ end
 
 function notify.send()
     if notify_coroutine then
-        error({code = error_code.ALREADY_NOTIFY})
+        error{code = error_code.ALREADY_NOTIFY}
     end
     if #notify_queue == 0 then
         notify_coroutine = coroutine.running()

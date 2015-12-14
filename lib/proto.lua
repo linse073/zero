@@ -16,10 +16,13 @@ local msg = {
     [2007] = "friend_info",
     [2007] = "rank_info",
     [2008] = "user_all",
+    [2009] = "user_update",
 
     [2100] = "get_account_info",
     [2101] = "create_user",
     [2102] = "enter_game",
+
+    [2200] = "use_item",
 }
 local name_msg = {}
 

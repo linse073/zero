@@ -92,6 +92,15 @@
     friend 5 : *friend_info
 }
 
+.user_update {
+    user 0 : user_info
+    item 1 : *item_info
+    stage 2 : *stage_info
+    task 3 : *task_info
+    card 4 : *card_info
+    friend 5 : *friend_info
+}
+
 .update_day {
     task 0 : *integer
 }
@@ -117,4 +126,14 @@
 
 .enter_game {
     id 0 : integer
+}
+
+.use_item {
+    id 0 : integer
+    pos 0 : integer
+}
+
+.compound_item {
+    id 0 : integer
+    num 0 : integer
 }

@@ -29,8 +29,7 @@ end
 
 function card.enter()
     local pack = {}
-    local dc = {}
-    data.card = dc
+    data.card = {}
     data.equip_card = {}
     for k, v in pairs(data.user.card) do
         card.add(v)

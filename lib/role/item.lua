@@ -7,6 +7,7 @@ local assert = assert
 local error = error
 local string = string
 local random = math.random
+local floor = math.floor
 
 local itemdata
 local base
@@ -34,15 +35,39 @@ end
 
 function item.enter()
     local pack = {}
-    local di = {}
-    data.item = di
+    data.item = {}
     data.equip_item = {}
     data.type_item = {}
+    data.selling_item = {}
+    data.selled_item = {}
     for k, v in pairs(data.user.item) do
         item.add(v)
         pack[#pack+1] = v
     end
+    item.post_add()
+    -- TODO: calculate player attribute
     return "item", pack
+end
+
+function item.post_add()
+    for k, v in pairs(data.item) do
+        local i = v[1]
+        if i.host ~= 0 then
+            local host = data.item[i.host]
+            if host then
+                local t = host[3]
+                if not t then
+                    t = {}
+                    host[3] = t
+                end
+                t[i.pos] = v
+                v[4] = host
+            else
+                skynet.error(string.format("Item %d host %d not exist.", i.id, i.host))
+                i.host = 0
+            end
+        end
+    end
 end
 
 function item.add(v, d)
@@ -50,31 +75,40 @@ function item.add(v, d)
         d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
     end
     local i = {v, d}
-    if v.pos ~= 0 then
-        local equip_item = data.equip_item
-        if is_equip(d.itemType) then
-            local pos = d.itemType - base.ITEM_TYPE_HEAD + 1
-            if pos ~= v.pos then
-                skynet.error(string.format("Equip %d illegal position %d.", v.id, v.pos))
-                v.pos = pos
-            end
-            local ei = equip_item[pos]
-            if ei then
-                skynet.error(string.format("Position %d already has equip %d.", pos, ei[1].id))
-                v.pos = 0
+    data.item[v.id] = i
+    if v.status == base.ITEM_STATUS_NORMAL then
+        if v.pos ~= 0 then
+            if is_equip(d.itemType) then
+                local pos = d.itemType - base.ITEM_TYPE_HEAD + 1
+                if pos ~= v.pos then
+                    skynet.error(string.format("Equip %d illegal position %d.", v.id, v.pos))
+                    v.pos = pos
+                end
+                local equip_item = data.equip_item
+                local ei = equip_item[pos]
+                if ei then
+                    skynet.error(string.format("Position %d already has equip %d.", pos, ei[1].id))
+                    v.pos = 0
+                else
+                    equip_item[pos] = i
+                end
             else
-                equip_item[pos] = i
+                skynet.error(string.format("Item %d illegal position %d.", v.id, v.pos))
+                v.pos = 0
             end
         end
+        local type_item = data.type_item
+        local t = type_item[v.itemid]
+        if not t then
+            t = {}
+            type_item[v.itemid] = t
+        end
+        t[v.id] = i
+    elseif v.status == base.ITEM_STATUS_SELLING then
+        data.selling_item[v.id] = i
+    elseif v.status == base.ITEM_STATUS_SELLED then
+        data.selled_item[v.id] = i
     end
-    data.item[v.id] = i
-    local type_item = data.type_item
-    local t = type_item[v.itemid]
-    if not t then
-        t = {}
-        type_item[v.itemid] = t
-    end
-    t[v.id] = i
     return i
 end
 
@@ -133,7 +167,7 @@ function item.add_by_itemid(itemid, num)
         ui[v.id] = v
         pack[#pack+1] = v
     end
-    -- TODO: send to client
+    return pack
 end
 
 function item.rand_prop(v, r)
@@ -152,10 +186,106 @@ function item.rand_prop(v, r)
     end
 end
 
+function item.count(itemid)
+    local count = 0
+    local items = data.type_item[itemid]
+    for k, v in pairs(items) do
+        count = count + v[1].num
+    end
+    return count
+end
+
+function item.get_by_pos(pos)
+    if pos ~= 0 then
+        return data.equip_item[pos]
+    end
+end
+
+function item.use(i, pos)
+    local pack = {}
+    local iv = i[1]
+    local update = {}
+    if iv.status == base.ITEM_STATUS_NORMAL then
+        local oi = item.get_by_pos(pos)
+        if oi then
+            local oiv = oi[1]
+            oiv.pos = pos
+            item.set(pos, oi)
+            pack[#pack+1] = {id=oiv.id, pos=pos}
+        else
+            item.set(pos)
+        end
+    elseif iv.status == base.ITEM_STATUS_SELLING then
+        iv.status = base.ITEM_STATUS_NORMAL
+        iv.status_time = floor(skynet.time())
+        local type_item = data.type_item
+        local t = type_item[iv.itemid]
+        if not t then
+            t = {}
+            type_item[iv.itemid] = t
+        end
+        t[iv.id] = i
+        data.selling_item[iv.id] = nil
+        update.status = iv.status
+        update.status_time = iv.status_time
+    end
+    iv.pos = pos
+    update.pos = pos
+    item.set(pos, i)
+    pack[#pack+1] = update
+    return pack
+end
+
+function item.set(pos, i)
+    if pos ~= 0 then
+        data.equip_item[pos] = i
+    end
+end
+
 function item.get_proc()
     return proc
 end
 
 ----------------------------protocol process------------------------
+
+function proc.use_item(msg)
+    local i = data.item[msg.id]
+    if not i then
+        error{code = error_code.ITEM_NOT_EXIST}
+    end
+    local iv = i[1]
+    if iv.pos == msg.pos then
+        error{code = error_code.ERROR_ITEM_POSITION}
+    end
+    if iv.status ~= base.ITEM_STATUS_NORMAL then
+        error{code = error_code.ERROR_ITEM_STATUS}
+    end
+    local idata = i[2]
+    local user = data.user
+    if user.level < idata.needLv then
+        error{code = error_code.ROLE_LEVEL_LIMIT}
+    end
+    if idata.needJob ~= 0 and user.prof ~= idata.needJob then
+        error{code = error_code.ERROR_ROLE_PROFESSION}
+    end
+    if msg.pos ~= 0 then
+        if not share.is_equip(idata.itemType) then
+            error{code = error_code.ERROR_ITEM_POSITION}
+        end
+        local pos = idata.itemType - base.ITEM_TYPE_HEAD + 1
+        if msg.pos ~= pos then
+            error{code = error_code.ERROR_ITEM_POSITION}
+        end
+    end
+    local pack = {}
+    pack.item = item.use(i, msg.pos)
+    -- TODO: update mission
+    -- TODO: calculate player attribute
+    return "user_update", pack
+end
+
+function proc.compound_item(msg)
+    
+end
 
 return item

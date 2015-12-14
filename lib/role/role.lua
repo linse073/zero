@@ -119,11 +119,11 @@ end
 function proc.create_user(msg)
     local account = data.account
     if #account >= base.MAX_ROLE then
-        error({code = error_code.MAX_ROLE})
+        error{code = error_code.MAX_ROLE}
     end
     local roleid = skynet.call(data.server, "lua", "gen_role", msg.name)
     if roleid == 0 then
-        error({code = error_code.ROLE_NAME_EXIST})
+        error{code = error_code.ROLE_NAME_EXIST}
     end
     local su = {
         name = msg.name,
@@ -170,11 +170,11 @@ function proc.enter_game(msg)
         end
     end
     if not suser then
-        error({code = error_code.ROLE_NOT_EXIST})
+        error{code = error_code.ROLE_NOT_EXIST}
     end
     local user = skynet.call(data.userdb, "lua", "get", msg.id)
     if not user then
-        error({code = error_code.ROLE_NOT_EXIST})
+        error{code = error_code.ROLE_NOT_EXIST}
     end
     user = skynet.unpack(user)
     math.randomseed(skynet.time() + msg.id)

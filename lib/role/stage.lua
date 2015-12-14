@@ -27,8 +27,7 @@ end
 
 function stage.enter()
     local pack = {}
-    local ds = {}
-    data.stage = ds
+    data.stage = {}
     for k, v in pairs(data.user.stage) do
         stage.add(v)
         pack[#pack+1] = v

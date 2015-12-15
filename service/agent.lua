@@ -110,8 +110,10 @@ skynet.start(function()
                 assert(type(rmsg) == "table")
                 info = rmsg
             end
-            info.id = id
+            info.msgid = id
             rmsg = "error_code"
+        elseif rmsg == "user_update" then
+            info.msgid = id
         end
         if sproto:exist_type(rmsg) then
             info = sproto:pencode(rmsg, info)

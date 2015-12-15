@@ -93,12 +93,8 @@
 }
 
 .user_update {
-    user 0 : user_info
-    item 1 : *item_info
-    stage 2 : *stage_info
-    task 3 : *task_info
-    card 4 : *card_info
-    friend 5 : *friend_info
+    msgid 0 : integer
+    update 0 : user_all
 }
 
 .update_day {
@@ -115,7 +111,7 @@
 }
 
 .error_code {
-    id 0 : integer
+    msgid 0 : integer
     code 1 : integer
 }
 
@@ -134,6 +130,6 @@
 }
 
 .compound_item {
-    id 0 : integer
+    itemid 0 : integer
     num 0 : integer
 }

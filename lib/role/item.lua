@@ -112,9 +112,11 @@ function item.add(v, d)
     return i
 end
 
-function item.add_by_itemid(itemid, num)
+function item.add_by_itemid(itemid, num, d)
     local pack = {}
-    local d = assert(itemdata[itemid], string.format("No item data %d.", itemid))
+    if not d then
+        d = assert(itemdata[itemid], string.format("No item data %d.", itemid))
+    end
     local overlay = d.overlay
     if overlay > 1 then
         local t = data.type_item[itemid]
@@ -242,6 +244,54 @@ function item.set(pos, i)
     end
 end
 
+function item.del_by_itemid(itemid, num)
+    local pack = {}
+    local t = assert(data.type_item[itemid], string.format("Item %d not exist.", itemid))
+    for k, v in pairs(t) do
+        local vi = v[1]
+        local diff = num
+        if diff > vi.num then
+            diff = num
+        end
+        vi.num = vi.num - diff
+        num = num - diff
+        local p = {
+            id = vi.id,
+            num = vi.num,
+        }
+        if vi.num == 0 then
+            item.del(v)
+            p.status = vi.status
+            p.status_time = vi.status_time
+        end
+        pack[#pack+1] = p
+        if num == 0 then
+            break
+        end
+    end
+    assert(num==0, string.format("Item %d num %d insufficient.", itemid, num))
+    return pack
+end
+
+-- NOTICE: can't delete equip and equip that has stone
+function item.del(i)
+    local iv = i[1]
+    assert(not i[3], string.format("Item %d has stone.", iv.id))
+    assert(iv.pos==0, string.format("Can't delete equip %d.", iv.id))
+    iv.status = base.ITEM_STATUS_DELETE
+    iv.status_time = floor(skynet.time())
+    if iv.status == base.ITEM_STATUS_NORMAL then
+        local t = assert(data.type_item[iv.itemid], string.format("Item %d not exist.", iv.itemid))
+        t[iv.id] = nil
+    elseif iv.status == base.ITEM_STATUS_SELLING then
+        data.selling_item[iv.id] = nil
+    elseif iv.status == base.ITEM_STATUS_SELLED then
+        data.selled_item[iv.id] = nil
+    end
+    data.user.item[iv.id] = nil
+    data.item[iv.id] = nil
+end
+
 function item.get_proc()
     return proc
 end
@@ -281,11 +331,34 @@ function proc.use_item(msg)
     pack.item = item.use(i, msg.pos)
     -- TODO: update mission
     -- TODO: calculate player attribute
-    return "user_update", pack
+    return "user_update", {update=pack}
 end
 
 function proc.compound_item(msg)
-    
+    local d = itemdata[msg.itemid]
+    if not d then
+        error{code = error_code.ITEM_ID_NOT_EXIST}
+    end
+    local compounditem = d.compos
+    if compounditem == 0 then
+        error{code = error_code.CAN_NOT_COMPOUND_ITEM}
+    end
+    local compounddata = assert(itemdata[compounditem], string.format("Compound item %d not exist.", compounditem))
+    local num = item.count(msg.itemid)
+    if msg.num and msg.num < num then
+        num = msg.num
+    end
+    local comnum = floor(num*0.2)
+    if comnum == 0 then
+        error{code = error_code.ITEM_NUM_LIMIT}
+    end
+    local pitem = {}
+    share.merge(pitem, item.del_by_itemid(msg.itemid, num))
+    share.merge(pitem, item.add_by_itemid(compounditem, comnum, compounddata))
+    local pack = {}
+    pack.item = pitem
+    -- TODO: update mission
+    return "user_update", {update=pack}
 end
 
 return item

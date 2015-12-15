@@ -23,6 +23,7 @@ local msg = {
     [2102] = "enter_game",
 
     [2200] = "use_item",
+    [2201] = "compound_item",
 }
 local name_msg = {}
 

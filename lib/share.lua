@@ -10,6 +10,13 @@ function share.is_equip(itemtype)
     return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
 end
 
+-- base function
+function share.merge(t1, t2)
+    for k, v in ipairs(t2) do
+        t1[#t1+1] = v
+    end
+end
+
 skynet.init(function()
     -- share with all service
     share.cardata = sharedata.query("carddata")

@@ -15,6 +15,9 @@ local error_code = {
     ITEM_NOT_EXIST = 2100,
     ERROR_ITEM_POSITION = 2101,
     ERROR_ITEM_STATUS = 2102,
+    ITEM_ID_NOT_EXIST = 2103,
+    CAN_NOT_COMPOUND_ITEM = 2104,
+    ITEM_NUM_LIMIT = 2105,
 }
 
 return error_code

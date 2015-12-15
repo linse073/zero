@@ -278,8 +278,6 @@ function item.del(i)
     local iv = i[1]
     assert(not i[3], string.format("Item %d has stone.", iv.id))
     assert(iv.pos==0, string.format("Can't delete equip %d.", iv.id))
-    iv.status = base.ITEM_STATUS_DELETE
-    iv.status_time = floor(skynet.time())
     if iv.status == base.ITEM_STATUS_NORMAL then
         local t = assert(data.type_item[iv.itemid], string.format("Item %d not exist.", iv.itemid))
         t[iv.id] = nil
@@ -288,6 +286,8 @@ function item.del(i)
     elseif iv.status == base.ITEM_STATUS_SELLED then
         data.selled_item[iv.id] = nil
     end
+    iv.status = base.ITEM_STATUS_DELETE
+    iv.status_time = floor(skynet.time())
     data.user.item[iv.id] = nil
     data.item[iv.id] = nil
 end

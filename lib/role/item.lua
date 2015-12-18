@@ -273,7 +273,7 @@ function item.del_by_itemid(itemid, num)
     return pack
 end
 
--- NOTICE: can't delete equip and equip that has stone
+-- NOTICE: can't delete equip and item that has stone
 function item.del(i)
     local iv = i[1]
     assert(not i[3], string.format("Item %d has stone.", iv.id))

@@ -8,8 +8,11 @@ local error = error
 local string = string
 local random = math.random
 local floor = math.floor
+local pow = math.pow
 
 local itemdata
+local expdata
+local intensifydata
 local base
 local is_equip
 local item_category
@@ -20,6 +23,8 @@ local proc = {}
 
 skynet.init(function()
     itemdata = share.itemdata
+    expdata = share.expdata
+    intensifydata = share.intensifydata
     base = share.base
     is_equip = share.is_equip
     item_category = share.item_category
@@ -44,12 +49,23 @@ function item.enter()
         item.add(v)
         pack[#pack+1] = v
     end
-    item.post_add()
+    item.after_add()
     -- TODO: calculate player attribute
     return "item", pack
 end
 
-function item.post_add()
+function item.add_to_type(i)
+    local v = i[1]
+    local type_item = data.type_item
+    local t = type_item[v.itemid]
+    if not t then
+        t = {}
+        type_item[v.itemid] = t
+    end
+    t[v.id] = i
+end
+
+function item.after_add()
     for k, v in pairs(data.item) do
         local i = v[1]
         if i.host ~= 0 then
@@ -57,14 +73,16 @@ function item.post_add()
             if host then
                 local t = host[3]
                 if not t then
-                    t = {}
+                    t = {num = 0}
                     host[3] = t
                 end
                 t[i.pos] = v
+                t.num = t.num + 1
                 v[4] = host
             else
                 skynet.error(string.format("Item %d host %d not exist.", i.id, i.host))
                 i.host = 0
+                item.add_to_type(i)
             end
         end
     end
@@ -92,18 +110,14 @@ function item.add(v, d)
                 else
                     equip_item[pos] = i
                 end
-            else
+            elseif v.host == 0 then
                 skynet.error(string.format("Item %d illegal position %d.", v.id, v.pos))
                 v.pos = 0
             end
         end
-        local type_item = data.type_item
-        local t = type_item[v.itemid]
-        if not t then
-            t = {}
-            type_item[v.itemid] = t
+        if v.host == 0 then
+            item.add_to_type(i)
         end
-        t[v.id] = i
     elseif v.status == base.ITEM_STATUS_SELLING then
         data.selling_item[v.id] = i
     elseif v.status == base.ITEM_STATUS_SELLED then
@@ -114,9 +128,6 @@ end
 
 function item.add_by_itemid(itemid, num, d)
     local pack = {}
-    if not d then
-        d = assert(itemdata[itemid], string.format("No item data %d.", itemid))
-    end
     local overlay = d.overlay
     if overlay > 1 then
         local t = data.type_item[itemid]
@@ -160,10 +171,10 @@ function item.add_by_itemid(itemid, num, d)
         }
         if category == base.ITEM_DEFENCE then
             v.rand_prop = {{}, {}}
-            item.rand_prop(v, {1, 2, 3, 4}) -- defence, tenacity, hard, offset
+            item.rand_prop(v, d, {1, 2, 3, 4}) -- defence, tenacity, hard, offset
         elseif category == base.ITEM_ATTACK then
             v.rand_prop = {{}, {}}
-            item.rand_prop(v, {5, 6, 7, 8}) -- break, crit, impale, hit
+            item.rand_prop(v, d, {5, 6, 7, 8}) -- break, crit, impale, hit
         end
         item.add(v, d)
         ui[v.id] = v
@@ -172,7 +183,7 @@ function item.add_by_itemid(itemid, num, d)
     return pack
 end
 
-function item.rand_prop(v, r)
+function item.rand_prop(v, d, r)
     local rand_prop = v.rand_prop
     if r then
         local l = #r
@@ -183,8 +194,8 @@ function item.rand_prop(v, r)
         end
     end
     for i = 1, base.MAX_RAND_PROP do
-        rand_prop[i].value = 1
-        -- TODO: calculate value
+        local value = pow(1.2, d.quality - 1) * (d.needLv * 0.5 + 1)
+        rand_prop[i].value = floor(value * base.FLOAT_FACTOR)
     end
 end
 
@@ -220,13 +231,7 @@ function item.use(i, pos)
     elseif iv.status == base.ITEM_STATUS_SELLING then
         iv.status = base.ITEM_STATUS_NORMAL
         iv.status_time = floor(skynet.time())
-        local type_item = data.type_item
-        local t = type_item[iv.itemid]
-        if not t then
-            t = {}
-            type_item[iv.itemid] = t
-        end
-        t[iv.id] = i
+        item.add_to_type(i)
         data.selling_item[iv.id] = nil
         update.status = iv.status
         update.status_time = iv.status_time
@@ -273,10 +278,11 @@ function item.del_by_itemid(itemid, num)
     return pack
 end
 
--- NOTICE: can't delete equip and item that has stone
+-- NOTICE: can't delete equip, gem and item that has stone
 function item.del(i)
     local iv = i[1]
     assert(not i[3], string.format("Item %d has stone.", iv.id))
+    assert(not i[4], string.format("Can't delete gem %d.", iv.id))
     assert(iv.pos==0, string.format("Can't delete equip %d.", iv.id))
     if iv.status == base.ITEM_STATUS_NORMAL then
         local t = assert(data.type_item[iv.itemid], string.format("Item %d not exist.", iv.itemid))
@@ -290,6 +296,17 @@ function item.del(i)
     iv.status_time = floor(skynet.time())
     data.user.item[iv.id] = nil
     data.item[iv.id] = nil
+end
+
+function item.change(i, itemid, d)
+    local iv = i[1]
+    local t = assert(data.type_item[iv.itemid], string.format("Item %d not exist.", iv.itemid))
+    t[iv.id] = nil
+    iv.itemid = itemid
+    i[2] = d
+    item.add_to_type(i)
+    item.rand_prop(iv, d)
+    return {id=iv.id, itemid=itemid, rand_prop=iv.rand_prop}
 end
 
 function item.get_proc()
@@ -327,17 +344,19 @@ function proc.use_item(msg)
             error{code = error_code.ERROR_ITEM_POSITION}
         end
     end
-    local pack = {}
-    pack.item = item.use(i, msg.pos)
+    local pitem = item.use(i, msg.pos)
     -- TODO: update mission
     -- TODO: calculate player attribute
-    return "user_update", {update=pack}
+    return "user_update", {update={item=pitem}}
 end
 
 function proc.compound_item(msg)
     local d = itemdata[msg.itemid]
     if not d then
         error{code = error_code.ITEM_ID_NOT_EXIST}
+    end
+    if not share.is_material(d.itemType) then
+        error{code = error_code.ERROR_ITEM_TYPE}
     end
     local compounditem = d.compos
     if compounditem == 0 then
@@ -352,13 +371,243 @@ function proc.compound_item(msg)
     if comnum == 0 then
         error{code = error_code.ITEM_NUM_LIMIT}
     end
-    local pitem = {}
-    share.merge(pitem, item.del_by_itemid(msg.itemid, num))
+    local pitem = item.del_by_itemid(msg.itemid, comnum*5)
     share.merge(pitem, item.add_by_itemid(compounditem, comnum, compounddata))
-    local pack = {}
-    pack.item = pitem
     -- TODO: update mission
-    return "user_update", {update=pack}
+    return "user_update", {update={item=pitem}}
+end
+
+function proc.upgrade_item(msg)
+    local i = data.item[msg.id]
+    if not i then
+        error{code = error_code.ITEM_NOT_EXIST}
+    end
+    local d = i[2]
+    if not share.is_equip(d.itemType) then
+        error{code = error_code.ERROR_ITEM_TYPE}
+    end
+    local iv = i[1]
+    if iv.status ~= base.ITEM_STATUS_NORMAL then
+        error{code = error_code.ERROR_ITEM_STATUS}
+    end
+    local mat = d.compos
+    local matdata = assert(itemdata[mat], string.format("Upgrade item %d material %d not exist.", iv.itemid, mat))
+    local numdata = assert(expdata[d.needLv], string.format("Upgrade item %d exp data not exist.", iv.itemid))
+    local num = numdata.UpgradeMatNum
+    local count = item.count(mat)
+    if count < num then
+        error{code = error_code.ITEM_NUM_LIMIT}
+    end
+    local upgradeitemid = iv.itemid + 1
+    local udata = itemdata[upgradeitemid]
+    if not udata then
+        error{code = error_code.CAN_NOT_UPGRADE_ITEM}
+    end
+    local pitem = item.del_by_itemid(mat, num)
+    pitem[#pitem+1] = item.change(i, upgradeitemid, udata)
+    -- TODO: update mission
+    -- TODO: calculate player attribute possibly
+    return "user_update", {update={item=pitem}}
+end
+
+function proc.improve_item(msg)
+    local i = data.item[msg.id]
+    if not i then
+        error{code = error_code.ITEM_NOT_EXIST}
+    end
+    local d = i[2]
+    if not share.is_equip(d.itemType) then
+        error{code = error_code.ERROR_ITEM_TYPE}
+    end
+    local iv = i[1]
+    if iv.status ~= base.ITEM_STATUS_NORMAL then
+        error{code = error_code.ERROR_ITEM_STATUS}
+    end
+    local mat = d.compos
+    local matdata = assert(itemdata[mat], string.format("Improve item %d material %d not exist.", iv.itemid, mat))
+    local numdata = assert(expdata[d.needLv], string.format("Improve item %d exp data not exist.", iv.itemid))
+    local num = numdata.ImproveMatNum
+    local count = item.count(mat)
+    if count < num then
+        error{code = error_code.ITEM_NUM_LIMIT}
+    end
+    local improveitemid = iv.itemid + 5000
+    local idata = itemdata[improveitemid]
+    if not idata then
+        error{code = error_code.CAN_NOT_IMPROVE_ITEM}
+    end
+    local pitem = item.del_by_itemid(mat, num)
+    pitem[#pitem+1] = item.change(i, improveitemid, idata)
+    -- TODO: update mission
+    -- TODO: calculate player attribute possibly
+    return "user_update", {update={item=pitem}}
+end
+
+function proc.decompose_item(msg)
+    local i = data.item[msg.id]
+    if not i then
+        error{code = error_code.ITEM_NOT_EXIST}
+    end
+    local d = i[2]
+    if not share.is_equip(d.itemType) then
+        error{code = error_code.ERROR_ITEM_TYPE}
+    end
+    local iv = i[1]
+    if iv.status ~= base.ITEM_STATUS_NORMAL then
+        error{code = error_code.ERROR_ITEM_STATUS}
+    end
+    if iv.pos ~= 0 then
+        error{code = error_code.ITEM_IN_USE}
+    end
+    local st = i[3]
+    if st and st.num > 0 then
+        error{code = error_code.ITEM_HAS_STONE}
+    end
+    local mat = d.compos
+    local matdata = assert(itemdata[mat], string.format("Decompose item %d material %d not exist.", iv.itemid, mat))
+    local numdata = assert(expdata[d.needLv], string.format("Decompose item %d exp data not exist.", iv.itemid))
+    item.del(i)
+    local num = numdata.DecomposeMatNum
+    local pitem = item.add_by_itemid(mat, num, matdata)
+    pitem[#pitem+1] = {
+        id = iv.id,
+        status = iv.status,
+        status_time = iv.status_time,
+    }
+    -- TODO: update mission
+    return "user_update", {update={item=pitem}}
+end
+
+function proc.intensify_item(msg)
+    local i = data.item[msg.id]
+    if not i then
+        error{code = error_code.ITEM_NOT_EXIST}
+    end
+    local d = i[2]
+    if not share.is_equip(d.itemType) then
+        error{code = error_code.ERROR_ITEM_TYPE}
+    end
+    local iv = i[1]
+    if iv.status ~= base.ITEM_STATUS_NORMAL then
+        error{code = error_code.ERROR_ITEM_STATUS}
+    end
+    if iv.intensify >= base.MAX_INTENSIFY then
+        error{code = error_code.MAX_INTENSIFY}
+    end
+    local intensify = iv.intensify + 1
+    local idata = assert(intensifydata[intensify], string.format("No intensify data %d.", intensify))
+    if d.needLv < idata.levelLimit then
+        error{code = error_code.ITEM_LEVEL_LIMIT}
+    end
+    if d.quality < idata.qualityLimit then
+        error{code = error_code.ITEM_QUALITY_LIMIT}
+    end
+    local count = item.count(base.INTENSIFY_ITEM)
+    if count == 0 then
+        error{code = error_code.ITEM_NUM_LIMIT}
+    end
+    local pitem = item.del_by_itemid(base.INTENSIFY_ITEM, 1)
+    local r = random(base.RAND_FACTOR)
+    if r < idata.rate then
+        iv.intensify = iv.intensify + 1
+        pitem[#pitem+1] = {
+            id = iv.id,
+            intensify = iv.intensify,
+        }
+        -- TODO: update mission
+        -- TODO: calculate player attribute possibly
+    else
+        local punishitem = iv.itemid
+        local levelRand = random(base.RAND_FACTOR)
+        if levelRand < idata.levelRate then
+            punishitem = punishitem - idata.punishLevel * 1000
+        end
+        local qualityRand = random(base.RAND_FACTOR)
+        if qualityRand < idata.qualityRate then
+            punishitem = punishitem - idata.punishQuality
+        end
+        local update
+        if punishitem ~= iv.itemid then
+            local pdata = itemdata[punishitem]
+            if pdata then
+                local oldSlot = floor(d.needLv*0.1)
+                local newSlot = floor(d.needLv*0.1)
+                if newSlot < oldSlot then
+                    local st = i[3]
+                    if st then
+                        for i = newSlot, oldSlot do
+                            if st[i] then
+                                -- TODO: unlay stone
+                            end
+                        end
+                    end
+                end
+                update = item.change(i, punishitem, pdata)
+            else
+                skynet.error("No punish item data %d.", punishitem)
+            end
+        end
+        iv.intensify = iv.intensify - idata.punishIntensify
+        if iv.intensify < 0 then
+            iv.intensify = 0
+            skynet.error("Punish intensify data %d error.", intensify)
+        end
+        if update then
+            update.intensify = iv.intensify
+        else
+            update = {
+                id = iv.id,
+                intensify = iv.intensify,
+            }
+        end
+        pitem[#pitem+1] = update
+        -- TODO: calculate player attribute possibly
+    end
+    return "user_update", {update={item=pitem}}
+end
+
+function proc.inlay_item(msg)
+    local i = data.item[msg.id]
+    if not i then
+        error{code = error_code.ITEM_NOT_EXIST}
+    end
+    local d = i[2]
+    if not share.is_equip(d.itemType) then
+        error{code = error_code.ERROR_ITEM_TYPE}
+    end
+    local iv = i[1]
+    if iv.status ~= base.ITEM_STATUS_NORMAL then
+        error{code = error_code.ERROR_ITEM_STATUS}
+    end
+    local st = i[3]
+    if not st then
+        st = {num = 0}
+        i[3] = st
+    end
+    local slot = floor(d.needLv*0.1)
+    for i = 1, slot do
+        if not st[i] then
+            local stoneitem = 3000000000+(d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE)*10+i-1
+        end
+    end
+end
+
+function proc.uninlay_item(msg)
+    local i = data.item[msg.id]
+    if not i then
+        error{code = error_code.ITEM_NOT_EXIST}
+    end
+    local d = i[2]
+    if not share.is_equip(d.itemType) then
+        error{code = error_code.ERROR_ITEM_TYPE}
+    end
+    local iv = i[1]
+    if iv.status ~= base.ITEM_STATUS_NORMAL then
+        error{code = error_code.ERROR_ITEM_STATUS}
+    end
+    local st = i[3]
+    if not st then
+    end
 end
 
 return item

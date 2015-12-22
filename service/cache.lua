@@ -9,6 +9,8 @@ skynet.start(function()
     sharedata.new("itemdata", require("data.item"))
     sharedata.new("stagedata", require("data.stage"))
     sharedata.new("taskdata", require("data.task"))
+    sharedata.new("expdata", require("data.exp"))
+    sharedata.new("intensifydata", require("data.intensify"))
 
     sharedata.new("base", require("base"))
     sharedata.new("error_code", require("error_code"))

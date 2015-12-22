@@ -24,6 +24,12 @@ local msg = {
 
     [2200] = "use_item",
     [2201] = "compound_item",
+    [2202] = "upgrade_item",
+    [2203] = "improve_item",
+    [2204] = "decompose_item",
+    [2205] = "intensify_item",
+    [2206] = "inlay_item",
+    [2207] = "uninlay_item",
 }
 local name_msg = {}
 

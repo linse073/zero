@@ -10,6 +10,14 @@ function share.is_equip(itemtype)
     return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
 end
 
+function share.is_material(itemtype)
+    return itemtype >= base.ITEM_TYPE_IRON and itemtype <= base.ITEM_TYPE_GEM
+end
+
+function share.is_stone(itemtype)
+    return itemtype >= base.ITEM_TYPE_BLUE_STORE and itemtype <= base.ITEM_TYPE_GREEN_CRYSTAL
+end
+
 -- base function
 function share.merge(t1, t2)
     for k, v in ipairs(t2) do

@@ -37,7 +37,7 @@
     num 3 : integer
     pos 4 : integer
     host 5 : integer
-    upgrade 6 : integer
+    intensify 6 : integer
     rand_prop 7 : *rand_prop
     status 8 : integer
     status_time 9 : integer
@@ -47,8 +47,9 @@
 .card_info {
     id 0 : integer
     exp 1 : integer
-    star_exp 2 : integer
-    pos 3 : integer
+    level 2 : integer
+    star_exp 3 : integer
+    pos 4 : integer
 }
 
 .stage_info {
@@ -94,7 +95,7 @@
 
 .user_update {
     msgid 0 : integer
-    update 0 : user_all
+    update 1 : user_all
 }
 
 .update_day {
@@ -126,10 +127,34 @@
 
 .use_item {
     id 0 : integer
-    pos 0 : integer
+    pos 1 : integer
 }
 
 .compound_item {
     itemid 0 : integer
-    num 0 : integer
+    num 1 : integer
+}
+
+.upgrade_item {
+    id 0 : integer
+}
+
+.improve_item {
+    id 0 : integer
+}
+
+.decompose_item {
+    id 0 : integer
+}
+
+.intensify_item {
+    id 0 : integer
+}
+
+.inlay_item {
+    id 0 : integer
+}
+
+.uninlay_item {
+    id 0 : integer
 }

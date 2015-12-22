@@ -15,6 +15,7 @@ local assert = assert
 local error = error
 local string = string
 local math = math
+local randomseed = math.randomseed
 
 local error_code
 local base
@@ -177,7 +178,7 @@ function proc.enter_game(msg)
         error{code = error_code.ROLE_NOT_EXIST}
     end
     user = skynet.unpack(user)
-    math.randomseed(skynet.time() + msg.id)
+    randomseed(skynet.time() + msg.id)
     data.suser = suser
     data.user = user
     local ret = {user = user}

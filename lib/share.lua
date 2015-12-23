@@ -15,7 +15,7 @@ function share.is_material(itemtype)
 end
 
 function share.is_stone(itemtype)
-    return itemtype >= base.ITEM_TYPE_BLUE_STORE and itemtype <= base.ITEM_TYPE_GREEN_CRYSTAL
+    return itemtype >= base.ITEM_TYPE_BLUE_STONE and itemtype <= base.ITEM_TYPE_GREEN_CRYSTAL
 end
 
 -- base function

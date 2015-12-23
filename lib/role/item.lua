@@ -65,6 +65,12 @@ function item.add_to_type(i)
     t[v.id] = i
 end
 
+function item.del_from_type(i)
+    local v = i[1]
+    local t = assert(data.type_item[v.itemid], string.format("Item %d not exist.", v.itemid))
+    t[v.id] = nil
+end
+
 function item.after_add()
     for k, v in pairs(data.item) do
         local i = v[1]
@@ -178,6 +184,7 @@ function item.add_by_itemid(itemid, num, d)
         end
         item.add(v, d)
         ui[v.id] = v
+        num = num - diff
         pack[#pack+1] = v
     end
     return pack
@@ -282,11 +289,10 @@ end
 function item.del(i)
     local iv = i[1]
     assert(not i[3], string.format("Item %d has stone.", iv.id))
-    assert(not i[4], string.format("Can't delete gem %d.", iv.id))
+    assert(not i[4], string.format("Can't delete stone %d.", iv.id))
     assert(iv.pos==0, string.format("Can't delete equip %d.", iv.id))
     if iv.status == base.ITEM_STATUS_NORMAL then
-        local t = assert(data.type_item[iv.itemid], string.format("Item %d not exist.", iv.itemid))
-        t[iv.id] = nil
+        item.del_from_type(i)
     elseif iv.status == base.ITEM_STATUS_SELLING then
         data.selling_item[iv.id] = nil
     elseif iv.status == base.ITEM_STATUS_SELLED then
@@ -300,13 +306,83 @@ end
 
 function item.change(i, itemid, d)
     local iv = i[1]
-    local t = assert(data.type_item[iv.itemid], string.format("Item %d not exist.", iv.itemid))
-    t[iv.id] = nil
+    item.del_from_type(i)
     iv.itemid = itemid
     i[2] = d
     item.add_to_type(i)
     item.rand_prop(iv, d)
     return {id=iv.id, itemid=itemid, rand_prop=iv.rand_prop}
+end
+
+function item.split(itemid)
+    local t = data.type_item[itemid]
+    if t then
+        local i, minnum
+        for k, v in pairs(t) do
+            local num = v[1].num
+            if not i or num < minnum then
+                i = v
+                minnum = num
+                if num == 1 then
+                    break
+                end
+            end
+        end
+        if i then
+            if minnum == 1 then
+                return i
+            else
+                local iv = i[1]
+                assert(minnum > 1, string.format("Item %d num %d error.", iv.id, minnum))
+                iv.num = iv.num - 1
+                local p = {
+                    id = iv.id,
+                    num = iv.num,
+                }
+                local v = {
+                    id = skynet.call(data.server, "lua", "gen_item"),
+                    itemid = itemid,
+                    owner = 0,
+                    num = 1,
+                    pos = 0,
+                    host = 0,
+                    upgrade = 0,
+                    status = base.ITEM_STATUS_NORMAL,
+                    status_time = 0,
+                    price = 0,
+                }
+                local si = item.add(v, i[2])
+                data.user.item[v.id] = v
+                return si, p
+            end
+        end
+    end
+end
+
+function item.inlay(i, si, j)
+    local iv = i[1]
+    local st = assert(i[3], string.format("item %d slot not exist.", iv.id))
+    local siv = si[1]
+    siv.host = iv.id
+    siv.pos = j
+    si[4] = i
+    item.del_from_type(si)
+    st[j] = si
+    st.num = st.num + 1
+    return {id=siv.id, host=siv.host, pos=siv.pos}
+end
+
+function item.uninlay(i, si, j)
+    local iv = i[1]
+    local st = assert(i[3], string.format("item %d slot not exist.", iv.id))
+    local siv = si[1]
+    siv.host = 0
+    siv.pos = 0
+    si[4] = nil
+    item.add_to_type(si)
+    st[j] = nil
+    st.num = st.num - 1
+    return {id=siv.id, host=siv.host, pos=siv.pos}
 end
 
 function item.get_proc()
@@ -528,30 +604,24 @@ function proc.intensify_item(msg)
         end
         local update
         if punishitem ~= iv.itemid then
-            local pdata = itemdata[punishitem]
-            if pdata then
-                local oldSlot = floor(d.needLv*0.1)
-                local newSlot = floor(d.needLv*0.1)
-                if newSlot < oldSlot then
-                    local st = i[3]
-                    if st then
-                        for i = newSlot, oldSlot do
-                            if st[i] then
-                                -- TODO: unlay stone
-                            end
+            local pdata = assert(itemdata[punishitem], string.format("No item data %d.", punishitem))
+            local oldSlot = floor(d.needLv*0.1)
+            local newSlot = floor(pdata.needLv*0.1)
+            if newSlot < oldSlot then
+                local st = i[3]
+                if st and st.num > 0 then
+                    for j = newSlot, oldSlot do
+                        local si = st[j]
+                        if si then
+                            pitem[#pitem+1] = item.uninlay(i, si, j)
                         end
                     end
                 end
-                update = item.change(i, punishitem, pdata)
-            else
-                skynet.error("No punish item data %d.", punishitem)
             end
+            update = item.change(i, punishitem, pdata)
         end
         iv.intensify = iv.intensify - idata.punishIntensify
-        if iv.intensify < 0 then
-            iv.intensify = 0
-            skynet.error("Punish intensify data %d error.", intensify)
-        end
+        assert(iv.intensify>=0, string.format("Punish intensify data %d error.", intensify))
         if update then
             update.intensify = iv.intensify
         else
@@ -584,12 +654,23 @@ function proc.inlay_item(msg)
         st = {num = 0}
         i[3] = st
     end
+    local pitem = {}
     local slot = floor(d.needLv*0.1)
-    for i = 1, slot do
-        if not st[i] then
-            local stoneitem = 3000000000+(d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE)*10+i-1
+    for j = 1, slot do
+        if not st[j] then
+            local stoneitem = 3000000000+(d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE)*10+j-1
+            local si, p = item.split(stoneitem)
+            if si then
+                if p then
+                    pitem[#pitem+1] = p
+                end
+                pitem[#pitem+1] = item.inlay(i, si, j)
+            end
         end
     end
+    -- TODO: update mission
+    -- TODO: calculate player attribute possibly
+    return "user_update", {update={item=pitem}}
 end
 
 function proc.uninlay_item(msg)
@@ -606,7 +687,21 @@ function proc.uninlay_item(msg)
         error{code = error_code.ERROR_ITEM_STATUS}
     end
     local st = i[3]
-    if not st then
+    if st and st.num > 0 then
+        local pitem = {}
+        local slot = floor(d.needLv*0.1)
+        for j = 1, slot do
+            local si = st[j]
+            if si then
+                pitem[#pitem+1] = item.uninlay(i, si, j)
+            end
+        end
+        assert(st.num==0, string.format("Uninlay item %d error num %d.", iv.id, st.num))
+        -- TODO: update mission
+        -- TODO: calculate player attribute possibly
+        return "user_update", {update={item=pitem}}
+    else
+        return "user_update", {}
     end
 end
 

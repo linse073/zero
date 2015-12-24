@@ -1,6 +1,7 @@
 
 local base = {
     MAX_ROLE = 4,
+    MAX_LEVEL = 100,
     RAND_FACTOR = 10000,
     FLOAT_FACTOR = 1000,
 
@@ -17,6 +18,8 @@ local base = {
     TASK_STATUS_FINISH = 3,
     
     MAX_DAY_TASK = 10,
+
+    TASK_COMPLETE_TYPE_TALK = 1,
 
     -- card
     MAX_CARD_STAR = 6,

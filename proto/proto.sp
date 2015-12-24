@@ -158,3 +158,8 @@
 .uninlay_item {
     id 0 : integer
 }
+
+.submit_task {
+    id 0 : integer
+    condition 1 : integer
+}

@@ -26,6 +26,8 @@ local error_code = {
     ITEM_LEVEL_LIMIT = 2111,
     ITEM_QUALITY_LIMIT = 2112,
     ITEM_HAS_STONE = 2113,
+
+    TASK_NOT_EXIST = 2200,
 }
 
 return error_code

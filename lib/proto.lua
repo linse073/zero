@@ -30,6 +30,8 @@ local msg = {
     [2205] = "intensify_item",
     [2206] = "inlay_item",
     [2207] = "uninlay_item",
+
+    [2300] = "submit_task",
 }
 local name_msg = {}
 

@@ -17,6 +17,7 @@ local string = string
 local math = math
 local randomseed = math.randomseed
 
+local expdata
 local error_code
 local base
 local data
@@ -26,12 +27,11 @@ local proc = {}
 local role_mgr
 
 for k, v in ipairs(module) do
-    for k1, v1 in pairs(v.get_proc()) do
-        proc[k1] = v1
-    end
+    share.merge_talbe(proc, v.get_proc())
 end
 
 skynet.init(function()
+    expdata = share.expdata
     error_code = share.error_code
     base = share.base
     role_mgr = skynet.queryservice("role_mgr")
@@ -95,6 +95,34 @@ function role.heart_beat()
         skynet.call(data.gate, "lua", "kick", data.userid, data.subid) -- data is nil
     else
         data.heart_beat = 0
+    end
+end
+
+function role.add_exp(exp)
+    local user = data.user
+    local oldExp = user.exp
+    user.exp = user.exp + exp
+    local maxExpLevel = base.MAX_LEVEL - 1
+    local ed = assert(expdata[maxExpLevel], string.format("No max exp data %d.", maxExpLevel))
+    if user.exp > ed.HeroExp then
+        user.exp = ed.HeroExp
+    end
+    if oldExp ~= user.exp then
+        local oldLevel = user.level
+        while true do
+            local expd = assert(expdata[user.level], string.format("No exp data %d.", user.level))
+            if user.exp < expd.HeroExp then
+                break
+            end
+            user.level = user.level + 1
+        end
+        local puser = {exp = user.exp}
+        local ptask
+        if oldLevel ~= user.level then
+            puser.level = user.level
+            ptask = task.update_level(oldLevel, user.level)
+        end
+        return puser, ptask
     end
 end
 

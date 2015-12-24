@@ -25,6 +25,12 @@ function share.merge(t1, t2)
     end
 end
 
+function share.merge_talbe(t1, t2)
+    for k, v in pairs(t2) do
+        t1[k] = v
+    end
+end
+
 skynet.init(function()
     -- share with all service
     share.cardata = sharedata.query("carddata")

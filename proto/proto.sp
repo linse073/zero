@@ -46,10 +46,9 @@
 
 .card_info {
     id 0 : integer
-    exp 1 : integer
+    cardid 1 : integer
     level 2 : integer
-    star_exp 3 : integer
-    pos 4 : integer
+    pos 3 : integer
 }
 
 .stage_info {

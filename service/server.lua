@@ -43,6 +43,7 @@ function CMD.open(conf, loginserver)
         status = {
             roleid = 1,
             itemid = 1,
+            cardid = 1,
         }
     end
 
@@ -71,6 +72,13 @@ function CMD.gen_item()
     status.itemid = status.itemid + 1
     skynet.call(userdb, "lua", "save", "status", skynet.packstring(status))
     return itemid
+end
+
+function CMD.gen_card()
+    local cardid = status.cardid * 10000 + 3000 + serverid
+    status.cardid = status.cardid + 1
+    skynet.call(userdb, "lua", "save", "status", skynet.packstring(status))
+    return cardid
 end
 
 skynet.start(function()

@@ -16,6 +16,8 @@ local itemdata
 local achi_task
 local day_task
 local base
+local merge
+local merge_table
 local data
 
 local task = {}
@@ -27,6 +29,8 @@ skynet.init(function()
     achi_task = share.achi_task
     day_task = share.day_task
     base = share.base
+    merge = share.merge
+    merge_table = share.merge_table
 end)
 
 function task.init(userdata)
@@ -198,13 +202,12 @@ function task.update(completeType, condition, count)
             }
             if vt.count >= d.count then
                 vt.status = base.TASK_STATUS_DONE
-                update.status = vt.status
                 if d.TaskType == base.TASK_TYPE_MASTER and d.SubNpc == 0 then
                     local pt = ptask
                     puser, ptask, pitem = task.finish(v)
-                    share.merge(ptask, pt)
-                    update.status = vt.status
+                    merge(ptask, pt)
                 end
+                update.status = vt.status
             end
             ptask[#ptask+1] = update
         end
@@ -217,13 +220,12 @@ function task.finish(t)
     vt.status = base.TASK_STATUS_FINISH
     local puser, ptask, pitem = task.award(t)
     local d = t[2]
-    if d.TaskType == base.TASK_TYPE_MASTER or d.TaskType == base.TASK_TYPE_ACHIEVEMENT then
-        if d.nextID ~= 0 then
-            local nd = assert(taskdata[d.nextID], string.format("No task data %d.", d.nextID))
-            local nt = task.check_add(nd, base.TASK_STATUS_ACCEPT)
-            if nt then
-                ptask[#ptask+1] = nt[1]
-            end
+    if (d.TaskType == base.TASK_TYPE_MASTER or d.TaskType == base.TASK_TYPE_ACHIEVEMENT)
+        and d.nextID ~= 0 then
+        local nd = assert(taskdata[d.nextID], string.format("No task data %d.", d.nextID))
+        local nt = task.check_add(nd, base.TASK_STATUS_ACCEPT)
+        if nt then
+            ptask[#ptask+1] = nt[1]
         end
     end
     return puser, ptask, pitem
@@ -237,10 +239,10 @@ function task.award(t)
     if d.EXP > 0 then
         local pu, pt = role.add_exp(d.EXP)
         if pu then
-            share.merge_talbe(puser, pu)
-        end
-        if pt then
-            share.merge(ptask, pt)
+            merge_talbe(puser, pu)
+            if pt then
+                merge(ptask, pt)
+            end
         end
     end
     if d.Gold > 0 then
@@ -256,7 +258,7 @@ function task.award(t)
     if profitem > 0 then
         local idata = assert(itemdata[profitem], string.format("No item data %d.", profitem))
         local pi = item.add_by_itemid(profitem, 1, idata)
-        share.merge(pitem, pi)
+        merge(pitem, pi)
     end
     for k, v in ipairs(d.Item) do
         if v ~= 0 then
@@ -264,7 +266,9 @@ function task.award(t)
             if n ~= 0 then
                 local idata = assert(itemdata[v], string.format("No item data %d.", v))
                 local pi = item.add_by_itemid(v, n, idata)
-                share.merge(pitem, pi)
+                merge(pitem, pi)
+            else
+                skynet.error("Task data %d item num error.", d.TaskId)
             end
         end
     end

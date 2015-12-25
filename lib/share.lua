@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local sharedata = require "sharedata"
 local sprotoloader = require "sprotoloader"
+local queue = require "skynet.queue"
 
 local share = {}
 local base
@@ -51,6 +52,7 @@ skynet.init(function()
 
     -- share in current service
     share.sproto = sprotoloader.load(1)
+    share.cs = queue()
 
     -- local variable
     base = share.base

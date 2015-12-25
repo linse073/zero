@@ -14,8 +14,11 @@ local itemdata
 local expdata
 local intensifydata
 local base
+local cs
 local is_equip
+local is_material
 local item_category
+local merge
 local data
 
 local item = {}
@@ -26,8 +29,11 @@ skynet.init(function()
     expdata = share.expdata
     intensifydata = share.intensifydata
     base = share.base
+    cs = share.cs
     is_equip = share.is_equip
+    is_material = share.is_material
     item_category = share.item_category
+    merge = share.merge
 end)
 
 function item.init(userdata)
@@ -69,6 +75,10 @@ function item.del_from_type(i)
     local v = i[1]
     local t = assert(data.type_item[v.itemid], string.format("Item %d not exist.", v.itemid))
     t[v.id] = nil
+end
+
+function item.gen_id()
+    return skynet.call(data.server, "lua", "gen_item")
 end
 
 function item.after_add()
@@ -164,7 +174,7 @@ function item.add_by_itemid(itemid, num, d)
             diff = overlay
         end
         local v = {
-            id = skynet.call(data.server, "lua", "gen_item"),
+            id = cs(item.gen_id),
             itemid = itemid,
             owner = 0,
             num = diff,
@@ -340,7 +350,7 @@ function item.split(itemid)
                     num = iv.num,
                 }
                 local v = {
-                    id = skynet.call(data.server, "lua", "gen_item"),
+                    id = cs(item.gen_id),
                     itemid = itemid,
                     owner = 0,
                     num = 1,
@@ -412,7 +422,7 @@ function proc.use_item(msg)
         error{code = error_code.ERROR_ROLE_PROFESSION}
     end
     if msg.pos ~= 0 then
-        if not share.is_equip(idata.itemType) then
+        if not is_equip(idata.itemType) then
             error{code = error_code.ERROR_ITEM_POSITION}
         end
         local pos = idata.itemType - base.ITEM_TYPE_HEAD + 1
@@ -431,7 +441,7 @@ function proc.compound_item(msg)
     if not d then
         error{code = error_code.ITEM_ID_NOT_EXIST}
     end
-    if not share.is_material(d.itemType) then
+    if not is_material(d.itemType) then
         error{code = error_code.ERROR_ITEM_TYPE}
     end
     local compounditem = d.compos
@@ -448,7 +458,7 @@ function proc.compound_item(msg)
         error{code = error_code.ITEM_NUM_LIMIT}
     end
     local pitem = item.del_by_itemid(msg.itemid, comnum*5)
-    share.merge(pitem, item.add_by_itemid(compounditem, comnum, compounddata))
+    merge(pitem, item.add_by_itemid(compounditem, comnum, compounddata))
     -- TODO: update mission
     return "user_update", {update={item=pitem}}
 end
@@ -459,7 +469,7 @@ function proc.upgrade_item(msg)
         error{code = error_code.ITEM_NOT_EXIST}
     end
     local d = i[2]
-    if not share.is_equip(d.itemType) then
+    if not is_equip(d.itemType) then
         error{code = error_code.ERROR_ITEM_TYPE}
     end
     local iv = i[1]
@@ -492,7 +502,7 @@ function proc.improve_item(msg)
         error{code = error_code.ITEM_NOT_EXIST}
     end
     local d = i[2]
-    if not share.is_equip(d.itemType) then
+    if not is_equip(d.itemType) then
         error{code = error_code.ERROR_ITEM_TYPE}
     end
     local iv = i[1]
@@ -525,7 +535,7 @@ function proc.decompose_item(msg)
         error{code = error_code.ITEM_NOT_EXIST}
     end
     local d = i[2]
-    if not share.is_equip(d.itemType) then
+    if not is_equip(d.itemType) then
         error{code = error_code.ERROR_ITEM_TYPE}
     end
     local iv = i[1]
@@ -560,7 +570,7 @@ function proc.intensify_item(msg)
         error{code = error_code.ITEM_NOT_EXIST}
     end
     local d = i[2]
-    if not share.is_equip(d.itemType) then
+    if not is_equip(d.itemType) then
         error{code = error_code.ERROR_ITEM_TYPE}
     end
     local iv = i[1]
@@ -642,7 +652,7 @@ function proc.inlay_item(msg)
         error{code = error_code.ITEM_NOT_EXIST}
     end
     local d = i[2]
-    if not share.is_equip(d.itemType) then
+    if not is_equip(d.itemType) then
         error{code = error_code.ERROR_ITEM_TYPE}
     end
     local iv = i[1]
@@ -679,7 +689,7 @@ function proc.uninlay_item(msg)
         error{code = error_code.ITEM_NOT_EXIST}
     end
     local d = i[2]
-    if not share.is_equip(d.itemType) then
+    if not is_equip(d.itemType) then
         error{code = error_code.ERROR_ITEM_TYPE}
     end
     local iv = i[1]

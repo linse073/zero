@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local role = require "role.role"
 local timer = require "timer"
 local share = require "share"
+local util = require "util"
 
 local assert = assert
 local pcall = pcall
@@ -15,6 +16,7 @@ skynet.register_protocol {
 }
 
 local proc = role.get_proc()
+local gen_key = util.gen_key
 local msg
 local name_msg
 local base
@@ -25,14 +27,15 @@ local data
 
 local CMD = {}
 
-function CMD.login(source, uid, sid, secret, servername)
+function CMD.login(source, uid, sid, secret, serverid)
 	-- you may use secret to make a encrypted data stream
 	skynet.error(string.format("%s is login", uid))
     data = {
         gate = source,
         userid = uid,
         subid = sid,
-        servername = servername,
+        serverid = serverid,
+        userkey = gen_key(serverid, userid),
     }
     role.init(data)
 end

@@ -1,8 +1,10 @@
 local skynet = require "skynet"
 local queue = require "skynet.queue"
+local util = require "util"
 
 local loginservice = tonumber(...)
 
+local gen_key = util.gen_key
 local userdb
 local namedb
 local status
@@ -13,12 +15,13 @@ local cs
 local CMD = {}
 
 local function check_name(name)
-    if skynet.call(namedb, "lua", "has", name) then
+    local namekey = gen_key(serverid, name)
+    if skynet.call(namedb, "lua", "has", namekey) then
         return 0
     else
         local roleid = status.roleid * 10000 + 1000 + serverid
         status.roleid = status.roleid + 1
-        skynet.call(namedb, "lua", "save", name, roleid)
+        skynet.call(namedb, "lua", "save", namekey, roleid)
         return roleid
     end
 end
@@ -30,7 +33,7 @@ function CMD.open(conf, gatename)
     local master = skynet.queryservice("dbmaster")
     userdb = skynet.call(master, "lua", "get", "userdb")
     namedb = skynet.call(master, "lua", "get", "namedb")
-    status = skynet.call(userdb, "lua", "get", "status"..serverid)
+    status = skynet.call(userdb, "lua", "get", gen_key(serverid, "status"))
     if status then
         status = skynet.unpack(status)
     else
@@ -42,8 +45,8 @@ function CMD.open(conf, gatename)
     end
 
     local server_mgr = skynet.queryservice("server_mgr")
-    skynet.call(server_mgr, "lua", "register", servername, skynet.self())
-    skynet.call(loginservice, "lua", "register_server", servername, gatename)
+    skynet.call(server_mgr, "lua", "register", serverid, skynet.self())
+    skynet.call(loginservice, "lua", "register_server", servername, serverid, gatename)
 end
 
 function CMD.shutdown()

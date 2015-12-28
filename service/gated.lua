@@ -12,11 +12,10 @@ local users = {}
 local username_map = {}
 local internal_id = 0
 local agent_mgr
-local servername
 
 -- login server disallow multi login, so login_handler never be reentry
 -- call by login server
-function server.login_handler(uid, secret)
+function server.login_handler(uid, secret, servername, serverid)
 	if users[uid] then
 		error(string.format("%s is already login", uid))
 	end
@@ -32,10 +31,12 @@ function server.login_handler(uid, secret)
 		agent = agent,
 		uid = uid,
 		subid = id,
+        servername = servername,
+        serverid = serverid,
 	}
 
 	-- trash subid (no used)
-	skynet.call(agent, "lua", "login", uid, id, secret, servername)
+	skynet.call(agent, "lua", "login", uid, id, secret, serverid)
 
 	users[uid] = u
 	username_map[username] = u
@@ -50,13 +51,13 @@ end
 function server.logout_handler(uid, subid)
 	local u = users[uid]
 	if u then
-		local username = msgserver.username(uid, subid, servername)
+		local username = msgserver.username(uid, subid, u.servername)
 		assert(u.username == username)
 		msgserver.logout(u.username)
 		users[uid] = nil
 		username_map[u.username] = nil
         skynet.call(agent_mgr, "lua", "free", u.agent)
-		skynet.call(loginservice, "lua", "logout", uid, servername, subid)
+		skynet.call(loginservice, "lua", "logout", uid, subid, u.servername)
 	end
 end
 
@@ -65,7 +66,7 @@ function server.kick_handler(uid, subid)
     skynet.error(string.format("kick user %s %d.", uid, subid))
 	local u = users[uid]
 	if u then
-		local username = msgserver.username(uid, subid, servername)
+		local username = msgserver.username(uid, subid, u.servername)
 		assert(u.username == username)
         skynet.call(u.agent, "lua", "logout", uid, subid)
 	end
@@ -93,9 +94,8 @@ end
 
 -- call by self (when gate open)
 function server.register_handler(name)
-	servername = name
     agent_mgr = skynet.queryservice("agent_mgr")
-	skynet.call(loginservice, "lua", "register_gate", servername, skynet.self())
+	skynet.call(loginservice, "lua", "register_gate", name, skynet.self())
     local server_mgr = skynet.queryservice("server_mgr")
     skynet.call(server_mgr, "lua", "register_gate", skynet.self())
 end

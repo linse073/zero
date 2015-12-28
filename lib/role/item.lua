@@ -1,5 +1,6 @@
 local skynet = require "skynet"
 local share = require "share"
+local util = require "util"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -10,6 +11,7 @@ local random = math.random
 local floor = math.floor
 local pow = math.pow
 
+local merge = util.merge
 local itemdata
 local expdata
 local intensifydata
@@ -18,7 +20,6 @@ local cs
 local is_equip
 local is_material
 local item_category
-local merge
 local data
 
 local item = {}
@@ -33,7 +34,6 @@ skynet.init(function()
     is_equip = share.is_equip
     is_material = share.is_material
     item_category = share.item_category
-    merge = share.merge
 end)
 
 function item.init(userdata)

@@ -1,5 +1,6 @@
 local skynet = require "skynet"
 local share = require "share"
+local util = require "util"
 
 local role = require "role.role"
 local item = require "role.item"
@@ -11,13 +12,13 @@ local error = error
 local string = string
 local random = math.random
 
+local merge = util.merge
+local merge_table = util.merge_table
 local taskdata
 local itemdata
 local achi_task
 local day_task
 local base
-local merge
-local merge_table
 local data
 
 local task = {}
@@ -29,8 +30,8 @@ skynet.init(function()
     achi_task = share.achi_task
     day_task = share.day_task
     base = share.base
-    merge = share.merge
-    merge_table = share.merge_table
+    merge = util.merge
+    merge_table = util.merge_table
 end)
 
 function task.init(userdata)
@@ -239,7 +240,7 @@ function task.award(t)
     if d.EXP > 0 then
         local pu, pt = role.add_exp(d.EXP)
         if pu then
-            merge_talbe(puser, pu)
+            merge_table(puser, pu)
             if pt then
                 merge(ptask, pt)
             end

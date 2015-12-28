@@ -52,7 +52,7 @@ function server.login_handler(server, uid, secret)
 	    error(string.format("user %s is already online", id))
 	end
     local gate = gameserver.gate
-	local subid = skynet.call(gate, "lua", "login", uid, secret)
+	local subid = skynet.call(gate, "lua", "login", uid, secret, server, gameserver.id)
     user_login[id] = nil
     user_online[id] = {gate = gate, subid = subid, server = server}
     return tostring(subid)
@@ -65,10 +65,11 @@ function CMD.register_gate(name, address)
 	gate_list[name] = address
 end
 
-function CMD.register_server(name, gatename)
+function CMD.register_server(name, id, gatename)
     assert(not server_list[name], string.format("server %s already exist", name))
     local gate = assert(gate_list[gatename], string.format("no gate %s", gatename))
     server_list[name] = {
+        id = id,
         gate = gate,
         shutdown = false,
     }
@@ -79,7 +80,7 @@ function CMD.unregister_server(name)
     server.shutdown = true
 end
 
-function CMD.logout(uid, server, subid)
+function CMD.logout(uid, subid, server)
     local id = gen_id(uid, server)
 	local u = user_online[id]
 	if u then

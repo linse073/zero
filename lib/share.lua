@@ -19,19 +19,6 @@ function share.is_stone(itemtype)
     return itemtype >= base.ITEM_TYPE_BLUE_STONE and itemtype <= base.ITEM_TYPE_GREEN_CRYSTAL
 end
 
--- base function
-function share.merge(t1, t2)
-    for k, v in ipairs(t2) do
-        t1[#t1+1] = v
-    end
-end
-
-function share.merge_talbe(t1, t2)
-    for k, v in pairs(t2) do
-        t1[k] = v
-    end
-end
-
 skynet.init(function()
     -- share with all service
     share.cardata = sharedata.query("carddata")

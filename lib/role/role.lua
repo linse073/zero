@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local timer = require "timer"
 local share = require "share"
 local notify = require "notify"
+local util = require "util"
 
 local card = require "role.card"
 local friend = require "role.friend"
@@ -17,6 +18,7 @@ local string = string
 local math = math
 local randomseed = math.randomseed
 
+local merge_table = util.merge_table
 local expdata
 local error_code
 local base
@@ -27,7 +29,7 @@ local proc = {}
 local role_mgr
 
 for k, v in ipairs(module) do
-    share.merge_talbe(proc, v.get_proc())
+    merge_table(proc, v.get_proc())
 end
 
 skynet.init(function()
@@ -42,12 +44,12 @@ function role.init(userdata)
     data.heart_beat = 0
     timer.add_routine("heart_beat", role.heart_beat, 300)
     local server_mgr = skynet.queryservice("server_mgr")
-    data.server = skynet.call(server_mgr, "lua", "get", data.servername)
+    data.server = skynet.call(server_mgr, "lua", "get", data.serverid)
 	-- you may load user data from database
     local master = skynet.queryservice("dbmaster")
     data.accdb = skynet.call(master, "lua", "get", "accountdb")
     data.userdb = skynet.call(master, "lua", "get", "userdb")
-    local account = skynet.call(data.accdb, "lua", "get", data.userid)
+    local account = skynet.call(data.accdb, "lua", "get", data.userkey)
     if account then
         data.account = skynet.unpack(account)
     else
@@ -83,7 +85,7 @@ function role.save_routine()
     local user = data.user
     if user then
         if data.suser.level ~= user.level then
-            skynet.call(data.accdb, "lua", "save", data.userid, skynet.packstring(data.account))
+            skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(data.account))
         end
         skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
     end
@@ -161,7 +163,7 @@ function proc.create_user(msg)
         level = 1,
     }
     account[#account+1] = su
-    skynet.call(data.accdb, "lua", "save", data.userid, skynet.packstring(account))
+    skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(account))
     local u = {
         name = msg.name,
         id = roleid,

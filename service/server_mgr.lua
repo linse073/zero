@@ -8,9 +8,9 @@ local gate
 
 local CMD = {}
 
-function CMD.register(servername, address)
-    assert(not server_list[servername], string.format("Already register server %s.", servername))
-    server_list[servername] = address
+function CMD.register(serverid, address)
+    assert(not server_list[serverid], string.format("Already register server %d.", serverid))
+    server_list[serverid] = address
 end
 
 function CMD.register_gate(address)
@@ -26,8 +26,8 @@ function CMD.shutdown()
     skynet.call(gate, "lua", "shutdown")
 end
 
-function CMD.get(servername)
-    return assert(server_list[servername], string.format("No server %s.", servername))
+function CMD.get(serverid)
+    return assert(server_list[serverid], string.format("No server %d.", serverid))
 end
 
 skynet.start(function()

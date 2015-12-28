@@ -1,12 +1,6 @@
 
 local config = {}
 
-config.login = {
-	port = 9001,
-    multilogin = true, -- allow same user login different server
-	name = "login_master",
-}
-
 config.server = {
     {
         serverid = 2,

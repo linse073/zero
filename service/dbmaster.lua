@@ -7,29 +7,14 @@ local slave_list = {}
 
 local CMD = {}
 
-function CMD.register(server, name, address)
-    local l = slave_list[server]
-    if not l then
-        l = {}
-        slave_list[server] = l
-    end
-    assert(not l[name], string.format("Already register database slave %s %s.", server, name))
-    l[name] = address
+function CMD.register(name, address)
+    assert(not slave_list[name], string.format("Already register database slave %s.", name))
+    slave_list[name] = address
 end
 
-function CMD.get(server, name)
-    local address
-    local l = slave_list[server]
-    if l then
-        address = l[name]
-    end
-    if not address then
-        local g = slave_list["global"]
-        if g then
-            address = g[name]
-        end
-    end
-    assert(address, string.format("No database slave %s %s.", server, name))
+function CMD.get(name)
+    local address = slave_list[name]
+    assert(address, string.format("No database slave %s.", name))
     return address
 end
 

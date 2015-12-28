@@ -72,11 +72,9 @@ function server.kick_handler(uid, subid)
 end
 
 function server.shutdown_handler()
-    skynet.call(loginservice, "lua", "unregister_gate", servername, skynet.self())
     for k, v in pairs(users) do
         skynet.call(v.agent, "lua", "logout", v.uid, v.subid)
     end
-    skynet.exit()
 end
 
 -- call by self (when socket disconnect)
@@ -94,10 +92,12 @@ function server.request_handler(username, msg)
 end
 
 -- call by self (when gate open)
-function server.register_handler(conf, name)
-    servername = name
+function server.register_handler(name)
+	servername = name
     agent_mgr = skynet.queryservice("agent_mgr")
-	skynet.call(loginservice, "lua", "register_gate", conf, name, skynet.self())
+	skynet.call(loginservice, "lua", "register_gate", servername, skynet.self())
+    local server_mgr = skynet.queryservice("server_mgr")
+    skynet.call(server_mgr, "lua", "register_gate", skynet.self())
 end
 
 msgserver.start(server)

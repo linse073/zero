@@ -19,12 +19,14 @@ skynet.start(function()
     local config = require(skynet.getenv("config"))
     for k, v in ipairs(config.db) do
         local dbslave = skynet.newservice("dbslave")
-        skynet.call(dbslave, "lua", "open", v, "global")
+        skynet.call(dbslave, "lua", "open", v)
     end
 	local loginserver = skynet.newservice("logind")
-    for k, v in ipairs(config.game) do
-        local server = skynet.newservice("server")
-        skynet.call(server, "lua", "open", v, loginserver)
+    local gate = skynet.newservice("gated", loginserver)
+    skynet.call(gate, "lua", "open", config.gate)
+    for k, v in ipairs(config.server) do
+        local server = skynet.newservice("server", loginserver)
+        skynet.call(server, "lua", "open", v, confi.gate.servername)
     end
     
     skynet.exit()

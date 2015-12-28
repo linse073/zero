@@ -45,8 +45,8 @@ function role.init(userdata)
     data.server = skynet.call(server_mgr, "lua", "get", data.servername)
 	-- you may load user data from database
     local master = skynet.queryservice("dbmaster")
-    data.accdb = skynet.call(master, "lua", "get", data.servername, "accountdb")
-    data.userdb = skynet.call(master, "lua", "get", data.servername, "userdb")
+    data.accdb = skynet.call(master, "lua", "get", "accountdb")
+    data.userdb = skynet.call(master, "lua", "get", "userdb")
     local account = skynet.call(data.accdb, "lua", "get", data.userid)
     if account then
         data.account = skynet.unpack(account)

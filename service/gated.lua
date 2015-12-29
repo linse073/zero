@@ -1,5 +1,6 @@
 local msgserver = require "snax.msgserver"
 local skynet = require "skynet"
+local util = require "util"
 
 local error = error
 local assert = assert
@@ -7,6 +8,7 @@ local string = string
 
 local loginservice = tonumber(...)
 
+local gen_id = util.gen_id
 local server = {}
 local users = {}
 local username_map = {}
@@ -16,13 +18,14 @@ local agent_mgr
 -- login server disallow multi login, so login_handler never be reentry
 -- call by login server
 function server.login_handler(uid, secret, servername, serverid)
-	if users[uid] then
-		error(string.format("%s is already login", uid))
+    local id = gen_id(uid, servername)
+	if users[id] then
+		error(string.format("%s is already login", id))
 	end
 
 	internal_id = internal_id + 1
-	local id = internal_id	-- don't use internal_id directly
-	local username = msgserver.username(uid, id, servername)
+	local sid = internal_id	-- don't use internal_id directly
+	local username = msgserver.username(uid, sid, servername)
 
 	-- you can use a pool to alloc new agent
     local agent = skynet.call(agent_mgr, "lua", "get")
@@ -30,51 +33,51 @@ function server.login_handler(uid, secret, servername, serverid)
 		username = username,
 		agent = agent,
 		uid = uid,
-		subid = id,
+		subid = sid,
         servername = servername,
         serverid = serverid,
 	}
 
 	-- trash subid (no used)
-	skynet.call(agent, "lua", "login", uid, id, secret, serverid)
+	skynet.call(agent, "lua", "login", uid, sid, secret, serverid, servername)
 
-	users[uid] = u
+	users[id] = u
 	username_map[username] = u
 
 	msgserver.login(username, secret)
 
 	-- you should return unique subid
-	return id
+	return sid
 end
 
 -- call by agent
-function server.logout_handler(uid, subid)
-	local u = users[uid]
+function server.logout_handler(id)
+	local u = users[id]
 	if u then
-		local username = msgserver.username(uid, subid, u.servername)
+		local username = msgserver.username(u.uid, u.subid, u.servername)
 		assert(u.username == username)
-		msgserver.logout(u.username)
-		users[uid] = nil
-		username_map[u.username] = nil
+		msgserver.logout(username)
+		users[id] = nil
+		username_map[username] = nil
+		skynet.call(loginservice, "lua", "logout", id)
         skynet.call(agent_mgr, "lua", "free", u.agent)
-		skynet.call(loginservice, "lua", "logout", uid, subid, u.servername)
 	end
 end
 
 -- call by login server
-function server.kick_handler(uid, subid)
-    skynet.error(string.format("kick user %s %d.", uid, subid))
-	local u = users[uid]
+function server.kick_handler(id)
+    skynet.error(string.format("kick user %s.", id))
+	local u = users[id]
 	if u then
-		local username = msgserver.username(uid, subid, u.servername)
+		local username = msgserver.username(u.uid, u.subid, u.servername)
 		assert(u.username == username)
-        skynet.call(u.agent, "lua", "logout", uid, subid)
+        skynet.call(u.agent, "lua", "logout")
 	end
 end
 
 function server.shutdown_handler()
     for k, v in pairs(users) do
-        skynet.call(v.agent, "lua", "logout", v.uid, v.subid)
+        skynet.call(v.agent, "lua", "logout")
     end
 end
 
@@ -93,9 +96,9 @@ function server.request_handler(username, msg)
 end
 
 -- call by self (when gate open)
-function server.register_handler(name)
+function server.register_handler(conf)
     agent_mgr = skynet.queryservice("agent_mgr")
-	skynet.call(loginservice, "lua", "register_gate", name, skynet.self())
+	skynet.call(loginservice, "lua", "register_gate", conf, skynet.self())
     local server_mgr = skynet.queryservice("server_mgr")
     skynet.call(server_mgr, "lua", "register_gate", skynet.self())
 end

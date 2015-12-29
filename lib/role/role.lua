@@ -93,8 +93,8 @@ end
 
 function role.heart_beat()
     if data.heart_beat == 0 then
-        skynet.error(string.format("heart beat kick user %s %d.", data.userid, data.subid))
-        skynet.call(data.gate, "lua", "kick", data.userid, data.subid) -- data is nil
+        skynet.error(string.format("heart beat kick user %s.", data.id))
+        skynet.call(data.gate, "lua", "kick") -- data is nil
     else
         data.heart_beat = 0
     end
@@ -193,6 +193,13 @@ function proc.create_user(msg)
 end
 
 function proc.enter_game(msg)
+    if data.enter then
+        error{code = error_code.ROLE_IS_ENTERING}
+    end
+    data.enter = true
+    if data.user then
+        error{code = error_code.ROLE_ALREADY_ENTER}
+    end
     local suser
     for k, v in ipairs(data.account) do
         if v.id == msg.id then
@@ -219,6 +226,7 @@ function proc.enter_game(msg)
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     skynet.call(role_mgr, "lua", "enter", user.id, skynet.self())
+    data.enter = nil
     return "user_all", ret
 end
 

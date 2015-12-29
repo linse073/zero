@@ -141,8 +141,7 @@ function server.start(conf)
 	end
 
 	function handler.open(source, gateconf)
-		local servername = assert(gateconf.servername)
-		return conf.register_handler(servername)
+		return conf.register_handler(gateconf)
 	end
 
 	function handler.connect(fd, addr)

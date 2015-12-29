@@ -20,4 +20,8 @@ function util.gen_key(serverid, key)
     return string.format("%d@%s", serverid, key)
 end
 
+function util.gen_id(uid, servername)
+    return string.format("%s@%s", uid, servername)
+end
+
 return util

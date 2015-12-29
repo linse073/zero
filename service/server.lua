@@ -46,7 +46,7 @@ function CMD.open(conf, gatename)
 
     local server_mgr = skynet.queryservice("server_mgr")
     skynet.call(server_mgr, "lua", "register", serverid, skynet.self())
-    skynet.call(loginservice, "lua", "register_server", servername, serverid, gatename)
+    skynet.call(loginservice, "lua", "register_server", conf, gatename)
 end
 
 function CMD.shutdown()

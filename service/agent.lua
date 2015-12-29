@@ -17,6 +17,7 @@ skynet.register_protocol {
 
 local proc = role.get_proc()
 local gen_key = util.gen_key
+local gen_id = util.gen_id
 local msg
 local name_msg
 local base
@@ -27,7 +28,7 @@ local data
 
 local CMD = {}
 
-function CMD.login(source, uid, sid, secret, serverid)
+function CMD.login(source, uid, sid, secret, serverid, servername)
 	-- you may use secret to make a encrypted data stream
 	skynet.error(string.format("%s is login", uid))
     data = {
@@ -35,7 +36,9 @@ function CMD.login(source, uid, sid, secret, serverid)
         userid = uid,
         subid = sid,
         serverid = serverid,
+        servername = servername,
         userkey = gen_key(serverid, userid),
+        id = gen_id(uid, servername),
     }
     role.init(data)
 end
@@ -43,14 +46,14 @@ end
 local function logout()
     local d = data
     data = nil
-    skynet.error(string.format("%s is logout", d.userid))
+    skynet.error(string.format("%s is logout", d.id))
     role.exit()
-    skynet.call(d.gate, "lua", "logout", d.userid, d.subid)
+    skynet.call(d.gate, "lua", "logout", d.id)
 end
 
-function CMD.logout(source, uid, sid)
+function CMD.logout(source)
 	-- NOTICE: The logout MAY be reentry
-    if data and data.userid == uid and data.subid == sid then
+    if data then
         logout()
     end
 end
@@ -58,12 +61,12 @@ end
 function CMD.afk(source)
 	-- the connection is broken, but the user may back
     if data then
-        skynet.error(string.format("%s afk", data.userid))
+        skynet.error(string.format("%s afk", data.id))
     end
 end
 
 function CMD.exit(source)
-    assert(not data, string.format("Agent exit error %s.", data.userid))
+    assert(not data, string.format("Agent exit error %s.", data.id))
 	skynet.exit()
 end
 

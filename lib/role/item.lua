@@ -234,16 +234,17 @@ end
 function item.use(i, pos)
     local pack = {}
     local iv = i[1]
-    local update = {}
+    local update = {id=iv.id}
     if iv.status == base.ITEM_STATUS_NORMAL then
+        local opos = iv.pos
         local oi = item.get_by_pos(pos)
         if oi then
             local oiv = oi[1]
-            oiv.pos = pos
-            item.set(pos, oi)
-            pack[#pack+1] = {id=oiv.id, pos=pos}
+            oiv.pos = opos
+            item.set(opos, oi)
+            pack[#pack+1] = {id=oiv.id, pos=opos}
         else
-            item.set(pos)
+            item.set(opos)
         end
     elseif iv.status == base.ITEM_STATUS_SELLING then
         iv.status = base.ITEM_STATUS_NORMAL

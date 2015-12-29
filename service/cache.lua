@@ -36,6 +36,18 @@ skynet.start(function()
     sharedata.new("day_task", day_task)
     sharedata.new("achi_task", achi_task)
 
+    local carddata = sharedata.queue("carddata")
+    local original_card = {}
+    for k, v in pairs(carddata) do
+        local original = original_card[k] or k
+        local d = v
+        repeat
+            original_card[d.id] = original
+            d = carddata[d.evolveId]
+        until not d
+    end
+    sharedata.new("original_card", original_card)
+
     sharedata.new("item_category", {
         [base.ITEM_TYPE_HEAD] = base.ITEM_DEFENCE,
         [base.ITEM_TYPE_BODY] = base.ITEM_DEFENCE,

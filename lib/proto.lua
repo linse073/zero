@@ -32,6 +32,11 @@ local msg = {
     [2207] = "uninlay_item",
 
     [2300] = "submit_task",
+
+    [2400] = "call_card",
+    [2401] = "upgrade_card",
+    [2402] = "promote_card",
+    [2403] = "use_card",
 }
 local name_msg = {}
 

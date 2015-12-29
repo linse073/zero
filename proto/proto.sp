@@ -48,7 +48,7 @@
     id 0 : integer
     cardid 1 : integer
     level 2 : integer
-    pos 3 : integer
+    pos 3 : *integer
 }
 
 .stage_info {
@@ -161,4 +161,22 @@
 .submit_task {
     id 0 : integer
     condition 1 : integer
+}
+
+.call_card {
+    cardid 0 : integer
+}
+
+.upgrade_card {
+    id 0 : integer
+}
+
+.promote_card {
+    id 0 : integer
+}
+
+.use_card {
+    id 0 : integer
+    pos_type 1 : integer
+    pos 2 : integer
 }

@@ -19,6 +19,9 @@ function share.is_stone(itemtype)
     return itemtype >= base.ITEM_TYPE_BLUE_STONE and itemtype <= base.ITEM_TYPE_GREEN_CRYSTAL
 end
 
+function share.check_card_pos(pos)
+end
+
 skynet.init(function()
     -- share with all service
     share.cardata = sharedata.query("carddata")
@@ -31,6 +34,7 @@ skynet.init(function()
 
     share.day_task = sharedata.query("day_task")
     share.achi_task = sharedata.query("achi_task")
+    share.original_card = sharedata.queue("original_card")
 
     share.item_category = sharedata.query("item_category")
 
@@ -39,7 +43,7 @@ skynet.init(function()
 
     -- share in current service
     share.sproto = sprotoloader.load(1)
-    share.cs = queue()
+    share.cs = queue() -- avoid dead lock, there is only one queue in a agent
 
     -- local variable
     base = share.base

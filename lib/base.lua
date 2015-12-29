@@ -22,11 +22,14 @@ local base = {
     TASK_COMPLETE_TYPE_TALK = 1,
 
     -- card
-    MAX_CARD_STAR = 6,
+    MAX_EQUIP_CARD = 4,
+    MAX_CARD_POSITION_TYPE = 2,
+    MAX_CARD_STAR_LEVEL = 16,
 
-    CARD_SOUL_COUNT = {
-        10, 30, 80, 180, 360, 660,
-    },
+    CARD_TYPE_NORMAL = 1,
+    CARD_TYPE_CLASS = 2,
+    CARD_TYPE_EVOLVE_1 = 3,
+    CARD_TYPE_EVOLVE_2 = 4,
 
     -- item
     ITEM_TYPE_HEAD = 1,

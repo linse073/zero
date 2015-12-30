@@ -41,6 +41,9 @@ local error_code = {
     CARD_EVOLVE_ITEM_LIMIT = 2307,
     ERROR_CARD_POSITION_TYPE = 2308,
     ERROR_CARD_POSITION = 2309,
+
+    STAGE_ID_NOT_EXIST = 2400,
+    PRE_STAGE_NOT_COMPLETE = 2401,
 }
 
 return error_code

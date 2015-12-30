@@ -14,9 +14,9 @@ local msg = {
     [2005] = "stage_info",
     [2006] = "task_info",
     [2007] = "friend_info",
-    [2007] = "rank_info",
-    [2008] = "user_all",
-    [2009] = "user_update",
+    [2008] = "rank_info",
+    [2009] = "user_all",
+    [2010] = "user_update",
 
     [2100] = "get_account_info",
     [2101] = "create_user",
@@ -37,6 +37,9 @@ local msg = {
     [2401] = "upgrade_card",
     [2402] = "promote_card",
     [2403] = "use_card",
+
+    [2500] = "begin_stage",
+    [2501] = "end_stage",
 }
 local name_msg = {}
 

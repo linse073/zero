@@ -180,3 +180,12 @@
     pos_type 1 : integer
     pos 2 : integer
 }
+
+.begin_stage {
+    id 0 : integer
+}
+
+.end_stage {
+    id 0 : integer
+    rand_seed 1 : integer
+}

@@ -84,6 +84,13 @@ local base = {
     MAX_INTENSIFY = 18,
 
     STONE_ID_BASE = 3000000000,
+
+    -- bonus
+    BONUS_TYPE_MONEY = 1,
+    BONUS_TYPE_EQUIP = 2,
+    BONUS_TYPE_ITEM = 3,
+    BONUS_TYPE_MATERIAL = 4,
+    BONUS_TYPE_STONE = 5,
 }
 
 return base

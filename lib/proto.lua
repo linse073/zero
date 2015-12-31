@@ -40,6 +40,7 @@ local msg = {
 
     [2500] = "begin_stage",
     [2501] = "end_stage",
+    [2502] = "stage_seed",
 }
 local name_msg = {}
 

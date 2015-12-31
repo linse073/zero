@@ -1,5 +1,9 @@
+local crypt = require "crypt"
 
 local string = string
+local tostring = tostring
+local b64decode = crypt.base64decode
+local hmac_hash = crypt.hmac_hash
 
 local util = {}
 
@@ -22,6 +26,27 @@ end
 
 function util.gen_id(uid, servername)
     return string.format("%s@%s", uid, servername)
+end
+
+local function table_to_string(t)
+    local text = ""
+    for k, v in pairs(t) do
+        local vt = type(v)
+        if vt == "string" then
+            text = text .. v
+        elseif vt == "number" or vt == "boolean" then
+            text = text .. tostring(v)
+        elseif vt == "table" then
+            text = text .. table_to_string(v)
+        end
+    end
+    return text
+end
+
+function util.check_sign(t, secret)
+    local sign = t.sign
+    t.sign = nil
+    return b64decode(sign) == hmac_hash(secret, table_to_string(t))
 end
 
 return util

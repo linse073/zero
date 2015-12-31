@@ -3,6 +3,8 @@ local sprotoloader = require "sprotoloader"
 local sharedata = require "sharedata"
 local proto = require "proto"
 
+local string = string
+
 skynet.start(function()
     -- share data
     sharedata.new("carddata", require("data.card"))
@@ -15,8 +17,60 @@ skynet.start(function()
     sharedata.new("base", require("base"))
     sharedata.new("error_code", require("error_code"))
 
-    local taskdata = sharedata.query("taskdata")
     local base = sharedata.query("base")
+    local bonusdata = require("data.bonus")
+    for k, v in pairs(bonusdata) do
+        local rt = {}
+        if v.MoneyRate > 0 then
+            rt[#rt+1] = {
+                type = base.BONUS_TYPE_MONEY,
+                num = v.Money,
+                rate = v.MoneyRate,
+            }
+        end
+        local equip_quality = v.EquipQuality
+        for k1, v1 in ipairs(v.EquipRate) do
+            if v1 > 0 then
+                rt[#rt+1] = {
+                    type = base.BONUS_TYPE_EQUIP,
+                    level = v.EquipLv,
+                    prof = v.EquipJob,
+                    quality = equip_quality[k1],
+                    rate = v1,
+                }
+            end
+        end
+        for item, num, rate in string.gmatch(v.dropItem, "(%d+);(%d+);(%d+)") do
+            rt[#rt+1] = {
+                type = base.BONUS_TYPE_ITEM,
+                item = item,
+                num = num,
+                rate = rate,
+            }
+        end
+        if v.MatRate > 0 then
+            rt[#rt+1] = {
+                type = base.BONUS_TYPE_MATERIAL,
+                item_type = v.MatType,
+                quality = v.MatQua,
+                num = v.MatNum,
+                rate = v.MatRate,
+            }
+        end
+        if v.StoneRate > 0 then
+            rt[#rt+1] = {
+                type = base.BONUS_TYPE_STONE,
+                item_type = v.StoneType,
+                quality = v.StoneQua,
+                num = v.StoneNum,
+                rate = v.StoneRate,
+            }
+        end
+        v.all_rate = rt
+    end
+    sharedata.new("bunusdata", bonusdata)
+
+    local taskdata = sharedata.query("taskdata")
     local day_task = {}
     local achi_task = {}
     for k, v in pairs(taskdata) do

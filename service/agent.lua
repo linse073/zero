@@ -35,6 +35,7 @@ function CMD.login(source, uid, sid, secret, serverid, servername)
         gate = source,
         userid = uid,
         subid = sid,
+        secret = secret,
         serverid = serverid,
         servername = servername,
         userkey = gen_key(serverid, userid),

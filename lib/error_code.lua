@@ -44,6 +44,8 @@ local error_code = {
 
     STAGE_ID_NOT_EXIST = 2400,
     PRE_STAGE_NOT_COMPLETE = 2401,
+    STAGE_COUNT_LIMIT = 2402,
+    ERROR_STAGE_SIGN = 2403,
 }
 
 return error_code

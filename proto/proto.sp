@@ -53,11 +53,11 @@
 
 .stage_info {
     id 0 : integer
-    star 1 : integer
-    day_count 2 : integer
-    total_count 3 : integer
-    best_time 4 : integer
-    best_hit 5 : integer
+    count 1 : integer
+    time 2 : integer
+    hit_score 3 : integer
+    trap_score 4 : integer
+    hp_score 5 : integer
 }
 
 .task_info {
@@ -186,6 +186,20 @@
 }
 
 .end_stage {
+    id 0 : integer
+    rand_seed 1 : integer
+    time 2 : integer
+    hit_score 3 : integer
+    trap_score 4 : integer
+    hp_score 5 : integer
+    total_gold 6 : integer
+    pick_gold 7 : integer
+    total_box 8 : integer
+    pick_box 9 : integer
+    sign 10 : string
+}
+
+.stage_seed {
     id 0 : integer
     rand_seed 1 : integer
 }

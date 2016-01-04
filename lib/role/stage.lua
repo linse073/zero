@@ -11,7 +11,6 @@ local error = error
 local string = string
 local random = math.random
 local randomseed = math.randomseed
-local floor = math.floor
 
 local check_sign = util.check_sign
 local stagedata
@@ -67,10 +66,46 @@ function stage.add_by_data(d)
     return s
 end
 
-function stage.rand_bonus(id, num)
-    local r = {}
-    local d = assert(bonusdata[id], string.format("No bonus data %d.", id))
-    for i = 1, num do
+function stage.rand_bonus(d, sd)
+    local rand = random(d.total_rate)
+    local t = 0
+    for k, v in ipairs(d.all_rate) do
+        t = t + v.rate
+        if rate <= t then
+            local bonus = {num = v.num}
+            if v.type == base.BONUS_TYPE_EQUIP then
+                local user = data.user
+                local prof
+                if v.prof == 1 then
+                    prof = user.prof
+                else
+                    prof = random(base.PROF_WARRIOR, base.PROF_WIZARD)
+                end
+                local level
+                if v.level == 1 then
+                    level = user.level // 5 * 5
+                else
+                    level = sd.limitLevel // 5 * 5
+                end
+                local itemtype = random(base.ITEM_TYPE_HEAD, base.ITEM_TYPE_NECKLACE)
+                bonus.item = item.gen_itemid(prof, level, itemtype, v.quality)
+            elseif v.type == base.BONUS_TYPE_MATERIAL then
+                local itemtype = v.item_type
+                if itemtype == 0 then
+                    itemtype = random(base.ITEM_TYPE_IRON, base.ITEM_TYPE_SPAR)
+                end
+                bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
+            elseif v.type == base.BONUS_TYPE_STONE then
+                local itemtype = v.item_type
+                if itemtype == 0 then
+                    itemtype = random(base.ITEM_TYPE_BLUE_STONE, base.ITEM_TYPE_GREEN_CRYSTAL)
+                end
+                bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
+            else
+                bonus.item = v.item
+            end
+            return bonus
+        end
     end
 end
 
@@ -114,17 +149,33 @@ function proc.end_stage(msg)
     local s = data.stage[msg.id]
     local d
     local money, exp
+    local bonus = {}
     if s then
         d = s[2]
         money, exp = d.getMoney, d.getExp
+        bonus[#bonus+1] = {id=d.bonusID, rand_num=1, num=1}
     else
         d = assert(stagedata[msg.id], string.format("No stage data %d.", msg.id))
         s = stage.add_by_data(d)
         money, exp = d.firstMoney, d.firstExp
+        bonus[#bonus+1] = {id=d.firstBonusID, num=1}
     end
+    if msg.total_box > 0 then
+        bonus[#bonus+1] = {id=d.dropBonus, rand_num=msg.total_box, num=msg.pick_box}
+    end
+    randomseed(msg.rand_seed)
+    for k, v in ipairs(bonus) do
+        local rand_item = {}
+        local bd = assert(bonusdata[v.id], string.format("No bonus data %d.", v.id))
+        for i = 1, v.rand_num do
+            rand_item[i] = stage.rand_bonus(bd, d)
+        end
+        v.rand_item = rand_item
+    end
+    local user = data.user
+    randomseed(skynet.time() + user.id)
     local puser = {}
     local ptask = {}
-    local user = data.user
     if money > 0 then
         user.money = user.money + money
         puser.money = user.money
@@ -139,8 +190,24 @@ function proc.end_stage(msg)
         end
     end
     if msg.total_gold > 0 and msg.pick_gold > 0 and d.goldTotal > 0 then
-        user.money = user.money + floor(d.goldTotal * msg.pick_gold / msg.total_gold)
+        user.money = user.money + d.goldTotal * msg.pick_gold // msg.total_gold
         puser.money = user.money
+    end
+    local pitem = {}
+    for k, v in ipairs(bonus) do
+        local rand_item = v.rand_item
+        for i = 1, v.num do
+            local ri = rand_item[i]
+            local itemid = ri.item
+            if itemid then
+                local rid = assert(itemdata[itemid], string.format("No item data %d.", itemid))
+                local pi = item.add_by_itemid(itemid, ri.num, rid)
+                merge(pitem, pi)
+            else
+                user.money = user.money + ri.num
+                puser.money = user.money
+            end
+        end
     end
     local sv = s[1]
     sv.count = sv.count + 1
@@ -156,6 +223,7 @@ function proc.end_stage(msg)
     if msg.hp_score > sv.hp_score then
         sv.hp_score = msg.hp_score
     end
+    return "update_user", {update={user=puser, item=pitem, task=ptask, stage={sv}}}
 end
 
 return stage

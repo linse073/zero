@@ -4,29 +4,34 @@ local sharedata = require "sharedata"
 local proto = require "proto"
 
 local string = string
+local tonumber = tonumber
 
 skynet.start(function()
     -- share data
-    sharedata.new("carddata", require("data.card"))
+    local carddata = require("data.card")
+    sharedata.new("carddata", carddata)
     sharedata.new("itemdata", require("data.item"))
     sharedata.new("stagedata", require("data.stage"))
-    sharedata.new("taskdata", require("data.task"))
+    local taskdata = require("data.task")
+    sharedata.new("taskdata", taskdata)
     sharedata.new("expdata", require("data.exp"))
     sharedata.new("intensifydata", require("data.intensify"))
 
-    sharedata.new("base", require("base"))
+    local base = require("base")
+    sharedata.new("base", base)
     sharedata.new("error_code", require("error_code"))
 
-    local base = sharedata.query("base")
     local bonusdata = require("data.bonus")
     for k, v in pairs(bonusdata) do
         local rt = {}
+        local total_rate = 0
         if v.MoneyRate > 0 then
             rt[#rt+1] = {
                 type = base.BONUS_TYPE_MONEY,
                 num = v.Money,
                 rate = v.MoneyRate,
             }
+            total_rate = total_rate + v.MoneyRate
         end
         local equip_quality = v.EquipQuality
         for k1, v1 in ipairs(v.EquipRate) do
@@ -38,15 +43,18 @@ skynet.start(function()
                     quality = equip_quality[k1],
                     rate = v1,
                 }
+                total_rate = total_rate + v1
             end
         end
         for item, num, rate in string.gmatch(v.dropItem, "(%d+);(%d+);(%d+)") do
+            local r = tonumber(rate)
             rt[#rt+1] = {
                 type = base.BONUS_TYPE_ITEM,
-                item = item,
-                num = num,
-                rate = rate,
+                item = tonumber(item),
+                num = tonumber(num),
+                rate = r,
             }
+            total_rate = total_rate + r
         end
         if v.MatRate > 0 then
             rt[#rt+1] = {
@@ -56,6 +64,7 @@ skynet.start(function()
                 num = v.MatNum,
                 rate = v.MatRate,
             }
+            total_rate = total_rate + v.MatRate
         end
         if v.StoneRate > 0 then
             rt[#rt+1] = {
@@ -65,12 +74,22 @@ skynet.start(function()
                 num = v.StoneNum,
                 rate = v.StoneRate,
             }
+            total_rate = total_rate + v.StoneRate
+        end
+        if total_rate < base.RAND_FACTOR then
+            local r = base.RAND_FACTOR - total_rate
+            rt[#rt+1] = {
+                type = base.BONUS_TYPE_MONEY,
+                num = v.MinMoney,
+                rate = r,
+            }
+            total_rate = base.RAND_FACTOR
         end
         v.all_rate = rt
+        v.total_rate = total_rate
     end
     sharedata.new("bunusdata", bonusdata)
 
-    local taskdata = sharedata.query("taskdata")
     local day_task = {}
     local achi_task = {}
     for k, v in pairs(taskdata) do
@@ -90,7 +109,6 @@ skynet.start(function()
     sharedata.new("day_task", day_task)
     sharedata.new("achi_task", achi_task)
 
-    local carddata = sharedata.queue("carddata")
     local original_card = {}
     for k, v in pairs(carddata) do
         local original = original_card[k] or k

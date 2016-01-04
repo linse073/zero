@@ -5,6 +5,11 @@ local base = {
     RAND_FACTOR = 10000,
     FLOAT_FACTOR = 1000,
 
+    PROF_WARRIOR = 1,
+    PROF_ASSASSIN = 2,
+    PROF_GUNNER = 3,
+    PROF_WIZARD = 4,
+
     -- task
     BEGIN_TASK_ID = 900000011,
 

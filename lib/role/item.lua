@@ -143,6 +143,7 @@ function item.add(v, d)
 end
 
 function item.add_by_itemid(itemid, num, d)
+    assert(num>0, string.format("Add item %d num error.", itemid))
     local pack = {}
     local overlay = d.overlay
     if overlay > 1 then
@@ -396,6 +397,10 @@ function item.uninlay(i, si, j)
     return {id=siv.id, host=siv.host, pos=siv.pos}
 end
 
+function item.gen_itemid(prof, level, itemtype, quality)
+    return 3000000000 + prof * 1000000 + level * 1000 + itemtype * 10 + quality
+end
+
 function item.get_proc()
     return proc
 end
@@ -454,7 +459,7 @@ function proc.compound_item(msg)
     if msg.num and msg.num < num then
         num = msg.num
     end
-    local comnum = floor(num*0.2)
+    local comnum = num // 5
     if comnum == 0 then
         error{code = error_code.ITEM_NUM_LIMIT}
     end
@@ -616,8 +621,8 @@ function proc.intensify_item(msg)
         local update
         if punishitem ~= iv.itemid then
             local pdata = assert(itemdata[punishitem], string.format("No item data %d.", punishitem))
-            local oldSlot = floor(d.needLv*0.1)
-            local newSlot = floor(pdata.needLv*0.1)
+            local oldSlot = d.needLv // 10
+            local newSlot = pdata.needLv // 10
             if newSlot < oldSlot then
                 local st = i[3]
                 if st and st.num > 0 then
@@ -666,10 +671,10 @@ function proc.inlay_item(msg)
         i[3] = st
     end
     local pitem = {}
-    local slot = floor(d.needLv*0.1)
+    local slot = d.needLv // 10
     for j = 1, slot do
         if not st[j] then
-            local stoneitem = 3000000000+(d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE)*10+j-1
+            local stoneitem = item.gen_itemid(0, 0, d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE, j-1)
             local si, p = item.split(stoneitem)
             if si then
                 if p then
@@ -700,7 +705,7 @@ function proc.uninlay_item(msg)
     local st = i[3]
     if st and st.num > 0 then
         local pitem = {}
-        local slot = floor(d.needLv*0.1)
+        local slot = d.needLv // 10
         for j = 1, slot do
             local si = st[j]
             if si then

@@ -1,7 +1,7 @@
 local datas = {
 	[3000000090] = {
 		id = 3000000090,
-		name = "劣质铁锭",
+		name = "一级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -18,17 +18,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1.png",
-		Description = "劣质的铁锭，用于合成普通铁锭",
+		Description = "用于合成二级铁锭",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000091,
 	},
 	[3000000100] = {
 		id = 3000000100,
-		name = "劣质兽皮",
+		name = "一级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -45,17 +45,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/8.png",
-		Description = "劣质的兽皮，用于合成普通兽皮",
+		Description = "用于合成二级兽皮",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000101,
 	},
 	[3000000110] = {
 		id = 3000000110,
-		name = "劣质毛料",
+		name = "一级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -72,17 +72,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/15.png",
-		Description = "劣质的毛料，用于合成普通毛料",
+		Description = "用于合成二级毛料",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000111,
 	},
 	[3000000120] = {
 		id = 3000000120,
-		name = "劣质晶石",
+		name = "一级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -98,17 +99,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/22.png",
-		Description = "劣质的晶石，用于合成普通晶石",
+		Description = "用于合成二级晶石",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000121,
 	},
 	[3000000091] = {
 		id = 3000000091,
-		name = "普通铁锭",
+		name = "二级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -125,17 +126,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/2.png",
-		Description = "普通的铁锭，用于改造普通装备",
+		Description = "用于改造普通装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000092,
 	},
 	[3000000101] = {
 		id = 3000000101,
-		name = "普通兽皮",
+		name = "二级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -152,17 +153,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/9.png",
-		Description = "普通的兽皮，用于改造普通装备",
+		Description = "用于改造普通装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000102,
 	},
 	[3000000111] = {
 		id = 3000000111,
-		name = "普通毛料",
+		name = "二级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -179,17 +180,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/16.png",
-		Description = "普通的毛料，用于改造普通装备",
+		Description = "用于改造普通装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000112,
 	},
 	[3000000121] = {
 		id = 3000000121,
-		name = "普通晶石",
+		name = "二级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -205,17 +207,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/23.png",
-		Description = "普通的晶石，用于改造普通装备",
+		Description = "用于改造普通装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000122,
 	},
 	[3000000092] = {
 		id = 3000000092,
-		name = "精良铁锭",
+		name = "三级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -232,17 +234,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/3.png",
-		Description = "精良的铁锭，用于改造精良装备",
+		Description = "用于改造精良装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000093,
 	},
 	[3000000102] = {
 		id = 3000000102,
-		name = "精良兽皮",
+		name = "三级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -259,17 +261,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/10.png",
-		Description = "精良的兽皮，用于改造精良装备",
+		Description = "用于改造精良装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000103,
 	},
 	[3000000112] = {
 		id = 3000000112,
-		name = "精良毛料",
+		name = "三级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -286,17 +288,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/17.png",
-		Description = "精良的毛料，用于改造精良装备",
+		Description = "用于改造精良装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000113,
 	},
 	[3000000122] = {
 		id = 3000000122,
-		name = "精良晶石",
+		name = "三级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -312,17 +315,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/24.png",
-		Description = "精良的晶石，用于改造精良装备",
+		Description = "用于改造精良装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000123,
 	},
 	[3000000093] = {
 		id = 3000000093,
-		name = "优质铁锭",
+		name = "四级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -339,17 +342,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/4.png",
-		Description = "优质的铁锭，用于改造稀有装备",
+		Description = "用于改造稀有装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000094,
 	},
 	[3000000103] = {
 		id = 3000000103,
-		name = "优质兽皮",
+		name = "四级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -366,17 +369,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/11.png",
-		Description = "优质的兽皮，用于改造稀有装备",
+		Description = "用于改造稀有装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000104,
 	},
 	[3000000113] = {
 		id = 3000000113,
-		name = "优质毛料",
+		name = "四级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -393,17 +396,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/18.png",
-		Description = "优质的毛料，用于改造稀有装备",
+		Description = "用于改造稀有装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000114,
 	},
 	[3000000123] = {
 		id = 3000000123,
-		name = "优质晶石",
+		name = "四级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -419,17 +423,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/25.png",
-		Description = "优质的晶石，用于改造稀有装备",
+		Description = "用于改造稀有装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000124,
 	},
 	[3000000094] = {
 		id = 3000000094,
-		name = "稀有铁锭",
+		name = "五级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -446,17 +450,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/5.png",
-		Description = "稀有的铁锭，用于改造卓越装备",
+		Description = "用于改造卓越装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000095,
 	},
 	[3000000104] = {
 		id = 3000000104,
-		name = "稀有兽皮",
+		name = "五级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -473,17 +477,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/12.png",
-		Description = "稀有的兽皮，用于改造卓越装备",
+		Description = "用于改造卓越装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000105,
 	},
 	[3000000114] = {
 		id = 3000000114,
-		name = "稀有毛料",
+		name = "五级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -500,17 +504,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/19.png",
-		Description = "稀有的毛料，用于改造卓越装备",
+		Description = "用于改造卓越装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000115,
 	},
 	[3000000124] = {
 		id = 3000000124,
-		name = "稀有晶石",
+		name = "五级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -526,17 +531,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/26.png",
-		Description = "稀有的晶石，用于改造卓越装备",
+		Description = "用于改造卓越装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000125,
 	},
 	[3000000095] = {
 		id = 3000000095,
-		name = "卓越铁锭",
+		name = "六级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -553,17 +558,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/6.png",
-		Description = "卓越的铁锭，用于改造完美装备",
+		Description = "用于改造完美装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000096,
 	},
 	[3000000105] = {
 		id = 3000000105,
-		name = "卓越兽皮",
+		name = "六级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -580,17 +585,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/13.png",
-		Description = "卓越的兽皮，用于改造完美装备",
+		Description = "用于改造完美装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000106,
 	},
 	[3000000115] = {
 		id = 3000000115,
-		name = "卓越毛料",
+		name = "六级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -607,17 +612,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/20.png",
-		Description = "卓越的毛料，用于改造完美装备",
+		Description = "用于改造完美装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000116,
 	},
 	[3000000125] = {
 		id = 3000000125,
-		name = "卓越晶石",
+		name = "六级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -633,17 +639,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/27.png",
-		Description = "卓越的晶石，用于改造完美装备",
+		Description = "用于改造完美装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000126,
 	},
 	[3000000096] = {
 		id = 3000000096,
-		name = "完美铁锭",
+		name = "七级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -660,17 +666,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/7.png",
-		Description = "完美的铁锭，用于改造传说装备",
+		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000097,
 	},
 	[3000000106] = {
 		id = 3000000106,
-		name = "完美兽皮",
+		name = "七级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -687,17 +693,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/14.png",
-		Description = "完美的兽皮，用于改造传说装备",
+		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000107,
 	},
 	[3000000116] = {
 		id = 3000000116,
-		name = "完美毛料",
+		name = "七级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -714,17 +720,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/21.png",
-		Description = "完美的毛料，用于改造传说装备",
+		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000117,
 	},
 	[3000000126] = {
 		id = 3000000126,
-		name = "完美晶石",
+		name = "七级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -740,17 +747,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/28.png",
-		Description = "完美的晶石，用于改造传说装备",
+		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3000000127,
 	},
 	[3000000130] = {
 		id = 3000000130,
-		name = "劣质蓝宝石",
+		name = "一等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -767,18 +774,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/101.png",
-		Description = "蓝色的宝石，增加390生命和15防御",
+		iconPath = "icon/111.png",
+		Description = "增加390生命和15防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000131,
 	},
-	[3000000170] = {
-		id = 3000000170,
-		name = "劣质蓝水晶",
-		itemType = 17,
+	[3000000140] = {
+		id = 3000000140,
+		name = "一等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -794,18 +801,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/104.png",
-		Description = "蓝色的水晶，增加390生命和15闪避",
+		iconPath = "icon/151.png",
+		Description = "增加390生命和15闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000171,
+		compos = 3000000141,
 	},
-	[3000000140] = {
-		id = 3000000140,
-		name = "劣质红宝石",
-		itemType = 14,
+	[3000000150] = {
+		id = 3000000150,
+		name = "一等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -821,18 +828,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/107.png",
-		Description = "红色的宝石，增加10攻击和15暴击",
+		iconPath = "icon/121.png",
+		Description = "增加10攻击和15暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000141,
+		compos = 3000000151,
 	},
-	[3000000180] = {
-		id = 3000000180,
-		name = "劣质红水晶",
-		itemType = 18,
+	[3000000160] = {
+		id = 3000000160,
+		name = "一等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -848,18 +855,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/110.png",
-		Description = "红色的水晶，增加10攻击和15穿刺",
+		iconPath = "icon/161.png",
+		Description = "增加10攻击和15穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000181,
+		compos = 3000000161,
 	},
-	[3000000150] = {
-		id = 3000000150,
-		name = "劣质黄宝石",
-		itemType = 15,
+	[3000000170] = {
+		id = 3000000170,
+		name = "一等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -875,18 +882,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/113.png",
-		Description = "黄色的宝石，增加10攻击和15破甲",
+		iconPath = "icon/131.png",
+		Description = "增加10攻击和15破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000151,
+		compos = 3000000171,
 	},
-	[3000000190] = {
-		id = 3000000190,
-		name = "劣质黄水晶",
-		itemType = 19,
+	[3000000180] = {
+		id = 3000000180,
+		name = "一等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -902,18 +909,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/116.png",
-		Description = "黄色的水晶，增加10攻击和15命中",
+		iconPath = "icon/171.png",
+		Description = "增加10攻击和15命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000191,
+		compos = 3000000181,
 	},
-	[3000000160] = {
-		id = 3000000160,
-		name = "劣质绿宝石",
-		itemType = 16,
+	[3000000190] = {
+		id = 3000000190,
+		name = "一等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -929,17 +936,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/119.png",
-		Description = "绿色的宝石，增加390生命和15韧性",
+		iconPath = "icon/141.png",
+		Description = "增加390生命和15韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000161,
+		compos = 3000000191,
 	},
 	[3000000200] = {
 		id = 3000000200,
-		name = "劣质绿水晶",
+		name = "一等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -956,17 +963,17 @@ local datas = {
 		hard = 15,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/122.png",
-		Description = "绿色的水晶，增加390生命和15格挡",
+		iconPath = "icon/181.png",
+		Description = "增加390生命和15格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000201,
 	},
 	[3000000131] = {
 		id = 3000000131,
-		name = "普通蓝宝石",
+		name = "二等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -983,18 +990,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/101.png",
-		Description = "蓝色的宝石，增加694生命和27防御",
+		iconPath = "icon/112.png",
+		Description = "增加694生命和27防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000132,
 	},
-	[3000000171] = {
-		id = 3000000171,
-		name = "普通蓝水晶",
-		itemType = 17,
+	[3000000141] = {
+		id = 3000000141,
+		name = "二等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -1010,18 +1017,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/104.png",
-		Description = "蓝色的水晶，增加694生命和27闪避",
+		iconPath = "icon/152.png",
+		Description = "增加694生命和27闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000172,
+		compos = 3000000142,
 	},
-	[3000000141] = {
-		id = 3000000141,
-		name = "普通红宝石",
-		itemType = 14,
+	[3000000151] = {
+		id = 3000000151,
+		name = "二等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -1037,18 +1044,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/107.png",
-		Description = "红色的宝石，增加18攻击和27暴击",
+		iconPath = "icon/122.png",
+		Description = "增加18攻击和27暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000142,
+		compos = 3000000152,
 	},
-	[3000000181] = {
-		id = 3000000181,
-		name = "普通红水晶",
-		itemType = 18,
+	[3000000161] = {
+		id = 3000000161,
+		name = "二等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -1064,18 +1071,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/110.png",
-		Description = "红色的水晶，增加18攻击和27穿刺",
+		iconPath = "icon/162.png",
+		Description = "增加18攻击和27穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000182,
+		compos = 3000000162,
 	},
-	[3000000151] = {
-		id = 3000000151,
-		name = "普通黄宝石",
-		itemType = 15,
+	[3000000171] = {
+		id = 3000000171,
+		name = "二等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -1091,18 +1098,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/113.png",
-		Description = "黄色的宝石，增加18攻击和27破甲",
+		iconPath = "icon/132.png",
+		Description = "增加18攻击和27破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000152,
+		compos = 3000000172,
 	},
-	[3000000191] = {
-		id = 3000000191,
-		name = "普通黄水晶",
-		itemType = 19,
+	[3000000181] = {
+		id = 3000000181,
+		name = "二等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -1118,18 +1125,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/116.png",
-		Description = "黄色的水晶，增加18攻击和27命中",
+		iconPath = "icon/172.png",
+		Description = "增加18攻击和27命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000192,
+		compos = 3000000182,
 	},
-	[3000000161] = {
-		id = 3000000161,
-		name = "普通绿宝石",
-		itemType = 16,
+	[3000000191] = {
+		id = 3000000191,
+		name = "二等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -1145,17 +1152,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/119.png",
-		Description = "绿色的宝石，增加694生命和27韧性",
+		iconPath = "icon/142.png",
+		Description = "增加694生命和27韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000162,
+		compos = 3000000192,
 	},
 	[3000000201] = {
 		id = 3000000201,
-		name = "普通绿水晶",
+		name = "二等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -1172,17 +1179,17 @@ local datas = {
 		hard = 27,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/122.png",
-		Description = "绿色的水晶，增加694生命和27格挡",
+		iconPath = "icon/182.png",
+		Description = "增加694生命和27格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000202,
 	},
 	[3000000132] = {
 		id = 3000000132,
-		name = "精良蓝宝石",
+		name = "三等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -1199,18 +1206,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/101.png",
-		Description = "蓝色的宝石，增加1234生命和48防御",
+		iconPath = "icon/113.png",
+		Description = "增加1234生命和48防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000133,
 	},
-	[3000000172] = {
-		id = 3000000172,
-		name = "精良蓝水晶",
-		itemType = 17,
+	[3000000142] = {
+		id = 3000000142,
+		name = "三等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -1226,18 +1233,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/104.png",
-		Description = "蓝色的水晶，增加1234生命和48闪避",
+		iconPath = "icon/153.png",
+		Description = "增加1234生命和48闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000173,
+		compos = 3000000143,
 	},
-	[3000000142] = {
-		id = 3000000142,
-		name = "精良红宝石",
-		itemType = 14,
+	[3000000152] = {
+		id = 3000000152,
+		name = "三等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -1253,18 +1260,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/107.png",
-		Description = "红色的宝石，增加32攻击和48暴击",
+		iconPath = "icon/123.png",
+		Description = "增加32攻击和48暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000143,
+		compos = 3000000153,
 	},
-	[3000000182] = {
-		id = 3000000182,
-		name = "精良红水晶",
-		itemType = 18,
+	[3000000162] = {
+		id = 3000000162,
+		name = "三等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -1280,18 +1287,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/110.png",
-		Description = "红色的水晶，增加32攻击和48穿刺",
+		iconPath = "icon/163.png",
+		Description = "增加32攻击和48穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000183,
+		compos = 3000000163,
 	},
-	[3000000152] = {
-		id = 3000000152,
-		name = "精良黄宝石",
-		itemType = 15,
+	[3000000172] = {
+		id = 3000000172,
+		name = "三等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -1307,18 +1314,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/113.png",
-		Description = "黄色的宝石，增加32攻击和48破甲",
+		iconPath = "icon/133.png",
+		Description = "增加32攻击和48破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000153,
+		compos = 3000000173,
 	},
-	[3000000192] = {
-		id = 3000000192,
-		name = "精良黄水晶",
-		itemType = 19,
+	[3000000182] = {
+		id = 3000000182,
+		name = "三等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -1334,18 +1341,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/116.png",
-		Description = "黄色的水晶，增加32攻击和48命中",
+		iconPath = "icon/173.png",
+		Description = "增加32攻击和48命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000193,
+		compos = 3000000183,
 	},
-	[3000000162] = {
-		id = 3000000162,
-		name = "精良绿宝石",
-		itemType = 16,
+	[3000000192] = {
+		id = 3000000192,
+		name = "三等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -1361,17 +1368,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/119.png",
-		Description = "绿色的宝石，增加1234生命和48韧性",
+		iconPath = "icon/143.png",
+		Description = "增加1234生命和48韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000163,
+		compos = 3000000193,
 	},
 	[3000000202] = {
 		id = 3000000202,
-		name = "精良绿水晶",
+		name = "三等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -1388,17 +1395,17 @@ local datas = {
 		hard = 48,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/122.png",
-		Description = "绿色的水晶，增加1234生命和48格挡",
+		iconPath = "icon/183.png",
+		Description = "增加1234生命和48格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000203,
 	},
 	[3000000133] = {
 		id = 3000000133,
-		name = "优质蓝宝石",
+		name = "四等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -1415,18 +1422,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/102.png",
-		Description = "蓝色的宝石，增加2194生命和85防御",
+		iconPath = "icon/114.png",
+		Description = "增加2194生命和85防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000134,
 	},
-	[3000000173] = {
-		id = 3000000173,
-		name = "优质蓝水晶",
-		itemType = 17,
+	[3000000143] = {
+		id = 3000000143,
+		name = "四等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -1442,18 +1449,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/105.png",
-		Description = "蓝色的水晶，增加2194生命和85闪避",
+		iconPath = "icon/154.png",
+		Description = "增加2194生命和85闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000174,
+		compos = 3000000144,
 	},
-	[3000000143] = {
-		id = 3000000143,
-		name = "优质红宝石",
-		itemType = 14,
+	[3000000153] = {
+		id = 3000000153,
+		name = "四等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -1469,18 +1476,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/108.png",
-		Description = "红色的宝石，增加57攻击和85暴击",
+		iconPath = "icon/124.png",
+		Description = "增加57攻击和85暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000144,
+		compos = 3000000154,
 	},
-	[3000000183] = {
-		id = 3000000183,
-		name = "优质红水晶",
-		itemType = 18,
+	[3000000163] = {
+		id = 3000000163,
+		name = "四等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -1496,18 +1503,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/111.png",
-		Description = "红色的水晶，增加57攻击和85穿刺",
+		iconPath = "icon/164.png",
+		Description = "增加57攻击和85穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000184,
+		compos = 3000000164,
 	},
-	[3000000153] = {
-		id = 3000000153,
-		name = "优质黄宝石",
-		itemType = 15,
+	[3000000173] = {
+		id = 3000000173,
+		name = "四等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -1523,18 +1530,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/114.png",
-		Description = "黄色的宝石，增加57攻击和85破甲",
+		iconPath = "icon/134.png",
+		Description = "增加57攻击和85破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000154,
+		compos = 3000000174,
 	},
-	[3000000193] = {
-		id = 3000000193,
-		name = "优质黄水晶",
-		itemType = 19,
+	[3000000183] = {
+		id = 3000000183,
+		name = "四等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -1550,18 +1557,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/117.png",
-		Description = "黄色的水晶，增加57攻击和85命中",
+		iconPath = "icon/174.png",
+		Description = "增加57攻击和85命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000194,
+		compos = 3000000184,
 	},
-	[3000000163] = {
-		id = 3000000163,
-		name = "优质绿宝石",
-		itemType = 16,
+	[3000000193] = {
+		id = 3000000193,
+		name = "四等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -1577,17 +1584,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/120.png",
-		Description = "绿色的宝石，增加2194生命和85韧性",
+		iconPath = "icon/144.png",
+		Description = "增加2194生命和85韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000164,
+		compos = 3000000194,
 	},
 	[3000000203] = {
 		id = 3000000203,
-		name = "优质绿水晶",
+		name = "四等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -1604,17 +1611,17 @@ local datas = {
 		hard = 85,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/123.png",
-		Description = "绿色的水晶，增加2194生命和85格挡",
+		iconPath = "icon/184.png",
+		Description = "增加2194生命和85格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000204,
 	},
 	[3000000134] = {
 		id = 3000000134,
-		name = "稀有蓝宝石",
+		name = "五等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -1631,18 +1638,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/102.png",
-		Description = "蓝色的宝石，增加3902生命和151防御",
+		iconPath = "icon/115.png",
+		Description = "增加3902生命和151防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000135,
 	},
-	[3000000174] = {
-		id = 3000000174,
-		name = "稀有蓝水晶",
-		itemType = 17,
+	[3000000144] = {
+		id = 3000000144,
+		name = "五等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -1658,18 +1665,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/105.png",
-		Description = "蓝色的水晶，增加3902生命和151闪避",
+		iconPath = "icon/155.png",
+		Description = "增加3902生命和151闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000175,
+		compos = 3000000145,
 	},
-	[3000000144] = {
-		id = 3000000144,
-		name = "稀有红宝石",
-		itemType = 14,
+	[3000000154] = {
+		id = 3000000154,
+		name = "五等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -1685,18 +1692,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/108.png",
-		Description = "红色的宝石，增加101攻击和151暴击",
+		iconPath = "icon/125.png",
+		Description = "增加101攻击和151暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000145,
+		compos = 3000000155,
 	},
-	[3000000184] = {
-		id = 3000000184,
-		name = "稀有红水晶",
-		itemType = 18,
+	[3000000164] = {
+		id = 3000000164,
+		name = "五等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -1712,18 +1719,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/111.png",
-		Description = "红色的水晶，增加101攻击和151穿刺",
+		iconPath = "icon/165.png",
+		Description = "增加101攻击和151穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000185,
+		compos = 3000000165,
 	},
-	[3000000154] = {
-		id = 3000000154,
-		name = "稀有黄宝石",
-		itemType = 15,
+	[3000000174] = {
+		id = 3000000174,
+		name = "五等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -1739,18 +1746,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/114.png",
-		Description = "黄色的宝石，增加101攻击和151破甲",
+		iconPath = "icon/135.png",
+		Description = "增加101攻击和151破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000155,
+		compos = 3000000175,
 	},
-	[3000000194] = {
-		id = 3000000194,
-		name = "稀有黄水晶",
-		itemType = 19,
+	[3000000184] = {
+		id = 3000000184,
+		name = "五等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -1766,18 +1773,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/117.png",
-		Description = "黄色的水晶，增加101攻击和151命中",
+		iconPath = "icon/175.png",
+		Description = "增加101攻击和151命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000195,
+		compos = 3000000185,
 	},
-	[3000000164] = {
-		id = 3000000164,
-		name = "稀有绿宝石",
-		itemType = 16,
+	[3000000194] = {
+		id = 3000000194,
+		name = "五等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -1793,17 +1800,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/120.png",
-		Description = "绿色的宝石，增加3902生命和151韧性",
+		iconPath = "icon/145.png",
+		Description = "增加3902生命和151韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000165,
+		compos = 3000000195,
 	},
 	[3000000204] = {
 		id = 3000000204,
-		name = "稀有绿水晶",
+		name = "五等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -1820,17 +1827,17 @@ local datas = {
 		hard = 151,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/123.png",
-		Description = "绿色的水晶，增加3902生命和151格挡",
+		iconPath = "icon/185.png",
+		Description = "增加3902生命和151格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000205,
 	},
 	[3000000135] = {
 		id = 3000000135,
-		name = "卓越蓝宝石",
+		name = "六等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -1847,18 +1854,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/102.png",
-		Description = "蓝色的宝石，增加6939生命和269防御",
+		iconPath = "icon/116.png",
+		Description = "增加6939生命和269防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000136,
 	},
-	[3000000175] = {
-		id = 3000000175,
-		name = "卓越蓝水晶",
-		itemType = 17,
+	[3000000145] = {
+		id = 3000000145,
+		name = "六等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -1874,18 +1881,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/105.png",
-		Description = "蓝色的水晶，增加6939生命和269闪避",
+		iconPath = "icon/156.png",
+		Description = "增加6939生命和269闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000176,
+		compos = 3000000146,
 	},
-	[3000000145] = {
-		id = 3000000145,
-		name = "卓越红宝石",
-		itemType = 14,
+	[3000000155] = {
+		id = 3000000155,
+		name = "六等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -1901,18 +1908,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/108.png",
-		Description = "红色的宝石，增加180攻击和269暴击",
+		iconPath = "icon/126.png",
+		Description = "增加180攻击和269暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000146,
+		compos = 3000000156,
 	},
-	[3000000185] = {
-		id = 3000000185,
-		name = "卓越红水晶",
-		itemType = 18,
+	[3000000165] = {
+		id = 3000000165,
+		name = "六等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -1928,18 +1935,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/111.png",
-		Description = "红色的水晶，增加180攻击和269穿刺",
+		iconPath = "icon/166.png",
+		Description = "增加180攻击和269穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000186,
+		compos = 3000000166,
 	},
-	[3000000155] = {
-		id = 3000000155,
-		name = "卓越黄宝石",
-		itemType = 15,
+	[3000000175] = {
+		id = 3000000175,
+		name = "六等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -1955,18 +1962,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/114.png",
-		Description = "黄色的宝石，增加180攻击和269破甲",
+		iconPath = "icon/136.png",
+		Description = "增加180攻击和269破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000156,
+		compos = 3000000176,
 	},
-	[3000000195] = {
-		id = 3000000195,
-		name = "卓越黄水晶",
-		itemType = 19,
+	[3000000185] = {
+		id = 3000000185,
+		name = "六等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -1982,18 +1989,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/117.png",
-		Description = "黄色的水晶，增加180攻击和269命中",
+		iconPath = "icon/176.png",
+		Description = "增加180攻击和269命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000196,
+		compos = 3000000186,
 	},
-	[3000000165] = {
-		id = 3000000165,
-		name = "卓越绿宝石",
-		itemType = 16,
+	[3000000195] = {
+		id = 3000000195,
+		name = "六等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -2009,17 +2016,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/120.png",
-		Description = "绿色的宝石，增加6939生命和269韧性",
+		iconPath = "icon/146.png",
+		Description = "增加6939生命和269韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000166,
+		compos = 3000000196,
 	},
 	[3000000205] = {
 		id = 3000000205,
-		name = "卓越绿水晶",
+		name = "六等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -2036,17 +2043,17 @@ local datas = {
 		hard = 269,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/123.png",
-		Description = "绿色的水晶，增加6939生命和269格挡",
+		iconPath = "icon/186.png",
+		Description = "增加6939生命和269格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000206,
 	},
 	[3000000136] = {
 		id = 3000000136,
-		name = "完美蓝宝石",
+		name = "七等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -2063,18 +2070,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/103.png",
-		Description = "蓝色的宝石，增加12339生命和478防御",
+		iconPath = "icon/117.png",
+		Description = "增加12339生命和478防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000137,
 	},
-	[3000000176] = {
-		id = 3000000176,
-		name = "完美蓝水晶",
-		itemType = 17,
+	[3000000146] = {
+		id = 3000000146,
+		name = "七等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -2090,18 +2097,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/106.png",
-		Description = "蓝色的水晶，增加12339生命和478闪避",
+		iconPath = "icon/157.png",
+		Description = "增加12339生命和478闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000177,
+		compos = 3000000147,
 	},
-	[3000000146] = {
-		id = 3000000146,
-		name = "完美红宝石",
-		itemType = 14,
+	[3000000156] = {
+		id = 3000000156,
+		name = "七等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -2117,18 +2124,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/109.png",
-		Description = "红色的宝石，增加320攻击和478暴击",
+		iconPath = "icon/127.png",
+		Description = "增加320攻击和478暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000147,
+		compos = 3000000157,
 	},
-	[3000000186] = {
-		id = 3000000186,
-		name = "完美红水晶",
-		itemType = 18,
+	[3000000166] = {
+		id = 3000000166,
+		name = "七等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -2144,18 +2151,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/112.png",
-		Description = "红色的水晶，增加320攻击和478穿刺",
+		iconPath = "icon/167.png",
+		Description = "增加320攻击和478穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000187,
+		compos = 3000000167,
 	},
-	[3000000156] = {
-		id = 3000000156,
-		name = "完美黄宝石",
-		itemType = 15,
+	[3000000176] = {
+		id = 3000000176,
+		name = "七等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -2171,18 +2178,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/115.png",
-		Description = "黄色的宝石，增加320攻击和478破甲",
+		iconPath = "icon/137.png",
+		Description = "增加320攻击和478破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000157,
+		compos = 3000000177,
 	},
-	[3000000196] = {
-		id = 3000000196,
-		name = "完美黄水晶",
-		itemType = 19,
+	[3000000186] = {
+		id = 3000000186,
+		name = "七等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -2198,18 +2205,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/118.png",
-		Description = "黄色的水晶，增加320攻击和478命中",
+		iconPath = "icon/177.png",
+		Description = "增加320攻击和478命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000197,
+		compos = 3000000187,
 	},
-	[3000000166] = {
-		id = 3000000166,
-		name = "完美绿宝石",
-		itemType = 16,
+	[3000000196] = {
+		id = 3000000196,
+		name = "七等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -2225,17 +2232,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/121.png",
-		Description = "绿色的宝石，增加12339生命和478韧性",
+		iconPath = "icon/147.png",
+		Description = "增加12339生命和478韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000167,
+		compos = 3000000197,
 	},
 	[3000000206] = {
 		id = 3000000206,
-		name = "完美绿水晶",
+		name = "七等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -2252,17 +2259,17 @@ local datas = {
 		hard = 478,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/124.png",
-		Description = "绿色的水晶，增加12339生命和478格挡",
+		iconPath = "icon/187.png",
+		Description = "增加12339生命和478格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000207,
 	},
 	[3000000137] = {
 		id = 3000000137,
-		name = "至尊蓝宝石",
+		name = "八等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -2279,18 +2286,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/103.png",
-		Description = "蓝色的宝石，增加21942生命和850防御",
+		iconPath = "icon/118.png",
+		Description = "增加21942生命和850防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000138,
 	},
-	[3000000177] = {
-		id = 3000000177,
-		name = "至尊蓝水晶",
-		itemType = 17,
+	[3000000147] = {
+		id = 3000000147,
+		name = "八等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -2306,18 +2313,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/106.png",
-		Description = "蓝色的水晶，增加21942生命和850闪避",
+		iconPath = "icon/158.png",
+		Description = "增加21942生命和850闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000178,
+		compos = 3000000148,
 	},
-	[3000000147] = {
-		id = 3000000147,
-		name = "至尊红宝石",
-		itemType = 14,
+	[3000000157] = {
+		id = 3000000157,
+		name = "八等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -2333,18 +2340,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/109.png",
-		Description = "红色的宝石，增加569攻击和850暴击",
+		iconPath = "icon/128.png",
+		Description = "增加569攻击和850暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000148,
+		compos = 3000000158,
 	},
-	[3000000187] = {
-		id = 3000000187,
-		name = "至尊红水晶",
-		itemType = 18,
+	[3000000167] = {
+		id = 3000000167,
+		name = "八等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -2360,18 +2367,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/112.png",
-		Description = "红色的水晶，增加569攻击和850穿刺",
+		iconPath = "icon/168.png",
+		Description = "增加569攻击和850穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000188,
+		compos = 3000000168,
 	},
-	[3000000157] = {
-		id = 3000000157,
-		name = "至尊黄宝石",
-		itemType = 15,
+	[3000000177] = {
+		id = 3000000177,
+		name = "八等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -2387,18 +2394,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/115.png",
-		Description = "黄色的宝石，增加569攻击和850破甲",
+		iconPath = "icon/138.png",
+		Description = "增加569攻击和850破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000158,
+		compos = 3000000178,
 	},
-	[3000000197] = {
-		id = 3000000197,
-		name = "至尊黄水晶",
-		itemType = 19,
+	[3000000187] = {
+		id = 3000000187,
+		name = "八等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -2414,18 +2421,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/118.png",
-		Description = "黄色的水晶，增加569攻击和850命中",
+		iconPath = "icon/178.png",
+		Description = "增加569攻击和850命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000198,
+		compos = 3000000188,
 	},
-	[3000000167] = {
-		id = 3000000167,
-		name = "至尊绿宝石",
-		itemType = 16,
+	[3000000197] = {
+		id = 3000000197,
+		name = "八等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -2441,17 +2448,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/121.png",
-		Description = "绿色的宝石，增加21942生命和850韧性",
+		iconPath = "icon/148.png",
+		Description = "增加21942生命和850韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000168,
+		compos = 3000000198,
 	},
 	[3000000207] = {
 		id = 3000000207,
-		name = "至尊绿水晶",
+		name = "八等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -2468,17 +2475,17 @@ local datas = {
 		hard = 850,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/124.png",
-		Description = "绿色的水晶，增加21942生命和850格挡",
+		iconPath = "icon/188.png",
+		Description = "增加21942生命和850格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000208,
 	},
 	[3000000138] = {
 		id = 3000000138,
-		name = "传说蓝宝石",
+		name = "九等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -2495,18 +2502,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/103.png",
-		Description = "蓝色的宝石，增加39019生命和1512防御",
+		iconPath = "icon/119.png",
+		Description = "增加39019生命和1512防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000139,
 	},
-	[3000000178] = {
-		id = 3000000178,
-		name = "传说蓝水晶",
-		itemType = 17,
+	[3000000148] = {
+		id = 3000000148,
+		name = "九等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -2522,18 +2529,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/106.png",
-		Description = "蓝色的水晶，增加39019生命和1512闪避",
+		iconPath = "icon/159.png",
+		Description = "增加39019生命和1512闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000179,
+		compos = 3000000149,
 	},
-	[3000000148] = {
-		id = 3000000148,
-		name = "传说红宝石",
-		itemType = 14,
+	[3000000158] = {
+		id = 3000000158,
+		name = "九等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -2549,18 +2556,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/109.png",
-		Description = "红色的宝石，增加1012攻击和1512暴击",
+		iconPath = "icon/129.png",
+		Description = "增加1012攻击和1512暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000149,
+		compos = 3000000159,
 	},
-	[3000000188] = {
-		id = 3000000188,
-		name = "传说红水晶",
-		itemType = 18,
+	[3000000168] = {
+		id = 3000000168,
+		name = "九等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -2576,18 +2583,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/112.png",
-		Description = "红色的水晶，增加1012攻击和1512穿刺",
+		iconPath = "icon/169.png",
+		Description = "增加1012攻击和1512穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000189,
+		compos = 3000000169,
 	},
-	[3000000158] = {
-		id = 3000000158,
-		name = "传说黄宝石",
-		itemType = 15,
+	[3000000178] = {
+		id = 3000000178,
+		name = "九等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -2603,18 +2610,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/115.png",
-		Description = "黄色的宝石，增加1012攻击和1512破甲",
+		iconPath = "icon/139.png",
+		Description = "增加1012攻击和1512破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000159,
+		compos = 3000000179,
 	},
-	[3000000198] = {
-		id = 3000000198,
-		name = "传说黄水晶",
-		itemType = 19,
+	[3000000188] = {
+		id = 3000000188,
+		name = "九等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -2630,18 +2637,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/118.png",
-		Description = "黄色的水晶，增加1012攻击和1512命中",
+		iconPath = "icon/179.png",
+		Description = "增加1012攻击和1512命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000199,
+		compos = 3000000189,
 	},
-	[3000000168] = {
-		id = 3000000168,
-		name = "传说绿宝石",
-		itemType = 16,
+	[3000000198] = {
+		id = 3000000198,
+		name = "九等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -2657,17 +2664,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/121.png",
-		Description = "绿色的宝石，增加39019生命和1512韧性",
+		iconPath = "icon/149.png",
+		Description = "增加39019生命和1512韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000169,
+		compos = 3000000199,
 	},
 	[3000000208] = {
 		id = 3000000208,
-		name = "传说绿水晶",
+		name = "九等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -2684,17 +2691,18 @@ local datas = {
 		hard = 1512,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
-		iconPath = "icon/124.png",
-		Description = "绿色的水晶，增加39019生命和1512格挡",
+		iconPath = "icon/189.png",
+		Description = "增加39019生命和1512格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3000000209,
 	},
 	[3000000210] = {
 		id = 3000000210,
-		name = "强化宝石",
+		name = "强化符石",
+		itemType = 21,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -2710,7 +2718,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2737,7 +2745,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2764,7 +2772,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2791,7 +2799,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2818,7 +2826,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2845,7 +2853,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2872,7 +2880,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2899,7 +2907,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2926,7 +2934,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2953,7 +2961,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -2980,7 +2988,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1058.png",
@@ -3007,7 +3015,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1006.png",
@@ -3034,7 +3042,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1013.png",
@@ -3061,7 +3069,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1028.png",
@@ -3088,7 +3096,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1100.png",
@@ -3115,7 +3123,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1024.png",
@@ -3142,7 +3150,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1085.png",
@@ -3169,7 +3177,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1023.png",
@@ -3196,7 +3204,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1080.png",
@@ -3223,7 +3231,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1015.png",
@@ -3250,7 +3258,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1007.png",
@@ -3277,7 +3285,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1033.png",
@@ -3304,7 +3312,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1016.png",
@@ -3331,7 +3339,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1022.png",
@@ -3358,7 +3366,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1004.png",
@@ -3385,7 +3393,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1073.png",
@@ -3412,7 +3420,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1041.png",
@@ -3439,7 +3447,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1005.png",
@@ -3466,7 +3474,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1011.png",
@@ -3493,7 +3501,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1072.png",
@@ -3520,7 +3528,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1047.png",
@@ -3547,7 +3555,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1049.png",
@@ -3574,7 +3582,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1019.png",
@@ -3601,7 +3609,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1038.png",
@@ -3628,7 +3636,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1061.png",
@@ -3655,7 +3663,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1106.png",
@@ -3682,7 +3690,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1122.png",
@@ -3709,7 +3717,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1010.png",
@@ -3736,7 +3744,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1152.png",
@@ -3763,7 +3771,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1153.png",
@@ -3790,7 +3798,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1154.png",
@@ -3817,7 +3825,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1155.png",
@@ -3844,7 +3852,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1156.png",
@@ -3871,7 +3879,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1157.png",
@@ -3898,7 +3906,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/1158.png",
@@ -3925,7 +3933,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 10,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/201.png",
@@ -3952,7 +3960,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 50,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/202.png",
@@ -3979,7 +3987,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/203.png",
@@ -4006,7 +4014,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 500,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/204.png",
@@ -4033,7 +4041,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 10,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/201.png",
@@ -4060,7 +4068,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 50,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/202.png",
@@ -4087,7 +4095,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/203.png",
@@ -4114,7 +4122,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 500,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/204.png",
@@ -4141,7 +4149,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -4168,7 +4176,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/211.png",
@@ -4195,7 +4203,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/212.png",
@@ -4222,7 +4230,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/213.png",
@@ -4249,7 +4257,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/113.png",
@@ -4276,7 +4284,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/113.png",
@@ -4303,7 +4311,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/214.png",
@@ -4330,7 +4338,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/215.png",
@@ -4357,7 +4365,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/216.png",
@@ -4384,7 +4392,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 0,
 		price = 0,
 		iconPath = "icon/217.png",
@@ -4394,7 +4402,7 @@ local datas = {
 	},
 	[3010000090] = {
 		id = 3010000090,
-		name = "劣质铁锭",
+		name = "一级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -4411,17 +4419,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1.png",
-		Description = "劣质的铁锭，用于合成普通铁锭",
+		Description = "用于合成二级铁锭",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000091,
 	},
 	[3010000100] = {
 		id = 3010000100,
-		name = "劣质兽皮",
+		name = "一级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -4438,17 +4446,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/8.png",
-		Description = "劣质的兽皮，用于合成普通兽皮",
+		Description = "用于合成二级兽皮",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000101,
 	},
 	[3010000110] = {
 		id = 3010000110,
-		name = "劣质毛料",
+		name = "一级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -4465,17 +4473,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/15.png",
-		Description = "劣质的毛料，用于合成普通毛料",
+		Description = "用于合成二级毛料",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000111,
 	},
 	[3010000120] = {
 		id = 3010000120,
-		name = "劣质晶石",
+		name = "一级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -4491,17 +4500,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/22.png",
-		Description = "劣质的晶石，用于合成普通晶石",
+		Description = "用于合成二级晶石",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000121,
 	},
 	[3010000091] = {
 		id = 3010000091,
-		name = "普通铁锭",
+		name = "二级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -4518,17 +4527,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/2.png",
-		Description = "普通的铁锭，用于改造普通装备",
+		Description = "用于改造普通装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000092,
 	},
 	[3010000101] = {
 		id = 3010000101,
-		name = "普通兽皮",
+		name = "二级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -4545,17 +4554,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/9.png",
-		Description = "普通的兽皮，用于改造普通装备",
+		Description = "用于改造普通装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000102,
 	},
 	[3010000111] = {
 		id = 3010000111,
-		name = "普通毛料",
+		name = "二级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -4572,17 +4581,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/16.png",
-		Description = "普通的毛料，用于改造普通装备",
+		Description = "用于改造普通装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000112,
 	},
 	[3010000121] = {
 		id = 3010000121,
-		name = "普通晶石",
+		name = "二级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -4598,17 +4608,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/23.png",
-		Description = "普通的晶石，用于改造普通装备",
+		Description = "用于改造普通装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000122,
 	},
 	[3010000092] = {
 		id = 3010000092,
-		name = "精良铁锭",
+		name = "三级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -4625,17 +4635,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/3.png",
-		Description = "精良的铁锭，用于改造精良装备",
+		Description = "用于改造精良装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000093,
 	},
 	[3010000102] = {
 		id = 3010000102,
-		name = "精良兽皮",
+		name = "三级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -4652,17 +4662,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/10.png",
-		Description = "精良的兽皮，用于改造精良装备",
+		Description = "用于改造精良装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000103,
 	},
 	[3010000112] = {
 		id = 3010000112,
-		name = "精良毛料",
+		name = "三级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -4679,17 +4689,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/17.png",
-		Description = "精良的毛料，用于改造精良装备",
+		Description = "用于改造精良装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000113,
 	},
 	[3010000122] = {
 		id = 3010000122,
-		name = "精良晶石",
+		name = "三级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -4705,17 +4716,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/24.png",
-		Description = "精良的晶石，用于改造精良装备",
+		Description = "用于改造精良装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000123,
 	},
 	[3010000093] = {
 		id = 3010000093,
-		name = "优质铁锭",
+		name = "四级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -4732,17 +4743,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/4.png",
-		Description = "优质的铁锭，用于改造稀有装备",
+		Description = "用于改造稀有装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000094,
 	},
 	[3010000103] = {
 		id = 3010000103,
-		name = "优质兽皮",
+		name = "四级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -4759,17 +4770,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/11.png",
-		Description = "优质的兽皮，用于改造稀有装备",
+		Description = "用于改造稀有装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000104,
 	},
 	[3010000113] = {
 		id = 3010000113,
-		name = "优质毛料",
+		name = "四级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -4786,17 +4797,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/18.png",
-		Description = "优质的毛料，用于改造稀有装备",
+		Description = "用于改造稀有装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000114,
 	},
 	[3010000123] = {
 		id = 3010000123,
-		name = "优质晶石",
+		name = "四级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -4812,17 +4824,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/25.png",
-		Description = "优质的晶石，用于改造稀有装备",
+		Description = "用于改造稀有装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000124,
 	},
 	[3010000094] = {
 		id = 3010000094,
-		name = "稀有铁锭",
+		name = "五级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -4839,17 +4851,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/5.png",
-		Description = "稀有的铁锭，用于改造卓越装备",
+		Description = "用于改造卓越装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000095,
 	},
 	[3010000104] = {
 		id = 3010000104,
-		name = "稀有兽皮",
+		name = "五级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -4866,17 +4878,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/12.png",
-		Description = "稀有的兽皮，用于改造卓越装备",
+		Description = "用于改造卓越装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000105,
 	},
 	[3010000114] = {
 		id = 3010000114,
-		name = "稀有毛料",
+		name = "五级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -4893,17 +4905,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/19.png",
-		Description = "稀有的毛料，用于改造卓越装备",
+		Description = "用于改造卓越装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000115,
 	},
 	[3010000124] = {
 		id = 3010000124,
-		name = "稀有晶石",
+		name = "五级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -4919,17 +4932,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/26.png",
-		Description = "稀有的晶石，用于改造卓越装备",
+		Description = "用于改造卓越装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000125,
 	},
 	[3010000095] = {
 		id = 3010000095,
-		name = "卓越铁锭",
+		name = "六级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -4946,17 +4959,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/6.png",
-		Description = "卓越的铁锭，用于改造完美装备",
+		Description = "用于改造完美装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000096,
 	},
 	[3010000105] = {
 		id = 3010000105,
-		name = "卓越兽皮",
+		name = "六级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -4973,17 +4986,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/13.png",
-		Description = "卓越的兽皮，用于改造完美装备",
+		Description = "用于改造完美装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000106,
 	},
 	[3010000115] = {
 		id = 3010000115,
-		name = "卓越毛料",
+		name = "六级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -5000,17 +5013,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/20.png",
-		Description = "卓越的毛料，用于改造完美装备",
+		Description = "用于改造完美装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000116,
 	},
 	[3010000125] = {
 		id = 3010000125,
-		name = "卓越晶石",
+		name = "六级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -5026,17 +5040,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/27.png",
-		Description = "卓越的晶石，用于改造完美装备",
+		Description = "用于改造完美装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000126,
 	},
 	[3010000096] = {
 		id = 3010000096,
-		name = "完美铁锭",
+		name = "七级铁锭",
 		itemType = 9,
 		needLv = 0,
 		needJob = 0,
@@ -5053,17 +5067,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/7.png",
-		Description = "完美的铁锭，用于改造传说装备",
+		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000097,
 	},
 	[3010000106] = {
 		id = 3010000106,
-		name = "完美兽皮",
+		name = "七级兽皮",
 		itemType = 10,
 		needLv = 0,
 		needJob = 0,
@@ -5080,17 +5094,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/14.png",
-		Description = "完美的兽皮，用于改造传说装备",
+		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000107,
 	},
 	[3010000116] = {
 		id = 3010000116,
-		name = "完美毛料",
+		name = "七级毛料",
 		itemType = 11,
 		needLv = 0,
 		needJob = 0,
@@ -5107,17 +5121,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/21.png",
-		Description = "完美的毛料，用于改造传说装备",
+		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000117,
 	},
 	[3010000126] = {
 		id = 3010000126,
-		name = "完美晶石",
+		name = "七级晶石",
+		itemType = 12,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -5133,17 +5148,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/28.png",
-		Description = "完美的晶石，用于改造传说装备",
+		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
 		compos = 3010000127,
 	},
 	[3010000130] = {
 		id = 3010000130,
-		name = "劣质蓝宝石",
+		name = "一等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -5160,18 +5175,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/101.png",
-		Description = "蓝色的宝石，增加390生命和15防御",
+		iconPath = "icon/111.png",
+		Description = "增加390生命和15防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000131,
 	},
-	[3010000170] = {
-		id = 3010000170,
-		name = "劣质蓝水晶",
-		itemType = 17,
+	[3010000140] = {
+		id = 3010000140,
+		name = "一等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -5187,18 +5202,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/104.png",
-		Description = "蓝色的水晶，增加390生命和15闪避",
+		iconPath = "icon/151.png",
+		Description = "增加390生命和15闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000171,
+		compos = 3010000141,
 	},
-	[3010000140] = {
-		id = 3010000140,
-		name = "劣质红宝石",
-		itemType = 14,
+	[3010000150] = {
+		id = 3010000150,
+		name = "一等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -5214,18 +5229,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/107.png",
-		Description = "红色的宝石，增加10攻击和15暴击",
+		iconPath = "icon/121.png",
+		Description = "增加10攻击和15暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000141,
+		compos = 3010000151,
 	},
-	[3010000180] = {
-		id = 3010000180,
-		name = "劣质红水晶",
-		itemType = 18,
+	[3010000160] = {
+		id = 3010000160,
+		name = "一等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -5241,18 +5256,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/110.png",
-		Description = "红色的水晶，增加10攻击和15穿刺",
+		iconPath = "icon/161.png",
+		Description = "增加10攻击和15穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000181,
+		compos = 3010000161,
 	},
-	[3010000150] = {
-		id = 3010000150,
-		name = "劣质黄宝石",
-		itemType = 15,
+	[3010000170] = {
+		id = 3010000170,
+		name = "一等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -5268,18 +5283,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/113.png",
-		Description = "黄色的宝石，增加10攻击和15破甲",
+		iconPath = "icon/131.png",
+		Description = "增加10攻击和15破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000151,
+		compos = 3010000171,
 	},
-	[3010000190] = {
-		id = 3010000190,
-		name = "劣质黄水晶",
-		itemType = 19,
+	[3010000180] = {
+		id = 3010000180,
+		name = "一等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -5295,18 +5310,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/116.png",
-		Description = "黄色的水晶，增加10攻击和15命中",
+		iconPath = "icon/171.png",
+		Description = "增加10攻击和15命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000191,
+		compos = 3010000181,
 	},
-	[3010000160] = {
-		id = 3010000160,
-		name = "劣质绿宝石",
-		itemType = 16,
+	[3010000190] = {
+		id = 3010000190,
+		name = "一等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -5322,17 +5337,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/119.png",
-		Description = "绿色的宝石，增加390生命和15韧性",
+		iconPath = "icon/141.png",
+		Description = "增加390生命和15韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000161,
+		compos = 3010000191,
 	},
 	[3010000200] = {
 		id = 3010000200,
-		name = "劣质绿水晶",
+		name = "一等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -5349,17 +5364,17 @@ local datas = {
 		hard = 15,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/122.png",
-		Description = "绿色的水晶，增加390生命和15格挡",
+		iconPath = "icon/181.png",
+		Description = "增加390生命和15格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000201,
 	},
 	[3010000131] = {
 		id = 3010000131,
-		name = "普通蓝宝石",
+		name = "二等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -5376,18 +5391,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/101.png",
-		Description = "蓝色的宝石，增加694生命和27防御",
+		iconPath = "icon/112.png",
+		Description = "增加694生命和27防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000132,
 	},
-	[3010000171] = {
-		id = 3010000171,
-		name = "普通蓝水晶",
-		itemType = 17,
+	[3010000141] = {
+		id = 3010000141,
+		name = "二等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -5403,18 +5418,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/104.png",
-		Description = "蓝色的水晶，增加694生命和27闪避",
+		iconPath = "icon/152.png",
+		Description = "增加694生命和27闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000172,
+		compos = 3010000142,
 	},
-	[3010000141] = {
-		id = 3010000141,
-		name = "普通红宝石",
-		itemType = 14,
+	[3010000151] = {
+		id = 3010000151,
+		name = "二等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -5430,18 +5445,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/107.png",
-		Description = "红色的宝石，增加18攻击和27暴击",
+		iconPath = "icon/122.png",
+		Description = "增加18攻击和27暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000142,
+		compos = 3010000152,
 	},
-	[3010000181] = {
-		id = 3010000181,
-		name = "普通红水晶",
-		itemType = 18,
+	[3010000161] = {
+		id = 3010000161,
+		name = "二等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -5457,18 +5472,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/110.png",
-		Description = "红色的水晶，增加18攻击和27穿刺",
+		iconPath = "icon/162.png",
+		Description = "增加18攻击和27穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000182,
+		compos = 3010000162,
 	},
-	[3010000151] = {
-		id = 3010000151,
-		name = "普通黄宝石",
-		itemType = 15,
+	[3010000171] = {
+		id = 3010000171,
+		name = "二等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -5484,18 +5499,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/113.png",
-		Description = "黄色的宝石，增加18攻击和27破甲",
+		iconPath = "icon/132.png",
+		Description = "增加18攻击和27破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000152,
+		compos = 3010000172,
 	},
-	[3010000191] = {
-		id = 3010000191,
-		name = "普通黄水晶",
-		itemType = 19,
+	[3010000181] = {
+		id = 3010000181,
+		name = "二等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -5511,18 +5526,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/116.png",
-		Description = "黄色的水晶，增加18攻击和27命中",
+		iconPath = "icon/172.png",
+		Description = "增加18攻击和27命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000192,
+		compos = 3010000182,
 	},
-	[3010000161] = {
-		id = 3010000161,
-		name = "普通绿宝石",
-		itemType = 16,
+	[3010000191] = {
+		id = 3010000191,
+		name = "二等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 1,
@@ -5538,17 +5553,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/119.png",
-		Description = "绿色的宝石，增加694生命和27韧性",
+		iconPath = "icon/142.png",
+		Description = "增加694生命和27韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000162,
+		compos = 3010000192,
 	},
 	[3010000201] = {
 		id = 3010000201,
-		name = "普通绿水晶",
+		name = "二等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -5565,17 +5580,17 @@ local datas = {
 		hard = 27,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/122.png",
-		Description = "绿色的水晶，增加694生命和27格挡",
+		iconPath = "icon/182.png",
+		Description = "增加694生命和27格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000202,
 	},
 	[3010000132] = {
 		id = 3010000132,
-		name = "精良蓝宝石",
+		name = "三等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -5592,18 +5607,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/101.png",
-		Description = "蓝色的宝石，增加1234生命和48防御",
+		iconPath = "icon/113.png",
+		Description = "增加1234生命和48防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000133,
 	},
-	[3010000172] = {
-		id = 3010000172,
-		name = "精良蓝水晶",
-		itemType = 17,
+	[3010000142] = {
+		id = 3010000142,
+		name = "三等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -5619,18 +5634,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/104.png",
-		Description = "蓝色的水晶，增加1234生命和48闪避",
+		iconPath = "icon/153.png",
+		Description = "增加1234生命和48闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000173,
+		compos = 3010000143,
 	},
-	[3010000142] = {
-		id = 3010000142,
-		name = "精良红宝石",
-		itemType = 14,
+	[3010000152] = {
+		id = 3010000152,
+		name = "三等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -5646,18 +5661,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/107.png",
-		Description = "红色的宝石，增加32攻击和48暴击",
+		iconPath = "icon/123.png",
+		Description = "增加32攻击和48暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000143,
+		compos = 3010000153,
 	},
-	[3010000182] = {
-		id = 3010000182,
-		name = "精良红水晶",
-		itemType = 18,
+	[3010000162] = {
+		id = 3010000162,
+		name = "三等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -5673,18 +5688,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/110.png",
-		Description = "红色的水晶，增加32攻击和48穿刺",
+		iconPath = "icon/163.png",
+		Description = "增加32攻击和48穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000183,
+		compos = 3010000163,
 	},
-	[3010000152] = {
-		id = 3010000152,
-		name = "精良黄宝石",
-		itemType = 15,
+	[3010000172] = {
+		id = 3010000172,
+		name = "三等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -5700,18 +5715,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/113.png",
-		Description = "黄色的宝石，增加32攻击和48破甲",
+		iconPath = "icon/133.png",
+		Description = "增加32攻击和48破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000153,
+		compos = 3010000173,
 	},
-	[3010000192] = {
-		id = 3010000192,
-		name = "精良黄水晶",
-		itemType = 19,
+	[3010000182] = {
+		id = 3010000182,
+		name = "三等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -5727,18 +5742,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/116.png",
-		Description = "黄色的水晶，增加32攻击和48命中",
+		iconPath = "icon/173.png",
+		Description = "增加32攻击和48命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000193,
+		compos = 3010000183,
 	},
-	[3010000162] = {
-		id = 3010000162,
-		name = "精良绿宝石",
-		itemType = 16,
+	[3010000192] = {
+		id = 3010000192,
+		name = "三等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 2,
@@ -5754,17 +5769,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/119.png",
-		Description = "绿色的宝石，增加1234生命和48韧性",
+		iconPath = "icon/143.png",
+		Description = "增加1234生命和48韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000163,
+		compos = 3010000193,
 	},
 	[3010000202] = {
 		id = 3010000202,
-		name = "精良绿水晶",
+		name = "三等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -5781,17 +5796,17 @@ local datas = {
 		hard = 48,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/122.png",
-		Description = "绿色的水晶，增加1234生命和48格挡",
+		iconPath = "icon/183.png",
+		Description = "增加1234生命和48格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000203,
 	},
 	[3010000133] = {
 		id = 3010000133,
-		name = "优质蓝宝石",
+		name = "四等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -5808,18 +5823,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/102.png",
-		Description = "蓝色的宝石，增加2194生命和85防御",
+		iconPath = "icon/114.png",
+		Description = "增加2194生命和85防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000134,
 	},
-	[3010000173] = {
-		id = 3010000173,
-		name = "优质蓝水晶",
-		itemType = 17,
+	[3010000143] = {
+		id = 3010000143,
+		name = "四等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -5835,18 +5850,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/105.png",
-		Description = "蓝色的水晶，增加2194生命和85闪避",
+		iconPath = "icon/154.png",
+		Description = "增加2194生命和85闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000174,
+		compos = 3010000144,
 	},
-	[3010000143] = {
-		id = 3010000143,
-		name = "优质红宝石",
-		itemType = 14,
+	[3010000153] = {
+		id = 3010000153,
+		name = "四等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -5862,18 +5877,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/108.png",
-		Description = "红色的宝石，增加57攻击和85暴击",
+		iconPath = "icon/124.png",
+		Description = "增加57攻击和85暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000144,
+		compos = 3010000154,
 	},
-	[3010000183] = {
-		id = 3010000183,
-		name = "优质红水晶",
-		itemType = 18,
+	[3010000163] = {
+		id = 3010000163,
+		name = "四等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -5889,18 +5904,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/111.png",
-		Description = "红色的水晶，增加57攻击和85穿刺",
+		iconPath = "icon/164.png",
+		Description = "增加57攻击和85穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000184,
+		compos = 3010000164,
 	},
-	[3010000153] = {
-		id = 3010000153,
-		name = "优质黄宝石",
-		itemType = 15,
+	[3010000173] = {
+		id = 3010000173,
+		name = "四等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -5916,18 +5931,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/114.png",
-		Description = "黄色的宝石，增加57攻击和85破甲",
+		iconPath = "icon/134.png",
+		Description = "增加57攻击和85破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000154,
+		compos = 3010000174,
 	},
-	[3010000193] = {
-		id = 3010000193,
-		name = "优质黄水晶",
-		itemType = 19,
+	[3010000183] = {
+		id = 3010000183,
+		name = "四等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -5943,18 +5958,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/117.png",
-		Description = "黄色的水晶，增加57攻击和85命中",
+		iconPath = "icon/174.png",
+		Description = "增加57攻击和85命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000194,
+		compos = 3010000184,
 	},
-	[3010000163] = {
-		id = 3010000163,
-		name = "优质绿宝石",
-		itemType = 16,
+	[3010000193] = {
+		id = 3010000193,
+		name = "四等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 3,
@@ -5970,17 +5985,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/120.png",
-		Description = "绿色的宝石，增加2194生命和85韧性",
+		iconPath = "icon/144.png",
+		Description = "增加2194生命和85韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000164,
+		compos = 3010000194,
 	},
 	[3010000203] = {
 		id = 3010000203,
-		name = "优质绿水晶",
+		name = "四等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -5997,17 +6012,17 @@ local datas = {
 		hard = 85,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/123.png",
-		Description = "绿色的水晶，增加2194生命和85格挡",
+		iconPath = "icon/184.png",
+		Description = "增加2194生命和85格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000204,
 	},
 	[3010000134] = {
 		id = 3010000134,
-		name = "稀有蓝宝石",
+		name = "五等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -6024,18 +6039,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/102.png",
-		Description = "蓝色的宝石，增加3902生命和151防御",
+		iconPath = "icon/115.png",
+		Description = "增加3902生命和151防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000135,
 	},
-	[3010000174] = {
-		id = 3010000174,
-		name = "稀有蓝水晶",
-		itemType = 17,
+	[3010000144] = {
+		id = 3010000144,
+		name = "五等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -6051,18 +6066,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/105.png",
-		Description = "蓝色的水晶，增加3902生命和151闪避",
+		iconPath = "icon/155.png",
+		Description = "增加3902生命和151闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000175,
+		compos = 3010000145,
 	},
-	[3010000144] = {
-		id = 3010000144,
-		name = "稀有红宝石",
-		itemType = 14,
+	[3010000154] = {
+		id = 3010000154,
+		name = "五等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -6078,18 +6093,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/108.png",
-		Description = "红色的宝石，增加101攻击和151暴击",
+		iconPath = "icon/125.png",
+		Description = "增加101攻击和151暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000145,
+		compos = 3010000155,
 	},
-	[3010000184] = {
-		id = 3010000184,
-		name = "稀有红水晶",
-		itemType = 18,
+	[3010000164] = {
+		id = 3010000164,
+		name = "五等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -6105,18 +6120,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/111.png",
-		Description = "红色的水晶，增加101攻击和151穿刺",
+		iconPath = "icon/165.png",
+		Description = "增加101攻击和151穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000185,
+		compos = 3010000165,
 	},
-	[3010000154] = {
-		id = 3010000154,
-		name = "稀有黄宝石",
-		itemType = 15,
+	[3010000174] = {
+		id = 3010000174,
+		name = "五等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -6132,18 +6147,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/114.png",
-		Description = "黄色的宝石，增加101攻击和151破甲",
+		iconPath = "icon/135.png",
+		Description = "增加101攻击和151破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000155,
+		compos = 3010000175,
 	},
-	[3010000194] = {
-		id = 3010000194,
-		name = "稀有黄水晶",
-		itemType = 19,
+	[3010000184] = {
+		id = 3010000184,
+		name = "五等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -6159,18 +6174,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/117.png",
-		Description = "黄色的水晶，增加101攻击和151命中",
+		iconPath = "icon/175.png",
+		Description = "增加101攻击和151命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000195,
+		compos = 3010000185,
 	},
-	[3010000164] = {
-		id = 3010000164,
-		name = "稀有绿宝石",
-		itemType = 16,
+	[3010000194] = {
+		id = 3010000194,
+		name = "五等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 4,
@@ -6186,17 +6201,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/120.png",
-		Description = "绿色的宝石，增加3902生命和151韧性",
+		iconPath = "icon/145.png",
+		Description = "增加3902生命和151韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000165,
+		compos = 3010000195,
 	},
 	[3010000204] = {
 		id = 3010000204,
-		name = "稀有绿水晶",
+		name = "五等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -6213,17 +6228,17 @@ local datas = {
 		hard = 151,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/123.png",
-		Description = "绿色的水晶，增加3902生命和151格挡",
+		iconPath = "icon/185.png",
+		Description = "增加3902生命和151格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000205,
 	},
 	[3010000135] = {
 		id = 3010000135,
-		name = "卓越蓝宝石",
+		name = "六等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -6240,18 +6255,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/102.png",
-		Description = "蓝色的宝石，增加6939生命和269防御",
+		iconPath = "icon/116.png",
+		Description = "增加6939生命和269防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000136,
 	},
-	[3010000175] = {
-		id = 3010000175,
-		name = "卓越蓝水晶",
-		itemType = 17,
+	[3010000145] = {
+		id = 3010000145,
+		name = "六等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -6267,18 +6282,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/105.png",
-		Description = "蓝色的水晶，增加6939生命和269闪避",
+		iconPath = "icon/156.png",
+		Description = "增加6939生命和269闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000176,
+		compos = 3010000146,
 	},
-	[3010000145] = {
-		id = 3010000145,
-		name = "卓越红宝石",
-		itemType = 14,
+	[3010000155] = {
+		id = 3010000155,
+		name = "六等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -6294,18 +6309,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/108.png",
-		Description = "红色的宝石，增加180攻击和269暴击",
+		iconPath = "icon/126.png",
+		Description = "增加180攻击和269暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000146,
+		compos = 3010000156,
 	},
-	[3010000185] = {
-		id = 3010000185,
-		name = "卓越红水晶",
-		itemType = 18,
+	[3010000165] = {
+		id = 3010000165,
+		name = "六等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -6321,18 +6336,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/111.png",
-		Description = "红色的水晶，增加180攻击和269穿刺",
+		iconPath = "icon/166.png",
+		Description = "增加180攻击和269穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000186,
+		compos = 3010000166,
 	},
-	[3010000155] = {
-		id = 3010000155,
-		name = "卓越黄宝石",
-		itemType = 15,
+	[3010000175] = {
+		id = 3010000175,
+		name = "六等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -6348,18 +6363,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/114.png",
-		Description = "黄色的宝石，增加180攻击和269破甲",
+		iconPath = "icon/136.png",
+		Description = "增加180攻击和269破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000156,
+		compos = 3010000176,
 	},
-	[3010000195] = {
-		id = 3010000195,
-		name = "卓越黄水晶",
-		itemType = 19,
+	[3010000185] = {
+		id = 3010000185,
+		name = "六等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -6375,18 +6390,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/117.png",
-		Description = "黄色的水晶，增加180攻击和269命中",
+		iconPath = "icon/176.png",
+		Description = "增加180攻击和269命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000196,
+		compos = 3010000186,
 	},
-	[3010000165] = {
-		id = 3010000165,
-		name = "卓越绿宝石",
-		itemType = 16,
+	[3010000195] = {
+		id = 3010000195,
+		name = "六等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 5,
@@ -6402,17 +6417,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/120.png",
-		Description = "绿色的宝石，增加6939生命和269韧性",
+		iconPath = "icon/146.png",
+		Description = "增加6939生命和269韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000166,
+		compos = 3010000196,
 	},
 	[3010000205] = {
 		id = 3010000205,
-		name = "卓越绿水晶",
+		name = "六等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -6429,17 +6444,17 @@ local datas = {
 		hard = 269,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/123.png",
-		Description = "绿色的水晶，增加6939生命和269格挡",
+		iconPath = "icon/186.png",
+		Description = "增加6939生命和269格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000206,
 	},
 	[3010000136] = {
 		id = 3010000136,
-		name = "完美蓝宝石",
+		name = "七等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -6456,18 +6471,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/103.png",
-		Description = "蓝色的宝石，增加12339生命和478防御",
+		iconPath = "icon/117.png",
+		Description = "增加12339生命和478防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000137,
 	},
-	[3010000176] = {
-		id = 3010000176,
-		name = "完美蓝水晶",
-		itemType = 17,
+	[3010000146] = {
+		id = 3010000146,
+		name = "七等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -6483,18 +6498,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/106.png",
-		Description = "蓝色的水晶，增加12339生命和478闪避",
+		iconPath = "icon/157.png",
+		Description = "增加12339生命和478闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000177,
+		compos = 3010000147,
 	},
-	[3010000146] = {
-		id = 3010000146,
-		name = "完美红宝石",
-		itemType = 14,
+	[3010000156] = {
+		id = 3010000156,
+		name = "七等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -6510,18 +6525,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/109.png",
-		Description = "红色的宝石，增加320攻击和478暴击",
+		iconPath = "icon/127.png",
+		Description = "增加320攻击和478暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000147,
+		compos = 3010000157,
 	},
-	[3010000186] = {
-		id = 3010000186,
-		name = "完美红水晶",
-		itemType = 18,
+	[3010000166] = {
+		id = 3010000166,
+		name = "七等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -6537,18 +6552,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/112.png",
-		Description = "红色的水晶，增加320攻击和478穿刺",
+		iconPath = "icon/167.png",
+		Description = "增加320攻击和478穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000187,
+		compos = 3010000167,
 	},
-	[3010000156] = {
-		id = 3010000156,
-		name = "完美黄宝石",
-		itemType = 15,
+	[3010000176] = {
+		id = 3010000176,
+		name = "七等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -6564,18 +6579,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/115.png",
-		Description = "黄色的宝石，增加320攻击和478破甲",
+		iconPath = "icon/137.png",
+		Description = "增加320攻击和478破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000157,
+		compos = 3010000177,
 	},
-	[3010000196] = {
-		id = 3010000196,
-		name = "完美黄水晶",
-		itemType = 19,
+	[3010000186] = {
+		id = 3010000186,
+		name = "七等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -6591,18 +6606,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/118.png",
-		Description = "黄色的水晶，增加320攻击和478命中",
+		iconPath = "icon/177.png",
+		Description = "增加320攻击和478命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000197,
+		compos = 3010000187,
 	},
-	[3010000166] = {
-		id = 3010000166,
-		name = "完美绿宝石",
-		itemType = 16,
+	[3010000196] = {
+		id = 3010000196,
+		name = "七等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 6,
@@ -6618,17 +6633,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/121.png",
-		Description = "绿色的宝石，增加12339生命和478韧性",
+		iconPath = "icon/147.png",
+		Description = "增加12339生命和478韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000167,
+		compos = 3010000197,
 	},
 	[3010000206] = {
 		id = 3010000206,
-		name = "完美绿水晶",
+		name = "七等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -6645,17 +6660,17 @@ local datas = {
 		hard = 478,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/124.png",
-		Description = "绿色的水晶，增加12339生命和478格挡",
+		iconPath = "icon/187.png",
+		Description = "增加12339生命和478格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000207,
 	},
 	[3010000137] = {
 		id = 3010000137,
-		name = "至尊蓝宝石",
+		name = "八等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -6672,18 +6687,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/103.png",
-		Description = "蓝色的宝石，增加21942生命和850防御",
+		iconPath = "icon/118.png",
+		Description = "增加21942生命和850防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000138,
 	},
-	[3010000177] = {
-		id = 3010000177,
-		name = "至尊蓝水晶",
-		itemType = 17,
+	[3010000147] = {
+		id = 3010000147,
+		name = "八等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -6699,18 +6714,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/106.png",
-		Description = "蓝色的水晶，增加21942生命和850闪避",
+		iconPath = "icon/158.png",
+		Description = "增加21942生命和850闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000178,
+		compos = 3010000148,
 	},
-	[3010000147] = {
-		id = 3010000147,
-		name = "至尊红宝石",
-		itemType = 14,
+	[3010000157] = {
+		id = 3010000157,
+		name = "八等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -6726,18 +6741,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/109.png",
-		Description = "红色的宝石，增加569攻击和850暴击",
+		iconPath = "icon/128.png",
+		Description = "增加569攻击和850暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000148,
+		compos = 3010000158,
 	},
-	[3010000187] = {
-		id = 3010000187,
-		name = "至尊红水晶",
-		itemType = 18,
+	[3010000167] = {
+		id = 3010000167,
+		name = "八等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -6753,18 +6768,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/112.png",
-		Description = "红色的水晶，增加569攻击和850穿刺",
+		iconPath = "icon/168.png",
+		Description = "增加569攻击和850穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000188,
+		compos = 3010000168,
 	},
-	[3010000157] = {
-		id = 3010000157,
-		name = "至尊黄宝石",
-		itemType = 15,
+	[3010000177] = {
+		id = 3010000177,
+		name = "八等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -6780,18 +6795,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/115.png",
-		Description = "黄色的宝石，增加569攻击和850破甲",
+		iconPath = "icon/138.png",
+		Description = "增加569攻击和850破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000158,
+		compos = 3010000178,
 	},
-	[3010000197] = {
-		id = 3010000197,
-		name = "至尊黄水晶",
-		itemType = 19,
+	[3010000187] = {
+		id = 3010000187,
+		name = "八等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -6807,18 +6822,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/118.png",
-		Description = "黄色的水晶，增加569攻击和850命中",
+		iconPath = "icon/178.png",
+		Description = "增加569攻击和850命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000198,
+		compos = 3010000188,
 	},
-	[3010000167] = {
-		id = 3010000167,
-		name = "至尊绿宝石",
-		itemType = 16,
+	[3010000197] = {
+		id = 3010000197,
+		name = "八等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 7,
@@ -6834,17 +6849,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/121.png",
-		Description = "绿色的宝石，增加21942生命和850韧性",
+		iconPath = "icon/148.png",
+		Description = "增加21942生命和850韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000168,
+		compos = 3010000198,
 	},
 	[3010000207] = {
 		id = 3010000207,
-		name = "至尊绿水晶",
+		name = "八等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -6861,17 +6876,17 @@ local datas = {
 		hard = 850,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/124.png",
-		Description = "绿色的水晶，增加21942生命和850格挡",
+		iconPath = "icon/188.png",
+		Description = "增加21942生命和850格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000208,
 	},
 	[3010000138] = {
 		id = 3010000138,
-		name = "传说蓝宝石",
+		name = "九等蓝宝石",
 		itemType = 13,
 		needLv = 0,
 		needJob = 0,
@@ -6888,18 +6903,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/103.png",
-		Description = "蓝色的宝石，增加39019生命和1512防御",
+		iconPath = "icon/119.png",
+		Description = "增加39019生命和1512防御",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000139,
 	},
-	[3010000178] = {
-		id = 3010000178,
-		name = "传说蓝水晶",
-		itemType = 17,
+	[3010000148] = {
+		id = 3010000148,
+		name = "九等翡翠石",
+		itemType = 14,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -6915,18 +6930,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/106.png",
-		Description = "蓝色的水晶，增加39019生命和1512闪避",
+		iconPath = "icon/159.png",
+		Description = "增加39019生命和1512闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000179,
+		compos = 3010000149,
 	},
-	[3010000148] = {
-		id = 3010000148,
-		name = "传说红宝石",
-		itemType = 14,
+	[3010000158] = {
+		id = 3010000158,
+		name = "九等红宝石",
+		itemType = 15,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -6942,18 +6957,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/109.png",
-		Description = "红色的宝石，增加1012攻击和1512暴击",
+		iconPath = "icon/129.png",
+		Description = "增加1012攻击和1512暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000149,
+		compos = 3010000159,
 	},
-	[3010000188] = {
-		id = 3010000188,
-		name = "传说红水晶",
-		itemType = 18,
+	[3010000168] = {
+		id = 3010000168,
+		name = "九等黄水玉",
+		itemType = 16,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -6969,18 +6984,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/112.png",
-		Description = "红色的水晶，增加1012攻击和1512穿刺",
+		iconPath = "icon/169.png",
+		Description = "增加1012攻击和1512穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000189,
+		compos = 3010000169,
 	},
-	[3010000158] = {
-		id = 3010000158,
-		name = "传说黄宝石",
-		itemType = 15,
+	[3010000178] = {
+		id = 3010000178,
+		name = "九等玫瑰石",
+		itemType = 17,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -6996,18 +7011,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/115.png",
-		Description = "黄色的宝石，增加1012攻击和1512破甲",
+		iconPath = "icon/139.png",
+		Description = "增加1012攻击和1512破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000159,
+		compos = 3010000179,
 	},
-	[3010000198] = {
-		id = 3010000198,
-		name = "传说黄水晶",
-		itemType = 19,
+	[3010000188] = {
+		id = 3010000188,
+		name = "九等紫水晶",
+		itemType = 18,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -7023,18 +7038,18 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/118.png",
-		Description = "黄色的水晶，增加1012攻击和1512命中",
+		iconPath = "icon/179.png",
+		Description = "增加1012攻击和1512命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000199,
+		compos = 3010000189,
 	},
-	[3010000168] = {
-		id = 3010000168,
-		name = "传说绿宝石",
-		itemType = 16,
+	[3010000198] = {
+		id = 3010000198,
+		name = "九等钻石",
+		itemType = 19,
 		needLv = 0,
 		needJob = 0,
 		quality = 8,
@@ -7050,17 +7065,17 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/121.png",
-		Description = "绿色的宝石，增加39019生命和1512韧性",
+		iconPath = "icon/149.png",
+		Description = "增加39019生命和1512韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000169,
+		compos = 3010000199,
 	},
 	[3010000208] = {
 		id = 3010000208,
-		name = "传说绿水晶",
+		name = "九等黑曜石",
 		itemType = 20,
 		needLv = 0,
 		needJob = 0,
@@ -7077,17 +7092,18 @@ local datas = {
 		hard = 1512,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
-		iconPath = "icon/124.png",
-		Description = "绿色的水晶，增加39019生命和1512格挡",
+		iconPath = "icon/189.png",
+		Description = "增加39019生命和1512格挡",
 		dropIconPath = "item_021.ccbi",
 		compos = 3010000209,
 	},
 	[3010000210] = {
 		id = 3010000210,
-		name = "强化宝石",
+		name = "强化符石",
+		itemType = 21,
 		needLv = 0,
 		needJob = 0,
 		quality = 0,
@@ -7103,7 +7119,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7130,7 +7146,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7157,7 +7173,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7184,7 +7200,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7211,7 +7227,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7238,7 +7254,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7265,7 +7281,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7292,7 +7308,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7319,7 +7335,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7346,7 +7362,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -7373,7 +7389,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1058.png",
@@ -7400,7 +7416,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1006.png",
@@ -7427,7 +7443,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1013.png",
@@ -7454,7 +7470,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1028.png",
@@ -7481,7 +7497,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1100.png",
@@ -7508,7 +7524,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1024.png",
@@ -7535,7 +7551,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1085.png",
@@ -7562,7 +7578,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1023.png",
@@ -7589,7 +7605,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1080.png",
@@ -7616,7 +7632,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1015.png",
@@ -7643,7 +7659,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1007.png",
@@ -7670,7 +7686,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1033.png",
@@ -7697,7 +7713,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1016.png",
@@ -7724,7 +7740,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1022.png",
@@ -7751,7 +7767,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1004.png",
@@ -7778,7 +7794,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1073.png",
@@ -7805,7 +7821,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1041.png",
@@ -7832,7 +7848,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1005.png",
@@ -7859,7 +7875,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1011.png",
@@ -7886,7 +7902,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1072.png",
@@ -7913,7 +7929,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1047.png",
@@ -7940,7 +7956,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1049.png",
@@ -7967,7 +7983,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1019.png",
@@ -7994,7 +8010,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1038.png",
@@ -8021,7 +8037,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1061.png",
@@ -8048,7 +8064,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1106.png",
@@ -8075,7 +8091,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1122.png",
@@ -8102,7 +8118,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1010.png",
@@ -8129,7 +8145,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1152.png",
@@ -8156,7 +8172,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1153.png",
@@ -8183,7 +8199,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1154.png",
@@ -8210,7 +8226,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1155.png",
@@ -8237,7 +8253,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1156.png",
@@ -8264,7 +8280,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1157.png",
@@ -8291,7 +8307,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/1158.png",
@@ -8318,7 +8334,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 10,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 2,
 		price = 0,
 		iconPath = "icon/201.png",
@@ -8345,7 +8361,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 50,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 3,
 		price = 0,
 		iconPath = "icon/202.png",
@@ -8372,7 +8388,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 4,
 		price = 0,
 		iconPath = "icon/203.png",
@@ -8399,7 +8415,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 500,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 5,
 		price = 0,
 		iconPath = "icon/204.png",
@@ -8426,7 +8442,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 10,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/201.png",
@@ -8453,7 +8469,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 50,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/202.png",
@@ -8480,7 +8496,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 200,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/203.png",
@@ -8507,7 +8523,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 500,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/204.png",
@@ -8534,7 +8550,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/999.png",
@@ -8561,7 +8577,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/211.png",
@@ -8588,7 +8604,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/212.png",
@@ -8615,7 +8631,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/213.png",
@@ -8642,7 +8658,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/113.png",
@@ -8669,7 +8685,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/113.png",
@@ -8696,7 +8712,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/214.png",
@@ -8723,7 +8739,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/215.png",
@@ -8750,7 +8766,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/216.png",
@@ -8777,7 +8793,7 @@ local datas = {
 		hard = 0,
 		suitBlind = 0,
 		exp = 0,
-		overlay = 1,
+		overlay = 999,
 		getBlind = 1,
 		price = 0,
 		iconPath = "icon/217.png",
@@ -8810,7 +8826,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "1级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000012] = {
 		id = 3001000012,
@@ -8837,7 +8853,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "1级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000013] = {
 		id = 3001000013,
@@ -8864,7 +8880,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "1级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000014] = {
 		id = 3001000014,
@@ -8891,7 +8907,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "1级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000015] = {
 		id = 3001000015,
@@ -8918,7 +8934,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "1级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000016] = {
 		id = 3001000016,
@@ -8945,7 +8961,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "1级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000021] = {
 		id = 3001000021,
@@ -8972,7 +8988,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "1级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000022] = {
 		id = 3001000022,
@@ -8999,7 +9015,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "1级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000023] = {
 		id = 3001000023,
@@ -9026,7 +9042,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "1级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000024] = {
 		id = 3001000024,
@@ -9053,7 +9069,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "1级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000025] = {
 		id = 3001000025,
@@ -9080,7 +9096,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "1级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000026] = {
 		id = 3001000026,
@@ -9107,7 +9123,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "1级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000031] = {
 		id = 3001000031,
@@ -9134,7 +9150,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "1级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000032] = {
 		id = 3001000032,
@@ -9161,7 +9177,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "1级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000033] = {
 		id = 3001000033,
@@ -9188,7 +9204,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "1级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000034] = {
 		id = 3001000034,
@@ -9215,7 +9231,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "1级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000035] = {
 		id = 3001000035,
@@ -9242,7 +9258,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "1级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000036] = {
 		id = 3001000036,
@@ -9269,7 +9285,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "1级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000041] = {
 		id = 3001000041,
@@ -9296,7 +9312,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "1级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000042] = {
 		id = 3001000042,
@@ -9323,7 +9339,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "1级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000043] = {
 		id = 3001000043,
@@ -9350,7 +9366,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "1级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000044] = {
 		id = 3001000044,
@@ -9377,7 +9393,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "1级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000045] = {
 		id = 3001000045,
@@ -9404,7 +9420,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "1级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000046] = {
 		id = 3001000046,
@@ -9431,7 +9447,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "1级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000051] = {
 		id = 3001000051,
@@ -9458,7 +9474,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "1级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000052] = {
 		id = 3001000052,
@@ -9485,7 +9501,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "1级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000053] = {
 		id = 3001000053,
@@ -9512,7 +9528,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "1级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000054] = {
 		id = 3001000054,
@@ -9539,7 +9555,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "1级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000055] = {
 		id = 3001000055,
@@ -9566,7 +9582,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "1级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000056] = {
 		id = 3001000056,
@@ -9593,7 +9609,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "1级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001000061] = {
 		id = 3001000061,
@@ -9620,7 +9636,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "1级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000062] = {
 		id = 3001000062,
@@ -9647,7 +9663,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "1级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000063] = {
 		id = 3001000063,
@@ -9674,7 +9690,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "1级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000064] = {
 		id = 3001000064,
@@ -9701,7 +9717,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "1级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000065] = {
 		id = 3001000065,
@@ -9728,7 +9744,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "1级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000066] = {
 		id = 3001000066,
@@ -9755,7 +9771,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "1级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001000071] = {
 		id = 3001000071,
@@ -9782,7 +9798,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "1级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000072] = {
 		id = 3001000072,
@@ -9809,7 +9825,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "1级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000073] = {
 		id = 3001000073,
@@ -9836,7 +9852,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "1级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000074] = {
 		id = 3001000074,
@@ -9863,7 +9879,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "1级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000075] = {
 		id = 3001000075,
@@ -9890,7 +9906,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "1级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000076] = {
 		id = 3001000076,
@@ -9917,7 +9933,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "1级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001000081] = {
 		id = 3001000081,
@@ -9944,7 +9960,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "1级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000082] = {
 		id = 3001000082,
@@ -9971,7 +9987,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "1级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000083] = {
 		id = 3001000083,
@@ -9998,7 +10014,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "1级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000084] = {
 		id = 3001000084,
@@ -10025,7 +10041,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "1级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000085] = {
 		id = 3001000085,
@@ -10052,7 +10068,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "1级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001000086] = {
 		id = 3001000086,
@@ -10079,7 +10095,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "1级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005011] = {
 		id = 3001005011,
@@ -10106,7 +10122,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "5级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005012] = {
 		id = 3001005012,
@@ -10133,7 +10149,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "5级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005013] = {
 		id = 3001005013,
@@ -10160,7 +10176,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "5级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005014] = {
 		id = 3001005014,
@@ -10187,7 +10203,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "5级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005015] = {
 		id = 3001005015,
@@ -10214,7 +10230,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "5级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005016] = {
 		id = 3001005016,
@@ -10241,7 +10257,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "5级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005021] = {
 		id = 3001005021,
@@ -10268,7 +10284,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "5级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005022] = {
 		id = 3001005022,
@@ -10295,7 +10311,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "5级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005023] = {
 		id = 3001005023,
@@ -10322,7 +10338,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "5级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005024] = {
 		id = 3001005024,
@@ -10349,7 +10365,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "5级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005025] = {
 		id = 3001005025,
@@ -10376,7 +10392,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "5级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005026] = {
 		id = 3001005026,
@@ -10403,7 +10419,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "5级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005031] = {
 		id = 3001005031,
@@ -10430,7 +10446,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "5级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005032] = {
 		id = 3001005032,
@@ -10457,7 +10473,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "5级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005033] = {
 		id = 3001005033,
@@ -10484,7 +10500,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "5级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005034] = {
 		id = 3001005034,
@@ -10511,7 +10527,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "5级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005035] = {
 		id = 3001005035,
@@ -10538,7 +10554,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "5级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005036] = {
 		id = 3001005036,
@@ -10565,7 +10581,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "5级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005041] = {
 		id = 3001005041,
@@ -10592,7 +10608,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "5级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005042] = {
 		id = 3001005042,
@@ -10619,7 +10635,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "5级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005043] = {
 		id = 3001005043,
@@ -10646,7 +10662,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "5级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005044] = {
 		id = 3001005044,
@@ -10673,7 +10689,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "5级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005045] = {
 		id = 3001005045,
@@ -10700,7 +10716,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "5级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005046] = {
 		id = 3001005046,
@@ -10727,7 +10743,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "5级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005051] = {
 		id = 3001005051,
@@ -10754,7 +10770,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "5级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005052] = {
 		id = 3001005052,
@@ -10781,7 +10797,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "5级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005053] = {
 		id = 3001005053,
@@ -10808,7 +10824,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "5级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005054] = {
 		id = 3001005054,
@@ -10835,7 +10851,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "5级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005055] = {
 		id = 3001005055,
@@ -10862,7 +10878,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "5级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005056] = {
 		id = 3001005056,
@@ -10889,7 +10905,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "5级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001005061] = {
 		id = 3001005061,
@@ -10916,7 +10932,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "5级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005062] = {
 		id = 3001005062,
@@ -10943,7 +10959,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "5级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005063] = {
 		id = 3001005063,
@@ -10970,7 +10986,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "5级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005064] = {
 		id = 3001005064,
@@ -10997,7 +11013,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "5级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005065] = {
 		id = 3001005065,
@@ -11024,7 +11040,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "5级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005066] = {
 		id = 3001005066,
@@ -11051,7 +11067,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "5级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001005071] = {
 		id = 3001005071,
@@ -11078,7 +11094,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "5级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005072] = {
 		id = 3001005072,
@@ -11105,7 +11121,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "5级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005073] = {
 		id = 3001005073,
@@ -11132,7 +11148,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "5级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005074] = {
 		id = 3001005074,
@@ -11159,7 +11175,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "5级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005075] = {
 		id = 3001005075,
@@ -11186,7 +11202,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "5级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005076] = {
 		id = 3001005076,
@@ -11213,7 +11229,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "5级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001005081] = {
 		id = 3001005081,
@@ -11240,7 +11256,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "5级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005082] = {
 		id = 3001005082,
@@ -11267,7 +11283,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "5级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005083] = {
 		id = 3001005083,
@@ -11294,7 +11310,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "5级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005084] = {
 		id = 3001005084,
@@ -11321,7 +11337,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "5级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005085] = {
 		id = 3001005085,
@@ -11348,7 +11364,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "5级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001005086] = {
 		id = 3001005086,
@@ -11375,7 +11391,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "5级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010011] = {
 		id = 3001010011,
@@ -11402,7 +11418,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "10级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010012] = {
 		id = 3001010012,
@@ -11429,7 +11445,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "10级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010013] = {
 		id = 3001010013,
@@ -11456,7 +11472,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "10级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010014] = {
 		id = 3001010014,
@@ -11483,7 +11499,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "10级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010015] = {
 		id = 3001010015,
@@ -11510,7 +11526,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "10级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010016] = {
 		id = 3001010016,
@@ -11537,7 +11553,7 @@ local datas = {
 		iconPath = "icon/10101.png",
 		Description = "10级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010021] = {
 		id = 3001010021,
@@ -11564,7 +11580,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "10级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010022] = {
 		id = 3001010022,
@@ -11591,7 +11607,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "10级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010023] = {
 		id = 3001010023,
@@ -11618,7 +11634,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "10级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010024] = {
 		id = 3001010024,
@@ -11645,7 +11661,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "10级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010025] = {
 		id = 3001010025,
@@ -11672,7 +11688,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "10级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010026] = {
 		id = 3001010026,
@@ -11699,7 +11715,7 @@ local datas = {
 		iconPath = "icon/10201.png",
 		Description = "10级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010031] = {
 		id = 3001010031,
@@ -11726,7 +11742,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "10级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010032] = {
 		id = 3001010032,
@@ -11753,7 +11769,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "10级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010033] = {
 		id = 3001010033,
@@ -11780,7 +11796,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "10级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010034] = {
 		id = 3001010034,
@@ -11807,7 +11823,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "10级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010035] = {
 		id = 3001010035,
@@ -11834,7 +11850,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "10级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010036] = {
 		id = 3001010036,
@@ -11861,7 +11877,7 @@ local datas = {
 		iconPath = "icon/10301.png",
 		Description = "10级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010041] = {
 		id = 3001010041,
@@ -11888,7 +11904,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "10级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010042] = {
 		id = 3001010042,
@@ -11915,7 +11931,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "10级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010043] = {
 		id = 3001010043,
@@ -11942,7 +11958,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "10级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010044] = {
 		id = 3001010044,
@@ -11969,7 +11985,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "10级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010045] = {
 		id = 3001010045,
@@ -11996,7 +12012,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "10级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010046] = {
 		id = 3001010046,
@@ -12023,7 +12039,7 @@ local datas = {
 		iconPath = "icon/10401.png",
 		Description = "10级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010051] = {
 		id = 3001010051,
@@ -12050,7 +12066,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "10级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010052] = {
 		id = 3001010052,
@@ -12077,7 +12093,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "10级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010053] = {
 		id = 3001010053,
@@ -12104,7 +12120,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "10级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010054] = {
 		id = 3001010054,
@@ -12131,7 +12147,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "10级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010055] = {
 		id = 3001010055,
@@ -12158,7 +12174,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "10级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010056] = {
 		id = 3001010056,
@@ -12185,7 +12201,7 @@ local datas = {
 		iconPath = "icon/10501.png",
 		Description = "10级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001010061] = {
 		id = 3001010061,
@@ -12212,7 +12228,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "10级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010062] = {
 		id = 3001010062,
@@ -12239,7 +12255,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "10级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010063] = {
 		id = 3001010063,
@@ -12266,7 +12282,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "10级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010064] = {
 		id = 3001010064,
@@ -12293,7 +12309,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "10级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010065] = {
 		id = 3001010065,
@@ -12320,7 +12336,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "10级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010066] = {
 		id = 3001010066,
@@ -12347,7 +12363,7 @@ local datas = {
 		iconPath = "icon/10601.png",
 		Description = "10级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001010071] = {
 		id = 3001010071,
@@ -12374,7 +12390,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "10级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010072] = {
 		id = 3001010072,
@@ -12401,7 +12417,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "10级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010073] = {
 		id = 3001010073,
@@ -12428,7 +12444,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "10级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010074] = {
 		id = 3001010074,
@@ -12455,7 +12471,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "10级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010075] = {
 		id = 3001010075,
@@ -12482,7 +12498,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "10级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010076] = {
 		id = 3001010076,
@@ -12509,7 +12525,7 @@ local datas = {
 		iconPath = "icon/10701.png",
 		Description = "10级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001010081] = {
 		id = 3001010081,
@@ -12536,7 +12552,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "10级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010082] = {
 		id = 3001010082,
@@ -12563,7 +12579,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "10级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010083] = {
 		id = 3001010083,
@@ -12590,7 +12606,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "10级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010084] = {
 		id = 3001010084,
@@ -12617,7 +12633,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "10级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010085] = {
 		id = 3001010085,
@@ -12644,7 +12660,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "10级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001010086] = {
 		id = 3001010086,
@@ -12671,7 +12687,7 @@ local datas = {
 		iconPath = "icon/10801.png",
 		Description = "10级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015011] = {
 		id = 3001015011,
@@ -12698,7 +12714,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "15级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015012] = {
 		id = 3001015012,
@@ -12725,7 +12741,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "15级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015013] = {
 		id = 3001015013,
@@ -12752,7 +12768,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "15级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015014] = {
 		id = 3001015014,
@@ -12779,7 +12795,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "15级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015015] = {
 		id = 3001015015,
@@ -12806,7 +12822,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "15级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015016] = {
 		id = 3001015016,
@@ -12833,7 +12849,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "15级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015021] = {
 		id = 3001015021,
@@ -12860,7 +12876,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "15级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015022] = {
 		id = 3001015022,
@@ -12887,7 +12903,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "15级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015023] = {
 		id = 3001015023,
@@ -12914,7 +12930,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "15级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015024] = {
 		id = 3001015024,
@@ -12941,7 +12957,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "15级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015025] = {
 		id = 3001015025,
@@ -12968,7 +12984,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "15级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015026] = {
 		id = 3001015026,
@@ -12995,7 +13011,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "15级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015031] = {
 		id = 3001015031,
@@ -13022,7 +13038,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "15级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015032] = {
 		id = 3001015032,
@@ -13049,7 +13065,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "15级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015033] = {
 		id = 3001015033,
@@ -13076,7 +13092,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "15级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015034] = {
 		id = 3001015034,
@@ -13103,7 +13119,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "15级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015035] = {
 		id = 3001015035,
@@ -13130,7 +13146,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "15级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015036] = {
 		id = 3001015036,
@@ -13157,7 +13173,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "15级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015041] = {
 		id = 3001015041,
@@ -13184,7 +13200,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "15级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015042] = {
 		id = 3001015042,
@@ -13211,7 +13227,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "15级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015043] = {
 		id = 3001015043,
@@ -13238,7 +13254,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "15级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015044] = {
 		id = 3001015044,
@@ -13265,7 +13281,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "15级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015045] = {
 		id = 3001015045,
@@ -13292,7 +13308,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "15级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015046] = {
 		id = 3001015046,
@@ -13319,7 +13335,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "15级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015051] = {
 		id = 3001015051,
@@ -13346,7 +13362,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "15级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015052] = {
 		id = 3001015052,
@@ -13373,7 +13389,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "15级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015053] = {
 		id = 3001015053,
@@ -13400,7 +13416,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "15级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015054] = {
 		id = 3001015054,
@@ -13427,7 +13443,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "15级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015055] = {
 		id = 3001015055,
@@ -13454,7 +13470,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "15级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015056] = {
 		id = 3001015056,
@@ -13481,7 +13497,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "15级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001015061] = {
 		id = 3001015061,
@@ -13508,7 +13524,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "15级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015062] = {
 		id = 3001015062,
@@ -13535,7 +13551,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "15级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015063] = {
 		id = 3001015063,
@@ -13562,7 +13578,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "15级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015064] = {
 		id = 3001015064,
@@ -13589,7 +13605,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "15级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015065] = {
 		id = 3001015065,
@@ -13616,7 +13632,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "15级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015066] = {
 		id = 3001015066,
@@ -13643,7 +13659,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "15级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001015071] = {
 		id = 3001015071,
@@ -13670,7 +13686,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "15级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015072] = {
 		id = 3001015072,
@@ -13697,7 +13713,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "15级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015073] = {
 		id = 3001015073,
@@ -13724,7 +13740,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "15级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015074] = {
 		id = 3001015074,
@@ -13751,7 +13767,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "15级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015075] = {
 		id = 3001015075,
@@ -13778,7 +13794,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "15级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015076] = {
 		id = 3001015076,
@@ -13805,7 +13821,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "15级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001015081] = {
 		id = 3001015081,
@@ -13832,7 +13848,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "15级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015082] = {
 		id = 3001015082,
@@ -13859,7 +13875,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "15级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015083] = {
 		id = 3001015083,
@@ -13886,7 +13902,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "15级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015084] = {
 		id = 3001015084,
@@ -13913,7 +13929,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "15级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015085] = {
 		id = 3001015085,
@@ -13940,7 +13956,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "15级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001015086] = {
 		id = 3001015086,
@@ -13967,7 +13983,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "15级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020011] = {
 		id = 3001020011,
@@ -13994,7 +14010,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "20级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020012] = {
 		id = 3001020012,
@@ -14021,7 +14037,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "20级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020013] = {
 		id = 3001020013,
@@ -14048,7 +14064,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "20级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020014] = {
 		id = 3001020014,
@@ -14075,7 +14091,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "20级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020015] = {
 		id = 3001020015,
@@ -14102,7 +14118,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "20级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020016] = {
 		id = 3001020016,
@@ -14129,7 +14145,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "20级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020021] = {
 		id = 3001020021,
@@ -14156,7 +14172,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "20级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020022] = {
 		id = 3001020022,
@@ -14183,7 +14199,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "20级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020023] = {
 		id = 3001020023,
@@ -14210,7 +14226,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "20级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020024] = {
 		id = 3001020024,
@@ -14237,7 +14253,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "20级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020025] = {
 		id = 3001020025,
@@ -14264,7 +14280,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "20级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020026] = {
 		id = 3001020026,
@@ -14291,7 +14307,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "20级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020031] = {
 		id = 3001020031,
@@ -14318,7 +14334,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "20级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020032] = {
 		id = 3001020032,
@@ -14345,7 +14361,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "20级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020033] = {
 		id = 3001020033,
@@ -14372,7 +14388,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "20级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020034] = {
 		id = 3001020034,
@@ -14399,7 +14415,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "20级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020035] = {
 		id = 3001020035,
@@ -14426,7 +14442,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "20级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020036] = {
 		id = 3001020036,
@@ -14453,7 +14469,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "20级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020041] = {
 		id = 3001020041,
@@ -14480,7 +14496,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "20级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020042] = {
 		id = 3001020042,
@@ -14507,7 +14523,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "20级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020043] = {
 		id = 3001020043,
@@ -14534,7 +14550,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "20级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020044] = {
 		id = 3001020044,
@@ -14561,7 +14577,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "20级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020045] = {
 		id = 3001020045,
@@ -14588,7 +14604,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "20级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020046] = {
 		id = 3001020046,
@@ -14615,7 +14631,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "20级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020051] = {
 		id = 3001020051,
@@ -14642,7 +14658,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "20级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020052] = {
 		id = 3001020052,
@@ -14669,7 +14685,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "20级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020053] = {
 		id = 3001020053,
@@ -14696,7 +14712,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "20级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020054] = {
 		id = 3001020054,
@@ -14723,7 +14739,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "20级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020055] = {
 		id = 3001020055,
@@ -14750,7 +14766,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "20级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020056] = {
 		id = 3001020056,
@@ -14777,7 +14793,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "20级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001020061] = {
 		id = 3001020061,
@@ -14804,7 +14820,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "20级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020062] = {
 		id = 3001020062,
@@ -14831,7 +14847,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "20级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020063] = {
 		id = 3001020063,
@@ -14858,7 +14874,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "20级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020064] = {
 		id = 3001020064,
@@ -14885,7 +14901,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "20级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020065] = {
 		id = 3001020065,
@@ -14912,7 +14928,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "20级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020066] = {
 		id = 3001020066,
@@ -14939,7 +14955,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "20级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001020071] = {
 		id = 3001020071,
@@ -14966,7 +14982,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "20级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020072] = {
 		id = 3001020072,
@@ -14993,7 +15009,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "20级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020073] = {
 		id = 3001020073,
@@ -15020,7 +15036,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "20级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020074] = {
 		id = 3001020074,
@@ -15047,7 +15063,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "20级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020075] = {
 		id = 3001020075,
@@ -15074,7 +15090,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "20级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020076] = {
 		id = 3001020076,
@@ -15101,7 +15117,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "20级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001020081] = {
 		id = 3001020081,
@@ -15128,7 +15144,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "20级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020082] = {
 		id = 3001020082,
@@ -15155,7 +15171,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "20级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020083] = {
 		id = 3001020083,
@@ -15182,7 +15198,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "20级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020084] = {
 		id = 3001020084,
@@ -15209,7 +15225,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "20级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020085] = {
 		id = 3001020085,
@@ -15236,7 +15252,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "20级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001020086] = {
 		id = 3001020086,
@@ -15263,7 +15279,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "20级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025011] = {
 		id = 3001025011,
@@ -15290,7 +15306,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "25级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025012] = {
 		id = 3001025012,
@@ -15317,7 +15333,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "25级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025013] = {
 		id = 3001025013,
@@ -15344,7 +15360,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "25级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025014] = {
 		id = 3001025014,
@@ -15371,7 +15387,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "25级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025015] = {
 		id = 3001025015,
@@ -15398,7 +15414,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "25级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025016] = {
 		id = 3001025016,
@@ -15425,7 +15441,7 @@ local datas = {
 		iconPath = "icon/10102.png",
 		Description = "25级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025021] = {
 		id = 3001025021,
@@ -15452,7 +15468,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "25级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025022] = {
 		id = 3001025022,
@@ -15479,7 +15495,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "25级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025023] = {
 		id = 3001025023,
@@ -15506,7 +15522,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "25级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025024] = {
 		id = 3001025024,
@@ -15533,7 +15549,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "25级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025025] = {
 		id = 3001025025,
@@ -15560,7 +15576,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "25级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025026] = {
 		id = 3001025026,
@@ -15587,7 +15603,7 @@ local datas = {
 		iconPath = "icon/10202.png",
 		Description = "25级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025031] = {
 		id = 3001025031,
@@ -15614,7 +15630,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "25级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025032] = {
 		id = 3001025032,
@@ -15641,7 +15657,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "25级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025033] = {
 		id = 3001025033,
@@ -15668,7 +15684,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "25级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025034] = {
 		id = 3001025034,
@@ -15695,7 +15711,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "25级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025035] = {
 		id = 3001025035,
@@ -15722,7 +15738,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "25级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025036] = {
 		id = 3001025036,
@@ -15749,7 +15765,7 @@ local datas = {
 		iconPath = "icon/10302.png",
 		Description = "25级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025041] = {
 		id = 3001025041,
@@ -15776,7 +15792,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "25级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025042] = {
 		id = 3001025042,
@@ -15803,7 +15819,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "25级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025043] = {
 		id = 3001025043,
@@ -15830,7 +15846,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "25级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025044] = {
 		id = 3001025044,
@@ -15857,7 +15873,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "25级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025045] = {
 		id = 3001025045,
@@ -15884,7 +15900,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "25级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025046] = {
 		id = 3001025046,
@@ -15911,7 +15927,7 @@ local datas = {
 		iconPath = "icon/10402.png",
 		Description = "25级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025051] = {
 		id = 3001025051,
@@ -15938,7 +15954,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "25级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025052] = {
 		id = 3001025052,
@@ -15965,7 +15981,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "25级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025053] = {
 		id = 3001025053,
@@ -15992,7 +16008,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "25级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025054] = {
 		id = 3001025054,
@@ -16019,7 +16035,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "25级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025055] = {
 		id = 3001025055,
@@ -16046,7 +16062,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "25级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025056] = {
 		id = 3001025056,
@@ -16073,7 +16089,7 @@ local datas = {
 		iconPath = "icon/10502.png",
 		Description = "25级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001025061] = {
 		id = 3001025061,
@@ -16100,7 +16116,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "25级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025062] = {
 		id = 3001025062,
@@ -16127,7 +16143,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "25级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025063] = {
 		id = 3001025063,
@@ -16154,7 +16170,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "25级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025064] = {
 		id = 3001025064,
@@ -16181,7 +16197,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "25级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025065] = {
 		id = 3001025065,
@@ -16208,7 +16224,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "25级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025066] = {
 		id = 3001025066,
@@ -16235,7 +16251,7 @@ local datas = {
 		iconPath = "icon/10602.png",
 		Description = "25级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001025071] = {
 		id = 3001025071,
@@ -16262,7 +16278,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "25级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025072] = {
 		id = 3001025072,
@@ -16289,7 +16305,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "25级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025073] = {
 		id = 3001025073,
@@ -16316,7 +16332,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "25级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025074] = {
 		id = 3001025074,
@@ -16343,7 +16359,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "25级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025075] = {
 		id = 3001025075,
@@ -16370,7 +16386,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "25级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025076] = {
 		id = 3001025076,
@@ -16397,7 +16413,7 @@ local datas = {
 		iconPath = "icon/10702.png",
 		Description = "25级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001025081] = {
 		id = 3001025081,
@@ -16424,7 +16440,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "25级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025082] = {
 		id = 3001025082,
@@ -16451,7 +16467,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "25级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025083] = {
 		id = 3001025083,
@@ -16478,7 +16494,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "25级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025084] = {
 		id = 3001025084,
@@ -16505,7 +16521,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "25级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025085] = {
 		id = 3001025085,
@@ -16532,7 +16548,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "25级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001025086] = {
 		id = 3001025086,
@@ -16559,7 +16575,7 @@ local datas = {
 		iconPath = "icon/10802.png",
 		Description = "25级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030011] = {
 		id = 3001030011,
@@ -16586,7 +16602,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "30级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030012] = {
 		id = 3001030012,
@@ -16613,7 +16629,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "30级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030013] = {
 		id = 3001030013,
@@ -16640,7 +16656,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "30级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030014] = {
 		id = 3001030014,
@@ -16667,7 +16683,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "30级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030015] = {
 		id = 3001030015,
@@ -16694,7 +16710,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "30级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030016] = {
 		id = 3001030016,
@@ -16721,7 +16737,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "30级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030021] = {
 		id = 3001030021,
@@ -16748,7 +16764,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "30级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030022] = {
 		id = 3001030022,
@@ -16775,7 +16791,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "30级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030023] = {
 		id = 3001030023,
@@ -16802,7 +16818,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "30级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030024] = {
 		id = 3001030024,
@@ -16829,7 +16845,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "30级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030025] = {
 		id = 3001030025,
@@ -16856,7 +16872,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "30级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030026] = {
 		id = 3001030026,
@@ -16883,7 +16899,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "30级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030031] = {
 		id = 3001030031,
@@ -16910,7 +16926,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "30级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030032] = {
 		id = 3001030032,
@@ -16937,7 +16953,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "30级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030033] = {
 		id = 3001030033,
@@ -16964,7 +16980,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "30级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030034] = {
 		id = 3001030034,
@@ -16991,7 +17007,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "30级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030035] = {
 		id = 3001030035,
@@ -17018,7 +17034,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "30级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030036] = {
 		id = 3001030036,
@@ -17045,7 +17061,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "30级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030041] = {
 		id = 3001030041,
@@ -17072,7 +17088,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "30级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030042] = {
 		id = 3001030042,
@@ -17099,7 +17115,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "30级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030043] = {
 		id = 3001030043,
@@ -17126,7 +17142,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "30级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030044] = {
 		id = 3001030044,
@@ -17153,7 +17169,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "30级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030045] = {
 		id = 3001030045,
@@ -17180,7 +17196,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "30级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030046] = {
 		id = 3001030046,
@@ -17207,7 +17223,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "30级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030051] = {
 		id = 3001030051,
@@ -17234,7 +17250,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "30级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030052] = {
 		id = 3001030052,
@@ -17261,7 +17277,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "30级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030053] = {
 		id = 3001030053,
@@ -17288,7 +17304,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "30级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030054] = {
 		id = 3001030054,
@@ -17315,7 +17331,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "30级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030055] = {
 		id = 3001030055,
@@ -17342,7 +17358,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "30级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030056] = {
 		id = 3001030056,
@@ -17369,7 +17385,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "30级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001030061] = {
 		id = 3001030061,
@@ -17396,7 +17412,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "30级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030062] = {
 		id = 3001030062,
@@ -17423,7 +17439,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "30级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030063] = {
 		id = 3001030063,
@@ -17450,7 +17466,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "30级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030064] = {
 		id = 3001030064,
@@ -17477,7 +17493,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "30级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030065] = {
 		id = 3001030065,
@@ -17504,7 +17520,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "30级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030066] = {
 		id = 3001030066,
@@ -17531,7 +17547,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "30级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001030071] = {
 		id = 3001030071,
@@ -17558,7 +17574,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "30级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030072] = {
 		id = 3001030072,
@@ -17585,7 +17601,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "30级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030073] = {
 		id = 3001030073,
@@ -17612,7 +17628,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "30级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030074] = {
 		id = 3001030074,
@@ -17639,7 +17655,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "30级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030075] = {
 		id = 3001030075,
@@ -17666,7 +17682,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "30级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030076] = {
 		id = 3001030076,
@@ -17693,7 +17709,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "30级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001030081] = {
 		id = 3001030081,
@@ -17720,7 +17736,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "30级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030082] = {
 		id = 3001030082,
@@ -17747,7 +17763,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "30级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030083] = {
 		id = 3001030083,
@@ -17774,7 +17790,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "30级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030084] = {
 		id = 3001030084,
@@ -17801,7 +17817,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "30级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030085] = {
 		id = 3001030085,
@@ -17828,7 +17844,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "30级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001030086] = {
 		id = 3001030086,
@@ -17855,7 +17871,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "30级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035011] = {
 		id = 3001035011,
@@ -17882,7 +17898,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "35级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035012] = {
 		id = 3001035012,
@@ -17909,7 +17925,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "35级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035013] = {
 		id = 3001035013,
@@ -17936,7 +17952,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "35级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035014] = {
 		id = 3001035014,
@@ -17963,7 +17979,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "35级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035015] = {
 		id = 3001035015,
@@ -17990,7 +18006,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "35级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035016] = {
 		id = 3001035016,
@@ -18017,7 +18033,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "35级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035021] = {
 		id = 3001035021,
@@ -18044,7 +18060,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "35级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035022] = {
 		id = 3001035022,
@@ -18071,7 +18087,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "35级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035023] = {
 		id = 3001035023,
@@ -18098,7 +18114,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "35级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035024] = {
 		id = 3001035024,
@@ -18125,7 +18141,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "35级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035025] = {
 		id = 3001035025,
@@ -18152,7 +18168,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "35级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035026] = {
 		id = 3001035026,
@@ -18179,7 +18195,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "35级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035031] = {
 		id = 3001035031,
@@ -18206,7 +18222,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "35级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035032] = {
 		id = 3001035032,
@@ -18233,7 +18249,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "35级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035033] = {
 		id = 3001035033,
@@ -18260,7 +18276,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "35级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035034] = {
 		id = 3001035034,
@@ -18287,7 +18303,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "35级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035035] = {
 		id = 3001035035,
@@ -18314,7 +18330,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "35级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035036] = {
 		id = 3001035036,
@@ -18341,7 +18357,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "35级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035041] = {
 		id = 3001035041,
@@ -18368,7 +18384,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "35级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035042] = {
 		id = 3001035042,
@@ -18395,7 +18411,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "35级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035043] = {
 		id = 3001035043,
@@ -18422,7 +18438,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "35级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035044] = {
 		id = 3001035044,
@@ -18449,7 +18465,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "35级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035045] = {
 		id = 3001035045,
@@ -18476,7 +18492,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "35级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035046] = {
 		id = 3001035046,
@@ -18503,7 +18519,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "35级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035051] = {
 		id = 3001035051,
@@ -18530,7 +18546,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "35级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035052] = {
 		id = 3001035052,
@@ -18557,7 +18573,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "35级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035053] = {
 		id = 3001035053,
@@ -18584,7 +18600,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "35级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035054] = {
 		id = 3001035054,
@@ -18611,7 +18627,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "35级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035055] = {
 		id = 3001035055,
@@ -18638,7 +18654,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "35级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035056] = {
 		id = 3001035056,
@@ -18665,7 +18681,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "35级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001035061] = {
 		id = 3001035061,
@@ -18692,7 +18708,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "35级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035062] = {
 		id = 3001035062,
@@ -18719,7 +18735,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "35级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035063] = {
 		id = 3001035063,
@@ -18746,7 +18762,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "35级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035064] = {
 		id = 3001035064,
@@ -18773,7 +18789,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "35级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035065] = {
 		id = 3001035065,
@@ -18800,7 +18816,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "35级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035066] = {
 		id = 3001035066,
@@ -18827,7 +18843,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "35级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001035071] = {
 		id = 3001035071,
@@ -18854,7 +18870,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "35级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035072] = {
 		id = 3001035072,
@@ -18881,7 +18897,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "35级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035073] = {
 		id = 3001035073,
@@ -18908,7 +18924,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "35级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035074] = {
 		id = 3001035074,
@@ -18935,7 +18951,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "35级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035075] = {
 		id = 3001035075,
@@ -18962,7 +18978,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "35级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035076] = {
 		id = 3001035076,
@@ -18989,7 +19005,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "35级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001035081] = {
 		id = 3001035081,
@@ -19016,7 +19032,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "35级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035082] = {
 		id = 3001035082,
@@ -19043,7 +19059,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "35级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035083] = {
 		id = 3001035083,
@@ -19070,7 +19086,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "35级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035084] = {
 		id = 3001035084,
@@ -19097,7 +19113,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "35级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035085] = {
 		id = 3001035085,
@@ -19124,7 +19140,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "35级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001035086] = {
 		id = 3001035086,
@@ -19151,7 +19167,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "35级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040011] = {
 		id = 3001040011,
@@ -19178,7 +19194,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "40级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040012] = {
 		id = 3001040012,
@@ -19205,7 +19221,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "40级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040013] = {
 		id = 3001040013,
@@ -19232,7 +19248,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "40级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040014] = {
 		id = 3001040014,
@@ -19259,7 +19275,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "40级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040015] = {
 		id = 3001040015,
@@ -19286,7 +19302,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "40级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040016] = {
 		id = 3001040016,
@@ -19313,7 +19329,7 @@ local datas = {
 		iconPath = "icon/10103.png",
 		Description = "40级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040021] = {
 		id = 3001040021,
@@ -19340,7 +19356,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "40级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040022] = {
 		id = 3001040022,
@@ -19367,7 +19383,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "40级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040023] = {
 		id = 3001040023,
@@ -19394,7 +19410,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "40级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040024] = {
 		id = 3001040024,
@@ -19421,7 +19437,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "40级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040025] = {
 		id = 3001040025,
@@ -19448,7 +19464,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "40级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040026] = {
 		id = 3001040026,
@@ -19475,7 +19491,7 @@ local datas = {
 		iconPath = "icon/10203.png",
 		Description = "40级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040031] = {
 		id = 3001040031,
@@ -19502,7 +19518,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "40级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040032] = {
 		id = 3001040032,
@@ -19529,7 +19545,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "40级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040033] = {
 		id = 3001040033,
@@ -19556,7 +19572,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "40级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040034] = {
 		id = 3001040034,
@@ -19583,7 +19599,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "40级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040035] = {
 		id = 3001040035,
@@ -19610,7 +19626,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "40级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040036] = {
 		id = 3001040036,
@@ -19637,7 +19653,7 @@ local datas = {
 		iconPath = "icon/10303.png",
 		Description = "40级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040041] = {
 		id = 3001040041,
@@ -19664,7 +19680,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "40级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040042] = {
 		id = 3001040042,
@@ -19691,7 +19707,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "40级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040043] = {
 		id = 3001040043,
@@ -19718,7 +19734,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "40级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040044] = {
 		id = 3001040044,
@@ -19745,7 +19761,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "40级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040045] = {
 		id = 3001040045,
@@ -19772,7 +19788,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "40级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040046] = {
 		id = 3001040046,
@@ -19799,7 +19815,7 @@ local datas = {
 		iconPath = "icon/10403.png",
 		Description = "40级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040051] = {
 		id = 3001040051,
@@ -19826,7 +19842,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "40级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040052] = {
 		id = 3001040052,
@@ -19853,7 +19869,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "40级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040053] = {
 		id = 3001040053,
@@ -19880,7 +19896,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "40级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040054] = {
 		id = 3001040054,
@@ -19907,7 +19923,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "40级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040055] = {
 		id = 3001040055,
@@ -19934,7 +19950,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "40级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040056] = {
 		id = 3001040056,
@@ -19961,7 +19977,7 @@ local datas = {
 		iconPath = "icon/10503.png",
 		Description = "40级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001040061] = {
 		id = 3001040061,
@@ -19988,7 +20004,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "40级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040062] = {
 		id = 3001040062,
@@ -20015,7 +20031,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "40级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040063] = {
 		id = 3001040063,
@@ -20042,7 +20058,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "40级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040064] = {
 		id = 3001040064,
@@ -20069,7 +20085,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "40级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040065] = {
 		id = 3001040065,
@@ -20096,7 +20112,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "40级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040066] = {
 		id = 3001040066,
@@ -20123,7 +20139,7 @@ local datas = {
 		iconPath = "icon/10603.png",
 		Description = "40级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001040071] = {
 		id = 3001040071,
@@ -20150,7 +20166,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "40级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040072] = {
 		id = 3001040072,
@@ -20177,7 +20193,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "40级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040073] = {
 		id = 3001040073,
@@ -20204,7 +20220,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "40级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040074] = {
 		id = 3001040074,
@@ -20231,7 +20247,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "40级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040075] = {
 		id = 3001040075,
@@ -20258,7 +20274,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "40级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040076] = {
 		id = 3001040076,
@@ -20285,7 +20301,7 @@ local datas = {
 		iconPath = "icon/10703.png",
 		Description = "40级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001040081] = {
 		id = 3001040081,
@@ -20312,7 +20328,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "40级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040082] = {
 		id = 3001040082,
@@ -20339,7 +20355,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "40级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040083] = {
 		id = 3001040083,
@@ -20366,7 +20382,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "40级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040084] = {
 		id = 3001040084,
@@ -20393,7 +20409,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "40级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040085] = {
 		id = 3001040085,
@@ -20420,7 +20436,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "40级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001040086] = {
 		id = 3001040086,
@@ -20447,7 +20463,7 @@ local datas = {
 		iconPath = "icon/10803.png",
 		Description = "40级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045011] = {
 		id = 3001045011,
@@ -20474,7 +20490,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "45级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045012] = {
 		id = 3001045012,
@@ -20501,7 +20517,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "45级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045013] = {
 		id = 3001045013,
@@ -20528,7 +20544,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "45级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045014] = {
 		id = 3001045014,
@@ -20555,7 +20571,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "45级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045015] = {
 		id = 3001045015,
@@ -20582,7 +20598,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "45级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045016] = {
 		id = 3001045016,
@@ -20609,7 +20625,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "45级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045021] = {
 		id = 3001045021,
@@ -20636,7 +20652,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "45级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045022] = {
 		id = 3001045022,
@@ -20663,7 +20679,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "45级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045023] = {
 		id = 3001045023,
@@ -20690,7 +20706,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "45级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045024] = {
 		id = 3001045024,
@@ -20717,7 +20733,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "45级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045025] = {
 		id = 3001045025,
@@ -20744,7 +20760,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "45级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045026] = {
 		id = 3001045026,
@@ -20771,7 +20787,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "45级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045031] = {
 		id = 3001045031,
@@ -20798,7 +20814,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "45级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045032] = {
 		id = 3001045032,
@@ -20825,7 +20841,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "45级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045033] = {
 		id = 3001045033,
@@ -20852,7 +20868,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "45级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045034] = {
 		id = 3001045034,
@@ -20879,7 +20895,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "45级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045035] = {
 		id = 3001045035,
@@ -20906,7 +20922,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "45级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045036] = {
 		id = 3001045036,
@@ -20933,7 +20949,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "45级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045041] = {
 		id = 3001045041,
@@ -20960,7 +20976,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "45级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045042] = {
 		id = 3001045042,
@@ -20987,7 +21003,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "45级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045043] = {
 		id = 3001045043,
@@ -21014,7 +21030,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "45级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045044] = {
 		id = 3001045044,
@@ -21041,7 +21057,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "45级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045045] = {
 		id = 3001045045,
@@ -21068,7 +21084,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "45级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045046] = {
 		id = 3001045046,
@@ -21095,7 +21111,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "45级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045051] = {
 		id = 3001045051,
@@ -21122,7 +21138,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "45级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045052] = {
 		id = 3001045052,
@@ -21149,7 +21165,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "45级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045053] = {
 		id = 3001045053,
@@ -21176,7 +21192,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "45级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045054] = {
 		id = 3001045054,
@@ -21203,7 +21219,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "45级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045055] = {
 		id = 3001045055,
@@ -21230,7 +21246,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "45级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045056] = {
 		id = 3001045056,
@@ -21257,7 +21273,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "45级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001045061] = {
 		id = 3001045061,
@@ -21284,7 +21300,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "45级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045062] = {
 		id = 3001045062,
@@ -21311,7 +21327,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "45级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045063] = {
 		id = 3001045063,
@@ -21338,7 +21354,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "45级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045064] = {
 		id = 3001045064,
@@ -21365,7 +21381,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "45级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045065] = {
 		id = 3001045065,
@@ -21392,7 +21408,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "45级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045066] = {
 		id = 3001045066,
@@ -21419,7 +21435,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "45级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001045071] = {
 		id = 3001045071,
@@ -21446,7 +21462,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "45级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045072] = {
 		id = 3001045072,
@@ -21473,7 +21489,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "45级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045073] = {
 		id = 3001045073,
@@ -21500,7 +21516,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "45级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045074] = {
 		id = 3001045074,
@@ -21527,7 +21543,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "45级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045075] = {
 		id = 3001045075,
@@ -21554,7 +21570,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "45级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045076] = {
 		id = 3001045076,
@@ -21581,7 +21597,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "45级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001045081] = {
 		id = 3001045081,
@@ -21608,7 +21624,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "45级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045082] = {
 		id = 3001045082,
@@ -21635,7 +21651,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "45级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045083] = {
 		id = 3001045083,
@@ -21662,7 +21678,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "45级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045084] = {
 		id = 3001045084,
@@ -21689,7 +21705,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "45级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045085] = {
 		id = 3001045085,
@@ -21716,7 +21732,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "45级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001045086] = {
 		id = 3001045086,
@@ -21743,7 +21759,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "45级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050011] = {
 		id = 3001050011,
@@ -21770,7 +21786,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "50级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050012] = {
 		id = 3001050012,
@@ -21797,7 +21813,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "50级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050013] = {
 		id = 3001050013,
@@ -21824,7 +21840,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "50级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050014] = {
 		id = 3001050014,
@@ -21851,7 +21867,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "50级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050015] = {
 		id = 3001050015,
@@ -21878,7 +21894,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "50级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050016] = {
 		id = 3001050016,
@@ -21905,7 +21921,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "50级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050021] = {
 		id = 3001050021,
@@ -21932,7 +21948,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "50级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050022] = {
 		id = 3001050022,
@@ -21959,7 +21975,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "50级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050023] = {
 		id = 3001050023,
@@ -21986,7 +22002,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "50级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050024] = {
 		id = 3001050024,
@@ -22013,7 +22029,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "50级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050025] = {
 		id = 3001050025,
@@ -22040,7 +22056,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "50级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050026] = {
 		id = 3001050026,
@@ -22067,7 +22083,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "50级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050031] = {
 		id = 3001050031,
@@ -22094,7 +22110,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "50级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050032] = {
 		id = 3001050032,
@@ -22121,7 +22137,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "50级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050033] = {
 		id = 3001050033,
@@ -22148,7 +22164,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "50级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050034] = {
 		id = 3001050034,
@@ -22175,7 +22191,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "50级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050035] = {
 		id = 3001050035,
@@ -22202,7 +22218,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "50级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050036] = {
 		id = 3001050036,
@@ -22229,7 +22245,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "50级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050041] = {
 		id = 3001050041,
@@ -22256,7 +22272,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "50级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050042] = {
 		id = 3001050042,
@@ -22283,7 +22299,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "50级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050043] = {
 		id = 3001050043,
@@ -22310,7 +22326,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "50级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050044] = {
 		id = 3001050044,
@@ -22337,7 +22353,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "50级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050045] = {
 		id = 3001050045,
@@ -22364,7 +22380,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "50级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050046] = {
 		id = 3001050046,
@@ -22391,7 +22407,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "50级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050051] = {
 		id = 3001050051,
@@ -22418,7 +22434,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "50级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050052] = {
 		id = 3001050052,
@@ -22445,7 +22461,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "50级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050053] = {
 		id = 3001050053,
@@ -22472,7 +22488,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "50级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050054] = {
 		id = 3001050054,
@@ -22499,7 +22515,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "50级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050055] = {
 		id = 3001050055,
@@ -22526,7 +22542,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "50级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050056] = {
 		id = 3001050056,
@@ -22553,7 +22569,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "50级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001050061] = {
 		id = 3001050061,
@@ -22580,7 +22596,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "50级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050062] = {
 		id = 3001050062,
@@ -22607,7 +22623,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "50级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050063] = {
 		id = 3001050063,
@@ -22634,7 +22650,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "50级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050064] = {
 		id = 3001050064,
@@ -22661,7 +22677,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "50级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050065] = {
 		id = 3001050065,
@@ -22688,7 +22704,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "50级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050066] = {
 		id = 3001050066,
@@ -22715,7 +22731,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "50级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001050071] = {
 		id = 3001050071,
@@ -22742,7 +22758,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "50级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050072] = {
 		id = 3001050072,
@@ -22769,7 +22785,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "50级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050073] = {
 		id = 3001050073,
@@ -22796,7 +22812,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "50级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050074] = {
 		id = 3001050074,
@@ -22823,7 +22839,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "50级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050075] = {
 		id = 3001050075,
@@ -22850,7 +22866,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "50级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050076] = {
 		id = 3001050076,
@@ -22877,7 +22893,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "50级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001050081] = {
 		id = 3001050081,
@@ -22904,7 +22920,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "50级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050082] = {
 		id = 3001050082,
@@ -22931,7 +22947,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "50级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050083] = {
 		id = 3001050083,
@@ -22958,7 +22974,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "50级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050084] = {
 		id = 3001050084,
@@ -22985,7 +23001,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "50级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050085] = {
 		id = 3001050085,
@@ -23012,7 +23028,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "50级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001050086] = {
 		id = 3001050086,
@@ -23039,7 +23055,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "50级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055011] = {
 		id = 3001055011,
@@ -23066,7 +23082,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "55级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055012] = {
 		id = 3001055012,
@@ -23093,7 +23109,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "55级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055013] = {
 		id = 3001055013,
@@ -23120,7 +23136,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "55级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055014] = {
 		id = 3001055014,
@@ -23147,7 +23163,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "55级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055015] = {
 		id = 3001055015,
@@ -23174,7 +23190,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "55级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055016] = {
 		id = 3001055016,
@@ -23201,7 +23217,7 @@ local datas = {
 		iconPath = "icon/10104.png",
 		Description = "55级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055021] = {
 		id = 3001055021,
@@ -23228,7 +23244,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "55级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055022] = {
 		id = 3001055022,
@@ -23255,7 +23271,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "55级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055023] = {
 		id = 3001055023,
@@ -23282,7 +23298,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "55级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055024] = {
 		id = 3001055024,
@@ -23309,7 +23325,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "55级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055025] = {
 		id = 3001055025,
@@ -23336,7 +23352,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "55级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055026] = {
 		id = 3001055026,
@@ -23363,7 +23379,7 @@ local datas = {
 		iconPath = "icon/10204.png",
 		Description = "55级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055031] = {
 		id = 3001055031,
@@ -23390,7 +23406,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "55级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055032] = {
 		id = 3001055032,
@@ -23417,7 +23433,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "55级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055033] = {
 		id = 3001055033,
@@ -23444,7 +23460,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "55级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055034] = {
 		id = 3001055034,
@@ -23471,7 +23487,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "55级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055035] = {
 		id = 3001055035,
@@ -23498,7 +23514,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "55级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055036] = {
 		id = 3001055036,
@@ -23525,7 +23541,7 @@ local datas = {
 		iconPath = "icon/10304.png",
 		Description = "55级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055041] = {
 		id = 3001055041,
@@ -23552,7 +23568,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "55级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055042] = {
 		id = 3001055042,
@@ -23579,7 +23595,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "55级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055043] = {
 		id = 3001055043,
@@ -23606,7 +23622,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "55级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055044] = {
 		id = 3001055044,
@@ -23633,7 +23649,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "55级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055045] = {
 		id = 3001055045,
@@ -23660,7 +23676,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "55级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055046] = {
 		id = 3001055046,
@@ -23687,7 +23703,7 @@ local datas = {
 		iconPath = "icon/10404.png",
 		Description = "55级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055051] = {
 		id = 3001055051,
@@ -23714,7 +23730,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "55级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055052] = {
 		id = 3001055052,
@@ -23741,7 +23757,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "55级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055053] = {
 		id = 3001055053,
@@ -23768,7 +23784,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "55级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055054] = {
 		id = 3001055054,
@@ -23795,7 +23811,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "55级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055055] = {
 		id = 3001055055,
@@ -23822,7 +23838,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "55级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055056] = {
 		id = 3001055056,
@@ -23849,7 +23865,7 @@ local datas = {
 		iconPath = "icon/10504.png",
 		Description = "55级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001055061] = {
 		id = 3001055061,
@@ -23876,7 +23892,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "55级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055062] = {
 		id = 3001055062,
@@ -23903,7 +23919,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "55级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055063] = {
 		id = 3001055063,
@@ -23930,7 +23946,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "55级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055064] = {
 		id = 3001055064,
@@ -23957,7 +23973,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "55级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055065] = {
 		id = 3001055065,
@@ -23984,7 +24000,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "55级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055066] = {
 		id = 3001055066,
@@ -24011,7 +24027,7 @@ local datas = {
 		iconPath = "icon/10604.png",
 		Description = "55级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001055071] = {
 		id = 3001055071,
@@ -24038,7 +24054,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "55级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055072] = {
 		id = 3001055072,
@@ -24065,7 +24081,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "55级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055073] = {
 		id = 3001055073,
@@ -24092,7 +24108,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "55级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055074] = {
 		id = 3001055074,
@@ -24119,7 +24135,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "55级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055075] = {
 		id = 3001055075,
@@ -24146,7 +24162,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "55级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055076] = {
 		id = 3001055076,
@@ -24173,7 +24189,7 @@ local datas = {
 		iconPath = "icon/10704.png",
 		Description = "55级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001055081] = {
 		id = 3001055081,
@@ -24200,7 +24216,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "55级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055082] = {
 		id = 3001055082,
@@ -24227,7 +24243,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "55级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055083] = {
 		id = 3001055083,
@@ -24254,7 +24270,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "55级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055084] = {
 		id = 3001055084,
@@ -24281,7 +24297,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "55级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055085] = {
 		id = 3001055085,
@@ -24308,7 +24324,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "55级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001055086] = {
 		id = 3001055086,
@@ -24335,7 +24351,7 @@ local datas = {
 		iconPath = "icon/10804.png",
 		Description = "55级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060011] = {
 		id = 3001060011,
@@ -24362,7 +24378,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "60级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060012] = {
 		id = 3001060012,
@@ -24389,7 +24405,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "60级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060013] = {
 		id = 3001060013,
@@ -24416,7 +24432,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "60级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060014] = {
 		id = 3001060014,
@@ -24443,7 +24459,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "60级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060015] = {
 		id = 3001060015,
@@ -24470,7 +24486,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "60级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060016] = {
 		id = 3001060016,
@@ -24497,7 +24513,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "60级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060021] = {
 		id = 3001060021,
@@ -24524,7 +24540,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "60级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060022] = {
 		id = 3001060022,
@@ -24551,7 +24567,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "60级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060023] = {
 		id = 3001060023,
@@ -24578,7 +24594,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "60级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060024] = {
 		id = 3001060024,
@@ -24605,7 +24621,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "60级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060025] = {
 		id = 3001060025,
@@ -24632,7 +24648,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "60级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060026] = {
 		id = 3001060026,
@@ -24659,7 +24675,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "60级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060031] = {
 		id = 3001060031,
@@ -24686,7 +24702,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "60级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060032] = {
 		id = 3001060032,
@@ -24713,7 +24729,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "60级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060033] = {
 		id = 3001060033,
@@ -24740,7 +24756,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "60级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060034] = {
 		id = 3001060034,
@@ -24767,7 +24783,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "60级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060035] = {
 		id = 3001060035,
@@ -24794,7 +24810,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "60级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060036] = {
 		id = 3001060036,
@@ -24821,7 +24837,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "60级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060041] = {
 		id = 3001060041,
@@ -24848,7 +24864,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "60级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060042] = {
 		id = 3001060042,
@@ -24875,7 +24891,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "60级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060043] = {
 		id = 3001060043,
@@ -24902,7 +24918,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "60级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060044] = {
 		id = 3001060044,
@@ -24929,7 +24945,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "60级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060045] = {
 		id = 3001060045,
@@ -24956,7 +24972,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "60级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060046] = {
 		id = 3001060046,
@@ -24983,7 +24999,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "60级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060051] = {
 		id = 3001060051,
@@ -25010,7 +25026,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "60级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060052] = {
 		id = 3001060052,
@@ -25037,7 +25053,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "60级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060053] = {
 		id = 3001060053,
@@ -25064,7 +25080,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "60级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060054] = {
 		id = 3001060054,
@@ -25091,7 +25107,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "60级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060055] = {
 		id = 3001060055,
@@ -25118,7 +25134,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "60级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060056] = {
 		id = 3001060056,
@@ -25145,7 +25161,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "60级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001060061] = {
 		id = 3001060061,
@@ -25172,7 +25188,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "60级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060062] = {
 		id = 3001060062,
@@ -25199,7 +25215,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "60级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060063] = {
 		id = 3001060063,
@@ -25226,7 +25242,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "60级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060064] = {
 		id = 3001060064,
@@ -25253,7 +25269,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "60级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060065] = {
 		id = 3001060065,
@@ -25280,7 +25296,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "60级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060066] = {
 		id = 3001060066,
@@ -25307,7 +25323,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "60级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001060071] = {
 		id = 3001060071,
@@ -25334,7 +25350,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "60级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060072] = {
 		id = 3001060072,
@@ -25361,7 +25377,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "60级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060073] = {
 		id = 3001060073,
@@ -25388,7 +25404,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "60级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060074] = {
 		id = 3001060074,
@@ -25415,7 +25431,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "60级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060075] = {
 		id = 3001060075,
@@ -25442,7 +25458,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "60级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060076] = {
 		id = 3001060076,
@@ -25469,7 +25485,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "60级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001060081] = {
 		id = 3001060081,
@@ -25496,7 +25512,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "60级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060082] = {
 		id = 3001060082,
@@ -25523,7 +25539,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "60级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060083] = {
 		id = 3001060083,
@@ -25550,7 +25566,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "60级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060084] = {
 		id = 3001060084,
@@ -25577,7 +25593,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "60级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060085] = {
 		id = 3001060085,
@@ -25604,7 +25620,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "60级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001060086] = {
 		id = 3001060086,
@@ -25631,7 +25647,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "60级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065011] = {
 		id = 3001065011,
@@ -25658,7 +25674,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "65级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065012] = {
 		id = 3001065012,
@@ -25685,7 +25701,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "65级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065013] = {
 		id = 3001065013,
@@ -25712,7 +25728,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "65级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065014] = {
 		id = 3001065014,
@@ -25739,7 +25755,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "65级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065015] = {
 		id = 3001065015,
@@ -25766,7 +25782,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "65级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065016] = {
 		id = 3001065016,
@@ -25793,7 +25809,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "65级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065021] = {
 		id = 3001065021,
@@ -25820,7 +25836,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "65级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065022] = {
 		id = 3001065022,
@@ -25847,7 +25863,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "65级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065023] = {
 		id = 3001065023,
@@ -25874,7 +25890,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "65级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065024] = {
 		id = 3001065024,
@@ -25901,7 +25917,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "65级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065025] = {
 		id = 3001065025,
@@ -25928,7 +25944,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "65级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065026] = {
 		id = 3001065026,
@@ -25955,7 +25971,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "65级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065031] = {
 		id = 3001065031,
@@ -25982,7 +25998,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "65级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065032] = {
 		id = 3001065032,
@@ -26009,7 +26025,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "65级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065033] = {
 		id = 3001065033,
@@ -26036,7 +26052,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "65级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065034] = {
 		id = 3001065034,
@@ -26063,7 +26079,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "65级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065035] = {
 		id = 3001065035,
@@ -26090,7 +26106,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "65级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065036] = {
 		id = 3001065036,
@@ -26117,7 +26133,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "65级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065041] = {
 		id = 3001065041,
@@ -26144,7 +26160,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "65级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065042] = {
 		id = 3001065042,
@@ -26171,7 +26187,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "65级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065043] = {
 		id = 3001065043,
@@ -26198,7 +26214,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "65级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065044] = {
 		id = 3001065044,
@@ -26225,7 +26241,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "65级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065045] = {
 		id = 3001065045,
@@ -26252,7 +26268,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "65级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065046] = {
 		id = 3001065046,
@@ -26279,7 +26295,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "65级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065051] = {
 		id = 3001065051,
@@ -26306,7 +26322,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "65级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065052] = {
 		id = 3001065052,
@@ -26333,7 +26349,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "65级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065053] = {
 		id = 3001065053,
@@ -26360,7 +26376,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "65级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065054] = {
 		id = 3001065054,
@@ -26387,7 +26403,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "65级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065055] = {
 		id = 3001065055,
@@ -26414,7 +26430,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "65级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065056] = {
 		id = 3001065056,
@@ -26441,7 +26457,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "65级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001065061] = {
 		id = 3001065061,
@@ -26468,7 +26484,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "65级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065062] = {
 		id = 3001065062,
@@ -26495,7 +26511,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "65级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065063] = {
 		id = 3001065063,
@@ -26522,7 +26538,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "65级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065064] = {
 		id = 3001065064,
@@ -26549,7 +26565,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "65级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065065] = {
 		id = 3001065065,
@@ -26576,7 +26592,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "65级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065066] = {
 		id = 3001065066,
@@ -26603,7 +26619,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "65级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001065071] = {
 		id = 3001065071,
@@ -26630,7 +26646,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "65级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065072] = {
 		id = 3001065072,
@@ -26657,7 +26673,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "65级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065073] = {
 		id = 3001065073,
@@ -26684,7 +26700,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "65级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065074] = {
 		id = 3001065074,
@@ -26711,7 +26727,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "65级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065075] = {
 		id = 3001065075,
@@ -26738,7 +26754,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "65级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065076] = {
 		id = 3001065076,
@@ -26765,7 +26781,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "65级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001065081] = {
 		id = 3001065081,
@@ -26792,7 +26808,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "65级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065082] = {
 		id = 3001065082,
@@ -26819,7 +26835,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "65级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065083] = {
 		id = 3001065083,
@@ -26846,7 +26862,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "65级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065084] = {
 		id = 3001065084,
@@ -26873,7 +26889,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "65级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065085] = {
 		id = 3001065085,
@@ -26900,7 +26916,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "65级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001065086] = {
 		id = 3001065086,
@@ -26927,7 +26943,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "65级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070011] = {
 		id = 3001070011,
@@ -26954,7 +26970,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "70级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070012] = {
 		id = 3001070012,
@@ -26981,7 +26997,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "70级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070013] = {
 		id = 3001070013,
@@ -27008,7 +27024,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "70级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070014] = {
 		id = 3001070014,
@@ -27035,7 +27051,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "70级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070015] = {
 		id = 3001070015,
@@ -27062,7 +27078,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "70级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070016] = {
 		id = 3001070016,
@@ -27089,7 +27105,7 @@ local datas = {
 		iconPath = "icon/10105.png",
 		Description = "70级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070021] = {
 		id = 3001070021,
@@ -27116,7 +27132,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "70级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070022] = {
 		id = 3001070022,
@@ -27143,7 +27159,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "70级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070023] = {
 		id = 3001070023,
@@ -27170,7 +27186,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "70级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070024] = {
 		id = 3001070024,
@@ -27197,7 +27213,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "70级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070025] = {
 		id = 3001070025,
@@ -27224,7 +27240,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "70级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070026] = {
 		id = 3001070026,
@@ -27251,7 +27267,7 @@ local datas = {
 		iconPath = "icon/10205.png",
 		Description = "70级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070031] = {
 		id = 3001070031,
@@ -27278,7 +27294,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "70级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070032] = {
 		id = 3001070032,
@@ -27305,7 +27321,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "70级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070033] = {
 		id = 3001070033,
@@ -27332,7 +27348,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "70级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070034] = {
 		id = 3001070034,
@@ -27359,7 +27375,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "70级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070035] = {
 		id = 3001070035,
@@ -27386,7 +27402,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "70级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070036] = {
 		id = 3001070036,
@@ -27413,7 +27429,7 @@ local datas = {
 		iconPath = "icon/10305.png",
 		Description = "70级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070041] = {
 		id = 3001070041,
@@ -27440,7 +27456,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "70级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070042] = {
 		id = 3001070042,
@@ -27467,7 +27483,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "70级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070043] = {
 		id = 3001070043,
@@ -27494,7 +27510,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "70级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070044] = {
 		id = 3001070044,
@@ -27521,7 +27537,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "70级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070045] = {
 		id = 3001070045,
@@ -27548,7 +27564,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "70级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070046] = {
 		id = 3001070046,
@@ -27575,7 +27591,7 @@ local datas = {
 		iconPath = "icon/10405.png",
 		Description = "70级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070051] = {
 		id = 3001070051,
@@ -27602,7 +27618,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "70级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070052] = {
 		id = 3001070052,
@@ -27629,7 +27645,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "70级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070053] = {
 		id = 3001070053,
@@ -27656,7 +27672,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "70级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070054] = {
 		id = 3001070054,
@@ -27683,7 +27699,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "70级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070055] = {
 		id = 3001070055,
@@ -27710,7 +27726,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "70级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070056] = {
 		id = 3001070056,
@@ -27737,7 +27753,7 @@ local datas = {
 		iconPath = "icon/10505.png",
 		Description = "70级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001070061] = {
 		id = 3001070061,
@@ -27764,7 +27780,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "70级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070062] = {
 		id = 3001070062,
@@ -27791,7 +27807,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "70级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070063] = {
 		id = 3001070063,
@@ -27818,7 +27834,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "70级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070064] = {
 		id = 3001070064,
@@ -27845,7 +27861,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "70级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070065] = {
 		id = 3001070065,
@@ -27872,7 +27888,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "70级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070066] = {
 		id = 3001070066,
@@ -27899,7 +27915,7 @@ local datas = {
 		iconPath = "icon/10605.png",
 		Description = "70级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001070071] = {
 		id = 3001070071,
@@ -27926,7 +27942,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "70级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070072] = {
 		id = 3001070072,
@@ -27953,7 +27969,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "70级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070073] = {
 		id = 3001070073,
@@ -27980,7 +27996,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "70级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070074] = {
 		id = 3001070074,
@@ -28007,7 +28023,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "70级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070075] = {
 		id = 3001070075,
@@ -28034,7 +28050,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "70级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070076] = {
 		id = 3001070076,
@@ -28061,7 +28077,7 @@ local datas = {
 		iconPath = "icon/10705.png",
 		Description = "70级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001070081] = {
 		id = 3001070081,
@@ -28088,7 +28104,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "70级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070082] = {
 		id = 3001070082,
@@ -28115,7 +28131,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "70级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070083] = {
 		id = 3001070083,
@@ -28142,7 +28158,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "70级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070084] = {
 		id = 3001070084,
@@ -28169,7 +28185,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "70级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070085] = {
 		id = 3001070085,
@@ -28196,7 +28212,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "70级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001070086] = {
 		id = 3001070086,
@@ -28223,7 +28239,7 @@ local datas = {
 		iconPath = "icon/10805.png",
 		Description = "70级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075011] = {
 		id = 3001075011,
@@ -28250,7 +28266,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "75级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075012] = {
 		id = 3001075012,
@@ -28277,7 +28293,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "75级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075013] = {
 		id = 3001075013,
@@ -28304,7 +28320,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "75级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075014] = {
 		id = 3001075014,
@@ -28331,7 +28347,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "75级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075015] = {
 		id = 3001075015,
@@ -28358,7 +28374,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "75级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075016] = {
 		id = 3001075016,
@@ -28385,7 +28401,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "75级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075021] = {
 		id = 3001075021,
@@ -28412,7 +28428,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "75级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075022] = {
 		id = 3001075022,
@@ -28439,7 +28455,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "75级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075023] = {
 		id = 3001075023,
@@ -28466,7 +28482,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "75级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075024] = {
 		id = 3001075024,
@@ -28493,7 +28509,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "75级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075025] = {
 		id = 3001075025,
@@ -28520,7 +28536,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "75级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075026] = {
 		id = 3001075026,
@@ -28547,7 +28563,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "75级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075031] = {
 		id = 3001075031,
@@ -28574,7 +28590,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "75级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075032] = {
 		id = 3001075032,
@@ -28601,7 +28617,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "75级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075033] = {
 		id = 3001075033,
@@ -28628,7 +28644,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "75级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075034] = {
 		id = 3001075034,
@@ -28655,7 +28671,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "75级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075035] = {
 		id = 3001075035,
@@ -28682,7 +28698,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "75级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075036] = {
 		id = 3001075036,
@@ -28709,7 +28725,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "75级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075041] = {
 		id = 3001075041,
@@ -28736,7 +28752,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "75级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075042] = {
 		id = 3001075042,
@@ -28763,7 +28779,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "75级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075043] = {
 		id = 3001075043,
@@ -28790,7 +28806,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "75级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075044] = {
 		id = 3001075044,
@@ -28817,7 +28833,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "75级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075045] = {
 		id = 3001075045,
@@ -28844,7 +28860,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "75级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075046] = {
 		id = 3001075046,
@@ -28871,7 +28887,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "75级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075051] = {
 		id = 3001075051,
@@ -28898,7 +28914,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "75级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075052] = {
 		id = 3001075052,
@@ -28925,7 +28941,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "75级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075053] = {
 		id = 3001075053,
@@ -28952,7 +28968,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "75级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075054] = {
 		id = 3001075054,
@@ -28979,7 +28995,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "75级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075055] = {
 		id = 3001075055,
@@ -29006,7 +29022,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "75级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075056] = {
 		id = 3001075056,
@@ -29033,7 +29049,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "75级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001075061] = {
 		id = 3001075061,
@@ -29060,7 +29076,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "75级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075062] = {
 		id = 3001075062,
@@ -29087,7 +29103,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "75级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075063] = {
 		id = 3001075063,
@@ -29114,7 +29130,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "75级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075064] = {
 		id = 3001075064,
@@ -29141,7 +29157,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "75级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075065] = {
 		id = 3001075065,
@@ -29168,7 +29184,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "75级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075066] = {
 		id = 3001075066,
@@ -29195,7 +29211,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "75级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001075071] = {
 		id = 3001075071,
@@ -29222,7 +29238,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "75级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075072] = {
 		id = 3001075072,
@@ -29249,7 +29265,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "75级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075073] = {
 		id = 3001075073,
@@ -29276,7 +29292,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "75级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075074] = {
 		id = 3001075074,
@@ -29303,7 +29319,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "75级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075075] = {
 		id = 3001075075,
@@ -29330,7 +29346,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "75级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075076] = {
 		id = 3001075076,
@@ -29357,7 +29373,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "75级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001075081] = {
 		id = 3001075081,
@@ -29384,7 +29400,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "75级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075082] = {
 		id = 3001075082,
@@ -29411,7 +29427,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "75级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075083] = {
 		id = 3001075083,
@@ -29438,7 +29454,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "75级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075084] = {
 		id = 3001075084,
@@ -29465,7 +29481,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "75级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075085] = {
 		id = 3001075085,
@@ -29492,7 +29508,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "75级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001075086] = {
 		id = 3001075086,
@@ -29519,7 +29535,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "75级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080011] = {
 		id = 3001080011,
@@ -29546,7 +29562,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "80级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080012] = {
 		id = 3001080012,
@@ -29573,7 +29589,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "80级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080013] = {
 		id = 3001080013,
@@ -29600,7 +29616,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "80级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080014] = {
 		id = 3001080014,
@@ -29627,7 +29643,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "80级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080015] = {
 		id = 3001080015,
@@ -29654,7 +29670,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "80级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080016] = {
 		id = 3001080016,
@@ -29681,7 +29697,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "80级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080021] = {
 		id = 3001080021,
@@ -29708,7 +29724,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "80级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080022] = {
 		id = 3001080022,
@@ -29735,7 +29751,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "80级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080023] = {
 		id = 3001080023,
@@ -29762,7 +29778,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "80级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080024] = {
 		id = 3001080024,
@@ -29789,7 +29805,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "80级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080025] = {
 		id = 3001080025,
@@ -29816,7 +29832,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "80级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080026] = {
 		id = 3001080026,
@@ -29843,7 +29859,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "80级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080031] = {
 		id = 3001080031,
@@ -29870,7 +29886,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "80级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080032] = {
 		id = 3001080032,
@@ -29897,7 +29913,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "80级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080033] = {
 		id = 3001080033,
@@ -29924,7 +29940,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "80级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080034] = {
 		id = 3001080034,
@@ -29951,7 +29967,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "80级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080035] = {
 		id = 3001080035,
@@ -29978,7 +29994,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "80级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080036] = {
 		id = 3001080036,
@@ -30005,7 +30021,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "80级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080041] = {
 		id = 3001080041,
@@ -30032,7 +30048,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "80级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080042] = {
 		id = 3001080042,
@@ -30059,7 +30075,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "80级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080043] = {
 		id = 3001080043,
@@ -30086,7 +30102,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "80级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080044] = {
 		id = 3001080044,
@@ -30113,7 +30129,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "80级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080045] = {
 		id = 3001080045,
@@ -30140,7 +30156,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "80级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080046] = {
 		id = 3001080046,
@@ -30167,7 +30183,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "80级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080051] = {
 		id = 3001080051,
@@ -30194,7 +30210,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "80级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080052] = {
 		id = 3001080052,
@@ -30221,7 +30237,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "80级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080053] = {
 		id = 3001080053,
@@ -30248,7 +30264,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "80级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080054] = {
 		id = 3001080054,
@@ -30275,7 +30291,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "80级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080055] = {
 		id = 3001080055,
@@ -30302,7 +30318,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "80级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080056] = {
 		id = 3001080056,
@@ -30329,7 +30345,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "80级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001080061] = {
 		id = 3001080061,
@@ -30356,7 +30372,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "80级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080062] = {
 		id = 3001080062,
@@ -30383,7 +30399,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "80级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080063] = {
 		id = 3001080063,
@@ -30410,7 +30426,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "80级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080064] = {
 		id = 3001080064,
@@ -30437,7 +30453,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "80级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080065] = {
 		id = 3001080065,
@@ -30464,7 +30480,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "80级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080066] = {
 		id = 3001080066,
@@ -30491,7 +30507,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "80级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001080071] = {
 		id = 3001080071,
@@ -30518,7 +30534,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "80级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080072] = {
 		id = 3001080072,
@@ -30545,7 +30561,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "80级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080073] = {
 		id = 3001080073,
@@ -30572,7 +30588,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "80级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080074] = {
 		id = 3001080074,
@@ -30599,7 +30615,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "80级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080075] = {
 		id = 3001080075,
@@ -30626,7 +30642,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "80级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080076] = {
 		id = 3001080076,
@@ -30653,7 +30669,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "80级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001080081] = {
 		id = 3001080081,
@@ -30680,7 +30696,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "80级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080082] = {
 		id = 3001080082,
@@ -30707,7 +30723,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "80级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080083] = {
 		id = 3001080083,
@@ -30734,7 +30750,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "80级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080084] = {
 		id = 3001080084,
@@ -30761,7 +30777,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "80级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080085] = {
 		id = 3001080085,
@@ -30788,7 +30804,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "80级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001080086] = {
 		id = 3001080086,
@@ -30815,7 +30831,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "80级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085011] = {
 		id = 3001085011,
@@ -30842,7 +30858,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "85级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085012] = {
 		id = 3001085012,
@@ -30869,7 +30885,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "85级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085013] = {
 		id = 3001085013,
@@ -30896,7 +30912,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "85级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085014] = {
 		id = 3001085014,
@@ -30923,7 +30939,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "85级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085015] = {
 		id = 3001085015,
@@ -30950,7 +30966,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "85级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085016] = {
 		id = 3001085016,
@@ -30977,7 +30993,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "85级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085021] = {
 		id = 3001085021,
@@ -31004,7 +31020,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "85级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085022] = {
 		id = 3001085022,
@@ -31031,7 +31047,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "85级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085023] = {
 		id = 3001085023,
@@ -31058,7 +31074,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "85级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085024] = {
 		id = 3001085024,
@@ -31085,7 +31101,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "85级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085025] = {
 		id = 3001085025,
@@ -31112,7 +31128,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "85级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085026] = {
 		id = 3001085026,
@@ -31139,7 +31155,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "85级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085031] = {
 		id = 3001085031,
@@ -31166,7 +31182,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "85级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085032] = {
 		id = 3001085032,
@@ -31193,7 +31209,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "85级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085033] = {
 		id = 3001085033,
@@ -31220,7 +31236,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "85级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085034] = {
 		id = 3001085034,
@@ -31247,7 +31263,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "85级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085035] = {
 		id = 3001085035,
@@ -31274,7 +31290,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "85级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085036] = {
 		id = 3001085036,
@@ -31301,7 +31317,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "85级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085041] = {
 		id = 3001085041,
@@ -31328,7 +31344,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "85级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085042] = {
 		id = 3001085042,
@@ -31355,7 +31371,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "85级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085043] = {
 		id = 3001085043,
@@ -31382,7 +31398,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "85级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085044] = {
 		id = 3001085044,
@@ -31409,7 +31425,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "85级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085045] = {
 		id = 3001085045,
@@ -31436,7 +31452,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "85级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085046] = {
 		id = 3001085046,
@@ -31463,7 +31479,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "85级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085051] = {
 		id = 3001085051,
@@ -31490,7 +31506,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "85级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085052] = {
 		id = 3001085052,
@@ -31517,7 +31533,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "85级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085053] = {
 		id = 3001085053,
@@ -31544,7 +31560,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "85级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085054] = {
 		id = 3001085054,
@@ -31571,7 +31587,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "85级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085055] = {
 		id = 3001085055,
@@ -31598,7 +31614,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "85级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085056] = {
 		id = 3001085056,
@@ -31625,7 +31641,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "85级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001085061] = {
 		id = 3001085061,
@@ -31652,7 +31668,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "85级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085062] = {
 		id = 3001085062,
@@ -31679,7 +31695,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "85级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085063] = {
 		id = 3001085063,
@@ -31706,7 +31722,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "85级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085064] = {
 		id = 3001085064,
@@ -31733,7 +31749,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "85级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085065] = {
 		id = 3001085065,
@@ -31760,7 +31776,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "85级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085066] = {
 		id = 3001085066,
@@ -31787,7 +31803,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "85级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001085071] = {
 		id = 3001085071,
@@ -31814,7 +31830,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "85级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085072] = {
 		id = 3001085072,
@@ -31841,7 +31857,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "85级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085073] = {
 		id = 3001085073,
@@ -31868,7 +31884,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "85级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085074] = {
 		id = 3001085074,
@@ -31895,7 +31911,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "85级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085075] = {
 		id = 3001085075,
@@ -31922,7 +31938,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "85级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085076] = {
 		id = 3001085076,
@@ -31949,7 +31965,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "85级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001085081] = {
 		id = 3001085081,
@@ -31976,7 +31992,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "85级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085082] = {
 		id = 3001085082,
@@ -32003,7 +32019,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "85级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085083] = {
 		id = 3001085083,
@@ -32030,7 +32046,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "85级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085084] = {
 		id = 3001085084,
@@ -32057,7 +32073,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "85级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085085] = {
 		id = 3001085085,
@@ -32084,7 +32100,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "85级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001085086] = {
 		id = 3001085086,
@@ -32111,7 +32127,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "85级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090011] = {
 		id = 3001090011,
@@ -32138,7 +32154,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "90级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090012] = {
 		id = 3001090012,
@@ -32165,7 +32181,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "90级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090013] = {
 		id = 3001090013,
@@ -32192,7 +32208,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "90级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090014] = {
 		id = 3001090014,
@@ -32219,7 +32235,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "90级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090015] = {
 		id = 3001090015,
@@ -32246,7 +32262,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "90级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090016] = {
 		id = 3001090016,
@@ -32273,7 +32289,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "90级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090021] = {
 		id = 3001090021,
@@ -32300,7 +32316,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "90级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090022] = {
 		id = 3001090022,
@@ -32327,7 +32343,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "90级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090023] = {
 		id = 3001090023,
@@ -32354,7 +32370,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "90级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090024] = {
 		id = 3001090024,
@@ -32381,7 +32397,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "90级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090025] = {
 		id = 3001090025,
@@ -32408,7 +32424,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "90级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090026] = {
 		id = 3001090026,
@@ -32435,7 +32451,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "90级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090031] = {
 		id = 3001090031,
@@ -32462,7 +32478,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "90级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090032] = {
 		id = 3001090032,
@@ -32489,7 +32505,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "90级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090033] = {
 		id = 3001090033,
@@ -32516,7 +32532,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "90级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090034] = {
 		id = 3001090034,
@@ -32543,7 +32559,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "90级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090035] = {
 		id = 3001090035,
@@ -32570,7 +32586,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "90级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090036] = {
 		id = 3001090036,
@@ -32597,7 +32613,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "90级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090041] = {
 		id = 3001090041,
@@ -32624,7 +32640,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "90级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090042] = {
 		id = 3001090042,
@@ -32651,7 +32667,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "90级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090043] = {
 		id = 3001090043,
@@ -32678,7 +32694,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "90级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090044] = {
 		id = 3001090044,
@@ -32705,7 +32721,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "90级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090045] = {
 		id = 3001090045,
@@ -32732,7 +32748,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "90级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090046] = {
 		id = 3001090046,
@@ -32759,7 +32775,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "90级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090051] = {
 		id = 3001090051,
@@ -32786,7 +32802,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "90级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090052] = {
 		id = 3001090052,
@@ -32813,7 +32829,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "90级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090053] = {
 		id = 3001090053,
@@ -32840,7 +32856,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "90级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090054] = {
 		id = 3001090054,
@@ -32867,7 +32883,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "90级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090055] = {
 		id = 3001090055,
@@ -32894,7 +32910,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "90级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090056] = {
 		id = 3001090056,
@@ -32921,7 +32937,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "90级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001090061] = {
 		id = 3001090061,
@@ -32948,7 +32964,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "90级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090062] = {
 		id = 3001090062,
@@ -32975,7 +32991,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "90级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090063] = {
 		id = 3001090063,
@@ -33002,7 +33018,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "90级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090064] = {
 		id = 3001090064,
@@ -33029,7 +33045,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "90级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090065] = {
 		id = 3001090065,
@@ -33056,7 +33072,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "90级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090066] = {
 		id = 3001090066,
@@ -33083,7 +33099,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "90级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001090071] = {
 		id = 3001090071,
@@ -33110,7 +33126,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "90级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090072] = {
 		id = 3001090072,
@@ -33137,7 +33153,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "90级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090073] = {
 		id = 3001090073,
@@ -33164,7 +33180,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "90级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090074] = {
 		id = 3001090074,
@@ -33191,7 +33207,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "90级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090075] = {
 		id = 3001090075,
@@ -33218,7 +33234,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "90级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090076] = {
 		id = 3001090076,
@@ -33245,7 +33261,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "90级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001090081] = {
 		id = 3001090081,
@@ -33272,7 +33288,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "90级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090082] = {
 		id = 3001090082,
@@ -33299,7 +33315,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "90级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090083] = {
 		id = 3001090083,
@@ -33326,7 +33342,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "90级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090084] = {
 		id = 3001090084,
@@ -33353,7 +33369,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "90级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090085] = {
 		id = 3001090085,
@@ -33380,7 +33396,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "90级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001090086] = {
 		id = 3001090086,
@@ -33407,7 +33423,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "90级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095011] = {
 		id = 3001095011,
@@ -33434,7 +33450,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "95级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095012] = {
 		id = 3001095012,
@@ -33461,7 +33477,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "95级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095013] = {
 		id = 3001095013,
@@ -33488,7 +33504,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "95级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095014] = {
 		id = 3001095014,
@@ -33515,7 +33531,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "95级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095015] = {
 		id = 3001095015,
@@ -33542,7 +33558,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "95级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095016] = {
 		id = 3001095016,
@@ -33569,7 +33585,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "95级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095021] = {
 		id = 3001095021,
@@ -33596,7 +33612,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "95级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095022] = {
 		id = 3001095022,
@@ -33623,7 +33639,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "95级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095023] = {
 		id = 3001095023,
@@ -33650,7 +33666,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "95级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095024] = {
 		id = 3001095024,
@@ -33677,7 +33693,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "95级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095025] = {
 		id = 3001095025,
@@ -33704,7 +33720,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "95级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095026] = {
 		id = 3001095026,
@@ -33731,7 +33747,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "95级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095031] = {
 		id = 3001095031,
@@ -33758,7 +33774,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "95级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095032] = {
 		id = 3001095032,
@@ -33785,7 +33801,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "95级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095033] = {
 		id = 3001095033,
@@ -33812,7 +33828,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "95级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095034] = {
 		id = 3001095034,
@@ -33839,7 +33855,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "95级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095035] = {
 		id = 3001095035,
@@ -33866,7 +33882,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "95级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095036] = {
 		id = 3001095036,
@@ -33893,7 +33909,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "95级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095041] = {
 		id = 3001095041,
@@ -33920,7 +33936,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "95级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095042] = {
 		id = 3001095042,
@@ -33947,7 +33963,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "95级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095043] = {
 		id = 3001095043,
@@ -33974,7 +33990,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "95级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095044] = {
 		id = 3001095044,
@@ -34001,7 +34017,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "95级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095045] = {
 		id = 3001095045,
@@ -34028,7 +34044,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "95级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095046] = {
 		id = 3001095046,
@@ -34055,7 +34071,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "95级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095051] = {
 		id = 3001095051,
@@ -34082,7 +34098,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "95级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095052] = {
 		id = 3001095052,
@@ -34109,7 +34125,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "95级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095053] = {
 		id = 3001095053,
@@ -34136,7 +34152,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "95级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095054] = {
 		id = 3001095054,
@@ -34163,7 +34179,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "95级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095055] = {
 		id = 3001095055,
@@ -34190,7 +34206,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "95级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095056] = {
 		id = 3001095056,
@@ -34217,7 +34233,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "95级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001095061] = {
 		id = 3001095061,
@@ -34244,7 +34260,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "95级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095062] = {
 		id = 3001095062,
@@ -34271,7 +34287,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "95级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095063] = {
 		id = 3001095063,
@@ -34298,7 +34314,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "95级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095064] = {
 		id = 3001095064,
@@ -34325,7 +34341,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "95级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095065] = {
 		id = 3001095065,
@@ -34352,7 +34368,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "95级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095066] = {
 		id = 3001095066,
@@ -34379,7 +34395,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "95级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001095071] = {
 		id = 3001095071,
@@ -34406,7 +34422,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "95级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095072] = {
 		id = 3001095072,
@@ -34433,7 +34449,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "95级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095073] = {
 		id = 3001095073,
@@ -34460,7 +34476,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "95级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095074] = {
 		id = 3001095074,
@@ -34487,7 +34503,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "95级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095075] = {
 		id = 3001095075,
@@ -34514,7 +34530,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "95级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095076] = {
 		id = 3001095076,
@@ -34541,7 +34557,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "95级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001095081] = {
 		id = 3001095081,
@@ -34568,7 +34584,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "95级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095082] = {
 		id = 3001095082,
@@ -34595,7 +34611,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "95级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095083] = {
 		id = 3001095083,
@@ -34622,7 +34638,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "95级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095084] = {
 		id = 3001095084,
@@ -34649,7 +34665,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "95级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095085] = {
 		id = 3001095085,
@@ -34676,7 +34692,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "95级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001095086] = {
 		id = 3001095086,
@@ -34703,7 +34719,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "95级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100011] = {
 		id = 3001100011,
@@ -34730,7 +34746,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "100级普通的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100012] = {
 		id = 3001100012,
@@ -34757,7 +34773,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "100级精良的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100013] = {
 		id = 3001100013,
@@ -34784,7 +34800,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "100级优质的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100014] = {
 		id = 3001100014,
@@ -34811,7 +34827,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "100级稀有的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100015] = {
 		id = 3001100015,
@@ -34838,7 +34854,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "100级卓越的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100016] = {
 		id = 3001100016,
@@ -34865,7 +34881,7 @@ local datas = {
 		iconPath = "icon/10106.png",
 		Description = "100级完美的剑士装备",
 		dropIconPath = "item_019.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100021] = {
 		id = 3001100021,
@@ -34892,7 +34908,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "100级普通的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100022] = {
 		id = 3001100022,
@@ -34919,7 +34935,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "100级精良的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100023] = {
 		id = 3001100023,
@@ -34946,7 +34962,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "100级优质的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100024] = {
 		id = 3001100024,
@@ -34973,7 +34989,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "100级稀有的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100025] = {
 		id = 3001100025,
@@ -35000,7 +35016,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "100级卓越的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100026] = {
 		id = 3001100026,
@@ -35027,7 +35043,7 @@ local datas = {
 		iconPath = "icon/10206.png",
 		Description = "100级完美的剑士装备",
 		dropIconPath = "item_020.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100031] = {
 		id = 3001100031,
@@ -35054,7 +35070,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "100级普通的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100032] = {
 		id = 3001100032,
@@ -35081,7 +35097,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "100级精良的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100033] = {
 		id = 3001100033,
@@ -35108,7 +35124,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "100级优质的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100034] = {
 		id = 3001100034,
@@ -35135,7 +35151,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "100级稀有的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100035] = {
 		id = 3001100035,
@@ -35162,7 +35178,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "100级卓越的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100036] = {
 		id = 3001100036,
@@ -35189,7 +35205,7 @@ local datas = {
 		iconPath = "icon/10306.png",
 		Description = "100级完美的剑士装备",
 		dropIconPath = "item_006.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100041] = {
 		id = 3001100041,
@@ -35216,7 +35232,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "100级普通的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100042] = {
 		id = 3001100042,
@@ -35243,7 +35259,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "100级精良的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100043] = {
 		id = 3001100043,
@@ -35270,7 +35286,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "100级优质的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100044] = {
 		id = 3001100044,
@@ -35297,7 +35313,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "100级稀有的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100045] = {
 		id = 3001100045,
@@ -35324,7 +35340,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "100级卓越的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100046] = {
 		id = 3001100046,
@@ -35351,7 +35367,7 @@ local datas = {
 		iconPath = "icon/10406.png",
 		Description = "100级完美的剑士装备",
 		dropIconPath = "item_017.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100051] = {
 		id = 3001100051,
@@ -35378,7 +35394,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "100级普通的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100052] = {
 		id = 3001100052,
@@ -35405,7 +35421,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "100级精良的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100053] = {
 		id = 3001100053,
@@ -35432,7 +35448,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "100级优质的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100054] = {
 		id = 3001100054,
@@ -35459,7 +35475,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "100级稀有的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100055] = {
 		id = 3001100055,
@@ -35486,7 +35502,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "100级卓越的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100056] = {
 		id = 3001100056,
@@ -35513,7 +35529,7 @@ local datas = {
 		iconPath = "icon/10506.png",
 		Description = "100级完美的剑士装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3001100061] = {
 		id = 3001100061,
@@ -35540,7 +35556,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "100级普通的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100062] = {
 		id = 3001100062,
@@ -35567,7 +35583,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "100级精良的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100063] = {
 		id = 3001100063,
@@ -35594,7 +35610,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "100级优质的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100064] = {
 		id = 3001100064,
@@ -35621,7 +35637,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "100级稀有的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100065] = {
 		id = 3001100065,
@@ -35648,7 +35664,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "100级卓越的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100066] = {
 		id = 3001100066,
@@ -35675,7 +35691,7 @@ local datas = {
 		iconPath = "icon/10606.png",
 		Description = "100级完美的剑士装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3001100071] = {
 		id = 3001100071,
@@ -35702,7 +35718,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "100级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100072] = {
 		id = 3001100072,
@@ -35729,7 +35745,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "100级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100073] = {
 		id = 3001100073,
@@ -35756,7 +35772,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "100级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100074] = {
 		id = 3001100074,
@@ -35783,7 +35799,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "100级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100075] = {
 		id = 3001100075,
@@ -35810,7 +35826,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "100级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100076] = {
 		id = 3001100076,
@@ -35837,7 +35853,7 @@ local datas = {
 		iconPath = "icon/10706.png",
 		Description = "100级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3001100081] = {
 		id = 3001100081,
@@ -35864,7 +35880,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "100级普通的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100082] = {
 		id = 3001100082,
@@ -35891,7 +35907,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "100级精良的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100083] = {
 		id = 3001100083,
@@ -35918,7 +35934,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "100级优质的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100084] = {
 		id = 3001100084,
@@ -35945,7 +35961,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "100级稀有的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100085] = {
 		id = 3001100085,
@@ -35972,7 +35988,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "100级卓越的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3001100086] = {
 		id = 3001100086,
@@ -35999,7 +36015,7 @@ local datas = {
 		iconPath = "icon/10806.png",
 		Description = "100级完美的剑士装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000011] = {
 		id = 3002000011,
@@ -36026,7 +36042,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "1级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000012] = {
 		id = 3002000012,
@@ -36053,7 +36069,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "1级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000013] = {
 		id = 3002000013,
@@ -36080,7 +36096,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "1级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000014] = {
 		id = 3002000014,
@@ -36107,7 +36123,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "1级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000015] = {
 		id = 3002000015,
@@ -36134,7 +36150,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "1级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000016] = {
 		id = 3002000016,
@@ -36161,7 +36177,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "1级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000021] = {
 		id = 3002000021,
@@ -36188,7 +36204,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "1级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000022] = {
 		id = 3002000022,
@@ -36215,7 +36231,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "1级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000023] = {
 		id = 3002000023,
@@ -36242,7 +36258,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "1级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000024] = {
 		id = 3002000024,
@@ -36269,7 +36285,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "1级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000025] = {
 		id = 3002000025,
@@ -36296,7 +36312,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "1级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000026] = {
 		id = 3002000026,
@@ -36323,7 +36339,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "1级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000031] = {
 		id = 3002000031,
@@ -36350,7 +36366,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "1级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000032] = {
 		id = 3002000032,
@@ -36377,7 +36393,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "1级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000033] = {
 		id = 3002000033,
@@ -36404,7 +36420,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "1级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000034] = {
 		id = 3002000034,
@@ -36431,7 +36447,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "1级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000035] = {
 		id = 3002000035,
@@ -36458,7 +36474,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "1级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000036] = {
 		id = 3002000036,
@@ -36485,7 +36501,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "1级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000041] = {
 		id = 3002000041,
@@ -36512,7 +36528,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "1级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000042] = {
 		id = 3002000042,
@@ -36539,7 +36555,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "1级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000043] = {
 		id = 3002000043,
@@ -36566,7 +36582,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "1级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000044] = {
 		id = 3002000044,
@@ -36593,7 +36609,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "1级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000045] = {
 		id = 3002000045,
@@ -36620,7 +36636,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "1级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000046] = {
 		id = 3002000046,
@@ -36647,7 +36663,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "1级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002000051] = {
 		id = 3002000051,
@@ -36674,7 +36690,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "1级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000052] = {
 		id = 3002000052,
@@ -36701,7 +36717,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "1级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000053] = {
 		id = 3002000053,
@@ -36728,7 +36744,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "1级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000054] = {
 		id = 3002000054,
@@ -36755,7 +36771,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "1级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000055] = {
 		id = 3002000055,
@@ -36782,7 +36798,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "1级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000056] = {
 		id = 3002000056,
@@ -36809,7 +36825,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "1级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002000061] = {
 		id = 3002000061,
@@ -36836,7 +36852,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "1级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000062] = {
 		id = 3002000062,
@@ -36863,7 +36879,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "1级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000063] = {
 		id = 3002000063,
@@ -36890,7 +36906,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "1级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000064] = {
 		id = 3002000064,
@@ -36917,7 +36933,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "1级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000065] = {
 		id = 3002000065,
@@ -36944,7 +36960,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "1级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000066] = {
 		id = 3002000066,
@@ -36971,7 +36987,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "1级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000071] = {
 		id = 3002000071,
@@ -36998,7 +37014,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "1级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000072] = {
 		id = 3002000072,
@@ -37025,7 +37041,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "1级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000073] = {
 		id = 3002000073,
@@ -37052,7 +37068,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "1级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000074] = {
 		id = 3002000074,
@@ -37079,7 +37095,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "1级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000075] = {
 		id = 3002000075,
@@ -37106,7 +37122,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "1级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000076] = {
 		id = 3002000076,
@@ -37133,7 +37149,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "1级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002000081] = {
 		id = 3002000081,
@@ -37160,7 +37176,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "1级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000082] = {
 		id = 3002000082,
@@ -37187,7 +37203,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "1级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000083] = {
 		id = 3002000083,
@@ -37214,7 +37230,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "1级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000084] = {
 		id = 3002000084,
@@ -37241,7 +37257,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "1级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000085] = {
 		id = 3002000085,
@@ -37268,7 +37284,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "1级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002000086] = {
 		id = 3002000086,
@@ -37295,7 +37311,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "1级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005011] = {
 		id = 3002005011,
@@ -37322,7 +37338,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "5级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005012] = {
 		id = 3002005012,
@@ -37349,7 +37365,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "5级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005013] = {
 		id = 3002005013,
@@ -37376,7 +37392,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "5级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005014] = {
 		id = 3002005014,
@@ -37403,7 +37419,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "5级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005015] = {
 		id = 3002005015,
@@ -37430,7 +37446,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "5级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005016] = {
 		id = 3002005016,
@@ -37457,7 +37473,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "5级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005021] = {
 		id = 3002005021,
@@ -37484,7 +37500,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "5级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005022] = {
 		id = 3002005022,
@@ -37511,7 +37527,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "5级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005023] = {
 		id = 3002005023,
@@ -37538,7 +37554,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "5级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005024] = {
 		id = 3002005024,
@@ -37565,7 +37581,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "5级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005025] = {
 		id = 3002005025,
@@ -37592,7 +37608,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "5级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005026] = {
 		id = 3002005026,
@@ -37619,7 +37635,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "5级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005031] = {
 		id = 3002005031,
@@ -37646,7 +37662,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "5级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005032] = {
 		id = 3002005032,
@@ -37673,7 +37689,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "5级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005033] = {
 		id = 3002005033,
@@ -37700,7 +37716,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "5级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005034] = {
 		id = 3002005034,
@@ -37727,7 +37743,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "5级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005035] = {
 		id = 3002005035,
@@ -37754,7 +37770,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "5级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005036] = {
 		id = 3002005036,
@@ -37781,7 +37797,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "5级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005041] = {
 		id = 3002005041,
@@ -37808,7 +37824,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "5级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005042] = {
 		id = 3002005042,
@@ -37835,7 +37851,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "5级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005043] = {
 		id = 3002005043,
@@ -37862,7 +37878,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "5级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005044] = {
 		id = 3002005044,
@@ -37889,7 +37905,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "5级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005045] = {
 		id = 3002005045,
@@ -37916,7 +37932,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "5级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005046] = {
 		id = 3002005046,
@@ -37943,7 +37959,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "5级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002005051] = {
 		id = 3002005051,
@@ -37970,7 +37986,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "5级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005052] = {
 		id = 3002005052,
@@ -37997,7 +38013,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "5级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005053] = {
 		id = 3002005053,
@@ -38024,7 +38040,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "5级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005054] = {
 		id = 3002005054,
@@ -38051,7 +38067,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "5级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005055] = {
 		id = 3002005055,
@@ -38078,7 +38094,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "5级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005056] = {
 		id = 3002005056,
@@ -38105,7 +38121,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "5级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002005061] = {
 		id = 3002005061,
@@ -38132,7 +38148,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "5级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005062] = {
 		id = 3002005062,
@@ -38159,7 +38175,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "5级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005063] = {
 		id = 3002005063,
@@ -38186,7 +38202,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "5级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005064] = {
 		id = 3002005064,
@@ -38213,7 +38229,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "5级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005065] = {
 		id = 3002005065,
@@ -38240,7 +38256,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "5级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005066] = {
 		id = 3002005066,
@@ -38267,7 +38283,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "5级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005071] = {
 		id = 3002005071,
@@ -38294,7 +38310,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "5级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005072] = {
 		id = 3002005072,
@@ -38321,7 +38337,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "5级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005073] = {
 		id = 3002005073,
@@ -38348,7 +38364,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "5级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005074] = {
 		id = 3002005074,
@@ -38375,7 +38391,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "5级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005075] = {
 		id = 3002005075,
@@ -38402,7 +38418,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "5级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005076] = {
 		id = 3002005076,
@@ -38429,7 +38445,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "5级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002005081] = {
 		id = 3002005081,
@@ -38456,7 +38472,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "5级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005082] = {
 		id = 3002005082,
@@ -38483,7 +38499,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "5级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005083] = {
 		id = 3002005083,
@@ -38510,7 +38526,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "5级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005084] = {
 		id = 3002005084,
@@ -38537,7 +38553,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "5级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005085] = {
 		id = 3002005085,
@@ -38564,7 +38580,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "5级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002005086] = {
 		id = 3002005086,
@@ -38591,7 +38607,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "5级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010011] = {
 		id = 3002010011,
@@ -38618,7 +38634,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "10级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010012] = {
 		id = 3002010012,
@@ -38645,7 +38661,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "10级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010013] = {
 		id = 3002010013,
@@ -38672,7 +38688,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "10级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010014] = {
 		id = 3002010014,
@@ -38699,7 +38715,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "10级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010015] = {
 		id = 3002010015,
@@ -38726,7 +38742,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "10级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010016] = {
 		id = 3002010016,
@@ -38753,7 +38769,7 @@ local datas = {
 		iconPath = "icon/20101.png",
 		Description = "10级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010021] = {
 		id = 3002010021,
@@ -38780,7 +38796,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "10级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010022] = {
 		id = 3002010022,
@@ -38807,7 +38823,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "10级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010023] = {
 		id = 3002010023,
@@ -38834,7 +38850,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "10级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010024] = {
 		id = 3002010024,
@@ -38861,7 +38877,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "10级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010025] = {
 		id = 3002010025,
@@ -38888,7 +38904,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "10级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010026] = {
 		id = 3002010026,
@@ -38915,7 +38931,7 @@ local datas = {
 		iconPath = "icon/20201.png",
 		Description = "10级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010031] = {
 		id = 3002010031,
@@ -38942,7 +38958,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "10级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010032] = {
 		id = 3002010032,
@@ -38969,7 +38985,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "10级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010033] = {
 		id = 3002010033,
@@ -38996,7 +39012,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "10级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010034] = {
 		id = 3002010034,
@@ -39023,7 +39039,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "10级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010035] = {
 		id = 3002010035,
@@ -39050,7 +39066,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "10级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010036] = {
 		id = 3002010036,
@@ -39077,7 +39093,7 @@ local datas = {
 		iconPath = "icon/20301.png",
 		Description = "10级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010041] = {
 		id = 3002010041,
@@ -39104,7 +39120,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "10级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010042] = {
 		id = 3002010042,
@@ -39131,7 +39147,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "10级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010043] = {
 		id = 3002010043,
@@ -39158,7 +39174,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "10级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010044] = {
 		id = 3002010044,
@@ -39185,7 +39201,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "10级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010045] = {
 		id = 3002010045,
@@ -39212,7 +39228,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "10级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010046] = {
 		id = 3002010046,
@@ -39239,7 +39255,7 @@ local datas = {
 		iconPath = "icon/20401.png",
 		Description = "10级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002010051] = {
 		id = 3002010051,
@@ -39266,7 +39282,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "10级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010052] = {
 		id = 3002010052,
@@ -39293,7 +39309,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "10级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010053] = {
 		id = 3002010053,
@@ -39320,7 +39336,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "10级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010054] = {
 		id = 3002010054,
@@ -39347,7 +39363,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "10级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010055] = {
 		id = 3002010055,
@@ -39374,7 +39390,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "10级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010056] = {
 		id = 3002010056,
@@ -39401,7 +39417,7 @@ local datas = {
 		iconPath = "icon/20501.png",
 		Description = "10级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002010061] = {
 		id = 3002010061,
@@ -39428,7 +39444,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "10级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010062] = {
 		id = 3002010062,
@@ -39455,7 +39471,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "10级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010063] = {
 		id = 3002010063,
@@ -39482,7 +39498,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "10级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010064] = {
 		id = 3002010064,
@@ -39509,7 +39525,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "10级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010065] = {
 		id = 3002010065,
@@ -39536,7 +39552,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "10级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010066] = {
 		id = 3002010066,
@@ -39563,7 +39579,7 @@ local datas = {
 		iconPath = "icon/20601.png",
 		Description = "10级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010071] = {
 		id = 3002010071,
@@ -39590,7 +39606,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "10级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010072] = {
 		id = 3002010072,
@@ -39617,7 +39633,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "10级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010073] = {
 		id = 3002010073,
@@ -39644,7 +39660,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "10级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010074] = {
 		id = 3002010074,
@@ -39671,7 +39687,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "10级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010075] = {
 		id = 3002010075,
@@ -39698,7 +39714,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "10级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010076] = {
 		id = 3002010076,
@@ -39725,7 +39741,7 @@ local datas = {
 		iconPath = "icon/20701.png",
 		Description = "10级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002010081] = {
 		id = 3002010081,
@@ -39752,7 +39768,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "10级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010082] = {
 		id = 3002010082,
@@ -39779,7 +39795,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "10级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010083] = {
 		id = 3002010083,
@@ -39806,7 +39822,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "10级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010084] = {
 		id = 3002010084,
@@ -39833,7 +39849,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "10级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010085] = {
 		id = 3002010085,
@@ -39860,7 +39876,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "10级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002010086] = {
 		id = 3002010086,
@@ -39887,7 +39903,7 @@ local datas = {
 		iconPath = "icon/20801.png",
 		Description = "10级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015011] = {
 		id = 3002015011,
@@ -39914,7 +39930,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "15级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015012] = {
 		id = 3002015012,
@@ -39941,7 +39957,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "15级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015013] = {
 		id = 3002015013,
@@ -39968,7 +39984,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "15级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015014] = {
 		id = 3002015014,
@@ -39995,7 +40011,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "15级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015015] = {
 		id = 3002015015,
@@ -40022,7 +40038,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "15级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015016] = {
 		id = 3002015016,
@@ -40049,7 +40065,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "15级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015021] = {
 		id = 3002015021,
@@ -40076,7 +40092,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "15级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015022] = {
 		id = 3002015022,
@@ -40103,7 +40119,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "15级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015023] = {
 		id = 3002015023,
@@ -40130,7 +40146,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "15级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015024] = {
 		id = 3002015024,
@@ -40157,7 +40173,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "15级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015025] = {
 		id = 3002015025,
@@ -40184,7 +40200,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "15级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015026] = {
 		id = 3002015026,
@@ -40211,7 +40227,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "15级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015031] = {
 		id = 3002015031,
@@ -40238,7 +40254,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "15级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015032] = {
 		id = 3002015032,
@@ -40265,7 +40281,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "15级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015033] = {
 		id = 3002015033,
@@ -40292,7 +40308,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "15级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015034] = {
 		id = 3002015034,
@@ -40319,7 +40335,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "15级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015035] = {
 		id = 3002015035,
@@ -40346,7 +40362,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "15级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015036] = {
 		id = 3002015036,
@@ -40373,7 +40389,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "15级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015041] = {
 		id = 3002015041,
@@ -40400,7 +40416,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "15级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015042] = {
 		id = 3002015042,
@@ -40427,7 +40443,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "15级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015043] = {
 		id = 3002015043,
@@ -40454,7 +40470,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "15级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015044] = {
 		id = 3002015044,
@@ -40481,7 +40497,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "15级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015045] = {
 		id = 3002015045,
@@ -40508,7 +40524,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "15级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015046] = {
 		id = 3002015046,
@@ -40535,7 +40551,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "15级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002015051] = {
 		id = 3002015051,
@@ -40562,7 +40578,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "15级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015052] = {
 		id = 3002015052,
@@ -40589,7 +40605,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "15级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015053] = {
 		id = 3002015053,
@@ -40616,7 +40632,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "15级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015054] = {
 		id = 3002015054,
@@ -40643,7 +40659,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "15级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015055] = {
 		id = 3002015055,
@@ -40670,7 +40686,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "15级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015056] = {
 		id = 3002015056,
@@ -40697,7 +40713,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "15级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002015061] = {
 		id = 3002015061,
@@ -40724,7 +40740,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "15级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015062] = {
 		id = 3002015062,
@@ -40751,7 +40767,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "15级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015063] = {
 		id = 3002015063,
@@ -40778,7 +40794,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "15级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015064] = {
 		id = 3002015064,
@@ -40805,7 +40821,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "15级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015065] = {
 		id = 3002015065,
@@ -40832,7 +40848,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "15级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015066] = {
 		id = 3002015066,
@@ -40859,7 +40875,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "15级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015071] = {
 		id = 3002015071,
@@ -40886,7 +40902,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "15级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015072] = {
 		id = 3002015072,
@@ -40913,7 +40929,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "15级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015073] = {
 		id = 3002015073,
@@ -40940,7 +40956,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "15级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015074] = {
 		id = 3002015074,
@@ -40967,7 +40983,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "15级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015075] = {
 		id = 3002015075,
@@ -40994,7 +41010,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "15级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015076] = {
 		id = 3002015076,
@@ -41021,7 +41037,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "15级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002015081] = {
 		id = 3002015081,
@@ -41048,7 +41064,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "15级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015082] = {
 		id = 3002015082,
@@ -41075,7 +41091,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "15级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015083] = {
 		id = 3002015083,
@@ -41102,7 +41118,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "15级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015084] = {
 		id = 3002015084,
@@ -41129,7 +41145,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "15级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015085] = {
 		id = 3002015085,
@@ -41156,7 +41172,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "15级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002015086] = {
 		id = 3002015086,
@@ -41183,7 +41199,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "15级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020011] = {
 		id = 3002020011,
@@ -41210,7 +41226,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "20级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020012] = {
 		id = 3002020012,
@@ -41237,7 +41253,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "20级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020013] = {
 		id = 3002020013,
@@ -41264,7 +41280,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "20级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020014] = {
 		id = 3002020014,
@@ -41291,7 +41307,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "20级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020015] = {
 		id = 3002020015,
@@ -41318,7 +41334,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "20级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020016] = {
 		id = 3002020016,
@@ -41345,7 +41361,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "20级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020021] = {
 		id = 3002020021,
@@ -41372,7 +41388,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "20级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020022] = {
 		id = 3002020022,
@@ -41399,7 +41415,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "20级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020023] = {
 		id = 3002020023,
@@ -41426,7 +41442,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "20级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020024] = {
 		id = 3002020024,
@@ -41453,7 +41469,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "20级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020025] = {
 		id = 3002020025,
@@ -41480,7 +41496,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "20级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020026] = {
 		id = 3002020026,
@@ -41507,7 +41523,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "20级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020031] = {
 		id = 3002020031,
@@ -41534,7 +41550,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "20级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020032] = {
 		id = 3002020032,
@@ -41561,7 +41577,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "20级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020033] = {
 		id = 3002020033,
@@ -41588,7 +41604,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "20级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020034] = {
 		id = 3002020034,
@@ -41615,7 +41631,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "20级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020035] = {
 		id = 3002020035,
@@ -41642,7 +41658,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "20级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020036] = {
 		id = 3002020036,
@@ -41669,7 +41685,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "20级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020041] = {
 		id = 3002020041,
@@ -41696,7 +41712,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "20级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020042] = {
 		id = 3002020042,
@@ -41723,7 +41739,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "20级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020043] = {
 		id = 3002020043,
@@ -41750,7 +41766,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "20级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020044] = {
 		id = 3002020044,
@@ -41777,7 +41793,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "20级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020045] = {
 		id = 3002020045,
@@ -41804,7 +41820,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "20级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020046] = {
 		id = 3002020046,
@@ -41831,7 +41847,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "20级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002020051] = {
 		id = 3002020051,
@@ -41858,7 +41874,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "20级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020052] = {
 		id = 3002020052,
@@ -41885,7 +41901,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "20级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020053] = {
 		id = 3002020053,
@@ -41912,7 +41928,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "20级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020054] = {
 		id = 3002020054,
@@ -41939,7 +41955,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "20级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020055] = {
 		id = 3002020055,
@@ -41966,7 +41982,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "20级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020056] = {
 		id = 3002020056,
@@ -41993,7 +42009,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "20级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002020061] = {
 		id = 3002020061,
@@ -42020,7 +42036,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "20级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020062] = {
 		id = 3002020062,
@@ -42047,7 +42063,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "20级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020063] = {
 		id = 3002020063,
@@ -42074,7 +42090,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "20级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020064] = {
 		id = 3002020064,
@@ -42101,7 +42117,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "20级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020065] = {
 		id = 3002020065,
@@ -42128,7 +42144,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "20级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020066] = {
 		id = 3002020066,
@@ -42155,7 +42171,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "20级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020071] = {
 		id = 3002020071,
@@ -42182,7 +42198,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "20级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020072] = {
 		id = 3002020072,
@@ -42209,7 +42225,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "20级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020073] = {
 		id = 3002020073,
@@ -42236,7 +42252,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "20级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020074] = {
 		id = 3002020074,
@@ -42263,7 +42279,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "20级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020075] = {
 		id = 3002020075,
@@ -42290,7 +42306,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "20级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020076] = {
 		id = 3002020076,
@@ -42317,7 +42333,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "20级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002020081] = {
 		id = 3002020081,
@@ -42344,7 +42360,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "20级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020082] = {
 		id = 3002020082,
@@ -42371,7 +42387,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "20级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020083] = {
 		id = 3002020083,
@@ -42398,7 +42414,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "20级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020084] = {
 		id = 3002020084,
@@ -42425,7 +42441,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "20级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020085] = {
 		id = 3002020085,
@@ -42452,7 +42468,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "20级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002020086] = {
 		id = 3002020086,
@@ -42479,7 +42495,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "20级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025011] = {
 		id = 3002025011,
@@ -42506,7 +42522,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "25级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025012] = {
 		id = 3002025012,
@@ -42533,7 +42549,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "25级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025013] = {
 		id = 3002025013,
@@ -42560,7 +42576,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "25级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025014] = {
 		id = 3002025014,
@@ -42587,7 +42603,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "25级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025015] = {
 		id = 3002025015,
@@ -42614,7 +42630,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "25级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025016] = {
 		id = 3002025016,
@@ -42641,7 +42657,7 @@ local datas = {
 		iconPath = "icon/20102.png",
 		Description = "25级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025021] = {
 		id = 3002025021,
@@ -42668,7 +42684,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "25级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025022] = {
 		id = 3002025022,
@@ -42695,7 +42711,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "25级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025023] = {
 		id = 3002025023,
@@ -42722,7 +42738,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "25级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025024] = {
 		id = 3002025024,
@@ -42749,7 +42765,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "25级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025025] = {
 		id = 3002025025,
@@ -42776,7 +42792,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "25级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025026] = {
 		id = 3002025026,
@@ -42803,7 +42819,7 @@ local datas = {
 		iconPath = "icon/20202.png",
 		Description = "25级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025031] = {
 		id = 3002025031,
@@ -42830,7 +42846,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "25级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025032] = {
 		id = 3002025032,
@@ -42857,7 +42873,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "25级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025033] = {
 		id = 3002025033,
@@ -42884,7 +42900,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "25级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025034] = {
 		id = 3002025034,
@@ -42911,7 +42927,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "25级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025035] = {
 		id = 3002025035,
@@ -42938,7 +42954,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "25级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025036] = {
 		id = 3002025036,
@@ -42965,7 +42981,7 @@ local datas = {
 		iconPath = "icon/20302.png",
 		Description = "25级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025041] = {
 		id = 3002025041,
@@ -42992,7 +43008,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "25级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025042] = {
 		id = 3002025042,
@@ -43019,7 +43035,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "25级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025043] = {
 		id = 3002025043,
@@ -43046,7 +43062,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "25级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025044] = {
 		id = 3002025044,
@@ -43073,7 +43089,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "25级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025045] = {
 		id = 3002025045,
@@ -43100,7 +43116,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "25级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025046] = {
 		id = 3002025046,
@@ -43127,7 +43143,7 @@ local datas = {
 		iconPath = "icon/20402.png",
 		Description = "25级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002025051] = {
 		id = 3002025051,
@@ -43154,7 +43170,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "25级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025052] = {
 		id = 3002025052,
@@ -43181,7 +43197,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "25级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025053] = {
 		id = 3002025053,
@@ -43208,7 +43224,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "25级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025054] = {
 		id = 3002025054,
@@ -43235,7 +43251,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "25级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025055] = {
 		id = 3002025055,
@@ -43262,7 +43278,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "25级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025056] = {
 		id = 3002025056,
@@ -43289,7 +43305,7 @@ local datas = {
 		iconPath = "icon/20502.png",
 		Description = "25级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002025061] = {
 		id = 3002025061,
@@ -43316,7 +43332,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "25级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025062] = {
 		id = 3002025062,
@@ -43343,7 +43359,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "25级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025063] = {
 		id = 3002025063,
@@ -43370,7 +43386,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "25级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025064] = {
 		id = 3002025064,
@@ -43397,7 +43413,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "25级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025065] = {
 		id = 3002025065,
@@ -43424,7 +43440,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "25级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025066] = {
 		id = 3002025066,
@@ -43451,7 +43467,7 @@ local datas = {
 		iconPath = "icon/20602.png",
 		Description = "25级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025071] = {
 		id = 3002025071,
@@ -43478,7 +43494,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "25级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025072] = {
 		id = 3002025072,
@@ -43505,7 +43521,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "25级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025073] = {
 		id = 3002025073,
@@ -43532,7 +43548,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "25级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025074] = {
 		id = 3002025074,
@@ -43559,7 +43575,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "25级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025075] = {
 		id = 3002025075,
@@ -43586,7 +43602,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "25级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025076] = {
 		id = 3002025076,
@@ -43613,7 +43629,7 @@ local datas = {
 		iconPath = "icon/20702.png",
 		Description = "25级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002025081] = {
 		id = 3002025081,
@@ -43640,7 +43656,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "25级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025082] = {
 		id = 3002025082,
@@ -43667,7 +43683,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "25级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025083] = {
 		id = 3002025083,
@@ -43694,7 +43710,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "25级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025084] = {
 		id = 3002025084,
@@ -43721,7 +43737,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "25级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025085] = {
 		id = 3002025085,
@@ -43748,7 +43764,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "25级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002025086] = {
 		id = 3002025086,
@@ -43775,7 +43791,7 @@ local datas = {
 		iconPath = "icon/20802.png",
 		Description = "25级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030011] = {
 		id = 3002030011,
@@ -43802,7 +43818,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "30级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030012] = {
 		id = 3002030012,
@@ -43829,7 +43845,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "30级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030013] = {
 		id = 3002030013,
@@ -43856,7 +43872,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "30级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030014] = {
 		id = 3002030014,
@@ -43883,7 +43899,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "30级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030015] = {
 		id = 3002030015,
@@ -43910,7 +43926,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "30级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030016] = {
 		id = 3002030016,
@@ -43937,7 +43953,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "30级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030021] = {
 		id = 3002030021,
@@ -43964,7 +43980,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "30级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030022] = {
 		id = 3002030022,
@@ -43991,7 +44007,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "30级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030023] = {
 		id = 3002030023,
@@ -44018,7 +44034,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "30级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030024] = {
 		id = 3002030024,
@@ -44045,7 +44061,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "30级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030025] = {
 		id = 3002030025,
@@ -44072,7 +44088,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "30级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030026] = {
 		id = 3002030026,
@@ -44099,7 +44115,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "30级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030031] = {
 		id = 3002030031,
@@ -44126,7 +44142,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "30级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030032] = {
 		id = 3002030032,
@@ -44153,7 +44169,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "30级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030033] = {
 		id = 3002030033,
@@ -44180,7 +44196,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "30级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030034] = {
 		id = 3002030034,
@@ -44207,7 +44223,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "30级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030035] = {
 		id = 3002030035,
@@ -44234,7 +44250,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "30级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030036] = {
 		id = 3002030036,
@@ -44261,7 +44277,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "30级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030041] = {
 		id = 3002030041,
@@ -44288,7 +44304,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "30级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030042] = {
 		id = 3002030042,
@@ -44315,7 +44331,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "30级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030043] = {
 		id = 3002030043,
@@ -44342,7 +44358,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "30级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030044] = {
 		id = 3002030044,
@@ -44369,7 +44385,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "30级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030045] = {
 		id = 3002030045,
@@ -44396,7 +44412,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "30级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030046] = {
 		id = 3002030046,
@@ -44423,7 +44439,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "30级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002030051] = {
 		id = 3002030051,
@@ -44450,7 +44466,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "30级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030052] = {
 		id = 3002030052,
@@ -44477,7 +44493,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "30级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030053] = {
 		id = 3002030053,
@@ -44504,7 +44520,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "30级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030054] = {
 		id = 3002030054,
@@ -44531,7 +44547,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "30级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030055] = {
 		id = 3002030055,
@@ -44558,7 +44574,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "30级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030056] = {
 		id = 3002030056,
@@ -44585,7 +44601,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "30级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002030061] = {
 		id = 3002030061,
@@ -44612,7 +44628,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "30级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030062] = {
 		id = 3002030062,
@@ -44639,7 +44655,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "30级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030063] = {
 		id = 3002030063,
@@ -44666,7 +44682,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "30级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030064] = {
 		id = 3002030064,
@@ -44693,7 +44709,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "30级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030065] = {
 		id = 3002030065,
@@ -44720,7 +44736,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "30级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030066] = {
 		id = 3002030066,
@@ -44747,7 +44763,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "30级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030071] = {
 		id = 3002030071,
@@ -44774,7 +44790,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "30级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030072] = {
 		id = 3002030072,
@@ -44801,7 +44817,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "30级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030073] = {
 		id = 3002030073,
@@ -44828,7 +44844,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "30级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030074] = {
 		id = 3002030074,
@@ -44855,7 +44871,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "30级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030075] = {
 		id = 3002030075,
@@ -44882,7 +44898,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "30级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030076] = {
 		id = 3002030076,
@@ -44909,7 +44925,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "30级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002030081] = {
 		id = 3002030081,
@@ -44936,7 +44952,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "30级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030082] = {
 		id = 3002030082,
@@ -44963,7 +44979,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "30级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030083] = {
 		id = 3002030083,
@@ -44990,7 +45006,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "30级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030084] = {
 		id = 3002030084,
@@ -45017,7 +45033,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "30级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030085] = {
 		id = 3002030085,
@@ -45044,7 +45060,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "30级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002030086] = {
 		id = 3002030086,
@@ -45071,7 +45087,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "30级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035011] = {
 		id = 3002035011,
@@ -45098,7 +45114,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "35级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035012] = {
 		id = 3002035012,
@@ -45125,7 +45141,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "35级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035013] = {
 		id = 3002035013,
@@ -45152,7 +45168,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "35级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035014] = {
 		id = 3002035014,
@@ -45179,7 +45195,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "35级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035015] = {
 		id = 3002035015,
@@ -45206,7 +45222,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "35级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035016] = {
 		id = 3002035016,
@@ -45233,7 +45249,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "35级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035021] = {
 		id = 3002035021,
@@ -45260,7 +45276,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "35级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035022] = {
 		id = 3002035022,
@@ -45287,7 +45303,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "35级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035023] = {
 		id = 3002035023,
@@ -45314,7 +45330,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "35级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035024] = {
 		id = 3002035024,
@@ -45341,7 +45357,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "35级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035025] = {
 		id = 3002035025,
@@ -45368,7 +45384,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "35级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035026] = {
 		id = 3002035026,
@@ -45395,7 +45411,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "35级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035031] = {
 		id = 3002035031,
@@ -45422,7 +45438,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "35级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035032] = {
 		id = 3002035032,
@@ -45449,7 +45465,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "35级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035033] = {
 		id = 3002035033,
@@ -45476,7 +45492,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "35级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035034] = {
 		id = 3002035034,
@@ -45503,7 +45519,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "35级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035035] = {
 		id = 3002035035,
@@ -45530,7 +45546,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "35级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035036] = {
 		id = 3002035036,
@@ -45557,7 +45573,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "35级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035041] = {
 		id = 3002035041,
@@ -45584,7 +45600,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "35级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035042] = {
 		id = 3002035042,
@@ -45611,7 +45627,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "35级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035043] = {
 		id = 3002035043,
@@ -45638,7 +45654,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "35级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035044] = {
 		id = 3002035044,
@@ -45665,7 +45681,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "35级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035045] = {
 		id = 3002035045,
@@ -45692,7 +45708,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "35级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035046] = {
 		id = 3002035046,
@@ -45719,7 +45735,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "35级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002035051] = {
 		id = 3002035051,
@@ -45746,7 +45762,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "35级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035052] = {
 		id = 3002035052,
@@ -45773,7 +45789,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "35级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035053] = {
 		id = 3002035053,
@@ -45800,7 +45816,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "35级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035054] = {
 		id = 3002035054,
@@ -45827,7 +45843,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "35级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035055] = {
 		id = 3002035055,
@@ -45854,7 +45870,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "35级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035056] = {
 		id = 3002035056,
@@ -45881,7 +45897,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "35级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002035061] = {
 		id = 3002035061,
@@ -45908,7 +45924,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "35级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035062] = {
 		id = 3002035062,
@@ -45935,7 +45951,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "35级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035063] = {
 		id = 3002035063,
@@ -45962,7 +45978,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "35级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035064] = {
 		id = 3002035064,
@@ -45989,7 +46005,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "35级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035065] = {
 		id = 3002035065,
@@ -46016,7 +46032,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "35级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035066] = {
 		id = 3002035066,
@@ -46043,7 +46059,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "35级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035071] = {
 		id = 3002035071,
@@ -46070,7 +46086,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "35级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035072] = {
 		id = 3002035072,
@@ -46097,7 +46113,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "35级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035073] = {
 		id = 3002035073,
@@ -46124,7 +46140,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "35级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035074] = {
 		id = 3002035074,
@@ -46151,7 +46167,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "35级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035075] = {
 		id = 3002035075,
@@ -46178,7 +46194,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "35级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035076] = {
 		id = 3002035076,
@@ -46205,7 +46221,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "35级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002035081] = {
 		id = 3002035081,
@@ -46232,7 +46248,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "35级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035082] = {
 		id = 3002035082,
@@ -46259,7 +46275,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "35级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035083] = {
 		id = 3002035083,
@@ -46286,7 +46302,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "35级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035084] = {
 		id = 3002035084,
@@ -46313,7 +46329,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "35级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035085] = {
 		id = 3002035085,
@@ -46340,7 +46356,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "35级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002035086] = {
 		id = 3002035086,
@@ -46367,7 +46383,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "35级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040011] = {
 		id = 3002040011,
@@ -46394,7 +46410,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "40级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040012] = {
 		id = 3002040012,
@@ -46421,7 +46437,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "40级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040013] = {
 		id = 3002040013,
@@ -46448,7 +46464,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "40级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040014] = {
 		id = 3002040014,
@@ -46475,7 +46491,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "40级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040015] = {
 		id = 3002040015,
@@ -46502,7 +46518,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "40级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040016] = {
 		id = 3002040016,
@@ -46529,7 +46545,7 @@ local datas = {
 		iconPath = "icon/20103.png",
 		Description = "40级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040021] = {
 		id = 3002040021,
@@ -46556,7 +46572,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "40级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040022] = {
 		id = 3002040022,
@@ -46583,7 +46599,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "40级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040023] = {
 		id = 3002040023,
@@ -46610,7 +46626,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "40级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040024] = {
 		id = 3002040024,
@@ -46637,7 +46653,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "40级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040025] = {
 		id = 3002040025,
@@ -46664,7 +46680,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "40级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040026] = {
 		id = 3002040026,
@@ -46691,7 +46707,7 @@ local datas = {
 		iconPath = "icon/20203.png",
 		Description = "40级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040031] = {
 		id = 3002040031,
@@ -46718,7 +46734,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "40级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040032] = {
 		id = 3002040032,
@@ -46745,7 +46761,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "40级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040033] = {
 		id = 3002040033,
@@ -46772,7 +46788,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "40级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040034] = {
 		id = 3002040034,
@@ -46799,7 +46815,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "40级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040035] = {
 		id = 3002040035,
@@ -46826,7 +46842,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "40级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040036] = {
 		id = 3002040036,
@@ -46853,7 +46869,7 @@ local datas = {
 		iconPath = "icon/20303.png",
 		Description = "40级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040041] = {
 		id = 3002040041,
@@ -46880,7 +46896,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "40级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040042] = {
 		id = 3002040042,
@@ -46907,7 +46923,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "40级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040043] = {
 		id = 3002040043,
@@ -46934,7 +46950,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "40级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040044] = {
 		id = 3002040044,
@@ -46961,7 +46977,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "40级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040045] = {
 		id = 3002040045,
@@ -46988,7 +47004,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "40级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040046] = {
 		id = 3002040046,
@@ -47015,7 +47031,7 @@ local datas = {
 		iconPath = "icon/20403.png",
 		Description = "40级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002040051] = {
 		id = 3002040051,
@@ -47042,7 +47058,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "40级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040052] = {
 		id = 3002040052,
@@ -47069,7 +47085,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "40级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040053] = {
 		id = 3002040053,
@@ -47096,7 +47112,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "40级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040054] = {
 		id = 3002040054,
@@ -47123,7 +47139,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "40级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040055] = {
 		id = 3002040055,
@@ -47150,7 +47166,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "40级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040056] = {
 		id = 3002040056,
@@ -47177,7 +47193,7 @@ local datas = {
 		iconPath = "icon/20503.png",
 		Description = "40级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002040061] = {
 		id = 3002040061,
@@ -47204,7 +47220,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "40级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040062] = {
 		id = 3002040062,
@@ -47231,7 +47247,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "40级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040063] = {
 		id = 3002040063,
@@ -47258,7 +47274,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "40级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040064] = {
 		id = 3002040064,
@@ -47285,7 +47301,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "40级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040065] = {
 		id = 3002040065,
@@ -47312,7 +47328,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "40级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040066] = {
 		id = 3002040066,
@@ -47339,7 +47355,7 @@ local datas = {
 		iconPath = "icon/20603.png",
 		Description = "40级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040071] = {
 		id = 3002040071,
@@ -47366,7 +47382,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "40级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040072] = {
 		id = 3002040072,
@@ -47393,7 +47409,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "40级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040073] = {
 		id = 3002040073,
@@ -47420,7 +47436,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "40级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040074] = {
 		id = 3002040074,
@@ -47447,7 +47463,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "40级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040075] = {
 		id = 3002040075,
@@ -47474,7 +47490,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "40级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040076] = {
 		id = 3002040076,
@@ -47501,7 +47517,7 @@ local datas = {
 		iconPath = "icon/20703.png",
 		Description = "40级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002040081] = {
 		id = 3002040081,
@@ -47528,7 +47544,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "40级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040082] = {
 		id = 3002040082,
@@ -47555,7 +47571,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "40级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040083] = {
 		id = 3002040083,
@@ -47582,7 +47598,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "40级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040084] = {
 		id = 3002040084,
@@ -47609,7 +47625,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "40级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040085] = {
 		id = 3002040085,
@@ -47636,7 +47652,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "40级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002040086] = {
 		id = 3002040086,
@@ -47663,7 +47679,7 @@ local datas = {
 		iconPath = "icon/20803.png",
 		Description = "40级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045011] = {
 		id = 3002045011,
@@ -47690,7 +47706,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "45级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045012] = {
 		id = 3002045012,
@@ -47717,7 +47733,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "45级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045013] = {
 		id = 3002045013,
@@ -47744,7 +47760,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "45级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045014] = {
 		id = 3002045014,
@@ -47771,7 +47787,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "45级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045015] = {
 		id = 3002045015,
@@ -47798,7 +47814,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "45级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045016] = {
 		id = 3002045016,
@@ -47825,7 +47841,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "45级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045021] = {
 		id = 3002045021,
@@ -47852,7 +47868,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "45级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045022] = {
 		id = 3002045022,
@@ -47879,7 +47895,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "45级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045023] = {
 		id = 3002045023,
@@ -47906,7 +47922,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "45级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045024] = {
 		id = 3002045024,
@@ -47933,7 +47949,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "45级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045025] = {
 		id = 3002045025,
@@ -47960,7 +47976,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "45级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045026] = {
 		id = 3002045026,
@@ -47987,7 +48003,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "45级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045031] = {
 		id = 3002045031,
@@ -48014,7 +48030,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "45级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045032] = {
 		id = 3002045032,
@@ -48041,7 +48057,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "45级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045033] = {
 		id = 3002045033,
@@ -48068,7 +48084,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "45级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045034] = {
 		id = 3002045034,
@@ -48095,7 +48111,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "45级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045035] = {
 		id = 3002045035,
@@ -48122,7 +48138,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "45级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045036] = {
 		id = 3002045036,
@@ -48149,7 +48165,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "45级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045041] = {
 		id = 3002045041,
@@ -48176,7 +48192,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "45级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045042] = {
 		id = 3002045042,
@@ -48203,7 +48219,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "45级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045043] = {
 		id = 3002045043,
@@ -48230,7 +48246,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "45级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045044] = {
 		id = 3002045044,
@@ -48257,7 +48273,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "45级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045045] = {
 		id = 3002045045,
@@ -48284,7 +48300,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "45级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045046] = {
 		id = 3002045046,
@@ -48311,7 +48327,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "45级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002045051] = {
 		id = 3002045051,
@@ -48338,7 +48354,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "45级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045052] = {
 		id = 3002045052,
@@ -48365,7 +48381,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "45级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045053] = {
 		id = 3002045053,
@@ -48392,7 +48408,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "45级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045054] = {
 		id = 3002045054,
@@ -48419,7 +48435,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "45级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045055] = {
 		id = 3002045055,
@@ -48446,7 +48462,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "45级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045056] = {
 		id = 3002045056,
@@ -48473,7 +48489,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "45级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002045061] = {
 		id = 3002045061,
@@ -48500,7 +48516,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "45级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045062] = {
 		id = 3002045062,
@@ -48527,7 +48543,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "45级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045063] = {
 		id = 3002045063,
@@ -48554,7 +48570,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "45级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045064] = {
 		id = 3002045064,
@@ -48581,7 +48597,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "45级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045065] = {
 		id = 3002045065,
@@ -48608,7 +48624,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "45级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045066] = {
 		id = 3002045066,
@@ -48635,7 +48651,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "45级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045071] = {
 		id = 3002045071,
@@ -48662,7 +48678,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "45级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045072] = {
 		id = 3002045072,
@@ -48689,7 +48705,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "45级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045073] = {
 		id = 3002045073,
@@ -48716,7 +48732,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "45级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045074] = {
 		id = 3002045074,
@@ -48743,7 +48759,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "45级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045075] = {
 		id = 3002045075,
@@ -48770,7 +48786,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "45级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045076] = {
 		id = 3002045076,
@@ -48797,7 +48813,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "45级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002045081] = {
 		id = 3002045081,
@@ -48824,7 +48840,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "45级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045082] = {
 		id = 3002045082,
@@ -48851,7 +48867,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "45级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045083] = {
 		id = 3002045083,
@@ -48878,7 +48894,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "45级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045084] = {
 		id = 3002045084,
@@ -48905,7 +48921,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "45级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045085] = {
 		id = 3002045085,
@@ -48932,7 +48948,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "45级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002045086] = {
 		id = 3002045086,
@@ -48959,7 +48975,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "45级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050011] = {
 		id = 3002050011,
@@ -48986,7 +49002,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "50级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050012] = {
 		id = 3002050012,
@@ -49013,7 +49029,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "50级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050013] = {
 		id = 3002050013,
@@ -49040,7 +49056,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "50级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050014] = {
 		id = 3002050014,
@@ -49067,7 +49083,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "50级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050015] = {
 		id = 3002050015,
@@ -49094,7 +49110,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "50级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050016] = {
 		id = 3002050016,
@@ -49121,7 +49137,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "50级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050021] = {
 		id = 3002050021,
@@ -49148,7 +49164,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "50级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050022] = {
 		id = 3002050022,
@@ -49175,7 +49191,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "50级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050023] = {
 		id = 3002050023,
@@ -49202,7 +49218,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "50级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050024] = {
 		id = 3002050024,
@@ -49229,7 +49245,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "50级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050025] = {
 		id = 3002050025,
@@ -49256,7 +49272,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "50级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050026] = {
 		id = 3002050026,
@@ -49283,7 +49299,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "50级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050031] = {
 		id = 3002050031,
@@ -49310,7 +49326,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "50级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050032] = {
 		id = 3002050032,
@@ -49337,7 +49353,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "50级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050033] = {
 		id = 3002050033,
@@ -49364,7 +49380,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "50级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050034] = {
 		id = 3002050034,
@@ -49391,7 +49407,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "50级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050035] = {
 		id = 3002050035,
@@ -49418,7 +49434,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "50级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050036] = {
 		id = 3002050036,
@@ -49445,7 +49461,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "50级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050041] = {
 		id = 3002050041,
@@ -49472,7 +49488,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "50级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050042] = {
 		id = 3002050042,
@@ -49499,7 +49515,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "50级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050043] = {
 		id = 3002050043,
@@ -49526,7 +49542,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "50级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050044] = {
 		id = 3002050044,
@@ -49553,7 +49569,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "50级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050045] = {
 		id = 3002050045,
@@ -49580,7 +49596,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "50级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050046] = {
 		id = 3002050046,
@@ -49607,7 +49623,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "50级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002050051] = {
 		id = 3002050051,
@@ -49634,7 +49650,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "50级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050052] = {
 		id = 3002050052,
@@ -49661,7 +49677,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "50级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050053] = {
 		id = 3002050053,
@@ -49688,7 +49704,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "50级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050054] = {
 		id = 3002050054,
@@ -49715,7 +49731,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "50级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050055] = {
 		id = 3002050055,
@@ -49742,7 +49758,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "50级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050056] = {
 		id = 3002050056,
@@ -49769,7 +49785,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "50级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002050061] = {
 		id = 3002050061,
@@ -49796,7 +49812,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "50级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050062] = {
 		id = 3002050062,
@@ -49823,7 +49839,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "50级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050063] = {
 		id = 3002050063,
@@ -49850,7 +49866,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "50级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050064] = {
 		id = 3002050064,
@@ -49877,7 +49893,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "50级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050065] = {
 		id = 3002050065,
@@ -49904,7 +49920,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "50级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050066] = {
 		id = 3002050066,
@@ -49931,7 +49947,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "50级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050071] = {
 		id = 3002050071,
@@ -49958,7 +49974,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "50级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050072] = {
 		id = 3002050072,
@@ -49985,7 +50001,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "50级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050073] = {
 		id = 3002050073,
@@ -50012,7 +50028,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "50级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050074] = {
 		id = 3002050074,
@@ -50039,7 +50055,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "50级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050075] = {
 		id = 3002050075,
@@ -50066,7 +50082,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "50级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050076] = {
 		id = 3002050076,
@@ -50093,7 +50109,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "50级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002050081] = {
 		id = 3002050081,
@@ -50120,7 +50136,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "50级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050082] = {
 		id = 3002050082,
@@ -50147,7 +50163,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "50级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050083] = {
 		id = 3002050083,
@@ -50174,7 +50190,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "50级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050084] = {
 		id = 3002050084,
@@ -50201,7 +50217,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "50级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050085] = {
 		id = 3002050085,
@@ -50228,7 +50244,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "50级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002050086] = {
 		id = 3002050086,
@@ -50255,7 +50271,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "50级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055011] = {
 		id = 3002055011,
@@ -50282,7 +50298,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "55级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055012] = {
 		id = 3002055012,
@@ -50309,7 +50325,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "55级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055013] = {
 		id = 3002055013,
@@ -50336,7 +50352,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "55级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055014] = {
 		id = 3002055014,
@@ -50363,7 +50379,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "55级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055015] = {
 		id = 3002055015,
@@ -50390,7 +50406,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "55级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055016] = {
 		id = 3002055016,
@@ -50417,7 +50433,7 @@ local datas = {
 		iconPath = "icon/20104.png",
 		Description = "55级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055021] = {
 		id = 3002055021,
@@ -50444,7 +50460,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "55级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055022] = {
 		id = 3002055022,
@@ -50471,7 +50487,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "55级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055023] = {
 		id = 3002055023,
@@ -50498,7 +50514,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "55级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055024] = {
 		id = 3002055024,
@@ -50525,7 +50541,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "55级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055025] = {
 		id = 3002055025,
@@ -50552,7 +50568,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "55级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055026] = {
 		id = 3002055026,
@@ -50579,7 +50595,7 @@ local datas = {
 		iconPath = "icon/20204.png",
 		Description = "55级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055031] = {
 		id = 3002055031,
@@ -50606,7 +50622,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "55级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055032] = {
 		id = 3002055032,
@@ -50633,7 +50649,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "55级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055033] = {
 		id = 3002055033,
@@ -50660,7 +50676,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "55级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055034] = {
 		id = 3002055034,
@@ -50687,7 +50703,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "55级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055035] = {
 		id = 3002055035,
@@ -50714,7 +50730,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "55级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055036] = {
 		id = 3002055036,
@@ -50741,7 +50757,7 @@ local datas = {
 		iconPath = "icon/20304.png",
 		Description = "55级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055041] = {
 		id = 3002055041,
@@ -50768,7 +50784,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "55级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055042] = {
 		id = 3002055042,
@@ -50795,7 +50811,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "55级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055043] = {
 		id = 3002055043,
@@ -50822,7 +50838,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "55级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055044] = {
 		id = 3002055044,
@@ -50849,7 +50865,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "55级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055045] = {
 		id = 3002055045,
@@ -50876,7 +50892,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "55级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055046] = {
 		id = 3002055046,
@@ -50903,7 +50919,7 @@ local datas = {
 		iconPath = "icon/20404.png",
 		Description = "55级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002055051] = {
 		id = 3002055051,
@@ -50930,7 +50946,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "55级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055052] = {
 		id = 3002055052,
@@ -50957,7 +50973,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "55级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055053] = {
 		id = 3002055053,
@@ -50984,7 +51000,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "55级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055054] = {
 		id = 3002055054,
@@ -51011,7 +51027,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "55级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055055] = {
 		id = 3002055055,
@@ -51038,7 +51054,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "55级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055056] = {
 		id = 3002055056,
@@ -51065,7 +51081,7 @@ local datas = {
 		iconPath = "icon/20504.png",
 		Description = "55级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002055061] = {
 		id = 3002055061,
@@ -51092,7 +51108,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "55级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055062] = {
 		id = 3002055062,
@@ -51119,7 +51135,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "55级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055063] = {
 		id = 3002055063,
@@ -51146,7 +51162,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "55级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055064] = {
 		id = 3002055064,
@@ -51173,7 +51189,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "55级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055065] = {
 		id = 3002055065,
@@ -51200,7 +51216,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "55级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055066] = {
 		id = 3002055066,
@@ -51227,7 +51243,7 @@ local datas = {
 		iconPath = "icon/20604.png",
 		Description = "55级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055071] = {
 		id = 3002055071,
@@ -51254,7 +51270,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "55级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055072] = {
 		id = 3002055072,
@@ -51281,7 +51297,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "55级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055073] = {
 		id = 3002055073,
@@ -51308,7 +51324,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "55级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055074] = {
 		id = 3002055074,
@@ -51335,7 +51351,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "55级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055075] = {
 		id = 3002055075,
@@ -51362,7 +51378,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "55级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055076] = {
 		id = 3002055076,
@@ -51389,7 +51405,7 @@ local datas = {
 		iconPath = "icon/20704.png",
 		Description = "55级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002055081] = {
 		id = 3002055081,
@@ -51416,7 +51432,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "55级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055082] = {
 		id = 3002055082,
@@ -51443,7 +51459,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "55级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055083] = {
 		id = 3002055083,
@@ -51470,7 +51486,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "55级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055084] = {
 		id = 3002055084,
@@ -51497,7 +51513,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "55级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055085] = {
 		id = 3002055085,
@@ -51524,7 +51540,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "55级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002055086] = {
 		id = 3002055086,
@@ -51551,7 +51567,7 @@ local datas = {
 		iconPath = "icon/20804.png",
 		Description = "55级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060011] = {
 		id = 3002060011,
@@ -51578,7 +51594,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "60级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060012] = {
 		id = 3002060012,
@@ -51605,7 +51621,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "60级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060013] = {
 		id = 3002060013,
@@ -51632,7 +51648,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "60级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060014] = {
 		id = 3002060014,
@@ -51659,7 +51675,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "60级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060015] = {
 		id = 3002060015,
@@ -51686,7 +51702,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "60级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060016] = {
 		id = 3002060016,
@@ -51713,7 +51729,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "60级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060021] = {
 		id = 3002060021,
@@ -51740,7 +51756,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "60级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060022] = {
 		id = 3002060022,
@@ -51767,7 +51783,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "60级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060023] = {
 		id = 3002060023,
@@ -51794,7 +51810,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "60级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060024] = {
 		id = 3002060024,
@@ -51821,7 +51837,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "60级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060025] = {
 		id = 3002060025,
@@ -51848,7 +51864,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "60级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060026] = {
 		id = 3002060026,
@@ -51875,7 +51891,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "60级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060031] = {
 		id = 3002060031,
@@ -51902,7 +51918,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "60级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060032] = {
 		id = 3002060032,
@@ -51929,7 +51945,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "60级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060033] = {
 		id = 3002060033,
@@ -51956,7 +51972,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "60级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060034] = {
 		id = 3002060034,
@@ -51983,7 +51999,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "60级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060035] = {
 		id = 3002060035,
@@ -52010,7 +52026,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "60级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060036] = {
 		id = 3002060036,
@@ -52037,7 +52053,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "60级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060041] = {
 		id = 3002060041,
@@ -52064,7 +52080,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "60级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060042] = {
 		id = 3002060042,
@@ -52091,7 +52107,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "60级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060043] = {
 		id = 3002060043,
@@ -52118,7 +52134,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "60级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060044] = {
 		id = 3002060044,
@@ -52145,7 +52161,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "60级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060045] = {
 		id = 3002060045,
@@ -52172,7 +52188,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "60级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060046] = {
 		id = 3002060046,
@@ -52199,7 +52215,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "60级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002060051] = {
 		id = 3002060051,
@@ -52226,7 +52242,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "60级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060052] = {
 		id = 3002060052,
@@ -52253,7 +52269,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "60级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060053] = {
 		id = 3002060053,
@@ -52280,7 +52296,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "60级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060054] = {
 		id = 3002060054,
@@ -52307,7 +52323,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "60级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060055] = {
 		id = 3002060055,
@@ -52334,7 +52350,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "60级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060056] = {
 		id = 3002060056,
@@ -52361,7 +52377,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "60级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002060061] = {
 		id = 3002060061,
@@ -52388,7 +52404,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "60级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060062] = {
 		id = 3002060062,
@@ -52415,7 +52431,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "60级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060063] = {
 		id = 3002060063,
@@ -52442,7 +52458,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "60级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060064] = {
 		id = 3002060064,
@@ -52469,7 +52485,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "60级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060065] = {
 		id = 3002060065,
@@ -52496,7 +52512,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "60级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060066] = {
 		id = 3002060066,
@@ -52523,7 +52539,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "60级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060071] = {
 		id = 3002060071,
@@ -52550,7 +52566,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "60级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060072] = {
 		id = 3002060072,
@@ -52577,7 +52593,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "60级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060073] = {
 		id = 3002060073,
@@ -52604,7 +52620,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "60级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060074] = {
 		id = 3002060074,
@@ -52631,7 +52647,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "60级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060075] = {
 		id = 3002060075,
@@ -52658,7 +52674,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "60级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060076] = {
 		id = 3002060076,
@@ -52685,7 +52701,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "60级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002060081] = {
 		id = 3002060081,
@@ -52712,7 +52728,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "60级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060082] = {
 		id = 3002060082,
@@ -52739,7 +52755,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "60级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060083] = {
 		id = 3002060083,
@@ -52766,7 +52782,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "60级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060084] = {
 		id = 3002060084,
@@ -52793,7 +52809,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "60级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060085] = {
 		id = 3002060085,
@@ -52820,7 +52836,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "60级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002060086] = {
 		id = 3002060086,
@@ -52847,7 +52863,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "60级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065011] = {
 		id = 3002065011,
@@ -52874,7 +52890,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "65级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065012] = {
 		id = 3002065012,
@@ -52901,7 +52917,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "65级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065013] = {
 		id = 3002065013,
@@ -52928,7 +52944,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "65级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065014] = {
 		id = 3002065014,
@@ -52955,7 +52971,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "65级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065015] = {
 		id = 3002065015,
@@ -52982,7 +52998,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "65级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065016] = {
 		id = 3002065016,
@@ -53009,7 +53025,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "65级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065021] = {
 		id = 3002065021,
@@ -53036,7 +53052,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "65级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065022] = {
 		id = 3002065022,
@@ -53063,7 +53079,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "65级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065023] = {
 		id = 3002065023,
@@ -53090,7 +53106,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "65级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065024] = {
 		id = 3002065024,
@@ -53117,7 +53133,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "65级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065025] = {
 		id = 3002065025,
@@ -53144,7 +53160,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "65级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065026] = {
 		id = 3002065026,
@@ -53171,7 +53187,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "65级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065031] = {
 		id = 3002065031,
@@ -53198,7 +53214,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "65级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065032] = {
 		id = 3002065032,
@@ -53225,7 +53241,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "65级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065033] = {
 		id = 3002065033,
@@ -53252,7 +53268,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "65级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065034] = {
 		id = 3002065034,
@@ -53279,7 +53295,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "65级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065035] = {
 		id = 3002065035,
@@ -53306,7 +53322,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "65级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065036] = {
 		id = 3002065036,
@@ -53333,7 +53349,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "65级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065041] = {
 		id = 3002065041,
@@ -53360,7 +53376,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "65级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065042] = {
 		id = 3002065042,
@@ -53387,7 +53403,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "65级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065043] = {
 		id = 3002065043,
@@ -53414,7 +53430,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "65级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065044] = {
 		id = 3002065044,
@@ -53441,7 +53457,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "65级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065045] = {
 		id = 3002065045,
@@ -53468,7 +53484,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "65级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065046] = {
 		id = 3002065046,
@@ -53495,7 +53511,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "65级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002065051] = {
 		id = 3002065051,
@@ -53522,7 +53538,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "65级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065052] = {
 		id = 3002065052,
@@ -53549,7 +53565,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "65级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065053] = {
 		id = 3002065053,
@@ -53576,7 +53592,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "65级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065054] = {
 		id = 3002065054,
@@ -53603,7 +53619,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "65级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065055] = {
 		id = 3002065055,
@@ -53630,7 +53646,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "65级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065056] = {
 		id = 3002065056,
@@ -53657,7 +53673,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "65级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002065061] = {
 		id = 3002065061,
@@ -53684,7 +53700,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "65级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065062] = {
 		id = 3002065062,
@@ -53711,7 +53727,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "65级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065063] = {
 		id = 3002065063,
@@ -53738,7 +53754,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "65级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065064] = {
 		id = 3002065064,
@@ -53765,7 +53781,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "65级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065065] = {
 		id = 3002065065,
@@ -53792,7 +53808,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "65级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065066] = {
 		id = 3002065066,
@@ -53819,7 +53835,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "65级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065071] = {
 		id = 3002065071,
@@ -53846,7 +53862,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "65级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065072] = {
 		id = 3002065072,
@@ -53873,7 +53889,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "65级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065073] = {
 		id = 3002065073,
@@ -53900,7 +53916,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "65级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065074] = {
 		id = 3002065074,
@@ -53927,7 +53943,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "65级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065075] = {
 		id = 3002065075,
@@ -53954,7 +53970,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "65级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065076] = {
 		id = 3002065076,
@@ -53981,7 +53997,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "65级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002065081] = {
 		id = 3002065081,
@@ -54008,7 +54024,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "65级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065082] = {
 		id = 3002065082,
@@ -54035,7 +54051,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "65级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065083] = {
 		id = 3002065083,
@@ -54062,7 +54078,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "65级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065084] = {
 		id = 3002065084,
@@ -54089,7 +54105,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "65级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065085] = {
 		id = 3002065085,
@@ -54116,7 +54132,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "65级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002065086] = {
 		id = 3002065086,
@@ -54143,7 +54159,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "65级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070011] = {
 		id = 3002070011,
@@ -54170,7 +54186,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "70级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070012] = {
 		id = 3002070012,
@@ -54197,7 +54213,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "70级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070013] = {
 		id = 3002070013,
@@ -54224,7 +54240,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "70级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070014] = {
 		id = 3002070014,
@@ -54251,7 +54267,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "70级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070015] = {
 		id = 3002070015,
@@ -54278,7 +54294,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "70级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070016] = {
 		id = 3002070016,
@@ -54305,7 +54321,7 @@ local datas = {
 		iconPath = "icon/20105.png",
 		Description = "70级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070021] = {
 		id = 3002070021,
@@ -54332,7 +54348,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "70级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070022] = {
 		id = 3002070022,
@@ -54359,7 +54375,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "70级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070023] = {
 		id = 3002070023,
@@ -54386,7 +54402,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "70级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070024] = {
 		id = 3002070024,
@@ -54413,7 +54429,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "70级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070025] = {
 		id = 3002070025,
@@ -54440,7 +54456,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "70级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070026] = {
 		id = 3002070026,
@@ -54467,7 +54483,7 @@ local datas = {
 		iconPath = "icon/20205.png",
 		Description = "70级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070031] = {
 		id = 3002070031,
@@ -54494,7 +54510,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "70级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070032] = {
 		id = 3002070032,
@@ -54521,7 +54537,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "70级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070033] = {
 		id = 3002070033,
@@ -54548,7 +54564,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "70级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070034] = {
 		id = 3002070034,
@@ -54575,7 +54591,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "70级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070035] = {
 		id = 3002070035,
@@ -54602,7 +54618,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "70级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070036] = {
 		id = 3002070036,
@@ -54629,7 +54645,7 @@ local datas = {
 		iconPath = "icon/20305.png",
 		Description = "70级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070041] = {
 		id = 3002070041,
@@ -54656,7 +54672,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "70级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070042] = {
 		id = 3002070042,
@@ -54683,7 +54699,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "70级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070043] = {
 		id = 3002070043,
@@ -54710,7 +54726,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "70级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070044] = {
 		id = 3002070044,
@@ -54737,7 +54753,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "70级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070045] = {
 		id = 3002070045,
@@ -54764,7 +54780,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "70级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070046] = {
 		id = 3002070046,
@@ -54791,7 +54807,7 @@ local datas = {
 		iconPath = "icon/20405.png",
 		Description = "70级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002070051] = {
 		id = 3002070051,
@@ -54818,7 +54834,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "70级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070052] = {
 		id = 3002070052,
@@ -54845,7 +54861,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "70级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070053] = {
 		id = 3002070053,
@@ -54872,7 +54888,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "70级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070054] = {
 		id = 3002070054,
@@ -54899,7 +54915,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "70级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070055] = {
 		id = 3002070055,
@@ -54926,7 +54942,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "70级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070056] = {
 		id = 3002070056,
@@ -54953,7 +54969,7 @@ local datas = {
 		iconPath = "icon/20505.png",
 		Description = "70级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002070061] = {
 		id = 3002070061,
@@ -54980,7 +54996,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "70级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070062] = {
 		id = 3002070062,
@@ -55007,7 +55023,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "70级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070063] = {
 		id = 3002070063,
@@ -55034,7 +55050,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "70级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070064] = {
 		id = 3002070064,
@@ -55061,7 +55077,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "70级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070065] = {
 		id = 3002070065,
@@ -55088,7 +55104,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "70级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070066] = {
 		id = 3002070066,
@@ -55115,7 +55131,7 @@ local datas = {
 		iconPath = "icon/20605.png",
 		Description = "70级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070071] = {
 		id = 3002070071,
@@ -55142,7 +55158,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "70级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070072] = {
 		id = 3002070072,
@@ -55169,7 +55185,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "70级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070073] = {
 		id = 3002070073,
@@ -55196,7 +55212,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "70级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070074] = {
 		id = 3002070074,
@@ -55223,7 +55239,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "70级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070075] = {
 		id = 3002070075,
@@ -55250,7 +55266,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "70级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070076] = {
 		id = 3002070076,
@@ -55277,7 +55293,7 @@ local datas = {
 		iconPath = "icon/20705.png",
 		Description = "70级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002070081] = {
 		id = 3002070081,
@@ -55304,7 +55320,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "70级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070082] = {
 		id = 3002070082,
@@ -55331,7 +55347,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "70级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070083] = {
 		id = 3002070083,
@@ -55358,7 +55374,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "70级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070084] = {
 		id = 3002070084,
@@ -55385,7 +55401,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "70级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070085] = {
 		id = 3002070085,
@@ -55412,7 +55428,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "70级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002070086] = {
 		id = 3002070086,
@@ -55439,7 +55455,7 @@ local datas = {
 		iconPath = "icon/20805.png",
 		Description = "70级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075011] = {
 		id = 3002075011,
@@ -55466,7 +55482,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "75级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075012] = {
 		id = 3002075012,
@@ -55493,7 +55509,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "75级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075013] = {
 		id = 3002075013,
@@ -55520,7 +55536,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "75级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075014] = {
 		id = 3002075014,
@@ -55547,7 +55563,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "75级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075015] = {
 		id = 3002075015,
@@ -55574,7 +55590,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "75级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075016] = {
 		id = 3002075016,
@@ -55601,7 +55617,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "75级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075021] = {
 		id = 3002075021,
@@ -55628,7 +55644,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "75级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075022] = {
 		id = 3002075022,
@@ -55655,7 +55671,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "75级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075023] = {
 		id = 3002075023,
@@ -55682,7 +55698,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "75级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075024] = {
 		id = 3002075024,
@@ -55709,7 +55725,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "75级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075025] = {
 		id = 3002075025,
@@ -55736,7 +55752,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "75级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075026] = {
 		id = 3002075026,
@@ -55763,7 +55779,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "75级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075031] = {
 		id = 3002075031,
@@ -55790,7 +55806,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "75级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075032] = {
 		id = 3002075032,
@@ -55817,7 +55833,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "75级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075033] = {
 		id = 3002075033,
@@ -55844,7 +55860,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "75级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075034] = {
 		id = 3002075034,
@@ -55871,7 +55887,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "75级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075035] = {
 		id = 3002075035,
@@ -55898,7 +55914,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "75级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075036] = {
 		id = 3002075036,
@@ -55925,7 +55941,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "75级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075041] = {
 		id = 3002075041,
@@ -55952,7 +55968,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "75级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075042] = {
 		id = 3002075042,
@@ -55979,7 +55995,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "75级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075043] = {
 		id = 3002075043,
@@ -56006,7 +56022,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "75级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075044] = {
 		id = 3002075044,
@@ -56033,7 +56049,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "75级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075045] = {
 		id = 3002075045,
@@ -56060,7 +56076,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "75级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075046] = {
 		id = 3002075046,
@@ -56087,7 +56103,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "75级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002075051] = {
 		id = 3002075051,
@@ -56114,7 +56130,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "75级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075052] = {
 		id = 3002075052,
@@ -56141,7 +56157,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "75级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075053] = {
 		id = 3002075053,
@@ -56168,7 +56184,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "75级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075054] = {
 		id = 3002075054,
@@ -56195,7 +56211,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "75级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075055] = {
 		id = 3002075055,
@@ -56222,7 +56238,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "75级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075056] = {
 		id = 3002075056,
@@ -56249,7 +56265,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "75级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002075061] = {
 		id = 3002075061,
@@ -56276,7 +56292,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "75级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075062] = {
 		id = 3002075062,
@@ -56303,7 +56319,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "75级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075063] = {
 		id = 3002075063,
@@ -56330,7 +56346,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "75级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075064] = {
 		id = 3002075064,
@@ -56357,7 +56373,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "75级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075065] = {
 		id = 3002075065,
@@ -56384,7 +56400,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "75级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075066] = {
 		id = 3002075066,
@@ -56411,7 +56427,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "75级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075071] = {
 		id = 3002075071,
@@ -56438,7 +56454,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "75级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075072] = {
 		id = 3002075072,
@@ -56465,7 +56481,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "75级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075073] = {
 		id = 3002075073,
@@ -56492,7 +56508,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "75级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075074] = {
 		id = 3002075074,
@@ -56519,7 +56535,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "75级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075075] = {
 		id = 3002075075,
@@ -56546,7 +56562,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "75级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075076] = {
 		id = 3002075076,
@@ -56573,7 +56589,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "75级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002075081] = {
 		id = 3002075081,
@@ -56600,7 +56616,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "75级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075082] = {
 		id = 3002075082,
@@ -56627,7 +56643,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "75级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075083] = {
 		id = 3002075083,
@@ -56654,7 +56670,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "75级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075084] = {
 		id = 3002075084,
@@ -56681,7 +56697,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "75级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075085] = {
 		id = 3002075085,
@@ -56708,7 +56724,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "75级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002075086] = {
 		id = 3002075086,
@@ -56735,7 +56751,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "75级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080011] = {
 		id = 3002080011,
@@ -56762,7 +56778,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "80级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080012] = {
 		id = 3002080012,
@@ -56789,7 +56805,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "80级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080013] = {
 		id = 3002080013,
@@ -56816,7 +56832,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "80级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080014] = {
 		id = 3002080014,
@@ -56843,7 +56859,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "80级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080015] = {
 		id = 3002080015,
@@ -56870,7 +56886,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "80级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080016] = {
 		id = 3002080016,
@@ -56897,7 +56913,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "80级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080021] = {
 		id = 3002080021,
@@ -56924,7 +56940,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "80级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080022] = {
 		id = 3002080022,
@@ -56951,7 +56967,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "80级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080023] = {
 		id = 3002080023,
@@ -56978,7 +56994,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "80级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080024] = {
 		id = 3002080024,
@@ -57005,7 +57021,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "80级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080025] = {
 		id = 3002080025,
@@ -57032,7 +57048,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "80级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080026] = {
 		id = 3002080026,
@@ -57059,7 +57075,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "80级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080031] = {
 		id = 3002080031,
@@ -57086,7 +57102,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "80级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080032] = {
 		id = 3002080032,
@@ -57113,7 +57129,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "80级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080033] = {
 		id = 3002080033,
@@ -57140,7 +57156,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "80级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080034] = {
 		id = 3002080034,
@@ -57167,7 +57183,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "80级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080035] = {
 		id = 3002080035,
@@ -57194,7 +57210,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "80级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080036] = {
 		id = 3002080036,
@@ -57221,7 +57237,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "80级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080041] = {
 		id = 3002080041,
@@ -57248,7 +57264,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "80级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080042] = {
 		id = 3002080042,
@@ -57275,7 +57291,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "80级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080043] = {
 		id = 3002080043,
@@ -57302,7 +57318,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "80级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080044] = {
 		id = 3002080044,
@@ -57329,7 +57345,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "80级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080045] = {
 		id = 3002080045,
@@ -57356,7 +57372,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "80级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080046] = {
 		id = 3002080046,
@@ -57383,7 +57399,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "80级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002080051] = {
 		id = 3002080051,
@@ -57410,7 +57426,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "80级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080052] = {
 		id = 3002080052,
@@ -57437,7 +57453,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "80级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080053] = {
 		id = 3002080053,
@@ -57464,7 +57480,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "80级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080054] = {
 		id = 3002080054,
@@ -57491,7 +57507,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "80级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080055] = {
 		id = 3002080055,
@@ -57518,7 +57534,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "80级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080056] = {
 		id = 3002080056,
@@ -57545,7 +57561,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "80级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002080061] = {
 		id = 3002080061,
@@ -57572,7 +57588,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "80级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080062] = {
 		id = 3002080062,
@@ -57599,7 +57615,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "80级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080063] = {
 		id = 3002080063,
@@ -57626,7 +57642,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "80级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080064] = {
 		id = 3002080064,
@@ -57653,7 +57669,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "80级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080065] = {
 		id = 3002080065,
@@ -57680,7 +57696,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "80级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080066] = {
 		id = 3002080066,
@@ -57707,7 +57723,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "80级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080071] = {
 		id = 3002080071,
@@ -57734,7 +57750,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "80级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080072] = {
 		id = 3002080072,
@@ -57761,7 +57777,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "80级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080073] = {
 		id = 3002080073,
@@ -57788,7 +57804,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "80级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080074] = {
 		id = 3002080074,
@@ -57815,7 +57831,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "80级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080075] = {
 		id = 3002080075,
@@ -57842,7 +57858,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "80级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080076] = {
 		id = 3002080076,
@@ -57869,7 +57885,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "80级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002080081] = {
 		id = 3002080081,
@@ -57896,7 +57912,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "80级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080082] = {
 		id = 3002080082,
@@ -57923,7 +57939,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "80级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080083] = {
 		id = 3002080083,
@@ -57950,7 +57966,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "80级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080084] = {
 		id = 3002080084,
@@ -57977,7 +57993,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "80级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080085] = {
 		id = 3002080085,
@@ -58004,7 +58020,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "80级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002080086] = {
 		id = 3002080086,
@@ -58031,7 +58047,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "80级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085011] = {
 		id = 3002085011,
@@ -58058,7 +58074,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "85级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085012] = {
 		id = 3002085012,
@@ -58085,7 +58101,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "85级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085013] = {
 		id = 3002085013,
@@ -58112,7 +58128,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "85级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085014] = {
 		id = 3002085014,
@@ -58139,7 +58155,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "85级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085015] = {
 		id = 3002085015,
@@ -58166,7 +58182,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "85级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085016] = {
 		id = 3002085016,
@@ -58193,7 +58209,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "85级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085021] = {
 		id = 3002085021,
@@ -58220,7 +58236,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "85级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085022] = {
 		id = 3002085022,
@@ -58247,7 +58263,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "85级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085023] = {
 		id = 3002085023,
@@ -58274,7 +58290,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "85级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085024] = {
 		id = 3002085024,
@@ -58301,7 +58317,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "85级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085025] = {
 		id = 3002085025,
@@ -58328,7 +58344,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "85级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085026] = {
 		id = 3002085026,
@@ -58355,7 +58371,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "85级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085031] = {
 		id = 3002085031,
@@ -58382,7 +58398,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "85级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085032] = {
 		id = 3002085032,
@@ -58409,7 +58425,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "85级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085033] = {
 		id = 3002085033,
@@ -58436,7 +58452,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "85级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085034] = {
 		id = 3002085034,
@@ -58463,7 +58479,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "85级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085035] = {
 		id = 3002085035,
@@ -58490,7 +58506,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "85级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085036] = {
 		id = 3002085036,
@@ -58517,7 +58533,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "85级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085041] = {
 		id = 3002085041,
@@ -58544,7 +58560,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "85级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085042] = {
 		id = 3002085042,
@@ -58571,7 +58587,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "85级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085043] = {
 		id = 3002085043,
@@ -58598,7 +58614,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "85级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085044] = {
 		id = 3002085044,
@@ -58625,7 +58641,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "85级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085045] = {
 		id = 3002085045,
@@ -58652,7 +58668,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "85级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085046] = {
 		id = 3002085046,
@@ -58679,7 +58695,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "85级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002085051] = {
 		id = 3002085051,
@@ -58706,7 +58722,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "85级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085052] = {
 		id = 3002085052,
@@ -58733,7 +58749,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "85级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085053] = {
 		id = 3002085053,
@@ -58760,7 +58776,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "85级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085054] = {
 		id = 3002085054,
@@ -58787,7 +58803,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "85级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085055] = {
 		id = 3002085055,
@@ -58814,7 +58830,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "85级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085056] = {
 		id = 3002085056,
@@ -58841,7 +58857,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "85级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002085061] = {
 		id = 3002085061,
@@ -58868,7 +58884,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "85级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085062] = {
 		id = 3002085062,
@@ -58895,7 +58911,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "85级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085063] = {
 		id = 3002085063,
@@ -58922,7 +58938,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "85级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085064] = {
 		id = 3002085064,
@@ -58949,7 +58965,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "85级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085065] = {
 		id = 3002085065,
@@ -58976,7 +58992,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "85级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085066] = {
 		id = 3002085066,
@@ -59003,7 +59019,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "85级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085071] = {
 		id = 3002085071,
@@ -59030,7 +59046,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "85级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085072] = {
 		id = 3002085072,
@@ -59057,7 +59073,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "85级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085073] = {
 		id = 3002085073,
@@ -59084,7 +59100,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "85级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085074] = {
 		id = 3002085074,
@@ -59111,7 +59127,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "85级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085075] = {
 		id = 3002085075,
@@ -59138,7 +59154,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "85级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085076] = {
 		id = 3002085076,
@@ -59165,7 +59181,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "85级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002085081] = {
 		id = 3002085081,
@@ -59192,7 +59208,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "85级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085082] = {
 		id = 3002085082,
@@ -59219,7 +59235,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "85级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085083] = {
 		id = 3002085083,
@@ -59246,7 +59262,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "85级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085084] = {
 		id = 3002085084,
@@ -59273,7 +59289,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "85级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085085] = {
 		id = 3002085085,
@@ -59300,7 +59316,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "85级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002085086] = {
 		id = 3002085086,
@@ -59327,7 +59343,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "85级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090011] = {
 		id = 3002090011,
@@ -59354,7 +59370,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "90级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090012] = {
 		id = 3002090012,
@@ -59381,7 +59397,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "90级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090013] = {
 		id = 3002090013,
@@ -59408,7 +59424,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "90级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090014] = {
 		id = 3002090014,
@@ -59435,7 +59451,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "90级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090015] = {
 		id = 3002090015,
@@ -59462,7 +59478,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "90级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090016] = {
 		id = 3002090016,
@@ -59489,7 +59505,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "90级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090021] = {
 		id = 3002090021,
@@ -59516,7 +59532,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "90级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090022] = {
 		id = 3002090022,
@@ -59543,7 +59559,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "90级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090023] = {
 		id = 3002090023,
@@ -59570,7 +59586,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "90级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090024] = {
 		id = 3002090024,
@@ -59597,7 +59613,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "90级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090025] = {
 		id = 3002090025,
@@ -59624,7 +59640,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "90级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090026] = {
 		id = 3002090026,
@@ -59651,7 +59667,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "90级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090031] = {
 		id = 3002090031,
@@ -59678,7 +59694,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "90级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090032] = {
 		id = 3002090032,
@@ -59705,7 +59721,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "90级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090033] = {
 		id = 3002090033,
@@ -59732,7 +59748,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "90级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090034] = {
 		id = 3002090034,
@@ -59759,7 +59775,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "90级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090035] = {
 		id = 3002090035,
@@ -59786,7 +59802,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "90级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090036] = {
 		id = 3002090036,
@@ -59813,7 +59829,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "90级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090041] = {
 		id = 3002090041,
@@ -59840,7 +59856,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "90级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090042] = {
 		id = 3002090042,
@@ -59867,7 +59883,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "90级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090043] = {
 		id = 3002090043,
@@ -59894,7 +59910,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "90级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090044] = {
 		id = 3002090044,
@@ -59921,7 +59937,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "90级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090045] = {
 		id = 3002090045,
@@ -59948,7 +59964,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "90级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090046] = {
 		id = 3002090046,
@@ -59975,7 +59991,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "90级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002090051] = {
 		id = 3002090051,
@@ -60002,7 +60018,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "90级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090052] = {
 		id = 3002090052,
@@ -60029,7 +60045,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "90级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090053] = {
 		id = 3002090053,
@@ -60056,7 +60072,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "90级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090054] = {
 		id = 3002090054,
@@ -60083,7 +60099,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "90级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090055] = {
 		id = 3002090055,
@@ -60110,7 +60126,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "90级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090056] = {
 		id = 3002090056,
@@ -60137,7 +60153,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "90级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002090061] = {
 		id = 3002090061,
@@ -60164,7 +60180,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "90级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090062] = {
 		id = 3002090062,
@@ -60191,7 +60207,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "90级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090063] = {
 		id = 3002090063,
@@ -60218,7 +60234,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "90级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090064] = {
 		id = 3002090064,
@@ -60245,7 +60261,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "90级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090065] = {
 		id = 3002090065,
@@ -60272,7 +60288,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "90级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090066] = {
 		id = 3002090066,
@@ -60299,7 +60315,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "90级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090071] = {
 		id = 3002090071,
@@ -60326,7 +60342,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "90级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090072] = {
 		id = 3002090072,
@@ -60353,7 +60369,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "90级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090073] = {
 		id = 3002090073,
@@ -60380,7 +60396,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "90级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090074] = {
 		id = 3002090074,
@@ -60407,7 +60423,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "90级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090075] = {
 		id = 3002090075,
@@ -60434,7 +60450,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "90级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090076] = {
 		id = 3002090076,
@@ -60461,7 +60477,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "90级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002090081] = {
 		id = 3002090081,
@@ -60488,7 +60504,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "90级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090082] = {
 		id = 3002090082,
@@ -60515,7 +60531,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "90级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090083] = {
 		id = 3002090083,
@@ -60542,7 +60558,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "90级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090084] = {
 		id = 3002090084,
@@ -60569,7 +60585,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "90级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090085] = {
 		id = 3002090085,
@@ -60596,7 +60612,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "90级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002090086] = {
 		id = 3002090086,
@@ -60623,7 +60639,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "90级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095011] = {
 		id = 3002095011,
@@ -60650,7 +60666,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "95级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095012] = {
 		id = 3002095012,
@@ -60677,7 +60693,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "95级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095013] = {
 		id = 3002095013,
@@ -60704,7 +60720,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "95级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095014] = {
 		id = 3002095014,
@@ -60731,7 +60747,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "95级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095015] = {
 		id = 3002095015,
@@ -60758,7 +60774,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "95级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095016] = {
 		id = 3002095016,
@@ -60785,7 +60801,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "95级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095021] = {
 		id = 3002095021,
@@ -60812,7 +60828,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "95级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095022] = {
 		id = 3002095022,
@@ -60839,7 +60855,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "95级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095023] = {
 		id = 3002095023,
@@ -60866,7 +60882,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "95级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095024] = {
 		id = 3002095024,
@@ -60893,7 +60909,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "95级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095025] = {
 		id = 3002095025,
@@ -60920,7 +60936,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "95级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095026] = {
 		id = 3002095026,
@@ -60947,7 +60963,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "95级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095031] = {
 		id = 3002095031,
@@ -60974,7 +60990,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "95级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095032] = {
 		id = 3002095032,
@@ -61001,7 +61017,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "95级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095033] = {
 		id = 3002095033,
@@ -61028,7 +61044,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "95级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095034] = {
 		id = 3002095034,
@@ -61055,7 +61071,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "95级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095035] = {
 		id = 3002095035,
@@ -61082,7 +61098,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "95级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095036] = {
 		id = 3002095036,
@@ -61109,7 +61125,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "95级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095041] = {
 		id = 3002095041,
@@ -61136,7 +61152,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "95级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095042] = {
 		id = 3002095042,
@@ -61163,7 +61179,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "95级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095043] = {
 		id = 3002095043,
@@ -61190,7 +61206,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "95级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095044] = {
 		id = 3002095044,
@@ -61217,7 +61233,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "95级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095045] = {
 		id = 3002095045,
@@ -61244,7 +61260,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "95级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095046] = {
 		id = 3002095046,
@@ -61271,7 +61287,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "95级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002095051] = {
 		id = 3002095051,
@@ -61298,7 +61314,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "95级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095052] = {
 		id = 3002095052,
@@ -61325,7 +61341,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "95级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095053] = {
 		id = 3002095053,
@@ -61352,7 +61368,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "95级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095054] = {
 		id = 3002095054,
@@ -61379,7 +61395,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "95级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095055] = {
 		id = 3002095055,
@@ -61406,7 +61422,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "95级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095056] = {
 		id = 3002095056,
@@ -61433,7 +61449,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "95级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002095061] = {
 		id = 3002095061,
@@ -61460,7 +61476,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "95级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095062] = {
 		id = 3002095062,
@@ -61487,7 +61503,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "95级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095063] = {
 		id = 3002095063,
@@ -61514,7 +61530,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "95级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095064] = {
 		id = 3002095064,
@@ -61541,7 +61557,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "95级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095065] = {
 		id = 3002095065,
@@ -61568,7 +61584,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "95级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095066] = {
 		id = 3002095066,
@@ -61595,7 +61611,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "95级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095071] = {
 		id = 3002095071,
@@ -61622,7 +61638,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "95级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095072] = {
 		id = 3002095072,
@@ -61649,7 +61665,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "95级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095073] = {
 		id = 3002095073,
@@ -61676,7 +61692,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "95级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095074] = {
 		id = 3002095074,
@@ -61703,7 +61719,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "95级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095075] = {
 		id = 3002095075,
@@ -61730,7 +61746,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "95级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095076] = {
 		id = 3002095076,
@@ -61757,7 +61773,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "95级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002095081] = {
 		id = 3002095081,
@@ -61784,7 +61800,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "95级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095082] = {
 		id = 3002095082,
@@ -61811,7 +61827,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "95级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095083] = {
 		id = 3002095083,
@@ -61838,7 +61854,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "95级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095084] = {
 		id = 3002095084,
@@ -61865,7 +61881,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "95级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095085] = {
 		id = 3002095085,
@@ -61892,7 +61908,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "95级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002095086] = {
 		id = 3002095086,
@@ -61919,7 +61935,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "95级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100011] = {
 		id = 3002100011,
@@ -61946,7 +61962,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "100级普通的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100012] = {
 		id = 3002100012,
@@ -61973,7 +61989,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "100级精良的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100013] = {
 		id = 3002100013,
@@ -62000,7 +62016,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "100级优质的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100014] = {
 		id = 3002100014,
@@ -62027,7 +62043,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "100级稀有的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100015] = {
 		id = 3002100015,
@@ -62054,7 +62070,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "100级卓越的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100016] = {
 		id = 3002100016,
@@ -62081,7 +62097,7 @@ local datas = {
 		iconPath = "icon/20106.png",
 		Description = "100级完美的刺客装备",
 		dropIconPath = "item_005.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100021] = {
 		id = 3002100021,
@@ -62108,7 +62124,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "100级普通的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100022] = {
 		id = 3002100022,
@@ -62135,7 +62151,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "100级精良的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100023] = {
 		id = 3002100023,
@@ -62162,7 +62178,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "100级优质的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100024] = {
 		id = 3002100024,
@@ -62189,7 +62205,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "100级稀有的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100025] = {
 		id = 3002100025,
@@ -62216,7 +62232,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "100级卓越的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100026] = {
 		id = 3002100026,
@@ -62243,7 +62259,7 @@ local datas = {
 		iconPath = "icon/20206.png",
 		Description = "100级完美的刺客装备",
 		dropIconPath = "item_023.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100031] = {
 		id = 3002100031,
@@ -62270,7 +62286,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "100级普通的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100032] = {
 		id = 3002100032,
@@ -62297,7 +62313,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "100级精良的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100033] = {
 		id = 3002100033,
@@ -62324,7 +62340,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "100级优质的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100034] = {
 		id = 3002100034,
@@ -62351,7 +62367,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "100级稀有的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100035] = {
 		id = 3002100035,
@@ -62378,7 +62394,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "100级卓越的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100036] = {
 		id = 3002100036,
@@ -62405,7 +62421,7 @@ local datas = {
 		iconPath = "icon/20306.png",
 		Description = "100级完美的刺客装备",
 		dropIconPath = "item_004.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100041] = {
 		id = 3002100041,
@@ -62432,7 +62448,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "100级普通的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100042] = {
 		id = 3002100042,
@@ -62459,7 +62475,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "100级精良的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100043] = {
 		id = 3002100043,
@@ -62486,7 +62502,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "100级优质的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100044] = {
 		id = 3002100044,
@@ -62513,7 +62529,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "100级稀有的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100045] = {
 		id = 3002100045,
@@ -62540,7 +62556,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "100级卓越的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100046] = {
 		id = 3002100046,
@@ -62567,7 +62583,7 @@ local datas = {
 		iconPath = "icon/20406.png",
 		Description = "100级完美的刺客装备",
 		dropIconPath = "item_003.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3002100051] = {
 		id = 3002100051,
@@ -62594,7 +62610,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "100级普通的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100052] = {
 		id = 3002100052,
@@ -62621,7 +62637,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "100级精良的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100053] = {
 		id = 3002100053,
@@ -62648,7 +62664,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "100级优质的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100054] = {
 		id = 3002100054,
@@ -62675,7 +62691,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "100级稀有的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100055] = {
 		id = 3002100055,
@@ -62702,7 +62718,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "100级卓越的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100056] = {
 		id = 3002100056,
@@ -62729,7 +62745,7 @@ local datas = {
 		iconPath = "icon/20506.png",
 		Description = "100级完美的刺客装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3002100061] = {
 		id = 3002100061,
@@ -62756,7 +62772,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "100级普通的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100062] = {
 		id = 3002100062,
@@ -62783,7 +62799,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "100级精良的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100063] = {
 		id = 3002100063,
@@ -62810,7 +62826,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "100级优质的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100064] = {
 		id = 3002100064,
@@ -62837,7 +62853,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "100级稀有的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100065] = {
 		id = 3002100065,
@@ -62864,7 +62880,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "100级卓越的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100066] = {
 		id = 3002100066,
@@ -62891,7 +62907,7 @@ local datas = {
 		iconPath = "icon/20606.png",
 		Description = "100级完美的刺客装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100071] = {
 		id = 3002100071,
@@ -62918,7 +62934,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "100级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100072] = {
 		id = 3002100072,
@@ -62945,7 +62961,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "100级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100073] = {
 		id = 3002100073,
@@ -62972,7 +62988,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "100级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100074] = {
 		id = 3002100074,
@@ -62999,7 +63015,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "100级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100075] = {
 		id = 3002100075,
@@ -63026,7 +63042,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "100级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100076] = {
 		id = 3002100076,
@@ -63053,7 +63069,7 @@ local datas = {
 		iconPath = "icon/20706.png",
 		Description = "100级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3002100081] = {
 		id = 3002100081,
@@ -63080,7 +63096,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "100级普通的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100082] = {
 		id = 3002100082,
@@ -63107,7 +63123,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "100级精良的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100083] = {
 		id = 3002100083,
@@ -63134,7 +63150,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "100级优质的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100084] = {
 		id = 3002100084,
@@ -63161,7 +63177,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "100级稀有的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100085] = {
 		id = 3002100085,
@@ -63188,7 +63204,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "100级卓越的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3002100086] = {
 		id = 3002100086,
@@ -63215,7 +63231,7 @@ local datas = {
 		iconPath = "icon/20806.png",
 		Description = "100级完美的刺客装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000011] = {
 		id = 3003000011,
@@ -63242,7 +63258,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "1级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000012] = {
 		id = 3003000012,
@@ -63269,7 +63285,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "1级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000013] = {
 		id = 3003000013,
@@ -63296,7 +63312,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "1级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000014] = {
 		id = 3003000014,
@@ -63323,7 +63339,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "1级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000015] = {
 		id = 3003000015,
@@ -63350,7 +63366,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "1级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000016] = {
 		id = 3003000016,
@@ -63377,7 +63393,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "1级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000021] = {
 		id = 3003000021,
@@ -63404,7 +63420,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "1级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000022] = {
 		id = 3003000022,
@@ -63431,7 +63447,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "1级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000023] = {
 		id = 3003000023,
@@ -63458,7 +63474,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "1级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000024] = {
 		id = 3003000024,
@@ -63485,7 +63501,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "1级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000025] = {
 		id = 3003000025,
@@ -63512,7 +63528,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "1级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000026] = {
 		id = 3003000026,
@@ -63539,7 +63555,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "1级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000031] = {
 		id = 3003000031,
@@ -63566,7 +63582,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "1级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000032] = {
 		id = 3003000032,
@@ -63593,7 +63609,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "1级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000033] = {
 		id = 3003000033,
@@ -63620,7 +63636,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "1级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000034] = {
 		id = 3003000034,
@@ -63647,7 +63663,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "1级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000035] = {
 		id = 3003000035,
@@ -63674,7 +63690,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "1级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000036] = {
 		id = 3003000036,
@@ -63701,7 +63717,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "1级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000041] = {
 		id = 3003000041,
@@ -63728,7 +63744,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "1级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000042] = {
 		id = 3003000042,
@@ -63755,7 +63771,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "1级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000043] = {
 		id = 3003000043,
@@ -63782,7 +63798,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "1级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000044] = {
 		id = 3003000044,
@@ -63809,7 +63825,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "1级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000045] = {
 		id = 3003000045,
@@ -63836,7 +63852,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "1级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000046] = {
 		id = 3003000046,
@@ -63863,7 +63879,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "1级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000051] = {
 		id = 3003000051,
@@ -63890,7 +63906,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "1级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000052] = {
 		id = 3003000052,
@@ -63917,7 +63933,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "1级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000053] = {
 		id = 3003000053,
@@ -63944,7 +63960,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "1级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000054] = {
 		id = 3003000054,
@@ -63971,7 +63987,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "1级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000055] = {
 		id = 3003000055,
@@ -63998,7 +64014,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "1级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000056] = {
 		id = 3003000056,
@@ -64025,7 +64041,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "1级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003000061] = {
 		id = 3003000061,
@@ -64052,7 +64068,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "1级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000062] = {
 		id = 3003000062,
@@ -64079,7 +64095,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "1级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000063] = {
 		id = 3003000063,
@@ -64106,7 +64122,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "1级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000064] = {
 		id = 3003000064,
@@ -64133,7 +64149,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "1级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000065] = {
 		id = 3003000065,
@@ -64160,7 +64176,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "1级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000066] = {
 		id = 3003000066,
@@ -64187,7 +64203,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "1级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003000071] = {
 		id = 3003000071,
@@ -64214,7 +64230,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "1级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000072] = {
 		id = 3003000072,
@@ -64241,7 +64257,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "1级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000073] = {
 		id = 3003000073,
@@ -64268,7 +64284,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "1级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000074] = {
 		id = 3003000074,
@@ -64295,7 +64311,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "1级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000075] = {
 		id = 3003000075,
@@ -64322,7 +64338,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "1级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000076] = {
 		id = 3003000076,
@@ -64349,7 +64365,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "1级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003000081] = {
 		id = 3003000081,
@@ -64376,7 +64392,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "1级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000082] = {
 		id = 3003000082,
@@ -64403,7 +64419,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "1级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000083] = {
 		id = 3003000083,
@@ -64430,7 +64446,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "1级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000084] = {
 		id = 3003000084,
@@ -64457,7 +64473,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "1级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000085] = {
 		id = 3003000085,
@@ -64484,7 +64500,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "1级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003000086] = {
 		id = 3003000086,
@@ -64511,7 +64527,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "1级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005011] = {
 		id = 3003005011,
@@ -64538,7 +64554,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "5级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005012] = {
 		id = 3003005012,
@@ -64565,7 +64581,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "5级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005013] = {
 		id = 3003005013,
@@ -64592,7 +64608,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "5级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005014] = {
 		id = 3003005014,
@@ -64619,7 +64635,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "5级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005015] = {
 		id = 3003005015,
@@ -64646,7 +64662,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "5级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005016] = {
 		id = 3003005016,
@@ -64673,7 +64689,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "5级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005021] = {
 		id = 3003005021,
@@ -64700,7 +64716,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "5级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005022] = {
 		id = 3003005022,
@@ -64727,7 +64743,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "5级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005023] = {
 		id = 3003005023,
@@ -64754,7 +64770,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "5级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005024] = {
 		id = 3003005024,
@@ -64781,7 +64797,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "5级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005025] = {
 		id = 3003005025,
@@ -64808,7 +64824,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "5级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005026] = {
 		id = 3003005026,
@@ -64835,7 +64851,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "5级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005031] = {
 		id = 3003005031,
@@ -64862,7 +64878,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "5级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005032] = {
 		id = 3003005032,
@@ -64889,7 +64905,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "5级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005033] = {
 		id = 3003005033,
@@ -64916,7 +64932,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "5级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005034] = {
 		id = 3003005034,
@@ -64943,7 +64959,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "5级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005035] = {
 		id = 3003005035,
@@ -64970,7 +64986,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "5级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005036] = {
 		id = 3003005036,
@@ -64997,7 +65013,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "5级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005041] = {
 		id = 3003005041,
@@ -65024,7 +65040,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "5级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005042] = {
 		id = 3003005042,
@@ -65051,7 +65067,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "5级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005043] = {
 		id = 3003005043,
@@ -65078,7 +65094,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "5级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005044] = {
 		id = 3003005044,
@@ -65105,7 +65121,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "5级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005045] = {
 		id = 3003005045,
@@ -65132,7 +65148,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "5级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005046] = {
 		id = 3003005046,
@@ -65159,7 +65175,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "5级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005051] = {
 		id = 3003005051,
@@ -65186,7 +65202,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "5级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005052] = {
 		id = 3003005052,
@@ -65213,7 +65229,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "5级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005053] = {
 		id = 3003005053,
@@ -65240,7 +65256,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "5级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005054] = {
 		id = 3003005054,
@@ -65267,7 +65283,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "5级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005055] = {
 		id = 3003005055,
@@ -65294,7 +65310,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "5级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005056] = {
 		id = 3003005056,
@@ -65321,7 +65337,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "5级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003005061] = {
 		id = 3003005061,
@@ -65348,7 +65364,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "5级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005062] = {
 		id = 3003005062,
@@ -65375,7 +65391,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "5级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005063] = {
 		id = 3003005063,
@@ -65402,7 +65418,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "5级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005064] = {
 		id = 3003005064,
@@ -65429,7 +65445,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "5级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005065] = {
 		id = 3003005065,
@@ -65456,7 +65472,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "5级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005066] = {
 		id = 3003005066,
@@ -65483,7 +65499,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "5级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003005071] = {
 		id = 3003005071,
@@ -65510,7 +65526,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "5级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005072] = {
 		id = 3003005072,
@@ -65537,7 +65553,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "5级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005073] = {
 		id = 3003005073,
@@ -65564,7 +65580,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "5级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005074] = {
 		id = 3003005074,
@@ -65591,7 +65607,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "5级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005075] = {
 		id = 3003005075,
@@ -65618,7 +65634,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "5级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005076] = {
 		id = 3003005076,
@@ -65645,7 +65661,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "5级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003005081] = {
 		id = 3003005081,
@@ -65672,7 +65688,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "5级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005082] = {
 		id = 3003005082,
@@ -65699,7 +65715,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "5级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005083] = {
 		id = 3003005083,
@@ -65726,7 +65742,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "5级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005084] = {
 		id = 3003005084,
@@ -65753,7 +65769,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "5级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005085] = {
 		id = 3003005085,
@@ -65780,7 +65796,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "5级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003005086] = {
 		id = 3003005086,
@@ -65807,7 +65823,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "5级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010011] = {
 		id = 3003010011,
@@ -65834,7 +65850,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "10级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010012] = {
 		id = 3003010012,
@@ -65861,7 +65877,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "10级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010013] = {
 		id = 3003010013,
@@ -65888,7 +65904,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "10级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010014] = {
 		id = 3003010014,
@@ -65915,7 +65931,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "10级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010015] = {
 		id = 3003010015,
@@ -65942,7 +65958,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "10级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010016] = {
 		id = 3003010016,
@@ -65969,7 +65985,7 @@ local datas = {
 		iconPath = "icon/30101.png",
 		Description = "10级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010021] = {
 		id = 3003010021,
@@ -65996,7 +66012,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "10级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010022] = {
 		id = 3003010022,
@@ -66023,7 +66039,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "10级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010023] = {
 		id = 3003010023,
@@ -66050,7 +66066,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "10级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010024] = {
 		id = 3003010024,
@@ -66077,7 +66093,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "10级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010025] = {
 		id = 3003010025,
@@ -66104,7 +66120,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "10级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010026] = {
 		id = 3003010026,
@@ -66131,7 +66147,7 @@ local datas = {
 		iconPath = "icon/30201.png",
 		Description = "10级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010031] = {
 		id = 3003010031,
@@ -66158,7 +66174,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "10级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010032] = {
 		id = 3003010032,
@@ -66185,7 +66201,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "10级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010033] = {
 		id = 3003010033,
@@ -66212,7 +66228,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "10级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010034] = {
 		id = 3003010034,
@@ -66239,7 +66255,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "10级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010035] = {
 		id = 3003010035,
@@ -66266,7 +66282,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "10级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010036] = {
 		id = 3003010036,
@@ -66293,7 +66309,7 @@ local datas = {
 		iconPath = "icon/30301.png",
 		Description = "10级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010041] = {
 		id = 3003010041,
@@ -66320,7 +66336,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "10级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010042] = {
 		id = 3003010042,
@@ -66347,7 +66363,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "10级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010043] = {
 		id = 3003010043,
@@ -66374,7 +66390,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "10级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010044] = {
 		id = 3003010044,
@@ -66401,7 +66417,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "10级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010045] = {
 		id = 3003010045,
@@ -66428,7 +66444,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "10级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010046] = {
 		id = 3003010046,
@@ -66455,7 +66471,7 @@ local datas = {
 		iconPath = "icon/30401.png",
 		Description = "10级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010051] = {
 		id = 3003010051,
@@ -66482,7 +66498,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "10级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010052] = {
 		id = 3003010052,
@@ -66509,7 +66525,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "10级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010053] = {
 		id = 3003010053,
@@ -66536,7 +66552,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "10级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010054] = {
 		id = 3003010054,
@@ -66563,7 +66579,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "10级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010055] = {
 		id = 3003010055,
@@ -66590,7 +66606,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "10级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010056] = {
 		id = 3003010056,
@@ -66617,7 +66633,7 @@ local datas = {
 		iconPath = "icon/30501.png",
 		Description = "10级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003010061] = {
 		id = 3003010061,
@@ -66644,7 +66660,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "10级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010062] = {
 		id = 3003010062,
@@ -66671,7 +66687,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "10级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010063] = {
 		id = 3003010063,
@@ -66698,7 +66714,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "10级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010064] = {
 		id = 3003010064,
@@ -66725,7 +66741,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "10级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010065] = {
 		id = 3003010065,
@@ -66752,7 +66768,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "10级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010066] = {
 		id = 3003010066,
@@ -66779,7 +66795,7 @@ local datas = {
 		iconPath = "icon/30601.png",
 		Description = "10级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003010071] = {
 		id = 3003010071,
@@ -66806,7 +66822,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "10级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010072] = {
 		id = 3003010072,
@@ -66833,7 +66849,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "10级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010073] = {
 		id = 3003010073,
@@ -66860,7 +66876,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "10级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010074] = {
 		id = 3003010074,
@@ -66887,7 +66903,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "10级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010075] = {
 		id = 3003010075,
@@ -66914,7 +66930,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "10级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010076] = {
 		id = 3003010076,
@@ -66941,7 +66957,7 @@ local datas = {
 		iconPath = "icon/30701.png",
 		Description = "10级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003010081] = {
 		id = 3003010081,
@@ -66968,7 +66984,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "10级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010082] = {
 		id = 3003010082,
@@ -66995,7 +67011,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "10级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010083] = {
 		id = 3003010083,
@@ -67022,7 +67038,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "10级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010084] = {
 		id = 3003010084,
@@ -67049,7 +67065,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "10级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010085] = {
 		id = 3003010085,
@@ -67076,7 +67092,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "10级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003010086] = {
 		id = 3003010086,
@@ -67103,7 +67119,7 @@ local datas = {
 		iconPath = "icon/30801.png",
 		Description = "10级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015011] = {
 		id = 3003015011,
@@ -67130,7 +67146,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "15级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015012] = {
 		id = 3003015012,
@@ -67157,7 +67173,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "15级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015013] = {
 		id = 3003015013,
@@ -67184,7 +67200,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "15级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015014] = {
 		id = 3003015014,
@@ -67211,7 +67227,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "15级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015015] = {
 		id = 3003015015,
@@ -67238,7 +67254,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "15级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015016] = {
 		id = 3003015016,
@@ -67265,7 +67281,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "15级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015021] = {
 		id = 3003015021,
@@ -67292,7 +67308,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "15级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015022] = {
 		id = 3003015022,
@@ -67319,7 +67335,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "15级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015023] = {
 		id = 3003015023,
@@ -67346,7 +67362,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "15级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015024] = {
 		id = 3003015024,
@@ -67373,7 +67389,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "15级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015025] = {
 		id = 3003015025,
@@ -67400,7 +67416,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "15级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015026] = {
 		id = 3003015026,
@@ -67427,7 +67443,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "15级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015031] = {
 		id = 3003015031,
@@ -67454,7 +67470,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "15级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015032] = {
 		id = 3003015032,
@@ -67481,7 +67497,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "15级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015033] = {
 		id = 3003015033,
@@ -67508,7 +67524,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "15级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015034] = {
 		id = 3003015034,
@@ -67535,7 +67551,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "15级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015035] = {
 		id = 3003015035,
@@ -67562,7 +67578,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "15级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015036] = {
 		id = 3003015036,
@@ -67589,7 +67605,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "15级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015041] = {
 		id = 3003015041,
@@ -67616,7 +67632,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "15级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015042] = {
 		id = 3003015042,
@@ -67643,7 +67659,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "15级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015043] = {
 		id = 3003015043,
@@ -67670,7 +67686,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "15级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015044] = {
 		id = 3003015044,
@@ -67697,7 +67713,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "15级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015045] = {
 		id = 3003015045,
@@ -67724,7 +67740,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "15级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015046] = {
 		id = 3003015046,
@@ -67751,7 +67767,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "15级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015051] = {
 		id = 3003015051,
@@ -67778,7 +67794,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "15级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015052] = {
 		id = 3003015052,
@@ -67805,7 +67821,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "15级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015053] = {
 		id = 3003015053,
@@ -67832,7 +67848,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "15级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015054] = {
 		id = 3003015054,
@@ -67859,7 +67875,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "15级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015055] = {
 		id = 3003015055,
@@ -67886,7 +67902,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "15级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015056] = {
 		id = 3003015056,
@@ -67913,7 +67929,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "15级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003015061] = {
 		id = 3003015061,
@@ -67940,7 +67956,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "15级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015062] = {
 		id = 3003015062,
@@ -67967,7 +67983,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "15级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015063] = {
 		id = 3003015063,
@@ -67994,7 +68010,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "15级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015064] = {
 		id = 3003015064,
@@ -68021,7 +68037,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "15级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015065] = {
 		id = 3003015065,
@@ -68048,7 +68064,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "15级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015066] = {
 		id = 3003015066,
@@ -68075,7 +68091,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "15级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003015071] = {
 		id = 3003015071,
@@ -68102,7 +68118,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "15级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015072] = {
 		id = 3003015072,
@@ -68129,7 +68145,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "15级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015073] = {
 		id = 3003015073,
@@ -68156,7 +68172,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "15级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015074] = {
 		id = 3003015074,
@@ -68183,7 +68199,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "15级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015075] = {
 		id = 3003015075,
@@ -68210,7 +68226,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "15级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015076] = {
 		id = 3003015076,
@@ -68237,7 +68253,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "15级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003015081] = {
 		id = 3003015081,
@@ -68264,7 +68280,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "15级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015082] = {
 		id = 3003015082,
@@ -68291,7 +68307,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "15级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015083] = {
 		id = 3003015083,
@@ -68318,7 +68334,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "15级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015084] = {
 		id = 3003015084,
@@ -68345,7 +68361,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "15级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015085] = {
 		id = 3003015085,
@@ -68372,7 +68388,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "15级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003015086] = {
 		id = 3003015086,
@@ -68399,7 +68415,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "15级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020011] = {
 		id = 3003020011,
@@ -68426,7 +68442,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "20级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020012] = {
 		id = 3003020012,
@@ -68453,7 +68469,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "20级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020013] = {
 		id = 3003020013,
@@ -68480,7 +68496,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "20级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020014] = {
 		id = 3003020014,
@@ -68507,7 +68523,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "20级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020015] = {
 		id = 3003020015,
@@ -68534,7 +68550,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "20级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020016] = {
 		id = 3003020016,
@@ -68561,7 +68577,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "20级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020021] = {
 		id = 3003020021,
@@ -68588,7 +68604,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "20级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020022] = {
 		id = 3003020022,
@@ -68615,7 +68631,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "20级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020023] = {
 		id = 3003020023,
@@ -68642,7 +68658,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "20级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020024] = {
 		id = 3003020024,
@@ -68669,7 +68685,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "20级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020025] = {
 		id = 3003020025,
@@ -68696,7 +68712,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "20级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020026] = {
 		id = 3003020026,
@@ -68723,7 +68739,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "20级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020031] = {
 		id = 3003020031,
@@ -68750,7 +68766,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "20级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020032] = {
 		id = 3003020032,
@@ -68777,7 +68793,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "20级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020033] = {
 		id = 3003020033,
@@ -68804,7 +68820,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "20级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020034] = {
 		id = 3003020034,
@@ -68831,7 +68847,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "20级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020035] = {
 		id = 3003020035,
@@ -68858,7 +68874,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "20级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020036] = {
 		id = 3003020036,
@@ -68885,7 +68901,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "20级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020041] = {
 		id = 3003020041,
@@ -68912,7 +68928,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "20级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020042] = {
 		id = 3003020042,
@@ -68939,7 +68955,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "20级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020043] = {
 		id = 3003020043,
@@ -68966,7 +68982,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "20级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020044] = {
 		id = 3003020044,
@@ -68993,7 +69009,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "20级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020045] = {
 		id = 3003020045,
@@ -69020,7 +69036,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "20级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020046] = {
 		id = 3003020046,
@@ -69047,7 +69063,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "20级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020051] = {
 		id = 3003020051,
@@ -69074,7 +69090,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "20级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020052] = {
 		id = 3003020052,
@@ -69101,7 +69117,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "20级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020053] = {
 		id = 3003020053,
@@ -69128,7 +69144,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "20级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020054] = {
 		id = 3003020054,
@@ -69155,7 +69171,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "20级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020055] = {
 		id = 3003020055,
@@ -69182,7 +69198,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "20级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020056] = {
 		id = 3003020056,
@@ -69209,7 +69225,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "20级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003020061] = {
 		id = 3003020061,
@@ -69236,7 +69252,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "20级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020062] = {
 		id = 3003020062,
@@ -69263,7 +69279,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "20级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020063] = {
 		id = 3003020063,
@@ -69290,7 +69306,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "20级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020064] = {
 		id = 3003020064,
@@ -69317,7 +69333,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "20级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020065] = {
 		id = 3003020065,
@@ -69344,7 +69360,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "20级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020066] = {
 		id = 3003020066,
@@ -69371,7 +69387,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "20级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003020071] = {
 		id = 3003020071,
@@ -69398,7 +69414,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "20级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020072] = {
 		id = 3003020072,
@@ -69425,7 +69441,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "20级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020073] = {
 		id = 3003020073,
@@ -69452,7 +69468,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "20级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020074] = {
 		id = 3003020074,
@@ -69479,7 +69495,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "20级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020075] = {
 		id = 3003020075,
@@ -69506,7 +69522,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "20级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020076] = {
 		id = 3003020076,
@@ -69533,7 +69549,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "20级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003020081] = {
 		id = 3003020081,
@@ -69560,7 +69576,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "20级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020082] = {
 		id = 3003020082,
@@ -69587,7 +69603,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "20级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020083] = {
 		id = 3003020083,
@@ -69614,7 +69630,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "20级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020084] = {
 		id = 3003020084,
@@ -69641,7 +69657,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "20级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020085] = {
 		id = 3003020085,
@@ -69668,7 +69684,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "20级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003020086] = {
 		id = 3003020086,
@@ -69695,7 +69711,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "20级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025011] = {
 		id = 3003025011,
@@ -69722,7 +69738,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "25级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025012] = {
 		id = 3003025012,
@@ -69749,7 +69765,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "25级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025013] = {
 		id = 3003025013,
@@ -69776,7 +69792,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "25级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025014] = {
 		id = 3003025014,
@@ -69803,7 +69819,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "25级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025015] = {
 		id = 3003025015,
@@ -69830,7 +69846,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "25级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025016] = {
 		id = 3003025016,
@@ -69857,7 +69873,7 @@ local datas = {
 		iconPath = "icon/30102.png",
 		Description = "25级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025021] = {
 		id = 3003025021,
@@ -69884,7 +69900,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "25级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025022] = {
 		id = 3003025022,
@@ -69911,7 +69927,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "25级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025023] = {
 		id = 3003025023,
@@ -69938,7 +69954,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "25级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025024] = {
 		id = 3003025024,
@@ -69965,7 +69981,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "25级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025025] = {
 		id = 3003025025,
@@ -69992,7 +70008,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "25级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025026] = {
 		id = 3003025026,
@@ -70019,7 +70035,7 @@ local datas = {
 		iconPath = "icon/30202.png",
 		Description = "25级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025031] = {
 		id = 3003025031,
@@ -70046,7 +70062,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "25级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025032] = {
 		id = 3003025032,
@@ -70073,7 +70089,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "25级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025033] = {
 		id = 3003025033,
@@ -70100,7 +70116,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "25级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025034] = {
 		id = 3003025034,
@@ -70127,7 +70143,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "25级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025035] = {
 		id = 3003025035,
@@ -70154,7 +70170,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "25级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025036] = {
 		id = 3003025036,
@@ -70181,7 +70197,7 @@ local datas = {
 		iconPath = "icon/30302.png",
 		Description = "25级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025041] = {
 		id = 3003025041,
@@ -70208,7 +70224,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "25级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025042] = {
 		id = 3003025042,
@@ -70235,7 +70251,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "25级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025043] = {
 		id = 3003025043,
@@ -70262,7 +70278,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "25级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025044] = {
 		id = 3003025044,
@@ -70289,7 +70305,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "25级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025045] = {
 		id = 3003025045,
@@ -70316,7 +70332,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "25级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025046] = {
 		id = 3003025046,
@@ -70343,7 +70359,7 @@ local datas = {
 		iconPath = "icon/30402.png",
 		Description = "25级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025051] = {
 		id = 3003025051,
@@ -70370,7 +70386,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "25级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025052] = {
 		id = 3003025052,
@@ -70397,7 +70413,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "25级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025053] = {
 		id = 3003025053,
@@ -70424,7 +70440,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "25级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025054] = {
 		id = 3003025054,
@@ -70451,7 +70467,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "25级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025055] = {
 		id = 3003025055,
@@ -70478,7 +70494,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "25级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025056] = {
 		id = 3003025056,
@@ -70505,7 +70521,7 @@ local datas = {
 		iconPath = "icon/30502.png",
 		Description = "25级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003025061] = {
 		id = 3003025061,
@@ -70532,7 +70548,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "25级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025062] = {
 		id = 3003025062,
@@ -70559,7 +70575,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "25级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025063] = {
 		id = 3003025063,
@@ -70586,7 +70602,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "25级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025064] = {
 		id = 3003025064,
@@ -70613,7 +70629,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "25级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025065] = {
 		id = 3003025065,
@@ -70640,7 +70656,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "25级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025066] = {
 		id = 3003025066,
@@ -70667,7 +70683,7 @@ local datas = {
 		iconPath = "icon/30602.png",
 		Description = "25级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003025071] = {
 		id = 3003025071,
@@ -70694,7 +70710,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "25级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025072] = {
 		id = 3003025072,
@@ -70721,7 +70737,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "25级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025073] = {
 		id = 3003025073,
@@ -70748,7 +70764,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "25级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025074] = {
 		id = 3003025074,
@@ -70775,7 +70791,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "25级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025075] = {
 		id = 3003025075,
@@ -70802,7 +70818,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "25级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025076] = {
 		id = 3003025076,
@@ -70829,7 +70845,7 @@ local datas = {
 		iconPath = "icon/30702.png",
 		Description = "25级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003025081] = {
 		id = 3003025081,
@@ -70856,7 +70872,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "25级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025082] = {
 		id = 3003025082,
@@ -70883,7 +70899,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "25级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025083] = {
 		id = 3003025083,
@@ -70910,7 +70926,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "25级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025084] = {
 		id = 3003025084,
@@ -70937,7 +70953,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "25级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025085] = {
 		id = 3003025085,
@@ -70964,7 +70980,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "25级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003025086] = {
 		id = 3003025086,
@@ -70991,7 +71007,7 @@ local datas = {
 		iconPath = "icon/30802.png",
 		Description = "25级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030011] = {
 		id = 3003030011,
@@ -71018,7 +71034,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "30级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030012] = {
 		id = 3003030012,
@@ -71045,7 +71061,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "30级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030013] = {
 		id = 3003030013,
@@ -71072,7 +71088,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "30级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030014] = {
 		id = 3003030014,
@@ -71099,7 +71115,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "30级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030015] = {
 		id = 3003030015,
@@ -71126,7 +71142,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "30级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030016] = {
 		id = 3003030016,
@@ -71153,7 +71169,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "30级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030021] = {
 		id = 3003030021,
@@ -71180,7 +71196,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "30级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030022] = {
 		id = 3003030022,
@@ -71207,7 +71223,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "30级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030023] = {
 		id = 3003030023,
@@ -71234,7 +71250,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "30级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030024] = {
 		id = 3003030024,
@@ -71261,7 +71277,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "30级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030025] = {
 		id = 3003030025,
@@ -71288,7 +71304,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "30级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030026] = {
 		id = 3003030026,
@@ -71315,7 +71331,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "30级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030031] = {
 		id = 3003030031,
@@ -71342,7 +71358,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "30级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030032] = {
 		id = 3003030032,
@@ -71369,7 +71385,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "30级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030033] = {
 		id = 3003030033,
@@ -71396,7 +71412,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "30级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030034] = {
 		id = 3003030034,
@@ -71423,7 +71439,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "30级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030035] = {
 		id = 3003030035,
@@ -71450,7 +71466,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "30级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030036] = {
 		id = 3003030036,
@@ -71477,7 +71493,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "30级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030041] = {
 		id = 3003030041,
@@ -71504,7 +71520,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "30级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030042] = {
 		id = 3003030042,
@@ -71531,7 +71547,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "30级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030043] = {
 		id = 3003030043,
@@ -71558,7 +71574,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "30级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030044] = {
 		id = 3003030044,
@@ -71585,7 +71601,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "30级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030045] = {
 		id = 3003030045,
@@ -71612,7 +71628,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "30级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030046] = {
 		id = 3003030046,
@@ -71639,7 +71655,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "30级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030051] = {
 		id = 3003030051,
@@ -71666,7 +71682,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "30级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030052] = {
 		id = 3003030052,
@@ -71693,7 +71709,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "30级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030053] = {
 		id = 3003030053,
@@ -71720,7 +71736,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "30级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030054] = {
 		id = 3003030054,
@@ -71747,7 +71763,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "30级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030055] = {
 		id = 3003030055,
@@ -71774,7 +71790,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "30级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030056] = {
 		id = 3003030056,
@@ -71801,7 +71817,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "30级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003030061] = {
 		id = 3003030061,
@@ -71828,7 +71844,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "30级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030062] = {
 		id = 3003030062,
@@ -71855,7 +71871,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "30级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030063] = {
 		id = 3003030063,
@@ -71882,7 +71898,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "30级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030064] = {
 		id = 3003030064,
@@ -71909,7 +71925,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "30级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030065] = {
 		id = 3003030065,
@@ -71936,7 +71952,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "30级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030066] = {
 		id = 3003030066,
@@ -71963,7 +71979,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "30级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003030071] = {
 		id = 3003030071,
@@ -71990,7 +72006,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "30级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030072] = {
 		id = 3003030072,
@@ -72017,7 +72033,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "30级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030073] = {
 		id = 3003030073,
@@ -72044,7 +72060,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "30级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030074] = {
 		id = 3003030074,
@@ -72071,7 +72087,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "30级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030075] = {
 		id = 3003030075,
@@ -72098,7 +72114,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "30级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030076] = {
 		id = 3003030076,
@@ -72125,7 +72141,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "30级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003030081] = {
 		id = 3003030081,
@@ -72152,7 +72168,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "30级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030082] = {
 		id = 3003030082,
@@ -72179,7 +72195,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "30级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030083] = {
 		id = 3003030083,
@@ -72206,7 +72222,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "30级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030084] = {
 		id = 3003030084,
@@ -72233,7 +72249,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "30级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030085] = {
 		id = 3003030085,
@@ -72260,7 +72276,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "30级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003030086] = {
 		id = 3003030086,
@@ -72287,7 +72303,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "30级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035011] = {
 		id = 3003035011,
@@ -72314,7 +72330,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "35级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035012] = {
 		id = 3003035012,
@@ -72341,7 +72357,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "35级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035013] = {
 		id = 3003035013,
@@ -72368,7 +72384,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "35级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035014] = {
 		id = 3003035014,
@@ -72395,7 +72411,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "35级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035015] = {
 		id = 3003035015,
@@ -72422,7 +72438,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "35级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035016] = {
 		id = 3003035016,
@@ -72449,7 +72465,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "35级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035021] = {
 		id = 3003035021,
@@ -72476,7 +72492,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "35级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035022] = {
 		id = 3003035022,
@@ -72503,7 +72519,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "35级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035023] = {
 		id = 3003035023,
@@ -72530,7 +72546,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "35级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035024] = {
 		id = 3003035024,
@@ -72557,7 +72573,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "35级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035025] = {
 		id = 3003035025,
@@ -72584,7 +72600,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "35级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035026] = {
 		id = 3003035026,
@@ -72611,7 +72627,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "35级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035031] = {
 		id = 3003035031,
@@ -72638,7 +72654,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "35级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035032] = {
 		id = 3003035032,
@@ -72665,7 +72681,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "35级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035033] = {
 		id = 3003035033,
@@ -72692,7 +72708,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "35级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035034] = {
 		id = 3003035034,
@@ -72719,7 +72735,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "35级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035035] = {
 		id = 3003035035,
@@ -72746,7 +72762,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "35级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035036] = {
 		id = 3003035036,
@@ -72773,7 +72789,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "35级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035041] = {
 		id = 3003035041,
@@ -72800,7 +72816,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "35级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035042] = {
 		id = 3003035042,
@@ -72827,7 +72843,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "35级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035043] = {
 		id = 3003035043,
@@ -72854,7 +72870,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "35级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035044] = {
 		id = 3003035044,
@@ -72881,7 +72897,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "35级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035045] = {
 		id = 3003035045,
@@ -72908,7 +72924,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "35级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035046] = {
 		id = 3003035046,
@@ -72935,7 +72951,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "35级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035051] = {
 		id = 3003035051,
@@ -72962,7 +72978,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "35级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035052] = {
 		id = 3003035052,
@@ -72989,7 +73005,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "35级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035053] = {
 		id = 3003035053,
@@ -73016,7 +73032,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "35级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035054] = {
 		id = 3003035054,
@@ -73043,7 +73059,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "35级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035055] = {
 		id = 3003035055,
@@ -73070,7 +73086,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "35级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035056] = {
 		id = 3003035056,
@@ -73097,7 +73113,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "35级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003035061] = {
 		id = 3003035061,
@@ -73124,7 +73140,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "35级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035062] = {
 		id = 3003035062,
@@ -73151,7 +73167,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "35级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035063] = {
 		id = 3003035063,
@@ -73178,7 +73194,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "35级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035064] = {
 		id = 3003035064,
@@ -73205,7 +73221,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "35级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035065] = {
 		id = 3003035065,
@@ -73232,7 +73248,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "35级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035066] = {
 		id = 3003035066,
@@ -73259,7 +73275,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "35级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003035071] = {
 		id = 3003035071,
@@ -73286,7 +73302,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "35级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035072] = {
 		id = 3003035072,
@@ -73313,7 +73329,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "35级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035073] = {
 		id = 3003035073,
@@ -73340,7 +73356,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "35级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035074] = {
 		id = 3003035074,
@@ -73367,7 +73383,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "35级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035075] = {
 		id = 3003035075,
@@ -73394,7 +73410,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "35级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035076] = {
 		id = 3003035076,
@@ -73421,7 +73437,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "35级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003035081] = {
 		id = 3003035081,
@@ -73448,7 +73464,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "35级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035082] = {
 		id = 3003035082,
@@ -73475,7 +73491,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "35级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035083] = {
 		id = 3003035083,
@@ -73502,7 +73518,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "35级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035084] = {
 		id = 3003035084,
@@ -73529,7 +73545,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "35级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035085] = {
 		id = 3003035085,
@@ -73556,7 +73572,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "35级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003035086] = {
 		id = 3003035086,
@@ -73583,7 +73599,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "35级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040011] = {
 		id = 3003040011,
@@ -73610,7 +73626,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "40级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040012] = {
 		id = 3003040012,
@@ -73637,7 +73653,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "40级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040013] = {
 		id = 3003040013,
@@ -73664,7 +73680,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "40级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040014] = {
 		id = 3003040014,
@@ -73691,7 +73707,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "40级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040015] = {
 		id = 3003040015,
@@ -73718,7 +73734,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "40级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040016] = {
 		id = 3003040016,
@@ -73745,7 +73761,7 @@ local datas = {
 		iconPath = "icon/30103.png",
 		Description = "40级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040021] = {
 		id = 3003040021,
@@ -73772,7 +73788,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "40级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040022] = {
 		id = 3003040022,
@@ -73799,7 +73815,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "40级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040023] = {
 		id = 3003040023,
@@ -73826,7 +73842,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "40级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040024] = {
 		id = 3003040024,
@@ -73853,7 +73869,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "40级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040025] = {
 		id = 3003040025,
@@ -73880,7 +73896,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "40级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040026] = {
 		id = 3003040026,
@@ -73907,7 +73923,7 @@ local datas = {
 		iconPath = "icon/30203.png",
 		Description = "40级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040031] = {
 		id = 3003040031,
@@ -73934,7 +73950,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "40级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040032] = {
 		id = 3003040032,
@@ -73961,7 +73977,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "40级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040033] = {
 		id = 3003040033,
@@ -73988,7 +74004,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "40级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040034] = {
 		id = 3003040034,
@@ -74015,7 +74031,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "40级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040035] = {
 		id = 3003040035,
@@ -74042,7 +74058,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "40级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040036] = {
 		id = 3003040036,
@@ -74069,7 +74085,7 @@ local datas = {
 		iconPath = "icon/30303.png",
 		Description = "40级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040041] = {
 		id = 3003040041,
@@ -74096,7 +74112,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "40级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040042] = {
 		id = 3003040042,
@@ -74123,7 +74139,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "40级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040043] = {
 		id = 3003040043,
@@ -74150,7 +74166,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "40级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040044] = {
 		id = 3003040044,
@@ -74177,7 +74193,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "40级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040045] = {
 		id = 3003040045,
@@ -74204,7 +74220,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "40级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040046] = {
 		id = 3003040046,
@@ -74231,7 +74247,7 @@ local datas = {
 		iconPath = "icon/30403.png",
 		Description = "40级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040051] = {
 		id = 3003040051,
@@ -74258,7 +74274,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "40级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040052] = {
 		id = 3003040052,
@@ -74285,7 +74301,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "40级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040053] = {
 		id = 3003040053,
@@ -74312,7 +74328,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "40级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040054] = {
 		id = 3003040054,
@@ -74339,7 +74355,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "40级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040055] = {
 		id = 3003040055,
@@ -74366,7 +74382,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "40级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040056] = {
 		id = 3003040056,
@@ -74393,7 +74409,7 @@ local datas = {
 		iconPath = "icon/30503.png",
 		Description = "40级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003040061] = {
 		id = 3003040061,
@@ -74420,7 +74436,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "40级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040062] = {
 		id = 3003040062,
@@ -74447,7 +74463,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "40级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040063] = {
 		id = 3003040063,
@@ -74474,7 +74490,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "40级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040064] = {
 		id = 3003040064,
@@ -74501,7 +74517,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "40级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040065] = {
 		id = 3003040065,
@@ -74528,7 +74544,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "40级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040066] = {
 		id = 3003040066,
@@ -74555,7 +74571,7 @@ local datas = {
 		iconPath = "icon/30603.png",
 		Description = "40级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003040071] = {
 		id = 3003040071,
@@ -74582,7 +74598,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "40级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040072] = {
 		id = 3003040072,
@@ -74609,7 +74625,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "40级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040073] = {
 		id = 3003040073,
@@ -74636,7 +74652,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "40级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040074] = {
 		id = 3003040074,
@@ -74663,7 +74679,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "40级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040075] = {
 		id = 3003040075,
@@ -74690,7 +74706,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "40级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040076] = {
 		id = 3003040076,
@@ -74717,7 +74733,7 @@ local datas = {
 		iconPath = "icon/30703.png",
 		Description = "40级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003040081] = {
 		id = 3003040081,
@@ -74744,7 +74760,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "40级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040082] = {
 		id = 3003040082,
@@ -74771,7 +74787,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "40级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040083] = {
 		id = 3003040083,
@@ -74798,7 +74814,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "40级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040084] = {
 		id = 3003040084,
@@ -74825,7 +74841,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "40级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040085] = {
 		id = 3003040085,
@@ -74852,7 +74868,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "40级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003040086] = {
 		id = 3003040086,
@@ -74879,7 +74895,7 @@ local datas = {
 		iconPath = "icon/30803.png",
 		Description = "40级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045011] = {
 		id = 3003045011,
@@ -74906,7 +74922,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "45级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045012] = {
 		id = 3003045012,
@@ -74933,7 +74949,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "45级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045013] = {
 		id = 3003045013,
@@ -74960,7 +74976,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "45级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045014] = {
 		id = 3003045014,
@@ -74987,7 +75003,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "45级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045015] = {
 		id = 3003045015,
@@ -75014,7 +75030,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "45级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045016] = {
 		id = 3003045016,
@@ -75041,7 +75057,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "45级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045021] = {
 		id = 3003045021,
@@ -75068,7 +75084,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "45级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045022] = {
 		id = 3003045022,
@@ -75095,7 +75111,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "45级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045023] = {
 		id = 3003045023,
@@ -75122,7 +75138,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "45级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045024] = {
 		id = 3003045024,
@@ -75149,7 +75165,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "45级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045025] = {
 		id = 3003045025,
@@ -75176,7 +75192,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "45级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045026] = {
 		id = 3003045026,
@@ -75203,7 +75219,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "45级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045031] = {
 		id = 3003045031,
@@ -75230,7 +75246,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "45级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045032] = {
 		id = 3003045032,
@@ -75257,7 +75273,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "45级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045033] = {
 		id = 3003045033,
@@ -75284,7 +75300,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "45级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045034] = {
 		id = 3003045034,
@@ -75311,7 +75327,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "45级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045035] = {
 		id = 3003045035,
@@ -75338,7 +75354,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "45级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045036] = {
 		id = 3003045036,
@@ -75365,7 +75381,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "45级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045041] = {
 		id = 3003045041,
@@ -75392,7 +75408,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "45级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045042] = {
 		id = 3003045042,
@@ -75419,7 +75435,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "45级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045043] = {
 		id = 3003045043,
@@ -75446,7 +75462,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "45级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045044] = {
 		id = 3003045044,
@@ -75473,7 +75489,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "45级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045045] = {
 		id = 3003045045,
@@ -75500,7 +75516,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "45级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045046] = {
 		id = 3003045046,
@@ -75527,7 +75543,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "45级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045051] = {
 		id = 3003045051,
@@ -75554,7 +75570,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "45级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045052] = {
 		id = 3003045052,
@@ -75581,7 +75597,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "45级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045053] = {
 		id = 3003045053,
@@ -75608,7 +75624,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "45级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045054] = {
 		id = 3003045054,
@@ -75635,7 +75651,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "45级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045055] = {
 		id = 3003045055,
@@ -75662,7 +75678,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "45级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045056] = {
 		id = 3003045056,
@@ -75689,7 +75705,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "45级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003045061] = {
 		id = 3003045061,
@@ -75716,7 +75732,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "45级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045062] = {
 		id = 3003045062,
@@ -75743,7 +75759,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "45级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045063] = {
 		id = 3003045063,
@@ -75770,7 +75786,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "45级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045064] = {
 		id = 3003045064,
@@ -75797,7 +75813,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "45级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045065] = {
 		id = 3003045065,
@@ -75824,7 +75840,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "45级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045066] = {
 		id = 3003045066,
@@ -75851,7 +75867,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "45级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003045071] = {
 		id = 3003045071,
@@ -75878,7 +75894,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "45级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045072] = {
 		id = 3003045072,
@@ -75905,7 +75921,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "45级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045073] = {
 		id = 3003045073,
@@ -75932,7 +75948,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "45级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045074] = {
 		id = 3003045074,
@@ -75959,7 +75975,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "45级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045075] = {
 		id = 3003045075,
@@ -75986,7 +76002,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "45级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045076] = {
 		id = 3003045076,
@@ -76013,7 +76029,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "45级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003045081] = {
 		id = 3003045081,
@@ -76040,7 +76056,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "45级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045082] = {
 		id = 3003045082,
@@ -76067,7 +76083,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "45级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045083] = {
 		id = 3003045083,
@@ -76094,7 +76110,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "45级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045084] = {
 		id = 3003045084,
@@ -76121,7 +76137,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "45级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045085] = {
 		id = 3003045085,
@@ -76148,7 +76164,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "45级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003045086] = {
 		id = 3003045086,
@@ -76175,7 +76191,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "45级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050011] = {
 		id = 3003050011,
@@ -76202,7 +76218,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "50级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050012] = {
 		id = 3003050012,
@@ -76229,7 +76245,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "50级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050013] = {
 		id = 3003050013,
@@ -76256,7 +76272,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "50级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050014] = {
 		id = 3003050014,
@@ -76283,7 +76299,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "50级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050015] = {
 		id = 3003050015,
@@ -76310,7 +76326,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "50级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050016] = {
 		id = 3003050016,
@@ -76337,7 +76353,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "50级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050021] = {
 		id = 3003050021,
@@ -76364,7 +76380,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "50级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050022] = {
 		id = 3003050022,
@@ -76391,7 +76407,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "50级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050023] = {
 		id = 3003050023,
@@ -76418,7 +76434,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "50级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050024] = {
 		id = 3003050024,
@@ -76445,7 +76461,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "50级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050025] = {
 		id = 3003050025,
@@ -76472,7 +76488,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "50级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050026] = {
 		id = 3003050026,
@@ -76499,7 +76515,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "50级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050031] = {
 		id = 3003050031,
@@ -76526,7 +76542,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "50级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050032] = {
 		id = 3003050032,
@@ -76553,7 +76569,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "50级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050033] = {
 		id = 3003050033,
@@ -76580,7 +76596,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "50级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050034] = {
 		id = 3003050034,
@@ -76607,7 +76623,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "50级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050035] = {
 		id = 3003050035,
@@ -76634,7 +76650,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "50级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050036] = {
 		id = 3003050036,
@@ -76661,7 +76677,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "50级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050041] = {
 		id = 3003050041,
@@ -76688,7 +76704,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "50级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050042] = {
 		id = 3003050042,
@@ -76715,7 +76731,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "50级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050043] = {
 		id = 3003050043,
@@ -76742,7 +76758,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "50级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050044] = {
 		id = 3003050044,
@@ -76769,7 +76785,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "50级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050045] = {
 		id = 3003050045,
@@ -76796,7 +76812,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "50级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050046] = {
 		id = 3003050046,
@@ -76823,7 +76839,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "50级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050051] = {
 		id = 3003050051,
@@ -76850,7 +76866,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "50级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050052] = {
 		id = 3003050052,
@@ -76877,7 +76893,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "50级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050053] = {
 		id = 3003050053,
@@ -76904,7 +76920,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "50级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050054] = {
 		id = 3003050054,
@@ -76931,7 +76947,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "50级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050055] = {
 		id = 3003050055,
@@ -76958,7 +76974,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "50级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050056] = {
 		id = 3003050056,
@@ -76985,7 +77001,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "50级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003050061] = {
 		id = 3003050061,
@@ -77012,7 +77028,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "50级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050062] = {
 		id = 3003050062,
@@ -77039,7 +77055,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "50级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050063] = {
 		id = 3003050063,
@@ -77066,7 +77082,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "50级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050064] = {
 		id = 3003050064,
@@ -77093,7 +77109,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "50级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050065] = {
 		id = 3003050065,
@@ -77120,7 +77136,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "50级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050066] = {
 		id = 3003050066,
@@ -77147,7 +77163,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "50级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003050071] = {
 		id = 3003050071,
@@ -77174,7 +77190,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "50级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050072] = {
 		id = 3003050072,
@@ -77201,7 +77217,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "50级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050073] = {
 		id = 3003050073,
@@ -77228,7 +77244,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "50级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050074] = {
 		id = 3003050074,
@@ -77255,7 +77271,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "50级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050075] = {
 		id = 3003050075,
@@ -77282,7 +77298,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "50级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050076] = {
 		id = 3003050076,
@@ -77309,7 +77325,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "50级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003050081] = {
 		id = 3003050081,
@@ -77336,7 +77352,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "50级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050082] = {
 		id = 3003050082,
@@ -77363,7 +77379,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "50级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050083] = {
 		id = 3003050083,
@@ -77390,7 +77406,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "50级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050084] = {
 		id = 3003050084,
@@ -77417,7 +77433,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "50级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050085] = {
 		id = 3003050085,
@@ -77444,7 +77460,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "50级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003050086] = {
 		id = 3003050086,
@@ -77471,7 +77487,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "50级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055011] = {
 		id = 3003055011,
@@ -77498,7 +77514,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "55级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055012] = {
 		id = 3003055012,
@@ -77525,7 +77541,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "55级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055013] = {
 		id = 3003055013,
@@ -77552,7 +77568,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "55级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055014] = {
 		id = 3003055014,
@@ -77579,7 +77595,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "55级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055015] = {
 		id = 3003055015,
@@ -77606,7 +77622,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "55级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055016] = {
 		id = 3003055016,
@@ -77633,7 +77649,7 @@ local datas = {
 		iconPath = "icon/30104.png",
 		Description = "55级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055021] = {
 		id = 3003055021,
@@ -77660,7 +77676,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "55级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055022] = {
 		id = 3003055022,
@@ -77687,7 +77703,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "55级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055023] = {
 		id = 3003055023,
@@ -77714,7 +77730,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "55级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055024] = {
 		id = 3003055024,
@@ -77741,7 +77757,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "55级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055025] = {
 		id = 3003055025,
@@ -77768,7 +77784,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "55级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055026] = {
 		id = 3003055026,
@@ -77795,7 +77811,7 @@ local datas = {
 		iconPath = "icon/30204.png",
 		Description = "55级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055031] = {
 		id = 3003055031,
@@ -77822,7 +77838,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "55级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055032] = {
 		id = 3003055032,
@@ -77849,7 +77865,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "55级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055033] = {
 		id = 3003055033,
@@ -77876,7 +77892,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "55级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055034] = {
 		id = 3003055034,
@@ -77903,7 +77919,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "55级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055035] = {
 		id = 3003055035,
@@ -77930,7 +77946,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "55级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055036] = {
 		id = 3003055036,
@@ -77957,7 +77973,7 @@ local datas = {
 		iconPath = "icon/30304.png",
 		Description = "55级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055041] = {
 		id = 3003055041,
@@ -77984,7 +78000,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "55级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055042] = {
 		id = 3003055042,
@@ -78011,7 +78027,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "55级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055043] = {
 		id = 3003055043,
@@ -78038,7 +78054,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "55级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055044] = {
 		id = 3003055044,
@@ -78065,7 +78081,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "55级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055045] = {
 		id = 3003055045,
@@ -78092,7 +78108,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "55级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055046] = {
 		id = 3003055046,
@@ -78119,7 +78135,7 @@ local datas = {
 		iconPath = "icon/30404.png",
 		Description = "55级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055051] = {
 		id = 3003055051,
@@ -78146,7 +78162,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "55级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055052] = {
 		id = 3003055052,
@@ -78173,7 +78189,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "55级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055053] = {
 		id = 3003055053,
@@ -78200,7 +78216,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "55级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055054] = {
 		id = 3003055054,
@@ -78227,7 +78243,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "55级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055055] = {
 		id = 3003055055,
@@ -78254,7 +78270,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "55级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055056] = {
 		id = 3003055056,
@@ -78281,7 +78297,7 @@ local datas = {
 		iconPath = "icon/30504.png",
 		Description = "55级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003055061] = {
 		id = 3003055061,
@@ -78308,7 +78324,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "55级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055062] = {
 		id = 3003055062,
@@ -78335,7 +78351,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "55级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055063] = {
 		id = 3003055063,
@@ -78362,7 +78378,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "55级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055064] = {
 		id = 3003055064,
@@ -78389,7 +78405,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "55级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055065] = {
 		id = 3003055065,
@@ -78416,7 +78432,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "55级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055066] = {
 		id = 3003055066,
@@ -78443,7 +78459,7 @@ local datas = {
 		iconPath = "icon/30604.png",
 		Description = "55级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003055071] = {
 		id = 3003055071,
@@ -78470,7 +78486,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "55级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055072] = {
 		id = 3003055072,
@@ -78497,7 +78513,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "55级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055073] = {
 		id = 3003055073,
@@ -78524,7 +78540,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "55级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055074] = {
 		id = 3003055074,
@@ -78551,7 +78567,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "55级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055075] = {
 		id = 3003055075,
@@ -78578,7 +78594,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "55级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055076] = {
 		id = 3003055076,
@@ -78605,7 +78621,7 @@ local datas = {
 		iconPath = "icon/30704.png",
 		Description = "55级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003055081] = {
 		id = 3003055081,
@@ -78632,7 +78648,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "55级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055082] = {
 		id = 3003055082,
@@ -78659,7 +78675,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "55级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055083] = {
 		id = 3003055083,
@@ -78686,7 +78702,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "55级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055084] = {
 		id = 3003055084,
@@ -78713,7 +78729,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "55级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055085] = {
 		id = 3003055085,
@@ -78740,7 +78756,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "55级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003055086] = {
 		id = 3003055086,
@@ -78767,7 +78783,7 @@ local datas = {
 		iconPath = "icon/30804.png",
 		Description = "55级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060011] = {
 		id = 3003060011,
@@ -78794,7 +78810,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "60级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060012] = {
 		id = 3003060012,
@@ -78821,7 +78837,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "60级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060013] = {
 		id = 3003060013,
@@ -78848,7 +78864,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "60级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060014] = {
 		id = 3003060014,
@@ -78875,7 +78891,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "60级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060015] = {
 		id = 3003060015,
@@ -78902,7 +78918,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "60级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060016] = {
 		id = 3003060016,
@@ -78929,7 +78945,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "60级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060021] = {
 		id = 3003060021,
@@ -78956,7 +78972,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "60级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060022] = {
 		id = 3003060022,
@@ -78983,7 +78999,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "60级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060023] = {
 		id = 3003060023,
@@ -79010,7 +79026,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "60级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060024] = {
 		id = 3003060024,
@@ -79037,7 +79053,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "60级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060025] = {
 		id = 3003060025,
@@ -79064,7 +79080,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "60级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060026] = {
 		id = 3003060026,
@@ -79091,7 +79107,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "60级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060031] = {
 		id = 3003060031,
@@ -79118,7 +79134,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "60级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060032] = {
 		id = 3003060032,
@@ -79145,7 +79161,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "60级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060033] = {
 		id = 3003060033,
@@ -79172,7 +79188,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "60级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060034] = {
 		id = 3003060034,
@@ -79199,7 +79215,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "60级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060035] = {
 		id = 3003060035,
@@ -79226,7 +79242,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "60级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060036] = {
 		id = 3003060036,
@@ -79253,7 +79269,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "60级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060041] = {
 		id = 3003060041,
@@ -79280,7 +79296,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "60级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060042] = {
 		id = 3003060042,
@@ -79307,7 +79323,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "60级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060043] = {
 		id = 3003060043,
@@ -79334,7 +79350,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "60级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060044] = {
 		id = 3003060044,
@@ -79361,7 +79377,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "60级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060045] = {
 		id = 3003060045,
@@ -79388,7 +79404,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "60级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060046] = {
 		id = 3003060046,
@@ -79415,7 +79431,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "60级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060051] = {
 		id = 3003060051,
@@ -79442,7 +79458,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "60级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060052] = {
 		id = 3003060052,
@@ -79469,7 +79485,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "60级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060053] = {
 		id = 3003060053,
@@ -79496,7 +79512,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "60级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060054] = {
 		id = 3003060054,
@@ -79523,7 +79539,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "60级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060055] = {
 		id = 3003060055,
@@ -79550,7 +79566,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "60级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060056] = {
 		id = 3003060056,
@@ -79577,7 +79593,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "60级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003060061] = {
 		id = 3003060061,
@@ -79604,7 +79620,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "60级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060062] = {
 		id = 3003060062,
@@ -79631,7 +79647,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "60级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060063] = {
 		id = 3003060063,
@@ -79658,7 +79674,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "60级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060064] = {
 		id = 3003060064,
@@ -79685,7 +79701,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "60级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060065] = {
 		id = 3003060065,
@@ -79712,7 +79728,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "60级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060066] = {
 		id = 3003060066,
@@ -79739,7 +79755,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "60级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003060071] = {
 		id = 3003060071,
@@ -79766,7 +79782,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "60级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060072] = {
 		id = 3003060072,
@@ -79793,7 +79809,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "60级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060073] = {
 		id = 3003060073,
@@ -79820,7 +79836,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "60级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060074] = {
 		id = 3003060074,
@@ -79847,7 +79863,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "60级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060075] = {
 		id = 3003060075,
@@ -79874,7 +79890,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "60级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060076] = {
 		id = 3003060076,
@@ -79901,7 +79917,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "60级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003060081] = {
 		id = 3003060081,
@@ -79928,7 +79944,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "60级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060082] = {
 		id = 3003060082,
@@ -79955,7 +79971,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "60级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060083] = {
 		id = 3003060083,
@@ -79982,7 +79998,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "60级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060084] = {
 		id = 3003060084,
@@ -80009,7 +80025,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "60级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060085] = {
 		id = 3003060085,
@@ -80036,7 +80052,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "60级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003060086] = {
 		id = 3003060086,
@@ -80063,7 +80079,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "60级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065011] = {
 		id = 3003065011,
@@ -80090,7 +80106,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "65级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065012] = {
 		id = 3003065012,
@@ -80117,7 +80133,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "65级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065013] = {
 		id = 3003065013,
@@ -80144,7 +80160,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "65级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065014] = {
 		id = 3003065014,
@@ -80171,7 +80187,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "65级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065015] = {
 		id = 3003065015,
@@ -80198,7 +80214,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "65级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065016] = {
 		id = 3003065016,
@@ -80225,7 +80241,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "65级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065021] = {
 		id = 3003065021,
@@ -80252,7 +80268,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "65级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065022] = {
 		id = 3003065022,
@@ -80279,7 +80295,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "65级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065023] = {
 		id = 3003065023,
@@ -80306,7 +80322,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "65级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065024] = {
 		id = 3003065024,
@@ -80333,7 +80349,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "65级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065025] = {
 		id = 3003065025,
@@ -80360,7 +80376,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "65级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065026] = {
 		id = 3003065026,
@@ -80387,7 +80403,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "65级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065031] = {
 		id = 3003065031,
@@ -80414,7 +80430,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "65级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065032] = {
 		id = 3003065032,
@@ -80441,7 +80457,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "65级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065033] = {
 		id = 3003065033,
@@ -80468,7 +80484,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "65级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065034] = {
 		id = 3003065034,
@@ -80495,7 +80511,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "65级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065035] = {
 		id = 3003065035,
@@ -80522,7 +80538,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "65级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065036] = {
 		id = 3003065036,
@@ -80549,7 +80565,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "65级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065041] = {
 		id = 3003065041,
@@ -80576,7 +80592,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "65级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065042] = {
 		id = 3003065042,
@@ -80603,7 +80619,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "65级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065043] = {
 		id = 3003065043,
@@ -80630,7 +80646,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "65级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065044] = {
 		id = 3003065044,
@@ -80657,7 +80673,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "65级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065045] = {
 		id = 3003065045,
@@ -80684,7 +80700,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "65级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065046] = {
 		id = 3003065046,
@@ -80711,7 +80727,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "65级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065051] = {
 		id = 3003065051,
@@ -80738,7 +80754,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "65级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065052] = {
 		id = 3003065052,
@@ -80765,7 +80781,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "65级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065053] = {
 		id = 3003065053,
@@ -80792,7 +80808,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "65级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065054] = {
 		id = 3003065054,
@@ -80819,7 +80835,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "65级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065055] = {
 		id = 3003065055,
@@ -80846,7 +80862,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "65级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065056] = {
 		id = 3003065056,
@@ -80873,7 +80889,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "65级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003065061] = {
 		id = 3003065061,
@@ -80900,7 +80916,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "65级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065062] = {
 		id = 3003065062,
@@ -80927,7 +80943,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "65级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065063] = {
 		id = 3003065063,
@@ -80954,7 +80970,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "65级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065064] = {
 		id = 3003065064,
@@ -80981,7 +80997,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "65级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065065] = {
 		id = 3003065065,
@@ -81008,7 +81024,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "65级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065066] = {
 		id = 3003065066,
@@ -81035,7 +81051,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "65级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003065071] = {
 		id = 3003065071,
@@ -81062,7 +81078,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "65级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065072] = {
 		id = 3003065072,
@@ -81089,7 +81105,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "65级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065073] = {
 		id = 3003065073,
@@ -81116,7 +81132,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "65级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065074] = {
 		id = 3003065074,
@@ -81143,7 +81159,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "65级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065075] = {
 		id = 3003065075,
@@ -81170,7 +81186,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "65级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065076] = {
 		id = 3003065076,
@@ -81197,7 +81213,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "65级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003065081] = {
 		id = 3003065081,
@@ -81224,7 +81240,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "65级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065082] = {
 		id = 3003065082,
@@ -81251,7 +81267,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "65级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065083] = {
 		id = 3003065083,
@@ -81278,7 +81294,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "65级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065084] = {
 		id = 3003065084,
@@ -81305,7 +81321,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "65级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065085] = {
 		id = 3003065085,
@@ -81332,7 +81348,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "65级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003065086] = {
 		id = 3003065086,
@@ -81359,7 +81375,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "65级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070011] = {
 		id = 3003070011,
@@ -81386,7 +81402,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "70级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070012] = {
 		id = 3003070012,
@@ -81413,7 +81429,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "70级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070013] = {
 		id = 3003070013,
@@ -81440,7 +81456,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "70级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070014] = {
 		id = 3003070014,
@@ -81467,7 +81483,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "70级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070015] = {
 		id = 3003070015,
@@ -81494,7 +81510,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "70级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070016] = {
 		id = 3003070016,
@@ -81521,7 +81537,7 @@ local datas = {
 		iconPath = "icon/30105.png",
 		Description = "70级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070021] = {
 		id = 3003070021,
@@ -81548,7 +81564,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "70级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070022] = {
 		id = 3003070022,
@@ -81575,7 +81591,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "70级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070023] = {
 		id = 3003070023,
@@ -81602,7 +81618,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "70级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070024] = {
 		id = 3003070024,
@@ -81629,7 +81645,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "70级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070025] = {
 		id = 3003070025,
@@ -81656,7 +81672,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "70级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070026] = {
 		id = 3003070026,
@@ -81683,7 +81699,7 @@ local datas = {
 		iconPath = "icon/30205.png",
 		Description = "70级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070031] = {
 		id = 3003070031,
@@ -81710,7 +81726,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "70级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070032] = {
 		id = 3003070032,
@@ -81737,7 +81753,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "70级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070033] = {
 		id = 3003070033,
@@ -81764,7 +81780,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "70级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070034] = {
 		id = 3003070034,
@@ -81791,7 +81807,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "70级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070035] = {
 		id = 3003070035,
@@ -81818,7 +81834,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "70级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070036] = {
 		id = 3003070036,
@@ -81845,7 +81861,7 @@ local datas = {
 		iconPath = "icon/30305.png",
 		Description = "70级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070041] = {
 		id = 3003070041,
@@ -81872,7 +81888,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "70级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070042] = {
 		id = 3003070042,
@@ -81899,7 +81915,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "70级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070043] = {
 		id = 3003070043,
@@ -81926,7 +81942,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "70级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070044] = {
 		id = 3003070044,
@@ -81953,7 +81969,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "70级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070045] = {
 		id = 3003070045,
@@ -81980,7 +81996,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "70级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070046] = {
 		id = 3003070046,
@@ -82007,7 +82023,7 @@ local datas = {
 		iconPath = "icon/30405.png",
 		Description = "70级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070051] = {
 		id = 3003070051,
@@ -82034,7 +82050,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "70级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070052] = {
 		id = 3003070052,
@@ -82061,7 +82077,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "70级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070053] = {
 		id = 3003070053,
@@ -82088,7 +82104,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "70级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070054] = {
 		id = 3003070054,
@@ -82115,7 +82131,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "70级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070055] = {
 		id = 3003070055,
@@ -82142,7 +82158,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "70级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070056] = {
 		id = 3003070056,
@@ -82169,7 +82185,7 @@ local datas = {
 		iconPath = "icon/30505.png",
 		Description = "70级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003070061] = {
 		id = 3003070061,
@@ -82196,7 +82212,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "70级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070062] = {
 		id = 3003070062,
@@ -82223,7 +82239,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "70级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070063] = {
 		id = 3003070063,
@@ -82250,7 +82266,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "70级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070064] = {
 		id = 3003070064,
@@ -82277,7 +82293,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "70级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070065] = {
 		id = 3003070065,
@@ -82304,7 +82320,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "70级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070066] = {
 		id = 3003070066,
@@ -82331,7 +82347,7 @@ local datas = {
 		iconPath = "icon/30605.png",
 		Description = "70级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003070071] = {
 		id = 3003070071,
@@ -82358,7 +82374,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "70级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070072] = {
 		id = 3003070072,
@@ -82385,7 +82401,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "70级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070073] = {
 		id = 3003070073,
@@ -82412,7 +82428,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "70级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070074] = {
 		id = 3003070074,
@@ -82439,7 +82455,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "70级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070075] = {
 		id = 3003070075,
@@ -82466,7 +82482,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "70级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070076] = {
 		id = 3003070076,
@@ -82493,7 +82509,7 @@ local datas = {
 		iconPath = "icon/30705.png",
 		Description = "70级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003070081] = {
 		id = 3003070081,
@@ -82520,7 +82536,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "70级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070082] = {
 		id = 3003070082,
@@ -82547,7 +82563,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "70级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070083] = {
 		id = 3003070083,
@@ -82574,7 +82590,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "70级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070084] = {
 		id = 3003070084,
@@ -82601,7 +82617,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "70级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070085] = {
 		id = 3003070085,
@@ -82628,7 +82644,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "70级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003070086] = {
 		id = 3003070086,
@@ -82655,7 +82671,7 @@ local datas = {
 		iconPath = "icon/30805.png",
 		Description = "70级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075011] = {
 		id = 3003075011,
@@ -82682,7 +82698,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "75级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075012] = {
 		id = 3003075012,
@@ -82709,7 +82725,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "75级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075013] = {
 		id = 3003075013,
@@ -82736,7 +82752,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "75级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075014] = {
 		id = 3003075014,
@@ -82763,7 +82779,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "75级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075015] = {
 		id = 3003075015,
@@ -82790,7 +82806,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "75级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075016] = {
 		id = 3003075016,
@@ -82817,7 +82833,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "75级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075021] = {
 		id = 3003075021,
@@ -82844,7 +82860,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "75级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075022] = {
 		id = 3003075022,
@@ -82871,7 +82887,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "75级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075023] = {
 		id = 3003075023,
@@ -82898,7 +82914,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "75级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075024] = {
 		id = 3003075024,
@@ -82925,7 +82941,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "75级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075025] = {
 		id = 3003075025,
@@ -82952,7 +82968,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "75级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075026] = {
 		id = 3003075026,
@@ -82979,7 +82995,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "75级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075031] = {
 		id = 3003075031,
@@ -83006,7 +83022,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "75级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075032] = {
 		id = 3003075032,
@@ -83033,7 +83049,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "75级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075033] = {
 		id = 3003075033,
@@ -83060,7 +83076,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "75级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075034] = {
 		id = 3003075034,
@@ -83087,7 +83103,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "75级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075035] = {
 		id = 3003075035,
@@ -83114,7 +83130,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "75级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075036] = {
 		id = 3003075036,
@@ -83141,7 +83157,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "75级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075041] = {
 		id = 3003075041,
@@ -83168,7 +83184,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "75级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075042] = {
 		id = 3003075042,
@@ -83195,7 +83211,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "75级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075043] = {
 		id = 3003075043,
@@ -83222,7 +83238,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "75级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075044] = {
 		id = 3003075044,
@@ -83249,7 +83265,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "75级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075045] = {
 		id = 3003075045,
@@ -83276,7 +83292,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "75级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075046] = {
 		id = 3003075046,
@@ -83303,7 +83319,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "75级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075051] = {
 		id = 3003075051,
@@ -83330,7 +83346,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "75级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075052] = {
 		id = 3003075052,
@@ -83357,7 +83373,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "75级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075053] = {
 		id = 3003075053,
@@ -83384,7 +83400,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "75级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075054] = {
 		id = 3003075054,
@@ -83411,7 +83427,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "75级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075055] = {
 		id = 3003075055,
@@ -83438,7 +83454,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "75级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075056] = {
 		id = 3003075056,
@@ -83465,7 +83481,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "75级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003075061] = {
 		id = 3003075061,
@@ -83492,7 +83508,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "75级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075062] = {
 		id = 3003075062,
@@ -83519,7 +83535,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "75级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075063] = {
 		id = 3003075063,
@@ -83546,7 +83562,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "75级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075064] = {
 		id = 3003075064,
@@ -83573,7 +83589,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "75级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075065] = {
 		id = 3003075065,
@@ -83600,7 +83616,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "75级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075066] = {
 		id = 3003075066,
@@ -83627,7 +83643,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "75级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003075071] = {
 		id = 3003075071,
@@ -83654,7 +83670,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "75级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075072] = {
 		id = 3003075072,
@@ -83681,7 +83697,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "75级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075073] = {
 		id = 3003075073,
@@ -83708,7 +83724,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "75级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075074] = {
 		id = 3003075074,
@@ -83735,7 +83751,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "75级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075075] = {
 		id = 3003075075,
@@ -83762,7 +83778,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "75级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075076] = {
 		id = 3003075076,
@@ -83789,7 +83805,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "75级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003075081] = {
 		id = 3003075081,
@@ -83816,7 +83832,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "75级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075082] = {
 		id = 3003075082,
@@ -83843,7 +83859,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "75级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075083] = {
 		id = 3003075083,
@@ -83870,7 +83886,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "75级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075084] = {
 		id = 3003075084,
@@ -83897,7 +83913,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "75级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075085] = {
 		id = 3003075085,
@@ -83924,7 +83940,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "75级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003075086] = {
 		id = 3003075086,
@@ -83951,7 +83967,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "75级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080011] = {
 		id = 3003080011,
@@ -83978,7 +83994,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "80级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080012] = {
 		id = 3003080012,
@@ -84005,7 +84021,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "80级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080013] = {
 		id = 3003080013,
@@ -84032,7 +84048,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "80级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080014] = {
 		id = 3003080014,
@@ -84059,7 +84075,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "80级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080015] = {
 		id = 3003080015,
@@ -84086,7 +84102,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "80级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080016] = {
 		id = 3003080016,
@@ -84113,7 +84129,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "80级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080021] = {
 		id = 3003080021,
@@ -84140,7 +84156,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "80级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080022] = {
 		id = 3003080022,
@@ -84167,7 +84183,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "80级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080023] = {
 		id = 3003080023,
@@ -84194,7 +84210,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "80级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080024] = {
 		id = 3003080024,
@@ -84221,7 +84237,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "80级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080025] = {
 		id = 3003080025,
@@ -84248,7 +84264,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "80级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080026] = {
 		id = 3003080026,
@@ -84275,7 +84291,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "80级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080031] = {
 		id = 3003080031,
@@ -84302,7 +84318,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "80级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080032] = {
 		id = 3003080032,
@@ -84329,7 +84345,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "80级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080033] = {
 		id = 3003080033,
@@ -84356,7 +84372,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "80级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080034] = {
 		id = 3003080034,
@@ -84383,7 +84399,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "80级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080035] = {
 		id = 3003080035,
@@ -84410,7 +84426,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "80级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080036] = {
 		id = 3003080036,
@@ -84437,7 +84453,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "80级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080041] = {
 		id = 3003080041,
@@ -84464,7 +84480,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "80级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080042] = {
 		id = 3003080042,
@@ -84491,7 +84507,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "80级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080043] = {
 		id = 3003080043,
@@ -84518,7 +84534,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "80级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080044] = {
 		id = 3003080044,
@@ -84545,7 +84561,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "80级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080045] = {
 		id = 3003080045,
@@ -84572,7 +84588,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "80级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080046] = {
 		id = 3003080046,
@@ -84599,7 +84615,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "80级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080051] = {
 		id = 3003080051,
@@ -84626,7 +84642,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "80级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080052] = {
 		id = 3003080052,
@@ -84653,7 +84669,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "80级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080053] = {
 		id = 3003080053,
@@ -84680,7 +84696,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "80级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080054] = {
 		id = 3003080054,
@@ -84707,7 +84723,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "80级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080055] = {
 		id = 3003080055,
@@ -84734,7 +84750,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "80级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080056] = {
 		id = 3003080056,
@@ -84761,7 +84777,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "80级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003080061] = {
 		id = 3003080061,
@@ -84788,7 +84804,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "80级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080062] = {
 		id = 3003080062,
@@ -84815,7 +84831,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "80级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080063] = {
 		id = 3003080063,
@@ -84842,7 +84858,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "80级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080064] = {
 		id = 3003080064,
@@ -84869,7 +84885,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "80级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080065] = {
 		id = 3003080065,
@@ -84896,7 +84912,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "80级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080066] = {
 		id = 3003080066,
@@ -84923,7 +84939,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "80级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003080071] = {
 		id = 3003080071,
@@ -84950,7 +84966,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "80级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080072] = {
 		id = 3003080072,
@@ -84977,7 +84993,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "80级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080073] = {
 		id = 3003080073,
@@ -85004,7 +85020,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "80级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080074] = {
 		id = 3003080074,
@@ -85031,7 +85047,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "80级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080075] = {
 		id = 3003080075,
@@ -85058,7 +85074,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "80级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080076] = {
 		id = 3003080076,
@@ -85085,7 +85101,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "80级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003080081] = {
 		id = 3003080081,
@@ -85112,7 +85128,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "80级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080082] = {
 		id = 3003080082,
@@ -85139,7 +85155,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "80级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080083] = {
 		id = 3003080083,
@@ -85166,7 +85182,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "80级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080084] = {
 		id = 3003080084,
@@ -85193,7 +85209,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "80级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080085] = {
 		id = 3003080085,
@@ -85220,7 +85236,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "80级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003080086] = {
 		id = 3003080086,
@@ -85247,7 +85263,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "80级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085011] = {
 		id = 3003085011,
@@ -85274,7 +85290,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "85级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085012] = {
 		id = 3003085012,
@@ -85301,7 +85317,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "85级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085013] = {
 		id = 3003085013,
@@ -85328,7 +85344,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "85级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085014] = {
 		id = 3003085014,
@@ -85355,7 +85371,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "85级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085015] = {
 		id = 3003085015,
@@ -85382,7 +85398,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "85级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085016] = {
 		id = 3003085016,
@@ -85409,7 +85425,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "85级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085021] = {
 		id = 3003085021,
@@ -85436,7 +85452,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "85级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085022] = {
 		id = 3003085022,
@@ -85463,7 +85479,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "85级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085023] = {
 		id = 3003085023,
@@ -85490,7 +85506,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "85级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085024] = {
 		id = 3003085024,
@@ -85517,7 +85533,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "85级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085025] = {
 		id = 3003085025,
@@ -85544,7 +85560,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "85级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085026] = {
 		id = 3003085026,
@@ -85571,7 +85587,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "85级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085031] = {
 		id = 3003085031,
@@ -85598,7 +85614,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "85级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085032] = {
 		id = 3003085032,
@@ -85625,7 +85641,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "85级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085033] = {
 		id = 3003085033,
@@ -85652,7 +85668,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "85级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085034] = {
 		id = 3003085034,
@@ -85679,7 +85695,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "85级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085035] = {
 		id = 3003085035,
@@ -85706,7 +85722,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "85级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085036] = {
 		id = 3003085036,
@@ -85733,7 +85749,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "85级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085041] = {
 		id = 3003085041,
@@ -85760,7 +85776,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "85级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085042] = {
 		id = 3003085042,
@@ -85787,7 +85803,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "85级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085043] = {
 		id = 3003085043,
@@ -85814,7 +85830,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "85级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085044] = {
 		id = 3003085044,
@@ -85841,7 +85857,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "85级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085045] = {
 		id = 3003085045,
@@ -85868,7 +85884,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "85级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085046] = {
 		id = 3003085046,
@@ -85895,7 +85911,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "85级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085051] = {
 		id = 3003085051,
@@ -85922,7 +85938,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "85级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085052] = {
 		id = 3003085052,
@@ -85949,7 +85965,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "85级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085053] = {
 		id = 3003085053,
@@ -85976,7 +85992,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "85级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085054] = {
 		id = 3003085054,
@@ -86003,7 +86019,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "85级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085055] = {
 		id = 3003085055,
@@ -86030,7 +86046,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "85级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085056] = {
 		id = 3003085056,
@@ -86057,7 +86073,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "85级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003085061] = {
 		id = 3003085061,
@@ -86084,7 +86100,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "85级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085062] = {
 		id = 3003085062,
@@ -86111,7 +86127,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "85级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085063] = {
 		id = 3003085063,
@@ -86138,7 +86154,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "85级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085064] = {
 		id = 3003085064,
@@ -86165,7 +86181,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "85级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085065] = {
 		id = 3003085065,
@@ -86192,7 +86208,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "85级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085066] = {
 		id = 3003085066,
@@ -86219,7 +86235,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "85级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003085071] = {
 		id = 3003085071,
@@ -86246,7 +86262,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "85级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085072] = {
 		id = 3003085072,
@@ -86273,7 +86289,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "85级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085073] = {
 		id = 3003085073,
@@ -86300,7 +86316,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "85级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085074] = {
 		id = 3003085074,
@@ -86327,7 +86343,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "85级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085075] = {
 		id = 3003085075,
@@ -86354,7 +86370,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "85级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085076] = {
 		id = 3003085076,
@@ -86381,7 +86397,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "85级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003085081] = {
 		id = 3003085081,
@@ -86408,7 +86424,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "85级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085082] = {
 		id = 3003085082,
@@ -86435,7 +86451,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "85级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085083] = {
 		id = 3003085083,
@@ -86462,7 +86478,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "85级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085084] = {
 		id = 3003085084,
@@ -86489,7 +86505,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "85级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085085] = {
 		id = 3003085085,
@@ -86516,7 +86532,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "85级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003085086] = {
 		id = 3003085086,
@@ -86543,7 +86559,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "85级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090011] = {
 		id = 3003090011,
@@ -86570,7 +86586,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "90级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090012] = {
 		id = 3003090012,
@@ -86597,7 +86613,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "90级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090013] = {
 		id = 3003090013,
@@ -86624,7 +86640,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "90级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090014] = {
 		id = 3003090014,
@@ -86651,7 +86667,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "90级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090015] = {
 		id = 3003090015,
@@ -86678,7 +86694,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "90级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090016] = {
 		id = 3003090016,
@@ -86705,7 +86721,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "90级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090021] = {
 		id = 3003090021,
@@ -86732,7 +86748,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "90级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090022] = {
 		id = 3003090022,
@@ -86759,7 +86775,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "90级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090023] = {
 		id = 3003090023,
@@ -86786,7 +86802,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "90级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090024] = {
 		id = 3003090024,
@@ -86813,7 +86829,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "90级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090025] = {
 		id = 3003090025,
@@ -86840,7 +86856,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "90级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090026] = {
 		id = 3003090026,
@@ -86867,7 +86883,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "90级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090031] = {
 		id = 3003090031,
@@ -86894,7 +86910,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "90级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090032] = {
 		id = 3003090032,
@@ -86921,7 +86937,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "90级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090033] = {
 		id = 3003090033,
@@ -86948,7 +86964,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "90级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090034] = {
 		id = 3003090034,
@@ -86975,7 +86991,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "90级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090035] = {
 		id = 3003090035,
@@ -87002,7 +87018,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "90级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090036] = {
 		id = 3003090036,
@@ -87029,7 +87045,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "90级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090041] = {
 		id = 3003090041,
@@ -87056,7 +87072,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "90级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090042] = {
 		id = 3003090042,
@@ -87083,7 +87099,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "90级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090043] = {
 		id = 3003090043,
@@ -87110,7 +87126,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "90级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090044] = {
 		id = 3003090044,
@@ -87137,7 +87153,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "90级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090045] = {
 		id = 3003090045,
@@ -87164,7 +87180,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "90级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090046] = {
 		id = 3003090046,
@@ -87191,7 +87207,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "90级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090051] = {
 		id = 3003090051,
@@ -87218,7 +87234,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "90级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090052] = {
 		id = 3003090052,
@@ -87245,7 +87261,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "90级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090053] = {
 		id = 3003090053,
@@ -87272,7 +87288,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "90级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090054] = {
 		id = 3003090054,
@@ -87299,7 +87315,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "90级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090055] = {
 		id = 3003090055,
@@ -87326,7 +87342,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "90级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090056] = {
 		id = 3003090056,
@@ -87353,7 +87369,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "90级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003090061] = {
 		id = 3003090061,
@@ -87380,7 +87396,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "90级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090062] = {
 		id = 3003090062,
@@ -87407,7 +87423,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "90级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090063] = {
 		id = 3003090063,
@@ -87434,7 +87450,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "90级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090064] = {
 		id = 3003090064,
@@ -87461,7 +87477,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "90级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090065] = {
 		id = 3003090065,
@@ -87488,7 +87504,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "90级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090066] = {
 		id = 3003090066,
@@ -87515,7 +87531,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "90级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003090071] = {
 		id = 3003090071,
@@ -87542,7 +87558,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "90级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090072] = {
 		id = 3003090072,
@@ -87569,7 +87585,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "90级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090073] = {
 		id = 3003090073,
@@ -87596,7 +87612,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "90级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090074] = {
 		id = 3003090074,
@@ -87623,7 +87639,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "90级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090075] = {
 		id = 3003090075,
@@ -87650,7 +87666,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "90级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090076] = {
 		id = 3003090076,
@@ -87677,7 +87693,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "90级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003090081] = {
 		id = 3003090081,
@@ -87704,7 +87720,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "90级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090082] = {
 		id = 3003090082,
@@ -87731,7 +87747,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "90级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090083] = {
 		id = 3003090083,
@@ -87758,7 +87774,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "90级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090084] = {
 		id = 3003090084,
@@ -87785,7 +87801,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "90级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090085] = {
 		id = 3003090085,
@@ -87812,7 +87828,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "90级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003090086] = {
 		id = 3003090086,
@@ -87839,7 +87855,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "90级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095011] = {
 		id = 3003095011,
@@ -87866,7 +87882,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "95级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095012] = {
 		id = 3003095012,
@@ -87893,7 +87909,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "95级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095013] = {
 		id = 3003095013,
@@ -87920,7 +87936,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "95级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095014] = {
 		id = 3003095014,
@@ -87947,7 +87963,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "95级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095015] = {
 		id = 3003095015,
@@ -87974,7 +87990,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "95级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095016] = {
 		id = 3003095016,
@@ -88001,7 +88017,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "95级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095021] = {
 		id = 3003095021,
@@ -88028,7 +88044,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "95级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095022] = {
 		id = 3003095022,
@@ -88055,7 +88071,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "95级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095023] = {
 		id = 3003095023,
@@ -88082,7 +88098,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "95级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095024] = {
 		id = 3003095024,
@@ -88109,7 +88125,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "95级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095025] = {
 		id = 3003095025,
@@ -88136,7 +88152,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "95级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095026] = {
 		id = 3003095026,
@@ -88163,7 +88179,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "95级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095031] = {
 		id = 3003095031,
@@ -88190,7 +88206,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "95级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095032] = {
 		id = 3003095032,
@@ -88217,7 +88233,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "95级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095033] = {
 		id = 3003095033,
@@ -88244,7 +88260,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "95级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095034] = {
 		id = 3003095034,
@@ -88271,7 +88287,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "95级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095035] = {
 		id = 3003095035,
@@ -88298,7 +88314,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "95级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095036] = {
 		id = 3003095036,
@@ -88325,7 +88341,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "95级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095041] = {
 		id = 3003095041,
@@ -88352,7 +88368,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "95级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095042] = {
 		id = 3003095042,
@@ -88379,7 +88395,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "95级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095043] = {
 		id = 3003095043,
@@ -88406,7 +88422,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "95级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095044] = {
 		id = 3003095044,
@@ -88433,7 +88449,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "95级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095045] = {
 		id = 3003095045,
@@ -88460,7 +88476,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "95级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095046] = {
 		id = 3003095046,
@@ -88487,7 +88503,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "95级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095051] = {
 		id = 3003095051,
@@ -88514,7 +88530,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "95级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095052] = {
 		id = 3003095052,
@@ -88541,7 +88557,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "95级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095053] = {
 		id = 3003095053,
@@ -88568,7 +88584,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "95级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095054] = {
 		id = 3003095054,
@@ -88595,7 +88611,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "95级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095055] = {
 		id = 3003095055,
@@ -88622,7 +88638,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "95级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095056] = {
 		id = 3003095056,
@@ -88649,7 +88665,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "95级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003095061] = {
 		id = 3003095061,
@@ -88676,7 +88692,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "95级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095062] = {
 		id = 3003095062,
@@ -88703,7 +88719,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "95级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095063] = {
 		id = 3003095063,
@@ -88730,7 +88746,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "95级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095064] = {
 		id = 3003095064,
@@ -88757,7 +88773,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "95级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095065] = {
 		id = 3003095065,
@@ -88784,7 +88800,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "95级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095066] = {
 		id = 3003095066,
@@ -88811,7 +88827,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "95级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003095071] = {
 		id = 3003095071,
@@ -88838,7 +88854,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "95级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095072] = {
 		id = 3003095072,
@@ -88865,7 +88881,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "95级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095073] = {
 		id = 3003095073,
@@ -88892,7 +88908,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "95级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095074] = {
 		id = 3003095074,
@@ -88919,7 +88935,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "95级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095075] = {
 		id = 3003095075,
@@ -88946,7 +88962,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "95级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095076] = {
 		id = 3003095076,
@@ -88973,7 +88989,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "95级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003095081] = {
 		id = 3003095081,
@@ -89000,7 +89016,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "95级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095082] = {
 		id = 3003095082,
@@ -89027,7 +89043,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "95级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095083] = {
 		id = 3003095083,
@@ -89054,7 +89070,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "95级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095084] = {
 		id = 3003095084,
@@ -89081,7 +89097,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "95级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095085] = {
 		id = 3003095085,
@@ -89108,7 +89124,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "95级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003095086] = {
 		id = 3003095086,
@@ -89135,7 +89151,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "95级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100011] = {
 		id = 3003100011,
@@ -89162,7 +89178,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "100级普通的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100012] = {
 		id = 3003100012,
@@ -89189,7 +89205,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "100级精良的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100013] = {
 		id = 3003100013,
@@ -89216,7 +89232,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "100级优质的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100014] = {
 		id = 3003100014,
@@ -89243,7 +89259,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "100级稀有的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100015] = {
 		id = 3003100015,
@@ -89270,7 +89286,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "100级卓越的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100016] = {
 		id = 3003100016,
@@ -89297,7 +89313,7 @@ local datas = {
 		iconPath = "icon/30106.png",
 		Description = "100级完美的枪手装备",
 		dropIconPath = "item_013.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100021] = {
 		id = 3003100021,
@@ -89324,7 +89340,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "100级普通的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100022] = {
 		id = 3003100022,
@@ -89351,7 +89367,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "100级精良的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100023] = {
 		id = 3003100023,
@@ -89378,7 +89394,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "100级优质的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100024] = {
 		id = 3003100024,
@@ -89405,7 +89421,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "100级稀有的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100025] = {
 		id = 3003100025,
@@ -89432,7 +89448,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "100级卓越的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100026] = {
 		id = 3003100026,
@@ -89459,7 +89475,7 @@ local datas = {
 		iconPath = "icon/30206.png",
 		Description = "100级完美的枪手装备",
 		dropIconPath = "item_014.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100031] = {
 		id = 3003100031,
@@ -89486,7 +89502,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "100级普通的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100032] = {
 		id = 3003100032,
@@ -89513,7 +89529,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "100级精良的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100033] = {
 		id = 3003100033,
@@ -89540,7 +89556,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "100级优质的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100034] = {
 		id = 3003100034,
@@ -89567,7 +89583,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "100级稀有的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100035] = {
 		id = 3003100035,
@@ -89594,7 +89610,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "100级卓越的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100036] = {
 		id = 3003100036,
@@ -89621,7 +89637,7 @@ local datas = {
 		iconPath = "icon/30306.png",
 		Description = "100级完美的枪手装备",
 		dropIconPath = "item_012.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100041] = {
 		id = 3003100041,
@@ -89648,7 +89664,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "100级普通的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100042] = {
 		id = 3003100042,
@@ -89675,7 +89691,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "100级精良的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100043] = {
 		id = 3003100043,
@@ -89702,7 +89718,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "100级优质的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100044] = {
 		id = 3003100044,
@@ -89729,7 +89745,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "100级稀有的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100045] = {
 		id = 3003100045,
@@ -89756,7 +89772,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "100级卓越的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100046] = {
 		id = 3003100046,
@@ -89783,7 +89799,7 @@ local datas = {
 		iconPath = "icon/30406.png",
 		Description = "100级完美的枪手装备",
 		dropIconPath = "item_011.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100051] = {
 		id = 3003100051,
@@ -89810,7 +89826,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "100级普通的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100052] = {
 		id = 3003100052,
@@ -89837,7 +89853,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "100级精良的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100053] = {
 		id = 3003100053,
@@ -89864,7 +89880,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "100级优质的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100054] = {
 		id = 3003100054,
@@ -89891,7 +89907,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "100级稀有的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100055] = {
 		id = 3003100055,
@@ -89918,7 +89934,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "100级卓越的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100056] = {
 		id = 3003100056,
@@ -89945,7 +89961,7 @@ local datas = {
 		iconPath = "icon/30506.png",
 		Description = "100级完美的枪手装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3003100061] = {
 		id = 3003100061,
@@ -89972,7 +89988,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "100级普通的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100062] = {
 		id = 3003100062,
@@ -89999,7 +90015,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "100级精良的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100063] = {
 		id = 3003100063,
@@ -90026,7 +90042,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "100级优质的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100064] = {
 		id = 3003100064,
@@ -90053,7 +90069,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "100级稀有的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100065] = {
 		id = 3003100065,
@@ -90080,7 +90096,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "100级卓越的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100066] = {
 		id = 3003100066,
@@ -90107,7 +90123,7 @@ local datas = {
 		iconPath = "icon/30606.png",
 		Description = "100级完美的枪手装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3003100071] = {
 		id = 3003100071,
@@ -90134,7 +90150,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "100级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100072] = {
 		id = 3003100072,
@@ -90161,7 +90177,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "100级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100073] = {
 		id = 3003100073,
@@ -90188,7 +90204,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "100级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100074] = {
 		id = 3003100074,
@@ -90215,7 +90231,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "100级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100075] = {
 		id = 3003100075,
@@ -90242,7 +90258,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "100级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100076] = {
 		id = 3003100076,
@@ -90269,7 +90285,7 @@ local datas = {
 		iconPath = "icon/30706.png",
 		Description = "100级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3003100081] = {
 		id = 3003100081,
@@ -90296,7 +90312,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "100级普通的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100082] = {
 		id = 3003100082,
@@ -90323,7 +90339,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "100级精良的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100083] = {
 		id = 3003100083,
@@ -90350,7 +90366,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "100级优质的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100084] = {
 		id = 3003100084,
@@ -90377,7 +90393,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "100级稀有的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100085] = {
 		id = 3003100085,
@@ -90404,7 +90420,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "100级卓越的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3003100086] = {
 		id = 3003100086,
@@ -90431,7 +90447,7 @@ local datas = {
 		iconPath = "icon/30806.png",
 		Description = "100级完美的枪手装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000011] = {
 		id = 3004000011,
@@ -90458,7 +90474,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "1级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000012] = {
 		id = 3004000012,
@@ -90485,7 +90501,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "1级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000013] = {
 		id = 3004000013,
@@ -90512,7 +90528,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "1级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000014] = {
 		id = 3004000014,
@@ -90539,7 +90555,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "1级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000015] = {
 		id = 3004000015,
@@ -90566,7 +90582,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "1级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000016] = {
 		id = 3004000016,
@@ -90593,7 +90609,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "1级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000021] = {
 		id = 3004000021,
@@ -90620,7 +90636,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "1级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000022] = {
 		id = 3004000022,
@@ -90647,7 +90663,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "1级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000023] = {
 		id = 3004000023,
@@ -90674,7 +90690,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "1级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000024] = {
 		id = 3004000024,
@@ -90701,7 +90717,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "1级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000025] = {
 		id = 3004000025,
@@ -90728,7 +90744,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "1级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000026] = {
 		id = 3004000026,
@@ -90755,7 +90771,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "1级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000031] = {
 		id = 3004000031,
@@ -90782,7 +90798,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "1级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000032] = {
 		id = 3004000032,
@@ -90809,7 +90825,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "1级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000033] = {
 		id = 3004000033,
@@ -90836,7 +90852,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "1级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000034] = {
 		id = 3004000034,
@@ -90863,7 +90879,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "1级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000035] = {
 		id = 3004000035,
@@ -90890,7 +90906,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "1级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000036] = {
 		id = 3004000036,
@@ -90917,7 +90933,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "1级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000041] = {
 		id = 3004000041,
@@ -90944,7 +90960,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "1级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000042] = {
 		id = 3004000042,
@@ -90971,7 +90987,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "1级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000043] = {
 		id = 3004000043,
@@ -90998,7 +91014,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "1级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000044] = {
 		id = 3004000044,
@@ -91025,7 +91041,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "1级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000045] = {
 		id = 3004000045,
@@ -91052,7 +91068,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "1级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000046] = {
 		id = 3004000046,
@@ -91079,7 +91095,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "1级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004000051] = {
 		id = 3004000051,
@@ -91106,7 +91122,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "1级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000052] = {
 		id = 3004000052,
@@ -91133,7 +91149,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "1级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000053] = {
 		id = 3004000053,
@@ -91160,7 +91176,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "1级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000054] = {
 		id = 3004000054,
@@ -91187,7 +91203,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "1级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000055] = {
 		id = 3004000055,
@@ -91214,7 +91230,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "1级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000056] = {
 		id = 3004000056,
@@ -91241,7 +91257,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "1级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004000061] = {
 		id = 3004000061,
@@ -91268,7 +91284,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "1级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000062] = {
 		id = 3004000062,
@@ -91295,7 +91311,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "1级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000063] = {
 		id = 3004000063,
@@ -91322,7 +91338,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "1级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000064] = {
 		id = 3004000064,
@@ -91349,7 +91365,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "1级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000065] = {
 		id = 3004000065,
@@ -91376,7 +91392,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "1级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000066] = {
 		id = 3004000066,
@@ -91403,7 +91419,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "1级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000071] = {
 		id = 3004000071,
@@ -91430,7 +91446,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "1级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000072] = {
 		id = 3004000072,
@@ -91457,7 +91473,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "1级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000073] = {
 		id = 3004000073,
@@ -91484,7 +91500,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "1级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000074] = {
 		id = 3004000074,
@@ -91511,7 +91527,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "1级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000075] = {
 		id = 3004000075,
@@ -91538,7 +91554,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "1级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000076] = {
 		id = 3004000076,
@@ -91565,7 +91581,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "1级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004000081] = {
 		id = 3004000081,
@@ -91592,7 +91608,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "1级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000082] = {
 		id = 3004000082,
@@ -91619,7 +91635,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "1级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000083] = {
 		id = 3004000083,
@@ -91646,7 +91662,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "1级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000084] = {
 		id = 3004000084,
@@ -91673,7 +91689,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "1级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000085] = {
 		id = 3004000085,
@@ -91700,7 +91716,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "1级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004000086] = {
 		id = 3004000086,
@@ -91727,7 +91743,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "1级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005011] = {
 		id = 3004005011,
@@ -91754,7 +91770,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "5级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005012] = {
 		id = 3004005012,
@@ -91781,7 +91797,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "5级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005013] = {
 		id = 3004005013,
@@ -91808,7 +91824,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "5级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005014] = {
 		id = 3004005014,
@@ -91835,7 +91851,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "5级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005015] = {
 		id = 3004005015,
@@ -91862,7 +91878,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "5级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005016] = {
 		id = 3004005016,
@@ -91889,7 +91905,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "5级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005021] = {
 		id = 3004005021,
@@ -91916,7 +91932,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "5级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005022] = {
 		id = 3004005022,
@@ -91943,7 +91959,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "5级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005023] = {
 		id = 3004005023,
@@ -91970,7 +91986,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "5级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005024] = {
 		id = 3004005024,
@@ -91997,7 +92013,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "5级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005025] = {
 		id = 3004005025,
@@ -92024,7 +92040,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "5级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005026] = {
 		id = 3004005026,
@@ -92051,7 +92067,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "5级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005031] = {
 		id = 3004005031,
@@ -92078,7 +92094,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "5级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005032] = {
 		id = 3004005032,
@@ -92105,7 +92121,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "5级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005033] = {
 		id = 3004005033,
@@ -92132,7 +92148,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "5级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005034] = {
 		id = 3004005034,
@@ -92159,7 +92175,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "5级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005035] = {
 		id = 3004005035,
@@ -92186,7 +92202,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "5级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005036] = {
 		id = 3004005036,
@@ -92213,7 +92229,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "5级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005041] = {
 		id = 3004005041,
@@ -92240,7 +92256,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "5级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005042] = {
 		id = 3004005042,
@@ -92267,7 +92283,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "5级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005043] = {
 		id = 3004005043,
@@ -92294,7 +92310,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "5级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005044] = {
 		id = 3004005044,
@@ -92321,7 +92337,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "5级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005045] = {
 		id = 3004005045,
@@ -92348,7 +92364,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "5级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005046] = {
 		id = 3004005046,
@@ -92375,7 +92391,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "5级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004005051] = {
 		id = 3004005051,
@@ -92402,7 +92418,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "5级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005052] = {
 		id = 3004005052,
@@ -92429,7 +92445,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "5级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005053] = {
 		id = 3004005053,
@@ -92456,7 +92472,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "5级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005054] = {
 		id = 3004005054,
@@ -92483,7 +92499,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "5级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005055] = {
 		id = 3004005055,
@@ -92510,7 +92526,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "5级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005056] = {
 		id = 3004005056,
@@ -92537,7 +92553,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "5级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004005061] = {
 		id = 3004005061,
@@ -92564,7 +92580,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "5级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005062] = {
 		id = 3004005062,
@@ -92591,7 +92607,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "5级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005063] = {
 		id = 3004005063,
@@ -92618,7 +92634,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "5级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005064] = {
 		id = 3004005064,
@@ -92645,7 +92661,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "5级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005065] = {
 		id = 3004005065,
@@ -92672,7 +92688,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "5级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005066] = {
 		id = 3004005066,
@@ -92699,7 +92715,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "5级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005071] = {
 		id = 3004005071,
@@ -92726,7 +92742,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "5级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005072] = {
 		id = 3004005072,
@@ -92753,7 +92769,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "5级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005073] = {
 		id = 3004005073,
@@ -92780,7 +92796,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "5级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005074] = {
 		id = 3004005074,
@@ -92807,7 +92823,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "5级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005075] = {
 		id = 3004005075,
@@ -92834,7 +92850,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "5级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005076] = {
 		id = 3004005076,
@@ -92861,7 +92877,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "5级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004005081] = {
 		id = 3004005081,
@@ -92888,7 +92904,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "5级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005082] = {
 		id = 3004005082,
@@ -92915,7 +92931,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "5级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005083] = {
 		id = 3004005083,
@@ -92942,7 +92958,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "5级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005084] = {
 		id = 3004005084,
@@ -92969,7 +92985,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "5级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005085] = {
 		id = 3004005085,
@@ -92996,7 +93012,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "5级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004005086] = {
 		id = 3004005086,
@@ -93023,7 +93039,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "5级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010011] = {
 		id = 3004010011,
@@ -93050,7 +93066,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "10级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010012] = {
 		id = 3004010012,
@@ -93077,7 +93093,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "10级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010013] = {
 		id = 3004010013,
@@ -93104,7 +93120,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "10级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010014] = {
 		id = 3004010014,
@@ -93131,7 +93147,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "10级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010015] = {
 		id = 3004010015,
@@ -93158,7 +93174,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "10级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010016] = {
 		id = 3004010016,
@@ -93185,7 +93201,7 @@ local datas = {
 		iconPath = "icon/40101.png",
 		Description = "10级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010021] = {
 		id = 3004010021,
@@ -93212,7 +93228,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "10级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010022] = {
 		id = 3004010022,
@@ -93239,7 +93255,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "10级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010023] = {
 		id = 3004010023,
@@ -93266,7 +93282,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "10级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010024] = {
 		id = 3004010024,
@@ -93293,7 +93309,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "10级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010025] = {
 		id = 3004010025,
@@ -93320,7 +93336,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "10级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010026] = {
 		id = 3004010026,
@@ -93347,7 +93363,7 @@ local datas = {
 		iconPath = "icon/40201.png",
 		Description = "10级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010031] = {
 		id = 3004010031,
@@ -93374,7 +93390,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "10级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010032] = {
 		id = 3004010032,
@@ -93401,7 +93417,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "10级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010033] = {
 		id = 3004010033,
@@ -93428,7 +93444,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "10级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010034] = {
 		id = 3004010034,
@@ -93455,7 +93471,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "10级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010035] = {
 		id = 3004010035,
@@ -93482,7 +93498,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "10级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010036] = {
 		id = 3004010036,
@@ -93509,7 +93525,7 @@ local datas = {
 		iconPath = "icon/40301.png",
 		Description = "10级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010041] = {
 		id = 3004010041,
@@ -93536,7 +93552,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "10级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010042] = {
 		id = 3004010042,
@@ -93563,7 +93579,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "10级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010043] = {
 		id = 3004010043,
@@ -93590,7 +93606,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "10级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010044] = {
 		id = 3004010044,
@@ -93617,7 +93633,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "10级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010045] = {
 		id = 3004010045,
@@ -93644,7 +93660,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "10级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010046] = {
 		id = 3004010046,
@@ -93671,7 +93687,7 @@ local datas = {
 		iconPath = "icon/40401.png",
 		Description = "10级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004010051] = {
 		id = 3004010051,
@@ -93698,7 +93714,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "10级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010052] = {
 		id = 3004010052,
@@ -93725,7 +93741,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "10级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010053] = {
 		id = 3004010053,
@@ -93752,7 +93768,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "10级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010054] = {
 		id = 3004010054,
@@ -93779,7 +93795,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "10级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010055] = {
 		id = 3004010055,
@@ -93806,7 +93822,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "10级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010056] = {
 		id = 3004010056,
@@ -93833,7 +93849,7 @@ local datas = {
 		iconPath = "icon/40501.png",
 		Description = "10级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004010061] = {
 		id = 3004010061,
@@ -93860,7 +93876,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "10级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010062] = {
 		id = 3004010062,
@@ -93887,7 +93903,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "10级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010063] = {
 		id = 3004010063,
@@ -93914,7 +93930,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "10级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010064] = {
 		id = 3004010064,
@@ -93941,7 +93957,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "10级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010065] = {
 		id = 3004010065,
@@ -93968,7 +93984,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "10级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010066] = {
 		id = 3004010066,
@@ -93995,7 +94011,7 @@ local datas = {
 		iconPath = "icon/40601.png",
 		Description = "10级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010071] = {
 		id = 3004010071,
@@ -94022,7 +94038,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "10级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010072] = {
 		id = 3004010072,
@@ -94049,7 +94065,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "10级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010073] = {
 		id = 3004010073,
@@ -94076,7 +94092,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "10级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010074] = {
 		id = 3004010074,
@@ -94103,7 +94119,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "10级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010075] = {
 		id = 3004010075,
@@ -94130,7 +94146,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "10级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010076] = {
 		id = 3004010076,
@@ -94157,7 +94173,7 @@ local datas = {
 		iconPath = "icon/40701.png",
 		Description = "10级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004010081] = {
 		id = 3004010081,
@@ -94184,7 +94200,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "10级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010082] = {
 		id = 3004010082,
@@ -94211,7 +94227,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "10级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010083] = {
 		id = 3004010083,
@@ -94238,7 +94254,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "10级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010084] = {
 		id = 3004010084,
@@ -94265,7 +94281,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "10级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010085] = {
 		id = 3004010085,
@@ -94292,7 +94308,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "10级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004010086] = {
 		id = 3004010086,
@@ -94319,7 +94335,7 @@ local datas = {
 		iconPath = "icon/40801.png",
 		Description = "10级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015011] = {
 		id = 3004015011,
@@ -94346,7 +94362,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "15级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015012] = {
 		id = 3004015012,
@@ -94373,7 +94389,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "15级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015013] = {
 		id = 3004015013,
@@ -94400,7 +94416,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "15级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015014] = {
 		id = 3004015014,
@@ -94427,7 +94443,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "15级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015015] = {
 		id = 3004015015,
@@ -94454,7 +94470,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "15级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015016] = {
 		id = 3004015016,
@@ -94481,7 +94497,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "15级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015021] = {
 		id = 3004015021,
@@ -94508,7 +94524,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "15级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015022] = {
 		id = 3004015022,
@@ -94535,7 +94551,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "15级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015023] = {
 		id = 3004015023,
@@ -94562,7 +94578,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "15级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015024] = {
 		id = 3004015024,
@@ -94589,7 +94605,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "15级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015025] = {
 		id = 3004015025,
@@ -94616,7 +94632,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "15级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015026] = {
 		id = 3004015026,
@@ -94643,7 +94659,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "15级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015031] = {
 		id = 3004015031,
@@ -94670,7 +94686,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "15级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015032] = {
 		id = 3004015032,
@@ -94697,7 +94713,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "15级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015033] = {
 		id = 3004015033,
@@ -94724,7 +94740,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "15级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015034] = {
 		id = 3004015034,
@@ -94751,7 +94767,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "15级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015035] = {
 		id = 3004015035,
@@ -94778,7 +94794,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "15级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015036] = {
 		id = 3004015036,
@@ -94805,7 +94821,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "15级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015041] = {
 		id = 3004015041,
@@ -94832,7 +94848,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "15级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015042] = {
 		id = 3004015042,
@@ -94859,7 +94875,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "15级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015043] = {
 		id = 3004015043,
@@ -94886,7 +94902,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "15级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015044] = {
 		id = 3004015044,
@@ -94913,7 +94929,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "15级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015045] = {
 		id = 3004015045,
@@ -94940,7 +94956,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "15级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015046] = {
 		id = 3004015046,
@@ -94967,7 +94983,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "15级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004015051] = {
 		id = 3004015051,
@@ -94994,7 +95010,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "15级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015052] = {
 		id = 3004015052,
@@ -95021,7 +95037,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "15级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015053] = {
 		id = 3004015053,
@@ -95048,7 +95064,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "15级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015054] = {
 		id = 3004015054,
@@ -95075,7 +95091,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "15级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015055] = {
 		id = 3004015055,
@@ -95102,7 +95118,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "15级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015056] = {
 		id = 3004015056,
@@ -95129,7 +95145,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "15级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004015061] = {
 		id = 3004015061,
@@ -95156,7 +95172,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "15级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015062] = {
 		id = 3004015062,
@@ -95183,7 +95199,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "15级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015063] = {
 		id = 3004015063,
@@ -95210,7 +95226,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "15级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015064] = {
 		id = 3004015064,
@@ -95237,7 +95253,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "15级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015065] = {
 		id = 3004015065,
@@ -95264,7 +95280,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "15级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015066] = {
 		id = 3004015066,
@@ -95291,7 +95307,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "15级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015071] = {
 		id = 3004015071,
@@ -95318,7 +95334,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "15级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015072] = {
 		id = 3004015072,
@@ -95345,7 +95361,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "15级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015073] = {
 		id = 3004015073,
@@ -95372,7 +95388,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "15级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015074] = {
 		id = 3004015074,
@@ -95399,7 +95415,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "15级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015075] = {
 		id = 3004015075,
@@ -95426,7 +95442,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "15级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015076] = {
 		id = 3004015076,
@@ -95453,7 +95469,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "15级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004015081] = {
 		id = 3004015081,
@@ -95480,7 +95496,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "15级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015082] = {
 		id = 3004015082,
@@ -95507,7 +95523,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "15级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015083] = {
 		id = 3004015083,
@@ -95534,7 +95550,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "15级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015084] = {
 		id = 3004015084,
@@ -95561,7 +95577,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "15级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015085] = {
 		id = 3004015085,
@@ -95588,7 +95604,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "15级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004015086] = {
 		id = 3004015086,
@@ -95615,7 +95631,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "15级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020011] = {
 		id = 3004020011,
@@ -95642,7 +95658,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "20级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020012] = {
 		id = 3004020012,
@@ -95669,7 +95685,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "20级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020013] = {
 		id = 3004020013,
@@ -95696,7 +95712,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "20级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020014] = {
 		id = 3004020014,
@@ -95723,7 +95739,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "20级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020015] = {
 		id = 3004020015,
@@ -95750,7 +95766,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "20级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020016] = {
 		id = 3004020016,
@@ -95777,7 +95793,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "20级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020021] = {
 		id = 3004020021,
@@ -95804,7 +95820,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "20级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020022] = {
 		id = 3004020022,
@@ -95831,7 +95847,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "20级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020023] = {
 		id = 3004020023,
@@ -95858,7 +95874,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "20级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020024] = {
 		id = 3004020024,
@@ -95885,7 +95901,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "20级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020025] = {
 		id = 3004020025,
@@ -95912,7 +95928,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "20级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020026] = {
 		id = 3004020026,
@@ -95939,7 +95955,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "20级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020031] = {
 		id = 3004020031,
@@ -95966,7 +95982,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "20级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020032] = {
 		id = 3004020032,
@@ -95993,7 +96009,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "20级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020033] = {
 		id = 3004020033,
@@ -96020,7 +96036,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "20级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020034] = {
 		id = 3004020034,
@@ -96047,7 +96063,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "20级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020035] = {
 		id = 3004020035,
@@ -96074,7 +96090,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "20级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020036] = {
 		id = 3004020036,
@@ -96101,7 +96117,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "20级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020041] = {
 		id = 3004020041,
@@ -96128,7 +96144,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "20级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020042] = {
 		id = 3004020042,
@@ -96155,7 +96171,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "20级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020043] = {
 		id = 3004020043,
@@ -96182,7 +96198,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "20级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020044] = {
 		id = 3004020044,
@@ -96209,7 +96225,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "20级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020045] = {
 		id = 3004020045,
@@ -96236,7 +96252,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "20级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020046] = {
 		id = 3004020046,
@@ -96263,7 +96279,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "20级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004020051] = {
 		id = 3004020051,
@@ -96290,7 +96306,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "20级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020052] = {
 		id = 3004020052,
@@ -96317,7 +96333,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "20级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020053] = {
 		id = 3004020053,
@@ -96344,7 +96360,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "20级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020054] = {
 		id = 3004020054,
@@ -96371,7 +96387,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "20级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020055] = {
 		id = 3004020055,
@@ -96398,7 +96414,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "20级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020056] = {
 		id = 3004020056,
@@ -96425,7 +96441,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "20级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004020061] = {
 		id = 3004020061,
@@ -96452,7 +96468,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "20级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020062] = {
 		id = 3004020062,
@@ -96479,7 +96495,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "20级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020063] = {
 		id = 3004020063,
@@ -96506,7 +96522,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "20级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020064] = {
 		id = 3004020064,
@@ -96533,7 +96549,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "20级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020065] = {
 		id = 3004020065,
@@ -96560,7 +96576,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "20级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020066] = {
 		id = 3004020066,
@@ -96587,7 +96603,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "20级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020071] = {
 		id = 3004020071,
@@ -96614,7 +96630,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "20级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020072] = {
 		id = 3004020072,
@@ -96641,7 +96657,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "20级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020073] = {
 		id = 3004020073,
@@ -96668,7 +96684,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "20级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020074] = {
 		id = 3004020074,
@@ -96695,7 +96711,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "20级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020075] = {
 		id = 3004020075,
@@ -96722,7 +96738,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "20级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020076] = {
 		id = 3004020076,
@@ -96749,7 +96765,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "20级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004020081] = {
 		id = 3004020081,
@@ -96776,7 +96792,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "20级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020082] = {
 		id = 3004020082,
@@ -96803,7 +96819,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "20级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020083] = {
 		id = 3004020083,
@@ -96830,7 +96846,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "20级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020084] = {
 		id = 3004020084,
@@ -96857,7 +96873,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "20级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020085] = {
 		id = 3004020085,
@@ -96884,7 +96900,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "20级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004020086] = {
 		id = 3004020086,
@@ -96911,7 +96927,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "20级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025011] = {
 		id = 3004025011,
@@ -96938,7 +96954,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "25级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025012] = {
 		id = 3004025012,
@@ -96965,7 +96981,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "25级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025013] = {
 		id = 3004025013,
@@ -96992,7 +97008,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "25级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025014] = {
 		id = 3004025014,
@@ -97019,7 +97035,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "25级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025015] = {
 		id = 3004025015,
@@ -97046,7 +97062,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "25级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025016] = {
 		id = 3004025016,
@@ -97073,7 +97089,7 @@ local datas = {
 		iconPath = "icon/40102.png",
 		Description = "25级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025021] = {
 		id = 3004025021,
@@ -97100,7 +97116,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "25级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025022] = {
 		id = 3004025022,
@@ -97127,7 +97143,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "25级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025023] = {
 		id = 3004025023,
@@ -97154,7 +97170,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "25级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025024] = {
 		id = 3004025024,
@@ -97181,7 +97197,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "25级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025025] = {
 		id = 3004025025,
@@ -97208,7 +97224,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "25级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025026] = {
 		id = 3004025026,
@@ -97235,7 +97251,7 @@ local datas = {
 		iconPath = "icon/40202.png",
 		Description = "25级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025031] = {
 		id = 3004025031,
@@ -97262,7 +97278,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "25级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025032] = {
 		id = 3004025032,
@@ -97289,7 +97305,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "25级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025033] = {
 		id = 3004025033,
@@ -97316,7 +97332,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "25级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025034] = {
 		id = 3004025034,
@@ -97343,7 +97359,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "25级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025035] = {
 		id = 3004025035,
@@ -97370,7 +97386,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "25级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025036] = {
 		id = 3004025036,
@@ -97397,7 +97413,7 @@ local datas = {
 		iconPath = "icon/40302.png",
 		Description = "25级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025041] = {
 		id = 3004025041,
@@ -97424,7 +97440,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "25级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025042] = {
 		id = 3004025042,
@@ -97451,7 +97467,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "25级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025043] = {
 		id = 3004025043,
@@ -97478,7 +97494,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "25级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025044] = {
 		id = 3004025044,
@@ -97505,7 +97521,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "25级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025045] = {
 		id = 3004025045,
@@ -97532,7 +97548,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "25级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025046] = {
 		id = 3004025046,
@@ -97559,7 +97575,7 @@ local datas = {
 		iconPath = "icon/40402.png",
 		Description = "25级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004025051] = {
 		id = 3004025051,
@@ -97586,7 +97602,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "25级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025052] = {
 		id = 3004025052,
@@ -97613,7 +97629,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "25级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025053] = {
 		id = 3004025053,
@@ -97640,7 +97656,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "25级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025054] = {
 		id = 3004025054,
@@ -97667,7 +97683,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "25级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025055] = {
 		id = 3004025055,
@@ -97694,7 +97710,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "25级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025056] = {
 		id = 3004025056,
@@ -97721,7 +97737,7 @@ local datas = {
 		iconPath = "icon/40502.png",
 		Description = "25级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004025061] = {
 		id = 3004025061,
@@ -97748,7 +97764,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "25级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025062] = {
 		id = 3004025062,
@@ -97775,7 +97791,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "25级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025063] = {
 		id = 3004025063,
@@ -97802,7 +97818,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "25级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025064] = {
 		id = 3004025064,
@@ -97829,7 +97845,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "25级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025065] = {
 		id = 3004025065,
@@ -97856,7 +97872,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "25级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025066] = {
 		id = 3004025066,
@@ -97883,7 +97899,7 @@ local datas = {
 		iconPath = "icon/40602.png",
 		Description = "25级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025071] = {
 		id = 3004025071,
@@ -97910,7 +97926,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "25级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025072] = {
 		id = 3004025072,
@@ -97937,7 +97953,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "25级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025073] = {
 		id = 3004025073,
@@ -97964,7 +97980,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "25级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025074] = {
 		id = 3004025074,
@@ -97991,7 +98007,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "25级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025075] = {
 		id = 3004025075,
@@ -98018,7 +98034,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "25级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025076] = {
 		id = 3004025076,
@@ -98045,7 +98061,7 @@ local datas = {
 		iconPath = "icon/40702.png",
 		Description = "25级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004025081] = {
 		id = 3004025081,
@@ -98072,7 +98088,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "25级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025082] = {
 		id = 3004025082,
@@ -98099,7 +98115,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "25级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025083] = {
 		id = 3004025083,
@@ -98126,7 +98142,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "25级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025084] = {
 		id = 3004025084,
@@ -98153,7 +98169,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "25级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025085] = {
 		id = 3004025085,
@@ -98180,7 +98196,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "25级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004025086] = {
 		id = 3004025086,
@@ -98207,7 +98223,7 @@ local datas = {
 		iconPath = "icon/40802.png",
 		Description = "25级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030011] = {
 		id = 3004030011,
@@ -98234,7 +98250,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "30级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030012] = {
 		id = 3004030012,
@@ -98261,7 +98277,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "30级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030013] = {
 		id = 3004030013,
@@ -98288,7 +98304,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "30级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030014] = {
 		id = 3004030014,
@@ -98315,7 +98331,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "30级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030015] = {
 		id = 3004030015,
@@ -98342,7 +98358,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "30级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030016] = {
 		id = 3004030016,
@@ -98369,7 +98385,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "30级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030021] = {
 		id = 3004030021,
@@ -98396,7 +98412,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "30级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030022] = {
 		id = 3004030022,
@@ -98423,7 +98439,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "30级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030023] = {
 		id = 3004030023,
@@ -98450,7 +98466,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "30级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030024] = {
 		id = 3004030024,
@@ -98477,7 +98493,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "30级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030025] = {
 		id = 3004030025,
@@ -98504,7 +98520,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "30级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030026] = {
 		id = 3004030026,
@@ -98531,7 +98547,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "30级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030031] = {
 		id = 3004030031,
@@ -98558,7 +98574,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "30级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030032] = {
 		id = 3004030032,
@@ -98585,7 +98601,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "30级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030033] = {
 		id = 3004030033,
@@ -98612,7 +98628,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "30级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030034] = {
 		id = 3004030034,
@@ -98639,7 +98655,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "30级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030035] = {
 		id = 3004030035,
@@ -98666,7 +98682,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "30级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030036] = {
 		id = 3004030036,
@@ -98693,7 +98709,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "30级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030041] = {
 		id = 3004030041,
@@ -98720,7 +98736,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "30级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030042] = {
 		id = 3004030042,
@@ -98747,7 +98763,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "30级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030043] = {
 		id = 3004030043,
@@ -98774,7 +98790,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "30级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030044] = {
 		id = 3004030044,
@@ -98801,7 +98817,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "30级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030045] = {
 		id = 3004030045,
@@ -98828,7 +98844,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "30级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030046] = {
 		id = 3004030046,
@@ -98855,7 +98871,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "30级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004030051] = {
 		id = 3004030051,
@@ -98882,7 +98898,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "30级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030052] = {
 		id = 3004030052,
@@ -98909,7 +98925,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "30级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030053] = {
 		id = 3004030053,
@@ -98936,7 +98952,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "30级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030054] = {
 		id = 3004030054,
@@ -98963,7 +98979,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "30级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030055] = {
 		id = 3004030055,
@@ -98990,7 +99006,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "30级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030056] = {
 		id = 3004030056,
@@ -99017,7 +99033,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "30级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004030061] = {
 		id = 3004030061,
@@ -99044,7 +99060,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "30级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030062] = {
 		id = 3004030062,
@@ -99071,7 +99087,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "30级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030063] = {
 		id = 3004030063,
@@ -99098,7 +99114,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "30级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030064] = {
 		id = 3004030064,
@@ -99125,7 +99141,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "30级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030065] = {
 		id = 3004030065,
@@ -99152,7 +99168,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "30级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030066] = {
 		id = 3004030066,
@@ -99179,7 +99195,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "30级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030071] = {
 		id = 3004030071,
@@ -99206,7 +99222,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "30级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030072] = {
 		id = 3004030072,
@@ -99233,7 +99249,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "30级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030073] = {
 		id = 3004030073,
@@ -99260,7 +99276,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "30级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030074] = {
 		id = 3004030074,
@@ -99287,7 +99303,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "30级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030075] = {
 		id = 3004030075,
@@ -99314,7 +99330,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "30级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030076] = {
 		id = 3004030076,
@@ -99341,7 +99357,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "30级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004030081] = {
 		id = 3004030081,
@@ -99368,7 +99384,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "30级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030082] = {
 		id = 3004030082,
@@ -99395,7 +99411,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "30级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030083] = {
 		id = 3004030083,
@@ -99422,7 +99438,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "30级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030084] = {
 		id = 3004030084,
@@ -99449,7 +99465,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "30级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030085] = {
 		id = 3004030085,
@@ -99476,7 +99492,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "30级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004030086] = {
 		id = 3004030086,
@@ -99503,7 +99519,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "30级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035011] = {
 		id = 3004035011,
@@ -99530,7 +99546,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "35级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035012] = {
 		id = 3004035012,
@@ -99557,7 +99573,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "35级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035013] = {
 		id = 3004035013,
@@ -99584,7 +99600,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "35级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035014] = {
 		id = 3004035014,
@@ -99611,7 +99627,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "35级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035015] = {
 		id = 3004035015,
@@ -99638,7 +99654,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "35级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035016] = {
 		id = 3004035016,
@@ -99665,7 +99681,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "35级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035021] = {
 		id = 3004035021,
@@ -99692,7 +99708,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "35级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035022] = {
 		id = 3004035022,
@@ -99719,7 +99735,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "35级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035023] = {
 		id = 3004035023,
@@ -99746,7 +99762,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "35级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035024] = {
 		id = 3004035024,
@@ -99773,7 +99789,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "35级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035025] = {
 		id = 3004035025,
@@ -99800,7 +99816,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "35级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035026] = {
 		id = 3004035026,
@@ -99827,7 +99843,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "35级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035031] = {
 		id = 3004035031,
@@ -99854,7 +99870,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "35级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035032] = {
 		id = 3004035032,
@@ -99881,7 +99897,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "35级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035033] = {
 		id = 3004035033,
@@ -99908,7 +99924,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "35级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035034] = {
 		id = 3004035034,
@@ -99935,7 +99951,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "35级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035035] = {
 		id = 3004035035,
@@ -99962,7 +99978,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "35级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035036] = {
 		id = 3004035036,
@@ -99989,7 +100005,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "35级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035041] = {
 		id = 3004035041,
@@ -100016,7 +100032,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "35级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035042] = {
 		id = 3004035042,
@@ -100043,7 +100059,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "35级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035043] = {
 		id = 3004035043,
@@ -100070,7 +100086,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "35级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035044] = {
 		id = 3004035044,
@@ -100097,7 +100113,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "35级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035045] = {
 		id = 3004035045,
@@ -100124,7 +100140,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "35级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035046] = {
 		id = 3004035046,
@@ -100151,7 +100167,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "35级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004035051] = {
 		id = 3004035051,
@@ -100178,7 +100194,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "35级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035052] = {
 		id = 3004035052,
@@ -100205,7 +100221,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "35级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035053] = {
 		id = 3004035053,
@@ -100232,7 +100248,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "35级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035054] = {
 		id = 3004035054,
@@ -100259,7 +100275,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "35级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035055] = {
 		id = 3004035055,
@@ -100286,7 +100302,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "35级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035056] = {
 		id = 3004035056,
@@ -100313,7 +100329,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "35级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004035061] = {
 		id = 3004035061,
@@ -100340,7 +100356,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "35级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035062] = {
 		id = 3004035062,
@@ -100367,7 +100383,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "35级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035063] = {
 		id = 3004035063,
@@ -100394,7 +100410,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "35级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035064] = {
 		id = 3004035064,
@@ -100421,7 +100437,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "35级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035065] = {
 		id = 3004035065,
@@ -100448,7 +100464,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "35级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035066] = {
 		id = 3004035066,
@@ -100475,7 +100491,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "35级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035071] = {
 		id = 3004035071,
@@ -100502,7 +100518,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "35级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035072] = {
 		id = 3004035072,
@@ -100529,7 +100545,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "35级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035073] = {
 		id = 3004035073,
@@ -100556,7 +100572,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "35级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035074] = {
 		id = 3004035074,
@@ -100583,7 +100599,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "35级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035075] = {
 		id = 3004035075,
@@ -100610,7 +100626,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "35级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035076] = {
 		id = 3004035076,
@@ -100637,7 +100653,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "35级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004035081] = {
 		id = 3004035081,
@@ -100664,7 +100680,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "35级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035082] = {
 		id = 3004035082,
@@ -100691,7 +100707,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "35级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035083] = {
 		id = 3004035083,
@@ -100718,7 +100734,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "35级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035084] = {
 		id = 3004035084,
@@ -100745,7 +100761,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "35级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035085] = {
 		id = 3004035085,
@@ -100772,7 +100788,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "35级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004035086] = {
 		id = 3004035086,
@@ -100799,7 +100815,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "35级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040011] = {
 		id = 3004040011,
@@ -100826,7 +100842,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "40级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040012] = {
 		id = 3004040012,
@@ -100853,7 +100869,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "40级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040013] = {
 		id = 3004040013,
@@ -100880,7 +100896,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "40级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040014] = {
 		id = 3004040014,
@@ -100907,7 +100923,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "40级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040015] = {
 		id = 3004040015,
@@ -100934,7 +100950,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "40级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040016] = {
 		id = 3004040016,
@@ -100961,7 +100977,7 @@ local datas = {
 		iconPath = "icon/40103.png",
 		Description = "40级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040021] = {
 		id = 3004040021,
@@ -100988,7 +101004,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "40级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040022] = {
 		id = 3004040022,
@@ -101015,7 +101031,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "40级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040023] = {
 		id = 3004040023,
@@ -101042,7 +101058,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "40级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040024] = {
 		id = 3004040024,
@@ -101069,7 +101085,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "40级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040025] = {
 		id = 3004040025,
@@ -101096,7 +101112,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "40级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040026] = {
 		id = 3004040026,
@@ -101123,7 +101139,7 @@ local datas = {
 		iconPath = "icon/40203.png",
 		Description = "40级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040031] = {
 		id = 3004040031,
@@ -101150,7 +101166,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "40级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040032] = {
 		id = 3004040032,
@@ -101177,7 +101193,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "40级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040033] = {
 		id = 3004040033,
@@ -101204,7 +101220,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "40级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040034] = {
 		id = 3004040034,
@@ -101231,7 +101247,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "40级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040035] = {
 		id = 3004040035,
@@ -101258,7 +101274,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "40级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040036] = {
 		id = 3004040036,
@@ -101285,7 +101301,7 @@ local datas = {
 		iconPath = "icon/40303.png",
 		Description = "40级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040041] = {
 		id = 3004040041,
@@ -101312,7 +101328,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "40级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040042] = {
 		id = 3004040042,
@@ -101339,7 +101355,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "40级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040043] = {
 		id = 3004040043,
@@ -101366,7 +101382,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "40级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040044] = {
 		id = 3004040044,
@@ -101393,7 +101409,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "40级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040045] = {
 		id = 3004040045,
@@ -101420,7 +101436,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "40级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040046] = {
 		id = 3004040046,
@@ -101447,7 +101463,7 @@ local datas = {
 		iconPath = "icon/40403.png",
 		Description = "40级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004040051] = {
 		id = 3004040051,
@@ -101474,7 +101490,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "40级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040052] = {
 		id = 3004040052,
@@ -101501,7 +101517,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "40级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040053] = {
 		id = 3004040053,
@@ -101528,7 +101544,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "40级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040054] = {
 		id = 3004040054,
@@ -101555,7 +101571,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "40级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040055] = {
 		id = 3004040055,
@@ -101582,7 +101598,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "40级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040056] = {
 		id = 3004040056,
@@ -101609,7 +101625,7 @@ local datas = {
 		iconPath = "icon/40503.png",
 		Description = "40级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004040061] = {
 		id = 3004040061,
@@ -101636,7 +101652,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "40级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040062] = {
 		id = 3004040062,
@@ -101663,7 +101679,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "40级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040063] = {
 		id = 3004040063,
@@ -101690,7 +101706,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "40级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040064] = {
 		id = 3004040064,
@@ -101717,7 +101733,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "40级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040065] = {
 		id = 3004040065,
@@ -101744,7 +101760,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "40级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040066] = {
 		id = 3004040066,
@@ -101771,7 +101787,7 @@ local datas = {
 		iconPath = "icon/40603.png",
 		Description = "40级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040071] = {
 		id = 3004040071,
@@ -101798,7 +101814,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "40级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040072] = {
 		id = 3004040072,
@@ -101825,7 +101841,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "40级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040073] = {
 		id = 3004040073,
@@ -101852,7 +101868,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "40级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040074] = {
 		id = 3004040074,
@@ -101879,7 +101895,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "40级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040075] = {
 		id = 3004040075,
@@ -101906,7 +101922,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "40级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040076] = {
 		id = 3004040076,
@@ -101933,7 +101949,7 @@ local datas = {
 		iconPath = "icon/40703.png",
 		Description = "40级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004040081] = {
 		id = 3004040081,
@@ -101960,7 +101976,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "40级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040082] = {
 		id = 3004040082,
@@ -101987,7 +102003,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "40级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040083] = {
 		id = 3004040083,
@@ -102014,7 +102030,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "40级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040084] = {
 		id = 3004040084,
@@ -102041,7 +102057,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "40级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040085] = {
 		id = 3004040085,
@@ -102068,7 +102084,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "40级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004040086] = {
 		id = 3004040086,
@@ -102095,7 +102111,7 @@ local datas = {
 		iconPath = "icon/40803.png",
 		Description = "40级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045011] = {
 		id = 3004045011,
@@ -102122,7 +102138,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "45级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045012] = {
 		id = 3004045012,
@@ -102149,7 +102165,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "45级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045013] = {
 		id = 3004045013,
@@ -102176,7 +102192,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "45级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045014] = {
 		id = 3004045014,
@@ -102203,7 +102219,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "45级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045015] = {
 		id = 3004045015,
@@ -102230,7 +102246,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "45级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045016] = {
 		id = 3004045016,
@@ -102257,7 +102273,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "45级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045021] = {
 		id = 3004045021,
@@ -102284,7 +102300,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "45级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045022] = {
 		id = 3004045022,
@@ -102311,7 +102327,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "45级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045023] = {
 		id = 3004045023,
@@ -102338,7 +102354,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "45级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045024] = {
 		id = 3004045024,
@@ -102365,7 +102381,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "45级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045025] = {
 		id = 3004045025,
@@ -102392,7 +102408,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "45级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045026] = {
 		id = 3004045026,
@@ -102419,7 +102435,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "45级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045031] = {
 		id = 3004045031,
@@ -102446,7 +102462,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "45级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045032] = {
 		id = 3004045032,
@@ -102473,7 +102489,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "45级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045033] = {
 		id = 3004045033,
@@ -102500,7 +102516,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "45级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045034] = {
 		id = 3004045034,
@@ -102527,7 +102543,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "45级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045035] = {
 		id = 3004045035,
@@ -102554,7 +102570,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "45级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045036] = {
 		id = 3004045036,
@@ -102581,7 +102597,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "45级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045041] = {
 		id = 3004045041,
@@ -102608,7 +102624,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "45级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045042] = {
 		id = 3004045042,
@@ -102635,7 +102651,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "45级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045043] = {
 		id = 3004045043,
@@ -102662,7 +102678,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "45级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045044] = {
 		id = 3004045044,
@@ -102689,7 +102705,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "45级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045045] = {
 		id = 3004045045,
@@ -102716,7 +102732,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "45级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045046] = {
 		id = 3004045046,
@@ -102743,7 +102759,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "45级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004045051] = {
 		id = 3004045051,
@@ -102770,7 +102786,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "45级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045052] = {
 		id = 3004045052,
@@ -102797,7 +102813,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "45级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045053] = {
 		id = 3004045053,
@@ -102824,7 +102840,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "45级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045054] = {
 		id = 3004045054,
@@ -102851,7 +102867,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "45级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045055] = {
 		id = 3004045055,
@@ -102878,7 +102894,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "45级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045056] = {
 		id = 3004045056,
@@ -102905,7 +102921,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "45级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004045061] = {
 		id = 3004045061,
@@ -102932,7 +102948,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "45级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045062] = {
 		id = 3004045062,
@@ -102959,7 +102975,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "45级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045063] = {
 		id = 3004045063,
@@ -102986,7 +103002,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "45级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045064] = {
 		id = 3004045064,
@@ -103013,7 +103029,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "45级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045065] = {
 		id = 3004045065,
@@ -103040,7 +103056,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "45级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045066] = {
 		id = 3004045066,
@@ -103067,7 +103083,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "45级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045071] = {
 		id = 3004045071,
@@ -103094,7 +103110,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "45级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045072] = {
 		id = 3004045072,
@@ -103121,7 +103137,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "45级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045073] = {
 		id = 3004045073,
@@ -103148,7 +103164,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "45级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045074] = {
 		id = 3004045074,
@@ -103175,7 +103191,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "45级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045075] = {
 		id = 3004045075,
@@ -103202,7 +103218,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "45级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045076] = {
 		id = 3004045076,
@@ -103229,7 +103245,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "45级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004045081] = {
 		id = 3004045081,
@@ -103256,7 +103272,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "45级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045082] = {
 		id = 3004045082,
@@ -103283,7 +103299,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "45级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045083] = {
 		id = 3004045083,
@@ -103310,7 +103326,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "45级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045084] = {
 		id = 3004045084,
@@ -103337,7 +103353,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "45级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045085] = {
 		id = 3004045085,
@@ -103364,7 +103380,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "45级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004045086] = {
 		id = 3004045086,
@@ -103391,7 +103407,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "45级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050011] = {
 		id = 3004050011,
@@ -103418,7 +103434,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "50级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050012] = {
 		id = 3004050012,
@@ -103445,7 +103461,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "50级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050013] = {
 		id = 3004050013,
@@ -103472,7 +103488,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "50级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050014] = {
 		id = 3004050014,
@@ -103499,7 +103515,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "50级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050015] = {
 		id = 3004050015,
@@ -103526,7 +103542,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "50级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050016] = {
 		id = 3004050016,
@@ -103553,7 +103569,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "50级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050021] = {
 		id = 3004050021,
@@ -103580,7 +103596,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "50级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050022] = {
 		id = 3004050022,
@@ -103607,7 +103623,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "50级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050023] = {
 		id = 3004050023,
@@ -103634,7 +103650,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "50级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050024] = {
 		id = 3004050024,
@@ -103661,7 +103677,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "50级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050025] = {
 		id = 3004050025,
@@ -103688,7 +103704,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "50级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050026] = {
 		id = 3004050026,
@@ -103715,7 +103731,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "50级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050031] = {
 		id = 3004050031,
@@ -103742,7 +103758,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "50级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050032] = {
 		id = 3004050032,
@@ -103769,7 +103785,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "50级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050033] = {
 		id = 3004050033,
@@ -103796,7 +103812,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "50级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050034] = {
 		id = 3004050034,
@@ -103823,7 +103839,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "50级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050035] = {
 		id = 3004050035,
@@ -103850,7 +103866,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "50级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050036] = {
 		id = 3004050036,
@@ -103877,7 +103893,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "50级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050041] = {
 		id = 3004050041,
@@ -103904,7 +103920,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "50级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050042] = {
 		id = 3004050042,
@@ -103931,7 +103947,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "50级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050043] = {
 		id = 3004050043,
@@ -103958,7 +103974,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "50级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050044] = {
 		id = 3004050044,
@@ -103985,7 +104001,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "50级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050045] = {
 		id = 3004050045,
@@ -104012,7 +104028,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "50级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050046] = {
 		id = 3004050046,
@@ -104039,7 +104055,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "50级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004050051] = {
 		id = 3004050051,
@@ -104066,7 +104082,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "50级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050052] = {
 		id = 3004050052,
@@ -104093,7 +104109,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "50级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050053] = {
 		id = 3004050053,
@@ -104120,7 +104136,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "50级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050054] = {
 		id = 3004050054,
@@ -104147,7 +104163,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "50级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050055] = {
 		id = 3004050055,
@@ -104174,7 +104190,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "50级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050056] = {
 		id = 3004050056,
@@ -104201,7 +104217,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "50级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004050061] = {
 		id = 3004050061,
@@ -104228,7 +104244,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "50级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050062] = {
 		id = 3004050062,
@@ -104255,7 +104271,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "50级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050063] = {
 		id = 3004050063,
@@ -104282,7 +104298,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "50级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050064] = {
 		id = 3004050064,
@@ -104309,7 +104325,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "50级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050065] = {
 		id = 3004050065,
@@ -104336,7 +104352,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "50级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050066] = {
 		id = 3004050066,
@@ -104363,7 +104379,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "50级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050071] = {
 		id = 3004050071,
@@ -104390,7 +104406,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "50级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050072] = {
 		id = 3004050072,
@@ -104417,7 +104433,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "50级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050073] = {
 		id = 3004050073,
@@ -104444,7 +104460,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "50级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050074] = {
 		id = 3004050074,
@@ -104471,7 +104487,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "50级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050075] = {
 		id = 3004050075,
@@ -104498,7 +104514,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "50级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050076] = {
 		id = 3004050076,
@@ -104525,7 +104541,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "50级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004050081] = {
 		id = 3004050081,
@@ -104552,7 +104568,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "50级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050082] = {
 		id = 3004050082,
@@ -104579,7 +104595,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "50级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050083] = {
 		id = 3004050083,
@@ -104606,7 +104622,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "50级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050084] = {
 		id = 3004050084,
@@ -104633,7 +104649,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "50级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050085] = {
 		id = 3004050085,
@@ -104660,7 +104676,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "50级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004050086] = {
 		id = 3004050086,
@@ -104687,7 +104703,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "50级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055011] = {
 		id = 3004055011,
@@ -104714,7 +104730,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "55级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055012] = {
 		id = 3004055012,
@@ -104741,7 +104757,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "55级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055013] = {
 		id = 3004055013,
@@ -104768,7 +104784,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "55级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055014] = {
 		id = 3004055014,
@@ -104795,7 +104811,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "55级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055015] = {
 		id = 3004055015,
@@ -104822,7 +104838,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "55级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055016] = {
 		id = 3004055016,
@@ -104849,7 +104865,7 @@ local datas = {
 		iconPath = "icon/40104.png",
 		Description = "55级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055021] = {
 		id = 3004055021,
@@ -104876,7 +104892,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "55级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055022] = {
 		id = 3004055022,
@@ -104903,7 +104919,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "55级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055023] = {
 		id = 3004055023,
@@ -104930,7 +104946,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "55级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055024] = {
 		id = 3004055024,
@@ -104957,7 +104973,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "55级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055025] = {
 		id = 3004055025,
@@ -104984,7 +105000,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "55级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055026] = {
 		id = 3004055026,
@@ -105011,7 +105027,7 @@ local datas = {
 		iconPath = "icon/40204.png",
 		Description = "55级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055031] = {
 		id = 3004055031,
@@ -105038,7 +105054,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "55级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055032] = {
 		id = 3004055032,
@@ -105065,7 +105081,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "55级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055033] = {
 		id = 3004055033,
@@ -105092,7 +105108,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "55级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055034] = {
 		id = 3004055034,
@@ -105119,7 +105135,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "55级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055035] = {
 		id = 3004055035,
@@ -105146,7 +105162,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "55级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055036] = {
 		id = 3004055036,
@@ -105173,7 +105189,7 @@ local datas = {
 		iconPath = "icon/40304.png",
 		Description = "55级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055041] = {
 		id = 3004055041,
@@ -105200,7 +105216,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "55级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055042] = {
 		id = 3004055042,
@@ -105227,7 +105243,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "55级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055043] = {
 		id = 3004055043,
@@ -105254,7 +105270,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "55级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055044] = {
 		id = 3004055044,
@@ -105281,7 +105297,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "55级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055045] = {
 		id = 3004055045,
@@ -105308,7 +105324,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "55级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055046] = {
 		id = 3004055046,
@@ -105335,7 +105351,7 @@ local datas = {
 		iconPath = "icon/40404.png",
 		Description = "55级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004055051] = {
 		id = 3004055051,
@@ -105362,7 +105378,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "55级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055052] = {
 		id = 3004055052,
@@ -105389,7 +105405,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "55级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055053] = {
 		id = 3004055053,
@@ -105416,7 +105432,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "55级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055054] = {
 		id = 3004055054,
@@ -105443,7 +105459,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "55级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055055] = {
 		id = 3004055055,
@@ -105470,7 +105486,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "55级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055056] = {
 		id = 3004055056,
@@ -105497,7 +105513,7 @@ local datas = {
 		iconPath = "icon/40504.png",
 		Description = "55级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004055061] = {
 		id = 3004055061,
@@ -105524,7 +105540,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "55级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055062] = {
 		id = 3004055062,
@@ -105551,7 +105567,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "55级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055063] = {
 		id = 3004055063,
@@ -105578,7 +105594,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "55级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055064] = {
 		id = 3004055064,
@@ -105605,7 +105621,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "55级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055065] = {
 		id = 3004055065,
@@ -105632,7 +105648,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "55级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055066] = {
 		id = 3004055066,
@@ -105659,7 +105675,7 @@ local datas = {
 		iconPath = "icon/40604.png",
 		Description = "55级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055071] = {
 		id = 3004055071,
@@ -105686,7 +105702,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "55级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055072] = {
 		id = 3004055072,
@@ -105713,7 +105729,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "55级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055073] = {
 		id = 3004055073,
@@ -105740,7 +105756,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "55级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055074] = {
 		id = 3004055074,
@@ -105767,7 +105783,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "55级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055075] = {
 		id = 3004055075,
@@ -105794,7 +105810,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "55级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055076] = {
 		id = 3004055076,
@@ -105821,7 +105837,7 @@ local datas = {
 		iconPath = "icon/40704.png",
 		Description = "55级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004055081] = {
 		id = 3004055081,
@@ -105848,7 +105864,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "55级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055082] = {
 		id = 3004055082,
@@ -105875,7 +105891,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "55级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055083] = {
 		id = 3004055083,
@@ -105902,7 +105918,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "55级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055084] = {
 		id = 3004055084,
@@ -105929,7 +105945,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "55级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055085] = {
 		id = 3004055085,
@@ -105956,7 +105972,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "55级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004055086] = {
 		id = 3004055086,
@@ -105983,7 +105999,7 @@ local datas = {
 		iconPath = "icon/40804.png",
 		Description = "55级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060011] = {
 		id = 3004060011,
@@ -106010,7 +106026,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "60级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060012] = {
 		id = 3004060012,
@@ -106037,7 +106053,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "60级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060013] = {
 		id = 3004060013,
@@ -106064,7 +106080,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "60级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060014] = {
 		id = 3004060014,
@@ -106091,7 +106107,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "60级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060015] = {
 		id = 3004060015,
@@ -106118,7 +106134,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "60级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060016] = {
 		id = 3004060016,
@@ -106145,7 +106161,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "60级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060021] = {
 		id = 3004060021,
@@ -106172,7 +106188,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "60级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060022] = {
 		id = 3004060022,
@@ -106199,7 +106215,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "60级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060023] = {
 		id = 3004060023,
@@ -106226,7 +106242,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "60级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060024] = {
 		id = 3004060024,
@@ -106253,7 +106269,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "60级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060025] = {
 		id = 3004060025,
@@ -106280,7 +106296,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "60级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060026] = {
 		id = 3004060026,
@@ -106307,7 +106323,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "60级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060031] = {
 		id = 3004060031,
@@ -106334,7 +106350,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "60级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060032] = {
 		id = 3004060032,
@@ -106361,7 +106377,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "60级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060033] = {
 		id = 3004060033,
@@ -106388,7 +106404,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "60级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060034] = {
 		id = 3004060034,
@@ -106415,7 +106431,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "60级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060035] = {
 		id = 3004060035,
@@ -106442,7 +106458,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "60级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060036] = {
 		id = 3004060036,
@@ -106469,7 +106485,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "60级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060041] = {
 		id = 3004060041,
@@ -106496,7 +106512,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "60级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060042] = {
 		id = 3004060042,
@@ -106523,7 +106539,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "60级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060043] = {
 		id = 3004060043,
@@ -106550,7 +106566,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "60级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060044] = {
 		id = 3004060044,
@@ -106577,7 +106593,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "60级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060045] = {
 		id = 3004060045,
@@ -106604,7 +106620,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "60级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060046] = {
 		id = 3004060046,
@@ -106631,7 +106647,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "60级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004060051] = {
 		id = 3004060051,
@@ -106658,7 +106674,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "60级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060052] = {
 		id = 3004060052,
@@ -106685,7 +106701,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "60级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060053] = {
 		id = 3004060053,
@@ -106712,7 +106728,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "60级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060054] = {
 		id = 3004060054,
@@ -106739,7 +106755,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "60级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060055] = {
 		id = 3004060055,
@@ -106766,7 +106782,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "60级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060056] = {
 		id = 3004060056,
@@ -106793,7 +106809,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "60级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004060061] = {
 		id = 3004060061,
@@ -106820,7 +106836,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "60级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060062] = {
 		id = 3004060062,
@@ -106847,7 +106863,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "60级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060063] = {
 		id = 3004060063,
@@ -106874,7 +106890,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "60级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060064] = {
 		id = 3004060064,
@@ -106901,7 +106917,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "60级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060065] = {
 		id = 3004060065,
@@ -106928,7 +106944,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "60级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060066] = {
 		id = 3004060066,
@@ -106955,7 +106971,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "60级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060071] = {
 		id = 3004060071,
@@ -106982,7 +106998,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "60级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060072] = {
 		id = 3004060072,
@@ -107009,7 +107025,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "60级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060073] = {
 		id = 3004060073,
@@ -107036,7 +107052,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "60级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060074] = {
 		id = 3004060074,
@@ -107063,7 +107079,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "60级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060075] = {
 		id = 3004060075,
@@ -107090,7 +107106,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "60级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060076] = {
 		id = 3004060076,
@@ -107117,7 +107133,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "60级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004060081] = {
 		id = 3004060081,
@@ -107144,7 +107160,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "60级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060082] = {
 		id = 3004060082,
@@ -107171,7 +107187,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "60级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060083] = {
 		id = 3004060083,
@@ -107198,7 +107214,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "60级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060084] = {
 		id = 3004060084,
@@ -107225,7 +107241,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "60级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060085] = {
 		id = 3004060085,
@@ -107252,7 +107268,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "60级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004060086] = {
 		id = 3004060086,
@@ -107279,7 +107295,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "60级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065011] = {
 		id = 3004065011,
@@ -107306,7 +107322,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "65级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065012] = {
 		id = 3004065012,
@@ -107333,7 +107349,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "65级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065013] = {
 		id = 3004065013,
@@ -107360,7 +107376,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "65级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065014] = {
 		id = 3004065014,
@@ -107387,7 +107403,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "65级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065015] = {
 		id = 3004065015,
@@ -107414,7 +107430,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "65级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065016] = {
 		id = 3004065016,
@@ -107441,7 +107457,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "65级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065021] = {
 		id = 3004065021,
@@ -107468,7 +107484,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "65级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065022] = {
 		id = 3004065022,
@@ -107495,7 +107511,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "65级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065023] = {
 		id = 3004065023,
@@ -107522,7 +107538,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "65级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065024] = {
 		id = 3004065024,
@@ -107549,7 +107565,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "65级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065025] = {
 		id = 3004065025,
@@ -107576,7 +107592,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "65级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065026] = {
 		id = 3004065026,
@@ -107603,7 +107619,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "65级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065031] = {
 		id = 3004065031,
@@ -107630,7 +107646,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "65级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065032] = {
 		id = 3004065032,
@@ -107657,7 +107673,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "65级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065033] = {
 		id = 3004065033,
@@ -107684,7 +107700,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "65级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065034] = {
 		id = 3004065034,
@@ -107711,7 +107727,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "65级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065035] = {
 		id = 3004065035,
@@ -107738,7 +107754,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "65级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065036] = {
 		id = 3004065036,
@@ -107765,7 +107781,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "65级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065041] = {
 		id = 3004065041,
@@ -107792,7 +107808,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "65级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065042] = {
 		id = 3004065042,
@@ -107819,7 +107835,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "65级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065043] = {
 		id = 3004065043,
@@ -107846,7 +107862,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "65级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065044] = {
 		id = 3004065044,
@@ -107873,7 +107889,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "65级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065045] = {
 		id = 3004065045,
@@ -107900,7 +107916,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "65级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065046] = {
 		id = 3004065046,
@@ -107927,7 +107943,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "65级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004065051] = {
 		id = 3004065051,
@@ -107954,7 +107970,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "65级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065052] = {
 		id = 3004065052,
@@ -107981,7 +107997,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "65级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065053] = {
 		id = 3004065053,
@@ -108008,7 +108024,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "65级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065054] = {
 		id = 3004065054,
@@ -108035,7 +108051,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "65级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065055] = {
 		id = 3004065055,
@@ -108062,7 +108078,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "65级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065056] = {
 		id = 3004065056,
@@ -108089,7 +108105,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "65级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004065061] = {
 		id = 3004065061,
@@ -108116,7 +108132,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "65级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065062] = {
 		id = 3004065062,
@@ -108143,7 +108159,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "65级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065063] = {
 		id = 3004065063,
@@ -108170,7 +108186,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "65级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065064] = {
 		id = 3004065064,
@@ -108197,7 +108213,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "65级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065065] = {
 		id = 3004065065,
@@ -108224,7 +108240,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "65级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065066] = {
 		id = 3004065066,
@@ -108251,7 +108267,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "65级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065071] = {
 		id = 3004065071,
@@ -108278,7 +108294,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "65级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065072] = {
 		id = 3004065072,
@@ -108305,7 +108321,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "65级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065073] = {
 		id = 3004065073,
@@ -108332,7 +108348,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "65级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065074] = {
 		id = 3004065074,
@@ -108359,7 +108375,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "65级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065075] = {
 		id = 3004065075,
@@ -108386,7 +108402,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "65级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065076] = {
 		id = 3004065076,
@@ -108413,7 +108429,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "65级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004065081] = {
 		id = 3004065081,
@@ -108440,7 +108456,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "65级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065082] = {
 		id = 3004065082,
@@ -108467,7 +108483,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "65级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065083] = {
 		id = 3004065083,
@@ -108494,7 +108510,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "65级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065084] = {
 		id = 3004065084,
@@ -108521,7 +108537,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "65级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065085] = {
 		id = 3004065085,
@@ -108548,7 +108564,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "65级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004065086] = {
 		id = 3004065086,
@@ -108575,7 +108591,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "65级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070011] = {
 		id = 3004070011,
@@ -108602,7 +108618,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "70级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070012] = {
 		id = 3004070012,
@@ -108629,7 +108645,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "70级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070013] = {
 		id = 3004070013,
@@ -108656,7 +108672,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "70级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070014] = {
 		id = 3004070014,
@@ -108683,7 +108699,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "70级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070015] = {
 		id = 3004070015,
@@ -108710,7 +108726,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "70级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070016] = {
 		id = 3004070016,
@@ -108737,7 +108753,7 @@ local datas = {
 		iconPath = "icon/40105.png",
 		Description = "70级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070021] = {
 		id = 3004070021,
@@ -108764,7 +108780,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "70级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070022] = {
 		id = 3004070022,
@@ -108791,7 +108807,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "70级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070023] = {
 		id = 3004070023,
@@ -108818,7 +108834,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "70级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070024] = {
 		id = 3004070024,
@@ -108845,7 +108861,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "70级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070025] = {
 		id = 3004070025,
@@ -108872,7 +108888,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "70级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070026] = {
 		id = 3004070026,
@@ -108899,7 +108915,7 @@ local datas = {
 		iconPath = "icon/40205.png",
 		Description = "70级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070031] = {
 		id = 3004070031,
@@ -108926,7 +108942,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "70级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070032] = {
 		id = 3004070032,
@@ -108953,7 +108969,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "70级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070033] = {
 		id = 3004070033,
@@ -108980,7 +108996,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "70级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070034] = {
 		id = 3004070034,
@@ -109007,7 +109023,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "70级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070035] = {
 		id = 3004070035,
@@ -109034,7 +109050,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "70级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070036] = {
 		id = 3004070036,
@@ -109061,7 +109077,7 @@ local datas = {
 		iconPath = "icon/40305.png",
 		Description = "70级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070041] = {
 		id = 3004070041,
@@ -109088,7 +109104,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "70级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070042] = {
 		id = 3004070042,
@@ -109115,7 +109131,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "70级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070043] = {
 		id = 3004070043,
@@ -109142,7 +109158,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "70级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070044] = {
 		id = 3004070044,
@@ -109169,7 +109185,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "70级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070045] = {
 		id = 3004070045,
@@ -109196,7 +109212,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "70级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070046] = {
 		id = 3004070046,
@@ -109223,7 +109239,7 @@ local datas = {
 		iconPath = "icon/40405.png",
 		Description = "70级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004070051] = {
 		id = 3004070051,
@@ -109250,7 +109266,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "70级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070052] = {
 		id = 3004070052,
@@ -109277,7 +109293,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "70级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070053] = {
 		id = 3004070053,
@@ -109304,7 +109320,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "70级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070054] = {
 		id = 3004070054,
@@ -109331,7 +109347,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "70级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070055] = {
 		id = 3004070055,
@@ -109358,7 +109374,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "70级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070056] = {
 		id = 3004070056,
@@ -109385,7 +109401,7 @@ local datas = {
 		iconPath = "icon/40505.png",
 		Description = "70级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004070061] = {
 		id = 3004070061,
@@ -109412,7 +109428,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "70级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070062] = {
 		id = 3004070062,
@@ -109439,7 +109455,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "70级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070063] = {
 		id = 3004070063,
@@ -109466,7 +109482,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "70级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070064] = {
 		id = 3004070064,
@@ -109493,7 +109509,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "70级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070065] = {
 		id = 3004070065,
@@ -109520,7 +109536,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "70级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070066] = {
 		id = 3004070066,
@@ -109547,7 +109563,7 @@ local datas = {
 		iconPath = "icon/40605.png",
 		Description = "70级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070071] = {
 		id = 3004070071,
@@ -109574,7 +109590,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "70级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070072] = {
 		id = 3004070072,
@@ -109601,7 +109617,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "70级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070073] = {
 		id = 3004070073,
@@ -109628,7 +109644,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "70级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070074] = {
 		id = 3004070074,
@@ -109655,7 +109671,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "70级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070075] = {
 		id = 3004070075,
@@ -109682,7 +109698,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "70级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070076] = {
 		id = 3004070076,
@@ -109709,7 +109725,7 @@ local datas = {
 		iconPath = "icon/40705.png",
 		Description = "70级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004070081] = {
 		id = 3004070081,
@@ -109736,7 +109752,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "70级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070082] = {
 		id = 3004070082,
@@ -109763,7 +109779,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "70级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070083] = {
 		id = 3004070083,
@@ -109790,7 +109806,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "70级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070084] = {
 		id = 3004070084,
@@ -109817,7 +109833,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "70级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070085] = {
 		id = 3004070085,
@@ -109844,7 +109860,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "70级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004070086] = {
 		id = 3004070086,
@@ -109871,7 +109887,7 @@ local datas = {
 		iconPath = "icon/40805.png",
 		Description = "70级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075011] = {
 		id = 3004075011,
@@ -109898,7 +109914,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "75级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075012] = {
 		id = 3004075012,
@@ -109925,7 +109941,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "75级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075013] = {
 		id = 3004075013,
@@ -109952,7 +109968,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "75级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075014] = {
 		id = 3004075014,
@@ -109979,7 +109995,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "75级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075015] = {
 		id = 3004075015,
@@ -110006,7 +110022,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "75级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075016] = {
 		id = 3004075016,
@@ -110033,7 +110049,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "75级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075021] = {
 		id = 3004075021,
@@ -110060,7 +110076,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "75级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075022] = {
 		id = 3004075022,
@@ -110087,7 +110103,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "75级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075023] = {
 		id = 3004075023,
@@ -110114,7 +110130,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "75级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075024] = {
 		id = 3004075024,
@@ -110141,7 +110157,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "75级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075025] = {
 		id = 3004075025,
@@ -110168,7 +110184,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "75级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075026] = {
 		id = 3004075026,
@@ -110195,7 +110211,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "75级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075031] = {
 		id = 3004075031,
@@ -110222,7 +110238,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "75级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075032] = {
 		id = 3004075032,
@@ -110249,7 +110265,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "75级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075033] = {
 		id = 3004075033,
@@ -110276,7 +110292,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "75级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075034] = {
 		id = 3004075034,
@@ -110303,7 +110319,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "75级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075035] = {
 		id = 3004075035,
@@ -110330,7 +110346,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "75级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075036] = {
 		id = 3004075036,
@@ -110357,7 +110373,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "75级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075041] = {
 		id = 3004075041,
@@ -110384,7 +110400,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "75级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075042] = {
 		id = 3004075042,
@@ -110411,7 +110427,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "75级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075043] = {
 		id = 3004075043,
@@ -110438,7 +110454,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "75级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075044] = {
 		id = 3004075044,
@@ -110465,7 +110481,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "75级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075045] = {
 		id = 3004075045,
@@ -110492,7 +110508,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "75级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075046] = {
 		id = 3004075046,
@@ -110519,7 +110535,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "75级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004075051] = {
 		id = 3004075051,
@@ -110546,7 +110562,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "75级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075052] = {
 		id = 3004075052,
@@ -110573,7 +110589,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "75级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075053] = {
 		id = 3004075053,
@@ -110600,7 +110616,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "75级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075054] = {
 		id = 3004075054,
@@ -110627,7 +110643,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "75级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075055] = {
 		id = 3004075055,
@@ -110654,7 +110670,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "75级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075056] = {
 		id = 3004075056,
@@ -110681,7 +110697,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "75级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004075061] = {
 		id = 3004075061,
@@ -110708,7 +110724,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "75级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075062] = {
 		id = 3004075062,
@@ -110735,7 +110751,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "75级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075063] = {
 		id = 3004075063,
@@ -110762,7 +110778,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "75级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075064] = {
 		id = 3004075064,
@@ -110789,7 +110805,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "75级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075065] = {
 		id = 3004075065,
@@ -110816,7 +110832,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "75级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075066] = {
 		id = 3004075066,
@@ -110843,7 +110859,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "75级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075071] = {
 		id = 3004075071,
@@ -110870,7 +110886,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "75级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075072] = {
 		id = 3004075072,
@@ -110897,7 +110913,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "75级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075073] = {
 		id = 3004075073,
@@ -110924,7 +110940,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "75级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075074] = {
 		id = 3004075074,
@@ -110951,7 +110967,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "75级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075075] = {
 		id = 3004075075,
@@ -110978,7 +110994,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "75级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075076] = {
 		id = 3004075076,
@@ -111005,7 +111021,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "75级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004075081] = {
 		id = 3004075081,
@@ -111032,7 +111048,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "75级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075082] = {
 		id = 3004075082,
@@ -111059,7 +111075,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "75级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075083] = {
 		id = 3004075083,
@@ -111086,7 +111102,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "75级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075084] = {
 		id = 3004075084,
@@ -111113,7 +111129,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "75级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075085] = {
 		id = 3004075085,
@@ -111140,7 +111156,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "75级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004075086] = {
 		id = 3004075086,
@@ -111167,7 +111183,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "75级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080011] = {
 		id = 3004080011,
@@ -111194,7 +111210,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "80级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080012] = {
 		id = 3004080012,
@@ -111221,7 +111237,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "80级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080013] = {
 		id = 3004080013,
@@ -111248,7 +111264,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "80级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080014] = {
 		id = 3004080014,
@@ -111275,7 +111291,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "80级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080015] = {
 		id = 3004080015,
@@ -111302,7 +111318,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "80级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080016] = {
 		id = 3004080016,
@@ -111329,7 +111345,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "80级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080021] = {
 		id = 3004080021,
@@ -111356,7 +111372,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "80级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080022] = {
 		id = 3004080022,
@@ -111383,7 +111399,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "80级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080023] = {
 		id = 3004080023,
@@ -111410,7 +111426,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "80级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080024] = {
 		id = 3004080024,
@@ -111437,7 +111453,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "80级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080025] = {
 		id = 3004080025,
@@ -111464,7 +111480,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "80级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080026] = {
 		id = 3004080026,
@@ -111491,7 +111507,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "80级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080031] = {
 		id = 3004080031,
@@ -111518,7 +111534,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "80级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080032] = {
 		id = 3004080032,
@@ -111545,7 +111561,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "80级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080033] = {
 		id = 3004080033,
@@ -111572,7 +111588,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "80级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080034] = {
 		id = 3004080034,
@@ -111599,7 +111615,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "80级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080035] = {
 		id = 3004080035,
@@ -111626,7 +111642,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "80级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080036] = {
 		id = 3004080036,
@@ -111653,7 +111669,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "80级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080041] = {
 		id = 3004080041,
@@ -111680,7 +111696,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "80级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080042] = {
 		id = 3004080042,
@@ -111707,7 +111723,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "80级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080043] = {
 		id = 3004080043,
@@ -111734,7 +111750,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "80级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080044] = {
 		id = 3004080044,
@@ -111761,7 +111777,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "80级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080045] = {
 		id = 3004080045,
@@ -111788,7 +111804,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "80级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080046] = {
 		id = 3004080046,
@@ -111815,7 +111831,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "80级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004080051] = {
 		id = 3004080051,
@@ -111842,7 +111858,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "80级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080052] = {
 		id = 3004080052,
@@ -111869,7 +111885,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "80级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080053] = {
 		id = 3004080053,
@@ -111896,7 +111912,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "80级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080054] = {
 		id = 3004080054,
@@ -111923,7 +111939,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "80级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080055] = {
 		id = 3004080055,
@@ -111950,7 +111966,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "80级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080056] = {
 		id = 3004080056,
@@ -111977,7 +111993,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "80级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004080061] = {
 		id = 3004080061,
@@ -112004,7 +112020,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "80级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080062] = {
 		id = 3004080062,
@@ -112031,7 +112047,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "80级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080063] = {
 		id = 3004080063,
@@ -112058,7 +112074,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "80级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080064] = {
 		id = 3004080064,
@@ -112085,7 +112101,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "80级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080065] = {
 		id = 3004080065,
@@ -112112,7 +112128,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "80级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080066] = {
 		id = 3004080066,
@@ -112139,7 +112155,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "80级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080071] = {
 		id = 3004080071,
@@ -112166,7 +112182,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "80级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080072] = {
 		id = 3004080072,
@@ -112193,7 +112209,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "80级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080073] = {
 		id = 3004080073,
@@ -112220,7 +112236,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "80级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080074] = {
 		id = 3004080074,
@@ -112247,7 +112263,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "80级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080075] = {
 		id = 3004080075,
@@ -112274,7 +112290,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "80级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080076] = {
 		id = 3004080076,
@@ -112301,7 +112317,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "80级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004080081] = {
 		id = 3004080081,
@@ -112328,7 +112344,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "80级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080082] = {
 		id = 3004080082,
@@ -112355,7 +112371,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "80级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080083] = {
 		id = 3004080083,
@@ -112382,7 +112398,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "80级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080084] = {
 		id = 3004080084,
@@ -112409,7 +112425,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "80级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080085] = {
 		id = 3004080085,
@@ -112436,7 +112452,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "80级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004080086] = {
 		id = 3004080086,
@@ -112463,7 +112479,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "80级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085011] = {
 		id = 3004085011,
@@ -112490,7 +112506,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "85级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085012] = {
 		id = 3004085012,
@@ -112517,7 +112533,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "85级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085013] = {
 		id = 3004085013,
@@ -112544,7 +112560,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "85级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085014] = {
 		id = 3004085014,
@@ -112571,7 +112587,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "85级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085015] = {
 		id = 3004085015,
@@ -112598,7 +112614,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "85级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085016] = {
 		id = 3004085016,
@@ -112625,7 +112641,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "85级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085021] = {
 		id = 3004085021,
@@ -112652,7 +112668,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "85级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085022] = {
 		id = 3004085022,
@@ -112679,7 +112695,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "85级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085023] = {
 		id = 3004085023,
@@ -112706,7 +112722,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "85级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085024] = {
 		id = 3004085024,
@@ -112733,7 +112749,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "85级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085025] = {
 		id = 3004085025,
@@ -112760,7 +112776,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "85级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085026] = {
 		id = 3004085026,
@@ -112787,7 +112803,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "85级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085031] = {
 		id = 3004085031,
@@ -112814,7 +112830,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "85级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085032] = {
 		id = 3004085032,
@@ -112841,7 +112857,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "85级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085033] = {
 		id = 3004085033,
@@ -112868,7 +112884,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "85级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085034] = {
 		id = 3004085034,
@@ -112895,7 +112911,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "85级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085035] = {
 		id = 3004085035,
@@ -112922,7 +112938,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "85级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085036] = {
 		id = 3004085036,
@@ -112949,7 +112965,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "85级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085041] = {
 		id = 3004085041,
@@ -112976,7 +112992,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "85级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085042] = {
 		id = 3004085042,
@@ -113003,7 +113019,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "85级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085043] = {
 		id = 3004085043,
@@ -113030,7 +113046,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "85级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085044] = {
 		id = 3004085044,
@@ -113057,7 +113073,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "85级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085045] = {
 		id = 3004085045,
@@ -113084,7 +113100,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "85级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085046] = {
 		id = 3004085046,
@@ -113111,7 +113127,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "85级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004085051] = {
 		id = 3004085051,
@@ -113138,7 +113154,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "85级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085052] = {
 		id = 3004085052,
@@ -113165,7 +113181,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "85级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085053] = {
 		id = 3004085053,
@@ -113192,7 +113208,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "85级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085054] = {
 		id = 3004085054,
@@ -113219,7 +113235,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "85级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085055] = {
 		id = 3004085055,
@@ -113246,7 +113262,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "85级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085056] = {
 		id = 3004085056,
@@ -113273,7 +113289,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "85级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004085061] = {
 		id = 3004085061,
@@ -113300,7 +113316,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "85级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085062] = {
 		id = 3004085062,
@@ -113327,7 +113343,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "85级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085063] = {
 		id = 3004085063,
@@ -113354,7 +113370,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "85级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085064] = {
 		id = 3004085064,
@@ -113381,7 +113397,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "85级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085065] = {
 		id = 3004085065,
@@ -113408,7 +113424,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "85级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085066] = {
 		id = 3004085066,
@@ -113435,7 +113451,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "85级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085071] = {
 		id = 3004085071,
@@ -113462,7 +113478,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "85级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085072] = {
 		id = 3004085072,
@@ -113489,7 +113505,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "85级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085073] = {
 		id = 3004085073,
@@ -113516,7 +113532,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "85级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085074] = {
 		id = 3004085074,
@@ -113543,7 +113559,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "85级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085075] = {
 		id = 3004085075,
@@ -113570,7 +113586,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "85级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085076] = {
 		id = 3004085076,
@@ -113597,7 +113613,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "85级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004085081] = {
 		id = 3004085081,
@@ -113624,7 +113640,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "85级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085082] = {
 		id = 3004085082,
@@ -113651,7 +113667,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "85级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085083] = {
 		id = 3004085083,
@@ -113678,7 +113694,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "85级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085084] = {
 		id = 3004085084,
@@ -113705,7 +113721,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "85级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085085] = {
 		id = 3004085085,
@@ -113732,7 +113748,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "85级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004085086] = {
 		id = 3004085086,
@@ -113759,7 +113775,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "85级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090011] = {
 		id = 3004090011,
@@ -113786,7 +113802,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "90级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090012] = {
 		id = 3004090012,
@@ -113813,7 +113829,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "90级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090013] = {
 		id = 3004090013,
@@ -113840,7 +113856,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "90级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090014] = {
 		id = 3004090014,
@@ -113867,7 +113883,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "90级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090015] = {
 		id = 3004090015,
@@ -113894,7 +113910,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "90级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090016] = {
 		id = 3004090016,
@@ -113921,7 +113937,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "90级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090021] = {
 		id = 3004090021,
@@ -113948,7 +113964,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "90级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090022] = {
 		id = 3004090022,
@@ -113975,7 +113991,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "90级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090023] = {
 		id = 3004090023,
@@ -114002,7 +114018,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "90级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090024] = {
 		id = 3004090024,
@@ -114029,7 +114045,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "90级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090025] = {
 		id = 3004090025,
@@ -114056,7 +114072,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "90级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090026] = {
 		id = 3004090026,
@@ -114083,7 +114099,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "90级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090031] = {
 		id = 3004090031,
@@ -114110,7 +114126,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "90级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090032] = {
 		id = 3004090032,
@@ -114137,7 +114153,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "90级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090033] = {
 		id = 3004090033,
@@ -114164,7 +114180,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "90级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090034] = {
 		id = 3004090034,
@@ -114191,7 +114207,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "90级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090035] = {
 		id = 3004090035,
@@ -114218,7 +114234,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "90级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090036] = {
 		id = 3004090036,
@@ -114245,7 +114261,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "90级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090041] = {
 		id = 3004090041,
@@ -114272,7 +114288,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "90级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090042] = {
 		id = 3004090042,
@@ -114299,7 +114315,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "90级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090043] = {
 		id = 3004090043,
@@ -114326,7 +114342,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "90级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090044] = {
 		id = 3004090044,
@@ -114353,7 +114369,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "90级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090045] = {
 		id = 3004090045,
@@ -114380,7 +114396,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "90级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090046] = {
 		id = 3004090046,
@@ -114407,7 +114423,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "90级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004090051] = {
 		id = 3004090051,
@@ -114434,7 +114450,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "90级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090052] = {
 		id = 3004090052,
@@ -114461,7 +114477,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "90级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090053] = {
 		id = 3004090053,
@@ -114488,7 +114504,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "90级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090054] = {
 		id = 3004090054,
@@ -114515,7 +114531,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "90级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090055] = {
 		id = 3004090055,
@@ -114542,7 +114558,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "90级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090056] = {
 		id = 3004090056,
@@ -114569,7 +114585,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "90级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004090061] = {
 		id = 3004090061,
@@ -114596,7 +114612,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "90级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090062] = {
 		id = 3004090062,
@@ -114623,7 +114639,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "90级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090063] = {
 		id = 3004090063,
@@ -114650,7 +114666,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "90级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090064] = {
 		id = 3004090064,
@@ -114677,7 +114693,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "90级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090065] = {
 		id = 3004090065,
@@ -114704,7 +114720,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "90级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090066] = {
 		id = 3004090066,
@@ -114731,7 +114747,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "90级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090071] = {
 		id = 3004090071,
@@ -114758,7 +114774,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "90级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090072] = {
 		id = 3004090072,
@@ -114785,7 +114801,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "90级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090073] = {
 		id = 3004090073,
@@ -114812,7 +114828,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "90级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090074] = {
 		id = 3004090074,
@@ -114839,7 +114855,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "90级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090075] = {
 		id = 3004090075,
@@ -114866,7 +114882,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "90级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090076] = {
 		id = 3004090076,
@@ -114893,7 +114909,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "90级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004090081] = {
 		id = 3004090081,
@@ -114920,7 +114936,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "90级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090082] = {
 		id = 3004090082,
@@ -114947,7 +114963,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "90级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090083] = {
 		id = 3004090083,
@@ -114974,7 +114990,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "90级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090084] = {
 		id = 3004090084,
@@ -115001,7 +115017,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "90级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090085] = {
 		id = 3004090085,
@@ -115028,7 +115044,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "90级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004090086] = {
 		id = 3004090086,
@@ -115055,7 +115071,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "90级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095011] = {
 		id = 3004095011,
@@ -115082,7 +115098,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "95级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095012] = {
 		id = 3004095012,
@@ -115109,7 +115125,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "95级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095013] = {
 		id = 3004095013,
@@ -115136,7 +115152,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "95级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095014] = {
 		id = 3004095014,
@@ -115163,7 +115179,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "95级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095015] = {
 		id = 3004095015,
@@ -115190,7 +115206,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "95级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095016] = {
 		id = 3004095016,
@@ -115217,7 +115233,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "95级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095021] = {
 		id = 3004095021,
@@ -115244,7 +115260,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "95级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095022] = {
 		id = 3004095022,
@@ -115271,7 +115287,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "95级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095023] = {
 		id = 3004095023,
@@ -115298,7 +115314,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "95级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095024] = {
 		id = 3004095024,
@@ -115325,7 +115341,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "95级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095025] = {
 		id = 3004095025,
@@ -115352,7 +115368,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "95级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095026] = {
 		id = 3004095026,
@@ -115379,7 +115395,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "95级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095031] = {
 		id = 3004095031,
@@ -115406,7 +115422,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "95级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095032] = {
 		id = 3004095032,
@@ -115433,7 +115449,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "95级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095033] = {
 		id = 3004095033,
@@ -115460,7 +115476,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "95级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095034] = {
 		id = 3004095034,
@@ -115487,7 +115503,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "95级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095035] = {
 		id = 3004095035,
@@ -115514,7 +115530,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "95级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095036] = {
 		id = 3004095036,
@@ -115541,7 +115557,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "95级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095041] = {
 		id = 3004095041,
@@ -115568,7 +115584,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "95级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095042] = {
 		id = 3004095042,
@@ -115595,7 +115611,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "95级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095043] = {
 		id = 3004095043,
@@ -115622,7 +115638,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "95级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095044] = {
 		id = 3004095044,
@@ -115649,7 +115665,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "95级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095045] = {
 		id = 3004095045,
@@ -115676,7 +115692,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "95级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095046] = {
 		id = 3004095046,
@@ -115703,7 +115719,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "95级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004095051] = {
 		id = 3004095051,
@@ -115730,7 +115746,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "95级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095052] = {
 		id = 3004095052,
@@ -115757,7 +115773,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "95级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095053] = {
 		id = 3004095053,
@@ -115784,7 +115800,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "95级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095054] = {
 		id = 3004095054,
@@ -115811,7 +115827,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "95级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095055] = {
 		id = 3004095055,
@@ -115838,7 +115854,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "95级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095056] = {
 		id = 3004095056,
@@ -115865,7 +115881,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "95级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004095061] = {
 		id = 3004095061,
@@ -115892,7 +115908,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "95级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095062] = {
 		id = 3004095062,
@@ -115919,7 +115935,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "95级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095063] = {
 		id = 3004095063,
@@ -115946,7 +115962,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "95级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095064] = {
 		id = 3004095064,
@@ -115973,7 +115989,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "95级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095065] = {
 		id = 3004095065,
@@ -116000,7 +116016,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "95级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095066] = {
 		id = 3004095066,
@@ -116027,7 +116043,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "95级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095071] = {
 		id = 3004095071,
@@ -116054,7 +116070,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "95级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095072] = {
 		id = 3004095072,
@@ -116081,7 +116097,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "95级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095073] = {
 		id = 3004095073,
@@ -116108,7 +116124,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "95级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095074] = {
 		id = 3004095074,
@@ -116135,7 +116151,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "95级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095075] = {
 		id = 3004095075,
@@ -116162,7 +116178,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "95级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095076] = {
 		id = 3004095076,
@@ -116189,7 +116205,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "95级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004095081] = {
 		id = 3004095081,
@@ -116216,7 +116232,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "95级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095082] = {
 		id = 3004095082,
@@ -116243,7 +116259,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "95级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095083] = {
 		id = 3004095083,
@@ -116270,7 +116286,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "95级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095084] = {
 		id = 3004095084,
@@ -116297,7 +116313,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "95级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095085] = {
 		id = 3004095085,
@@ -116324,7 +116340,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "95级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004095086] = {
 		id = 3004095086,
@@ -116351,7 +116367,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "95级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100011] = {
 		id = 3004100011,
@@ -116378,7 +116394,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "100级普通的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100012] = {
 		id = 3004100012,
@@ -116405,7 +116421,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "100级精良的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100013] = {
 		id = 3004100013,
@@ -116432,7 +116448,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "100级优质的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100014] = {
 		id = 3004100014,
@@ -116459,7 +116475,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "100级稀有的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100015] = {
 		id = 3004100015,
@@ -116486,7 +116502,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "100级卓越的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100016] = {
 		id = 3004100016,
@@ -116513,7 +116529,7 @@ local datas = {
 		iconPath = "icon/40106.png",
 		Description = "100级完美的巫师装备",
 		dropIconPath = "item_007.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100021] = {
 		id = 3004100021,
@@ -116540,7 +116556,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "100级普通的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100022] = {
 		id = 3004100022,
@@ -116567,7 +116583,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "100级精良的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100023] = {
 		id = 3004100023,
@@ -116594,7 +116610,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "100级优质的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100024] = {
 		id = 3004100024,
@@ -116621,7 +116637,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "100级稀有的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100025] = {
 		id = 3004100025,
@@ -116648,7 +116664,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "100级卓越的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100026] = {
 		id = 3004100026,
@@ -116675,7 +116691,7 @@ local datas = {
 		iconPath = "icon/40206.png",
 		Description = "100级完美的巫师装备",
 		dropIconPath = "item_008.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100031] = {
 		id = 3004100031,
@@ -116702,7 +116718,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "100级普通的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100032] = {
 		id = 3004100032,
@@ -116729,7 +116745,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "100级精良的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100033] = {
 		id = 3004100033,
@@ -116756,7 +116772,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "100级优质的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100034] = {
 		id = 3004100034,
@@ -116783,7 +116799,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "100级稀有的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100035] = {
 		id = 3004100035,
@@ -116810,7 +116826,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "100级卓越的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100036] = {
 		id = 3004100036,
@@ -116837,7 +116853,7 @@ local datas = {
 		iconPath = "icon/40306.png",
 		Description = "100级完美的巫师装备",
 		dropIconPath = "item_010.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100041] = {
 		id = 3004100041,
@@ -116864,7 +116880,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "100级普通的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100042] = {
 		id = 3004100042,
@@ -116891,7 +116907,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "100级精良的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100043] = {
 		id = 3004100043,
@@ -116918,7 +116934,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "100级优质的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100044] = {
 		id = 3004100044,
@@ -116945,7 +116961,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "100级稀有的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100045] = {
 		id = 3004100045,
@@ -116972,7 +116988,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "100级卓越的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100046] = {
 		id = 3004100046,
@@ -116999,7 +117015,7 @@ local datas = {
 		iconPath = "icon/40406.png",
 		Description = "100级完美的巫师装备",
 		dropIconPath = "item_009.ccbi",
-		compos = 0,
+		compos = 10,
 	},
 	[3004100051] = {
 		id = 3004100051,
@@ -117026,7 +117042,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "100级普通的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100052] = {
 		id = 3004100052,
@@ -117053,7 +117069,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "100级精良的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100053] = {
 		id = 3004100053,
@@ -117080,7 +117096,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "100级优质的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100054] = {
 		id = 3004100054,
@@ -117107,7 +117123,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "100级稀有的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100055] = {
 		id = 3004100055,
@@ -117134,7 +117150,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "100级卓越的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100056] = {
 		id = 3004100056,
@@ -117161,7 +117177,7 @@ local datas = {
 		iconPath = "icon/40506.png",
 		Description = "100级完美的巫师装备",
 		dropIconPath = "item_018.ccbi",
-		compos = 0,
+		compos = 12,
 	},
 	[3004100061] = {
 		id = 3004100061,
@@ -117188,7 +117204,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "100级普通的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100062] = {
 		id = 3004100062,
@@ -117215,7 +117231,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "100级精良的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100063] = {
 		id = 3004100063,
@@ -117242,7 +117258,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "100级优质的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100064] = {
 		id = 3004100064,
@@ -117269,7 +117285,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "100级稀有的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100065] = {
 		id = 3004100065,
@@ -117296,7 +117312,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "100级卓越的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100066] = {
 		id = 3004100066,
@@ -117323,7 +117339,7 @@ local datas = {
 		iconPath = "icon/40606.png",
 		Description = "100级完美的巫师装备",
 		dropIconPath = "item_016.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100071] = {
 		id = 3004100071,
@@ -117350,7 +117366,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "100级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100072] = {
 		id = 3004100072,
@@ -117377,7 +117393,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "100级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100073] = {
 		id = 3004100073,
@@ -117404,7 +117420,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "100级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100074] = {
 		id = 3004100074,
@@ -117431,7 +117447,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "100级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100075] = {
 		id = 3004100075,
@@ -117458,7 +117474,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "100级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100076] = {
 		id = 3004100076,
@@ -117485,7 +117501,7 @@ local datas = {
 		iconPath = "icon/40706.png",
 		Description = "100级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 11,
 	},
 	[3004100081] = {
 		id = 3004100081,
@@ -117512,7 +117528,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "100级普通的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100082] = {
 		id = 3004100082,
@@ -117539,7 +117555,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "100级精良的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100083] = {
 		id = 3004100083,
@@ -117566,7 +117582,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "100级优质的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100084] = {
 		id = 3004100084,
@@ -117593,7 +117609,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "100级稀有的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100085] = {
 		id = 3004100085,
@@ -117620,7 +117636,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "100级卓越的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 	[3004100086] = {
 		id = 3004100086,
@@ -117647,7 +117663,7 @@ local datas = {
 		iconPath = "icon/40806.png",
 		Description = "100级完美的巫师装备",
 		dropIconPath = "item_015.ccbi",
-		compos = 0,
+		compos = 9,
 	},
 }
 

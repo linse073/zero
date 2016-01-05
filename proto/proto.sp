@@ -92,7 +92,7 @@
     friend 5 : *friend_info
 }
 
-.user_update {
+.update_user {
     msgid 0 : integer
     update 1 : user_all
 }

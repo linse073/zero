@@ -61,7 +61,7 @@ function util.sign(t, secret)
     return b64encode(hmac_hash(secret, to_string(t)))
 end
 
-function util.user_update()
+function util.update_user()
     return {
         user = {},
         item = {},

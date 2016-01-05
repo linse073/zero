@@ -14,7 +14,7 @@ local random = math.random
 local floor = math.floor
 local pow = math.pow
 
-local update_user = util.user_update
+local update_user = util.update_user
 local itemdata
 local expdata
 local intensifydata
@@ -457,7 +457,7 @@ function proc.use_item(msg)
     item.use(p, i, msg.pos)
     task.update(p, base.TASK_COMPLETE_USE_ITEM, iv.itemid, 1)
     role.fight_point(p)
-    return "user_update", {update=p}
+    return "update_user", {update=p}
 end
 
 function proc.compound_item(msg)
@@ -485,7 +485,7 @@ function proc.compound_item(msg)
     item.del_by_itemid(p, msg.itemid, comnum * 5)
     item.add_by_itemid(p, compounditem, comnum, compounddata)
     task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, msg.itemid, 1)
-    return "user_update", {update=p}
+    return "update_user", {update=p}
 end
 
 function proc.upgrade_item(msg)
@@ -528,7 +528,7 @@ function proc.upgrade_item(msg)
     if iv.pos > 0 then
         role.fight_point(p)
     end
-    return "user_update", {update=p}
+    return "update_user", {update=p}
 end
 
 function proc.improve_item(msg)
@@ -571,7 +571,7 @@ function proc.improve_item(msg)
     if iv.pos > 0 then
         role.fight_point(p)
     end
-    return "user_update", {update=p}
+    return "update_user", {update=p}
 end
 
 function proc.decompose_item(msg)
@@ -608,7 +608,7 @@ function proc.decompose_item(msg)
         status_time = iv.status_time,
     }
     task.update(p, base.TASK_COMPLETE_DECOMPOSE_ITEM, iv.itemid, 1)
-    return "user_update", {update=p}
+    return "update_user", {update=p}
 end
 
 function proc.intensify_item(msg)
@@ -693,7 +693,7 @@ function proc.intensify_item(msg)
             role.fight_point(p)
         end
     end
-    return "user_update", {update=p}
+    return "update_user", {update=p}
 end
 
 function proc.inlay_item(msg)
@@ -714,7 +714,7 @@ function proc.inlay_item(msg)
         st = {num = 0}
         i[3] = st
     end
-    local p = user_update()
+    local p = update_user()
     local pitem = p.item
     local slot = d.needLv // 10
     for j = 1, slot do
@@ -729,7 +729,7 @@ function proc.inlay_item(msg)
     if iv.pos > 0 then
         role.fight_point(p)
     end
-    return "user_update", {update=p}
+    return "update_user", {update=p}
 end
 
 function proc.uninlay_item(msg)
@@ -747,7 +747,7 @@ function proc.uninlay_item(msg)
     end
     local st = i[3]
     if st and st.num > 0 then
-        local p = user_update()
+        local p = update_user()
         local slot = d.needLv // 10
         for j = 1, slot do
             local si = st[j]
@@ -760,9 +760,9 @@ function proc.uninlay_item(msg)
         if iv.pos > 0 then
             role.fight_point(p)
         end
-        return "user_update", {update=p}
+        return "update_user", {update=p}
     else
-        return "user_update", {}
+        return "update_user", {}
     end
 end
 

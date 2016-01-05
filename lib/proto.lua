@@ -16,7 +16,7 @@ local msg = {
     [2007] = "friend_info",
     [2008] = "rank_info",
     [2009] = "user_all",
-    [2010] = "user_update",
+    [2010] = "update_user",
 
     [2100] = "get_account_info",
     [2101] = "create_user",

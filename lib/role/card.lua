@@ -11,7 +11,7 @@ local assert = assert
 local error = error
 local string = string
 
-local user_update = util.user_update
+local update_user = util.update_user
 local carddata
 local expdata
 local original_card
@@ -155,7 +155,7 @@ function proc.call_card(msg)
     if count < ed.cardStar then
         error{code = error_code.CARD_SOUL_LIMIT}
     end
-    local p = user_update()
+    local p = update_user()
     item.del_by_itemid(p, d.soulId, ed.cardStar)
     card.add_by_cardid(p, msg.cardid, d)
     task.update(p, base.TASK_COMPLETE_CARD, msg.cardid, 1)
@@ -180,7 +180,7 @@ function proc.upgrade_card(msg)
     if count < num then
         error{code = error_code.CARD_SOUL_LIMIT}
     end
-    local p = user_update()
+    local p = update_user()
     item.del_by_itemid(p, d.soulId, num)
     local pcard = p.card
     cv.level = cv.level + 1
@@ -233,7 +233,7 @@ function proc.use_card(msg)
     if cv.pos[msg.pos_type] == msg.pos then
         error{code = error_code.ERROR_CARD_POSITION}
     end
-    local p = user_update()
+    local p = update_user()
     card.use(p, c, msg.pos_type, msg.pos)
     task.update(p, base.TASK_COMPLETE_USE_CARD, cv.cardid, 1)
     return "update_user", {update=p}

@@ -266,7 +266,7 @@ function proc.submit_task(msg)
     if user.level < d.levelLimit then
         error{code = error_code.ROLE_LEVEL_LIMIT}
     end
-    local p = user_update()
+    local p = update_user()
     local vt = t[1]
     if vt.status == base.TASK_STATUS_ACCEPT then
         if d.CompleteType == base.TASK_COMPLETE_TYPE_TALK then
@@ -275,7 +275,7 @@ function proc.submit_task(msg)
     elseif vt.status == base.TASK_STATUS_DONE then
         task.finish(p, t)
     end
-    return "user_update", {update=p}
+    return "update_user", {update=p}
 end
 
 return task

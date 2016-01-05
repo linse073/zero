@@ -119,7 +119,7 @@ skynet.start(function()
             end
             info.msgid = id
             rmsg = "error_code"
-        elseif rmsg == "user_update" then
+        elseif rmsg == "update_user" then
             info.msgid = id
         end
         if sproto:exist_type(rmsg) then

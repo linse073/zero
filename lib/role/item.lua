@@ -381,6 +381,7 @@ function item.inlay(p, i, stoneitem, j)
         siv.pos = j
         si[4] = i
         item.del_from_type(si)
+        assert(not st[j], string.format("item %d slot %d has stone.", iv.id, j))
         st[j] = si
         st.num = st.num + 1
         local pitem = p.item

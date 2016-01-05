@@ -35,26 +35,30 @@ end
 local function table_to_string(t)
     local text = ""
     for k, v in pairs(t) do
-        local vt = type(v)
-        if vt == "string" then
-            text = text .. v
-        elseif vt == "number" or vt == "boolean" then
-            text = text .. tostring(v)
-        elseif vt == "table" then
-            text = text .. table_to_string(v)
-        end
+        text = text .. to_string(v)
     end
     return text
+end
+
+local function to_string(v)
+    local vt = type(v)
+    if vt == "string" then
+        return v
+    elseif vt == "number" or vt == "boolean" then
+        return to_string(v)
+    elseif vt == "table" then
+        return table_to_string(v)
+    end
 end
 
 function util.check_sign(t, secret)
     local sign = t.sign
     t.sign = nil
-    return b64decode(sign) == hmac_hash(secret, table_to_string(t))
+    return b64decode(sign) == hmac_hash(secret, to_string(t))
 end
 
 function util.sign(t, secret)
-    return b64encode(hmac_hash(secret, table_to_string(t)))
+    return b64encode(hmac_hash(secret, to_string(t)))
 end
 
 function util.user_update()

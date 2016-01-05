@@ -1,8 +1,12 @@
 local crypt = require "crypt"
 
+local pairs = pairs
+local ipairs = ipairs
+local type = type
 local string = string
 local tostring = tostring
 local b64decode = crypt.base64decode
+local b64encode = crypt.base64encode
 local hmac_hash = crypt.hmac_hash
 
 local util = {}
@@ -47,6 +51,10 @@ function util.check_sign(t, secret)
     local sign = t.sign
     t.sign = nil
     return b64decode(sign) == hmac_hash(secret, table_to_string(t))
+end
+
+function util.sign(t, secret)
+    return b64encode(hmac_hash(secret, table_to_string(t)))
 end
 
 function util.user_update()

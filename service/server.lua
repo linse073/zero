@@ -55,7 +55,7 @@ end
 
 function CMD.gen_role(name)
     local roleid = cs(check_name, name)
-    if roleid ~= 0 then
+    if roleid > 0 then
         skynet.call(userdb, "lua", "save", "status", skynet.packstring(status))
     end
     return roleid

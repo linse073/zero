@@ -3,6 +3,7 @@ local share = require "share"
 local util = require "util"
 
 local role = require "role.role"
+local task = require "role.task"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -13,6 +14,7 @@ local random = math.random
 local randomseed = math.randomseed
 
 local check_sign = util.check_sign
+local update_user = util.update_user
 local stagedata
 local bonusdata
 local data
@@ -71,7 +73,7 @@ function stage.rand_bonus(d, sd)
     local t = 0
     for k, v in ipairs(d.all_rate) do
         t = t + v.rate
-        if rate <= t then
+        if rand <= t then
             local bonus = {num = v.num}
             if v.type == base.BONUS_TYPE_EQUIP then
                 local user = data.user
@@ -158,7 +160,7 @@ function proc.end_stage(msg)
         d = assert(stagedata[msg.id], string.format("No stage data %d.", msg.id))
         s = stage.add_by_data(d)
         money, exp = d.firstMoney, d.firstExp
-        bonus[#bonus+1] = {id=d.firstBonusID, num=1}
+        bonus[#bonus+1] = {id=d.firstBonusID, rand_num=1, num=1}
     end
     if msg.total_box > 0 then
         bonus[#bonus+1] = {id=d.dropBonus, rand_num=msg.total_box, num=msg.pick_box}
@@ -174,26 +176,16 @@ function proc.end_stage(msg)
     end
     local user = data.user
     randomseed(skynet.time() + user.id)
-    local puser = {}
-    local ptask = {}
+    local p = update_user()
     if money > 0 then
-        user.money = user.money + money
-        puser.money = user.money
+        role.add_money(p, money)
     end
     if exp > 0 then
-        local pu, pt = role.add_exp(exp)
-        if pu then
-            merge_table(puser, pu)
-            if pt then
-                merge(ptask, pt)
-            end
-        end
+        role.add_exp(p, exp)
     end
     if msg.total_gold > 0 and msg.pick_gold > 0 and d.goldTotal > 0 then
-        user.money = user.money + d.goldTotal * msg.pick_gold // msg.total_gold
-        puser.money = user.money
+        role.add_money(p, d.goldTotal*msg.pick_gold//msg.total_gold)
     end
-    local pitem = {}
     for k, v in ipairs(bonus) do
         local rand_item = v.rand_item
         for i = 1, v.num do
@@ -201,17 +193,15 @@ function proc.end_stage(msg)
             local itemid = ri.item
             if itemid then
                 local rid = assert(itemdata[itemid], string.format("No item data %d.", itemid))
-                local pi = item.add_by_itemid(itemid, ri.num, rid)
-                merge(pitem, pi)
+                item.add_by_itemid(p, itemid, ri.num, rid)
             else
-                user.money = user.money + ri.num
-                puser.money = user.money
+                role.add_money(p, ri.num)
             end
         end
     end
     local sv = s[1]
     sv.count = sv.count + 1
-    if msg.time < sv.time then
+    if sv.time == 0 or msg.time < sv.time then
         sv.time = msg.time
     end
     if msg.hit_score > sv.hit_score then
@@ -223,7 +213,10 @@ function proc.end_stage(msg)
     if msg.hp_score > sv.hp_score then
         sv.hp_score = msg.hp_score
     end
-    return "update_user", {update={user=puser, item=pitem, task=ptask, stage={sv}}}
+    local pstage = p.stage
+    pstage[pstage+1] = sv
+    task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
+    return "update_user", {update=p}
 end
 
 return stage

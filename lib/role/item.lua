@@ -2,6 +2,9 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 
+local task = require "role.task"
+local role = require "role.role"
+
 local pairs = pairs
 local ipairs = ipairs
 local assert = assert
@@ -11,7 +14,7 @@ local random = math.random
 local floor = math.floor
 local pow = math.pow
 
-local merge = util.merge
+local update_user = util.user_update
 local itemdata
 local expdata
 local intensifydata
@@ -84,7 +87,7 @@ end
 function item.after_add()
     for k, v in pairs(data.item) do
         local i = v[1]
-        if i.host ~= 0 then
+        if i.host > 0 then
             local host = data.item[i.host]
             if host then
                 local t = host[3]
@@ -111,7 +114,7 @@ function item.add(v, d)
     local i = {v, d}
     data.item[v.id] = i
     if v.status == base.ITEM_STATUS_NORMAL then
-        if v.pos ~= 0 then
+        if v.pos > 0 then
             if is_equip(d.itemType) then
                 local pos = d.itemType - base.ITEM_TYPE_HEAD + 1
                 if pos ~= v.pos then
@@ -142,9 +145,9 @@ function item.add(v, d)
     return i
 end
 
-function item.add_by_itemid(itemid, num, d)
+function item.add_by_itemid(p, itemid, num, d)
     assert(num>0, string.format("Add item %d num error.", itemid))
-    local pack = {}
+    local pack = p.item
     local overlay = d.overlay
     if overlay > 1 then
         local t = data.type_item[itemid]
@@ -198,7 +201,6 @@ function item.add_by_itemid(itemid, num, d)
         num = num - diff
         pack[#pack+1] = v
     end
-    return pack
 end
 
 function item.rand_prop(v, d, r)
@@ -227,13 +229,13 @@ function item.count(itemid)
 end
 
 function item.get_by_pos(pos)
-    if pos ~= 0 then
+    if pos > 0 then
         return data.equip_item[pos]
     end
 end
 
-function item.use(i, pos)
-    local pack = {}
+function item.use(p, i, pos)
+    local pack = p.item
     local iv = i[1]
     local update = {id=iv.id}
     if iv.status == base.ITEM_STATUS_NORMAL then
@@ -259,18 +261,17 @@ function item.use(i, pos)
     update.pos = pos
     item.set(pos, i)
     pack[#pack+1] = update
-    return pack
 end
 
 function item.set(pos, i)
-    if pos ~= 0 then
+    if pos > 0 then
         data.equip_item[pos] = i
     end
 end
 
-function item.del_by_itemid(itemid, num)
-    local pack = {}
+function item.del_by_itemid(p, itemid, num)
     local t = assert(data.type_item[itemid], string.format("Item %d not exist.", itemid))
+    local pack = p.item
     for k, v in pairs(t) do
         local vi = v[1]
         local diff = num
@@ -279,22 +280,21 @@ function item.del_by_itemid(itemid, num)
         end
         vi.num = vi.num - diff
         num = num - diff
-        local p = {
+        local pi = {
             id = vi.id,
             num = vi.num,
         }
         if vi.num == 0 then
             item.del(v)
-            p.status = vi.status
-            p.status_time = vi.status_time
+            pi.status = vi.status
+            pi.status_time = vi.status_time
         end
-        pack[#pack+1] = p
+        pack[#pack+1] = pi
         if num == 0 then
             break
         end
     end
     assert(num==0, string.format("Item %d num %d insufficient.", itemid, num))
-    return pack
 end
 
 -- NOTICE: can't delete equip, gem and item that has stone
@@ -323,10 +323,9 @@ function item.change(i, itemid, d)
     i[2] = d
     item.add_to_type(i)
     item.rand_prop(iv, d)
-    return {id=iv.id, itemid=itemid, rand_prop=iv.rand_prop}
 end
 
-function item.split(itemid)
+function item.split(p, itemid)
     local t = data.type_item[itemid]
     if t then
         local i, minnum
@@ -342,12 +341,13 @@ function item.split(itemid)
         end
         if i then
             if minnum == 1 then
-                return i
+                return i, false
             else
                 local iv = i[1]
                 assert(minnum > 1, string.format("Item %d num %d error.", iv.id, minnum))
+                local pack = p.item
                 iv.num = iv.num - 1
-                local p = {
+                pack[#pack+1] = {
                     id = iv.id,
                     num = iv.num,
                 }
@@ -365,26 +365,38 @@ function item.split(itemid)
                 }
                 local si = item.add(v, i[2])
                 data.user.item[v.id] = v
-                return si, p
+                return si, true
             end
         end
     end
 end
 
-function item.inlay(i, si, j)
-    local iv = i[1]
-    local st = assert(i[3], string.format("item %d slot not exist.", iv.id))
-    local siv = si[1]
-    siv.host = iv.id
-    siv.pos = j
-    si[4] = i
-    item.del_from_type(si)
-    st[j] = si
-    st.num = st.num + 1
-    return {id=siv.id, host=siv.host, pos=siv.pos}
+function item.inlay(p, i, stoneitem, j)
+    local si, new = item.split(p, stoneitem)
+    if si then
+        local iv = i[1]
+        local st = assert(i[3], string.format("item %d slot not exist.", iv.id))
+        local siv = si[1]
+        siv.host = iv.id
+        siv.pos = j
+        si[4] = i
+        item.del_from_type(si)
+        st[j] = si
+        st.num = st.num + 1
+        local pitem = p.item
+        if new then
+            pitem[#pitem+1] = siv
+        else
+            pitem[#pitem+1] = {
+                id = siv.id, 
+                host = siv.host, 
+                pos = siv.pos,
+            }
+        end
+    end
 end
 
-function item.uninlay(i, si, j)
+function item.uninlay(p, i, si, j)
     local iv = i[1]
     local st = assert(i[3], string.format("item %d slot not exist.", iv.id))
     local siv = si[1]
@@ -394,7 +406,12 @@ function item.uninlay(i, si, j)
     item.add_to_type(si)
     st[j] = nil
     st.num = st.num - 1
-    return {id=siv.id, host=siv.host, pos=siv.pos}
+    local pack = p.item
+    pack[#pack+1] = {
+        id = siv.id, 
+        host = siv.host, 
+        pos = siv.pos,
+    }
 end
 
 function item.gen_itemid(prof, level, itemtype, quality)
@@ -427,7 +444,7 @@ function proc.use_item(msg)
     if idata.needJob ~= 0 and user.prof ~= idata.needJob then
         error{code = error_code.ERROR_ROLE_PROFESSION}
     end
-    if msg.pos ~= 0 then
+    if msg.pos > 0 then
         if not is_equip(idata.itemType) then
             error{code = error_code.ERROR_ITEM_POSITION}
         end
@@ -436,10 +453,11 @@ function proc.use_item(msg)
             error{code = error_code.ERROR_ITEM_POSITION}
         end
     end
-    local pitem = item.use(i, msg.pos)
-    -- TODO: update mission
-    -- TODO: calculate player attribute
-    return "user_update", {update={item=pitem}}
+    local p = update_user()
+    item.use(p, i, msg.pos)
+    task.update(p, base.TASK_COMPLETE_USE_ITEM, iv.itemid, 1)
+    role.fight_point(p)
+    return "user_update", {update=p}
 end
 
 function proc.compound_item(msg)
@@ -463,10 +481,11 @@ function proc.compound_item(msg)
     if comnum == 0 then
         error{code = error_code.ITEM_NUM_LIMIT}
     end
-    local pitem = item.del_by_itemid(msg.itemid, comnum*5)
-    merge(pitem, item.add_by_itemid(compounditem, comnum, compounddata))
-    -- TODO: update mission
-    return "user_update", {update={item=pitem}}
+    local p = update_user()
+    item.del_by_itemid(p, msg.itemid, comnum * 5)
+    item.add_by_itemid(p, compounditem, comnum, compounddata)
+    task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, msg.itemid, 1)
+    return "user_update", {update=p}
 end
 
 function proc.upgrade_item(msg)
@@ -495,11 +514,21 @@ function proc.upgrade_item(msg)
     if not udata then
         error{code = error_code.CAN_NOT_UPGRADE_ITEM}
     end
-    local pitem = item.del_by_itemid(mat, num)
-    pitem[#pitem+1] = item.change(i, upgradeitemid, udata)
-    -- TODO: update mission
-    -- TODO: calculate player attribute possibly
-    return "user_update", {update={item=pitem}}
+    local p = update_user()
+    item.del_by_itemid(p, mat, num)
+    local olditemid = iv.itemid
+    item.change(i, upgradeitemid, udata)
+    local pitem = p.item
+    pitem[#pitem+1] = {
+        id = iv.id, 
+        itemid = itemid, 
+        rand_prop = iv.rand_prop,
+    }
+    task.update(p, base.TASK_COMPLETE_UPGRADE_ITEM, olditemid, 1)
+    if iv.pos > 0 then
+        role.fight_point(p)
+    end
+    return "user_update", {update=p}
 end
 
 function proc.improve_item(msg)
@@ -528,11 +557,21 @@ function proc.improve_item(msg)
     if not idata then
         error{code = error_code.CAN_NOT_IMPROVE_ITEM}
     end
-    local pitem = item.del_by_itemid(mat, num)
-    pitem[#pitem+1] = item.change(i, improveitemid, idata)
-    -- TODO: update mission
-    -- TODO: calculate player attribute possibly
-    return "user_update", {update={item=pitem}}
+    local p = update_user()
+    item.del_by_itemid(p, mat, num)
+    local olditemid = iv.itemid
+    item.change(i, improveitemid, idata)
+    local pitem = p.item
+    pitem[#pitem+1] = {
+        id = iv.id, 
+        itemid = itemid, 
+        rand_prop = iv.rand_prop,
+    }
+    task.update(p, base.TASK_COMPLETE_IMPROVE_ITEM, olditemid, 1)
+    if iv.pos > 0 then
+        role.fight_point(p)
+    end
+    return "user_update", {update=p}
 end
 
 function proc.decompose_item(msg)
@@ -548,7 +587,7 @@ function proc.decompose_item(msg)
     if iv.status ~= base.ITEM_STATUS_NORMAL then
         error{code = error_code.ERROR_ITEM_STATUS}
     end
-    if iv.pos ~= 0 then
+    if iv.pos > 0 then
         error{code = error_code.ITEM_IN_USE}
     end
     local st = i[3]
@@ -558,16 +597,18 @@ function proc.decompose_item(msg)
     local mat = d.compos
     local matdata = assert(itemdata[mat], string.format("Decompose item %d material %d not exist.", iv.itemid, mat))
     local numdata = assert(expdata[d.needLv], string.format("Decompose item %d exp data not exist.", iv.itemid))
+    local p = update_user()
     item.del(i)
     local num = numdata.DecomposeMatNum
-    local pitem = item.add_by_itemid(mat, num, matdata)
+    item.add_by_itemid(p, mat, num, matdata)
+    local pitem = p.item
     pitem[#pitem+1] = {
         id = iv.id,
         status = iv.status,
         status_time = iv.status_time,
     }
-    -- TODO: update mission
-    return "user_update", {update={item=pitem}}
+    task.update(p, base.TASK_COMPLETE_DECOMPOSE_ITEM, iv.itemid, 1)
+    return "user_update", {update=p}
 end
 
 function proc.intensify_item(msg)
@@ -598,27 +639,36 @@ function proc.intensify_item(msg)
     if count == 0 then
         error{code = error_code.ITEM_NUM_LIMIT}
     end
-    local pitem = item.del_by_itemid(base.INTENSIFY_ITEM, 1)
+    local p = update_user()
+    item.del_by_itemid(p, base.INTENSIFY_ITEM, 1)
+    local pitem = p.item
     local r = random(base.RAND_FACTOR)
-    if r < idata.rate then
+    if r <= idata.rate then
         iv.intensify = iv.intensify + 1
         pitem[#pitem+1] = {
             id = iv.id,
             intensify = iv.intensify,
         }
-        -- TODO: update mission
-        -- TODO: calculate player attribute possibly
+        task.update(p, base.TASK_COMPLETE_INTENSIFY_ITEM, iv.itemid, 1)
+        if iv.pos > 0 then
+            role.fight_point(p)
+        end
     else
+        iv.intensify = iv.intensify - idata.punishIntensify
+        assert(iv.intensify>=0, string.format("Punish intensify data %d error.", intensify))
+        local update= {
+            id = iv.id,
+            intensify = iv.intensify,
+        }
         local punishitem = iv.itemid
         local levelRand = random(base.RAND_FACTOR)
-        if levelRand < idata.levelRate then
+        if levelRand <= idata.levelRate then
             punishitem = punishitem - idata.punishLevel * 1000
         end
         local qualityRand = random(base.RAND_FACTOR)
-        if qualityRand < idata.qualityRate then
+        if qualityRand <= idata.qualityRate then
             punishitem = punishitem - idata.punishQuality
         end
-        local update
         if punishitem ~= iv.itemid then
             local pdata = assert(itemdata[punishitem], string.format("No item data %d.", punishitem))
             local oldSlot = d.needLv // 10
@@ -629,27 +679,21 @@ function proc.intensify_item(msg)
                     for j = newSlot, oldSlot do
                         local si = st[j]
                         if si then
-                            pitem[#pitem+1] = item.uninlay(i, si, j)
+                            item.uninlay(p, i, si, j)
                         end
                     end
                 end
             end
-            update = item.change(i, punishitem, pdata)
-        end
-        iv.intensify = iv.intensify - idata.punishIntensify
-        assert(iv.intensify>=0, string.format("Punish intensify data %d error.", intensify))
-        if update then
-            update.intensify = iv.intensify
-        else
-            update = {
-                id = iv.id,
-                intensify = iv.intensify,
-            }
+            item.change(i, punishitem, pdata)
+            update.status = iv.status
+            update.status_time = iv.status_time
         end
         pitem[#pitem+1] = update
-        -- TODO: calculate player attribute possibly
+        if iv.pos > 0 then
+            role.fight_point(p)
+        end
     end
-    return "user_update", {update={item=pitem}}
+    return "user_update", {update=p}
 end
 
 function proc.inlay_item(msg)
@@ -670,23 +714,22 @@ function proc.inlay_item(msg)
         st = {num = 0}
         i[3] = st
     end
-    local pitem = {}
+    local p = user_update()
+    local pitem = p.item
     local slot = d.needLv // 10
     for j = 1, slot do
         if not st[j] then
             local stoneitem = item.gen_itemid(0, 0, d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE, j-1)
-            local si, p = item.split(stoneitem)
-            if si then
-                if p then
-                    pitem[#pitem+1] = p
-                end
-                pitem[#pitem+1] = item.inlay(i, si, j)
-            end
+            item.inlay(p, i, stoneitem, j)
         end
     end
-    -- TODO: update mission
-    -- TODO: calculate player attribute possibly
-    return "user_update", {update={item=pitem}}
+    if st.num > 0 then
+        task.update(p, base.TASK_COMPLETE_INLAY_ITEM, 0, 1)
+    end
+    if iv.pos > 0 then
+        role.fight_point(p)
+    end
+    return "user_update", {update=p}
 end
 
 function proc.uninlay_item(msg)
@@ -704,18 +747,20 @@ function proc.uninlay_item(msg)
     end
     local st = i[3]
     if st and st.num > 0 then
-        local pitem = {}
+        local p = user_update()
         local slot = d.needLv // 10
         for j = 1, slot do
             local si = st[j]
             if si then
-                pitem[#pitem+1] = item.uninlay(i, si, j)
+                item.uninlay(p, i, si, j)
             end
         end
         assert(st.num==0, string.format("Uninlay item %d error num %d.", iv.id, st.num))
-        -- TODO: update mission
-        -- TODO: calculate player attribute possibly
-        return "user_update", {update={item=pitem}}
+        task.update(p, base.TASK_COMPLETE_UNINLAY_ITEM, 0, 1)
+        if iv.pos > 0 then
+            role.fight_point(p)
+        end
+        return "user_update", {update=p}
     else
         return "user_update", {}
     end

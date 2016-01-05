@@ -49,4 +49,15 @@ function util.check_sign(t, secret)
     return b64decode(sign) == hmac_hash(secret, table_to_string(t))
 end
 
+function util.user_update()
+    return {
+        user = {},
+        item = {},
+        stage = {},
+        task = {},
+        card = {},
+        friend = {},
+    }
+end
+
 return util

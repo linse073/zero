@@ -1,6 +1,9 @@
 local skynet = require "skynet"
 local share = require "share"
+local util = require "util"
+
 local item = require "role.item"
+local task = require "role.task"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -8,6 +11,7 @@ local assert = assert
 local error = error
 local string = string
 
+local user_update = util.user_update
 local carddata
 local expdata
 local original_card
@@ -67,7 +71,7 @@ function card.add(v, d)
     card.add_to_type(c)
     for i = 1, base.MAX_CARD_POSITION_TYPE do
         local pos = v.pos[i]
-        if pos ~= 0 then
+        if pos > 0 then
             local equip_card = data.equip_card[i]
             local ec = equip_card[pos]
             if ec then
@@ -85,7 +89,7 @@ function card.gen_id()
     return skynet.call(data.server, "lua", "gen_card")
 end
 
-function card.add_by_cardid(cardid, d)
+function card.add_by_cardid(p, cardid, d)
     local v = {
         id = cs(card.gen_id),
         cardid = cardid,
@@ -97,6 +101,8 @@ function card.add_by_cardid(cardid, d)
     end
     local c = card.add(v, d)
     data.user.card[v.id] = v
+    local pack = p.card
+    pack[#pack+1] = v
     return c
 end
 
@@ -105,8 +111,8 @@ function card.get_by_cardid(cardid)
     return data.type_card[original]
 end
 
-function card.use(c, pos_type, pos)
-    local pack = {}
+function card.use(p, c, pos_type, pos)
+    local pack = p.card
     local cv = c[1]
     local equip_card = data.equip_card[pos_type]
     local oc = equip_card[pos]
@@ -114,17 +120,16 @@ function card.use(c, pos_type, pos)
         local opos = cv.pos[pos_type]
         local ocv = oc[1]
         ocv.pos[pos_type] = opos
-        if opos ~= 0 then
+        if opos > 0 then
             equip_card[opos] = oc
         end
         pack[#pack+1] = {id=ocv.id, pos=ocv.pos}
     end
     cv.pos[pos_type] = pos
-    if pos ~= 0 then
+    if pos > 0 then
         equip_card[pos] = c
     end
     pack[#pack+1] = {id=cv.id, pos=cv.pos}
-    return pack
 end
 
 function card.get_proc()
@@ -150,10 +155,11 @@ function proc.call_card(msg)
     if count < ed.cardStar then
         error{code = error_code.CARD_SOUL_LIMIT}
     end
-    local pitem = item.del_by_itemid(d.soulId, ed.cardStar)
-    c = card.add_by_cardid(msg.cardid)
-    -- TODO: update mission
-    return "update_user", {update={card={c[1]}, item=pitem}}
+    local p = user_update()
+    item.del_by_itemid(p, d.soulId, ed.cardStar)
+    card.add_by_cardid(p, msg.cardid, d)
+    task.update(p, base.TASK_COMPLETE_CARD, msg.cardid, 1)
+    return "update_user", {update=p}
 end
 
 function proc.upgrade_card(msg)
@@ -174,14 +180,16 @@ function proc.upgrade_card(msg)
     if count < num then
         error{code = error_code.CARD_SOUL_LIMIT}
     end
-    local pitem = item.del_by_itemid(d.soulId, num)
+    local p = user_update()
+    item.del_by_itemid(p, d.soulId, num)
+    local pcard = p.card
     cv.level = cv.level + 1
-    local uc = {
+    pcard[#pcard+1] = {
         id = cv.id,
         level = cv.level,
     }
-    -- TODO: update mission
-    return "update_user", {update={card={uc}, item=pitem}}
+    task.update(p, base.TASK_COMPLETE_UPGRADE_CARD, cv.cardid, 1)
+    return "update_user", {update=p}
 end
 
 function proc.promote_card(msg)
@@ -197,15 +205,17 @@ function proc.promote_card(msg)
     if count < d.evolveNum then
         error{code = error_code.CARD_EVOLVE_ITEM_LIMIT}
     end
-    local pitem = item.del_by_itemid(d.evolveItem, d.evolveNum)
+    local p = update_user()
+    item.del_by_itemid(p, d.evolveItem, d.evolveNum)
     local cv = c[1]
+    local pcard = p.card
     cv.cardid = d.evolveId
-    local uc = {
+    pcard[#pcard+1] = {
         id = cv.id,
         cardid = cv.cardid,
     }
-    -- TODO update mission
-    return "update_user", {update={card={uc}, item=pitem}}
+    task.update(p, base.TASK_COMPLETE_PROMOTE_CARD, cv.cardid, 1)
+    return "update_user", {update=p}
 end
 
 function proc.use_card(msg)
@@ -223,9 +233,10 @@ function proc.use_card(msg)
     if cv.pos[msg.pos_type] == msg.pos then
         error{code = error_code.ERROR_CARD_POSITION}
     end
-    local pcard = card.use(c, msg.pos_type, msg.pos)
-    -- TODO: update mission
-    return "update_user", {update={card=pcard}}
+    local p = user_update()
+    card.use(p, c, msg.pos_type, msg.pos)
+    task.update(p, base.TASK_COMPLETE_USE_CARD, cv.cardid, 1)
+    return "update_user", {update=p}
 end
 
 return card

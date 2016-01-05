@@ -100,7 +100,7 @@ function role.heart_beat()
     end
 end
 
-function role.add_exp(exp)
+function role.add_exp(p, exp)
     local user = data.user
     local oldExp = user.exp
     user.exp = user.exp + exp
@@ -118,14 +118,33 @@ function role.add_exp(exp)
             end
             user.level = user.level + 1
         end
-        local puser = {exp = user.exp}
-        local ptask
+        local puser = p.user
+        puser.exp = user.exp
         if oldLevel ~= user.level then
             puser.level = user.level
-            ptask = task.update_level(oldLevel, user.level)
+            task.update_level(p, oldLevel, user.level)
+            task.update(p, base.TASK_COMPLETE_LEVEL, 0, 0, user.level)
         end
-        return puser, ptask
     end
+end
+
+function role.add_money(p, money)
+    local puser = p.user
+    user.money = user.money + money
+    puser.monye = user.money
+    task.update(p, base.TASK_COMPLETE_MONEY, 0, 0, user.money)
+end
+
+function role.add_rmb(p, rmb)
+    local puser = p.user
+    user.rmb = user.rmb + rmb
+    puser.rmb = user.rmb
+    task.update(p, base.TASK_COMPLETE_RMB, 0, 0, user.rmb)
+end
+
+function role.fight_point(p)
+    local puser = p.user
+    task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
 end
 
 function role.get_proc()

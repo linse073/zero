@@ -101,9 +101,7 @@ skynet.start(function()
                 day_task[v.levelLimit] = {v}
             end
         elseif v.TaskType == base.TASK_TYPE_ACHIEVEMENT then
-            if v.levelLimit == 0 then
-                achi_task[#achi_task+1] = v
-            end
+            achi_task[#achi_task+1] = v
         end
     end
     sharedata.new("day_task", day_task)

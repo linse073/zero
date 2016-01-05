@@ -4,6 +4,7 @@ local util = require "util"
 
 local role = require "role.role"
 local item = require "role.item"
+local card = require "role.card"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -12,10 +13,10 @@ local error = error
 local string = string
 local random = math.random
 
-local merge = util.merge
-local merge_table = util.merge_table
+local update_user = util.update_user
 local taskdata
 local itemdata
+local carddata
 local achi_task
 local day_task
 local base
@@ -27,11 +28,10 @@ local proc = {}
 skynet.init(function()
     taskdata = share.taskdata
     itemdata = share.itemdata
+    carddata = share.carddata
     achi_task = share.achi_task
     day_task = share.day_task
     base = share.base
-    merge = util.merge
-    merge_table = util.merge_table
 end)
 
 function task.init(userdata)
@@ -81,18 +81,9 @@ function task.enter()
     end
     -- repair achievement task
     for k, v in ipairs(achi_task) do
-        local d = v
-        while d do
-            local t = dt[d.TaskId]
-            if not t then
-                t = task.add_by_data(d, base.TASK_STATUS_ACCEPT)
-                pack[#pack+1] = t[1]
-            end
-            if t[1].status == base.TASK_STATUS_FINISH then
-                d = taskdata[d.nextID]
-            else
-                d = nil
-            end
+        if not dt[v.TaskId] then
+            local t = task.add_by_data(v, base.TASK_STATUS_ACCEPT)
+            pack[#pack+1] = t[1]
         end
     end
     return "task", pack
@@ -132,12 +123,14 @@ function task.add_by_data(d, status)
     return t
 end
 
-function task.check_add(d, status)
+function task.check_add(p, d, status)
     local t = data.task[d.TaskId]
     if t then
         skynet.error(string.format("Already has task %d.", d.TaskId))
     else
-        return task.add_by_data(d, base.TASK_STATUS_ACCEPT)
+        t = task.add_by_data(d, base.TASK_STATUS_ACCEPT)
+        local ptask = p.task
+        ptask[#ptask+1] = t[1]
     end
 end
 
@@ -171,32 +164,30 @@ function task.update_day()
     return pack
 end
 
-function task.update_level(ol, nl)
-    local pack = {}
+function task.update_level(p, ol, nl)
     for i = ol+1, nl do
         local lt = day_task[i]
         if lt then
             for k, v in ipairs(lt) do
-                local t = task.check_add(v, base.TASK_STATUS_ACCEPT)
-                if t then
-                    pack[#pack+1] = t[1]
-                end
+                task.check_add(p, v, base.TASK_STATUS_ACCEPT)
             end
         end
     end
-    return pack
 end
 
-function task.update(completeType, condition, count)
-    local puser, ptask, pitem
-    local ptask = {}
+function task.update(p, completeType, condition, count, setCount)
+    local ptask = p.task
     local user = data.user
     for k, v in pairs(data.accept_task) do
         local vt = v[1]
         local d = v[2]
         if user.level >= d.levelLimit and vt.status == base.TASK_STATUS_ACCEPT and completeType == d.CompleteType
             and (d.condition == 0 or d.condition == condition) then
-            vt.count = vt.count + count
+            if setCount then
+                vt.count = setCount
+            else
+                vt.count = vt.count + count
+            end
             local update = {
                 id = vt.id,
                 count = vt.count,
@@ -204,77 +195,59 @@ function task.update(completeType, condition, count)
             if vt.count >= d.count then
                 vt.status = base.TASK_STATUS_DONE
                 if d.TaskType == base.TASK_TYPE_MASTER and d.SubNpc == 0 then
-                    local pt = ptask
-                    puser, ptask, pitem = task.finish(v)
-                    merge(ptask, pt)
+                    task.finish(p, v)
                 end
                 update.status = vt.status
             end
             ptask[#ptask+1] = update
         end
     end
-    return puser, ptask, pitem
 end
 
-function task.finish(t)
+function task.finish(p, t)
     local vt = t[1]
     vt.status = base.TASK_STATUS_FINISH
-    local puser, ptask, pitem = task.award(t)
+    task.award(p, t)
     local d = t[2]
-    if (d.TaskType == base.TASK_TYPE_MASTER or d.TaskType == base.TASK_TYPE_ACHIEVEMENT)
-        and d.nextID ~= 0 then
+    if d.TaskType == base.TASK_TYPE_MASTER and d.nextID > 0 then
         local nd = assert(taskdata[d.nextID], string.format("No task data %d.", d.nextID))
-        local nt = task.check_add(nd, base.TASK_STATUS_ACCEPT)
-        if nt then
-            ptask[#ptask+1] = nt[1]
-        end
+        task.check_add(p, nd, base.TASK_STATUS_ACCEPT)
     end
-    return puser, ptask, pitem
 end
 
-function task.award(t)
+function task.award(p, t)
     local user = data.user
     local d = t[2]
-    local puser = {}
-    local ptask = {}
     if d.EXP > 0 then
-        local pu, pt = role.add_exp(d.EXP)
-        if pu then
-            merge_table(puser, pu)
-            if pt then
-                merge(ptask, pt)
-            end
-        end
+        role.add_exp(p, d.EXP)
     end
     if d.Gold > 0 then
-        user.money = user.money + d.Gold
-        puser.money = user.money
+        role.add_money(p, d.Gold)
     end
     if d.RMBMoney > 0 then
-        user.rmb = user.rmb + d.RMBMoney
-        puser.rmb = user.rmb
+        role.add_rmb(p, d.RMBMoney)
     end
     local profitem = d.profItem[user.prof]
-    local pitem = {}
     if profitem > 0 then
         local idata = assert(itemdata[profitem], string.format("No item data %d.", profitem))
-        local pi = item.add_by_itemid(profitem, 1, idata)
-        merge(pitem, pi)
+        item.add_by_itemid(p, profitem, 1, idata)
     end
     for k, v in ipairs(d.Item) do
-        if v ~= 0 then
+        if v > 0 then
             local n = d.ItemNum[k]
-            if n ~= 0 then
+            if n > 0 then
                 local idata = assert(itemdata[v], string.format("No item data %d.", v))
-                local pi = item.add_by_itemid(v, n, idata)
-                merge(pitem, pi)
+                item.add_by_itemid(p, v, n, idata)
             else
                 skynet.error("Task data %d item num error.", d.TaskId)
             end
         end
     end
-    -- TODO: add card
-    return puser, ptask, pitem
+    local profcard = d.CardId[user.prof]
+    if profcard > 0 then
+        local cdata = assert(carddata[profcard], string.format("No card data %d.", profcard))
+        card.add_by_cardid(p, profcard, cdata)
+    end
 end
 
 function task.get_proc()
@@ -293,16 +266,16 @@ function proc.submit_task(msg)
     if user.level < d.levelLimit then
         error{code = error_code.ROLE_LEVEL_LIMIT}
     end
+    local p = user_update()
     local vt = t[1]
-    local puser, ptask, pitem
     if vt.status == base.TASK_STATUS_ACCEPT then
         if d.CompleteType == base.TASK_COMPLETE_TYPE_TALK then
-            puser, ptask, pitem = task.update(base.TASK_COMPLETE_TYPE_TALK, msg.condition, 1)
+            task.update(p, base.TASK_COMPLETE_TALK, msg.condition, 1)
         end
-    elseif vt.status == base.TASK_STATUS_FINISH then
-        puser, ptask, pitem = task.finish(t)
+    elseif vt.status == base.TASK_STATUS_DONE then
+        task.finish(p, t)
     end
-    return "user_update", {update={user=puser, task=ptask, item=pitem}}
+    return "user_update", {update=p}
 end
 
 return task

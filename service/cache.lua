@@ -9,13 +9,18 @@ local tonumber = tonumber
 skynet.start(function()
     -- share data
     local carddata = require("data.card")
-    sharedata.new("carddata", carddata)
-    sharedata.new("itemdata", require("data.item"))
-    sharedata.new("stagedata", require("data.stage"))
+    local itemdata = require("data.item")
+    local stagedata = require("data.stage")
     local taskdata = require("data.task")
+    local expdata = require("data.exp")
+    local intensifydata = require("data.intensify")
+
+    sharedata.new("carddata", carddata)
+    sharedata.new("itemdata", itemdata)
+    sharedata.new("stagedata", stagedata)
     sharedata.new("taskdata", taskdata)
-    sharedata.new("expdata", require("data.exp"))
-    sharedata.new("intensifydata", require("data.intensify"))
+    sharedata.new("expdata", expdata)
+    sharedata.new("intensifydata", intensifydata)
 
     local base = require("base")
     sharedata.new("base", base)

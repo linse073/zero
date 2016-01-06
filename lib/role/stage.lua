@@ -68,6 +68,12 @@ function stage.add_by_data(d)
     return s
 end
 
+function stage.update_day()
+    for k, v in pairs(data.stage) do
+        v[1].count = 0
+    end
+end
+
 function stage.rand_bonus(d, sd)
     local rand = random(d.total_rate)
     local t = 0

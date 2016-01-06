@@ -77,8 +77,14 @@ function role.exit()
 end
 
 function role.update_day()
-    local pt = task.update_day()
-    notify.add("update_day", {task = pt})
+    local user = data.user
+    if user then
+        user.arena_count = 0
+        user.charge_arena = 0
+        stage.update_day()
+        local pt = task.update_day()
+        notify.add("update_day", {task = pt})
+    end
 end
 
 function role.save_routine()
@@ -200,6 +206,8 @@ function proc.create_user(msg)
         login_time = 0,
         last_login_time = 0,
         logout_time = 0,
+        cur_pos = {x=0, y=0}
+        des_pos = {x=0, y=0}
 
         item = {},
         card = {},

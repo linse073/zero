@@ -111,6 +111,7 @@ function card.get_by_cardid(cardid)
     return data.type_card[original]
 end
 
+-- NOTICE: pos can be 0
 function card.use(p, c, pos_type, pos)
     local pack = p.card
     local cv = c[1]
@@ -226,7 +227,7 @@ function proc.use_card(msg)
     if msg.pos_type <= 0 or msg.pos_type > base.MAX_CARD_POSITION_TYPE then
         error{code = error_code.ERROR_CARD_POSITION_TYPE}
     end
-    if msg.pos <= 0 or msg.pos > base.MAX_EQUIP_CARD then
+    if msg.pos < 0 or msg.pos > base.MAX_EQUIP_CARD then
         error{code = error_code.ERROR_CARD_POSITION}
     end
     local cv = c[1]

@@ -9,6 +9,11 @@
     user 0 : *simple_user
 }
 
+.position {
+    x 0 : integer
+    y 1 : integer
+}
+
 .user_info {
     name 0 : string
     id 1 : integer
@@ -23,6 +28,8 @@
     arena_count 10 : integer
     charge_arena 11 : integer
     fight_point 12 : integer
+    cur_pos 13 : position
+    des_pos 14 : position
 }
 
 .item_info {

@@ -19,9 +19,6 @@ function share.is_stone(itemtype)
     return itemtype >= base.ITEM_TYPE_BLUE_STONE and itemtype <= base.ITEM_TYPE_GREEN_CRYSTAL
 end
 
-function share.check_card_pos(pos)
-end
-
 skynet.init(function()
     -- share with all service
     share.cardata = sharedata.query("carddata")

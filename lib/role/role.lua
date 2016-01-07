@@ -18,6 +18,8 @@ local string = string
 local math = math
 local floor = math.floor
 local randomseed = math.randomseed
+local random = math.random
+local sqrt = math.sqrt
 local date = os.date
 
 local merge_table = util.merge_table
@@ -60,12 +62,15 @@ function role.init(userdata)
     for k, v in ipairs(module) do
         v.init(data)
     end
+    local now = floor(skynet.time())
+    randomseed(now)
 end
 
 function role.exit()
     for k, v in ipairs(module) do
         v.exit()
     end
+    tiemr.del_routine("routine")
     timer.del_routine("save_role")
     timer.del_day_routine("update_day")
     timer.del_routine("heart_beat")
@@ -104,6 +109,30 @@ function role.save_routine()
     end
 end
 
+function role.move_speed()
+    return base.MOVE_SPEED
+end
+
+function role.routine()
+    local user = data.user
+    if user then
+        local move = data.move
+        if move.total_time > move.pass_time then
+            move.pass_time = move.pass_time + 1
+            local cur_pos = move.cur_pos
+            if move.total_time <= move.pass_time then
+                cur_pos.x = move.des_pos.x
+                cur_pos.y = move.des_pos.y
+            else
+                cur_pos.x = cur_pos.x + move.speed.x
+                cur_pos.y = cur_pos.y + move.speed.y
+            end
+            user.cur_pos.x = floor(cur_pos.x)
+            user.cur_pos.y = floor(cur_pos.y)
+        end
+    end
+end
+
 function role.heart_beat()
     if data.heart_beat == 0 then
         skynet.error(string.format("heart beat kick user %s.", data.id))
@@ -137,6 +166,11 @@ function role.add_exp(p, exp)
             puser.level = user.level
             task.update_level(p, oldLevel, user.level)
             task.update(p, base.TASK_COMPLETE_LEVEL, 0, 0, user.level)
+            local bmsg = {
+                id = user.id,
+                level = user.level,
+            }
+            skynet.send(role_mgr, "lua", "broadcast_area", "other_info", bmsg)
         end
     end
 end
@@ -158,6 +192,22 @@ end
 function role.fight_point(p)
     local puser = p.user
     task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
+end
+
+function role.move(des_pos)
+    user.des_pos.x = des_pos.x
+    user.des_pos.y = des_pos.y
+    local move = data.move
+    move.des_pos.x = des_pos.x
+    move.des_pos.y = des_pos.y
+    move.pass_time = 0
+    local cur_pos = move.cur_pos
+    local diffx = des_pos.x - cur_pos.x
+    local diffy = des_pos.y - cur_pos.y
+    local dis = sqrt(diffx * diffx + diffy * diffy)
+    move.total_time = dis / role.move_speed()
+    move.speed.x = diffx / move.total_time
+    move.speed.y = diffx / move.total_time
 end
 
 function role.get_proc()
@@ -184,6 +234,9 @@ function proc.create_user(msg)
     if #account >= base.MAX_ROLE then
         error{code = error_code.MAX_ROLE}
     end
+    if msg.prof < base.PROF_WARRIOR or msg.prof > base.PROF_WIZARD then
+        error{code = error_code.PROFESSION_NOT_EXIST}
+    end
     local roleid = skynet.call(data.server, "lua", "gen_role", msg.name)
     if roleid == 0 then
         error{code = error_code.ROLE_NAME_EXIST}
@@ -196,6 +249,9 @@ function proc.create_user(msg)
     }
     account[#account+1] = su
     skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(account))
+    local mapRect = base.MAP_RECT
+    local x = random(mapRect.x, mapRect.x+mapRect.width)
+    local y = random(mapRect.y, mapRect.y+mapRect.height)
     local u = {
         name = msg.name,
         id = roleid,
@@ -213,8 +269,8 @@ function proc.create_user(msg)
         login_time = 0,
         last_login_time = 0,
         logout_time = 0,
-        cur_pos = {x=0, y=0}
-        des_pos = {x=0, y=0}
+        cur_pos = {x=x, y=y},
+        des_pos = {x=x, y=y},
 
         item = {},
         card = {},
@@ -250,7 +306,6 @@ function proc.enter_game(msg)
     end
     user = skynet.unpack(user)
     local now = floor(skynet.time())
-    randomseed(now + msg.id)
     user.last_login_time = user.login_time
     user.login_time = now
     data.suser = suser
@@ -267,11 +322,46 @@ function proc.enter_game(msg)
             update_day(user)
         end
     end
+    local cur_pos = user.cur_pos
+    data.move = {
+        cur_pos = {x=cur_pos.x, y=cur_pos.y},
+        des_pos = {x=0, y=0},
+        pass_time = 0,
+        total_time = 0,
+        speed = {x=0, y=0},
+    }
+    local des_pos = user.des_pos
+    role.move(des_pos)
+    timer.add_routine("routine", role.routine, 1)
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
-    skynet.call(role_mgr, "lua", "enter", user.id, skynet.self())
+    local bmsg = {
+        name = user.name,
+        id = user.id,
+        prof = user.prof,
+        level = user.level,
+        cur_pos = cur_pos,
+        des_pos = des_pos,
+        fight = data.stage_seed.id ~= 0,
+    }
+    skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
     data.enter = nil
     return "user_all", ret
+end
+
+function proc.move(msg)
+    local user = data.user
+    if not user then
+        error{code = error_code.ROLE_NOT_EXIST}
+    end
+    local des_pos = msg.des_pos
+    role.move(des_pos)
+    local bmsg = {
+        id = user.id,
+        des_pos = des_pos,
+    }
+    skynet.send(role_mgr, "lua", "broadcast_area", "other_info", bmsg)
+    return "response", ""
 end
 
 return role

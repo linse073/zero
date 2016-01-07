@@ -3,6 +3,7 @@ local role = require "role.role"
 local timer = require "timer"
 local share = require "share"
 local util = require "util"
+local notify = require "notify"
 
 local assert = assert
 local pcall = pcall
@@ -81,6 +82,10 @@ end
 
 function CMD.day_routine(source, key)
     timer.call_day_routine(key)
+end
+
+function CMD.notify(source, msg)
+    notify.add(msg)
 end
 
 skynet.start(function()

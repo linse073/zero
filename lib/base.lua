@@ -114,6 +114,15 @@ local base = {
     BONUS_TYPE_ITEM = 3,
     BONUS_TYPE_MATERIAL = 4,
     BONUS_TYPE_STONE = 5,
+
+    -- map
+    MAP_RECT = {
+        x = 0,
+        y = 0,
+        width = 1000,
+        height = 300,
+    },
+    MOVE_SPEED = 100,
 }
 
 return base

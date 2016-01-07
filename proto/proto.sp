@@ -32,6 +32,16 @@
     des_pos 14 : position
 }
 
+.other_info {
+    name 0 : string
+    id 1 : integer
+    prof 2 : integer
+    level 3 : integer
+    cur_pos 4 : position
+    des_pos 5 : position
+    fight 6 : boolean
+}
+
 .item_info {
     .rand_prop {
         type 0 : integer
@@ -209,4 +219,12 @@
 .stage_seed {
     id 0 : integer
     rand_seed 1 : integer
+}
+
+.move {
+    des_pos 0 : position
+}
+
+.logout {
+    id 0 : integer
 }

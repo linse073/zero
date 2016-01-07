@@ -26,12 +26,16 @@ local function pack()
     local content = ""
     for k, v in ipairs(notify_queue) do
         local m, c = v[1], v[2]
-        if sproto:exist_type(m) then
-            c = sproto:pencode(m, c)
+        if c then
+            if sproto:exist_type(m) then
+                c = sproto:pencode(m, c)
+            end
+            local id = assert(name_msg[m], string.format("No protocol %s.", m))
+            c = string.pack(">s2", string.pack(">I2", id) .. c)
+            content = content .. c
+        else
+            content = content .. m
         end
-        local id = assert(name_msg[m], string.format("No protocol %s.", m))
-        c = string.pack(">s2", string.pack(">I2", id) .. c)
-        content = content .. c
     end
     notify_queue = {}
     return "notify_info", content
@@ -58,7 +62,7 @@ end
 
 function notify.exit()
     if notify_coroutine then
-        notify.add("logout", "")
+        notify.add("logout", {})
     end
 end
 

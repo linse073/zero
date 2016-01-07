@@ -18,6 +18,7 @@ local update_user = util.update_user
 local stagedata
 local bonusdata
 local data
+local role_mgr
 
 local stage = {}
 local proc = {}
@@ -25,6 +26,7 @@ local proc = {}
 skynet.init(function()
     stagedata = share.stagedata
     bonusdata = share.bonusdata
+    role_mgr = skynet.queryservice("role_mgr")
 end)
 
 function stage.init(userdata)
@@ -38,6 +40,10 @@ end
 function stage.enter()
     local pack = {}
     data.stage = {}
+    data.stage_seed = {
+        id = 0,
+        seed = 0,
+    }
     for k, v in pairs(data.user.stage) do
         stage.add(v)
         pack[#pack+1] = v
@@ -75,6 +81,7 @@ function stage.update_day()
 end
 
 function stage.rand_bonus(d, sd)
+    local user = data.user
     local rand = random(d.total_rate)
     local t = 0
     for k, v in ipairs(d.all_rate) do
@@ -82,7 +89,6 @@ function stage.rand_bonus(d, sd)
         if rand <= t then
             local bonus = {num = v.num}
             if v.type == base.BONUS_TYPE_EQUIP then
-                local user = data.user
                 local prof
                 if v.prof == 1 then
                     prof = user.prof
@@ -145,10 +151,22 @@ function proc.begin_stage(msg)
             error{code = error_code.STAGE_COUNT_LIMIT}
         end
     end
-    return "stage_seed", {id=msg.id, rand_seed=random(skynet.time()+msg.id)}
+    local stage_seed = data.stage_seed
+    stage_seed.id = msg.id
+    stage_seed.seed = random(skynet.time()+msg.id)
+    local bmsg = {
+        id = user.id,
+        fight = true,
+    }
+    skynet.send(role_mgr, "lua", "broadcast_area", "other_info", bmsg)
+    return "stage_seed", {id=msg.id, rand_seed=stage_seed.seed}
 end
 
 function proc.end_stage(msg)
+    local stage_seed = data.stage_seed
+    if stage_seed.id ~= msg.id or stage_seed.seed ~= msg.rand_seed then
+        error{code = error_code.ERROR_STAGE_SEED}
+    end
     if not check_sign(msg, data.secret) then
         error{code = error_code.ERROR_STAGE_SIGN}
     end
@@ -180,8 +198,7 @@ function proc.end_stage(msg)
         end
         v.rand_item = rand_item
     end
-    local user = data.user
-    randomseed(skynet.time() + user.id)
+    randomseed(skynet.time())
     local p = update_user()
     if money > 0 then
         role.add_money(p, money)
@@ -222,6 +239,13 @@ function proc.end_stage(msg)
     local pstage = p.stage
     pstage[pstage+1] = sv
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
+    stage_seed.id = 0
+    stage_seed.seed = 0
+    local bmsg = {
+        id = data.user.id,
+        fight = false,
+    }
+    skynet.send(role_mgr, "lua", "broadcast_area", "other_info", bmsg)
     return "update_user", {update=p}
 end
 

@@ -5,6 +5,7 @@ local msg = {
     [1002] = "logout",
     [1003] = "heart_beat",
     [1004] = "heart_beat_response",
+    [1005] = "response",
 
     [2000] = "simple_user",
     [2001] = "account_info",
@@ -17,6 +18,8 @@ local msg = {
     [2008] = "rank_info",
     [2009] = "user_all",
     [2010] = "update_user",
+    [2011] = "other_info",
+    [2012] = "move",
 
     [2100] = "get_account_info",
     [2101] = "create_user",

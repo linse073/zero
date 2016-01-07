@@ -53,7 +53,9 @@ function timer.del_once_routine(key)
 end
 
 function timer.call_once_routine(key)
-    assert(once_routine_list[key], string.format("No once routine %s.", key))()
+    local func = assert(once_routine_list[key], string.format("No once routine %s.", key))
+    once_routine_list[key] = nil
+    func()
 end
 
 function timer.add_day_routine(key, func)

@@ -59,7 +59,6 @@ function item.enter()
         pack[#pack+1] = v
     end
     item.after_add()
-    -- TODO: calculate player attribute
     return "item", pack
 end
 

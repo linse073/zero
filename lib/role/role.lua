@@ -16,7 +16,9 @@ local assert = assert
 local error = error
 local string = string
 local math = math
+local floor = math.floor
 local randomseed = math.randomseed
+local date = os.date
 
 local merge_table = util.merge_table
 local expdata
@@ -70,19 +72,24 @@ function role.exit()
     local user = data.user
     if user then
         skynet.call(role_mgr, "lua", "logout", user.id)
+        user.logout_time = floor(skynet.time())
     end
     notify.exit()
     role.save_routine()
     data = nil
 end
 
+local function update_day(user)
+    user.arena_count = 0
+    user.charge_arena = 0
+    stage.update_day()
+    return task.update_day()
+end
+
 function role.update_day()
     local user = data.user
     if user then
-        user.arena_count = 0
-        user.charge_arena = 0
-        stage.update_day()
-        local pt = task.update_day()
+        local pt = update_day(user)
         notify.add("update_day", {task = pt})
     end
 end
@@ -242,13 +249,23 @@ function proc.enter_game(msg)
         error{code = error_code.ROLE_NOT_EXIST}
     end
     user = skynet.unpack(user)
-    randomseed(skynet.time() + msg.id)
+    local now = floor(skynet.time())
+    randomseed(now + msg.id)
+    user.last_login_time = user.login_time
+    user.login_time = now
     data.suser = suser
     data.user = user
     local ret = {user = user}
     for k, v in ipairs(module) do
         local key, pack = v.enter()
         ret[key] = pack
+    end
+    if user.logout_time > 0 then
+        local od = date("%j", user.logout_time)
+        local nd = date("%j", now)
+        if od ~= nd then
+            update_day(user)
+        end
     end
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)

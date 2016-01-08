@@ -42,6 +42,10 @@
     fight 6 : boolean
 }
 
+.other_all {
+    other 0 : *other_info
+}
+
 .item_info {
     .rand_prop {
         type 0 : integer

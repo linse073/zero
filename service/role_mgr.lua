@@ -32,14 +32,25 @@ local function gen_area()
     return area
 end
 
+function notify_area(roleid, agent, area)
+    local pack = {}
+    for k, v in pairs(area) do
+        if k ~= roleid then
+            pack[#pack+1] = v[3]
+        end
+    end
+    skyent.send(agent, "lua", "notify", "other_all", {other=pack})
+end
+
 function CMD.enter(info, agent)
     local roleid = info.id
     assert(not role_list[roleid], string.format("Role already enter %d.", roleid))
     local area = gen_area()
     area[roleid] = agent
     area.num = area.num + 1
-    role_list[roleid] = {agent, area}
+    role_list[roleid] = {agent, area, info}
     CMD.broadcast_area("other_info", info)
+    notify_area(roleid, agent, area)
 end
 
 function CMD.logout(roleid)
@@ -81,6 +92,12 @@ function CMD.broadcast_area(msg, info)
     for k, v in pairs(area) do
         if k ~= id then
             skynet.send(v, "lua", "notify", c)
+        end
+    end
+    if msg == "other_info" then
+        local oi = role[3]
+        for k, v in pairs(info) do
+            oi[k] = v
         end
     end
 end

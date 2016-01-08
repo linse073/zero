@@ -119,8 +119,8 @@ local base = {
     MAP_RECT = {
         x = 0,
         y = 0,
-        width = 1000,
-        height = 300,
+        ex = 1000,
+        ey = 300,
     },
     MOVE_SPEED = 100,
 }

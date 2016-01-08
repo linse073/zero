@@ -121,8 +121,8 @@ function role.routine()
             move.pass_time = move.pass_time + 1
             local cur_pos = move.cur_pos
             if move.total_time <= move.pass_time then
-                cur_pos.x = move.des_pos.x
-                cur_pos.y = move.des_pos.y
+                cur_pos.x = user.des_pos.x
+                cur_pos.y = user.des_pos.y
             else
                 cur_pos.x = cur_pos.x + move.speed.x
                 cur_pos.y = cur_pos.y + move.speed.y
@@ -198,8 +198,6 @@ function role.move(des_pos)
     user.des_pos.x = des_pos.x
     user.des_pos.y = des_pos.y
     local move = data.move
-    move.des_pos.x = des_pos.x
-    move.des_pos.y = des_pos.y
     move.pass_time = 0
     local cur_pos = move.cur_pos
     local diffx = des_pos.x - cur_pos.x
@@ -250,8 +248,8 @@ function proc.create_user(msg)
     account[#account+1] = su
     skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(account))
     local mapRect = base.MAP_RECT
-    local x = random(mapRect.x, mapRect.x+mapRect.width)
-    local y = random(mapRect.y, mapRect.y+mapRect.height)
+    local x = random(mapRect.x, mapRect.ex)
+    local y = random(mapRect.y, mapRect.ey)
     local u = {
         name = msg.name,
         id = roleid,
@@ -325,7 +323,6 @@ function proc.enter_game(msg)
     local cur_pos = user.cur_pos
     data.move = {
         cur_pos = {x=cur_pos.x, y=cur_pos.y},
-        des_pos = {x=0, y=0},
         pass_time = 0,
         total_time = 0,
         speed = {x=0, y=0},
@@ -355,6 +352,17 @@ function proc.move(msg)
         error{code = error_code.ROLE_NOT_EXIST}
     end
     local des_pos = msg.des_pos
+    local map_rect = base.MAP_RECT
+    if des_pos.x < map_rect.x then
+        des_pos.x = map_rect.x
+    elseif des_pos.x > map_rect.ex then
+        des_pos.x = map_rect.ex
+    end
+    if des_pos.y < map_rect.y then
+        des_pos.y = map_rect.y
+    elseif des_pos.y > map_rect.ey then
+        des_pos.y = map_rect.ey
+    end
     role.move(des_pos)
     local bmsg = {
         id = user.id,

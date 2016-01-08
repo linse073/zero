@@ -84,8 +84,8 @@ function CMD.day_routine(source, key)
     timer.call_day_routine(key)
 end
 
-function CMD.notify(source, msg)
-    notify.add(msg)
+function CMD.notify(source, msg, info)
+    notify.add(msg, info)
 end
 
 skynet.start(function()

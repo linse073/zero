@@ -245,6 +245,7 @@ function proc.end_stage(msg)
     local initRect = base.INIT_RECT
     des_pos.x = random(initRect.x, initRect.ex)
     des_pos.y = random(initRect.y, initRect.ey)
+    p.user.des_pos = des_pos
     local bmsg = {
         id = data.user.id,
         fight = false,

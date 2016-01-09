@@ -122,6 +122,12 @@ local base = {
         ex = 1000,
         ey = 300,
     },
+    INIT_RECT = {
+        x = 0,
+        y = 0,
+        ex = 100,
+        ey = 100,
+    },
     MOVE_SPEED = 100,
 }
 

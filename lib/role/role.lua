@@ -247,9 +247,9 @@ function proc.create_user(msg)
     }
     account[#account+1] = su
     skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(account))
-    local mapRect = base.MAP_RECT
-    local x = random(mapRect.x, mapRect.ex)
-    local y = random(mapRect.y, mapRect.ey)
+    local initRect = base.INIT_RECT
+    local x = random(initRect.x, initRect.ex)
+    local y = random(initRect.y, initRect.ey)
     local u = {
         name = msg.name,
         id = roleid,
@@ -352,17 +352,7 @@ function proc.move(msg)
         error{code = error_code.ROLE_NOT_EXIST}
     end
     local des_pos = msg.des_pos
-    local map_rect = base.MAP_RECT
-    if des_pos.x < map_rect.x then
-        des_pos.x = map_rect.x
-    elseif des_pos.x > map_rect.ex then
-        des_pos.x = map_rect.ex
-    end
-    if des_pos.y < map_rect.y then
-        des_pos.y = map_rect.y
-    elseif des_pos.y > map_rect.ey then
-        des_pos.y = map_rect.ey
-    end
+    base.map_pos(des_pos)
     role.move(des_pos)
     local bmsg = {
         id = user.id,

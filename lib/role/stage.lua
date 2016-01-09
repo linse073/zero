@@ -241,9 +241,14 @@ function proc.end_stage(msg)
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
     stage_seed.id = 0
     stage_seed.seed = 0
+    local des_pos = data.user.des_pos
+    local initRect = base.INIT_RECT
+    des_pos.x = random(initRect.x, initRect.ex)
+    des_pos.y = random(initRect.y, initRect.ey)
     local bmsg = {
         id = data.user.id,
         fight = false,
+        des_pos = des_pos,
     }
     skynet.send(role_mgr, "lua", "broadcast_area", "other_info", bmsg)
     return "update_user", {update=p}

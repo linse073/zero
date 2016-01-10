@@ -45,7 +45,7 @@ skynet.init(function()
 
     share.day_task = sharedata.query("day_task")
     share.achi_task = sharedata.query("achi_task")
-    share.original_card = sharedata.queue("original_card")
+    share.original_card = sharedata.query("original_card")
 
     share.item_category = sharedata.query("item_category")
 

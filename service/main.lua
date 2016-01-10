@@ -26,7 +26,7 @@ skynet.start(function()
     skynet.call(gate, "lua", "open", config.gate)
     for k, v in ipairs(config.server) do
         local server = skynet.newservice("server", loginserver)
-        skynet.call(server, "lua", "open", v, confi.gate.servername)
+        skynet.call(server, "lua", "open", v, config.gate.servername)
     end
     
     skynet.exit()

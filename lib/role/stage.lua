@@ -2,8 +2,8 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 
-local role = require "role.role"
-local task = require "role.task"
+local role
+local task
 
 local pairs = pairs
 local ipairs = ipairs
@@ -27,6 +27,9 @@ skynet.init(function()
     stagedata = share.stagedata
     bonusdata = share.bonusdata
     role_mgr = skynet.queryservice("role_mgr")
+
+    role = require "role.role"
+    task = require "role.task"
 end)
 
 function stage.init(userdata)

@@ -4,11 +4,11 @@ local share = require "share"
 local notify = require "notify"
 local util = require "util"
 
-local card = require "role.card"
-local friend = require "role.friend"
-local item = require "role.item"
-local stage = require "role.stage"
-local task = require "role.task"
+local card
+local friend
+local item
+local stage
+local task
 
 local pairs = pairs
 local ipairs = ipairs
@@ -27,20 +27,26 @@ local expdata
 local error_code
 local base
 local data
-local module = {card, friend, item, stage, task}
+local module
 local role = {}
 local proc = {}
 local role_mgr
-
-for k, v in ipairs(module) do
-    merge_table(proc, v.get_proc())
-end
 
 skynet.init(function()
     expdata = share.expdata
     error_code = share.error_code
     base = share.base
     role_mgr = skynet.queryservice("role_mgr")
+
+    card = require "role.card"
+    friend = require "role.friend"
+    item = require "role.item"
+    stage = require "role.stage"
+    task = require "role.task"
+    module = {card, friend, item, stage, task}
+    for k, v in ipairs(module) do
+        merge_table(proc, v.get_proc())
+    end
 end)
 
 function role.init(userdata)

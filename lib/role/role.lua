@@ -70,7 +70,7 @@ function role.exit()
     for k, v in ipairs(module) do
         v.exit()
     end
-    tiemr.del_routine("routine")
+    timer.del_routine("routine")
     timer.del_routine("save_role")
     timer.del_day_routine("update_day")
     timer.del_routine("heart_beat")

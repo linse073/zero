@@ -39,7 +39,7 @@ function notify_area(roleid, agent, area)
             pack[#pack+1] = v[3]
         end
     end
-    skyent.send(agent, "lua", "notify", "other_all", {other=pack})
+    skynet.send(agent, "lua", "notify", "other_all", {other=pack})
 end
 
 function CMD.enter(info, agent)

@@ -26,6 +26,7 @@ local merge_table = util.merge_table
 local expdata
 local error_code
 local base
+local map_pos
 local data
 local module = {card, friend, item, stage, task}
 local role = {}
@@ -40,6 +41,7 @@ skynet.init(function()
     expdata = share.expdata
     error_code = share.error_code
     base = share.base
+    map_pos = share.map_pos
     role_mgr = skynet.queryservice("role_mgr")
 end)
 
@@ -352,7 +354,7 @@ function proc.move(msg)
         error{code = error_code.ROLE_NOT_EXIST}
     end
     local des_pos = msg.des_pos
-    base.map_pos(des_pos)
+    map_pos(des_pos)
     role.move(user, des_pos)
     local bmsg = {
         id = user.id,

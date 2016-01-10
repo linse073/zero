@@ -194,7 +194,7 @@ function role.fight_point(p)
     task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
 end
 
-function role.move(des_pos)
+function role.move(user, des_pos)
     user.des_pos.x = des_pos.x
     user.des_pos.y = des_pos.y
     local move = data.move
@@ -328,7 +328,7 @@ function proc.enter_game(msg)
         speed = {x=0, y=0},
     }
     local des_pos = user.des_pos
-    role.move(des_pos)
+    role.move(user, des_pos)
     timer.add_routine("routine", role.routine, 1)
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
@@ -353,7 +353,7 @@ function proc.move(msg)
     end
     local des_pos = msg.des_pos
     base.map_pos(des_pos)
-    role.move(des_pos)
+    role.move(user, des_pos)
     local bmsg = {
         id = user.id,
         des_pos = des_pos,

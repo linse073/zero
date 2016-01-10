@@ -9,7 +9,7 @@ local datas = {
 		NpcTalk = 1600000001,
 		NpcBigHead = "img/N_0001.png",
 		NpcSmallHead = "img/T_0001.png",
-		NpcCcbi = "npc_0001",
+		res = "npc_0001",
 		openUiType = 0,
 	},
 	[1000000002] = {
@@ -22,7 +22,7 @@ local datas = {
 		NpcTalk = 1600000002,
 		NpcBigHead = "img/N_0002.png",
 		NpcSmallHead = "img/T_0002.png",
-		NpcCcbi = "npc_0002",
+		res = "npc_0002",
 		openUiType = 2,
 	},
 	[1000000003] = {
@@ -35,7 +35,7 @@ local datas = {
 		NpcTalk = 1600000003,
 		NpcBigHead = "img/N_0003.png",
 		NpcSmallHead = "img/T_0003.png",
-		NpcCcbi = "npc_0003",
+		res = "npc_0003",
 		openUiType = 0,
 	},
 	[1000000004] = {
@@ -48,7 +48,7 @@ local datas = {
 		NpcTalk = 1600000004,
 		NpcBigHead = "img/N_0004.png",
 		NpcSmallHead = "img/T_0004.png",
-		NpcCcbi = "npc_0004",
+		res = "npc_0004",
 		openUiType = 4,
 	},
 	[1000000005] = {
@@ -61,7 +61,7 @@ local datas = {
 		NpcTalk = 1600000005,
 		NpcBigHead = "img/N_0005.png",
 		NpcSmallHead = "img/T_0005.png",
-		NpcCcbi = "npc_0005",
+		res = "npc_0005",
 		openUiType = 1,
 	},
 	[1000000006] = {
@@ -74,7 +74,7 @@ local datas = {
 		NpcTalk = 1600000006,
 		NpcBigHead = "img/N_0006.png",
 		NpcSmallHead = "img/T_0006.png",
-		NpcCcbi = "npc_0006",
+		res = "npc_0006",
 		openUiType = 0,
 	},
 	[1000000007] = {
@@ -87,7 +87,7 @@ local datas = {
 		NpcTalk = 1600000007,
 		NpcBigHead = "img/N_0007.png",
 		NpcSmallHead = "img/T_0007.png",
-		NpcCcbi = "npc_0007",
+		res = "npc_0007",
 		openUiType = 0,
 	},
 	[1000000008] = {
@@ -100,7 +100,7 @@ local datas = {
 		NpcTalk = 1600000008,
 		NpcBigHead = "img/N_0008.png",
 		NpcSmallHead = "img/T_0008.png",
-		NpcCcbi = "npc_0008",
+		res = "npc_0008",
 		openUiType = 0,
 	},
 	[1000000009] = {
@@ -113,7 +113,7 @@ local datas = {
 		NpcTalk = 1600000009,
 		NpcBigHead = "img/N_0009.png",
 		NpcSmallHead = "img/T_0009.png",
-		NpcCcbi = "npc_0009",
+		res = "npc_0009",
 		openUiType = 3,
 	},
 }

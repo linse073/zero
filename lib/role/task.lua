@@ -119,7 +119,7 @@ function task.add_by_data(d, status)
         count = 0,
     }
     local t = task.add(v, d)
-    data.user.task[id] = v
+    data.user.task[d.TaskId] = v
     return t
 end
 

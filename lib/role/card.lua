@@ -2,8 +2,8 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 
-local item
-local task
+local item = require "role.item"
+local task = require "role.task"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -28,9 +28,6 @@ skynet.init(function()
     original_card = share.original_card
     base = share.base
     cs = share.cs
-
-    item = require "role.item"
-    task = require "role.task"
 end)
 
 function card.init(userdata)

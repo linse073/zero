@@ -5,7 +5,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -32,7 +32,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -59,7 +59,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -86,7 +86,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -113,7 +113,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -140,7 +140,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -167,7 +167,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -194,7 +194,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -221,7 +221,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -248,7 +248,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -275,7 +275,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -302,7 +302,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -329,7 +329,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -356,7 +356,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -383,7 +383,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -410,7 +410,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -437,7 +437,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -464,7 +464,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -491,7 +491,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -518,7 +518,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -545,7 +545,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -572,7 +572,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -599,7 +599,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -626,7 +626,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -653,7 +653,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -680,7 +680,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -707,7 +707,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -734,7 +734,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -761,7 +761,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -788,7 +788,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -815,7 +815,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -842,7 +842,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -869,7 +869,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -896,7 +896,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -923,7 +923,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -950,7 +950,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -977,7 +977,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1004,7 +1004,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1031,7 +1031,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1058,7 +1058,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1085,7 +1085,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1112,7 +1112,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1139,7 +1139,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1166,7 +1166,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1193,7 +1193,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1220,7 +1220,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1247,7 +1247,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1274,7 +1274,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1301,7 +1301,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1328,7 +1328,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -1355,7 +1355,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1382,7 +1382,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1409,7 +1409,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1436,7 +1436,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1463,7 +1463,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1490,7 +1490,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1517,7 +1517,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1544,7 +1544,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1571,7 +1571,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1598,7 +1598,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1625,7 +1625,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1652,7 +1652,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1679,7 +1679,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1706,7 +1706,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1733,7 +1733,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1760,7 +1760,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1787,7 +1787,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1814,7 +1814,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1841,7 +1841,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1868,7 +1868,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1895,7 +1895,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1922,7 +1922,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1949,7 +1949,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -1976,7 +1976,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2003,7 +2003,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2030,7 +2030,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2057,7 +2057,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2084,7 +2084,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2111,7 +2111,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2138,7 +2138,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2165,7 +2165,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2192,7 +2192,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2219,7 +2219,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2246,7 +2246,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2273,7 +2273,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2300,7 +2300,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2327,7 +2327,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2354,7 +2354,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2381,7 +2381,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2408,7 +2408,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2435,7 +2435,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2462,7 +2462,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2489,7 +2489,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2516,7 +2516,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2543,7 +2543,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2570,7 +2570,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2597,7 +2597,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2624,7 +2624,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2651,7 +2651,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2678,7 +2678,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -2705,7 +2705,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2732,7 +2732,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2759,7 +2759,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2786,7 +2786,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2813,7 +2813,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2840,7 +2840,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2867,7 +2867,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2894,7 +2894,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2921,7 +2921,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2948,7 +2948,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -2975,7 +2975,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3002,7 +3002,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3029,7 +3029,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3056,7 +3056,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3083,7 +3083,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3110,7 +3110,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3137,7 +3137,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3164,7 +3164,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3191,7 +3191,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3218,7 +3218,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3245,7 +3245,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3272,7 +3272,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3299,7 +3299,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3326,7 +3326,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3353,7 +3353,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3380,7 +3380,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3407,7 +3407,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3434,7 +3434,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3461,7 +3461,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3488,7 +3488,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3515,7 +3515,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3542,7 +3542,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3569,7 +3569,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3596,7 +3596,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3623,7 +3623,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3650,7 +3650,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3677,7 +3677,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3704,7 +3704,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3731,7 +3731,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3758,7 +3758,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3785,7 +3785,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3812,7 +3812,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3839,7 +3839,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3866,7 +3866,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3893,7 +3893,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3920,7 +3920,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3947,7 +3947,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -3974,7 +3974,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -4001,7 +4001,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -4028,7 +4028,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -4055,7 +4055,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4082,7 +4082,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4109,7 +4109,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4136,7 +4136,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4163,7 +4163,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4190,7 +4190,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4217,7 +4217,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4244,7 +4244,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4271,7 +4271,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4298,7 +4298,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4325,7 +4325,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4352,7 +4352,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4379,7 +4379,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4406,7 +4406,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4433,7 +4433,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4460,7 +4460,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4487,7 +4487,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4514,7 +4514,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4541,7 +4541,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4568,7 +4568,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4595,7 +4595,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4622,7 +4622,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4649,7 +4649,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4676,7 +4676,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4703,7 +4703,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4730,7 +4730,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4757,7 +4757,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4784,7 +4784,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4811,7 +4811,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4838,7 +4838,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4865,7 +4865,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4892,7 +4892,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4919,7 +4919,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4946,7 +4946,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -4973,7 +4973,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5000,7 +5000,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5027,7 +5027,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5054,7 +5054,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5081,7 +5081,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5108,7 +5108,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5135,7 +5135,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5162,7 +5162,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5189,7 +5189,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5216,7 +5216,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5243,7 +5243,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5270,7 +5270,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5297,7 +5297,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5324,7 +5324,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5351,7 +5351,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5378,7 +5378,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -5405,7 +5405,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5432,7 +5432,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5459,7 +5459,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5486,7 +5486,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5513,7 +5513,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5540,7 +5540,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5567,7 +5567,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5594,7 +5594,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5621,7 +5621,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5648,7 +5648,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5675,7 +5675,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5702,7 +5702,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5729,7 +5729,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5756,7 +5756,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5783,7 +5783,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5810,7 +5810,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5837,7 +5837,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5864,7 +5864,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5891,7 +5891,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5918,7 +5918,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5945,7 +5945,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5972,7 +5972,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -5999,7 +5999,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6026,7 +6026,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6053,7 +6053,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6080,7 +6080,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6107,7 +6107,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6134,7 +6134,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6161,7 +6161,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6188,7 +6188,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6215,7 +6215,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6242,7 +6242,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6269,7 +6269,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6296,7 +6296,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6323,7 +6323,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6350,7 +6350,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6377,7 +6377,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6404,7 +6404,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6431,7 +6431,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6458,7 +6458,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6485,7 +6485,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6512,7 +6512,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6539,7 +6539,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6566,7 +6566,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6593,7 +6593,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6620,7 +6620,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6647,7 +6647,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6674,7 +6674,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6701,7 +6701,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6728,7 +6728,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -6755,7 +6755,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -6782,7 +6782,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -6809,7 +6809,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -6836,7 +6836,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -6863,7 +6863,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -6890,7 +6890,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -6917,7 +6917,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -6944,7 +6944,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -6971,7 +6971,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -6998,7 +6998,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7025,7 +7025,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7052,7 +7052,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7079,7 +7079,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7106,7 +7106,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7133,7 +7133,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7160,7 +7160,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7187,7 +7187,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7214,7 +7214,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7241,7 +7241,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7268,7 +7268,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7295,7 +7295,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7322,7 +7322,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7349,7 +7349,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7376,7 +7376,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7403,7 +7403,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7430,7 +7430,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7457,7 +7457,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7484,7 +7484,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7511,7 +7511,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7538,7 +7538,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7565,7 +7565,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7592,7 +7592,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7619,7 +7619,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7646,7 +7646,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7673,7 +7673,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7700,7 +7700,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7727,7 +7727,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7754,7 +7754,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7781,7 +7781,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7808,7 +7808,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7835,7 +7835,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7862,7 +7862,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7889,7 +7889,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7916,7 +7916,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7943,7 +7943,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7970,7 +7970,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -7997,7 +7997,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -8024,7 +8024,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -8051,7 +8051,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -8078,7 +8078,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -8105,7 +8105,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8132,7 +8132,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8159,7 +8159,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8186,7 +8186,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8213,7 +8213,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8240,7 +8240,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8267,7 +8267,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8294,7 +8294,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8321,7 +8321,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8348,7 +8348,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8375,7 +8375,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8402,7 +8402,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8429,7 +8429,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8456,7 +8456,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8483,7 +8483,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8510,7 +8510,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8537,7 +8537,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8564,7 +8564,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8591,7 +8591,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8618,7 +8618,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8645,7 +8645,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8672,7 +8672,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8699,7 +8699,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8726,7 +8726,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8753,7 +8753,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8780,7 +8780,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8807,7 +8807,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8834,7 +8834,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8861,7 +8861,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8888,7 +8888,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8915,7 +8915,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8942,7 +8942,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8969,7 +8969,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -8996,7 +8996,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9023,7 +9023,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9050,7 +9050,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9077,7 +9077,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9104,7 +9104,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9131,7 +9131,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9158,7 +9158,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9185,7 +9185,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9212,7 +9212,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9239,7 +9239,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9266,7 +9266,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9293,7 +9293,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9320,7 +9320,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9347,7 +9347,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9374,7 +9374,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9401,7 +9401,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9428,7 +9428,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -9455,7 +9455,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9482,7 +9482,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9509,7 +9509,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9536,7 +9536,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9563,7 +9563,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9590,7 +9590,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9617,7 +9617,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9644,7 +9644,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9671,7 +9671,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9698,7 +9698,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9725,7 +9725,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9752,7 +9752,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9779,7 +9779,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9806,7 +9806,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9833,7 +9833,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9860,7 +9860,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9887,7 +9887,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9914,7 +9914,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9941,7 +9941,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9968,7 +9968,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -9995,7 +9995,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10022,7 +10022,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10049,7 +10049,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10076,7 +10076,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10103,7 +10103,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10130,7 +10130,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10157,7 +10157,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10184,7 +10184,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10211,7 +10211,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10238,7 +10238,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10265,7 +10265,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10292,7 +10292,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10319,7 +10319,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10346,7 +10346,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10373,7 +10373,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10400,7 +10400,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10427,7 +10427,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10454,7 +10454,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10481,7 +10481,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10508,7 +10508,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10535,7 +10535,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10562,7 +10562,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10589,7 +10589,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10616,7 +10616,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10643,7 +10643,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10670,7 +10670,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10697,7 +10697,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10724,7 +10724,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10751,7 +10751,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10778,7 +10778,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -10805,7 +10805,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -10832,7 +10832,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -10859,7 +10859,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -10886,7 +10886,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -10913,7 +10913,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -10940,7 +10940,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -10967,7 +10967,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -10994,7 +10994,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11021,7 +11021,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11048,7 +11048,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11075,7 +11075,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11102,7 +11102,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11129,7 +11129,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11156,7 +11156,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11183,7 +11183,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11210,7 +11210,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11237,7 +11237,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11264,7 +11264,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11291,7 +11291,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11318,7 +11318,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11345,7 +11345,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11372,7 +11372,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11399,7 +11399,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11426,7 +11426,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11453,7 +11453,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11480,7 +11480,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11507,7 +11507,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11534,7 +11534,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11561,7 +11561,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11588,7 +11588,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11615,7 +11615,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11642,7 +11642,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11669,7 +11669,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11696,7 +11696,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11723,7 +11723,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11750,7 +11750,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11777,7 +11777,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11804,7 +11804,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11831,7 +11831,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11858,7 +11858,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11885,7 +11885,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11912,7 +11912,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11939,7 +11939,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11966,7 +11966,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -11993,7 +11993,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -12020,7 +12020,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -12047,7 +12047,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -12074,7 +12074,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -12101,7 +12101,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -12128,7 +12128,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -12155,7 +12155,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12182,7 +12182,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12209,7 +12209,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12236,7 +12236,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12263,7 +12263,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12290,7 +12290,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12317,7 +12317,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12344,7 +12344,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12371,7 +12371,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12398,7 +12398,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12425,7 +12425,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12452,7 +12452,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12479,7 +12479,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12506,7 +12506,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12533,7 +12533,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12560,7 +12560,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12587,7 +12587,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12614,7 +12614,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12641,7 +12641,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12668,7 +12668,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12695,7 +12695,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12722,7 +12722,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12749,7 +12749,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12776,7 +12776,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12803,7 +12803,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12830,7 +12830,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12857,7 +12857,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12884,7 +12884,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12911,7 +12911,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12938,7 +12938,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12965,7 +12965,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -12992,7 +12992,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13019,7 +13019,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13046,7 +13046,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13073,7 +13073,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13100,7 +13100,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13127,7 +13127,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13154,7 +13154,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13181,7 +13181,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13208,7 +13208,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13235,7 +13235,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13262,7 +13262,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13289,7 +13289,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13316,7 +13316,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13343,7 +13343,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13370,7 +13370,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13397,7 +13397,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13424,7 +13424,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13451,7 +13451,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13478,7 +13478,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -13505,7 +13505,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13532,7 +13532,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13559,7 +13559,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13586,7 +13586,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13613,7 +13613,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13640,7 +13640,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13667,7 +13667,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13694,7 +13694,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13721,7 +13721,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13748,7 +13748,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13775,7 +13775,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13802,7 +13802,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13829,7 +13829,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13856,7 +13856,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13883,7 +13883,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13910,7 +13910,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13937,7 +13937,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13964,7 +13964,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -13991,7 +13991,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14018,7 +14018,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14045,7 +14045,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14072,7 +14072,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14099,7 +14099,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14126,7 +14126,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14153,7 +14153,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14180,7 +14180,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14207,7 +14207,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14234,7 +14234,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14261,7 +14261,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14288,7 +14288,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14315,7 +14315,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14342,7 +14342,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14369,7 +14369,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14396,7 +14396,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14423,7 +14423,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14450,7 +14450,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14477,7 +14477,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14504,7 +14504,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14531,7 +14531,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14558,7 +14558,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14585,7 +14585,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14612,7 +14612,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14639,7 +14639,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14666,7 +14666,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14693,7 +14693,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14720,7 +14720,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14747,7 +14747,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14774,7 +14774,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14801,7 +14801,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14828,7 +14828,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			1,
 			2,
 			3,
@@ -14855,7 +14855,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -14882,7 +14882,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -14909,7 +14909,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -14936,7 +14936,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -14963,7 +14963,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -14990,7 +14990,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15017,7 +15017,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15044,7 +15044,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15071,7 +15071,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15098,7 +15098,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15125,7 +15125,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15152,7 +15152,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15179,7 +15179,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15206,7 +15206,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15233,7 +15233,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15260,7 +15260,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15287,7 +15287,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15314,7 +15314,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15341,7 +15341,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15368,7 +15368,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15395,7 +15395,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15422,7 +15422,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15449,7 +15449,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15476,7 +15476,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15503,7 +15503,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15530,7 +15530,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15557,7 +15557,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15584,7 +15584,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15611,7 +15611,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15638,7 +15638,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15665,7 +15665,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15692,7 +15692,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15719,7 +15719,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15746,7 +15746,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15773,7 +15773,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15800,7 +15800,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15827,7 +15827,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15854,7 +15854,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15881,7 +15881,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15908,7 +15908,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15935,7 +15935,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15962,7 +15962,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -15989,7 +15989,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -16016,7 +16016,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -16043,7 +16043,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -16070,7 +16070,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -16097,7 +16097,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -16124,7 +16124,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -16151,7 +16151,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,
@@ -16178,7 +16178,7 @@ local datas = {
 		MoneyRate = 0,
 		EquipLv = false,
 		EquipJob = true,
-		EquipQulity = {
+		EquipQuality = {
 			2,
 			3,
 			4,

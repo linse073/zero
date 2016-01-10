@@ -2,8 +2,8 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 
-local role = require "role.role"
-local task = require "role.task"
+-- local role = require "role.role"
+-- local task = require "role.task"
 
 local pairs = pairs
 local ipairs = ipairs

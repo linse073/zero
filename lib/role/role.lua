@@ -181,7 +181,7 @@ function role.add_exp(p, exp)
                 id = user.id,
                 level = user.level,
             }
-            skynet.send(role_mgr, "lua", "broadcast_area", "other_info", bmsg)
+            skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
         end
     end
 end
@@ -366,7 +366,7 @@ function proc.move(msg)
         id = user.id,
         des_pos = des_pos,
     }
-    skynet.send(role_mgr, "lua", "broadcast_area", "other_info", bmsg)
+    skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
     return "response", ""
 end
 

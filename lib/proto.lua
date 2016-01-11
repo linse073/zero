@@ -20,7 +20,8 @@ local msg = {
     [2010] = "update_user",
     [2011] = "other_info",
     [2012] = "other_all",
-    [2013] = "move",
+    [2013] = "update_other",
+    [2014] = "move",
 
     [2100] = "get_account_info",
     [2101] = "create_user",

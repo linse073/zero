@@ -46,6 +46,13 @@
     other 0 : *other_info
 }
 
+.update_other {
+    id 0 : integer
+    level 1 : integer
+    des_pos 2 : position
+    fight 3 : boolean
+}
+
 .item_info {
     .rand_prop {
         type 0 : integer

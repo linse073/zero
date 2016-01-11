@@ -93,7 +93,7 @@ function CMD.broadcast_area(msg, info)
         if k ~= id then
             skynet.send(v[1], "lua", "notify", c)
         else
-            if msg == "other_info" then
+            if msg == "update_other" then
                 local oi = v[2]
                 for k1, v1 in pairs(info) do
                     oi[k1] = v1

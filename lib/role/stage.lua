@@ -160,7 +160,7 @@ function proc.begin_stage(msg)
         id = user.id,
         fight = true,
     }
-    skynet.send(role_mgr, "lua", "broadcast_area", "other_info", bmsg)
+    skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
     return "stage_seed", {id=msg.id, rand_seed=stage_seed.seed}
 end
 
@@ -253,7 +253,7 @@ function proc.end_stage(msg)
         fight = false,
         des_pos = des_pos,
     }
-    skynet.send(role_mgr, "lua", "broadcast_area", "other_info", bmsg)
+    skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
     return "update_user", {update=p}
 end
 

@@ -16,7 +16,7 @@ skynet.register_protocol {
     unpack = skynet.tostring,
 }
 
-local proc = role.get_proc()
+local proc = role.init_module()
 local gen_key = util.gen_key
 local gen_id = util.gen_id
 local msg

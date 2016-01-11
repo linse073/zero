@@ -2,9 +2,9 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 
--- local role = require "role.role"
--- local item = require "role.item"
--- local card = require "role.card"
+local role
+local item
+local card
 
 local pairs = pairs
 local ipairs = ipairs
@@ -33,6 +33,13 @@ skynet.init(function()
     day_task = share.day_task
     base = share.base
 end)
+
+function task.init_module()
+    role = require "role.role"
+    item = require "role.item"
+    card = require "role.card"
+    return proc
+end
 
 function task.init(userdata)
     data = userdata
@@ -145,7 +152,7 @@ function task.update_day()
         end
         vt.count = 0
         vt.status = base.TASK_STATUS_NOT_ACCEPT
-        td[#td+1] = vt
+        td[#td+1] = v
     end
     local count = base.MAX_DAY_TASK
     local l = #td
@@ -248,10 +255,6 @@ function task.award(p, t)
         local cdata = assert(carddata[profcard], string.format("No card data %d.", profcard))
         card.add_by_cardid(p, profcard, cdata)
     end
-end
-
-function task.get_proc()
-    return proc
 end
 
 ----------------------------protocol process-------------------------------

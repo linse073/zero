@@ -2,8 +2,8 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 
--- local task = require "role.task"
--- local role = require "role.role"
+local task
+local role
 
 local pairs = pairs
 local ipairs = ipairs
@@ -38,6 +38,12 @@ skynet.init(function()
     is_material = share.is_material
     item_category = share.item_category
 end)
+
+function item.init_module()
+    task = require "role.task"
+    role = require "role.role"
+    return proc
+end
 
 function item.init(userdata)
     data = userdata
@@ -416,10 +422,6 @@ end
 
 function item.gen_itemid(prof, level, itemtype, quality)
     return 3000000000 + prof * 1000000 + level * 1000 + itemtype * 10 + quality
-end
-
-function item.get_proc()
-    return proc
 end
 
 ----------------------------protocol process------------------------

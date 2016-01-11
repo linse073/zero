@@ -2,8 +2,8 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 
--- local item = require "role.item"
--- local task = require "role.task"
+local item
+local task
 
 local pairs = pairs
 local ipairs = ipairs
@@ -29,6 +29,12 @@ skynet.init(function()
     base = share.base
     cs = share.cs
 end)
+
+function card.init_module()
+    item = require "role.item"
+    task = require "role.task"
+    return proc
+end
 
 function card.init(userdata)
     data = userdata
@@ -131,10 +137,6 @@ function card.use(p, c, pos_type, pos)
         equip_card[pos] = c
     end
     pack[#pack+1] = {id=cv.id, pos=cv.pos}
-end
-
-function card.get_proc()
-    return proc
 end
 
 --------------------------protocol process-----------------------

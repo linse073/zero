@@ -4,11 +4,11 @@ local share = require "share"
 local notify = require "notify"
 local util = require "util"
 
-local card = require "role.card"
-local friend = require "role.friend"
-local item = require "role.item"
-local stage = require "role.stage"
-local task = require "role.task"
+local card
+local friend
+local item
+local stage
+local task
 
 local pairs = pairs
 local ipairs = ipairs
@@ -28,14 +28,10 @@ local error_code
 local base
 local map_pos
 local data
-local module = {card, friend, item, stage, task}
+local module
 local role = {}
 local proc = {}
 local role_mgr
-
-for k, v in ipairs(module) do
-    merge_table(proc, v.get_proc())
-end
 
 skynet.init(function()
     expdata = share.expdata
@@ -44,6 +40,19 @@ skynet.init(function()
     map_pos = share.map_pos
     role_mgr = skynet.queryservice("role_mgr")
 end)
+
+function role.init_module()
+    card = require "role.card"
+    friend = require "role.friend"
+    item = require "role.item"
+    stage = require "role.stage"
+    task = require "role.task"
+    local module = {card, friend, item, stage, task}
+    for k, v in ipairs(module) do
+        merge_table(proc, v.init_module())
+    end
+    return proc
+end
 
 function role.init(userdata)
     data = userdata
@@ -208,10 +217,6 @@ function role.move(user, des_pos)
     move.total_time = dis / role.move_speed()
     move.speed.x = diffx / move.total_time
     move.speed.y = diffx / move.total_time
-end
-
-function role.get_proc()
-    return proc
 end
 
 -------------------protocol process--------------------------

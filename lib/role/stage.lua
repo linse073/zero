@@ -2,8 +2,8 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 
--- local role = require "role.role"
--- local task = require "role.task"
+local role
+local task
 
 local pairs = pairs
 local ipairs = ipairs
@@ -28,6 +28,12 @@ skynet.init(function()
     bonusdata = share.bonusdata
     role_mgr = skynet.queryservice("role_mgr")
 end)
+
+function stage.init_module()
+    role = require "role.role"
+    task = require "role.task"
+    return proc
+end
 
 function stage.init(userdata)
     data = userdata
@@ -121,10 +127,6 @@ function stage.rand_bonus(d, sd)
             return bonus
         end
     end
-end
-
-function stage.get_proc()
-    return proc
 end
 
 -----------------------------protocol process--------------------------

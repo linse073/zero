@@ -10,6 +10,10 @@ local data
 local friend = {}
 local proc = {}
 
+function friend.init_module()
+    return proc
+end
+
 function friend.init(userdata)
     data = userdata
 end
@@ -29,10 +33,6 @@ end
 
 function friend.add(v)
     data.friend[v.id] = v
-end
-
-function friend.get_proc()
-    return proc
 end
 
 ---------------------------protocol process----------------------

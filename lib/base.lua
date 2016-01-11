@@ -119,14 +119,14 @@ local base = {
     MAP_RECT = {
         x = 0,
         y = 0,
-        ex = 1000,
+        ex = 3000,
         ey = 300,
     },
     INIT_RECT = {
         x = 0,
         y = 0,
-        ex = 100,
-        ey = 100,
+        ex = 300,
+        ey = 300,
     },
     MOVE_SPEED = 100,
 }

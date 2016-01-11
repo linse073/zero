@@ -47,7 +47,7 @@ function role.init_module()
     item = require "role.item"
     stage = require "role.stage"
     task = require "role.task"
-    local module = {card, friend, item, stage, task}
+    module = {card, friend, item, stage, task}
     for k, v in ipairs(module) do
         merge_table(proc, v.init_module())
     end

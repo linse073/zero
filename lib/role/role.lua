@@ -216,7 +216,7 @@ function role.move(user, des_pos)
     local dis = sqrt(diffx * diffx + diffy * diffy)
     move.total_time = dis / role.move_speed()
     move.speed.x = diffx / move.total_time
-    move.speed.y = diffx / move.total_time
+    move.speed.y = diffy / move.total_time
 end
 
 -------------------protocol process--------------------------

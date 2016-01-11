@@ -39,7 +39,7 @@ function CMD.login(source, uid, sid, secret, serverid, servername)
         secret = secret,
         serverid = serverid,
         servername = servername,
-        userkey = gen_key(serverid, userid),
+        userkey = gen_key(serverid, uid),
         id = gen_id(uid, servername),
     }
     role.init(data)

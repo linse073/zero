@@ -128,7 +128,7 @@ local base = {
         ex = 300,
         ey = 300,
     },
-    MOVE_SPEED = 100,
+    MOVE_SPEED = 300,
 }
 
 return base

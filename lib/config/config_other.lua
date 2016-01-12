@@ -3,8 +3,8 @@ local config = {}
 
 config.server = {
     {
-        serverid = 2,
-        servername = "server02",
+        serverid = 1,
+        servername = "server01",
     },
 }
 

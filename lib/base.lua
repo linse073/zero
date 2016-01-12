@@ -117,16 +117,16 @@ local base = {
 
     -- map
     MAP_RECT = {
-        x = 0,
-        y = 0,
-        ex = 3000,
-        ey = 300,
+        x = 380,
+        y = 220,
+        ex = 4030,
+        ey = 440,
     },
     INIT_RECT = {
-        x = 0,
-        y = 0,
-        ex = 300,
-        ey = 300,
+        x = 500,
+        y = 250,
+        ex = 3890,
+        ey = 400,
     },
     MOVE_SPEED = 300,
 }

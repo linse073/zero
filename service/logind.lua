@@ -87,7 +87,7 @@ end
 function CMD.logout(id)
 	local u = user_online[id]
 	if u then
-		skynet.error(string.format("%s is logout", id))
+		skynet.error(string.format("%s is logout from loginserver", id))
 		user_online[id] = nil
 	end
 end

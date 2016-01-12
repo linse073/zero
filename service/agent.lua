@@ -48,7 +48,7 @@ end
 local function logout()
     local d = data
     data = nil
-    skynet.error(string.format("%s is logout", d.id))
+    skynet.error(string.format("%s is logout from agent", d.id))
     role.exit()
     skynet.call(d.gate, "lua", "logout", d.id)
 end

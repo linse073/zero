@@ -98,6 +98,11 @@ function CMD.broadcast_area(msg, info)
                 for k1, v1 in pairs(info) do
                     oi[k1] = v1
                 end
+                local des_pos = info.des_pos
+                if des_pos then
+                    oi.cur_pos.x = des_pos.x
+                    oi.cur_pos.y = des_pos.y
+                end
             end
         end
     end

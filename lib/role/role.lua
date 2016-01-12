@@ -81,7 +81,7 @@ function role.exit()
     for k, v in ipairs(module) do
         v.exit()
     end
-    timer.del_routine("routine")
+    -- timer.del_routine("routine")
     timer.del_routine("save_role")
     timer.del_day_routine("update_day")
     timer.del_routine("heart_beat")
@@ -124,25 +124,25 @@ function role.move_speed()
     return base.MOVE_SPEED
 end
 
-function role.routine()
-    local user = data.user
-    if user then
-        local move = data.move
-        if move.total_time > move.pass_time then
-            move.pass_time = move.pass_time + 1
-            local cur_pos = move.cur_pos
-            if move.total_time <= move.pass_time then
-                cur_pos.x = user.des_pos.x
-                cur_pos.y = user.des_pos.y
-            else
-                cur_pos.x = cur_pos.x + move.speed.x
-                cur_pos.y = cur_pos.y + move.speed.y
-            end
-            user.cur_pos.x = floor(cur_pos.x)
-            user.cur_pos.y = floor(cur_pos.y)
-        end
-    end
-end
+-- function role.routine()
+--     local user = data.user
+--     if user then
+--         local move = data.move
+--         if move.total_time > move.pass_time then
+--             move.pass_time = move.pass_time + 1
+--             local cur_pos = move.cur_pos
+--             if move.total_time <= move.pass_time then
+--                 cur_pos.x = user.des_pos.x
+--                 cur_pos.y = user.des_pos.y
+--             else
+--                 cur_pos.x = cur_pos.x + move.speed.x
+--                 cur_pos.y = cur_pos.y + move.speed.y
+--             end
+--             user.cur_pos.x = floor(cur_pos.x)
+--             user.cur_pos.y = floor(cur_pos.y)
+--         end
+--     end
+-- end
 
 function role.heart_beat()
     if data.heart_beat == 0 then
@@ -205,20 +205,20 @@ function role.fight_point(p)
     task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
 end
 
-function role.move(des_pos)
-    local user = data.user
-    user.des_pos.x = des_pos.x
-    user.des_pos.y = des_pos.y
-    local move = data.move
-    move.pass_time = 0
-    local cur_pos = move.cur_pos
-    local diffx = des_pos.x - cur_pos.x
-    local diffy = des_pos.y - cur_pos.y
-    local dis = sqrt(diffx * diffx + diffy * diffy)
-    move.total_time = dis / role.move_speed()
-    move.speed.x = diffx / move.total_time
-    move.speed.y = diffy / move.total_time
-end
+-- function role.move(des_pos)
+--     local user = data.user
+--     user.des_pos.x = des_pos.x
+--     user.des_pos.y = des_pos.y
+--     local move = data.move
+--     move.pass_time = 0
+--     local cur_pos = move.cur_pos
+--     local diffx = des_pos.x - cur_pos.x
+--     local diffy = des_pos.y - cur_pos.y
+--     local dis = sqrt(diffx * diffx + diffy * diffy)
+--     move.total_time = dis / role.move_speed()
+--     move.speed.x = diffx / move.total_time
+--     move.speed.y = diffy / move.total_time
+-- end
 
 -------------------protocol process--------------------------
 
@@ -329,15 +329,15 @@ function proc.enter_game(msg)
         end
     end
     local cur_pos = user.cur_pos
-    data.move = {
-        cur_pos = {x=cur_pos.x, y=cur_pos.y},
-        pass_time = 0,
-        total_time = 0,
-        speed = {x=0, y=0},
-    }
-    local des_pos = user.des_pos
-    role.move(des_pos)
-    timer.add_routine("routine", role.routine, 1)
+    -- data.move = {
+    --     cur_pos = {x=cur_pos.x, y=cur_pos.y},
+    --     pass_time = 0,
+    --     total_time = 0,
+    --     speed = {x=0, y=0},
+    -- }
+    -- local des_pos = user.des_pos
+    -- role.move(des_pos)
+    -- timer.add_routine("routine", role.routine, 1)
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     local bmsg = {
@@ -361,7 +361,11 @@ function proc.move(msg)
     end
     local des_pos = msg.des_pos
     map_pos(des_pos)
-    role.move(des_pos)
+    -- role.move(des_pos)
+    user.des_pos.x = des_pos.x
+    user.des_pos.y = des_pos.y
+    user.cur_pos.x = des_pos.x
+    user.cur_pos.y = des_pos.y
     local bmsg = {
         id = user.id,
         des_pos = des_pos,

@@ -335,7 +335,7 @@ function proc.enter_game(msg)
     --     total_time = 0,
     --     speed = {x=0, y=0},
     -- }
-    -- local des_pos = user.des_pos
+    local des_pos = user.des_pos
     -- role.move(des_pos)
     -- timer.add_routine("routine", role.routine, 1)
     timer.add_routine("save_role", role.save_routine, 300)

@@ -20,10 +20,6 @@ skynet.start(function()
     local bonusdata = require("data.bonus")
     local base = require("base")
 
-    for k, v in pairs(carddata) do
-        v.starLvExp = assert(expdata[v.starLv], string.format("No exp data %d.", v.starLv))
-    end
-
     local function is_equip(itemtype)
         return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
     end
@@ -54,33 +50,6 @@ skynet.start(function()
         v.bonus = assert(bonusdata[v.bonusID], string.format("No bonus data %d.", v.bonusID))
         v.firstBonus = assert(bonusdata[v.firstBonusID], string.format("No bonus data %d.", v.firstBonusID))
         v.dropBonus = assert(bonusdata[v.dropBonusID], string.format("No bonus data %d.", v.dropBonusID))
-    end
-
-    for k, v in pairs(taskdata) do
-        local profItem = {}
-        for k1, v1 in ipairs(v.profItemId) do
-            if v1 > 0 then
-                profItem[k1] = assert(itemdata[v1], string.format("No item data %d.", v1))
-            end
-        end
-        v.profItem = profItem
-        local awardItem = {}
-        for item, num in string.gmatch(v.Item, "(%d+);(%d+)") do
-            local itemid = tonumber(item)
-            awardItem[#awardItem+1] = {
-                item = itemid,
-                data = assert(itemdata[itemid], string.format("No item data %d.", itemid)),
-                num = tonumber(num),
-            }
-        end
-        v.awardItem = awardItem
-        local card = {}
-        for k1, v1 in ipairs(v.CardId) do
-            if v1 > 0 then
-                card[k1] = assert(carddata[v1], string.format("No card data %d.", v1))
-            end
-        end
-        v.card = card
     end
 
     for k, v in pairs(bonusdata) do
@@ -165,6 +134,31 @@ skynet.start(function()
         elseif v.TaskType == base.TASK_TYPE_ACHIEVEMENT then
             achi_task[#achi_task+1] = v
         end
+
+        local profItem = {}
+        for k1, v1 in ipairs(v.profItemId) do
+            if v1 > 0 then
+                profItem[k1] = assert(itemdata[v1], string.format("No item data %d.", v1))
+            end
+        end
+        v.profItem = profItem
+        local awardItem = {}
+        for item, num in string.gmatch(v.Item, "(%d+);(%d+)") do
+            local itemid = tonumber(item)
+            awardItem[#awardItem+1] = {
+                item = itemid,
+                data = assert(itemdata[itemid], string.format("No item data %d.", itemid)),
+                num = tonumber(num),
+            }
+        end
+        v.awardItem = awardItem
+        local card = {}
+        for k1, v1 in ipairs(v.CardId) do
+            if v1 > 0 then
+                card[k1] = assert(carddata[v1], string.format("No card data %d.", v1))
+            end
+        end
+        v.card = card
     end
 
     local original_card = {}
@@ -175,6 +169,8 @@ skynet.start(function()
             original_card[d.id] = original
             d = carddata[d.evolveId]
         until not d
+
+        v.starLvExp = assert(expdata[v.starLv], string.format("No exp data %d.", v.starLv))
     end
 
     sharedata.new("carddata", carddata)

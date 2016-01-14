@@ -4,6 +4,7 @@ local pairs = pairs
 local ipairs = ipairs
 local type = type
 local string = string
+local table = table
 local tostring = tostring
 local b64decode = crypt.base64decode
 local b64encode = crypt.base64encode
@@ -73,6 +74,20 @@ function util.update_user()
     }
 end
 
+function util.split(input, delimiter)
+    input = tostring(input)
+    delimiter = tostring(delimiter)
+    if (delimiter == '') then return false end
+    local pos, arr = 0, {}
+    -- for each divider found
+    for st, sp in function() return string.find(input, delimiter, pos, true) end do
+        table.insert(arr, string.sub(input, pos, st - 1))
+        pos = sp + 1
+    end
+    table.insert(arr, string.sub(input, pos))
+    return arr
+end
+
 function util.dump(value, desciption, nesting)
     if type(nesting) ~= "number" then nesting = 3 end
 
@@ -86,7 +101,7 @@ function util.dump(value, desciption, nesting)
         return tostring(v)
     end
 
-    local tb = string.split(traceback("", 2), "\n")
+    local tb = util.split(traceback("", 2), "\n")
     print("dump from: " .. string.trim(tb[3]))
 
     local function _dump(value, desciption, indent, nest, keylen)

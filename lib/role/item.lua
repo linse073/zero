@@ -16,7 +16,6 @@ local pow = math.pow
 
 local update_user = util.update_user
 local itemdata
-local expdata
 local intensifydata
 local base
 local cs
@@ -30,7 +29,6 @@ local proc = {}
 
 skynet.init(function()
     itemdata = share.itemdata
-    expdata = share.expdata
     intensifydata = share.intensifydata
     base = share.base
     cs = share.cs
@@ -150,7 +148,8 @@ function item.add(v, d)
     return i
 end
 
-function item.add_by_itemid(p, itemid, num, d)
+function item.add_by_itemid(p, num, d)
+    local itemid = d.id
     assert(num>0, string.format("Add item %d num error.", itemid))
     local pack = p.item
     local overlay = d.overlay
@@ -474,7 +473,7 @@ function proc.compound_item(msg)
     if compounditem == 0 then
         error{code = error_code.CAN_NOT_COMPOUND_ITEM}
     end
-    local compounddata = assert(itemdata[compounditem], string.format("Compound item %d not exist.", compounditem))
+    local compounddata = d.composData
     local num = item.count(msg.itemid)
     if msg.num and msg.num < num then
         num = msg.num
@@ -485,51 +484,8 @@ function proc.compound_item(msg)
     end
     local p = update_user()
     item.del_by_itemid(p, msg.itemid, comnum * 5)
-    item.add_by_itemid(p, compounditem, comnum, compounddata)
+    item.add_by_itemid(p, comnum, compounddata)
     task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, msg.itemid, 1)
-    return "update_user", {update=p}
-end
-
-function proc.upgrade_item(msg)
-    local i = data.item[msg.id]
-    if not i then
-        error{code = error_code.ITEM_NOT_EXIST}
-    end
-    local d = i[2]
-    if not is_equip(d.itemType) then
-        error{code = error_code.ERROR_ITEM_TYPE}
-    end
-    local iv = i[1]
-    if iv.status ~= base.ITEM_STATUS_NORMAL then
-        error{code = error_code.ERROR_ITEM_STATUS}
-    end
-    local mat = d.compos
-    local matdata = assert(itemdata[mat], string.format("Upgrade item %d material %d not exist.", iv.itemid, mat))
-    local numdata = assert(expdata[d.needLv], string.format("Upgrade item %d exp data not exist.", iv.itemid))
-    local num = numdata.UpgradeMatNum
-    local count = item.count(mat)
-    if count < num then
-        error{code = error_code.ITEM_NUM_LIMIT}
-    end
-    local upgradeitemid = iv.itemid + 1
-    local udata = itemdata[upgradeitemid]
-    if not udata then
-        error{code = error_code.CAN_NOT_UPGRADE_ITEM}
-    end
-    local p = update_user()
-    item.del_by_itemid(p, mat, num)
-    local olditemid = iv.itemid
-    item.change(i, upgradeitemid, udata)
-    local pitem = p.item
-    pitem[#pitem+1] = {
-        id = iv.id, 
-        itemid = itemid, 
-        rand_prop = iv.rand_prop,
-    }
-    task.update(p, base.TASK_COMPLETE_UPGRADE_ITEM, olditemid, 1)
-    if iv.pos > 0 then
-        role.fight_point(p)
-    end
     return "update_user", {update=p}
 end
 
@@ -542,23 +498,28 @@ function proc.improve_item(msg)
     if not is_equip(d.itemType) then
         error{code = error_code.ERROR_ITEM_TYPE}
     end
+    if d.quality >= base.MAX_QUALITY then
+        error{code = error_code.MAX_QUALITY}
+    end
+    if d.quality >= data.expdata.ImproveLimit then
+        error{code = error_code.ROLE_LEVEL_LIMIT}
+    end
     local iv = i[1]
     if iv.status ~= base.ITEM_STATUS_NORMAL then
         error{code = error_code.ERROR_ITEM_STATUS}
     end
-    local mat = d.compos
-    local matdata = assert(itemdata[mat], string.format("Improve item %d material %d not exist.", iv.itemid, mat))
-    local numdata = assert(expdata[d.needLv], string.format("Improve item %d exp data not exist.", iv.itemid))
+    local mat = d.improveMat
+    if not mat then
+        error{code == error_code.CAN_NOT_IMPROVE_ITEM}
+    end
+    local numdata = d.needLvExp
     local num = numdata.ImproveMatNum
     local count = item.count(mat)
     if count < num then
         error{code = error_code.ITEM_NUM_LIMIT}
     end
-    local improveitemid = iv.itemid + 5000
-    local idata = itemdata[improveitemid]
-    if not idata then
-        error{code = error_code.CAN_NOT_IMPROVE_ITEM}
-    end
+    local improveitemid = d.improveItem
+    local idata = d.improveItemData
     local p = update_user()
     item.del_by_itemid(p, mat, num)
     local olditemid = iv.itemid
@@ -570,6 +531,52 @@ function proc.improve_item(msg)
         rand_prop = iv.rand_prop,
     }
     task.update(p, base.TASK_COMPLETE_IMPROVE_ITEM, olditemid, 1)
+    if iv.pos > 0 then
+        role.fight_point(p)
+    end
+    return "update_user", {update=p}
+end
+
+function proc.upgrade_item(msg)
+    local i = data.item[msg.id]
+    if not i then
+        error{code = error_code.ITEM_NOT_EXIST}
+    end
+    local d = i[2]
+    if not is_equip(d.itemType) then
+        error{code = error_code.ERROR_ITEM_TYPE}
+    end
+    local user = data.user
+    if d.needLv + 5 > user.level then
+        error{code = error_code.ROLE_LEVEL_LIMIT}
+    end
+    local iv = i[1]
+    if iv.status ~= base.ITEM_STATUS_NORMAL then
+        error{code = error_code.ERROR_ITEM_STATUS}
+    end
+    local mat = d.compos
+    if mat == 0 then
+        error{code = error_code.CAN_NOT_UPGRADE_ITEM}
+    end
+    local numdata = d.needLvExp
+    local num = numdata.UpgradeMatNum
+    local count = item.count(mat)
+    if count < num then
+        error{code = error_code.ITEM_NUM_LIMIT}
+    end
+    local upgradeitemid = d.upgradeItem
+    local udata = d.upgradeItemData
+    local p = update_user()
+    item.del_by_itemid(p, mat, num)
+    local olditemid = iv.itemid
+    item.change(i, upgradeitemid, udata)
+    local pitem = p.item
+    pitem[#pitem+1] = {
+        id = iv.id, 
+        itemid = itemid, 
+        rand_prop = iv.rand_prop,
+    }
+    task.update(p, base.TASK_COMPLETE_UPGRADE_ITEM, olditemid, 1)
     if iv.pos > 0 then
         role.fight_point(p)
     end
@@ -597,12 +604,15 @@ function proc.decompose_item(msg)
         error{code = error_code.ITEM_HAS_STONE}
     end
     local mat = d.compos
-    local matdata = assert(itemdata[mat], string.format("Decompose item %d material %d not exist.", iv.itemid, mat))
-    local numdata = assert(expdata[d.needLv], string.format("Decompose item %d exp data not exist.", iv.itemid))
+    if mat == 0 then
+        error{code = error_code.CAN_NOT_DECOMPOSE_ITEM}
+    end
+    local matdata = d.composData
+    local numdata = d.needLvExp
     local p = update_user()
     item.del(i)
     local num = numdata.DecomposeMatNum
-    item.add_by_itemid(p, mat, num, matdata)
+    item.add_by_itemid(p, num, matdata)
     local pitem = p.item
     pitem[#pitem+1] = {
         id = iv.id,

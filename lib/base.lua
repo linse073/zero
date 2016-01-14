@@ -107,6 +107,7 @@ local base = {
     
     INTENSIFY_ITEM = 3000000210,
     MAX_INTENSIFY = 18,
+    MAX_QUALITY = 6,
 
     -- bonus
     BONUS_TYPE_MONEY = 1,

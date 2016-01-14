@@ -95,10 +95,10 @@ function card.gen_id()
     return skynet.call(data.server, "lua", "gen_card")
 end
 
-function card.add_by_cardid(p, cardid, d)
+function card.add_by_cardid(p, d)
     local v = {
         id = cs(card.gen_id),
-        cardid = cardid,
+        cardid = d.id,
         level = d.starLv,
         pos = {},
     }
@@ -153,14 +153,14 @@ function proc.call_card(msg)
     if c then
         error{code = error_code.ALREADY_HAS_CARD}
     end
-    local ed = assert(expdata[d.starLv], string.format("No exp data %d.", d.starLv))
+    local ed = d.starLvExp
     local count = item.count(d.soulId)
     if count < ed.cardStar then
         error{code = error_code.CARD_SOUL_LIMIT}
     end
     local p = update_user()
     item.del_by_itemid(p, d.soulId, ed.cardStar)
-    card.add_by_cardid(p, msg.cardid, d)
+    card.add_by_cardid(p, d)
     task.update(p, base.TASK_COMPLETE_CARD, msg.cardid, 1)
     return "update_user", {update=p}
 end

@@ -16,7 +16,7 @@ local randomseed = math.randomseed
 local check_sign = util.check_sign
 local update_user = util.update_user
 local stagedata
-local bonusdata
+local itemdata
 local data
 local role_mgr
 
@@ -25,7 +25,7 @@ local proc = {}
 
 skynet.init(function()
     stagedata = share.stagedata
-    bonusdata = share.bonusdata
+    itemdata = share.itemdata
     role_mgr = skynet.queryservice("role_mgr")
 end)
 
@@ -93,7 +93,7 @@ function stage.rand_bonus(d, sd)
     for k, v in ipairs(d.all_rate) do
         t = t + v.rate
         if rand <= t then
-            local bonus = {num = v.num}
+            local bonus = {num=v.num, data=v.data}
             if v.type == base.BONUS_TYPE_EQUIP then
                 local prof
                 if v.prof == 1 then
@@ -181,22 +181,21 @@ function proc.end_stage(msg)
     if s then
         d = s[2]
         money, exp = d.getMoney, d.getExp
-        bonus[#bonus+1] = {id=d.bonusID, rand_num=1, num=1}
+        bonus[#bonus+1] = {id=d.bonusID, rand_num=1, num=1, data=d.bonus}
     else
         d = assert(stagedata[msg.id], string.format("No stage data %d.", msg.id))
         s = stage.add_by_data(d)
         money, exp = d.firstMoney, d.firstExp
-        bonus[#bonus+1] = {id=d.firstBonusID, rand_num=1, num=1}
+        bonus[#bonus+1] = {id=d.firstBonusID, rand_num=1, num=1, data=d.firstBonus}
     end
     if msg.total_box > 0 then
-        bonus[#bonus+1] = {id=d.dropBonus, rand_num=msg.total_box, num=msg.pick_box}
+        bonus[#bonus+1] = {id=d.dropBonusID, rand_num=msg.total_box, num=msg.pick_box, data=d.dropBonus}
     end
     randomseed(msg.rand_seed)
     for k, v in ipairs(bonus) do
         local rand_item = {}
-        local bd = assert(bonusdata[v.id], string.format("No bonus data %d.", v.id))
         for i = 1, v.rand_num do
-            rand_item[i] = stage.rand_bonus(bd, d)
+            rand_item[i] = stage.rand_bonus(v.data, d)
         end
         v.rand_item = rand_item
     end
@@ -216,11 +215,16 @@ function proc.end_stage(msg)
         for i = 1, v.num do
             local ri = rand_item[i]
             local itemid = ri.item
-            if itemid then
-                local rid = assert(itemdata[itemid], string.format("No item data %d.", itemid))
-                item.add_by_itemid(p, itemid, ri.num, rid)
+            local idata = ri.data
+            if idata then
+                item.add_by_itemid(p, ri.num, idata)
             else
-                role.add_money(p, ri.num)
+                if itemid then
+                    local rid = assert(itemdata[itemid], string.format("No item data %d.", itemid))
+                    item.add_by_itemid(p, ri.num, rid)
+                else
+                    role.add_money(p, ri.num)
+                end
             end
         end
     end
@@ -243,13 +247,16 @@ function proc.end_stage(msg)
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
     stage_seed.id = 0
     stage_seed.seed = 0
-    local des_pos = data.user.des_pos
+    local user = data.user
     local initRect = base.INIT_RECT
+    local des_pos = user.des_pos
     des_pos.x = random(initRect.x, initRect.ex)
     des_pos.y = random(initRect.y, initRect.ey)
+    user.cur_pos.x = des_pos.x
+    user.cur_pos.y = des_pos.y
     p.user.des_pos = des_pos
     local bmsg = {
-        id = data.user.id,
+        id = user.id,
         fight = false,
         des_pos = des_pos,
     }

@@ -170,6 +170,7 @@ function role.add_exp(p, exp)
                 break
             end
             user.level = user.level + 1
+            data.expdata = expd
         end
         local puser = p.user
         puser.exp = user.exp
@@ -316,6 +317,7 @@ function proc.enter_game(msg)
     user.login_time = now
     data.suser = suser
     data.user = user
+    data.expdata = assert(expdata[user.level], string.format("No exp data %d.", user.level))
     local ret = {user = user}
     for k, v in ipairs(module) do
         local key, pack = v.enter()

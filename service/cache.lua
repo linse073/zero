@@ -4,6 +4,9 @@ local sharedata = require "sharedata"
 local proto = require "proto"
 
 local string = string
+local pairs = pairs
+local ipairs = ipairs
+local assert = assert
 local tonumber = tonumber
 
 skynet.start(function()
@@ -14,19 +17,72 @@ skynet.start(function()
     local taskdata = require("data.task")
     local expdata = require("data.exp")
     local intensifydata = require("data.intensify")
-
-    sharedata.new("carddata", carddata)
-    sharedata.new("itemdata", itemdata)
-    sharedata.new("stagedata", stagedata)
-    sharedata.new("taskdata", taskdata)
-    sharedata.new("expdata", expdata)
-    sharedata.new("intensifydata", intensifydata)
-
-    local base = require("base")
-    sharedata.new("base", base)
-    sharedata.new("error_code", require("error_code"))
-
     local bonusdata = require("data.bonus")
+    local base = require("base")
+
+    for k, v in pairs(carddata) do
+        v.starLvExp = assert(expdata[v.starLv], string.format("No exp data %d.", v.starLv))
+    end
+
+    local function is_equip(itemtype)
+        return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
+    end
+    for k, v in pairs(itemdata) do
+        if v.compos > 0 then
+            v.composData = assert(itemdata[v.compos], string.format("No item data %d.", v.compos))
+        end
+        if is_equip(v.itemType) then
+            local needLv = v.needLv
+            if v.needLv == 0 then
+                needLv = 1
+            end
+            v.needLvExp = assert(expdata[needLv], string.format("No exp data %d.", needLv))
+            if v.quality < base.MAX_QUALITY then
+                v.improveMat = compos + 1
+                v.improveMatData = assert(itemdata[v.improveMat], string.format("No item data %d.", v.improveMat))
+                v.improveItem = k + 1
+                v.improveItemData = assert(itemdata[v.improveItem], string.format("No item data %d.", v.improveItem))
+            end
+            if v.needLv < base.MAX_LEVEL then
+                v.upgradeItem = k + 5000
+                v.upgradeItemData = assert(itemdata[v.upgradeItem], string.format("No item data %d.", v.upgradeItem))
+            end
+        end
+    end
+
+    for k, v in pairs(stagedata) do
+        v.bonus = assert(bonusdata[v.bonusID], string.format("No bonus data %d.", v.bonusID))
+        v.firstBonus = assert(bonusdata[v.firstBonusID], string.format("No bonus data %d.", v.firstBonusID))
+        v.dropBonus = assert(bonusdata[v.dropBonusID], string.format("No bonus data %d.", v.dropBonusID))
+    end
+
+    for k, v in pairs(taskdata) do
+        local profItem = {}
+        for k1, v1 in ipairs(v.profItemId) do
+            if v1 > 0 then
+                profItem[k1] = assert(itemdata[v1], string.format("No item data %d.", v1))
+            end
+        end
+        v.profItem = profItem
+        local awardItem = {}
+        for item, num in string.gmatch(v.Item, "(%d+);(%d+)") do
+            local itemid = tonumber(item)
+            awardItem[#awardItem+1] = {
+                item = itemid,
+                data = assert(itemdata[itemid], string.format("No item data %d.", itemid)),
+                num = tonumber(num),
+            }
+        end
+        v.awardItem = awardItem
+        local card = {}
+        for k1, v1 in ipairs(v.CardId) do
+            if v1 > 0 then
+                card[k1] = assert(carddata[v1], string.format("No card data %d.", v1))
+            end
+        end
+        v.card = card
+    end
+
     for k, v in pairs(bonusdata) do
         local rt = {}
         local total_rate = 0
@@ -53,11 +109,13 @@ skynet.start(function()
         end
         for item, num, rate in string.gmatch(v.dropItem, "(%d+);(%d+);(%d+)") do
             local r = tonumber(rate)
+            local i = tonumber(item)
             rt[#rt+1] = {
                 type = base.BONUS_TYPE_ITEM,
-                item = tonumber(item),
+                item = i,
                 num = tonumber(num),
                 rate = r,
+                data = assert(itemdata[i], string.format("No item data %d.", i))
             }
             total_rate = total_rate + r
         end
@@ -93,7 +151,6 @@ skynet.start(function()
         v.all_rate = rt
         v.total_rate = total_rate
     end
-    sharedata.new("bunusdata", bonusdata)
 
     local day_task = {}
     local achi_task = {}
@@ -109,8 +166,6 @@ skynet.start(function()
             achi_task[#achi_task+1] = v
         end
     end
-    sharedata.new("day_task", day_task)
-    sharedata.new("achi_task", achi_task)
 
     local original_card = {}
     for k, v in pairs(carddata) do
@@ -121,6 +176,21 @@ skynet.start(function()
             d = carddata[d.evolveId]
         until not d
     end
+
+    sharedata.new("carddata", carddata)
+    sharedata.new("itemdata", itemdata)
+    sharedata.new("stagedata", stagedata)
+    sharedata.new("taskdata", taskdata)
+    sharedata.new("expdata", expdata)
+    sharedata.new("intensifydata", intensifydata)
+    sharedata.new("bonusdata", bonusdata)
+
+    sharedata.new("day_task", day_task)
+    sharedata.new("achi_task", achi_task)
+
+    sharedata.new("base", base)
+    sharedata.new("error_code", require("error_code"))
+
     sharedata.new("original_card", original_card)
 
     sharedata.new("item_category", {

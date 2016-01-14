@@ -15,8 +15,6 @@ local random = math.random
 
 local update_user = util.update_user
 local taskdata
-local itemdata
-local carddata
 local achi_task
 local day_task
 local base
@@ -27,8 +25,6 @@ local proc = {}
 
 skynet.init(function()
     taskdata = share.taskdata
-    itemdata = share.itemdata
-    carddata = share.carddata
     achi_task = share.achi_task
     day_task = share.day_task
     base = share.base
@@ -234,26 +230,16 @@ function task.award(p, t)
     if d.RMBMoney > 0 then
         role.add_rmb(p, d.RMBMoney)
     end
-    local profitem = d.profItem[user.prof]
-    if profitem > 0 then
-        local idata = assert(itemdata[profitem], string.format("No item data %d.", profitem))
-        item.add_by_itemid(p, profitem, 1, idata)
+    local idata = d.profItem[user.prof]
+    if idata then
+        item.add_by_itemid(p, 1, idata)
     end
-    for k, v in ipairs(d.Item) do
-        if v > 0 then
-            local n = d.ItemNum[k]
-            if n > 0 then
-                local idata = assert(itemdata[v], string.format("No item data %d.", v))
-                item.add_by_itemid(p, v, n, idata)
-            else
-                skynet.error("Task data %d item num error.", d.TaskId)
-            end
-        end
+    for k, v in ipairs(d.awardItem) do
+        item.add_by_itemid(p, v.num, v.data)
     end
-    local profcard = d.CardId[user.prof]
-    if profcard > 0 then
-        local cdata = assert(carddata[profcard], string.format("No card data %d.", profcard))
-        card.add_by_cardid(p, profcard, cdata)
+    local cdata = d.CardId[user.prof]
+    if cdata then
+        card.add_by_cardid(p, cdata)
     end
 end
 

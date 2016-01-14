@@ -14,20 +14,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -50,20 +43,13 @@ local datas = {
 		Gold = 1000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			1600001006,
 			1600001028,
@@ -86,20 +72,13 @@ local datas = {
 		Gold = 2000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -122,20 +101,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -158,20 +130,13 @@ local datas = {
 		Gold = 3000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			1600001152,
 			1600001007,
@@ -194,20 +159,13 @@ local datas = {
 		Gold = 4000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			3001005031,
 			3002005031,
 			3003005031,
 			3004005031,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -230,20 +188,13 @@ local datas = {
 		Gold = 5000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			1600001015,
 			1600001033,
@@ -266,20 +217,13 @@ local datas = {
 		Gold = 6000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			3001005041,
 			3002005041,
 			3003005041,
 			3004005041,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -302,20 +246,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -338,20 +275,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -374,20 +304,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -410,20 +333,13 @@ local datas = {
 		Gold = 7000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -446,20 +362,13 @@ local datas = {
 		Gold = 8000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			3001010011,
 			3002010011,
 			3003010011,
 			3004010011,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -482,20 +391,13 @@ local datas = {
 		Gold = 9000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			3001019231,
-			3001038231,
-		},
-		ItemNum = {
-			160,
-			160,
-		},
+		Item = "3001019231;160;3001038231;160",
 		CardId = {
 			0,
 			0,
@@ -518,20 +420,13 @@ local datas = {
 		Gold = 10000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			3001010021,
 			3002010021,
 			3003010021,
 			3004010021,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			1600001019,
 			1600001038,
@@ -554,20 +449,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -590,20 +478,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -626,20 +507,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -662,20 +536,13 @@ local datas = {
 		Gold = 11000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			3001015051,
 			3002015051,
 			3003015051,
 			3004015051,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -698,20 +565,13 @@ local datas = {
 		Gold = 12000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -734,20 +594,13 @@ local datas = {
 		Gold = 13000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -770,20 +623,13 @@ local datas = {
 		Gold = 14000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			3001015061,
 			3002015061,
 			3003015061,
 			3004015061,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -806,20 +652,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -842,20 +681,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -878,20 +710,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -914,20 +739,13 @@ local datas = {
 		Gold = 15000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			3001020071,
 			3002020071,
 			3003020071,
 			3004020071,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -950,20 +768,13 @@ local datas = {
 		Gold = 16000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -986,20 +797,13 @@ local datas = {
 		Gold = 17000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			3000000210,
-			0,
-		},
-		ItemNum = {
-			800,
-			0,
-		},
+		Item = "3000000210;800",
 		CardId = {
 			0,
 			0,
@@ -1022,20 +826,13 @@ local datas = {
 		Gold = 18000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			3001020081,
 			3002020081,
 			3003020081,
 			3004020081,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1058,20 +855,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1094,20 +884,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1130,20 +913,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1166,20 +942,13 @@ local datas = {
 		Gold = 19000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1202,20 +971,13 @@ local datas = {
 		Gold = 20000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1238,20 +1000,13 @@ local datas = {
 		Gold = 21000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1274,20 +1029,13 @@ local datas = {
 		Gold = 22000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1310,20 +1058,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1346,20 +1087,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1382,20 +1116,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1418,20 +1145,13 @@ local datas = {
 		Gold = 23000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1454,20 +1174,13 @@ local datas = {
 		Gold = 24000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1490,20 +1203,13 @@ local datas = {
 		Gold = 25000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1526,20 +1232,13 @@ local datas = {
 		Gold = 26000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1562,20 +1261,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1598,20 +1290,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1634,20 +1319,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1670,20 +1348,13 @@ local datas = {
 		Gold = 27000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1706,20 +1377,13 @@ local datas = {
 		Gold = 28000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1742,20 +1406,13 @@ local datas = {
 		Gold = 29000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1778,20 +1435,13 @@ local datas = {
 		Gold = 30000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1814,20 +1464,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1850,20 +1493,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1886,20 +1522,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1922,20 +1551,13 @@ local datas = {
 		Gold = 31000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1958,20 +1580,13 @@ local datas = {
 		Gold = 32000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -1994,20 +1609,13 @@ local datas = {
 		Gold = 33000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2030,20 +1638,13 @@ local datas = {
 		Gold = 34000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2066,20 +1667,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2102,20 +1696,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2138,20 +1725,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2174,20 +1754,13 @@ local datas = {
 		Gold = 35000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2210,20 +1783,13 @@ local datas = {
 		Gold = 36000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2246,20 +1812,13 @@ local datas = {
 		Gold = 37000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2282,20 +1841,13 @@ local datas = {
 		Gold = 38000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2318,20 +1870,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2354,20 +1899,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2390,20 +1928,13 @@ local datas = {
 		Gold = 0,
 		RMBMoney = 0,
 		EXP = 0,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2426,20 +1957,13 @@ local datas = {
 		Gold = 39000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2462,20 +1986,13 @@ local datas = {
 		Gold = 40000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2498,20 +2015,13 @@ local datas = {
 		Gold = 41000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2534,20 +2044,13 @@ local datas = {
 		Gold = 41000,
 		RMBMoney = 10,
 		EXP = 100,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2570,20 +2073,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			3000000210,
-			0,
-		},
-		ItemNum = {
-			5,
-			0,
-		},
+		Item = "3000000210;5",
 		CardId = {
 			0,
 			0,
@@ -2606,20 +2102,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2642,20 +2131,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2678,20 +2160,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2714,20 +2189,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2750,20 +2218,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2786,20 +2247,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2822,20 +2276,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2858,20 +2305,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2894,20 +2334,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2930,20 +2363,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -2966,20 +2392,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3002,20 +2421,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3038,20 +2450,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3074,20 +2479,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3110,20 +2508,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3146,20 +2537,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3182,20 +2566,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3218,20 +2595,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3254,20 +2624,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3290,20 +2653,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3326,20 +2682,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3362,20 +2711,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			3000000210,
-			0,
-		},
-		ItemNum = {
-			10,
-			0,
-		},
+		Item = "3000000210;10",
 		CardId = {
 			0,
 			0,
@@ -3398,20 +2740,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3434,20 +2769,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3470,20 +2798,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3506,20 +2827,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3542,20 +2856,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3578,20 +2885,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3614,20 +2914,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3650,20 +2943,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3686,20 +2972,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3722,20 +3001,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3758,20 +3030,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3794,20 +3059,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3830,20 +3088,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3866,20 +3117,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3902,20 +3146,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3938,20 +3175,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -3974,20 +3204,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4010,20 +3233,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4046,20 +3262,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4082,20 +3291,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4118,20 +3320,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4154,20 +3349,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4190,20 +3378,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4226,20 +3407,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4262,20 +3436,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4298,20 +3465,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4334,20 +3494,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4370,20 +3523,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4406,20 +3552,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4442,20 +3581,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4478,20 +3610,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4514,20 +3639,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4550,20 +3668,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4586,20 +3697,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4622,20 +3726,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4658,20 +3755,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4694,20 +3784,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4730,20 +3813,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,
@@ -4766,20 +3842,13 @@ local datas = {
 		Gold = 500,
 		RMBMoney = 1,
 		EXP = 10,
-		profItem = {
+		profItemId = {
 			0,
 			0,
 			0,
 			0,
 		},
-		Item = {
-			0,
-			0,
-		},
-		ItemNum = {
-			0,
-			0,
-		},
+		Item = "",
 		CardId = {
 			0,
 			0,

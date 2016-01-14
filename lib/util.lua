@@ -74,6 +74,19 @@ function util.update_user()
     }
 end
 
+function util.ltrim(input)
+    return string.gsub(input, "^[ \t\n\r]+", "")
+end
+
+function util.rtrim(input)
+    return string.gsub(input, "[ \t\n\r]+$", "")
+end
+
+function util.trim(input)
+    input = string.gsub(input, "^[ \t\n\r]+", "")
+    return string.gsub(input, "[ \t\n\r]+$", "")
+end
+
 function util.split(input, delimiter)
     input = tostring(input)
     delimiter = tostring(delimiter)
@@ -102,7 +115,7 @@ function util.dump(value, desciption, nesting)
     end
 
     local tb = util.split(traceback("", 2), "\n")
-    print("dump from: " .. string.trim(tb[3]))
+    print("dump from: " .. util.trim(tb[3]))
 
     local function _dump(value, desciption, indent, nest, keylen)
         desciption = desciption or "<var>"

@@ -84,7 +84,7 @@ skynet.start(function()
                 item = i,
                 num = tonumber(num),
                 rate = r,
-                data = assert(itemdata[i], string.format("No item data %d.", i))
+                data = assert(itemdata[i], string.format("No item data %d.", i)),
             }
             total_rate = total_rate + r
         end

@@ -29,7 +29,7 @@ skynet.start(function()
     end
     for k, v in pairs(itemdata) do
         if v.compos > 0 then
-            v.composData = assert(itemdata[v.compos], string.format("No item data %d.", v.compos))
+            assert(itemdata[v.compos], string.format("No item data %d.", v.compos))
         end
         if is_equip(v.itemType) then
             local needLv = v.needLv
@@ -38,14 +38,14 @@ skynet.start(function()
             end
             v.needLvExp = assert(expdata[needLv], string.format("No exp data %d.", needLv))
             if v.quality < base.MAX_QUALITY then
-                v.improveMat = v.compos + 1
-                v.improveMatData = assert(itemdata[v.improveMat], string.format("No item data %d.", v.improveMat))
-                v.improveItem = k + 1
-                v.improveItemData = assert(itemdata[v.improveItem], string.format("No item data %d.", v.improveItem))
+                local improveMat = v.compos + 1
+                assert(itemdata[improveMat], string.format("No item data %d.", improveMat))
+                local improveItem = k + 1
+                assert(itemdata[improveItem], string.format("No item data %d.", improveItem))
             end
             if v.needLv < base.MAX_LEVEL then
-                v.upgradeItem = k + 5000
-                v.upgradeItemData = assert(itemdata[v.upgradeItem], string.format("No item data %d.", v.upgradeItem))
+                local upgradeItem = k + 5000
+                assert(itemdata[upgradeItem], string.format("No item data %d.", upgradeItem))
             end
         end
     end

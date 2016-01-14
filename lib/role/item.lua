@@ -473,7 +473,7 @@ function proc.compound_item(msg)
     if compounditem == 0 then
         error{code = error_code.CAN_NOT_COMPOUND_ITEM}
     end
-    local compounddata = d.composData
+    local compounddata = assert(itemdata[compounditem], string.format("No item data %d.", compounditem))
     local num = item.count(msg.itemid)
     if msg.num and msg.num < num then
         num = msg.num
@@ -508,18 +508,18 @@ function proc.improve_item(msg)
     if iv.status ~= base.ITEM_STATUS_NORMAL then
         error{code = error_code.ERROR_ITEM_STATUS}
     end
-    local mat = d.improveMat
-    if not mat then
+    if v.compos == 0 then
         error{code == error_code.CAN_NOT_IMPROVE_ITEM}
     end
+    local mat = v.compos + 1
     local numdata = d.needLvExp
     local num = numdata.ImproveMatNum
     local count = item.count(mat)
     if count < num then
         error{code = error_code.ITEM_NUM_LIMIT}
     end
-    local improveitemid = d.improveItem
-    local idata = d.improveItemData
+    local improveitemid = iv.itemid + 1
+    local idata = assert(itemdata[improveitemid], string.format("No item data %d.", improveitemid))
     local p = update_user()
     item.del_by_itemid(p, mat, num)
     local olditemid = iv.itemid
@@ -564,8 +564,8 @@ function proc.upgrade_item(msg)
     if count < num then
         error{code = error_code.ITEM_NUM_LIMIT}
     end
-    local upgradeitemid = d.upgradeItem
-    local udata = d.upgradeItemData
+    local upgradeitemid = iv.itemid + 5000
+    local udata = assert(itemdata[upgradeitemid], string.format("No item data %d.", upgradeitemid))
     local p = update_user()
     item.del_by_itemid(p, mat, num)
     local olditemid = iv.itemid
@@ -607,7 +607,7 @@ function proc.decompose_item(msg)
     if mat == 0 then
         error{code = error_code.CAN_NOT_DECOMPOSE_ITEM}
     end
-    local matdata = d.composData
+    local matdata = assert(itemdata[mat], string.format("No item data %d.", mat))
     local numdata = d.needLvExp
     local p = update_user()
     item.del(i)

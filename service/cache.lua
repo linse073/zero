@@ -181,12 +181,11 @@ skynet.start(function()
     sharedata.new("intensifydata", intensifydata)
     sharedata.new("bonusdata", bonusdata)
 
-    sharedata.new("day_task", day_task)
-    sharedata.new("achi_task", achi_task)
-
     sharedata.new("base", base)
     sharedata.new("error_code", require("error_code"))
 
+    sharedata.new("day_task", day_task)
+    sharedata.new("achi_task", achi_task)
     sharedata.new("original_card", original_card)
 
     sharedata.new("item_category", {

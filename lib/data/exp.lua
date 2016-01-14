@@ -8,6 +8,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 3,
 		passiveGold = 300,
+		ImproveLimit = 2,
 	},
 	[2] = {
 		lv = 2,
@@ -18,6 +19,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 4,
 		passiveGold = 420,
+		ImproveLimit = 2,
 	},
 	[3] = {
 		lv = 3,
@@ -28,6 +30,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 6,
 		passiveGold = 580,
+		ImproveLimit = 2,
 	},
 	[4] = {
 		lv = 4,
@@ -38,6 +41,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 8,
 		passiveGold = 780,
+		ImproveLimit = 2,
 	},
 	[5] = {
 		lv = 5,
@@ -48,6 +52,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 10,
 		passiveGold = 1020,
+		ImproveLimit = 2,
 	},
 	[6] = {
 		lv = 6,
@@ -58,6 +63,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 13,
 		passiveGold = 1300,
+		ImproveLimit = 2,
 	},
 	[7] = {
 		lv = 7,
@@ -68,6 +74,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 16,
 		passiveGold = 1620,
+		ImproveLimit = 2,
 	},
 	[8] = {
 		lv = 8,
@@ -78,6 +85,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 20,
 		passiveGold = 1980,
+		ImproveLimit = 2,
 	},
 	[9] = {
 		lv = 9,
@@ -88,6 +96,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 24,
 		passiveGold = 2380,
+		ImproveLimit = 2,
 	},
 	[10] = {
 		lv = 10,
@@ -98,6 +107,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 28,
 		passiveGold = 2820,
+		ImproveLimit = 2,
 	},
 	[11] = {
 		lv = 11,
@@ -108,6 +118,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 33,
 		passiveGold = 3300,
+		ImproveLimit = 2,
 	},
 	[12] = {
 		lv = 12,
@@ -118,6 +129,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 38,
 		passiveGold = 3820,
+		ImproveLimit = 2,
 	},
 	[13] = {
 		lv = 13,
@@ -128,6 +140,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 44,
 		passiveGold = 4380,
+		ImproveLimit = 2,
 	},
 	[14] = {
 		lv = 14,
@@ -138,6 +151,7 @@ local datas = {
 		DecomposeMatNum = 1,
 		cardStar = 50,
 		passiveGold = 4980,
+		ImproveLimit = 2,
 	},
 	[15] = {
 		lv = 15,
@@ -148,6 +162,7 @@ local datas = {
 		DecomposeMatNum = 2,
 		cardStar = 56,
 		passiveGold = 5620,
+		ImproveLimit = 2,
 	},
 	[16] = {
 		lv = 16,
@@ -158,6 +173,7 @@ local datas = {
 		DecomposeMatNum = 2,
 		cardStar = 0,
 		passiveGold = 6300,
+		ImproveLimit = 3,
 	},
 	[17] = {
 		lv = 17,
@@ -168,6 +184,7 @@ local datas = {
 		DecomposeMatNum = 2,
 		cardStar = 0,
 		passiveGold = 7020,
+		ImproveLimit = 3,
 	},
 	[18] = {
 		lv = 18,
@@ -178,6 +195,7 @@ local datas = {
 		DecomposeMatNum = 2,
 		cardStar = 0,
 		passiveGold = 7780,
+		ImproveLimit = 3,
 	},
 	[19] = {
 		lv = 19,
@@ -188,6 +206,7 @@ local datas = {
 		DecomposeMatNum = 2,
 		cardStar = 0,
 		passiveGold = 8580,
+		ImproveLimit = 3,
 	},
 	[20] = {
 		lv = 20,
@@ -198,6 +217,7 @@ local datas = {
 		DecomposeMatNum = 3,
 		cardStar = 0,
 		passiveGold = 9420,
+		ImproveLimit = 3,
 	},
 	[21] = {
 		lv = 21,
@@ -208,6 +228,7 @@ local datas = {
 		DecomposeMatNum = 3,
 		cardStar = 0,
 		passiveGold = 10300,
+		ImproveLimit = 3,
 	},
 	[22] = {
 		lv = 22,
@@ -218,6 +239,7 @@ local datas = {
 		DecomposeMatNum = 3,
 		cardStar = 0,
 		passiveGold = 11220,
+		ImproveLimit = 3,
 	},
 	[23] = {
 		lv = 23,
@@ -228,6 +250,7 @@ local datas = {
 		DecomposeMatNum = 3,
 		cardStar = 0,
 		passiveGold = 12180,
+		ImproveLimit = 3,
 	},
 	[24] = {
 		lv = 24,
@@ -238,6 +261,7 @@ local datas = {
 		DecomposeMatNum = 3,
 		cardStar = 0,
 		passiveGold = 13180,
+		ImproveLimit = 3,
 	},
 	[25] = {
 		lv = 25,
@@ -248,6 +272,7 @@ local datas = {
 		DecomposeMatNum = 4,
 		cardStar = 0,
 		passiveGold = 14220,
+		ImproveLimit = 3,
 	},
 	[26] = {
 		lv = 26,
@@ -258,6 +283,7 @@ local datas = {
 		DecomposeMatNum = 4,
 		cardStar = 0,
 		passiveGold = 15300,
+		ImproveLimit = 3,
 	},
 	[27] = {
 		lv = 27,
@@ -268,6 +294,7 @@ local datas = {
 		DecomposeMatNum = 4,
 		cardStar = 0,
 		passiveGold = 16420,
+		ImproveLimit = 3,
 	},
 	[28] = {
 		lv = 28,
@@ -278,6 +305,7 @@ local datas = {
 		DecomposeMatNum = 4,
 		cardStar = 0,
 		passiveGold = 17580,
+		ImproveLimit = 3,
 	},
 	[29] = {
 		lv = 29,
@@ -288,6 +316,7 @@ local datas = {
 		DecomposeMatNum = 4,
 		cardStar = 0,
 		passiveGold = 18780,
+		ImproveLimit = 3,
 	},
 	[30] = {
 		lv = 30,
@@ -298,6 +327,7 @@ local datas = {
 		DecomposeMatNum = 6,
 		cardStar = 0,
 		passiveGold = 20020,
+		ImproveLimit = 3,
 	},
 	[31] = {
 		lv = 31,
@@ -308,6 +338,7 @@ local datas = {
 		DecomposeMatNum = 6,
 		cardStar = 0,
 		passiveGold = 21300,
+		ImproveLimit = 4,
 	},
 	[32] = {
 		lv = 32,
@@ -318,6 +349,7 @@ local datas = {
 		DecomposeMatNum = 6,
 		cardStar = 0,
 		passiveGold = 22620,
+		ImproveLimit = 4,
 	},
 	[33] = {
 		lv = 33,
@@ -328,6 +360,7 @@ local datas = {
 		DecomposeMatNum = 6,
 		cardStar = 0,
 		passiveGold = 23980,
+		ImproveLimit = 4,
 	},
 	[34] = {
 		lv = 34,
@@ -338,6 +371,7 @@ local datas = {
 		DecomposeMatNum = 6,
 		cardStar = 0,
 		passiveGold = 25380,
+		ImproveLimit = 4,
 	},
 	[35] = {
 		lv = 35,
@@ -348,6 +382,7 @@ local datas = {
 		DecomposeMatNum = 7,
 		cardStar = 0,
 		passiveGold = 26820,
+		ImproveLimit = 4,
 	},
 	[36] = {
 		lv = 36,
@@ -358,6 +393,7 @@ local datas = {
 		DecomposeMatNum = 7,
 		cardStar = 0,
 		passiveGold = 28300,
+		ImproveLimit = 4,
 	},
 	[37] = {
 		lv = 37,
@@ -368,6 +404,7 @@ local datas = {
 		DecomposeMatNum = 7,
 		cardStar = 0,
 		passiveGold = 29820,
+		ImproveLimit = 4,
 	},
 	[38] = {
 		lv = 38,
@@ -378,6 +415,7 @@ local datas = {
 		DecomposeMatNum = 7,
 		cardStar = 0,
 		passiveGold = 31380,
+		ImproveLimit = 4,
 	},
 	[39] = {
 		lv = 39,
@@ -388,6 +426,7 @@ local datas = {
 		DecomposeMatNum = 7,
 		cardStar = 0,
 		passiveGold = 32980,
+		ImproveLimit = 4,
 	},
 	[40] = {
 		lv = 40,
@@ -398,6 +437,7 @@ local datas = {
 		DecomposeMatNum = 9,
 		cardStar = 0,
 		passiveGold = 34620,
+		ImproveLimit = 4,
 	},
 	[41] = {
 		lv = 41,
@@ -408,6 +448,7 @@ local datas = {
 		DecomposeMatNum = 9,
 		cardStar = 0,
 		passiveGold = 36300,
+		ImproveLimit = 4,
 	},
 	[42] = {
 		lv = 42,
@@ -418,6 +459,7 @@ local datas = {
 		DecomposeMatNum = 9,
 		cardStar = 0,
 		passiveGold = 38020,
+		ImproveLimit = 4,
 	},
 	[43] = {
 		lv = 43,
@@ -428,6 +470,7 @@ local datas = {
 		DecomposeMatNum = 9,
 		cardStar = 0,
 		passiveGold = 39780,
+		ImproveLimit = 4,
 	},
 	[44] = {
 		lv = 44,
@@ -438,6 +481,7 @@ local datas = {
 		DecomposeMatNum = 9,
 		cardStar = 0,
 		passiveGold = 41580,
+		ImproveLimit = 4,
 	},
 	[45] = {
 		lv = 45,
@@ -448,6 +492,7 @@ local datas = {
 		DecomposeMatNum = 12,
 		cardStar = 0,
 		passiveGold = 43420,
+		ImproveLimit = 4,
 	},
 	[46] = {
 		lv = 46,
@@ -458,6 +503,7 @@ local datas = {
 		DecomposeMatNum = 12,
 		cardStar = 0,
 		passiveGold = 45300,
+		ImproveLimit = 5,
 	},
 	[47] = {
 		lv = 47,
@@ -468,6 +514,7 @@ local datas = {
 		DecomposeMatNum = 12,
 		cardStar = 0,
 		passiveGold = 47220,
+		ImproveLimit = 5,
 	},
 	[48] = {
 		lv = 48,
@@ -478,6 +525,7 @@ local datas = {
 		DecomposeMatNum = 12,
 		cardStar = 0,
 		passiveGold = 49180,
+		ImproveLimit = 5,
 	},
 	[49] = {
 		lv = 49,
@@ -488,6 +536,7 @@ local datas = {
 		DecomposeMatNum = 12,
 		cardStar = 0,
 		passiveGold = 51180,
+		ImproveLimit = 5,
 	},
 	[50] = {
 		lv = 50,
@@ -498,6 +547,7 @@ local datas = {
 		DecomposeMatNum = 14,
 		cardStar = 0,
 		passiveGold = 53220,
+		ImproveLimit = 5,
 	},
 	[51] = {
 		lv = 51,
@@ -508,6 +558,7 @@ local datas = {
 		DecomposeMatNum = 14,
 		cardStar = 0,
 		passiveGold = 55300,
+		ImproveLimit = 5,
 	},
 	[52] = {
 		lv = 52,
@@ -518,6 +569,7 @@ local datas = {
 		DecomposeMatNum = 14,
 		cardStar = 0,
 		passiveGold = 57420,
+		ImproveLimit = 5,
 	},
 	[53] = {
 		lv = 53,
@@ -528,6 +580,7 @@ local datas = {
 		DecomposeMatNum = 14,
 		cardStar = 0,
 		passiveGold = 59580,
+		ImproveLimit = 5,
 	},
 	[54] = {
 		lv = 54,
@@ -538,6 +591,7 @@ local datas = {
 		DecomposeMatNum = 14,
 		cardStar = 0,
 		passiveGold = 61780,
+		ImproveLimit = 5,
 	},
 	[55] = {
 		lv = 55,
@@ -548,6 +602,7 @@ local datas = {
 		DecomposeMatNum = 17,
 		cardStar = 0,
 		passiveGold = 64020,
+		ImproveLimit = 5,
 	},
 	[56] = {
 		lv = 56,
@@ -558,6 +613,7 @@ local datas = {
 		DecomposeMatNum = 17,
 		cardStar = 0,
 		passiveGold = 66300,
+		ImproveLimit = 5,
 	},
 	[57] = {
 		lv = 57,
@@ -568,6 +624,7 @@ local datas = {
 		DecomposeMatNum = 17,
 		cardStar = 0,
 		passiveGold = 68620,
+		ImproveLimit = 5,
 	},
 	[58] = {
 		lv = 58,
@@ -578,6 +635,7 @@ local datas = {
 		DecomposeMatNum = 17,
 		cardStar = 0,
 		passiveGold = 70980,
+		ImproveLimit = 5,
 	},
 	[59] = {
 		lv = 59,
@@ -588,6 +646,7 @@ local datas = {
 		DecomposeMatNum = 17,
 		cardStar = 0,
 		passiveGold = 73380,
+		ImproveLimit = 5,
 	},
 	[60] = {
 		lv = 60,
@@ -598,6 +657,7 @@ local datas = {
 		DecomposeMatNum = 21,
 		cardStar = 0,
 		passiveGold = 75820,
+		ImproveLimit = 5,
 	},
 	[61] = {
 		lv = 61,
@@ -608,6 +668,7 @@ local datas = {
 		DecomposeMatNum = 21,
 		cardStar = 0,
 		passiveGold = 78300,
+		ImproveLimit = 6,
 	},
 	[62] = {
 		lv = 62,
@@ -618,6 +679,7 @@ local datas = {
 		DecomposeMatNum = 21,
 		cardStar = 0,
 		passiveGold = 80820,
+		ImproveLimit = 6,
 	},
 	[63] = {
 		lv = 63,
@@ -628,6 +690,7 @@ local datas = {
 		DecomposeMatNum = 21,
 		cardStar = 0,
 		passiveGold = 83380,
+		ImproveLimit = 6,
 	},
 	[64] = {
 		lv = 64,
@@ -638,6 +701,7 @@ local datas = {
 		DecomposeMatNum = 21,
 		cardStar = 0,
 		passiveGold = 85980,
+		ImproveLimit = 6,
 	},
 	[65] = {
 		lv = 65,
@@ -648,6 +712,7 @@ local datas = {
 		DecomposeMatNum = 25,
 		cardStar = 0,
 		passiveGold = 88620,
+		ImproveLimit = 6,
 	},
 	[66] = {
 		lv = 66,
@@ -658,6 +723,7 @@ local datas = {
 		DecomposeMatNum = 25,
 		cardStar = 0,
 		passiveGold = 91300,
+		ImproveLimit = 6,
 	},
 	[67] = {
 		lv = 67,
@@ -668,6 +734,7 @@ local datas = {
 		DecomposeMatNum = 25,
 		cardStar = 0,
 		passiveGold = 94020,
+		ImproveLimit = 6,
 	},
 	[68] = {
 		lv = 68,
@@ -678,6 +745,7 @@ local datas = {
 		DecomposeMatNum = 25,
 		cardStar = 0,
 		passiveGold = 96780,
+		ImproveLimit = 6,
 	},
 	[69] = {
 		lv = 69,
@@ -688,6 +756,7 @@ local datas = {
 		DecomposeMatNum = 25,
 		cardStar = 0,
 		passiveGold = 99580,
+		ImproveLimit = 6,
 	},
 	[70] = {
 		lv = 70,
@@ -698,6 +767,7 @@ local datas = {
 		DecomposeMatNum = 29,
 		cardStar = 0,
 		passiveGold = 102420,
+		ImproveLimit = 6,
 	},
 	[71] = {
 		lv = 71,
@@ -708,6 +778,7 @@ local datas = {
 		DecomposeMatNum = 29,
 		cardStar = 0,
 		passiveGold = 105300,
+		ImproveLimit = 6,
 	},
 	[72] = {
 		lv = 72,
@@ -718,6 +789,7 @@ local datas = {
 		DecomposeMatNum = 29,
 		cardStar = 0,
 		passiveGold = 108220,
+		ImproveLimit = 6,
 	},
 	[73] = {
 		lv = 73,
@@ -728,6 +800,7 @@ local datas = {
 		DecomposeMatNum = 29,
 		cardStar = 0,
 		passiveGold = 111180,
+		ImproveLimit = 6,
 	},
 	[74] = {
 		lv = 74,
@@ -738,6 +811,7 @@ local datas = {
 		DecomposeMatNum = 29,
 		cardStar = 0,
 		passiveGold = 114180,
+		ImproveLimit = 6,
 	},
 	[75] = {
 		lv = 75,
@@ -748,6 +822,7 @@ local datas = {
 		DecomposeMatNum = 34,
 		cardStar = 0,
 		passiveGold = 117220,
+		ImproveLimit = 6,
 	},
 	[76] = {
 		lv = 76,
@@ -758,6 +833,7 @@ local datas = {
 		DecomposeMatNum = 34,
 		cardStar = 0,
 		passiveGold = 120300,
+		ImproveLimit = 6,
 	},
 	[77] = {
 		lv = 77,
@@ -768,6 +844,7 @@ local datas = {
 		DecomposeMatNum = 34,
 		cardStar = 0,
 		passiveGold = 123420,
+		ImproveLimit = 6,
 	},
 	[78] = {
 		lv = 78,
@@ -778,6 +855,7 @@ local datas = {
 		DecomposeMatNum = 34,
 		cardStar = 0,
 		passiveGold = 126580,
+		ImproveLimit = 6,
 	},
 	[79] = {
 		lv = 79,
@@ -788,6 +866,7 @@ local datas = {
 		DecomposeMatNum = 34,
 		cardStar = 0,
 		passiveGold = 129780,
+		ImproveLimit = 6,
 	},
 	[80] = {
 		lv = 80,
@@ -798,6 +877,7 @@ local datas = {
 		DecomposeMatNum = 40,
 		cardStar = 0,
 		passiveGold = 133020,
+		ImproveLimit = 6,
 	},
 	[81] = {
 		lv = 81,
@@ -808,6 +888,7 @@ local datas = {
 		DecomposeMatNum = 40,
 		cardStar = 0,
 		passiveGold = 136300,
+		ImproveLimit = 6,
 	},
 	[82] = {
 		lv = 82,
@@ -818,6 +899,7 @@ local datas = {
 		DecomposeMatNum = 40,
 		cardStar = 0,
 		passiveGold = 139620,
+		ImproveLimit = 6,
 	},
 	[83] = {
 		lv = 83,
@@ -828,6 +910,7 @@ local datas = {
 		DecomposeMatNum = 40,
 		cardStar = 0,
 		passiveGold = 142980,
+		ImproveLimit = 6,
 	},
 	[84] = {
 		lv = 84,
@@ -838,6 +921,7 @@ local datas = {
 		DecomposeMatNum = 40,
 		cardStar = 0,
 		passiveGold = 146380,
+		ImproveLimit = 6,
 	},
 	[85] = {
 		lv = 85,
@@ -848,6 +932,7 @@ local datas = {
 		DecomposeMatNum = 48,
 		cardStar = 0,
 		passiveGold = 149820,
+		ImproveLimit = 6,
 	},
 	[86] = {
 		lv = 86,
@@ -858,6 +943,7 @@ local datas = {
 		DecomposeMatNum = 48,
 		cardStar = 0,
 		passiveGold = 153300,
+		ImproveLimit = 6,
 	},
 	[87] = {
 		lv = 87,
@@ -868,6 +954,7 @@ local datas = {
 		DecomposeMatNum = 48,
 		cardStar = 0,
 		passiveGold = 156820,
+		ImproveLimit = 6,
 	},
 	[88] = {
 		lv = 88,
@@ -878,6 +965,7 @@ local datas = {
 		DecomposeMatNum = 48,
 		cardStar = 0,
 		passiveGold = 160380,
+		ImproveLimit = 6,
 	},
 	[89] = {
 		lv = 89,
@@ -888,6 +976,7 @@ local datas = {
 		DecomposeMatNum = 48,
 		cardStar = 0,
 		passiveGold = 163980,
+		ImproveLimit = 6,
 	},
 	[90] = {
 		lv = 90,
@@ -898,6 +987,7 @@ local datas = {
 		DecomposeMatNum = 57,
 		cardStar = 0,
 		passiveGold = 167620,
+		ImproveLimit = 6,
 	},
 	[91] = {
 		lv = 91,
@@ -908,6 +998,7 @@ local datas = {
 		DecomposeMatNum = 57,
 		cardStar = 0,
 		passiveGold = 171300,
+		ImproveLimit = 6,
 	},
 	[92] = {
 		lv = 92,
@@ -918,6 +1009,7 @@ local datas = {
 		DecomposeMatNum = 57,
 		cardStar = 0,
 		passiveGold = 175020,
+		ImproveLimit = 6,
 	},
 	[93] = {
 		lv = 93,
@@ -928,6 +1020,7 @@ local datas = {
 		DecomposeMatNum = 57,
 		cardStar = 0,
 		passiveGold = 178780,
+		ImproveLimit = 6,
 	},
 	[94] = {
 		lv = 94,
@@ -938,6 +1031,7 @@ local datas = {
 		DecomposeMatNum = 57,
 		cardStar = 0,
 		passiveGold = 182580,
+		ImproveLimit = 6,
 	},
 	[95] = {
 		lv = 95,
@@ -948,6 +1042,7 @@ local datas = {
 		DecomposeMatNum = 67,
 		cardStar = 0,
 		passiveGold = 186420,
+		ImproveLimit = 6,
 	},
 	[96] = {
 		lv = 96,
@@ -958,6 +1053,7 @@ local datas = {
 		DecomposeMatNum = 67,
 		cardStar = 0,
 		passiveGold = 190300,
+		ImproveLimit = 6,
 	},
 	[97] = {
 		lv = 97,
@@ -968,6 +1064,7 @@ local datas = {
 		DecomposeMatNum = 67,
 		cardStar = 0,
 		passiveGold = 194220,
+		ImproveLimit = 6,
 	},
 	[98] = {
 		lv = 98,
@@ -978,6 +1075,7 @@ local datas = {
 		DecomposeMatNum = 67,
 		cardStar = 0,
 		passiveGold = 198180,
+		ImproveLimit = 6,
 	},
 	[99] = {
 		lv = 99,
@@ -988,6 +1086,7 @@ local datas = {
 		DecomposeMatNum = 67,
 		cardStar = 0,
 		passiveGold = 202180,
+		ImproveLimit = 6,
 	},
 	[100] = {
 		lv = 100,
@@ -998,6 +1097,7 @@ local datas = {
 		DecomposeMatNum = 78,
 		cardStar = 0,
 		passiveGold = 206220,
+		ImproveLimit = 6,
 	},
 	[101] = {
 		lv = 101,
@@ -1008,6 +1108,7 @@ local datas = {
 		DecomposeMatNum = 78,
 		cardStar = 0,
 		passiveGold = 210300,
+		ImproveLimit = 6,
 	},
 }
 

@@ -8,11 +8,7 @@ local datas = {
 		endX = 300,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			500000301,
-			0,
-			0,
-		},
+		skill = 500000301,
 	},
 	[400000320] = {
 		id = 400000320,
@@ -23,11 +19,7 @@ local datas = {
 		endX = 300,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			500000302,
-			0,
-			0,
-		},
+		skill = 500000302,
 	},
 	[400000350] = {
 		id = 400000350,
@@ -38,11 +30,7 @@ local datas = {
 		endX = 300,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			500000305,
-			0,
-			0,
-		},
+		skill = 500000305,
 	},
 	[400000410] = {
 		id = 400000410,
@@ -53,11 +41,7 @@ local datas = {
 		endX = 300,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			500000401,
-			0,
-			0,
-		},
+		skill = 500000401,
 	},
 	[400000420] = {
 		id = 400000420,
@@ -68,11 +52,7 @@ local datas = {
 		endX = 300,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			500000402,
-			0,
-			0,
-		},
+		skill = 500000402,
 	},
 	[400000430] = {
 		id = 400000430,
@@ -83,11 +63,7 @@ local datas = {
 		endX = 300,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			500000403,
-			0,
-			0,
-		},
+		skill = 500000403,
 	},
 	[400000440] = {
 		id = 400000440,
@@ -98,11 +74,7 @@ local datas = {
 		endX = 200,
 		endY = 40,
 		isPenetrate = false,
-		buff = {
-			500000404,
-			0,
-			0,
-		},
+		skill = 500000404,
 	},
 	[430100500] = {
 		id = 430100500,
@@ -113,11 +85,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330100500,
-			0,
-			0,
-		},
+		skill = 530100500,
 	},
 	[430101500] = {
 		id = 430101500,
@@ -128,11 +96,7 @@ local datas = {
 		endX = 100,
 		endY = -40,
 		isPenetrate = false,
-		buff = {
-			330101500,
-			0,
-			0,
-		},
+		skill = 530101500,
 	},
 	[430101501] = {
 		id = 430101501,
@@ -143,11 +107,7 @@ local datas = {
 		endX = 200,
 		endY = -40,
 		isPenetrate = false,
-		buff = {
-			330101500,
-			0,
-			0,
-		},
+		skill = 530101501,
 	},
 	[430101502] = {
 		id = 430101502,
@@ -158,11 +118,7 @@ local datas = {
 		endX = 300,
 		endY = -40,
 		isPenetrate = false,
-		buff = {
-			330101500,
-			0,
-			0,
-		},
+		skill = 530101502,
 	},
 	[430102300] = {
 		id = 430102300,
@@ -173,11 +129,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330102300,
-			0,
-			0,
-		},
+		skill = 530102300,
 	},
 	[430102500] = {
 		id = 430102500,
@@ -188,11 +140,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330102500,
-			0,
-			0,
-		},
+		skill = 530102500,
 	},
 	[430102900] = {
 		id = 430102900,
@@ -203,11 +151,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330102900,
-			0,
-			0,
-		},
+		skill = 530102900,
 	},
 	[430103100] = {
 		id = 430103100,
@@ -218,11 +162,7 @@ local datas = {
 		endX = 1136,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330103100,
-			0,
-			0,
-		},
+		skill = 530103100,
 	},
 	[430103300] = {
 		id = 430103300,
@@ -233,11 +173,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330103300,
-			0,
-			0,
-		},
+		skill = 530103300,
 	},
 	[430103900] = {
 		id = 430103900,
@@ -248,11 +184,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330103900,
-			0,
-			0,
-		},
+		skill = 530103900,
 	},
 	[430104000] = {
 		id = 430104000,
@@ -263,11 +195,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330104000,
-			0,
-			0,
-		},
+		skill = 530104000,
 	},
 	[430104100] = {
 		id = 430104100,
@@ -278,11 +206,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330104100,
-			0,
-			0,
-		},
+		skill = 530104100,
 	},
 	[430104300] = {
 		id = 430104300,
@@ -293,11 +217,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330104300,
-			0,
-			0,
-		},
+		skill = 530104300,
 	},
 	[430105400] = {
 		id = 430105400,
@@ -308,11 +228,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330105400,
-			0,
-			0,
-		},
+		skill = 530105400,
 	},
 	[430105600] = {
 		id = 430105600,
@@ -323,11 +239,7 @@ local datas = {
 		endX = 1136,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330105600,
-			0,
-			0,
-		},
+		skill = 530105600,
 	},
 	[430108300] = {
 		id = 430108300,
@@ -338,11 +250,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330108300,
-			0,
-			0,
-		},
+		skill = 530108300,
 	},
 	[430109000] = {
 		id = 430109000,
@@ -353,11 +261,7 @@ local datas = {
 		endX = 1136,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330109000,
-			0,
-			0,
-		},
+		skill = 530109000,
 	},
 	[430109800] = {
 		id = 430109800,
@@ -368,11 +272,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330109800,
-			0,
-			0,
-		},
+		skill = 530109800,
 	},
 	[430110400] = {
 		id = 430110400,
@@ -383,11 +283,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330110400,
-			0,
-			0,
-		},
+		skill = 530110400,
 	},
 	[430110500] = {
 		id = 430110500,
@@ -398,11 +294,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330110500,
-			0,
-			0,
-		},
+		skill = 530110500,
 	},
 	[430111400] = {
 		id = 430111400,
@@ -413,11 +305,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330111400,
-			0,
-			0,
-		},
+		skill = 530111400,
 	},
 	[430111700] = {
 		id = 430111700,
@@ -428,11 +316,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330111700,
-			0,
-			0,
-		},
+		skill = 530111700,
 	},
 	[430113100] = {
 		id = 430113100,
@@ -443,11 +327,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330113100,
-			0,
-			0,
-		},
+		skill = 530113100,
 	},
 	[430113500] = {
 		id = 430113500,
@@ -458,11 +338,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330113500,
-			0,
-			0,
-		},
+		skill = 530113500,
 	},
 	[430113600] = {
 		id = 430113600,
@@ -473,11 +349,7 @@ local datas = {
 		endX = 380,
 		endY = 0,
 		isPenetrate = false,
-		buff = {
-			330113600,
-			0,
-			0,
-		},
+		skill = 530113600,
 	},
 }
 

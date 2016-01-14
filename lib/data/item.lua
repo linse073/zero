@@ -672,7 +672,7 @@ local datas = {
 		iconPath = "icon/7.png",
 		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
-		compos = 3000000097,
+		compos = 0,
 	},
 	[3000000106] = {
 		id = 3000000106,
@@ -699,7 +699,7 @@ local datas = {
 		iconPath = "icon/14.png",
 		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
-		compos = 3000000107,
+		compos = 0,
 	},
 	[3000000116] = {
 		id = 3000000116,
@@ -726,7 +726,7 @@ local datas = {
 		iconPath = "icon/21.png",
 		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
-		compos = 3000000117,
+		compos = 0,
 	},
 	[3000000126] = {
 		id = 3000000126,
@@ -753,7 +753,7 @@ local datas = {
 		iconPath = "icon/28.png",
 		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
-		compos = 3000000127,
+		compos = 0,
 	},
 	[3000000130] = {
 		id = 3000000130,
@@ -2508,7 +2508,7 @@ local datas = {
 		iconPath = "icon/119.png",
 		Description = "增加39019生命和1512防御",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000139,
+		compos = 0,
 	},
 	[3000000148] = {
 		id = 3000000148,
@@ -2535,7 +2535,7 @@ local datas = {
 		iconPath = "icon/159.png",
 		Description = "增加39019生命和1512闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000149,
+		compos = 0,
 	},
 	[3000000158] = {
 		id = 3000000158,
@@ -2562,7 +2562,7 @@ local datas = {
 		iconPath = "icon/129.png",
 		Description = "增加1012攻击和1512暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000159,
+		compos = 0,
 	},
 	[3000000168] = {
 		id = 3000000168,
@@ -2589,7 +2589,7 @@ local datas = {
 		iconPath = "icon/169.png",
 		Description = "增加1012攻击和1512穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000169,
+		compos = 0,
 	},
 	[3000000178] = {
 		id = 3000000178,
@@ -2616,7 +2616,7 @@ local datas = {
 		iconPath = "icon/139.png",
 		Description = "增加1012攻击和1512破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000179,
+		compos = 0,
 	},
 	[3000000188] = {
 		id = 3000000188,
@@ -2643,7 +2643,7 @@ local datas = {
 		iconPath = "icon/179.png",
 		Description = "增加1012攻击和1512命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000189,
+		compos = 0,
 	},
 	[3000000198] = {
 		id = 3000000198,
@@ -2670,7 +2670,7 @@ local datas = {
 		iconPath = "icon/149.png",
 		Description = "增加39019生命和1512韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000199,
+		compos = 0,
 	},
 	[3000000208] = {
 		id = 3000000208,
@@ -2697,7 +2697,7 @@ local datas = {
 		iconPath = "icon/189.png",
 		Description = "增加39019生命和1512格挡",
 		dropIconPath = "item_021.ccbi",
-		compos = 3000000209,
+		compos = 0,
 	},
 	[3000000210] = {
 		id = 3000000210,
@@ -5073,7 +5073,7 @@ local datas = {
 		iconPath = "icon/7.png",
 		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
-		compos = 3010000097,
+		compos = 0,
 	},
 	[3010000106] = {
 		id = 3010000106,
@@ -5100,7 +5100,7 @@ local datas = {
 		iconPath = "icon/14.png",
 		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
-		compos = 3010000107,
+		compos = 0,
 	},
 	[3010000116] = {
 		id = 3010000116,
@@ -5127,7 +5127,7 @@ local datas = {
 		iconPath = "icon/21.png",
 		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
-		compos = 3010000117,
+		compos = 0,
 	},
 	[3010000126] = {
 		id = 3010000126,
@@ -5154,7 +5154,7 @@ local datas = {
 		iconPath = "icon/28.png",
 		Description = "用于改造传说装备",
 		dropIconPath = "item_022.ccbi",
-		compos = 3010000127,
+		compos = 0,
 	},
 	[3010000130] = {
 		id = 3010000130,
@@ -6909,7 +6909,7 @@ local datas = {
 		iconPath = "icon/119.png",
 		Description = "增加39019生命和1512防御",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000139,
+		compos = 0,
 	},
 	[3010000148] = {
 		id = 3010000148,
@@ -6936,7 +6936,7 @@ local datas = {
 		iconPath = "icon/159.png",
 		Description = "增加39019生命和1512闪避",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000149,
+		compos = 0,
 	},
 	[3010000158] = {
 		id = 3010000158,
@@ -6963,7 +6963,7 @@ local datas = {
 		iconPath = "icon/129.png",
 		Description = "增加1012攻击和1512暴击",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000159,
+		compos = 0,
 	},
 	[3010000168] = {
 		id = 3010000168,
@@ -6990,7 +6990,7 @@ local datas = {
 		iconPath = "icon/169.png",
 		Description = "增加1012攻击和1512穿刺",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000169,
+		compos = 0,
 	},
 	[3010000178] = {
 		id = 3010000178,
@@ -7017,7 +7017,7 @@ local datas = {
 		iconPath = "icon/139.png",
 		Description = "增加1012攻击和1512破甲",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000179,
+		compos = 0,
 	},
 	[3010000188] = {
 		id = 3010000188,
@@ -7044,7 +7044,7 @@ local datas = {
 		iconPath = "icon/179.png",
 		Description = "增加1012攻击和1512命中",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000189,
+		compos = 0,
 	},
 	[3010000198] = {
 		id = 3010000198,
@@ -7071,7 +7071,7 @@ local datas = {
 		iconPath = "icon/149.png",
 		Description = "增加39019生命和1512韧性",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000199,
+		compos = 0,
 	},
 	[3010000208] = {
 		id = 3010000208,
@@ -7098,7 +7098,7 @@ local datas = {
 		iconPath = "icon/189.png",
 		Description = "增加39019生命和1512格挡",
 		dropIconPath = "item_021.ccbi",
-		compos = 3010000209,
+		compos = 0,
 	},
 	[3010000210] = {
 		id = 3010000210,

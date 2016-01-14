@@ -38,7 +38,7 @@ skynet.start(function()
             end
             v.needLvExp = assert(expdata[needLv], string.format("No exp data %d.", needLv))
             if v.quality < base.MAX_QUALITY then
-                v.improveMat = compos + 1
+                v.improveMat = v.compos + 1
                 v.improveMatData = assert(itemdata[v.improveMat], string.format("No item data %d.", v.improveMat))
                 v.improveItem = k + 1
                 v.improveItemData = assert(itemdata[v.improveItem], string.format("No item data %d.", v.improveItem))

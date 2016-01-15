@@ -1,6 +1,6 @@
 local datas = {
-	[1600181058] = {
-		id = 1600181058,
+	[1600010581] = {
+		id = 1600010581,
 		name = "奥格尔1",
 		cardType = 1,
 		cardAttr = 8,
@@ -33,8 +33,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600131006] = {
-		id = 1600131006,
+	[1600010061] = {
+		id = 1600010061,
 		name = "乌拉",
 		cardType = 1,
 		cardAttr = 3,
@@ -67,8 +67,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600191013] = {
-		id = 1600191013,
+	[1600010131] = {
+		id = 1600010131,
 		name = "泰格拉",
 		cardType = 1,
 		cardAttr = 9,
@@ -101,8 +101,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600191028] = {
-		id = 1600191028,
+	[1600010281] = {
+		id = 1600010281,
 		name = "冰霜齿虎",
 		cardType = 1,
 		cardAttr = 9,
@@ -135,8 +135,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600181100] = {
-		id = 1600181100,
+	[1600011001] = {
+		id = 1600011001,
 		name = "鬃毛盗墓者",
 		cardType = 1,
 		cardAttr = 8,
@@ -169,8 +169,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600111024] = {
-		id = 1600111024,
+	[1600010241] = {
+		id = 1600010241,
 		name = "巨钳蟹",
 		cardType = 1,
 		cardAttr = 1,
@@ -203,8 +203,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600161085] = {
-		id = 1600161085,
+	[1600010851] = {
+		id = 1600010851,
 		name = "阿莱娅",
 		cardType = 1,
 		cardAttr = 6,
@@ -237,8 +237,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600141023] = {
-		id = 1600141023,
+	[1600010231] = {
+		id = 1600010231,
 		name = "加特林",
 		cardType = 1,
 		cardAttr = 4,
@@ -271,8 +271,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600151080] = {
-		id = 1600151080,
+	[1600010801] = {
+		id = 1600010801,
 		name = "戈仑之眼",
 		cardType = 1,
 		cardAttr = 5,
@@ -305,8 +305,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600131015] = {
-		id = 1600131015,
+	[1600010151] = {
+		id = 1600010151,
 		name = "瑞妮丝1",
 		cardType = 1,
 		cardAttr = 3,
@@ -339,8 +339,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600191007] = {
-		id = 1600191007,
+	[1600010071] = {
+		id = 1600010071,
 		name = "云叶",
 		cardType = 1,
 		cardAttr = 9,
@@ -373,8 +373,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600191033] = {
-		id = 1600191033,
+	[1600010331] = {
+		id = 1600010331,
 		name = "妮妮可1",
 		cardType = 1,
 		cardAttr = 9,
@@ -407,8 +407,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600181016] = {
-		id = 1600181016,
+	[1600010161] = {
+		id = 1600010161,
 		name = "独眼食人魔",
 		cardType = 1,
 		cardAttr = 8,
@@ -441,8 +441,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600171022] = {
-		id = 1600171022,
+	[1600010221] = {
+		id = 1600010221,
 		name = "里卡鲁奥1",
 		cardType = 1,
 		cardAttr = 7,
@@ -475,8 +475,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600111004] = {
-		id = 1600111004,
+	[1600010041] = {
+		id = 1600010041,
 		name = "熔岩魔",
 		cardType = 1,
 		cardAttr = 1,
@@ -509,15 +509,15 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600111073] = {
-		id = 1600111073,
+	[1600010731] = {
+		id = 1600010731,
 		name = "加古拉1",
 		cardType = 1,
 		cardAttr = 1,
 		range = 1,
 		hp = 80,
 		attack = 80,
-		evolveId = 1600311073,
+		evolveId = 1600010733,
 		evolveItem = 3000000210,
 		evolveNum = 5,
 		limitType = 0,
@@ -543,8 +543,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600111041] = {
-		id = 1600111041,
+	[1600010411] = {
+		id = 1600010411,
 		name = "爆破鼠",
 		cardType = 1,
 		cardAttr = 1,
@@ -577,8 +577,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600101005] = {
-		id = 1600101005,
+	[1600010051] = {
+		id = 1600010051,
 		name = "死灵摄魂者",
 		cardType = 1,
 		cardAttr = 10,
@@ -611,15 +611,15 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600111011] = {
-		id = 1600111011,
+	[1600010111] = {
+		id = 1600010111,
 		name = "红龙1",
 		cardType = 1,
 		cardAttr = 1,
 		range = 1,
 		hp = 50,
 		attack = 50,
-		evolveId = 1600311011,
+		evolveId = 1600010113,
 		evolveItem = 3000000210,
 		evolveNum = 5,
 		limitType = 0,
@@ -645,8 +645,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600161072] = {
-		id = 1600161072,
+	[1600010721] = {
+		id = 1600010721,
 		name = "玛努诺克1",
 		cardType = 1,
 		cardAttr = 6,
@@ -679,15 +679,15 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600111047] = {
-		id = 1600111047,
+	[1600010471] = {
+		id = 1600010471,
 		name = "塔塔鲁1",
 		cardType = 1,
 		cardAttr = 1,
 		range = 1,
 		hp = 70,
 		attack = 70,
-		evolveId = 1600311047,
+		evolveId = 1600010473,
 		evolveItem = 3000000210,
 		evolveNum = 5,
 		limitType = 0,
@@ -713,8 +713,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600171049] = {
-		id = 1600171049,
+	[1600010491] = {
+		id = 1600010491,
 		name = "戈仑1",
 		cardType = 1,
 		cardAttr = 7,
@@ -747,8 +747,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600181019] = {
-		id = 1600181019,
+	[1600010191] = {
+		id = 1600010191,
 		name = "奥鲁夫1",
 		cardType = 1,
 		cardAttr = 8,
@@ -781,8 +781,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600191038] = {
-		id = 1600191038,
+	[1600010381] = {
+		id = 1600010381,
 		name = "艾布雷克1",
 		cardType = 1,
 		cardAttr = 9,
@@ -815,8 +815,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600181061] = {
-		id = 1600181061,
+	[1600010611] = {
+		id = 1600010611,
 		name = "卡卡诺克1",
 		cardType = 1,
 		cardAttr = 8,
@@ -849,8 +849,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600151106] = {
-		id = 1600151106,
+	[1600011061] = {
+		id = 1600011061,
 		name = "德洛尼克1",
 		cardType = 1,
 		cardAttr = 5,
@@ -883,8 +883,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600101122] = {
-		id = 1600101122,
+	[1600011221] = {
+		id = 1600011221,
 		name = "亚图姆1",
 		cardType = 1,
 		cardAttr = 10,
@@ -917,8 +917,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600131010] = {
-		id = 1600131010,
+	[1600010101] = {
+		id = 1600010101,
 		name = "仙人掌1",
 		cardType = 1,
 		cardAttr = 3,
@@ -951,8 +951,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600131152] = {
-		id = 1600131152,
+	[1600011521] = {
+		id = 1600011521,
 		name = "狄丽丝1",
 		cardType = 1,
 		cardAttr = 3,
@@ -985,8 +985,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600101153] = {
-		id = 1600101153,
+	[1600011531] = {
+		id = 1600011531,
 		name = "黑色守望者1",
 		cardType = 1,
 		cardAttr = 10,
@@ -1019,8 +1019,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600131154] = {
-		id = 1600131154,
+	[1600011541] = {
+		id = 1600011541,
 		name = "露茜娜拉",
 		cardType = 1,
 		cardAttr = 3,
@@ -1053,8 +1053,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600131155] = {
-		id = 1600131155,
+	[1600011551] = {
+		id = 1600011551,
 		name = "玛丽薇尔",
 		cardType = 1,
 		cardAttr = 3,
@@ -1087,8 +1087,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600121156] = {
-		id = 1600121156,
+	[1600011561] = {
+		id = 1600011561,
 		name = "爱丽倩1",
 		cardType = 1,
 		cardAttr = 2,
@@ -1121,8 +1121,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600151157] = {
-		id = 1600151157,
+	[1600011571] = {
+		id = 1600011571,
 		name = "石板怪",
 		cardType = 1,
 		cardAttr = 5,
@@ -1155,8 +1155,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600191158] = {
-		id = 1600191158,
+	[1600011581] = {
+		id = 1600011581,
 		name = "麦琪的礼物1",
 		cardType = 1,
 		cardAttr = 9,
@@ -1189,8 +1189,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600291148] = {
-		id = 1600291148,
+	[1600011482] = {
+		id = 1600011482,
 		name = "寒月冰魂",
 		cardType = 2,
 		cardAttr = 9,
@@ -1204,7 +1204,7 @@ local datas = {
 		starLv = 1,
 		cd = 0,
 		skillId = 510011480,
-		soulId = 3000148231,
+		soulId = 0,
 		resCard = "U_26109",
 		resIcon = "U_9026",
 		resView = "monster_1148",
@@ -1223,8 +1223,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600231149] = {
-		id = 1600231149,
+	[1600011492] = {
+		id = 1600011492,
 		name = "远古拥抱",
 		cardType = 2,
 		cardAttr = 3,
@@ -1238,7 +1238,7 @@ local datas = {
 		starLv = 1,
 		cd = 0,
 		skillId = 510011490,
-		soulId = 3000149231,
+		soulId = 0,
 		resCard = "U_26111",
 		resIcon = "U_9029",
 		resView = "monster_1149",
@@ -1257,8 +1257,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600211150] = {
-		id = 1600211150,
+	[1600011502] = {
+		id = 1600011502,
 		name = "烈炎炼狱",
 		cardType = 2,
 		cardAttr = 1,
@@ -1272,7 +1272,7 @@ local datas = {
 		starLv = 1,
 		cd = 0,
 		skillId = 510011500,
-		soulId = 3000150231,
+		soulId = 0,
 		resCard = "U_26110",
 		resIcon = "U_9028",
 		resView = "monster_1150",
@@ -1291,8 +1291,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600201151] = {
-		id = 1600201151,
+	[1600011512] = {
+		id = 1600011512,
 		name = "圣灵审判",
 		cardType = 2,
 		cardAttr = 10,
@@ -1306,7 +1306,7 @@ local datas = {
 		starLv = 1,
 		cd = 0,
 		skillId = 510011510,
-		soulId = 3000151231,
+		soulId = 0,
 		resCard = "U_26112",
 		resIcon = "U_9027",
 		resView = "monster_1151",
@@ -1325,8 +1325,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600221159] = {
-		id = 1600221159,
+	[1600011592] = {
+		id = 1600011592,
 		name = "深渊漩涡",
 		cardType = 2,
 		cardAttr = 2,
@@ -1340,7 +1340,7 @@ local datas = {
 		starLv = 1,
 		cd = 0,
 		skillId = 510011590,
-		soulId = 3000159231,
+		soulId = 0,
 		resCard = "U_26113",
 		resIcon = "U_9030",
 		resView = "monster_1159",
@@ -1359,8 +1359,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600311073] = {
-		id = 1600311073,
+	[1600010733] = {
+		id = 1600010733,
 		name = "加古拉2",
 		cardType = 3,
 		cardAttr = 1,
@@ -1393,8 +1393,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600311011] = {
-		id = 1600311011,
+	[1600010113] = {
+		id = 1600010113,
 		name = "红龙2",
 		cardType = 3,
 		cardAttr = 1,
@@ -1427,15 +1427,15 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600311047] = {
-		id = 1600311047,
+	[1600010473] = {
+		id = 1600010473,
 		name = "塔塔鲁2",
 		cardType = 3,
 		cardAttr = 1,
 		range = 1,
 		hp = 70,
 		attack = 70,
-		evolveId = 1600411047,
+		evolveId = 1600010474,
 		evolveItem = 3000000210,
 		evolveNum = 10,
 		limitType = 0,
@@ -1461,8 +1461,8 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600411047] = {
-		id = 1600411047,
+	[1600010474] = {
+		id = 1600010474,
 		name = "塔塔鲁3",
 		cardType = 4,
 		cardAttr = 1,

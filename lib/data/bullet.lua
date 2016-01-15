@@ -107,7 +107,7 @@ local datas = {
 		endX = 200,
 		endY = -40,
 		isPenetrate = false,
-		skillId = 530101501,
+		skillId = 530101510,
 	},
 	[430101502] = {
 		id = 430101502,
@@ -118,7 +118,7 @@ local datas = {
 		endX = 300,
 		endY = -40,
 		isPenetrate = false,
-		skillId = 530101502,
+		skillId = 530101520,
 	},
 	[430102300] = {
 		id = 430102300,

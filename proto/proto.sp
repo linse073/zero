@@ -120,6 +120,10 @@
     friend 5 : *friend_info
 }
 
+.info_all {
+    user 0 : user_all
+}
+
 .update_user {
     msgid 0 : integer
     update 1 : user_all

@@ -353,7 +353,7 @@ function proc.enter_game(msg)
     }
     skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
     data.enter = nil
-    return "user_all", ret
+    return "info_all", {user = ret}
 end
 
 function proc.move(msg)

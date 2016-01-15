@@ -51,7 +51,7 @@ function CMD.enter(info, agent)
     role_list[roleid] = {agent, area}
     CMD.broadcast_area("other_info", info)
     notify_area(roleid, agent, area)
-    skynet.error("Role enter %d.", roleid)
+    skynet.error(string.format("Role enter %d.", roleid))
 end
 
 function CMD.logout(roleid)
@@ -61,7 +61,7 @@ function CMD.logout(roleid)
     area.role[roleid] = nil
     area.num = area.num - 1
     role_list[roleid] = nil
-    skynet.error("Role logout %d.", roleid)
+    skynet.error(string.format("Role logout %d.", roleid))
 end
 
 function CMD.get(roleid)

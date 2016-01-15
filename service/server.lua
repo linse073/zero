@@ -7,6 +7,7 @@ local loginservice = tonumber(...)
 local gen_key = util.gen_key
 local userdb
 local namedb
+local status_key
 local status
 local serverid
 local servernam
@@ -33,7 +34,8 @@ function CMD.open(conf, gatename)
     local master = skynet.queryservice("dbmaster")
     userdb = skynet.call(master, "lua", "get", "userdb")
     namedb = skynet.call(master, "lua", "get", "namedb")
-    status = skynet.call(userdb, "lua", "get", gen_key(serverid, "status"))
+    status_key = gen_key(serverid, "status")
+    status = skynet.call(userdb, "lua", "get", status_key)
     if status then
         status = skynet.unpack(status)
     else
@@ -56,7 +58,7 @@ end
 function CMD.gen_role(name)
     local roleid = cs(check_name, name)
     if roleid > 0 then
-        skynet.call(userdb, "lua", "save", "status", skynet.packstring(status))
+        skynet.call(userdb, "lua", "save", status_key, skynet.packstring(status))
     end
     return roleid
 end
@@ -64,14 +66,14 @@ end
 function CMD.gen_item()
     local itemid = status.itemid * 10000 + 2000 + serverid
     status.itemid = status.itemid + 1
-    skynet.call(userdb, "lua", "save", "status", skynet.packstring(status))
+    skynet.call(userdb, "lua", "save", status_key, skynet.packstring(status))
     return itemid
 end
 
 function CMD.gen_card()
     local cardid = status.cardid * 10000 + 3000 + serverid
     status.cardid = status.cardid + 1
-    skynet.call(userdb, "lua", "save", "status", skynet.packstring(status))
+    skynet.call(userdb, "lua", "save", status_key, skynet.packstring(status))
     return cardid
 end
 

@@ -195,10 +195,10 @@ function item.add_by_itemid(p, num, d)
         }
         if category == base.ITEM_DEFENCE then
             v.rand_prop = {{}, {}}
-            item.rand_prop(v, d, {1, 2, 3, 4}) -- defence, tenacity, hard, offset
+            item.rand_prop(v, d, {1, 2, 3, 4}) -- defence, tenacity, block, dodge
         elseif category == base.ITEM_ATTACK then
             v.rand_prop = {{}, {}}
-            item.rand_prop(v, d, {5, 6, 7, 8}) -- break, crit, impale, hit
+            item.rand_prop(v, d, {5, 6, 7, 8}) -- sunder, crit, impale, hit
         end
         item.add(v, d)
         ui[v.id] = v

@@ -93,21 +93,27 @@ local base = {
     ITEM_STATUS_SELLED = 2,
     ITEM_STATUS_DELETE = 3,
 
-    ITEM_RAND_DEFENCE = 1,
-    ITEM_RAND_TENACITY = 2,
-    ITEM_RAND_HARD = 3,
-    ITEM_RAND_OFFSET = 4,
-    
-    ITEM_RAND_BREAK = 5,
-    ITEM_RAND_CRIT = 6,
-    ITEM_RAND_IMPALE = 7,
-    ITEM_RAND_HIT = 8,
-
-    MAX_RAND_PROP = 2,
-    
     INTENSIFY_ITEM = 3000000210,
     MAX_INTENSIFY = 18,
     MAX_QUALITY = 6,
+    MAX_RAND_PROP = 2,
+    MAX_EQUIP = 8,
+
+    -- prop
+    PROP_DEFENCE = 1,
+    PROP_TENACITY = 2,
+    PROP_BLOCK = 3,
+    PROP_DODGE = 4,
+    
+    PROP_SUNDER = 5,
+    PROP_CRIT = 6,
+    PROP_IMPALE = 7,
+    PROP_HIT = 8,
+
+    PROP_HP = 9,
+    PROP_ATTACK = 10,
+    PROP_MOVE_SPEED = 11,
+    PROP_JUMP_HEIGHT = 12,
 
     -- bonus
     BONUS_TYPE_MONEY = 1,

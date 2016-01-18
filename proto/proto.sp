@@ -243,3 +243,8 @@
 .logout {
     id 0 : integer
 }
+
+.add_item {
+    itemid 0 : integer
+    num 1 : integer
+}

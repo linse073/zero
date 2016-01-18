@@ -14,3 +14,4 @@ lua_path = root.."lib/?.lua;"..root.."lib/?/init.lua;./lualib/?.lua;./lualib/?/i
 config = "config.config"
 debug_console = 8100
 login = 8001
+gm_level = 1

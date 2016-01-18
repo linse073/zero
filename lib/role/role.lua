@@ -9,6 +9,7 @@ local friend
 local item
 local stage
 local task
+local gm
 
 local pairs = pairs
 local ipairs = ipairs
@@ -32,6 +33,7 @@ local module
 local role = {}
 local proc = {}
 local role_mgr
+local gm_level = skynet.getenv("gm_level")
 
 skynet.init(function()
     expdata = share.expdata
@@ -47,7 +49,8 @@ function role.init_module()
     item = require "role.item"
     stage = require "role.stage"
     task = require "role.task"
-    module = {card, friend, item, stage, task}
+    gm = require "role.gm"
+    module = {card, friend, item, stage, task, gm}
     for k, v in ipairs(module) do
         merge_table(proc, v.init_module())
     end
@@ -276,6 +279,7 @@ function proc.create_user(msg)
         login_time = 0,
         last_login_time = 0,
         logout_time = 0,
+        gm_level = gm_level,
         cur_pos = {x=x, y=y},
         des_pos = {x=x, y=y},
 
@@ -320,8 +324,10 @@ function proc.enter_game(msg)
     data.expdata = assert(expdata[user.level], string.format("No exp data %d.", user.level))
     local ret = {user = user}
     for k, v in ipairs(module) do
-        local key, pack = v.enter()
-        ret[key] = pack
+        if v.enter then
+            local key, pack = v.enter()
+            ret[key] = pack
+        end
     end
     if user.logout_time > 0 then
         local od = date("%j", user.logout_time)

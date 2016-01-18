@@ -24,6 +24,9 @@ skynet.start(function()
         return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
     end
     for k, v in pairs(itemdata) do
+        if v.overlay == 0 then
+            v.overlay = 1
+        end
         if v.compos > 0 then
             assert(itemdata[v.compos], string.format("No item data %d.", v.compos))
         end

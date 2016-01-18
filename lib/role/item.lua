@@ -213,8 +213,8 @@ function item.rand_prop(v, d, r)
         local l = #r
         for i = 1, base.MAX_RAND_PROP do
             local n = random(i, l)
-            t[i], t[n] = t[n], t[i]
-            rand_prop[i].type = t[i]
+            r[i], r[n] = r[n], r[i]
+            rand_prop[i].type = r[i]
         end
     end
     for i = 1, base.MAX_RAND_PROP do

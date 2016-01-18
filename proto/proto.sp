@@ -248,3 +248,11 @@
     itemid 0 : integer
     num 1 : integer
 }
+
+.add_exp {
+    exp 0 : integer
+}
+
+.add_level {
+    level 0 : integer
+}

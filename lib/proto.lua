@@ -49,6 +49,8 @@ local msg = {
     [2502] = "stage_seed",
 
     [2600] = "add_item",
+    [2601] = "add_exp",
+    [2602] = "add_level",
 }
 local name_msg = {}
 

@@ -12,7 +12,6 @@ local error = error
 local string = string
 local random = math.random
 local floor = math.floor
-local pow = math.pow
 
 local update_user = util.update_user
 local itemdata
@@ -218,7 +217,7 @@ function item.rand_prop(v, d, r)
         end
     end
     for i = 1, base.MAX_RAND_PROP do
-        local value = pow(1.2, d.quality - 1) * (d.needLv * 0.5 + 1)
+        local value = (1.2 ^ d.quality - 1) * (d.needLv * 0.5 + 1)
         rand_prop[i].value = floor(value * base.FLOAT_FACTOR)
     end
 end

@@ -1,3 +1,4 @@
+local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 

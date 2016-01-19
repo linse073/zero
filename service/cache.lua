@@ -174,6 +174,9 @@ skynet.start(function()
         until not d
 
         v.starLvExp = assert(expdata[v.starLv], string.format("No exp data %d.", v.starLv))
+        if v.evolveId > 0 then
+            v.evolveItemData = assert(itemdata[v.evolveItem], string.format("No item data %d.", v.evolveItem))
+        end
     end
 
     sharedata.new("carddata", carddata)

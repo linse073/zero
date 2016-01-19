@@ -191,6 +191,7 @@ function role.add_exp(p, exp)
 end
 
 function role.add_money(p, money)
+    local user = data.user
     local puser = p.user
     user.money = user.money + money
     puser.monye = user.money
@@ -198,6 +199,7 @@ function role.add_money(p, money)
 end
 
 function role.add_rmb(p, rmb)
+    local user = data.user
     local puser = p.user
     user.rmb = user.rmb + rmb
     puser.rmb = user.rmb
@@ -205,6 +207,7 @@ function role.add_rmb(p, rmb)
 end
 
 function role.fight_point(p)
+    local user = data.user
     local puser = p.user
     task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
 end

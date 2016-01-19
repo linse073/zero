@@ -16,6 +16,7 @@ local carddata
 local expdata
 local original_card
 local base
+local error_code
 local cs
 local data
 
@@ -27,6 +28,7 @@ skynet.init(function()
     expdata = share.expdata
     original_card = share.original_card
     base = share.base
+    error_code = share.error_code
     cs = share.cs
 end)
 

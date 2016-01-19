@@ -75,7 +75,7 @@ function card.add(v, d)
         d = assert(carddata[v.id], string.format("No card data %d.", v.id))
     end
     local c = {v, d}
-    data.card[k] = c
+    data.card[v.id] = c
     card.add_to_type(c)
     for i = 1, base.MAX_CARD_POSITION_TYPE do
         local pos = v.pos[i]

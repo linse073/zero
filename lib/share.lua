@@ -35,7 +35,7 @@ end
 
 skynet.init(function()
     -- share with all service
-    share.cardata = sharedata.query("carddata")
+    share.carddata = sharedata.query("carddata")
     share.itemdata = sharedata.query("itemdata")
     share.stagedata = sharedata.query("stagedata")
     share.taskdata = sharedata.query("taskdata")

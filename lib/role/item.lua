@@ -17,6 +17,7 @@ local update_user = util.update_user
 local itemdata
 local intensifydata
 local base
+local error_code
 local cs
 local is_equip
 local is_material
@@ -30,6 +31,7 @@ skynet.init(function()
     itemdata = share.itemdata
     intensifydata = share.intensifydata
     base = share.base
+    error_code = share.error_code
     cs = share.cs
     is_equip = share.is_equip
     is_material = share.is_material

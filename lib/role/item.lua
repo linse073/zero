@@ -530,7 +530,7 @@ function proc.improve_item(msg)
     local pitem = p.item
     pitem[#pitem+1] = {
         id = iv.id, 
-        itemid = itemid, 
+        itemid = improveitemid, 
         rand_prop = iv.rand_prop,
     }
     task.update(p, base.TASK_COMPLETE_IMPROVE_ITEM, olditemid, 1)
@@ -576,7 +576,7 @@ function proc.upgrade_item(msg)
     local pitem = p.item
     pitem[#pitem+1] = {
         id = iv.id, 
-        itemid = itemid, 
+        itemid = upgradeitemid, 
         rand_prop = iv.rand_prop,
     }
     task.update(p, base.TASK_COMPLETE_UPGRADE_ITEM, olditemid, 1)

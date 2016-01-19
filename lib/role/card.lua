@@ -72,7 +72,7 @@ end
 
 function card.add(v, d)
     if not d then
-        d = assert(carddata[v.id], string.format("No card data %d.", v.id))
+        d = assert(carddata[v.cardid], string.format("No card data %d.", v.cardid))
     end
     local c = {v, d}
     data.card[v.id] = c

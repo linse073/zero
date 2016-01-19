@@ -34,6 +34,7 @@ function util.gen_id(uid, servername)
     return string.format("%s@%s", uid, servername)
 end
 
+local to_string
 local function table_to_string(t)
     local text = ""
     for k, v in pairs(t) do
@@ -42,7 +43,7 @@ local function table_to_string(t)
     return text
 end
 
-local function to_string(v)
+to_string = function(v)
     local vt = type(v)
     if vt == "string" then
         return v

@@ -511,10 +511,10 @@ function proc.improve_item(msg)
     if iv.status ~= base.ITEM_STATUS_NORMAL then
         error{code = error_code.ERROR_ITEM_STATUS}
     end
-    if v.compos == 0 then
+    if d.compos == 0 then
         error{code == error_code.CAN_NOT_IMPROVE_ITEM}
     end
-    local mat = v.compos + 1
+    local mat = d.compos + 1
     local numdata = d.needLvExp
     local num = numdata.ImproveMatNum
     local count = item.count(mat)

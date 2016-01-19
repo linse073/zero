@@ -225,8 +225,10 @@ end
 function item.count(itemid)
     local count = 0
     local items = data.type_item[itemid]
-    for k, v in pairs(items) do
-        count = count + v[1].num
+    if items then
+        for k, v in pairs(items) do
+            count = count + v[1].num
+        end
     end
     return count
 end

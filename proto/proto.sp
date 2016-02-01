@@ -73,10 +73,16 @@
 }
 
 .card_info {
+    .skill_info {
+        id 0 : integer
+        level 1 : integer
+    }
+
     id 0 : integer
     cardid 1 : integer
     level 2 : integer
     pos 3 : *integer
+    passive_skill 4 : *skill_info
 }
 
 .stage_info {
@@ -227,7 +233,7 @@
     total_gold 6 : integer
     pick_gold 7 : integer
     total_box 8 : integer
-    pick_box 9 : integer
+    pick_box 9 : *integer
     sign 10 : string
 }
 

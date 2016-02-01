@@ -18,6 +18,7 @@ skynet.start(function()
     local expdata = require("data.exp")
     local intensifydata = require("data.intensify")
     local bonusdata = require("data.bonus")
+    local passivedata = require("data.passive")
     local base = require("base")
 
     local function is_equip(itemtype)
@@ -177,6 +178,12 @@ skynet.start(function()
         if v.evolveId > 0 then
             v.evolveItemData = assert(itemdata[v.evolveItem], string.format("No item data %d.", v.evolveItem))
         end
+        local passive = {}
+        for k1, v1 in ipairs(v.PassiveId) do
+            if v1 > 0 then
+                passive[#passive+1] = assert(passivedata[v1], string.format("No passive data %d.", v1))
+            end
+        end
     end
 
     sharedata.new("carddata", carddata)
@@ -186,6 +193,7 @@ skynet.start(function()
     sharedata.new("expdata", expdata)
     sharedata.new("intensifydata", intensifydata)
     sharedata.new("bonusdata", bonusdata)
+    sharedata.new("passivedata", passivedata)
 
     sharedata.new("base", base)
     sharedata.new("error_code", require("error_code"))

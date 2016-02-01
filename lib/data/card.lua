@@ -20,7 +20,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001041,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400110410,
@@ -52,7 +52,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001024,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400110240,
@@ -84,7 +84,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001004,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400110040,
@@ -116,7 +116,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001180,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400111800,
@@ -148,7 +148,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001073,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400111800,
@@ -180,7 +180,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001169,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400111690,
@@ -212,7 +212,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001011,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400111690,
@@ -244,7 +244,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001176,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400111760,
@@ -276,7 +276,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001185,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400111760,
@@ -308,7 +308,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001047,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			1400111760,
@@ -340,7 +340,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "集齐冰系魔灵激活寒月冰魂",
 		act = 1,
-		npcID = 1220001148,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			0,
@@ -372,7 +372,7 @@ local datas = {
 		hurtView = "monster_hurteffect2",
 		des = "集齐火系魔灵激活烈炎炼狱",
 		act = 1,
-		npcID = 1220001150,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			0,
@@ -404,7 +404,7 @@ local datas = {
 		hurtView = "monster_hurteffect1",
 		des = "集齐水系魔灵激活深渊漩涡",
 		act = 1,
-		npcID = 1220001159,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			0,
@@ -436,7 +436,7 @@ local datas = {
 		hurtView = "monster_hurteffect3",
 		des = "集齐沙系魔灵激活圣灵审判",
 		act = 1,
-		npcID = 1220001151,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			0,
@@ -468,7 +468,7 @@ local datas = {
 		hurtView = "monster_hurteffect5",
 		des = "集齐自然魔灵激活远古拥抱",
 		act = 1,
-		npcID = 1220001149,
+		npcID = 0,
 		pvpScale = 1,
 		PassiveId = {
 			0,

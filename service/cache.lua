@@ -184,6 +184,7 @@ skynet.start(function()
                 passive[#passive+1] = assert(passivedata[v1], string.format("No passive data %d.", v1))
             end
         end
+        v.passive = passive
     end
 
     sharedata.new("carddata", carddata)

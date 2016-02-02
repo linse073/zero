@@ -98,14 +98,9 @@ function card.gen_id()
 end
 
 function card.add_by_cardid(p, d)
-    local v = {
-        id = cs(card.gen_id),
-        cardid = d.id,
-        level = d.starLv,
-        pos = {},
-    }
+    local pos = {}
     for i = 1, base.MAX_CARD_POSITION_TYPE do
-        v.pos[i] = 0
+        pos[i] = 0
     end
     local passive_skill = {}
     for k, v in ipairs(d.passive) do
@@ -114,6 +109,13 @@ function card.add_by_cardid(p, d)
             level = 1,
         }
     end
+    local v = {
+        id = cs(card.gen_id),
+        cardid = d.id,
+        level = d.starLv,
+        pos = pos,
+        passive_skill = passive_skill,
+    }
     local c = card.add(v, d)
     data.user.card[v.id] = v
     local pack = p.card

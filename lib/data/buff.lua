@@ -10849,8 +10849,8 @@ local datas = {
 		repelTime = 0,
 		des = "防御*",
 	},
-	[340110110] = {
-		id = 340110110,
+	[340111690] = {
+		id = 340111690,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -10874,8 +10874,8 @@ local datas = {
 		repelTime = 0,
 		des = "眩晕",
 	},
-	[340410110] = {
-		id = 340410110,
+	[340411690] = {
+		id = 340411690,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -10899,8 +10899,8 @@ local datas = {
 		repelTime = 0,
 		des = "",
 	},
-	[340410470] = {
-		id = 340410470,
+	[340411760] = {
+		id = 340411760,
 		targetType = 1,
 		prop = 6,
 		propData = 0,
@@ -10924,8 +10924,8 @@ local datas = {
 		repelTime = 0,
 		des = "",
 	},
-	[340510470] = {
-		id = 340510470,
+	[340511760] = {
+		id = 340511760,
 		targetType = 1,
 		prop = 6,
 		propData = 0,

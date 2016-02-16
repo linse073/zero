@@ -43,6 +43,7 @@ local msg = {
     [2401] = "upgrade_card",
     [2402] = "promote_card",
     [2403] = "use_card",
+    [2404] = "upgrade_passive",
 
     [2500] = "begin_stage",
     [2501] = "end_stage",

@@ -4,6 +4,7 @@ local util = require "util"
 
 local item
 local task
+local role
 
 local pairs = pairs
 local ipairs = ipairs
@@ -14,6 +15,7 @@ local string = string
 local update_user = util.update_user
 local carddata
 local expdata
+local passivedata
 local original_card
 local base
 local error_code
@@ -26,6 +28,7 @@ local proc = {}
 skynet.init(function()
     carddata = share.carddata
     expdata = share.expdata
+    passivedata = share.passivedata
     original_card = share.original_card
     base = share.base
     error_code = share.error_code
@@ -35,6 +38,7 @@ end)
 function card.init_module()
     item = require "role.item"
     task = require "role.task"
+    role = require "role.role"
     return proc
 end
 
@@ -74,7 +78,15 @@ function card.add(v, d)
     if not d then
         d = assert(carddata[v.cardid], string.format("No card data %d.", v.cardid))
     end
-    local c = {v, d}
+    local ps = {}
+    for k, v in ipairs(v.passive_skill) do
+        ps[v.id] = {
+            v,
+            assert(passivedata[v.id]. string.format("No passive data %d.", v.id)),
+            assert(expdata[v.level], string.format("No exp data %d.", v.level)),
+        }
+    end
+    local c = {v, d, ps}
     data.card[v.id] = c
     card.add_to_type(c)
     for i = 1, base.MAX_CARD_POSITION_TYPE do
@@ -250,6 +262,34 @@ function proc.use_card(msg)
     local p = update_user()
     card.use(p, c, msg.pos_type, msg.pos)
     task.update(p, base.TASK_COMPLETE_USE_CARD, cv.cardid, 1)
+    return "update_user", {update=p}
+end
+
+function proc.upgrade_passive(msg)
+    local c = data.card[msg.id]
+    if not c then
+        error{code = error_code.CARD_NOT_EXIST}
+    end
+    local ps = c[3][msg.skillid]
+    if not ps then
+        error{code = error_code.CARD_NO_PASSIVE_SKILL}
+    end
+    local money = ps[3].passiveGold
+    local user = data.user
+    if user.money < money then
+        error{code = error_code.ROLE_MONEY_LIMIT}
+    end
+    local p = update_user()
+    role.add_money(p, money)
+    local si = ps[1]
+    si.level = si.level + 1
+    ps[3] = assert(expdata[si.level], string.format("No exp data %d.", si.level))
+    local pcard = p.card
+    pcard[#pcard+1] = {
+        id = msg.id,
+        passive_skill = si,
+    }
+    task.update(p, base.TASK_COMPLETE_UPGRADE_PASSIVE, si.id, 1)
     return "update_user", {update=p}
 end
 

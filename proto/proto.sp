@@ -262,3 +262,8 @@
 .add_level {
     level 0 : integer
 }
+
+.upgrade_passive {
+    id 0 : integer
+    skillid 1 : integer
+}

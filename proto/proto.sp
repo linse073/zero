@@ -24,7 +24,7 @@
     vip 6 : integer
     rmb 7 : integer
     money 8 : integer
-    rank 9 : integer
+    arena_rank 9 : integer
     arena_count 10 : integer
     charge_arena 11 : integer
     fight_point 12 : integer
@@ -109,12 +109,19 @@
 }
 
 .rank_info {
+    .simple_card {
+        id 0 : integer
+        cardid 1 : integer
+        level 2 : integer
+    }
+
     id 0 : integer
     name 1 : string
     prof 2 : integer
     level 3 : integer
     fight_point 4 : integer
-    rank 5 : integer
+    card 5 : *simple_card
+    rank 6 : integer
 }
 
 .user_all {

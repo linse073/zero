@@ -10,6 +10,7 @@ local item
 local stage
 local task
 local gm
+local rank
 
 local pairs = pairs
 local ipairs = ipairs
@@ -33,6 +34,7 @@ local module
 local role = {}
 local proc = {}
 local role_mgr
+local rank_mgr
 local gm_level = skynet.getenv("gm_level")
 
 skynet.init(function()
@@ -41,6 +43,7 @@ skynet.init(function()
     base = share.base
     map_pos = share.map_pos
     role_mgr = skynet.queryservice("role_mgr")
+    rank_mgr = skynet.queryservice("rank_mgr")
 end)
 
 function role.init_module()
@@ -50,7 +53,8 @@ function role.init_module()
     stage = require "role.stage"
     task = require "role.task"
     gm = require "role.gm"
-    module = {card, friend, item, stage, task, gm}
+    rank = require "role.rank"
+    module = {card, friend, item, stage, task, gm, rank}
     for k, v in ipairs(module) do
         merge_table(proc, v.init_module())
     end
@@ -325,6 +329,15 @@ function proc.enter_game(msg)
     data.suser = suser
     data.user = user
     data.expdata = assert(expdata[user.level], string.format("No exp data %d.", user.level))
+    local rank_info = {
+        name = user.name,
+        id = user.id,
+        prof = user.prof,
+        level = user.level,
+        arena_rank = user.arena_rank,
+        fight_point = user.fight_point,
+    }
+    data.rank_info = rank_info
     local ret = {user = user}
     for k, v in ipairs(module) do
         if v.enter then
@@ -332,6 +345,7 @@ function proc.enter_game(msg)
             ret[key] = pack
         end
     end
+    user.arena_rank = skynet.call(rank_mgr, "lua", "add", rank_info)
     if user.logout_time > 0 then
         local od = date("%j", user.logout_time)
         local nd = date("%j", now)

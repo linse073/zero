@@ -29,6 +29,14 @@ function CMD.del(key)
     db:del(key)
 end
 
+function CMD.zadd(rank, score, key)
+    db.zadd(rank, score, key)
+end
+
+function CMD.zrange(rank, r1, r2)
+    return db.zrange(rank, r1, r2)
+end
+
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

@@ -21,6 +21,7 @@ local base
 local error_code
 local cs
 local data
+local rank_mgr
 
 local card = {}
 local proc = {}
@@ -33,6 +34,7 @@ skynet.init(function()
     base = share.base
     error_code = share.error_code
     cs = share.cs
+    rank_mgr = skynet.queryservice("rank_mgr")
 end)
 
 function card.init_module()
@@ -63,7 +65,24 @@ function card.enter()
         card.add(v)
         pack[#pack+1] = v
     end
+    card.rank_card()
     return "card", pack
+end
+
+function card.rank_card()
+    local info = {}
+    local ec = data.equip_card[2]
+    for i = 1, base.MAX_EQUIP_CARD do
+        local c = ec[i]
+        if c then
+            info[#info+1] = {
+                id = c.id,
+                cardid = c.cardid,
+                level = c.level,
+            }
+        end
+    end
+    data.rank_info.card = info
 end
 
 function card.add_to_type(c)
@@ -261,6 +280,10 @@ function proc.use_card(msg)
     end
     local p = update_user()
     card.use(p, c, msg.pos_type, msg.pos)
+    if msg.pos_type == 2 then
+        card.rank_card()
+        skynet.send(rank_mgr, "lua", "update", data.rank_info)
+    end
     task.update(p, base.TASK_COMPLETE_USE_CARD, cv.cardid, 1)
     return "update_user", {update=p}
 end

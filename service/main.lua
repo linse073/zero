@@ -28,6 +28,8 @@ skynet.start(function()
         local server = skynet.newservice("server", loginserver)
         skynet.call(server, "lua", "open", v, config.gate.servername)
     end
+    local rankmgr = skynet.uniqueservice("rank_mgr")
+    skynet.call(rankmgr, "lua", "open")
     
     skynet.exit()
 end)

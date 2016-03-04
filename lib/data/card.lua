@@ -97,7 +97,7 @@ local datas = {
 	},
 	[1600111801] = {
 		id = 1600111801,
-		name = "加古拉1",
+		name = "圣火甲虫",
 		cardType = 1,
 		cardAttr = 1,
 		range = 1,
@@ -161,7 +161,7 @@ local datas = {
 	},
 	[1600111691] = {
 		id = 1600111691,
-		name = "红龙1",
+		name = "独角火龙",
 		cardType = 1,
 		cardAttr = 1,
 		range = 2,
@@ -225,7 +225,7 @@ local datas = {
 	},
 	[1600111761] = {
 		id = 1600111761,
-		name = "塔塔鲁1",
+		name = "星火卡莫",
 		cardType = 1,
 		cardAttr = 1,
 		range = 1,
@@ -257,7 +257,7 @@ local datas = {
 	},
 	[1600111853] = {
 		id = 1600111853,
-		name = "塔塔鲁2",
+		name = "火焰卡莫",
 		cardType = 3,
 		cardAttr = 1,
 		range = 1,
@@ -353,7 +353,7 @@ local datas = {
 	},
 	[1600811671] = {
 		id = 1600811671,
-		name = "力系1星1",
+		name = "长耳兔",
 		cardType = 1,
 		cardAttr = 8,
 		range = 1,
@@ -385,7 +385,7 @@ local datas = {
 	},
 	[1600811961] = {
 		id = 1600811961,
-		name = "独眼食人魔",
+		name = "双刀屠夫",
 		cardType = 1,
 		cardAttr = 8,
 		range = 1,
@@ -417,7 +417,7 @@ local datas = {
 	},
 	[1600810163] = {
 		id = 1600810163,
-		name = "独眼食人魔2",
+		name = "独眼食人魔",
 		cardType = 3,
 		cardAttr = 8,
 		range = 1,
@@ -449,7 +449,7 @@ local datas = {
 	},
 	[1600811661] = {
 		id = 1600811661,
-		name = "奥鲁夫1",
+		name = "小野猪",
 		cardType = 1,
 		cardAttr = 8,
 		range = 1,
@@ -609,7 +609,7 @@ local datas = {
 	},
 	[1600311541] = {
 		id = 1600311541,
-		name = "植物1星2",
+		name = "蔓藤精灵",
 		cardType = 1,
 		cardAttr = 3,
 		range = 2,
@@ -641,7 +641,7 @@ local datas = {
 	},
 	[1600311681] = {
 		id = 1600311681,
-		name = "植物1星3",
+		name = "绿叶娃娃",
 		cardType = 1,
 		cardAttr = 3,
 		range = 2,
@@ -769,7 +769,7 @@ local datas = {
 	},
 	[1600311553] = {
 		id = 1600311553,
-		name = "瑞妮丝2",
+		name = "荆棘女妖",
 		cardType = 3,
 		cardAttr = 3,
 		range = 2,
@@ -801,7 +801,7 @@ local datas = {
 	},
 	[1600311841] = {
 		id = 1600311841,
-		name = "狄丽丝1",
+		name = "木灵射手",
 		cardType = 1,
 		cardAttr = 3,
 		range = 2,
@@ -833,7 +833,7 @@ local datas = {
 	},
 	[1600311933] = {
 		id = 1600311933,
-		name = "狄丽丝2",
+		name = "木灵猎手",
 		cardType = 3,
 		cardAttr = 3,
 		range = 1,
@@ -865,7 +865,7 @@ local datas = {
 	},
 	[1600211701] = {
 		id = 1600211701,
-		name = "水系1星1",
+		name = "鹦鹉螺",
 		cardType = 1,
 		cardAttr = 2,
 		range = 2,
@@ -897,7 +897,7 @@ local datas = {
 	},
 	[1600211731] = {
 		id = 1600211731,
-		name = "水系1星2",
+		name = "求雨玩偶",
 		cardType = 1,
 		cardAttr = 2,
 		range = 2,
@@ -961,7 +961,7 @@ local datas = {
 	},
 	[1600211561] = {
 		id = 1600211561,
-		name = "爱丽倩",
+		name = "骤雨魔女",
 		cardType = 1,
 		cardAttr = 2,
 		range = 2,
@@ -993,7 +993,7 @@ local datas = {
 	},
 	[1600211723] = {
 		id = 1600211723,
-		name = "爱丽倩2",
+		name = "暴雨女皇",
 		cardType = 3,
 		cardAttr = 2,
 		range = 2,
@@ -1025,7 +1025,7 @@ local datas = {
 	},
 	[1600211711] = {
 		id = 1600211711,
-		name = "水系2星21",
+		name = "宝石水母",
 		cardType = 1,
 		cardAttr = 2,
 		range = 2,
@@ -1057,7 +1057,7 @@ local datas = {
 	},
 	[1600211943] = {
 		id = 1600211943,
-		name = "水系2星22",
+		name = "皇冠水母",
 		cardType = 3,
 		cardAttr = 2,
 		range = 2,
@@ -1089,7 +1089,7 @@ local datas = {
 	},
 	[1600211881] = {
 		id = 1600211881,
-		name = "水系3星1",
+		name = "食人鱼",
 		cardType = 1,
 		cardAttr = 2,
 		range = 1,
@@ -1121,7 +1121,7 @@ local datas = {
 	},
 	[1600211893] = {
 		id = 1600211893,
-		name = "水系3星2",
+		name = "钢翅陆行鲨",
 		cardType = 3,
 		cardAttr = 2,
 		range = 1,
@@ -1249,7 +1249,7 @@ local datas = {
 	},
 	[1600911971] = {
 		id = 1600911971,
-		name = "妮妮可",
+		name = "雪兔宝",
 		cardType = 1,
 		cardAttr = 9,
 		range = 2,
@@ -1281,7 +1281,7 @@ local datas = {
 	},
 	[1600910333] = {
 		id = 1600910333,
-		name = "妮妮可2",
+		name = "妮妮可",
 		cardType = 3,
 		cardAttr = 9,
 		range = 2,
@@ -1313,7 +1313,7 @@ local datas = {
 	},
 	[1600911791] = {
 		id = 1600911791,
-		name = "麦琪的礼物1",
+		name = "深山雪宝",
 		cardType = 1,
 		cardAttr = 9,
 		range = 2,
@@ -1345,7 +1345,7 @@ local datas = {
 	},
 	[1600911583] = {
 		id = 1600911583,
-		name = "麦琪的礼物",
+		name = "雪人炮兵",
 		cardType = 3,
 		cardAttr = 9,
 		range = 2,
@@ -1377,7 +1377,7 @@ local datas = {
 	},
 	[1600911861] = {
 		id = 1600911861,
-		name = "艾布雷克1",
+		name = "深山雪怪",
 		cardType = 1,
 		cardAttr = 9,
 		range = 1,
@@ -1471,9 +1471,9 @@ local datas = {
 		},
 		get = "",
 	},
-	[1600511571] = {
-		id = 1600511571,
-		name = "石板怪",
+	[1600511601] = {
+		id = 1600511601,
+		name = "青墙",
 		cardType = 1,
 		cardAttr = 5,
 		range = 1,
@@ -1484,20 +1484,20 @@ local datas = {
 		evolveNum = 0,
 		limitType = 0,
 		starLv = 1,
-		skillId = 510011570,
-		soulId = 3000157230,
-		resCard = "C_1157",
-		resIcon = "G_1157",
-		resView = "monster_1157",
+		skillId = 510011600,
+		soulId = 3000160230,
+		resCard = "C_1160",
+		resIcon = "G_1160",
+		resView = "monster_1160",
 		hurtView = "monster_hurteffect1",
 		des = "",
 		act = 1,
-		npcID = 1220001157,
+		npcID = 1220001160,
 		pvpScale = 1,
 		PassiveId = {
-			1400111570,
-			1400211570,
-			1400311570,
+			1400111600,
+			1400211600,
+			1400311600,
 			0,
 			0,
 		},
@@ -1537,7 +1537,7 @@ local datas = {
 	},
 	[1600511741] = {
 		id = 1600511741,
-		name = "岩系2星11",
+		name = "机枪堡垒",
 		cardType = 1,
 		cardAttr = 5,
 		range = 2,
@@ -1569,7 +1569,7 @@ local datas = {
 	},
 	[1600511753] = {
 		id = 1600511753,
-		name = "岩系2星12",
+		name = "巨炮要塞",
 		cardType = 3,
 		cardAttr = 5,
 		range = 2,
@@ -1601,7 +1601,7 @@ local datas = {
 	},
 	[1600511771] = {
 		id = 1600511771,
-		name = "岩系2星21",
+		name = "岩石巨鼓",
 		cardType = 1,
 		cardAttr = 5,
 		range = 1,
@@ -1633,7 +1633,7 @@ local datas = {
 	},
 	[1600511783] = {
 		id = 1600511783,
-		name = "岩系2星22",
+		name = "巨鼓石人",
 		cardType = 3,
 		cardAttr = 5,
 		range = 1,
@@ -1665,7 +1665,7 @@ local datas = {
 	},
 	[1600511901] = {
 		id = 1600511901,
-		name = "德洛尼克1",
+		name = "椰蛋怪",
 		cardType = 1,
 		cardAttr = 5,
 		range = 1,
@@ -1761,7 +1761,7 @@ local datas = {
 	},
 	[1600611821] = {
 		id = 1600611821,
-		name = "毒系1星2",
+		name = "毒绿素",
 		cardType = 1,
 		cardAttr = 6,
 		range = 1,
@@ -1793,7 +1793,7 @@ local datas = {
 	},
 	[1600611911] = {
 		id = 1600611911,
-		name = "毒系1星3",
+		name = "毒素鬼才",
 		cardType = 1,
 		cardAttr = 6,
 		range = 1,
@@ -1825,7 +1825,7 @@ local datas = {
 	},
 	[1600611811] = {
 		id = 1600611811,
-		name = "毒系2星11",
+		name = "毒汁草",
 		cardType = 1,
 		cardAttr = 6,
 		range = 1,
@@ -1857,7 +1857,7 @@ local datas = {
 	},
 	[1600611833] = {
 		id = 1600611833,
-		name = "毒系2星12",
+		name = "毒笼草",
 		cardType = 3,
 		cardAttr = 6,
 		range = 2,
@@ -1889,7 +1889,7 @@ local datas = {
 	},
 	[1600611871] = {
 		id = 1600611871,
-		name = "毒系2星21",
+		name = "毒素精灵",
 		cardType = 1,
 		cardAttr = 6,
 		range = 1,
@@ -1921,7 +1921,7 @@ local datas = {
 	},
 	[1600611923] = {
 		id = 1600611923,
-		name = "毒系2星22",
+		name = "毒囊恶龙",
 		cardType = 3,
 		cardAttr = 6,
 		range = 1,
@@ -1953,7 +1953,7 @@ local datas = {
 	},
 	[1600611951] = {
 		id = 1600611951,
-		name = "玛努诺克1",
+		name = "圣毒甲虫",
 		cardType = 1,
 		cardAttr = 6,
 		range = 1,

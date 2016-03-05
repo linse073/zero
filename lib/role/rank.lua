@@ -39,7 +39,7 @@ end
 
 function proc.query_rank(msg)
     local field = rank_field[msg.rank_type]
-    if not filed then
+    if not field then
         error{code = error_code.ERROR_QUERY_RANK_TYPE}
     end
     local user = data.user

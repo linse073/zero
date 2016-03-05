@@ -51,6 +51,7 @@ skynet.init(function()
     share.original_card = sharedata.query("original_card")
 
     share.item_category = sharedata.query("item_category")
+    share.rank_field = sharedata.query("rank_field")
 
     share.msg = sharedata.query("msg")
     share.name_msg = sharedata.query("name_msg")

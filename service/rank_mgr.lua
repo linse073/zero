@@ -8,6 +8,7 @@ local count
 local cs
 local math = math
 local random = math.random
+local floor = math.floor
 
 local rank_type = {
     RANK_ARENA = 1,
@@ -46,7 +47,7 @@ local query_rank = {
             local range = {}
             local rank = arena_rank - 1
             for i = 1, 3 do
-                rank = (rank * (random(199) + 800)) // 1000
+                rank = floor(rank * (random(199) + 800) // 1000)
                 range[#range+1] = skynet.call(rankdb, "lua", "zrange", "arena", rank, rank)
             end
             -- TODO: test range

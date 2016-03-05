@@ -39,20 +39,27 @@ local update_rank = {
 
 local query_rank = {
     [rank_type.RANK_ARENA] = function(roleid, arena_rank)
+        local range = {}
         if arena_rank < 4 then
-            local range = skynet.call(rankdb, "lua", "zrange", "arena", 0, 3)
-            -- TODO: test range
-            util.dump(range)
+            local temp = skynet.call(rankdb, "lua", "zrange", "arena", 0, 3)
+            temp[arena_rank] = nil
+            for k, v in pairs(temp) do
+                local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", v))
+                info.rank = k
+                range[#range+1] = info
+            end
         else
-            local range = {}
             local rank = arena_rank - 1
             for i = 1, 3 do
                 rank = floor(rank * (random(199) + 800) // 1000)
-                range[#range+1] = skynet.call(rankdb, "lua", "zrange", "arena", rank, rank)
+                local id = skynet.call(rankdb, "lua", "zrange", "arena", rank, rank)[1]
+                local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", id))
+                info.rank = rank
+                range[#range+1] = info
             end
-            -- TODO: test range
-            util.dump(range)
         end
+        -- TODO: test range
+        util.dump(range)
     end,
     [rank_type.RANK_FIGHT_POINT] = function(roleid, fight_point)
     end,

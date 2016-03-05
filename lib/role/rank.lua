@@ -1,4 +1,4 @@
-
+local skynet = require "skynet"
 local share = require "share"
 
 local pairs = pairs

@@ -21,6 +21,8 @@ skynet.start(function()
         local dbslave = skynet.newservice("dbslave")
         skynet.call(dbslave, "lua", "open", v)
     end
+    local rankmgr = skynet.uniqueservice("rank_mgr")
+    skynet.call(rankmgr, "lua", "open")
 	local loginserver = skynet.newservice("logind")
     local gate = skynet.newservice("gated", loginserver)
     skynet.call(gate, "lua", "open", config.gate)
@@ -28,8 +30,6 @@ skynet.start(function()
         local server = skynet.newservice("server", loginserver)
         skynet.call(server, "lua", "open", v, config.gate.servername)
     end
-    local rankmgr = skynet.uniqueservice("rank_mgr")
-    skynet.call(rankmgr, "lua", "open")
     
     skynet.exit()
 end)

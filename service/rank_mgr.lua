@@ -8,7 +8,6 @@ local count
 local cs
 local math = math
 local random = math.random
-local ceil = math.ceil
 
 local rank_type = {
     RANK_ARENA = 1,

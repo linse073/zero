@@ -10,6 +10,7 @@ local string = string
 local data
 local base
 local error_code
+local rank_field
 local rank_mgr
 
 local rank = {}
@@ -18,6 +19,7 @@ local proc = {}
 skynet.init(function()
     base = share.base
     error_code = share.error_code
+    rank_field = share.rank_field
     rank_mgr = skynet.queryservice("rank_mgr")
 end)
 
@@ -35,10 +37,6 @@ end
 
 ---------------------------protocol process----------------------
 
-local rank_field = {
-    [base.RANK_ARENA] = "arena_rank",
-    [base.RANK_FIGHT_POINT] = "fight_point",
-}
 function proc.query_rank(msg)
     local field = rank_field[msg.rank_type]
     if not filed then

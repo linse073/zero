@@ -185,6 +185,9 @@ function role.add_exp(p, exp)
             puser.level = user.level
             task.update_level(p, oldLevel, user.level)
             task.update(p, base.TASK_COMPLETE_LEVEL, 0, 0, user.level)
+            local rank_info = data.rank_info
+            rank_info.level = user.level
+            skynet.send(rank_mgr, "lua", "update", rank_info)
             local bmsg = {
                 id = user.id,
                 level = user.level,
@@ -279,7 +282,7 @@ function proc.create_user(msg)
         vip = 0,
         rmb = 0,
         money = 0,
-        rank = 0,
+        arena_rank = 0,
         arena_count = 0,
         charge_arena = 0,
         fight_point = 0,

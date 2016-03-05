@@ -274,3 +274,11 @@
     id 0 : integer
     skillid 1 : integer
 }
+
+.query_rank {
+    rank_type 0 : integer
+}
+
+.rank_list {
+    list 0 : *rank_info
+}

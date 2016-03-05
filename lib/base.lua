@@ -137,6 +137,10 @@ local base = {
         ey = 380,
     },
     MOVE_SPEED = 300,
+
+    -- rank
+    RANK_ARENA = 1,
+    RANK_FIGHT_POINT = 2,
 }
 
 return base

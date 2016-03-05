@@ -54,6 +54,8 @@ local error_code = {
     STAGE_COUNT_LIMIT = 2402,
     ERROR_STAGE_SIGN = 2403,
     ERROR_STAGE_SEED = 2404,
+
+    ERROR_QUERY_RANK_TYPE = 2500,
 }
 
 return error_code

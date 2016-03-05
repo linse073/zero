@@ -29,12 +29,16 @@ function CMD.del(key)
     db:del(key)
 end
 
-function CMD.zadd(rank, score, key)
-    db.zadd(rank, score, key)
+function CMD.zadd(rank_type, score, key)
+    db:zadd(rank_type, score, key)
 end
 
-function CMD.zrange(rank, r1, r2)
-    return db.zrange(rank, r1, r2)
+function CMD.zrange(rank_type, r1, r2)
+    return db:zrange(rank_type, r1, r2)
+end
+
+function CMD.zrank(rank_type, key)
+    return db:zrank(rank_type, key)
 end
 
 skynet.start(function()

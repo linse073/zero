@@ -7,7 +7,6 @@ local rankinfodb
 local count
 local cs
 local math = math
-local random = math.random
 local floor = math.floor
 
 local rank_type = {
@@ -45,16 +44,16 @@ local query_rank = {
             temp[arena_rank] = nil
             for k, v in pairs(temp) do
                 local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", v))
-                info.rank = k
+                info.rank = k + 1
                 range[#range+1] = info
             end
         else
             local rank = arena_rank - 1
             for i = 1, 3 do
-                rank = floor(rank * (random(199) + 800) // 1000)
+                rank = (rank * (random(199) + 800)) // 1000
                 local id = skynet.call(rankdb, "lua", "zrange", "arena", rank, rank)[1]
                 local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", id))
-                info.rank = rank
+                info.rank = rank + 1
                 range[#range+1] = info
             end
         end
@@ -71,14 +70,17 @@ function CMD.open()
     rankdb = skynet.call(master, "lua", "get", "rankdb")
     rankinfodb = skynet.call(master, "lua", "get", "rankinfodb")
     count = skynet.call(rankinfodb, "lua", "get", "count")
-    if not count then
+    if count then
+        count = floor(count)
+    else
         count = 0
     end
 end
 
 function CMD.add(info)
     if cs(check_info, info) then
-        skynet.call(rankinfodb, "lua", "save", "count", count)
+        -- NOTICE: count will be save as float in redis
+        skynet.call(rankinfodb, "lua", "save", "count", count) 
     else
         local arena_rank = skynet.call(rankdb, "lua", "zrank", "arena", info.id)
         if arena_rank then

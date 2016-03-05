@@ -114,7 +114,6 @@ local base = {
     PROP_HP = 9,
     PROP_ATTACK = 10,
     PROP_MOVE_SPEED = 11,
-    PROP_JUMP_HEIGHT = 12,
 
     -- bonus
     BONUS_TYPE_MONEY = 1,

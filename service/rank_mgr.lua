@@ -8,7 +8,6 @@ local count
 local cs
 local math = math
 local floor = math.floor
-local tonumber = tonumber
 
 local rank_type = {
     RANK_ARENA = 1,
@@ -62,7 +61,7 @@ function CMD.open()
     rankinfodb = skynet.call(master, "lua", "get", "rankinfodb")
     count = skynet.call(rankinfodb, "lua", "get", "count")
     if count then
-        count = floor(tonumber(count))
+        count = floor(count)
     else
         count = 0
     end

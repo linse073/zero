@@ -12,29 +12,12 @@ local data
 local base
 local error_code
 local rank_mgr
+local query_process
 
 local rank = {}
 local proc = {}
 
-skynet.init(function()
-    base = share.base
-    error_code = share.error_code
-    rank_mgr = skynet.queryservice("rank_mgr")
-end)
-
-function rank.init_module()
-    return proc
-end
-
-function rank.init(userdata)
-    data = userdata
-end
-
-function rank.exit()
-    data = nil
-end
-
-function rank.query_arena()
+local function query_arena()
     local rank = skynet.call(rank_mgr, "lua", "get", base.RANK_ARENA, data.user.id)
     local r
     if rank <= 3 then
@@ -53,7 +36,7 @@ function rank.query_arena()
     }
 end
 
-function rank.query_fight_point()
+local function query_fight_point()
     local rank = skynet.call(rank_mgr, "lua", "get", base.RANK_FIGHT_POINT, data.user.id)
     local r = {}
     if rank > 0 then
@@ -65,12 +48,30 @@ function rank.query_fight_point()
     }
 end
 
+skynet.init(function()
+    base = share.base
+    error_code = share.error_code
+    rank_mgr = skynet.queryservice("rank_mgr")
+    query_process = {
+        [base.RANK_ARENA] = query_arena,
+        [base.RANK_FIGHT_POINT] = query_fight_point,
+    }
+end)
+
+function rank.init_module()
+    return proc
+end
+
+function rank.init(userdata)
+    data = userdata
+end
+
+function rank.exit()
+    data = nil
+end
+
 ---------------------------protocol process----------------------
 
-local query_process = {
-    [base.RANK_ARENA] = rank.query_arena,
-    [base.RANK_FIGHT_POINT] = rank.query_fight_point,
-}
 function proc.query_rank(msg)
     local process = query_process[msg.rank_type]
     if not process then

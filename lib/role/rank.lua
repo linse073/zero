@@ -7,6 +7,8 @@ local assert = assert
 local error = error
 local string = string
 local table = table
+local math = math
+local random = math.random
 
 local data
 local base

@@ -36,31 +36,21 @@ local update_rank = {
     end,
 }
 
-local query_rank = {
-    [rank_type.RANK_ARENA] = function(roleid, arena_rank)
-        local range = {}
-        if arena_rank < 4 then
-            local temp = skynet.call(rankdb, "lua", "zrange", "arena", 0, 3)
-            temp[arena_rank] = nil
-            for k, v in pairs(temp) do
-                local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", v))
-                info.rank = k + 1
-                range[#range+1] = info
-            end
-        else
-            local rank = arena_rank - 1
-            for i = 1, 3 do
-                rank = (rank * (random(199) + 800)) // 1000
-                local id = skynet.call(rankdb, "lua", "zrange", "arena", rank, rank)[1]
-                local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", id))
-                info.rank = rank + 1
-                range[#range+1] = info
-            end
-        end
-        -- TODO: test range
-        util.dump(range)
+local get_rank = {
+    [rank_type.RANK_ARENA] = function(roleid)
+        return skynet.call(rankdb, "lua", "zrank", "arena", roleid)
     end,
-    [rank_type.RANK_FIGHT_POINT] = function(roleid, fight_point)
+    [rank_type.RANK_FIGHT_POINT] = function(roleid)
+        return skynet.call(rankdb, "lua", "zrank", "fight_point", roleid)
+    end,
+}
+
+local get_range = {
+    [rank_type.RANK_ARENA] = function(r1, r2)
+        return skynet.call(rankdb, "lua", "zrange", "arena", r1, r2)
+    end,
+    [rank_type.RANK_FIGHT_POINT] = function(r1, r2)
+        return skynet.call(rankdb, "lua", "zrange", "fight_point", r1, r2)
     end,
 }
 
@@ -82,10 +72,6 @@ function CMD.add(info)
         -- NOTICE: count will be save as float in redis
         skynet.call(rankinfodb, "lua", "save", "count", count) 
     else
-        local arena_rank = skynet.call(rankdb, "lua", "zrank", "arena", info.id)
-        if arena_rank then
-            info.arena_rank = arena_rank + 1
-        end
         skynet.call(rankinfodb, "lua", "save", info.id, skynet.packstring(info))
     end
     for k, v in ipairs(update_rank) do
@@ -94,15 +80,42 @@ function CMD.add(info)
     return info.arena_rank
 end
 
-function CMD.update(info, rank_type)
-    if rank_type then
-        update_rank[rank_type](info)
+function CMD.update(info, rt)
+    if rt then
+        update_rank[rt](info)
     end
     skynet.call(rankinfodb, "lua", "save", info.id, skynet.packstring(info))
 end
 
-function CMD.query(rank_type, roleid, value)
-    query_rank[rank_type](roleid, value)
+function CMD.update_arena(info1, info2)
+    skynet.call(rankdb, "lua", "zadd", "arena", info1.arena_rank, info1.id, info2.arena_rank, info2.id)
+    skynet.call(rankinfodb, "lua", "save", info1.id, skynet.packstring(info1))
+    skynet.call(rankinfodb, "lua", "save", info2.id, skynet.packstring(info2))
+end
+
+function CMD.get(rt, roleid)
+    return get_rank[rt](roleid)
+end
+
+function CMD.query(rt, rank)
+    local fn = get_range[rt]
+    local i = 1
+    local l = #rank
+    local range = {}
+    while i <= l do
+        local j = i + 1
+        while j <= l and rank[j] - rank[j - 1] < 10 do
+            j = j + 1
+        end
+        local r = fn(rank[i], rank[j - 1])
+        for k, v in ipairs(r) do
+            local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", v))
+            info.rank = rank[i + k - 1]
+            range[#range + 1] = info
+        end
+        i = j
+    end
+    return range
 end
 
 skynet.start(function()

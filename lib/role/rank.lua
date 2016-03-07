@@ -6,11 +6,11 @@ local ipairs = ipairs
 local assert = assert
 local error = error
 local string = string
+local table = talbe
 
 local data
 local base
 local error_code
-local rank_field
 local rank_mgr
 
 local rank = {}
@@ -19,7 +19,6 @@ local proc = {}
 skynet.init(function()
     base = share.base
     error_code = share.error_code
-    rank_field = share.rank_field
     rank_mgr = skynet.queryservice("rank_mgr")
 end)
 
@@ -35,16 +34,49 @@ function rank.exit()
     data = nil
 end
 
+function rank.query_arena()
+    local rank = skynet.call(rank_mgr, "lua", "get", base.RANK_ARENA, data.user.id)
+    local r
+    if rank <= 3 then
+        r = {1, 2, 3, 4}
+        table.remove(r, rank + 1)
+    else
+        r = {}
+        for i = 1, 3 do
+            rank = (rank * (random(199) + 800)) // 1000
+            r[i] = rank
+        end
+    end
+    return {
+        rank = rank,
+        list = skynet.call(rank_mgr, "lua", "query", base.RANK_ARENA, r),
+    }
+end
+
+function rank.query_fight_point()
+    local rank = skynet.call(rank_mgr, "lua", "get", base.RANK_FIGHT_POINT, data.user.id)
+    local r = {}
+    if rank > 0 then
+        r[1] = (rank * (random(49) + 950)) // 1000
+    end
+    return {
+        rank = rank,
+        list = skynet.call(rank_mgr, "lua", "query", base.RANK_FIGHT_POINT, r),
+    }
+end
+
 ---------------------------protocol process----------------------
 
+local query_process = {
+    [base.RANK_ARENA] = rank.query_arena,
+    [base.RANK_FIGHT_POINT] = rank.query_fight_point,
+}
 function proc.query_rank(msg)
-    local field = rank_field[msg.rank_type]
-    if not field then
+    local process = query_process[msg.rank_type]
+    if not process then
         error{code = error_code.ERROR_QUERY_RANK_TYPE}
     end
-    local user = data.user
-    skynet.call(rank_mgr, "lua", "query", msg.rank_type, user.id, user[field])
-    return "response", ""
+    return "rank_list", process()
 end
 
 return rank

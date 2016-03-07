@@ -213,10 +213,6 @@ skynet.start(function()
         [base.ITEM_TYPE_RING] = base.ITEM_ATTACK,
         [base.ITEM_TYPE_NECKLACE] = base.ITEM_ATTACK,
     })
-    sharedata.new("rank_field", {
-        [base.RANK_ARENA] = "arena_rank",
-        [base.RANK_FIGHT_POINT] = "fight_point",
-    })
 
     sharedata.new("msg", proto.msg)
     sharedata.new("name_msg", proto.name_msg)

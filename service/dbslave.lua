@@ -16,9 +16,9 @@ function CMD.has(key)
 end
 
 function CMD.get(key)
-    if db:exists(key) then
+    -- if db:exists(key) then
         return db:get(key)
-    end
+    -- end
 end
 
 function CMD.save(key, value)
@@ -29,16 +29,16 @@ function CMD.del(key)
     db:del(key)
 end
 
-function CMD.zadd(rank_type, score, key)
-    db:zadd(rank_type, score, key)
+function CMD.zadd(rt, ...)
+    db:zadd(rt, ...)
 end
 
-function CMD.zrange(rank_type, r1, r2)
-    return db:zrange(rank_type, r1, r2)
+function CMD.zrange(rt, r1, r2)
+    return db:zrange(rt, r1, r2)
 end
 
-function CMD.zrank(rank_type, key)
-    return db:zrank(rank_type, key)
+function CMD.zrank(rt, key)
+    return db:zrank(rt, key)
 end
 
 skynet.start(function()

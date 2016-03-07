@@ -280,5 +280,6 @@
 }
 
 .rank_list {
-    list 0 : *rank_info
+    rank 0 : integer
+    list 1 : *rank_info
 }

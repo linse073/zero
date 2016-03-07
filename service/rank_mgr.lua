@@ -1,6 +1,5 @@
 local skynet = require "skynet"
 local queue = require "skynet.queue"
-local util = require "util"
 
 local rankdb
 local rankinfodb

@@ -106,10 +106,12 @@ function CMD.query(rt, rank)
         while j <= l and rank[j] - rank[j - 1] < 10 do
             j = j + 1
         end
-        local r = fn(rank[i], rank[j - 1])
-        for k, v in ipairs(r) do
-            local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", v))
-            info.rank = rank[i + k - 1]
+        local m = rank[i]
+        local r = fn(m, rank[j - 1])
+        for k = i, j - 1 do
+            local nr = rank[k]
+            local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", r[nr - m + 1]))
+            info.rank = nr
             range[#range + 1] = info
         end
         i = j

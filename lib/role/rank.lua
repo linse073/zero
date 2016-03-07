@@ -27,9 +27,10 @@ local function query_arena()
         table.remove(r, rank + 1)
     else
         r = {}
+        local nr = rank
         for i = 1, 3 do
-            rank = (rank * (random(199) + 800)) // 1000
-            r[i] = rank
+            nr = (nr * (random(199) + 800)) // 1000
+            r[i] = nr
         end
     end
     return {

@@ -6,7 +6,7 @@ local ipairs = ipairs
 local assert = assert
 local error = error
 local string = string
-local table = talbe
+local table = table
 
 local data
 local base

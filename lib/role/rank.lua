@@ -21,7 +21,7 @@ local proc = {}
 
 local function query_arena()
     local rank, count = skynet.call(rank_mgr, "lua", "get", base.RANK_ARENA, data.user.id)
-    local r
+    local r = {}
     if rank <= 3 then
         local c = 4
         if c > count then
@@ -32,7 +32,6 @@ local function query_arena()
         end
         table.remove(r, rank + 1)
     else
-        r = {}
         local nr = rank
         for i = 1, 3 do
             nr = (nr * (random(199) + 800)) // 1000

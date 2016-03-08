@@ -28,7 +28,7 @@ local function query_arena()
             c = count
         end
         for i = 1, c do
-            r[i] = i
+            r[i] = i - 1
         end
         table.remove(r, rank + 1)
     else
@@ -37,6 +37,7 @@ local function query_arena()
             nr = (nr * (random(199) + 800)) // 1000
             r[i] = nr
         end
+        table.sort(r)
     end
     return {
         rank = rank + 1,

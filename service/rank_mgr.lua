@@ -127,7 +127,7 @@ function CMD.query(rt, rank)
             local nr = rank[k]
             -- NOTICE: if update in query time, it could be user self
             local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", r[nr - m + 1]))
-            info.rank = nr
+            info.rank = nr + 1
             range[#range + 1] = info
         end
         i = j

@@ -348,7 +348,9 @@ function proc.enter_game(msg)
             ret[key] = pack
         end
     end
-    user.arena_rank = skynet.call(rank_mgr, "lua", "add", rank_info)
+    local arena_rank = skynet.call(rank_mgr, "lua", "add", rank_info)
+    user.arena_rank = arena_rank
+    rank_info.arena_rank = arena_rank
     if user.logout_time > 0 then
         local od = date("%j", user.logout_time)
         local nd = date("%j", now)

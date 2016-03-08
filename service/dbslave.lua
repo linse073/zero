@@ -41,6 +41,16 @@ function CMD.zrank(rt, key)
     return db:zrank(rt, key)
 end
 
+function CMD.zcount(rt, r1, r2)
+    if not r1 then
+        r1 = "-inf"
+    end
+    if not r2 then
+        r2 = "+inf"
+    end
+    return db:zcount(rt, r1, r2)
+end
+
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

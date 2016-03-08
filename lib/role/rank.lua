@@ -20,10 +20,16 @@ local rank = {}
 local proc = {}
 
 local function query_arena()
-    local rank = skynet.call(rank_mgr, "lua", "get", base.RANK_ARENA, data.user.id)
+    local rank, count = skynet.call(rank_mgr, "lua", "get", base.RANK_ARENA, data.user.id)
     local r
     if rank <= 3 then
-        r = {1, 2, 3, 4}
+        local c = 4
+        if c > count then
+            c = count
+        end
+        for i = 1, c do
+            r[i] = i
+        end
         table.remove(r, rank + 1)
     else
         r = {}

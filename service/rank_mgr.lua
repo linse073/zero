@@ -7,6 +7,8 @@ local count
 local cs
 local math = math
 local floor = math.floor
+local assert = assert
+local string = string
 
 local rank_type = {
     RANK_ARENA = 1,
@@ -14,17 +16,6 @@ local rank_type = {
 }
 
 local CMD = {}
-
-local function check_info(info)
-    if skynet.call(rankinfodb, "lua", "has", info.id) then
-        return false
-    else
-        count = count + 1
-        info.arena_rank = count
-        skynet.call(rankinfodb, "lua", "save", info.id, skynet.packstring(info))
-        return true
-    end
-end
 
 local update_rank = {
     [rank_type.RANK_ARENA] = function(info)
@@ -37,7 +28,7 @@ local update_rank = {
 
 local get_rank = {
     [rank_type.RANK_ARENA] = function(roleid)
-        return skynet.call(rankdb, "lua", "zrank", "arena", roleid)
+        return skynet.call(rankdb, "lua", "zrank", "arena", roleid), count
     end,
     [rank_type.RANK_FIGHT_POINT] = function(roleid)
         return skynet.call(rankdb, "lua", "zrank", "fight_point", roleid)
@@ -53,6 +44,42 @@ local get_range = {
     end,
 }
 
+local function add(info)
+    local i = skynet.unpack(skynet.call(rankinfodb, "lua", "get", info.id))
+    if i then
+        info.arena_rank = i.arena_rank
+    else
+        count = count + 1
+        info.arena_rank = count
+        -- NOTICE: count will be save as float in redis
+        skynet.call(rankinfodb, "lua", "save", "count", count) 
+    end
+    skynet.call(rankinfodb, "lua", "save", info.id, skynet.packstring(info))
+    for k, v in ipairs(update_rank) do
+        v(info)
+    end
+end
+
+local function update(info, rt)
+    if rt then
+        update_rank[rt](info)
+    end
+    skynet.call(rankinfodb, "lua", "save", info.id, skynet.packstring(info))
+end
+
+local function update_arena(info1, info2)
+    skynet.call(rankdb, "lua", "zadd", "arena", info1.arena_rank, info1.id, info2.arena_rank, info2.id)
+    skynet.call(rankinfodb, "lua", "save", info1.id, skynet.packstring(info1))
+    skynet.call(rankinfodb, "lua", "save", info2.id, skynet.packstring(info2))
+end
+
+local function check_rank()
+    local acount = skynet.call(rankdb, "lua", "zcount", "arena")
+    assert(acount==count, string.format("Error arena count %d, info count %d.", acount, count))
+    local fcount = skynet.call(rankdb, "lua", "zcount", "fight_point")
+    assert(fcount==count, string.format("Error fight_point count %d, info count %d.", fcount, count))
+end
+
 function CMD.open()
     cs = queue()
     local master = skynet.queryservice("dbmaster")
@@ -64,32 +91,20 @@ function CMD.open()
     else
         count = 0
     end
+    check_rank()
 end
 
 function CMD.add(info)
-    if cs(check_info, info) then
-        -- NOTICE: count will be save as float in redis
-        skynet.call(rankinfodb, "lua", "save", "count", count) 
-    else
-        skynet.call(rankinfodb, "lua", "save", info.id, skynet.packstring(info))
-    end
-    for k, v in ipairs(update_rank) do
-        v(info)
-    end
+    cs(add, info)
     return info.arena_rank
 end
 
 function CMD.update(info, rt)
-    if rt then
-        update_rank[rt](info)
-    end
-    skynet.call(rankinfodb, "lua", "save", info.id, skynet.packstring(info))
+    cs(update, info, rt)
 end
 
 function CMD.update_arena(info1, info2)
-    skynet.call(rankdb, "lua", "zadd", "arena", info1.arena_rank, info1.id, info2.arena_rank, info2.id)
-    skynet.call(rankinfodb, "lua", "save", info1.id, skynet.packstring(info1))
-    skynet.call(rankinfodb, "lua", "save", info2.id, skynet.packstring(info2))
+    cs(update_arena, info1, info2)
 end
 
 function CMD.get(rt, roleid)
@@ -110,6 +125,7 @@ function CMD.query(rt, rank)
         local r = fn(m, rank[j - 1])
         for k = i, j - 1 do
             local nr = rank[k]
+            -- NOTICE: if update in query time, it could be user self
             local info = skynet.unpack(skynet.call(rankinfodb, "lua", "get", r[nr - m + 1]))
             info.rank = nr
             range[#range + 1] = info

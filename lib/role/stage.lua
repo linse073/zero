@@ -10,8 +10,10 @@ local ipairs = ipairs
 local assert = assert
 local error = error
 local string = string
+local math = math
 local random = math.random
 local randomseed = math.randomseed
+local floor = math.floor
 
 local check_sign = util.check_sign
 local update_user = util.update_user
@@ -155,7 +157,7 @@ function proc.begin_stage(msg)
     end
     local stage_seed = data.stage_seed
     stage_seed.id = msg.id
-    stage_seed.seed = random(skynet.time()+msg.id)
+    stage_seed.seed = random(floor(skynet.time())+msg.id)
     local bmsg = {
         id = user.id,
         fight = true,
@@ -199,7 +201,7 @@ function proc.end_stage(msg)
         end
         v.rand_item = rand_item
     end
-    randomseed(skynet.time())
+    randomseed(floor(skynet.time()))
     local p = update_user()
     if money > 0 then
         role.add_money(p, money)

@@ -125,15 +125,15 @@ function util.dump(value, desciption, nesting)
             spc = string.rep(" ", keylen - string.len(_v(desciption)))
         end
         if type(value) ~= "table" then
-            result[#result +1 ] = string.format("%s%s%s = %s", indent, _v(desciption), spc, _v(value))
+            result[#result + 1] = string.format("%s%s%s = %s", indent, _v(desciption), spc, _v(value))
         elseif lookupTable[value] then
-            result[#result +1 ] = string.format("%s%s%s = *REF*", indent, desciption, spc)
+            result[#result + 1] = string.format("%s%s%s = *REF*", indent, desciption, spc)
         else
             lookupTable[value] = true
             if nest > nesting then
-                result[#result +1 ] = string.format("%s%s = *MAX NESTING*", indent, desciption)
+                result[#result + 1] = string.format("%s%s = *MAX NESTING*", indent, desciption)
             else
-                result[#result +1 ] = string.format("%s%s = {", indent, _v(desciption))
+                result[#result + 1] = string.format("%s%s = {", indent, _v(desciption))
                 local indent2 = indent.."    "
                 local keys = {}
                 local keylen = 0
@@ -155,7 +155,7 @@ function util.dump(value, desciption, nesting)
                 for i, k in ipairs(keys) do
                     _dump(values[k], k, indent2, nest + 1, keylen)
                 end
-                result[#result +1] = string.format("%s}", indent)
+                result[#result + 1] = string.format("%s}", indent)
             end
         end
     end

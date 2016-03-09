@@ -101,7 +101,7 @@ function card.add(v, d)
     for k, v in ipairs(v.passive_skill) do
         ps[v.id] = {
             v,
-            assert(passivedata[v.id]. string.format("No passive data %d.", v.id)),
+            assert(passivedata[v.id], string.format("No passive data %d.", v.id)),
             assert(expdata[v.level], string.format("No exp data %d.", v.level)),
         }
     end

@@ -40,6 +40,7 @@ local function query_arena()
         table.sort(r)
     end
     return {
+        rank_type = base.RANK_ARENA,
         rank = rank + 1,
         list = skynet.call(rank_mgr, "lua", "query", base.RANK_ARENA, r),
     }
@@ -52,6 +53,7 @@ local function query_fight_point()
         r[1] = (rank * (random(49) + 950)) // 1000
     end
     return {
+        rank_type = base.RANK_ARENA,
         rank = rank + 1,
         list = skynet.call(rank_mgr, "lua", "query", base.RANK_FIGHT_POINT, r),
     }

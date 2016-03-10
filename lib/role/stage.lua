@@ -248,7 +248,7 @@ function proc.end_stage(msg)
         sv.hp_score = msg.hp_score
     end
     local pstage = p.stage
-    pstage[pstage+1] = sv
+    pstage[#pstage+1] = sv
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
     stage_seed.id = 0
     stage_seed.seed = 0

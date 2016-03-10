@@ -67,7 +67,7 @@ end
 
 function stage.add(v, d)
     if not d then
-        d = {v, assert(stagedata[v.id], string.format("No stage data %d.", v.id))}
+        d = assert(stagedata[v.id], string.format("No stage data %d.", v.id))
     end
     local s = {v, d}
     data.stage[v.id] = s

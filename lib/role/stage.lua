@@ -4,6 +4,7 @@ local util = require "util"
 
 local role
 local task
+local item
 
 local pairs = pairs
 local ipairs = ipairs
@@ -38,6 +39,7 @@ end)
 function stage.init_module()
     role = require "role.role"
     task = require "role.task"
+    item = require "role.item"
     return proc
 end
 

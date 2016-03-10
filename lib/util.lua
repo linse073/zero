@@ -36,9 +36,14 @@ end
 
 local to_string
 local function table_to_string(t)
+    local ks = {}
+    for k, _ in pairs(t) do
+        ks[#ks + 1] = k
+    end
+    table.sort(ks)
     local text = ""
-    for k, v in pairs(t) do
-        text = text .. to_string(v)
+    for _, v in ipairs(ks) do
+        text = text .. to_string(t[v])
     end
     return text
 end
@@ -57,7 +62,7 @@ end
 function util.check_sign(t, secret)
     local sign = t.sign
     t.sign = nil
-    return b64decode(sign) == hmac_hash(secret, to_string(t))
+    return sign == util.sign(t, secret)
 end
 
 function util.sign(t, secret)

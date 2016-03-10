@@ -18,6 +18,7 @@ local floor = math.floor
 local check_sign = util.check_sign
 local update_user = util.update_user
 local error_code
+local base
 local stagedata
 local itemdata
 local data
@@ -28,6 +29,7 @@ local proc = {}
 
 skynet.init(function()
     error_code = share.error_code
+    base = share.base
     stagedata = share.stagedata
     itemdata = share.itemdata
     role_mgr = skynet.queryservice("role_mgr")

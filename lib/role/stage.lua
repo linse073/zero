@@ -177,7 +177,6 @@ function proc.end_stage(msg)
         error{code = error_code.ERROR_STAGE_SIGN}
     end
     assert(msg.total_gold>=msg.pick_gold, string.format("error gold num, total %d, pick %d.", msg.total_gold, msg.pick_gold))
-    assert(msg.total_box>=msg.pick_box, string.format("error box num, total %d, pick %d.", msg.total_box, msg.pick_box))
     local s = data.stage[msg.id]
     local d
     local money, exp
@@ -193,7 +192,7 @@ function proc.end_stage(msg)
         bonus[#bonus+1] = {id=d.firstBonusID, rand_num=1, num={1}, data=d.firstBonus}
     end
     if msg.total_box then
-        bonus[#bonus+1] = {id=d.dropBonusID, rand_num=msg.total_box, num=msg.pick_box, data=d.dropBonus}
+        bonus[#bonus+1] = {id=d.dropBonusID, rand_num=msg.total_box, num=msg.pick_box or {}, data=d.dropBonus}
     end
     randomseed(msg.rand_seed)
     for k, v in ipairs(bonus) do

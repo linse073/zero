@@ -48,7 +48,7 @@ to_string = function(v)
     if vt == "string" then
         return v
     elseif vt == "number" or vt == "boolean" then
-        return to_string(v)
+        return tostring(v)
     elseif vt == "table" then
         return table_to_string(v)
     end

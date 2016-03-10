@@ -12,6 +12,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "414",
 		des = "每次放技能有25%的概率额外增加*点的破甲。",
 	},
 	[1400210410] = {
@@ -27,6 +28,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = -50,
 		levelPercent = -5,
+		iconPath = "403",
 		des = "暴击后降低目标防御*点，持续10秒。",
 	},
 	[1400310410] = {
@@ -42,6 +44,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400110240] = {
@@ -57,6 +60,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "420",
 		des = "血量低于50%时，提高格挡*点",
 	},
 	[1400210240] = {
@@ -72,6 +76,7 @@ local datas = {
 		changeBuff = 2,
 		baseData = -2000,
 		levelPercent = -50,
+		iconPath = "429",
 		des = "缓解冰系相克伤害*%",
 	},
 	[1400310240] = {
@@ -87,6 +92,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400110040] = {
@@ -102,6 +108,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "每次放技能有25%概率造成下次技能冷却减少*%",
 	},
 	[1400210040] = {
@@ -117,6 +124,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "413",
 		des = "血量低于50%时，提高防御*点",
 	},
 	[1400310040] = {
@@ -132,6 +140,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111800] = {
@@ -147,6 +156,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "穿透后延长眩晕时间*%",
 	},
 	[1400211800] = {
@@ -162,6 +172,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "438",
 		des = "所有火系魔灵技能眩晕效果延长*%",
 	},
 	[1400311800] = {
@@ -177,6 +188,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411800] = {
@@ -192,6 +204,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "血量低于25%时，眩晕时间延长*%",
 	},
 	[1400111690] = {
@@ -207,6 +220,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 10000,
 		levelPercent = 300,
+		iconPath = "443",
 		des = "每次放技能有25%的概率造成眩晕*秒",
 	},
 	[1400211690] = {
@@ -222,6 +236,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "血量低于50%时，技能冷却减少*%",
 	},
 	[1400311690] = {
@@ -237,6 +252,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411690] = {
@@ -252,6 +268,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 10000,
 		levelPercent = 300,
+		iconPath = "442",
 		des = "每次放技能有25%的概率造成*%的持续伤害",
 	},
 	[1400111760] = {
@@ -267,6 +284,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "439",
 		des = "所有火系魔灵技能伤害提高*%",
 	},
 	[1400211760] = {
@@ -282,6 +300,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "437",
 		des = "所有火系魔灵技能冷却减少*%",
 	},
 	[1400311760] = {
@@ -297,6 +316,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411760] = {
@@ -312,6 +332,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "417",
 		des = "每次放技能有25%的概率额外增加*点的暴击。",
 	},
 	[1400511760] = {
@@ -327,6 +348,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "417",
 		des = "全队暴击提高*",
 	},
 	[1400110130] = {
@@ -342,6 +364,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "414",
 		des = "每次放技能有25%的概率额外增加*点的破甲。",
 	},
 	[1400210130] = {
@@ -357,6 +380,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "414",
 		des = "技能被闪避后，提高破甲*点，持续10秒",
 	},
 	[1400310130] = {
@@ -372,6 +396,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111000] = {
@@ -387,6 +412,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "自身技能CD加快*%",
 	},
 	[1400211000] = {
@@ -402,6 +428,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "技能暴穿透后，下一个技能冷却时间减少*%",
 	},
 	[1400311000] = {
@@ -417,6 +444,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111670] = {
@@ -432,6 +460,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "419",
 		des = "每次放技能有25%额外增加*点穿刺",
 	},
 	[1400211670] = {
@@ -447,6 +476,7 @@ local datas = {
 		changeBuff = 2,
 		baseData = -2000,
 		levelPercent = -50,
+		iconPath = "426",
 		des = "缓解毒系伤害*%",
 	},
 	[1400311670] = {
@@ -462,6 +492,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111960] = {
@@ -477,6 +508,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "413",
 		des = "血量低于50%时，提高防御*点",
 	},
 	[1400211960] = {
@@ -492,6 +524,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "437",
 		des = "所有力系魔灵技能冷却减少*%",
 	},
 	[1400311960] = {
@@ -507,6 +540,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411960] = {
@@ -522,6 +556,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "血量低于25%时，眩晕时间延长*%",
 	},
 	[1400111660] = {
@@ -537,6 +572,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "技能穿透后，眩晕时间延长*%",
 	},
 	[1400211660] = {
@@ -552,6 +588,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "438",
 		des = "所有力系魔灵技能眩晕效果延长*%",
 	},
 	[1400311660] = {
@@ -567,6 +604,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411660] = {
@@ -582,6 +620,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "血量低于25%时，眩晕时间延长*%",
 	},
 	[1400110620] = {
@@ -597,6 +636,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "439",
 		des = "所有力系魔灵技能伤害提高*%",
 	},
 	[1400210620] = {
@@ -612,6 +652,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "自身技能CD加快*%",
 	},
 	[1400310620] = {
@@ -627,6 +668,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400410620] = {
@@ -642,6 +684,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "414",
 		des = "每次放技能有25%的概率额外增加*点的破甲。",
 	},
 	[1400510620] = {
@@ -657,6 +700,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "414",
 		des = "全队破甲提高*",
 	},
 	[1400110060] = {
@@ -672,6 +716,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "技能暴击后，下一个技能伤害提高*%",
 	},
 	[1400210060] = {
@@ -687,6 +732,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "414",
 		des = "每次放技能有25%的概率额外增加*点的破甲。",
 	},
 	[1400310060] = {
@@ -702,6 +748,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111540] = {
@@ -717,6 +764,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "414",
 		des = "每次放技能有25%的概率额外增加*点的破甲。",
 	},
 	[1400211540] = {
@@ -732,6 +780,7 @@ local datas = {
 		changeBuff = 2,
 		baseData = -2000,
 		levelPercent = -50,
+		iconPath = "424",
 		des = "缓解金属伤害*%",
 	},
 	[1400311540] = {
@@ -747,6 +796,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111680] = {
@@ -762,6 +812,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "447",
 		des = "每次放技能有25%概率减速*秒",
 	},
 	[1400211680] = {
@@ -777,6 +828,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "血量低于50%时，技能CD加快*%",
 	},
 	[1400311680] = {
@@ -792,6 +844,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400110100] = {
@@ -807,6 +860,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "443",
 		des = "每次放技能有25%概率眩晕*秒",
 	},
 	[1400210100] = {
@@ -822,6 +876,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "438",
 		des = "所有植物魔灵技能眩晕效果延长*%",
 	},
 	[1400310100] = {
@@ -837,6 +892,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400410100] = {
@@ -852,6 +908,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "血量低于50%时，眩晕时间延长*%",
 	},
 	[1400110150] = {
@@ -867,6 +924,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "450",
 		des = "技能暴击后，额外增加*码击退",
 	},
 	[1400210150] = {
@@ -882,6 +940,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "419",
 		des = "每次放技能有25%额外增加*点穿刺",
 	},
 	[1400310150] = {
@@ -897,6 +956,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400410150] = {
@@ -912,6 +972,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "自身技能CD加快*%",
 	},
 	[1400111840] = {
@@ -927,6 +988,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "439",
 		des = "所有植物魔灵技能伤害提高*%",
 	},
 	[1400211840] = {
@@ -942,6 +1004,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "437",
 		des = "所有植物魔灵技能冷却减少*%",
 	},
 	[1400311840] = {
@@ -957,6 +1020,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411840] = {
@@ -972,6 +1036,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "419",
 		des = "每次放技能有25%额外增加*点穿刺",
 	},
 	[1400511840] = {
@@ -987,6 +1052,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "412",
 		des = "全队生命提高*",
 	},
 	[1400111700] = {
@@ -1002,6 +1068,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "暴击后，眩晕时间延长*%",
 	},
 	[1400211700] = {
@@ -1017,6 +1084,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "413",
 		des = "血量低于50%时，提高防御*点",
 	},
 	[1400311700] = {
@@ -1032,6 +1100,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111730] = {
@@ -1047,6 +1116,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "447",
 		des = "每次放技能有25%概率减速*秒",
 	},
 	[1400211730] = {
@@ -1062,6 +1132,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "448",
 		des = "每次放技能有25%概率沉默*秒",
 	},
 	[1400311730] = {
@@ -1077,6 +1148,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400110070] = {
@@ -1092,6 +1164,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "450",
 		des = "每次放技能有50%概率额外增加*码击退",
 	},
 	[1400210070] = {
@@ -1107,6 +1180,7 @@ local datas = {
 		changeBuff = 2,
 		baseData = -2000,
 		levelPercent = -50,
+		iconPath = "429",
 		des = "缓解水系伤害*%",
 	},
 	[1400310070] = {
@@ -1122,6 +1196,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111560] = {
@@ -1137,6 +1212,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "414",
 		des = "每次放技能有25%的概率额外增加*点的破甲。",
 	},
 	[1400211560] = {
@@ -1152,6 +1228,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "451",
 		des = "技能暴击后，额外增加*码弹飞",
 	},
 	[1400311560] = {
@@ -1167,6 +1244,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411560] = {
@@ -1182,6 +1260,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "血量低于50%时，自身技能CD加快*%",
 	},
 	[1400111710] = {
@@ -1197,6 +1276,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "暴击后，眩晕时间延长*%",
 	},
 	[1400211710] = {
@@ -1212,6 +1292,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "438",
 		des = "所有水系魔灵技能眩晕效果延长*%",
 	},
 	[1400311710] = {
@@ -1227,6 +1308,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411710] = {
@@ -1242,6 +1324,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "417",
 		des = "每次放技能有25%额外增加*点暴击",
 	},
 	[1400111880] = {
@@ -1257,6 +1340,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "439",
 		des = "所有水系魔灵技能伤害提高*%",
 	},
 	[1400211880] = {
@@ -1272,6 +1356,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "437",
 		des = "所有水系魔灵技能冷却减少*%",
 	},
 	[1400311880] = {
@@ -1287,6 +1372,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411880] = {
@@ -1302,6 +1388,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "419",
 		des = "每次放技能有25%额外增加*点穿刺",
 	},
 	[1400511880] = {
@@ -1317,6 +1404,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "418",
 		des = "全队韧性提高*",
 	},
 	[1400111020] = {
@@ -1332,6 +1420,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "416",
 		des = "每次放技能有25%额外增加*点命中",
 	},
 	[1400211020] = {
@@ -1347,6 +1436,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "自身技能CD加快*%",
 	},
 	[1400311020] = {
@@ -1362,6 +1452,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400110660] = {
@@ -1377,6 +1468,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "穿刺后，冰冻眩晕时间延长*%",
 	},
 	[1400210660] = {
@@ -1392,6 +1484,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "419",
 		des = "血量低于50%时，提高穿刺*点",
 	},
 	[1400310660] = {
@@ -1407,6 +1500,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400110370] = {
@@ -1422,6 +1516,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "451",
 		des = "每次放技能有50%概率额外增加*码弹飞",
 	},
 	[1400210370] = {
@@ -1437,6 +1532,7 @@ local datas = {
 		changeBuff = 2,
 		baseData = -2000,
 		levelPercent = -50,
+		iconPath = "421",
 		des = "缓解火系伤害*%",
 	},
 	[1400310370] = {
@@ -1452,6 +1548,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111970] = {
@@ -1467,6 +1564,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "443",
 		des = "每次放技能有25%概率造成眩晕*秒",
 	},
 	[1400211970] = {
@@ -1482,6 +1580,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "451",
 		des = "每次放技能额外增加*码击退",
 	},
 	[1400311970] = {
@@ -1497,6 +1596,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411970] = {
@@ -1512,6 +1612,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "435",
 		des = "血量低于50%时，眩晕时间延长*%",
 	},
 	[1400111790] = {
@@ -1527,6 +1628,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "417",
 		des = "每次放技能有25%额外增加*点暴击",
 	},
 	[1400211790] = {
@@ -1542,6 +1644,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "437",
 		des = "所有冰系魔灵技能冷却减少*%",
 	},
 	[1400311790] = {
@@ -1557,6 +1660,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411790] = {
@@ -1572,6 +1676,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "450",
 		des = "技能暴击后增加*码击退",
 	},
 	[1400111860] = {
@@ -1587,6 +1692,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "439",
 		des = "所有冰系魔灵技能伤害提高*%",
 	},
 	[1400211860] = {
@@ -1602,6 +1708,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "438",
 		des = "所有冰系魔灵技能眩晕效果延长*%",
 	},
 	[1400311860] = {
@@ -1617,6 +1724,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411860] = {
@@ -1632,6 +1740,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 10000,
 		levelPercent = 300,
+		iconPath = "441",
 		des = "每次放技能有25%的概率造成*%的持续冻伤伤害",
 	},
 	[1400511860] = {
@@ -1647,6 +1756,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "420",
 		des = "全队格挡提高*",
 	},
 	[1400110800] = {
@@ -1662,6 +1772,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = -50,
 		levelPercent = -5,
+		iconPath = "406",
 		des = "每次放技能有概率降低目标命中*点，持续10秒。",
 	},
 	[1400210800] = {
@@ -1677,6 +1788,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "416",
 		des = "每次放技能有25%额外增加*点命中",
 	},
 	[1400310800] = {
@@ -1692,6 +1804,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111600] = {
@@ -1707,6 +1820,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "413",
 		des = "血量低于50%时，提高防御*点",
 	},
 	[1400211600] = {
@@ -1722,6 +1836,7 @@ local datas = {
 		changeBuff = 2,
 		baseData = -2000,
 		levelPercent = -50,
+		iconPath = "428",
 		des = "缓解力系伤害*%",
 	},
 	[1400311600] = {
@@ -1737,6 +1852,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400110910] = {
@@ -1752,6 +1868,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "451",
 		des = "每次放技能有50%概率额外增加*码弹飞",
 	},
 	[1400210910] = {
@@ -1767,6 +1884,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "自身技能CD加快*%",
 	},
 	[1400310910] = {
@@ -1782,6 +1900,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111740] = {
@@ -1797,6 +1916,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "417",
 		des = "每次放技能有25%额外增加*点暴击",
 	},
 	[1400211740] = {
@@ -1812,6 +1932,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "450",
 		des = "每次放技能额外增加*码击退",
 	},
 	[1400311740] = {
@@ -1827,6 +1948,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411740] = {
@@ -1842,6 +1964,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "自身技能CD加快*%",
 	},
 	[1400111770] = {
@@ -1857,6 +1980,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "443",
 		des = "每次放技能有25%概率造成眩晕*秒",
 	},
 	[1400211770] = {
@@ -1872,6 +1996,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "438",
 		des = "所有冰系魔灵技能眩晕效果延长*%",
 	},
 	[1400311770] = {
@@ -1887,6 +2012,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411770] = {
@@ -1902,6 +2028,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "450",
 		des = "每次放技能额外增加*码击退",
 	},
 	[1400111900] = {
@@ -1917,6 +2044,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "439",
 		des = "所有岩系魔灵技能伤害提高*%",
 	},
 	[1400211900] = {
@@ -1932,6 +2060,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "437",
 		des = "所有岩系魔灵技能冷却减少*%",
 	},
 	[1400311900] = {
@@ -1947,6 +2076,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411900] = {
@@ -1962,6 +2092,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "443",
 		des = "每次放技能有25%概率造成眩晕*秒",
 	},
 	[1400511900] = {
@@ -1977,6 +2108,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "413",
 		des = "全队防御提高*",
 	},
 	[1400110850] = {
@@ -1992,6 +2124,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "419",
 		des = "每次放技能有25%额外增加*点穿刺",
 	},
 	[1400210850] = {
@@ -2007,6 +2140,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "443",
 		des = "每次放技能有25%概率造成眩晕*秒",
 	},
 	[1400310850] = {
@@ -2022,6 +2156,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111820] = {
@@ -2037,6 +2172,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 10000,
 		levelPercent = 300,
+		iconPath = "440",
 		des = "每次放技能有25%的概率造成*%的持续伤害",
 	},
 	[1400211820] = {
@@ -2052,6 +2188,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "446",
 		des = "每次放技能有25%概率造成减攻速*秒",
 	},
 	[1400311820] = {
@@ -2067,6 +2204,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111910] = {
@@ -2082,6 +2220,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "447",
 		des = "每次放技能有25%概率造成减速*秒",
 	},
 	[1400211910] = {
@@ -2097,6 +2236,7 @@ local datas = {
 		changeBuff = 2,
 		baseData = -2000,
 		levelPercent = -50,
+		iconPath = "430",
 		des = "缓解异能伤害*%",
 	},
 	[1400311910] = {
@@ -2112,6 +2252,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400111810] = {
@@ -2127,6 +2268,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "443",
 		des = "每次放技能有25%概率造成眩晕*秒",
 	},
 	[1400211810] = {
@@ -2142,6 +2284,7 @@ local datas = {
 		changeBuff = 4,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "450",
 		des = "每次放技能额外增加*码击退",
 	},
 	[1400311810] = {
@@ -2157,6 +2300,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411810] = {
@@ -2172,6 +2316,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 10000,
 		levelPercent = 300,
+		iconPath = "440",
 		des = "每次放技能有25%的概率造成*%的持续伤害",
 	},
 	[1400111870] = {
@@ -2187,6 +2332,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 10000,
 		levelPercent = 300,
+		iconPath = "440",
 		des = "每次放技能有25%的概率造成*%的持续伤害",
 	},
 	[1400211870] = {
@@ -2202,6 +2348,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "437",
 		des = "所有毒系魔灵技能冷却减少*%",
 	},
 	[1400311870] = {
@@ -2217,6 +2364,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411870] = {
@@ -2232,6 +2380,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "446",
 		des = "每次放技能有25%概率造成减攻速*秒",
 	},
 	[1400111950] = {
@@ -2247,6 +2396,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "439",
 		des = "所有毒系魔灵技能伤害提高*%",
 	},
 	[1400211950] = {
@@ -2262,6 +2412,7 @@ local datas = {
 		changeBuff = 3,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "447",
 		des = "每次放技能有25%概率造成减速*秒",
 	},
 	[1400311950] = {
@@ -2277,6 +2428,7 @@ local datas = {
 		changeBuff = 5,
 		baseData = 1000,
 		levelPercent = 10,
+		iconPath = "436",
 		des = "主动技能伤害提高*%。",
 	},
 	[1400411950] = {
@@ -2292,6 +2444,7 @@ local datas = {
 		changeBuff = 11,
 		baseData = 2000,
 		levelPercent = 50,
+		iconPath = "434",
 		des = "自身技能CD加快*%",
 	},
 	[1400511950] = {
@@ -2307,6 +2460,7 @@ local datas = {
 		changeBuff = 1,
 		baseData = 50,
 		levelPercent = 5,
+		iconPath = "416",
 		des = "全队命中提高*",
 	},
 }

@@ -76,6 +76,7 @@ skynet.start(function()
                     prof = v.EquipJob,
                     quality = equip_quality[k1],
                     rate = v1,
+                    num = 1,
                 }
                 total_rate = total_rate + v1
             end

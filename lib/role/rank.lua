@@ -103,7 +103,7 @@ end
 function proc.begin_challenge(msg)
     local info = skynet.call(role_mgr, "lua", "get_info", msg.id)
     if not info then
-        local info = skynet.call(data.userdb, "lua", "get", msg.id)
+        info = skynet.call(data.userdb, "lua", "get", msg.id)
         if not info then
             error{code = error_code.ROLE_NOT_EXIST}
         end

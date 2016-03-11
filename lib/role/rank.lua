@@ -147,7 +147,7 @@ function proc.begin_challenge(msg)
         fight = true,
     }
     skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
-    return "stage_seed", {id=msg.id, target=puser}
+    return "stage_seed", {id=stage_seed.id, target=puser}
 end
 
 function proc.end_challenge(msg)

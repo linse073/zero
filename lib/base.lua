@@ -140,6 +140,8 @@ local base = {
     -- rank
     RANK_ARENA = 1,
     RANK_FIGHT_POINT = 2,
+
+    RANK_STAGE = 1300004001,
 }
 
 return base

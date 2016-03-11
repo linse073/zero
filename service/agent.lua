@@ -88,6 +88,10 @@ function CMD.notify(source, msg, info)
     notify.add(msg, info)
 end
 
+function CMD.get_info(source)
+    return data.user
+end
+
 skynet.start(function()
     msg = share.msg
     name_msg = share.name_msg

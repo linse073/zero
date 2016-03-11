@@ -247,6 +247,7 @@
 .stage_seed {
     id 0 : integer
     rand_seed 1 : integer
+    target 2 : user_all
 }
 
 .move {
@@ -283,4 +284,12 @@
     rank_type 0 : integer
     rank 1 : integer
     list 2 : *rank_info
+}
+
+.begin_challenge {
+    rank_type 0 : integer
+    id 1 : integer
+}
+
+.end_chanllenge {
 }

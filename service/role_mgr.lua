@@ -110,6 +110,13 @@ function CMD.broadcast_area(msg, info)
     end
 end
 
+function CMD.get_info(roleid)
+    local role = role_list[roleid]
+    if role then
+        return skynet.call(role[1], "lua", "get_info")
+    end
+end
+
 skynet.start(function()
     sproto = sprotoloader.load(1)
     name_msg = sharedata.query("name_msg")

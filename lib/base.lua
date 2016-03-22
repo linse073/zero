@@ -142,6 +142,30 @@ local base = {
     RANK_FIGHT_POINT = 2,
 
     RANK_STAGE = 1300004001,
+
+    PROP_NAME = {
+        "defence",
+        "tenacity",
+        "block",
+        "dodge",
+
+        "sunder",
+        "crit",
+        "impale",
+        "hit",
+
+        "hp",
+        "attack",
+        "moveSpeed",
+    },
+    
+    PROP_FACTOR = {
+        hp = 0.0125,
+        attack = 0.5,
+        moveSpeed = 0,
+    },
+
+    PROF_NPC_BASE = 1200000000,
 }
 
 return base

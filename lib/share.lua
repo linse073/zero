@@ -43,6 +43,8 @@ skynet.init(function()
     share.intensifydata = sharedata.query("intensifydata")
     share.bonusdata = sharedata.query("bonusdata")
     share.passivedata = sharedata.query("passivedata")
+    share.npcdata = sharedata.query("npcdata")
+    share.propertydata = sharedata.query("propertydata")
 
     share.base = sharedata.query("base")
     share.error_code = sharedata.query("error_code")
@@ -50,6 +52,8 @@ skynet.init(function()
     share.day_task = sharedata.query("day_task")
     share.achi_task = sharedata.query("achi_task")
     share.original_card = sharedata.query("original_card")
+
+    share.max_exp = sharedata.query("max_exp")
 
     share.item_category = sharedata.query("item_category")
 

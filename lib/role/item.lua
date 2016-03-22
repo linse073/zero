@@ -116,6 +116,9 @@ function item.add(v, d)
         d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
     end
     local i = {v, d}
+    if v.intensify > 0 then
+        i[5] = assert(intensifydata[v.intensify], string.format("No intensify data %d.", v.intensify))
+    end
     data.item[v.id] = i
     if v.status == base.ITEM_STATUS_NORMAL then
         if v.pos > 0 then
@@ -426,6 +429,46 @@ function item.gen_itemid(prof, level, itemtype, quality)
     return 3000000000 + prof * 1000000 + level * 1000 + itemtype * 10 + quality
 end
 
+function item.equip_prop(e, prop)
+    local inprop = 1
+    local indata = e[5]
+    if indata then
+        inprop = inprop + indata.proportion
+    end
+    local ed = e[2]
+    for k, v in ipairs(base.PROP_NAME) do
+        local ev = ed[v]
+        if ev then
+            prop[v] = prop[v] + ev * inprop
+        end
+    end
+    local iv = e[1]
+    local rand_prop = iv.rand_prop
+    for j = 1, base.MAX_RAND_PROP do
+        local randProp = rand_prop[j]
+        if randProp.type > 0 then
+            local pname = base.PROP_NAME[randProp.type]
+            prop[pname] = prop[pname] + randProp.value / base.FLOAT_FACTOR
+        end
+    end
+    local stone = e[3]
+    if stone and stone.num > 0 then
+        local slot = ed.needLv // 10
+        for j = 1, slot do
+            local s = stone[j]
+            if s then
+                local sd = s[2]
+                for k, v in ipairs(base.PROP_NAME) do
+                    local sv = sd[v]
+                    if sv then
+                        prop[v] = prop[v] + sv
+                    end
+                end
+            end
+        end
+    end
+end
+
 ----------------------------protocol process------------------------
 
 function proc.use_item(msg)
@@ -660,6 +703,7 @@ function proc.intensify_item(msg)
     local r = random(base.RAND_FACTOR)
     if r <= idata.rate then
         iv.intensify = iv.intensify + 1
+        i[5] = idata
         pitem[#pitem+1] = {
             id = iv.id,
             intensify = iv.intensify,
@@ -671,6 +715,11 @@ function proc.intensify_item(msg)
     else
         iv.intensify = iv.intensify - idata.punishIntensify
         assert(iv.intensify>=0, string.format("Punish intensify data %d error.", intensify))
+        if iv.intensify > 0 then
+            i[5] = assert(intensifydata[iv.intensify], string.format("No intensify data %d.", iv.intensify))
+        else
+            i[5] = nil
+        end
         local update= {
             id = iv.id,
             intensify = iv.intensify,

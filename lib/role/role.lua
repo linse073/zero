@@ -26,9 +26,12 @@ local date = os.date
 
 local merge_table = util.merge_table
 local expdata
+local npcdata
+local propertydata
 local error_code
 local base
 local map_pos
+local max_exp
 local data
 local module
 local role = {}
@@ -39,9 +42,12 @@ local gm_level = skynet.getenv("gm_level")
 
 skynet.init(function()
     expdata = share.expdata
+    npcdata = share.npcdata
+    propertydata = share.propertydata
     error_code = share.error_code
     base = share.base
     map_pos = share.map_pos
+    max_exp = share.max_exp
     role_mgr = skynet.queryservice("role_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
 end)
@@ -164,35 +170,36 @@ function role.add_exp(p, exp)
     local user = data.user
     local oldExp = user.exp
     user.exp = user.exp + exp
-    local maxExpLevel = base.MAX_LEVEL - 1
-    local ed = assert(expdata[maxExpLevel], string.format("No max exp data %d.", maxExpLevel))
-    if user.exp > ed.HeroExp then
+    if user.exp > max_exp.HeroExp then
         user.exp = ed.HeroExp
     end
     if oldExp ~= user.exp then
         local oldLevel = user.level
+        local newLevel = oldLevel
         while true do
-            local expd = assert(expdata[user.level], string.format("No exp data %d.", user.level))
-            if user.exp < expd.HeroExp then
+            if user.exp < data.expdata.HeroExp then
                 break
             end
-            user.level = user.level + 1
-            data.expdata = expd
+            newLevel = newLevel + 1
+            data.expdata = assert(expdata[newLevel], string.format("No exp data %d.", newLevel))
         end
         local puser = p.user
         puser.exp = user.exp
-        if oldLevel ~= user.level then
-            puser.level = user.level
-            task.update_level(p, oldLevel, user.level)
-            task.update(p, base.TASK_COMPLETE_LEVEL, 0, 0, user.level)
+        if oldLevel ~= newLevel then
+            user.level = newLevel
+            puser.level = newLevel
+            local pid = data.npc.propertyId + newLevel
+            data.property = assert(propertydata[pid], string.format("No property data %d.", pid))
+            task.update_level(p, oldLevel, newLevel)
+            task.update(p, base.TASK_COMPLETE_LEVEL, 0, 0, newLevel)
             local rank_info = data.rank_info
             if rank_info then
-                rank_info.level = user.level
+                rank_info.level = newLevel
                 skynet.send(rank_mgr, "lua", "update", rank_info)
             end
             local bmsg = {
                 id = user.id,
-                level = user.level,
+                level = newLevel,
             }
             skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
         end
@@ -218,7 +225,45 @@ end
 function role.fight_point(p)
     local user = data.user
     local puser = p.user
+    role.init_prop()
+    puser.fight_point = user.fight_point
     task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
+end
+
+function role.calc_fight(prop)
+    local fight_point = 0
+    for k, v in pairs(prop) do
+        local factor = base.PROP_FACTOR[k] or 1
+        fight_point = fight_point + v * factor
+    end
+    return floor(fight_point)
+end
+
+function role.equip_fight(e)
+    local prop = {}
+    for k, v in ipairs(base.PROP_NAME) do
+        prop[v] = 0
+    end
+    item.equip_prop(e, prop)
+    return role.calc_fight(prop)
+end
+
+function role.init_prop()
+    local user = data.user
+    local propData = data.property
+    local prop = {}
+    for k, v in ipairs(base.PROP_NAME) do
+        prop[v] = propData[v]
+    end
+    local equip = data.equip_item
+    for i = 1, Base.MAX_EQUIP do
+        local e = equip[i]
+        if e then
+            item.equip_prop(e, prop)
+        end
+    end
+    user.fight_point = role.calc_fight(prop)
+    data.prop = prop
 end
 
 -- function role.move(des_pos)
@@ -333,7 +378,12 @@ function proc.enter_game(msg)
     user.login_time = now
     data.suser = suser
     data.user = user
+    local npcID = base.PROF_NPC_BASE + user.prof
+    local npc = assert(npcdata[npcID], string.format("No npc data %d.", npcID))
+    data.npc = npc
     data.expdata = assert(expdata[user.level], string.format("No exp data %d.", user.level))
+    local pid = npc.propertyId + user.level
+    data.property = assert(propertydata[pid], string.format("No property data %d.", pid))
     local ret = {user = user}
     for k, v in ipairs(module) do
         if v.enter then
@@ -341,6 +391,7 @@ function proc.enter_game(msg)
             ret[key] = pack
         end
     end
+    role.init_prop()
     if card.rank_card_full() then
         rank.add()
     end

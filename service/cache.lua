@@ -19,6 +19,8 @@ skynet.start(function()
     local intensifydata = require("data.intensify")
     local bonusdata = require("data.bonus")
     local passivedata = require("data.passive")
+    local npcdata = require("data.npc")
+    local propertydata = require("data.property")
     local base = require("base")
 
     local function is_equip(itemtype)
@@ -196,6 +198,8 @@ skynet.start(function()
     sharedata.new("intensifydata", intensifydata)
     sharedata.new("bonusdata", bonusdata)
     sharedata.new("passivedata", passivedata)
+    sharedata.new("npcdata", npcdata)
+    sharedata.new("propertydata", propertydata)
 
     sharedata.new("base", base)
     sharedata.new("error_code", require("error_code"))
@@ -203,6 +207,10 @@ skynet.start(function()
     sharedata.new("day_task", day_task)
     sharedata.new("achi_task", achi_task)
     sharedata.new("original_card", original_card)
+
+    local level = base.MAX_LEVEL - 1
+    local ed = assert(expdata[level], string.format("No exp data %d.", level))
+    sharedata.new("max_exp", ed)
 
     sharedata.new("item_category", {
         [base.ITEM_TYPE_HEAD] = base.ITEM_DEFENCE,

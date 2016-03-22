@@ -16,7 +16,7 @@ local util = {}
 -- base function
 function util.merge(t1, t2)
     for k, v in ipairs(t2) do
-        t1[#t1+1] = v
+        t1[#t1 + 1] = v
     end
 end
 

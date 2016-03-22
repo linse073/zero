@@ -5,6 +5,7 @@ local util = require "util"
 local item
 local task
 local role
+local rank
 
 local pairs = pairs
 local ipairs = ipairs
@@ -41,6 +42,7 @@ function card.init_module()
     item = require "role.item"
     task = require "role.task"
     role = require "role.role"
+    rank = require "role.rank"
     return proc
 end
 
@@ -65,8 +67,17 @@ function card.enter()
         card.add(v)
         pack[#pack+1] = v
     end
-    card.rank_card()
     return "card", pack
+end
+
+function card.rank_card_full()
+    local ec = data.equip_card[2]
+    for i = 1, base.MAX_EQUIP_CARD do
+        if not ec[i] then
+            return false
+        end
+    end
+    return true
 end
 
 function card.rank_card()
@@ -74,15 +85,13 @@ function card.rank_card()
     local ec = data.equip_card[2]
     for i = 1, base.MAX_EQUIP_CARD do
         local c = ec[i]
-        if c then
-            info[#info+1] = {
-                id = c.id,
-                cardid = c.cardid,
-                level = c.level,
-            }
-        end
+        info[i] = {
+            id = c.id,
+            cardid = c.cardid,
+            level = c.level,
+        }
     end
-    data.rank_info.card = info
+    return info
 end
 
 function card.add_to_type(c)
@@ -280,9 +289,14 @@ function proc.use_card(msg)
     end
     local p = update_user()
     card.use(p, c, msg.pos_type, msg.pos)
-    if msg.pos_type == 2 then
-        card.rank_card()
-        skynet.send(rank_mgr, "lua", "update", data.rank_info)
+    if msg.pos_type == 2 and card.rank_card_full() then
+        local rank_info = data.rank_info
+        if rank_info then
+            rank_info.card = card.rank_card()
+            skynet.send(rank_mgr, "lua", "update", rank_info)
+        else
+            p.arena_rank = rank.add()
+        end
     end
     task.update(p, base.TASK_COMPLETE_USE_CARD, cv.cardid, 1)
     return "update_user", {update=p}

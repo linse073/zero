@@ -1,5 +1,6 @@
 local skynet = require "skynet"
 local share = require "share"
+local util = require "util"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -19,14 +20,17 @@ local is_stone
 local rank_mgr
 local role_mgr
 local query_process
+local merge = util.merge
+
+local card
 
 local rank = {}
 local proc = {}
 
-local function query_arena()
-    local rank, count = skynet.call(rank_mgr, "lua", "get", base.RANK_ARENA, data.user.id)
+local max_arena_rank = 999
+local function query_arena(user_rank, count)
     local r = {}
-    if rank <= 3 then
+    if user_rank <= 3 then
         local c = 4
         if c > count then
             c = count
@@ -34,34 +38,53 @@ local function query_arena()
         for i = 1, c do
             r[i] = i - 1
         end
-        table.remove(r, rank + 1)
+        table.remove(r, user_rank + 1)
     else
-        local nr = rank
+        local nr = user_rank
+        if nr > max_arena_rank then
+            nr = max_arena_rank
+        end
         for i = 1, 3 do
             nr = (nr * (random(199) + 800)) // 1000
             r[i] = nr
         end
         table.sort(r)
     end
-    return {
-        rank_type = base.RANK_ARENA,
-        rank = rank + 1,
-        list = skynet.call(rank_mgr, "lua", "query", base.RANK_ARENA, r),
-    }
+    return r
 end
 
-local function query_fight_point()
-    local rank = skynet.call(rank_mgr, "lua", "get", base.RANK_FIGHT_POINT, data.user.id)
+local function random_rank(user_rank, count, rank_count, dir)
     local r = {}
-    if rank > 0 then
-        r[1] = (rank * (random(49) + 950)) // 1000
+    if count <= rank_count then
+        for i = 1, count do
+            r[i] = user_rank + i * dir
+        end
+    else
+        local mc = user_rank * rank_count // 20
+        if mc < rank_count then
+            mc = rank_count
+        elseif mc > count then
+            mc = count
+        end
+        local dis = mc // rank_count
+        for i = 1, rank_count do
+            r[i] = user_rank + ((i - 1) * dis + random(dis)) * dir
+        end
     end
-    -- TODO: other rank info
-    return {
-        rank_type = base.RANK_ARENA,
-        rank = rank + 1,
-        list = skynet.call(rank_mgr, "lua", "query", base.RANK_FIGHT_POINT, r),
-    }
+    return r
+end
+
+local function query_fight_point(user_rank, count)
+    local r
+    local bc = count - user_rank - 1
+    if user_rank == 0 then
+        r = random_rank(user_rank, bc, 9, 1)
+    else
+        r = random_rank(user_rank, bc, 8, 1)
+        merge(r, random_rank(user_rank, user_rank, 9 - #r, -1))
+        table.sort(r)
+    end
+    return r
 end
 
 skynet.init(function()
@@ -79,6 +102,7 @@ skynet.init(function()
 end)
 
 function rank.init_module()
+    card = require "role.card"
     return proc
 end
 
@@ -90,6 +114,24 @@ function rank.exit()
     data = nil
 end
 
+function rank.add()
+    local user = data.user
+    local rank_info = {
+        name = user.name,
+        id = user.id,
+        prof = user.prof,
+        level = user.level,
+        arena_rank = user.arena_rank,
+        fight_point = user.fight_point,
+        card = card.rank_card(),
+    }
+    data.rank_info = rank_info
+    local arena_rank = skynet.call(rank_mgr, "lua", "add", rank_info)
+    user.arena_rank = arena_rank
+    rank_info.arena_rank = arena_rank
+    return arena_rank
+end
+
 ---------------------------protocol process----------------------
 
 function proc.query_rank(msg)
@@ -97,7 +139,16 @@ function proc.query_rank(msg)
     if not process then
         error{code = error_code.ERROR_QUERY_RANK_TYPE}
     end
-    return "rank_list", process()
+    local user_rank, count = skynet.call(rank_mgr, "lua", "get", msg.rank_type, data.user.id)
+    if not user_rank then
+        error{code = error_code.ERROR_NOT_IN_RANK}
+    end
+    local r = process(user_rank, count)
+    return "rank_list", {
+        rank_type = msg.rank_type,
+        rank = user_rank + 1,
+        list = skynet.call(rank_mgr, "lua", "query", msg.rank_type, r),
+    }
 end
 
 function proc.begin_challenge(msg)

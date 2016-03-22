@@ -186,8 +186,10 @@ function role.add_exp(p, exp)
             task.update_level(p, oldLevel, user.level)
             task.update(p, base.TASK_COMPLETE_LEVEL, 0, 0, user.level)
             local rank_info = data.rank_info
-            rank_info.level = user.level
-            skynet.send(rank_mgr, "lua", "update", rank_info)
+            if rank_info then
+                rank_info.level = user.level
+                skynet.send(rank_mgr, "lua", "update", rank_info)
+            end
             local bmsg = {
                 id = user.id,
                 level = user.level,
@@ -332,15 +334,6 @@ function proc.enter_game(msg)
     data.suser = suser
     data.user = user
     data.expdata = assert(expdata[user.level], string.format("No exp data %d.", user.level))
-    local rank_info = {
-        name = user.name,
-        id = user.id,
-        prof = user.prof,
-        level = user.level,
-        arena_rank = user.arena_rank,
-        fight_point = user.fight_point,
-    }
-    data.rank_info = rank_info
     local ret = {user = user}
     for k, v in ipairs(module) do
         if v.enter then
@@ -348,9 +341,9 @@ function proc.enter_game(msg)
             ret[key] = pack
         end
     end
-    local arena_rank = skynet.call(rank_mgr, "lua", "add", rank_info)
-    user.arena_rank = arena_rank
-    rank_info.arena_rank = arena_rank
+    if card.rank_card_full() then
+        rank.add()
+    end
     if user.logout_time > 0 then
         local od = date("%j", user.logout_time)
         local nd = date("%j", now)

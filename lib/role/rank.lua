@@ -66,9 +66,9 @@ local function random_rank(user_rank, count, rank_count, dir)
         elseif mc > count then
             mc = count
         end
-        local dis = mc // rank_count
+        local dis = mc * 1000 // rank_count
         for i = 1, rank_count do
-            r[i] = user_rank + ((i - 1) * dis + random(dis)) * dir
+            r[i] = user_rank + ((i - 1) * dis + random(dis)) * dir // 1000
         end
     end
     return r

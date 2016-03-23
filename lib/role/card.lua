@@ -84,7 +84,7 @@ function card.rank_card()
     local info = {}
     local ec = data.equip_card[2]
     for i = 1, base.MAX_EQUIP_CARD do
-        local c = ec[i]
+        local c = ec[i][1]
         info[i] = {
             id = c.id,
             cardid = c.cardid,

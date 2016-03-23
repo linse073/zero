@@ -256,7 +256,7 @@ function role.init_prop()
         prop[v] = propData[v]
     end
     local equip = data.equip_item
-    for i = 1, Base.MAX_EQUIP do
+    for i = 1, base.MAX_EQUIP do
         local e = equip[i]
         if e then
             item.equip_prop(e, prop)

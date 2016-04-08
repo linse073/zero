@@ -252,6 +252,8 @@ function proc.end_stage(msg)
     local pstage = p.stage
     pstage[#pstage+1] = sv
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
+    task.update(p, base.TASK_COMPLETE_ELITE_STAGE, msg.id, 1)
+    task.update(p, base.TASK_COMPLETE_STAGE_GUIDE, msg.id, 1)
     stage_seed.id = 0
     stage_seed.seed = 0
     local user = data.user

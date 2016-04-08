@@ -4,7 +4,6 @@ local util = require "util"
 
 local role
 local item
-local card
 
 local pairs = pairs
 local ipairs = ipairs
@@ -33,7 +32,6 @@ end)
 function task.init_module()
     role = require "role.role"
     item = require "role.item"
-    card = require "role.card"
     return proc
 end
 
@@ -236,10 +234,6 @@ function task.award(p, t)
     end
     for k, v in ipairs(d.awardItem) do
         item.add_by_itemid(p, v.num, v.data)
-    end
-    local cdata = d.CardId[user.prof]
-    if cdata then
-        card.add_by_cardid(p, cdata)
     end
 end
 

@@ -159,6 +159,13 @@ skynet.start(function()
             }
         end
         v.awardItem = awardItem
+        local card = {}
+        for k1, v1 in ipairs(v.CardId) do
+            if v1 > 0 then
+                card[k1] = assert(carddata[v1], string.format("No card data %d.", v1))
+            end
+        end
+        v.card = card
     end
 
     local original_card = {}
@@ -214,6 +221,14 @@ skynet.start(function()
         [base.ITEM_TYPE_HAND] = base.ITEM_DEFENCE,
         [base.ITEM_TYPE_RING] = base.ITEM_ATTACK,
         [base.ITEM_TYPE_NECKLACE] = base.ITEM_ATTACK,
+    })
+
+    sharedata.new("complete_task", {
+        [base.TASK_COMPLETE_TALK] = true,
+        [base.TASK_COMPLETE_SIGN_IN] = true,
+        [base.TASK_COMPLETE_ROUTINE] = true,
+        [base.TASK_COMPLETE_AUTO_PLAY] = true,
+        [base.TASK_COMPLETE_NEW_FUNCTION] = true,
     })
 
     sharedata.new("msg", proto.msg)

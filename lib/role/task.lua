@@ -16,6 +16,7 @@ local update_user = util.update_user
 local taskdata
 local achi_task
 local day_task
+local complete_task
 local base
 local data
 
@@ -26,6 +27,7 @@ skynet.init(function()
     taskdata = share.taskdata
     achi_task = share.achi_task
     day_task = share.day_task
+    complete_task = share.complete_task
     base = share.base
 end)
 
@@ -252,8 +254,8 @@ function proc.submit_task(msg)
     local p = update_user()
     local vt = t[1]
     if vt.status == base.TASK_STATUS_ACCEPT then
-        if d.CompleteType == base.TASK_COMPLETE_TYPE_TALK then
-            task.update(p, base.TASK_COMPLETE_TALK, msg.condition, 1)
+        if complete_task[d.CompleteType] then
+            task.update(p, d.CompleteType, msg.condition, 1)
         end
     elseif vt.status == base.TASK_STATUS_DONE then
         task.finish(p, t)

@@ -197,7 +197,7 @@ function task.update(p, completeType, condition, count, setCount)
             }
             if vt.count >= d.count then
                 vt.status = base.TASK_STATUS_DONE
-                if d.TaskType == base.TASK_TYPE_MASTER and d.SubNpc == 0 then
+                if d.TaskType == base.TASK_TYPE_MASTER and d.TaskTalk == "" then
                     task.finish(p, v)
                 end
                 update.status = vt.status

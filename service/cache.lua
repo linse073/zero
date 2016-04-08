@@ -159,13 +159,6 @@ skynet.start(function()
             }
         end
         v.awardItem = awardItem
-        local card = {}
-        for k1, v1 in ipairs(v.CardId) do
-            if v1 > 0 then
-                card[k1] = assert(carddata[v1], string.format("No card data %d.", v1))
-            end
-        end
-        v.card = card
     end
 
     local original_card = {}

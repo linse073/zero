@@ -11,7 +11,7 @@ local base = {
     PROF_WIZARD = 4,
 
     -- task
-    BEGIN_TASK_ID = 900000011,
+    BEGIN_TASK_ID = 900000001,
 
     TASK_TYPE_MASTER = 1,
     TASK_TYPE_DAY = 2,

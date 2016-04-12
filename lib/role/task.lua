@@ -197,12 +197,14 @@ function task.update(p, completeType, condition, count, setCount)
             }
             if vt.count >= d.count then
                 vt.status = base.TASK_STATUS_DONE
+                update.status = vt.status
+                ptask[#ptask+1] = update
                 if d.TaskType == base.TASK_TYPE_MASTER and d.TaskTalk == "" then
                     task.finish(p, v)
                 end
-                update.status = vt.status
+            else
+                ptask[#ptask+1] = update
             end
-            ptask[#ptask+1] = update
         end
     end
 end
@@ -210,6 +212,11 @@ end
 function task.finish(p, t)
     local vt = t[1]
     vt.status = base.TASK_STATUS_FINISH
+    local ptask = p.task
+    ptask[#ptask+1] = {
+        id = vt.id,
+        status = vt.status,
+    }
     task.award(p, t)
     local d = t[2]
     if d.TaskType == base.TASK_TYPE_MASTER and d.nextID > 0 then

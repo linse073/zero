@@ -100,8 +100,8 @@ function task.add(v, d)
     if d.TaskType == base.TASK_TYPE_MASTER then
         if v.status ~= base.TASK_STATUS_FINISH then
             local master_task = data.master_task
-            if master_task and master_task.status ~= base.TASK_STATUS_FINISH then
-                skynet.error(string.format("Already has master task %d.", master_task.id))
+            if master_task and master_task[1].status ~= base.TASK_STATUS_FINISH then
+                skynet.error(string.format("Already has master task %d.", master_task[1].id))
             else
                 data.master_task = t
             end

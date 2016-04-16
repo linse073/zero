@@ -67,7 +67,36 @@ function card.enter()
         card.add(v)
         pack[#pack+1] = v
     end
+    card.add_newbie_card(pack, base.NEWBIE_CARD)
     return "card", pack
+end
+
+function card.add_newbie_card(p, cardid)
+    if not data.type_card[cardid] then
+        local d = assert(data.card[cardid], string.format("No card data %d.", cardid))
+        local pos = {}
+        for i = 1, base.MAX_CARD_POSITION_TYPE do
+            pos[i] = 0
+        end
+        pos[1] = 1
+        local passive_skill = {}
+        for k, v in ipairs(d.passive) do
+            passive_skill[k] = {
+                id = v.id,
+                level = 1,
+            }
+        end
+        local v = {
+            id = cs(card.gen_id),
+            cardid = cardid,
+            level = d.starLv,
+            pos = pos,
+            passive_skill = passive_skill,
+        }
+        card.add(v, d)
+        data.user.card[v.id] = v
+        p[#p+1] = v
+    end
 end
 
 function card.rank_card_full()

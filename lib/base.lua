@@ -172,6 +172,7 @@ local base = {
     },
 
     PROF_NPC_BASE = 1200000000,
+    NEWBIE_CARD = 1600310061,
 }
 
 return base

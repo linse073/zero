@@ -190,15 +190,21 @@ function proc.end_stage(msg)
     if s then
         d = s[2]
         money, exp = d.getMoney, d.getExp
-        bonus[#bonus+1] = {id=d.bonusID, rand_num=1, num={1}, data=d.bonus}
+        if d.bonus then
+            bonus[#bonus+1] = {id=d.bonusID, rand_num=1, num={1}, data=d.bonus}
+        end
     else
         d = assert(stagedata[msg.id], string.format("No stage data %d.", msg.id))
         s = stage.add_by_data(d)
         money, exp = d.firstMoney, d.firstExp
-        bonus[#bonus+1] = {id=d.firstBonusID, rand_num=1, num={1}, data=d.firstBonus}
+        if d.firstBonus then
+            bonus[#bonus+1] = {id=d.firstBonusID, rand_num=1, num={1}, data=d.firstBonus}
+        end
     end
     if msg.total_box then
-        bonus[#bonus+1] = {id=d.dropBonusID, rand_num=msg.total_box, num=msg.pick_box or {}, data=d.dropBonus}
+        if d.dropBonus then
+            bonus[#bonus+1] = {id=d.dropBonusID, rand_num=msg.total_box, num=msg.pick_box or {}, data=d.dropBonus}
+        end
     end
     randomseed(msg.rand_seed)
     for k, v in ipairs(bonus) do

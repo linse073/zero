@@ -53,9 +53,15 @@ skynet.start(function()
     end
 
     for k, v in pairs(stagedata) do
-        v.bonus = assert(bonusdata[v.bonusID], string.format("No bonus data %d.", v.bonusID))
-        v.firstBonus = assert(bonusdata[v.firstBonusID], string.format("No bonus data %d.", v.firstBonusID))
-        v.dropBonus = assert(bonusdata[v.dropBonusID], string.format("No bonus data %d.", v.dropBonusID))
+        if v.bonusID > 0 then
+            v.bonus = assert(bonusdata[v.bonusID], string.format("No bonus data %d.", v.bonusID))
+        end
+        if v.firstBonusID > 0 then
+            v.firstBonus = assert(bonusdata[v.firstBonusID], string.format("No bonus data %d.", v.firstBonusID))
+        end
+        if v.dropBonusID > 0 then
+            v.dv.dropBonusID > 0= assert(bonusdata[v.dropBonusID], string.format("No bonus data %d.", v.dropBonusID))
+        end
     end
 
     for k, v in pairs(bonusdata) do

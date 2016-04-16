@@ -73,7 +73,7 @@ end
 
 function card.add_newbie_card(p, cardid)
     if not data.type_card[cardid] then
-        local d = assert(data.card[cardid], string.format("No card data %d.", cardid))
+        local d = assert(carddata[cardid], string.format("No card data %d.", cardid))
         local pos = {}
         for i = 1, base.MAX_CARD_POSITION_TYPE do
             pos[i] = 0

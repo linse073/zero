@@ -60,7 +60,7 @@ skynet.start(function()
             v.firstBonus = assert(bonusdata[v.firstBonusID], string.format("No bonus data %d.", v.firstBonusID))
         end
         if v.dropBonusID > 0 then
-            v.dv.dropBonusID > 0= assert(bonusdata[v.dropBonusID], string.format("No bonus data %d.", v.dropBonusID))
+            v.dropBonus = assert(bonusdata[v.dropBonusID], string.format("No bonus data %d.", v.dropBonusID))
         end
     end
 

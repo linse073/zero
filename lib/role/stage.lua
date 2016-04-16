@@ -109,13 +109,15 @@ function stage.rand_bonus(d, sd)
                 else
                     prof = random(base.PROF_WARRIOR, base.PROF_WIZARD)
                 end
-                local level
-                if v.level == 1 then
-                    level = user.level // 5 * 5
-                else
+                local level = v.level
+                if level == 0 then
                     level = sd.limitLevel // 5 * 5
                 end
-                local itemtype = random(base.ITEM_TYPE_HEAD, base.ITEM_TYPE_NECKLACE)
+                local itemtype = v.equipType
+                if itemtype == 0 then
+                    itemtype = random(base.ITEM_TYPE_HEAD, base.ITEM_TYPE_NECKLACE)
+                else
+                end
                 bonus.item = item.gen_itemid(prof, level, itemtype, v.quality)
             elseif v.type == base.BONUS_TYPE_MATERIAL then
                 local itemtype = v.item_type

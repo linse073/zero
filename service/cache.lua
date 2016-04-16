@@ -76,6 +76,7 @@ skynet.start(function()
                     type = base.BONUS_TYPE_EQUIP,
                     level = v.EquipLv,
                     prof = v.EquipJob,
+                    equipType = v.EquipType,
                     quality = equip_quality[k1],
                     rate = v1,
                     num = 1,

@@ -190,6 +190,7 @@ function role.add_exp(p, exp)
             puser.level = newLevel
             local pid = data.npc.propertyId + newLevel
             data.property = assert(propertydata[pid], string.format("No property data %d.", pid))
+            role.fight_point(p)
             task.update_level(p, oldLevel, newLevel)
             task.update(p, base.TASK_COMPLETE_LEVEL, 0, 0, newLevel)
             local rank_info = data.rank_info

@@ -571,6 +571,17 @@ local datas = {
 		isPenetrate = false,
 		skillId = 530119700,
 	},
+	[430120100] = {
+		id = 430120100,
+		effectPath = "monster_bullet4",
+		animationTime = 1,
+		beginX = 60,
+		beginY = -10,
+		endX = 380,
+		endY = 0,
+		isPenetrate = false,
+		skillId = 530120100,
+	},
 	[431104100] = {
 		id = 431104100,
 		effectPath = "monster_bullet1",
@@ -801,6 +812,17 @@ local datas = {
 		endY = 0,
 		isPenetrate = false,
 		skillId = 531118300,
+	},
+	[431120100] = {
+		id = 431120100,
+		effectPath = "monster_bullet4",
+		animationTime = 1,
+		beginX = 60,
+		beginY = -10,
+		endX = 380,
+		endY = 0,
+		isPenetrate = false,
+		skillId = 531120100,
 	},
 }
 

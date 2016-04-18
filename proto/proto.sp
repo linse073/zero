@@ -135,8 +135,8 @@
 
 .info_all {
     user 0 : user_all
-    stage_id 0 : integer
-    rand_seed 1 : integer
+    stage_id 1 : integer
+    rand_seed 2 : integer
 }
 
 .update_user {

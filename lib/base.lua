@@ -148,6 +148,7 @@ local base = {
     RANK_FIGHT_POINT = 2,
 
     RANK_STAGE = 1300004001,
+    NEWBIE_STAGE = 1300001000,
 
     PROP_NAME = {
         "defence",

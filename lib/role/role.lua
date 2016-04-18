@@ -415,6 +415,7 @@ function proc.enter_game(msg)
     -- timer.add_routine("routine", role.routine, 1)
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
+    local stageid, seed = stage.newbie_stage()
     local bmsg = {
         name = user.name,
         id = user.id,
@@ -422,11 +423,11 @@ function proc.enter_game(msg)
         level = user.level,
         cur_pos = cur_pos,
         des_pos = des_pos,
-        fight = data.stage_seed.id ~= 0,
+        fight = stageid ~= nil,
     }
     skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
     data.enter = nil
-    return "info_all", {user = ret}
+    return "info_all", {user=ret, stage_id=stageid, rand_seed=seed}
 end
 
 function proc.move(msg)

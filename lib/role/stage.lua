@@ -139,6 +139,18 @@ function stage.rand_bonus(d, sd)
     end
 end
 
+function stage.newbie_stage()
+    local stageid = base.NEWBIE_STAGE
+    local s = data.stage[stageid]
+    if not s then
+        local stage_seed = data.stage_seed
+        stage_seed.id = stageid
+        local seed = random(floor(skynet.time())+stageid)
+        stage_seed.seed = seed
+        return stageid, seed
+    end
+end
+
 -----------------------------protocol process--------------------------
 
 function proc.begin_stage(msg)

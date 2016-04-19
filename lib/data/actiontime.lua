@@ -1,40 +1,48 @@
 local datas = {
-	[1200000002] = {
+	[800000001] = {
+		id = 800000001,
 		npcID = 1200000002,
 		timelineName = "attack1",
 		duration = 0.8,
 	},
-	[1200000002] = {
+	[800000002] = {
+		id = 800000002,
 		npcID = 1200000002,
 		timelineName = "attack2",
 		duration = 0.8,
 	},
-	[1200000002] = {
+	[800000003] = {
+		id = 800000003,
 		npcID = 1200000002,
 		timelineName = "attack3",
 		duration = 0.8,
 	},
-	[1200000002] = {
+	[800000004] = {
+		id = 800000004,
 		npcID = 1200000002,
 		timelineName = "attack4",
 		duration = 0.8,
 	},
-	[1200000003] = {
+	[800000005] = {
+		id = 800000005,
 		npcID = 1200000003,
 		timelineName = "attack1",
 		duration = 0.85,
 	},
-	[1200000003] = {
+	[800000006] = {
+		id = 800000006,
 		npcID = 1200000003,
 		timelineName = "attack2",
 		duration = 0.85,
 	},
-	[1200000003] = {
+	[800000007] = {
+		id = 800000007,
 		npcID = 1200000003,
 		timelineName = "attack3",
 		duration = 0.85,
 	},
-	[1200000003] = {
+	[800000008] = {
+		id = 800000008,
 		npcID = 1200000003,
 		timelineName = "attack4",
 		duration = 0.85,

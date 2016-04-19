@@ -573,10 +573,10 @@ local datas = {
 	},
 	[900000027] = {
 		TaskId = 900000027,
-		TaskName = "装备升级引导",
+		TaskName = "装备进阶引导",
 		levelLimit = 0,
 		TaskType = 1,
-		CompleteType = 302,
+		CompleteType = 303,
 		nextID = 900000028,
 		condition = 0,
 		count = 1,
@@ -705,7 +705,7 @@ local datas = {
 	},
 	[900000033] = {
 		TaskId = 900000033,
-		TaskName = "装备进阶引导",
+		TaskName = "装备进阶提示",
 		levelLimit = 0,
 		TaskType = 1,
 		CompleteType = 303,

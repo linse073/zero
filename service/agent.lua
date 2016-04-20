@@ -99,6 +99,12 @@ skynet.start(function()
     sproto = share.sproto
     error_code = share.error_code
 
+    local rand = require "rand"
+    local r = rand.new(9999)
+    for i = 1, 100 do
+        print("rand num", rand.rand(r, 10000))
+    end
+
 	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

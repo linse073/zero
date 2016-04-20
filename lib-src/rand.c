@@ -253,8 +253,9 @@ linit(lua_State *L) {
 static int
 lrand(lua_State *L) {
     struct box_rand *box = lua_touserdata(L, 1);
-    int max = luaL_checkinteger(L, 2);
-    int r = rand_x(box->obj, 1, max);
+    int min = luaL_checkinteger(L, 2);
+    int max = luaL_checkinteger(L, 3);
+    int r = rand_x(box->obj, min, max);
     lua_pushinteger(L, r);
     return 1;
 }

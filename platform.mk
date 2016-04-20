@@ -28,4 +28,4 @@ macosx : SHARED := -fPIC -dynamiclib -Wl,-undefined,dynamic_lookup
 
 linux macosx freebsd :
 	cd 3rd/skynet && $(MAKE) $@
-	$(MAKE) all
+	$(MAKE) all PLAT=$@ SHARED="$(SHARED)"

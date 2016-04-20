@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
+local new_rand = require "random"
 
 local role
 local task
@@ -13,11 +14,11 @@ local error = error
 local string = string
 local math = math
 local random = math.random
-local randomseed = math.randomseed
 local floor = math.floor
 
 local check_sign = util.check_sign
 local update_user = util.update_user
+local rand_num = new_rand.rand
 local error_code
 local base
 local stagedata
@@ -96,7 +97,7 @@ end
 
 function stage.rand_bonus(d, sd)
     local user = data.user
-    local rand = random(d.total_rate)
+    local rand = rand_num(d.total_rate)
     local t = 0
     for k, v in ipairs(d.all_rate) do
         t = t + v.rate
@@ -107,7 +108,7 @@ function stage.rand_bonus(d, sd)
                 if v.prof == 1 then
                     prof = user.prof
                 else
-                    prof = random(base.PROF_WARRIOR, base.PROF_WIZARD)
+                    prof = rand_num(base.PROF_WARRIOR, base.PROF_WIZARD)
                 end
                 local level = v.level
                 if level == 0 then
@@ -115,20 +116,20 @@ function stage.rand_bonus(d, sd)
                 end
                 local itemtype = v.equipType
                 if itemtype == 0 then
-                    itemtype = random(base.ITEM_TYPE_HEAD, base.ITEM_TYPE_NECKLACE)
+                    itemtype = rand_num(base.ITEM_TYPE_HEAD, base.ITEM_TYPE_NECKLACE)
                 else
                 end
                 bonus.item = item.gen_itemid(prof, level, itemtype, v.quality)
             elseif v.type == base.BONUS_TYPE_MATERIAL then
                 local itemtype = v.item_type
                 if itemtype == 0 then
-                    itemtype = random(base.ITEM_TYPE_IRON, base.ITEM_TYPE_SPAR)
+                    itemtype = rand_num(base.ITEM_TYPE_IRON, base.ITEM_TYPE_SPAR)
                 end
                 bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
             elseif v.type == base.BONUS_TYPE_STONE then
                 local itemtype = v.item_type
                 if itemtype == 0 then
-                    itemtype = random(base.ITEM_TYPE_BLUE_STONE, base.ITEM_TYPE_GREEN_CRYSTAL)
+                    itemtype = rand_num(base.ITEM_TYPE_BLUE_STONE, base.ITEM_TYPE_GREEN_CRYSTAL)
                 end
                 bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
             else
@@ -218,7 +219,7 @@ function proc.end_stage(msg)
             bonus[#bonus+1] = {id=d.dropBonusID, rand_num=msg.total_box, num=msg.pick_box or {}, data=d.dropBonus}
         end
     end
-    randomseed(msg.rand_seed)
+    new_rand.init(msg.rand_seed)
     for k, v in ipairs(bonus) do
         local rand_item = {}
         for i = 1, v.rand_num do
@@ -226,7 +227,6 @@ function proc.end_stage(msg)
         end
         v.rand_item = rand_item
     end
-    randomseed(floor(skynet.time()))
     local p = update_user()
     if money > 0 then
         role.add_money(p, money)

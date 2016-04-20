@@ -229,6 +229,7 @@ skynet.start(function()
         [base.TASK_COMPLETE_ROUTINE] = true,
         [base.TASK_COMPLETE_AUTO_PLAY] = true,
         [base.TASK_COMPLETE_NEW_FUNCTION] = true,
+        [base.TASK_COMPLETE_UPGRADE_PASSIVE] = true,
     })
 
     sharedata.new("msg", proto.msg)

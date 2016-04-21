@@ -95,36 +95,8 @@ rand_init(struct rand_object *obj, int seed) {
     for (i = 0; i < 37; i++) rand_b(obj);
 }
 
-static void 
-rand_init_by_array(struct rand_object *obj, int const seeds[], int NumSeeds) {
-    // Seed by more than 32 bits
-    int i, j, k;
-
-    // Initialize
-    rand_init0(obj, 19650218);
-
-    if (NumSeeds <= 0) return;
-
-    // Randomize mt[] using whole seeds[] array
-    i = 1;  j = 0;
-    k = (MERS_N > NumSeeds ? MERS_N : NumSeeds);
-    for (; k; k--) {
-        obj->mt[i] = (obj->mt[i] ^ ((obj->mt[i-1] ^ (obj->mt[i-1] >> 30)) * 1664525UL)) + (uint32_t)seeds[j] + j;
-        i++; j++;
-        if (i >= MERS_N) {obj->mt[0] = obj->mt[MERS_N-1]; i=1;}
-        if (j >= NumSeeds) j=0;}
-    for (k = MERS_N-1; k; k--) {
-        obj->mt[i] = (obj->mt[i] ^ ((obj->mt[i-1] ^ (obj->mt[i-1] >> 30)) * 1566083941UL)) - i;
-        if (++i >= MERS_N) {obj->mt[0] = obj->mt[MERS_N-1]; i=1;}}
-    obj->mt[0] = 0x80000000UL;  // MSB is 1; assuring non-zero initial array
-
-    // Randomize some more
-    obj->mti = 0;
-    for (i = 0; i <= MERS_N; i++) rand_b(obj);
-}
-
 static double 
-rand_d(struct rand_object *obj) {
+rand_f(struct rand_object *obj) {
     // Output random float number in the interval 0 <= x < 1
     // Multiply by 2^(-32)
     return (double)rand_b(obj) * (1./(65536.*65536.));
@@ -139,7 +111,7 @@ rand_i(struct rand_object *obj, int min, int max) {
         if (max == min) return min; else return 0x80000000;
     }
     // Multiply interval with random and truncate
-    r = (int)((double)(uint32_t)(max - min + 1) * rand_d(obj) + min); 
+    r = (int)((double)(uint32_t)(max - min + 1) * rand_f(obj) + min); 
     if (r > max) r = max;
     return r;
 }
@@ -251,13 +223,31 @@ linit(lua_State *L) {
 }
 
 static int
-lrand(lua_State *L) {
+lrandi(lua_State *L) {
     struct box_rand *box = lua_touserdata(L, 1);
-    int min = luaL_checkinteger(L, 2);
+	int min = luaL_checkinteger(L, 2);
     int max = luaL_checkinteger(L, 3);
-    int r = rand_x(box->obj, min, max);
+    int r = rand_i(box->obj, min, max);
     lua_pushinteger(L, r);
     return 1;
+}
+
+static int 
+lrandf(lua_State *L) {
+	struct box_rand *box = lua_touserdata(L, 1);
+	double r = rand_f(box->obj);
+	lua_pushnumber(L, r);
+	return 1;
+}
+
+static int
+lrandx(lua_State *L) {
+	struct box_rand *box = lua_touserdata(L, 1);
+	int min = luaL_checkinteger(L, 2);
+	int max = luaL_checkinteger(L, 3);
+	int r = rand_x(box->obj, min, max);
+	lua_pushinteger(L, r);
+	return 1;
 }
 
 int
@@ -265,16 +255,18 @@ luaopen_rand(lua_State *L) {
     luaL_Reg l[] = {
         { "new", lnew },
         { "init", linit },
-        { "rand", lrand },
+        { "randi", lrandi },
+		{ "randf", lrandf },
+		{ "randx", lrandx },
         { NULL, NULL },
     };
 #ifdef luaL_checkversion
     luaL_checkversion(L);
 #endif
-    lua_createtable(L, 0, 3);
+    lua_createtable(L, 0, 5);
     lua_createtable(L, 0, 1);
     lua_pushcfunction(L, ldelete),
-        lua_setfield(L, -2, "__gc");
+	lua_setfield(L, -2, "__gc");
     luaL_setfuncs(L, l, 1);
     return 1;
 }

@@ -8,11 +8,22 @@ function random.init(seed)
     rand.init(r, seed)
 end
 
-function random.rand(min, max)
+local function rand_num(fn, min, max)
+    if not min and not max then
+        return rand.randf(r)
+    end
     if not max then
         min, max = 1, min
     end
-    return rand.rand(r, min, max)
+    return fn(r, min, max)
+end
+
+function random.randi(min, max)
+    return rand_num(rand.randi, min, max)
+end
+
+function random.randx(min, max)
+    return rand_num(rand.randx, min, max)
 end
 
 return random

@@ -18,7 +18,7 @@ local floor = math.floor
 
 local check_sign = util.check_sign
 local update_user = util.update_user
-local rand_num = new_rand.rand
+local randi = new_rand.randi
 local error_code
 local base
 local stagedata
@@ -97,7 +97,7 @@ end
 
 function stage.rand_bonus(d, sd)
     local user = data.user
-    local rand = rand_num(d.total_rate)
+    local rand = randi(d.total_rate)
     local t = 0
     for k, v in ipairs(d.all_rate) do
         t = t + v.rate
@@ -108,7 +108,7 @@ function stage.rand_bonus(d, sd)
                 if v.prof == 1 then
                     prof = user.prof
                 else
-                    prof = rand_num(base.PROF_WARRIOR, base.PROF_WIZARD)
+                    prof = randi(base.PROF_WARRIOR, base.PROF_WIZARD)
                 end
                 local level = v.level
                 if level == 0 then
@@ -116,20 +116,20 @@ function stage.rand_bonus(d, sd)
                 end
                 local itemtype = v.equipType
                 if itemtype == 0 then
-                    itemtype = rand_num(base.ITEM_TYPE_HEAD, base.ITEM_TYPE_NECKLACE)
+                    itemtype = randi(base.ITEM_TYPE_HEAD, base.ITEM_TYPE_NECKLACE)
                 else
                 end
                 bonus.item = item.gen_itemid(prof, level, itemtype, v.quality)
             elseif v.type == base.BONUS_TYPE_MATERIAL then
                 local itemtype = v.item_type
                 if itemtype == 0 then
-                    itemtype = rand_num(base.ITEM_TYPE_IRON, base.ITEM_TYPE_SPAR)
+                    itemtype = randi(base.ITEM_TYPE_IRON, base.ITEM_TYPE_SPAR)
                 end
                 bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
             elseif v.type == base.BONUS_TYPE_STONE then
                 local itemtype = v.item_type
                 if itemtype == 0 then
-                    itemtype = rand_num(base.ITEM_TYPE_BLUE_STONE, base.ITEM_TYPE_GREEN_CRYSTAL)
+                    itemtype = randi(base.ITEM_TYPE_BLUE_STONE, base.ITEM_TYPE_GREEN_CRYSTAL)
                 end
                 bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
             else

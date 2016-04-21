@@ -4,6 +4,7 @@ local util = require "util"
 
 local task
 local role
+local stage
 
 local pairs = pairs
 local ipairs = ipairs
@@ -21,6 +22,7 @@ local error_code
 local cs
 local is_equip
 local is_material
+local is_chest
 local item_category
 local data
 
@@ -35,12 +37,14 @@ skynet.init(function()
     cs = share.cs
     is_equip = share.is_equip
     is_material = share.is_material
+    is_chest = share.is_chest
     item_category = share.item_category
 end)
 
 function item.init_module()
     task = require "role.task"
     role = require "role.role"
+    stage = require "role.stage"
     return proc
 end
 
@@ -153,61 +157,69 @@ function item.add(v, d)
 end
 
 function item.add_by_itemid(p, num, d)
-    local itemid = d.id
-    assert(num>0, string.format("Add item %d num error.", itemid))
-    local pack = p.item
-    local overlay = d.overlay
-    if overlay > 1 then
-        local t = data.type_item[itemid]
-        if t then
-            for k, v in pairs(t) do
-                local vi = v[1]
-                local diff = overlay - vi.num
-                if diff > num then
-                    diff = num
-                end
-                vi.num = vi.num + diff
-                num = num - diff
-                pack[#pack+1] = {
-                    id = vi.id,
-                    num = vi.num,
-                }
-                if num == 0 then
-                    break
+    if d.itemType == base.ITEM_TYPE_AUTO_CHEST then
+        local bonus = {}
+        for k, v in ipairs(d.chest) do
+            bonus[k] = {rand_num=num, data=v}
+        end
+        stage.get_bonus(floor(skynet.time()), bonus, p)
+    else
+        local itemid = d.id
+        assert(num>0, string.format("Add item %d num error.", itemid))
+        local pack = p.item
+        local overlay = d.overlay
+        if overlay > 1 then
+            local t = data.type_item[itemid]
+            if t then
+                for k, v in pairs(t) do
+                    local vi = v[1]
+                    local diff = overlay - vi.num
+                    if diff > num then
+                        diff = num
+                    end
+                    vi.num = vi.num + diff
+                    num = num - diff
+                    pack[#pack+1] = {
+                        id = vi.id,
+                        num = vi.num,
+                    }
+                    if num == 0 then
+                        break
+                    end
                 end
             end
         end
-    end
-    local category = item_category[d.itemType]
-    local ui = data.user.item
-    while num > 0 do
-        local diff = num
-        if diff > overlay then
-            diff = overlay
+        local category = item_category[d.itemType]
+        local ui = data.user.item
+        while num > 0 do
+            local diff = num
+            if diff > overlay then
+                diff = overlay
+            end
+            local v = {
+                id = cs(item.gen_id),
+                itemid = itemid,
+                owner = 0,
+                num = diff,
+                pos = 0,
+                host = 0,
+                intensify = 0,
+                status = base.ITEM_STATUS_NORMAL,
+                status_time = 0,
+                price = 0,
+            }
+            if category == base.ITEM_DEFENCE then
+                v.rand_prop = {{}, {}}
+                item.rand_prop(v, d, {1, 2, 3, 4}) -- defence, tenacity, block, dodge
+            elseif category == base.ITEM_ATTACK then
+                v.rand_prop = {{}, {}}
+                item.rand_prop(v, d, {5, 6, 7, 8}) -- sunder, crit, impale, hit
+            end
+            item.add(v, d)
+            ui[v.id] = v
+            num = num - diff
+            pack[#pack+1] = v
         end
-        local v = {
-            id = cs(item.gen_id),
-            itemid = itemid,
-            owner = 0,
-            num = diff,
-            pos = 0,
-            host = 0,
-            intensify = 0,
-            status = base.ITEM_STATUS_NORMAL,
-            status_time = 0,
-            price = 0,
-        }
-        if category == base.ITEM_DEFENCE then
-            v.rand_prop = {{}, {}}
-            item.rand_prop(v, d, {1, 2, 3, 4}) -- defence, tenacity, block, dodge
-        elseif category == base.ITEM_ATTACK then
-            v.rand_prop = {{}, {}}
-            item.rand_prop(v, d, {5, 6, 7, 8}) -- sunder, crit, impale, hit
-        end
-        item.add(v, d)
-        ui[v.id] = v
-        num = num - diff
-        pack[#pack+1] = v
     end
 end
 
@@ -477,9 +489,6 @@ function proc.use_item(msg)
         error{code = error_code.ITEM_NOT_EXIST}
     end
     local iv = i[1]
-    if iv.pos == msg.pos then
-        error{code = error_code.ERROR_ITEM_POSITION}
-    end
     if iv.status ~= base.ITEM_STATUS_NORMAL then
         error{code = error_code.ERROR_ITEM_STATUS}
     end
@@ -491,20 +500,39 @@ function proc.use_item(msg)
     if idata.needJob ~= 0 and user.prof ~= idata.needJob then
         error{code = error_code.ERROR_ROLE_PROFESSION}
     end
-    if msg.pos > 0 then
-        if not is_equip(idata.itemType) then
+    local itemtype = idata.itemType
+    if is_chest(itemtype) then
+        local p
+        if idata.key > 0 then
+            if item.count(idata.key) == 0 then
+                error{code = error_code.ITEM_NUM_LIMIT}
+            end
+            p = update_user()
+            item.del_by_itemid(p, idata.key, 1)
+        else
+            p = update_user()
+        end
+        local bonus = {}
+        for k, v in ipairs(d.chest) do
+            bonus[k] = {rand_num=1, data=v}
+        end
+        stage.get_bonus(floor(skynet.time()), bonus, p)
+        return "update_user", {update=p}
+    elseif is_equip(itemtype) then
+        if iv.pos == msg.pos then
             error{code = error_code.ERROR_ITEM_POSITION}
         end
-        local pos = idata.itemType - base.ITEM_TYPE_HEAD + 1
-        if msg.pos ~= pos then
+        if msg.pos > 0 and msg.pos~=idata.itemType-base.ITEM_TYPE_HEAD+1 then
             error{code = error_code.ERROR_ITEM_POSITION}
         end
+        local p = update_user()
+        item.use(p, i, msg.pos)
+        task.update(p, base.TASK_COMPLETE_USE_ITEM, iv.itemid, 1)
+        role.fight_point(p)
+        return "update_user", {update=p}
+    else
+        error{code = error_code.ERROR_ITEM_TYPE}
     end
-    local p = update_user()
-    item.use(p, i, msg.pos)
-    task.update(p, base.TASK_COMPLETE_USE_ITEM, iv.itemid, 1)
-    role.fight_point(p)
-    return "update_user", {update=p}
 end
 
 function proc.compound_item(msg)

@@ -19,6 +19,10 @@ function share.is_stone(itemtype)
     return itemtype >= base.ITEM_TYPE_BLUE_STONE and itemtype <= base.ITEM_TYPE_GREEN_CRYSTAL
 end
 
+function share.is_chest(itemtype)
+    return itemtype >= base.ITEM_TYPE_CHEST and itemtype <= base.ITEM_TYPE_AUTO_CHEST
+end
+
 function share.map_pos(des_pos)
     local map_rect = base.MAP_RECT
     if des_pos.x < map_rect.x then

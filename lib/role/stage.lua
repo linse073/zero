@@ -105,7 +105,7 @@ function stage.rand_bonus(d, sd)
             local bonus = {num=v.num, data=v.data}
             if v.type == base.BONUS_TYPE_EQUIP then
                 local prof
-                if v.prof == 1 then
+                if v.prof then
                     prof = user.prof
                 else
                     prof = randi(base.PROF_WARRIOR, base.PROF_WIZARD)
@@ -136,6 +136,43 @@ function stage.rand_bonus(d, sd)
                 bonus.item = v.item
             end
             return bonus
+        end
+    end
+end
+
+local function bonus_item(ri, p)
+    local itemid = ri.item
+    local idata = ri.data
+    if idata then
+        item.add_by_itemid(p, ri.num, idata)
+    else
+        if itemid then
+            local rid = assert(itemdata[itemid], string.format("No item data %d.", itemid))
+            item.add_by_itemid(p, ri.num, rid)
+        else
+            role.add_money(p, ri.num)
+        end
+    end
+end
+function stage.get_bonus(seed, bonus, p, d)
+    new_rand.init(seed)
+    for k, v in ipairs(bonus) do
+        local rand_item = {}
+        for i = 1, v.rand_num do
+            rand_item[i] = stage.rand_bonus(v.data, d)
+        end
+        v.rand_item = rand_item
+    end
+    for k, v in ipairs(bonus) do
+        local rand_item = v.rand_item
+        if v.num then
+            for k1, v1 in ipairs(v.num) do
+                bonus_item(rand_item[v1], p)
+            end
+        else
+            for k1, v1 in ipairs(rand_item) do
+                bonus_item(v1, p)
+            end
         end
     end
 end
@@ -204,30 +241,23 @@ function proc.end_stage(msg)
         d = s[2]
         money, exp = d.getMoney, d.getExp
         if d.bonus then
-            bonus[#bonus+1] = {id=d.bonusID, rand_num=1, num={1}, data=d.bonus}
+            bonus[#bonus+1] = {rand_num=1, data=d.bonus}
         end
     else
         d = assert(stagedata[msg.id], string.format("No stage data %d.", msg.id))
         s = stage.add_by_data(d)
         money, exp = d.firstMoney, d.firstExp
         if d.firstBonus then
-            bonus[#bonus+1] = {id=d.firstBonusID, rand_num=1, num={1}, data=d.firstBonus}
+            bonus[#bonus+1] = {rand_num=1, data=d.firstBonus}
         end
     end
     if msg.total_box then
         if d.dropBonus then
-            bonus[#bonus+1] = {id=d.dropBonusID, rand_num=msg.total_box, num=msg.pick_box or {}, data=d.dropBonus}
+            bonus[#bonus+1] = {rand_num=msg.total_box, num=msg.pick_box or {}, data=d.dropBonus}
         end
-    end
-    new_rand.init(msg.rand_seed)
-    for k, v in ipairs(bonus) do
-        local rand_item = {}
-        for i = 1, v.rand_num do
-            rand_item[i] = stage.rand_bonus(v.data, d)
-        end
-        v.rand_item = rand_item
     end
     local p = update_user()
+    stage.get_bonus(msg.rand_seed, bonus, p, d)
     if money > 0 then
         role.add_money(p, money)
     end
@@ -236,24 +266,6 @@ function proc.end_stage(msg)
     end
     if msg.total_gold > 0 and msg.pick_gold > 0 and d.goldTotal > 0 then
         role.add_money(p, d.goldTotal*msg.pick_gold//msg.total_gold)
-    end
-    for k, v in ipairs(bonus) do
-        local rand_item = v.rand_item
-        for k1, v1 in ipairs(v.num) do
-            local ri = rand_item[v1]
-            local itemid = ri.item
-            local idata = ri.data
-            if idata then
-                item.add_by_itemid(p, ri.num, idata)
-            else
-                if itemid then
-                    local rid = assert(itemdata[itemid], string.format("No item data %d.", itemid))
-                    item.add_by_itemid(p, ri.num, rid)
-                else
-                    role.add_money(p, ri.num)
-                end
-            end
-        end
     end
     local sv = s[1]
     sv.count = sv.count + 1

@@ -26,6 +26,9 @@ skynet.start(function()
     local function is_equip(itemtype)
         return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
     end
+    local function is_chest(itemtype)
+        return itemtype >= base.ITEM_TYPE_CHEST and itemtype <= base.ITEM_TYPE_AUTO_CHEST
+    end
     for k, v in pairs(itemdata) do
         if v.overlay == 0 then
             v.overlay = 1
@@ -49,6 +52,16 @@ skynet.start(function()
                 local upgradeItem = k + 5000
                 assert(itemdata[upgradeItem], string.format("No item data %d.", upgradeItem))
             end
+        end
+        if is_chest(v.itemType) then
+            assert(v.cheskID~="", string.format("Illegal chest %d.", v.id))
+            local chest = {}
+            for bonus in string.gmatch(v.cheskID, "(%d+)") do
+                local bonusid = tonumber(bonus)
+                local b = assert(bonusdata[bonusid], string.format("No bonus data %d.", bonusid))
+                assert(b.EquipLv~=0, string.format("Illegal chest %d bonus %d.", v.id, bonusid))
+            end
+            v.chest = chest
         end
     end
 
@@ -121,15 +134,6 @@ skynet.start(function()
                 rate = v.StoneRate,
             }
             total_rate = total_rate + v.StoneRate
-        end
-        if total_rate < base.RAND_FACTOR then
-            local r = base.RAND_FACTOR - total_rate
-            rt[#rt+1] = {
-                type = base.BONUS_TYPE_MONEY,
-                num = v.MinMoney,
-                rate = r,
-            }
-            total_rate = base.RAND_FACTOR
         end
         v.all_rate = rt
         v.total_rate = total_rate

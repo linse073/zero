@@ -1539,6 +1539,28 @@ local datas = {
 		},
 		Item = "",
 	},
+	[910000001] = {
+		TaskId = 910000001,
+		TaskName = "",
+		levelLimit = 0,
+		TaskType = 0,
+		CompleteType = 403,
+		nextID = 0,
+		condition = 0,
+		count = 0,
+		NpcId = 0,
+		TaskTalk = "",
+		Gold = 0,
+		RMBMoney = 0,
+		EXP = 0,
+		profItemId = {
+			0,
+			0,
+			0,
+			0,
+		},
+		Item = "",
+	},
 }
 
 return datas

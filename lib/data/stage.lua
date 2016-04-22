@@ -26,6 +26,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 0,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300001012] = {
 		id = 1300001012,
@@ -54,6 +55,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 1000,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300001013] = {
 		id = 1300001013,
@@ -82,6 +84,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 1500,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300001014] = {
 		id = 1300001014,
@@ -110,6 +113,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 2000,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300001015] = {
 		id = 1300001015,
@@ -138,6 +142,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 2500,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300001021] = {
 		id = 1300001021,
@@ -166,6 +171,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 3000,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300001022] = {
 		id = 1300001022,
@@ -194,6 +200,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 3500,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300001023] = {
 		id = 1300001023,
@@ -222,6 +229,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 4000,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300001024] = {
 		id = 1300001024,
@@ -250,6 +258,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 4500,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300001025] = {
 		id = 1300001025,
@@ -278,6 +287,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 5000,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300001031] = {
 		id = 1300001031,
@@ -306,6 +316,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 5500,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300001032] = {
 		id = 1300001032,
@@ -334,6 +345,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 6000,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300001033] = {
 		id = 1300001033,
@@ -362,6 +374,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 6500,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300001034] = {
 		id = 1300001034,
@@ -390,6 +403,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 7000,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300001035] = {
 		id = 1300001035,
@@ -418,6 +432,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 7500,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300001041] = {
 		id = 1300001041,
@@ -446,6 +461,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 8000,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300001042] = {
 		id = 1300001042,
@@ -474,6 +490,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 8500,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300001043] = {
 		id = 1300001043,
@@ -502,6 +519,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 9000,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300001044] = {
 		id = 1300001044,
@@ -530,6 +548,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 9500,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300001045] = {
 		id = 1300001045,
@@ -558,6 +577,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 10000,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300001051] = {
 		id = 1300001051,
@@ -586,6 +606,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 10500,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300001052] = {
 		id = 1300001052,
@@ -614,6 +635,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 11000,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300001053] = {
 		id = 1300001053,
@@ -642,6 +664,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 11500,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300001054] = {
 		id = 1300001054,
@@ -670,6 +693,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 12000,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300001055] = {
 		id = 1300001055,
@@ -698,6 +722,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 12500,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300001061] = {
 		id = 1300001061,
@@ -726,6 +751,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 13000,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300001062] = {
 		id = 1300001062,
@@ -754,6 +780,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 13500,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300001063] = {
 		id = 1300001063,
@@ -782,6 +809,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 14000,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300001064] = {
 		id = 1300001064,
@@ -810,6 +838,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 14500,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300001065] = {
 		id = 1300001065,
@@ -838,6 +867,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 15000,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300001071] = {
 		id = 1300001071,
@@ -866,6 +896,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 15500,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300001072] = {
 		id = 1300001072,
@@ -894,6 +925,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 16000,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300001073] = {
 		id = 1300001073,
@@ -922,6 +954,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 16500,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300001074] = {
 		id = 1300001074,
@@ -950,6 +983,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 17000,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300001075] = {
 		id = 1300001075,
@@ -978,6 +1012,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 17500,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300001081] = {
 		id = 1300001081,
@@ -1006,6 +1041,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 18000,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300001082] = {
 		id = 1300001082,
@@ -1034,6 +1070,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 18500,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300001083] = {
 		id = 1300001083,
@@ -1062,6 +1099,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 19000,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300001084] = {
 		id = 1300001084,
@@ -1090,6 +1128,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 19500,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300001085] = {
 		id = 1300001085,
@@ -1118,6 +1157,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 20000,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300001091] = {
 		id = 1300001091,
@@ -1146,6 +1186,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 20500,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300001092] = {
 		id = 1300001092,
@@ -1174,6 +1215,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 21000,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300001093] = {
 		id = 1300001093,
@@ -1202,6 +1244,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 21500,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300001094] = {
 		id = 1300001094,
@@ -1230,6 +1273,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 22000,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300001095] = {
 		id = 1300001095,
@@ -1258,6 +1302,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 22500,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300001101] = {
 		id = 1300001101,
@@ -1286,6 +1331,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 23000,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300001102] = {
 		id = 1300001102,
@@ -1314,6 +1360,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 23500,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300001103] = {
 		id = 1300001103,
@@ -1342,6 +1389,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 24000,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300001104] = {
 		id = 1300001104,
@@ -1370,6 +1418,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 24500,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300001105] = {
 		id = 1300001105,
@@ -1398,6 +1447,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 25000,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300002011] = {
 		id = 1300002011,
@@ -1426,6 +1476,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 0,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300002012] = {
 		id = 1300002012,
@@ -1454,6 +1505,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 1000,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300002013] = {
 		id = 1300002013,
@@ -1482,6 +1534,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 1500,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300002014] = {
 		id = 1300002014,
@@ -1510,6 +1563,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 2000,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300002015] = {
 		id = 1300002015,
@@ -1538,6 +1592,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 2500,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300002021] = {
 		id = 1300002021,
@@ -1566,6 +1621,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 3000,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300002022] = {
 		id = 1300002022,
@@ -1594,6 +1650,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 3500,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300002023] = {
 		id = 1300002023,
@@ -1622,6 +1679,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 4000,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300002024] = {
 		id = 1300002024,
@@ -1650,6 +1708,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 4500,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300002025] = {
 		id = 1300002025,
@@ -1678,6 +1737,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 5000,
+		ScenePath = "ccsresources/U_4022.png",
 	},
 	[1300002031] = {
 		id = 1300002031,
@@ -1706,6 +1766,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 5500,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300002032] = {
 		id = 1300002032,
@@ -1734,6 +1795,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 6000,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300002033] = {
 		id = 1300002033,
@@ -1762,6 +1824,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 6500,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300002034] = {
 		id = 1300002034,
@@ -1790,6 +1853,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 7000,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300002035] = {
 		id = 1300002035,
@@ -1818,6 +1882,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 7500,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300002041] = {
 		id = 1300002041,
@@ -1846,6 +1911,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 8000,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300002042] = {
 		id = 1300002042,
@@ -1874,6 +1940,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 8500,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300002043] = {
 		id = 1300002043,
@@ -1902,6 +1969,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 9000,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300002044] = {
 		id = 1300002044,
@@ -1930,6 +1998,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 9500,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300002045] = {
 		id = 1300002045,
@@ -1958,6 +2027,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "xueshan_yewanchangjin.mp3",
 		goldTotal = 10000,
+		ScenePath = "ccsresources/U_4023.png",
 	},
 	[1300002051] = {
 		id = 1300002051,
@@ -1986,6 +2056,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 10500,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300002052] = {
 		id = 1300002052,
@@ -2014,6 +2085,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 11000,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300002053] = {
 		id = 1300002053,
@@ -2042,6 +2114,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 11500,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300002054] = {
 		id = 1300002054,
@@ -2070,6 +2143,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 12000,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300002055] = {
 		id = 1300002055,
@@ -2098,6 +2172,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 12500,
+		ScenePath = "ccsresources/U_4029.png",
 	},
 	[1300002061] = {
 		id = 1300002061,
@@ -2126,6 +2201,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 13000,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300002062] = {
 		id = 1300002062,
@@ -2154,6 +2230,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 13500,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300002063] = {
 		id = 1300002063,
@@ -2182,6 +2259,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 14000,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300002064] = {
 		id = 1300002064,
@@ -2210,6 +2288,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 14500,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300002065] = {
 		id = 1300002065,
@@ -2238,6 +2317,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "senlin_hupo.mp3",
 		goldTotal = 15000,
+		ScenePath = "ccsresources/U_4026.png",
 	},
 	[1300002071] = {
 		id = 1300002071,
@@ -2266,6 +2346,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 15500,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300002072] = {
 		id = 1300002072,
@@ -2294,6 +2375,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 16000,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300002073] = {
 		id = 1300002073,
@@ -2322,6 +2404,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 16500,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300002074] = {
 		id = 1300002074,
@@ -2350,6 +2433,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 17000,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300002075] = {
 		id = 1300002075,
@@ -2378,6 +2462,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 17500,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300002081] = {
 		id = 1300002081,
@@ -2406,6 +2491,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 18000,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300002082] = {
 		id = 1300002082,
@@ -2434,6 +2520,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 18500,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300002083] = {
 		id = 1300002083,
@@ -2462,6 +2549,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 19000,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300002084] = {
 		id = 1300002084,
@@ -2490,6 +2578,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 19500,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300002085] = {
 		id = 1300002085,
@@ -2518,6 +2607,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 20000,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300002091] = {
 		id = 1300002091,
@@ -2546,6 +2636,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 20500,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300002092] = {
 		id = 1300002092,
@@ -2574,6 +2665,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 21000,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300002093] = {
 		id = 1300002093,
@@ -2602,6 +2694,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 21500,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300002094] = {
 		id = 1300002094,
@@ -2630,6 +2723,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 22000,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300002095] = {
 		id = 1300002095,
@@ -2658,6 +2752,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 22500,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300002101] = {
 		id = 1300002101,
@@ -2686,6 +2781,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 23000,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300002102] = {
 		id = 1300002102,
@@ -2714,6 +2810,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 23500,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300002103] = {
 		id = 1300002103,
@@ -2742,6 +2839,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 24000,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300002104] = {
 		id = 1300002104,
@@ -2770,6 +2868,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 24500,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300002105] = {
 		id = 1300002105,
@@ -2798,6 +2897,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 25000,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300003011] = {
 		id = 1300003011,
@@ -2826,6 +2926,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "boss.mp3",
 		goldTotal = 50000,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300003012] = {
 		id = 1300003012,
@@ -2854,6 +2955,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "dongxue.mp3",
 		goldTotal = 50000,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300003013] = {
 		id = 1300003013,
@@ -2882,6 +2984,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "boss.mp3",
 		goldTotal = 50000,
+		ScenePath = "ccsresources/U_4020.png",
 	},
 	[1300003014] = {
 		id = 1300003014,
@@ -2910,6 +3013,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 50000,
+		ScenePath = "ccsresources/U_4028.png",
 	},
 	[1300003015] = {
 		id = 1300003015,
@@ -2938,6 +3042,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 50000,
+		ScenePath = "ccsresources/U_4021.png",
 	},
 	[1300003016] = {
 		id = 1300003016,
@@ -2966,6 +3071,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 50000,
+		ScenePath = "ccsresources/U_4025.png",
 	},
 	[1300003017] = {
 		id = 1300003017,
@@ -2994,6 +3100,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 50000,
+		ScenePath = "ccsresources/U_4024.png",
 	},
 	[1300003018] = {
 		id = 1300003018,
@@ -3022,6 +3129,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "shamo.mp3",
 		goldTotal = 50000,
+		ScenePath = "ccsresources/U_4072.png",
 	},
 	[1300004001] = {
 		id = 1300004001,
@@ -3050,6 +3158,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "boss.mp3",
 		goldTotal = 0,
+		ScenePath = "",
 	},
 	[1300001000] = {
 		id = 1300001000,
@@ -3078,6 +3187,7 @@ local datas = {
 		preLoadResList = "",
 		bgm = "caodi_gaoyuan.mp3",
 		goldTotal = 100,
+		ScenePath = "",
 	},
 }
 

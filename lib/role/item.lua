@@ -512,11 +512,6 @@ function proc.use_item(msg)
         else
             p = update_user()
         end
-        local bonus = {}
-        for k, v in ipairs(idata.chest) do
-            bonus[k] = {rand_num=1, data=v}
-        end
-        stage.get_bonus(floor(skynet.time()), bonus, p)
         item.del(i)
         local pitem = p.item
         pitem[#pitem+1] = {
@@ -524,6 +519,11 @@ function proc.use_item(msg)
             status = iv.status,
             status_time = iv.status_time,
         }
+        local bonus = {}
+        for k, v in ipairs(idata.chest) do
+            bonus[k] = {rand_num=1, data=v}
+        end
+        stage.get_bonus(floor(skynet.time()), bonus, p)
         return "update_user", {update=p}
     elseif is_equip(itemtype) then
         if iv.pos == msg.pos then

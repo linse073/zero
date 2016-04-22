@@ -290,11 +290,11 @@ end
 
 function proc.heart_beat(msg)
     data.heart_beat = data.heart_beat + 1
-    return "heart_beat_response", {time = msg.time, server_time = skynet.time()*100}
+    return "heart_beat_response", {time=msg.time, server_time=skynet.time()*100}
 end
 
 function proc.get_account_info(msg)
-    return "account_info", {user = data.account}
+    return "account_info", {user=data.account}
 end
 
 function proc.create_user(msg)

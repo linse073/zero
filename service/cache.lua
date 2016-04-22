@@ -54,9 +54,9 @@ skynet.start(function()
             end
         end
         if is_chest(v.itemType) then
-            assert(v.cheskID~="", string.format("Illegal chest %d.", v.id))
+            assert(v.chestID~="", string.format("Illegal chest %d.", v.id))
             local chest = {}
-            for bonus in string.gmatch(v.cheskID, "(%d+)") do
+            for bonus in string.gmatch(v.chestID, "(%d+)") do
                 local bonusid = tonumber(bonus)
                 local b = assert(bonusdata[bonusid], string.format("No bonus data %d.", bonusid))
                 assert(b.EquipLv~=0, string.format("Illegal chest %d bonus %d.", v.id, bonusid))

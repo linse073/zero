@@ -513,7 +513,7 @@ function proc.use_item(msg)
             p = update_user()
         end
         local bonus = {}
-        for k, v in ipairs(d.chest) do
+        for k, v in ipairs(idata.chest) do
             bonus[k] = {rand_num=1, data=v}
         end
         stage.get_bonus(floor(skynet.time()), bonus, p)

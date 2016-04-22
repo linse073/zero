@@ -60,6 +60,7 @@ skynet.start(function()
                 local bonusid = tonumber(bonus)
                 local b = assert(bonusdata[bonusid], string.format("No bonus data %d.", bonusid))
                 assert(b.EquipLv~=0, string.format("Illegal chest %d bonus %d.", v.id, bonusid))
+                chest[#chest+1] = b
             end
             v.chest = chest
         end

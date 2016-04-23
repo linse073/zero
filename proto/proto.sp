@@ -30,6 +30,8 @@
     fight_point 12 : integer
     cur_pos 13 : position
     des_pos 14 : position
+    sign_in 15 : *boolean
+    sign_in_day 16 : integer
 }
 
 .other_info {

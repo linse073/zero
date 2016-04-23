@@ -119,7 +119,7 @@ function role.update_day()
     local user = data.user
     if user then
         local pt = update_day(user)
-        notify.add("update_day", {task = pt})
+        notify.add("update_day", {task=pt})
     end
 end
 
@@ -340,6 +340,8 @@ function proc.create_user(msg)
         gm_level = gm_level,
         cur_pos = {x=x, y=y},
         des_pos = {x=x, y=y},
+        sign_in = {},
+        sign_in_day = 0,
 
         item = {},
         card = {},

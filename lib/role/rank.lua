@@ -141,7 +141,7 @@ function proc.query_rank(msg)
     end
     local user_rank, count = skynet.call(rank_mgr, "lua", "get", msg.rank_type, data.user.id)
     if not user_rank then
-        error{code = error_code.ERROR_NOT_IN_RANK}
+        error{code = error_code.NOT_IN_RANK}
     end
     local r = process(user_rank, count)
     return "rank_list", {

@@ -10,6 +10,9 @@ local b64decode = crypt.base64decode
 local b64encode = crypt.base64encode
 local hmac_hash = crypt.hmac_hash
 local traceback = debug.traceback
+local os = os
+local date = os.date
+local time = os.time
 
 local util = {}
 
@@ -169,6 +172,26 @@ function util.dump(value, desciption, nesting)
     for i, line in ipairs(result) do
         print(line)
     end
+end
+
+function util.year_day(t)
+    local st = date("*t", t)
+    if st.hour < 4 then
+        return st.yday
+    else
+        return st.yday + 1
+    end
+end
+
+function util.day_time(t)
+    local st = date("*t", t)
+    if st.hour >= 4 then
+        st.day = st.day + 1
+    end
+    st.hour = 4
+    st.min = 0
+    st.sec = 0
+    return time(st)
 end
 
 return util

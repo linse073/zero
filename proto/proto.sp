@@ -148,6 +148,7 @@
 
 .update_day {
     task 0 : *integer
+    update_sign_in 1 : boolean
 }
 
 .heart_beat {

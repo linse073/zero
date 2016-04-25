@@ -56,7 +56,9 @@ local error_code = {
     ERROR_STAGE_SEED = 2404,
 
     ERROR_QUERY_RANK_TYPE = 2500,
-    ERROR_NOT_IN_RANK = 2501,
+    NOT_IN_RANK = 2501,
+
+    ALREADY_SIGN_IN = 2600,
 }
 
 return error_code

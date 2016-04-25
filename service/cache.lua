@@ -2,12 +2,15 @@ local skynet = require "skynet"
 local sprotoloader = require "sprotoloader"
 local sharedata = require "sharedata"
 local proto = require "proto"
+local util = require "util"
 
 local string = string
 local pairs = pairs
 local ipairs = ipairs
 local assert = assert
 local tonumber = tonumber
+local os = os
+local time = os.time
 
 skynet.start(function()
     -- share data
@@ -239,6 +242,21 @@ skynet.start(function()
 
     sharedata.new("msg", proto.msg)
     sharedata.new("name_msg", proto.name_msg)
+    
+    local year, month, day, hour, min, sec = string.match(skynet.getenv("start_time"), "(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+)")
+    local st = {
+        year = tonumber(year),
+        month = tonumber(month),
+        day = tonumber(day),
+        hour = tonumber(hour),
+        min = tonumber(min),
+        sec = tonumber(sec),
+    }
+    local t = time(st)
+    sharedata.new("config", {
+        start_time = t,
+        start_day = util.day_time(t),
+    })
 
     -- protocol
     local file = skynet.getenv("root").."proto/proto.sp"

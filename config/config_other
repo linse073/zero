@@ -14,3 +14,4 @@ config = "config.config_other"
 debug_console = 8110
 login = 9001
 gm_level = 1
+start_time = "2015-05-08 00:00:00"

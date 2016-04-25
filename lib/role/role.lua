@@ -22,14 +22,16 @@ local floor = math.floor
 local randomseed = math.randomseed
 local random = math.random
 local sqrt = math.sqrt
-local date = os.date
+-- local date = os.date
 
 local merge_table = util.merge_table
+local year_day = util.year_day
 local expdata
 local npcdata
 local propertydata
 local error_code
 local base
+local config
 local map_pos
 local max_exp
 local data
@@ -46,6 +48,7 @@ skynet.init(function()
     propertydata = share.propertydata
     error_code = share.error_code
     base = share.base
+    config = share.config
     map_pos = share.map_pos
     max_exp = share.max_exp
     role_mgr = skynet.queryservice("role_mgr")
@@ -111,15 +114,22 @@ end
 local function update_day(user)
     user.arena_count = 0
     user.charge_arena = 0
+    local update_sign_in = false
+    local diff = day_time(floor(skynet.time())) - config.start_day
+    if diff // base.DAY_SECOND % base.MAX_SIGN_IN == 0 then
+        user.sign_in = {}
+        user.sign_in_day = 0
+        update_sign_in = true
+    end
     stage.update_day()
-    return task.update_day()
+    return task.update_day(), update_sign_in
 end
 
 function role.update_day()
     local user = data.user
     if user then
-        local pt = update_day(user)
-        notify.add("update_day", {task=pt})
+        local pt, update_sign_in = update_day(user)
+        notify.add("update_day", {task=pt, update_sign_in=update_sign_in})
     end
 end
 
@@ -399,8 +409,10 @@ function proc.enter_game(msg)
         rank.add()
     end
     if user.logout_time > 0 then
-        local od = date("%j", user.logout_time)
-        local nd = date("%j", now)
+        -- local od = date("%j", user.logout_time)
+        -- local nd = date("%j", now)
+        local od = year_day(user.logout_time)
+        local nd = year_day(now)
         if od ~= nd then
             update_day(user)
         end
@@ -450,6 +462,21 @@ function proc.move(msg)
     }
     skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
     return "response", ""
+end
+
+function proc.sign_in(msg)
+    local user = data.user
+    if not user then
+        error{code = error_code.ROLE_NOT_EXIST}
+    end
+    local diff = day_time(floor(skynet.time())) - config.start_day
+    local index = diff // base.DAY_SECOND % base.MAX_SIGN_IN + 1
+    local sign_in = user.sign_in
+    if sign_in[index] then
+        error{code = error_code.ALREADY_SIGN_IN}
+    end
+    sign_in[index] = true
+    user.sign_in_day = user.sign_in_day + 1
 end
 
 return role

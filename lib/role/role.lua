@@ -514,6 +514,9 @@ function proc.sign_in(msg)
         end
     else
         pindex = index
+        if sign_in[pindex] then
+            error{code = error_code.ALREADY_SIGN_IN}
+        end
     end
     local p = update_user()
     role.sign_in(p, pindex)

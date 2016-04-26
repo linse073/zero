@@ -57,6 +57,8 @@ local msg = {
     [2701] = "rank_list",
     [2702] = "begin_challenge",
     [2703] = "end_challenge",
+
+    [2800] = "sign_in",
 }
 local name_msg = {}
 

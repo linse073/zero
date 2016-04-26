@@ -59,6 +59,7 @@ local error_code = {
     NOT_IN_RANK = 2501,
 
     ALREADY_SIGN_IN = 2600,
+    NO_PATCH_SIGN_IN = 2601,
 }
 
 return error_code

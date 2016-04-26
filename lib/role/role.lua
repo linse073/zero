@@ -24,6 +24,7 @@ local random = math.random
 local sqrt = math.sqrt
 -- local date = os.date
 
+local update_user = util.update_user
 local merge_table = util.merge_table
 local year_day = util.year_day
 local expdata
@@ -32,6 +33,7 @@ local propertydata
 local error_code
 local base
 local config
+local type_reward
 local map_pos
 local max_exp
 local data
@@ -49,6 +51,7 @@ skynet.init(function()
     error_code = share.error_code
     base = share.base
     config = share.config
+    type_reward = share.type_reward
     map_pos = share.map_pos
     max_exp = share.max_exp
     role_mgr = skynet.queryservice("role_mgr")
@@ -239,6 +242,29 @@ function role.fight_point(p)
     role.init_prop()
     puser.fight_point = user.fight_point
     task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
+end
+
+local get_reward = {
+    [base.REWARD_TYPE_ITEM] = function(p, reward)
+        item.add_by_itemid(p, 1, reward.item)
+    end,
+    [base.REWARD_TYPE_RMB] = function(p, reward)
+        role.add_rmb(p, reward.reward)
+    end
+}
+function role.sign_in(p, index)
+    local user = data.user
+    local puser = p.user
+    user.sign_in[index] = true
+    puser.sign_in = user.sign_in
+    user.sign_in_day = user.sign_in_day + 1
+    puser.sign_in_day = user.sign_in_day
+    local reward = assert(type_reward[base.REWARD_ACTION_SIGN_IN][index], string.format("No sign in reward data %d.", index))
+    get_reward[reward.rewardType](p, reward)
+    local treward = type_reward[base.REWARD_ACTION_TOTAL_SIGN_IN][index]
+    if treward then
+        get_reward[treward.rewardType](p, treward)
+    end
 end
 
 function role.calc_fight(prop)
@@ -441,14 +467,11 @@ function proc.enter_game(msg)
     }
     skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
     data.enter = nil
-    return "info_all", {user=ret, stage_id=stageid, rand_seed=seed}
+    return "info_all", {user=ret, start_time=config.start_time, stage_id=stageid, rand_seed=seed}
 end
 
 function proc.move(msg)
     local user = data.user
-    if not user then
-        error{code = error_code.ROLE_NOT_EXIST}
-    end
     local des_pos = msg.des_pos
     map_pos(des_pos)
     -- role.move(des_pos)
@@ -465,18 +488,28 @@ function proc.move(msg)
 end
 
 function proc.sign_in(msg)
-    local user = data.user
-    if not user then
-        error{code = error_code.ROLE_NOT_EXIST}
-    end
     local diff = day_time(floor(skynet.time())) - config.start_day
     local index = diff // base.DAY_SECOND % base.MAX_SIGN_IN + 1
+    assert(index<=base.MAX_SIGN_IN, string.format("Illegal sign in index %d.", index))
+    local user = data.user
     local sign_in = user.sign_in
-    if sign_in[index] then
-        error{code = error_code.ALREADY_SIGN_IN}
+    local pindex
+    if msg.patch then
+        for i = 1, index do
+            if not sign_in[i] then
+                pindex = i
+                break
+            end
+        end
+        if not pindex then
+            error{code = error_code.NO_PATCH_SIGN_IN}
+        end
+    else
+        pindex = index
     end
-    sign_in[index] = true
-    user.sign_in_day = user.sign_in_day + 1
+    local p = update_user()
+    role.sign_in(p, pindex)
+    return "update_user", {update=p}
 end
 
 return role

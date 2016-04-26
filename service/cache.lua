@@ -24,6 +24,7 @@ skynet.start(function()
     local passivedata = require("data.passive")
     local npcdata = require("data.npc")
     local propertydata = require("data.property")
+    local rewarddata = require("data.reward")
     local base = require("base")
 
     local function is_equip(itemtype)
@@ -198,6 +199,23 @@ skynet.start(function()
         v.passive = passive
     end
 
+    local type_reward = {}
+    for k, v in pairs(rewarddata) do
+        local reward = type_reward[v.type]
+        if not reward then
+            reward = {}
+            type_reward[v.type] = reward
+        end
+        if v.type == base.REWARD_ACTION_ONLINE then
+            reward[#reward+1] = v
+        else
+            reward[v.data] = v
+        end
+        if v.rewardType == base.REWARD_TYPE_ITEM then
+            v.item = assert(itemdata[v.reward], string.format("No item data %d.", v.reward))
+        end
+    end
+
     sharedata.new("carddata", carddata)
     sharedata.new("itemdata", itemdata)
     sharedata.new("stagedata", stagedata)
@@ -215,6 +233,7 @@ skynet.start(function()
     sharedata.new("day_task", day_task)
     sharedata.new("achi_task", achi_task)
     sharedata.new("original_card", original_card)
+    sharedata.new("type_reward", type_reward)
 
     local level = base.MAX_LEVEL - 1
     local ed = assert(expdata[level], string.format("No exp data %d.", level))
@@ -259,7 +278,7 @@ skynet.start(function()
     })
 
     -- protocol
-    local file = skynet.getenv("root").."proto/proto.sp"
+    local file = skynet.getenv("root") .. "proto/proto.sp"
     sprotoloader.register(file, 1)
 	-- don't call skynet.exit(), because sproto.core may unload and the global slot become invalid
 end)

@@ -56,6 +56,7 @@ skynet.init(function()
     share.day_task = sharedata.query("day_task")
     share.achi_task = sharedata.query("achi_task")
     share.original_card = sharedata.query("original_card")
+    share.type_reward = sharedata.query("type_reward")
 
     share.max_exp = sharedata.query("max_exp")
 

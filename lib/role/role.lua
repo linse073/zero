@@ -43,6 +43,7 @@ local proc = {}
 local role_mgr
 local rank_mgr
 local gm_level = skynet.getenv("gm_level")
+local get_reward
 
 skynet.init(function()
     expdata = share.expdata
@@ -54,6 +55,14 @@ skynet.init(function()
     type_reward = share.type_reward
     map_pos = share.map_pos
     max_exp = share.max_exp
+    get_reward = {
+        [base.REWARD_TYPE_ITEM] = function(p, reward)
+            item.add_by_itemid(p, 1, reward.item)
+        end,
+        [base.REWARD_TYPE_RMB] = function(p, reward)
+            role.add_rmb(p, reward.reward)
+        end
+    }
     role_mgr = skynet.queryservice("role_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
 end)
@@ -244,14 +253,6 @@ function role.fight_point(p)
     task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
 end
 
-local get_reward = {
-    [base.REWARD_TYPE_ITEM] = function(p, reward)
-        item.add_by_itemid(p, 1, reward.item)
-    end,
-    [base.REWARD_TYPE_RMB] = function(p, reward)
-        role.add_rmb(p, reward.reward)
-    end
-}
 function role.sign_in(p, index)
     local user = data.user
     local puser = p.user

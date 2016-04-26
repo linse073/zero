@@ -27,6 +27,7 @@ local sqrt = math.sqrt
 local update_user = util.update_user
 local merge_table = util.merge_table
 local year_day = util.year_day
+local day_time = util.day_time
 local expdata
 local npcdata
 local propertydata

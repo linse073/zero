@@ -261,7 +261,7 @@ function role.sign_in(p, index)
     local user = data.user
     local puser = p.user
     user.sign_in[index] = true
-    puser.sign_in = user.sign_in
+    p.sign_in = index
     user.sign_in_day = user.sign_in_day + 1
     puser.sign_in_day = user.sign_in_day
     local reward = assert(type_reward[base.REWARD_ACTION_SIGN_IN][index], string.format("No sign in reward data %d.", index))

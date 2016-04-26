@@ -145,6 +145,7 @@
 .update_user {
     msgid 0 : integer
     update 1 : user_all
+    sign_in 2 : integer
 }
 
 .update_day {

@@ -307,6 +307,19 @@ function role.init_prop()
     data.prop = prop
 end
 
+function role.repair(user)
+    if not user.sign_in then
+        local sign_in = {}
+        for i = 1, base.MAX_SIGN_IN do
+            sign_in[i] = false
+        end
+        user.sign_in = sign_in
+    end
+    if not user.sign_in_day then
+        user.sign_in_day = 0
+    end
+end
+
 -- function role.move(des_pos)
 --     local user = data.user
 --     user.des_pos.x = des_pos.x
@@ -420,6 +433,7 @@ function proc.enter_game(msg)
         error{code = error_code.ROLE_NOT_EXIST}
     end
     user = skynet.unpack(user)
+    role.repair(user)
     local now = floor(skynet.time())
     user.last_login_time = user.login_time
     user.login_time = now

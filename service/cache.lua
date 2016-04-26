@@ -56,8 +56,7 @@ skynet.start(function()
                 local upgradeItem = k + 5000
                 assert(itemdata[upgradeItem], string.format("No item data %d.", upgradeItem))
             end
-        end
-        if is_chest(v.itemType) then
+        elseif is_chest(v.itemType) then
             assert(v.chestID~="", string.format("Illegal chest %d.", v.id))
             local chest = {}
             for bonus in string.gmatch(v.chestID, "(%d+)") do

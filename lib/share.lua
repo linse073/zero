@@ -65,6 +65,7 @@ skynet.init(function()
 
     share.msg = sharedata.query("msg")
     share.name_msg = sharedata.query("name_msg")
+    share.config = sharedata.query("config")
 
     -- share in current service
     share.sproto = sprotoloader.load(1)

@@ -130,7 +130,10 @@ local function update_day(user)
     local update_sign_in = false
     local diff = day_time(floor(skynet.time())) - config.start_day
     if diff // base.DAY_SECOND % base.MAX_SIGN_IN == 0 then
-        user.sign_in = {}
+        local sign_in = user.sign_in
+        for i = 1, base.MAX_SIGN_IN do
+            sign_in[i] = false
+        end
         user.sign_in_day = 0
         update_sign_in = true
     end
@@ -358,6 +361,10 @@ function proc.create_user(msg)
     local initRect = base.INIT_RECT
     local x = random(initRect.x, initRect.ex)
     local y = random(initRect.y, initRect.ey)
+    local sign_in = {}
+    for i = 1, base.MAX_SIGN_IN do
+        sign_in[i] = false
+    end
     local u = {
         name = msg.name,
         id = roleid,
@@ -378,7 +385,7 @@ function proc.create_user(msg)
         gm_level = gm_level,
         cur_pos = {x=x, y=y},
         des_pos = {x=x, y=y},
-        sign_in = {},
+        sign_in = sign_in,
         sign_in_day = 0,
 
         item = {},

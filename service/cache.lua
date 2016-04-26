@@ -251,7 +251,6 @@ skynet.start(function()
 
     sharedata.new("complete_task", {
         [base.TASK_COMPLETE_TALK] = true,
-        [base.TASK_COMPLETE_SIGN_IN] = true,
         [base.TASK_COMPLETE_ROUTINE] = true,
         [base.TASK_COMPLETE_AUTO_PLAY] = true,
         [base.TASK_COMPLETE_NEW_FUNCTION] = true,

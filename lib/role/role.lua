@@ -269,6 +269,7 @@ function role.sign_in(p, index)
     if treward then
         get_reward[treward.rewardType](p, treward)
     end
+    task.update(p, base.TASK_COMPLETE_SIGN_IN, 0, 1)
 end
 
 function role.calc_fight(prop)

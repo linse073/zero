@@ -208,7 +208,7 @@ function role.add_money(p, money)
     local user = data.user
     local puser = p.user
     user.money = user.money + money
-    puser.monye = user.money
+    puser.money = user.money
     task.update(p, base.TASK_COMPLETE_MONEY, 0, 0, user.money)
 end
 

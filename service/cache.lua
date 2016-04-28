@@ -33,41 +33,6 @@ skynet.start(function()
     local function is_chest(itemtype)
         return itemtype >= base.ITEM_TYPE_CHEST and itemtype <= base.ITEM_TYPE_AUTO_CHEST
     end
-    for k, v in pairs(itemdata) do
-        if v.overlay == 0 then
-            v.overlay = 1
-        end
-        if v.compos > 0 then
-            assert(itemdata[v.compos], string.format("No item data %d.", v.compos))
-        end
-        if is_equip(v.itemType) then
-            local needLv = v.needLv
-            if v.needLv == 0 then
-                needLv = 1
-            end
-            v.needLvExp = assert(expdata[needLv], string.format("No exp data %d.", needLv))
-            if v.quality < base.MAX_QUALITY then
-                local improveMat = v.compos + 1
-                assert(itemdata[improveMat], string.format("No item data %d.", improveMat))
-                local improveItem = k + 1
-                assert(itemdata[improveItem], string.format("No item data %d.", improveItem))
-            end
-            if v.needLv < base.MAX_LEVEL then
-                local upgradeItem = k + 5000
-                assert(itemdata[upgradeItem], string.format("No item data %d.", upgradeItem))
-            end
-        elseif is_chest(v.itemType) then
-            assert(v.chestID~="", string.format("Illegal chest %d.", v.id))
-            local chest = {}
-            for bonus in string.gmatch(v.chestID, "(%d+)") do
-                local bonusid = tonumber(bonus)
-                local b = assert(bonusdata[bonusid], string.format("No bonus data %d.", bonusid))
-                assert(b.EquipLv~=0, string.format("Illegal chest %d bonus %d.", v.id, bonusid))
-                chest[#chest+1] = b
-            end
-            v.chest = chest
-        end
-    end
 
     for k, v in pairs(stagedata) do
         if v.bonusID > 0 then
@@ -105,6 +70,7 @@ skynet.start(function()
                     num = 1,
                 }
                 total_rate = total_rate + v1
+                v.equipBonus = true
             end
         end
         for item, num, rate in string.gmatch(v.dropItem, "(%d+);(%d+);(%d+)") do
@@ -151,6 +117,42 @@ skynet.start(function()
         end
         v.all_rate = rt
         v.total_rate = total_rate
+    end
+
+    for k, v in pairs(itemdata) do
+        if v.overlay == 0 then
+            v.overlay = 1
+        end
+        if v.compos > 0 then
+            assert(itemdata[v.compos], string.format("No item data %d.", v.compos))
+        end
+        if is_equip(v.itemType) then
+            local needLv = v.needLv
+            if v.needLv == 0 then
+                needLv = 1
+            end
+            v.needLvExp = assert(expdata[needLv], string.format("No exp data %d.", needLv))
+            if v.quality < base.MAX_QUALITY then
+                local improveMat = v.compos + 1
+                assert(itemdata[improveMat], string.format("No item data %d.", improveMat))
+                local improveItem = k + 1
+                assert(itemdata[improveItem], string.format("No item data %d.", improveItem))
+            end
+            if v.needLv < base.MAX_LEVEL then
+                local upgradeItem = k + 5000
+                assert(itemdata[upgradeItem], string.format("No item data %d.", upgradeItem))
+            end
+        elseif is_chest(v.itemType) then
+            assert(v.chestID~="", string.format("Illegal chest %d.", v.id))
+            local chest = {}
+            for bonus in string.gmatch(v.chestID, "(%d+)") do
+                local bonusid = tonumber(bonus)
+                local b = assert(bonusdata[bonusid], string.format("No bonus data %d.", bonusid))
+                assert(not b.equipBonus or b.EquipLv~=0, string.format("Illegal chest %d bonus %d.", v.id, bonusid))
+                chest[#chest+1] = b
+            end
+            v.chest = chest
+        end
     end
 
     local day_task = {}

@@ -372,7 +372,7 @@ function proc.upgrade_passive(msg)
     end
     local p = update_user()
     local mul = 1
-    if msb.rmb and si.status > 0 then
+    if msg.rmb and si.status > 0 then
         local rmb = idata.price * si.status
         if user.rmb < rmb then
             error{code = error_code.ROLE_RMB_LIMIT}

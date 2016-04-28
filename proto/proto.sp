@@ -280,6 +280,14 @@
     level 0 : integer
 }
 
+.add_money {
+    money 0 : integer
+}
+
+.add_rmb {
+    rmb 0 : integer
+}
+
 .upgrade_passive {
     id 0 : integer
     skillid 1 : integer

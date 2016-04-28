@@ -76,4 +76,22 @@ function proc.add_level(msg)
     return "update_user", {update=p}
 end
 
+function proc.add_money(msg)
+    if data.user.gm_level == 0 then
+        error{code = error_code.ROLE_NO_PERMIT}
+    end
+    local p = update_user()
+    role.add_money(p, msg.money)
+    return "update_user", {update=p}
+end
+
+function proc.add_rmb(msg)
+    if data.user.gm_level == 0 then
+        error{code = error_code.ROLE_NO_PERMIT}
+    end
+    local p = update_user()
+    role.add_rmb(p, msg.rmb)
+    return "update_user", {update=p}
+end
+
 return gm

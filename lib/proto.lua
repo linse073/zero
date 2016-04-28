@@ -52,6 +52,8 @@ local msg = {
     [2600] = "add_item",
     [2601] = "add_exp",
     [2602] = "add_level",
+    [2603] = "add_money",
+    [2604] = "add_rmb",
 
     [2700] = "query_rank",
     [2701] = "rank_list",

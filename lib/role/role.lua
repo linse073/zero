@@ -375,9 +375,9 @@ function proc.create_user(msg)
 end
 
 local function enter_game(msg)
-    if data.user then
-        error{code = error_code.ROLE_ALREADY_ENTER}
-    end
+    -- if data.user then
+    --     error{code = error_code.ROLE_ALREADY_ENTER}
+    -- end
     local suser
     for k, v in ipairs(data.account) do
         if v.id == msg.id then

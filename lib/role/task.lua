@@ -52,6 +52,7 @@ function task.enter()
     data.task = dt
     data.day_task = {}
     data.accept_task = {}
+    data.master_task = nil
     for k, v in pairs(user.task) do
         local t = task.add(v)
         if t[2].TaskType ~= base.TASK_TYPE_MASTER or v.status ~= base.TASK_STATUS_FINISH then

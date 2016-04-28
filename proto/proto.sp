@@ -78,6 +78,8 @@
     .skill_info {
         id 0 : integer
         level 1 : integer
+        exp 2 : integer
+        status 3 : integer
     }
 
     id 0 : integer
@@ -281,6 +283,7 @@
 .upgrade_passive {
     id 0 : integer
     skillid 1 : integer
+    rmb 2 : boolean
 }
 
 .query_rank {

@@ -17,6 +17,7 @@ local update_user = util.update_user
 local carddata
 local expdata
 local passivedata
+local itemdata
 local original_card
 local base
 local error_code
@@ -31,6 +32,7 @@ skynet.init(function()
     carddata = share.carddata
     expdata = share.expdata
     passivedata = share.passivedata
+    itemdata = share.itemdata
     original_card = share.original_card
     base = share.base
     error_code = share.error_code
@@ -84,6 +86,8 @@ function card.add_newbie_card(p, cardid)
             passive_skill[k] = {
                 id = v.id,
                 level = 1,
+                exp = 0,
+                status = 0,
             }
         end
         local v = {
@@ -131,16 +135,31 @@ function card.add_to_type(c)
     type_card[original] = v
 end
 
+function card.repair(v)
+    for k1, v1 in ipairs(v.passive_skill) do
+        if not v1.exp then
+            v1.exp = 0
+        end
+        if not v1.status then
+            v1.status = 0
+        end
+    end
+end
+
 function card.add(v, d)
     if not d then
         d = assert(carddata[v.cardid], string.format("No card data %d.", v.cardid))
     end
+    card.repair(v)
     local ps = {}
-    for k, v in ipairs(v.passive_skill) do
-        ps[v.id] = {
-            v,
-            assert(passivedata[v.id], string.format("No passive data %d.", v.id)),
-            assert(expdata[v.level], string.format("No exp data %d.", v.level)),
+    for k1, v1 in ipairs(v.passive_skill) do
+        local edata = assert(expdata[v1.level], string.format("No exp data %d.", v1.level))
+        local expitem = item.gen_itemid(0, 0, d.cardAttr, edata.passiveItem)
+        ps[v1.id] = {
+            v1,
+            assert(passivedata[v1.id], string.format("No passive data %d.", v1.id)),
+            edata,
+            assert(itemdata[expitem], string.format("No item data %d.", expitem)),
         }
     end
     local c = {v, d, ps}
@@ -176,6 +195,8 @@ function card.add_by_cardid(p, d)
         passive_skill[k] = {
             id = v.id,
             level = 1,
+            exp = 0,
+            status = 0,
         }
     end
     local v = {
@@ -340,20 +361,53 @@ function proc.upgrade_passive(msg)
     if not ps then
         error{code = error_code.CARD_NO_PASSIVE_SKILL}
     end
-    local money = ps[3].passiveGold
+    local si = ps[1]
     local user = data.user
-    if user.money < money then
-        error{code = error_code.ROLE_MONEY_LIMIT}
+    if si.level >= user.level then
+        error{code = error_code.ROLE_LEVEL_LIMIT}
+    end
+    local idata = ps[4]
+    if item.count(idata.id) == 0 then
+        error{code = error_code.ITEM_NUM_LIMIT}
     end
     local p = update_user()
-    role.add_money(p, money)
-    local si = ps[1]
-    si.level = si.level + 1
-    ps[3] = assert(expdata[si.level], string.format("No exp data %d.", si.level))
+    local mul = 1
+    if msb.rmb and si.status > 0 then
+        local rmb = idata.price * si.status
+        if user.rmb < rmb then
+            error{code = error_code.ROLE_RMB_LIMIT}
+        end
+        role.add_rmb(p, -rmb)
+        mul = 10 * si.status
+        si.status = 0
+    end
+    item.del_by_itemid(p, idata.id, 1)
+    si.exp = si.exp + idata.exp * mul
+    local olditem = ps[3].passiveItem
+    while true do
+        if si.exp < ps[3].passiveExp then
+            break
+        end
+        si.level = si.level + 1
+        ps[3] = assert(expdata[si.level], string.format("No exp data %d.", si.level))
+    end
+    local newitem = ps[3].passiveItem
+    if olditem ~= newitem then
+        local itemid = item.gen_itemid(0, 0, d.cardAttr, newitem)
+        ps[4] = assert(itemdata[itemid], string.format("No item data %d.", itemid))
+    end
+    if mul == 1 and si.status == 0 then
+        local r = random(base.RAND_FACTOR)
+        if r <= 500 then
+            si.status = 2
+        elseif r <= 1500 then
+            si.status = 1
+        end
+    end
     local pcard = p.card
     pcard[#pcard+1] = {
         id = msg.id,
-        passive_skill = si,
+        passive_skill = {si},
     }
     task.update(p, base.TASK_COMPLETE_UPGRADE_PASSIVE, si.id, 1)
     return "update_user", {update=p}

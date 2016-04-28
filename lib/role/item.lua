@@ -502,15 +502,12 @@ function proc.use_item(msg)
     end
     local itemtype = idata.itemType
     if is_chest(itemtype) then
-        local p
+        local p = update_user()
         if idata.key > 0 then
             if item.count(idata.key) == 0 then
                 error{code = error_code.ITEM_NUM_LIMIT}
             end
-            p = update_user()
             item.del_by_itemid(p, idata.key, 1)
-        else
-            p = update_user()
         end
         item.del(i)
         local pitem = p.item

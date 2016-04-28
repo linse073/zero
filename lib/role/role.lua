@@ -44,7 +44,6 @@ local proc = {}
 local role_mgr
 local rank_mgr
 local gm_level = skynet.getenv("gm_level")
-local get_reward
 
 skynet.init(function()
     expdata = share.expdata
@@ -56,14 +55,6 @@ skynet.init(function()
     type_reward = share.type_reward
     map_pos = share.map_pos
     max_exp = share.max_exp
-    get_reward = {
-        [base.REWARD_TYPE_ITEM] = function(p, reward)
-            item.add_by_itemid(p, 1, reward.item)
-        end,
-        [base.REWARD_TYPE_RMB] = function(p, reward)
-            role.add_rmb(p, reward.reward)
-        end
-    }
     role_mgr = skynet.queryservice("role_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
 end)
@@ -257,6 +248,13 @@ function role.fight_point(p)
     task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
 end
 
+local function get_reward(p, reward)
+    if reward.rewardType == base.REWARD_TYPE_ITEM then
+        item.add_by_itemid(p, 1, reward.item)
+    elseif reward.rewardType == base.REWARD_TYPE_RMB then
+        role.add_rmb(p, reward.reward)
+    end
+end
 function role.sign_in(p, index)
     local user = data.user
     local puser = p.user
@@ -264,10 +262,10 @@ function role.sign_in(p, index)
     user.sign_in_day = user.sign_in_day + 1
     puser.sign_in_day = user.sign_in_day
     local reward = assert(type_reward[base.REWARD_ACTION_SIGN_IN][index], string.format("No sign in reward data %d.", index))
-    get_reward[reward.rewardType](p, reward)
+    get_reward(p, reward)
     local treward = type_reward[base.REWARD_ACTION_TOTAL_SIGN_IN][index]
     if treward then
-        get_reward[treward.rewardType](p, treward)
+        get_reward(p, treward)
     end
     task.update(p, base.TASK_COMPLETE_SIGN_IN, 0, 1)
 end

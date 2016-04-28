@@ -140,6 +140,7 @@ local base = {
     BONUS_TYPE_ITEM = 3,
     BONUS_TYPE_MATERIAL = 4,
     BONUS_TYPE_STONE = 5,
+    BONUS_TYPE_PASSIVE_EXP = 6,
 
     -- map
     MAP_RECT = {

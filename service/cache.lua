@@ -139,6 +139,16 @@ skynet.start(function()
             }
             total_rate = total_rate + v.StoneRate
         end
+        if v.PassiveExpRate > 0 then
+            rt[#rt+1] = {
+                type = base.BONUS_TYPE_PASSIVE_EXP,
+                item_type = v.PassiveExpType,
+                quality = v.PassiveExpQua,
+                num = v.PassiveExpNum,
+                rate = v.PassiveExpRate,
+            }
+            total_rate = total_rate + v.PassiveExpRate
+        end
         v.all_rate = rt
         v.total_rate = total_rate
     end

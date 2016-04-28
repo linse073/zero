@@ -105,6 +105,8 @@ local base = {
     ITEM_TYPE_ICE_EXP = 39,
     ITEM_TYPE_MAGIC_EXP = 40,
 
+    ITEM_TYPE_CARD_EXP_BEGIN = 30,
+
     ITEM_DEFENCE = 1,
     ITEM_ATTACK = 2,
 

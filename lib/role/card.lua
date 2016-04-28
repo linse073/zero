@@ -154,7 +154,7 @@ function card.add(v, d)
     local ps = {}
     for k1, v1 in ipairs(v.passive_skill) do
         local edata = assert(expdata[v1.level], string.format("No exp data %d.", v1.level))
-        local expitem = item.gen_itemid(0, 0, d.cardAttr, edata.passiveItem)
+        local expitem = item.gen_itemid(0, 0, d.cardAttr+base.ITEM_TYPE_CARD_EXP_BEGIN, edata.passiveItem)
         ps[v1.id] = {
             v1,
             assert(passivedata[v1.id], string.format("No passive data %d.", v1.id)),
@@ -393,7 +393,7 @@ function proc.upgrade_passive(msg)
     end
     local newitem = ps[3].passiveItem
     if olditem ~= newitem then
-        local itemid = item.gen_itemid(0, 0, d.cardAttr, newitem)
+        local itemid = item.gen_itemid(0, 0, d.cardAttr+base.ITEM_TYPE_CARD_EXP_BEGIN, newitem)
         ps[4] = assert(itemdata[itemid], string.format("No item data %d.", itemid))
     end
     if mul == 1 and si.status == 0 then

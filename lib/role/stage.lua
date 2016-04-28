@@ -131,7 +131,7 @@ function stage.rand_bonus(d, sd)
             elseif v.type == base.BONUS_TYPE_PASSIVE_EXP then
                 local itemtype = v.item_type
                 if itemtype == 0 then
-                    itemtype == randi(base.ITEM_TYPE_FIRE_EXP, base.ITEM_TYPE_MAGIC_EXP)
+                    itemtype = randi(base.ITEM_TYPE_FIRE_EXP, base.ITEM_TYPE_MAGIC_EXP)
                 end
                 bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
             else

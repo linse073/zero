@@ -55,13 +55,15 @@ function CMD.enter(info, agent)
 end
 
 function CMD.logout(roleid)
-    CMD.broadcast_area("logout", {id=roleid})
-    local role = assert(role_list[roleid], string.format("No role %d.", roleid))
-    local area = role[2]
-    area.role[roleid] = nil
-    area.num = area.num - 1
-    role_list[roleid] = nil
-    skynet.error(string.format("Role logout %d.", roleid))
+    local role = role_list[roleid]
+    if role then
+        CMD.broadcast_area("logout", {id=roleid})
+        local area = role[2]
+        area.role[roleid] = nil
+        area.num = area.num - 1
+        role_list[roleid] = nil
+        skynet.error(string.format("Role logout %d.", roleid))
+    end
 end
 
 function CMD.get(roleid)

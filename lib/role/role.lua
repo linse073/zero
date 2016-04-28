@@ -3,6 +3,7 @@ local timer = require "timer"
 local share = require "share"
 local notify = require "notify"
 local util = require "util"
+local proc_queue = require "proc_queue"
 
 local card
 local friend
@@ -21,8 +22,6 @@ local math = math
 local floor = math.floor
 local randomseed = math.randomseed
 local random = math.random
-local sqrt = math.sqrt
--- local date = os.date
 
 local update_user = util.update_user
 local merge_table = util.merge_table
@@ -35,6 +34,7 @@ local error_code
 local base
 local config
 local type_reward
+local cs
 local map_pos
 local max_exp
 local data
@@ -53,6 +53,7 @@ skynet.init(function()
     base = share.base
     config = share.config
     type_reward = share.type_reward
+    cs = share.cs
     map_pos = share.map_pos
     max_exp = share.max_exp
     role_mgr = skynet.queryservice("role_mgr")
@@ -101,7 +102,6 @@ function role.exit()
     for k, v in ipairs(module) do
         v.exit()
     end
-    -- timer.del_routine("routine")
     timer.del_routine("save_role")
     timer.del_day_routine("update_day")
     timer.del_routine("heart_beat")
@@ -153,26 +153,6 @@ end
 function role.move_speed()
     return base.MOVE_SPEED
 end
-
--- function role.routine()
---     local user = data.user
---     if user then
---         local move = data.move
---         if move.total_time > move.pass_time then
---             move.pass_time = move.pass_time + 1
---             local cur_pos = move.cur_pos
---             if move.total_time <= move.pass_time then
---                 cur_pos.x = user.des_pos.x
---                 cur_pos.y = user.des_pos.y
---             else
---                 cur_pos.x = cur_pos.x + move.speed.x
---                 cur_pos.y = cur_pos.y + move.speed.y
---             end
---             user.cur_pos.x = floor(cur_pos.x)
---             user.cur_pos.y = floor(cur_pos.y)
---         end
---     end
--- end
 
 function role.heart_beat()
     if data.heart_beat == 0 then
@@ -319,21 +299,6 @@ function role.repair(user)
     end
 end
 
--- function role.move(des_pos)
---     local user = data.user
---     user.des_pos.x = des_pos.x
---     user.des_pos.y = des_pos.y
---     local move = data.move
---     move.pass_time = 0
---     local cur_pos = move.cur_pos
---     local diffx = des_pos.x - cur_pos.x
---     local diffy = des_pos.y - cur_pos.y
---     local dis = sqrt(diffx * diffx + diffy * diffy)
---     move.total_time = dis / role.move_speed()
---     move.speed.x = diffx / move.total_time
---     move.speed.y = diffy / move.total_time
--- end
-
 -------------------protocol process--------------------------
 
 function proc.notify_info(msg)
@@ -409,11 +374,7 @@ function proc.create_user(msg)
     return "simple_user", su
 end
 
-function proc.enter_game(msg)
-    if data.enter then
-        error{code = error_code.ROLE_IS_ENTERING}
-    end
-    data.enter = true
+local function enter_game(msg)
     if data.user then
         error{code = error_code.ROLE_ALREADY_ENTER}
     end
@@ -456,24 +417,12 @@ function proc.enter_game(msg)
         rank.add()
     end
     if user.logout_time > 0 then
-        -- local od = date("%j", user.logout_time)
-        -- local nd = date("%j", now)
         local od = year_day(user.logout_time)
         local nd = year_day(now)
         if od ~= nd then
             update_day(user)
         end
     end
-    local cur_pos = user.cur_pos
-    -- data.move = {
-    --     cur_pos = {x=cur_pos.x, y=cur_pos.y},
-    --     pass_time = 0,
-    --     total_time = 0,
-    --     speed = {x=0, y=0},
-    -- }
-    local des_pos = user.des_pos
-    -- role.move(des_pos)
-    -- timer.add_routine("routine", role.routine, 1)
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     local stageid, seed = stage.newbie_stage()
@@ -482,20 +431,21 @@ function proc.enter_game(msg)
         id = user.id,
         prof = user.prof,
         level = user.level,
-        cur_pos = cur_pos,
-        des_pos = des_pos,
+        cur_pos = user.cur_pos,
+        des_pos = user.des_pos,
         fight = stageid ~= nil,
     }
     skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
-    data.enter = nil
     return "info_all", {user=ret, start_time=config.start_time, stage_id=stageid, rand_seed=seed}
+end
+function proc.enter_game(msg)
+    return proc_queue(cs, enter_game, msg)
 end
 
 function proc.move(msg)
     local user = data.user
     local des_pos = msg.des_pos
     map_pos(des_pos)
-    -- role.move(des_pos)
     user.des_pos.x = des_pos.x
     user.des_pos.y = des_pos.y
     user.cur_pos.x = des_pos.x

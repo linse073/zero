@@ -811,7 +811,6 @@ function proc.inlay_item(msg)
         i[3] = st
     end
     local p = update_user()
-    local pitem = p.item
     local slot = d.needLv // 10
     for j = 1, slot do
         if not st[j] then

@@ -211,7 +211,7 @@ function proc.begin_stage(msg)
     local s = data.stage[msg.id]
     if s then
         local sv = s[1]
-        if sv.count >= d.limitCount then
+        if d.limitCount > 0 and sv.count >= d.limitCount then
             error{code = error_code.STAGE_COUNT_LIMIT}
         end
     end

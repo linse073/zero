@@ -243,7 +243,7 @@ function role.sign_in(p, index)
     puser.sign_in_day = user.sign_in_day
     local reward = assert(type_reward[base.REWARD_ACTION_SIGN_IN][index], string.format("No sign in reward data %d.", index))
     get_reward(p, reward)
-    local treward = type_reward[base.REWARD_ACTION_TOTAL_SIGN_IN][index]
+    local treward = type_reward[base.REWARD_ACTION_TOTAL_SIGN_IN][user.sign_in_day]
     if treward then
         get_reward(p, treward)
     end

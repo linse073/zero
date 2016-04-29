@@ -815,7 +815,7 @@ function proc.inlay_item(msg)
     local slot = d.needLv // 10
     for j = 1, slot do
         if not st[j] then
-            local stoneitem = item.gen_itemid(0, 0, d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE, j-1)
+            local stoneitem = item.gen_itemid(0, 0, d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE, j)
             item.inlay(p, i, stoneitem, j)
         end
     end

@@ -143,9 +143,7 @@ end
 function role.save_routine()
     local user = data.user
     if user then
-        if data.suser.level ~= user.level then
-            skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(data.account))
-        end
+        skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(data.account))
         skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
     end
 end
@@ -184,6 +182,7 @@ function role.add_exp(p, exp)
         puser.exp = user.exp
         if oldLevel ~= newLevel then
             user.level = newLevel
+            data.suser.level = newLevel
             puser.level = newLevel
             local pid = data.npc.propertyId + newLevel
             data.property = assert(propertydata[pid], string.format("No property data %d.", pid))
@@ -399,6 +398,9 @@ local function enter_game(msg)
     user.login_time = now
     data.suser = suser
     data.user = user
+    if user.level > suser.level then
+        suser.level = user.level
+    end
     local npcID = base.PROF_NPC_BASE + user.prof
     local npc = assert(npcdata[npcID], string.format("No npc data %d.", npcID))
     data.npc = npc

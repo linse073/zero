@@ -85,7 +85,7 @@ local datas = {
 		data = 1,
 		rewardType = 1,
 		reward = 3002001300,
-		rewardNum = 1,
+		rewardNum = 5,
 	},
 	[602000002] = {
 		id = 602000002,
@@ -101,7 +101,7 @@ local datas = {
 		data = 3,
 		rewardType = 1,
 		reward = 3002003300,
-		rewardNum = 1,
+		rewardNum = 5,
 	},
 	[602000004] = {
 		id = 602000004,
@@ -109,7 +109,7 @@ local datas = {
 		data = 4,
 		rewardType = 1,
 		reward = 3002004300,
-		rewardNum = 1,
+		rewardNum = 5,
 	},
 	[602000005] = {
 		id = 602000005,
@@ -125,7 +125,7 @@ local datas = {
 		data = 6,
 		rewardType = 1,
 		reward = 3002006300,
-		rewardNum = 1,
+		rewardNum = 5,
 	},
 	[602000007] = {
 		id = 602000007,
@@ -141,7 +141,7 @@ local datas = {
 		data = 8,
 		rewardType = 1,
 		reward = 3002008300,
-		rewardNum = 1,
+		rewardNum = 10,
 	},
 	[602000009] = {
 		id = 602000009,
@@ -157,7 +157,7 @@ local datas = {
 		data = 10,
 		rewardType = 1,
 		reward = 3002010300,
-		rewardNum = 1,
+		rewardNum = 10,
 	},
 	[602000011] = {
 		id = 602000011,
@@ -165,14 +165,14 @@ local datas = {
 		data = 11,
 		rewardType = 1,
 		reward = 3002011300,
-		rewardNum = 1,
+		rewardNum = 10,
 	},
 	[602000012] = {
 		id = 602000012,
 		type = 2,
 		data = 12,
 		rewardType = 2,
-		reward = 20,
+		reward = 30,
 		rewardNum = 1,
 	},
 	[602000013] = {
@@ -181,7 +181,7 @@ local datas = {
 		data = 13,
 		rewardType = 1,
 		reward = 3002013300,
-		rewardNum = 1,
+		rewardNum = 10,
 	},
 	[602000014] = {
 		id = 602000014,
@@ -197,7 +197,7 @@ local datas = {
 		data = 15,
 		rewardType = 1,
 		reward = 3002015300,
-		rewardNum = 1,
+		rewardNum = 15,
 	},
 	[602000016] = {
 		id = 602000016,
@@ -213,7 +213,7 @@ local datas = {
 		data = 17,
 		rewardType = 1,
 		reward = 3002017300,
-		rewardNum = 1,
+		rewardNum = 15,
 	},
 	[602000018] = {
 		id = 602000018,
@@ -221,14 +221,14 @@ local datas = {
 		data = 18,
 		rewardType = 1,
 		reward = 3002018300,
-		rewardNum = 1,
+		rewardNum = 15,
 	},
 	[602000019] = {
 		id = 602000019,
 		type = 2,
 		data = 19,
 		rewardType = 2,
-		reward = 20,
+		reward = 40,
 		rewardNum = 1,
 	},
 	[602000020] = {
@@ -237,7 +237,7 @@ local datas = {
 		data = 20,
 		rewardType = 1,
 		reward = 3002020300,
-		rewardNum = 1,
+		rewardNum = 15,
 	},
 	[602000021] = {
 		id = 602000021,
@@ -253,7 +253,7 @@ local datas = {
 		data = 22,
 		rewardType = 1,
 		reward = 3002022300,
-		rewardNum = 1,
+		rewardNum = 20,
 	},
 	[602000023] = {
 		id = 602000023,
@@ -269,7 +269,7 @@ local datas = {
 		data = 24,
 		rewardType = 1,
 		reward = 3002024300,
-		rewardNum = 1,
+		rewardNum = 20,
 	},
 	[602000025] = {
 		id = 602000025,
@@ -277,14 +277,14 @@ local datas = {
 		data = 25,
 		rewardType = 1,
 		reward = 3002025300,
-		rewardNum = 1,
+		rewardNum = 20,
 	},
 	[602000026] = {
 		id = 602000026,
 		type = 2,
 		data = 26,
 		rewardType = 2,
-		reward = 20,
+		reward = 50,
 		rewardNum = 1,
 	},
 	[602000027] = {
@@ -293,7 +293,7 @@ local datas = {
 		data = 27,
 		rewardType = 1,
 		reward = 3002027300,
-		rewardNum = 1,
+		rewardNum = 20,
 	},
 	[602000028] = {
 		id = 602000028,

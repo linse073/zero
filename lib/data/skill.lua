@@ -2397,7 +2397,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530100600] = {
 		id = 530100600,
@@ -2547,7 +2547,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530101600] = {
 		id = 530101600,
@@ -2667,7 +2667,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530102400] = {
 		id = 530102400,
@@ -2697,7 +2697,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530102600] = {
 		id = 530102600,
@@ -2757,7 +2757,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530103000] = {
 		id = 530103000,
@@ -2787,7 +2787,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530103200] = {
 		id = 530103200,
@@ -2817,7 +2817,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530103400] = {
 		id = 530103400,
@@ -2907,7 +2907,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530104000] = {
 		id = 530104000,
@@ -2922,7 +2922,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530104100] = {
 		id = 530104100,
@@ -2937,7 +2937,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530104200] = {
 		id = 530104200,
@@ -2967,7 +2967,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530104400] = {
 		id = 530104400,
@@ -3117,7 +3117,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530105500] = {
 		id = 530105500,
@@ -3147,7 +3147,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530105610] = {
 		id = 530105610,
@@ -3162,7 +3162,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530105700] = {
 		id = 530105700,
@@ -3567,7 +3567,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530108400] = {
 		id = 530108400,
@@ -3672,7 +3672,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530109100] = {
 		id = 530109100,
@@ -3792,7 +3792,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530109900] = {
 		id = 530109900,
@@ -3882,7 +3882,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530110500] = {
 		id = 530110500,
@@ -3897,7 +3897,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530110600] = {
 		id = 530110600,
@@ -4032,7 +4032,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530111500] = {
 		id = 530111500,
@@ -4077,7 +4077,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530111800] = {
 		id = 530111800,
@@ -4287,7 +4287,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530113200] = {
 		id = 530113200,
@@ -4347,7 +4347,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530113600] = {
 		id = 530113600,
@@ -4362,7 +4362,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530113700] = {
 		id = 530113700,
@@ -4512,7 +4512,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530115500] = {
 		id = 530115500,
@@ -4527,7 +4527,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530115600] = {
 		id = 530115600,
@@ -4542,7 +4542,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530115800] = {
 		id = 530115800,
@@ -4557,7 +4557,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530116000] = {
 		id = 530116000,
@@ -4632,7 +4632,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530116900] = {
 		id = 530116900,
@@ -4647,7 +4647,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530117000] = {
 		id = 530117000,
@@ -4662,7 +4662,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530117100] = {
 		id = 530117100,
@@ -4677,7 +4677,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530117200] = {
 		id = 530117200,
@@ -4692,7 +4692,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530117300] = {
 		id = 530117300,
@@ -4707,7 +4707,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530117400] = {
 		id = 530117400,
@@ -4722,7 +4722,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530117500] = {
 		id = 530117500,
@@ -4737,7 +4737,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530117600] = {
 		id = 530117600,
@@ -4797,7 +4797,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530118000] = {
 		id = 530118000,
@@ -4857,7 +4857,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530118400] = {
 		id = 530118400,
@@ -4872,7 +4872,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530118500] = {
 		id = 530118500,
@@ -5007,7 +5007,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530119400] = {
 		id = 530119400,
@@ -5022,7 +5022,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530119500] = {
 		id = 530119500,
@@ -5067,7 +5067,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530120100] = {
 		id = 530120100,
@@ -5082,7 +5082,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530120200] = {
 		id = 530120200,
@@ -5112,7 +5112,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "2500;7500",
 	},
 	[530101110] = {
 		id = 530101110,
@@ -5142,7 +5142,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "2500;7500",
+		recoveryTime = "7500;12500",
 	},
 	[530105010] = {
 		id = 530105010,
@@ -5187,7 +5187,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "2500;7500",
+		recoveryTime = "7500;12500",
 	},
 	[530105510] = {
 		id = 530105510,
@@ -5217,7 +5217,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "2500;7500",
+		recoveryTime = "7500;12500",
 	},
 	[530105810] = {
 		id = 530105810,
@@ -5307,7 +5307,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530108510] = {
 		id = 530108510,
@@ -5427,7 +5427,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "2500;7500",
+		recoveryTime = "7500;12500",
 	},
 	[530110810] = {
 		id = 530110810,
@@ -5577,7 +5577,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "2500;7500",
+		recoveryTime = "7500;12500",
 	},
 	[530114010] = {
 		id = 530114010,
@@ -5592,7 +5592,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "2500;7500",
 	},
 	[530114210] = {
 		id = 530114210,
@@ -5637,7 +5637,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530118320] = {
 		id = 530118320,
@@ -5652,7 +5652,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530118330] = {
 		id = 530118330,
@@ -5667,7 +5667,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "7500;12500",
 	},
 	[530118910] = {
 		id = 530118910,
@@ -5697,7 +5697,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "5000;15000",
+		recoveryTime = "2500;7500",
 	},
 	[530119310] = {
 		id = 530119310,
@@ -5712,7 +5712,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "2500;7500",
+		recoveryTime = "7500;12500",
 	},
 	[530119410] = {
 		id = 530119410,
@@ -5727,7 +5727,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "2500;7500",
+		recoveryTime = "7500;12500",
 	},
 	[531104100] = {
 		id = 531104100,

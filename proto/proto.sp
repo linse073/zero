@@ -3,6 +3,7 @@
     id 1 : integer
     prof 2 : integer
     level 3 : integer
+    fight_point 4 : integer
 }
 
 .account_info {

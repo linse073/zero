@@ -91,6 +91,11 @@ function role.init(userdata)
     else
         data.account = {} -- save account after create user
     end
+    for k, v in ipairs(data.account) do
+        if not v.fight_point then
+            v.fight_point = 0
+        end
+    end
     for k, v in ipairs(module) do
         v.init(data)
     end
@@ -282,6 +287,7 @@ function role.init_prop()
         end
     end
     user.fight_point = role.calc_fight(prop)
+    data.suser.fight_point = user.fight_point
     data.prop = prop
 end
 
@@ -330,6 +336,7 @@ function proc.create_user(msg)
         id = roleid,
         prof = msg.prof,
         level = 1,
+        fight_point = 0,
     }
     account[#account+1] = su
     skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(account))

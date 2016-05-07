@@ -5,6 +5,7 @@ local datas = {
 		des = "收集金币，每天探索2次",
 		name = "通天塔",
 		count = 2,
+		resIcon = "ccsresources/U_4044.png",
 	},
 	[2] = {
 		id = 2,
@@ -12,6 +13,7 @@ local datas = {
 		des = "收集金币，每天探索2次",
 		name = "机关甬道",
 		count = 2,
+		resIcon = "ccsresources/U_4043.png",
 	},
 	[3] = {
 		id = 3,
@@ -19,6 +21,7 @@ local datas = {
 		des = "寻找宝物，每天探索2次",
 		name = "怪物密室",
 		count = 2,
+		resIcon = "ccsresources/U_4041.png",
 	},
 	[4] = {
 		id = 4,
@@ -26,34 +29,39 @@ local datas = {
 		des = "寻找宝物，每天探索2次",
 		name = "丛林夺宝",
 		count = 2,
+		resIcon = "ccsresources/U_4042.png",
 	},
 	[5] = {
 		id = 5,
 		chapter = 2,
 		des = "收集金币，每天探索2次",
-		name = "沙漠1",
+		name = "地下皇陵",
 		count = 2,
+		resIcon = "ccsresources/U_4044.png",
 	},
 	[6] = {
 		id = 6,
 		chapter = 2,
 		des = "收集金币，每天探索2次",
-		name = "沙漠2",
+		name = "禁区追猎",
 		count = 2,
+		resIcon = "ccsresources/U_4043.png",
 	},
 	[7] = {
 		id = 7,
 		chapter = 2,
 		des = "寻找宝物，每天探索2次",
-		name = "金子内部1",
+		name = "卫兵营地",
 		count = 2,
+		resIcon = "ccsresources/U_4041.png",
 	},
 	[8] = {
 		id = 8,
 		chapter = 2,
 		des = "寻找宝物，每天探索2次",
-		name = "金子内部2",
+		name = "沙漠迷宫",
 		count = 2,
+		resIcon = "ccsresources/U_4042.png",
 	},
 }
 

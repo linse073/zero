@@ -43,7 +43,7 @@ local proc = {}
 local role_mgr
 local rank_mgr
 local gm_level = skynet.getenv("gm_level")
-local start_utc_time = skynet.getenv("start_utc_time")
+local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
 skynet.init(function()
     expdata = share.expdata

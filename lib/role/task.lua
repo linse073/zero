@@ -186,8 +186,7 @@ function task.update(p, completeType, condition, count, setCount)
     for k, v in pairs(data.accept_task) do
         local vt = v[1]
         local d = v[2]
-        if user.level >= d.levelLimit and vt.status == base.TASK_STATUS_ACCEPT and completeType == d.CompleteType
-            and (d.condition == 0 or d.condition == condition) then
+        if user.level >= d.levelLimit and completeType == d.CompleteType and (d.condition == 0 or d.condition == condition) then
             if setCount then
                 vt.count = setCount
             else

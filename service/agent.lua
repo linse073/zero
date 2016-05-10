@@ -80,8 +80,8 @@ function CMD.once_routine(source, key)
     timer.call_once_routine(key)
 end
 
-function CMD.day_routine(source, key)
-    timer.call_day_routine(key)
+function CMD.day_routine(source, key, od, nd)
+    timer.call_day_routine(key, od, nd)
 end
 
 function CMD.notify(source, msg, info)

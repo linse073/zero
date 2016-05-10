@@ -1,13 +1,12 @@
 local skynet = require "skynet"
-local util = require "util"
+local func = require "func"
 
 local pairs = pairs
 local assert = assert
 local string = string
--- local date = os.date
 local floor = math.floor
+local game_day = func.game_day
 
-local year_day = util.year_day
 local routine_list = {}
 local once_routine_list = {}
 local day_routine_list = {}
@@ -29,13 +28,12 @@ local function time_routine()
             skynet.send(v.address, "lua", "once_routine", k)
         end
     end
-    -- local day = date("%j", floor(now))
-    local day = year_day(floor(now))
+    local day = game_day(floor(now))
     if day ~= cur_day then
-        cur_day = day
         for k, v in pairs(day_routine_list) do
-            skynet.send(v, "lua", "day_routine", k)
+            skynet.send(v, "lua", "day_routine", k, cur_day, day)
         end
+        cur_day = day
     end
     if running then
         skynet.timeout(100, time_routine)
@@ -84,8 +82,7 @@ function CMD.del_day(key)
 end
 
 skynet.start(function()
-    -- cur_day = date("%j", floor(skynet.time()))
-    cur_day = year_day(floor(skynet.time()))
+    cur_day = game_day(floor(skynet.time()))
     running = true
     skynet.timeout(100, time_routine)
     

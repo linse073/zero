@@ -1,7 +1,27 @@
 local skynet = require "skynet"
+local util = require "util"
+
+local string = string
+local ipairs = ipairs
+local tonumber = tonumber
+local os = os
 
 skynet.start(function()
 	skynet.error("Server start")
+
+    local year, month, day, hour, min, sec = string.match(skynet.getenv("start_time"), "(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+)")
+    local st = {
+        year = tonumber(year),
+        month = tonumber(month),
+        day = tonumber(day),
+        hour = tonumber(hour),
+        min = tonumber(min),
+        sec = tonumber(sec),
+    }
+    local t = os.time(st)
+    skynet.setenv("start_utc_time", t)
+    skynet.setenv("start_routine_time", util.day_time(t))
+
     -- debug service
     if not skynet.getenv("daemon") then
         skynet.newservice("console")

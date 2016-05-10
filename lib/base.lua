@@ -190,7 +190,6 @@ local base = {
 
     PROF_NPC_BASE = 1200000000,
     NEWBIE_CARD = 1600310061,
-    DAY_SECOND = 24 * 60 * 60,
     MAX_SIGN_IN = 28,
 
     REWARD_ACTION_ONLINE = 1,

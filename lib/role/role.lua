@@ -3,6 +3,7 @@ local timer = require "timer"
 local share = require "share"
 local notify = require "notify"
 local util = require "util"
+local func = require "func"
 local proc_queue = require "proc_queue"
 
 local card
@@ -25,14 +26,12 @@ local random = math.random
 
 local update_user = util.update_user
 local merge_table = util.merge_table
-local year_day = util.year_day
-local day_time = util.day_time
+local game_day = func.game_day
 local expdata
 local npcdata
 local propertydata
 local error_code
 local base
-local config
 local type_reward
 local cs
 local map_pos
@@ -44,6 +43,7 @@ local proc = {}
 local role_mgr
 local rank_mgr
 local gm_level = skynet.getenv("gm_level")
+local start_utc_time = skynet.getenv("start_utc_time")
 
 skynet.init(function()
     expdata = share.expdata
@@ -51,7 +51,6 @@ skynet.init(function()
     propertydata = share.propertydata
     error_code = share.error_code
     base = share.base
-    config = share.config
     type_reward = share.type_reward
     cs = share.cs
     map_pos = share.map_pos
@@ -120,12 +119,11 @@ function role.exit()
     data = nil
 end
 
-local function update_day(user)
+local function update_day(user, od, nd)
     user.arena_count = 0
     user.charge_arena = 0
     local update_sign_in = false
-    local diff = day_time(floor(skynet.time())) - config.start_day
-    if diff // base.DAY_SECOND % base.MAX_SIGN_IN == 0 then
+    if od // base.MAX_SIGN_IN ~= nd // base.MAX_SIGN_IN then
         local sign_in = user.sign_in
         for i = 1, base.MAX_SIGN_IN do
             sign_in[i] = false
@@ -137,10 +135,10 @@ local function update_day(user)
     return task.update_day(), update_sign_in
 end
 
-function role.update_day()
+function role.update_day(od, nd)
     local user = data.user
     if user then
-        local pt, update_sign_in = update_day(user)
+        local pt, update_sign_in = update_day(user, od, nd)
         notify.add("update_day", {task=pt, update_sign_in=update_sign_in})
     end
 end
@@ -426,10 +424,10 @@ local function enter_game(msg)
         rank.add()
     end
     if user.logout_time > 0 then
-        local od = year_day(user.logout_time)
-        local nd = year_day(now)
+        local od = game_day(user.logout_time)
+        local nd = game_day(now)
         if od ~= nd then
-            update_day(user)
+            update_day(user, od, nd)
         end
     end
     timer.add_routine("save_role", role.save_routine, 300)
@@ -445,7 +443,7 @@ local function enter_game(msg)
         fight = stageid ~= nil,
     }
     skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
-    return "info_all", {user=ret, start_time=config.start_time, stage_id=stageid, rand_seed=seed}
+    return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, rand_seed=seed}
 end
 function proc.enter_game(msg)
     return proc_queue(cs, enter_game, msg)
@@ -468,8 +466,7 @@ function proc.move(msg)
 end
 
 function proc.sign_in(msg)
-    local diff = day_time(floor(skynet.time())) - config.start_day
-    local index = diff // base.DAY_SECOND % base.MAX_SIGN_IN + 1
+    local index = game_day(floor(skynet.time())) % base.MAX_SIGN_IN + 1
     assert(index<=base.MAX_SIGN_IN, string.format("Illegal sign in index %d.", index))
     local user = data.user
     local sign_in = user.sign_in

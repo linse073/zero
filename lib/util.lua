@@ -174,15 +174,6 @@ function util.dump(value, desciption, nesting)
     end
 end
 
-function util.year_day(t)
-    local st = date("*t", t)
-    if st.hour < 4 then
-        return st.yday
-    else
-        return st.yday + 1
-    end
-end
-
 function util.day_time(t)
     local st = date("*t", t)
     if st.hour >= 4 then

@@ -15,4 +15,4 @@ config = "config.config"
 debug_console = 8100
 login = 8001
 gm_level = 1
-start_time = "2015-05-08 00:00:00"
+start_time = "2016-05-10 00:00:00"

@@ -106,7 +106,7 @@ function card.add_newbie_card(p, cardid)
 end
 
 function card.rank_card_full()
-    local ec = data.equip_card[2]
+    local ec = data.equip_card[1]
     for i = 1, base.MAX_EQUIP_CARD do
         if not ec[i] then
             return false
@@ -117,7 +117,7 @@ end
 
 function card.rank_card()
     local info = {}
-    local ec = data.equip_card[2]
+    local ec = data.equip_card[1]
     for i = 1, base.MAX_EQUIP_CARD do
         local c = ec[i][1]
         info[i] = {
@@ -341,7 +341,7 @@ function proc.use_card(msg)
     end
     local p = update_user()
     card.use(p, c, msg.pos_type, msg.pos)
-    if msg.pos_type == 2 and card.rank_card_full() then
+    if msg.pos_type == 1 and card.rank_card_full() then
         local rank_info = data.rank_info
         if rank_info then
             rank_info.card = card.rank_card()

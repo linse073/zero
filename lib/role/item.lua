@@ -544,9 +544,9 @@ function proc.compound_item(msg)
     if not d then
         error{code = error_code.ITEM_ID_NOT_EXIST}
     end
-    if not is_material(d.itemType) then
-        error{code = error_code.ERROR_ITEM_TYPE}
-    end
+    -- if not is_material(d.itemType) then
+    --     error{code = error_code.ERROR_ITEM_TYPE}
+    -- end
     local compounditem = d.compos
     if compounditem == 0 then
         error{code = error_code.CAN_NOT_COMPOUND_ITEM}

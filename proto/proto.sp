@@ -149,6 +149,7 @@
     msgid 0 : integer
     update 1 : user_all
     sign_in 2 : integer
+    rand_seed 3 : integer
 }
 
 .update_day {

@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
+local new_rand = require "random"
 
 local task
 local role
@@ -162,7 +163,7 @@ function item.add_by_itemid(p, num, d)
         for k, v in ipairs(d.chest) do
             bonus[k] = {rand_num=num, data=v}
         end
-        stage.get_bonus(floor(skynet.time()), bonus, p)
+        stage.get_bonus(bonus, p)
     else
         local itemid = d.id
         assert(num>0, string.format("Add item %d num error.", itemid))
@@ -520,7 +521,8 @@ function proc.use_item(msg)
         for k, v in ipairs(idata.chest) do
             bonus[k] = {rand_num=1, data=v}
         end
-        stage.get_bonus(floor(skynet.time()), bonus, p)
+        new_rand.init(floor(skynet.time()))
+        stage.get_bonus(bonus, p)
         return "update_user", {update=p}
     elseif is_equip(itemtype) then
         if iv.pos == msg.pos then

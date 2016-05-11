@@ -5,6 +5,7 @@ local notify = require "notify"
 local util = require "util"
 local func = require "func"
 local proc_queue = require "proc_queue"
+local new_rand = require "random"
 
 local card
 local friend
@@ -488,8 +489,10 @@ function proc.sign_in(msg)
         end
     end
     local p = update_user()
+    local rand_seed = floor(skynet.time())
+    new_rand.init(rand_seed)
     role.sign_in(p, pindex)
-    return "update_user", {update=p, sign_in=pindex}
+    return "update_user", {update=p, sign_in=pindex, rand_seed=rand_seed}
 end
 
 return role

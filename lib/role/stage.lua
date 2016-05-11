@@ -156,8 +156,7 @@ local function bonus_item(ri, p)
         end
     end
 end
-function stage.get_bonus(seed, bonus, p, d)
-    new_rand.init(seed)
+function stage.get_bonus(bonus, p, d)
     for k, v in ipairs(bonus) do
         local rand_item = {}
         for i = 1, v.rand_num do
@@ -259,7 +258,8 @@ function proc.end_stage(msg)
         end
     end
     local p = update_user()
-    stage.get_bonus(msg.rand_seed, bonus, p, d)
+    new_rand.init(msg.rand_seed)
+    stage.get_bonus(bonus, p, d)
     if money > 0 then
         role.add_money(p, money)
     end

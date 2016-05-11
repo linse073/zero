@@ -233,7 +233,7 @@ end
 
 local function get_reward(p, reward)
     if reward.rewardType == base.REWARD_TYPE_ITEM then
-        item.add_by_itemid(p, 1, reward.item)
+        item.add_by_itemid(p, reward.rewardNum, reward.item)
     elseif reward.rewardType == base.REWARD_TYPE_RMB then
         role.add_rmb(p, reward.reward)
     end

@@ -11,6 +11,7 @@ local pairs = pairs
 local ipairs = ipairs
 local assert = assert
 local error = error
+local type = type
 local string = string
 local math = math
 local random = math.random
@@ -167,8 +168,14 @@ function stage.get_bonus(bonus, p, d)
     for k, v in ipairs(bonus) do
         local rand_item = v.rand_item
         if v.num then
-            for k1, v1 in ipairs(v.num) do
-                bonus_item(rand_item[v1], p)
+            if type(v.num) == "table" then
+                for k1, v1 in ipairs(v.num) do
+                    bonus_item(rand_item[v1], p)
+                end
+            else
+                for i = 1, v.num do
+                    bonus_item(rand_item[i], p)
+                end
             end
         else
             for k1, v1 in ipairs(rand_item) do
@@ -254,10 +261,34 @@ function proc.end_stage(msg)
     end
     if msg.total_box then
         if d.dropBonus then
-            bonus[#bonus+1] = {rand_num=msg.total_box, num=msg.pick_box or {}, data=d.dropBonus}
+            bonus[#bonus+1] = {rand_num=msg.total_box, num=msg.pick_box or 0, data=d.dropBonus}
         end
     end
+    local user = data.user
     local p = update_user()
+    if d.bonus then
+        assert(msg.pick_chest<=base.MAX_EXTRA_STAGE_BONUS, string.format("error chest num %d.", msg.pick_chest))
+        local num = 0
+        if d.moneyType > 0 then
+            local cost = base.STAGE_BONUS_COST[d.moneyType]
+            local fn = role["add_" .. cost]
+            for i = 1, msg.pick_chest do
+                local money = i * d.moneyNum
+                if user[cost] >= money then
+                    fn(p, -m)
+                    num = num + 1
+                else
+                    break
+                end
+            end
+        end
+        bonus[#bonus+1] = {rand_num=2, num=num, data=d.bonus}
+        if user.vip > 0 then
+            bonus[#bonus+1] = {rand_num=1, data=d.bonus}
+        else
+            bonus[#bonus+1] = {rand_num=1, num=0, data=d.bonus}
+        end
+    end
     new_rand.init(msg.rand_seed)
     stage.get_bonus(bonus, p, d)
     if money > 0 then
@@ -290,7 +321,6 @@ function proc.end_stage(msg)
     task.update(p, base.TASK_COMPLETE_STAGE_GUIDE, msg.id, 1)
     stage_seed.id = 0
     stage_seed.seed = 0
-    local user = data.user
     local initRect = base.INIT_RECT
     local des_pos = user.des_pos
     des_pos.x = random(initRect.x, initRect.ex)

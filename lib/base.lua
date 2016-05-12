@@ -144,6 +144,12 @@ local base = {
     BONUS_TYPE_STONE = 5,
     BONUS_TYPE_PASSIVE_EXP = 6,
 
+    STAGE_BONUS_COST = {
+        "money",
+        "rmb",
+    },
+    MAX_EXTRA_STAGE_BONUS = 2,
+
     -- map
     MAP_RECT = {
         x = 580,

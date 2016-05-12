@@ -59,6 +59,7 @@ function stage.enter()
     data.stage_seed = {
         id = 0,
         seed = 0,
+        bonus = false,
     }
     for k, v in pairs(data.user.stage) do
         stage.add(v)
@@ -193,6 +194,8 @@ function stage.newbie_stage()
         stage_seed.id = stageid
         local seed = random(floor(skynet.time())+stageid)
         stage_seed.seed = seed
+        stage_seed.data = assert(stagedata[stageid], string.format("No stage data %d.", stageid))
+        stage_seed.bonus = false
         return stageid, seed
     end
 end
@@ -224,6 +227,8 @@ function proc.begin_stage(msg)
     local stage_seed = data.stage_seed
     stage_seed.id = msg.id
     stage_seed.seed = random(floor(skynet.time())+msg.id)
+    stage_seed.data = d
+    stage_seed.bonus = false
     local bmsg = {
         id = user.id,
         fight = true,
@@ -242,17 +247,15 @@ function proc.end_stage(msg)
     end
     assert(msg.total_gold>=msg.pick_gold, string.format("error gold num, total %d, pick %d.", msg.total_gold, msg.pick_gold))
     local s = data.stage[msg.id]
-    local d
+    local d = stage_seed.data
     local money, exp
     local bonus = {}
     if s then
-        d = s[2]
         money, exp = d.getMoney, d.getExp
         if d.bonus then
             bonus[#bonus+1] = {rand_num=1, data=d.bonus}
         end
     else
-        d = assert(stagedata[msg.id], string.format("No stage data %d.", msg.id))
         s = stage.add_by_data(d)
         money, exp = d.firstMoney, d.firstExp
         if d.firstBonus then
@@ -265,24 +268,7 @@ function proc.end_stage(msg)
         end
     end
     local user = data.user
-    local p = update_user()
     if d.bonus then
-        assert(msg.pick_chest<=base.MAX_EXTRA_STAGE_BONUS, string.format("error chest num %d.", msg.pick_chest))
-        local num = 0
-        if d.moneyType > 0 then
-            local cost = base.STAGE_BONUS_COST[d.moneyType]
-            local fn = role["add_" .. cost]
-            for i = 1, msg.pick_chest do
-                local money = i * d.moneyNum
-                if user[cost] >= money then
-                    fn(p, -m)
-                    num = num + 1
-                else
-                    break
-                end
-            end
-        end
-        bonus[#bonus+1] = {rand_num=2, num=num, data=d.bonus}
         if user.vip > 0 then
             bonus[#bonus+1] = {rand_num=1, data=d.bonus}
         else
@@ -290,6 +276,7 @@ function proc.end_stage(msg)
         end
     end
     new_rand.init(msg.rand_seed)
+    local p = update_user()
     stage.get_bonus(bonus, p, d)
     if money > 0 then
         role.add_money(p, money)
@@ -319,8 +306,6 @@ function proc.end_stage(msg)
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
     task.update(p, base.TASK_COMPLETE_ELITE_STAGE, msg.id, 1)
     task.update(p, base.TASK_COMPLETE_STAGE_GUIDE, msg.id, 1)
-    stage_seed.id = 0
-    stage_seed.seed = 0
     local initRect = base.INIT_RECT
     local des_pos = user.des_pos
     des_pos.x = random(initRect.x, initRect.ex)
@@ -334,6 +319,41 @@ function proc.end_stage(msg)
         des_pos = des_pos,
     }
     skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
+    return "update_user", {update=p}
+end
+
+function proc.open_chest(msg)
+    assert(msg.pick_chest<=base.MAX_EXTRA_STAGE_BONUS, string.format("error chest num %d.", msg.pick_chest))
+    local stage_seed = data.stage_seed
+    local d = stage_seed.data
+    if not d then
+        error{code = error_code.ERROR_STAGE_STATE}
+    end
+    if stage_seed.bonus then
+        error{code = error_code.ALREADY_GET_STAGE_BONUS}
+    end
+    local p = update_user()
+    if d.bonus then
+        local bonus = {}
+        local num = 0
+        if d.moneyType > 0 then
+            local user = data.user
+            local cost = base.STAGE_BONUS_COST[d.moneyType]
+            local fn = role["add_" .. cost]
+            for i = 1, msg.pick_chest do
+                local money = i * d.moneyNum
+                if user[cost] >= money then
+                    fn(p, -money)
+                    num = num + 1
+                else
+                    break
+                end
+            end
+        end
+        bonus[#bonus+1] = {rand_num=2, num=num, data=d.bonus}
+        stage.get_bonus(bonus, p, d)
+    end
+    stage_seed.bonus = true
     return "update_user", {update=p}
 end
 

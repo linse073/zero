@@ -252,8 +252,11 @@
     pick_gold 7 : integer
     total_box 8 : integer
     pick_box 9 : *integer
-    pick_chest 10 : integer
-    sign 11 : string
+    sign 10 : string
+}
+
+.open_chest {
+    pick_chest 0 : integer
 }
 
 .stage_seed {

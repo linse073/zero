@@ -181,7 +181,7 @@ function proc.begin_challenge(msg)
     local pcard = {}
     local infocard = info.card
     for k, v in pairs(infocard) do
-        if v.pos[2] > 0 then
+        if v.pos[1] > 0 then
             pcard[#pcard+1] = v
         end
     end

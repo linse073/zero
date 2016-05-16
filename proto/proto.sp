@@ -97,6 +97,7 @@
     hit_score 3 : integer
     trap_score 4 : integer
     hp_score 5 : integer
+    star 6 : integer
 }
 
 .task_info {

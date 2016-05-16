@@ -68,10 +68,22 @@ function stage.enter()
     return "stage", pack
 end
 
+function stage.star(v)
+    -- TODO calculate stage star
+    v.star = 3
+end
+
+function stage.repair(v)
+    if not v.star then
+        stage.star(v)
+    end
+end
+
 function stage.add(v, d)
     if not d then
         d = assert(stagedata[v.id], string.format("No stage data %d.", v.id))
     end
+    stage.repair(v)
     local s = {v, d}
     data.stage[v.id] = s
     return s
@@ -85,6 +97,7 @@ function stage.add_by_data(d)
         hit_score = 0,
         trap_score = 0,
         hp_score = 0,
+        star = 0,
     }
     local s = stage.add(v, d)
     data.user.stage[d.id] = v
@@ -301,6 +314,7 @@ function proc.end_stage(msg)
     if msg.hp_score > sv.hp_score then
         sv.hp_score = msg.hp_score
     end
+    stage.star(sv)
     local pstage = p.stage
     pstage[#pstage+1] = sv
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)

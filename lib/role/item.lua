@@ -17,6 +17,7 @@ local floor = math.floor
 
 local update_user = util.update_user
 local itemdata
+local expdata
 local intensifydata
 local base
 local error_code
@@ -32,6 +33,7 @@ local proc = {}
 
 skynet.init(function()
     itemdata = share.itemdata
+    expdata = share.expdata
     intensifydata = share.intensifydata
     base = share.base
     error_code = share.error_code

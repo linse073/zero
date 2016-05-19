@@ -144,7 +144,6 @@
     start_time 1 : integer
     stage_id 2 : integer
     rand_seed 3 : integer
-    compound_crit 4 : integer
 }
 
 .update_user {
@@ -152,6 +151,7 @@
     update 1 : user_all
     sign_in 2 : integer
     rand_seed 3 : integer
+    compound_crit 4 : integer
 }
 
 .update_day {

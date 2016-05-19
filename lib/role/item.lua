@@ -558,15 +558,26 @@ function proc.compound_item(msg)
     if msg.num and msg.num < num then
         num = msg.num
     end
-    local comnum = num // 5
+    local comnum = num // 10
     if comnum == 0 then
         error{code = error_code.ITEM_NUM_LIMIT}
     end
+    local edata = assert(expdata[compounddata.quality], string.format("No exp data %d.", compounddata.quality))
     local p = update_user()
-    item.del_by_itemid(p, msg.itemid, comnum * 5)
-    item.add_by_itemid(p, comnum, compounddata)
+    item.del_by_itemid(p, msg.itemid, comnum * 10)
+    local mul = 1
+    if edata.composTotalRatio > 0 then
+        local r = random(edata.composTotalRatio)
+        for k, v in ipairs(edata.composRatio) do
+            if r <= v[1] then
+                mul = v[2]
+                break
+            end
+        end
+    end
+    item.add_by_itemid(p, comnum * mul, compounddata)
     task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, msg.itemid, 1)
-    return "update_user", {update=p}
+    return "update_user", {update=p, compound_crit=mul}
 end
 
 function proc.improve_item(msg)

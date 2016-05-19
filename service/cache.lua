@@ -223,6 +223,15 @@ skynet.start(function()
         end
     end
 
+    for k, v in pairs(expdata) do
+        v.composTotalRatio = v.compos1 + v.compos2 + v.compos5
+        v.composRatio = {
+            {v.compos1, 1},
+            {v.compos1+v.compos2, 2},
+            {c.compos1+v.compos2+v.compos5, 5},
+        }
+    end
+
     sharedata.new("carddata", carddata)
     sharedata.new("itemdata", itemdata)
     sharedata.new("stagedata", stagedata)

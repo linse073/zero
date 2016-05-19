@@ -228,7 +228,7 @@ skynet.start(function()
         v.composRatio = {
             {v.compos1, 1},
             {v.compos1+v.compos2, 2},
-            {c.compos1+v.compos2+v.compos5, 5},
+            {v.compos1+v.compos2+v.compos5, 5},
         }
     end
 

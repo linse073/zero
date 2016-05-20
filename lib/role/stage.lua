@@ -320,17 +320,17 @@ function proc.end_stage(msg)
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
     task.update(p, base.TASK_COMPLETE_ELITE_STAGE, msg.id, 1)
     task.update(p, base.TASK_COMPLETE_STAGE_GUIDE, msg.id, 1)
-    local initRect = base.INIT_RECT
-    local des_pos = user.des_pos
-    des_pos.x = random(initRect.x, initRect.ex)
-    des_pos.y = random(initRect.y, initRect.ey)
-    user.cur_pos.x = des_pos.x
-    user.cur_pos.y = des_pos.y
-    p.user.des_pos = des_pos
+    -- local initRect = base.INIT_RECT
+    -- local des_pos = user.des_pos
+    -- des_pos.x = random(initRect.x, initRect.ex)
+    -- des_pos.y = random(initRect.y, initRect.ey)
+    -- user.cur_pos.x = des_pos.x
+    -- user.cur_pos.y = des_pos.y
+    -- p.user.des_pos = des_pos
     local bmsg = {
         id = user.id,
         fight = false,
-        des_pos = des_pos,
+        -- des_pos = des_pos,
     }
     skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
     return "update_user", {update=p}

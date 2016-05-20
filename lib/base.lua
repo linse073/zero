@@ -158,9 +158,9 @@ local base = {
         ey = 380,
     },
     INIT_RECT = {
-        x = 500,
-        y = 250,
-        ex = 3000,
+        x = 1900,
+        y = 155,
+        ex = 2600,
         ey = 380,
     },
     MOVE_SPEED = 300,

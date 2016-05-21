@@ -5,14 +5,26 @@ local assert = assert
 local string = string
 
 local explore_area = {}
+local role_list = {}
 local searchdata
 
 local CMD = {}
 
 function CMD.get(area)
-    local address = explore_area[area]
-    assert(address, string.format("No explore area %d.", area))
-    return address
+    return assert(explore_area[area], string.format("No explore area %d.", area))
+end
+
+function CMD.explore(roleid, area)
+    CMD.exit(roleid)
+    explore = assert(explore_area[area], string.format("No explore area %d.", area))
+    skynet.call(explore, "lua", "explore", roleid)
+end
+
+function CMD.exit(roleid)
+    local explore = role_list[roleid]
+    if explore then
+        skynet.call(explore, "lua", "exit", roleid)
+    end
 end
 
 skynet.start(function()

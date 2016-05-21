@@ -13,9 +13,7 @@ function CMD.register(name, address)
 end
 
 function CMD.get(name)
-    local address = slave_list[name]
-    assert(address, string.format("No database slave %s.", name))
-    return address
+    return assert(slave_list[name], string.format("No database slave %s.", name))
 end
 
 skynet.start(function()

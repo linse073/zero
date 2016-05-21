@@ -49,6 +49,8 @@ skynet.init(function()
     share.passivedata = sharedata.query("passivedata")
     share.npcdata = sharedata.query("npcdata")
     share.propertydata = sharedata.query("propertydata")
+    share.rewarddata = sharedata.query("rewarddata")
+    share.searchdata = sharedata.query("searchdata")
 
     share.base = sharedata.query("base")
     share.error_code = sharedata.query("error_code")

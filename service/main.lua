@@ -36,6 +36,7 @@ skynet.start(function()
     skynet.uniqueservice("role_mgr")
     local rankmgr = skynet.uniqueservice("rank_mgr")
     skynet.uniqueservice("agent_mgr")
+    skynet.uniqueservice("explore_mgr")
 
     local config = require(skynet.getenv("config"))
     for k, v in ipairs(config.db) do

@@ -20,10 +20,10 @@ function CMD.explore(roleid, area)
     skynet.call(explore, "lua", "explore", roleid)
 end
 
-function CMD.exit(roleid)
+function CMD.quit(roleid)
     local explore = role_list[roleid]
     if explore then
-        skynet.call(explore, "lua", "exit", roleid)
+        skynet.call(explore, "lua", "quit", roleid)
     end
 end
 

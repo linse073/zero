@@ -10,10 +10,14 @@ local game_day = func.game_day
 local routine_list = {}
 local once_routine_list = {}
 local day_routine_list = {}
+local second_routine_list = {}
 local running = false
 local cur_day
 
 local function time_routine()
+    for k, v in pairs(second_routine_list) do
+        skynet.send(v.address, "lua", "routine", k)
+    end
     local now = skynet.time()
     for k, v in pairs(routine_list) do
         if now >= v.time then
@@ -79,6 +83,15 @@ end
 
 function CMD.del_day(key)
     day_routine_list[key] = nil
+end
+
+function CMD.add_second(address, key)
+    assert(not second_routine_list[key], string.format("Already has second routine %s.", key))
+    second_routine_list[key] = address
+end
+
+function CMD.del_second(key)
+    second_routine_list[key] = nil
 end
 
 skynet.start(function()

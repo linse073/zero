@@ -9,6 +9,7 @@ local routine
 local routine_list = {}
 local once_routine_list = {}
 local day_routine_list = {}
+local second_routine_list = {}
 
 skynet.init(function()
     routine = skynet.queryservice("routine")
@@ -75,6 +76,25 @@ end
 
 function timer.call_day_routine(key, od, nd)
     assert(day_routine_list[key], string.format("No day routine %s.", key))(od, nd)
+end
+
+function timer.add_second_routine(key, func)
+    key = gen_key(key)
+    assert(not second_routine_list[key], string.format("Already has second routine %s.", key))
+    second_routine_list[key] = func
+    skynet.call(routine, "lua", "add_second", skynet.self(), key)
+end
+
+function timer.del_second_routine(key)
+    key = gen_key(key)
+    if second_routine_list[key] then
+        second_routine_list[key] = nil
+        skynet.call(routine, "lua", "del_second", key)
+    end
+end
+
+function timer.call_second_routine(key)
+    assert(second_routine_list[key], string.format("No second routine %s.", key))()
 end
 
 return timer

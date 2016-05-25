@@ -137,12 +137,14 @@ function CMD.get_rank_info(roleid)
     end
 end
 
-skynet.start(function()
+function CMD.open()
     sproto = sprotoloader.load(1)
     name_msg = sharedata.query("name_msg")
     local master = skynet.queryservice("dbmaster")
     userdb = skynet.call(master, "lua", "get", "userdb")
+end
 
+skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])
         if session == 0 then

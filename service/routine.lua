@@ -16,7 +16,7 @@ local cur_day
 
 local function time_routine()
     for k, v in pairs(second_routine_list) do
-        skynet.send(v, "lua", "routine", k)
+        skynet.send(v, "lua", "second_routine", k)
     end
     local now = skynet.time()
     for k, v in pairs(routine_list) do

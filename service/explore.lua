@@ -37,6 +37,10 @@ function CMD.update(roleid, fight_point)
     skynet.call(rankdb, "lua", "zadd", rankname, -fight_point, roleid)
 end
 
+function CMD.second_routine(source, key)
+    timer.call_second_routine(key)
+end
+
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

@@ -33,6 +33,10 @@ function CMD.zadd(rt, ...)
     db:zadd(rt, ...)
 end
 
+function CMD.zrem(rt, key)
+    db:zrem(rt, key)
+end
+
 function CMD.zrange(rt, r1, r2)
     return db:zrange(rt, r1, r2)
 end
@@ -49,6 +53,10 @@ function CMD.zcount(rt, r1, r2)
         r2 = "+inf"
     end
     return db:zcount(rt, r1, r2)
+end
+
+function CMD.scan(i)
+    return db:scan(i)
 end
 
 skynet.start(function()

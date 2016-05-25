@@ -42,7 +42,8 @@ local module
 local role = {}
 local proc = {}
 local role_mgr
-local rank_mgr
+local fight_point_rank
+local explore_mgr
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
@@ -57,7 +58,8 @@ skynet.init(function()
     map_pos = share.map_pos
     max_exp = share.max_exp
     role_mgr = skynet.queryservice("role_mgr")
-    rank_mgr = skynet.queryservice("rank_mgr")
+    fight_point_rank = skynet.queryservice("fight_point_rank")
+    explore_mgr = skynet.queryservice("explore_mgr")
 end)
 
 function role.init_module()
@@ -85,6 +87,7 @@ function role.init(userdata)
     local master = skynet.queryservice("dbmaster")
     data.accdb = skynet.call(master, "lua", "get", "accountdb")
     data.userdb = skynet.call(master, "lua", "get", "userdb")
+    data.rankinfodb = skynet.call(master, "lua", "get", "rankinfodb")
     local account = skynet.call(data.accdb, "lua", "get", data.userkey)
     if account then
         data.account = skynet.unpack(account)
@@ -149,6 +152,7 @@ function role.save_routine()
     if user then
         skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(data.account))
         skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
+        skynet.call(data.rankinfodb, "lua", "save", user.id, skynet.packstring(data.rank_info))
     end
 end
 
@@ -187,17 +191,13 @@ function role.add_exp(p, exp)
         if oldLevel ~= newLevel then
             user.level = newLevel
             data.suser.level = newLevel
+            data.rank_info.level = newLevel
             puser.level = newLevel
             local pid = data.npc.propertyId + newLevel
             data.property = assert(propertydata[pid], string.format("No property data %d.", pid))
             role.fight_point(p)
             task.update_level(p, oldLevel, newLevel)
             task.update(p, base.TASK_COMPLETE_LEVEL, 0, 0, newLevel)
-            local rank_info = data.rank_info
-            if rank_info then
-                rank_info.level = newLevel
-                skynet.send(rank_mgr, "lua", "update", rank_info)
-            end
             local bmsg = {
                 id = user.id,
                 level = newLevel,
@@ -229,6 +229,10 @@ function role.fight_point(p)
     role.init_prop()
     puser.fight_point = user.fight_point
     task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
+    if user.arena_rank ~= 0 then
+        skynet.send(fight_point_rank, "lua", "update", user.id, user.fight_point)
+    end
+    skynet.send(explore_mgr, "lua", "update", user.id, user.fight_point)
 end
 
 local function get_reward(p, reward)
@@ -287,6 +291,7 @@ function role.init_prop()
     end
     user.fight_point = role.calc_fight(prop)
     data.suser.fight_point = user.fight_point
+    data.rank_info.fight_point = user.fight_point
     data.prop = prop
 end
 
@@ -420,16 +425,25 @@ local function enter_game(msg)
             ret[key] = pack
         end
     end
-    role.init_prop()
-    if card.rank_card_full() then
-        rank.add()
-    end
     if user.logout_time > 0 then
         local od = game_day(user.logout_time)
         local nd = game_day(now)
         if od ~= nd then
             update_day(user, od, nd)
         end
+    end
+    data.rank_info = {
+        name = user.name,
+        id = user.id,
+        prof = user.prof,
+        level = user.level,
+        arena_rank = user.arena_rank,
+        fight_point = user.fight_point,
+        card = card.rank_card(),
+    }
+    role.init_prop()
+    if card.rank_card_full() then
+        rank.add()
     end
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)

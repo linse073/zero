@@ -25,7 +25,6 @@ local base
 local error_code
 local cs
 local data
-local rank_mgr
 
 local card = {}
 local proc = {}
@@ -39,7 +38,6 @@ skynet.init(function()
     base = share.base
     error_code = share.error_code
     cs = share.cs
-    rank_mgr = skynet.queryservice("rank_mgr")
 end)
 
 function card.init_module()
@@ -119,12 +117,10 @@ function card.rank_card()
     local info = {}
     local ec = data.equip_card[1]
     for i = 1, base.MAX_EQUIP_CARD do
-        local c = ec[i][1]
-        info[i] = {
-            id = c.id,
-            cardid = c.cardid,
-            level = c.level,
-        }
+        local c = ec[i]
+        if c then
+            info[#info+1] = c[4]
+        end
     end
     return info
 end
@@ -164,7 +160,13 @@ function card.add(v, d)
             assert(itemdata[expitem], string.format("No item data %d.", expitem)),
         }
     end
-    local c = {v, d, ps}
+    local sv = {
+        id = v.id,
+        cardid = v.cardid,
+        level = v.level,
+        pos = v.pos,
+    }
+    local c = {v, d, ps, sv}
     data.card[v.id] = c
     card.add_to_type(c)
     for i = 1, base.MAX_CARD_POSITION_TYPE do
@@ -290,6 +292,7 @@ function proc.upgrade_card(msg)
     item.del_by_itemid(p, d.soulId, num)
     local pcard = p.card
     cv.level = cv.level + 1
+    c[4].level = cv.level
     pcard[#pcard+1] = {
         id = cv.id,
         level = cv.level,
@@ -316,6 +319,7 @@ function proc.promote_card(msg)
     local cv = c[1]
     local pcard = p.card
     cv.cardid = d.evolveId
+    c[4].cardid = cv.cardid
     pcard[#pcard+1] = {
         id = cv.id,
         cardid = cv.cardid,
@@ -341,13 +345,11 @@ function proc.use_card(msg)
     end
     local p = update_user()
     card.use(p, c, msg.pos_type, msg.pos)
-    if msg.pos_type == 1 and card.rank_card_full() then
-        local rank_info = data.rank_info
-        if rank_info then
-            rank_info.card = card.rank_card()
-            skynet.send(rank_mgr, "lua", "update", rank_info)
-        else
-            p.arena_rank = rank.add()
+    if msg.pos_type == 1 then
+        local info = data.rank_info
+        info.card = card.rank_card()
+        if info.arena_rank == 0 and card.rank_card_full() then
+            p.user.arena_rank = rank.add()
         end
     end
     task.update(p, base.TASK_COMPLETE_USE_CARD, cv.cardid, 1)

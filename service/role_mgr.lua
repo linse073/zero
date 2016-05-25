@@ -13,6 +13,7 @@ local role_list = {}
 local area_list = {}
 local sproto
 local name_msg
+local userdb
 
 local CMD = {}
 
@@ -116,12 +117,31 @@ function CMD.get_info(roleid)
     local role = role_list[roleid]
     if role then
         return skynet.call(role[1], "lua", "get_info")
+    else
+        local info = skynet.call(userdb, "lua", "get", roleid)
+        if info then
+            return skynet.unpack(info)
+        end
+    end
+end
+
+function CMD.get_rank_info(roleid)
+    local role = role_list[roleid]
+    if role then
+        return skynet.call(role[1], "lua", "get_rank_info")
+    else
+        local info = skynet.call(rankinfodb, "lua", "get", roleid)
+        if info then
+            return skynet.unpack(info)
+        end
     end
 end
 
 skynet.start(function()
     sproto = sprotoloader.load(1)
     name_msg = sharedata.query("name_msg")
+    local master = skynet.queryservice("dbmaster")
+    userdb = skynet.call(master, "lua", "get", "userdb")
 
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

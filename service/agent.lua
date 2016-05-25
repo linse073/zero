@@ -92,6 +92,10 @@ function CMD.get_info(source)
     return data.user
 end
 
+function CMD.get_info(source)
+    return data.rank_info
+end
+
 skynet.start(function()
     msg = share.msg
     name_msg = share.name_msg

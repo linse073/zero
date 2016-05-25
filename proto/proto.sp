@@ -119,6 +119,7 @@
         id 0 : integer
         cardid 1 : integer
         level 2 : integer
+        pos 3 : integer
     }
 
     id 0 : integer
@@ -130,6 +131,15 @@
     rank 6 : integer
 }
 
+.explore_info {
+    area 0 : integer
+    time 1 : integer
+    encounter_time 2 : integer
+    tinfo 3 : rank_info
+    ack 4 : integer
+    tack 5 : integer
+}
+
 .user_all {
     user 0 : user_info
     item 1 : *item_info
@@ -137,6 +147,7 @@
     task 3 : *task_info
     card 4 : *card_info
     friend 5 : *friend_info
+    explore 6 : explore_info
 }
 
 .info_all {

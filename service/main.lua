@@ -29,6 +29,12 @@ skynet.start(function()
 	skynet.newservice("debug_console", skynet.getenv("debug_console"))
 
     -- service
+    local config = require(skynet.getenv("config"))
+    for k, v in ipairs(config.db) do
+        local dbslave = skynet.newservice("dbslave")
+        skynet.call(dbslave, "lua", "open", v)
+    end
+
 	skynet.uniqueservice("cache")
     skynet.uniqueservice("dbmaster")
     skynet.uniqueservice("server_mgr")
@@ -39,11 +45,6 @@ skynet.start(function()
     skynet.uniqueservice("agent_mgr")
     local exploremgr = skynet.uniqueservice("explore_mgr")
 
-    local config = require(skynet.getenv("config"))
-    for k, v in ipairs(config.db) do
-        local dbslave = skynet.newservice("dbslave")
-        skynet.call(dbslave, "lua", "open", v)
-    end
     skynet.call(rolemgr, "lua", "open")
     skynet.call(arenarank, "lua", "open")
     skynet.call(fightpointrank, "lua", "open")

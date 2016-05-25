@@ -53,6 +53,12 @@ config.db = {
         db = db_base + 5,
         name = "rankinfodb",
     },
+    {
+        host = "127.0.0.1",
+        port = 6379,
+        db = db_base + 6,
+        name = "exploredb",
+    },
 }
 
 return config

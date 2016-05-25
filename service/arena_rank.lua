@@ -39,12 +39,6 @@ local function query_arena(user_rank, count)
     return r
 end
 
-function CMD.open()
-    local master = skynet.queryservice("dbmaster")
-    rankdb = skynet.call(master, "lua", "get", "rankdb")
-    count = skynet.call(rankdb, "lua", "zcount", "arena")
-end
-
 function CMD.add(roleid)
     local ar = skynet.call(rankdb, "lua", "zrank", "arena", roleid)
     if not ar then
@@ -84,6 +78,9 @@ end
 
 skynet.start(function()
     cs = queue()
+    local master = skynet.queryservice("dbmaster")
+    rankdb = skynet.call(master, "lua", "get", "rankdb")
+    count = skynet.call(rankdb, "lua", "zcount", "arena")
 
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

@@ -49,12 +49,6 @@ local function query_fight_point(user_rank, count)
     return r
 end
 
-function CMD.open()
-    local master = skynet.queryservice("dbmaster")
-    rankdb = skynet.call(master, "lua", "get", "rankdb")
-    count = skynet.call(rankdb, "lua", "zcount", "fight_point")
-end
-
 function CMD.add(roleid, fight_point)
     local fr = skynet.call(rankdb, "lua", "zrank", "fight_point", roleid)
     if not fr then
@@ -92,6 +86,9 @@ end
 
 skynet.start(function()
     cs = queue()
+    local master = skynet.queryservice("dbmaster")
+    rankdb = skynet.call(master, "lua", "get", "rankdb")
+    count = skynet.call(rankdb, "lua", "zcount", "fight_point")
 
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

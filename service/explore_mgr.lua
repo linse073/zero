@@ -12,19 +12,6 @@ local exploredb
 
 local CMD = {}
 
-function CMD.open()
-    searchdata = sharedata.query("searchdata")
-    for k, v in pairs(searchdata) do
-        local explore = skynet.newservice("explore")
-        local area = v.stageType * 100 + v.stageId
-        skynet.call(explore, "lua", "open", v, area)
-        explore_area[area] = explore
-    end
-    local master = skynet.queryservice("dbmaster")
-    exploredb = skynet.call(master, "lua", "get", "exploredb")
-    util.dump(skynet.call(exploredb, "lua", "scan", 0))
-end
-
 function CMD.get(area)
     return assert(explore_area[area], string.format("No explore area %d.", area))
 end
@@ -54,6 +41,17 @@ function CMD.update(roleid, fight_point)
 end
 
 skynet.start(function()
+    searchdata = sharedata.query("searchdata")
+    for k, v in pairs(searchdata) do
+        local explore = skynet.newservice("explore")
+        local area = v.stageType * 100 + v.stageId
+        skynet.call(explore, "lua", "open", v, area)
+        explore_area[area] = explore
+    end
+    local master = skynet.queryservice("dbmaster")
+    exploredb = skynet.call(master, "lua", "get", "exploredb")
+    util.dump(skynet.call(exploredb, "lua", "scan", 0))
+
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])
         if session == 0 then

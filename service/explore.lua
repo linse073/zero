@@ -13,6 +13,7 @@ local CMD = {}
 
 local function update()
     local now = skynet.time()
+    skynet.error("ssssssssssssssss", now)
 end
 
 function CMD.open(d, a)

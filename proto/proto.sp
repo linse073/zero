@@ -133,8 +133,9 @@
 
 .explore_info {
     area 0 : integer
-    time 1 : integer
-    encounter_time 2 : integer
+    start_time 1 : integer
+    status 2 : integer
+    time 2 : integer
     tinfo 3 : rank_info
     ack 4 : integer
     tack 5 : integer

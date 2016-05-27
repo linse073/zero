@@ -7,8 +7,8 @@ local assert = assert
 local string = string
 local table = table
 
+local cs = queue()
 local rankdb
-local cs
 local count
 
 local CMD = {}

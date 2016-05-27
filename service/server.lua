@@ -5,13 +5,13 @@ local util = require "util"
 local loginservice = tonumber(...)
 
 local gen_key = util.gen_key
+local cs = queue()
 local userdb
 local namedb
 local status_key
 local status
 local serverid
 local servernam
-local cs
 
 local CMD = {}
 
@@ -28,7 +28,6 @@ local function check_name(name)
 end
 
 function CMD.open(conf, gatename)
-    cs = queue()
     serverid = conf.serverid
     servername = conf.servername
     local master = skynet.queryservice("dbmaster")

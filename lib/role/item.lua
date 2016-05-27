@@ -21,7 +21,7 @@ local expdata
 local intensifydata
 local base
 local error_code
-local cs
+-- local cs
 local is_equip
 local is_material
 local is_chest
@@ -37,7 +37,7 @@ skynet.init(function()
     intensifydata = share.intensifydata
     base = share.base
     error_code = share.error_code
-    cs = share.cs
+    -- cs = share.cs
     is_equip = share.is_equip
     is_material = share.is_material
     is_chest = share.is_chest
@@ -60,7 +60,6 @@ function item.exit()
 end
 
 function item.enter()
-    local pack = {}
     data.item = {}
     data.equip_item = {}
     data.type_item = {}
@@ -68,9 +67,15 @@ function item.enter()
     data.selled_item = {}
     for k, v in pairs(data.user.item) do
         item.add(v)
-        pack[#pack+1] = v
     end
     item.after_add()
+end
+
+function item.pack_all()
+    local pack = {}
+    for k, v in pairs(data.user.item) do
+        pack[#pack+1] = v
+    end
     return "item", pack
 end
 
@@ -200,7 +205,8 @@ function item.add_by_itemid(p, num, d)
                 diff = overlay
             end
             local v = {
-                id = cs(item.gen_id),
+                -- id = cs(item.gen_id),
+                id = item.gen_id(),
                 itemid = itemid,
                 owner = 0,
                 num = diff,
@@ -377,7 +383,8 @@ function item.split(p, itemid)
                     num = iv.num,
                 }
                 local v = {
-                    id = cs(item.gen_id),
+                    -- id = cs(item.gen_id),
+                    id = item.gen_id(),
                     itemid = itemid,
                     owner = 0,
                     num = 1,

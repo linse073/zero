@@ -418,11 +418,9 @@ local function enter_game(msg)
     data.expdata = assert(expdata[user.level], string.format("No exp data %d.", user.level))
     local pid = npc.propertyId + user.level
     data.property = assert(propertydata[pid], string.format("No property data %d.", pid))
-    local ret = {user = user}
     for k, v in ipairs(module) do
         if v.enter then
-            local key, pack = v.enter()
-            ret[key] = pack
+            v.enter()
         end
     end
     if user.logout_time > 0 then
@@ -444,6 +442,13 @@ local function enter_game(msg)
     role.init_prop()
     if card.rank_card_full() then
         rank.add()
+    end
+    local ret = {user = user}
+    for k, v in ipairs(module) do
+        if v.pack_all then
+            local key, pack = v.pack_all()
+            ret[key] = pack
+        end
     end
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)

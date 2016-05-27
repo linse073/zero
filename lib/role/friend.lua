@@ -23,9 +23,12 @@ function friend.exit()
 end
 
 function friend.enter()
-    local pack = {}
     data.friend = data.user.friend
-    for k, v in pairs(data.friend) do
+end
+
+function friend.pack_all()
+    local pack = {}
+    for k, v in pairs(data.user.friend) do
         pack[#pack+1] = v
     end
     return "friend", pack

@@ -37,6 +37,10 @@ function CMD.zrem(rt, key)
     db:zrem(rt, key)
 end
 
+function CMD.zrem_by_rank(rt, r1, r2)
+    db:zremrangebyrank(rt, r1, r2)
+end
+
 function CMD.zrange(rt, r1, r2)
     return db:zrange(rt, r1, r2)
 end

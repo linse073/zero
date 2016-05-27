@@ -11,4 +11,12 @@ function func.game_day(t)
     return (st - start_routine_time) // day_second
 end
 
+func.explore_status = {
+    EXPLORE_NORMAL = 1,
+    EXPLORE_ENCOUNTER = 2,
+    EXPLORE_IDLE = 3,
+    EXPLORE_DONE = 4,
+    EXPLORE_FINISH = 5,
+}
+
 return func

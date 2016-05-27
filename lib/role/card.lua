@@ -23,7 +23,7 @@ local itemdata
 local original_card
 local base
 local error_code
-local cs
+-- local cs
 local data
 
 local card = {}
@@ -37,7 +37,7 @@ skynet.init(function()
     original_card = share.original_card
     base = share.base
     error_code = share.error_code
-    cs = share.cs
+    -- cs = share.cs
 end)
 
 function card.init_module()
@@ -57,7 +57,6 @@ function card.exit()
 end
 
 function card.enter()
-    local pack = {}
     data.card = {}
     local ec = {}
     data.equip_card = ec
@@ -67,13 +66,19 @@ function card.enter()
     data.type_card = {}
     for k, v in pairs(data.user.card) do
         card.add(v)
+    end
+    card.add_newbie_card(base.NEWBIE_CARD)
+end
+
+function card.pack_all()
+    local pack = {}
+    for k, v in pairs(data.user.card) do
         pack[#pack+1] = v
     end
-    card.add_newbie_card(pack, base.NEWBIE_CARD)
     return "card", pack
 end
 
-function card.add_newbie_card(p, cardid)
+function card.add_newbie_card(cardid)
     if not data.type_card[cardid] then
         local d = assert(carddata[cardid], string.format("No card data %d.", cardid))
         local pos = {}
@@ -91,7 +96,8 @@ function card.add_newbie_card(p, cardid)
             }
         end
         local v = {
-            id = cs(card.gen_id),
+            -- id = cs(card.gen_id),
+            id = card.gen_id(),
             cardid = cardid,
             level = d.starLv,
             pos = pos,
@@ -99,7 +105,6 @@ function card.add_newbie_card(p, cardid)
         }
         card.add(v, d)
         data.user.card[v.id] = v
-        p[#p+1] = v
     end
 end
 
@@ -204,7 +209,8 @@ function card.add_by_cardid(p, d)
         }
     end
     local v = {
-        id = cs(card.gen_id),
+        -- id = cs(card.gen_id),
+        id = card.gen_id(),
         cardid = d.id,
         level = d.starLv,
         pos = pos,

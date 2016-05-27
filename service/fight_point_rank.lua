@@ -9,8 +9,8 @@ local string = string
 local table = table
 local merge = util.merge
 
+local cs = queue()
 local rankdb
-local cs
 local count
 
 local CMD = {}
@@ -85,7 +85,6 @@ function CMD.query(roleid)
 end
 
 skynet.start(function()
-    cs = queue()
     local master = skynet.queryservice("dbmaster")
     rankdb = skynet.call(master, "lua", "get", "rankdb")
     count = skynet.call(rankdb, "lua", "zcount", "fight_point")

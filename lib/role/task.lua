@@ -46,7 +46,6 @@ function task.exit()
 end
 
 function task.enter()
-    local pack = {}
     local dt = {}
     local user = data.user
     data.task = dt
@@ -54,10 +53,7 @@ function task.enter()
     data.accept_task = {}
     data.master_task = nil
     for k, v in pairs(user.task) do
-        local t = task.add(v)
-        if t[2].TaskType ~= base.TASK_TYPE_MASTER or v.status ~= base.TASK_STATUS_FINISH then
-            pack[#pack+1] = v
-        end
+        task.add(v)
     end
     -- repair master task
     if not data.master_task then
@@ -68,8 +64,7 @@ function task.enter()
             t = dt[id]
         end
         local d = assert(taskdata[id], string.format("No task data %d.", id))
-        t = task.add_by_data(d, base.TASK_STATUS_ACCEPT)
-        pack[#pack+1] = t[1]
+        task.add_by_data(d, base.TASK_STATUS_ACCEPT)
     end
     -- repair day task
     local level = user.level
@@ -77,8 +72,7 @@ function task.enter()
         if k <= level then
             for k1, v1 in ipairs(v) do
                 if not dt[v1.TaskId] then
-                    local t = task.add_by_data(v1, base.TASK_STATUS_NOT_ACCEPT)
-                    pack[#pack+1] = t[1]
+                    task.add_by_data(v1, base.TASK_STATUS_NOT_ACCEPT)
                 end
             end
         end
@@ -86,8 +80,16 @@ function task.enter()
     -- repair achievement task
     for k, v in ipairs(achi_task) do
         if not dt[v.TaskId] then
-            local t = task.add_by_data(v, base.TASK_STATUS_ACCEPT)
-            pack[#pack+1] = t[1]
+            task.add_by_data(v, base.TASK_STATUS_ACCEPT)
+        end
+    end
+end
+
+function task.pack_all()
+    local pack = {}
+    for k, v in pairs(data.task) do
+        if v[2].TaskType ~= base.TASK_TYPE_MASTER or v[1].status ~= base.TASK_STATUS_FINISH then
+            pack[#pack+1] = v[1]
         end
     end
     return "task", pack

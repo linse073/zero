@@ -54,7 +54,6 @@ function stage.exit()
 end
 
 function stage.enter()
-    local pack = {}
     data.stage = {}
     data.stage_seed = {
         id = 0,
@@ -63,6 +62,12 @@ function stage.enter()
     }
     for k, v in pairs(data.user.stage) do
         stage.add(v)
+    end
+end
+
+function stage.pack_all()
+    local pack = {}
+    for k, v in pairs(data.user.stage) do
         pack[#pack+1] = v
     end
     return "stage", pack

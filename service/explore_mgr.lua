@@ -1,7 +1,6 @@
 local skynet = require "skynet"
 local sharedata = require "sharedata"
 local timer = require "timer"
-local func = require "func"
 local queue = require "skynet.queue"
 
 local ipairs = ipairs
@@ -10,22 +9,20 @@ local string = string
 local math = math
 local floor = math.floor
 
-local explore_status = func.explore_status
 local cs = queue()
 local explore_area = {}
 local role_list = {}
 local save_list = {}
-local searchdata
 local exploredb
 
 local CMD = {}
 
 local function save()
     for k, v in pairs(save_list) do
-        if v.status == explore_status.EXPLORE_FINISH then
-            skynet.call(exploredb, "lua", "del", k)
-        else
+        if v then
             skynet.call(exploredb, "lua", "save", k, skynet.packstring(v))
+        else
+            skynet.call(exploredb, "lua", "del", k)
         end
     end
     save_list = {}
@@ -35,23 +32,18 @@ local function queue_save()
     cs(save_info)
 end
 
-local function update(info)
-    save_list[info.roleid] = info
+local function update(roleid, info)
+    save_list[roleid] = info
 end
 
-local function queue_update(info)
-    cs(update, info)
+local function queue_update(roleid, info)
+    cs(update, roleid, info)
 end
 
-function CMD.get(area)
-    return assert(explore_area[area], string.format("No explore area %d.", area))
-end
-
-function CMD.get_info(roleid)
-    -- TODO: info.status == EXPLORE_FINISH
+function CMD.enter(roleid)
     local explore = role_list[roleid]
     if explore then
-        return skynet.call(explore, "lua", "get_info", roleid)
+        return skynet.call(explore, "lua", "enter", roleid)
     end
 end
 
@@ -83,12 +75,15 @@ function CMD.update(roleid, fight_point)
     end
 end
 
-function CMD.update_info(info)
-    queue_update(info)
+function CMD.update_info(roleid, info)
+    queue_update(roleid, info)
 end
 
 function CMD.shutdown()
     queue_save()
+    for k, v in pairs(explore_area) do
+        skynet.call(v, "lua", "shutdown")
+    end
 end
 
 function CMD.routine(key)
@@ -97,12 +92,11 @@ end
 
 -- TODO: server shutdown time
 function CMD.open()
-    searchdata = sharedata.query("searchdata")
+    local searchdata = sharedata.query("searchdata")
     for k, v in pairs(searchdata) do
         local explore = skynet.newservice("explore")
-        local area = v.stageType * 100 + v.stageId
-        skynet.call(explore, "lua", "open", v, area, skynet.self())
-        explore_area[area] = explore
+        skynet.call(explore, "lua", "open", v, skynet.self())
+        explore_area[v.area] = explore
     end
     local master = skynet.queryservice("dbmaster")
     exploredb = skynet.call(master, "lua", "get", "exploredb")
@@ -114,10 +108,9 @@ function CMD.open()
             -- TODO: v is number or string?
             local info = skynet.unpack(skynet.call(exploredb, "lua", "get", v))
             -- TODO: modify start_time and time according to server shutdown time
-            -- TODO: info.status == EXPLORE_FINISH
             local explore = assert(explore_area[info.area], string.format("No explore area %d.", info.area))
             skynet.call(explore, "lua", "add", info)
-            role_list[info.roleid] = explore
+            role_list[v] = explore
         end
     until index == 0
     timer.add_routine("save_explore", queue_save, 600)
@@ -127,9 +120,9 @@ skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])
         if session == 0 then
-            f(...)
+            cs(f, ...)
         else
-            skynet.retpack(f(...))
+            skynet.retpack(cs(f, ...))
         end
 	end)
 end)

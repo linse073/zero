@@ -233,6 +233,10 @@ skynet.start(function()
         }
     end
 
+    for k, v in pairs(searchdata) do
+        v.area = v.stageType * 100 + v.stageId
+    end
+
     sharedata.new("carddata", carddata)
     sharedata.new("itemdata", itemdata)
     sharedata.new("stagedata", stagedata)
@@ -275,6 +279,13 @@ skynet.start(function()
         [base.TASK_COMPLETE_EXPLORE] = true,
         [base.TASK_COMPLETE_NEW_FUNCTION] = true,
         [base.TASK_COMPLETE_UPGRADE_PASSIVE] = true,
+    })
+
+    sharedata.new("explore_status", {
+        NORMAL = 1,
+        ENCOUNTER = 2,
+        IDLE = 3,
+        DONE = 4,
     })
 
     sharedata.new("msg", proto.msg)

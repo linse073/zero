@@ -62,6 +62,7 @@ local msg = {
     [2703] = "end_challenge",
 
     [2800] = "sign_in",
+    [2801] = "confirm_explore",
 }
 local name_msg = {}
 

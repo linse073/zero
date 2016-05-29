@@ -80,6 +80,7 @@ function util.update_user()
         task = {},
         card = {},
         friend = {},
+        explore = {},
     }
 end
 

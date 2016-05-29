@@ -92,8 +92,12 @@ function CMD.get_info(source)
     return data.user
 end
 
-function CMD.get_info(source)
+function CMD.get_rank_info(source)
     return data.rank_info
+end
+
+function CMD.explore_award(source, award)
+    role.explore_award(award)
 end
 
 skynet.start(function()

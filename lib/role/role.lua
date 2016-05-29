@@ -308,6 +308,14 @@ function role.repair(user)
     end
 end
 
+function role.explore_award(award)
+    local p = update_user()
+    role.add_money(p, award.money)
+    item.add_by_itemid(p, award.bonus, award.num)
+    p.explore.status = award.status
+    notify.add("update_user", {update=p})
+end
+
 -------------------protocol process--------------------------
 
 function proc.notify_info(msg)

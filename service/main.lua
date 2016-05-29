@@ -42,9 +42,10 @@ skynet.start(function()
     skynet.uniqueservice("role_mgr")
     skynet.uniqueservice("arena_rank")
     skynet.uniqueservice("fight_point_rank")
-    local explore_mgr = skynet.uniqueservice("explore_mgr")
+    local save_explore = skynet.uniqueservice("save_explore")
+    skynet.uniqueservice("explore_mgr")
     -- TODO: server shutdown time
-    skynet.call(explore_mgr, "lua", "open")
+    skynet.call(save_explore, "lua", "open")
     skynet.uniqueservice("agent_mgr")
 
 	local loginserver = skynet.newservice("logind")

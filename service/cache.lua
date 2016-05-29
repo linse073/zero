@@ -233,8 +233,11 @@ skynet.start(function()
         }
     end
 
+    local area_search = {}
     for k, v in pairs(searchdata) do
         v.area = v.stageType * 100 + v.stageId
+        v.searchSecond = v.searchTime * 60
+        area_search[v.area] = v
     end
 
     sharedata.new("carddata", carddata)
@@ -257,6 +260,7 @@ skynet.start(function()
     sharedata.new("achi_task", achi_task)
     sharedata.new("original_card", original_card)
     sharedata.new("type_reward", type_reward)
+    sharedata.new("area_search", area_search)
 
     local level = base.MAX_LEVEL - 1
     local ed = assert(expdata[level], string.format("No exp data %d.", level))
@@ -282,10 +286,12 @@ skynet.start(function()
     })
 
     sharedata.new("explore_status", {
+        NONE = 0,
         NORMAL = 1,
         ENCOUNTER = 2,
         IDLE = 3,
         DONE = 4,
+        FINISH = 5,
     })
 
     sharedata.new("msg", proto.msg)

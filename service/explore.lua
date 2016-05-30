@@ -8,6 +8,7 @@ local string = string
 local pairs = pairs
 local math = math
 local random = math.random
+local floor = math.floor
 local table = table
 
 local cs = queue()

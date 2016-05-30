@@ -14,6 +14,7 @@ local area_list = {}
 local sproto
 local name_msg
 local userdb
+local rankinfodb
 
 local CMD = {}
 
@@ -144,6 +145,7 @@ skynet.start(function()
     name_msg = sharedata.query("name_msg")
     local master = skynet.queryservice("dbmaster")
     userdb = skynet.call(master, "lua", "get", "userdb")
+    rankinfodb = skynet.call(master, "lua", "get", "rankinfodb")
 
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

@@ -291,7 +291,6 @@ skynet.start(function()
         IDLE = 3,
         DONE = 4,
         FINISH = 5,
-        FAIL = 6,
     })
 
     sharedata.new("msg", proto.msg)

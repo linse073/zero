@@ -59,6 +59,12 @@ config.db = {
         db = db_base - 1,
         name = "exploredb",
     },
+    {
+        host = "127.0.0.1",
+        port = 6379,
+        db = db_base - 2,
+        name = "maildb",
+    },
 }
 
 return config

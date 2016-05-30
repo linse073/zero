@@ -1,5 +1,6 @@
 local skynet = require "skynet"
 local share = require "share"
+local func = require "func"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -26,8 +27,8 @@ skynet.init(function()
     base = share.base
     error_code = share.error_code
     itemdata = share.itemdata
-    is_equip = share.is_equip
-    is_stone = share.is_stone
+    is_equip = func.is_equip
+    is_stone = func.is_stone
     arena_rank = skynet.queryservice("arena_rank")
     fight_point_rank = skynet.queryservice("fight_point_rank")
     role_mgr = skynet.queryservice("role_mgr")

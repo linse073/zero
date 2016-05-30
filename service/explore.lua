@@ -66,11 +66,14 @@ end
 
 local function win(t, info, tinfo)
     local dm = (t - tinfo.start_time) // 60
-    local money = data.money * dm // data.searchTime + tinfo.money
+    local money = data.money * dm // data.searchTime
     info.money = info.money + money * data.lootRatio // RAND_FACTOR
-    local rnum = random(RAND_FACTOR)
-    if rnum <= data.lootRatio then
-        info.bonus = info.bonus + dm // 60 + tinfo.bonus
+    local num = dm // 60
+    for i = 1, num do
+        local rnum = random(RAND_FACTOR)
+        if rnum <= data.lootRatio then
+            info.bonus = info.bonus + 1
+        end
     end
     local dt = t - info.start_time
     if dt <= data.searchSecond - ENCOUNTER_SECOND then
@@ -89,15 +92,19 @@ local function win(t, info, tinfo)
         }}})
     end
     skynet.call(save_explore, "lua", "update", info.roleid, info)
-    tinfo.status = explore_status.FAIL
     local tagent = skynet.call(role_mgr, "lua", "get", tinfo.roleid)
     if tagent then
-        skynet.send(tagent, "lua", "notify", "update_user", {update={explore={
+        tinfo.status = explore_status.FINISH
+        skynet.call(agent, "lua", "explore_award", {
+            money = tinfo.money,
+            bonus = data.bonusId,
+            num = tinfo.bonus,
             status = tinfo.status,
-        }}})
+        })
+    else
+        tinfo.status = explore_status.DONE
     end
     skynet.call(save_explore, "lua", "update", tinfo.roleid, tinfo)
-    -- TODO: confirm notify to delete
 end
 
 local function update()
@@ -172,7 +179,6 @@ local function update()
                     v.status = explore_status.DONE
                 end
                 skynet.call(save_explore, "lua", "update", k, v)
-                -- TODO: confirm notify to delete
             end
         end
     end
@@ -267,18 +273,19 @@ function CMD.quit(roleid)
             local t = floor(skynet.time())
             local tinfo = role_list[info.tid]
             local dm = (t - info.start_time) // 60
-            local money = data.money * dm // data.searchTime + info.money
-            info.money = money * data.escapeKeepRatio // RAND_FACTOR
+            local money = data.money * dm // data.searchTime
+            info.money = info.money + money * data.escapeKeepRatio // RAND_FACTOR
             tinfo.money = tinfo.money + money * data.escapeLootRatio // RAND_FACTOR
-            local bonus = info.bonus + dm // 60
-            local rnum = random(RAND_FACTOR)
-            if rnum <= data.escapeKeepRatio then
-                info.bonus = bonus
-            else
-                info.bonus = 0
-                local tnum = random(RAND_FACTOR)
-                if tnum <= data.escapeLootRatio then
-                    tinfo.bonus = tinfo.bonus + bonus
+            local num = dm // 60
+            for i = 1, num do
+                local rnum = random(RAND_FACTOR)
+                if rnum <= data.escapeKeepRatio then
+                    info.bonus = info.bonus + 1
+                else
+                    local tnum = random(RAND_FACTOR)
+                    if tnum <= data.escapeLootRatio then
+                        tinfo.bonus = tinfo.bonus + 1
+                    end
                 end
             end
             info.status = explore_status.FINISH
@@ -293,26 +300,24 @@ function CMD.quit(roleid)
                 rank_count = rank_count + 1
             end
             tinfo.time = t
+            tinfo.tack = 2
             local tagent = skynet.call(role_mgr, "lua", "get", tinfo.roleid)
             if tagent then
                 skynet.send(tagent, "lua", "notify", "update_user", {update={explore={
                     status = tinfo.status,
                     time = t,
+                    tack = tinfo.tack,
                 }}})
             end
             skynet.call(save_explore, "lua", "update", tinfo.roleid, tinfo)
             return {status=info.status, ack=info.ack}, 
             {money=info.money, bonus=data.bonusId, num=info.bonus}
-        elseif info.status == explore_status.FINISH or info.status == explore_status.FAIL then
-            role_list[roleid] = nil
-            skynet.call(save_explore, "lua", "update", roleid, false)
-            skynet.call(explore_mgr, "lua", "del", roleid)
         elseif info.status == explore_status.DONE then
             info.status = explore_status.FINISH
             skynet.call(save_explore, "lua", "update", roleid, info)
             return {status=info.status},
             {money=info.money, bonus=data.bonusId, num=info.bonus}
-        else
+        elseif info.status == explore_status.NORMAL or info.status == explore_status.IDLE then
             if info.status == explore_status.NORMAL then
                 skynet.call(randdb, "lua", "zrem", rankname, roleid)
                 rank_count = rank_count - 1
@@ -326,6 +331,16 @@ function CMD.quit(roleid)
             return {status=info.status},
             {money=info.money, bonus=data.bonusId, num=info.bonus}
         end
+    end
+end
+
+function CMD.confirm(roleid)
+    local info = role_list[roleid]
+    if info and info.status == explore_status.FINISH then
+        role_list[roleid] = nil
+        skynet.call(save_explore, "lua", "update", roleid, false)
+        skynet.call(explore_mgr, "lua", "del", roleid)
+        return true
     end
 end
 
@@ -355,6 +370,7 @@ function CMD.update(roleid, fight_point)
         end
         info.fight_point = fight_point
         skynet.call(save_explore, "lua", "update", roleid, info)
+        return true
     end
 end
 

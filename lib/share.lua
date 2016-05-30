@@ -4,38 +4,6 @@ local sprotoloader = require "sprotoloader"
 local queue = require "skynet.queue"
 
 local share = {}
-local base
-
--- item
-function share.is_equip(itemtype)
-    return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
-end
-
-function share.is_material(itemtype)
-    return itemtype >= base.ITEM_TYPE_IRON and itemtype <= base.ITEM_TYPE_GEM
-end
-
-function share.is_stone(itemtype)
-    return itemtype >= base.ITEM_TYPE_BLUE_STONE and itemtype <= base.ITEM_TYPE_GREEN_CRYSTAL
-end
-
-function share.is_chest(itemtype)
-    return itemtype >= base.ITEM_TYPE_CHEST and itemtype <= base.ITEM_TYPE_AUTO_CHEST
-end
-
-function share.map_pos(des_pos)
-    local map_rect = base.MAP_RECT
-    if des_pos.x < map_rect.x then
-        des_pos.x = map_rect.x
-    elseif des_pos.x > map_rect.ex then
-        des_pos.x = map_rect.ex
-    end
-    if des_pos.y < map_rect.y then
-        des_pos.y = map_rect.y
-    elseif des_pos.y > map_rect.ey then
-        des_pos.y = map_rect.ey
-    end
-end
 
 skynet.init(function()
     -- share with all service
@@ -71,9 +39,6 @@ skynet.init(function()
     -- share in current service
     share.sproto = sprotoloader.load(1)
     share.cs = queue() -- avoid dead lock, there is only one queue in a agent
-
-    -- local variable
-    base = share.base
 end)
 
 return share

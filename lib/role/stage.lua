@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 local new_rand = require "random"
+local func = require "func"
 
 local role
 local task
@@ -115,53 +116,6 @@ function stage.update_day()
     end
 end
 
-function stage.rand_bonus(d, sd)
-    local user = data.user
-    local rand = randi(d.total_rate)
-    local t = 0
-    for k, v in ipairs(d.all_rate) do
-        t = t + v.rate
-        if rand <= t then
-            local bonus = {num=v.num, data=v.data}
-            if v.type == base.BONUS_TYPE_EQUIP then
-                local prof
-                if v.prof then
-                    prof = user.prof
-                else
-                    prof = randi(base.PROF_WARRIOR, base.PROF_WIZARD)
-                end
-                local level = v.level // 5 * 5
-                local itemtype = v.equipType
-                if itemtype == 0 then
-                    itemtype = randi(base.ITEM_TYPE_HEAD, base.ITEM_TYPE_NECKLACE)
-                end
-                bonus.item = item.gen_itemid(prof, level, itemtype, v.quality)
-            elseif v.type == base.BONUS_TYPE_MATERIAL then
-                local itemtype = v.item_type
-                if itemtype == 0 then
-                    itemtype = randi(base.ITEM_TYPE_IRON, base.ITEM_TYPE_SPAR)
-                end
-                bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
-            elseif v.type == base.BONUS_TYPE_STONE then
-                local itemtype = v.item_type
-                if itemtype == 0 then
-                    itemtype = randi(base.ITEM_TYPE_BLUE_STONE, base.ITEM_TYPE_GREEN_CRYSTAL)
-                end
-                bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
-            elseif v.type == base.BONUS_TYPE_PASSIVE_EXP then
-                local itemtype = v.item_type
-                if itemtype == 0 then
-                    itemtype = randi(base.ITEM_TYPE_FIRE_EXP, base.ITEM_TYPE_MAGIC_EXP)
-                end
-                bonus.item = item.gen_itemid(0, 0, itemtype, v.quality)
-            else
-                bonus.item = v.item
-            end
-            return bonus
-        end
-    end
-end
-
 local function bonus_item(ri, p)
     local itemid = ri.item
     local idata = ri.data
@@ -176,11 +130,12 @@ local function bonus_item(ri, p)
         end
     end
 end
-function stage.get_bonus(bonus, p, d)
+function stage.get_bonus(bonus, p)
+    local user = data.user
     for k, v in ipairs(bonus) do
         local rand_item = {}
         for i = 1, v.rand_num do
-            rand_item[i] = stage.rand_bonus(v.data, d)
+            rand_item[i] = func.rand_bonus(v.data, user.prof)
         end
         v.rand_item = rand_item
     end
@@ -295,7 +250,7 @@ function proc.end_stage(msg)
     end
     new_rand.init(msg.rand_seed)
     local p = update_user()
-    stage.get_bonus(bonus, p, d)
+    stage.get_bonus(bonus, p)
     if money > 0 then
         role.add_money(p, money)
     end
@@ -370,7 +325,7 @@ function proc.open_chest(msg)
             end
         end
         bonus[#bonus+1] = {rand_num=2, num=num, data=d.bonus}
-        stage.get_bonus(bonus, p, d)
+        stage.get_bonus(bonus, p)
     end
     stage_seed.bonus = true
     return "update_user", {update=p}

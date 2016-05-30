@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 local new_rand = require "random"
+local func = require "func"
 
 local task
 local role
@@ -38,9 +39,9 @@ skynet.init(function()
     base = share.base
     error_code = share.error_code
     -- cs = share.cs
-    is_equip = share.is_equip
-    is_material = share.is_material
-    is_chest = share.is_chest
+    is_equip = func.is_equip
+    is_material = func.is_material
+    is_chest = func.is_chest
     item_category = share.item_category
 end)
 
@@ -447,10 +448,6 @@ function item.uninlay(p, i, si, j)
     }
 end
 
-function item.gen_itemid(prof, level, itemtype, quality)
-    return 3000000000 + prof * 1000000 + level * 1000 + itemtype * 10 + quality
-end
-
 function item.equip_prop(e, prop)
     local inprop = 1
     local indata = e[5]
@@ -836,7 +833,7 @@ function proc.inlay_item(msg)
     local slot = d.needLv // 10
     for j = 1, slot do
         if not st[j] then
-            local stoneitem = item.gen_itemid(0, 0, d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE, j)
+            local stoneitem = func.gen_itemid(0, 0, d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE, j)
             item.inlay(p, i, stoneitem, j)
         end
     end

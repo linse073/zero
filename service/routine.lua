@@ -5,7 +5,7 @@ local pairs = pairs
 local assert = assert
 local string = string
 local floor = math.floor
-local game_day = func.game_day
+local game_day
 
 local routine_list = {}
 local once_routine_list = {}
@@ -95,6 +95,7 @@ function CMD.del_second(key)
 end
 
 skynet.start(function()
+    game_day = func.game_day
     cur_day = game_day(floor(skynet.time()))
     running = true
     skynet.timeout(100, time_routine)

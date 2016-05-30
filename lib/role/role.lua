@@ -27,7 +27,7 @@ local random = math.random
 
 local update_user = util.update_user
 local merge_table = util.merge_table
-local game_day = func.game_day
+local game_day
 local expdata
 local npcdata
 local propertydata
@@ -55,7 +55,8 @@ skynet.init(function()
     base = share.base
     type_reward = share.type_reward
     cs = share.cs
-    map_pos = share.map_pos
+    map_pos = func.map_pos
+    game_day = func.game_day
     max_exp = share.max_exp
     role_mgr = skynet.queryservice("role_mgr")
     fight_point_rank = skynet.queryservice("fight_point_rank")
@@ -232,7 +233,9 @@ function role.fight_point(p)
     if user.arena_rank ~= 0 then
         skynet.send(fight_point_rank, "lua", "update", user.id, user.fight_point)
     end
-    skynet.send(explore_mgr, "lua", "update", user.id, user.fight_point)
+    if data.explore then
+        skynet.send(data.explore, "lua", "update", user.id, user.fight_point)
+    end
 end
 
 local function get_reward(p, reward)
@@ -316,7 +319,7 @@ function role.explore_award(award)
     if award.num > 0 then
         item.add_by_itemid(p, award.bonus, award.num)
     end
-    p.explore.status = award.status
+    p.explore = {status=award.status}
     notify.add("update_user", {update=p})
 end
 
@@ -455,7 +458,24 @@ local function enter_game(msg)
     if card.rank_card_full() then
         rank.add()
     end
-    local ret = {user = user}
+    local ret = {user=user}
+    local explore = skynet.call(explore_mgr, "lua", "get", user.id)
+    if explore then
+        local e, a = skynet.call(explore, "lua", "enter", user.id)
+        if e then
+            data.explore = explore
+            ret.explore = e
+            if a then
+                local p = update_user()
+                if a.money > 0 then
+                    role.add_money(p, a.money)
+                end
+                if a.num > 0 then
+                    item.add_by_itemid(p, a.bonus, a.num)
+                end
+            end
+        end
+    end
     for k, v in ipairs(module) do
         if v.pack_all then
             local key, pack = v.pack_all()
@@ -524,6 +544,53 @@ function proc.sign_in(msg)
     new_rand.init(rand_seed)
     role.sign_in(p, pindex)
     return "update_user", {update=p, sign_in=pindex, rand_seed=rand_seed}
+end
+
+function proc.explore(msg)
+    if data.explore then
+        error{code = error_code.ALREADY_EXPLORE}
+    end
+    local explore = skynet.call(explore_mgr, "lua", "get_explore", msg.area)
+    if not explore then
+        error{code = error_code.ERROR_EXPLORE_AREA}
+    end
+    -- TODO: stage star limit
+    local user = data.user
+    local e = skynet.call(explore, "lua", "explore", user.id, user.fight_point)
+    return "update_user", {update={explore=e}}
+end
+
+function proc.quit_explore(msg)
+    if not data.explore then
+        error{code = error_code.NOT_EXPLORE}
+    end
+    local user = data.user
+    local e, a = skynet.call(data.explore, "lua", "quit", user.id)
+    if not e then
+        error{code = error_code.ERROR_EXPLORE_STATUS}
+    end
+    local p = update_user()
+    p.explore = e
+    if a.money > 0 then
+        role.add_money(p, a.money)
+    end
+    if a.num > 0 then
+        item.add_by_itemid(p, a.bonus, a.num)
+    end
+    return "update_user", {update=p}
+end
+
+function proc.confirm_explore(msg)
+    if not data.explore then
+        error{code = error_code.NOT_EXPLORE}
+    end
+    local user = data.user
+    local r = skynet.call(data.explore, "lua", "confirm", user.id)
+    if not r then
+        error{code = error_code.ERROR_EXPLORE_STATUS}
+    end
+    data.explore = nil
+    return "response", ""
 end
 
 return role

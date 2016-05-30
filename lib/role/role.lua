@@ -569,6 +569,7 @@ function proc.explore(msg)
     -- TODO: stage star limit
     local user = data.user
     local e = skynet.call(explore, "lua", "explore", user.id, user.fight_point)
+    data.explore = explore
     return "update_user", {update={explore=e}}
 end
 

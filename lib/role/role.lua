@@ -605,4 +605,16 @@ function proc.confirm_explore(msg)
     return "response", ""
 end
 
+function proc.explore_fight(msg)
+    if not data.explore then
+        error{code = error_code.NOT_EXPLORE}
+    end
+    local user = data.user
+    local e = skynet.call(data.explore, "lua", "fight", user.id)
+    if not e then
+        error{code = error_code.ERROR_EXPLORE_STATUS}
+    end
+    return "update_user", {update={explore=e}}
+end
+
 return role

@@ -240,7 +240,7 @@ function CMD.enter(roleid)
     end
 end
 
-function CMD.add(roleid, info)
+function CMD.add(info)
     if info.status == explore_status.NORMAL then
         skynet.call(rankdb, "lua", "zadd", rankname, -info.fight_point, roleid)
         rank_count = rank_count + 1

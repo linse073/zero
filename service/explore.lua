@@ -242,11 +242,11 @@ end
 
 function CMD.add(info)
     if info.status == explore_status.NORMAL then
-        skynet.call(rankdb, "lua", "zadd", rankname, -info.fight_point, roleid)
+        skynet.call(rankdb, "lua", "zadd", rankname, -info.fight_point, info.roleid)
         rank_count = rank_count + 1
     end
-    role_list[roleid] = info
-    skynet.call(explore_mgr, "lua", "add", roleid, skynet.self())
+    role_list[info.roleid] = info
+    skynet.call(explore_mgr, "lua", "add", info.roleid, skynet.self())
 end
 
 -- TODO: call quit if already explore

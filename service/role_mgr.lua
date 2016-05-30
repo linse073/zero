@@ -68,8 +68,10 @@ function CMD.logout(roleid)
 end
 
 function CMD.get(roleid)
-    local role = assert(role_list[roleid], string.format("No role %d.", roleid))
-    return role[1]
+    local role = role_list[roleid]
+    if role then
+        return role[1]
+    end
 end
 
 local function pack_msg(msg, info)

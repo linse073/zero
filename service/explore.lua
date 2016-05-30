@@ -2,7 +2,6 @@ local skynet = require "skynet"
 local timer = require "timer"
 local queue = require "skynet.queue"
 local sharedata = require "sharedata"
-local util = require "util"
 
 local assert = assert
 local string = string
@@ -178,7 +177,6 @@ local function update()
                 v.money = v.money + data.money
                 v.bonus = v.bonus + data.searchTime // BONUS_TIME
                 v.reason = explore_reason.NORMAL
-                util.dump(v)
                 local agent = skynet.call(role_mgr, "lua", "get", k)
                 if agent then
                     v.status = explore_status.FINISH

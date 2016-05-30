@@ -10,6 +10,7 @@ local math = math
 local random = math.random
 local floor = math.floor
 local table = table
+local tonumber = tonumber
 
 local cs = queue()
 local explore_status
@@ -148,7 +149,7 @@ local function update()
                     if maxr ~= minr then
                         local er = skynet.call(rankdb, "lua", "zrange", rankname, minr, maxr)
                         table.remove(er, rank - minr + 1)
-                        local tid = er[random(#er)]
+                        local tid = tonumber(er[random(#er)])
                         skynet.call(rankdb, "lua", "zrem", rankname, k)
                         encounter(v, now, tid)
                         local tinfo = role_list[tid]

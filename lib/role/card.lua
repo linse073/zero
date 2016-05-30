@@ -170,7 +170,7 @@ function card.add(v, d)
         id = v.id,
         cardid = v.cardid,
         level = v.level,
-        pos = v.pos,
+        pos = v.pos[1],
     }
     local c = {v, d, ps, sv}
     data.card[v.id] = c

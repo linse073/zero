@@ -31,6 +31,7 @@ local game_day
 local expdata
 local npcdata
 local propertydata
+local bonusdata
 local error_code
 local base
 local type_reward
@@ -51,6 +52,7 @@ skynet.init(function()
     expdata = share.expdata
     npcdata = share.npcdata
     propertydata = share.propertydata
+    bonusdata = share.bonusdata
     error_code = share.error_code
     base = share.base
     type_reward = share.type_reward
@@ -311,13 +313,20 @@ function role.repair(user)
     end
 end
 
+function role.explore_bonus(p, a)
+    local d = assert(bonusdata[a.bonus], string.format("No bonus data %d.", a.bonus))
+    local bonus = {{rand_num=a.num, data=d}}
+    new_rand.init(floor(skynet.time()))
+    stage.get_bonus(bonus, p)
+end
+
 function role.explore_award(award)
     local p = update_user()
     if award.money > 0 then
         role.add_money(p, award.money)
     end
     if award.num > 0 then
-        item.add_by_itemid(p, award.bonus, award.num)
+        role.explore_bonus(p, award)
     end
     p.explore = {
         status = award.status,
@@ -474,7 +483,7 @@ local function enter_game(msg)
                     role.add_money(p, a.money)
                 end
                 if a.num > 0 then
-                    item.add_by_itemid(p, a.bonus, a.num)
+                    role.explore_bonus(p, a)
                 end
             end
         end
@@ -578,7 +587,7 @@ function proc.quit_explore(msg)
         role.add_money(p, a.money)
     end
     if a.num > 0 then
-        item.add_by_itemid(p, a.bonus, a.num)
+        role.explore_bonus(p, a)
     end
     return "update_user", {update=p}
 end

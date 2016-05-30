@@ -29,6 +29,8 @@ local MAX_ENCOUNTER_RATIO = RAND_FACTOR / 2
 local ENCOUNTER_MIN = 5
 local ENCOUNTER_SECOND = ENCOUNTER_MIN * 60
 local ENCOUNTER_RANK = 3
+local BONUS_TIME = 120
+local UPDATE_TIME = 60
 
 local CMD = {}
 
@@ -70,7 +72,7 @@ local function win(t, info, tinfo)
     local dm = (t - tinfo.start_time) // 60
     local money = data.money * dm // data.searchTime
     info.money = info.money + money * data.lootRatio // RAND_FACTOR
-    local num = dm // 60
+    local num = dm // BONUS_TIME
     for i = 1, num do
         local rnum = random(RAND_FACTOR)
         if rnum <= data.lootRatio then
@@ -127,7 +129,7 @@ local function update()
                     }}})
                 end
                 skynet.call(save_explore, "lua", "update", k, v)
-            elseif now - v.update_time >= 60 then
+            elseif now - v.update_time >= UPDATE_TIME then
                 local ratio = (now - v.time) // 60 * ratio_min
                 if random(RAND_FACTOR) <= ratio then
                     local rank = skynet.call(rankdb, "lua", "zrank", rankname, k)
@@ -152,7 +154,7 @@ local function update()
                         skynet.call(save_explore, "lua", "update", tid, tinfo)
                     end
                 end
-                v.update_time = v.update_time + 60
+                v.update_time = v.update_time + UPDATE_TIME
                 skynet.call(save_explore, "lua", "update", k, v)
             end
         elseif v.status == explore_status.ENCOUNTER then
@@ -169,7 +171,7 @@ local function update()
             local t = now - v.start_time
             if t >= data.searchTime then
                 v.money = v.money + data.money
-                v.bonus = v.bonus + data.searchTime // 60
+                v.bonus = v.bonus + data.searchTime // BONUS_TIME
                 v.reason = explore_reason.NORMAL
                 local agent = skynet.call(role_mgr, "lua", "get", k)
                 if agent then
@@ -284,7 +286,7 @@ function CMD.quit(roleid)
             local money = data.money * dm // data.searchTime
             info.money = info.money + money * data.escapeKeepRatio // RAND_FACTOR
             tinfo.money = tinfo.money + money * data.escapeLootRatio // RAND_FACTOR
-            local num = dm // 60
+            local num = dm // BONUS_TIME
             for i = 1, num do
                 local rnum = random(RAND_FACTOR)
                 if rnum <= data.escapeKeepRatio then
@@ -334,7 +336,7 @@ function CMD.quit(roleid)
             local t = floor(skynet.time())
             local dm = (t - info.start_time) // 60
             info.money = info.money + data.money * dm // data.searchTime
-            info.bonus = info.bonus + dm // 60
+            info.bonus = info.bonus + dm // BONUS_TIME
             info.status = explore_status.FINISH
             info.reason = explore_reason.QUIT
             skynet.call(save_explore, "lua", "update", roleid, info)

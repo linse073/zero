@@ -237,6 +237,7 @@ skynet.start(function()
     for k, v in pairs(searchdata) do
         v.area = v.stageType * 100 + v.stageId
         v.searchSecond = v.searchTime * 60
+        v.bonus = assert(bonusdata[v.bonusId], string.format("No bonus data %d.", v.bonusId))
         area_search[v.area] = v
     end
 

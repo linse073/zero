@@ -12,6 +12,7 @@ local table = table
 
 local cs = queue()
 local explore_status
+local explore_reason
 local data
 local rankdb
 local rankname
@@ -92,6 +93,7 @@ local function win(t, info, tinfo)
         }}})
     end
     skynet.call(save_explore, "lua", "update", info.roleid, info)
+    tinfo.reason = explore_reason.FAIL
     local tagent = skynet.call(role_mgr, "lua", "get", tinfo.roleid)
     if tagent then
         tinfo.status = explore_status.FINISH
@@ -100,6 +102,7 @@ local function win(t, info, tinfo)
             bonus = data.bonusId,
             num = tinfo.bonus,
             status = tinfo.status,
+            reason = tinfo.reason,
         })
     else
         tinfo.status = explore_status.DONE
@@ -166,6 +169,7 @@ local function update()
             if t >= data.searchTime then
                 v.money = v.money + data.money
                 v.bonus = v.bonus + data.searchTime // 60
+                v.reason = explore_reason.NORMAL
                 local agent = skynet.call(role_mgr, "lua", "get", k)
                 if agent then
                     v.status = explore_status.FINISH
@@ -174,6 +178,7 @@ local function update()
                         bonus = data.bonusId,
                         num = v.bonus,
                         status = v.status,
+                        reason = v.reason,
                     })
                 else
                     v.status = explore_status.DONE
@@ -186,6 +191,7 @@ end
 
 function CMD.open(d, mgr)
     explore_status = sharedata.query("explore_status")
+    explore_reason = sharedata.query("explore_reason")
     data = d
     explore_mgr = mgr
     rankname = "explore_" .. d.area
@@ -226,6 +232,7 @@ function CMD.enter(roleid)
             tinfo = ti,
             ack = info.ack,
             tack = info.tack,
+            reason = info.reason,
         }, award
     end
 end
@@ -289,6 +296,7 @@ function CMD.quit(roleid)
                 end
             end
             info.status = explore_status.FINISH
+            info.reason = explore_reason.ESCAPE
             info.ack = 2
             skynet.call(save_explore, "lua", "update", roleid, info)
             local dt = t - tinfo.start_time
@@ -327,6 +335,7 @@ function CMD.quit(roleid)
             info.money = info.money + data.money * dm // data.searchTime
             info.bonus = info.bonus + dm // 60
             info.status = explore_status.FINISH
+            info.reason = explore_reason.QUIT
             skynet.call(save_explore, "lua", "update", roleid, info)
             return {status=info.status},
             {money=info.money, bonus=data.bonusId, num=info.bonus}

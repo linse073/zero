@@ -319,7 +319,10 @@ function role.explore_award(award)
     if award.num > 0 then
         item.add_by_itemid(p, award.bonus, award.num)
     end
-    p.explore = {status=award.status}
+    p.explore = {
+        status = award.status,
+        reason = award.reason,
+    }
     notify.add("update_user", {update=p})
 end
 

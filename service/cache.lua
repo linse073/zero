@@ -293,6 +293,13 @@ skynet.start(function()
         FINISH = 5,
     })
 
+    sharedata.new("explore_reason", {
+        NORMAL = 1,
+        FAIL = 2,
+        ESCAPE = 3,
+        QUIT = 4,
+    })
+
     sharedata.new("msg", proto.msg)
     sharedata.new("name_msg", proto.name_msg)
 

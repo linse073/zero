@@ -135,10 +135,11 @@
     area 0 : integer
     start_time 1 : integer
     status 2 : integer
-    time 2 : integer
-    tinfo 3 : rank_info
-    ack 4 : integer
-    tack 5 : integer
+    reason 3 : integer
+    time 4 : integer
+    tinfo 5 : rank_info
+    ack 6 : integer
+    tack 7 : integer
 }
 
 .user_all {

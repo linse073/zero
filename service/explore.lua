@@ -103,7 +103,7 @@ local function win(t, info, tinfo)
     local tagent = skynet.call(role_mgr, "lua", "get", tinfo.roleid)
     if tagent then
         tinfo.status = explore_status.FINISH
-        skynet.call(agent, "lua", "explore_award", {
+        skynet.call(tagent, "lua", "explore_award", {
             money = tinfo.money,
             bonus = data.bonusId,
             num = tinfo.bonus,

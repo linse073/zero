@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local timer = require "timer"
 local queue = require "skynet.queue"
 local sharedata = require "sharedata"
+local util = require "util"
 
 local assert = assert
 local string = string
@@ -29,7 +30,7 @@ local MAX_ENCOUNTER_RATIO = RAND_FACTOR / 2
 local ENCOUNTER_MIN = 5
 local ENCOUNTER_SECOND = ENCOUNTER_MIN * 60
 local ENCOUNTER_RANK = 3
-local BONUS_TIME = 120
+local BONUS_TIME = 60
 local UPDATE_TIME = 60
 
 local cur_time
@@ -134,8 +135,8 @@ local function update()
                 end
                 skynet.call(save_explore, "lua", "update", k, v)
             elseif now - v.update_time >= UPDATE_TIME then
-                local ratio = (now - v.time) // 60 * ratio_min
-                if random(RAND_FACTOR) <= ratio then
+                -- local ratio = (now - v.time) // 60 * ratio_min
+                -- if random(RAND_FACTOR) <= ratio then
                     local rank = skynet.call(rankdb, "lua", "zrank", rankname, k)
                     local minr = rank - ENCOUNTER_RANK
                     if minr < 0 then
@@ -157,7 +158,7 @@ local function update()
                         rank_count = rank_count - 2
                         skynet.call(save_explore, "lua", "update", tid, tinfo)
                     end
-                end
+                -- end
                 v.update_time = v.update_time + UPDATE_TIME
                 skynet.call(save_explore, "lua", "update", k, v)
             end
@@ -177,6 +178,7 @@ local function update()
                 v.money = v.money + data.money
                 v.bonus = v.bonus + data.searchTime // BONUS_TIME
                 v.reason = explore_reason.NORMAL
+                util.dump(v)
                 local agent = skynet.call(role_mgr, "lua", "get", k)
                 if agent then
                     v.status = explore_status.FINISH

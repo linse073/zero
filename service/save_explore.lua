@@ -45,13 +45,14 @@ function CMD.open()
         local res = skynet.call(exploredb, "lua", "scan", index)
         index = res[1]
         for k, v in ipairs(res[2]) do
+            -- NOTICE: v is string, not number
             -- TODO: v is number or string?
             local info = skynet.unpack(skynet.call(exploredb, "lua", "get", v))
             -- TODO: modify start_time and time according to server shutdown time
             local explore = skynet.call(explore_mgr, "lua", "get_explore", info.area)
             skynet.call(explore, "lua", "add", info)
         end
-    until index == 0
+    until index == "0"
     timer.add_routine("save_explore", function()
         cs(save)
     end, 600)

@@ -132,7 +132,7 @@ local datas = {
 		rewardType = 2,
 		reward = 20,
 		rewardNum = 1,
-		dropItemList = "3000012270;20",
+		dropItemList = "3000012271;20",
 	},
 	[602000006] = {
 		id = 602000006,
@@ -195,7 +195,7 @@ local datas = {
 		rewardType = 2,
 		reward = 20,
 		rewardNum = 1,
-		dropItemList = "3000012270;20",
+		dropItemList = "3000012271;20",
 	},
 	[602000013] = {
 		id = 602000013,
@@ -258,7 +258,7 @@ local datas = {
 		rewardType = 2,
 		reward = 40,
 		rewardNum = 1,
-		dropItemList = "3000012270;40",
+		dropItemList = "3000012271;40",
 	},
 	[602000020] = {
 		id = 602000020,
@@ -321,7 +321,7 @@ local datas = {
 		rewardType = 2,
 		reward = 40,
 		rewardNum = 1,
-		dropItemList = "3000012270;40",
+		dropItemList = "3000012271;40",
 	},
 	[602000027] = {
 		id = 602000027,
@@ -582,7 +582,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3006001300,
 		rewardNum = 1,
-		dropItemList = "3000008270;20",
+		dropItemList = "3000008271;20",
 	},
 	[610000002] = {
 		id = 610000002,
@@ -591,7 +591,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3006002300,
 		rewardNum = 1,
-		dropItemList = "3000011270;20",
+		dropItemList = "3000011271;20",
 	},
 	[610000003] = {
 		id = 610000003,
@@ -609,7 +609,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007001300,
 		rewardNum = 1,
-		dropItemList = "3000008270;10;3000011270;10;3000004270;5000",
+		dropItemList = "3000008271;10;3000011271;10;3000004271;5000",
 	},
 	[611000002] = {
 		id = 611000002,
@@ -618,7 +618,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007002300,
 		rewardNum = 1,
-		dropItemList = "3000008270;15;3000011270;15;3000004270;10000",
+		dropItemList = "3000008271;15;3000011271;15;3000004271;10000",
 	},
 	[611000003] = {
 		id = 611000003,
@@ -627,7 +627,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007003300,
 		rewardNum = 1,
-		dropItemList = "3000008270;20;3000011270;20;3000004270;15000",
+		dropItemList = "3000008271;20;3000011271;20;3000004271;15000",
 	},
 	[611000004] = {
 		id = 611000004,
@@ -636,7 +636,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007004300,
 		rewardNum = 1,
-		dropItemList = "3000008270;25;3000011270;25;3000004270;20000",
+		dropItemList = "3000008271;25;3000011271;25;3000004271;20000",
 	},
 	[611000005] = {
 		id = 611000005,
@@ -645,7 +645,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007005300,
 		rewardNum = 1,
-		dropItemList = "3000008270;30;3000011270;30;3000004270;25000",
+		dropItemList = "3000008271;30;3000011271;30;3000004271;25000",
 	},
 	[611000006] = {
 		id = 611000006,
@@ -654,7 +654,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007006300,
 		rewardNum = 1,
-		dropItemList = "3000008270;35;3000011270;35;3000004270;30000",
+		dropItemList = "3000008271;35;3000011271;35;3000004271;30000",
 	},
 	[611000007] = {
 		id = 611000007,
@@ -663,7 +663,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007007300,
 		rewardNum = 1,
-		dropItemList = "3000008270;40;3000011270;40;3000012270;35",
+		dropItemList = "3000008271;40;3000011271;40;3000012271;35",
 	},
 	[611000008] = {
 		id = 611000008,
@@ -672,7 +672,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007008300,
 		rewardNum = 1,
-		dropItemList = "3000008270;45;3000011270;45;3000012270;40",
+		dropItemList = "3000008271;45;3000011271;45;3000012271;40",
 	},
 	[611000009] = {
 		id = 611000009,
@@ -681,7 +681,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007009300,
 		rewardNum = 1,
-		dropItemList = "3000008270;50;3000011270;50;3000012270;45",
+		dropItemList = "3000008271;50;3000011271;50;3000012271;45",
 	},
 	[611000010] = {
 		id = 611000010,
@@ -690,7 +690,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3007010300,
 		rewardNum = 1,
-		dropItemList = "3000008270;55;3000011270;55;3000012270;50",
+		dropItemList = "3000008271;55;3000011271;55;3000012271;50",
 	},
 	[612000001] = {
 		id = 612000001,
@@ -699,7 +699,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008001300,
 		rewardNum = 1,
-		dropItemList = "3000008270;10;3000011270;10;3000013270;1",
+		dropItemList = "3000008271;10;3000011271;10;3000013271;1",
 	},
 	[612000002] = {
 		id = 612000002,
@@ -708,7 +708,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008002300,
 		rewardNum = 1,
-		dropItemList = "3000008270;15;3000011270;15;3000013270;2",
+		dropItemList = "3000008271;15;3000011271;15;3000013271;2",
 	},
 	[612000003] = {
 		id = 612000003,
@@ -717,7 +717,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008003300,
 		rewardNum = 1,
-		dropItemList = "3000008270;20;3000011270;20;3000013270;3",
+		dropItemList = "3000008271;20;3000011271;20;3000013271;3",
 	},
 	[612000004] = {
 		id = 612000004,
@@ -726,7 +726,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008004300,
 		rewardNum = 1,
-		dropItemList = "3000008270;25;3000011270;25;3000013270;4",
+		dropItemList = "3000008271;25;3000011271;25;3000013271;4",
 	},
 	[612000005] = {
 		id = 612000005,
@@ -735,7 +735,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008005300,
 		rewardNum = 1,
-		dropItemList = "3000008270;30;3000011270;30;3000013270;5",
+		dropItemList = "3000008271;30;3000011271;30;3000013271;5",
 	},
 	[612000006] = {
 		id = 612000006,
@@ -744,7 +744,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008006300,
 		rewardNum = 1,
-		dropItemList = "3000008270;35;3000011270;35;3000013270;6",
+		dropItemList = "3000008271;35;3000011271;35;3000013271;6",
 	},
 	[612000007] = {
 		id = 612000007,
@@ -753,7 +753,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008007300,
 		rewardNum = 1,
-		dropItemList = "3000008270;40;3000011270;40;3000013270;7",
+		dropItemList = "3000008271;40;3000011271;40;3000013271;7",
 	},
 	[612000008] = {
 		id = 612000008,
@@ -762,7 +762,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008008300,
 		rewardNum = 1,
-		dropItemList = "3000008270;45;3000011270;45;3000013270;8",
+		dropItemList = "3000008271;45;3000011271;45;3000013271;8",
 	},
 	[612000009] = {
 		id = 612000009,
@@ -771,7 +771,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008009300,
 		rewardNum = 1,
-		dropItemList = "3000008270;50;3000011270;50;3000013270;9",
+		dropItemList = "3000008271;50;3000011271;50;3000013271;9",
 	},
 	[612000010] = {
 		id = 612000010,
@@ -780,7 +780,7 @@ local datas = {
 		rewardType = 1,
 		reward = 3008010300,
 		rewardNum = 1,
-		dropItemList = "3000008270;55;3000011270;55;3000013270;10",
+		dropItemList = "3000008271;55;3000011271;55;3000013271;10",
 	},
 }
 

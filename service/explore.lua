@@ -218,9 +218,9 @@ function CMD.enter(roleid)
             info.status = explore_status.FINISH
             skynet.call(save_explore, "lua", "update", roleid, info)
             award = {
-                money = v.money,
+                money = info.money,
                 bonus = data.bonusId,
-                num = v.bonus,
+                num = info.bonus,
             }
         end
         local ti

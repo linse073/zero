@@ -80,7 +80,7 @@ local function win(t, info, tinfo)
         end
     end
     local dt = t - info.start_time
-    if dt <= data.searchSecond - ENCOUNTER_SECOND then
+    if dt >= data.searchSecond - ENCOUNTER_SECOND then
         info.status = explore_status.IDLE
     else
         info.status = explore_status.NORMAL
@@ -118,7 +118,7 @@ local function update()
     for k, v in pairs(role_list) do
         if v.status == explore_status.NORMAL then
             local t = now - v.start_time
-            if t <= data.searchSecond - ENCOUNTER_SECOND then
+            if t >= data.searchSecond - ENCOUNTER_SECOND then
                 skynet.call(rankdb, "lua", "zrem", rankname, k)
                 rank_count = rank_count - 1
                 v.status = explore_status.IDLE
@@ -169,7 +169,7 @@ local function update()
             end
         elseif v.status == explore_status.IDLE then
             local t = now - v.start_time
-            if t >= data.searchTime then
+            if t >= data.searchSecond then
                 v.money = v.money + data.money
                 v.bonus = v.bonus + data.searchTime // BONUS_TIME
                 v.reason = explore_reason.NORMAL
@@ -303,7 +303,7 @@ function CMD.quit(roleid)
             info.ack = 2
             skynet.call(save_explore, "lua", "update", roleid, info)
             local dt = t - tinfo.start_time
-            if dt <= data.searchSecond - ENCOUNTER_SECOND then
+            if dt >= data.searchSecond - ENCOUNTER_SECOND then
                 tinfo.status = explore_status.IDLE
             else
                 tinfo.status = explore_status.NORMAL

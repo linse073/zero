@@ -67,7 +67,7 @@ local error_code = {
     ALREADY_EXPLORE = 2700,
     ERROR_EXPLORE_AREA = 2701,
     NOT_EXPLORE = 2702,
-    ERROR_EXPLORE_STATUS = 2702,
+    ERROR_EXPLORE_STATUS = 2703,
 }
 
 return error_code

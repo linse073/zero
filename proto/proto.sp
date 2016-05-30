@@ -333,3 +333,7 @@
 .sign_in {
     patch 0 : boolean
 }
+
+.explore {
+    area 0 : integer
+}

@@ -33,6 +33,8 @@ local ENCOUNTER_RANK = 3
 local BONUS_TIME = 60
 local UPDATE_TIME = 60
 
+local cur_time
+
 local CMD = {}
 
 local function encounter(info, t, tid)
@@ -115,7 +117,9 @@ local function win(t, info, tinfo)
 end
 
 local function update()
-    local now = floor(skynet.time())
+    -- local now = floor(skynet.time())
+    cur_time = cur_time + 60
+    local now = cur_time
     for k, v in pairs(role_list) do
         if v.status == explore_status.NORMAL then
             local t = now - v.start_time
@@ -194,6 +198,7 @@ local function update()
 end
 
 function CMD.open(d, mgr)
+    cur_time = 0
     explore_status = sharedata.query("explore_status")
     explore_reason = sharedata.query("explore_reason")
     data = d
@@ -252,7 +257,8 @@ end
 function CMD.explore(roleid, fight_point)
     skynet.call(rankdb, "lua", "zadd", rankname, -fight_point, roleid)
     rank_count = rank_count + 1
-    local now = floor(skynet.time())
+    -- local now = floor(skynet.time())
+    local now = cur_time
     local info = {
         roleid = roleid,
         fight_point = fight_point,
@@ -279,7 +285,8 @@ function CMD.quit(roleid)
     local info = role_list[roleid]
     if info then
         if info.status == explore_status.ENCOUNTER then
-            local t = floor(skynet.time())
+            -- local t = floor(skynet.time())
+            local t = cur_time
             local tinfo = role_list[info.tid]
             local dm = (t - info.start_time) // 60
             local money = data.money * dm // data.searchTime
@@ -332,7 +339,8 @@ function CMD.quit(roleid)
                 skynet.call(randdb, "lua", "zrem", rankname, roleid)
                 rank_count = rank_count - 1
             end
-            local t = floor(skynet.time())
+            -- local t = floor(skynet.time())
+            local t = cur_time
             local dm = (t - info.start_time) // 60
             info.money = info.money + data.money * dm // data.searchTime
             info.bonus = info.bonus + dm // BONUS_TIME

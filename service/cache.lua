@@ -217,6 +217,7 @@ skynet.start(function()
     end
 
     local type_reward = {}
+    local stage_reward = {}
     for k, v in pairs(rewarddata) do
         local reward = type_reward[v.type]
         if not reward then
@@ -227,6 +228,11 @@ skynet.start(function()
             reward[#reward+1] = v
         else
             reward[v.data] = v
+        end
+        if v.type == base.REWARD_ACTION_NORMAL_STAGE then
+            stage_reward[100+v.data] = v
+        elseif v.type == base.REWARD_ACTION_HERO_STAGE then
+            stage_reward[200+v.data] = v
         end
         if v.rewardType == base.REWARD_TYPE_ITEM then
             v.item = assert(itemdata[v.reward], string.format("No item data %d.", v.reward))
@@ -272,6 +278,7 @@ skynet.start(function()
     sharedata.new("type_reward", type_reward)
     sharedata.new("area_search", area_search)
     sharedata.new("area_stage", area_stage)
+    sharedata.new("stage_reward", stage_reward)
 
     local level = base.MAX_LEVEL - 1
     local ed = assert(expdata[level], string.format("No exp data %d.", level))

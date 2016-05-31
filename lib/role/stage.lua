@@ -26,6 +26,7 @@ local base
 local stagedata
 local itemdata
 local area_stage
+local stage_reward
 local data
 local role_mgr
 
@@ -38,6 +39,7 @@ skynet.init(function()
     stagedata = share.stagedata
     itemdata = share.itemdata
     area_stage = share.area_stage
+    stage_reward = share.stage_reward
     role_mgr = skynet.queryservice("role_mgr")
 end)
 
@@ -173,6 +175,38 @@ function stage.newbie_stage()
         stage_seed.bonus = false
         return stageid, seed
     end
+end
+
+function stage.area_star(area)
+    local star = 0
+    local ss = area_stage[area]
+    if ss then
+        local ds = data.stage
+        for k, v in ipairs(ss) do
+            local s = ds[baseid + i]
+            if s then
+                star = star + s[1].star
+            else
+                break
+            end
+        end
+    end
+    return star
+end
+
+function stage.chapter_star(stageType, chapter)
+    local baseid = 1300000000 + stageType * 1000 + 10 * chapter
+    local ds = data.stage
+    local star = 0
+    for i = 1, base.MAX_CHAPTER_STAGE do
+        local s = ds[baseid + i]
+        if s then
+            star = star + s[1].star
+        else
+            break
+        end
+    end
+    return star
 end
 
 -----------------------------protocol process--------------------------
@@ -334,8 +368,13 @@ function proc.open_chest(msg)
 end
 
 function proc.stage_award(msg)
-    local stages = area_stage[msg.area]
-    if not stages then
+    local star = stage.area_star(msg.area)
+    if star < 15 then
+        error{code = error_code.STAGE_STAR_LIMIT}
+    end
+    local reward = stage_reward[msg.area]
+    if not reward then
+        error{code = error_code.ERROR_STAGE_AREA}
     end
 end
 

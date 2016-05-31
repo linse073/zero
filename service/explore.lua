@@ -47,6 +47,8 @@ local function encounter(info, t, tid)
             status = info.status,
             time = now,
             tinfo = skynet.call(role_mgr, "lua", "get_rank_info", tid),
+            ack = info.ack,
+            tack = info.tack,
         }}})
     end
 end

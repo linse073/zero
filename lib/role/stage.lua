@@ -183,11 +183,9 @@ function stage.area_star(area)
     if ss then
         local ds = data.stage
         for k, v in ipairs(ss) do
-            local s = ds[baseid + i]
+            local s = ds[v.id]
             if s then
                 star = star + s[1].star
-            else
-                break
             end
         end
     end

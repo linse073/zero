@@ -53,9 +53,7 @@ function CMD.open()
             skynet.call(explore, "lua", "add", info)
         end
     until index == "0"
-    timer.add_routine("save_explore", function()
-        cs(save)
-    end, 600)
+    timer.add_routine("save_explore", save, 600)
 end
 
 skynet.start(function()

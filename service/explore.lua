@@ -206,9 +206,7 @@ function CMD.open(d, mgr)
     rankdb = skynet.call(master, "lua", "get", "rankdb")
     skynet.call(rankdb, "lua", "zrem_by_rank", rankname, 0, -1)
     rank_count = 0
-    timer.add_second_routine("update_explore", function()
-        cs(update)
-    end)
+    timer.add_second_routine("update_explore", update)
 end
 
 function CMD.enter(roleid)

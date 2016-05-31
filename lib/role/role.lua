@@ -177,7 +177,7 @@ function role.add_exp(p, exp)
     local oldExp = user.exp
     user.exp = user.exp + exp
     if user.exp > max_exp.HeroExp then
-        user.exp = ed.HeroExp
+        user.exp = max_exp.HeroExp
     end
     if oldExp ~= user.exp then
         local oldLevel = user.level

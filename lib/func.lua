@@ -53,7 +53,7 @@ function func.map_pos(des_pos)
     end
 end
 
-function func.rand_bonus(d, prof)
+function func.rand_bonus(d, p)
     local rand = randi(d.total_rate)
     local t = 0
     for k, v in ipairs(d.all_rate) do
@@ -63,7 +63,7 @@ function func.rand_bonus(d, prof)
             if v.type == base.BONUS_TYPE_EQUIP then
                 local prof
                 if v.prof then
-                    prof = prof
+                    prof = p
                 else
                     prof = randi(base.PROF_WARRIOR, base.PROF_WIZARD)
                 end

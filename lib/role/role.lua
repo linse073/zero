@@ -566,7 +566,7 @@ function proc.explore(msg)
     if not explore then
         error{code = error_code.ERROR_EXPLORE_AREA}
     end
-    -- TODO: stage star limit
+    -- TODO: stage star limit and equip card limit
     local user = data.user
     local e = skynet.call(explore, "lua", "explore", user.id, user.fight_point)
     data.explore = explore

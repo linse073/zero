@@ -68,6 +68,7 @@ skynet.start(function()
         end
     end
 
+    local area_stage = {}
     for k, v in pairs(stagedata) do
         if v.bonusID > 0 then
             v.bonus = assert(bonusdata[v.bonusID], string.format("No bonus data %d.", v.bonusID))
@@ -77,6 +78,14 @@ skynet.start(function()
         end
         if v.dropBonusID > 0 then
             v.dropBonus = assert(bonusdata[v.dropBonusID], string.format("No bonus data %d.", v.dropBonusID))
+        end
+        local area = k % 10000 // 10
+        local s = area_stage[area]
+        if s then
+            s[#s+1] = v
+        else
+            s = {v}
+            area_stage[area] = s
         end
     end
 
@@ -262,6 +271,7 @@ skynet.start(function()
     sharedata.new("original_card", original_card)
     sharedata.new("type_reward", type_reward)
     sharedata.new("area_search", area_search)
+    sharedata.new("area_stage", area_stage)
 
     local level = base.MAX_LEVEL - 1
     local ed = assert(expdata[level], string.format("No exp data %d.", level))

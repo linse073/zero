@@ -25,6 +25,7 @@ local error_code
 local base
 local stagedata
 local itemdata
+local area_stage
 local data
 local role_mgr
 
@@ -36,6 +37,7 @@ skynet.init(function()
     base = share.base
     stagedata = share.stagedata
     itemdata = share.itemdata
+    area_stage = share.area_stage
     role_mgr = skynet.queryservice("role_mgr")
 end)
 
@@ -329,6 +331,12 @@ function proc.open_chest(msg)
     end
     stage_seed.bonus = true
     return "update_user", {update=p}
+end
+
+function proc.stage_award(msg)
+    local stages = area_stage[msg.area]
+    if not stages then
+    end
 end
 
 return stage

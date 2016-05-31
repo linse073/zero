@@ -337,3 +337,7 @@
 .explore {
     area 0 : integer
 }
+
+.stage_award {
+    area 0 : integer
+}

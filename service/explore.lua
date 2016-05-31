@@ -330,7 +330,7 @@ function CMD.quit(roleid)
             {money=info.money, bonus=data.bonusId, num=info.bonus}
         elseif info.status == explore_status.NORMAL or info.status == explore_status.IDLE then
             if info.status == explore_status.NORMAL then
-                skynet.call(randdb, "lua", "zrem", rankname, roleid)
+                skynet.call(rankdb, "lua", "zrem", rankname, roleid)
                 rank_count = rank_count - 1
             end
             local t = floor(skynet.time())

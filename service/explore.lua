@@ -248,7 +248,6 @@ function CMD.add(info)
     skynet.call(explore_mgr, "lua", "add", info.roleid, skynet.self())
 end
 
--- TODO: call quit if already explore
 function CMD.explore(roleid, fight_point)
     skynet.call(rankdb, "lua", "zadd", rankname, -fight_point, roleid)
     rank_count = rank_count + 1

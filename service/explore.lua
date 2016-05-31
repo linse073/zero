@@ -135,8 +135,8 @@ local function update()
                 end
                 skynet.call(save_explore, "lua", "update", k, v)
             elseif now - v.update_time >= UPDATE_TIME then
-                local ratio = (now - v.time) // 60 * ratio_min
-                if random(RAND_FACTOR) <= ratio then
+                -- local ratio = (now - v.time) // 60 * ratio_min
+                -- if random(RAND_FACTOR) <= ratio then
                     local rank = skynet.call(rankdb, "lua", "zrank", rankname, k)
                     local minr = rank - ENCOUNTER_RANK
                     if minr < 0 then
@@ -158,7 +158,7 @@ local function update()
                         rank_count = rank_count - 2
                         skynet.call(save_explore, "lua", "update", tid, tinfo)
                     end
-                end
+                -- end
                 v.update_time = v.update_time + UPDATE_TIME
                 skynet.call(save_explore, "lua", "update", k, v)
             end

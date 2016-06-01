@@ -4,6 +4,7 @@ local util = require "util"
 
 local item
 local role
+local task
 
 local update_user = util.update_user
 local error_code
@@ -27,6 +28,7 @@ end)
 function gm.init_module()
     item = require "role.item"
     role = require "role.role"
+    task = require "role.task"
     return proc
 end
 

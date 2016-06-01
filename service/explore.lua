@@ -45,7 +45,7 @@ local function encounter(info, t, tid)
     if agent then
         skynet.send(agent, "lua", "notify", "update_user", {update={explore={
             status = info.status,
-            time = now,
+            time = t,
             tinfo = skynet.call(role_mgr, "lua", "get_rank_info", tid),
             ack = info.ack,
             tack = info.tack,

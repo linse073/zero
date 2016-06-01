@@ -26,6 +26,8 @@ local function pack()
     print("notify pack")
     skynet.send(skynet.self(), "lua", "notify", "response", "")
     print("notify send")
+    skynet.call(skynet.self(), "lua", "notify", "response", "")
+    print("notify call")
     local q = notify_queue
     notify_queue = {}
     local content = ""

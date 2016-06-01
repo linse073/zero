@@ -9,6 +9,7 @@ local update_user = util.update_user
 local error_code
 local itemdata
 local expdata
+local taskdata
 local base
 local data
 
@@ -19,6 +20,7 @@ skynet.init(function()
     error_code = share.error_code
     itemdata = share.itemdata
     expdata = share.expdata
+    taskdata = share.taskdata
     base = share.base
 end)
 
@@ -92,6 +94,21 @@ function proc.add_rmb(msg)
     local p = update_user()
     role.add_rmb(p, msg.rmb)
     return "update_user", {update=p}
+end
+
+function proc.set_task(msg)
+    if data.user.gm_level == 0 then
+        error{code = error_code.ROLE_NO_PERMIT}
+    end
+    local d = taskdata[msg.id]
+    if not d then
+        error{code = error_code.TASK_NOT_EXIST}
+    end
+    if d.TaskType ~= base.TASK_TYPE_MASTER then
+        error{code = error_code.NOT_MASTER_TASK}
+    end
+    local p = update_user()
+    task.set_task(p, msg.id)
 end
 
 return gm

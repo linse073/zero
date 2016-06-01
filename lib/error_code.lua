@@ -39,6 +39,7 @@ local error_code = {
     NO_STONE_IN_POSITION = 2117,
 
     TASK_NOT_EXIST = 2200,
+    NOT_MASTER_TASK = 2201,
 
     CARD_ID_NOT_EXIST = 2300,
     CARD_CAN_NOT_CALL = 2301,

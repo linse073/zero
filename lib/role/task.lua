@@ -4,6 +4,7 @@ local util = require "util"
 
 local role
 local item
+local stage
 
 local pairs = pairs
 local ipairs = ipairs
@@ -17,6 +18,7 @@ local taskdata
 local achi_task
 local day_task
 local complete_task
+local stage_task
 local base
 local data
 
@@ -28,12 +30,14 @@ skynet.init(function()
     achi_task = share.achi_task
     day_task = share.day_task
     complete_task = share.complete_task
+    stage_task = share.stage_task
     base = share.base
 end)
 
 function task.init_module()
     role = require "role.role"
     item = require "role.item"
+    stage = require "role.stage"
     return proc
 end
 
@@ -246,6 +250,45 @@ function task.award(p, t)
     end
     for k, v in ipairs(d.awardItem) do
         item.add_by_itemid(p, v.num, v.data)
+    end
+end
+
+function task.set_task(p, tid)
+    local pt = p.task
+    local id = base.BEGIN_TASK_ID
+    local dt = data.task
+    while id ~= 0 and id ~= tid do
+        local t = dt[id]
+        local d
+        if t then
+            local vt = t[1]
+            d = v[2]
+            if vt.status ~= base.TASK_STATUS_FINISH then
+                vt.status = base.TASK_STATUS_FINISH
+                vt.count = d.count
+                pt[#pt+1] = {
+                    id = vt.id,
+                    status = vt.status,
+                    count = vt.count,
+                }
+            end
+        else
+            d = assert(taskdata[id], string.format("No task data %d.", id))
+            t = task.add_by_data(d, base.TASK_STATUS_FINISH)
+            pt[#pt+1] = t[1]
+        end
+        id = d.nextID
+        if stage_task[d.CompleteType] then
+            stage.add_stage(p, d.condition)
+        end
+    end
+    if id ~= 0 then
+        local t = dt[id]
+        if not t then
+            local d = assert(taskdata[id], string.format("No task data %d.", id))
+            t = task.add_by_data(d, base.TASK_STATUS_ACCEPT)
+            pt[#pt+1] = t[1]
+        end
     end
 end
 

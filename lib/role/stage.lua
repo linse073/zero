@@ -207,6 +207,18 @@ function stage.chapter_star(stageType, chapter)
     return star
 end
 
+function stage.add_stage(p, id)
+    local ps = p.stage
+    local s = data.stage[id]
+    if not s then
+        local d = assert(stagedata[id], string.format("No stage data %d.", id))
+        s = stage.add_by_data(d)
+        local sv = s[1]
+        stage.star(sv)
+        ps[#ps+1] = sv
+    end
+end
+
 -----------------------------protocol process--------------------------
 
 function proc.begin_stage(msg)

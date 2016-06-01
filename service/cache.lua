@@ -303,6 +303,12 @@ skynet.start(function()
         [base.TASK_COMPLETE_UPGRADE_PASSIVE] = true,
     })
 
+    sharedata.new("stage_task", {
+        [base.TASK_COMPLETE_STAGE] = true,
+        [base.TASK_COMPLETE_ELITE_STAGE] = true,
+        [base.TASK_COMPLETE_STAGE_GUIDE] = true,
+    })
+
     sharedata.new("explore_status", {
         NORMAL = 1,
         ENCOUNTER = 2,

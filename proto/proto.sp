@@ -312,6 +312,10 @@
     rmb 0 : integer
 }
 
+.set_task {
+    id 0 : integer
+}
+
 .upgrade_passive {
     id 0 : integer
     skillid 1 : integer

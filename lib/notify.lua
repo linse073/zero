@@ -23,8 +23,13 @@ skynet.init(function()
 end)
 
 local function pack()
+    print("notify pack")
+    skynet.send(skynet.self(), "lua", "notify", "response", "")
+    print("notify send")
+    local q = notify_queue
+    notify_queue = {}
     local content = ""
-    for k, v in ipairs(notify_queue) do
+    for k, v in ipairs(q) do
         local m, c = v[1], v[2]
         if c then
             if sproto:exist_type(m) then
@@ -37,7 +42,7 @@ local function pack()
             content = content .. m
         end
     end
-    notify_queue = {}
+    print("notify end")
     return "notify_info", content
 end
 
@@ -49,7 +54,6 @@ function notify.send()
         notify_coroutine = coroutine.running()
         skynet.wait(notify_coroutine)
     end
-    notify_coroutine = nil
     return pack()
 end
 
@@ -57,6 +61,7 @@ function notify.add(msg, content)
     notify_queue[#notify_queue+1] = {msg, content}
     if notify_coroutine then
         skynet.wakeup(notify_coroutine)
+        notify_coroutine = nil
     end
 end
 

@@ -109,6 +109,7 @@ skynet.start(function()
 
 	-- If you want to fork a work thread, you MUST do it in CMD.login
 	skynet.dispatch("lua", function(session, source, command, ...)
+        print("agent", command)
 		local f = assert(CMD[command])
         if session == 0 then
             f(source, ...)

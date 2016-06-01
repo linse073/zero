@@ -43,7 +43,7 @@ local function encounter(info, t, tid)
     info.tack = 0
     local agent = skynet.call(role_mgr, "lua", "get", info.roleid)
     if agent then
-        skynet.call(agent, "lua", "notify", "update_user", {update={explore={
+        skynet.send(agent, "lua", "notify", "update_user", {update={explore={
             status = info.status,
             time = now,
             tinfo = skynet.call(role_mgr, "lua", "get_rank_info", tid),
@@ -93,7 +93,7 @@ local function win(t, info, tinfo)
     info.time = t
     local agent = skynet.call(role_mgr, "lua", "get", info.roleid)
     if agent then
-        skynet.call(agent, "lua", "notify", "update_user", {update={explore={
+        skynet.send(agent, "lua", "notify", "update_user", {update={explore={
             status = info.status,
             time = t,
         }}})
@@ -127,7 +127,7 @@ local function update()
                 v.status = explore_status.IDLE
                 local agent = skynet.call(role_mgr, "lua", "get", k)
                 if agent then
-                    skynet.call(agent, "lua", "notify", "update_user", {update={explore={
+                    skynet.send(agent, "lua", "notify", "update_user", {update={explore={
                         status = v.status,
                     }}})
                 end
@@ -314,7 +314,7 @@ function CMD.quit(roleid)
             tinfo.tack = 2
             local tagent = skynet.call(role_mgr, "lua", "get", tinfo.roleid)
             if tagent then
-                skynet.call(tagent, "lua", "notify", "update_user", {update={explore={
+                skynet.send(tagent, "lua", "notify", "update_user", {update={explore={
                     status = tinfo.status,
                     time = t,
                     tack = tinfo.tack,
@@ -365,7 +365,7 @@ function CMD.fight(roleid)
         tinfo.tack = 1
         local tagent = skynet.call(role_mgr, "lua", "get", info.tid)
         if tagent then
-            skynet.call(tagent, "lua", "notify", "update_user", {update={explore={
+            skynet.send(tagent, "lua", "notify", "update_user", {update={explore={
                 tack = tinfo.tack
             }}})
         end

@@ -69,7 +69,7 @@ local datas = {
 			0,
 			0,
 		},
-		Item = "",
+		Item = "3000000311;10",
 	},
 	[900000004] = {
 		TaskId = 900000004,
@@ -237,7 +237,7 @@ local datas = {
 			0,
 			0,
 		},
-		Item = "",
+		Item = "3000000321;10",
 	},
 	[900000011] = {
 		TaskId = 900000011,
@@ -381,7 +381,7 @@ local datas = {
 			0,
 			0,
 		},
-		Item = "3000000331*10",
+		Item = "3000000331;10",
 	},
 	[900000017] = {
 		TaskId = 900000017,
@@ -775,7 +775,7 @@ local datas = {
 		levelLimit = 0,
 		TaskType = 1,
 		CompleteType = 303,
-		nextID = 900000034,
+		nextID = 900000035,
 		condition = 0,
 		count = 1,
 		NpcId = 1000000001,

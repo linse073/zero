@@ -23,8 +23,10 @@ skynet.init(function()
 end)
 
 local function pack()
+    local q = notify_queue
+    notify_queue = {}
     local content = ""
-    for k, v in ipairs(notify_queue) do
+    for k, v in ipairs(q) do
         local m, c = v[1], v[2]
         if c then
             if sproto:exist_type(m) then
@@ -37,7 +39,6 @@ local function pack()
             content = content .. m
         end
     end
-    notify_queue = {}
     return "notify_info", content
 end
 

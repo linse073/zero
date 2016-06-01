@@ -321,7 +321,7 @@ function CMD.quit(roleid)
                 }}})
             end
             skynet.call(save_explore, "lua", "update", tinfo.roleid, tinfo)
-            return {status=info.status, ack=info.ack}, 
+            return {status=info.status, ack=info.ack, reason=info.reason}, 
             {money=info.money, bonus=data.bonusId, num=info.bonus}
         elseif info.status == explore_status.DONE then
             info.status = explore_status.FINISH
@@ -340,7 +340,7 @@ function CMD.quit(roleid)
             info.status = explore_status.FINISH
             info.reason = explore_reason.QUIT
             skynet.call(save_explore, "lua", "update", roleid, info)
-            return {status=info.status},
+            return {status=info.status, reason=info.reason},
             {money=info.money, bonus=data.bonusId, num=info.bonus}
         end
     end

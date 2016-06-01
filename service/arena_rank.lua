@@ -72,7 +72,7 @@ function CMD.query(roleid)
             end
             i = j
         end
-        return range
+        return cr, range
     end
 end
 

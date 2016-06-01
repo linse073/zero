@@ -75,7 +75,7 @@ function proc.query_rank(msg)
     end
     for k, v in ipairs(list) do
         local info = skynet.call(role_mgr, "lua", "get_rank_info", v)
-        info.rank = r[k] + 1
+        info.rank = list[k] + 1
         list[k] = info
     end
     return "rank_list", {

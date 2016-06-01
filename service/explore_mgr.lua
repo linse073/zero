@@ -16,7 +16,7 @@ function CMD.shutdown()
 end
 
 function CMD.get_explore(area)
-    return assert(explore_area[area], string.format("No explore area %d.", area))
+    return explore_area[area]
 end
 
 function CMD.get(roleid)

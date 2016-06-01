@@ -427,6 +427,7 @@ function item.inlay(p, i, stoneitem, j)
                 pos = siv.pos,
             }
         end
+        return true
     end
 end
 
@@ -829,17 +830,52 @@ function proc.inlay_item(msg)
         st = {num = 0}
         i[3] = st
     end
-    local p = update_user()
     local slot = d.needLv // 10
-    for j = 1, slot do
-        if not st[j] then
-            local stoneitem = func.gen_itemid(0, 0, d.itemType-base.ITEM_TYPE_HEAD+base.ITEM_TYPE_BLUE_STONE, j)
-            item.inlay(p, i, stoneitem, j)
+    local p = update_user()
+    local stp = d.itemType - base.ITEM_TYPE_HEAD + base.ITEM_TYPE_BLUE_STONE
+    if msg.pos and msg.stone then
+        if msg.pos > slot then
+            error{code = error_code.ITEM_LEVEL_LIMIT}
         end
+        if not st[j] then
+            error{code = error_code.STONE_IN_POSITION}
+        end
+        local sd = itemdata[msg.stone]
+        if not sd then
+            error{code = error_code.ITEM_ID_NOT_EXIST}
+        end
+        if sd.itemType ~= stp then
+            error{code = error_code.ERROR_ITEM_TYPE}
+        end
+        if item.count(msg.stone) == 0 then
+            error{code = error_code.ITEM_NUM_LIMIT}
+        end
+        item.inlay(p, i, msg.stone, msg.pos)
+    else
+        local p = update_user()
+        for j = 1, slot do
+            local si = st[j]
+            if si then
+                item.uninlay(p, i, si, j)
+            end
+        end
+        local function inlay_all()
+            local k = slot
+            local stoneitem = func.gen_itemid(0, 0, stp, k)
+            for j = 1, slot do
+                while not item.inlay(p, i, stoneitem, j) do
+                    k = k - 1
+                    if k > 0 then
+                        stoneitem = func.gen_itemid(0, 0, stp, k)
+                    else
+                        return
+                    end
+                end
+            end
+        end
+        inlay_all()
     end
-    if st.num > 0 then
-        task.update(p, base.TASK_COMPLETE_INLAY_ITEM, 0, 1)
-    end
+    task.update(p, base.TASK_COMPLETE_INLAY_ITEM, 0, 1)
     if iv.pos > 0 then
         role.fight_point(p)
     end
@@ -860,24 +896,20 @@ function proc.uninlay_item(msg)
         error{code = error_code.ERROR_ITEM_STATUS}
     end
     local st = i[3]
-    if st and st.num > 0 then
-        local p = update_user()
-        local slot = d.needLv // 10
-        for j = 1, slot do
-            local si = st[j]
-            if si then
-                item.uninlay(p, i, si, j)
-            end
-        end
-        assert(st.num==0, string.format("Uninlay item %d error num %d.", iv.id, st.num))
-        task.update(p, base.TASK_COMPLETE_UNINLAY_ITEM, 0, 1)
-        if iv.pos > 0 then
-            role.fight_point(p)
-        end
-        return "update_user", {update=p}
-    else
-        return "update_user", {}
+    if not st then
+        error{code = error_code.NO_STONE_IN_POSITION}
     end
+    local si = st[msg.pos]
+    if not si then
+        error{code = error_code.NO_STONE_IN_POSITION}
+    end
+    local p = update_user()
+    item.uninlay(p, i, si, msg.pos)
+    task.update(p, base.TASK_COMPLETE_UNINLAY_ITEM, 0, 1)
+    if iv.pos > 0 then
+        role.fight_point(p)
+    end
+    return "update_user", {update=p}
 end
 
 return item

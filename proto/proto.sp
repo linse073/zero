@@ -223,10 +223,13 @@
 
 .inlay_item {
     id 0 : integer
+    pos 1 : integer
+    stone 2 : integer
 }
 
 .uninlay_item {
     id 0 : integer
+    pos 1 : integer
 }
 
 .submit_task {

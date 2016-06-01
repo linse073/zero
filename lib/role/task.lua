@@ -262,7 +262,7 @@ function task.set_task(p, tid)
         local d
         if t then
             local vt = t[1]
-            d = v[2]
+            d = t[2]
             if vt.status ~= base.TASK_STATUS_FINISH then
                 vt.status = base.TASK_STATUS_FINISH
                 vt.count = d.count

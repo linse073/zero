@@ -830,7 +830,7 @@ function proc.inlay_item(msg)
         st = {num = 0}
         i[3] = st
     end
-    local slot = d.needLv // 10
+    local slot = func.get_item_slot(d.needLv)
     local p = update_user()
     local stp = d.itemType - base.ITEM_TYPE_HEAD + base.ITEM_TYPE_BLUE_STONE
     if msg.pos and msg.stone then

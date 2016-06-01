@@ -215,6 +215,8 @@ local base = {
     REWARD_TYPE_RMB = 2,
 
     MAX_CHAPTER_STAGE = 5,
+
+    SLOT_LEVEL_LIMIT = {35, 40, 45, 50, 60, 70, 80, 90, 100},
 }
 
 return base

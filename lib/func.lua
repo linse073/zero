@@ -3,6 +3,7 @@ local util = require "util"
 local sharedata = require "sharedata"
 local new_rand = require "random"
 
+local ipairs = ipairs
 local base
 local day_second = 24 * 60 * 60
 local start_routine_time = tonumber(skynet.getenv("start_routine_time"))
@@ -97,6 +98,18 @@ function func.rand_bonus(d, p)
             return bonus
         end
     end
+end
+
+function func.get_item_slot(level)
+    local i = 0
+    for k, v in ipairs(base.SLOT_LEVEL_LIMIT) do
+        if level >= v then
+            i = k
+        else
+            break
+        end
+    end
+    return i
 end
 
 return func

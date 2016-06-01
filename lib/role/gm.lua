@@ -111,6 +111,7 @@ function proc.set_task(msg)
     end
     local p = update_user()
     task.set_task(p, msg.id)
+    return "update_user", {update=p}
 end
 
 return gm

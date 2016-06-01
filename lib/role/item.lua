@@ -837,7 +837,7 @@ function proc.inlay_item(msg)
         if msg.pos > slot then
             error{code = error_code.ITEM_LEVEL_LIMIT}
         end
-        if not st[j] then
+        if not st[msg.pos] then
             error{code = error_code.STONE_IN_POSITION}
         end
         local sd = itemdata[msg.stone]

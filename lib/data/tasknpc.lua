@@ -1,7 +1,7 @@
 local datas = {
 	[1000000001] = {
 		NpcId = 1000000001,
-		NpcName = "冰霜巨龙",
+		NpcName = "芙兰",
 		NpcTitle = "任务管理员",
 		TownID = 1001,
 		NpcPosX = 150,

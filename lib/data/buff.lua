@@ -113,8 +113,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			26,
-			2.6,
+			3.9,
+			0.39,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -238,8 +238,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			4.333333333,
-			0.433333333,
+			0.65,
+			0.065,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -363,8 +363,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			26,
-			2.6,
+			3.9,
+			0.39,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -488,8 +488,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			5.2,
-			0.52,
+			0.78,
+			0.078,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,

@@ -412,9 +412,11 @@ function proc.get_stage_award(msg)
         error{code = error_code.ERROR_STAGE_AREA}
     end
     local user = data.user
-    if user.stage_award[msg.area] then
+    local us = user.stage_award
+    if us[msg.area] then
         error{code = error_code.ALREADY_GET_STAGE_AWRAD}
     end
+    us[msg.area] = true
     local p = update_user()
     p.stage_award = {msg.area}
     role.get_reward(p, reward)

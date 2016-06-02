@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
+local new_rand = require "random"
 
 local role
 local item

@@ -499,6 +499,7 @@ local function enter_game(msg)
             ret[key] = pack
         end
     end
+    ret.stage_award = {1}
     -- local key, pack = stage.pack_award()
     -- ret[key] = pack
     timer.add_routine("save_role", role.save_routine, 300)

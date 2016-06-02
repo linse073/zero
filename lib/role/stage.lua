@@ -78,14 +78,6 @@ function stage.pack_all()
     return "stage", pack
 end
 
-function stage.pack_award()
-    local pack = {}
-    for k, v in pairs(data.user.stage_award) do
-        pack[#pack+1] = k
-    end
-    return "stage_award", pack
-end
-
 function stage.star(v)
     -- TODO calculate stage star
     v.star = 3

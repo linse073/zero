@@ -219,7 +219,7 @@ function stage.add_stage(p, id)
             bonus[#bonus+1] = {rand_num=1, data=d.firstBonus}
         end
         if d.dropBonus then
-            bonus[#bonus+1] = {rand_num=3, num=3, data=d.dropBonus}
+            bonus[#bonus+1] = {rand_num=3, data=d.dropBonus}
         end
         local user = data.user
         if d.bonus then

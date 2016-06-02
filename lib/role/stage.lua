@@ -78,6 +78,14 @@ function stage.pack_all()
     return "stage", pack
 end
 
+function stage.pack_award()
+    local pack = {}
+    for k, v in pairs(data.user.stage_award) do
+        pack[#pack+1] = k
+    end
+    return "stage_award", pack
+end
+
 function stage.star(v)
     -- TODO calculate stage star
     v.star = 3
@@ -416,7 +424,7 @@ function proc.stage_award(msg)
         error{code = error_code.ALREADY_GET_STAGE_AWRAD}
     end
     local p = update_user()
-    p.user.stage_award = {[msg.area]=true}
+    p.user.stage_award = {msg.area}
     role.get_reward(p, reward)
     return "update_user", {update=p}
 end

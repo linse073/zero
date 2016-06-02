@@ -150,6 +150,7 @@
     card 4 : *card_info
     friend 5 : *friend_info
     explore 6 : explore_info
+    stage_award 7 : *integer
 }
 
 .info_all {

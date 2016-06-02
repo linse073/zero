@@ -151,7 +151,7 @@ local datas = {
 	},
 	[11] = {
 		lv = 11,
-		HeroExp = 1670,
+		HeroExp = 1650,
 		UpgradeMatNum = 3,
 		ImproveMatNum = 4,
 		DecomposeMatNum = 1,
@@ -166,7 +166,7 @@ local datas = {
 	},
 	[12] = {
 		lv = 12,
-		HeroExp = 1880,
+		HeroExp = 1860,
 		UpgradeMatNum = 3,
 		ImproveMatNum = 4,
 		DecomposeMatNum = 1,
@@ -181,7 +181,7 @@ local datas = {
 	},
 	[13] = {
 		lv = 13,
-		HeroExp = 2100,
+		HeroExp = 2080,
 		UpgradeMatNum = 3,
 		ImproveMatNum = 4,
 		DecomposeMatNum = 1,
@@ -196,7 +196,7 @@ local datas = {
 	},
 	[14] = {
 		lv = 14,
-		HeroExp = 2330,
+		HeroExp = 2310,
 		UpgradeMatNum = 3,
 		ImproveMatNum = 4,
 		DecomposeMatNum = 1,
@@ -211,7 +211,7 @@ local datas = {
 	},
 	[15] = {
 		lv = 15,
-		HeroExp = 2570,
+		HeroExp = 2550,
 		UpgradeMatNum = 4,
 		ImproveMatNum = 6,
 		DecomposeMatNum = 2,
@@ -226,7 +226,7 @@ local datas = {
 	},
 	[16] = {
 		lv = 16,
-		HeroExp = 2855,
+		HeroExp = 2800,
 		UpgradeMatNum = 4,
 		ImproveMatNum = 6,
 		DecomposeMatNum = 2,
@@ -241,7 +241,7 @@ local datas = {
 	},
 	[17] = {
 		lv = 17,
-		HeroExp = 3115,
+		HeroExp = 3060,
 		UpgradeMatNum = 4,
 		ImproveMatNum = 6,
 		DecomposeMatNum = 2,
@@ -256,7 +256,7 @@ local datas = {
 	},
 	[18] = {
 		lv = 18,
-		HeroExp = 3385,
+		HeroExp = 3330,
 		UpgradeMatNum = 4,
 		ImproveMatNum = 6,
 		DecomposeMatNum = 2,
@@ -271,7 +271,7 @@ local datas = {
 	},
 	[19] = {
 		lv = 19,
-		HeroExp = 3665,
+		HeroExp = 3610,
 		UpgradeMatNum = 4,
 		ImproveMatNum = 6,
 		DecomposeMatNum = 2,
@@ -286,7 +286,7 @@ local datas = {
 	},
 	[20] = {
 		lv = 20,
-		HeroExp = 3955,
+		HeroExp = 3900,
 		UpgradeMatNum = 5,
 		ImproveMatNum = 9,
 		DecomposeMatNum = 3,
@@ -301,7 +301,7 @@ local datas = {
 	},
 	[21] = {
 		lv = 21,
-		HeroExp = 4335,
+		HeroExp = 4200,
 		UpgradeMatNum = 5,
 		ImproveMatNum = 9,
 		DecomposeMatNum = 3,
@@ -316,7 +316,7 @@ local datas = {
 	},
 	[22] = {
 		lv = 22,
-		HeroExp = 4645,
+		HeroExp = 4510,
 		UpgradeMatNum = 5,
 		ImproveMatNum = 9,
 		DecomposeMatNum = 3,
@@ -331,7 +331,7 @@ local datas = {
 	},
 	[23] = {
 		lv = 23,
-		HeroExp = 4965,
+		HeroExp = 4830,
 		UpgradeMatNum = 5,
 		ImproveMatNum = 9,
 		DecomposeMatNum = 3,
@@ -346,7 +346,7 @@ local datas = {
 	},
 	[24] = {
 		lv = 24,
-		HeroExp = 5295,
+		HeroExp = 5160,
 		UpgradeMatNum = 5,
 		ImproveMatNum = 9,
 		DecomposeMatNum = 3,
@@ -361,7 +361,7 @@ local datas = {
 	},
 	[25] = {
 		lv = 25,
-		HeroExp = 5635,
+		HeroExp = 5500,
 		UpgradeMatNum = 6,
 		ImproveMatNum = 13,
 		DecomposeMatNum = 4,
@@ -376,7 +376,7 @@ local datas = {
 	},
 	[26] = {
 		lv = 26,
-		HeroExp = 5985,
+		HeroExp = 5850,
 		UpgradeMatNum = 6,
 		ImproveMatNum = 13,
 		DecomposeMatNum = 4,
@@ -391,7 +391,7 @@ local datas = {
 	},
 	[27] = {
 		lv = 27,
-		HeroExp = 6345,
+		HeroExp = 6210,
 		UpgradeMatNum = 6,
 		ImproveMatNum = 13,
 		DecomposeMatNum = 4,
@@ -406,7 +406,7 @@ local datas = {
 	},
 	[28] = {
 		lv = 28,
-		HeroExp = 6715,
+		HeroExp = 6580,
 		UpgradeMatNum = 6,
 		ImproveMatNum = 13,
 		DecomposeMatNum = 4,
@@ -421,7 +421,7 @@ local datas = {
 	},
 	[29] = {
 		lv = 29,
-		HeroExp = 7095,
+		HeroExp = 6960,
 		UpgradeMatNum = 6,
 		ImproveMatNum = 13,
 		DecomposeMatNum = 4,
@@ -436,7 +436,7 @@ local datas = {
 	},
 	[30] = {
 		lv = 30,
-		HeroExp = 7485,
+		HeroExp = 7350,
 		UpgradeMatNum = 7,
 		ImproveMatNum = 18,
 		DecomposeMatNum = 6,
@@ -451,7 +451,7 @@ local datas = {
 	},
 	[31] = {
 		lv = 31,
-		HeroExp = 8085,
+		HeroExp = 7750,
 		UpgradeMatNum = 7,
 		ImproveMatNum = 18,
 		DecomposeMatNum = 6,
@@ -466,7 +466,7 @@ local datas = {
 	},
 	[32] = {
 		lv = 32,
-		HeroExp = 8495,
+		HeroExp = 8160,
 		UpgradeMatNum = 7,
 		ImproveMatNum = 18,
 		DecomposeMatNum = 6,
@@ -481,7 +481,7 @@ local datas = {
 	},
 	[33] = {
 		lv = 33,
-		HeroExp = 8915,
+		HeroExp = 8580,
 		UpgradeMatNum = 7,
 		ImproveMatNum = 18,
 		DecomposeMatNum = 6,
@@ -496,7 +496,7 @@ local datas = {
 	},
 	[34] = {
 		lv = 34,
-		HeroExp = 9345,
+		HeroExp = 9010,
 		UpgradeMatNum = 7,
 		ImproveMatNum = 18,
 		DecomposeMatNum = 6,
@@ -511,7 +511,7 @@ local datas = {
 	},
 	[35] = {
 		lv = 35,
-		HeroExp = 9785,
+		HeroExp = 9450,
 		UpgradeMatNum = 8,
 		ImproveMatNum = 24,
 		DecomposeMatNum = 7,
@@ -526,7 +526,7 @@ local datas = {
 	},
 	[36] = {
 		lv = 36,
-		HeroExp = 10235,
+		HeroExp = 9900,
 		UpgradeMatNum = 8,
 		ImproveMatNum = 24,
 		DecomposeMatNum = 7,
@@ -541,7 +541,7 @@ local datas = {
 	},
 	[37] = {
 		lv = 37,
-		HeroExp = 10695,
+		HeroExp = 10360,
 		UpgradeMatNum = 8,
 		ImproveMatNum = 24,
 		DecomposeMatNum = 7,
@@ -556,7 +556,7 @@ local datas = {
 	},
 	[38] = {
 		lv = 38,
-		HeroExp = 11365,
+		HeroExp = 10830,
 		UpgradeMatNum = 8,
 		ImproveMatNum = 24,
 		DecomposeMatNum = 7,
@@ -571,7 +571,7 @@ local datas = {
 	},
 	[39] = {
 		lv = 39,
-		HeroExp = 11845,
+		HeroExp = 11310,
 		UpgradeMatNum = 8,
 		ImproveMatNum = 24,
 		DecomposeMatNum = 7,
@@ -586,7 +586,7 @@ local datas = {
 	},
 	[40] = {
 		lv = 40,
-		HeroExp = 12335,
+		HeroExp = 11800,
 		UpgradeMatNum = 9,
 		ImproveMatNum = 30,
 		DecomposeMatNum = 9,
@@ -601,7 +601,7 @@ local datas = {
 	},
 	[41] = {
 		lv = 41,
-		HeroExp = 13035,
+		HeroExp = 12300,
 		UpgradeMatNum = 9,
 		ImproveMatNum = 30,
 		DecomposeMatNum = 9,
@@ -616,7 +616,7 @@ local datas = {
 	},
 	[42] = {
 		lv = 42,
-		HeroExp = 13545,
+		HeroExp = 12810,
 		UpgradeMatNum = 9,
 		ImproveMatNum = 30,
 		DecomposeMatNum = 9,
@@ -631,7 +631,7 @@ local datas = {
 	},
 	[43] = {
 		lv = 43,
-		HeroExp = 14265,
+		HeroExp = 13330,
 		UpgradeMatNum = 9,
 		ImproveMatNum = 30,
 		DecomposeMatNum = 9,
@@ -646,7 +646,7 @@ local datas = {
 	},
 	[44] = {
 		lv = 44,
-		HeroExp = 14795,
+		HeroExp = 13860,
 		UpgradeMatNum = 9,
 		ImproveMatNum = 30,
 		DecomposeMatNum = 9,
@@ -661,7 +661,7 @@ local datas = {
 	},
 	[45] = {
 		lv = 45,
-		HeroExp = 15535,
+		HeroExp = 14400,
 		UpgradeMatNum = 10,
 		ImproveMatNum = 37,
 		DecomposeMatNum = 12,
@@ -676,7 +676,7 @@ local datas = {
 	},
 	[46] = {
 		lv = 46,
-		HeroExp = 16285,
+		HeroExp = 14950,
 		UpgradeMatNum = 10,
 		ImproveMatNum = 37,
 		DecomposeMatNum = 12,
@@ -691,7 +691,7 @@ local datas = {
 	},
 	[47] = {
 		lv = 47,
-		HeroExp = 17045,
+		HeroExp = 15510,
 		UpgradeMatNum = 10,
 		ImproveMatNum = 37,
 		DecomposeMatNum = 12,
@@ -706,7 +706,7 @@ local datas = {
 	},
 	[48] = {
 		lv = 48,
-		HeroExp = 17815,
+		HeroExp = 16080,
 		UpgradeMatNum = 10,
 		ImproveMatNum = 37,
 		DecomposeMatNum = 12,
@@ -721,7 +721,7 @@ local datas = {
 	},
 	[49] = {
 		lv = 49,
-		HeroExp = 18595,
+		HeroExp = 16660,
 		UpgradeMatNum = 10,
 		ImproveMatNum = 37,
 		DecomposeMatNum = 12,
@@ -736,7 +736,7 @@ local datas = {
 	},
 	[50] = {
 		lv = 50,
-		HeroExp = 19385,
+		HeroExp = 17250,
 		UpgradeMatNum = 12,
 		ImproveMatNum = 45,
 		DecomposeMatNum = 14,

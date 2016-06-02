@@ -8,7 +8,7 @@ local datas = {
 		levelRate = 0,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 10,
+		levelLimit = 0,
 		qualityLimit = 0,
 	},
 	[2] = {

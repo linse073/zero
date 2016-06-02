@@ -86,7 +86,13 @@ function card.add_newbie_card(cardid)
         for i = 1, base.MAX_CARD_POSITION_TYPE do
             pos[i] = 0
         end
-        pos[1] = 1
+        local ec = data.equip_card
+        for i = 1, base.MAX_EQUIP_CARD do
+            if not ec[i] then
+                pos[1] = i
+                break
+            end
+        end
         local passive_skill = {}
         for k, v in ipairs(d.passive) do
             passive_skill[k] = {

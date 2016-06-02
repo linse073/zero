@@ -499,13 +499,13 @@ local function enter_game(msg)
             ret[key] = pack
         end
     end
-    if #user.stage_award > 0 then
+    -- if #user.stage_award > 0 then
         local pack = {}
-        for k, v in ipairs(user.stage_award) do
+        for k, v in pairs(user.stage_award) do
             pack[#pack+1] = k
         end
         ret.stage_award = pack
-    end
+    -- end
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     local stageid, seed = stage.newbie_stage()

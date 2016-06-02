@@ -257,7 +257,7 @@ function task.award(p, t)
 end
 
 function task.set_task(p, tid)
-    new_rand.init(floor(skynet.time))
+    new_rand.init(floor(skynet.time()))
     local pt = p.task
     local id = base.BEGIN_TASK_ID
     local dt = data.task

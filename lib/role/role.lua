@@ -240,13 +240,14 @@ function role.fight_point(p)
     end
 end
 
-local function get_reward(p, reward)
+function role.get_reward(p, reward)
     if reward.rewardType == base.REWARD_TYPE_ITEM then
         item.add_by_itemid(p, reward.rewardNum, reward.item)
     elseif reward.rewardType == base.REWARD_TYPE_RMB then
         role.add_rmb(p, reward.reward)
     end
 end
+
 function role.sign_in(p, index)
     local user = data.user
     local puser = p.user
@@ -254,10 +255,10 @@ function role.sign_in(p, index)
     user.sign_in_day = user.sign_in_day + 1
     puser.sign_in_day = user.sign_in_day
     local reward = assert(type_reward[base.REWARD_ACTION_SIGN_IN][index], string.format("No sign in reward data %d.", index))
-    get_reward(p, reward)
+    role.get_reward(p, reward)
     local treward = type_reward[base.REWARD_ACTION_TOTAL_SIGN_IN][user.sign_in_day]
     if treward then
-        get_reward(p, treward)
+        role.get_reward(p, treward)
     end
     task.update(p, base.TASK_COMPLETE_SIGN_IN, 0, 1)
 end

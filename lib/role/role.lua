@@ -311,6 +311,9 @@ function role.repair(user)
     if not user.sign_in_day then
         user.sign_in_day = 0
     end
+    if not user.stage_award then
+        user.stage_award = {}
+    end
 end
 
 function role.explore_bonus(p, a)
@@ -400,6 +403,7 @@ function proc.create_user(msg)
         des_pos = {x=x, y=y},
         sign_in = sign_in,
         sign_in_day = 0,
+        stage_award = {},
 
         item = {},
         card = {},

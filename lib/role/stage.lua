@@ -213,7 +213,32 @@ function stage.add_stage(p, id)
     if not s then
         local d = assert(stagedata[id], string.format("No stage data %d.", id))
         s = stage.add_by_data(d)
+        local bonus = {}
+        local money, exp = d.firstMoney, d.firstExp
+        if d.firstBonus then
+            bonus[#bonus+1] = {rand_num=1, data=d.firstBonus}
+        end
+        if d.dropBonus then
+            bonus[#bonus+1] = {rand_num=3, num=3, data=d.dropBonus}
+        end
+        local user = data.user
+        if d.bonus then
+            if user.vip > 0 then
+                bonus[#bonus+1] = {rand_num=1, data=d.bonus}
+            else
+                bonus[#bonus+1] = {rand_num=1, num=0, data=d.bonus}
+            end
+        end
+        stage.get_bonus(bonus, p)
+        if money > 0 then
+            role.add_money(p, money)
+        end
+        if exp > 0 then
+            role.add_exp(p, exp)
+        end
+        role.add_money(p, d.goldTotal)
         local sv = s[1]
+        sv.count = sv.count + 1
         stage.star(sv)
         ps[#ps+1] = sv
     end

@@ -254,6 +254,7 @@ function task.award(p, t)
 end
 
 function task.set_task(p, tid)
+    new_rand.init(floor(skynet.time))
     local pt = p.task
     local id = base.BEGIN_TASK_ID
     local dt = data.task
@@ -271,11 +272,15 @@ function task.set_task(p, tid)
                     status = vt.status,
                     count = vt.count,
                 }
+                task.award(p, t)
             end
         else
             d = assert(taskdata[id], string.format("No task data %d.", id))
             t = task.add_by_data(d, base.TASK_STATUS_FINISH)
-            pt[#pt+1] = t[1]
+            local vt = t[1]
+            vt.count = d.count
+            pt[#pt+1] = vt
+            task.award(p, t)
         end
         id = d.nextID
         if stage_task[d.CompleteType] then

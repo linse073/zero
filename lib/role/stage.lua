@@ -416,7 +416,7 @@ function proc.get_stage_award(msg)
         error{code = error_code.ALREADY_GET_STAGE_AWRAD}
     end
     local p = update_user()
-    p.user.stage_award = {msg.area}
+    p.stage_award = {msg.area}
     role.get_reward(p, reward)
     return "update_user", {update=p}
 end

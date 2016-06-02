@@ -86,7 +86,7 @@ function card.add_newbie_card(cardid)
         for i = 1, base.MAX_CARD_POSITION_TYPE do
             pos[i] = 0
         end
-        local ec = data.equip_card
+        local ec = data.equip_card[1]
         for i = 1, base.MAX_EQUIP_CARD do
             if not ec[i] then
                 pos[1] = i

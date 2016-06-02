@@ -144,13 +144,13 @@
 
 .user_all {
     user 0 : user_info
-    item 1 : *item_info
-    stage 2 : *stage_info
-    task 3 : *task_info
-    card 4 : *card_info
-    friend 5 : *friend_info
-    stage_award 6 : *integer
-    explore 7 : explore_info
+    explore 1 : explore_info
+    item 2 : *item_info
+    stage 3 : *stage_info
+    task 4 : *task_info
+    card 5 : *card_info
+    friend 6 : *friend_info
+    stage_award 7 : *integer
 }
 
 .info_all {

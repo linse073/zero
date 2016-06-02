@@ -49,7 +49,7 @@ local msg = {
     [2501] = "end_stage",
     [2502] = "stage_seed",
     [2503] = "open_chest",
-    [2504] = "stage_award",
+    [2504] = "get_stage_award",
 
     [2600] = "add_item",
     [2601] = "add_exp",

@@ -410,7 +410,7 @@ function proc.open_chest(msg)
     return "update_user", {update=p}
 end
 
-function proc.stage_award(msg)
+function proc.get_stage_award(msg)
     local star = stage.area_star(msg.area)
     if star < 15 then
         error{code = error_code.STAGE_STAR_LIMIT}

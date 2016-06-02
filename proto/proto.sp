@@ -346,6 +346,6 @@
     area 0 : integer
 }
 
-.stage_award {
+.get_stage_award {
     area 0 : integer
 }

@@ -12,7 +12,9 @@ local ipairs = ipairs
 local assert = assert
 local error = error
 local string = string
+local math
 local random = math.random
+local floor = math.floor
 
 local update_user = util.update_user
 local taskdata

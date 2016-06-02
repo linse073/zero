@@ -503,7 +503,7 @@ local function enter_game(msg)
     for k, v in pairs(user.stage_award) do
         pack[#pack+1] = k
     end
-    if #pack > 1 then
+    if #pack > 0 then
         ret.stage_award = pack
     end
     timer.add_routine("save_role", role.save_routine, 300)

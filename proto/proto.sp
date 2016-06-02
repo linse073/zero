@@ -149,8 +149,8 @@
     task 3 : *task_info
     card 4 : *card_info
     friend 5 : *friend_info
-    explore 6 : explore_info
-    stage_award 7 : *integer
+    stage_award 6 : *integer
+    explore 7 : explore_info
 }
 
 .info_all {

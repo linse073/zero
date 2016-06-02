@@ -502,7 +502,7 @@ local function enter_game(msg)
     if #user.stage_award > 0 then
         local pack = {}
         for k, v in ipairs(user.stage_award) do
-            pack[#pack+1] k
+            pack[#pack+1] = k
         end
         ret.stage_award = pack
     end

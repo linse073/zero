@@ -499,8 +499,8 @@ local function enter_game(msg)
             ret[key] = pack
         end
     end
-    local key, pack = stage.pack_award()
-    ret[key] = pack
+    -- local key, pack = stage.pack_award()
+    -- ret[key] = pack
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     local stageid, seed = stage.newbie_stage()

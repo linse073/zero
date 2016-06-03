@@ -101849,7 +101849,7 @@ local datas = {
 	},
 	[3003010081] = {
 		id = 3003010081,
-		name = "煅钢勋章",
+		name = "警长勋章",
 		itemType = 8,
 		needLv = 10,
 		needJob = 3,
@@ -101878,7 +101878,7 @@ local datas = {
 	},
 	[3003010082] = {
 		id = 3003010082,
-		name = "煅钢勋章",
+		name = "警长勋章",
 		itemType = 8,
 		needLv = 10,
 		needJob = 3,
@@ -101907,7 +101907,7 @@ local datas = {
 	},
 	[3003010083] = {
 		id = 3003010083,
-		name = "煅钢勋章",
+		name = "警长勋章",
 		itemType = 8,
 		needLv = 10,
 		needJob = 3,
@@ -101936,7 +101936,7 @@ local datas = {
 	},
 	[3003010084] = {
 		id = 3003010084,
-		name = "煅钢勋章",
+		name = "警长勋章",
 		itemType = 8,
 		needLv = 10,
 		needJob = 3,
@@ -101965,7 +101965,7 @@ local datas = {
 	},
 	[3003010085] = {
 		id = 3003010085,
-		name = "煅钢勋章",
+		name = "警长勋章",
 		itemType = 8,
 		needLv = 10,
 		needJob = 3,
@@ -101994,7 +101994,7 @@ local datas = {
 	},
 	[3003010086] = {
 		id = 3003010086,
-		name = "煅钢勋章",
+		name = "警长勋章",
 		itemType = 8,
 		needLv = 10,
 		needJob = 3,
@@ -102023,7 +102023,7 @@ local datas = {
 	},
 	[3003010087] = {
 		id = 3003010087,
-		name = "煅钢勋章",
+		name = "警长勋章",
 		itemType = 8,
 		needLv = 10,
 		needJob = 3,
@@ -102052,7 +102052,7 @@ local datas = {
 	},
 	[3003010088] = {
 		id = 3003010088,
-		name = "煅钢勋章",
+		name = "警长勋章",
 		itemType = 8,
 		needLv = 10,
 		needJob = 3,
@@ -102081,7 +102081,7 @@ local datas = {
 	},
 	[3003010089] = {
 		id = 3003010089,
-		name = "煅钢勋章",
+		name = "警长勋章",
 		itemType = 8,
 		needLv = 10,
 		needJob = 3,
@@ -103937,7 +103937,7 @@ local datas = {
 	},
 	[3003015081] = {
 		id = 3003015081,
-		name = "勇气勋章",
+		name = "守护勋章",
 		itemType = 8,
 		needLv = 15,
 		needJob = 3,
@@ -103966,7 +103966,7 @@ local datas = {
 	},
 	[3003015082] = {
 		id = 3003015082,
-		name = "勇气勋章",
+		name = "守护勋章",
 		itemType = 8,
 		needLv = 15,
 		needJob = 3,
@@ -103995,7 +103995,7 @@ local datas = {
 	},
 	[3003015083] = {
 		id = 3003015083,
-		name = "勇气勋章",
+		name = "守护勋章",
 		itemType = 8,
 		needLv = 15,
 		needJob = 3,
@@ -104024,7 +104024,7 @@ local datas = {
 	},
 	[3003015084] = {
 		id = 3003015084,
-		name = "勇气勋章",
+		name = "守护勋章",
 		itemType = 8,
 		needLv = 15,
 		needJob = 3,
@@ -104053,7 +104053,7 @@ local datas = {
 	},
 	[3003015085] = {
 		id = 3003015085,
-		name = "勇气勋章",
+		name = "守护勋章",
 		itemType = 8,
 		needLv = 15,
 		needJob = 3,
@@ -104082,7 +104082,7 @@ local datas = {
 	},
 	[3003015086] = {
 		id = 3003015086,
-		name = "勇气勋章",
+		name = "守护勋章",
 		itemType = 8,
 		needLv = 15,
 		needJob = 3,
@@ -104111,7 +104111,7 @@ local datas = {
 	},
 	[3003015087] = {
 		id = 3003015087,
-		name = "勇气勋章",
+		name = "守护勋章",
 		itemType = 8,
 		needLv = 15,
 		needJob = 3,
@@ -104140,7 +104140,7 @@ local datas = {
 	},
 	[3003015088] = {
 		id = 3003015088,
-		name = "勇气勋章",
+		name = "守护勋章",
 		itemType = 8,
 		needLv = 15,
 		needJob = 3,
@@ -104169,7 +104169,7 @@ local datas = {
 	},
 	[3003015089] = {
 		id = 3003015089,
-		name = "勇气勋章",
+		name = "守护勋章",
 		itemType = 8,
 		needLv = 15,
 		needJob = 3,
@@ -106025,7 +106025,7 @@ local datas = {
 	},
 	[3003020081] = {
 		id = 3003020081,
-		name = "精准徽章",
+		name = "提督徽章",
 		itemType = 8,
 		needLv = 20,
 		needJob = 3,
@@ -106054,7 +106054,7 @@ local datas = {
 	},
 	[3003020082] = {
 		id = 3003020082,
-		name = "精准徽章",
+		name = "提督徽章",
 		itemType = 8,
 		needLv = 20,
 		needJob = 3,
@@ -106083,7 +106083,7 @@ local datas = {
 	},
 	[3003020083] = {
 		id = 3003020083,
-		name = "精准徽章",
+		name = "提督徽章",
 		itemType = 8,
 		needLv = 20,
 		needJob = 3,
@@ -106112,7 +106112,7 @@ local datas = {
 	},
 	[3003020084] = {
 		id = 3003020084,
-		name = "精准徽章",
+		name = "提督徽章",
 		itemType = 8,
 		needLv = 20,
 		needJob = 3,
@@ -106141,7 +106141,7 @@ local datas = {
 	},
 	[3003020085] = {
 		id = 3003020085,
-		name = "精准徽章",
+		name = "提督徽章",
 		itemType = 8,
 		needLv = 20,
 		needJob = 3,
@@ -106170,7 +106170,7 @@ local datas = {
 	},
 	[3003020086] = {
 		id = 3003020086,
-		name = "精准徽章",
+		name = "提督徽章",
 		itemType = 8,
 		needLv = 20,
 		needJob = 3,
@@ -106199,7 +106199,7 @@ local datas = {
 	},
 	[3003020087] = {
 		id = 3003020087,
-		name = "精准徽章",
+		name = "提督徽章",
 		itemType = 8,
 		needLv = 20,
 		needJob = 3,
@@ -106228,7 +106228,7 @@ local datas = {
 	},
 	[3003020088] = {
 		id = 3003020088,
-		name = "精准徽章",
+		name = "提督徽章",
 		itemType = 8,
 		needLv = 20,
 		needJob = 3,
@@ -106257,7 +106257,7 @@ local datas = {
 	},
 	[3003020089] = {
 		id = 3003020089,
-		name = "精准徽章",
+		name = "提督徽章",
 		itemType = 8,
 		needLv = 20,
 		needJob = 3,
@@ -108113,7 +108113,7 @@ local datas = {
 	},
 	[3003025081] = {
 		id = 3003025081,
-		name = "4勋章",
+		name = "勇气勋章",
 		itemType = 8,
 		needLv = 25,
 		needJob = 3,
@@ -108142,7 +108142,7 @@ local datas = {
 	},
 	[3003025082] = {
 		id = 3003025082,
-		name = "4勋章",
+		name = "勇气勋章",
 		itemType = 8,
 		needLv = 25,
 		needJob = 3,
@@ -108171,7 +108171,7 @@ local datas = {
 	},
 	[3003025083] = {
 		id = 3003025083,
-		name = "4勋章",
+		name = "勇气勋章",
 		itemType = 8,
 		needLv = 25,
 		needJob = 3,
@@ -108200,7 +108200,7 @@ local datas = {
 	},
 	[3003025084] = {
 		id = 3003025084,
-		name = "4勋章",
+		name = "勇气勋章",
 		itemType = 8,
 		needLv = 25,
 		needJob = 3,
@@ -108229,7 +108229,7 @@ local datas = {
 	},
 	[3003025085] = {
 		id = 3003025085,
-		name = "4勋章",
+		name = "勇气勋章",
 		itemType = 8,
 		needLv = 25,
 		needJob = 3,
@@ -108258,7 +108258,7 @@ local datas = {
 	},
 	[3003025086] = {
 		id = 3003025086,
-		name = "4勋章",
+		name = "勇气勋章",
 		itemType = 8,
 		needLv = 25,
 		needJob = 3,
@@ -108287,7 +108287,7 @@ local datas = {
 	},
 	[3003025087] = {
 		id = 3003025087,
-		name = "4勋章",
+		name = "勇气勋章",
 		itemType = 8,
 		needLv = 25,
 		needJob = 3,
@@ -108316,7 +108316,7 @@ local datas = {
 	},
 	[3003025088] = {
 		id = 3003025088,
-		name = "4勋章",
+		name = "勇气勋章",
 		itemType = 8,
 		needLv = 25,
 		needJob = 3,
@@ -108345,7 +108345,7 @@ local datas = {
 	},
 	[3003025089] = {
 		id = 3003025089,
-		name = "4勋章",
+		name = "勇气勋章",
 		itemType = 8,
 		needLv = 25,
 		needJob = 3,
@@ -110201,7 +110201,7 @@ local datas = {
 	},
 	[3003030081] = {
 		id = 3003030081,
-		name = "银勋章",
+		name = "白金勋章",
 		itemType = 8,
 		needLv = 30,
 		needJob = 3,
@@ -110230,7 +110230,7 @@ local datas = {
 	},
 	[3003030082] = {
 		id = 3003030082,
-		name = "银勋章",
+		name = "白金勋章",
 		itemType = 8,
 		needLv = 30,
 		needJob = 3,
@@ -110259,7 +110259,7 @@ local datas = {
 	},
 	[3003030083] = {
 		id = 3003030083,
-		name = "银勋章",
+		name = "白金勋章",
 		itemType = 8,
 		needLv = 30,
 		needJob = 3,
@@ -110288,7 +110288,7 @@ local datas = {
 	},
 	[3003030084] = {
 		id = 3003030084,
-		name = "银勋章",
+		name = "白金勋章",
 		itemType = 8,
 		needLv = 30,
 		needJob = 3,
@@ -110317,7 +110317,7 @@ local datas = {
 	},
 	[3003030085] = {
 		id = 3003030085,
-		name = "银勋章",
+		name = "白金勋章",
 		itemType = 8,
 		needLv = 30,
 		needJob = 3,
@@ -110346,7 +110346,7 @@ local datas = {
 	},
 	[3003030086] = {
 		id = 3003030086,
-		name = "银勋章",
+		name = "白金勋章",
 		itemType = 8,
 		needLv = 30,
 		needJob = 3,
@@ -110375,7 +110375,7 @@ local datas = {
 	},
 	[3003030087] = {
 		id = 3003030087,
-		name = "银勋章",
+		name = "白金勋章",
 		itemType = 8,
 		needLv = 30,
 		needJob = 3,
@@ -110404,7 +110404,7 @@ local datas = {
 	},
 	[3003030088] = {
 		id = 3003030088,
-		name = "银勋章",
+		name = "白金勋章",
 		itemType = 8,
 		needLv = 30,
 		needJob = 3,
@@ -110433,7 +110433,7 @@ local datas = {
 	},
 	[3003030089] = {
 		id = 3003030089,
-		name = "银勋章",
+		name = "白金勋章",
 		itemType = 8,
 		needLv = 30,
 		needJob = 3,
@@ -114377,7 +114377,7 @@ local datas = {
 	},
 	[3003040081] = {
 		id = 3003040081,
-		name = "忠诚勋章",
+		name = "圣骑士勋章",
 		itemType = 8,
 		needLv = 40,
 		needJob = 3,
@@ -114406,7 +114406,7 @@ local datas = {
 	},
 	[3003040082] = {
 		id = 3003040082,
-		name = "忠诚勋章",
+		name = "圣骑士勋章",
 		itemType = 8,
 		needLv = 40,
 		needJob = 3,
@@ -114435,7 +114435,7 @@ local datas = {
 	},
 	[3003040083] = {
 		id = 3003040083,
-		name = "忠诚勋章",
+		name = "圣骑士勋章",
 		itemType = 8,
 		needLv = 40,
 		needJob = 3,
@@ -114464,7 +114464,7 @@ local datas = {
 	},
 	[3003040084] = {
 		id = 3003040084,
-		name = "忠诚勋章",
+		name = "圣骑士勋章",
 		itemType = 8,
 		needLv = 40,
 		needJob = 3,
@@ -114493,7 +114493,7 @@ local datas = {
 	},
 	[3003040085] = {
 		id = 3003040085,
-		name = "忠诚勋章",
+		name = "圣骑士勋章",
 		itemType = 8,
 		needLv = 40,
 		needJob = 3,
@@ -114522,7 +114522,7 @@ local datas = {
 	},
 	[3003040086] = {
 		id = 3003040086,
-		name = "忠诚勋章",
+		name = "圣骑士勋章",
 		itemType = 8,
 		needLv = 40,
 		needJob = 3,
@@ -114551,7 +114551,7 @@ local datas = {
 	},
 	[3003040087] = {
 		id = 3003040087,
-		name = "忠诚勋章",
+		name = "圣骑士勋章",
 		itemType = 8,
 		needLv = 40,
 		needJob = 3,
@@ -114580,7 +114580,7 @@ local datas = {
 	},
 	[3003040088] = {
 		id = 3003040088,
-		name = "忠诚勋章",
+		name = "圣骑士勋章",
 		itemType = 8,
 		needLv = 40,
 		needJob = 3,
@@ -114609,7 +114609,7 @@ local datas = {
 	},
 	[3003040089] = {
 		id = 3003040089,
-		name = "忠诚勋章",
+		name = "圣骑士勋章",
 		itemType = 8,
 		needLv = 40,
 		needJob = 3,
@@ -116465,7 +116465,7 @@ local datas = {
 	},
 	[3003045081] = {
 		id = 3003045081,
-		name = "金勋章",
+		name = "皇冠勋章",
 		itemType = 8,
 		needLv = 45,
 		needJob = 3,
@@ -116494,7 +116494,7 @@ local datas = {
 	},
 	[3003045082] = {
 		id = 3003045082,
-		name = "金勋章",
+		name = "皇冠勋章",
 		itemType = 8,
 		needLv = 45,
 		needJob = 3,
@@ -116523,7 +116523,7 @@ local datas = {
 	},
 	[3003045083] = {
 		id = 3003045083,
-		name = "金勋章",
+		name = "皇冠勋章",
 		itemType = 8,
 		needLv = 45,
 		needJob = 3,
@@ -116552,7 +116552,7 @@ local datas = {
 	},
 	[3003045084] = {
 		id = 3003045084,
-		name = "金勋章",
+		name = "皇冠勋章",
 		itemType = 8,
 		needLv = 45,
 		needJob = 3,
@@ -116581,7 +116581,7 @@ local datas = {
 	},
 	[3003045085] = {
 		id = 3003045085,
-		name = "金勋章",
+		name = "皇冠勋章",
 		itemType = 8,
 		needLv = 45,
 		needJob = 3,
@@ -116610,7 +116610,7 @@ local datas = {
 	},
 	[3003045086] = {
 		id = 3003045086,
-		name = "金勋章",
+		name = "皇冠勋章",
 		itemType = 8,
 		needLv = 45,
 		needJob = 3,
@@ -116639,7 +116639,7 @@ local datas = {
 	},
 	[3003045087] = {
 		id = 3003045087,
-		name = "金勋章",
+		name = "皇冠勋章",
 		itemType = 8,
 		needLv = 45,
 		needJob = 3,
@@ -116668,7 +116668,7 @@ local datas = {
 	},
 	[3003045088] = {
 		id = 3003045088,
-		name = "金勋章",
+		name = "皇冠勋章",
 		itemType = 8,
 		needLv = 45,
 		needJob = 3,
@@ -116697,7 +116697,7 @@ local datas = {
 	},
 	[3003045089] = {
 		id = 3003045089,
-		name = "金勋章",
+		name = "皇冠勋章",
 		itemType = 8,
 		needLv = 45,
 		needJob = 3,
@@ -118553,7 +118553,7 @@ local datas = {
 	},
 	[3003050081] = {
 		id = 3003050081,
-		name = "红星徽章",
+		name = "魔能徽章",
 		itemType = 8,
 		needLv = 50,
 		needJob = 3,
@@ -118582,7 +118582,7 @@ local datas = {
 	},
 	[3003050082] = {
 		id = 3003050082,
-		name = "红星徽章",
+		name = "魔能徽章",
 		itemType = 8,
 		needLv = 50,
 		needJob = 3,
@@ -118611,7 +118611,7 @@ local datas = {
 	},
 	[3003050083] = {
 		id = 3003050083,
-		name = "红星徽章",
+		name = "魔能徽章",
 		itemType = 8,
 		needLv = 50,
 		needJob = 3,
@@ -118640,7 +118640,7 @@ local datas = {
 	},
 	[3003050084] = {
 		id = 3003050084,
-		name = "红星徽章",
+		name = "魔能徽章",
 		itemType = 8,
 		needLv = 50,
 		needJob = 3,
@@ -118669,7 +118669,7 @@ local datas = {
 	},
 	[3003050085] = {
 		id = 3003050085,
-		name = "红星徽章",
+		name = "魔能徽章",
 		itemType = 8,
 		needLv = 50,
 		needJob = 3,
@@ -118698,7 +118698,7 @@ local datas = {
 	},
 	[3003050086] = {
 		id = 3003050086,
-		name = "红星徽章",
+		name = "魔能徽章",
 		itemType = 8,
 		needLv = 50,
 		needJob = 3,
@@ -118727,7 +118727,7 @@ local datas = {
 	},
 	[3003050087] = {
 		id = 3003050087,
-		name = "红星徽章",
+		name = "魔能徽章",
 		itemType = 8,
 		needLv = 50,
 		needJob = 3,
@@ -118756,7 +118756,7 @@ local datas = {
 	},
 	[3003050088] = {
 		id = 3003050088,
-		name = "红星徽章",
+		name = "魔能徽章",
 		itemType = 8,
 		needLv = 50,
 		needJob = 3,
@@ -118785,7 +118785,7 @@ local datas = {
 	},
 	[3003050089] = {
 		id = 3003050089,
-		name = "红星徽章",
+		name = "魔能徽章",
 		itemType = 8,
 		needLv = 50,
 		needJob = 3,
@@ -124817,7 +124817,7 @@ local datas = {
 	},
 	[3003065081] = {
 		id = 3003065081,
-		name = "深渊之角",
+		name = "深渊之勋",
 		itemType = 8,
 		needLv = 65,
 		needJob = 3,
@@ -124846,7 +124846,7 @@ local datas = {
 	},
 	[3003065082] = {
 		id = 3003065082,
-		name = "深渊之角",
+		name = "深渊之勋",
 		itemType = 8,
 		needLv = 65,
 		needJob = 3,
@@ -124875,7 +124875,7 @@ local datas = {
 	},
 	[3003065083] = {
 		id = 3003065083,
-		name = "深渊之角",
+		name = "深渊之勋",
 		itemType = 8,
 		needLv = 65,
 		needJob = 3,
@@ -124904,7 +124904,7 @@ local datas = {
 	},
 	[3003065084] = {
 		id = 3003065084,
-		name = "深渊之角",
+		name = "深渊之勋",
 		itemType = 8,
 		needLv = 65,
 		needJob = 3,
@@ -124933,7 +124933,7 @@ local datas = {
 	},
 	[3003065085] = {
 		id = 3003065085,
-		name = "深渊之角",
+		name = "深渊之勋",
 		itemType = 8,
 		needLv = 65,
 		needJob = 3,
@@ -124962,7 +124962,7 @@ local datas = {
 	},
 	[3003065086] = {
 		id = 3003065086,
-		name = "深渊之角",
+		name = "深渊之勋",
 		itemType = 8,
 		needLv = 65,
 		needJob = 3,
@@ -124991,7 +124991,7 @@ local datas = {
 	},
 	[3003065087] = {
 		id = 3003065087,
-		name = "深渊之角",
+		name = "深渊之勋",
 		itemType = 8,
 		needLv = 65,
 		needJob = 3,
@@ -125020,7 +125020,7 @@ local datas = {
 	},
 	[3003065088] = {
 		id = 3003065088,
-		name = "深渊之角",
+		name = "深渊之勋",
 		itemType = 8,
 		needLv = 65,
 		needJob = 3,
@@ -125049,7 +125049,7 @@ local datas = {
 	},
 	[3003065089] = {
 		id = 3003065089,
-		name = "深渊之角",
+		name = "深渊之勋",
 		itemType = 8,
 		needLv = 65,
 		needJob = 3,

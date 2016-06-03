@@ -332,7 +332,7 @@ end
 -- NOTICE: can't delete equip, gem and item that has stone
 function item.del(i)
     local iv = i[1]
-    assert(not i[3], string.format("Item %d has stone.", iv.id))
+    assert(not i[3] or i[3].num==0, string.format("Item %d has stone.", iv.id))
     assert(not i[4], string.format("Can't delete stone %d.", iv.id))
     assert(iv.pos==0, string.format("Can't delete equip %d.", iv.id))
     if iv.status == base.ITEM_STATUS_NORMAL then

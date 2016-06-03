@@ -302,8 +302,15 @@ function role.init_prop()
 end
 
 function role.repair(user)
-    if not user.sign_in then
-        local sign_in = {}
+    local sign_in = user.sign_in
+    if sign_in then
+        for i = 1, base.MAX_SIGN_IN do
+            if sign_in[i] == nil then
+                sign_in[i] = false
+            end
+        end
+    else
+        sign_in = {}
         for i = 1, base.MAX_SIGN_IN do
             sign_in[i] = false
         end

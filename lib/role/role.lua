@@ -585,9 +585,9 @@ function proc.explore(msg)
     if not explore then
         error{code = error_code.ERROR_EXPLORE_AREA}
     end
-    if not card.rank_card_full() then
-        error{code = error_code.EQUIP_CARD_LIMIT}
-    end
+    -- if not card.rank_card_full() then
+    --     error{code = error_code.EQUIP_CARD_LIMIT}
+    -- end
     if stage.area_star(msg.area) < 15 then
         error{code = error_code.STAGE_STAR_LIMIT}
     end

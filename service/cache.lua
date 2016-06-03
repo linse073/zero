@@ -192,6 +192,7 @@ skynet.start(function()
             }
         end
         v.awardItem = awardItem
+        v.task_level = 0
     end
 
     local original_card = {}
@@ -255,6 +256,15 @@ skynet.start(function()
         v.bonus = assert(bonusdata[v.bonusId], string.format("No bonus data %d.", v.bonusId))
         area_search[v.area] = v
     end
+
+    local l = 0
+    local id = base.BEGIN_TASK_ID
+    repeat
+        l = l + 1
+        local d = assert(taskdata[id], string.format("No task data %d.", id))
+        d.task_level = l
+        id = d.nextID
+    until id == 0
 
     sharedata.new("carddata", carddata)
     sharedata.new("itemdata", itemdata)

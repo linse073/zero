@@ -1725,7 +1725,7 @@ local datas = {
 		fix = 0,
 		frontEffect = "skill1;skill2;attack1",
 		backEffect = "",
-		aiName = "monster",
+		aiName = "monster_1073",
 	},
 	[1200001074] = {
 		id = 1200001074,
@@ -5037,7 +5037,7 @@ local datas = {
 		fix = 0,
 		frontEffect = "skill1;skill2;attack1",
 		backEffect = "",
-		aiName = "monster",
+		aiName = "monster_1073",
 	},
 	[1200011074] = {
 		id = 1200011074,

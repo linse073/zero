@@ -565,13 +565,13 @@ function proc.compound_item(msg)
     if msg.num and msg.num < num then
         num = msg.num
     end
-    local comnum = num // 10
+    local comnum = num // 5
     if comnum == 0 then
         error{code = error_code.ITEM_NUM_LIMIT}
     end
     local edata = assert(expdata[compounddata.quality], string.format("No exp data %d.", compounddata.quality))
     local p = update_user()
-    item.del_by_itemid(p, msg.itemid, comnum * 10)
+    item.del_by_itemid(p, msg.itemid, comnum * 5)
     local mul = 1
     if edata.composTotalRatio > 0 then
         local r = random(edata.composTotalRatio)

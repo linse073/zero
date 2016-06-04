@@ -236,15 +236,7 @@ skynet.start(function()
             stage_reward[200+v.data] = v
         end
         if v.rewardType == base.REWARD_TYPE_ITEM then
-            local item = {}
-            local itemid = v.reward
-            local d = itemdata[itemid]
-            while d do
-                item[#item+1] = d
-                itemid = itemid + 1
-                d = itemdata[itemid]
-            end
-            v.item = item
+            v.item = assert(itemdata[v.reward], string.format("No item data %d.", v.reward))
         end
     end
 

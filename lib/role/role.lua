@@ -242,7 +242,9 @@ end
 
 function role.get_reward(p, reward)
     if reward.rewardType == base.REWARD_TYPE_ITEM then
-        item.add_by_itemid(p, reward.rewardNum, reward.item)
+        for k, v in ipairs(reward.item) do
+            item.add_by_itemid(p, 1, v)
+        end
     elseif reward.rewardType == base.REWARD_TYPE_RMB then
         role.add_rmb(p, reward.reward)
     end

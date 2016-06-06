@@ -27,6 +27,7 @@ local stagedata
 local itemdata
 local area_stage
 local stage_reward
+local stage_task_complete
 local data
 local role_mgr
 
@@ -40,6 +41,7 @@ skynet.init(function()
     itemdata = share.itemdata
     area_stage = share.area_stage
     stage_reward = share.stage_reward
+    stage_task_complete = share.stage_task_complete
     role_mgr = skynet.queryservice("role_mgr")
 end)
 
@@ -65,8 +67,10 @@ function stage.enter()
         seed = 0,
         bonus = false,
     }
+    data.stage_star = 0
     for k, v in pairs(data.user.stage) do
         stage.add(v)
+        data.stage_star = data.stage_star + v.star
     end
 end
 
@@ -207,6 +211,20 @@ function stage.chapter_star(stageType, chapter)
     return star
 end
 
+function stage.complete_area(area)
+    local ss = area_stage[area]
+    if ss then
+        local ds = data.stage
+        for k, v in ipairs(ss) do
+            local s = ds[v.id]
+            if not s then
+                return false
+            end
+        end
+    end
+    return true
+end
+
 function stage.add_stage(p, id)
     local ps = p.stage
     local s = data.stage[id]
@@ -241,6 +259,7 @@ function stage.add_stage(p, id)
         sv.count = sv.count + 1
         stage.star(sv)
         ps[#ps+1] = sv
+        data.stage_star = data.stage_star + sv.star
     end
 end
 
@@ -345,12 +364,40 @@ function proc.end_stage(msg)
     if msg.hp_score > sv.hp_score then
         sv.hp_score = msg.hp_score
     end
+    local old_star = sv.star
     stage.star(sv)
     local pstage = p.stage
     pstage[#pstage+1] = sv
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
-    task.update(p, base.TASK_COMPLETE_ELITE_STAGE, msg.id, 1)
+    task.update(p, base.TASK_COMPLETE_ELITE_STAGE_GUIDE, msg.id, 1)
     task.update(p, base.TASK_COMPLETE_STAGE_GUIDE, msg.id, 1)
+    local area = msg.id % 10000 // 10
+    if stage.complete_area(area) then
+        task.update(p, base.TASK_COMPLETE_CHAPTER, area, 0, 1)
+    end
+    if msg.monster > 0 then
+        task.update(p, base.TASK_COMPLETE_MONSTER, 1, msg.monster)
+    end
+    if msg.elite_monster > 0 then
+        task.update(p, base.TASK_COMPLETE_MONSTER, 2, msg.elite_monster)
+    end
+    if msg.boss > 0 then
+        task.update(p, base.TASK_COMPLETE_MONSTER, 3, msg.boss)
+    end
+    local ct = stage_task_complete[d.stageType]
+    if ct then
+        task.update(p, base.TASK_COMPLETE_STAGE_COUNT, ct, 1)
+    end
+    if msg.pick_box > 0 then
+        task.update(p, base.TASK_COMPLETE_OPEN_CHEST, 0, msg.pick_box)
+    end
+    if msg.pick_gold > 0 then
+        task.update(p, base.TASK_COMPLETE_PICK_GOLD, 0, msg.pick_gold)
+    end
+    if old_star ~= sv.star then
+        data.stage_star = data.stage_star - old_star + sv.star
+        task.update(p, base.TASK_COMPLETE_STAGE_STAR, 0, 0, data.stage_star)
+    end
     -- local initRect = base.INIT_RECT
     -- local des_pos = user.des_pos
     -- des_pos.x = random(initRect.x, initRect.ex)

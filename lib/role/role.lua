@@ -216,6 +216,9 @@ function role.add_money(p, money)
     user.money = user.money + money
     puser.money = user.money
     task.update(p, base.TASK_COMPLETE_MONEY, 0, 0, user.money)
+    if money < 0 then
+        task.update(p, base.TASK_COMPLETE_USE_MONEY, 0, -money)
+    end
 end
 
 function role.add_rmb(p, rmb)
@@ -224,6 +227,9 @@ function role.add_rmb(p, rmb)
     user.rmb = user.rmb + rmb
     puser.rmb = user.rmb
     task.update(p, base.TASK_COMPLETE_RMB, 0, 0, user.rmb)
+    if rmb < 0 then
+        task.update(p, base.TASK_COMPLETE_USE_RMB, 0, -rmb)
+    end
 end
 
 function role.fight_point(p)
@@ -331,18 +337,26 @@ function role.explore_bonus(p, a)
     stage.get_bonus(bonus, p)
 end
 
-function role.explore_award(award)
+function role.finish_explore(p, a)
+    if a.money > 0 then
+        role.add_money(p, a.money)
+    end
+    if a.num > 0 then
+        role.explore_bonus(p, a)
+    end
+    if a.win > 0 then
+        task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 1, a.win)
+    end
+    if a.fail > 0 then
+        task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 2, a.fail)
+    end
+end
+
+function role.explore_award(e, a)
     local p = update_user()
-    if award.money > 0 then
-        role.add_money(p, award.money)
-    end
-    if award.num > 0 then
-        role.explore_bonus(p, award)
-    end
-    p.explore = {
-        status = award.status,
-        reason = award.reason,
-    }
+    role.finish_explore(p, a)
+    task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
+    p.explore = e
     notify.add("update_user", {update=p})
 end
 
@@ -491,12 +505,8 @@ local function enter_game(msg)
             ret.explore = e
             if a then
                 local p = update_user()
-                if a.money > 0 then
-                    role.add_money(p, a.money)
-                end
-                if a.num > 0 then
-                    role.explore_bonus(p, a)
-                end
+                role.finish_explore(p, a)
+                task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
             end
         end
     end
@@ -607,13 +617,8 @@ function proc.quit_explore(msg)
         error{code = error_code.ERROR_EXPLORE_STATUS}
     end
     local p = update_user()
+    role.finish_explore(p, a)
     p.explore = e
-    if a.money > 0 then
-        role.add_money(p, a.money)
-    end
-    if a.num > 0 then
-        role.explore_bonus(p, a)
-    end
     return "update_user", {update=p}
 end
 

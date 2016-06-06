@@ -308,15 +308,23 @@ skynet.start(function()
     sharedata.new("complete_task", {
         [base.TASK_COMPLETE_TALK] = true,
         [base.TASK_COMPLETE_ROUTINE] = true,
-        [base.TASK_COMPLETE_EXPLORE] = true,
+        [base.TASK_COMPLETE_EXPLORE_GUIDE] = true,
         [base.TASK_COMPLETE_NEW_FUNCTION] = true,
         [base.TASK_COMPLETE_UPGRADE_PASSIVE] = true,
     })
 
     sharedata.new("stage_task", {
         [base.TASK_COMPLETE_STAGE] = true,
-        [base.TASK_COMPLETE_ELITE_STAGE] = true,
+        [base.TASK_COMPLETE_ELITE_STAGE_GUIDE] = true,
         [base.TASK_COMPLETE_STAGE_GUIDE] = true,
+    })
+
+    sharedata.new("stage_task_complete", {
+        [base.STAGE_TYPE_NORMAL] = 1,
+        [base.STAGE_TYPE_HARD] = 2,
+        [base.STAGE_TYPE_TRAP] = 3,
+        [base.STAGE_TYPE_RUNMAP_X] = 3,
+        [base.STAGE_TYPE_RUNMAP_Y] = 3,
     })
 
     sharedata.new("explore_status", {

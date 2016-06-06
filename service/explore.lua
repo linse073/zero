@@ -91,6 +91,7 @@ local function win(t, info, tinfo)
         rank_count = rank_count + 1
     end
     info.time = t
+    info.win = info.win + 1
     local agent = skynet.call(role_mgr, "lua", "get", info.roleid)
     if agent then
         skynet.send(agent, "lua", "notify", "update_user", {update={explore={
@@ -100,16 +101,13 @@ local function win(t, info, tinfo)
     end
     skynet.call(save_explore, "lua", "update", info.roleid, info)
     tinfo.reason = explore_reason.FAIL
+    info.fail = info.fail + 1
     local tagent = skynet.call(role_mgr, "lua", "get", tinfo.roleid)
     if tagent then
         tinfo.status = explore_status.FINISH
-        skynet.call(tagent, "lua", "explore_award", {
-            money = tinfo.money,
-            bonus = data.bonusId,
-            num = tinfo.bonus,
-            status = tinfo.status,
-            reason = tinfo.reason,
-        })
+        skynet.call(tagent, "lua", "explore_award", 
+            {status=tinfo.status, reason=tinfo.reason}, 
+            {money=tinfo.money, bonus=data.bonusId, num=tinfo.bonus, win=tinfo.win, fail=tinfo.fail})
     else
         tinfo.status = explore_status.DONE
     end
@@ -179,13 +177,9 @@ local function update()
                 local agent = skynet.call(role_mgr, "lua", "get", k)
                 if agent then
                     v.status = explore_status.FINISH
-                    skynet.call(agent, "lua", "explore_award", {
-                        money = v.money,
-                        bonus = data.bonusId,
-                        num = v.bonus,
-                        status = v.status,
-                        reason = v.reason,
-                    })
+                    skynet.call(agent, "lua", "explore_award", 
+                        {status=v.status, reason=v.reason},
+                        {money=v.money, bonus=data.bonusId, num=v.bonus, win=v.win, fail=v.fail})
                 else
                     v.status = explore_status.DONE
                 end
@@ -222,6 +216,8 @@ function CMD.enter(roleid)
                 money = info.money,
                 bonus = data.bonusId,
                 num = info.bonus,
+                win = info.win,
+                fail = info.fail,
             }
         end
         local ti
@@ -322,12 +318,12 @@ function CMD.quit(roleid)
             end
             skynet.call(save_explore, "lua", "update", tinfo.roleid, tinfo)
             return {status=info.status, ack=info.ack, reason=info.reason}, 
-            {money=info.money, bonus=data.bonusId, num=info.bonus}
+            {money=info.money, bonus=data.bonusId, num=info.bonus, win=info.win, fail=info.fail}
         elseif info.status == explore_status.DONE then
             info.status = explore_status.FINISH
             skynet.call(save_explore, "lua", "update", roleid, info)
             return {status=info.status},
-            {money=info.money, bonus=data.bonusId, num=info.bonus}
+            {money=info.money, bonus=data.bonusId, num=info.bonus, win=info.win, fail=info.fail}
         elseif info.status == explore_status.NORMAL or info.status == explore_status.IDLE then
             if info.status == explore_status.NORMAL then
                 skynet.call(rankdb, "lua", "zrem", rankname, roleid)
@@ -341,7 +337,7 @@ function CMD.quit(roleid)
             info.reason = explore_reason.QUIT
             skynet.call(save_explore, "lua", "update", roleid, info)
             return {status=info.status, reason=info.reason},
-            {money=info.money, bonus=data.bonusId, num=info.bonus}
+            {money=info.money, bonus=data.bonusId, num=info.bonus, win=info.win, fail=info.fail}
         end
     end
 end

@@ -426,7 +426,7 @@ function proc.upgrade_passive(msg)
         id = msg.id,
         passive_skill = {si},
     }
-    task.update(p, base.TASK_COMPLETE_UPGRADE_PASSIVE, si.id, 1)
+    task.update(p, base.TASK_COMPLETE_UPGRADE_PASSIVE, si.level, 1)
     return "update_user", {update=p}
 end
 

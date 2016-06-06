@@ -583,7 +583,7 @@ function proc.compound_item(msg)
         end
     end
     item.add_by_itemid(p, comnum * mul, compounddata)
-    task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, msg.itemid, 1)
+    task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, compounddata.quality, 1)
     return "update_user", {update=p, compound_crit=mul}
 end
 
@@ -628,7 +628,7 @@ function proc.improve_item(msg)
         itemid = improveitemid, 
         rand_prop = iv.rand_prop,
     }
-    task.update(p, base.TASK_COMPLETE_IMPROVE_ITEM, olditemid, 1)
+    task.update(p, base.TASK_COMPLETE_IMPROVE_ITEM, idata.quality, 1)
     if iv.pos > 0 then
         role.fight_point(p)
     end
@@ -674,7 +674,7 @@ function proc.upgrade_item(msg)
         itemid = upgradeitemid, 
         rand_prop = iv.rand_prop,
     }
-    task.update(p, base.TASK_COMPLETE_UPGRADE_ITEM, olditemid, 1)
+    task.update(p, base.TASK_COMPLETE_UPGRADE_ITEM, udata.needLv, 1)
     if iv.pos > 0 then
         role.fight_point(p)
     end
@@ -717,7 +717,7 @@ function proc.decompose_item(msg)
         status = iv.status,
         status_time = iv.status_time,
     }
-    task.update(p, base.TASK_COMPLETE_DECOMPOSE_ITEM, iv.itemid, 1)
+    task.update(p, base.TASK_COMPLETE_DECOMPOSE_ITEM, d.quality, 1)
     return "update_user", {update=p}
 end
 
@@ -760,7 +760,7 @@ function proc.intensify_item(msg)
             id = iv.id,
             intensify = iv.intensify,
         }
-        task.update(p, base.TASK_COMPLETE_INTENSIFY_ITEM, iv.itemid, 1)
+        task.update(p, base.TASK_COMPLETE_INTENSIFY_ITEM, iv.intensify, 1)
         if iv.pos > 0 then
             role.fight_point(p)
         end
@@ -805,6 +805,7 @@ function proc.intensify_item(msg)
             update.status_time = iv.status_time
         end
         pitem[#pitem+1] = update
+        task.update(p, base.TASK_COMPLETE_INTENSIFY_ITEM_FAIL, 0, 1)
         if iv.pos > 0 then
             role.fight_point(p)
         end

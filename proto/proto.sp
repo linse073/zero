@@ -271,7 +271,10 @@
     pick_gold 7 : integer
     total_box 8 : integer
     pick_box 9 : *integer
-    sign 10 : string
+    monster 10 : integer
+    elite_monster 11 : integer
+    boss 12 : integer
+    sign 13 : string
 }
 
 .open_chest {

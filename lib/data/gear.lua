@@ -46,7 +46,7 @@ local datas = {
 		name = "无限幻境",
 		count = 2,
 		resIcon = "ccsresources/U_4082.png",
-		stageId = 1300003018,
+		stageId = 1300003024,
 		PreId = 1300001065,
 	},
 	[6] = {
@@ -56,7 +56,7 @@ local datas = {
 		name = "突出重围",
 		count = 2,
 		resIcon = "ccsresources/U_4081.png",
-		stageId = 1300003015,
+		stageId = 1300003021,
 		PreId = 1300001075,
 	},
 	[7] = {
@@ -66,7 +66,7 @@ local datas = {
 		name = "法老之墓",
 		count = 2,
 		resIcon = "ccsresources/U_4084.png",
-		stageId = 1300003017,
+		stageId = 1300003023,
 		PreId = 1300001085,
 	},
 	[8] = {
@@ -76,7 +76,7 @@ local datas = {
 		name = "遗迹逃生",
 		count = 2,
 		resIcon = "ccsresources/U_4083.png",
-		stageId = 1300003016,
+		stageId = 1300003022,
 		PreId = 1300001095,
 	},
 }

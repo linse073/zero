@@ -388,8 +388,8 @@ function proc.end_stage(msg)
     if ct then
         task.update(p, base.TASK_COMPLETE_STAGE_COUNT, ct, 1)
     end
-    if msg.pick_box > 0 then
-        task.update(p, base.TASK_COMPLETE_OPEN_CHEST, 0, msg.pick_box)
+    if msg.pick_box then
+        task.update(p, base.TASK_COMPLETE_OPEN_CHEST, 0, #msg.pick_box)
     end
     if msg.pick_gold > 0 then
         task.update(p, base.TASK_COMPLETE_PICK_GOLD, 0, msg.pick_gold)

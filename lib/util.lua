@@ -29,6 +29,14 @@ function util.merge_table(t1, t2)
     end
 end
 
+function util.clone(t)
+    local nt = {}
+    for k, v in pairs(t) do
+        nt[k] = v
+    end
+    return nt
+end
+
 function util.gen_key(serverid, key)
     return string.format("%d@%s", serverid, key)
 end

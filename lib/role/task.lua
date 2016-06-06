@@ -207,7 +207,9 @@ end
 function task.update(p, completeType, condition, count, setCount)
     local ptask = p.task
     local user = data.user
-    for k, v in pairs(data.accept_task) do
+    local accept_task = data.accept_task
+    local done_task = {}
+    for k, v in pairs(accept_task) do
         local vt = v[1]
         local d = v[2]
         if user.level >= d.levelLimit and completeType == d.CompleteType and (d.condition == 0 or d.condition == condition) then
@@ -223,6 +225,7 @@ function task.update(p, completeType, condition, count, setCount)
             if vt.count >= d.count then
                 vt.status = base.TASK_STATUS_DONE
                 update.status = vt.status
+                done_task[#done_task+1] = vt.id
                 ptask[#ptask+1] = update
                 if d.TaskType == base.TASK_TYPE_MASTER and d.TaskTalk == "" then
                     task.finish(p, v)
@@ -231,6 +234,9 @@ function task.update(p, completeType, condition, count, setCount)
                 ptask[#ptask+1] = update
             end
         end
+    end
+    for k, v in ipairs(done_task) do
+        accept_task[v] = nil
     end
 end
 

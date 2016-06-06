@@ -304,7 +304,7 @@ end
 function item.del_by_itemid(p, itemid, num)
     local t = assert(data.type_item[itemid], string.format("Item %d not exist.", itemid))
     local pack = p.item
-    for k, v in pairs(t) do
+    for k, v in pairs(util.clone(t)) do
         local vi = v[1]
         local diff = num
         if diff > vi.num then

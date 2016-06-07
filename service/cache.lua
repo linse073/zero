@@ -310,7 +310,6 @@ skynet.start(function()
         [base.TASK_COMPLETE_ROUTINE] = true,
         [base.TASK_COMPLETE_EXPLORE_GUIDE] = true,
         [base.TASK_COMPLETE_NEW_FUNCTION] = true,
-        [base.TASK_COMPLETE_UPGRADE_PASSIVE] = true,
     })
 
     sharedata.new("stage_task", {

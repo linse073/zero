@@ -24049,7 +24049,7 @@ local datas = {
 		tenacity = 4,
 		impale = 7,
 		block = 4,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135001] = {
 		id = 700135001,
@@ -24063,7 +24063,7 @@ local datas = {
 		tenacity = 6,
 		impale = 11,
 		block = 6,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135002] = {
 		id = 700135002,
@@ -24077,7 +24077,7 @@ local datas = {
 		tenacity = 8,
 		impale = 15,
 		block = 8,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135003] = {
 		id = 700135003,
@@ -24091,7 +24091,7 @@ local datas = {
 		tenacity = 11,
 		impale = 21,
 		block = 11,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135004] = {
 		id = 700135004,
@@ -24105,7 +24105,7 @@ local datas = {
 		tenacity = 14,
 		impale = 27,
 		block = 14,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135005] = {
 		id = 700135005,
@@ -24119,7 +24119,7 @@ local datas = {
 		tenacity = 18,
 		impale = 33,
 		block = 18,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135006] = {
 		id = 700135006,
@@ -24133,7 +24133,7 @@ local datas = {
 		tenacity = 24,
 		impale = 45,
 		block = 24,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135007] = {
 		id = 700135007,
@@ -24147,7 +24147,7 @@ local datas = {
 		tenacity = 32,
 		impale = 59,
 		block = 32,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135008] = {
 		id = 700135008,
@@ -24161,7 +24161,7 @@ local datas = {
 		tenacity = 40,
 		impale = 75,
 		block = 40,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135009] = {
 		id = 700135009,
@@ -24175,7 +24175,7 @@ local datas = {
 		tenacity = 50,
 		impale = 92,
 		block = 50,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135010] = {
 		id = 700135010,
@@ -24189,7 +24189,7 @@ local datas = {
 		tenacity = 60,
 		impale = 112,
 		block = 60,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135011] = {
 		id = 700135011,
@@ -24203,7 +24203,7 @@ local datas = {
 		tenacity = 69,
 		impale = 129,
 		block = 69,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135012] = {
 		id = 700135012,
@@ -24217,7 +24217,7 @@ local datas = {
 		tenacity = 79,
 		impale = 147,
 		block = 79,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135013] = {
 		id = 700135013,
@@ -24231,7 +24231,7 @@ local datas = {
 		tenacity = 90,
 		impale = 167,
 		block = 90,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135014] = {
 		id = 700135014,
@@ -24245,7 +24245,7 @@ local datas = {
 		tenacity = 101,
 		impale = 188,
 		block = 101,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135015] = {
 		id = 700135015,
@@ -24259,7 +24259,7 @@ local datas = {
 		tenacity = 113,
 		impale = 210,
 		block = 113,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135016] = {
 		id = 700135016,
@@ -24273,7 +24273,7 @@ local datas = {
 		tenacity = 121,
 		impale = 224,
 		block = 121,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135017] = {
 		id = 700135017,
@@ -24287,7 +24287,7 @@ local datas = {
 		tenacity = 129,
 		impale = 239,
 		block = 129,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135018] = {
 		id = 700135018,
@@ -24301,7 +24301,7 @@ local datas = {
 		tenacity = 136,
 		impale = 253,
 		block = 136,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135019] = {
 		id = 700135019,
@@ -24315,7 +24315,7 @@ local datas = {
 		tenacity = 145,
 		impale = 268,
 		block = 145,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135020] = {
 		id = 700135020,
@@ -24329,7 +24329,7 @@ local datas = {
 		tenacity = 153,
 		impale = 284,
 		block = 153,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135021] = {
 		id = 700135021,
@@ -24343,7 +24343,7 @@ local datas = {
 		tenacity = 164,
 		impale = 304,
 		block = 164,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135022] = {
 		id = 700135022,
@@ -24357,7 +24357,7 @@ local datas = {
 		tenacity = 175,
 		impale = 325,
 		block = 175,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135023] = {
 		id = 700135023,
@@ -24371,7 +24371,7 @@ local datas = {
 		tenacity = 187,
 		impale = 347,
 		block = 187,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135024] = {
 		id = 700135024,
@@ -24385,7 +24385,7 @@ local datas = {
 		tenacity = 199,
 		impale = 370,
 		block = 199,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135025] = {
 		id = 700135025,
@@ -24399,7 +24399,7 @@ local datas = {
 		tenacity = 212,
 		impale = 393,
 		block = 212,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135026] = {
 		id = 700135026,
@@ -24413,7 +24413,7 @@ local datas = {
 		tenacity = 221,
 		impale = 410,
 		block = 221,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135027] = {
 		id = 700135027,
@@ -24427,7 +24427,7 @@ local datas = {
 		tenacity = 229,
 		impale = 426,
 		block = 229,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135028] = {
 		id = 700135028,
@@ -24441,7 +24441,7 @@ local datas = {
 		tenacity = 239,
 		impale = 443,
 		block = 239,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135029] = {
 		id = 700135029,
@@ -24455,7 +24455,7 @@ local datas = {
 		tenacity = 248,
 		impale = 460,
 		block = 248,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135030] = {
 		id = 700135030,
@@ -24469,7 +24469,7 @@ local datas = {
 		tenacity = 257,
 		impale = 477,
 		block = 257,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135031] = {
 		id = 700135031,
@@ -24483,7 +24483,7 @@ local datas = {
 		tenacity = 272,
 		impale = 506,
 		block = 272,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135032] = {
 		id = 700135032,
@@ -24497,7 +24497,7 @@ local datas = {
 		tenacity = 289,
 		impale = 536,
 		block = 289,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135033] = {
 		id = 700135033,
@@ -24511,7 +24511,7 @@ local datas = {
 		tenacity = 305,
 		impale = 566,
 		block = 305,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135034] = {
 		id = 700135034,
@@ -24525,7 +24525,7 @@ local datas = {
 		tenacity = 322,
 		impale = 598,
 		block = 322,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135035] = {
 		id = 700135035,
@@ -24539,7 +24539,7 @@ local datas = {
 		tenacity = 339,
 		impale = 630,
 		block = 339,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135036] = {
 		id = 700135036,
@@ -24553,7 +24553,7 @@ local datas = {
 		tenacity = 358,
 		impale = 665,
 		block = 358,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135037] = {
 		id = 700135037,
@@ -24567,7 +24567,7 @@ local datas = {
 		tenacity = 377,
 		impale = 701,
 		block = 377,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135038] = {
 		id = 700135038,
@@ -24581,7 +24581,7 @@ local datas = {
 		tenacity = 397,
 		impale = 737,
 		block = 397,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135039] = {
 		id = 700135039,
@@ -24595,7 +24595,7 @@ local datas = {
 		tenacity = 417,
 		impale = 775,
 		block = 417,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135040] = {
 		id = 700135040,
@@ -24609,7 +24609,7 @@ local datas = {
 		tenacity = 438,
 		impale = 813,
 		block = 438,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135041] = {
 		id = 700135041,
@@ -24623,7 +24623,7 @@ local datas = {
 		tenacity = 457,
 		impale = 848,
 		block = 457,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135042] = {
 		id = 700135042,
@@ -24637,7 +24637,7 @@ local datas = {
 		tenacity = 476,
 		impale = 885,
 		block = 476,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135043] = {
 		id = 700135043,
@@ -24651,7 +24651,7 @@ local datas = {
 		tenacity = 496,
 		impale = 922,
 		block = 496,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135044] = {
 		id = 700135044,
@@ -24665,7 +24665,7 @@ local datas = {
 		tenacity = 517,
 		impale = 959,
 		block = 517,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135045] = {
 		id = 700135045,
@@ -24679,7 +24679,7 @@ local datas = {
 		tenacity = 537,
 		impale = 998,
 		block = 537,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135046] = {
 		id = 700135046,
@@ -24693,7 +24693,7 @@ local datas = {
 		tenacity = 553,
 		impale = 1026,
 		block = 553,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135047] = {
 		id = 700135047,
@@ -24707,7 +24707,7 @@ local datas = {
 		tenacity = 568,
 		impale = 1055,
 		block = 568,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135048] = {
 		id = 700135048,
@@ -24721,7 +24721,7 @@ local datas = {
 		tenacity = 584,
 		impale = 1085,
 		block = 584,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135049] = {
 		id = 700135049,
@@ -24735,7 +24735,7 @@ local datas = {
 		tenacity = 600,
 		impale = 1114,
 		block = 600,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135050] = {
 		id = 700135050,
@@ -24749,7 +24749,7 @@ local datas = {
 		tenacity = 616,
 		impale = 1144,
 		block = 616,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135051] = {
 		id = 700135051,
@@ -24763,7 +24763,7 @@ local datas = {
 		tenacity = 635,
 		impale = 1180,
 		block = 635,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135052] = {
 		id = 700135052,
@@ -24777,7 +24777,7 @@ local datas = {
 		tenacity = 655,
 		impale = 1217,
 		block = 655,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135053] = {
 		id = 700135053,
@@ -24791,7 +24791,7 @@ local datas = {
 		tenacity = 675,
 		impale = 1254,
 		block = 675,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135054] = {
 		id = 700135054,
@@ -24805,7 +24805,7 @@ local datas = {
 		tenacity = 695,
 		impale = 1292,
 		block = 695,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135055] = {
 		id = 700135055,
@@ -24819,7 +24819,7 @@ local datas = {
 		tenacity = 716,
 		impale = 1330,
 		block = 716,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135056] = {
 		id = 700135056,
@@ -24833,7 +24833,7 @@ local datas = {
 		tenacity = 742,
 		impale = 1379,
 		block = 742,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135057] = {
 		id = 700135057,
@@ -24847,7 +24847,7 @@ local datas = {
 		tenacity = 769,
 		impale = 1429,
 		block = 769,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135058] = {
 		id = 700135058,
@@ -24861,7 +24861,7 @@ local datas = {
 		tenacity = 797,
 		impale = 1480,
 		block = 797,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135059] = {
 		id = 700135059,
@@ -24875,7 +24875,7 @@ local datas = {
 		tenacity = 825,
 		impale = 1531,
 		block = 825,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135060] = {
 		id = 700135060,
@@ -24889,7 +24889,7 @@ local datas = {
 		tenacity = 853,
 		impale = 1584,
 		block = 853,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135061] = {
 		id = 700135061,
@@ -24903,7 +24903,7 @@ local datas = {
 		tenacity = 873,
 		impale = 1621,
 		block = 873,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135062] = {
 		id = 700135062,
@@ -24917,7 +24917,7 @@ local datas = {
 		tenacity = 893,
 		impale = 1659,
 		block = 893,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135063] = {
 		id = 700135063,
@@ -24931,7 +24931,7 @@ local datas = {
 		tenacity = 914,
 		impale = 1698,
 		block = 914,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135064] = {
 		id = 700135064,
@@ -24945,7 +24945,7 @@ local datas = {
 		tenacity = 935,
 		impale = 1736,
 		block = 935,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135065] = {
 		id = 700135065,
@@ -24959,7 +24959,7 @@ local datas = {
 		tenacity = 956,
 		impale = 1775,
 		block = 956,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135066] = {
 		id = 700135066,
@@ -24973,7 +24973,7 @@ local datas = {
 		tenacity = 989,
 		impale = 1837,
 		block = 989,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135067] = {
 		id = 700135067,
@@ -24987,7 +24987,7 @@ local datas = {
 		tenacity = 1023,
 		impale = 1900,
 		block = 1023,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135068] = {
 		id = 700135068,
@@ -25001,7 +25001,7 @@ local datas = {
 		tenacity = 1057,
 		impale = 1964,
 		block = 1057,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135069] = {
 		id = 700135069,
@@ -25015,7 +25015,7 @@ local datas = {
 		tenacity = 1092,
 		impale = 2029,
 		block = 1092,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135070] = {
 		id = 700135070,
@@ -25029,7 +25029,7 @@ local datas = {
 		tenacity = 1128,
 		impale = 2095,
 		block = 1128,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135071] = {
 		id = 700135071,
@@ -25043,7 +25043,7 @@ local datas = {
 		tenacity = 1157,
 		impale = 2149,
 		block = 1157,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135072] = {
 		id = 700135072,
@@ -25057,7 +25057,7 @@ local datas = {
 		tenacity = 1187,
 		impale = 2205,
 		block = 1187,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135073] = {
 		id = 700135073,
@@ -25071,7 +25071,7 @@ local datas = {
 		tenacity = 1217,
 		impale = 2261,
 		block = 1217,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135074] = {
 		id = 700135074,
@@ -25085,7 +25085,7 @@ local datas = {
 		tenacity = 1248,
 		impale = 2317,
 		block = 1248,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135075] = {
 		id = 700135075,
@@ -25099,7 +25099,7 @@ local datas = {
 		tenacity = 1279,
 		impale = 2375,
 		block = 1279,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135076] = {
 		id = 700135076,
@@ -25113,7 +25113,7 @@ local datas = {
 		tenacity = 1326,
 		impale = 2463,
 		block = 1326,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135077] = {
 		id = 700135077,
@@ -25127,7 +25127,7 @@ local datas = {
 		tenacity = 1374,
 		impale = 2552,
 		block = 1374,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135078] = {
 		id = 700135078,
@@ -25141,7 +25141,7 @@ local datas = {
 		tenacity = 1423,
 		impale = 2643,
 		block = 1423,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135079] = {
 		id = 700135079,
@@ -25155,7 +25155,7 @@ local datas = {
 		tenacity = 1473,
 		impale = 2735,
 		block = 1473,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135080] = {
 		id = 700135080,
@@ -25169,7 +25169,7 @@ local datas = {
 		tenacity = 1523,
 		impale = 2829,
 		block = 1523,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135081] = {
 		id = 700135081,
@@ -25183,7 +25183,7 @@ local datas = {
 		tenacity = 1556,
 		impale = 2891,
 		block = 1556,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135082] = {
 		id = 700135082,
@@ -25197,7 +25197,7 @@ local datas = {
 		tenacity = 1590,
 		impale = 2953,
 		block = 1590,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135083] = {
 		id = 700135083,
@@ -25211,7 +25211,7 @@ local datas = {
 		tenacity = 1624,
 		impale = 3016,
 		block = 1624,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135084] = {
 		id = 700135084,
@@ -25225,7 +25225,7 @@ local datas = {
 		tenacity = 1658,
 		impale = 3080,
 		block = 1658,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135085] = {
 		id = 700135085,
@@ -25239,7 +25239,7 @@ local datas = {
 		tenacity = 1693,
 		impale = 3144,
 		block = 1693,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135086] = {
 		id = 700135086,
@@ -25253,7 +25253,7 @@ local datas = {
 		tenacity = 1748,
 		impale = 3247,
 		block = 1748,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135087] = {
 		id = 700135087,
@@ -25267,7 +25267,7 @@ local datas = {
 		tenacity = 1805,
 		impale = 3351,
 		block = 1805,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135088] = {
 		id = 700135088,
@@ -25281,7 +25281,7 @@ local datas = {
 		tenacity = 1862,
 		impale = 3457,
 		block = 1862,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135089] = {
 		id = 700135089,
@@ -25295,7 +25295,7 @@ local datas = {
 		tenacity = 1919,
 		impale = 3565,
 		block = 1919,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135090] = {
 		id = 700135090,
@@ -25309,7 +25309,7 @@ local datas = {
 		tenacity = 1978,
 		impale = 3674,
 		block = 1978,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135091] = {
 		id = 700135091,
@@ -25323,7 +25323,7 @@ local datas = {
 		tenacity = 2021,
 		impale = 3753,
 		block = 2021,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135092] = {
 		id = 700135092,
@@ -25337,7 +25337,7 @@ local datas = {
 		tenacity = 2064,
 		impale = 3833,
 		block = 2064,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135093] = {
 		id = 700135093,
@@ -25351,7 +25351,7 @@ local datas = {
 		tenacity = 2107,
 		impale = 3914,
 		block = 2107,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135094] = {
 		id = 700135094,
@@ -25365,7 +25365,7 @@ local datas = {
 		tenacity = 2151,
 		impale = 3995,
 		block = 2151,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135095] = {
 		id = 700135095,
@@ -25379,7 +25379,7 @@ local datas = {
 		tenacity = 2196,
 		impale = 4078,
 		block = 2196,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135096] = {
 		id = 700135096,
@@ -25393,7 +25393,7 @@ local datas = {
 		tenacity = 2269,
 		impale = 4214,
 		block = 2269,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135097] = {
 		id = 700135097,
@@ -25407,7 +25407,7 @@ local datas = {
 		tenacity = 2344,
 		impale = 4352,
 		block = 2344,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135098] = {
 		id = 700135098,
@@ -25421,7 +25421,7 @@ local datas = {
 		tenacity = 2419,
 		impale = 4492,
 		block = 2419,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135099] = {
 		id = 700135099,
@@ -25435,7 +25435,7 @@ local datas = {
 		tenacity = 2495,
 		impale = 4634,
 		block = 2495,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700135100] = {
 		id = 700135100,
@@ -25449,7 +25449,7 @@ local datas = {
 		tenacity = 2573,
 		impale = 4778,
 		block = 2573,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700145000] = {
 		id = 700145000,
@@ -43845,7 +43845,7 @@ local datas = {
 		tenacity = 4,
 		impale = 7,
 		block = 4,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136001] = {
 		id = 700136001,
@@ -43859,7 +43859,7 @@ local datas = {
 		tenacity = 6,
 		impale = 11,
 		block = 6,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136002] = {
 		id = 700136002,
@@ -43873,7 +43873,7 @@ local datas = {
 		tenacity = 8,
 		impale = 15,
 		block = 8,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136003] = {
 		id = 700136003,
@@ -43887,7 +43887,7 @@ local datas = {
 		tenacity = 11,
 		impale = 21,
 		block = 11,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136004] = {
 		id = 700136004,
@@ -43901,7 +43901,7 @@ local datas = {
 		tenacity = 14,
 		impale = 27,
 		block = 14,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136005] = {
 		id = 700136005,
@@ -43915,7 +43915,7 @@ local datas = {
 		tenacity = 18,
 		impale = 33,
 		block = 18,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136006] = {
 		id = 700136006,
@@ -43929,7 +43929,7 @@ local datas = {
 		tenacity = 24,
 		impale = 45,
 		block = 24,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136007] = {
 		id = 700136007,
@@ -43943,7 +43943,7 @@ local datas = {
 		tenacity = 32,
 		impale = 59,
 		block = 32,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136008] = {
 		id = 700136008,
@@ -43957,7 +43957,7 @@ local datas = {
 		tenacity = 40,
 		impale = 75,
 		block = 40,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136009] = {
 		id = 700136009,
@@ -43971,7 +43971,7 @@ local datas = {
 		tenacity = 50,
 		impale = 92,
 		block = 50,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136010] = {
 		id = 700136010,
@@ -43985,7 +43985,7 @@ local datas = {
 		tenacity = 60,
 		impale = 112,
 		block = 60,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136011] = {
 		id = 700136011,
@@ -43999,7 +43999,7 @@ local datas = {
 		tenacity = 69,
 		impale = 129,
 		block = 69,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136012] = {
 		id = 700136012,
@@ -44013,7 +44013,7 @@ local datas = {
 		tenacity = 79,
 		impale = 147,
 		block = 79,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136013] = {
 		id = 700136013,
@@ -44027,7 +44027,7 @@ local datas = {
 		tenacity = 90,
 		impale = 167,
 		block = 90,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136014] = {
 		id = 700136014,
@@ -44041,7 +44041,7 @@ local datas = {
 		tenacity = 101,
 		impale = 188,
 		block = 101,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136015] = {
 		id = 700136015,
@@ -44055,7 +44055,7 @@ local datas = {
 		tenacity = 113,
 		impale = 210,
 		block = 113,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136016] = {
 		id = 700136016,
@@ -44069,7 +44069,7 @@ local datas = {
 		tenacity = 121,
 		impale = 224,
 		block = 121,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136017] = {
 		id = 700136017,
@@ -44083,7 +44083,7 @@ local datas = {
 		tenacity = 129,
 		impale = 239,
 		block = 129,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136018] = {
 		id = 700136018,
@@ -44097,7 +44097,7 @@ local datas = {
 		tenacity = 136,
 		impale = 253,
 		block = 136,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136019] = {
 		id = 700136019,
@@ -44111,7 +44111,7 @@ local datas = {
 		tenacity = 145,
 		impale = 268,
 		block = 145,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136020] = {
 		id = 700136020,
@@ -44125,7 +44125,7 @@ local datas = {
 		tenacity = 153,
 		impale = 284,
 		block = 153,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136021] = {
 		id = 700136021,
@@ -44139,7 +44139,7 @@ local datas = {
 		tenacity = 164,
 		impale = 304,
 		block = 164,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136022] = {
 		id = 700136022,
@@ -44153,7 +44153,7 @@ local datas = {
 		tenacity = 175,
 		impale = 325,
 		block = 175,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136023] = {
 		id = 700136023,
@@ -44167,7 +44167,7 @@ local datas = {
 		tenacity = 187,
 		impale = 347,
 		block = 187,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136024] = {
 		id = 700136024,
@@ -44181,7 +44181,7 @@ local datas = {
 		tenacity = 199,
 		impale = 370,
 		block = 199,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136025] = {
 		id = 700136025,
@@ -44195,7 +44195,7 @@ local datas = {
 		tenacity = 212,
 		impale = 393,
 		block = 212,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136026] = {
 		id = 700136026,
@@ -44209,7 +44209,7 @@ local datas = {
 		tenacity = 221,
 		impale = 410,
 		block = 221,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136027] = {
 		id = 700136027,
@@ -44223,7 +44223,7 @@ local datas = {
 		tenacity = 229,
 		impale = 426,
 		block = 229,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136028] = {
 		id = 700136028,
@@ -44237,7 +44237,7 @@ local datas = {
 		tenacity = 239,
 		impale = 443,
 		block = 239,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136029] = {
 		id = 700136029,
@@ -44251,7 +44251,7 @@ local datas = {
 		tenacity = 248,
 		impale = 460,
 		block = 248,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136030] = {
 		id = 700136030,
@@ -44265,7 +44265,7 @@ local datas = {
 		tenacity = 257,
 		impale = 477,
 		block = 257,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136031] = {
 		id = 700136031,
@@ -44279,7 +44279,7 @@ local datas = {
 		tenacity = 272,
 		impale = 506,
 		block = 272,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136032] = {
 		id = 700136032,
@@ -44293,7 +44293,7 @@ local datas = {
 		tenacity = 289,
 		impale = 536,
 		block = 289,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136033] = {
 		id = 700136033,
@@ -44307,7 +44307,7 @@ local datas = {
 		tenacity = 305,
 		impale = 566,
 		block = 305,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136034] = {
 		id = 700136034,
@@ -44321,7 +44321,7 @@ local datas = {
 		tenacity = 322,
 		impale = 598,
 		block = 322,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136035] = {
 		id = 700136035,
@@ -44335,7 +44335,7 @@ local datas = {
 		tenacity = 339,
 		impale = 630,
 		block = 339,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136036] = {
 		id = 700136036,
@@ -44349,7 +44349,7 @@ local datas = {
 		tenacity = 358,
 		impale = 665,
 		block = 358,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136037] = {
 		id = 700136037,
@@ -44363,7 +44363,7 @@ local datas = {
 		tenacity = 377,
 		impale = 701,
 		block = 377,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136038] = {
 		id = 700136038,
@@ -44377,7 +44377,7 @@ local datas = {
 		tenacity = 397,
 		impale = 737,
 		block = 397,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136039] = {
 		id = 700136039,
@@ -44391,7 +44391,7 @@ local datas = {
 		tenacity = 417,
 		impale = 775,
 		block = 417,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136040] = {
 		id = 700136040,
@@ -44405,7 +44405,7 @@ local datas = {
 		tenacity = 438,
 		impale = 813,
 		block = 438,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136041] = {
 		id = 700136041,
@@ -44419,7 +44419,7 @@ local datas = {
 		tenacity = 457,
 		impale = 848,
 		block = 457,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136042] = {
 		id = 700136042,
@@ -44433,7 +44433,7 @@ local datas = {
 		tenacity = 476,
 		impale = 885,
 		block = 476,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136043] = {
 		id = 700136043,
@@ -44447,7 +44447,7 @@ local datas = {
 		tenacity = 496,
 		impale = 922,
 		block = 496,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136044] = {
 		id = 700136044,
@@ -44461,7 +44461,7 @@ local datas = {
 		tenacity = 517,
 		impale = 959,
 		block = 517,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136045] = {
 		id = 700136045,
@@ -44475,7 +44475,7 @@ local datas = {
 		tenacity = 537,
 		impale = 998,
 		block = 537,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136046] = {
 		id = 700136046,
@@ -44489,7 +44489,7 @@ local datas = {
 		tenacity = 553,
 		impale = 1026,
 		block = 553,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136047] = {
 		id = 700136047,
@@ -44503,7 +44503,7 @@ local datas = {
 		tenacity = 568,
 		impale = 1055,
 		block = 568,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136048] = {
 		id = 700136048,
@@ -44517,7 +44517,7 @@ local datas = {
 		tenacity = 584,
 		impale = 1085,
 		block = 584,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136049] = {
 		id = 700136049,
@@ -44531,7 +44531,7 @@ local datas = {
 		tenacity = 600,
 		impale = 1114,
 		block = 600,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136050] = {
 		id = 700136050,
@@ -44545,7 +44545,7 @@ local datas = {
 		tenacity = 616,
 		impale = 1144,
 		block = 616,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136051] = {
 		id = 700136051,
@@ -44559,7 +44559,7 @@ local datas = {
 		tenacity = 635,
 		impale = 1180,
 		block = 635,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136052] = {
 		id = 700136052,
@@ -44573,7 +44573,7 @@ local datas = {
 		tenacity = 655,
 		impale = 1217,
 		block = 655,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136053] = {
 		id = 700136053,
@@ -44587,7 +44587,7 @@ local datas = {
 		tenacity = 675,
 		impale = 1254,
 		block = 675,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136054] = {
 		id = 700136054,
@@ -44601,7 +44601,7 @@ local datas = {
 		tenacity = 695,
 		impale = 1292,
 		block = 695,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136055] = {
 		id = 700136055,
@@ -44615,7 +44615,7 @@ local datas = {
 		tenacity = 716,
 		impale = 1330,
 		block = 716,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136056] = {
 		id = 700136056,
@@ -44629,7 +44629,7 @@ local datas = {
 		tenacity = 742,
 		impale = 1379,
 		block = 742,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136057] = {
 		id = 700136057,
@@ -44643,7 +44643,7 @@ local datas = {
 		tenacity = 769,
 		impale = 1429,
 		block = 769,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136058] = {
 		id = 700136058,
@@ -44657,7 +44657,7 @@ local datas = {
 		tenacity = 797,
 		impale = 1480,
 		block = 797,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136059] = {
 		id = 700136059,
@@ -44671,7 +44671,7 @@ local datas = {
 		tenacity = 825,
 		impale = 1531,
 		block = 825,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136060] = {
 		id = 700136060,
@@ -44685,7 +44685,7 @@ local datas = {
 		tenacity = 853,
 		impale = 1584,
 		block = 853,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136061] = {
 		id = 700136061,
@@ -44699,7 +44699,7 @@ local datas = {
 		tenacity = 873,
 		impale = 1621,
 		block = 873,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136062] = {
 		id = 700136062,
@@ -44713,7 +44713,7 @@ local datas = {
 		tenacity = 893,
 		impale = 1659,
 		block = 893,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136063] = {
 		id = 700136063,
@@ -44727,7 +44727,7 @@ local datas = {
 		tenacity = 914,
 		impale = 1698,
 		block = 914,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136064] = {
 		id = 700136064,
@@ -44741,7 +44741,7 @@ local datas = {
 		tenacity = 935,
 		impale = 1736,
 		block = 935,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136065] = {
 		id = 700136065,
@@ -44755,7 +44755,7 @@ local datas = {
 		tenacity = 956,
 		impale = 1775,
 		block = 956,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136066] = {
 		id = 700136066,
@@ -44769,7 +44769,7 @@ local datas = {
 		tenacity = 989,
 		impale = 1837,
 		block = 989,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136067] = {
 		id = 700136067,
@@ -44783,7 +44783,7 @@ local datas = {
 		tenacity = 1023,
 		impale = 1900,
 		block = 1023,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136068] = {
 		id = 700136068,
@@ -44797,7 +44797,7 @@ local datas = {
 		tenacity = 1057,
 		impale = 1964,
 		block = 1057,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136069] = {
 		id = 700136069,
@@ -44811,7 +44811,7 @@ local datas = {
 		tenacity = 1092,
 		impale = 2029,
 		block = 1092,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136070] = {
 		id = 700136070,
@@ -44825,7 +44825,7 @@ local datas = {
 		tenacity = 1128,
 		impale = 2095,
 		block = 1128,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136071] = {
 		id = 700136071,
@@ -44839,7 +44839,7 @@ local datas = {
 		tenacity = 1157,
 		impale = 2149,
 		block = 1157,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136072] = {
 		id = 700136072,
@@ -44853,7 +44853,7 @@ local datas = {
 		tenacity = 1187,
 		impale = 2205,
 		block = 1187,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136073] = {
 		id = 700136073,
@@ -44867,7 +44867,7 @@ local datas = {
 		tenacity = 1217,
 		impale = 2261,
 		block = 1217,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136074] = {
 		id = 700136074,
@@ -44881,7 +44881,7 @@ local datas = {
 		tenacity = 1248,
 		impale = 2317,
 		block = 1248,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136075] = {
 		id = 700136075,
@@ -44895,7 +44895,7 @@ local datas = {
 		tenacity = 1279,
 		impale = 2375,
 		block = 1279,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136076] = {
 		id = 700136076,
@@ -44909,7 +44909,7 @@ local datas = {
 		tenacity = 1326,
 		impale = 2463,
 		block = 1326,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136077] = {
 		id = 700136077,
@@ -44923,7 +44923,7 @@ local datas = {
 		tenacity = 1374,
 		impale = 2552,
 		block = 1374,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136078] = {
 		id = 700136078,
@@ -44937,7 +44937,7 @@ local datas = {
 		tenacity = 1423,
 		impale = 2643,
 		block = 1423,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136079] = {
 		id = 700136079,
@@ -44951,7 +44951,7 @@ local datas = {
 		tenacity = 1473,
 		impale = 2735,
 		block = 1473,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136080] = {
 		id = 700136080,
@@ -44965,7 +44965,7 @@ local datas = {
 		tenacity = 1523,
 		impale = 2829,
 		block = 1523,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136081] = {
 		id = 700136081,
@@ -44979,7 +44979,7 @@ local datas = {
 		tenacity = 1556,
 		impale = 2891,
 		block = 1556,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136082] = {
 		id = 700136082,
@@ -44993,7 +44993,7 @@ local datas = {
 		tenacity = 1590,
 		impale = 2953,
 		block = 1590,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136083] = {
 		id = 700136083,
@@ -45007,7 +45007,7 @@ local datas = {
 		tenacity = 1624,
 		impale = 3016,
 		block = 1624,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136084] = {
 		id = 700136084,
@@ -45021,7 +45021,7 @@ local datas = {
 		tenacity = 1658,
 		impale = 3080,
 		block = 1658,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136085] = {
 		id = 700136085,
@@ -45035,7 +45035,7 @@ local datas = {
 		tenacity = 1693,
 		impale = 3144,
 		block = 1693,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136086] = {
 		id = 700136086,
@@ -45049,7 +45049,7 @@ local datas = {
 		tenacity = 1748,
 		impale = 3247,
 		block = 1748,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136087] = {
 		id = 700136087,
@@ -45063,7 +45063,7 @@ local datas = {
 		tenacity = 1805,
 		impale = 3351,
 		block = 1805,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136088] = {
 		id = 700136088,
@@ -45077,7 +45077,7 @@ local datas = {
 		tenacity = 1862,
 		impale = 3457,
 		block = 1862,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136089] = {
 		id = 700136089,
@@ -45091,7 +45091,7 @@ local datas = {
 		tenacity = 1919,
 		impale = 3565,
 		block = 1919,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136090] = {
 		id = 700136090,
@@ -45105,7 +45105,7 @@ local datas = {
 		tenacity = 1978,
 		impale = 3674,
 		block = 1978,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136091] = {
 		id = 700136091,
@@ -45119,7 +45119,7 @@ local datas = {
 		tenacity = 2021,
 		impale = 3753,
 		block = 2021,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136092] = {
 		id = 700136092,
@@ -45133,7 +45133,7 @@ local datas = {
 		tenacity = 2064,
 		impale = 3833,
 		block = 2064,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136093] = {
 		id = 700136093,
@@ -45147,7 +45147,7 @@ local datas = {
 		tenacity = 2107,
 		impale = 3914,
 		block = 2107,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136094] = {
 		id = 700136094,
@@ -45161,7 +45161,7 @@ local datas = {
 		tenacity = 2151,
 		impale = 3995,
 		block = 2151,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136095] = {
 		id = 700136095,
@@ -45175,7 +45175,7 @@ local datas = {
 		tenacity = 2196,
 		impale = 4078,
 		block = 2196,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136096] = {
 		id = 700136096,
@@ -45189,7 +45189,7 @@ local datas = {
 		tenacity = 2269,
 		impale = 4214,
 		block = 2269,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136097] = {
 		id = 700136097,
@@ -45203,7 +45203,7 @@ local datas = {
 		tenacity = 2344,
 		impale = 4352,
 		block = 2344,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136098] = {
 		id = 700136098,
@@ -45217,7 +45217,7 @@ local datas = {
 		tenacity = 2419,
 		impale = 4492,
 		block = 2419,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136099] = {
 		id = 700136099,
@@ -45231,7 +45231,7 @@ local datas = {
 		tenacity = 2495,
 		impale = 4634,
 		block = 2495,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700136100] = {
 		id = 700136100,
@@ -45245,7 +45245,7 @@ local datas = {
 		tenacity = 2573,
 		impale = 4778,
 		block = 2573,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[700146000] = {
 		id = 700146000,
@@ -63641,7 +63641,7 @@ local datas = {
 		tenacity = 5,
 		impale = 10,
 		block = 5,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135001] = {
 		id = 710135001,
@@ -63655,7 +63655,7 @@ local datas = {
 		tenacity = 9,
 		impale = 17,
 		block = 9,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135002] = {
 		id = 710135002,
@@ -63669,7 +63669,7 @@ local datas = {
 		tenacity = 14,
 		impale = 26,
 		block = 14,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135003] = {
 		id = 710135003,
@@ -63683,7 +63683,7 @@ local datas = {
 		tenacity = 20,
 		impale = 37,
 		block = 20,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135004] = {
 		id = 710135004,
@@ -63697,7 +63697,7 @@ local datas = {
 		tenacity = 27,
 		impale = 50,
 		block = 27,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135005] = {
 		id = 710135005,
@@ -63711,7 +63711,7 @@ local datas = {
 		tenacity = 35,
 		impale = 65,
 		block = 35,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135006] = {
 		id = 710135006,
@@ -63725,7 +63725,7 @@ local datas = {
 		tenacity = 43,
 		impale = 79,
 		block = 43,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135007] = {
 		id = 710135007,
@@ -63739,7 +63739,7 @@ local datas = {
 		tenacity = 51,
 		impale = 95,
 		block = 51,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135008] = {
 		id = 710135008,
@@ -63753,7 +63753,7 @@ local datas = {
 		tenacity = 60,
 		impale = 111,
 		block = 60,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135009] = {
 		id = 710135009,
@@ -63767,7 +63767,7 @@ local datas = {
 		tenacity = 70,
 		impale = 129,
 		block = 70,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135010] = {
 		id = 710135010,
@@ -63781,7 +63781,7 @@ local datas = {
 		tenacity = 80,
 		impale = 148,
 		block = 80,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135011] = {
 		id = 710135011,
@@ -63795,7 +63795,7 @@ local datas = {
 		tenacity = 87,
 		impale = 162,
 		block = 87,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135012] = {
 		id = 710135012,
@@ -63809,7 +63809,7 @@ local datas = {
 		tenacity = 95,
 		impale = 176,
 		block = 95,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135013] = {
 		id = 710135013,
@@ -63823,7 +63823,7 @@ local datas = {
 		tenacity = 102,
 		impale = 190,
 		block = 102,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135014] = {
 		id = 710135014,
@@ -63837,7 +63837,7 @@ local datas = {
 		tenacity = 110,
 		impale = 205,
 		block = 110,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135015] = {
 		id = 710135015,
@@ -63851,7 +63851,7 @@ local datas = {
 		tenacity = 118,
 		impale = 219,
 		block = 118,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135016] = {
 		id = 710135016,
@@ -63865,7 +63865,7 @@ local datas = {
 		tenacity = 128,
 		impale = 238,
 		block = 128,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135017] = {
 		id = 710135017,
@@ -63879,7 +63879,7 @@ local datas = {
 		tenacity = 139,
 		impale = 258,
 		block = 139,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135018] = {
 		id = 710135018,
@@ -63893,7 +63893,7 @@ local datas = {
 		tenacity = 150,
 		impale = 278,
 		block = 150,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135019] = {
 		id = 710135019,
@@ -63907,7 +63907,7 @@ local datas = {
 		tenacity = 161,
 		impale = 299,
 		block = 161,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135020] = {
 		id = 710135020,
@@ -63921,7 +63921,7 @@ local datas = {
 		tenacity = 172,
 		impale = 320,
 		block = 172,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135021] = {
 		id = 710135021,
@@ -63935,7 +63935,7 @@ local datas = {
 		tenacity = 182,
 		impale = 339,
 		block = 182,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135022] = {
 		id = 710135022,
@@ -63949,7 +63949,7 @@ local datas = {
 		tenacity = 193,
 		impale = 358,
 		block = 193,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135023] = {
 		id = 710135023,
@@ -63963,7 +63963,7 @@ local datas = {
 		tenacity = 203,
 		impale = 377,
 		block = 203,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135024] = {
 		id = 710135024,
@@ -63977,7 +63977,7 @@ local datas = {
 		tenacity = 213,
 		impale = 396,
 		block = 213,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135025] = {
 		id = 710135025,
@@ -63991,7 +63991,7 @@ local datas = {
 		tenacity = 224,
 		impale = 416,
 		block = 224,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135026] = {
 		id = 710135026,
@@ -64005,7 +64005,7 @@ local datas = {
 		tenacity = 234,
 		impale = 434,
 		block = 234,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135027] = {
 		id = 710135027,
@@ -64019,7 +64019,7 @@ local datas = {
 		tenacity = 244,
 		impale = 452,
 		block = 244,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135028] = {
 		id = 710135028,
@@ -64033,7 +64033,7 @@ local datas = {
 		tenacity = 253,
 		impale = 471,
 		block = 253,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135029] = {
 		id = 710135029,
@@ -64047,7 +64047,7 @@ local datas = {
 		tenacity = 263,
 		impale = 489,
 		block = 263,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135030] = {
 		id = 710135030,
@@ -64061,7 +64061,7 @@ local datas = {
 		tenacity = 273,
 		impale = 508,
 		block = 273,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135031] = {
 		id = 710135031,
@@ -64075,7 +64075,7 @@ local datas = {
 		tenacity = 290,
 		impale = 539,
 		block = 290,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135032] = {
 		id = 710135032,
@@ -64089,7 +64089,7 @@ local datas = {
 		tenacity = 308,
 		impale = 571,
 		block = 308,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135033] = {
 		id = 710135033,
@@ -64103,7 +64103,7 @@ local datas = {
 		tenacity = 326,
 		impale = 605,
 		block = 326,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135034] = {
 		id = 710135034,
@@ -64117,7 +64117,7 @@ local datas = {
 		tenacity = 344,
 		impale = 639,
 		block = 344,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135035] = {
 		id = 710135035,
@@ -64131,7 +64131,7 @@ local datas = {
 		tenacity = 363,
 		impale = 674,
 		block = 363,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135036] = {
 		id = 710135036,
@@ -64145,7 +64145,7 @@ local datas = {
 		tenacity = 381,
 		impale = 707,
 		block = 381,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135037] = {
 		id = 710135037,
@@ -64159,7 +64159,7 @@ local datas = {
 		tenacity = 399,
 		impale = 742,
 		block = 399,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135038] = {
 		id = 710135038,
@@ -64173,7 +64173,7 @@ local datas = {
 		tenacity = 418,
 		impale = 777,
 		block = 418,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135039] = {
 		id = 710135039,
@@ -64187,7 +64187,7 @@ local datas = {
 		tenacity = 437,
 		impale = 812,
 		block = 437,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135040] = {
 		id = 710135040,
@@ -64201,7 +64201,7 @@ local datas = {
 		tenacity = 457,
 		impale = 849,
 		block = 457,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135041] = {
 		id = 710135041,
@@ -64215,7 +64215,7 @@ local datas = {
 		tenacity = 478,
 		impale = 887,
 		block = 478,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135042] = {
 		id = 710135042,
@@ -64229,7 +64229,7 @@ local datas = {
 		tenacity = 499,
 		impale = 926,
 		block = 499,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135043] = {
 		id = 710135043,
@@ -64243,7 +64243,7 @@ local datas = {
 		tenacity = 520,
 		impale = 966,
 		block = 520,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135044] = {
 		id = 710135044,
@@ -64257,7 +64257,7 @@ local datas = {
 		tenacity = 542,
 		impale = 1006,
 		block = 542,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135045] = {
 		id = 710135045,
@@ -64271,7 +64271,7 @@ local datas = {
 		tenacity = 564,
 		impale = 1048,
 		block = 564,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135046] = {
 		id = 710135046,
@@ -64285,7 +64285,7 @@ local datas = {
 		tenacity = 584,
 		impale = 1085,
 		block = 584,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135047] = {
 		id = 710135047,
@@ -64299,7 +64299,7 @@ local datas = {
 		tenacity = 605,
 		impale = 1123,
 		block = 605,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135048] = {
 		id = 710135048,
@@ -64313,7 +64313,7 @@ local datas = {
 		tenacity = 625,
 		impale = 1161,
 		block = 625,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135049] = {
 		id = 710135049,
@@ -64327,7 +64327,7 @@ local datas = {
 		tenacity = 646,
 		impale = 1200,
 		block = 646,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135050] = {
 		id = 710135050,
@@ -64341,7 +64341,7 @@ local datas = {
 		tenacity = 668,
 		impale = 1240,
 		block = 668,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135051] = {
 		id = 710135051,
@@ -64355,7 +64355,7 @@ local datas = {
 		tenacity = 685,
 		impale = 1272,
 		block = 685,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135052] = {
 		id = 710135052,
@@ -64369,7 +64369,7 @@ local datas = {
 		tenacity = 703,
 		impale = 1305,
 		block = 703,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135053] = {
 		id = 710135053,
@@ -64383,7 +64383,7 @@ local datas = {
 		tenacity = 720,
 		impale = 1338,
 		block = 720,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135054] = {
 		id = 710135054,
@@ -64397,7 +64397,7 @@ local datas = {
 		tenacity = 738,
 		impale = 1371,
 		block = 738,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135055] = {
 		id = 710135055,
@@ -64411,7 +64411,7 @@ local datas = {
 		tenacity = 756,
 		impale = 1404,
 		block = 756,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135056] = {
 		id = 710135056,
@@ -64425,7 +64425,7 @@ local datas = {
 		tenacity = 785,
 		impale = 1457,
 		block = 785,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135057] = {
 		id = 710135057,
@@ -64439,7 +64439,7 @@ local datas = {
 		tenacity = 814,
 		impale = 1511,
 		block = 814,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135058] = {
 		id = 710135058,
@@ -64453,7 +64453,7 @@ local datas = {
 		tenacity = 843,
 		impale = 1566,
 		block = 843,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135059] = {
 		id = 710135059,
@@ -64467,7 +64467,7 @@ local datas = {
 		tenacity = 874,
 		impale = 1623,
 		block = 874,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135060] = {
 		id = 710135060,
@@ -64481,7 +64481,7 @@ local datas = {
 		tenacity = 904,
 		impale = 1680,
 		block = 904,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135061] = {
 		id = 710135061,
@@ -64495,7 +64495,7 @@ local datas = {
 		tenacity = 926,
 		impale = 1720,
 		block = 926,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135062] = {
 		id = 710135062,
@@ -64509,7 +64509,7 @@ local datas = {
 		tenacity = 948,
 		impale = 1760,
 		block = 948,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135063] = {
 		id = 710135063,
@@ -64523,7 +64523,7 @@ local datas = {
 		tenacity = 970,
 		impale = 1801,
 		block = 970,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135064] = {
 		id = 710135064,
@@ -64537,7 +64537,7 @@ local datas = {
 		tenacity = 992,
 		impale = 1842,
 		block = 992,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135065] = {
 		id = 710135065,
@@ -64551,7 +64551,7 @@ local datas = {
 		tenacity = 1015,
 		impale = 1884,
 		block = 1015,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135066] = {
 		id = 710135066,
@@ -64565,7 +64565,7 @@ local datas = {
 		tenacity = 1055,
 		impale = 1959,
 		block = 1055,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135067] = {
 		id = 710135067,
@@ -64579,7 +64579,7 @@ local datas = {
 		tenacity = 1095,
 		impale = 2034,
 		block = 1095,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135068] = {
 		id = 710135068,
@@ -64593,7 +64593,7 @@ local datas = {
 		tenacity = 1137,
 		impale = 2111,
 		block = 1137,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135069] = {
 		id = 710135069,
@@ -64607,7 +64607,7 @@ local datas = {
 		tenacity = 1179,
 		impale = 2190,
 		block = 1179,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135070] = {
 		id = 710135070,
@@ -64621,7 +64621,7 @@ local datas = {
 		tenacity = 1222,
 		impale = 2270,
 		block = 1222,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135071] = {
 		id = 710135071,
@@ -64635,7 +64635,7 @@ local datas = {
 		tenacity = 1254,
 		impale = 2329,
 		block = 1254,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135072] = {
 		id = 710135072,
@@ -64649,7 +64649,7 @@ local datas = {
 		tenacity = 1287,
 		impale = 2389,
 		block = 1287,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135073] = {
 		id = 710135073,
@@ -64663,7 +64663,7 @@ local datas = {
 		tenacity = 1319,
 		impale = 2450,
 		block = 1319,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135074] = {
 		id = 710135074,
@@ -64677,7 +64677,7 @@ local datas = {
 		tenacity = 1353,
 		impale = 2512,
 		block = 1353,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135075] = {
 		id = 710135075,
@@ -64691,7 +64691,7 @@ local datas = {
 		tenacity = 1386,
 		impale = 2575,
 		block = 1386,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135076] = {
 		id = 710135076,
@@ -64705,7 +64705,7 @@ local datas = {
 		tenacity = 1434,
 		impale = 2663,
 		block = 1434,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135077] = {
 		id = 710135077,
@@ -64719,7 +64719,7 @@ local datas = {
 		tenacity = 1482,
 		impale = 2752,
 		block = 1482,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135078] = {
 		id = 710135078,
@@ -64733,7 +64733,7 @@ local datas = {
 		tenacity = 1531,
 		impale = 2843,
 		block = 1531,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135079] = {
 		id = 710135079,
@@ -64747,7 +64747,7 @@ local datas = {
 		tenacity = 1580,
 		impale = 2935,
 		block = 1580,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135080] = {
 		id = 710135080,
@@ -64761,7 +64761,7 @@ local datas = {
 		tenacity = 1631,
 		impale = 3028,
 		block = 1631,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135081] = {
 		id = 710135081,
@@ -64775,7 +64775,7 @@ local datas = {
 		tenacity = 1667,
 		impale = 3096,
 		block = 1667,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135082] = {
 		id = 710135082,
@@ -64789,7 +64789,7 @@ local datas = {
 		tenacity = 1703,
 		impale = 3163,
 		block = 1703,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135083] = {
 		id = 710135083,
@@ -64803,7 +64803,7 @@ local datas = {
 		tenacity = 1740,
 		impale = 3232,
 		block = 1740,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135084] = {
 		id = 710135084,
@@ -64817,7 +64817,7 @@ local datas = {
 		tenacity = 1777,
 		impale = 3301,
 		block = 1777,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135085] = {
 		id = 710135085,
@@ -64831,7 +64831,7 @@ local datas = {
 		tenacity = 1815,
 		impale = 3371,
 		block = 1815,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135086] = {
 		id = 710135086,
@@ -64845,7 +64845,7 @@ local datas = {
 		tenacity = 1876,
 		impale = 3484,
 		block = 1876,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135087] = {
 		id = 710135087,
@@ -64859,7 +64859,7 @@ local datas = {
 		tenacity = 1938,
 		impale = 3599,
 		block = 1938,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135088] = {
 		id = 710135088,
@@ -64873,7 +64873,7 @@ local datas = {
 		tenacity = 2000,
 		impale = 3715,
 		block = 2000,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135089] = {
 		id = 710135089,
@@ -64887,7 +64887,7 @@ local datas = {
 		tenacity = 2064,
 		impale = 3833,
 		block = 2064,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135090] = {
 		id = 710135090,
@@ -64901,7 +64901,7 @@ local datas = {
 		tenacity = 2128,
 		impale = 3952,
 		block = 2128,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135091] = {
 		id = 710135091,
@@ -64915,7 +64915,7 @@ local datas = {
 		tenacity = 2177,
 		impale = 4043,
 		block = 2177,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135092] = {
 		id = 710135092,
@@ -64929,7 +64929,7 @@ local datas = {
 		tenacity = 2226,
 		impale = 4134,
 		block = 2226,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135093] = {
 		id = 710135093,
@@ -64943,7 +64943,7 @@ local datas = {
 		tenacity = 2276,
 		impale = 4226,
 		block = 2276,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135094] = {
 		id = 710135094,
@@ -64957,7 +64957,7 @@ local datas = {
 		tenacity = 2326,
 		impale = 4320,
 		block = 2326,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135095] = {
 		id = 710135095,
@@ -64971,7 +64971,7 @@ local datas = {
 		tenacity = 2377,
 		impale = 4414,
 		block = 2377,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135096] = {
 		id = 710135096,
@@ -64985,7 +64985,7 @@ local datas = {
 		tenacity = 2526,
 		impale = 4691,
 		block = 2526,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135097] = {
 		id = 710135097,
@@ -64999,7 +64999,7 @@ local datas = {
 		tenacity = 2678,
 		impale = 4973,
 		block = 2678,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135098] = {
 		id = 710135098,
@@ -65013,7 +65013,7 @@ local datas = {
 		tenacity = 2832,
 		impale = 5260,
 		block = 2832,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135099] = {
 		id = 710135099,
@@ -65027,7 +65027,7 @@ local datas = {
 		tenacity = 2989,
 		impale = 5551,
 		block = 2989,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710135100] = {
 		id = 710135100,
@@ -65041,7 +65041,7 @@ local datas = {
 		tenacity = 3149,
 		impale = 5847,
 		block = 3149,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710145000] = {
 		id = 710145000,
@@ -83437,7 +83437,7 @@ local datas = {
 		tenacity = 5,
 		impale = 10,
 		block = 5,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136001] = {
 		id = 710136001,
@@ -83451,7 +83451,7 @@ local datas = {
 		tenacity = 9,
 		impale = 17,
 		block = 9,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136002] = {
 		id = 710136002,
@@ -83465,7 +83465,7 @@ local datas = {
 		tenacity = 14,
 		impale = 26,
 		block = 14,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136003] = {
 		id = 710136003,
@@ -83479,7 +83479,7 @@ local datas = {
 		tenacity = 20,
 		impale = 37,
 		block = 20,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136004] = {
 		id = 710136004,
@@ -83493,7 +83493,7 @@ local datas = {
 		tenacity = 27,
 		impale = 50,
 		block = 27,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136005] = {
 		id = 710136005,
@@ -83507,7 +83507,7 @@ local datas = {
 		tenacity = 35,
 		impale = 65,
 		block = 35,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136006] = {
 		id = 710136006,
@@ -83521,7 +83521,7 @@ local datas = {
 		tenacity = 43,
 		impale = 79,
 		block = 43,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136007] = {
 		id = 710136007,
@@ -83535,7 +83535,7 @@ local datas = {
 		tenacity = 51,
 		impale = 95,
 		block = 51,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136008] = {
 		id = 710136008,
@@ -83549,7 +83549,7 @@ local datas = {
 		tenacity = 60,
 		impale = 111,
 		block = 60,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136009] = {
 		id = 710136009,
@@ -83563,7 +83563,7 @@ local datas = {
 		tenacity = 70,
 		impale = 129,
 		block = 70,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136010] = {
 		id = 710136010,
@@ -83577,7 +83577,7 @@ local datas = {
 		tenacity = 80,
 		impale = 148,
 		block = 80,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136011] = {
 		id = 710136011,
@@ -83591,7 +83591,7 @@ local datas = {
 		tenacity = 87,
 		impale = 162,
 		block = 87,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136012] = {
 		id = 710136012,
@@ -83605,7 +83605,7 @@ local datas = {
 		tenacity = 95,
 		impale = 176,
 		block = 95,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136013] = {
 		id = 710136013,
@@ -83619,7 +83619,7 @@ local datas = {
 		tenacity = 102,
 		impale = 190,
 		block = 102,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136014] = {
 		id = 710136014,
@@ -83633,7 +83633,7 @@ local datas = {
 		tenacity = 110,
 		impale = 205,
 		block = 110,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136015] = {
 		id = 710136015,
@@ -83647,7 +83647,7 @@ local datas = {
 		tenacity = 118,
 		impale = 219,
 		block = 118,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136016] = {
 		id = 710136016,
@@ -83661,7 +83661,7 @@ local datas = {
 		tenacity = 128,
 		impale = 238,
 		block = 128,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136017] = {
 		id = 710136017,
@@ -83675,7 +83675,7 @@ local datas = {
 		tenacity = 139,
 		impale = 258,
 		block = 139,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136018] = {
 		id = 710136018,
@@ -83689,7 +83689,7 @@ local datas = {
 		tenacity = 150,
 		impale = 278,
 		block = 150,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136019] = {
 		id = 710136019,
@@ -83703,7 +83703,7 @@ local datas = {
 		tenacity = 161,
 		impale = 299,
 		block = 161,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136020] = {
 		id = 710136020,
@@ -83717,7 +83717,7 @@ local datas = {
 		tenacity = 172,
 		impale = 320,
 		block = 172,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136021] = {
 		id = 710136021,
@@ -83731,7 +83731,7 @@ local datas = {
 		tenacity = 182,
 		impale = 339,
 		block = 182,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136022] = {
 		id = 710136022,
@@ -83745,7 +83745,7 @@ local datas = {
 		tenacity = 193,
 		impale = 358,
 		block = 193,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136023] = {
 		id = 710136023,
@@ -83759,7 +83759,7 @@ local datas = {
 		tenacity = 203,
 		impale = 377,
 		block = 203,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136024] = {
 		id = 710136024,
@@ -83773,7 +83773,7 @@ local datas = {
 		tenacity = 213,
 		impale = 396,
 		block = 213,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136025] = {
 		id = 710136025,
@@ -83787,7 +83787,7 @@ local datas = {
 		tenacity = 224,
 		impale = 416,
 		block = 224,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136026] = {
 		id = 710136026,
@@ -83801,7 +83801,7 @@ local datas = {
 		tenacity = 234,
 		impale = 434,
 		block = 234,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136027] = {
 		id = 710136027,
@@ -83815,7 +83815,7 @@ local datas = {
 		tenacity = 244,
 		impale = 452,
 		block = 244,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136028] = {
 		id = 710136028,
@@ -83829,7 +83829,7 @@ local datas = {
 		tenacity = 253,
 		impale = 471,
 		block = 253,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136029] = {
 		id = 710136029,
@@ -83843,7 +83843,7 @@ local datas = {
 		tenacity = 263,
 		impale = 489,
 		block = 263,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136030] = {
 		id = 710136030,
@@ -83857,7 +83857,7 @@ local datas = {
 		tenacity = 273,
 		impale = 508,
 		block = 273,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136031] = {
 		id = 710136031,
@@ -83871,7 +83871,7 @@ local datas = {
 		tenacity = 290,
 		impale = 539,
 		block = 290,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136032] = {
 		id = 710136032,
@@ -83885,7 +83885,7 @@ local datas = {
 		tenacity = 308,
 		impale = 571,
 		block = 308,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136033] = {
 		id = 710136033,
@@ -83899,7 +83899,7 @@ local datas = {
 		tenacity = 326,
 		impale = 605,
 		block = 326,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136034] = {
 		id = 710136034,
@@ -83913,7 +83913,7 @@ local datas = {
 		tenacity = 344,
 		impale = 639,
 		block = 344,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136035] = {
 		id = 710136035,
@@ -83927,7 +83927,7 @@ local datas = {
 		tenacity = 363,
 		impale = 674,
 		block = 363,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136036] = {
 		id = 710136036,
@@ -83941,7 +83941,7 @@ local datas = {
 		tenacity = 381,
 		impale = 707,
 		block = 381,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136037] = {
 		id = 710136037,
@@ -83955,7 +83955,7 @@ local datas = {
 		tenacity = 399,
 		impale = 742,
 		block = 399,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136038] = {
 		id = 710136038,
@@ -83969,7 +83969,7 @@ local datas = {
 		tenacity = 418,
 		impale = 777,
 		block = 418,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136039] = {
 		id = 710136039,
@@ -83983,7 +83983,7 @@ local datas = {
 		tenacity = 437,
 		impale = 812,
 		block = 437,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136040] = {
 		id = 710136040,
@@ -83997,7 +83997,7 @@ local datas = {
 		tenacity = 457,
 		impale = 849,
 		block = 457,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136041] = {
 		id = 710136041,
@@ -84011,7 +84011,7 @@ local datas = {
 		tenacity = 478,
 		impale = 887,
 		block = 478,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136042] = {
 		id = 710136042,
@@ -84025,7 +84025,7 @@ local datas = {
 		tenacity = 499,
 		impale = 926,
 		block = 499,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136043] = {
 		id = 710136043,
@@ -84039,7 +84039,7 @@ local datas = {
 		tenacity = 520,
 		impale = 966,
 		block = 520,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136044] = {
 		id = 710136044,
@@ -84053,7 +84053,7 @@ local datas = {
 		tenacity = 542,
 		impale = 1006,
 		block = 542,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136045] = {
 		id = 710136045,
@@ -84067,7 +84067,7 @@ local datas = {
 		tenacity = 564,
 		impale = 1048,
 		block = 564,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136046] = {
 		id = 710136046,
@@ -84081,7 +84081,7 @@ local datas = {
 		tenacity = 584,
 		impale = 1085,
 		block = 584,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136047] = {
 		id = 710136047,
@@ -84095,7 +84095,7 @@ local datas = {
 		tenacity = 605,
 		impale = 1123,
 		block = 605,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136048] = {
 		id = 710136048,
@@ -84109,7 +84109,7 @@ local datas = {
 		tenacity = 625,
 		impale = 1161,
 		block = 625,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136049] = {
 		id = 710136049,
@@ -84123,7 +84123,7 @@ local datas = {
 		tenacity = 646,
 		impale = 1200,
 		block = 646,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136050] = {
 		id = 710136050,
@@ -84137,7 +84137,7 @@ local datas = {
 		tenacity = 668,
 		impale = 1240,
 		block = 668,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136051] = {
 		id = 710136051,
@@ -84151,7 +84151,7 @@ local datas = {
 		tenacity = 685,
 		impale = 1272,
 		block = 685,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136052] = {
 		id = 710136052,
@@ -84165,7 +84165,7 @@ local datas = {
 		tenacity = 703,
 		impale = 1305,
 		block = 703,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136053] = {
 		id = 710136053,
@@ -84179,7 +84179,7 @@ local datas = {
 		tenacity = 720,
 		impale = 1338,
 		block = 720,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136054] = {
 		id = 710136054,
@@ -84193,7 +84193,7 @@ local datas = {
 		tenacity = 738,
 		impale = 1371,
 		block = 738,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136055] = {
 		id = 710136055,
@@ -84207,7 +84207,7 @@ local datas = {
 		tenacity = 756,
 		impale = 1404,
 		block = 756,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136056] = {
 		id = 710136056,
@@ -84221,7 +84221,7 @@ local datas = {
 		tenacity = 785,
 		impale = 1457,
 		block = 785,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136057] = {
 		id = 710136057,
@@ -84235,7 +84235,7 @@ local datas = {
 		tenacity = 814,
 		impale = 1511,
 		block = 814,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136058] = {
 		id = 710136058,
@@ -84249,7 +84249,7 @@ local datas = {
 		tenacity = 843,
 		impale = 1566,
 		block = 843,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136059] = {
 		id = 710136059,
@@ -84263,7 +84263,7 @@ local datas = {
 		tenacity = 874,
 		impale = 1623,
 		block = 874,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136060] = {
 		id = 710136060,
@@ -84277,7 +84277,7 @@ local datas = {
 		tenacity = 904,
 		impale = 1680,
 		block = 904,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136061] = {
 		id = 710136061,
@@ -84291,7 +84291,7 @@ local datas = {
 		tenacity = 926,
 		impale = 1720,
 		block = 926,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136062] = {
 		id = 710136062,
@@ -84305,7 +84305,7 @@ local datas = {
 		tenacity = 948,
 		impale = 1760,
 		block = 948,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136063] = {
 		id = 710136063,
@@ -84319,7 +84319,7 @@ local datas = {
 		tenacity = 970,
 		impale = 1801,
 		block = 970,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136064] = {
 		id = 710136064,
@@ -84333,7 +84333,7 @@ local datas = {
 		tenacity = 992,
 		impale = 1842,
 		block = 992,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136065] = {
 		id = 710136065,
@@ -84347,7 +84347,7 @@ local datas = {
 		tenacity = 1015,
 		impale = 1884,
 		block = 1015,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136066] = {
 		id = 710136066,
@@ -84361,7 +84361,7 @@ local datas = {
 		tenacity = 1055,
 		impale = 1959,
 		block = 1055,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136067] = {
 		id = 710136067,
@@ -84375,7 +84375,7 @@ local datas = {
 		tenacity = 1095,
 		impale = 2034,
 		block = 1095,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136068] = {
 		id = 710136068,
@@ -84389,7 +84389,7 @@ local datas = {
 		tenacity = 1137,
 		impale = 2111,
 		block = 1137,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136069] = {
 		id = 710136069,
@@ -84403,7 +84403,7 @@ local datas = {
 		tenacity = 1179,
 		impale = 2190,
 		block = 1179,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136070] = {
 		id = 710136070,
@@ -84417,7 +84417,7 @@ local datas = {
 		tenacity = 1222,
 		impale = 2270,
 		block = 1222,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136071] = {
 		id = 710136071,
@@ -84431,7 +84431,7 @@ local datas = {
 		tenacity = 1254,
 		impale = 2329,
 		block = 1254,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136072] = {
 		id = 710136072,
@@ -84445,7 +84445,7 @@ local datas = {
 		tenacity = 1287,
 		impale = 2389,
 		block = 1287,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136073] = {
 		id = 710136073,
@@ -84459,7 +84459,7 @@ local datas = {
 		tenacity = 1319,
 		impale = 2450,
 		block = 1319,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136074] = {
 		id = 710136074,
@@ -84473,7 +84473,7 @@ local datas = {
 		tenacity = 1353,
 		impale = 2512,
 		block = 1353,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136075] = {
 		id = 710136075,
@@ -84487,7 +84487,7 @@ local datas = {
 		tenacity = 1386,
 		impale = 2575,
 		block = 1386,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136076] = {
 		id = 710136076,
@@ -84501,7 +84501,7 @@ local datas = {
 		tenacity = 1434,
 		impale = 2663,
 		block = 1434,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136077] = {
 		id = 710136077,
@@ -84515,7 +84515,7 @@ local datas = {
 		tenacity = 1482,
 		impale = 2752,
 		block = 1482,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136078] = {
 		id = 710136078,
@@ -84529,7 +84529,7 @@ local datas = {
 		tenacity = 1531,
 		impale = 2843,
 		block = 1531,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136079] = {
 		id = 710136079,
@@ -84543,7 +84543,7 @@ local datas = {
 		tenacity = 1580,
 		impale = 2935,
 		block = 1580,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136080] = {
 		id = 710136080,
@@ -84557,7 +84557,7 @@ local datas = {
 		tenacity = 1631,
 		impale = 3028,
 		block = 1631,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136081] = {
 		id = 710136081,
@@ -84571,7 +84571,7 @@ local datas = {
 		tenacity = 1667,
 		impale = 3096,
 		block = 1667,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136082] = {
 		id = 710136082,
@@ -84585,7 +84585,7 @@ local datas = {
 		tenacity = 1703,
 		impale = 3163,
 		block = 1703,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136083] = {
 		id = 710136083,
@@ -84599,7 +84599,7 @@ local datas = {
 		tenacity = 1740,
 		impale = 3232,
 		block = 1740,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136084] = {
 		id = 710136084,
@@ -84613,7 +84613,7 @@ local datas = {
 		tenacity = 1777,
 		impale = 3301,
 		block = 1777,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136085] = {
 		id = 710136085,
@@ -84627,7 +84627,7 @@ local datas = {
 		tenacity = 1815,
 		impale = 3371,
 		block = 1815,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136086] = {
 		id = 710136086,
@@ -84641,7 +84641,7 @@ local datas = {
 		tenacity = 1876,
 		impale = 3484,
 		block = 1876,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136087] = {
 		id = 710136087,
@@ -84655,7 +84655,7 @@ local datas = {
 		tenacity = 1938,
 		impale = 3599,
 		block = 1938,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136088] = {
 		id = 710136088,
@@ -84669,7 +84669,7 @@ local datas = {
 		tenacity = 2000,
 		impale = 3715,
 		block = 2000,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136089] = {
 		id = 710136089,
@@ -84683,7 +84683,7 @@ local datas = {
 		tenacity = 2064,
 		impale = 3833,
 		block = 2064,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136090] = {
 		id = 710136090,
@@ -84697,7 +84697,7 @@ local datas = {
 		tenacity = 2128,
 		impale = 3952,
 		block = 2128,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136091] = {
 		id = 710136091,
@@ -84711,7 +84711,7 @@ local datas = {
 		tenacity = 2177,
 		impale = 4043,
 		block = 2177,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136092] = {
 		id = 710136092,
@@ -84725,7 +84725,7 @@ local datas = {
 		tenacity = 2226,
 		impale = 4134,
 		block = 2226,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136093] = {
 		id = 710136093,
@@ -84739,7 +84739,7 @@ local datas = {
 		tenacity = 2276,
 		impale = 4226,
 		block = 2276,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136094] = {
 		id = 710136094,
@@ -84753,7 +84753,7 @@ local datas = {
 		tenacity = 2326,
 		impale = 4320,
 		block = 2326,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136095] = {
 		id = 710136095,
@@ -84767,7 +84767,7 @@ local datas = {
 		tenacity = 2377,
 		impale = 4414,
 		block = 2377,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136096] = {
 		id = 710136096,
@@ -84781,7 +84781,7 @@ local datas = {
 		tenacity = 2526,
 		impale = 4691,
 		block = 2526,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136097] = {
 		id = 710136097,
@@ -84795,7 +84795,7 @@ local datas = {
 		tenacity = 2678,
 		impale = 4973,
 		block = 2678,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136098] = {
 		id = 710136098,
@@ -84809,7 +84809,7 @@ local datas = {
 		tenacity = 2832,
 		impale = 5260,
 		block = 2832,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136099] = {
 		id = 710136099,
@@ -84823,7 +84823,7 @@ local datas = {
 		tenacity = 2989,
 		impale = 5551,
 		block = 2989,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710136100] = {
 		id = 710136100,
@@ -84837,7 +84837,7 @@ local datas = {
 		tenacity = 3149,
 		impale = 5847,
 		block = 3149,
-		moveSpeed = 18,
+		moveSpeed = 0,
 	},
 	[710146000] = {
 		id = 710146000,

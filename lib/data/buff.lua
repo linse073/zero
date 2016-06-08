@@ -1174,8 +1174,8 @@ local datas = {
 		repelTime = 0.01,
 		des = "",
 	},
-	[310011690] = {
-		id = 310011690,
+	[310010110] = {
+		id = 310010110,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -1199,8 +1199,8 @@ local datas = {
 		repelTime = 0.01,
 		des = "",
 	},
-	[310010110] = {
-		id = 310010110,
+	[310012070] = {
+		id = 310012070,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -2999,8 +2999,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310011691] = {
-		id = 310011691,
+	[310010111] = {
+		id = 310010111,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -3024,8 +3024,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310010111] = {
-		id = 310010111,
+	[310012071] = {
+		id = 310012071,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -4824,8 +4824,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310011692] = {
-		id = 310011692,
+	[310010112] = {
+		id = 310010112,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -4849,8 +4849,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310010112] = {
-		id = 310010112,
+	[310012072] = {
+		id = 310012072,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -6649,8 +6649,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310011693] = {
-		id = 310011693,
+	[310010113] = {
+		id = 310010113,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -6674,8 +6674,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310010113] = {
-		id = 310010113,
+	[310012073] = {
+		id = 310012073,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -8474,8 +8474,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310011694] = {
-		id = 310011694,
+	[310010114] = {
+		id = 310010114,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -8499,8 +8499,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310010114] = {
-		id = 310010114,
+	[310012074] = {
+		id = 310012074,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -10299,8 +10299,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310011695] = {
-		id = 310011695,
+	[310010115] = {
+		id = 310010115,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -10324,8 +10324,8 @@ local datas = {
 		repelTime = 0,
 		des = "混乱灼烧",
 	},
-	[310010115] = {
-		id = 310010115,
+	[310012075] = {
+		id = 310012075,
 		targetType = 4,
 		prop = 0,
 		propData = 0,
@@ -18474,6 +18474,31 @@ local datas = {
 		repelTime = 0.01,
 		des = "",
 	},
+	[330120700] = {
+		id = 330120700,
+		targetType = 3,
+		prop = 0,
+		propData = 0,
+		propLevelPercent = 0,
+		attr = 0,
+		attrData = 0,
+		attrLevelPercent = 0,
+		continuedTime = 0,
+		intervalTime = 0,
+		buffType = 2,
+		damage = {
+			0,
+			1,
+			0,
+		},
+		maxHp_HarmRatio = 0,
+		addStatus = 0,
+		effectPath = "",
+		statusData = 0,
+		repel = 1000,
+		repelTime = 0.01,
+		des = "",
+	},
 	[330100410] = {
 		id = 330100410,
 		targetType = 3,
@@ -19699,8 +19724,8 @@ local datas = {
 		repelTime = 0.01,
 		des = "",
 	},
-	[331116900] = {
-		id = 331116900,
+	[331101100] = {
+		id = 331101100,
 		targetType = 3,
 		prop = 0,
 		propData = 0,
@@ -19708,7 +19733,7 @@ local datas = {
 		attr = 0,
 		attrData = 0,
 		attrLevelPercent = 0,
-		continuedTime = 1,
+		continuedTime = 0,
 		intervalTime = 0,
 		buffType = 2,
 		damage = {
@@ -19724,8 +19749,8 @@ local datas = {
 		repelTime = 0.01,
 		des = "",
 	},
-	[331101100] = {
-		id = 331101100,
+	[331120700] = {
+		id = 331120700,
 		targetType = 3,
 		prop = 0,
 		propData = 0,
@@ -19733,7 +19758,7 @@ local datas = {
 		attr = 0,
 		attrData = 0,
 		attrLevelPercent = 0,
-		continuedTime = 0,
+		continuedTime = NaN,
 		intervalTime = 0,
 		buffType = 2,
 		damage = {
@@ -23549,8 +23574,8 @@ local datas = {
 		repelTime = 0,
 		des = "格挡增加",
 	},
-	[340111690] = {
-		id = 340111690,
+	[340110110] = {
+		id = 340110110,
 		targetType = 1,
 		prop = 6,
 		propData = 0,
@@ -23574,8 +23599,8 @@ local datas = {
 		repelTime = 0,
 		des = "暴击增加",
 	},
-	[340411690] = {
-		id = 340411690,
+	[340410110] = {
+		id = 340410110,
 		targetType = 1,
 		prop = 6,
 		propData = 0,

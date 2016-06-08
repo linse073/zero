@@ -3301,9 +3301,9 @@ local datas = {
 	},
 	[220001011] = {
 		Id = 220001011,
-		Money = 0,
-		MoneyRate = 0,
-		EquipType = 3,
+		Money = 500,
+		MoneyRate = 10000,
+		EquipType = 0,
 		EquipLv = 0,
 		EquipJob = true,
 		EquipQuality = {
@@ -3312,7 +3312,7 @@ local datas = {
 			3,
 		},
 		EquipRate = {
-			10000,
+			0,
 			0,
 			0,
 		},

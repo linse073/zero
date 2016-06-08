@@ -626,17 +626,6 @@ local datas = {
 		isPenetrate = false,
 		skillId = 531117500,
 	},
-	[431116900] = {
-		id = 431116900,
-		effectPath = "monster_bullet4",
-		animationTime = 1,
-		beginX = 100,
-		beginY = 20,
-		endX = 380,
-		endY = 0,
-		isPenetrate = false,
-		skillId = 531116900,
-	},
 	[431115400] = {
 		id = 431115400,
 		effectPath = "monster_bullet9",

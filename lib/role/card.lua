@@ -210,7 +210,7 @@ function card.add_by_cardid(p, d)
     for k, v in ipairs(d.passive) do
         passive_skill[k] = {
             id = v.id,
-            level = 1,
+            level = d.starLv,
             exp = 0,
             status = 0,
         }

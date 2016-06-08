@@ -260,6 +260,8 @@ function CMD.explore(roleid, fight_point)
         update_time = now,
         money = 0,
         bonus = 0,
+        win = 0,
+        fail = 0,
     }
     role_list[roleid] = info
     skynet.call(explore_mgr, "lua", "add", roleid, skynet.self())

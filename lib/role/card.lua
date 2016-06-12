@@ -80,7 +80,7 @@ function card.pack_all()
 end
 
 function card.add_newbie_card(cardid)
-    if not data.type_card[cardid] then
+    if not card.get_by_cardid(cardid) then
         local d = assert(carddata[cardid], string.format("No card data %d.", cardid))
         local pos = {}
         for i = 1, base.MAX_CARD_POSITION_TYPE do
@@ -302,14 +302,26 @@ function proc.upgrade_card(msg)
         error{code = error_code.CARD_SOUL_LIMIT}
     end
     local p = update_user()
+    local pc = {id=cv.id}
+    if cv.level%5 == 0 then
+        if d.evolveId == 0 then
+            error{code = error_code.CARD_CAN_NOT_EVOLVE}
+        end
+        local ecount = item.count(d.evolveItem)
+        if ecount < d.evolveNum then
+            error{code = error_code.CARD_EVOLVE_ITEM_LIMIT}
+        end
+        item.del_by_itemid(p, d.evolveItem, d.evolveNum)
+        cv.cardid = d.evolveId
+        c[4].cardid = cv.cardid
+        pc.cardid = cv.cardid
+    end
     item.del_by_itemid(p, d.soulId, num)
-    local pcard = p.card
     cv.level = cv.level + 1
     c[4].level = cv.level
-    pcard[#pcard+1] = {
-        id = cv.id,
-        level = cv.level,
-    }
+    pc.level = cv.level
+    local pcard = p.card
+    pcard[#pcard+1] = pc
     task.update(p, base.TASK_COMPLETE_UPGRADE_CARD, cv.cardid, 1)
     return "update_user", {update=p}
 end

@@ -38,7 +38,7 @@ local datas = {
 		TaskTalk = "哇，这么快就把魔物收拾了，name好厉害。award",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 100,
+		EXP = 0,
 		profItemId = {
 			3001000031,
 			3002000031,
@@ -86,7 +86,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 110,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -110,7 +110,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 120,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -134,7 +134,7 @@ local datas = {
 		TaskTalk = "最新情报，日光林地深处有一只强大的野猪王。这身装备可是打不过的哦。award",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 130,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -182,7 +182,7 @@ local datas = {
 		TaskTalk = "看来你运气还不错，获得了云叶的魂魄。|提醒一下，水系的云叶对付剧毒怪物可是非常擅长的。",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 140,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -254,7 +254,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 150,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -278,7 +278,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 160,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -302,7 +302,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 170,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -326,7 +326,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 180,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -350,7 +350,7 @@ local datas = {
 		TaskTalk = "name，你真是太厉害了。|看起来你的实力已经可以进入泰坦遗迹去冒险了。里面非常危险，但也有丰厚宝藏，一定要多家小心哦。",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 190,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -422,7 +422,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 200,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -446,7 +446,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 210,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -470,7 +470,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 220,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -494,7 +494,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 230,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -518,7 +518,7 @@ local datas = {
 		TaskTalk = "矿洞终于也安全了。这些强大的魔物为什么会接连出现，这背后肯定有不为人知的阴谋。|哦，对了这是你应得的奖励。award",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 240,
+		EXP = 0,
 		profItemId = {
 			3001010032,
 			3002010032,
@@ -662,7 +662,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 250,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -686,7 +686,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 260,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -710,7 +710,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 270,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -734,7 +734,7 @@ local datas = {
 		TaskTalk = "这里流传着一个古老的传说，据说雪山深处住着一位巨人|要对付雪山巨人感觉你还不够强大哦，你需要改进装备来提升战斗力。|我这里有一些装备和材料，可以试试装备进阶。award",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 280,
+		EXP = 0,
 		profItemId = {
 			3001015022,
 			3002015022,
@@ -758,7 +758,7 @@ local datas = {
 		TaskTalk = "还是毫无线索，雪山之后就是最容易被人利用的食人魔族了，难道是食人魔捣的鬼？|还有哦，魔物，可以为你去收集材料来改进装备呢。",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 290,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -830,7 +830,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 300,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -854,7 +854,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 310,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -878,7 +878,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 320,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -902,7 +902,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 330,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -926,7 +926,7 @@ local datas = {
 		TaskTalk = "你说什么？|食人魔的背后竟然是法老王，它是沙漠的守护者，为什么会去控制食人魔，我门要尽快到达沙漠去了解原因。|要到达法老王的沙漠国度最快的办法就是从港口坐船过去，但是现在港口周边充满了浓雾，肯定是湖泊某种动物变异了。|时间紧迫，为了节约时间，你的装备强化已经解锁。这是强化材料。award",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 340,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -998,7 +998,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 350,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1022,7 +1022,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 360,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1046,7 +1046,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 370,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1070,7 +1070,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 380,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1094,7 +1094,7 @@ local datas = {
 		TaskTalk = "港口的浓雾已经驱散了，可以快速到达沙漠了。|不过在见到法老王之前先要击败它的2个守护者，位于图勒姆戈壁沙虫和图勒姆隔壁沙龙，金字塔的大门才会开启。",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 390,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1166,7 +1166,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 400,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1190,7 +1190,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 410,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1214,7 +1214,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 420,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1238,7 +1238,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 430,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1262,7 +1262,7 @@ local datas = {
 		TaskTalk = "第一个守护者已被击败了，接下来是第二守护者。|封印破碎，散溢的能量使得一些石头充满了能量。可以镶嵌进装备，增强其属性哦。|我刚好找到了一块。award",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 440,
+		EXP = 0,
 		profItemId = {
 			3001035072,
 			3002035072,
@@ -1334,7 +1334,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 450,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1358,7 +1358,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 460,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1382,7 +1382,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 470,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1406,7 +1406,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 480,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1430,7 +1430,7 @@ local datas = {
 		TaskTalk = "哇~，第二个守护者也倒下了，法老王在沙卡拉金子塔的深处。|name深入金字塔深处，去调查一下发生了什么。",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 490,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1454,7 +1454,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 500,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1478,7 +1478,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 510,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1502,7 +1502,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 520,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1526,7 +1526,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 530,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1550,7 +1550,7 @@ local datas = {
 		TaskTalk = "法老王原本是神殿的守护者，现在已被腐化。而金字背后的阿图蒙特神殿被一层腐化的能量所笼罩。|难道神殿中守护这方世界的上古魔物，也被腐化了。|我们需要去驱散神殿周围腐化的能量。",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 540,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1574,7 +1574,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 550,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1598,7 +1598,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 560,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1622,7 +1622,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 570,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1646,7 +1646,7 @@ local datas = {
 		TaskTalk = "",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 580,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,
@@ -1670,7 +1670,7 @@ local datas = {
 		TaskTalk = "经过name的努力阿图蒙特神殿的腐化已经被驱散。|但是守护这方世界的神殿，一共有四座。我们要赶紧赶往去其他三座神殿查探情况！",
 		Gold = 0,
 		RMBMoney = 0,
-		EXP = 590,
+		EXP = 0,
 		profItemId = {
 			0,
 			0,

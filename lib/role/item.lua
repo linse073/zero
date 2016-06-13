@@ -166,6 +166,8 @@ function item.add(v, d)
 end
 
 function item.add_by_itemid(p, num, d)
+    local itemid = d.id
+    assert(num>0, string.format("Add item %d num error.", itemid))
     if d.itemType == base.ITEM_TYPE_AUTO_CHEST then
         local bonus = {}
         for k, v in ipairs(d.chest) do
@@ -173,8 +175,6 @@ function item.add_by_itemid(p, num, d)
         end
         stage.get_bonus(bonus, p)
     else
-        local itemid = d.id
-        assert(num>0, string.format("Add item %d num error.", itemid))
         local pack = p.item
         local overlay = d.overlay
         if overlay > 1 then

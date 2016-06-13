@@ -46,6 +46,9 @@ function proc.add_item(msg)
     if data.user.gm_level == 0 then
         error{code = error_code.ROLE_NO_PERMIT}
     end
+    if not msg.num then
+        error{code = error_code.ERROR_ITEM_NUM}
+    end
     local d = itemdata[msg.itemid]
     if not d then
         error{code = error_code.ITEM_ID_NOT_EXIST}

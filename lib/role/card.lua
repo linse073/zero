@@ -303,10 +303,7 @@ function proc.upgrade_card(msg)
     end
     local p = update_user()
     local pc = {id=cv.id}
-    if cv.level%5 == 0 then
-        if d.evolveId == 0 then
-            error{code = error_code.CARD_CAN_NOT_EVOLVE}
-        end
+    if cv.level%5 == 0 and d.evolveId ~= 0 then
         local ecount = item.count(d.evolveItem)
         if ecount < d.evolveNum then
             error{code = error_code.CARD_EVOLVE_ITEM_LIMIT}

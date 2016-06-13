@@ -6,6 +6,7 @@ local msg = {
     [1003] = "heart_beat",
     [1004] = "heart_beat_response",
     [1005] = "response",
+    [1006] = "update_day",
 
     [2000] = "simple_user",
     [2001] = "account_info",

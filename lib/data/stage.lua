@@ -30,6 +30,7 @@ local datas = {
 		fightPoint = 80,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001012] = {
 		id = 1300001012,
@@ -62,6 +63,7 @@ local datas = {
 		fightPoint = 110,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001013] = {
 		id = 1300001013,
@@ -94,6 +96,7 @@ local datas = {
 		fightPoint = 150,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001014] = {
 		id = 1300001014,
@@ -126,6 +129,7 @@ local datas = {
 		fightPoint = 180,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001015] = {
 		id = 1300001015,
@@ -158,6 +162,7 @@ local datas = {
 		fightPoint = 220,
 		remainHp = 3000,
 		finishTime = 360,
+		des = "",
 	},
 	[1300001021] = {
 		id = 1300001021,
@@ -190,6 +195,7 @@ local datas = {
 		fightPoint = 320,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001022] = {
 		id = 1300001022,
@@ -222,6 +228,7 @@ local datas = {
 		fightPoint = 420,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001023] = {
 		id = 1300001023,
@@ -254,6 +261,7 @@ local datas = {
 		fightPoint = 530,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001024] = {
 		id = 1300001024,
@@ -286,6 +294,7 @@ local datas = {
 		fightPoint = 630,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001025] = {
 		id = 1300001025,
@@ -318,6 +327,7 @@ local datas = {
 		fightPoint = 730,
 		remainHp = 3000,
 		finishTime = 360,
+		des = "",
 	},
 	[1300001031] = {
 		id = 1300001031,
@@ -350,6 +360,7 @@ local datas = {
 		fightPoint = 860,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001032] = {
 		id = 1300001032,
@@ -382,6 +393,7 @@ local datas = {
 		fightPoint = 990,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001033] = {
 		id = 1300001033,
@@ -414,6 +426,7 @@ local datas = {
 		fightPoint = 1120,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001034] = {
 		id = 1300001034,
@@ -446,6 +459,7 @@ local datas = {
 		fightPoint = 1250,
 		remainHp = 3000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001035] = {
 		id = 1300001035,
@@ -478,6 +492,7 @@ local datas = {
 		fightPoint = 1380,
 		remainHp = 3000,
 		finishTime = 360,
+		des = "",
 	},
 	[1300001041] = {
 		id = 1300001041,
@@ -510,6 +525,7 @@ local datas = {
 		fightPoint = 1480,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001042] = {
 		id = 1300001042,
@@ -542,6 +558,7 @@ local datas = {
 		fightPoint = 1580,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001043] = {
 		id = 1300001043,
@@ -574,6 +591,7 @@ local datas = {
 		fightPoint = 1680,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001044] = {
 		id = 1300001044,
@@ -606,6 +624,7 @@ local datas = {
 		fightPoint = 1780,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001045] = {
 		id = 1300001045,
@@ -638,6 +657,7 @@ local datas = {
 		fightPoint = 1880,
 		remainHp = 5000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001051] = {
 		id = 1300001051,
@@ -670,6 +690,7 @@ local datas = {
 		fightPoint = 2020,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001052] = {
 		id = 1300001052,
@@ -702,6 +723,7 @@ local datas = {
 		fightPoint = 2170,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001053] = {
 		id = 1300001053,
@@ -734,6 +756,7 @@ local datas = {
 		fightPoint = 2320,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001054] = {
 		id = 1300001054,
@@ -766,6 +789,7 @@ local datas = {
 		fightPoint = 2460,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001055] = {
 		id = 1300001055,
@@ -798,6 +822,7 @@ local datas = {
 		fightPoint = 2610,
 		remainHp = 5000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001061] = {
 		id = 1300001061,
@@ -830,6 +855,7 @@ local datas = {
 		fightPoint = 2720,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001062] = {
 		id = 1300001062,
@@ -862,6 +888,7 @@ local datas = {
 		fightPoint = 2840,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001063] = {
 		id = 1300001063,
@@ -894,6 +921,7 @@ local datas = {
 		fightPoint = 2950,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001064] = {
 		id = 1300001064,
@@ -926,6 +954,7 @@ local datas = {
 		fightPoint = 3070,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001065] = {
 		id = 1300001065,
@@ -958,6 +987,7 @@ local datas = {
 		fightPoint = 3180,
 		remainHp = 5000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001071] = {
 		id = 1300001071,
@@ -990,6 +1020,7 @@ local datas = {
 		fightPoint = 3380,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001072] = {
 		id = 1300001072,
@@ -1022,6 +1053,7 @@ local datas = {
 		fightPoint = 3590,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001073] = {
 		id = 1300001073,
@@ -1054,6 +1086,7 @@ local datas = {
 		fightPoint = 3790,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001074] = {
 		id = 1300001074,
@@ -1086,6 +1119,7 @@ local datas = {
 		fightPoint = 4000,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001075] = {
 		id = 1300001075,
@@ -1118,6 +1152,7 @@ local datas = {
 		fightPoint = 4200,
 		remainHp = 6000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001081] = {
 		id = 1300001081,
@@ -1150,6 +1185,7 @@ local datas = {
 		fightPoint = 4440,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001082] = {
 		id = 1300001082,
@@ -1182,6 +1218,7 @@ local datas = {
 		fightPoint = 4690,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001083] = {
 		id = 1300001083,
@@ -1214,6 +1251,7 @@ local datas = {
 		fightPoint = 4930,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001084] = {
 		id = 1300001084,
@@ -1246,6 +1284,7 @@ local datas = {
 		fightPoint = 5170,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001085] = {
 		id = 1300001085,
@@ -1278,6 +1317,7 @@ local datas = {
 		fightPoint = 5420,
 		remainHp = 6000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001091] = {
 		id = 1300001091,
@@ -1310,6 +1350,7 @@ local datas = {
 		fightPoint = 5660,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001092] = {
 		id = 1300001092,
@@ -1342,6 +1383,7 @@ local datas = {
 		fightPoint = 5910,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001093] = {
 		id = 1300001093,
@@ -1374,6 +1416,7 @@ local datas = {
 		fightPoint = 6160,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001094] = {
 		id = 1300001094,
@@ -1406,6 +1449,7 @@ local datas = {
 		fightPoint = 6400,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001095] = {
 		id = 1300001095,
@@ -1438,6 +1482,7 @@ local datas = {
 		fightPoint = 6650,
 		remainHp = 6000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300001101] = {
 		id = 1300001101,
@@ -1470,6 +1515,7 @@ local datas = {
 		fightPoint = 6840,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001102] = {
 		id = 1300001102,
@@ -1502,6 +1548,7 @@ local datas = {
 		fightPoint = 7040,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001103] = {
 		id = 1300001103,
@@ -1534,6 +1581,7 @@ local datas = {
 		fightPoint = 7230,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001104] = {
 		id = 1300001104,
@@ -1566,6 +1614,7 @@ local datas = {
 		fightPoint = 7430,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300001105] = {
 		id = 1300001105,
@@ -1598,6 +1647,7 @@ local datas = {
 		fightPoint = 7620,
 		remainHp = 6000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002011] = {
 		id = 1300002011,
@@ -1630,6 +1680,7 @@ local datas = {
 		fightPoint = 840,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002012] = {
 		id = 1300002012,
@@ -1662,6 +1713,7 @@ local datas = {
 		fightPoint = 1060,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002013] = {
 		id = 1300002013,
@@ -1694,6 +1746,7 @@ local datas = {
 		fightPoint = 1260,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002014] = {
 		id = 1300002014,
@@ -1726,6 +1779,7 @@ local datas = {
 		fightPoint = 1460,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002015] = {
 		id = 1300002015,
@@ -1758,6 +1812,7 @@ local datas = {
 		fightPoint = 1720,
 		remainHp = 5000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002021] = {
 		id = 1300002021,
@@ -1790,6 +1845,7 @@ local datas = {
 		fightPoint = 1980,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002022] = {
 		id = 1300002022,
@@ -1822,6 +1878,7 @@ local datas = {
 		fightPoint = 2240,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002023] = {
 		id = 1300002023,
@@ -1854,6 +1911,7 @@ local datas = {
 		fightPoint = 2500,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002024] = {
 		id = 1300002024,
@@ -1886,6 +1944,7 @@ local datas = {
 		fightPoint = 2760,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002025] = {
 		id = 1300002025,
@@ -1918,6 +1977,7 @@ local datas = {
 		fightPoint = 2960,
 		remainHp = 5000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002031] = {
 		id = 1300002031,
@@ -1950,6 +2010,7 @@ local datas = {
 		fightPoint = 3160,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002032] = {
 		id = 1300002032,
@@ -1982,6 +2043,7 @@ local datas = {
 		fightPoint = 3360,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002033] = {
 		id = 1300002033,
@@ -2014,6 +2076,7 @@ local datas = {
 		fightPoint = 3560,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002034] = {
 		id = 1300002034,
@@ -2046,6 +2109,7 @@ local datas = {
 		fightPoint = 3760,
 		remainHp = 5000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002035] = {
 		id = 1300002035,
@@ -2078,6 +2142,7 @@ local datas = {
 		fightPoint = 4040,
 		remainHp = 5000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002041] = {
 		id = 1300002041,
@@ -2110,6 +2175,7 @@ local datas = {
 		fightPoint = 4340,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002042] = {
 		id = 1300002042,
@@ -2142,6 +2208,7 @@ local datas = {
 		fightPoint = 4640,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002043] = {
 		id = 1300002043,
@@ -2174,6 +2241,7 @@ local datas = {
 		fightPoint = 4920,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002044] = {
 		id = 1300002044,
@@ -2206,6 +2274,7 @@ local datas = {
 		fightPoint = 5220,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002045] = {
 		id = 1300002045,
@@ -2238,6 +2307,7 @@ local datas = {
 		fightPoint = 5440,
 		remainHp = 6000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002051] = {
 		id = 1300002051,
@@ -2270,6 +2340,7 @@ local datas = {
 		fightPoint = 5680,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002052] = {
 		id = 1300002052,
@@ -2302,6 +2373,7 @@ local datas = {
 		fightPoint = 5900,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002053] = {
 		id = 1300002053,
@@ -2334,6 +2406,7 @@ local datas = {
 		fightPoint = 6140,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002054] = {
 		id = 1300002054,
@@ -2366,6 +2439,7 @@ local datas = {
 		fightPoint = 6360,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002055] = {
 		id = 1300002055,
@@ -2398,6 +2472,7 @@ local datas = {
 		fightPoint = 6760,
 		remainHp = 6000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002061] = {
 		id = 1300002061,
@@ -2430,6 +2505,7 @@ local datas = {
 		fightPoint = 7180,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002062] = {
 		id = 1300002062,
@@ -2462,6 +2538,7 @@ local datas = {
 		fightPoint = 7580,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002063] = {
 		id = 1300002063,
@@ -2494,6 +2571,7 @@ local datas = {
 		fightPoint = 8000,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002064] = {
 		id = 1300002064,
@@ -2526,6 +2604,7 @@ local datas = {
 		fightPoint = 8400,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002065] = {
 		id = 1300002065,
@@ -2558,6 +2637,7 @@ local datas = {
 		fightPoint = 8880,
 		remainHp = 6000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002071] = {
 		id = 1300002071,
@@ -2590,6 +2670,7 @@ local datas = {
 		fightPoint = 9380,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002072] = {
 		id = 1300002072,
@@ -2622,6 +2703,7 @@ local datas = {
 		fightPoint = 9860,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002073] = {
 		id = 1300002073,
@@ -2654,6 +2736,7 @@ local datas = {
 		fightPoint = 10340,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002074] = {
 		id = 1300002074,
@@ -2686,6 +2769,7 @@ local datas = {
 		fightPoint = 10840,
 		remainHp = 6000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002075] = {
 		id = 1300002075,
@@ -2718,6 +2802,7 @@ local datas = {
 		fightPoint = 11320,
 		remainHp = 6000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002081] = {
 		id = 1300002081,
@@ -2750,6 +2835,7 @@ local datas = {
 		fightPoint = 11820,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002082] = {
 		id = 1300002082,
@@ -2782,6 +2868,7 @@ local datas = {
 		fightPoint = 12320,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002083] = {
 		id = 1300002083,
@@ -2814,6 +2901,7 @@ local datas = {
 		fightPoint = 12800,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002084] = {
 		id = 1300002084,
@@ -2846,6 +2934,7 @@ local datas = {
 		fightPoint = 13300,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002085] = {
 		id = 1300002085,
@@ -2878,6 +2967,7 @@ local datas = {
 		fightPoint = 13680,
 		remainHp = 7000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002091] = {
 		id = 1300002091,
@@ -2910,6 +3000,7 @@ local datas = {
 		fightPoint = 14080,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002092] = {
 		id = 1300002092,
@@ -2942,6 +3033,7 @@ local datas = {
 		fightPoint = 14460,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002093] = {
 		id = 1300002093,
@@ -2974,6 +3066,7 @@ local datas = {
 		fightPoint = 14860,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002094] = {
 		id = 1300002094,
@@ -3006,6 +3099,7 @@ local datas = {
 		fightPoint = 15240,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002095] = {
 		id = 1300002095,
@@ -3038,6 +3132,7 @@ local datas = {
 		fightPoint = 16500,
 		remainHp = 7000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300002101] = {
 		id = 1300002101,
@@ -3070,6 +3165,7 @@ local datas = {
 		fightPoint = 17000,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002102] = {
 		id = 1300002102,
@@ -3102,6 +3198,7 @@ local datas = {
 		fightPoint = 17500,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002103] = {
 		id = 1300002103,
@@ -3134,6 +3231,7 @@ local datas = {
 		fightPoint = 18000,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002104] = {
 		id = 1300002104,
@@ -3166,6 +3264,7 @@ local datas = {
 		fightPoint = 18500,
 		remainHp = 7000,
 		finishTime = 240,
+		des = "",
 	},
 	[1300002105] = {
 		id = 1300002105,
@@ -3198,10 +3297,11 @@ local datas = {
 		fightPoint = 19000,
 		remainHp = 7000,
 		finishTime = 300,
+		des = "",
 	},
 	[1300003011] = {
 		id = 1300003011,
-		name = "通天塔",
+		name = "逃出生天",
 		mapID = 3011,
 		belongTownID = 1,
 		stageType = 6,
@@ -3230,6 +3330,7 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "抓紧时间往上逃跑吧，不要掉下去哦",
 	},
 	[1300003012] = {
 		id = 1300003012,
@@ -3262,6 +3363,7 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "通过重重机关的考验，寻找最终的宝藏",
 	},
 	[1300003013] = {
 		id = 1300003013,
@@ -3294,6 +3396,7 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "击杀源源不断怪物大军，保证自己存活",
 	},
 	[1300003014] = {
 		id = 1300003014,
@@ -3326,10 +3429,11 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "成堆的宝箱等着你，不过要抓紧，时间不等人哦",
 	},
 	[1300003021] = {
 		id = 1300003021,
-		name = "卫兵营地",
+		name = "突出重围",
 		mapID = 3015,
 		belongTownID = 1,
 		stageType = 3,
@@ -3358,10 +3462,11 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "击杀源源不断怪物大军，保证自己存活",
 	},
 	[1300003022] = {
 		id = 1300003022,
-		name = "禁区追猎",
+		name = "遗迹逃生",
 		mapID = 3016,
 		belongTownID = 1,
 		stageType = 5,
@@ -3390,10 +3495,11 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "抓紧时间往前逃跑吧，不要掉下去哦",
 	},
 	[1300003023] = {
 		id = 1300003023,
-		name = "地下皇陵",
+		name = "法老之墓",
 		mapID = 3017,
 		belongTownID = 1,
 		stageType = 3,
@@ -3422,10 +3528,11 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "通过重重机关的考验，寻找最终的宝藏",
 	},
 	[1300003024] = {
 		id = 1300003024,
-		name = "沙漠迷宫",
+		name = "无限幻境",
 		mapID = 3018,
 		belongTownID = 1,
 		stageType = 3,
@@ -3454,6 +3561,7 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "每一个房间都看起来差不多，不要放过任何一个细节，找出正确的道路",
 	},
 	[1300004001] = {
 		id = 1300004001,
@@ -3486,6 +3594,7 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "",
 	},
 	[1300001000] = {
 		id = 1300001000,
@@ -3518,6 +3627,7 @@ local datas = {
 		fightPoint = 0,
 		remainHp = 0,
 		finishTime = 0,
+		des = "",
 	},
 }
 

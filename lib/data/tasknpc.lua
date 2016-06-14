@@ -58,7 +58,7 @@ local datas = {
 	},
 	[1000000004] = {
 		NpcId = 1000000004,
-		NpcName = "",
+		NpcName = "勇士排行榜",
 		NpcTitle = "",
 		TownID = 1001,
 		NpcPosX = 2270,

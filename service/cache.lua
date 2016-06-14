@@ -70,15 +70,9 @@ skynet.start(function()
 
     local area_stage = {}
     for k, v in pairs(stagedata) do
-        if v.bonusID > 0 then
-            v.bonus = assert(bonusdata[v.bonusID], string.format("No bonus data %d.", v.bonusID))
-        end
-        if v.firstBonusID > 0 then
-            v.firstBonus = assert(bonusdata[v.firstBonusID], string.format("No bonus data %d.", v.firstBonusID))
-        end
-        if v.dropBonusID > 0 then
-            v.dropBonus = assert(bonusdata[v.dropBonusID], string.format("No bonus data %d.", v.dropBonusID))
-        end
+        v.bonus = assert(bonusdata[v.bonusID], string.format("No bonus data %d.", v.bonusID))
+        v.firstBonus = assert(bonusdata[v.firstBonusID], string.format("No bonus data %d.", v.firstBonusID))
+        v.dropBonus = assert(bonusdata[v.dropBonusID], string.format("No bonus data %d.", v.dropBonusID))
         local area = k % 10000 // 10
         local s = area_stage[area]
         if s then

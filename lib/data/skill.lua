@@ -421,7 +421,7 @@ local datas = {
 	},
 	[510012070] = {
 		id = 510012070,
-		name = "钢铁火龙",
+		name = "烈焰暴龙",
 		cd = 10.666666665,
 		buffId = 310012070,
 		effect = "monster_hurteffect2.ccbi",
@@ -1319,11 +1319,11 @@ local datas = {
 		power = 0,
 		recoveryTime = "",
 	},
-	[510012050] = {
-		id = 510012050,
+	[510012040] = {
+		id = 510012040,
 		name = "岩石大招",
 		cd = 0,
-		buffId = 310012050,
+		buffId = 310012040,
 		effect = "monster_hurteffect6.ccbi",
 		skillfloat = 0,
 		maxRange = 670,
@@ -1349,11 +1349,11 @@ local datas = {
 		power = 0,
 		recoveryTime = "",
 	},
-	[510012040] = {
-		id = 510012040,
-		name = "格斗大招",
+	[510012050] = {
+		id = 510012050,
+		name = "力量大招",
 		cd = 0,
-		buffId = 310012040,
+		buffId = 310012050,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
 		maxRange = 670,
@@ -1902,7 +1902,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3500;4500",
+		recoveryTime = "7001;8000",
 	},
 	[521075120] = {
 		id = 521075120,
@@ -1917,7 +1917,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3500;4500",
+		recoveryTime = "7000;8000",
 	},
 	[521075130] = {
 		id = 521075130,
@@ -1932,7 +1932,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3500;4500",
+		recoveryTime = "7000;8000",
 	},
 	[521075140] = {
 		id = 521075140,
@@ -1947,7 +1947,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3500;4500",
+		recoveryTime = "7000;8000",
 	},
 	[521085100] = {
 		id = 521085100,
@@ -5146,7 +5146,7 @@ local datas = {
 	},
 	[530120700] = {
 		id = 530120700,
-		name = "钢铁火龙",
+		name = "烈焰暴龙",
 		cd = 0,
 		buffId = 330120700,
 		effect = "monster_hurteffect3.ccbi",
@@ -5911,7 +5911,7 @@ local datas = {
 	},
 	[531120700] = {
 		id = 531120700,
-		name = "钢铁火龙",
+		name = "烈焰暴龙",
 		cd = 0,
 		buffId = 331120700,
 		effect = "monster_hurteffect3.ccbi",

@@ -315,28 +315,18 @@ function proc.end_stage(msg)
     local bonus = {}
     if s then
         money, exp = d.getMoney, d.getExp
-        if d.bonus then
-            bonus[#bonus+1] = {rand_num=1, data=d.bonus}
-        end
+        bonus[#bonus+1] = {rand_num=1, data=d.bonus}
     else
         s = stage.add_by_data(d)
         money, exp = d.firstMoney, d.firstExp
-        if d.firstBonus then
-            bonus[#bonus+1] = {rand_num=1, data=d.firstBonus}
-        end
+        bonus[#bonus+1] = {rand_num=1, data=d.firstBonus}
     end
-    if msg.total_box then
-        if d.dropBonus then
-            bonus[#bonus+1] = {rand_num=msg.total_box, num=msg.pick_box or 0, data=d.dropBonus}
-        end
-    end
+    bonus[#bonus+1] = {rand_num=msg.total_box or 0, num=msg.pick_box or 0, data=d.dropBonus}
     local user = data.user
-    if d.bonus then
-        if user.vip > 0 then
-            bonus[#bonus+1] = {rand_num=1, data=d.bonus}
-        else
-            bonus[#bonus+1] = {rand_num=1, num=0, data=d.bonus}
-        end
+    if user.vip > 0 then
+        bonus[#bonus+1] = {rand_num=1, data=d.bonus}
+    else
+        bonus[#bonus+1] = {rand_num=1, num=0, data=d.bonus}
     end
     new_rand.init(msg.rand_seed)
     local p = update_user()
@@ -425,26 +415,24 @@ function proc.open_chest(msg)
         error{code = error_code.ALREADY_GET_STAGE_BONUS}
     end
     local p = update_user()
-    if d.bonus then
-        local bonus = {}
-        local num = 0
-        if d.moneyType > 0 then
-            local user = data.user
-            local cost = base.STAGE_BONUS_COST[d.moneyType]
-            local fn = role["add_" .. cost]
-            for i = 1, msg.pick_chest do
-                local money = i * d.moneyNum
-                if user[cost] >= money then
-                    fn(p, -money)
-                    num = num + 1
-                else
-                    break
-                end
+    local bonus = {}
+    local num = 0
+    if d.moneyType > 0 then
+        local user = data.user
+        local cost = base.STAGE_BONUS_COST[d.moneyType]
+        local fn = role["add_" .. cost]
+        for i = 1, msg.pick_chest do
+            local money = i * d.moneyNum
+            if user[cost] >= money then
+                fn(p, -money)
+                num = num + 1
+            else
+                break
             end
         end
-        bonus[#bonus+1] = {rand_num=2, num=num, data=d.bonus}
-        stage.get_bonus(bonus, p)
     end
+    bonus[#bonus+1] = {rand_num=2, num=num, data=d.bonus}
+    stage.get_bonus(bonus, p)
     stage_seed.bonus = true
     return "update_user", {update=p}
 end

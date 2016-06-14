@@ -308,7 +308,7 @@ function proc.upgrade_card(msg)
         if ecount < d.evolveNum then
             error{code = error_code.CARD_EVOLVE_ITEM_LIMIT}
         end
-        local nd = assert(carddata[d.evolveId], string.format("No card data %d.", d.evolveId]))
+        local nd = assert(carddata[d.evolveId], string.format("No card data %d.", d.evolveId))
         item.del_by_itemid(p, d.evolveItem, d.evolveNum)
         cv.cardid = d.evolveId
         c[2] = nd

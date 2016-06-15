@@ -13,7 +13,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "414",
-		des = "爆破鼠每次放技能有40%的概率额外增加number点的破甲。",
+		des = "施放技能有40%的概率额外增加number点的破甲。",
 	},
 	[1400210410] = {
 		id = 1400210410,
@@ -29,7 +29,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "爆破鼠造成的混乱时间延长percent%",
+		des = "混乱时间延长percent%",
 	},
 	[1400310410] = {
 		id = 1400310410,
@@ -45,7 +45,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "爆破鼠伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400110240] = {
 		id = 1400110240,
@@ -61,7 +61,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "443",
-		des = "巨钳蟹技能暴击后混乱时间延长percent%",
+		des = "触发暴击后，混乱时间延长percent%",
 	},
 	[1400210240] = {
 		id = 1400210240,
@@ -77,7 +77,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "巨钳蟹造成的混乱时间延长percent%",
+		des = "混乱时间延长percent%",
 	},
 	[1400310240] = {
 		id = 1400310240,
@@ -93,7 +93,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "巨钳蟹伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400112010] = {
 		id = 1400112010,
@@ -109,7 +109,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = -2.5,
 		iconPath = "403",
-		des = "火焰宝宝技能暴击后降低敌人防御number点，持续10秒",
+		des = "触发暴击后，降低敌人防御number点，持续10秒",
 	},
 	[1400212010] = {
 		id = 1400212010,
@@ -125,7 +125,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "火焰宝宝造成的混乱时间延长percent%",
+		des = "混乱时间延长percent%",
 	},
 	[1400312010] = {
 		id = 1400312010,
@@ -141,7 +141,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "火焰宝宝伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111740] = {
 		id = 1400111740,
@@ -157,7 +157,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "437",
-		des = "所有上阵火焰魔灵技能CD加快percent%",
+		des = "所有上阵的火焰魔物CD加快percent%",
 	},
 	[1400211740] = {
 		id = 1400211740,
@@ -173,7 +173,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "机枪堡垒造成的混乱时间延长percent%",
+		des = "混乱时间延长percent%",
 	},
 	[1400311740] = {
 		id = 1400311740,
@@ -189,7 +189,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "机枪堡垒伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411740] = {
 		id = 1400411740,
@@ -205,7 +205,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "434",
-		des = "血量低于50%时，机枪堡垒技能CD加快percent%",
+		des = "血量低于50%后，CD加快percent%",
 	},
 	[1400111800] = {
 		id = 1400111800,
@@ -221,7 +221,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "439",
-		des = "所有上阵火焰魔灵技能伤害提高percent%",
+		des = "所有上阵的火焰魔物伤害提高percent%",
 	},
 	[1400211800] = {
 		id = 1400211800,
@@ -237,7 +237,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "加古拉造成的混乱时间延长percent%",
+		des = "混乱时间延长percent%",
 	},
 	[1400311800] = {
 		id = 1400311800,
@@ -253,7 +253,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "加古拉伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411800] = {
 		id = 1400411800,
@@ -269,7 +269,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 2.5,
 		iconPath = "420",
-		des = "血量低于50%时,格挡提高number点",
+		des = "血量低于50%后，格挡提高number点",
 	},
 	[1400110110] = {
 		id = 1400110110,
@@ -285,7 +285,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "417",
-		des = "火龙每次放技能有40%的概率额外增加number点的暴击。",
+		des = "施放技能有40%的概率额外增加number点的暴击。",
 	},
 	[1400210110] = {
 		id = 1400210110,
@@ -301,7 +301,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "火龙造成的混乱时间延长percent%",
+		des = "混乱时间延长percent%",
 	},
 	[1400310110] = {
 		id = 1400310110,
@@ -317,7 +317,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "火龙伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400410110] = {
 		id = 1400410110,
@@ -333,7 +333,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "417",
-		des = "血量低于50%时,暴击提高number点",
+		des = "血量低于50%后，暴击提高number点",
 	},
 	[1400111760] = {
 		id = 1400111760,
@@ -349,7 +349,7 @@ local datas = {
 		baseData = 250,
 		levelPercent = 10,
 		iconPath = "438",
-		des = "所有上阵火焰魔灵造成的混乱时间延长percent%",
+		des = "所有上阵的火焰魔物造成的混乱时间延长percent%",
 	},
 	[1400211760] = {
 		id = 1400211760,
@@ -365,7 +365,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "星火卡莫造成的混乱时间延长percent%",
+		des = "混乱时间延长percent%",
 	},
 	[1400311760] = {
 		id = 1400311760,
@@ -381,7 +381,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "星火卡莫伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411760] = {
 		id = 1400411760,
@@ -397,7 +397,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "414",
-		des = "星火卡莫每次放技能有40%的概率额外增加number点的破甲。",
+		des = "施放技能有40%的概率额外增加number点的破甲。",
 	},
 	[1400511760] = {
 		id = 1400511760,
@@ -429,7 +429,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "414",
-		des = "泰格拉每次放技能有40%的概率额外增加number点的破甲。",
+		des = "施放技能有40%的概率额外增加number点的破甲。",
 	},
 	[1400210130] = {
 		id = 1400210130,
@@ -445,7 +445,7 @@ local datas = {
 		baseData = 4000,
 		levelPercent = 160,
 		iconPath = "451",
-		des = "泰格拉击飞距离延长percent%",
+		des = "击飞距离延长percent%",
 	},
 	[1400310130] = {
 		id = 1400310130,
@@ -461,7 +461,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "泰格拉伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111000] = {
 		id = 1400111000,
@@ -477,7 +477,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "434",
-		des = "鬃毛盗墓者技能穿透后，下次主动技能CD加快percent%",
+		des = "触发穿透后，下次主动技能CD加快percent%",
 	},
 	[1400211000] = {
 		id = 1400211000,
@@ -493,7 +493,7 @@ local datas = {
 		baseData = 4000,
 		levelPercent = 160,
 		iconPath = "451",
-		des = "鬃毛盗墓者击飞距离延长percent%",
+		des = "击飞距离延长percent%",
 	},
 	[1400311000] = {
 		id = 1400311000,
@@ -509,7 +509,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "鬃毛盗墓者伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111670] = {
 		id = 1400111670,
@@ -525,7 +525,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "419",
-		des = "长耳兔每次放技能有40%的概率额外增加number点的穿刺。",
+		des = "施放技能有40%的概率额外增加number点的穿刺。",
 	},
 	[1400211670] = {
 		id = 1400211670,
@@ -541,7 +541,7 @@ local datas = {
 		baseData = 4000,
 		levelPercent = 160,
 		iconPath = "451",
-		des = "长耳兔击飞距离延长percent%",
+		des = "击飞距离延长percent%",
 	},
 	[1400311670] = {
 		id = 1400311670,
@@ -557,7 +557,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "长耳兔伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111960] = {
 		id = 1400111960,
@@ -573,7 +573,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "439",
-		des = "所有上阵格斗魔灵技能伤害提高percent%",
+		des = "所有上阵的力量魔物伤害提高percent%",
 	},
 	[1400211960] = {
 		id = 1400211960,
@@ -589,7 +589,7 @@ local datas = {
 		baseData = 4000,
 		levelPercent = 160,
 		iconPath = "451",
-		des = "独眼食人魔击飞距离延长percent%",
+		des = "击飞距离延长percent%",
 	},
 	[1400311960] = {
 		id = 1400311960,
@@ -605,7 +605,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "独眼食人魔伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411960] = {
 		id = 1400411960,
@@ -621,7 +621,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 5,
 		iconPath = "413",
-		des = "血量低于50%时,防御提高number点",
+		des = "血量低于50%后，防御提高number点",
 	},
 	[1400111660] = {
 		id = 1400111660,
@@ -637,7 +637,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "437",
-		des = "所有上阵格斗魔灵技能CD加快percent%",
+		des = "所有上阵的力量魔物CD加快percent%",
 	},
 	[1400211660] = {
 		id = 1400211660,
@@ -653,7 +653,7 @@ local datas = {
 		baseData = 4000,
 		levelPercent = 160,
 		iconPath = "451",
-		des = "小野猪击飞距离延长percent%",
+		des = "击飞距离延长percent%",
 	},
 	[1400311660] = {
 		id = 1400311660,
@@ -669,7 +669,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "小野猪伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411660] = {
 		id = 1400411660,
@@ -685,7 +685,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "447",
-		des = "小野猪技能暴击后，减速时间延长percent%",
+		des = "触发暴击后，减速时间延长percent%",
 	},
 	[1400110620] = {
 		id = 1400110620,
@@ -701,7 +701,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "451",
-		des = "所有上阵火焰魔灵击飞的距离延长percent%",
+		des = "所有上阵的火焰魔物击飞的距离延长percent%",
 	},
 	[1400210620] = {
 		id = 1400210620,
@@ -717,7 +717,7 @@ local datas = {
 		baseData = 4000,
 		levelPercent = 160,
 		iconPath = "451",
-		des = "卡卡诺克击飞距离延长percent%",
+		des = "击飞距离延长percent%",
 	},
 	[1400310620] = {
 		id = 1400310620,
@@ -733,7 +733,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "卡卡诺克伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400410620] = {
 		id = 1400410620,
@@ -749,7 +749,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 30,
 		iconPath = "434",
-		des = "血量低于50%时，卡卡诺克技能CD加快percent%",
+		des = "血量低于50%后，CD加快percent%",
 	},
 	[1400510620] = {
 		id = 1400510620,
@@ -781,7 +781,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "414",
-		des = "乌拉每次放技能有40%的概率额外增加number点的破甲。",
+		des = "施放技能有40%的概率额外增加number点的破甲。",
 	},
 	[1400210060] = {
 		id = 1400210060,
@@ -797,7 +797,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "447",
-		des = "乌拉造成的缠绕时间延长percent%",
+		des = "缠绕时间延长percent%",
 	},
 	[1400310060] = {
 		id = 1400310060,
@@ -813,7 +813,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "乌拉伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111540] = {
 		id = 1400111540,
@@ -829,7 +829,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "417",
-		des = "蔓藤精灵每次放技能有40%的概率额外增加number点的暴击。",
+		des = "施放技能有40%的概率额外增加number点的暴击。",
 	},
 	[1400211540] = {
 		id = 1400211540,
@@ -845,7 +845,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "447",
-		des = "蔓藤精灵造成的缠绕时间延长percent%",
+		des = "缠绕时间延长percent%",
 	},
 	[1400311540] = {
 		id = 1400311540,
@@ -861,7 +861,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "蔓藤精灵伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111680] = {
 		id = 1400111680,
@@ -877,7 +877,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 30,
 		iconPath = "434",
-		des = "血量低于50%时，绿叶娃娃技能CD加快percent%",
+		des = "血量低于50%后，CD加快percent%",
 	},
 	[1400211680] = {
 		id = 1400211680,
@@ -893,7 +893,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "447",
-		des = "绿叶娃娃造成的缠绕时间延长percent%",
+		des = "缠绕时间延长percent%",
 	},
 	[1400311680] = {
 		id = 1400311680,
@@ -909,7 +909,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "绿叶娃娃伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400110100] = {
 		id = 1400110100,
@@ -925,7 +925,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "439",
-		des = "所有上阵自然系魔灵技能伤害提高percent%",
+		des = "所有上阵的自然系魔物伤害提高percent%",
 	},
 	[1400210100] = {
 		id = 1400210100,
@@ -941,7 +941,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "447",
-		des = "仙人掌造成的缠绕时间延长percent%",
+		des = "缠绕时间延长percent%",
 	},
 	[1400310100] = {
 		id = 1400310100,
@@ -957,7 +957,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "仙人掌伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400410100] = {
 		id = 1400410100,
@@ -973,7 +973,7 @@ local datas = {
 		baseData = 2000,
 		levelPercent = 80,
 		iconPath = "447",
-		des = "血量低于50%时，仙人掌造成的缠绕时间延长percent%",
+		des = "血量低于50%后，缠绕时间延长percent%",
 	},
 	[1400110150] = {
 		id = 1400110150,
@@ -989,7 +989,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "437",
-		des = "所有上阵自然系魔灵技能CD加快percent%",
+		des = "所有上阵的自然系魔物CD加快percent%",
 	},
 	[1400210150] = {
 		id = 1400210150,
@@ -1005,7 +1005,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "447",
-		des = "瑞妮丝造成的缠绕时间延长percent%",
+		des = "缠绕时间延长percent%",
 	},
 	[1400310150] = {
 		id = 1400310150,
@@ -1021,7 +1021,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "瑞妮丝伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400410150] = {
 		id = 1400410150,
@@ -1037,7 +1037,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 30,
 		iconPath = "434",
-		des = "血量低于50%时，瑞妮丝技能CD加快percent%",
+		des = "血量低于50%后，CD加快percent%",
 	},
 	[1400111840] = {
 		id = 1400111840,
@@ -1053,7 +1053,7 @@ local datas = {
 		baseData = 250,
 		levelPercent = 10,
 		iconPath = "447",
-		des = "所有上阵自然系魔灵造成的缠绕时间延长percent%",
+		des = "所有上阵的自然系魔物造成的缠绕时间延长percent%",
 	},
 	[1400211840] = {
 		id = 1400211840,
@@ -1069,7 +1069,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "447",
-		des = "木灵射手造成的缠绕时间延长percent%",
+		des = "缠绕时间延长percent%",
 	},
 	[1400311840] = {
 		id = 1400311840,
@@ -1085,7 +1085,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "木灵射手伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411840] = {
 		id = 1400411840,
@@ -1101,7 +1101,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "419",
-		des = "木灵射手每次放技能有40%的概率额外增加number点的穿刺。",
+		des = "施放技能有40%的概率额外增加number点的穿刺。",
 	},
 	[1400511840] = {
 		id = 1400511840,
@@ -1133,7 +1133,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 5,
 		iconPath = "418",
-		des = "血量低于50%时,韧性提高number点",
+		des = "血量低于50%后,韧性提高number点",
 	},
 	[1400211700] = {
 		id = 1400211700,
@@ -1149,7 +1149,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "448",
-		des = "鹦鹉螺造成的沉默时间延长percent%",
+		des = "沉默时间延长percent%",
 	},
 	[1400311700] = {
 		id = 1400311700,
@@ -1165,7 +1165,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "鹦鹉螺伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111730] = {
 		id = 1400111730,
@@ -1181,7 +1181,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "414",
-		des = "求雨玩偶每次放技能有40%的概率额外增加number点的破甲。",
+		des = "施放技能有40%的概率额外增加number点的破甲。",
 	},
 	[1400211730] = {
 		id = 1400211730,
@@ -1197,7 +1197,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "448",
-		des = "求雨玩偶造成的沉默时间延长percent%",
+		des = "沉默时间延长percent%",
 	},
 	[1400311730] = {
 		id = 1400311730,
@@ -1213,7 +1213,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "求雨玩偶伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400110070] = {
 		id = 1400110070,
@@ -1229,7 +1229,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = -6.25,
 		iconPath = "403",
-		des = "云叶施放技能后降低敌人防御number点，持续10秒",
+		des = "施放技能有40%的概率降低敌人防御number点，持续10秒",
 	},
 	[1400210070] = {
 		id = 1400210070,
@@ -1245,7 +1245,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "448",
-		des = "云叶造成的沉默时间延长percent%",
+		des = "沉默时间延长percent%",
 	},
 	[1400310070] = {
 		id = 1400310070,
@@ -1261,7 +1261,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "云叶伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111560] = {
 		id = 1400111560,
@@ -1277,7 +1277,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "439",
-		des = "所有上阵水系魔灵技能伤害提高percent%",
+		des = "所有上阵的水系魔物伤害提高percent%",
 	},
 	[1400211560] = {
 		id = 1400211560,
@@ -1293,7 +1293,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "448",
-		des = "骤雨魔女造成的沉默时间延长percent%",
+		des = "沉默时间延长percent%",
 	},
 	[1400311560] = {
 		id = 1400311560,
@@ -1309,7 +1309,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "骤雨魔女伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411560] = {
 		id = 1400411560,
@@ -1325,7 +1325,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 30,
 		iconPath = "434",
-		des = "血量低于50%时，骤雨魔女技能CD加快percent%",
+		des = "血量低于50%后，CD加快percent%",
 	},
 	[1400111710] = {
 		id = 1400111710,
@@ -1341,7 +1341,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "437",
-		des = "所有上阵水系魔灵技能CD加快percent%",
+		des = "所有上阵的水系魔物CD加快percent%",
 	},
 	[1400211710] = {
 		id = 1400211710,
@@ -1357,7 +1357,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "448",
-		des = "宝石水母造成的沉默时间延长percent%",
+		des = "沉默时间延长percent%",
 	},
 	[1400311710] = {
 		id = 1400311710,
@@ -1373,7 +1373,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "宝石水母伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411710] = {
 		id = 1400411710,
@@ -1389,7 +1389,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "417",
-		des = "宝石水母每次放技能有40%的概率额外增加number点的暴击。",
+		des = "施放技能有40%的概率额外增加number点的暴击。",
 	},
 	[1400111880] = {
 		id = 1400111880,
@@ -1405,7 +1405,7 @@ local datas = {
 		baseData = 250,
 		levelPercent = 10,
 		iconPath = "448",
-		des = "所有上阵水系魔灵造成的沉默时间延长percent%",
+		des = "所有上阵的水系魔物沉默时间延长percent%",
 	},
 	[1400211880] = {
 		id = 1400211880,
@@ -1421,7 +1421,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "448",
-		des = "食人鱼造成的沉默时间延长percent%",
+		des = "沉默时间延长percent%",
 	},
 	[1400311880] = {
 		id = 1400311880,
@@ -1437,7 +1437,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "食人鱼伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411880] = {
 		id = 1400411880,
@@ -1453,7 +1453,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "419",
-		des = "食人鱼每次放技能有40%的概率额外增加number点的穿刺。",
+		des = "施放技能有40%的概率额外增加number点的穿刺。",
 	},
 	[1400511880] = {
 		id = 1400511880,
@@ -1485,7 +1485,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "416",
-		des = "内鲁每次放技能有40%的概率额外增加number点的命中。",
+		des = "施放技能有40%的概率额外增加number点的命中。",
 	},
 	[1400211020] = {
 		id = 1400211020,
@@ -1501,7 +1501,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "441",
-		des = "内鲁造成的冰冻时间延长percent%",
+		des = "冰冻时间延长percent%",
 	},
 	[1400311020] = {
 		id = 1400311020,
@@ -1517,7 +1517,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "内鲁伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400110660] = {
 		id = 1400110660,
@@ -1533,7 +1533,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 5,
 		iconPath = "419",
-		des = "血量低于50%时,穿刺提高number点",
+		des = "血量低于50%后,穿刺提高number点",
 	},
 	[1400210660] = {
 		id = 1400210660,
@@ -1549,7 +1549,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "441",
-		des = "冰元素守卫造成的冰冻时间延长percent%",
+		des = "冰冻时间延长percent%",
 	},
 	[1400310660] = {
 		id = 1400310660,
@@ -1565,7 +1565,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "冰元素守卫伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400110370] = {
 		id = 1400110370,
@@ -1581,7 +1581,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "417",
-		des = "血量低于50%时,暴击提高number点",
+		des = "血量低于50%后,暴击提高number点",
 	},
 	[1400210370] = {
 		id = 1400210370,
@@ -1597,7 +1597,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "441",
-		des = "雪胖丁造成的冰冻时间延长percent%",
+		des = "冰冻时间延长percent%",
 	},
 	[1400310370] = {
 		id = 1400310370,
@@ -1613,7 +1613,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "雪胖丁伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111970] = {
 		id = 1400111970,
@@ -1629,7 +1629,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "437",
-		des = "所有上阵寒冰魔灵技能CD加快percent%",
+		des = "所有上阵的寒冰魔物CD加快percent%",
 	},
 	[1400211970] = {
 		id = 1400211970,
@@ -1645,7 +1645,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "441",
-		des = "雪兔宝造成的冰冻时间延长percent%",
+		des = "冰冻时间延长percent%",
 	},
 	[1400311970] = {
 		id = 1400311970,
@@ -1661,7 +1661,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "雪兔宝伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411970] = {
 		id = 1400411970,
@@ -1677,7 +1677,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 30,
 		iconPath = "434",
-		des = "血量低于50%时，雪兔宝技能CD加快percent%",
+		des = "血量低于50%后，CD加快percent%",
 	},
 	[1400111790] = {
 		id = 1400111790,
@@ -1693,7 +1693,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "439",
-		des = "所有上阵水系魔灵技能伤害提高percent%",
+		des = "所有上阵的水系魔物伤害提高percent%",
 	},
 	[1400211790] = {
 		id = 1400211790,
@@ -1709,7 +1709,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "441",
-		des = "深山雪宝造成的冰冻时间延长percent%",
+		des = "冰冻时间延长percent%",
 	},
 	[1400311790] = {
 		id = 1400311790,
@@ -1725,7 +1725,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "深山雪宝伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411790] = {
 		id = 1400411790,
@@ -1741,7 +1741,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "417",
-		des = "深山雪宝每次放技能有40%的概率额外增加number点的暴击。",
+		des = "施放技能有40%的概率额外增加number点的暴击。",
 	},
 	[1400111860] = {
 		id = 1400111860,
@@ -1757,7 +1757,7 @@ local datas = {
 		baseData = 250,
 		levelPercent = 10,
 		iconPath = "441",
-		des = "所有上阵寒冰魔灵造成的冰冻时间延长percent%",
+		des = "所有上阵的寒冰魔物冰冻时间延长percent%",
 	},
 	[1400211860] = {
 		id = 1400211860,
@@ -1773,7 +1773,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "441",
-		des = "深山雪怪造成的冰冻时间延长percent%",
+		des = "冰冻时间延长percent%",
 	},
 	[1400311860] = {
 		id = 1400311860,
@@ -1789,7 +1789,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "深山雪怪伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411860] = {
 		id = 1400411860,
@@ -1805,7 +1805,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 5,
 		iconPath = "413",
-		des = "血量低于50%时,防御提高number点",
+		des = "血量低于50%后,防御提高number点",
 	},
 	[1400511860] = {
 		id = 1400511860,
@@ -1837,7 +1837,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = -6.25,
 		iconPath = "403",
-		des = "戈仑之眼施放技能后降低敌人防御number点，持续10秒",
+		des = "施放技能有40%的概率降低敌人命中number点，持续10秒",
 	},
 	[1400210800] = {
 		id = 1400210800,
@@ -1853,7 +1853,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "戈仑之眼造成的眩晕时间延长percent%",
+		des = "眩晕时间延长percent%",
 	},
 	[1400310800] = {
 		id = 1400310800,
@@ -1869,7 +1869,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "戈仑之眼伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111600] = {
 		id = 1400111600,
@@ -1885,7 +1885,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 5,
 		iconPath = "413",
-		des = "血量低于50%时,防御提高number点",
+		des = "血量低于50%后,防御提高number点",
 	},
 	[1400211600] = {
 		id = 1400211600,
@@ -1901,7 +1901,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "青墙造成的眩晕时间延长percent%",
+		des = "眩晕时间延长percent%",
 	},
 	[1400311600] = {
 		id = 1400311600,
@@ -1917,7 +1917,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "青墙伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400110910] = {
 		id = 1400110910,
@@ -1933,7 +1933,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "443",
-		des = "刺锤瓦鲁特技能暴击后眩晕时间延长percent%",
+		des = "触发暴击后，眩晕时间延长percent%",
 	},
 	[1400210910] = {
 		id = 1400210910,
@@ -1949,7 +1949,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "刺锤瓦鲁特造成的眩晕时间延长percent%",
+		des = "眩晕时间延长percent%",
 	},
 	[1400310910] = {
 		id = 1400310910,
@@ -1965,7 +1965,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "刺锤瓦鲁特伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400110040] = {
 		id = 1400110040,
@@ -1981,7 +1981,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "39",
-		des = "所有上阵岩石魔灵技能伤害提高percent%",
+		des = "所有上阵的岩石魔物伤害提高percent%",
 	},
 	[1400210040] = {
 		id = 1400210040,
@@ -1997,7 +1997,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "熔岩魔造成的眩晕时间延长percent%",
+		des = "眩晕时间延长percent%",
 	},
 	[1400310040] = {
 		id = 1400310040,
@@ -2013,7 +2013,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "熔岩魔伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400410040] = {
 		id = 1400410040,
@@ -2029,7 +2029,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 5,
 		iconPath = "420",
-		des = "血量低于50%时,格挡提高number点",
+		des = "血量低于50%后,格挡提高number点",
 	},
 	[1400111770] = {
 		id = 1400111770,
@@ -2045,7 +2045,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "437",
-		des = "所有上阵岩石魔灵技能CD加快percent%",
+		des = "所有上阵的岩石魔物CD加快percent%",
 	},
 	[1400211770] = {
 		id = 1400211770,
@@ -2061,7 +2061,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "岩石巨鼓造成的眩晕时间延长percent%",
+		des = "眩晕时间延长percent%",
 	},
 	[1400311770] = {
 		id = 1400311770,
@@ -2077,7 +2077,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "岩石巨鼓伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411770] = {
 		id = 1400411770,
@@ -2093,7 +2093,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = -6.25,
 		iconPath = "410",
-		des = "岩石巨鼓施放技能后降低敌人格挡number点，持续10秒",
+		des = "施放技能有40%的概率降低敌人格挡number点，持续10秒",
 	},
 	[1400111900] = {
 		id = 1400111900,
@@ -2109,7 +2109,7 @@ local datas = {
 		baseData = 250,
 		levelPercent = 10,
 		iconPath = "438",
-		des = "所有上阵岩石魔灵造成的眩晕时间延长percent%",
+		des = "所有上阵的岩石魔物造成的眩晕时间延长percent%",
 	},
 	[1400211900] = {
 		id = 1400211900,
@@ -2125,7 +2125,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "435",
-		des = "椰蛋怪造成的眩晕时间延长percent%",
+		des = "眩晕时间延长percent%",
 	},
 	[1400311900] = {
 		id = 1400311900,
@@ -2141,7 +2141,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "椰蛋怪伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411900] = {
 		id = 1400411900,
@@ -2157,7 +2157,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "414",
-		des = "椰蛋怪每次放技能有40%的概率额外增加number点的破甲。",
+		des = "施放技能有40%的概率额外增加number点的破甲。",
 	},
 	[1400511900] = {
 		id = 1400511900,
@@ -2189,7 +2189,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 6.25,
 		iconPath = "419",
-		des = "阿莱娅每次放技能有40%的概率额外增加number点的穿刺。",
+		des = "施放技能有40%的概率额外增加number点的穿刺。",
 	},
 	[1400210850] = {
 		id = 1400210850,
@@ -2205,7 +2205,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "440",
-		des = "阿莱娅造成的中毒时间延长percent%",
+		des = "中毒时间延长percent%",
 	},
 	[1400310850] = {
 		id = 1400310850,
@@ -2221,7 +2221,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "阿莱娅伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111820] = {
 		id = 1400111820,
@@ -2237,7 +2237,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = -6.25,
 		iconPath = "403",
-		des = "毒绿素施放技能后降低敌人防御number点，持续10秒",
+		des = "施放技能有40%的概率降低敌人防御number点，持续10秒",
 	},
 	[1400211820] = {
 		id = 1400211820,
@@ -2253,7 +2253,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "440",
-		des = "毒绿素造成的中毒时间延长percent%",
+		des = "中毒时间延长percent%",
 	},
 	[1400311820] = {
 		id = 1400311820,
@@ -2269,7 +2269,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "毒绿素伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111910] = {
 		id = 1400111910,
@@ -2285,7 +2285,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = -6.25,
 		iconPath = "408",
-		des = "毒素鬼才施放技能后降低敌人韧性number点，持续10秒",
+		des = "施放技能有40%的概率降低敌人韧性number点，持续10秒",
 	},
 	[1400211910] = {
 		id = 1400211910,
@@ -2301,7 +2301,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "440",
-		des = "毒素鬼才造成的中毒时间延长percent%",
+		des = "中毒时间延长percent%",
 	},
 	[1400311910] = {
 		id = 1400311910,
@@ -2317,7 +2317,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "毒素鬼才伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400111810] = {
 		id = 1400111810,
@@ -2333,7 +2333,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "437",
-		des = "所有上阵剧毒魔灵技能CD加快percent%",
+		des = "所有上阵的剧毒魔物CD加快percent%",
 	},
 	[1400211810] = {
 		id = 1400211810,
@@ -2349,7 +2349,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "440",
-		des = "毒汁草造成的中毒时间延长percent%",
+		des = "中毒时间延长percent%",
 	},
 	[1400311810] = {
 		id = 1400311810,
@@ -2365,7 +2365,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "毒汁草伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411810] = {
 		id = 1400411810,
@@ -2381,7 +2381,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = -2.5,
 		iconPath = "403",
-		des = "毒汁草技能暴击后降低敌人防御number点，持续10秒",
+		des = "触发暴击后，降低敌人防御number点，持续10秒",
 	},
 	[1400111870] = {
 		id = 1400111870,
@@ -2397,7 +2397,7 @@ local datas = {
 		baseData = 125,
 		levelPercent = 3.75,
 		iconPath = "439",
-		des = "所有上阵剧毒魔灵技能伤害提高percent%",
+		des = "所有上阵的剧毒魔物伤害提高percent%",
 	},
 	[1400211870] = {
 		id = 1400211870,
@@ -2413,7 +2413,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "440",
-		des = "毒素精灵造成的中毒时间延长percent%",
+		des = "中毒时间延长percent%",
 	},
 	[1400311870] = {
 		id = 1400311870,
@@ -2429,7 +2429,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "毒素精灵伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411870] = {
 		id = 1400411870,
@@ -2445,7 +2445,7 @@ local datas = {
 		baseData = 0,
 		levelPercent = 5,
 		iconPath = "413",
-		des = "血量低于50%时,防御提高number点",
+		des = "血量低于50%后,防御提高number点",
 	},
 	[1400111950] = {
 		id = 1400111950,
@@ -2461,7 +2461,7 @@ local datas = {
 		baseData = 250,
 		levelPercent = 10,
 		iconPath = "440",
-		des = "所有上阵剧毒魔灵造成的中毒时间延长percent%",
+		des = "所有上阵的剧毒魔物造成的中毒时间延长percent%",
 	},
 	[1400211950] = {
 		id = 1400211950,
@@ -2477,7 +2477,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 40,
 		iconPath = "440",
-		des = "圣毒甲虫造成的中毒时间延长percent%",
+		des = "中毒时间延长percent%",
 	},
 	[1400311950] = {
 		id = 1400311950,
@@ -2493,7 +2493,7 @@ local datas = {
 		baseData = 500,
 		levelPercent = 15,
 		iconPath = "436",
-		des = "圣毒甲虫伤害提高percent%。",
+		des = "伤害提高percent%。",
 	},
 	[1400411950] = {
 		id = 1400411950,
@@ -2509,7 +2509,7 @@ local datas = {
 		baseData = 1000,
 		levelPercent = 30,
 		iconPath = "434",
-		des = "血量低于50%时，圣毒甲虫技能CD加快percent%",
+		des = "血量低于50%后，CD加快percent%",
 	},
 	[1400511950] = {
 		id = 1400511950,

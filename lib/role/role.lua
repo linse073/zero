@@ -359,7 +359,7 @@ function role.explore_award(e, a)
     role.finish_explore(p, a)
     task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
     p.explore = e
-    notify.add("update_user", {update=p, explore=a})
+    notify.add("update_user", {update=p, explore_award=a})
 end
 
 -------------------protocol process--------------------------
@@ -621,7 +621,7 @@ function proc.quit_explore(msg)
     local p = update_user()
     role.finish_explore(p, a)
     p.explore = e
-    return "update_user", {update=p, explore=a}
+    return "update_user", {update=p, explore_award=a}
 end
 
 function proc.confirm_explore(msg)

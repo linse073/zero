@@ -500,8 +500,10 @@ local function enter_game(msg)
     end
     local ret = {user=user}
     local explore = skynet.call(explore_mgr, "lua", "get", user.id)
+    local a
     if explore then
-        local e, a = skynet.call(explore, "lua", "enter", user.id)
+        local e
+        e, a = skynet.call(explore, "lua", "enter", user.id)
         if e then
             data.explore = explore
             ret.explore = e
@@ -538,7 +540,7 @@ local function enter_game(msg)
         fight = stageid ~= nil,
     }
     skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
-    return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, rand_seed=seed}
+    return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, rand_seed=seed, explore_award=a}
 end
 function proc.enter_game(msg)
     return proc_queue(cs, enter_game, msg)

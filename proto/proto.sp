@@ -153,21 +153,22 @@
     stage_award 7 : *integer
 }
 
+.explore_award {
+    money 0 : integer
+    num 1 : integer
+    bonus 2 : integer
+    rand_seed 3 : integer
+}
+
 .info_all {
     user 0 : user_all
     start_time 1 : integer
     stage_id 2 : integer
     rand_seed 3 : integer
+    explore_award 4 : explore_award
 }
 
 .update_user {
-    .explore_award {
-        money 0 : integer
-        num 1 : integer
-        bonus 2 : integer
-        rand_seed 3 : integer
-    }
-
     msgid 0 : integer
     update 1 : user_all
     sign_in 2 : integer

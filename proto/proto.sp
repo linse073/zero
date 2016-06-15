@@ -161,11 +161,19 @@
 }
 
 .update_user {
+    .explore_award {
+        money 0 : integer
+        num 1 : integer
+        bonus 2 : integer
+        rand_seed 3 : integer
+    }
+
     msgid 0 : integer
     update 1 : user_all
     sign_in 2 : integer
     rand_seed 3 : integer
     compound_crit 4 : integer
+    explore 5 : explore_award
 }
 
 .update_day {

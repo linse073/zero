@@ -333,7 +333,9 @@ end
 function role.explore_bonus(p, a)
     local d = assert(bonusdata[a.bonus], string.format("No bonus data %d.", a.bonus))
     local bonus = {{rand_num=a.num, data=d}}
-    new_rand.init(floor(skynet.time()))
+    local rand_seed = floor(skynet.time())
+    a.rand_seed = rand_seed
+    new_rand.init(rand_seed)
     stage.get_bonus(bonus, p)
 end
 
@@ -357,7 +359,7 @@ function role.explore_award(e, a)
     role.finish_explore(p, a)
     task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
     p.explore = e
-    notify.add("update_user", {update=p})
+    notify.add("update_user", {update=p, explore=a})
 end
 
 -------------------protocol process--------------------------
@@ -619,7 +621,7 @@ function proc.quit_explore(msg)
     local p = update_user()
     role.finish_explore(p, a)
     p.explore = e
-    return "update_user", {update=p}
+    return "update_user", {update=p, explore=a}
 end
 
 function proc.confirm_explore(msg)

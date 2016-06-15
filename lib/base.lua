@@ -184,7 +184,7 @@ local base = {
         ex = 2600,
         ey = 380,
     },
-    MOVE_SPEED = 300,
+    MOVE_SPEED = 350,
 
     -- rank
     RANK_ARENA = 1,

@@ -173,7 +173,7 @@
     sign_in 2 : integer
     rand_seed 3 : integer
     compound_crit 4 : integer
-    explore 5 : explore_award
+    explore_award 5 : explore_award
 }
 
 .update_day {

@@ -31,7 +31,7 @@ local datas = {
 		},
 		fightPoint = 0.349109738,
 		get = "",
-		skillDes = "丢出一串爆破弹，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "丢出一串爆破弹，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600110241] = {
@@ -66,7 +66,7 @@ local datas = {
 		},
 		fightPoint = 0.329927885,
 		get = "",
-		skillDes = "用温度极高的螯钳击敌人，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "用温度极高的螯钳击敌人，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600112011] = {
@@ -101,7 +101,7 @@ local datas = {
 		},
 		fightPoint = 0.375292969,
 		get = "",
-		skillDes = "向敌人发射一枚火焰弹，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "向敌人发射一枚火焰弹，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600111741] = {
@@ -136,7 +136,7 @@ local datas = {
 		},
 		fightPoint = 0.478634511,
 		get = "",
-		skillDes = "手拿火枪向敌人无情扫射，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "手拿火枪向敌人无情扫射，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600111753] = {
@@ -171,7 +171,7 @@ local datas = {
 		},
 		fightPoint = 0.330257813,
 		get = "",
-		skillDes = "手持火炮向敌人连续炮击，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "手持火炮向敌人连续炮击，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600111801] = {
@@ -206,7 +206,7 @@ local datas = {
 		},
 		fightPoint = 0.492922108,
 		get = "",
-		skillDes = "变身为一枚炸弹攻击敌人，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "变身为一枚炸弹攻击敌人，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600110733] = {
@@ -241,7 +241,7 @@ local datas = {
 		},
 		fightPoint = 0.379606681,
 		get = "",
-		skillDes = "从地底窜出并冲击敌人，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "从地底窜出并冲击敌人，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600110111] = {
@@ -276,7 +276,7 @@ local datas = {
 		},
 		fightPoint = 0.418047864,
 		get = "",
-		skillDes = "向敌人喷射出火焰，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "向敌人喷射出火焰，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600112073] = {
@@ -311,7 +311,7 @@ local datas = {
 		},
 		fightPoint = 0.397900979,
 		get = "",
-		skillDes = "让敌人在火焰中瞬间汽化，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "让敌人在火焰中瞬间汽化，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600111761] = {
@@ -346,7 +346,7 @@ local datas = {
 		},
 		fightPoint = 0.545880682,
 		get = "",
-		skillDes = "向身边丢出燃烧石块，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "向身边丢出燃烧石块，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600111853] = {
@@ -381,7 +381,7 @@ local datas = {
 		},
 		fightPoint = 0.418931686,
 		get = "",
-		skillDes = "喷发出高温岩石砸向敌人，造成percent%的火焰伤害，并灼烧number秒。",
+		skillDes = "喷发出高温岩石砸向敌人，造成percent%的火焰伤害同时灼烧number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600211701] = {
@@ -416,7 +416,7 @@ local datas = {
 		},
 		fightPoint = 0.422865317,
 		get = "",
-		skillDes = "以坠落的形式砸向敌人，造成percent%水系伤害，并沉默number秒。",
+		skillDes = "以坠落的形式砸向敌人，造成percent%水系伤害同时沉默number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600211731] = {
@@ -451,7 +451,7 @@ local datas = {
 		},
 		fightPoint = 0.411279966,
 		get = "",
-		skillDes = "向敌人发射水波弹，造成percent%水系伤害，并沉默number秒。",
+		skillDes = "向敌人发射水波弹，造成percent%水系伤害同时沉默number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600210071] = {
@@ -486,7 +486,7 @@ local datas = {
 		},
 		fightPoint = 0.33359375,
 		get = "",
-		skillDes = "围攻敌人并爆炸，造成percent%水系伤害，并沉默number秒。",
+		skillDes = "围攻敌人并爆炸，造成percent%水系伤害同时沉默number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600211561] = {
@@ -521,7 +521,7 @@ local datas = {
 		},
 		fightPoint = 0.173819901,
 		get = "",
-		skillDes = "会召唤暴雨袭击敌人，造成percent%水系伤害，并沉默number秒。",
+		skillDes = "会召唤暴雨袭击敌人，造成percent%水系伤害同时沉默number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600211723] = {
@@ -556,7 +556,7 @@ local datas = {
 		},
 		fightPoint = 0.366953125,
 		get = "",
-		skillDes = "会施展涌泉术冲击敌人，造成percent%水系伤害，并沉默number秒。",
+		skillDes = "会施展涌泉术冲击敌人，造成percent%水系伤害同时沉默number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600211711] = {
@@ -578,7 +578,7 @@ local datas = {
 		resIcon = "ccsresources/G_1171.png",
 		resView = "monster_1171",
 		hurtView = "monster_hurteffect1",
-		cardDes = "宝石水母在跳圆舞曲的时候触手会打结。",
+		cardDes = "宝石水母在跳圆舞曲的时候触手会打结，但是绝对不会影响它的攻击力。",
 		act = 1,
 		npcID = 1220001171,
 		pvpScale = 1,
@@ -591,7 +591,7 @@ local datas = {
 		},
 		fightPoint = 0.412822266,
 		get = "",
-		skillDes = "触手高速旋转鞭挞敌人，造成percent%水系伤害，并沉默number秒。",
+		skillDes = "触手高速旋转鞭挞敌人，造成percent%水系伤害同时沉默number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600211943] = {
@@ -613,7 +613,7 @@ local datas = {
 		resIcon = "ccsresources/G_1194.png",
 		resView = "monster_1194",
 		hurtView = "monster_hurteffect1",
-		cardDes = "宝石水母的进化型,千万别太靠近它。因为它施展的暗流波动会把你冲到大海里！",
+		cardDes = "宝石水母的进化型,千万别太靠近它。因为它施展的水波暗流会把你冲到大海里！",
 		act = 1,
 		npcID = 1220001194,
 		pvpScale = 1,
@@ -626,7 +626,7 @@ local datas = {
 		},
 		fightPoint = 0.500390625,
 		get = "",
-		skillDes = "会释放强力波浪冲击敌人，造成percent%水系伤害，并沉默number秒。",
+		skillDes = "会释放强力波浪冲击敌人，造成percent%水系伤害同时沉默number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600211881] = {
@@ -661,7 +661,7 @@ local datas = {
 		},
 		fightPoint = 0.545880682,
 		get = "",
-		skillDes = "利用满嘴钢牙撕咬敌人，造成percent%水系伤害，并沉默number秒。",
+		skillDes = "利用满嘴钢牙撕咬敌人，造成percent%水系伤害同时沉默number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600211893] = {
@@ -696,7 +696,7 @@ local datas = {
 		},
 		fightPoint = 0.5146875,
 		get = "",
-		skillDes = "召唤食人鱼围攻敌人，造成percent%水系伤害，并沉默number秒。",
+		skillDes = "召唤食人鱼围攻敌人，造成percent%水系伤害同时沉默number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600310061] = {
@@ -731,7 +731,7 @@ local datas = {
 		},
 		fightPoint = 0.345096983,
 		get = "",
-		skillDes = "跳跃碾压敌人，造成percent%自然系伤害,并缠绕number秒。",
+		skillDes = "跳跃碾压敌人，造成percent%自然系伤害同时缠绕number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600311541] = {
@@ -766,7 +766,7 @@ local datas = {
 		},
 		fightPoint = 0.366139482,
 		get = "",
-		skillDes = "运用月光能量攻击敌人，造成percent%自然系伤害,并缠绕number秒。",
+		skillDes = "运用月光能量攻击敌人，造成percent%自然系伤害同时缠绕number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600311681] = {
@@ -801,7 +801,7 @@ local datas = {
 		},
 		fightPoint = 0.380043513,
 		get = "",
-		skillDes = "释放孢子弹攻击敌人，造成percent%自然系伤害,并缠绕number秒。",
+		skillDes = "释放孢子弹攻击敌人，造成percent%自然系伤害同时缠绕number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600310101] = {
@@ -836,7 +836,7 @@ local datas = {
 		},
 		fightPoint = 0.54140625,
 		get = "",
-		skillDes = "用强有力的直拳招呼对手，造成percent%自然系伤害,并缠绕number秒。",
+		skillDes = "用强有力的直拳招呼对手，造成percent%自然系伤害同时缠绕number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600310923] = {
@@ -871,7 +871,7 @@ local datas = {
 		},
 		fightPoint = 0.375292969,
 		get = "",
-		skillDes = "连续的刺拳让敌人无法招架，造成percent%自然系伤害,并缠绕number秒。",
+		skillDes = "连续的刺拳让敌人无法招架，造成percent%自然系伤害同时缠绕number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600310151] = {
@@ -906,7 +906,7 @@ local datas = {
 		},
 		fightPoint = 0.375292969,
 		get = "",
-		skillDes = "高速挥舞藤蔓切割敌人，造成percent%自然系伤害,并缠绕number秒。",
+		skillDes = "高速挥舞藤蔓切割敌人，造成percent%自然系伤害同时缠绕number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600311553] = {
@@ -941,7 +941,7 @@ local datas = {
 		},
 		fightPoint = 0.320638653,
 		get = "",
-		skillDes = "会使用荆棘刺穿敌人，造成percent%自然系伤害,并缠绕number秒。",
+		skillDes = "会使用荆棘刺穿敌人，造成percent%自然系伤害同时缠绕number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600311841] = {
@@ -976,7 +976,7 @@ local datas = {
 		},
 		fightPoint = 0.562939453,
 		get = "",
-		skillDes = "向敌人发射奥术箭，造成percent%自然系伤害,并缠绕number秒。",
+		skillDes = "向敌人发射奥术箭，造成percent%自然系伤害同时缠绕number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600311933] = {
@@ -1011,7 +1011,7 @@ local datas = {
 		},
 		fightPoint = 0.529825368,
 		get = "",
-		skillDes = "向敌人发射数枚奥术箭，造成percent%自然系伤害,并缠绕number秒。",
+		skillDes = "向敌人发射数枚奥术箭，造成percent%自然系伤害同时缠绕number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600510801] = {
@@ -1033,7 +1033,7 @@ local datas = {
 		resIcon = "ccsresources/G_1080.png",
 		resView = "monster_1080",
 		hurtView = "monster_hurteffect6",
-		cardDes = "它的符石激光每释放一次就要充电12小时 。不如说它是个蓄电池。",
+		cardDes = "它一睁开眼就会释放威力强大的射线，直到它捡到一副特殊的眼镜。",
 		act = 1,
 		npcID = 1220001080,
 		pvpScale = 1,
@@ -1046,7 +1046,7 @@ local datas = {
 		},
 		fightPoint = 0.345096983,
 		get = "",
-		skillDes = "使用激光击穿敌人，造成percent%岩石系伤害，并晕眩number秒。",
+		skillDes = "使用激光击穿敌人，造成percent%岩石系伤害同时晕眩number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600511601] = {
@@ -1081,7 +1081,7 @@ local datas = {
 		},
 		fightPoint = 0.316036184,
 		get = "",
-		skillDes = "靠自身重量碾压敌人，造成percent%岩石系伤害，并晕眩number秒。",
+		skillDes = "靠自身重量碾压敌人，造成percent%岩石系伤害同时晕眩number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600510911] = {
@@ -1103,7 +1103,7 @@ local datas = {
 		resIcon = "ccsresources/G_1091.png",
 		resView = "monster_1091",
 		hurtView = "monster_hurteffect6",
-		cardDes = "瓦鲁特碰到危险会自爆。即使你只是吓了它一跳。",
+		cardDes = "瓦鲁特的身体里充满瓦斯，随时可能发生大爆炸！",
 		act = 1,
 		npcID = 1220001091,
 		pvpScale = 1,
@@ -1116,7 +1116,7 @@ local datas = {
 		},
 		fightPoint = 0.461899038,
 		get = "",
-		skillDes = "自爆伤害让敌人猝不及防，造成percent%岩石系伤害，并晕眩number秒。",
+		skillDes = "自爆伤害让敌人猝不及防，造成percent%岩石系伤害同时晕眩number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600510041] = {
@@ -1151,7 +1151,7 @@ local datas = {
 		},
 		fightPoint = 0.500390625,
 		get = "",
-		skillDes = "锤击地面并对沿途敌人造成percent%岩石系伤害，并晕眩number秒。",
+		skillDes = "锤击地面并对沿途敌人造成percent%岩石系伤害同时晕眩number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600512023] = {
@@ -1173,7 +1173,7 @@ local datas = {
 		resIcon = "ccsresources/G_1202.png",
 		resView = "monster_1202",
 		hurtView = "monster_hurteffect6",
-		cardDes = "熔岩魔的进化型，任何护甲在它的爆裂铁拳下都脆的和纸一样。",
+		cardDes = "熔岩魔的进化型，任何护甲在它的爆裂铁拳击打下都像纸一样脆弱。",
 		act = 1,
 		npcID = 1220001202,
 		pvpScale = 1,
@@ -1186,7 +1186,7 @@ local datas = {
 		},
 		fightPoint = 0.54140625,
 		get = "",
-		skillDes = "锤击地面并用突石攻击敌人，造成percent%岩石系伤害，并晕眩number秒。",
+		skillDes = "锤击地面并用突石攻击敌人，造成percent%岩石系伤害同时晕眩number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600511771] = {
@@ -1221,7 +1221,7 @@ local datas = {
 		},
 		fightPoint = 0.54140625,
 		get = "",
-		skillDes = "向敌人挥舞双拳，造成percent%岩石系伤害，并晕眩number秒。",
+		skillDes = "向敌人挥舞双拳，造成percent%岩石系伤害同时晕眩number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600511783] = {
@@ -1256,7 +1256,7 @@ local datas = {
 		},
 		fightPoint = 0.500390625,
 		get = "",
-		skillDes = "用石锥攻击敌人，造成percent%岩石系伤害，并晕眩number秒。",
+		skillDes = "用石锥攻击敌人，造成percent%岩石系伤害同时晕眩number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600511901] = {
@@ -1291,7 +1291,7 @@ local datas = {
 		},
 		fightPoint = 0.395913462,
 		get = "",
-		skillDes = "卷起身边的砂石碾磨敌人，造成percent%岩石系伤害，并晕眩number秒。",
+		skillDes = "卷起身边的砂石碾磨敌人，造成percent%岩石系伤害同时晕眩number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600511063] = {
@@ -1326,7 +1326,7 @@ local datas = {
 		},
 		fightPoint = 0.379243421,
 		get = "",
-		skillDes = "释放黑龙波毁灭敌人，造成percent%岩石系伤害，并晕眩number秒。",
+		skillDes = "释放黑龙波毁灭敌人，造成percent%岩石系伤害同时晕眩number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600610851] = {
@@ -1361,7 +1361,7 @@ local datas = {
 		},
 		fightPoint = 0.454900568,
 		get = "",
-		skillDes = "使用涂抹毒液的长矛攻击敌人，造成percent%毒系伤害，并中毒number秒。",
+		skillDes = "使用涂抹毒液的长矛攻击敌人，造成percent%剧毒伤害同时中毒number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600611821] = {
@@ -1396,7 +1396,7 @@ local datas = {
 		},
 		fightPoint = 0.4921875,
 		get = "",
-		skillDes = "会向敌人发射毒气弹，造成percent%毒系伤害，并中毒number秒。",
+		skillDes = "会向敌人发射毒气弹，造成percent%剧毒伤害同时中毒number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600611911] = {
@@ -1431,7 +1431,7 @@ local datas = {
 		},
 		fightPoint = 0.370659722,
 		get = "",
-		skillDes = "向敌人泼洒出致命毒液，造成percent%毒系伤害，并中毒number秒。",
+		skillDes = "向敌人泼洒出致命毒液，造成percent%剧毒伤害同时中毒number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600611811] = {
@@ -1466,7 +1466,7 @@ local datas = {
 		},
 		fightPoint = 0.336997768,
 		get = "",
-		skillDes = "挥动毒藤鞭挞敌人，造成percent%毒系伤害，并中毒number秒。",
+		skillDes = "挥动毒藤鞭挞敌人，造成percent%剧毒伤害同时中毒number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600611833] = {
@@ -1501,7 +1501,7 @@ local datas = {
 		},
 		fightPoint = 0.388538603,
 		get = "",
-		skillDes = "运用毒藤碾压敌人，造成percent%毒系伤害，并中毒number秒。",
+		skillDes = "运用毒藤碾压敌人，造成percent%剧毒伤害同时中毒number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600611871] = {
@@ -1536,7 +1536,7 @@ local datas = {
 		},
 		fightPoint = 0.347639803,
 		get = "",
-		skillDes = "会在身边散发毒雾，造成percent%毒系伤害，并中毒number秒。",
+		skillDes = "会在身边散发毒雾，造成percent%剧毒伤害同时中毒number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600611923] = {
@@ -1571,7 +1571,7 @@ local datas = {
 		},
 		fightPoint = 0.508088942,
 		get = "",
-		skillDes = "向敌人喷射出强酸毒液，造成percent%毒系伤害，并中毒number秒。",
+		skillDes = "向敌人喷射出强酸毒液，造成percent%剧毒伤害同时中毒number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600611951] = {
@@ -1606,7 +1606,7 @@ local datas = {
 		},
 		fightPoint = 0.409410511,
 		get = "",
-		skillDes = "向敌人喷射毒液弹，造成percent%毒系伤害，并中毒number秒。",
+		skillDes = "向敌人喷射毒液弹，造成percent%剧毒伤害同时中毒number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600610723] = {
@@ -1641,7 +1641,7 @@ local datas = {
 		},
 		fightPoint = 0.339887972,
 		get = "",
-		skillDes = "向敌人投掷一连串毒气弹，造成percent%毒系伤害，并中毒number秒。",
+		skillDes = "向敌人投掷一连串毒气弹，造成percent%剧毒伤害同时中毒number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600810131] = {
@@ -1676,7 +1676,7 @@ local datas = {
 		},
 		fightPoint = 0.411279966,
 		get = "",
-		skillDes = "使用狼牙棒锤击敌人，造成percent%力系伤害，击飞并减速number秒。",
+		skillDes = "使用狼牙棒锤击敌人，造成percent%力系伤害同时减速number秒，冷却cd秒。",
 		duration = 2,
 	},
 	[1600811001] = {
@@ -1711,7 +1711,7 @@ local datas = {
 		},
 		fightPoint = 0.370659722,
 		get = "",
-		skillDes = "悄然无息的使用匕首击杀敌人，造成percent%力系伤害，击飞并减速number秒。",
+		skillDes = "悄然无息的使用匕首击杀敌人，造成percent%力系伤害同时减速number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600811671] = {
@@ -1746,7 +1746,7 @@ local datas = {
 		},
 		fightPoint = 0.319398271,
 		get = "",
-		skillDes = "挥舞双耳切割身边的敌人，造成percent%力系伤害，击飞并减速number秒。",
+		skillDes = "挥舞双耳切割身边的敌人，造成percent%力系伤害同时减速number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600811961] = {
@@ -1781,7 +1781,7 @@ local datas = {
 		},
 		fightPoint = 0.478634511,
 		get = "",
-		skillDes = "以自身为圆心挥舞双刀并旋转，造成percent%力系伤害，击飞并减速number秒。",
+		skillDes = "以自身为圆心挥舞双刀并旋转，造成percent%力系伤害同时减速number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600810163] = {
@@ -1816,7 +1816,7 @@ local datas = {
 		},
 		fightPoint = 0.344018555,
 		get = "",
-		skillDes = "使用锤击和大压杀二连击会造成percent%力系伤害，击飞并减速number秒。",
+		skillDes = "使用锤击同时大压杀二连击会造成percent%力系伤害同时减速number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600811661] = {
@@ -1851,7 +1851,7 @@ local datas = {
 		},
 		fightPoint = 0.44034375,
 		get = "",
-		skillDes = "召唤一群小野猪猪向敌人发动冲击，造成percent%力系伤害，击飞并减速number秒。",
+		skillDes = "召唤一群小野猪向敌人发动冲击，造成percent%力系伤害同时减速number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600810193] = {
@@ -1873,7 +1873,7 @@ local datas = {
 		resIcon = "ccsresources/G_1019.png",
 		resView = "monster_1019",
 		hurtView = "monster_hurteffect3",
-		cardDes = "小野猪的进化型，我想应该没有愿意尝尝它那强力的冲击力和令人胆寒的獠牙。",
+		cardDes = "小野猪的进化型，我想应该没有人愿意尝尝它那强力的冲击力和令人胆寒的獠牙。",
 		act = 1,
 		npcID = 1220001019,
 		pvpScale = 1,
@@ -1886,7 +1886,7 @@ local datas = {
 		},
 		fightPoint = 0.311563974,
 		get = "",
-		skillDes = "朴实无华的一记全力撞击，造成percent%力系伤害，击飞并减速number秒。",
+		skillDes = "朴实无华的一记全力撞击，造成percent%力系伤害同时减速number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600810621] = {
@@ -1908,7 +1908,7 @@ local datas = {
 		resIcon = "ccsresources/G_1062.png",
 		resView = "monster_1062",
 		hurtView = "monster_hurteffect3",
-		cardDes = "“好心”的泰格拉永远都为敌人准备自制的石棺。",
+		cardDes = "体型巨大的食人魔，会让敌人在它创造的石阵中慢慢受虐而死！",
 		act = 1,
 		npcID = 1220001062,
 		pvpScale = 1,
@@ -1921,7 +1921,7 @@ local datas = {
 		},
 		fightPoint = 0.5146875,
 		get = "",
-		skillDes = "双拳大力砸向地面，造成percent%力系伤害，击飞并减速number秒。",
+		skillDes = "双拳大力砸向地面，造成percent%力系伤害同时减速number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600810613] = {
@@ -1956,7 +1956,7 @@ local datas = {
 		},
 		fightPoint = 0.36028125,
 		get = "",
-		skillDes = "连续发射强力火枪，造成percent%力系伤害，击飞并减速number秒。",
+		skillDes = "连续发射强力火枪，造成percent%力系伤害同时减速number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600911021] = {
@@ -1991,7 +1991,7 @@ local datas = {
 		},
 		fightPoint = 0.283239976,
 		get = "",
-		skillDes = "用锋利的身体切割敌人，造成percent%冰系伤害，并冰冻number秒。",
+		skillDes = "用锋利的身体切割敌人，造成percent%寒冰伤害同时冰冻number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600910661] = {
@@ -2026,7 +2026,7 @@ local datas = {
 		},
 		fightPoint = 0.42890625,
 		get = "",
-		skillDes = "会发射冰冻光线冰冻敌人，造成percent%冰系伤害，并冰冻number秒。",
+		skillDes = "会发射冰冻光线冰冻敌人，造成percent%寒冰伤害同时冰冻number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600910371] = {
@@ -2061,7 +2061,7 @@ local datas = {
 		},
 		fightPoint = 0.435122283,
 		get = "",
-		skillDes = "简单的一拳让敌人痛不欲生，造成percent%冰系伤害，并冰冻number秒。",
+		skillDes = "简单的一拳让敌人痛不欲生，造成percent%寒冰伤害同时冰冻number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600911971] = {
@@ -2096,7 +2096,7 @@ local datas = {
 		},
 		fightPoint = 0.471796875,
 		get = "",
-		skillDes = "向敌人丢出雪球，造成percent%冰系伤害，并冰冻number秒。",
+		skillDes = "向敌人丢出雪球，造成percent%寒冰伤害同时冰冻number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600910333] = {
@@ -2131,7 +2131,7 @@ local datas = {
 		},
 		fightPoint = 0.375292969,
 		get = "",
-		skillDes = "踩着巨大的雪球碾压敌人，造成percent%冰系伤害，并冰冻number秒。",
+		skillDes = "踩着巨大的雪球碾压敌人，造成percent%寒冰伤害同时冰冻number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600911791] = {
@@ -2166,7 +2166,7 @@ local datas = {
 		},
 		fightPoint = 0.508088942,
 		get = "",
-		skillDes = "靠投掷自己脑袋攻击敌人，造成percent%冰系伤害，并冰冻number秒。",
+		skillDes = "靠投掷自己脑袋攻击敌人，造成percent%寒冰伤害同时冰冻number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600911583] = {
@@ -2201,7 +2201,7 @@ local datas = {
 		},
 		fightPoint = 0.412822266,
 		get = "",
-		skillDes = "雪球连射让敌人无力招架，造成percent%冰系伤害，并冰冻number秒。",
+		skillDes = "雪球连射让敌人无力招架，造成percent%寒冰伤害同时冰冻number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600911861] = {
@@ -2236,7 +2236,7 @@ local datas = {
 		},
 		fightPoint = 0.545880682,
 		get = "",
-		skillDes = "它的利爪轻轻松松扎穿敌人，造成percent%冰系伤害，并冰冻number秒。",
+		skillDes = "它的利爪轻轻松松扎穿敌人，造成percent%寒冰伤害同时冰冻number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600910383] = {
@@ -2258,7 +2258,7 @@ local datas = {
 		resIcon = "ccsresources/G_1038.png",
 		resView = "monster_1038",
 		hurtView = "monster_hurteffect4",
-		cardDes = "深山雪怪的进化型，每次说话都捂着嘴巴，不然它一张嘴都能释放寒冰风暴。",
+		cardDes = "深山雪怪的进化型，它会用寒冰风暴把那些闯入领地的陌生人变成一尊冰雕！",
 		act = 1,
 		npcID = 1220001038,
 		pvpScale = 1,
@@ -2271,7 +2271,7 @@ local datas = {
 		},
 		fightPoint = 0.42890625,
 		get = "",
-		skillDes = "施展的寒冰风暴冰冻世界，造成percent%冰系伤害，并冰冻number秒。",
+		skillDes = "施展的寒冰风暴冰冻世界，造成percent%寒冰伤害同时冰冻number秒，冷却cd秒。",
 		duration = 0,
 	},
 	[1600111502] = {
@@ -2293,7 +2293,7 @@ local datas = {
 		resIcon = "",
 		resView = "monster_1150",
 		hurtView = "monster_hurteffect2",
-		cardDes = "集齐火焰魔灵激活烈炎炼狱",
+		cardDes = "集齐火焰魔物激活烈炎炼狱",
 		act = 1,
 		npcID = 0,
 		pvpScale = 1,
@@ -2328,7 +2328,7 @@ local datas = {
 		resIcon = "",
 		resView = "monster_1159",
 		hurtView = "monster_hurteffect1",
-		cardDes = "集齐水系魔灵激活深渊漩涡",
+		cardDes = "集齐水系魔物激活深渊漩涡",
 		act = 1,
 		npcID = 0,
 		pvpScale = 1,
@@ -2363,7 +2363,7 @@ local datas = {
 		resIcon = "",
 		resView = "monster_1149",
 		hurtView = "monster_hurteffect5",
-		cardDes = "集齐自然魔灵激活远古拥抱",
+		cardDes = "集齐自然魔物激活远古拥抱",
 		act = 1,
 		npcID = 0,
 		pvpScale = 1,
@@ -2398,7 +2398,7 @@ local datas = {
 		resIcon = "",
 		resView = "monster_1204",
 		hurtView = "monster_hurteffect6",
-		cardDes = "集齐岩石魔灵激活岩石大招",
+		cardDes = "集齐岩石魔物激活岩石大招",
 		act = 1,
 		npcID = 0,
 		pvpScale = 1,
@@ -2433,7 +2433,7 @@ local datas = {
 		resIcon = "",
 		resView = "monster_1203",
 		hurtView = "monster_hurteffect4",
-		cardDes = "集齐剧毒魔灵激活剧毒大招",
+		cardDes = "集齐剧毒魔物激活剧毒大招",
 		act = 1,
 		npcID = 0,
 		pvpScale = 1,
@@ -2468,7 +2468,7 @@ local datas = {
 		resIcon = "",
 		resView = "monster_1205",
 		hurtView = "monster_hurteffect3",
-		cardDes = "集齐力量魔灵激活力量大招",
+		cardDes = "集齐力量魔物激活格斗大招",
 		act = 1,
 		npcID = 0,
 		pvpScale = 1,
@@ -2503,7 +2503,7 @@ local datas = {
 		resIcon = "",
 		resView = "monster_1148",
 		hurtView = "monster_hurteffect1",
-		cardDes = "集齐寒冰魔灵激活寒月冰魂",
+		cardDes = "集齐寒冰魔物激活寒月冰魂",
 		act = 1,
 		npcID = 0,
 		pvpScale = 1,
@@ -2538,7 +2538,7 @@ local datas = {
 		resIcon = "",
 		resView = "monster_1151",
 		hurtView = "monster_hurteffect3",
-		cardDes = "集齐超能魔灵激活圣灵审判",
+		cardDes = "集齐超能魔物激活圣灵审判",
 		act = 1,
 		npcID = 0,
 		pvpScale = 1,

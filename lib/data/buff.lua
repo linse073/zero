@@ -13,7 +13,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.4163414,
+			0.431383122,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -38,7 +38,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.8326828,
+			0.862766244,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -63,7 +63,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.91595108,
+			0.949042869,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -88,7 +88,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.08248764,
+			1.121596118,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -138,7 +138,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.466302368,
+			0.483149097,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -163,7 +163,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.732760864,
+			0.759234295,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -188,7 +188,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.732760864,
+			0.759234295,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -213,7 +213,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.065833984,
+			1.104340793,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -263,7 +263,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.424668228,
+			0.440010785,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -288,7 +288,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.132448608,
+			1.173362092,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -313,7 +313,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.274004684,
+			1.320032354,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -338,7 +338,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.268956544,
+			0.278673497,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -388,7 +388,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.91595108,
+			0.854138582,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -413,7 +413,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.99921936,
+			0.931787544,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -438,7 +438,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			2.16497528,
+			2.018873012,
 			0,
 		},
 		maxHp_HarmRatio = 0,
@@ -463,7 +463,7 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.49882904,
+			1.397681316,
 			0,
 		},
 		maxHp_HarmRatio = 0,

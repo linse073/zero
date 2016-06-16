@@ -236,7 +236,7 @@ local datas = {
 		shakeTime = 0.15,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 1.22222222222222,
+		power = 1.1,
 		recoveryTime = "",
 	},
 	[500000402] = {
@@ -251,7 +251,7 @@ local datas = {
 		shakeTime = 0.15,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 1.33333333333333,
+		power = 1.2,
 		recoveryTime = "",
 	},
 	[500000403] = {
@@ -266,7 +266,7 @@ local datas = {
 		shakeTime = 0.15,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 2.88888888888889,
+		power = 2.6,
 		recoveryTime = "",
 	},
 	[500000404] = {
@@ -281,7 +281,7 @@ local datas = {
 		shakeTime = 0.15,
 		shakeRange = 4,
 		shakeInterval = 0.1,
-		power = 2,
+		power = 1.8,
 		recoveryTime = "",
 	},
 	[500000405] = {

@@ -47,6 +47,30 @@ local datas = {
 		timelineName = "attack4",
 		duration = 0.85,
 	},
+	[800000009] = {
+		id = 800000009,
+		npcID = 1200000004,
+		timelineName = "attack1",
+		duration = 0.9,
+	},
+	[800000010] = {
+		id = 800000010,
+		npcID = 1200000004,
+		timelineName = "attack2",
+		duration = 0.9,
+	},
+	[800000011] = {
+		id = 800000011,
+		npcID = 1200000004,
+		timelineName = "attack3",
+		duration = 0.9,
+	},
+	[800000012] = {
+		id = 800000012,
+		npcID = 1200000004,
+		timelineName = "attack4",
+		duration = 0.9,
+	},
 }
 
 return datas

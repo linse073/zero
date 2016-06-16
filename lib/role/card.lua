@@ -395,9 +395,6 @@ function proc.upgrade_passive(msg)
         error{code = error_code.ROLE_LEVEL_LIMIT}
     end
     local idata = ps[4]
-    if item.count(idata.id) == 0 then
-        error{code = error_code.ITEM_NUM_LIMIT}
-    end
     local p = update_user()
     local mul = 1
     if msg.rmb and si.status > 0 then
@@ -408,8 +405,12 @@ function proc.upgrade_passive(msg)
         role.add_rmb(p, -rmb)
         mul = 10 * si.status
         si.status = 0
+    else
+        if item.count(idata.id) == 0 then
+            error{code = error_code.ITEM_NUM_LIMIT}
+        end
+        item.del_by_itemid(p, idata.id, 1)
     end
-    item.del_by_itemid(p, idata.id, 1)
     si.exp = si.exp + idata.exp * mul
     local olditem = ps[3].passiveItem
     while true do

@@ -18,6 +18,7 @@ local error_code = {
     ROLE_NO_PERMIT = 2009,
     ROLE_MONEY_LIMIT = 2010,
     ROLE_RMB_LIMIT = 2011,
+    ROLE_OFFLINE = 2012,
 
     ITEM_NOT_EXIST = 2100,
     ERROR_ITEM_POSITION = 2101,
@@ -76,6 +77,8 @@ local error_code = {
     ERROR_EXPLORE_AREA = 2701,
     NOT_EXPLORE = 2702,
     ERROR_EXPLORE_STATUS = 2703,
+
+    ERROR_CHAT_TYPE = 2800,
 }
 
 return error_code

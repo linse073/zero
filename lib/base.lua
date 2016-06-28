@@ -238,6 +238,11 @@ local base = {
     MAX_CHAPTER_STAGE = 5,
 
     SLOT_LEVEL_LIMIT = {35, 40, 45, 50, 60, 70, 80, 90, 100},
+
+    CHAT_TYPE_WORLD = 1,
+    CHAT_TYPE_PRIVATE = 2,
+
+    CHAT_TEXT_ITEM = 1,
 }
 
 return base

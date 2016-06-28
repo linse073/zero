@@ -56,12 +56,12 @@
     fight 3 : boolean
 }
 
-.item_info {
-    .rand_prop {
-        type 0 : integer
-        value 1 : integer
-    }
+.rand_prop {
+    type 0 : integer
+    value 1 : integer
+}
 
+.item_info {
     id 0 : integer
     itemid 1 : integer
     owner 2 : integer
@@ -360,4 +360,19 @@
 
 .get_stage_award {
     area 0 : integer
+}
+
+.chat_info {
+    .chat_item {
+        itemid 0 : integer
+        intensify 1 : integer
+        rand_prop 2 : *rand_prop
+    }
+
+    id 0 : integer
+    name 1 : string
+    type 2 : integer
+    target 3 : integer
+    text 4 : string
+    item 5 : *chat_item
 }

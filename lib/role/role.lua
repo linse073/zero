@@ -651,4 +651,24 @@ function proc.explore_fight(msg)
     return "update_user", {update={explore=e}}
 end
 
+function proc.chat_info(msg)
+    local user = data.user
+    msg.id = user.id
+    msg.name = user.name
+    if msg.type == base.CHAT_TYPE_WORLD then
+        skynet.send(role_mgr, "lua", "broadcast", "chat_info", msg, user.id)
+        return "chat_info", msg
+    elseif msg.type == base.CHAT_TYPE_PRIVATE then
+        local agent = skynet.call(role_mgr, "lua", "get", msg.target)
+        if agent then
+            skynet.send(agent, "lua", "notify", "chat_info", msg)
+            return "chat_info", msg
+        else
+            error{code = error_code.ROLE_OFFLINE}
+        end
+    else
+        error{code = error_code.ERROR_CHAT_TYPE}
+    end
+end
+
 return role

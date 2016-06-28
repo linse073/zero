@@ -242,7 +242,8 @@ local base = {
     CHAT_TYPE_WORLD = 1,
     CHAT_TYPE_PRIVATE = 2,
 
-    CHAT_TEXT_ITEM = 1,
+    CHAT_TEXT_FACE = 1,
+    CHAT_TEXT_ITEM = 2,
 }
 
 return base

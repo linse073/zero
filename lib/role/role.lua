@@ -655,6 +655,9 @@ function proc.chat_info(msg)
     local user = data.user
     msg.id = user.id
     msg.name = user.name
+    msg.level = user.level
+    msg.prof = user.prof
+    msg.fight_point = user.fight_point
     if msg.type == base.CHAT_TYPE_WORLD then
         skynet.send(role_mgr, "lua", "broadcast", "chat_info", msg, user.id)
         return "chat_info", msg

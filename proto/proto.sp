@@ -371,8 +371,11 @@
 
     id 0 : integer
     name 1 : string
-    type 2 : integer
-    target 3 : integer
-    text 4 : string
-    item 5 : *chat_item
+    level 2 : integer
+    prof 3 : integer
+    fight_point 4 : integer
+    type 5 : integer
+    target 6 : integer
+    text 7 : string
+    item 8 : *chat_item
 }

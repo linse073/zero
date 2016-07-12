@@ -41,15 +41,19 @@ function CMD.open()
     exploredb = skynet.call(master, "lua", "get", "exploredb")
     local explore_mgr = skynet.queryservice("explore_mgr")
     local index = 0
+    local list = {}
     repeat
         local res = skynet.call(exploredb, "lua", "scan", index)
         index = res[1]
         for k, v in ipairs(res[2]) do
-            -- NOTICE: v is string, not number
-            local info = skynet.unpack(skynet.call(exploredb, "lua", "get", v))
-            -- TODO: modify start_time and time according to server shutdown time
-            local explore = skynet.call(explore_mgr, "lua", "get_explore", info.area)
-            skynet.call(explore, "lua", "add", info)
+            if not list[v] then
+                -- NOTICE: v is string, not number
+                local info = skynet.unpack(skynet.call(exploredb, "lua", "get", v))
+                -- TODO: modify start_time and time according to server shutdown time
+                local explore = skynet.call(explore_mgr, "lua", "get_explore", info.area)
+                skynet.call(explore, "lua", "add", info)
+                list[v] = true
+            end
         end
     until index == "0"
     timer.add_routine("save_explore", save, 600)

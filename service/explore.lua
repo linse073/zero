@@ -238,12 +238,14 @@ function CMD.enter(roleid)
 end
 
 function CMD.add(info)
-    if info.status == explore_status.NORMAL then
-        skynet.call(rankdb, "lua", "zadd", rankname, -info.fight_point, info.roleid)
-        rank_count = rank_count + 1
+    if not role_list[info.roleid] then
+        if info.status == explore_status.NORMAL then
+            skynet.call(rankdb, "lua", "zadd", rankname, -info.fight_point, info.roleid)
+            rank_count = rank_count + 1
+        end
+        role_list[info.roleid] = info
+        skynet.call(explore_mgr, "lua", "add", info.roleid, skynet.self())
     end
-    role_list[info.roleid] = info
-    skynet.call(explore_mgr, "lua", "add", info.roleid, skynet.self())
 end
 
 function CMD.explore(roleid, fight_point)

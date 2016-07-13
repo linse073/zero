@@ -40,7 +40,7 @@ function CMD.open(conf, gatename)
         status = skynet.call(userdb, "lua", "get", status_key)
         if status then
             skynet.call(userdb, "lua", "del", status_key)
-            skynet.call(statusdb, "lua", "save", status_key, skynet.packstring(status))
+            skynet.call(statusdb, "lua", "save", status_key, status)
         end
     end
     if status then

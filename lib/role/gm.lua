@@ -16,6 +16,7 @@ local expdata
 local taskdata
 local base
 local data
+local mail_mgr
 
 local gm = {}
 local proc = {}
@@ -26,6 +27,7 @@ skynet.init(function()
     expdata = share.expdata
     taskdata = share.taskdata
     base = share.base
+    mail_mgr = skynet.queryservice("mail_mgr")
 end)
 
 function gm.init_module()
@@ -139,6 +141,23 @@ function proc.add_mail(msg)
     local p = update_user()
     p.mail[1] = m
     return "update_user", {update=p}
+end
+
+function proc.broadcast_mail(msg)
+    if data.user.gm_level == 0 then
+        error{code = error_code.ROLE_NO_PERMIT}
+    end
+    local m = {
+        type = msg.type,
+        time = floor(skynet.time()),
+        status = base.MAIL_STATUS_UNREAD,
+        title = msg.title,
+        content = msg.content,
+        item_award = msg.item_award,
+        item_info = msg.item_info,
+    }
+    skynet.call(mail_mgr, "lua", "broadcast", m)
+    return "response", ""
 end
 
 return gm

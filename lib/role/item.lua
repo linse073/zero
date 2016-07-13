@@ -234,6 +234,8 @@ function item.add_by_itemid(p, num, d)
 end
 
 function item.add_by_info(p, v, d)
+    v.status = base.ITEM_STATUS_NORMAL
+    v.status_time = floor(skynet.time())
     item.add(v, d)
     data.user.item[v.id] = v
     local pack = p.item

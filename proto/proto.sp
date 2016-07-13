@@ -354,6 +354,14 @@
     item_info 4 : *item_info
 }
 
+.broadcast_mail {
+    type 0 : integer
+    title 1 : string
+    content 2 : string
+    item_award 3 : *item_award
+    item_info 4 : *item_info
+}
+
 .upgrade_passive {
     id 0 : integer
     skillid 1 : integer

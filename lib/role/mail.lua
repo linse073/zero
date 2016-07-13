@@ -58,6 +58,9 @@ function mail.add(v)
     if not v.id then
         v.id = mail.gen_id()
     end
+    if not v.status then
+        v.status = base.MAIL_STATUS_UNREAD
+    end
     data.mail[v.id] = v
     return v
 end

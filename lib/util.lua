@@ -3,6 +3,7 @@ local crypt = require "crypt"
 local pairs = pairs
 local ipairs = ipairs
 local type = type
+local print = print
 local string = string
 local table = table
 local tostring = tostring

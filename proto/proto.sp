@@ -114,13 +114,12 @@
     fight_point 4 : integer
 }
 
+.item_award {
+    itemid 0 : integer
+    num 1 : integer
+}
 
 .mail_info {
-    .item_award {
-        itemid 0 : integer
-        num 1 : integer
-    }
-
     id 0 : integer
     type 1 : integer
     time 2 : integer
@@ -345,6 +344,14 @@
 
 .set_task {
     id 0 : integer
+}
+
+.add_mail {
+    type 0 : integer
+    title 1 : string
+    content 2 : string
+    item_award 3 : *item_award
+    item_info 4 : *item_info
 }
 
 .upgrade_passive {

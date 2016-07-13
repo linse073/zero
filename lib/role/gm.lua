@@ -5,6 +5,9 @@ local util = require "util"
 local item
 local role
 local task
+local mail
+
+local floor = math.floor
 
 local update_user = util.update_user
 local error_code
@@ -29,6 +32,7 @@ function gm.init_module()
     item = require "role.item"
     role = require "role.role"
     task = require "role.task"
+    mail = require "role.mail"
     return proc
 end
 
@@ -114,6 +118,26 @@ function proc.set_task(msg)
     end
     local p = update_user()
     task.set_task(p, msg.id)
+    return "update_user", {update=p}
+end
+
+function proc.add_mail(msg)
+    if data.user.gm_level == 0 then
+        error{code = error_code.ROLE_NO_PERMIT}
+    end
+    local m = {
+        id = mail.gen_id(),
+        type = msg.type,
+        time = floor(skynet.time())
+        status = base.MAIL_STATUS_UNREAD,
+        title = msg.title,
+        content = msg.content,
+        item_award = msg.item_award,
+        item_info = msg.item_info,
+    }
+    mail.add(m)
+    local p = update_user()
+    p.mail[1] = m
     return "update_user", {update=p}
 end
 

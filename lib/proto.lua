@@ -58,6 +58,7 @@ local msg = {
     [2603] = "add_money",
     [2604] = "add_rmb",
     [2605] = "set_task",
+    [2606] = "add_mail",
 
     [2700] = "query_rank",
     [2701] = "rank_list",

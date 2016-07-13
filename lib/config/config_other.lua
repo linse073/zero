@@ -56,14 +56,20 @@ config.db = {
     {
         host = "127.0.0.1",
         port = 6379,
-        db = db_base - 1,
+        db = db_base + 6,
         name = "exploredb",
     },
     {
         host = "127.0.0.1",
         port = 6379,
-        db = db_base - 2,
+        db = db_base + 7,
         name = "maildb",
+    },
+    {
+        host = "127.0.0.1",
+        port = 6379,
+        db = db_base + 8,
+        name = "statusdb",
     },
 }
 

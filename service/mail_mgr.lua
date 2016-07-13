@@ -11,7 +11,7 @@ local role_mgr
 local CMD = {}
 
 function CMD.broadcast(info)
-    local index
+    local index = 0
     local list = {}
     repeat
         local res = skynet.call(userdb, "lua", "scan", index)

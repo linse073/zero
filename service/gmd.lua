@@ -1,7 +1,8 @@
 local skynet = require "skynet"
 
+local arg = ...
 
 skynet.start(function()
-    print(...)
+    print(arg)
     skynet.exit()
 end)

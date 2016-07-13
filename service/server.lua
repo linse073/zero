@@ -88,7 +88,7 @@ function CMD.gen_card()
     return cardid
 end
 
-function CMD.get_mail()
+function CMD.gen_mail()
     local mailid = status.mailid * 10000 + 4000 + serverid
     status.mailid = status.mailid + 1
     skynet.call(statusdb, "lua", "save", status_key, skynet.packstring(status))

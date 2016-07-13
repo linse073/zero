@@ -68,7 +68,7 @@ function CMD.lpush(key, value)
 end
 
 function CMD.lrange(key, r1, r2)
-    db:lrange(key, r1, r2)
+    return db:lrange(key, r1, r2)
 end
 
 skynet.start(function()

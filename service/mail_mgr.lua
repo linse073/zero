@@ -18,7 +18,12 @@ function CMD.broadcast(info)
         index = res[1]
         for k, v in ipairs(res[2]) do
             if not list[v] then
-                CMD.send(tonumber(v), info)
+                local roleid = tonumber(v)
+                if roleid then
+                    CMD.send(roleid, info)
+                else
+                    skynet.error(string.format("Error role id %s.", v))
+                end
                 list[v] = true
             end
         end

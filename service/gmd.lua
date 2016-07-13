@@ -15,7 +15,7 @@ local arg = {...}
 
 local CMD = {}
 
-function CMD.add_mail(id, mtype, title, content)
+function CMD.send_mail(id, mtype, title, content)
     id = tonumber(id)
     mtype = tonumber(mtype)
     local m = {

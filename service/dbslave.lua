@@ -63,6 +63,14 @@ function CMD.scan(i)
     return db:scan(i)
 end
 
+function CMD.lpush(key, value)
+    db:lpush(key, value)
+end
+
+function CMD.lrange(key, r1, r2)
+    db:lrange(key, r1, r2)
+end
+
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

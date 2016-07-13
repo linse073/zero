@@ -233,6 +233,13 @@ function item.add_by_itemid(p, num, d)
     end
 end
 
+function item.add_by_info(p, v, d)
+    item.add(v, d)
+    data.user.item[v.id] = v
+    local pack = p.item
+    pack[#pack+1] = v
+end
+
 function item.rand_prop(v, d, r)
     local rand_prop = v.rand_prop
     if r then

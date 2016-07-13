@@ -79,6 +79,9 @@ local error_code = {
     ERROR_EXPLORE_STATUS = 2703,
 
     ERROR_CHAT_TYPE = 2800,
+
+    MAIL_NOT_EXIST = 2900,
+    ERROR_MAIL_STATUS = 2901,
 }
 
 return error_code

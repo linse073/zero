@@ -40,7 +40,7 @@ function CMD.open()
     local master = skynet.queryservice("dbmaster")
     exploredb = skynet.call(master, "lua", "get", "exploredb")
     local explore_mgr = skynet.queryservice("explore_mgr")
-    local index = 0
+    local index
     local list = {}
     repeat
         local res = skynet.call(exploredb, "lua", "scan", index)

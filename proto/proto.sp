@@ -114,6 +114,23 @@
     fight_point 4 : integer
 }
 
+
+.mail_info {
+    .item_award {
+        itemid 0 : integer
+        num 1 : integer
+    }
+
+    id 0 : integer
+    type 1 : integer
+    time 2 : integer
+    status 3 : integer
+    title 4 : string
+    content 5 : string
+    item_award 6 : *item_award
+    item_info 7 : *item_info
+}
+
 .rank_info {
     .simple_card {
         id 0 : integer
@@ -149,8 +166,9 @@
     task 3 : *task_info
     card 4 : *card_info
     friend 5 : *friend_info
-    explore 6 : explore_info
-    stage_award 7 : *integer
+    mail 6 : *mail_info
+    explore 7 : explore_info
+    stage_award 8 : *integer
 }
 
 .explore_award {
@@ -378,4 +396,12 @@
     target 6 : integer
     text 7 : string
     item 8 : *chat_item
+}
+
+.read_mail {
+    id 0 : integer
+}
+
+.del_mail {
+    id 0 : integer
 }

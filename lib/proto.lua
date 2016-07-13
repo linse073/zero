@@ -72,6 +72,9 @@ local msg = {
     [2903] = "explore_fight",
 
     [3000] = "chat_info",
+
+    [3100] = "read_mail",
+    [3101] = "del_mail",
 }
 local name_msg = {}
 

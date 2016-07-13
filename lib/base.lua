@@ -244,6 +244,16 @@ local base = {
 
     CHAT_TEXT_FACE = 1,
     CHAT_TEXT_ITEM = 2,
+
+    MAIL_STATUS_UNREAD = 1,
+    MAIL_STATUS_READ = 2,
+    MAIL_STATUS_DELETE = 3,
+
+    MAIL_TYPE_TEXT = 1,
+    MAIL_TYPE_CHEST = 2,
+    MAIL_TYPE_EXPLORE = 3,
+    MAIL_TYPE_ARENA = 4,
+    MAIL_TYPE_TRADE = 5,
 }
 
 return base

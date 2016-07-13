@@ -100,6 +100,10 @@ function CMD.explore_award(source, award)
     role.explore_award(award)
 end
 
+function CMD.mail(source, info)
+    role.mail(info)
+end
+
 skynet.start(function()
     msg = share.msg
     name_msg = share.name_msg

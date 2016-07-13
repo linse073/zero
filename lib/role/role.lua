@@ -14,6 +14,7 @@ local stage
 local task
 local gm
 local rank
+local mail
 
 local pairs = pairs
 local ipairs = ipairs
@@ -45,6 +46,7 @@ local proc = {}
 local role_mgr
 local fight_point_rank
 local explore_mgr
+local mail_mgr
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
@@ -63,6 +65,7 @@ skynet.init(function()
     role_mgr = skynet.queryservice("role_mgr")
     fight_point_rank = skynet.queryservice("fight_point_rank")
     explore_mgr = skynet.queryservice("explore_mgr")
+    mail_mgr = skynet.queryservice("mail_mgr")
 end)
 
 function role.init_module()
@@ -73,7 +76,8 @@ function role.init_module()
     task = require "role.task"
     gm = require "role.gm"
     rank = require "role.rank"
-    module = {card, friend, item, stage, task, gm, rank}
+    mail = require "role.mail"
+    module = {card, friend, item, stage, task, gm, rank, mail}
     for k, v in ipairs(module) do
         merge_table(proc, v.init_module())
     end
@@ -328,6 +332,9 @@ function role.repair(user)
     if not user.stage_award then
         user.stage_award = {}
     end
+    if not user.mail then
+        user.mail = {}
+    end
 end
 
 function role.explore_bonus(p, a)
@@ -360,6 +367,13 @@ function role.explore_award(e, a)
     task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
     p.explore = e
     notify.add("update_user", {update=p, explore_award=a})
+end
+
+function role.mail(info)
+    mail.add(info)
+    local p = update_user()
+    p.mail[1] = info
+    notify.add("update_user", {update=p})
 end
 
 -------------------protocol process--------------------------
@@ -434,6 +448,7 @@ function proc.create_user(msg)
         stage = {},
         task = {},
         friend = {},
+        mail = {},
     }
     skynet.call(data.userdb, "lua", "save", roleid, skynet.packstring(u))
     return "simple_user", su
@@ -512,6 +527,12 @@ local function enter_game(msg)
                 role.finish_explore(p, a)
                 task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
             end
+        end
+    end
+    local om = skynet.call(mail_mgr, "lua", "get", user.id)
+    if om then
+        for k, v in ipairs(om) do
+            mail.add(v)
         end
     end
     for k, v in ipairs(module) do

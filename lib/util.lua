@@ -88,6 +88,7 @@ function util.update_user()
         task = {},
         card = {},
         friend = {},
+        mail = {},
     }
 end
 

@@ -47,6 +47,7 @@ skynet.start(function()
     -- TODO: server shutdown time
     skynet.call(save_explore, "lua", "open")
     skynet.uniqueservice("agent_mgr")
+    skynet.uniqueservice("mail_mgr")
 
 	local loginserver = skynet.newservice("logind")
     local gate = skynet.newservice("gated", loginserver)

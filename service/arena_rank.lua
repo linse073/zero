@@ -77,7 +77,6 @@ function CMD.query(roleid)
 end
 
 skynet.start(function()
-    cs = queue()
     local master = skynet.queryservice("dbmaster")
     rankdb = skynet.call(master, "lua", "get", "rankdb")
     count = skynet.call(rankdb, "lua", "zcount", "arena")

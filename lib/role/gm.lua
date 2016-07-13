@@ -128,7 +128,7 @@ function proc.add_mail(msg)
     local m = {
         id = mail.gen_id(),
         type = msg.type,
-        time = floor(skynet.time())
+        time = floor(skynet.time()),
         status = base.MAIL_STATUS_UNREAD,
         title = msg.title,
         content = msg.content,

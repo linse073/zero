@@ -20,7 +20,7 @@ function CMD.broadcast_mail(info)
             if not list[v] then
                 local roleid = tonumber(v)
                 if roleid then
-                    CMD.send(roleid, info)
+                    CMD.send_mail(roleid, info)
                 else
                     skynet.error(string.format("Error roleid %s.", v))
                 end

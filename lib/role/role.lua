@@ -50,6 +50,19 @@ local offline_mgr
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
+local function offline_mail(info)
+    mail.add(info)
+end
+
+local function offline_friend(info)
+    friend.add(info)
+end
+
+local offline_action = {
+    mail = offline_mail,
+    friend = offline_friend,
+}
+
 local function action_mail(info)
     mail.add(info)
     local p = update_user()
@@ -63,11 +76,6 @@ end
 local action = {
     mail = action_mail,
     friend = action_friend,
-}
-
-local offline_action = {
-    mail = mail.add,
-    friend = friend.add,
 }
 
 skynet.init(function()

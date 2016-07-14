@@ -35,7 +35,7 @@ function CMD.send_mail(roleid, info)
     if agent then
         skynet.call(agent, "lua", "action", "mail", info)
     else
-        skynet.call(offlinedb, "lua", "lpush", roleid, skynet.packstring({"mail", info}))
+        skynet.call(offlinedb, "lua", "rpush", roleid, skynet.packstring({"mail", info}))
     end
 end
 

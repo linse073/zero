@@ -67,6 +67,10 @@ function CMD.lpush(key, value)
     db:lpush(key, value)
 end
 
+function CMD.rpush(key, value)
+    db:rpush(key, value)
+end
+
 function CMD.lrange(key, r1, r2)
     return db:lrange(key, r1, r2)
 end

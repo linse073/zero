@@ -4,13 +4,13 @@ local ipairs = ipairs
 local assert = assert
 local tonumber = tonumber
 
-local maildb
+local offlinedb
 local userdb
 local role_mgr
 
 local CMD = {}
 
-function CMD.broadcast(info)
+function CMD.broadcast_mail(info)
     local index = 0
     local list = {}
     repeat
@@ -22,7 +22,7 @@ function CMD.broadcast(info)
                 if roleid then
                     CMD.send(roleid, info)
                 else
-                    skynet.error(string.format("Error role id %s.", v))
+                    skynet.error(string.format("Error roleid %s.", v))
                 end
                 list[v] = true
             end
@@ -30,30 +30,30 @@ function CMD.broadcast(info)
     until index == "0"
 end
 
-function CMD.send(roleid, info)
+function CMD.send_mail(roleid, info)
     local agent = skynet.call(role_mgr, "lua", "get", roleid)
     if agent then
-        skynet.call(agent, "lua", "mail", info)
+        skynet.call(agent, "lua", "action", "mail", info)
     else
-        skynet.call(maildb, "lua", "lpush", roleid, skynet.packstring(info))
+        skynet.call(offlinedb, "lua", "lpush", roleid, skynet.packstring({"mail", info}))
     end
 end
 
 function CMD.get(roleid)
-    local m = skynet.call(maildb, "lua", "lrange", roleid, 0, -1)
+    local m = skynet.call(offlinedb, "lua", "lrange", roleid, 0, -1)
     if m then
         local r = {}
         for k, v in ipairs(m) do
             r[k] = skynet.unpack(v)
         end
-        skynet.call(maildb, "lua", "del", roleid)
+        skynet.call(offlinedb, "lua", "del", roleid)
         return r
     end
 end
 
 skynet.start(function()
     local master = skynet.queryservice("dbmaster")
-    maildb = skynet.call(master, "lua", "get", "maildb")
+    offlinedb = skynet.call(master, "lua", "get", "offlinedb")
     userdb = skynet.call(master, "lua", "get", "userdb")
     role_mgr = skynet.queryservice("role_mgr")
 

@@ -63,7 +63,7 @@ config.db = {
         host = "127.0.0.1",
         port = 6379,
         db = db_base + 7,
-        name = "maildb",
+        name = "offlinedb",
     },
     {
         host = "127.0.0.1",

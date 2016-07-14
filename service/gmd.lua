@@ -27,8 +27,8 @@ function CMD.send_mail(id, mtype, title, content)
             {itemid=3000000091, num=2},
         },
     }
-    local mail_mgr = skynet.queryservice("mail_mgr")
-    skynet.call(mail_mgr, "lua", "send", id, m)
+    local offline_mgr = skynet.queryservice("offline_mgr")
+    skynet.call(offline_mgr, "lua", "send_mail", id, m)
 end
 
 function CMD.broadcast_mail(mtype, title, content)
@@ -42,8 +42,8 @@ function CMD.broadcast_mail(mtype, title, content)
             {itemid=3000000091, num=2},
         },
     }
-    local mail_mgr = skynet.queryservice("mail_mgr")
-    skynet.call(mail_mgr, "lua", "broadcast", m)
+    local offline_mgr = skynet.queryservice("offline_mgr")
+    skynet.call(offline_mgr, "lua", "broadcast_mail", m)
 end
 
 skynet.start(function()

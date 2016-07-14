@@ -16,7 +16,7 @@ local expdata
 local taskdata
 local base
 local data
-local mail_mgr
+local offline_mgr
 
 local gm = {}
 local proc = {}
@@ -27,7 +27,7 @@ skynet.init(function()
     expdata = share.expdata
     taskdata = share.taskdata
     base = share.base
-    mail_mgr = skynet.queryservice("mail_mgr")
+    offline_mgr = skynet.queryservice("offline_mgr")
 end)
 
 function gm.init_module()
@@ -156,7 +156,7 @@ function proc.broadcast_mail(msg)
         item_award = msg.item_award,
         item_info = msg.item_info,
     }
-    skynet.call(mail_mgr, "lua", "broadcast", m)
+    skynet.call(offline_mgr, "lua", "broadcast_mail", m)
     return "response", ""
 end
 

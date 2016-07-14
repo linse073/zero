@@ -46,9 +46,29 @@ local proc = {}
 local role_mgr
 local fight_point_rank
 local explore_mgr
-local mail_mgr
+local offline_mgr
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
+
+local function action_mail(info)
+    mail.add(info)
+    local p = update_user()
+    p.mail[1] = info
+    notify.add("update_user", {update=p})
+end
+
+local function action_friend(info)
+end
+
+local action = {
+    mail = action_mail,
+    friend = action_friend,
+}
+
+local offline_action = {
+    mail = mail.add,
+    friend = friend.add,
+}
 
 skynet.init(function()
     expdata = share.expdata
@@ -65,7 +85,7 @@ skynet.init(function()
     role_mgr = skynet.queryservice("role_mgr")
     fight_point_rank = skynet.queryservice("fight_point_rank")
     explore_mgr = skynet.queryservice("explore_mgr")
-    mail_mgr = skynet.queryservice("mail_mgr")
+    offline_mgr = skynet.queryservice("offline_mgr")
 end)
 
 function role.init_module()
@@ -369,11 +389,8 @@ function role.explore_award(e, a)
     notify.add("update_user", {update=p, explore_award=a})
 end
 
-function role.mail(info)
-    mail.add(info)
-    local p = update_user()
-    p.mail[1] = info
-    notify.add("update_user", {update=p})
+function role.action(otype, info)
+    action[otype](info)
 end
 
 -------------------protocol process--------------------------
@@ -529,10 +546,10 @@ local function enter_game(msg)
             end
         end
     end
-    local om = skynet.call(mail_mgr, "lua", "get", user.id)
+    local om = skynet.call(offline_mgr, "lua", "get", user.id)
     if om then
         for k, v in ipairs(om) do
-            mail.add(v)
+            offline_action[v[1]](v[2])
         end
     end
     for k, v in ipairs(module) do

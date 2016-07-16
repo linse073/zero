@@ -18,24 +18,20 @@ function CMD.broadcast_mail(info)
         index = res[1]
         for k, v in ipairs(res[2]) do
             if not list[v] then
-                local roleid = tonumber(v)
-                if roleid then
-                    CMD.send_mail(roleid, info)
-                else
-                    skynet.error(string.format("Error roleid %s.", v))
-                end
+                local roleid = assert(tonumber(v), string.format("Error roleid %s.", v))
+                CMD.add("mail", roleid, info)
                 list[v] = true
             end
         end
     until index == "0"
 end
 
-function CMD.send_mail(roleid, info)
+function CMD.add(otype, roleid, info)
     local agent = skynet.call(role_mgr, "lua", "get", roleid)
     if agent then
-        skynet.call(agent, "lua", "action", "mail", info)
+        skynet.call(agent, "lua", "action", otype, info)
     else
-        skynet.call(offlinedb, "lua", "rpush", roleid, skynet.packstring({"mail", info}))
+        skynet.call(offlinedb, "lua", "rpush", roleid, skynet.packstring({otype, info}))
     end
 end
 

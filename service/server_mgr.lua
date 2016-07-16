@@ -30,6 +30,10 @@ function CMD.get(serverid)
     return assert(server_list[serverid], string.format("No server %d.", serverid))
 end
 
+function CMD.get_all()
+    return server_list
+end
+
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

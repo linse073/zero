@@ -112,6 +112,7 @@
     prof 2 : integer
     level 3 : integer
     fight_point 4 : integer
+    status 5 : integer
 }
 
 .item_award {
@@ -419,4 +420,25 @@
 
 .del_mail {
     id 0 : integer
+}
+
+.request_friend {
+    id 0 : integer
+}
+
+.confirm_friend {
+    id 0 : integer
+    accept 1 : integer
+}
+
+.blacklist {
+    id 0 : integer
+}
+
+.del_friend {
+    id 0 : integer
+}
+
+.query_friend {
+    name 0 : string
 }

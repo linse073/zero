@@ -50,33 +50,17 @@ local offline_mgr
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
-local function offline_mail(info)
-    mail.add(info)
-end
+local action
 
-local function offline_friend(info)
-    friend.add(info)
-end
-
-local offline_action = {
-    mail = offline_mail,
-    friend = offline_friend,
-}
-
-local function action_mail(info)
+local function notify_mail(info)
     mail.add(info)
     local p = update_user()
     p.mail[1] = info
     notify.add("update_user", {update=p})
 end
 
-local function action_friend(info)
+local function notify_friend(info)
 end
-
-local action = {
-    mail = action_mail,
-    friend = action_friend,
-}
 
 skynet.init(function()
     expdata = share.expdata
@@ -109,6 +93,18 @@ function role.init_module()
     for k, v in ipairs(module) do
         merge_table(proc, v.init_module())
     end
+    action = {
+        mail = {
+            add = mail.add,
+            notify = notify_mail,
+            get = mail.get,
+        },
+        friend = {
+            add = friend.add,
+            notify = notify_friend,
+            get = friend.get,
+        }
+    }
     return proc
 end
 
@@ -122,6 +118,7 @@ function role.init(userdata)
     local master = skynet.queryservice("dbmaster")
     data.accdb = skynet.call(master, "lua", "get", "accountdb")
     data.userdb = skynet.call(master, "lua", "get", "userdb")
+    data.namedb = skynet.call(master, "lua", "get", "namedb")
     data.rankinfodb = skynet.call(master, "lua", "get", "rankinfodb")
     local account = skynet.call(data.accdb, "lua", "get", data.userkey)
     if account then
@@ -398,7 +395,11 @@ function role.explore_award(e, a)
 end
 
 function role.action(otype, info)
-    action[otype](info)
+    action[otype].notify(info)
+end
+
+function role.action_info(otype, id)
+    return action[otype].get(id)
 end
 
 -------------------protocol process--------------------------
@@ -557,7 +558,7 @@ local function enter_game(msg)
     local om = skynet.call(offline_mgr, "lua", "get", user.id)
     if om then
         for k, v in ipairs(om) do
-            offline_action[v[1]](v[2])
+            action[v[1]].add(v[2])
         end
     end
     for k, v in ipairs(module) do

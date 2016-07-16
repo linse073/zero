@@ -11,7 +11,7 @@ local namedb
 local status_key
 local status
 local serverid
-local servernam
+local servername
 
 local CMD = {}
 

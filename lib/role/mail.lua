@@ -69,6 +69,10 @@ function mail.del(m)
     data.mail[m.id] = nil
 end
 
+function mail.get(id)
+    return data.mail[id]
+end
+
 ---------------------------protocol process----------------------
 
 function proc.read_mail(msg)

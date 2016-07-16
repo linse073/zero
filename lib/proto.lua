@@ -77,6 +77,12 @@ local msg = {
 
     [3100] = "read_mail",
     [3101] = "del_mail",
+
+    [3200] = "request_friend",
+    [3201] = "confirm_friend",
+    [3202] = "blacklist",
+    [3203] = "del_friend",
+    [3204] = "query_friend",
 }
 local name_msg = {}
 

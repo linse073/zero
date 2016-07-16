@@ -104,6 +104,10 @@ function CMD.action(source, otype, info)
     role.action(otype, info)
 end
 
+function CMD.action_info(source, otype, id)
+    return role.action_info(otype, id)
+end
+
 skynet.start(function()
     msg = share.msg
     name_msg = share.name_msg

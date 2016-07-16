@@ -28,7 +28,7 @@ function CMD.send_mail(id, mtype, title, content)
         },
     }
     local offline_mgr = skynet.queryservice("offline_mgr")
-    skynet.call(offline_mgr, "lua", "send_mail", id, m)
+    skynet.call(offline_mgr, "lua", "add", "mail", id, m)
 end
 
 function CMD.broadcast_mail(mtype, title, content)

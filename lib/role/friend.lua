@@ -63,10 +63,59 @@ function friend.pack_all()
 end
 
 function friend.add(v)
-
+    local bm
+    local nf
     if v.status == base.FRIEND_STATUS_NEW then
+        local f = data.friend[v.id]
+        if f then
+            if f.status == base.FRIEND_STATUS_BLACKLIST then
+                bm = true
+            elseif f.status == base.FRIEND_STATUS_REQUEST or f.status == base.FRIEND_STATUS_BEREQUEST then
+                f.status = base.FRIEND_STATUS_NEW
+            end
+        else
+            nf = true
+        end
     elseif v.status == base.FRIEND_STATUS_DELETE then
+        local f = data.friend[v.id]
+        if f and f.status ~= base.FRIEND_STATUS_BLACKLIST then
+            data.friend[v.id] = nil
+        end
     elseif v.status == base.FRIEND_STATUS_BEREQUEST then
+        local f = data.friend[v.id]
+        if f then
+            if f.status == base.FRIEND_STATUS_BLACKLIST then
+                bm = true
+            end
+        else
+            nf = true
+        end
+    end
+    if bm then
+        local m = {
+            type = base.MAIL_TYPE_TEXT,
+            time = floor(skynet.time()),
+            title = friend_title,
+            content = string.format(blacklist_content, data.user.name),
+        }
+        local agent = skynet.call(role_mgr, "lua", "get", v.id)
+        if agent then
+            skynet.call(agent, "lua", "action", "mail", m)
+        else
+            skynet.call(offline_mgr, "lua", "add", "mail", v.id, m)
+        end
+    end
+    if nf then
+        local ri = assert(skynet.call(role_mgr, "lua", "get_rank_info", v.id), string.format("No rank info %d.", v.id))
+        f = {
+            id = v.id,
+            name = ri.name,
+            prof = ri.prof,
+            level = ri.level,
+            fight_point = ri.fight_point,
+            status = v.status,
+        }
+        data.friend[v.id] = f
     end
 end
 
@@ -157,11 +206,19 @@ function proc.confirm_friend(msg)
     end
     local user = data.user
     if msg.accept then
+        local agent = skynet.call(role_mgr, "lua", "get", msg.id)
+        if agent then
+            local oi = skynet.call(agent, "lua", "action_info", user.id)
+            if oi then
+                if oi.status == base.FRIEND_STATUS_BLACKLIST then
+                    error{code = error_code.IN_BLACKLIST}
+                end
+            end
+        end
         local info = {
             id = user.id,
             status = base.FRIEND_STATUS_NEW,
         }
-        local agent = skynet.call(role_mgr, "lua", "get", msg.id)
         if agent then
             skynet.call(agent, "lua", "action", "friend", info)
         else
@@ -171,7 +228,7 @@ function proc.confirm_friend(msg)
         local p = update_user()
         p.friend[1] = {
             id = msg.id,
-            status = base.FRIEND_STATUS_NEW,
+            status = f.status,
         }
         return "update_user", {update=p}
     else

@@ -83,6 +83,8 @@ local msg = {
     [3202] = "blacklist",
     [3203] = "del_friend",
     [3204] = "query_friend",
+    [3205] = "old_friend",
+    [3206] = "query_friend_info",
 }
 local name_msg = {}
 

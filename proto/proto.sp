@@ -428,7 +428,7 @@
 
 .confirm_friend {
     id 0 : integer
-    accept 1 : integer
+    accept 1 : boolean
 }
 
 .blacklist {
@@ -441,4 +441,8 @@
 
 .query_friend {
     name 0 : string
+}
+
+.query_friend_info {
+    info 0 : *simple_user
 }

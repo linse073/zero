@@ -1,7 +1,7 @@
 local datas = {
 	[500000101] = {
 		id = 500000101,
-		name = "剑士普攻1",
+		name = 0,
 		cd = 0,
 		buffId = 300000110,
 		effect = "warrior_hurteffect1.ccbi",
@@ -16,7 +16,7 @@ local datas = {
 	},
 	[500000102] = {
 		id = 500000102,
-		name = "剑士普攻2",
+		name = 0,
 		cd = 0,
 		buffId = 300000120,
 		effect = "warrior_hurteffect1.ccbi",
@@ -31,7 +31,7 @@ local datas = {
 	},
 	[500000103] = {
 		id = 500000103,
-		name = "剑士普攻3",
+		name = 0,
 		cd = 0,
 		buffId = 300000130,
 		effect = "warrior_hurteffect1.ccbi",
@@ -46,7 +46,7 @@ local datas = {
 	},
 	[500000104] = {
 		id = 500000104,
-		name = "剑士普攻4",
+		name = 0,
 		cd = 0,
 		buffId = 300000140,
 		effect = "warrior_hurteffect1.ccbi",
@@ -61,7 +61,7 @@ local datas = {
 	},
 	[500000105] = {
 		id = 500000105,
-		name = "剑士普攻5",
+		name = 0,
 		cd = 0,
 		buffId = 300000150,
 		effect = "warrior_hurteffect1.ccbi",
@@ -76,7 +76,7 @@ local datas = {
 	},
 	[500000201] = {
 		id = 500000201,
-		name = "刺客普攻1",
+		name = 0,
 		cd = 0,
 		buffId = 300000210,
 		effect = "assassin_hurteffect1.ccbi",
@@ -91,7 +91,7 @@ local datas = {
 	},
 	[500000202] = {
 		id = 500000202,
-		name = "刺客普攻2",
+		name = 0,
 		cd = 0,
 		buffId = 300000220,
 		effect = "assassin_hurteffect1.ccbi",
@@ -106,7 +106,7 @@ local datas = {
 	},
 	[500000203] = {
 		id = 500000203,
-		name = "刺客普攻3",
+		name = 0,
 		cd = 0,
 		buffId = 300000230,
 		effect = "assassin_hurteffect1.ccbi",
@@ -121,7 +121,7 @@ local datas = {
 	},
 	[500000204] = {
 		id = 500000204,
-		name = "刺客普攻4",
+		name = 0,
 		cd = 0,
 		buffId = 300000240,
 		effect = "assassin_hurteffect1.ccbi",
@@ -136,7 +136,7 @@ local datas = {
 	},
 	[500000205] = {
 		id = 500000205,
-		name = "刺客普攻5",
+		name = 0,
 		cd = 0,
 		buffId = 300000250,
 		effect = "assassin_hurteffect1.ccbi",
@@ -151,7 +151,7 @@ local datas = {
 	},
 	[500000301] = {
 		id = 500000301,
-		name = "枪手普攻1",
+		name = 0,
 		cd = 0,
 		buffId = 300000310,
 		effect = "gunner_hurteffect1.ccbi",
@@ -166,7 +166,7 @@ local datas = {
 	},
 	[500000302] = {
 		id = 500000302,
-		name = "枪手普攻2",
+		name = 0,
 		cd = 0,
 		buffId = 300000320,
 		effect = "gunner_hurteffect1.ccbi",
@@ -181,7 +181,7 @@ local datas = {
 	},
 	[500000303] = {
 		id = 500000303,
-		name = "枪手普攻3",
+		name = 0,
 		cd = 0,
 		buffId = 300000330,
 		effect = "gunner_hurteffect1.ccbi",
@@ -196,7 +196,7 @@ local datas = {
 	},
 	[500000304] = {
 		id = 500000304,
-		name = "枪手普攻4",
+		name = 0,
 		cd = 0,
 		buffId = 300000340,
 		effect = "gunner_hurteffect1.ccbi",
@@ -211,7 +211,7 @@ local datas = {
 	},
 	[500000305] = {
 		id = 500000305,
-		name = "枪手普攻5",
+		name = 0,
 		cd = 0,
 		buffId = 300000350,
 		effect = "gunner_hurteffect1.ccbi",
@@ -226,7 +226,7 @@ local datas = {
 	},
 	[500000401] = {
 		id = 500000401,
-		name = "巫师普攻1",
+		name = 0,
 		cd = 0,
 		buffId = 300000410,
 		effect = "wizard_hurteffect1.ccbi",
@@ -241,7 +241,7 @@ local datas = {
 	},
 	[500000402] = {
 		id = 500000402,
-		name = "巫师普攻2",
+		name = 0,
 		cd = 0,
 		buffId = 300000420,
 		effect = "wizard_hurteffect1.ccbi",
@@ -256,7 +256,7 @@ local datas = {
 	},
 	[500000403] = {
 		id = 500000403,
-		name = "巫师普攻3",
+		name = 0,
 		cd = 0,
 		buffId = 300000430,
 		effect = "wizard_hurteffect1.ccbi",
@@ -271,7 +271,7 @@ local datas = {
 	},
 	[500000404] = {
 		id = 500000404,
-		name = "巫师普攻4",
+		name = 0,
 		cd = 0,
 		buffId = 300000440,
 		effect = "wizard_hurteffect1.ccbi",
@@ -286,7 +286,7 @@ local datas = {
 	},
 	[500000405] = {
 		id = 500000405,
-		name = "巫师普攻5",
+		name = 0,
 		cd = 0,
 		buffId = 300000450,
 		effect = "wizard_hurteffect1.ccbi",
@@ -301,7 +301,7 @@ local datas = {
 	},
 	[510010410] = {
 		id = 510010410,
-		name = "连爆弹",
+		name = 106100001,
 		cd = 11.833333335,
 		buffId = 310010410,
 		effect = "monster_hurteffect2.ccbi",
@@ -316,7 +316,7 @@ local datas = {
 	},
 	[510010240] = {
 		id = 510010240,
-		name = "高温铁钳",
+		name = 106100002,
 		cd = 12.666666665,
 		buffId = 310010240,
 		effect = "monster_hurteffect2.ccbi",
@@ -331,7 +331,7 @@ local datas = {
 	},
 	[510012010] = {
 		id = 510012010,
-		name = "火焰奥术",
+		name = 106100003,
 		cd = 10.833333335,
 		buffId = 310012010,
 		effect = "monster_hurteffect2.ccbi",
@@ -346,7 +346,7 @@ local datas = {
 	},
 	[510011740] = {
 		id = 510011740,
-		name = "散弹枪",
+		name = 106100004,
 		cd = 9,
 		buffId = 310011740,
 		effect = "monster_hurteffect2.ccbi",
@@ -361,7 +361,7 @@ local datas = {
 	},
 	[510011750] = {
 		id = 510011750,
-		name = "火力压制",
+		name = 106100005,
 		cd = 14.166666665,
 		buffId = 310011750,
 		effect = "monster_hurteffect2.ccbi",
@@ -376,7 +376,7 @@ local datas = {
 	},
 	[510011800] = {
 		id = 510011800,
-		name = "落地炸弹",
+		name = 106100006,
 		cd = 8.666666665,
 		buffId = 310011800,
 		effect = "monster_hurteffect2.ccbi",
@@ -391,7 +391,7 @@ local datas = {
 	},
 	[510010730] = {
 		id = 510010730,
-		name = "牵引地火",
+		name = 106100007,
 		cd = 12,
 		buffId = 310010730,
 		effect = "monster_hurteffect2.ccbi",
@@ -406,7 +406,7 @@ local datas = {
 	},
 	[510010110] = {
 		id = 510010110,
-		name = "极速烈焰",
+		name = 106100008,
 		cd = 11.333333335,
 		buffId = 310010110,
 		effect = "monster_hurteffect2.ccbi",
@@ -421,7 +421,7 @@ local datas = {
 	},
 	[510012070] = {
 		id = 510012070,
-		name = "燃烧盛宴",
+		name = 106100009,
 		cd = 10.666666665,
 		buffId = 310012070,
 		effect = "monster_hurteffect2.ccbi",
@@ -436,7 +436,7 @@ local datas = {
 	},
 	[510011760] = {
 		id = 510011760,
-		name = "燃烧落石",
+		name = 106100010,
 		cd = 8.5,
 		buffId = 310011760,
 		effect = "monster_hurteffect2.ccbi",
@@ -451,7 +451,7 @@ local datas = {
 	},
 	[510011850] = {
 		id = 510011850,
-		name = "落石焦土",
+		name = 106100011,
 		cd = 11.833333335,
 		buffId = 310011850,
 		effect = "monster_hurteffect2.ccbi",
@@ -466,7 +466,7 @@ local datas = {
 	},
 	[510011700] = {
 		id = 510011700,
-		name = "深水炸弹",
+		name = 106100012,
 		cd = 9.333333335,
 		buffId = 310011700,
 		effect = "monster_hurteffect1.ccbi",
@@ -481,7 +481,7 @@ local datas = {
 	},
 	[510011730] = {
 		id = 510011730,
-		name = "水波弹",
+		name = 106100013,
 		cd = 9.666666665,
 		buffId = 310011730,
 		effect = "monster_hurteffect1.ccbi",
@@ -496,7 +496,7 @@ local datas = {
 	},
 	[510010070] = {
 		id = 510010070,
-		name = "水爆魔术",
+		name = 106100014,
 		cd = 12.5,
 		buffId = 310010070,
 		effect = "monster_hurteffect1.ccbi",
@@ -511,7 +511,7 @@ local datas = {
 	},
 	[510011560] = {
 		id = 510011560,
-		name = "疾风骤雨",
+		name = 106100015,
 		cd = 29.166666665,
 		buffId = 310011560,
 		effect = "monster_hurteffect1.ccbi",
@@ -526,7 +526,7 @@ local datas = {
 	},
 	[510011720] = {
 		id = 510011720,
-		name = "涌泉术",
+		name = 106100016,
 		cd = 12.5,
 		buffId = 310011720,
 		effect = "monster_hurteffect1.ccbi",
@@ -541,7 +541,7 @@ local datas = {
 	},
 	[510011710] = {
 		id = 510011710,
-		name = "水光圆舞曲",
+		name = 106100017,
 		cd = 10.833333335,
 		buffId = 310011710,
 		effect = "monster_hurteffect1.ccbi",
@@ -556,7 +556,7 @@ local datas = {
 	},
 	[510011940] = {
 		id = 510011940,
-		name = "水波暗流",
+		name = 106100018,
 		cd = 8.5,
 		buffId = 310011940,
 		effect = "monster_hurteffect1.ccbi",
@@ -571,7 +571,7 @@ local datas = {
 	},
 	[510011880] = {
 		id = 510011880,
-		name = "破水咬",
+		name = 106100019,
 		cd = 8.5,
 		buffId = 310011880,
 		effect = "monster_hurteffect1.ccbi",
@@ -586,7 +586,7 @@ local datas = {
 	},
 	[510011890] = {
 		id = 510011890,
-		name = "水虎围攻",
+		name = 106100020,
 		cd = 9.166666665,
 		buffId = 310011890,
 		effect = "monster_hurteffect1.ccbi",
@@ -601,7 +601,7 @@ local datas = {
 	},
 	[510010060] = {
 		id = 510010060,
-		name = "乌拉弹跳",
+		name = 106100021,
 		cd = 7.55,
 		buffId = 310010060,
 		effect = "monster_hurteffect5.ccbi",
@@ -616,7 +616,7 @@ local datas = {
 	},
 	[510011540] = {
 		id = 510011540,
-		name = "月光爆破",
+		name = 106100022,
 		cd = 11.166666665,
 		buffId = 310011540,
 		effect = "monster_hurteffect5.ccbi",
@@ -631,7 +631,7 @@ local datas = {
 	},
 	[510011680] = {
 		id = 510011680,
-		name = "孢子弹",
+		name = 106100023,
 		cd = 10.666666665,
 		buffId = 310011680,
 		effect = "monster_hurteffect5.ccbi",
@@ -646,7 +646,7 @@ local datas = {
 	},
 	[510010100] = {
 		id = 510010100,
-		name = "直拳",
+		name = 106100024,
 		cd = 7.666666665,
 		buffId = 310010100,
 		effect = "monster_hurteffect5.ccbi",
@@ -661,7 +661,7 @@ local datas = {
 	},
 	[510010920] = {
 		id = 510010920,
-		name = "刺拳连击",
+		name = 106100025,
 		cd = 12.166666665,
 		buffId = 310010920,
 		effect = "monster_hurteffect5.ccbi",
@@ -676,7 +676,7 @@ local datas = {
 	},
 	[510010150] = {
 		id = 510010150,
-		name = "毒蔓旋风",
+		name = 106100026,
 		cd = 12.166666665,
 		buffId = 310010150,
 		effect = "monster_hurteffect5.ccbi",
@@ -691,7 +691,7 @@ local datas = {
 	},
 	[510011550] = {
 		id = 510011550,
-		name = "荆棘穿刺",
+		name = 106100027,
 		cd = 14.666666665,
 		buffId = 310011550,
 		effect = "monster_hurteffect5.ccbi",
@@ -706,7 +706,7 @@ local datas = {
 	},
 	[510011840] = {
 		id = 510011840,
-		name = "爱心魅惑",
+		name = 106100028,
 		cd = 8.166666665,
 		buffId = 310011840,
 		effect = "monster_hurteffect5.ccbi",
@@ -721,7 +721,7 @@ local datas = {
 	},
 	[510011930] = {
 		id = 510011930,
-		name = "散射箭",
+		name = 106100029,
 		cd = 8.833333335,
 		buffId = 310011930,
 		effect = "monster_hurteffect5.ccbi",
@@ -736,7 +736,7 @@ local datas = {
 	},
 	[510010800] = {
 		id = 510010800,
-		name = "符石激光",
+		name = 106100030,
 		cd = 12,
 		buffId = 310010800,
 		effect = "monster_hurteffect6.ccbi",
@@ -751,7 +751,7 @@ local datas = {
 	},
 	[510011600] = {
 		id = 510011600,
-		name = "石板碾压",
+		name = 106100031,
 		cd = 13.333333335,
 		buffId = 310011600,
 		effect = "monster_hurteffect6.ccbi",
@@ -766,7 +766,7 @@ local datas = {
 	},
 	[510010910] = {
 		id = 510010910,
-		name = "自爆",
+		name = 106100032,
 		cd = 8.333333335,
 		buffId = 310010910,
 		effect = "monster_hurteffect6.ccbi",
@@ -781,7 +781,7 @@ local datas = {
 	},
 	[510010040] = {
 		id = 510010040,
-		name = "熔岩锤击",
+		name = 106100033,
 		cd = 8.5,
 		buffId = 310010040,
 		effect = "monster_hurteffect6.ccbi",
@@ -796,7 +796,7 @@ local datas = {
 	},
 	[510012020] = {
 		id = 510012020,
-		name = "爆裂铁拳",
+		name = 106100034,
 		cd = 7.666666665,
 		buffId = 310012020,
 		effect = "monster_hurteffect6.ccbi",
@@ -811,7 +811,7 @@ local datas = {
 	},
 	[510011770] = {
 		id = 510011770,
-		name = "岩石巨拳",
+		name = 106100035,
 		cd = 7.666666665,
 		buffId = 310011770,
 		effect = "monster_hurteffect6.ccbi",
@@ -826,7 +826,7 @@ local datas = {
 	},
 	[510011780] = {
 		id = 510011780,
-		name = "震地锥击",
+		name = 106100036,
 		cd = 8.5,
 		buffId = 310011780,
 		effect = "monster_hurteffect6.ccbi",
@@ -841,7 +841,7 @@ local datas = {
 	},
 	[510011900] = {
 		id = 510011900,
-		name = "砂石风暴",
+		name = 106100037,
 		cd = 12.666666665,
 		buffId = 310011900,
 		effect = "monster_hurteffect6.ccbi",
@@ -856,7 +856,7 @@ local datas = {
 	},
 	[510011060] = {
 		id = 510011060,
-		name = "黑龙波",
+		name = 106100038,
 		cd = 13.333333335,
 		buffId = 310011060,
 		effect = "monster_hurteffect6.ccbi",
@@ -871,7 +871,7 @@ local datas = {
 	},
 	[510010850] = {
 		id = 510010850,
-		name = "毒蜂锥",
+		name = 106100039,
 		cd = 8.5,
 		buffId = 310010850,
 		effect = "monster_hurteffect4.ccbi",
@@ -886,7 +886,7 @@ local datas = {
 	},
 	[510011820] = {
 		id = 510011820,
-		name = "毒气弹",
+		name = 106100040,
 		cd = 7.666666665,
 		buffId = 310011820,
 		effect = "monster_hurteffect4.ccbi",
@@ -901,7 +901,7 @@ local datas = {
 	},
 	[510011910] = {
 		id = 510011910,
-		name = "毒液漫延",
+		name = 106100041,
 		cd = 11,
 		buffId = 310011910,
 		effect = "monster_hurteffect4.ccbi",
@@ -916,7 +916,7 @@ local datas = {
 	},
 	[510011810] = {
 		id = 510011810,
-		name = "旋转毒藤",
+		name = 106100042,
 		cd = 13.833333335,
 		buffId = 310011810,
 		effect = "monster_hurteffect4.ccbi",
@@ -931,7 +931,7 @@ local datas = {
 	},
 	[510011830] = {
 		id = 510011830,
-		name = "毒轮车",
+		name = 106100043,
 		cd = 11.666666665,
 		buffId = 310011830,
 		effect = "monster_hurteffect4.ccbi",
@@ -946,7 +946,7 @@ local datas = {
 	},
 	[510011870] = {
 		id = 510011870,
-		name = "毒雾",
+		name = 106100044,
 		cd = 13.333333335,
 		buffId = 310011870,
 		effect = "monster_hurteffect4.ccbi",
@@ -961,7 +961,7 @@ local datas = {
 	},
 	[510011920] = {
 		id = 510011920,
-		name = "强酸喷射",
+		name = 106100045,
 		cd = 8.333333335,
 		buffId = 310011920,
 		effect = "monster_hurteffect4.ccbi",
@@ -976,7 +976,7 @@ local datas = {
 	},
 	[510011950] = {
 		id = 510011950,
-		name = "毒液弹",
+		name = 106100046,
 		cd = 12.166666665,
 		buffId = 310011950,
 		effect = "monster_hurteffect4.ccbi",
@@ -991,7 +991,7 @@ local datas = {
 	},
 	[510010720] = {
 		id = 510010720,
-		name = "剧毒爆弹",
+		name = 106100047,
 		cd = 15.166666665,
 		buffId = 310010720,
 		effect = "monster_hurteffect4.ccbi",
@@ -1006,7 +1006,7 @@ local datas = {
 	},
 	[510010130] = {
 		id = 510010130,
-		name = "跳跃锤击",
+		name = 106100048,
 		cd = 9.666666665,
 		buffId = 310010130,
 		effect = "monster_hurteffect3.ccbi",
@@ -1021,7 +1021,7 @@ local datas = {
 	},
 	[510011000] = {
 		id = 510011000,
-		name = "温柔背刺",
+		name = 106100049,
 		cd = 11,
 		buffId = 310011000,
 		effect = "monster_hurteffect3.ccbi",
@@ -1036,7 +1036,7 @@ local datas = {
 	},
 	[510011670] = {
 		id = 510011670,
-		name = "飞舞旋切",
+		name = 106100050,
 		cd = 13.166666665,
 		buffId = 310011670,
 		effect = "monster_hurteffect3.ccbi",
@@ -1051,7 +1051,7 @@ local datas = {
 	},
 	[510011960] = {
 		id = 510011960,
-		name = "暴力切割",
+		name = 106100051,
 		cd = 9,
 		buffId = 310011960,
 		effect = "monster_hurteffect3.ccbi",
@@ -1066,7 +1066,7 @@ local datas = {
 	},
 	[510010160] = {
 		id = 510010160,
-		name = "旋风斩",
+		name = 106100052,
 		cd = 13.5,
 		buffId = 310010160,
 		effect = "monster_hurteffect3.ccbi",
@@ -1081,7 +1081,7 @@ local datas = {
 	},
 	[510011660] = {
 		id = 510011660,
-		name = "小猪冲撞",
+		name = 106100053,
 		cd = 10,
 		buffId = 310011660,
 		effect = "monster_hurteffect3.ccbi",
@@ -1096,7 +1096,7 @@ local datas = {
 	},
 	[510010190] = {
 		id = 510010190,
-		name = "野蛮冲撞",
+		name = 106100054,
 		cd = 15.166666665,
 		buffId = 310010190,
 		effect = "monster_hurteffect3.ccbi",
@@ -1111,7 +1111,7 @@ local datas = {
 	},
 	[510010620] = {
 		id = 510010620,
-		name = "震地",
+		name = 106100055,
 		cd = 9.166666665,
 		buffId = 310010620,
 		effect = "monster_hurteffect3.ccbi",
@@ -1126,7 +1126,7 @@ local datas = {
 	},
 	[510010610] = {
 		id = 510010610,
-		name = "火枪连击",
+		name = 106100056,
 		cd = 14.166666665,
 		buffId = 310010610,
 		effect = "monster_hurteffect3.ccbi",
@@ -1141,7 +1141,7 @@ local datas = {
 	},
 	[510011020] = {
 		id = 510011020,
-		name = "冰霜手里剑",
+		name = 106100057,
 		cd = 15.166666665,
 		buffId = 310011020,
 		effect = "monster_hurteffect1.ccbi",
@@ -1156,7 +1156,7 @@ local datas = {
 	},
 	[510010660] = {
 		id = 510010660,
-		name = "急冻光线",
+		name = 106100058,
 		cd = 9.166666665,
 		buffId = 310010660,
 		effect = "monster_hurteffect1.ccbi",
@@ -1171,7 +1171,7 @@ local datas = {
 	},
 	[510010370] = {
 		id = 510010370,
-		name = "冲天冰拳",
+		name = 106100059,
 		cd = 9,
 		buffId = 310010370,
 		effect = "monster_hurteffect1.ccbi",
@@ -1186,7 +1186,7 @@ local datas = {
 	},
 	[510011970] = {
 		id = 510011970,
-		name = "丢雪球",
+		name = 106100060,
 		cd = 9.166666665,
 		buffId = 310011970,
 		effect = "monster_hurteffect1.ccbi",
@@ -1201,7 +1201,7 @@ local datas = {
 	},
 	[510010330] = {
 		id = 510010330,
-		name = "滚雪球",
+		name = 106100061,
 		cd = 12.166666665,
 		buffId = 310010330,
 		effect = "monster_hurteffect1.ccbi",
@@ -1216,7 +1216,7 @@ local datas = {
 	},
 	[510011790] = {
 		id = 510011790,
-		name = "雪宝投掷",
+		name = 106100062,
 		cd = 8.333333335,
 		buffId = 310011790,
 		effect = "monster_hurteffect1.ccbi",
@@ -1231,7 +1231,7 @@ local datas = {
 	},
 	[510011580] = {
 		id = 510011580,
-		name = "雪球炮",
+		name = 106100063,
 		cd = 10.833333335,
 		buffId = 310011580,
 		effect = "monster_hurteffect1.ccbi",
@@ -1246,7 +1246,7 @@ local datas = {
 	},
 	[510011860] = {
 		id = 510011860,
-		name = "冰冻巨爪",
+		name = 106100064,
 		cd = 8.5,
 		buffId = 310011860,
 		effect = "monster_hurteffect1.ccbi",
@@ -1261,7 +1261,7 @@ local datas = {
 	},
 	[510010380] = {
 		id = 510010380,
-		name = "寒冰风暴",
+		name = 106100065,
 		cd = 11.5,
 		buffId = 310010380,
 		effect = "monster_hurteffect4.ccbi",
@@ -1276,7 +1276,7 @@ local datas = {
 	},
 	[510011500] = {
 		id = 510011500,
-		name = "烈炎炼狱",
+		name = 0,
 		cd = 0,
 		buffId = 310011500,
 		effect = "monster_hurteffect2.ccbi",
@@ -1291,7 +1291,7 @@ local datas = {
 	},
 	[510011590] = {
 		id = 510011590,
-		name = "深渊漩涡",
+		name = 0,
 		cd = 0,
 		buffId = 310011590,
 		effect = "monster_hurteffect1.ccbi",
@@ -1306,7 +1306,7 @@ local datas = {
 	},
 	[510011490] = {
 		id = 510011490,
-		name = "远古拥抱",
+		name = 0,
 		cd = 0,
 		buffId = 310011490,
 		effect = "monster_hurteffect5.ccbi",
@@ -1321,7 +1321,7 @@ local datas = {
 	},
 	[510012040] = {
 		id = 510012040,
-		name = "岩石大招",
+		name = 0,
 		cd = 0,
 		buffId = 310012040,
 		effect = "monster_hurteffect6.ccbi",
@@ -1336,7 +1336,7 @@ local datas = {
 	},
 	[510012030] = {
 		id = 510012030,
-		name = "剧毒大招",
+		name = 0,
 		cd = 0,
 		buffId = 310012030,
 		effect = "monster_hurteffect4.ccbi",
@@ -1351,7 +1351,7 @@ local datas = {
 	},
 	[510012050] = {
 		id = 510012050,
-		name = "力量大招",
+		name = 0,
 		cd = 0,
 		buffId = 310012050,
 		effect = "monster_hurteffect3.ccbi",
@@ -1366,7 +1366,7 @@ local datas = {
 	},
 	[510011480] = {
 		id = 510011480,
-		name = "寒月冰魂",
+		name = 0,
 		cd = 0,
 		buffId = 310011480,
 		effect = "monster_hurteffect1.ccbi",
@@ -1381,7 +1381,7 @@ local datas = {
 	},
 	[510011510] = {
 		id = 510011510,
-		name = "圣灵审判",
+		name = 0,
 		cd = 0,
 		buffId = 310011510,
 		effect = "monster_hurteffect3.ccbi",
@@ -1396,7 +1396,7 @@ local datas = {
 	},
 	[521015100] = {
 		id = 521015100,
-		name = "奥鲁夫",
+		name = 0,
 		cd = 0,
 		buffId = 321015100,
 		effect = "monster_hurteffect3.ccbi",
@@ -1411,7 +1411,7 @@ local datas = {
 	},
 	[521015110] = {
 		id = 521015110,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321015110,
 		effect = "monster_hurteffect3.ccbi",
@@ -1426,7 +1426,7 @@ local datas = {
 	},
 	[521015120] = {
 		id = 521015120,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321015120,
 		effect = "monster_hurteffect3.ccbi",
@@ -1441,7 +1441,7 @@ local datas = {
 	},
 	[521015130] = {
 		id = 521015130,
-		name = "",
+		name = 0,
 		cd = 40,
 		buffId = 321015130,
 		effect = "monster_hurteffect3.ccbi",
@@ -1456,7 +1456,7 @@ local datas = {
 	},
 	[521015140] = {
 		id = 521015140,
-		name = "",
+		name = 0,
 		cd = 30,
 		buffId = 321015140,
 		effect = "monster_hurteffect3.ccbi",
@@ -1471,7 +1471,7 @@ local datas = {
 	},
 	[521025110] = {
 		id = 521025110,
-		name = "古雷曼恩",
+		name = 0,
 		cd = 0,
 		buffId = 321025110,
 		effect = "monster_hurteffect5.ccbi",
@@ -1486,7 +1486,7 @@ local datas = {
 	},
 	[521025120] = {
 		id = 521025120,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321025120,
 		effect = "monster_hurteffect5.ccbi",
@@ -1501,7 +1501,7 @@ local datas = {
 	},
 	[521025130] = {
 		id = 521025130,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321025130,
 		effect = "monster_hurteffect5.ccbi",
@@ -1516,7 +1516,7 @@ local datas = {
 	},
 	[521025140] = {
 		id = 521025140,
-		name = "",
+		name = 0,
 		cd = 30,
 		buffId = 321025140,
 		effect = "monster_hurteffect5.ccbi",
@@ -1531,7 +1531,7 @@ local datas = {
 	},
 	[521035110] = {
 		id = 521035110,
-		name = "戈仑",
+		name = 0,
 		cd = 0,
 		buffId = 321035110,
 		effect = "monster_hurteffect1.ccbi",
@@ -1546,7 +1546,7 @@ local datas = {
 	},
 	[521035120] = {
 		id = 521035120,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321035120,
 		effect = "monster_hurteffect1.ccbi",
@@ -1561,7 +1561,7 @@ local datas = {
 	},
 	[521035130] = {
 		id = 521035130,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321035130,
 		effect = "monster_hurteffect1.ccbi",
@@ -1576,7 +1576,7 @@ local datas = {
 	},
 	[521035140] = {
 		id = 521035140,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321035140,
 		effect = "monster_hurteffect1.ccbi",
@@ -1591,7 +1591,7 @@ local datas = {
 	},
 	[521035150] = {
 		id = 521035150,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321035150,
 		effect = "monster_hurteffect1.ccbi",
@@ -1606,7 +1606,7 @@ local datas = {
 	},
 	[521045100] = {
 		id = 521045100,
-		name = "艾布雷克",
+		name = 0,
 		cd = 0,
 		buffId = 321045100,
 		effect = "monster_hurteffect1.ccbi",
@@ -1621,7 +1621,7 @@ local datas = {
 	},
 	[521045110] = {
 		id = 521045110,
-		name = "",
+		name = 0,
 		cd = 15,
 		buffId = 321045110,
 		effect = "monster_hurteffect1.ccbi",
@@ -1636,7 +1636,7 @@ local datas = {
 	},
 	[521045120] = {
 		id = 521045120,
-		name = "",
+		name = 0,
 		cd = 30,
 		buffId = 321045120,
 		effect = "monster_hurteffect1.ccbi",
@@ -1651,7 +1651,7 @@ local datas = {
 	},
 	[521055100] = {
 		id = 521055100,
-		name = "卡卡诺克",
+		name = 0,
 		cd = 0,
 		buffId = 321055100,
 		effect = "monster_hurteffect6.ccbi",
@@ -1666,7 +1666,7 @@ local datas = {
 	},
 	[521055110] = {
 		id = 521055110,
-		name = "",
+		name = 0,
 		cd = 15,
 		buffId = 321055110,
 		effect = "monster_hurteffect6.ccbi",
@@ -1681,7 +1681,7 @@ local datas = {
 	},
 	[521055120] = {
 		id = 521055120,
-		name = "",
+		name = 0,
 		cd = 30,
 		buffId = 321055120,
 		effect = "monster_hurteffect6.ccbi",
@@ -1696,7 +1696,7 @@ local datas = {
 	},
 	[521055200] = {
 		id = 521055200,
-		name = "泰拉卡",
+		name = 0,
 		cd = 0,
 		buffId = 321055200,
 		effect = "monster_hurteffect6.ccbi",
@@ -1711,7 +1711,7 @@ local datas = {
 	},
 	[521055210] = {
 		id = 521055210,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321055210,
 		effect = "monster_hurteffect6.ccbi",
@@ -1726,7 +1726,7 @@ local datas = {
 	},
 	[521055220] = {
 		id = 521055220,
-		name = "",
+		name = 0,
 		cd = 30,
 		buffId = 321055220,
 		effect = "monster_hurteffect6.ccbi",
@@ -1741,7 +1741,7 @@ local datas = {
 	},
 	[521055230] = {
 		id = 521055230,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321055230,
 		effect = "monster_hurteffect6.ccbi",
@@ -1756,7 +1756,7 @@ local datas = {
 	},
 	[521055240] = {
 		id = 521055240,
-		name = "",
+		name = 0,
 		cd = 40,
 		buffId = 321055240,
 		effect = "monster_hurteffect6.ccbi",
@@ -1771,7 +1771,7 @@ local datas = {
 	},
 	[521065100] = {
 		id = 521065100,
-		name = "玛努诺克",
+		name = 0,
 		cd = 0,
 		buffId = 321065100,
 		effect = "monster_hurteffect5.ccbi",
@@ -1786,7 +1786,7 @@ local datas = {
 	},
 	[521065110] = {
 		id = 521065110,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321065110,
 		effect = "monster_hurteffect5.ccbi",
@@ -1801,7 +1801,7 @@ local datas = {
 	},
 	[521065120] = {
 		id = 521065120,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321065120,
 		effect = "monster_hurteffect5.ccbi",
@@ -1816,7 +1816,7 @@ local datas = {
 	},
 	[521065130] = {
 		id = 521065130,
-		name = "",
+		name = 0,
 		cd = 30,
 		buffId = 321065130,
 		effect = "monster_hurteffect5.ccbi",
@@ -1831,7 +1831,7 @@ local datas = {
 	},
 	[521065200] = {
 		id = 521065200,
-		name = "加古拉",
+		name = 0,
 		cd = 0,
 		buffId = 321065200,
 		effect = "monster_hurteffect2.ccbi",
@@ -1846,7 +1846,7 @@ local datas = {
 	},
 	[521065210] = {
 		id = 521065210,
-		name = "",
+		name = 0,
 		cd = 30,
 		buffId = 321065210,
 		effect = "monster_hurteffect2.ccbi",
@@ -1861,7 +1861,7 @@ local datas = {
 	},
 	[521065220] = {
 		id = 521065220,
-		name = "",
+		name = 0,
 		cd = 40,
 		buffId = 321065220,
 		effect = "monster_hurteffect2.ccbi",
@@ -1876,7 +1876,7 @@ local datas = {
 	},
 	[521075100] = {
 		id = 521075100,
-		name = "奥古斯特",
+		name = 0,
 		cd = 0,
 		buffId = 321075100,
 		effect = "monster_hurteffect6.ccbi",
@@ -1891,7 +1891,7 @@ local datas = {
 	},
 	[521075110] = {
 		id = 521075110,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321075110,
 		effect = "monster_hurteffect6.ccbi",
@@ -1906,7 +1906,7 @@ local datas = {
 	},
 	[521075120] = {
 		id = 521075120,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321075120,
 		effect = "monster_hurteffect6.ccbi",
@@ -1921,7 +1921,7 @@ local datas = {
 	},
 	[521075130] = {
 		id = 521075130,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321075130,
 		effect = "monster_hurteffect6.ccbi",
@@ -1936,7 +1936,7 @@ local datas = {
 	},
 	[521075140] = {
 		id = 521075140,
-		name = "",
+		name = 0,
 		cd = 40,
 		buffId = 321075140,
 		effect = "monster_hurteffect6.ccbi",
@@ -1951,7 +1951,7 @@ local datas = {
 	},
 	[521085100] = {
 		id = 521085100,
-		name = "德洛尼克",
+		name = 0,
 		cd = 0,
 		buffId = 321085100,
 		effect = "monster_hurteffect3.ccbi",
@@ -1966,7 +1966,7 @@ local datas = {
 	},
 	[521085110] = {
 		id = 521085110,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321085110,
 		effect = "monster_hurteffect3.ccbi",
@@ -1981,7 +1981,7 @@ local datas = {
 	},
 	[521085120] = {
 		id = 521085120,
-		name = "",
+		name = 0,
 		cd = 20,
 		buffId = 321085120,
 		effect = "monster_hurteffect3.ccbi",
@@ -1996,7 +1996,7 @@ local datas = {
 	},
 	[521085130] = {
 		id = 521085130,
-		name = "",
+		name = 0,
 		cd = 30,
 		buffId = 321085130,
 		effect = "monster_hurteffect3.ccbi",
@@ -2011,7 +2011,7 @@ local datas = {
 	},
 	[521095110] = {
 		id = 521095110,
-		name = "审判之眼",
+		name = 0,
 		cd = 30,
 		buffId = 321095110,
 		effect = "monster_hurteffect4.ccbi",
@@ -2026,7 +2026,7 @@ local datas = {
 	},
 	[521095120] = {
 		id = 521095120,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321095120,
 		effect = "monster_hurteffect4.ccbi",
@@ -2041,7 +2041,7 @@ local datas = {
 	},
 	[521095130] = {
 		id = 521095130,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321095130,
 		effect = "monster_hurteffect4.ccbi",
@@ -2056,7 +2056,7 @@ local datas = {
 	},
 	[521095140] = {
 		id = 521095140,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321095140,
 		effect = "monster_hurteffect4.ccbi",
@@ -2071,7 +2071,7 @@ local datas = {
 	},
 	[521105110] = {
 		id = 521105110,
-		name = "亚图姆",
+		name = 0,
 		cd = 0,
 		buffId = 321105110,
 		effect = "monster_hurteffect4.ccbi",
@@ -2086,7 +2086,7 @@ local datas = {
 	},
 	[521105120] = {
 		id = 521105120,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321105120,
 		effect = "monster_hurteffect4.ccbi",
@@ -2101,7 +2101,7 @@ local datas = {
 	},
 	[521105130] = {
 		id = 521105130,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321105130,
 		effect = "monster_hurteffect4.ccbi",
@@ -2116,7 +2116,7 @@ local datas = {
 	},
 	[521105140] = {
 		id = 521105140,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321105140,
 		effect = "monster_hurteffect4.ccbi",
@@ -2131,7 +2131,7 @@ local datas = {
 	},
 	[521105150] = {
 		id = 521105150,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321105150,
 		effect = "monster_hurteffect4.ccbi",
@@ -2146,7 +2146,7 @@ local datas = {
 	},
 	[521105210] = {
 		id = 521105210,
-		name = "奥西里斯",
+		name = 0,
 		cd = 0,
 		buffId = 321105210,
 		effect = "monster_hurteffect3.ccbi",
@@ -2161,7 +2161,7 @@ local datas = {
 	},
 	[521105220] = {
 		id = 521105220,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321105220,
 		effect = "monster_hurteffect3.ccbi",
@@ -2176,7 +2176,7 @@ local datas = {
 	},
 	[521105230] = {
 		id = 521105230,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321105230,
 		effect = "monster_hurteffect6.ccbi",
@@ -2191,7 +2191,7 @@ local datas = {
 	},
 	[521105240] = {
 		id = 521105240,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321105240,
 		effect = "monster_hurteffect6.ccbi",
@@ -2206,7 +2206,7 @@ local datas = {
 	},
 	[521105250] = {
 		id = 521105250,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 321105250,
 		effect = "monster_hurteffect6.ccbi",
@@ -2221,7 +2221,7 @@ local datas = {
 	},
 	[521105260] = {
 		id = 521105260,
-		name = "",
+		name = 0,
 		cd = 30,
 		buffId = 321105260,
 		effect = "monster_hurteffect1.ccbi",
@@ -2236,7 +2236,7 @@ local datas = {
 	},
 	[523011110] = {
 		id = 523011110,
-		name = "大螃蟹",
+		name = 0,
 		cd = 0,
 		buffId = 323011110,
 		effect = "monster_hurteffect3.ccbi",
@@ -2251,7 +2251,7 @@ local datas = {
 	},
 	[523011120] = {
 		id = 523011120,
-		name = "",
+		name = 0,
 		cd = 40,
 		buffId = 323011120,
 		effect = "monster_hurteffect3.ccbi",
@@ -2266,7 +2266,7 @@ local datas = {
 	},
 	[523011130] = {
 		id = 523011130,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 323011130,
 		effect = "monster_hurteffect3.ccbi",
@@ -2281,7 +2281,7 @@ local datas = {
 	},
 	[523011140] = {
 		id = 523011140,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 323011140,
 		effect = "monster_hurteffect3.ccbi",
@@ -2296,7 +2296,7 @@ local datas = {
 	},
 	[523011150] = {
 		id = 523011150,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 323011150,
 		effect = "monster_hurteffect3.ccbi",
@@ -2311,7 +2311,7 @@ local datas = {
 	},
 	[523016110] = {
 		id = 523016110,
-		name = "激光发射器",
+		name = 0,
 		cd = 0,
 		buffId = 323016110,
 		effect = "monster_hurteffect1.ccbi",
@@ -2326,7 +2326,7 @@ local datas = {
 	},
 	[523016120] = {
 		id = 523016120,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 323016120,
 		effect = "monster_hurteffect1.ccbi",
@@ -2341,7 +2341,7 @@ local datas = {
 	},
 	[523016130] = {
 		id = 523016130,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 323016130,
 		effect = "monster_hurteffect1.ccbi",
@@ -2356,7 +2356,7 @@ local datas = {
 	},
 	[523016140] = {
 		id = 523016140,
-		name = "",
+		name = 0,
 		cd = 40,
 		buffId = 323016140,
 		effect = "monster_hurteffect1.ccbi",
@@ -2371,7 +2371,7 @@ local datas = {
 	},
 	[530100100] = {
 		id = 530100100,
-		name = "兽人战士",
+		name = 0,
 		cd = 0,
 		buffId = 330100100,
 		effect = "monster_hurteffect3.ccbi",
@@ -2386,7 +2386,7 @@ local datas = {
 	},
 	[530100200] = {
 		id = 530100200,
-		name = "树人",
+		name = 0,
 		cd = 0,
 		buffId = 330100200,
 		effect = "monster_hurteffect5.ccbi",
@@ -2401,7 +2401,7 @@ local datas = {
 	},
 	[530100300] = {
 		id = 530100300,
-		name = "骷髅战士",
+		name = 0,
 		cd = 0,
 		buffId = 330100300,
 		effect = "monster_hurteffect3.ccbi",
@@ -2416,7 +2416,7 @@ local datas = {
 	},
 	[530100400] = {
 		id = 530100400,
-		name = "熔岩魔",
+		name = 0,
 		cd = 0,
 		buffId = 330100400,
 		effect = "monster_hurteffect2.ccbi",
@@ -2431,7 +2431,7 @@ local datas = {
 	},
 	[530100500] = {
 		id = 530100500,
-		name = "死灵摄魂者",
+		name = 0,
 		cd = 0,
 		buffId = 330100500,
 		effect = "monster_hurteffect1.ccbi",
@@ -2446,7 +2446,7 @@ local datas = {
 	},
 	[530100600] = {
 		id = 530100600,
-		name = "乌拉",
+		name = 0,
 		cd = 0,
 		buffId = 330100600,
 		effect = "monster_hurteffect3.ccbi",
@@ -2461,7 +2461,7 @@ local datas = {
 	},
 	[530100700] = {
 		id = 530100700,
-		name = "云叶",
+		name = 0,
 		cd = 0,
 		buffId = 330100700,
 		effect = "monster_hurteffect5.ccbi",
@@ -2476,7 +2476,7 @@ local datas = {
 	},
 	[530100800] = {
 		id = 530100800,
-		name = "乌乌拉",
+		name = 0,
 		cd = 0,
 		buffId = 330100800,
 		effect = "monster_hurteffect3.ccbi",
@@ -2491,7 +2491,7 @@ local datas = {
 	},
 	[530100900] = {
 		id = 530100900,
-		name = "森灵",
+		name = 0,
 		cd = 0,
 		buffId = 330100900,
 		effect = "monster_hurteffect5.ccbi",
@@ -2506,7 +2506,7 @@ local datas = {
 	},
 	[530101000] = {
 		id = 530101000,
-		name = "仙人掌",
+		name = 0,
 		cd = 0,
 		buffId = 330101000,
 		effect = "monster_hurteffect5.ccbi",
@@ -2521,7 +2521,7 @@ local datas = {
 	},
 	[530101100] = {
 		id = 530101100,
-		name = "火龙",
+		name = 0,
 		cd = 0,
 		buffId = 330101100,
 		effect = "monster_hurteffect2.ccbi",
@@ -2536,7 +2536,7 @@ local datas = {
 	},
 	[530101200] = {
 		id = 530101200,
-		name = "剑齿虎",
+		name = 0,
 		cd = 0,
 		buffId = 330101200,
 		effect = "monster_hurteffect3.ccbi",
@@ -2551,7 +2551,7 @@ local datas = {
 	},
 	[530101300] = {
 		id = 530101300,
-		name = "泰格拉",
+		name = 0,
 		cd = 0,
 		buffId = 330101300,
 		effect = "monster_hurteffect3.ccbi",
@@ -2566,7 +2566,7 @@ local datas = {
 	},
 	[530101400] = {
 		id = 530101400,
-		name = "蘑菇",
+		name = 0,
 		cd = 0,
 		buffId = 330101400,
 		effect = "monster_hurteffect4.ccbi",
@@ -2581,7 +2581,7 @@ local datas = {
 	},
 	[530101500] = {
 		id = 530101500,
-		name = "瑞妮丝",
+		name = 0,
 		cd = 0,
 		buffId = 330101500,
 		effect = "monster_hurteffect5.ccbi",
@@ -2596,7 +2596,7 @@ local datas = {
 	},
 	[530101600] = {
 		id = 530101600,
-		name = "独眼食人魔",
+		name = 0,
 		cd = 0,
 		buffId = 330101600,
 		effect = "monster_hurteffect3.ccbi",
@@ -2611,7 +2611,7 @@ local datas = {
 	},
 	[530101700] = {
 		id = 530101700,
-		name = "马蜂",
+		name = 0,
 		cd = 0,
 		buffId = 330101700,
 		effect = "monster_hurteffect3.ccbi",
@@ -2626,7 +2626,7 @@ local datas = {
 	},
 	[530101800] = {
 		id = 530101800,
-		name = "史莱姆",
+		name = 0,
 		cd = 0,
 		buffId = 330101800,
 		effect = "monster_hurteffect5.ccbi",
@@ -2641,7 +2641,7 @@ local datas = {
 	},
 	[530101900] = {
 		id = 530101900,
-		name = "奥鲁夫",
+		name = 0,
 		cd = 0,
 		buffId = 330101900,
 		effect = "",
@@ -2656,7 +2656,7 @@ local datas = {
 	},
 	[530102000] = {
 		id = 530102000,
-		name = "马蜂窝",
+		name = 0,
 		cd = 0,
 		buffId = 330102000,
 		effect = "",
@@ -2671,7 +2671,7 @@ local datas = {
 	},
 	[530102100] = {
 		id = 530102100,
-		name = "宝藏鼠",
+		name = 0,
 		cd = 0,
 		buffId = 330102100,
 		effect = "monster_hurteffect1.ccbi",
@@ -2686,7 +2686,7 @@ local datas = {
 	},
 	[530102200] = {
 		id = 530102200,
-		name = "里卡鲁奥",
+		name = 0,
 		cd = 0,
 		buffId = 330102200,
 		effect = "monster_hurteffect1.ccbi",
@@ -2701,7 +2701,7 @@ local datas = {
 	},
 	[530102300] = {
 		id = 530102300,
-		name = "加特林",
+		name = 0,
 		cd = 0,
 		buffId = 330102300,
 		effect = "monster_hurteffect6.ccbi",
@@ -2716,7 +2716,7 @@ local datas = {
 	},
 	[530102400] = {
 		id = 530102400,
-		name = "巨钳蟹",
+		name = 0,
 		cd = 0,
 		buffId = 330102400,
 		effect = "monster_hurteffect3.ccbi",
@@ -2731,7 +2731,7 @@ local datas = {
 	},
 	[530102500] = {
 		id = 530102500,
-		name = "恶魔蝙蝠",
+		name = 0,
 		cd = 0,
 		buffId = 330102500,
 		effect = "monster_hurteffect4.ccbi",
@@ -2746,7 +2746,7 @@ local datas = {
 	},
 	[530102600] = {
 		id = 530102600,
-		name = "黑石乌拉",
+		name = 0,
 		cd = 0,
 		buffId = 330102600,
 		effect = "monster_hurteffect3.ccbi",
@@ -2761,7 +2761,7 @@ local datas = {
 	},
 	[530102700] = {
 		id = 530102700,
-		name = "熔岩石魔",
+		name = 0,
 		cd = 0,
 		buffId = 330102700,
 		effect = "monster_hurteffect2.ccbi",
@@ -2776,7 +2776,7 @@ local datas = {
 	},
 	[530102800] = {
 		id = 530102800,
-		name = "冰霜齿虎",
+		name = 0,
 		cd = 0,
 		buffId = 330102800,
 		effect = "monster_hurteffect1.ccbi",
@@ -2791,7 +2791,7 @@ local datas = {
 	},
 	[530102900] = {
 		id = 530102900,
-		name = "阿布尔",
+		name = 0,
 		cd = 0,
 		buffId = 330102900,
 		effect = "monster_hurteffect3.ccbi",
@@ -2806,7 +2806,7 @@ local datas = {
 	},
 	[530103000] = {
 		id = 530103000,
-		name = "灰铁石人",
+		name = 0,
 		cd = 0,
 		buffId = 330103000,
 		effect = "",
@@ -2821,7 +2821,7 @@ local datas = {
 	},
 	[530103100] = {
 		id = 530103100,
-		name = "美丽花",
+		name = 0,
 		cd = 0,
 		buffId = 330103100,
 		effect = "monster_hurteffect5.ccbi",
@@ -2836,7 +2836,7 @@ local datas = {
 	},
 	[530103200] = {
 		id = 530103200,
-		name = "双斧食人魔",
+		name = 0,
 		cd = 0,
 		buffId = 330103200,
 		effect = "monster_hurteffect3.ccbi",
@@ -2851,7 +2851,7 @@ local datas = {
 	},
 	[530103300] = {
 		id = 530103300,
-		name = "妮妮可",
+		name = 0,
 		cd = 0,
 		buffId = 330103300,
 		effect = "monster_hurteffect1.ccbi",
@@ -2866,7 +2866,7 @@ local datas = {
 	},
 	[530103400] = {
 		id = 530103400,
-		name = "白熊",
+		name = 0,
 		cd = 0,
 		buffId = 330103400,
 		effect = "monster_hurteffect3.ccbi",
@@ -2881,7 +2881,7 @@ local datas = {
 	},
 	[530103500] = {
 		id = 530103500,
-		name = "黑熊",
+		name = 0,
 		cd = 0,
 		buffId = 330103500,
 		effect = "monster_hurteffect3.ccbi",
@@ -2896,7 +2896,7 @@ local datas = {
 	},
 	[530103600] = {
 		id = 530103600,
-		name = "棕熊",
+		name = 0,
 		cd = 0,
 		buffId = 330103600,
 		effect = "monster_hurteffect3.ccbi",
@@ -2911,7 +2911,7 @@ local datas = {
 	},
 	[530103700] = {
 		id = 530103700,
-		name = "雪胖丁",
+		name = 0,
 		cd = 0,
 		buffId = 330103700,
 		effect = "monster_hurteffect1.ccbi",
@@ -2926,7 +2926,7 @@ local datas = {
 	},
 	[530103800] = {
 		id = 530103800,
-		name = "艾布雷克",
+		name = 0,
 		cd = 0,
 		buffId = 330103800,
 		effect = "",
@@ -2941,7 +2941,7 @@ local datas = {
 	},
 	[530103900] = {
 		id = 530103900,
-		name = "泰格鲁",
+		name = 0,
 		cd = 0,
 		buffId = 330103900,
 		effect = "monster_hurteffect1.ccbi",
@@ -2956,7 +2956,7 @@ local datas = {
 	},
 	[530104000] = {
 		id = 530104000,
-		name = "食人魔祭司",
+		name = 0,
 		cd = 0,
 		buffId = 330104000,
 		effect = "monster_hurteffect3.ccbi",
@@ -2971,7 +2971,7 @@ local datas = {
 	},
 	[530104100] = {
 		id = 530104100,
-		name = "爆破鼠",
+		name = 0,
 		cd = 0,
 		buffId = 330104100,
 		effect = "monster_hurteffect2.ccbi",
@@ -2986,7 +2986,7 @@ local datas = {
 	},
 	[530104200] = {
 		id = 530104200,
-		name = "掘地者",
+		name = 0,
 		cd = 0,
 		buffId = 330104200,
 		effect = "monster_hurteffect3.ccbi",
@@ -3001,7 +3001,7 @@ local datas = {
 	},
 	[530104300] = {
 		id = 530104300,
-		name = "南瓜鼠",
+		name = 0,
 		cd = 0,
 		buffId = 330104300,
 		effect = "monster_hurteffect5.ccbi",
@@ -3016,7 +3016,7 @@ local datas = {
 	},
 	[530104400] = {
 		id = 530104400,
-		name = "铁皮骑士",
+		name = 0,
 		cd = 0,
 		buffId = 330104400,
 		effect = "monster_hurteffect3.ccbi",
@@ -3031,7 +3031,7 @@ local datas = {
 	},
 	[530104500] = {
 		id = 530104500,
-		name = "WALL-E",
+		name = 0,
 		cd = 0,
 		buffId = 330104500,
 		effect = "monster_hurteffect6.ccbi",
@@ -3046,7 +3046,7 @@ local datas = {
 	},
 	[530104600] = {
 		id = 530104600,
-		name = "BB蚊",
+		name = 0,
 		cd = 0,
 		buffId = 330104600,
 		effect = "monster_hurteffect5.ccbi",
@@ -3061,7 +3061,7 @@ local datas = {
 	},
 	[530104800] = {
 		id = 530104800,
-		name = "古雷曼恩",
+		name = 0,
 		cd = 0,
 		buffId = 330104800,
 		effect = "",
@@ -3076,7 +3076,7 @@ local datas = {
 	},
 	[530104900] = {
 		id = 530104900,
-		name = "戈仑",
+		name = 0,
 		cd = 0,
 		buffId = 330104900,
 		effect = "",
@@ -3091,7 +3091,7 @@ local datas = {
 	},
 	[530105000] = {
 		id = 530105000,
-		name = "毒蘑菇",
+		name = 0,
 		cd = 0,
 		buffId = 330105000,
 		effect = "monster_hurteffect5.ccbi",
@@ -3106,7 +3106,7 @@ local datas = {
 	},
 	[530105100] = {
 		id = 530105100,
-		name = "乌拉王",
+		name = 0,
 		cd = 0,
 		buffId = 330105100,
 		effect = "monster_hurteffect5.ccbi",
@@ -3121,7 +3121,7 @@ local datas = {
 	},
 	[530105200] = {
 		id = 530105200,
-		name = "美丽拉",
+		name = 0,
 		cd = 0,
 		buffId = 330105200,
 		effect = "monster_hurteffect3.ccbi",
@@ -3136,7 +3136,7 @@ local datas = {
 	},
 	[530105300] = {
 		id = 530105300,
-		name = "钉镐怪",
+		name = 0,
 		cd = 0,
 		buffId = 330105300,
 		effect = "monster_hurteffect3.ccbi",
@@ -3151,7 +3151,7 @@ local datas = {
 	},
 	[530105400] = {
 		id = 530105400,
-		name = "巴菲特斯",
+		name = 0,
 		cd = 0,
 		buffId = 330105400,
 		effect = "monster_hurteffect2.ccbi",
@@ -3166,7 +3166,7 @@ local datas = {
 	},
 	[530105500] = {
 		id = 530105500,
-		name = "唐克",
+		name = 0,
 		cd = 0,
 		buffId = 330105500,
 		effect = "monster_hurteffect3.ccbi",
@@ -3181,7 +3181,7 @@ local datas = {
 	},
 	[530105600] = {
 		id = 530105600,
-		name = "捕蝇草",
+		name = 0,
 		cd = 0,
 		buffId = 330105600,
 		effect = "monster_hurteffect5.ccbi",
@@ -3196,7 +3196,7 @@ local datas = {
 	},
 	[530105610] = {
 		id = 530105610,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 330105610,
 		effect = "monster_hurteffect5.ccbi",
@@ -3211,7 +3211,7 @@ local datas = {
 	},
 	[530105700] = {
 		id = 530105700,
-		name = "化石古树",
+		name = 0,
 		cd = 0,
 		buffId = 330105700,
 		effect = "monster_hurteffect3.ccbi",
@@ -3226,7 +3226,7 @@ local datas = {
 	},
 	[530105800] = {
 		id = 530105800,
-		name = "奥格尔",
+		name = 0,
 		cd = 0,
 		buffId = 330105800,
 		effect = "monster_hurteffect3.ccbi",
@@ -3241,7 +3241,7 @@ local datas = {
 	},
 	[530105900] = {
 		id = 530105900,
-		name = "奥格洛",
+		name = 0,
 		cd = 0,
 		buffId = 330105900,
 		effect = "monster_hurteffect3.ccbi",
@@ -3256,7 +3256,7 @@ local datas = {
 	},
 	[530106000] = {
 		id = 530106000,
-		name = "乌尔萨洛克",
+		name = 0,
 		cd = 0,
 		buffId = 330106000,
 		effect = "monster_hurteffect3.ccbi",
@@ -3271,7 +3271,7 @@ local datas = {
 	},
 	[530106100] = {
 		id = 530106100,
-		name = "泰拉卡",
+		name = 0,
 		cd = 0,
 		buffId = 330106100,
 		effect = "",
@@ -3286,7 +3286,7 @@ local datas = {
 	},
 	[530106200] = {
 		id = 530106200,
-		name = "卡卡诺克",
+		name = 0,
 		cd = 0,
 		buffId = 330106200,
 		effect = "",
@@ -3301,7 +3301,7 @@ local datas = {
 	},
 	[530106300] = {
 		id = 530106300,
-		name = "遗迹守护者",
+		name = 0,
 		cd = 0,
 		buffId = 330106300,
 		effect = "monster_hurteffect2.ccbi",
@@ -3316,7 +3316,7 @@ local datas = {
 	},
 	[530106400] = {
 		id = 530106400,
-		name = "塔塔普",
+		name = 0,
 		cd = 0,
 		buffId = 330106400,
 		effect = "monster_hurteffect3.ccbi",
@@ -3331,7 +3331,7 @@ local datas = {
 	},
 	[530106500] = {
 		id = 530106500,
-		name = "阿图瑞特",
+		name = 0,
 		cd = 0,
 		buffId = 330106500,
 		effect = "monster_hurteffect3.ccbi",
@@ -3346,7 +3346,7 @@ local datas = {
 	},
 	[530106600] = {
 		id = 530106600,
-		name = "冰元素守卫",
+		name = 0,
 		cd = 0,
 		buffId = 330106600,
 		effect = "monster_hurteffect1.ccbi",
@@ -3361,7 +3361,7 @@ local datas = {
 	},
 	[530106700] = {
 		id = 530106700,
-		name = "沙漠刀手",
+		name = 0,
 		cd = 0,
 		buffId = 330106700,
 		effect = "monster_hurteffect3.ccbi",
@@ -3376,7 +3376,7 @@ local datas = {
 	},
 	[530106800] = {
 		id = 530106800,
-		name = "蝶灵",
+		name = 0,
 		cd = 0,
 		buffId = 330106800,
 		effect = "monster_hurteffect5.ccbi",
@@ -3391,7 +3391,7 @@ local datas = {
 	},
 	[530106900] = {
 		id = 530106900,
-		name = "巨云叶",
+		name = 0,
 		cd = 0,
 		buffId = 330106900,
 		effect = "monster_hurteffect1.ccbi",
@@ -3406,7 +3406,7 @@ local datas = {
 	},
 	[530107000] = {
 		id = 530107000,
-		name = "梦叶灵",
+		name = 0,
 		cd = 0,
 		buffId = 330107000,
 		effect = "monster_hurteffect4.ccbi",
@@ -3421,7 +3421,7 @@ local datas = {
 	},
 	[530107100] = {
 		id = 530107100,
-		name = "嘟嘟",
+		name = 0,
 		cd = 0,
 		buffId = 330107100,
 		effect = "monster_hurteffect4.ccbi",
@@ -3436,7 +3436,7 @@ local datas = {
 	},
 	[530107200] = {
 		id = 530107200,
-		name = "玛努诺克",
+		name = 0,
 		cd = 0,
 		buffId = 330107200,
 		effect = "",
@@ -3451,7 +3451,7 @@ local datas = {
 	},
 	[530107300] = {
 		id = 530107300,
-		name = "加古拉",
+		name = 0,
 		cd = 0,
 		buffId = 330107300,
 		effect = "",
@@ -3466,7 +3466,7 @@ local datas = {
 	},
 	[530107400] = {
 		id = 530107400,
-		name = "冰乌拉",
+		name = 0,
 		cd = 0,
 		buffId = 330107400,
 		effect = "monster_hurteffect1.ccbi",
@@ -3481,7 +3481,7 @@ local datas = {
 	},
 	[530107500] = {
 		id = 530107500,
-		name = "冰叶",
+		name = 0,
 		cd = 0,
 		buffId = 330107500,
 		effect = "monster_hurteffect1.ccbi",
@@ -3496,7 +3496,7 @@ local datas = {
 	},
 	[530107600] = {
 		id = 530107600,
-		name = "水晶歌唱者",
+		name = 0,
 		cd = 0,
 		buffId = 330107600,
 		effect = "monster_hurteffect5.ccbi",
@@ -3511,7 +3511,7 @@ local datas = {
 	},
 	[530107700] = {
 		id = 530107700,
-		name = "极地鼠",
+		name = 0,
 		cd = 0,
 		buffId = 330107700,
 		effect = "monster_hurteffect3.ccbi",
@@ -3526,7 +3526,7 @@ local datas = {
 	},
 	[530107800] = {
 		id = 530107800,
-		name = "泰莉拉",
+		name = 0,
 		cd = 0,
 		buffId = 330107800,
 		effect = "monster_hurteffect5.ccbi",
@@ -3541,7 +3541,7 @@ local datas = {
 	},
 	[530107900] = {
 		id = 530107900,
-		name = "铠甲波利",
+		name = 0,
 		cd = 0,
 		buffId = 330107900,
 		effect = "monster_hurteffect4.ccbi",
@@ -3556,7 +3556,7 @@ local datas = {
 	},
 	[530108000] = {
 		id = 530108000,
-		name = "戈仑之眼",
+		name = 0,
 		cd = 0,
 		buffId = 330108000,
 		effect = "monster_hurteffect1.ccbi",
@@ -3571,7 +3571,7 @@ local datas = {
 	},
 	[530108100] = {
 		id = 530108100,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 330108100,
 		effect = "",
@@ -3586,7 +3586,7 @@ local datas = {
 	},
 	[530108200] = {
 		id = 530108200,
-		name = "诺克什",
+		name = 0,
 		cd = 0,
 		buffId = 330108200,
 		effect = "monster_hurteffect3.ccbi",
@@ -3601,7 +3601,7 @@ local datas = {
 	},
 	[530108300] = {
 		id = 530108300,
-		name = "艾蕾希娜",
+		name = 0,
 		cd = 0,
 		buffId = 330108300,
 		effect = "monster_hurteffect1.ccbi",
@@ -3616,7 +3616,7 @@ local datas = {
 	},
 	[530108400] = {
 		id = 530108400,
-		name = "蜂巢战士",
+		name = 0,
 		cd = 0,
 		buffId = 330108400,
 		effect = "monster_hurteffect3.ccbi",
@@ -3631,7 +3631,7 @@ local datas = {
 	},
 	[530108500] = {
 		id = 530108500,
-		name = "阿莱娅",
+		name = 0,
 		cd = 0,
 		buffId = 330108500,
 		effect = "monster_hurteffect3.ccbi",
@@ -3646,7 +3646,7 @@ local datas = {
 	},
 	[530108600] = {
 		id = 530108600,
-		name = "独角先锋",
+		name = 0,
 		cd = 0,
 		buffId = 330108600,
 		effect = "monster_hurteffect3.ccbi",
@@ -3661,7 +3661,7 @@ local datas = {
 	},
 	[530108700] = {
 		id = 530108700,
-		name = "蜂巢卫士",
+		name = 0,
 		cd = 0,
 		buffId = 330108700,
 		effect = "monster_hurteffect3.ccbi",
@@ -3676,7 +3676,7 @@ local datas = {
 	},
 	[530108800] = {
 		id = 530108800,
-		name = "双角防御者",
+		name = 0,
 		cd = 0,
 		buffId = 330108800,
 		effect = "monster_hurteffect3.ccbi",
@@ -3691,7 +3691,7 @@ local datas = {
 	},
 	[530108900] = {
 		id = 530108900,
-		name = "妮妮",
+		name = 0,
 		cd = 0,
 		buffId = 330108900,
 		effect = "monster_hurteffect5.ccbi",
@@ -3706,7 +3706,7 @@ local datas = {
 	},
 	[530109000] = {
 		id = 530109000,
-		name = "日光波动者",
+		name = 0,
 		cd = 0,
 		buffId = 330109000,
 		effect = "monster_hurteffect3.ccbi",
@@ -3721,7 +3721,7 @@ local datas = {
 	},
 	[530109100] = {
 		id = 530109100,
-		name = "刺锤瓦鲁特",
+		name = 0,
 		cd = 0,
 		buffId = 330109100,
 		effect = "monster_hurteffect2.ccbi",
@@ -3736,7 +3736,7 @@ local datas = {
 	},
 	[530109200] = {
 		id = 530109200,
-		name = "布布洛",
+		name = 0,
 		cd = 0,
 		buffId = 330109200,
 		effect = "monster_hurteffect5.ccbi",
@@ -3751,7 +3751,7 @@ local datas = {
 	},
 	[530109300] = {
 		id = 530109300,
-		name = "白骨乌拉",
+		name = 0,
 		cd = 0,
 		buffId = 330109300,
 		effect = "monster_hurteffect1.ccbi",
@@ -3766,7 +3766,7 @@ local datas = {
 	},
 	[530109400] = {
 		id = 530109400,
-		name = "飞掠者",
+		name = 0,
 		cd = 0,
 		buffId = 330109400,
 		effect = "monster_hurteffect6.ccbi",
@@ -3781,7 +3781,7 @@ local datas = {
 	},
 	[530109500] = {
 		id = 530109500,
-		name = "古雷",
+		name = 0,
 		cd = 0,
 		buffId = 330109500,
 		effect = "monster_hurteffect1.ccbi",
@@ -3796,7 +3796,7 @@ local datas = {
 	},
 	[530109600] = {
 		id = 530109600,
-		name = "暴食者",
+		name = 0,
 		cd = 0,
 		buffId = 330109600,
 		effect = "monster_hurteffect1.ccbi",
@@ -3811,7 +3811,7 @@ local datas = {
 	},
 	[530109700] = {
 		id = 530109700,
-		name = "杜拉特",
+		name = 0,
 		cd = 0,
 		buffId = 330109700,
 		effect = "monster_hurteffect3.ccbi",
@@ -3826,7 +3826,7 @@ local datas = {
 	},
 	[530109800] = {
 		id = 530109800,
-		name = "阿努比斯",
+		name = 0,
 		cd = 0,
 		buffId = 330109800,
 		effect = "monster_hurteffect3.ccbi",
@@ -3841,7 +3841,7 @@ local datas = {
 	},
 	[530109900] = {
 		id = 530109900,
-		name = "卢安克斯",
+		name = 0,
 		cd = 0,
 		buffId = 330109900,
 		effect = "monster_hurteffect3.ccbi",
@@ -3856,7 +3856,7 @@ local datas = {
 	},
 	[530110000] = {
 		id = 530110000,
-		name = "鬃毛盗墓者",
+		name = 0,
 		cd = 0,
 		buffId = 330110000,
 		effect = "monster_hurteffect3.ccbi",
@@ -3871,7 +3871,7 @@ local datas = {
 	},
 	[530110100] = {
 		id = 530110100,
-		name = "鬃毛斩杀者",
+		name = 0,
 		cd = 0,
 		buffId = 330110100,
 		effect = "monster_hurteffect3.ccbi",
@@ -3886,7 +3886,7 @@ local datas = {
 	},
 	[530110200] = {
 		id = 530110200,
-		name = "内鲁",
+		name = 0,
 		cd = 0,
 		buffId = 330110200,
 		effect = "monster_hurteffect1.ccbi",
@@ -3901,7 +3901,7 @@ local datas = {
 	},
 	[530110300] = {
 		id = 530110300,
-		name = "冰剑猪",
+		name = 0,
 		cd = 0,
 		buffId = 330110300,
 		effect = "monster_hurteffect1.ccbi",
@@ -3916,7 +3916,7 @@ local datas = {
 	},
 	[530110400] = {
 		id = 530110400,
-		name = "卡尔娅",
+		name = 0,
 		cd = 0,
 		buffId = 330110400,
 		effect = "monster_hurteffect4.ccbi",
@@ -3931,7 +3931,7 @@ local datas = {
 	},
 	[530110500] = {
 		id = 530110500,
-		name = "奉献者",
+		name = 0,
 		cd = 0,
 		buffId = 330110500,
 		effect = "monster_hurteffect4.ccbi",
@@ -3946,7 +3946,7 @@ local datas = {
 	},
 	[530110600] = {
 		id = 530110600,
-		name = "德洛尼克",
+		name = 0,
 		cd = 0,
 		buffId = 330110600,
 		effect = "",
@@ -3961,7 +3961,7 @@ local datas = {
 	},
 	[530110700] = {
 		id = 530110700,
-		name = "空模型",
+		name = 0,
 		cd = 0,
 		buffId = 330110700,
 		effect = "",
@@ -3976,7 +3976,7 @@ local datas = {
 	},
 	[530110800] = {
 		id = 530110800,
-		name = "库尔图",
+		name = 0,
 		cd = 0,
 		buffId = 330110800,
 		effect = "monster_hurteffect3.ccbi",
@@ -3991,7 +3991,7 @@ local datas = {
 	},
 	[530110900] = {
 		id = 530110900,
-		name = "沙漠强盗",
+		name = 0,
 		cd = 0,
 		buffId = 330110900,
 		effect = "monster_hurteffect3.ccbi",
@@ -4006,7 +4006,7 @@ local datas = {
 	},
 	[530111000] = {
 		id = 530111000,
-		name = "迷宫先锋",
+		name = 0,
 		cd = 0,
 		buffId = 330111000,
 		effect = "monster_hurteffect2.ccbi",
@@ -4021,7 +4021,7 @@ local datas = {
 	},
 	[530111100] = {
 		id = 530111100,
-		name = "枭首守卫",
+		name = 0,
 		cd = 0,
 		buffId = 330111100,
 		effect = "monster_hurteffect1.ccbi",
@@ -4036,7 +4036,7 @@ local datas = {
 	},
 	[530111200] = {
 		id = 530111200,
-		name = "嗜血阿拉丁",
+		name = 0,
 		cd = 0,
 		buffId = 330111200,
 		effect = "monster_hurteffect3.ccbi",
@@ -4051,7 +4051,7 @@ local datas = {
 	},
 	[530111300] = {
 		id = 530111300,
-		name = "狂风",
+		name = 0,
 		cd = 0,
 		buffId = 330111300,
 		effect = "monster_hurteffect1.ccbi",
@@ -4066,7 +4066,7 @@ local datas = {
 	},
 	[530111400] = {
 		id = 530111400,
-		name = "黑色守望者",
+		name = 0,
 		cd = 0,
 		buffId = 330111400,
 		effect = "monster_hurteffect3.ccbi",
@@ -4081,7 +4081,7 @@ local datas = {
 	},
 	[530111500] = {
 		id = 530111500,
-		name = "卡拉卡夫",
+		name = 0,
 		cd = 0,
 		buffId = 330111500,
 		effect = "monster_hurteffect3.ccbi",
@@ -4096,7 +4096,7 @@ local datas = {
 	},
 	[530111600] = {
 		id = 530111600,
-		name = "神圣之棺",
+		name = 0,
 		cd = 0,
 		buffId = 330111600,
 		effect = "monster_hurteffect3.ccbi",
@@ -4111,7 +4111,7 @@ local datas = {
 	},
 	[530111700] = {
 		id = 530111700,
-		name = "巡游者",
+		name = 0,
 		cd = 0,
 		buffId = 330111700,
 		effect = "monster_hurteffect6.ccbi",
@@ -4126,7 +4126,7 @@ local datas = {
 	},
 	[530111800] = {
 		id = 530111800,
-		name = "奥古斯特",
+		name = 0,
 		cd = 0,
 		buffId = 330111800,
 		effect = "",
@@ -4141,7 +4141,7 @@ local datas = {
 	},
 	[530111900] = {
 		id = 530111900,
-		name = "乌纳斯",
+		name = 0,
 		cd = 0,
 		buffId = 330111900,
 		effect = "monster_hurteffect3.ccbi",
@@ -4156,7 +4156,7 @@ local datas = {
 	},
 	[530112000] = {
 		id = 530112000,
-		name = "绷带犬",
+		name = 0,
 		cd = 0,
 		buffId = 330112000,
 		effect = "monster_hurteffect3.ccbi",
@@ -4171,7 +4171,7 @@ local datas = {
 	},
 	[530112100] = {
 		id = 530112100,
-		name = "审判之眼",
+		name = 0,
 		cd = 0,
 		buffId = 330112100,
 		effect = "",
@@ -4186,7 +4186,7 @@ local datas = {
 	},
 	[530112200] = {
 		id = 530112200,
-		name = "亚图姆",
+		name = 0,
 		cd = 0,
 		buffId = 330112200,
 		effect = "",
@@ -4201,7 +4201,7 @@ local datas = {
 	},
 	[530112300] = {
 		id = 530112300,
-		name = "阿努努",
+		name = 0,
 		cd = 0,
 		buffId = 330112300,
 		effect = "monster_hurteffect5.ccbi",
@@ -4216,7 +4216,7 @@ local datas = {
 	},
 	[530112400] = {
 		id = 530112400,
-		name = "木乃伊",
+		name = 0,
 		cd = 0,
 		buffId = 330112400,
 		effect = "monster_hurteffect3.ccbi",
@@ -4231,7 +4231,7 @@ local datas = {
 	},
 	[530112500] = {
 		id = 530112500,
-		name = "雷德",
+		name = 0,
 		cd = 0,
 		buffId = 330112500,
 		effect = "monster_hurteffect3.ccbi",
@@ -4246,7 +4246,7 @@ local datas = {
 	},
 	[530112600] = {
 		id = 530112600,
-		name = "涅姆",
+		name = 0,
 		cd = 0,
 		buffId = 330112600,
 		effect = "monster_hurteffect3.ccbi",
@@ -4261,7 +4261,7 @@ local datas = {
 	},
 	[530112700] = {
 		id = 530112700,
-		name = "艾鲁纳",
+		name = 0,
 		cd = 0,
 		buffId = 330112700,
 		effect = "monster_hurteffect3.ccbi",
@@ -4276,7 +4276,7 @@ local datas = {
 	},
 	[530112800] = {
 		id = 530112800,
-		name = "克拉克",
+		name = 0,
 		cd = 0,
 		buffId = 330112800,
 		effect = "monster_hurteffect3.ccbi",
@@ -4291,7 +4291,7 @@ local datas = {
 	},
 	[530112900] = {
 		id = 530112900,
-		name = "安达纳",
+		name = 0,
 		cd = 0,
 		buffId = 330112900,
 		effect = "monster_hurteffect3.ccbi",
@@ -4306,7 +4306,7 @@ local datas = {
 	},
 	[530113000] = {
 		id = 530113000,
-		name = "猎蜥屠杀者",
+		name = 0,
 		cd = 0,
 		buffId = 330113000,
 		effect = "monster_hurteffect3.ccbi",
@@ -4321,7 +4321,7 @@ local datas = {
 	},
 	[530113100] = {
 		id = 530113100,
-		name = "猎蜥巫师",
+		name = 0,
 		cd = 0,
 		buffId = 330113100,
 		effect = "monster_hurteffect3.ccbi",
@@ -4336,7 +4336,7 @@ local datas = {
 	},
 	[530113200] = {
 		id = 530113200,
-		name = "帕拉纳",
+		name = 0,
 		cd = 0,
 		buffId = 330113200,
 		effect = "monster_hurteffect3.ccbi",
@@ -4351,7 +4351,7 @@ local datas = {
 	},
 	[530113300] = {
 		id = 530113300,
-		name = "奥西里斯",
+		name = 0,
 		cd = 0,
 		buffId = 330113300,
 		effect = "",
@@ -4366,7 +4366,7 @@ local datas = {
 	},
 	[530113400] = {
 		id = 530113400,
-		name = "远古腔棘鱼",
+		name = 0,
 		cd = 0,
 		buffId = 330113400,
 		effect = "monster_hurteffect4.ccbi",
@@ -4381,7 +4381,7 @@ local datas = {
 	},
 	[530113500] = {
 		id = 530113500,
-		name = "骷髅射手",
+		name = 0,
 		cd = 0,
 		buffId = 330113500,
 		effect = "monster_hurteffect5.ccbi",
@@ -4396,7 +4396,7 @@ local datas = {
 	},
 	[530113600] = {
 		id = 530113600,
-		name = "奥罗娜",
+		name = 0,
 		cd = 0,
 		buffId = 330113600,
 		effect = "monster_hurteffect6.ccbi",
@@ -4411,7 +4411,7 @@ local datas = {
 	},
 	[530113700] = {
 		id = 530113700,
-		name = "风语精灵",
+		name = 0,
 		cd = 0,
 		buffId = 330113700,
 		effect = "monster_hurteffect3.ccbi",
@@ -4426,7 +4426,7 @@ local datas = {
 	},
 	[530113800] = {
 		id = 530113800,
-		name = "腐烂者",
+		name = 0,
 		cd = 0,
 		buffId = 330113800,
 		effect = "monster_hurteffect3.ccbi",
@@ -4441,7 +4441,7 @@ local datas = {
 	},
 	[530113900] = {
 		id = 530113900,
-		name = "塔克",
+		name = 0,
 		cd = 0,
 		buffId = 330113900,
 		effect = "monster_hurteffect5.ccbi",
@@ -4456,7 +4456,7 @@ local datas = {
 	},
 	[530114000] = {
 		id = 530114000,
-		name = "阿契米奥斯",
+		name = 0,
 		cd = 0,
 		buffId = 330114000,
 		effect = "monster_hurteffect2.ccbi",
@@ -4471,7 +4471,7 @@ local datas = {
 	},
 	[530114100] = {
 		id = 530114100,
-		name = "薇欧拉",
+		name = 0,
 		cd = 0,
 		buffId = 330114100,
 		effect = "monster_hurteffect5.ccbi",
@@ -4486,7 +4486,7 @@ local datas = {
 	},
 	[530114200] = {
 		id = 530114200,
-		name = "监视者",
+		name = 0,
 		cd = 0,
 		buffId = 330114200,
 		effect = "monster_hurteffect3.ccbi",
@@ -4501,7 +4501,7 @@ local datas = {
 	},
 	[530114300] = {
 		id = 530114300,
-		name = "大螃蟹",
+		name = 0,
 		cd = 0,
 		buffId = 330114300,
 		effect = "monster_hurteffect3.ccbi",
@@ -4516,7 +4516,7 @@ local datas = {
 	},
 	[530114600] = {
 		id = 530114600,
-		name = "深海巨蟹",
+		name = 0,
 		cd = 0,
 		buffId = 330114600,
 		effect = "monster_hurteffect3.ccbi",
@@ -4531,7 +4531,7 @@ local datas = {
 	},
 	[530114700] = {
 		id = 530114700,
-		name = "绿毛蝎",
+		name = 0,
 		cd = 0,
 		buffId = 330114700,
 		effect = "monster_hurteffect3.ccbi",
@@ -4546,7 +4546,7 @@ local datas = {
 	},
 	[530115400] = {
 		id = 530115400,
-		name = "绿精灵",
+		name = 0,
 		cd = 0,
 		buffId = 330115400,
 		effect = "monster_hurteffect5.ccbi",
@@ -4561,7 +4561,7 @@ local datas = {
 	},
 	[530115500] = {
 		id = 530115500,
-		name = "绿精灵他妈",
+		name = 0,
 		cd = 0,
 		buffId = 330115500,
 		effect = "monster_hurteffect5.ccbi",
@@ -4576,7 +4576,7 @@ local datas = {
 	},
 	[530115600] = {
 		id = 530115600,
-		name = "雨伞女",
+		name = 0,
 		cd = 0,
 		buffId = 330115600,
 		effect = "monster_hurteffect1.ccbi",
@@ -4591,7 +4591,7 @@ local datas = {
 	},
 	[530115800] = {
 		id = 530115800,
-		name = "雪球人",
+		name = 0,
 		cd = 0,
 		buffId = 330115800,
 		effect = "monster_hurteffect1.ccbi",
@@ -4606,7 +4606,7 @@ local datas = {
 	},
 	[530116000] = {
 		id = 530116000,
-		name = "青墙",
+		name = 0,
 		cd = 0,
 		buffId = 330116000,
 		effect = "monster_hurteffect3.ccbi",
@@ -4621,7 +4621,7 @@ local datas = {
 	},
 	[530116100] = {
 		id = 530116100,
-		name = "沙墙",
+		name = 0,
 		cd = 0,
 		buffId = 330116100,
 		effect = "monster_hurteffect3.ccbi",
@@ -4636,7 +4636,7 @@ local datas = {
 	},
 	[530116600] = {
 		id = 530116600,
-		name = "小野猪",
+		name = 0,
 		cd = 0,
 		buffId = 330116600,
 		effect = "monster_hurteffect3.ccbi",
@@ -4651,7 +4651,7 @@ local datas = {
 	},
 	[530116700] = {
 		id = 530116700,
-		name = "长耳兔",
+		name = 0,
 		cd = 0,
 		buffId = 330116700,
 		effect = "monster_hurteffect3.ccbi",
@@ -4666,7 +4666,7 @@ local datas = {
 	},
 	[530116800] = {
 		id = 530116800,
-		name = "绿精灵2",
+		name = 0,
 		cd = 0,
 		buffId = 330116800,
 		effect = "monster_hurteffect5.ccbi",
@@ -4681,7 +4681,7 @@ local datas = {
 	},
 	[530116900] = {
 		id = 530116900,
-		name = "小红龙",
+		name = 0,
 		cd = 0,
 		buffId = 330116900,
 		effect = "",
@@ -4696,7 +4696,7 @@ local datas = {
 	},
 	[530117000] = {
 		id = 530117000,
-		name = "海螺",
+		name = 0,
 		cd = 0,
 		buffId = 330117000,
 		effect = "monster_hurteffect1.ccbi",
@@ -4711,7 +4711,7 @@ local datas = {
 	},
 	[530117100] = {
 		id = 530117100,
-		name = "水母",
+		name = 0,
 		cd = 0,
 		buffId = 330117100,
 		effect = "monster_hurteffect1.ccbi",
@@ -4726,7 +4726,7 @@ local datas = {
 	},
 	[530117200] = {
 		id = 530117200,
-		name = "水妖",
+		name = 0,
 		cd = 0,
 		buffId = 330117200,
 		effect = "monster_hurteffect1.ccbi",
@@ -4741,7 +4741,7 @@ local datas = {
 	},
 	[530117300] = {
 		id = 530117300,
-		name = "三角形",
+		name = 0,
 		cd = 0,
 		buffId = 330117300,
 		effect = "monster_hurteffect1.ccbi",
@@ -4756,7 +4756,7 @@ local datas = {
 	},
 	[530117400] = {
 		id = 530117400,
-		name = "胖子打手枪",
+		name = 0,
 		cd = 0,
 		buffId = 330117400,
 		effect = "monster_hurteffect6.ccbi",
@@ -4771,7 +4771,7 @@ local datas = {
 	},
 	[530117500] = {
 		id = 530117500,
-		name = "胖子打机枪",
+		name = 0,
 		cd = 0,
 		buffId = 330117500,
 		effect = "monster_hurteffect2.ccbi",
@@ -4786,7 +4786,7 @@ local datas = {
 	},
 	[530117600] = {
 		id = 530117600,
-		name = "洋葱头",
+		name = 0,
 		cd = 0,
 		buffId = 330117600,
 		effect = "monster_hurteffect3.ccbi",
@@ -4801,7 +4801,7 @@ local datas = {
 	},
 	[530117700] = {
 		id = 530117700,
-		name = "鼓",
+		name = 0,
 		cd = 0,
 		buffId = 330117700,
 		effect = "monster_hurteffect6.ccbi",
@@ -4816,7 +4816,7 @@ local datas = {
 	},
 	[530117800] = {
 		id = 530117800,
-		name = "大鼓",
+		name = 0,
 		cd = 0,
 		buffId = 330117800,
 		effect = "monster_hurteffect6.ccbi",
@@ -4831,7 +4831,7 @@ local datas = {
 	},
 	[530117900] = {
 		id = 530117900,
-		name = "胡萝卜",
+		name = 0,
 		cd = 0,
 		buffId = 330117900,
 		effect = "monster_hurteffect1.ccbi",
@@ -4846,7 +4846,7 @@ local datas = {
 	},
 	[530118000] = {
 		id = 530118000,
-		name = "小双子",
+		name = 0,
 		cd = 0,
 		buffId = 330118000,
 		effect = "monster_hurteffect2.ccbi",
@@ -4861,7 +4861,7 @@ local datas = {
 	},
 	[530118100] = {
 		id = 530118100,
-		name = "植物坛子",
+		name = 0,
 		cd = 0,
 		buffId = 330118100,
 		effect = "monster_hurteffect5.ccbi",
@@ -4876,7 +4876,7 @@ local datas = {
 	},
 	[530118200] = {
 		id = 530118200,
-		name = "毒球",
+		name = 0,
 		cd = 0,
 		buffId = 330118200,
 		effect = "monster_hurteffect5.ccbi",
@@ -4891,7 +4891,7 @@ local datas = {
 	},
 	[530118300] = {
 		id = 530118300,
-		name = "美人鱼花",
+		name = 0,
 		cd = 0,
 		buffId = 330118300,
 		effect = "monster_hurteffect5.ccbi",
@@ -4906,7 +4906,7 @@ local datas = {
 	},
 	[530118400] = {
 		id = 530118400,
-		name = "亮发膏",
+		name = 0,
 		cd = 0,
 		buffId = 330118400,
 		effect = "monster_hurteffect3.ccbi",
@@ -4921,7 +4921,7 @@ local datas = {
 	},
 	[530118500] = {
 		id = 530118500,
-		name = "小骆驼",
+		name = 0,
 		cd = 0,
 		buffId = 330118500,
 		effect = "monster_hurteffect3.ccbi",
@@ -4936,7 +4936,7 @@ local datas = {
 	},
 	[530118600] = {
 		id = 530118600,
-		name = "二逼雪怪",
+		name = 0,
 		cd = 0,
 		buffId = 330118600,
 		effect = "monster_hurteffect1.ccbi",
@@ -4951,7 +4951,7 @@ local datas = {
 	},
 	[530118700] = {
 		id = 530118700,
-		name = "绿秧歌",
+		name = 0,
 		cd = 0,
 		buffId = 330118700,
 		effect = "monster_hurteffect5.ccbi",
@@ -4966,7 +4966,7 @@ local datas = {
 	},
 	[530118800] = {
 		id = 530118800,
-		name = "食人鱼",
+		name = 0,
 		cd = 0,
 		buffId = 330118800,
 		effect = "monster_hurteffect1.ccbi",
@@ -4981,7 +4981,7 @@ local datas = {
 	},
 	[530118900] = {
 		id = 530118900,
-		name = "鲨鱼",
+		name = 0,
 		cd = 0,
 		buffId = 330118900,
 		effect = "monster_hurteffect1.ccbi",
@@ -4996,7 +4996,7 @@ local datas = {
 	},
 	[530119000] = {
 		id = 530119000,
-		name = "蛋壳怪",
+		name = 0,
 		cd = 0,
 		buffId = 330119000,
 		effect = "monster_hurteffect6.ccbi",
@@ -5011,7 +5011,7 @@ local datas = {
 	},
 	[530119100] = {
 		id = 530119100,
-		name = "魔法帽",
+		name = 0,
 		cd = 0,
 		buffId = 330119100,
 		effect = "monster_hurteffect4.ccbi",
@@ -5026,7 +5026,7 @@ local datas = {
 	},
 	[530119200] = {
 		id = 530119200,
-		name = "绿龙",
+		name = 0,
 		cd = 0,
 		buffId = 330119200,
 		effect = "monster_hurteffect5.ccbi",
@@ -5041,7 +5041,7 @@ local datas = {
 	},
 	[530119300] = {
 		id = 530119300,
-		name = "精灵男",
+		name = 0,
 		cd = 0,
 		buffId = 330119300,
 		effect = "monster_hurteffect5.ccbi",
@@ -5056,7 +5056,7 @@ local datas = {
 	},
 	[530119400] = {
 		id = 530119400,
-		name = "皇冠水母",
+		name = 0,
 		cd = 0,
 		buffId = 330119400,
 		effect = "monster_hurteffect1.ccbi",
@@ -5071,7 +5071,7 @@ local datas = {
 	},
 	[530119500] = {
 		id = 530119500,
-		name = "火甲虫",
+		name = 0,
 		cd = 0,
 		buffId = 330119500,
 		effect = "monster_hurteffect5.ccbi",
@@ -5086,7 +5086,7 @@ local datas = {
 	},
 	[530119600] = {
 		id = 530119600,
-		name = "小食人魔",
+		name = 0,
 		cd = 0,
 		buffId = 330119600,
 		effect = "monster_hurteffect3.ccbi",
@@ -5101,7 +5101,7 @@ local datas = {
 	},
 	[530119700] = {
 		id = 530119700,
-		name = "巴尔文娜",
+		name = 0,
 		cd = 0,
 		buffId = 330119700,
 		effect = "monster_hurteffect3.ccbi",
@@ -5116,7 +5116,7 @@ local datas = {
 	},
 	[530120100] = {
 		id = 530120100,
-		name = "火焰宝宝",
+		name = 0,
 		cd = 0,
 		buffId = 330120100,
 		effect = "monster_hurteffect1.ccbi",
@@ -5131,7 +5131,7 @@ local datas = {
 	},
 	[530120200] = {
 		id = 530120200,
-		name = "熔岩巨人",
+		name = 0,
 		cd = 0,
 		buffId = 330120200,
 		effect = "monster_hurteffect2.ccbi",
@@ -5146,7 +5146,7 @@ local datas = {
 	},
 	[530120700] = {
 		id = 530120700,
-		name = "烈焰暴龙",
+		name = 0,
 		cd = 0,
 		buffId = 330120700,
 		effect = "monster_hurteffect2.ccbi",
@@ -5161,8 +5161,8 @@ local datas = {
 	},
 	[530100410] = {
 		id = 530100410,
-		name = "熔岩魔",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330100410,
 		effect = "monster_hurteffect2.ccbi",
 		skillfloat = 0,
@@ -5176,8 +5176,8 @@ local datas = {
 	},
 	[530101110] = {
 		id = 530101110,
-		name = "火龙",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330101110,
 		effect = "monster_hurteffect2.ccbi",
 		skillfloat = 0,
@@ -5191,8 +5191,8 @@ local datas = {
 	},
 	[530101510] = {
 		id = 530101510,
-		name = "瑞妮丝",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330101510,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5206,8 +5206,8 @@ local datas = {
 	},
 	[530105010] = {
 		id = 530105010,
-		name = "毒蘑菇",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330105010,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5221,8 +5221,8 @@ local datas = {
 	},
 	[530105110] = {
 		id = 530105110,
-		name = "乌拉王",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330105110,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5236,8 +5236,8 @@ local datas = {
 	},
 	[530105410] = {
 		id = 530105410,
-		name = "巴菲特斯",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330105410,
 		effect = "monster_hurteffect2.ccbi",
 		skillfloat = 0,
@@ -5251,8 +5251,8 @@ local datas = {
 	},
 	[530105510] = {
 		id = 530105510,
-		name = "唐克",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330105510,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5266,8 +5266,8 @@ local datas = {
 	},
 	[530105610] = {
 		id = 530105610,
-		name = "捕蝇草",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330105610,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5281,8 +5281,8 @@ local datas = {
 	},
 	[530105810] = {
 		id = 530105810,
-		name = "奥格尔",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330105810,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5296,8 +5296,8 @@ local datas = {
 	},
 	[530106010] = {
 		id = 530106010,
-		name = "乌尔萨洛克",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330106010,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5311,8 +5311,8 @@ local datas = {
 	},
 	[530106410] = {
 		id = 530106410,
-		name = "塔塔普",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330106410,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5326,8 +5326,8 @@ local datas = {
 	},
 	[530106510] = {
 		id = 530106510,
-		name = "阿图瑞特",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330106510,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5341,8 +5341,8 @@ local datas = {
 	},
 	[530107910] = {
 		id = 530107910,
-		name = "铠甲波利",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330107910,
 		effect = "monster_hurteffect4.ccbi",
 		skillfloat = 0,
@@ -5356,8 +5356,8 @@ local datas = {
 	},
 	[530108310] = {
 		id = 530108310,
-		name = "艾蕾希娜",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330108310,
 		effect = "monster_hurteffect1.ccbi",
 		skillfloat = 0,
@@ -5371,8 +5371,8 @@ local datas = {
 	},
 	[530108510] = {
 		id = 530108510,
-		name = "阿莱娅",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330108510,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5386,8 +5386,8 @@ local datas = {
 	},
 	[530108810] = {
 		id = 530108810,
-		name = "双角防御者",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330108810,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5401,8 +5401,8 @@ local datas = {
 	},
 	[530108910] = {
 		id = 530108910,
-		name = "妮妮",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330108910,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5416,8 +5416,8 @@ local datas = {
 	},
 	[530109510] = {
 		id = 530109510,
-		name = "古雷",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330109510,
 		effect = "monster_hurteffect1.ccbi",
 		skillfloat = 0,
@@ -5431,8 +5431,8 @@ local datas = {
 	},
 	[530109610] = {
 		id = 530109610,
-		name = "暴食者",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330109610,
 		effect = "monster_hurteffect1.ccbi",
 		skillfloat = 0,
@@ -5446,8 +5446,8 @@ local datas = {
 	},
 	[530109910] = {
 		id = 530109910,
-		name = "卢安克斯",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330109910,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5461,8 +5461,8 @@ local datas = {
 	},
 	[530110310] = {
 		id = 530110310,
-		name = "冰剑猪",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330110310,
 		effect = "monster_hurteffect1.ccbi",
 		skillfloat = 0,
@@ -5476,8 +5476,8 @@ local datas = {
 	},
 	[530110410] = {
 		id = 530110410,
-		name = "卡尔娅",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330110410,
 		effect = "monster_hurteffect4.ccbi",
 		skillfloat = 0,
@@ -5491,8 +5491,8 @@ local datas = {
 	},
 	[530110810] = {
 		id = 530110810,
-		name = "库尔图",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330110810,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5506,8 +5506,8 @@ local datas = {
 	},
 	[530111010] = {
 		id = 530111010,
-		name = "迷宫先锋",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330111010,
 		effect = "monster_hurteffect2.ccbi",
 		skillfloat = 0,
@@ -5521,8 +5521,8 @@ local datas = {
 	},
 	[530111210] = {
 		id = 530111210,
-		name = "嗜血阿拉丁",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330111210,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5536,8 +5536,8 @@ local datas = {
 	},
 	[530111510] = {
 		id = 530111510,
-		name = "卡拉卡夫",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330111510,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5551,8 +5551,8 @@ local datas = {
 	},
 	[530112310] = {
 		id = 530112310,
-		name = "阿努努",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330112310,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5566,8 +5566,8 @@ local datas = {
 	},
 	[530112510] = {
 		id = 530112510,
-		name = "雷德",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330112510,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5581,8 +5581,8 @@ local datas = {
 	},
 	[530112810] = {
 		id = 530112810,
-		name = "克拉克",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330112810,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5596,8 +5596,8 @@ local datas = {
 	},
 	[530112910] = {
 		id = 530112910,
-		name = "安达纳",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330112910,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5611,8 +5611,8 @@ local datas = {
 	},
 	[530113210] = {
 		id = 530113210,
-		name = "帕拉纳",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330113210,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5626,8 +5626,8 @@ local datas = {
 	},
 	[530113610] = {
 		id = 530113610,
-		name = "奥罗娜",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330113610,
 		effect = "monster_hurteffect6.ccbi",
 		skillfloat = 0,
@@ -5641,8 +5641,8 @@ local datas = {
 	},
 	[530114010] = {
 		id = 530114010,
-		name = "阿契米奥斯",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330114010,
 		effect = "monster_hurteffect2.ccbi",
 		skillfloat = 0,
@@ -5656,8 +5656,8 @@ local datas = {
 	},
 	[530114210] = {
 		id = 530114210,
-		name = "监视者",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330114210,
 		effect = "monster_hurteffect3.ccbi",
 		skillfloat = 0,
@@ -5671,8 +5671,8 @@ local datas = {
 	},
 	[530117810] = {
 		id = 530117810,
-		name = "巨鼓石人",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330117810,
 		effect = "monster_hurteffect6.ccbi",
 		skillfloat = 0,
@@ -5686,8 +5686,8 @@ local datas = {
 	},
 	[530118310] = {
 		id = 530118310,
-		name = "毒笼草",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330118310,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5701,8 +5701,8 @@ local datas = {
 	},
 	[530118320] = {
 		id = 530118320,
-		name = "",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330118320,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5716,8 +5716,8 @@ local datas = {
 	},
 	[530118330] = {
 		id = 530118330,
-		name = "",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330118330,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5731,8 +5731,8 @@ local datas = {
 	},
 	[530118910] = {
 		id = 530118910,
-		name = "钢翅陆行鲨",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330118910,
 		effect = "monster_hurteffect1.ccbi",
 		skillfloat = 0,
@@ -5746,8 +5746,8 @@ local datas = {
 	},
 	[530119210] = {
 		id = 530119210,
-		name = "毒囊恶龙",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330119210,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5761,8 +5761,8 @@ local datas = {
 	},
 	[530119310] = {
 		id = 530119310,
-		name = "木灵猎手",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330119310,
 		effect = "monster_hurteffect5.ccbi",
 		skillfloat = 0,
@@ -5776,8 +5776,8 @@ local datas = {
 	},
 	[530119410] = {
 		id = 530119410,
-		name = "皇冠水母",
-		cd = 10,
+		name = 0,
+		cd = 6,
 		buffId = 330119410,
 		effect = "monster_hurteffect1.ccbi",
 		skillfloat = 0,
@@ -5791,7 +5791,7 @@ local datas = {
 	},
 	[531104100] = {
 		id = 531104100,
-		name = "爆破鼠",
+		name = 0,
 		cd = 0,
 		buffId = 331104100,
 		effect = "monster_hurteffect2.ccbi",
@@ -5806,7 +5806,7 @@ local datas = {
 	},
 	[531102400] = {
 		id = 531102400,
-		name = "巨钳蟹",
+		name = 0,
 		cd = 0,
 		buffId = 331102400,
 		effect = "monster_hurteffect3.ccbi",
@@ -5821,7 +5821,7 @@ local datas = {
 	},
 	[531120100] = {
 		id = 531120100,
-		name = "火焰宝宝",
+		name = 0,
 		cd = 0,
 		buffId = 331120100,
 		effect = "monster_hurteffect1.ccbi",
@@ -5836,7 +5836,7 @@ local datas = {
 	},
 	[531117400] = {
 		id = 531117400,
-		name = "机枪堡垒",
+		name = 0,
 		cd = 0,
 		buffId = 331117400,
 		effect = "monster_hurteffect6.ccbi",
@@ -5851,7 +5851,7 @@ local datas = {
 	},
 	[531117500] = {
 		id = 531117500,
-		name = "巨炮要塞",
+		name = 0,
 		cd = 0,
 		buffId = 331117500,
 		effect = "monster_hurteffect2.ccbi",
@@ -5866,7 +5866,7 @@ local datas = {
 	},
 	[531118000] = {
 		id = 531118000,
-		name = "圣火甲虫",
+		name = 0,
 		cd = 0,
 		buffId = 331118000,
 		effect = "monster_hurteffect2.ccbi",
@@ -5881,7 +5881,7 @@ local datas = {
 	},
 	[531107300] = {
 		id = 531107300,
-		name = "加古拉",
+		name = 0,
 		cd = 0,
 		buffId = 331107300,
 		effect = "monster_hurteffect2.ccbi",
@@ -5896,7 +5896,7 @@ local datas = {
 	},
 	[531101100] = {
 		id = 531101100,
-		name = "火龙",
+		name = 0,
 		cd = 0,
 		buffId = 331101100,
 		effect = "monster_hurteffect2.ccbi",
@@ -5911,7 +5911,7 @@ local datas = {
 	},
 	[531120700] = {
 		id = 531120700,
-		name = "烈焰暴龙",
+		name = 0,
 		cd = 0,
 		buffId = 331120700,
 		effect = "monster_hurteffect2.ccbi",
@@ -5926,7 +5926,7 @@ local datas = {
 	},
 	[531117600] = {
 		id = 531117600,
-		name = "星火卡莫",
+		name = 0,
 		cd = 0,
 		buffId = 331117600,
 		effect = "monster_hurteffect3.ccbi",
@@ -5941,7 +5941,7 @@ local datas = {
 	},
 	[531118500] = {
 		id = 531118500,
-		name = "火焰卡莫",
+		name = 0,
 		cd = 0,
 		buffId = 331118500,
 		effect = "monster_hurteffect3.ccbi",
@@ -5956,7 +5956,7 @@ local datas = {
 	},
 	[531117000] = {
 		id = 531117000,
-		name = "鹦鹉螺",
+		name = 0,
 		cd = 0,
 		buffId = 331117000,
 		effect = "monster_hurteffect1.ccbi",
@@ -5971,7 +5971,7 @@ local datas = {
 	},
 	[531117300] = {
 		id = 531117300,
-		name = "求雨玩偶",
+		name = 0,
 		cd = 0,
 		buffId = 331117300,
 		effect = "monster_hurteffect1.ccbi",
@@ -5986,7 +5986,7 @@ local datas = {
 	},
 	[531100700] = {
 		id = 531100700,
-		name = "云叶",
+		name = 0,
 		cd = 0,
 		buffId = 331100700,
 		effect = "monster_hurteffect5.ccbi",
@@ -6001,7 +6001,7 @@ local datas = {
 	},
 	[531115600] = {
 		id = 531115600,
-		name = "骤雨魔女",
+		name = 0,
 		cd = 0,
 		buffId = 331115600,
 		effect = "monster_hurteffect1.ccbi",
@@ -6016,7 +6016,7 @@ local datas = {
 	},
 	[531117200] = {
 		id = 531117200,
-		name = "暴雨女皇",
+		name = 0,
 		cd = 0,
 		buffId = 331117200,
 		effect = "monster_hurteffect1.ccbi",
@@ -6031,7 +6031,7 @@ local datas = {
 	},
 	[531117100] = {
 		id = 531117100,
-		name = "宝石水母",
+		name = 0,
 		cd = 0,
 		buffId = 331117100,
 		effect = "monster_hurteffect1.ccbi",
@@ -6046,7 +6046,7 @@ local datas = {
 	},
 	[531119400] = {
 		id = 531119400,
-		name = "皇冠水母",
+		name = 0,
 		cd = 0,
 		buffId = 331119400,
 		effect = "monster_hurteffect1.ccbi",
@@ -6061,7 +6061,7 @@ local datas = {
 	},
 	[531118800] = {
 		id = 531118800,
-		name = "食人鱼",
+		name = 0,
 		cd = 0,
 		buffId = 331118800,
 		effect = "monster_hurteffect1.ccbi",
@@ -6076,7 +6076,7 @@ local datas = {
 	},
 	[531118900] = {
 		id = 531118900,
-		name = "钢翅陆行鲨",
+		name = 0,
 		cd = 0,
 		buffId = 331118900,
 		effect = "monster_hurteffect1.ccbi",
@@ -6091,7 +6091,7 @@ local datas = {
 	},
 	[531100600] = {
 		id = 531100600,
-		name = "乌拉",
+		name = 0,
 		cd = 0,
 		buffId = 331100600,
 		effect = "monster_hurteffect3.ccbi",
@@ -6106,7 +6106,7 @@ local datas = {
 	},
 	[531115400] = {
 		id = 531115400,
-		name = "蔓藤精灵",
+		name = 0,
 		cd = 0,
 		buffId = 331115400,
 		effect = "monster_hurteffect5.ccbi",
@@ -6121,7 +6121,7 @@ local datas = {
 	},
 	[531116800] = {
 		id = 531116800,
-		name = "绿叶娃娃",
+		name = 0,
 		cd = 0,
 		buffId = 331116800,
 		effect = "monster_hurteffect5.ccbi",
@@ -6136,7 +6136,7 @@ local datas = {
 	},
 	[531101000] = {
 		id = 531101000,
-		name = "仙人掌",
+		name = 0,
 		cd = 0,
 		buffId = 331101000,
 		effect = "monster_hurteffect5.ccbi",
@@ -6151,7 +6151,7 @@ local datas = {
 	},
 	[531109200] = {
 		id = 531109200,
-		name = "布布洛",
+		name = 0,
 		cd = 0,
 		buffId = 331109200,
 		effect = "monster_hurteffect5.ccbi",
@@ -6166,7 +6166,7 @@ local datas = {
 	},
 	[531101500] = {
 		id = 531101500,
-		name = "瑞妮丝",
+		name = 0,
 		cd = 0,
 		buffId = 331101500,
 		effect = "monster_hurteffect5.ccbi",
@@ -6181,7 +6181,7 @@ local datas = {
 	},
 	[531115500] = {
 		id = 531115500,
-		name = "荆棘女妖",
+		name = 0,
 		cd = 0,
 		buffId = 331115500,
 		effect = "monster_hurteffect5.ccbi",
@@ -6196,7 +6196,7 @@ local datas = {
 	},
 	[531118400] = {
 		id = 531118400,
-		name = "木灵射手",
+		name = 0,
 		cd = 0,
 		buffId = 331118400,
 		effect = "monster_hurteffect3.ccbi",
@@ -6211,7 +6211,7 @@ local datas = {
 	},
 	[531119300] = {
 		id = 531119300,
-		name = "木灵猎手",
+		name = 0,
 		cd = 0,
 		buffId = 331119300,
 		effect = "monster_hurteffect5.ccbi",
@@ -6226,7 +6226,7 @@ local datas = {
 	},
 	[531108000] = {
 		id = 531108000,
-		name = "戈仑之眼",
+		name = 0,
 		cd = 0,
 		buffId = 331108000,
 		effect = "monster_hurteffect1.ccbi",
@@ -6241,7 +6241,7 @@ local datas = {
 	},
 	[531116000] = {
 		id = 531116000,
-		name = "青墙",
+		name = 0,
 		cd = 0,
 		buffId = 331116000,
 		effect = "monster_hurteffect3.ccbi",
@@ -6256,7 +6256,7 @@ local datas = {
 	},
 	[531109100] = {
 		id = 531109100,
-		name = "刺锤瓦鲁特",
+		name = 0,
 		cd = 0,
 		buffId = 331109100,
 		effect = "monster_hurteffect2.ccbi",
@@ -6271,7 +6271,7 @@ local datas = {
 	},
 	[531100400] = {
 		id = 531100400,
-		name = "熔岩魔",
+		name = 0,
 		cd = 0,
 		buffId = 331100400,
 		effect = "monster_hurteffect2.ccbi",
@@ -6286,7 +6286,7 @@ local datas = {
 	},
 	[531120200] = {
 		id = 531120200,
-		name = "熔岩巨人",
+		name = 0,
 		cd = 0,
 		buffId = 331120200,
 		effect = "monster_hurteffect2.ccbi",
@@ -6301,7 +6301,7 @@ local datas = {
 	},
 	[531117700] = {
 		id = 531117700,
-		name = "岩石巨鼓",
+		name = 0,
 		cd = 0,
 		buffId = 331117700,
 		effect = "monster_hurteffect6.ccbi",
@@ -6316,7 +6316,7 @@ local datas = {
 	},
 	[531117800] = {
 		id = 531117800,
-		name = "巨鼓石人",
+		name = 0,
 		cd = 0,
 		buffId = 331117800,
 		effect = "monster_hurteffect6.ccbi",
@@ -6331,7 +6331,7 @@ local datas = {
 	},
 	[531119000] = {
 		id = 531119000,
-		name = "椰蛋怪",
+		name = 0,
 		cd = 0,
 		buffId = 331119000,
 		effect = "monster_hurteffect6.ccbi",
@@ -6346,7 +6346,7 @@ local datas = {
 	},
 	[531110600] = {
 		id = 531110600,
-		name = "德洛尼克",
+		name = 0,
 		cd = 0,
 		buffId = 331110600,
 		effect = "monster_hurteffect3.ccbi",
@@ -6361,7 +6361,7 @@ local datas = {
 	},
 	[531108500] = {
 		id = 531108500,
-		name = "阿莱娅",
+		name = 0,
 		cd = 0,
 		buffId = 331108500,
 		effect = "monster_hurteffect3.ccbi",
@@ -6376,7 +6376,7 @@ local datas = {
 	},
 	[531118200] = {
 		id = 531118200,
-		name = "毒绿素",
+		name = 0,
 		cd = 0,
 		buffId = 331118200,
 		effect = "monster_hurteffect5.ccbi",
@@ -6391,7 +6391,7 @@ local datas = {
 	},
 	[531119100] = {
 		id = 531119100,
-		name = "毒素鬼才",
+		name = 0,
 		cd = 0,
 		buffId = 331119100,
 		effect = "monster_hurteffect4.ccbi",
@@ -6406,7 +6406,7 @@ local datas = {
 	},
 	[531118100] = {
 		id = 531118100,
-		name = "毒汁草",
+		name = 0,
 		cd = 0,
 		buffId = 331118100,
 		effect = "monster_hurteffect5.ccbi",
@@ -6421,7 +6421,7 @@ local datas = {
 	},
 	[531118300] = {
 		id = 531118300,
-		name = "毒笼草",
+		name = 0,
 		cd = 0,
 		buffId = 331118300,
 		effect = "monster_hurteffect5.ccbi",
@@ -6436,7 +6436,7 @@ local datas = {
 	},
 	[531118700] = {
 		id = 531118700,
-		name = "毒素精灵",
+		name = 0,
 		cd = 0,
 		buffId = 331118700,
 		effect = "monster_hurteffect5.ccbi",
@@ -6451,7 +6451,7 @@ local datas = {
 	},
 	[531119200] = {
 		id = 531119200,
-		name = "毒囊恶龙",
+		name = 0,
 		cd = 0,
 		buffId = 331119200,
 		effect = "monster_hurteffect5.ccbi",
@@ -6466,7 +6466,7 @@ local datas = {
 	},
 	[531119500] = {
 		id = 531119500,
-		name = "圣毒甲虫",
+		name = 0,
 		cd = 0,
 		buffId = 331119500,
 		effect = "monster_hurteffect5.ccbi",
@@ -6481,7 +6481,7 @@ local datas = {
 	},
 	[531107200] = {
 		id = 531107200,
-		name = "玛努诺克",
+		name = 0,
 		cd = 0,
 		buffId = 331107200,
 		effect = "monster_hurteffect5.ccbi",
@@ -6496,7 +6496,7 @@ local datas = {
 	},
 	[531101300] = {
 		id = 531101300,
-		name = "泰格拉",
+		name = 0,
 		cd = 0,
 		buffId = 331101300,
 		effect = "monster_hurteffect3.ccbi",
@@ -6511,7 +6511,7 @@ local datas = {
 	},
 	[531110000] = {
 		id = 531110000,
-		name = "鬃毛盗墓者",
+		name = 0,
 		cd = 0,
 		buffId = 331110000,
 		effect = "monster_hurteffect3.ccbi",
@@ -6526,7 +6526,7 @@ local datas = {
 	},
 	[531116700] = {
 		id = 531116700,
-		name = "长耳兔",
+		name = 0,
 		cd = 0,
 		buffId = 331116700,
 		effect = "monster_hurteffect3.ccbi",
@@ -6541,7 +6541,7 @@ local datas = {
 	},
 	[531119600] = {
 		id = 531119600,
-		name = "双刀屠夫",
+		name = 0,
 		cd = 0,
 		buffId = 331119600,
 		effect = "monster_hurteffect3.ccbi",
@@ -6556,7 +6556,7 @@ local datas = {
 	},
 	[531101600] = {
 		id = 531101600,
-		name = "独眼食人魔",
+		name = 0,
 		cd = 0,
 		buffId = 331101600,
 		effect = "monster_hurteffect3.ccbi",
@@ -6571,7 +6571,7 @@ local datas = {
 	},
 	[531116600] = {
 		id = 531116600,
-		name = "小野猪",
+		name = 0,
 		cd = 0,
 		buffId = 331116600,
 		effect = "monster_hurteffect3.ccbi",
@@ -6586,7 +6586,7 @@ local datas = {
 	},
 	[531101900] = {
 		id = 531101900,
-		name = "奥鲁夫",
+		name = 0,
 		cd = 0,
 		buffId = 331101900,
 		effect = "monster_hurteffect3.ccbi",
@@ -6601,7 +6601,7 @@ local datas = {
 	},
 	[531106200] = {
 		id = 531106200,
-		name = "卡卡诺克",
+		name = 0,
 		cd = 0,
 		buffId = 331106200,
 		effect = "monster_hurteffect6.ccbi",
@@ -6616,7 +6616,7 @@ local datas = {
 	},
 	[531106100] = {
 		id = 531106100,
-		name = "泰拉卡",
+		name = 0,
 		cd = 0,
 		buffId = 331106100,
 		effect = "monster_hurteffect6.ccbi",
@@ -6631,7 +6631,7 @@ local datas = {
 	},
 	[531110200] = {
 		id = 531110200,
-		name = "内鲁",
+		name = 0,
 		cd = 0,
 		buffId = 331110200,
 		effect = "monster_hurteffect1.ccbi",
@@ -6646,7 +6646,7 @@ local datas = {
 	},
 	[531106600] = {
 		id = 531106600,
-		name = "冰元素守卫",
+		name = 0,
 		cd = 0,
 		buffId = 331106600,
 		effect = "monster_hurteffect1.ccbi",
@@ -6661,7 +6661,7 @@ local datas = {
 	},
 	[531103700] = {
 		id = 531103700,
-		name = "雪胖丁",
+		name = 0,
 		cd = 0,
 		buffId = 331103700,
 		effect = "monster_hurteffect1.ccbi",
@@ -6676,7 +6676,7 @@ local datas = {
 	},
 	[531119700] = {
 		id = 531119700,
-		name = "雪兔宝",
+		name = 0,
 		cd = 0,
 		buffId = 331119700,
 		effect = "monster_hurteffect3.ccbi",
@@ -6691,7 +6691,7 @@ local datas = {
 	},
 	[531103300] = {
 		id = 531103300,
-		name = "妮妮可",
+		name = 0,
 		cd = 0,
 		buffId = 331103300,
 		effect = "monster_hurteffect1.ccbi",
@@ -6706,7 +6706,7 @@ local datas = {
 	},
 	[531117900] = {
 		id = 531117900,
-		name = "深山雪宝",
+		name = 0,
 		cd = 0,
 		buffId = 331117900,
 		effect = "monster_hurteffect1.ccbi",
@@ -6721,7 +6721,7 @@ local datas = {
 	},
 	[531115800] = {
 		id = 531115800,
-		name = "雪人炮兵",
+		name = 0,
 		cd = 0,
 		buffId = 331115800,
 		effect = "monster_hurteffect1.ccbi",
@@ -6736,7 +6736,7 @@ local datas = {
 	},
 	[531118600] = {
 		id = 531118600,
-		name = "深山雪怪",
+		name = 0,
 		cd = 0,
 		buffId = 331118600,
 		effect = "monster_hurteffect1.ccbi",
@@ -6751,7 +6751,7 @@ local datas = {
 	},
 	[531103800] = {
 		id = 531103800,
-		name = "艾布雷克",
+		name = 0,
 		cd = 0,
 		buffId = 331103800,
 		effect = "monster_hurteffect1.ccbi",
@@ -6766,7 +6766,7 @@ local datas = {
 	},
 	[590000010] = {
 		id = 590000010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 390000010,
 		effect = "",
@@ -6781,7 +6781,7 @@ local datas = {
 	},
 	[590000020] = {
 		id = 590000020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 390000020,
 		effect = "",
@@ -6796,7 +6796,7 @@ local datas = {
 	},
 	[590000030] = {
 		id = 590000030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 390000030,
 		effect = "",
@@ -6811,7 +6811,7 @@ local datas = {
 	},
 	[591014010] = {
 		id = 591014010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391014010,
 		effect = "",
@@ -6826,7 +6826,7 @@ local datas = {
 	},
 	[591014020] = {
 		id = 591014020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391014020,
 		effect = "",
@@ -6841,7 +6841,7 @@ local datas = {
 	},
 	[591014030] = {
 		id = 591014030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391014030,
 		effect = "",
@@ -6856,7 +6856,7 @@ local datas = {
 	},
 	[591014040] = {
 		id = 591014040,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391014040,
 		effect = "",
@@ -6871,7 +6871,7 @@ local datas = {
 	},
 	[591015010] = {
 		id = 591015010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391015010,
 		effect = "",
@@ -6886,7 +6886,7 @@ local datas = {
 	},
 	[591015020] = {
 		id = 591015020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391015020,
 		effect = "",
@@ -6901,7 +6901,7 @@ local datas = {
 	},
 	[591015030] = {
 		id = 591015030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391015030,
 		effect = "",
@@ -6916,7 +6916,7 @@ local datas = {
 	},
 	[591015040] = {
 		id = 591015040,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391015040,
 		effect = "",
@@ -6931,7 +6931,7 @@ local datas = {
 	},
 	[591021010] = {
 		id = 591021010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391021010,
 		effect = "",
@@ -6946,7 +6946,7 @@ local datas = {
 	},
 	[591021020] = {
 		id = 591021020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391021020,
 		effect = "",
@@ -6961,7 +6961,7 @@ local datas = {
 	},
 	[591022010] = {
 		id = 591022010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391022010,
 		effect = "",
@@ -6976,7 +6976,7 @@ local datas = {
 	},
 	[591022020] = {
 		id = 591022020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391022020,
 		effect = "",
@@ -6991,7 +6991,7 @@ local datas = {
 	},
 	[591023010] = {
 		id = 591023010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391023010,
 		effect = "",
@@ -7006,7 +7006,7 @@ local datas = {
 	},
 	[591023020] = {
 		id = 591023020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391023020,
 		effect = "",
@@ -7021,7 +7021,7 @@ local datas = {
 	},
 	[591024010] = {
 		id = 591024010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391024010,
 		effect = "",
@@ -7036,7 +7036,7 @@ local datas = {
 	},
 	[591024020] = {
 		id = 591024020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391024020,
 		effect = "",
@@ -7051,7 +7051,7 @@ local datas = {
 	},
 	[591025010] = {
 		id = 591025010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391025010,
 		effect = "",
@@ -7066,7 +7066,7 @@ local datas = {
 	},
 	[591031010] = {
 		id = 591031010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391031010,
 		effect = "",
@@ -7081,7 +7081,7 @@ local datas = {
 	},
 	[591032010] = {
 		id = 591032010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391032010,
 		effect = "",
@@ -7096,7 +7096,7 @@ local datas = {
 	},
 	[591032020] = {
 		id = 591032020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391032020,
 		effect = "",
@@ -7111,7 +7111,7 @@ local datas = {
 	},
 	[591032030] = {
 		id = 591032030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391032030,
 		effect = "",
@@ -7126,7 +7126,7 @@ local datas = {
 	},
 	[591033010] = {
 		id = 591033010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391033010,
 		effect = "",
@@ -7141,7 +7141,7 @@ local datas = {
 	},
 	[591035010] = {
 		id = 591035010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391035010,
 		effect = "",
@@ -7156,7 +7156,7 @@ local datas = {
 	},
 	[591035020] = {
 		id = 591035020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391035020,
 		effect = "",
@@ -7171,7 +7171,7 @@ local datas = {
 	},
 	[591035030] = {
 		id = 591035030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391035030,
 		effect = "",
@@ -7186,7 +7186,7 @@ local datas = {
 	},
 	[591043010] = {
 		id = 591043010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391043010,
 		effect = "",
@@ -7201,7 +7201,7 @@ local datas = {
 	},
 	[591045010] = {
 		id = 591045010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391045010,
 		effect = "",
@@ -7216,7 +7216,7 @@ local datas = {
 	},
 	[591051010] = {
 		id = 591051010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391051010,
 		effect = "",
@@ -7231,7 +7231,7 @@ local datas = {
 	},
 	[591051020] = {
 		id = 591051020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391051020,
 		effect = "",
@@ -7246,7 +7246,7 @@ local datas = {
 	},
 	[591051030] = {
 		id = 591051030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391051030,
 		effect = "",
@@ -7261,7 +7261,7 @@ local datas = {
 	},
 	[591051040] = {
 		id = 591051040,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391051040,
 		effect = "",
@@ -7276,7 +7276,7 @@ local datas = {
 	},
 	[591051050] = {
 		id = 591051050,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391051050,
 		effect = "",
@@ -7291,7 +7291,7 @@ local datas = {
 	},
 	[591051060] = {
 		id = 591051060,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391051060,
 		effect = "",
@@ -7306,7 +7306,7 @@ local datas = {
 	},
 	[591051070] = {
 		id = 591051070,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391051070,
 		effect = "",
@@ -7321,7 +7321,7 @@ local datas = {
 	},
 	[591053010] = {
 		id = 591053010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391053010,
 		effect = "",
@@ -7336,7 +7336,7 @@ local datas = {
 	},
 	[591061010] = {
 		id = 591061010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391061010,
 		effect = "",
@@ -7351,7 +7351,7 @@ local datas = {
 	},
 	[591061020] = {
 		id = 591061020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391061020,
 		effect = "",
@@ -7366,7 +7366,7 @@ local datas = {
 	},
 	[591062010] = {
 		id = 591062010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391062010,
 		effect = "",
@@ -7381,7 +7381,7 @@ local datas = {
 	},
 	[591062020] = {
 		id = 591062020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391062020,
 		effect = "",
@@ -7396,7 +7396,7 @@ local datas = {
 	},
 	[591063010] = {
 		id = 591063010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391063010,
 		effect = "",
@@ -7411,7 +7411,7 @@ local datas = {
 	},
 	[591063020] = {
 		id = 591063020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391063020,
 		effect = "",
@@ -7426,7 +7426,7 @@ local datas = {
 	},
 	[591063030] = {
 		id = 591063030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391063030,
 		effect = "",
@@ -7441,7 +7441,7 @@ local datas = {
 	},
 	[591064010] = {
 		id = 591064010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391064010,
 		effect = "",
@@ -7456,7 +7456,7 @@ local datas = {
 	},
 	[591064020] = {
 		id = 591064020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391064020,
 		effect = "",
@@ -7471,7 +7471,7 @@ local datas = {
 	},
 	[591064030] = {
 		id = 591064030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391064030,
 		effect = "",
@@ -7486,7 +7486,7 @@ local datas = {
 	},
 	[591065010] = {
 		id = 591065010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391065010,
 		effect = "",
@@ -7501,7 +7501,7 @@ local datas = {
 	},
 	[591065020] = {
 		id = 591065020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391065020,
 		effect = "",
@@ -7516,7 +7516,7 @@ local datas = {
 	},
 	[591065030] = {
 		id = 591065030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391065030,
 		effect = "",
@@ -7531,7 +7531,7 @@ local datas = {
 	},
 	[591073010] = {
 		id = 591073010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391073010,
 		effect = "",
@@ -7546,7 +7546,7 @@ local datas = {
 	},
 	[591073020] = {
 		id = 591073020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391073020,
 		effect = "",
@@ -7561,7 +7561,7 @@ local datas = {
 	},
 	[591073030] = {
 		id = 591073030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391073030,
 		effect = "",
@@ -7576,7 +7576,7 @@ local datas = {
 	},
 	[591073040] = {
 		id = 591073040,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391073040,
 		effect = "",
@@ -7591,7 +7591,7 @@ local datas = {
 	},
 	[591073050] = {
 		id = 591073050,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391073050,
 		effect = "",
@@ -7606,7 +7606,7 @@ local datas = {
 	},
 	[591093010] = {
 		id = 591093010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391093010,
 		effect = "",
@@ -7621,7 +7621,7 @@ local datas = {
 	},
 	[591095010] = {
 		id = 591095010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391095010,
 		effect = "",
@@ -7636,7 +7636,7 @@ local datas = {
 	},
 	[592002010] = {
 		id = 592002010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392002010,
 		effect = "",
@@ -7651,7 +7651,7 @@ local datas = {
 	},
 	[592002020] = {
 		id = 592002020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392002020,
 		effect = "",
@@ -7666,7 +7666,7 @@ local datas = {
 	},
 	[592002030] = {
 		id = 592002030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392002030,
 		effect = "",
@@ -7681,7 +7681,7 @@ local datas = {
 	},
 	[593013010] = {
 		id = 593013010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393013010,
 		effect = "",
@@ -7696,7 +7696,7 @@ local datas = {
 	},
 	[593013020] = {
 		id = 593013020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393013020,
 		effect = "",
@@ -7711,7 +7711,7 @@ local datas = {
 	},
 	[591000010] = {
 		id = 591000010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000010,
 		effect = "",
@@ -7726,7 +7726,7 @@ local datas = {
 	},
 	[591000020] = {
 		id = 591000020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000020,
 		effect = "",
@@ -7741,7 +7741,7 @@ local datas = {
 	},
 	[591000030] = {
 		id = 591000030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000030,
 		effect = "",
@@ -7756,7 +7756,7 @@ local datas = {
 	},
 	[591000040] = {
 		id = 591000040,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000040,
 		effect = "",
@@ -7771,7 +7771,7 @@ local datas = {
 	},
 	[591000050] = {
 		id = 591000050,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000050,
 		effect = "",
@@ -7786,7 +7786,7 @@ local datas = {
 	},
 	[591000060] = {
 		id = 591000060,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000060,
 		effect = "",
@@ -7801,7 +7801,7 @@ local datas = {
 	},
 	[591000070] = {
 		id = 591000070,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000070,
 		effect = "",
@@ -7816,7 +7816,7 @@ local datas = {
 	},
 	[591000080] = {
 		id = 591000080,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000080,
 		effect = "",
@@ -7831,7 +7831,7 @@ local datas = {
 	},
 	[591000090] = {
 		id = 591000090,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000090,
 		effect = "",
@@ -7846,7 +7846,7 @@ local datas = {
 	},
 	[591000100] = {
 		id = 591000100,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 391000100,
 		effect = "",
@@ -7861,7 +7861,7 @@ local datas = {
 	},
 	[592000010] = {
 		id = 592000010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000010,
 		effect = "",
@@ -7876,7 +7876,7 @@ local datas = {
 	},
 	[592000020] = {
 		id = 592000020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000020,
 		effect = "",
@@ -7891,7 +7891,7 @@ local datas = {
 	},
 	[592000030] = {
 		id = 592000030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000030,
 		effect = "",
@@ -7906,7 +7906,7 @@ local datas = {
 	},
 	[592000040] = {
 		id = 592000040,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000040,
 		effect = "",
@@ -7921,7 +7921,7 @@ local datas = {
 	},
 	[592000050] = {
 		id = 592000050,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000050,
 		effect = "",
@@ -7936,7 +7936,7 @@ local datas = {
 	},
 	[592000060] = {
 		id = 592000060,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000060,
 		effect = "",
@@ -7951,7 +7951,7 @@ local datas = {
 	},
 	[592000070] = {
 		id = 592000070,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000070,
 		effect = "",
@@ -7966,7 +7966,7 @@ local datas = {
 	},
 	[592000080] = {
 		id = 592000080,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000080,
 		effect = "",
@@ -7981,7 +7981,7 @@ local datas = {
 	},
 	[592000090] = {
 		id = 592000090,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000090,
 		effect = "",
@@ -7996,7 +7996,7 @@ local datas = {
 	},
 	[592000100] = {
 		id = 592000100,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 392000100,
 		effect = "",
@@ -8011,7 +8011,7 @@ local datas = {
 	},
 	[593000010] = {
 		id = 593000010,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000010,
 		effect = "",
@@ -8026,7 +8026,7 @@ local datas = {
 	},
 	[593000020] = {
 		id = 593000020,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000020,
 		effect = "",
@@ -8041,7 +8041,7 @@ local datas = {
 	},
 	[593000030] = {
 		id = 593000030,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000030,
 		effect = "",
@@ -8056,7 +8056,7 @@ local datas = {
 	},
 	[593000040] = {
 		id = 593000040,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000040,
 		effect = "",
@@ -8071,7 +8071,7 @@ local datas = {
 	},
 	[593000050] = {
 		id = 593000050,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000050,
 		effect = "",
@@ -8086,7 +8086,7 @@ local datas = {
 	},
 	[593000060] = {
 		id = 593000060,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000060,
 		effect = "",
@@ -8101,7 +8101,7 @@ local datas = {
 	},
 	[593000070] = {
 		id = 593000070,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000070,
 		effect = "",
@@ -8116,7 +8116,7 @@ local datas = {
 	},
 	[593000080] = {
 		id = 593000080,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000080,
 		effect = "",
@@ -8131,7 +8131,7 @@ local datas = {
 	},
 	[593000090] = {
 		id = 593000090,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000090,
 		effect = "",
@@ -8146,7 +8146,7 @@ local datas = {
 	},
 	[593000100] = {
 		id = 593000100,
-		name = "",
+		name = 0,
 		cd = 0,
 		buffId = 393000100,
 		effect = "",

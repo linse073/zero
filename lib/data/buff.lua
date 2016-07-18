@@ -1,7 +1,7 @@
 local datas = {
 	[300000110] = {
 		id = 300000110,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -26,7 +26,7 @@ local datas = {
 	},
 	[300000120] = {
 		id = 300000120,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -51,7 +51,7 @@ local datas = {
 	},
 	[300000130] = {
 		id = 300000130,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -76,7 +76,7 @@ local datas = {
 	},
 	[300000140] = {
 		id = 300000140,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -101,7 +101,7 @@ local datas = {
 	},
 	[300000150] = {
 		id = 300000150,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -126,7 +126,7 @@ local datas = {
 	},
 	[300000210] = {
 		id = 300000210,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -151,7 +151,7 @@ local datas = {
 	},
 	[300000220] = {
 		id = 300000220,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -176,7 +176,7 @@ local datas = {
 	},
 	[300000230] = {
 		id = 300000230,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -201,7 +201,7 @@ local datas = {
 	},
 	[300000240] = {
 		id = 300000240,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -226,7 +226,7 @@ local datas = {
 	},
 	[300000250] = {
 		id = 300000250,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -251,7 +251,7 @@ local datas = {
 	},
 	[300000310] = {
 		id = 300000310,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -276,7 +276,7 @@ local datas = {
 	},
 	[300000320] = {
 		id = 300000320,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -301,7 +301,7 @@ local datas = {
 	},
 	[300000330] = {
 		id = 300000330,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -326,7 +326,7 @@ local datas = {
 	},
 	[300000340] = {
 		id = 300000340,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -351,7 +351,7 @@ local datas = {
 	},
 	[300000350] = {
 		id = 300000350,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -376,7 +376,7 @@ local datas = {
 	},
 	[300000410] = {
 		id = 300000410,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -401,7 +401,7 @@ local datas = {
 	},
 	[300000420] = {
 		id = 300000420,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -426,7 +426,7 @@ local datas = {
 	},
 	[300000430] = {
 		id = 300000430,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -451,7 +451,7 @@ local datas = {
 	},
 	[300000440] = {
 		id = 300000440,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -476,7 +476,7 @@ local datas = {
 	},
 	[300000450] = {
 		id = 300000450,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -501,7 +501,7 @@ local datas = {
 	},
 	[300000111] = {
 		id = 300000111,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -526,7 +526,7 @@ local datas = {
 	},
 	[300000121] = {
 		id = 300000121,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -551,7 +551,7 @@ local datas = {
 	},
 	[300000131] = {
 		id = 300000131,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -576,7 +576,7 @@ local datas = {
 	},
 	[300000141] = {
 		id = 300000141,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -601,7 +601,7 @@ local datas = {
 	},
 	[300000151] = {
 		id = 300000151,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -626,7 +626,7 @@ local datas = {
 	},
 	[300000211] = {
 		id = 300000211,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -651,7 +651,7 @@ local datas = {
 	},
 	[300000221] = {
 		id = 300000221,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -676,7 +676,7 @@ local datas = {
 	},
 	[300000231] = {
 		id = 300000231,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -701,7 +701,7 @@ local datas = {
 	},
 	[300000241] = {
 		id = 300000241,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -726,7 +726,7 @@ local datas = {
 	},
 	[300000251] = {
 		id = 300000251,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -751,7 +751,7 @@ local datas = {
 	},
 	[300000311] = {
 		id = 300000311,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -776,7 +776,7 @@ local datas = {
 	},
 	[300000321] = {
 		id = 300000321,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -801,7 +801,7 @@ local datas = {
 	},
 	[300000331] = {
 		id = 300000331,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -826,7 +826,7 @@ local datas = {
 	},
 	[300000341] = {
 		id = 300000341,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -851,7 +851,7 @@ local datas = {
 	},
 	[300000351] = {
 		id = 300000351,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -876,7 +876,7 @@ local datas = {
 	},
 	[300000411] = {
 		id = 300000411,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -901,7 +901,7 @@ local datas = {
 	},
 	[300000421] = {
 		id = 300000421,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -926,7 +926,7 @@ local datas = {
 	},
 	[300000431] = {
 		id = 300000431,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -951,7 +951,7 @@ local datas = {
 	},
 	[300000441] = {
 		id = 300000441,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,
@@ -976,7 +976,7 @@ local datas = {
 	},
 	[300000451] = {
 		id = 300000451,
-		targetType = 4,
+		targetType = 3,
 		prop = 0,
 		propData = 0,
 		propLevelPercent = 0,

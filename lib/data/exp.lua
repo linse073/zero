@@ -13,6 +13,7 @@ local datas = {
 		compos1 = 6460,
 		compos2 = 2498,
 		compos5 = 1042,
+		diamondToGold = 10,
 	},
 	[2] = {
 		lv = 2,
@@ -28,6 +29,7 @@ local datas = {
 		compos1 = 6460,
 		compos2 = 2498,
 		compos5 = 1042,
+		diamondToGold = 12,
 	},
 	[3] = {
 		lv = 3,
@@ -43,6 +45,7 @@ local datas = {
 		compos1 = 6460,
 		compos2 = 2498,
 		compos5 = 1042,
+		diamondToGold = 14,
 	},
 	[4] = {
 		lv = 4,
@@ -58,6 +61,7 @@ local datas = {
 		compos1 = 6460,
 		compos2 = 2498,
 		compos5 = 1042,
+		diamondToGold = 16,
 	},
 	[5] = {
 		lv = 5,
@@ -73,6 +77,7 @@ local datas = {
 		compos1 = 6460,
 		compos2 = 2498,
 		compos5 = 1042,
+		diamondToGold = 18,
 	},
 	[6] = {
 		lv = 6,
@@ -88,6 +93,7 @@ local datas = {
 		compos1 = 6460,
 		compos2 = 2498,
 		compos5 = 1042,
+		diamondToGold = 20,
 	},
 	[7] = {
 		lv = 7,
@@ -103,6 +109,7 @@ local datas = {
 		compos1 = 6460,
 		compos2 = 2498,
 		compos5 = 1042,
+		diamondToGold = 22,
 	},
 	[8] = {
 		lv = 8,
@@ -118,6 +125,7 @@ local datas = {
 		compos1 = 6460,
 		compos2 = 2498,
 		compos5 = 1042,
+		diamondToGold = 24,
 	},
 	[9] = {
 		lv = 9,
@@ -133,6 +141,7 @@ local datas = {
 		compos1 = 6460,
 		compos2 = 2498,
 		compos5 = 1042,
+		diamondToGold = 26,
 	},
 	[10] = {
 		lv = 10,
@@ -148,6 +157,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 28,
 	},
 	[11] = {
 		lv = 11,
@@ -163,6 +173,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 30,
 	},
 	[12] = {
 		lv = 12,
@@ -178,6 +189,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 32,
 	},
 	[13] = {
 		lv = 13,
@@ -193,6 +205,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 34,
 	},
 	[14] = {
 		lv = 14,
@@ -208,6 +221,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 36,
 	},
 	[15] = {
 		lv = 15,
@@ -223,6 +237,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 38,
 	},
 	[16] = {
 		lv = 16,
@@ -238,6 +253,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 40,
 	},
 	[17] = {
 		lv = 17,
@@ -253,6 +269,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 42,
 	},
 	[18] = {
 		lv = 18,
@@ -268,6 +285,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 44,
 	},
 	[19] = {
 		lv = 19,
@@ -283,6 +301,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 46,
 	},
 	[20] = {
 		lv = 20,
@@ -298,6 +317,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 48,
 	},
 	[21] = {
 		lv = 21,
@@ -313,6 +333,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 50,
 	},
 	[22] = {
 		lv = 22,
@@ -328,6 +349,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 52,
 	},
 	[23] = {
 		lv = 23,
@@ -343,6 +365,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 54,
 	},
 	[24] = {
 		lv = 24,
@@ -358,6 +381,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 56,
 	},
 	[25] = {
 		lv = 25,
@@ -373,6 +397,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 58,
 	},
 	[26] = {
 		lv = 26,
@@ -388,6 +413,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 60,
 	},
 	[27] = {
 		lv = 27,
@@ -403,6 +429,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 62,
 	},
 	[28] = {
 		lv = 28,
@@ -418,6 +445,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 64,
 	},
 	[29] = {
 		lv = 29,
@@ -433,6 +461,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 66,
 	},
 	[30] = {
 		lv = 30,
@@ -448,6 +477,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 68,
 	},
 	[31] = {
 		lv = 31,
@@ -463,6 +493,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 70,
 	},
 	[32] = {
 		lv = 32,
@@ -478,6 +509,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 72,
 	},
 	[33] = {
 		lv = 33,
@@ -493,6 +525,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 74,
 	},
 	[34] = {
 		lv = 34,
@@ -508,6 +541,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 76,
 	},
 	[35] = {
 		lv = 35,
@@ -523,6 +557,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 78,
 	},
 	[36] = {
 		lv = 36,
@@ -538,6 +573,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 80,
 	},
 	[37] = {
 		lv = 37,
@@ -553,6 +589,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 82,
 	},
 	[38] = {
 		lv = 38,
@@ -568,6 +605,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 84,
 	},
 	[39] = {
 		lv = 39,
@@ -583,6 +621,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 86,
 	},
 	[40] = {
 		lv = 40,
@@ -598,6 +637,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 88,
 	},
 	[41] = {
 		lv = 41,
@@ -613,6 +653,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 90,
 	},
 	[42] = {
 		lv = 42,
@@ -628,6 +669,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 92,
 	},
 	[43] = {
 		lv = 43,
@@ -643,6 +685,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 94,
 	},
 	[44] = {
 		lv = 44,
@@ -658,6 +701,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 96,
 	},
 	[45] = {
 		lv = 45,
@@ -673,6 +717,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 98,
 	},
 	[46] = {
 		lv = 46,
@@ -688,6 +733,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 100,
 	},
 	[47] = {
 		lv = 47,
@@ -703,6 +749,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 102,
 	},
 	[48] = {
 		lv = 48,
@@ -718,6 +765,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 104,
 	},
 	[49] = {
 		lv = 49,
@@ -733,6 +781,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 106,
 	},
 	[50] = {
 		lv = 50,
@@ -748,6 +797,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 108,
 	},
 	[51] = {
 		lv = 51,
@@ -763,6 +813,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 110,
 	},
 	[52] = {
 		lv = 52,
@@ -778,6 +829,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 112,
 	},
 	[53] = {
 		lv = 53,
@@ -793,6 +845,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 114,
 	},
 	[54] = {
 		lv = 54,
@@ -808,6 +861,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 116,
 	},
 	[55] = {
 		lv = 55,
@@ -823,6 +877,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 118,
 	},
 	[56] = {
 		lv = 56,
@@ -838,6 +893,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 120,
 	},
 	[57] = {
 		lv = 57,
@@ -853,6 +909,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 122,
 	},
 	[58] = {
 		lv = 58,
@@ -868,6 +925,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 124,
 	},
 	[59] = {
 		lv = 59,
@@ -883,6 +941,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 126,
 	},
 	[60] = {
 		lv = 60,
@@ -898,6 +957,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 128,
 	},
 	[61] = {
 		lv = 61,
@@ -913,6 +973,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 130,
 	},
 	[62] = {
 		lv = 62,
@@ -928,6 +989,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 132,
 	},
 	[63] = {
 		lv = 63,
@@ -943,6 +1005,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 134,
 	},
 	[64] = {
 		lv = 64,
@@ -958,6 +1021,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 136,
 	},
 	[65] = {
 		lv = 65,
@@ -973,6 +1037,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 138,
 	},
 	[66] = {
 		lv = 66,
@@ -988,6 +1053,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 140,
 	},
 	[67] = {
 		lv = 67,
@@ -1003,6 +1069,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 142,
 	},
 	[68] = {
 		lv = 68,
@@ -1018,6 +1085,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 144,
 	},
 	[69] = {
 		lv = 69,
@@ -1033,6 +1101,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 146,
 	},
 	[70] = {
 		lv = 70,
@@ -1048,6 +1117,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 148,
 	},
 	[71] = {
 		lv = 71,
@@ -1063,6 +1133,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 150,
 	},
 	[72] = {
 		lv = 72,
@@ -1078,6 +1149,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 152,
 	},
 	[73] = {
 		lv = 73,
@@ -1093,6 +1165,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 154,
 	},
 	[74] = {
 		lv = 74,
@@ -1108,6 +1181,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 156,
 	},
 	[75] = {
 		lv = 75,
@@ -1123,6 +1197,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 158,
 	},
 	[76] = {
 		lv = 76,
@@ -1138,6 +1213,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 160,
 	},
 	[77] = {
 		lv = 77,
@@ -1153,6 +1229,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 162,
 	},
 	[78] = {
 		lv = 78,
@@ -1168,6 +1245,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 164,
 	},
 	[79] = {
 		lv = 79,
@@ -1183,6 +1261,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 166,
 	},
 	[80] = {
 		lv = 80,
@@ -1198,6 +1277,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 168,
 	},
 	[81] = {
 		lv = 81,
@@ -1213,6 +1293,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 170,
 	},
 	[82] = {
 		lv = 82,
@@ -1228,6 +1309,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 172,
 	},
 	[83] = {
 		lv = 83,
@@ -1243,6 +1325,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 174,
 	},
 	[84] = {
 		lv = 84,
@@ -1258,6 +1341,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 176,
 	},
 	[85] = {
 		lv = 85,
@@ -1273,6 +1357,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 178,
 	},
 	[86] = {
 		lv = 86,
@@ -1288,6 +1373,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 180,
 	},
 	[87] = {
 		lv = 87,
@@ -1303,6 +1389,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 182,
 	},
 	[88] = {
 		lv = 88,
@@ -1318,6 +1405,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 184,
 	},
 	[89] = {
 		lv = 89,
@@ -1333,6 +1421,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 186,
 	},
 	[90] = {
 		lv = 90,
@@ -1348,6 +1437,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 188,
 	},
 	[91] = {
 		lv = 91,
@@ -1363,6 +1453,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 190,
 	},
 	[92] = {
 		lv = 92,
@@ -1378,6 +1469,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 192,
 	},
 	[93] = {
 		lv = 93,
@@ -1393,6 +1485,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 194,
 	},
 	[94] = {
 		lv = 94,
@@ -1408,6 +1501,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 196,
 	},
 	[95] = {
 		lv = 95,
@@ -1423,6 +1517,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 198,
 	},
 	[96] = {
 		lv = 96,
@@ -1438,6 +1533,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 200,
 	},
 	[97] = {
 		lv = 97,
@@ -1453,6 +1549,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 202,
 	},
 	[98] = {
 		lv = 98,
@@ -1468,6 +1565,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 204,
 	},
 	[99] = {
 		lv = 99,
@@ -1483,6 +1581,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 206,
 	},
 	[100] = {
 		lv = 100,
@@ -1498,6 +1597,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 208,
 	},
 	[101] = {
 		lv = 101,
@@ -1513,6 +1613,7 @@ local datas = {
 		compos1 = 0,
 		compos2 = 0,
 		compos5 = 0,
+		diamondToGold = 210,
 	},
 }
 

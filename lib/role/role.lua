@@ -60,6 +60,12 @@ local function notify_mail(info)
 end
 
 local function notify_friend(info)
+    local pf = friend.add(info)
+    if pf then
+        local p = update_user()
+        p.friend[1] = pf
+        notify.add("update_user", {update=p})
+    end
 end
 
 skynet.init(function()

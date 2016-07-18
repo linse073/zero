@@ -38,6 +38,13 @@ function util.clone(t)
     return nt
 end
 
+function util.empty(t)
+    for k, v in pairs(t) do
+        return false
+    end
+    return true
+end
+
 function util.gen_key(serverid, key)
     return string.format("%d@%s", serverid, key)
 end

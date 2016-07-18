@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
+local notify = require "notify"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -65,6 +66,7 @@ end
 function friend.add(v)
     local bm
     local nf
+    local pf
     if v.status == base.FRIEND_STATUS_NEW then
         local f = data.friend[v.id]
         if f then
@@ -72,6 +74,7 @@ function friend.add(v)
                 bm = true
             elseif f.status == base.FRIEND_STATUS_REQUEST or f.status == base.FRIEND_STATUS_BEREQUEST then
                 f.status = base.FRIEND_STATUS_NEW
+                pf = v
             end
         else
             nf = true
@@ -80,6 +83,7 @@ function friend.add(v)
         local f = data.friend[v.id]
         if f and f.status ~= base.FRIEND_STATUS_BLACKLIST then
             data.friend[v.id] = nil
+            pf = v
         end
     elseif v.status == base.FRIEND_STATUS_BEREQUEST then
         local f = data.friend[v.id]
@@ -116,7 +120,9 @@ function friend.add(v)
             status = v.status,
         }
         data.friend[v.id] = f
+        pf = f
     end
+    return pf
 end
 
 function friend.del(v)
@@ -125,6 +131,27 @@ end
 
 function friend.get(id)
     return data.friend[id]
+end
+
+function friend.update()
+    local pf = {}
+    for k, v in pairs(data.friend) do
+        local ri = assert(skynet.call(role_mgr, "lua", "get_rank_info", v.id), string.format("No rank info %d.", v.id))
+        local nf = {}
+        if v.level ~= ri.level then
+            v.level = ri.level
+            nf.level = ri.level
+        end
+        if v.fight_point ~= ri.fight_point then
+            v.fight_point = ri.fight_point
+            nf.fight_point = ri.fight_point
+        end
+        if not util.empty(nf) then
+            nf.id = v.id
+            pf[#pf+1] = nf
+        end
+    end
+    notify.add("update_user", {update={friend=pf}})
 end
 
 ---------------------------protocol process----------------------

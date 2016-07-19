@@ -171,7 +171,7 @@ function proc.request_friend(msg)
     local user = data.user
     local agent = skynet.call(role_mgr, "lua", "get", msg.id)
     if agent then
-        local oi = skynet.call(agent, "lua", "action_info", user.id)
+        local oi = skynet.call(agent, "lua", "action_info", "friend", user.id)
         if oi then
             if oi.status == base.FRIEND_STATUS_BLACKLIST then
                 error{code = error_code.IN_BLACKLIST}
@@ -235,7 +235,7 @@ function proc.confirm_friend(msg)
     if msg.accept then
         local agent = skynet.call(role_mgr, "lua", "get", msg.id)
         if agent then
-            local oi = skynet.call(agent, "lua", "action_info", user.id)
+            local oi = skynet.call(agent, "lua", "action_info", "friend", user.id)
             if oi then
                 if oi.status == base.FRIEND_STATUS_BLACKLIST then
                     error{code = error_code.IN_BLACKLIST}

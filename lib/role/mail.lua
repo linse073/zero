@@ -65,8 +65,8 @@ function mail.add(v)
     return v
 end
 
-function mail.del(m)
-    data.mail[m.id] = nil
+function mail.del(id)
+    data.mail[id] = nil
 end
 
 function mail.get(id)
@@ -95,7 +95,7 @@ function proc.del_mail(msg)
         error{code = error_code.MAIL_NOT_EXIST}
     end
     m.status = base.MAIL_STATUS_DELETE
-    mail.del(m)
+    mail.del(m.id)
     local p = update_user()
     p.mail[1] = {id=m.id, status=m.status}
     if m.item_info then

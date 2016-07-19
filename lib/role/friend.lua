@@ -126,8 +126,8 @@ function friend.add(v)
     return pf
 end
 
-function friend.del(v)
-    data.friend[v.id] = nil
+function friend.del(id)
+    data.friend[id] = nil
 end
 
 function friend.get(id)
@@ -278,7 +278,7 @@ function proc.confirm_friend(msg)
             skynet.call(offline_mgr, "lua", "add", "mail", msg.id, m)
             skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
         end
-        friend.del(f)
+        friend.del(msg.id)
         local p = update_user()
         p.friend[1] = {
             id = msg.id,

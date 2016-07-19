@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 local notify = require "notify"
+local func = require "func"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -13,7 +14,6 @@ local floor = math.floor
 local update_user = util.update_user
 local gen_key = util.gen_key
 local data
-local textdata
 local base
 local error_code
 local server_mgr
@@ -28,16 +28,15 @@ local friend = {}
 local proc = {}
 
 skynet.init(function()
-    textdata = share.textdata
     base = share.base
     error_code = share.error_code
     server_mgr = skynet.queryservice("server_mgr")
     role_mgr = skynet.queryservice("role_mgr")
     offline_mgr = skynet.queryservice("offline_mgr")
 
-    friend_title = assert(textdata[198000001], string.format("No text data %d.", 198000001))
-    refuse_content = assert(textdata[198000002], string.format("No text data %d.", 198000002))
-    blacklist_content = assert(textdata[198000003], string.format("No text data %d.", 198000003))
+    friend_title = func.get_string(198000001)
+    refuse_content = func.get_string(198000002)
+    blacklist_content = func.get_string(198000003)
 end)
 
 function friend.init_module()

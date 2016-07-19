@@ -3,14 +3,19 @@ local util = require "util"
 local sharedata = require "sharedata"
 local new_rand = require "random"
 
+local assert = assert
 local ipairs = ipairs
+local string = string
 local base
+local textdata
 local day_second = 24 * 60 * 60
 local start_routine_time = tonumber(skynet.getenv("start_routine_time"))
 local randi = new_rand.randi
+local language = skynet.getenv("language")
 
 skynet.init(function()
     base = sharedata.query("base")
+    textdata = sharedata.query("textdata")
 end)
 
 local func = {}
@@ -110,6 +115,15 @@ function func.get_item_slot(level)
         end
     end
     return i
+end
+
+function func.get_string(id)
+    if id == 0 then
+        return ""
+    else
+        local text = assert(textdata[id], string.format("No text data %d.", id))
+        return text[language]
+    end
 end
 
 return func

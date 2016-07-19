@@ -15,3 +15,4 @@ debug_console = 8110
 login = 9001
 gm_level = 1
 start_time = "2016-05-10 00:00:00"
+language = "cn"

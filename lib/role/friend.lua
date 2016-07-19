@@ -376,7 +376,7 @@ function proc.query_friend(msg)
             info[#info+1] = ri
         end
     end
-    return "query_friend_info", info
+    return "query_friend_info", {info=info}
 end
 
 return friend

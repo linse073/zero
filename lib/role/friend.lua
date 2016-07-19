@@ -10,6 +10,7 @@ local error = error
 local string = string
 local floor = math.floor
 
+local update_user = util.update_user
 local gen_key = util.gen_key
 local data
 local textdata

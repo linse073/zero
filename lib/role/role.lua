@@ -33,6 +33,9 @@ local expdata
 local npcdata
 local propertydata
 local bonusdata
+local itemdata
+local is_equip
+local is_stone
 local error_code
 local base
 local type_reward
@@ -73,6 +76,9 @@ skynet.init(function()
     npcdata = share.npcdata
     propertydata = share.propertydata
     bonusdata = share.bonusdata
+    itemdata = share.itemdata
+    is_equip = func.is_equip
+    is_stone = func.is_stone
     error_code = share.error_code
     base = share.base
     type_reward = share.type_reward

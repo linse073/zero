@@ -111,7 +111,7 @@ function friend.add(v)
         end
     end
     if nf then
-        local ri = assert(skynet.call(role_mgr, "lua", "get_rank_info", v.id), string.format("No rank info %d.", v.id))
+        local ri, online = assert(skynet.call(role_mgr, "lua", "get_rank_info", v.id), string.format("No rank info %d.", v.id))
         f = {
             id = v.id,
             name = ri.name,
@@ -119,6 +119,7 @@ function friend.add(v)
             level = ri.level,
             fight_point = ri.fight_point,
             status = v.status,
+            online = online,
         }
         data.friend[v.id] = f
         pf = f
@@ -204,7 +205,7 @@ function proc.request_friend(msg)
             status = ms,
         }
     else
-        local ri = assert(skynet.call(role_mgr, "lua", "get_rank_info", msg.id), string.format("No rank info %d.", msg.id))
+        local ri, online = assert(skynet.call(role_mgr, "lua", "get_rank_info", msg.id), string.format("No rank info %d.", msg.id))
         f = {
             id = msg.id,
             name = ri.name,
@@ -212,6 +213,7 @@ function proc.request_friend(msg)
             level = ri.level,
             fight_point = ri.fight_point,
             status = ms,
+            online = online,
         }
         data.friend[msg.id] = f
         p.friend[1] = f
@@ -306,7 +308,7 @@ function proc.blacklist(msg)
             }
         end
     else
-        local ri = assert(skynet.call(role_mgr, "lua", "get_rank_info", msg.id), string.format("No rank info %d.", msg.id))
+        local ri, online = assert(skynet.call(role_mgr, "lua", "get_rank_info", msg.id), string.format("No rank info %d.", msg.id))
         f = {
             id = msg.id,
             name = ri.name,
@@ -314,6 +316,7 @@ function proc.blacklist(msg)
             level = ri.level,
             fight_point = ri.fight_point,
             status = base.FRIEND_STATUS_BLACKLIST,
+            online = online,
         }
         data.friend[msg.id] = f
         p.friend[1] = f

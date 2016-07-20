@@ -447,3 +447,11 @@
 .query_friend_info {
     info 0 : *simple_user
 }
+
+.get_role_info {
+    id 0 : integer
+}
+
+.role_info {
+    info 0 : user_all
+}

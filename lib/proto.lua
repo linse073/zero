@@ -24,6 +24,8 @@ local msg = {
     [2013] = "other_all",
     [2014] = "update_other",
     [2015] = "move",
+    [2016] = "get_role_info",
+    [2017] = "role_info",
 
     [2100] = "get_account_info",
     [2101] = "create_user",

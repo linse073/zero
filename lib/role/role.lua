@@ -739,4 +739,34 @@ function proc.chat_info(msg)
     end
 end
 
+function proc.get_role_info(msg)
+    local info = skynet.call(role_mgr, "lua", "get_info", msg.id)
+    if not info then
+        error{code = error_code.ROLE_NOT_EXIST}
+    end
+    local pitem = {}
+    local infoitem = info.item
+    for k, v in pairs(infoitem) do
+        if v.status == base.ITEM_STATUS_NORMAL then
+            if v.pos > 0 then
+                local d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
+                if is_equip(d.itemType) then
+                    pitem[#pitem+1] = v
+                elseif is_stone(d.itemType) then
+                    local host = infoitem[v.host]
+                    if host.pos > 0 then
+                        -- NOTICE: host is equip?
+                        pitem[#pitem+1] = v
+                    end
+                end
+            end
+        end
+    end
+    local puser = {
+        user = info,
+        item = pitem,
+    }
+    return "role_info", {info=puser}
+end
+
 return role

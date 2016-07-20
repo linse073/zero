@@ -188,7 +188,7 @@ end
 function role.save_routine()
     local user = data.user
     if user then
-        friend.update()
+        friend.update(user.friend)
         skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(data.account))
         skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
         skynet.call(data.rankinfodb, "lua", "save", user.id, skynet.packstring(data.rank_info))

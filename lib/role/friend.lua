@@ -135,9 +135,9 @@ function friend.get(id)
     return data.friend[id]
 end
 
-function friend.update()
+function friend.update(friend)
     local pf = {}
-    for k, v in pairs(data.friend) do
+    for k, v in pairs(friend) do
         local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", v.id)
         local nf = {}
         if v.level ~= ri.level then

@@ -148,7 +148,6 @@ function role.exit()
     for k, v in ipairs(module) do
         v.exit()
     end
-    timer.del_routine("update_friend")
     timer.del_routine("save_role")
     timer.del_day_routine("update_day")
     timer.del_routine("heart_beat")
@@ -189,6 +188,7 @@ end
 function role.save_routine()
     local user = data.user
     if user then
+        friend.update()
         skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(data.account))
         skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
         skynet.call(data.rankinfodb, "lua", "save", user.id, skynet.packstring(data.rank_info))
@@ -581,7 +581,6 @@ local function enter_game(msg)
     if #pack > 0 then
         ret.stage_award = pack
     end
-    timer.add_routine("update_friend", friend.update, 600)
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     local stageid, seed = stage.newbie_stage()

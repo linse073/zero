@@ -75,6 +75,10 @@ function CMD.get(roleid)
     end
 end
 
+function CMD.online(roleid)
+    return role_list[roleid] ~= nil
+end
+
 local function pack_msg(msg, info)
     if sproto:exist_type(msg) then
         info = sproto:pencode(msg, info)
@@ -119,11 +123,11 @@ end
 function CMD.get_info(roleid)
     local role = role_list[roleid]
     if role then
-        return skynet.call(role[1], "lua", "get_info")
+        return skynet.call(role[1], "lua", "get_info"), true
     else
         local info = skynet.call(userdb, "lua", "get", roleid)
         if info then
-            return skynet.unpack(info)
+            return skynet.unpack(info), false
         end
     end
 end
@@ -131,11 +135,11 @@ end
 function CMD.get_rank_info(roleid)
     local role = role_list[roleid]
     if role then
-        return skynet.call(role[1], "lua", "get_rank_info")
+        return skynet.call(role[1], "lua", "get_rank_info"), true
     else
         local info = skynet.call(rankinfodb, "lua", "get", roleid)
         if info then
-            return skynet.unpack(info)
+            return skynet.unpack(info), false
         end
     end
 end

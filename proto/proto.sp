@@ -113,6 +113,7 @@
     level 3 : integer
     fight_point 4 : integer
     status 5 : integer
+    online 6 : boolean
 }
 
 .item_award {

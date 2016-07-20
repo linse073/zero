@@ -155,9 +155,10 @@ function role.exit()
     if user then
         skynet.call(role_mgr, "lua", "logout", user.id)
         user.logout_time = floor(skynet.time())
+        role.save_friend()
+        role.save_user()
     end
     notify.exit()
-    role.save_routine()
     data = nil
 end
 
@@ -179,20 +180,30 @@ end
 
 function role.update_day(od, nd)
     local user = data.user
-    if user then
-        local pt, update_sign_in = update_day(user, od, nd)
-        notify.add("update_day", {task=pt, update_sign_in=update_sign_in})
+    local pt, update_sign_in = update_day(user, od, nd)
+    notify.add("update_day", {task=pt, update_sign_in=update_sign_in})
+end
+
+function role.save_user()
+    local user = data.user
+    skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(data.account))
+    skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
+    skynet.call(data.rankinfodb, "lua", "save", user.id, skynet.packstring(data.rank_info))
+end
+
+function role.save_friend()
+    local user = data.user
+    for k, v in pairs(user.friend) do
+        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", v.id)
+        v.level = ri.level
+        v.fight_point = ri.fight_point
+        v.online = online
     end
 end
 
 function role.save_routine()
-    local user = data.user
-    if user then
-        friend.update(user.friend)
-        skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(data.account))
-        skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
-        skynet.call(data.rankinfodb, "lua", "save", user.id, skynet.packstring(data.rank_info))
-    end
+    friend.update()
+    role.save_user()
 end
 
 function role.move_speed()

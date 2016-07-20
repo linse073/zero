@@ -111,7 +111,7 @@ function friend.add(v)
         end
     end
     if nf then
-        local ri, online = assert(skynet.call(role_mgr, "lua", "get_rank_info", v.id), string.format("No rank info %d.", v.id))
+        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", v.id)
         f = {
             id = v.id,
             name = ri.name,
@@ -138,7 +138,7 @@ end
 function friend.update()
     local pf = {}
     for k, v in pairs(data.friend) do
-        local ri, online = assert(skynet.call(role_mgr, "lua", "get_rank_info", v.id), string.format("No rank info %d.", v.id))
+        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", v.id)
         local nf = {}
         if v.level ~= ri.level then
             v.level = ri.level
@@ -205,7 +205,7 @@ function proc.request_friend(msg)
             status = ms,
         }
     else
-        local ri, online = assert(skynet.call(role_mgr, "lua", "get_rank_info", msg.id), string.format("No rank info %d.", msg.id))
+        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", msg.id)
         f = {
             id = msg.id,
             name = ri.name,
@@ -308,7 +308,7 @@ function proc.blacklist(msg)
             }
         end
     else
-        local ri, online = assert(skynet.call(role_mgr, "lua", "get_rank_info", msg.id), string.format("No rank info %d.", msg.id))
+        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", msg.id)
         f = {
             id = msg.id,
             name = ri.name,
@@ -381,7 +381,7 @@ function proc.query_friend(msg)
         -- NOTICE: roleid is string
         if roleid then
             roleid = tonumber(roleid)
-            local ri = assert(skynet.call(role_mgr, "lua", "get_rank_info", roleid), string.format("No rank info %d.", roleid))
+            local ri = skynet.call(role_mgr, "lua", "get_rank_info", roleid)
             info[#info+1] = ri
         end
     end

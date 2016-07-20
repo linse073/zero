@@ -370,8 +370,9 @@ function proc.query_friend(msg)
     for k, v in pairs(server_list) do
         local namekey = gen_key(k, msg.name)
         local roleid = skynet.call(data.namedb, "lua", "get", namekey)
-        -- TODO: roleid is string or float?
+        -- NOTICE: roleid is string
         if roleid then
+            roleid = tonumber(roleid)
             local ri = assert(skynet.call(role_mgr, "lua", "get_rank_info", roleid), string.format("No rank info %d.", roleid))
             info[#info+1] = ri
         end

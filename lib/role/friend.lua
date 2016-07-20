@@ -135,9 +135,9 @@ function friend.get(id)
     return data.friend[id]
 end
 
-function friend.update(friend)
+function friend.update()
     local pf = {}
-    for k, v in pairs(friend) do
+    for k, v in pairs(data.friend) do
         local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", v.id)
         local nf = {}
         if v.level ~= ri.level then
@@ -157,7 +157,9 @@ function friend.update(friend)
             pf[#pf+1] = nf
         end
     end
-    notify.add("update_user", {update={friend=pf}})
+    if #pf > 0 then
+        notify.add("update_user", {update={friend=pf}})
+    end
 end
 
 ---------------------------protocol process----------------------

@@ -29,6 +29,7 @@ end
 
 function CMD.shutdown()
     save()
+    timer.del_routine("save_explore")
 end
 
 function CMD.routine(key)

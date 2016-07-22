@@ -921,4 +921,24 @@ function proc.uninlay_item(msg)
     return "update_user", {update=p}
 end
 
+function proc.sell_item(msg)
+    
+end
+
+function proc.back_item(msg)
+    
+end
+
+function proc.buy_item(msg)
+    
+end
+
+function proc.add_watch(msg)
+    
+end
+
+function proc.del_watch(msg)
+    
+end
+
 return item

@@ -12,11 +12,6 @@ local item_list = {}
 local type_list = {}
 local role_list = {}
 
-local ITEM_STATUS_NORMAL = 0
-local ITEM_STATUS_SELLING = 1
-local ITEM_STATUS_SELLED = 2
-local ITEM_STATUS_DELETE = 3
-
 local type_key = {
     "quality",
     "needLv",
@@ -34,19 +29,10 @@ local function check_table(t, k)
     return l
 end
 
-local function add_count(t, k)
-    local c = t[k]
-    if c then
-        c = c + 1
-    else
-        c = 1
-    end
-end
-
 function CMD.add(info, data)
     assert(not item_list[info.id], string.format("Already has item %d.", info.id))
     assert(info.owner~=0, "Error trade item owner.")
-    assert(info.status==ITEM_STATUS_SELLING, "Error trade item status.")
+    assert(info.status==1, "Error trade item status.")
     if not data then
         data = assert(itemdata[info.itemid], string.format("No item data %d.", info.itemid))
     end
@@ -58,7 +44,7 @@ function CMD.add(info, data)
     for k, v in ipairs(type_key) do
         local l = check_table(check_table(t, k), data[v])
         check_table(l, 1)[info.id] = i
-        add_count(l, 2)
+        l[2] = (l[2] or 0) + 1
     end
 end
 
@@ -78,7 +64,7 @@ function CMD.del(id)
         for k, v in ipairs(type_key) do
             local l = t[k][data[v]]
             l[1][info.id] = nil
-            l[2] = l[2] + 1
+            l[2] = l[2] - 1
         end
     end
 end

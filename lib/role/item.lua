@@ -922,7 +922,14 @@ function proc.uninlay_item(msg)
 end
 
 function proc.sell_item(msg)
-    
+    local i = data.item[msg.id]
+    if not i then
+        error{code = error_code.ITEM_NOT_EXIST}
+    end
+    local iv = i[1]
+    if iv.status ~= base.ITEM_STATUS_NORMAL then
+        error{code = error_code.ERROR_ITEM_STATUS}
+    end
 end
 
 function proc.back_item(msg)

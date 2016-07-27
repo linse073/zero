@@ -87,6 +87,14 @@ local msg = {
     [3204] = "query_friend",
     [3205] = "old_friend",
     [3206] = "query_friend_info",
+
+    [3300] = "query_sell",
+    [3301] = "query_sell_info",
+    [3302] = "sell_item",
+    [3303] = "back_item",
+    [3304] = "buy_item",
+    [3305] = "add_watch",
+    [3306] = "del_watch",
 }
 local name_msg = {}
 

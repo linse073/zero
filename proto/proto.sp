@@ -170,6 +170,7 @@
     mail 6 : *mail_info
     explore 7 : explore_info
     stage_award 8 : *integer
+    watch 9 : *item_info
 }
 
 .explore_award {
@@ -454,4 +455,36 @@
 
 .role_info {
     info 0 : user_all
+}
+
+.query_sell {
+    type 0 : integer
+    quality 1 : integer
+    level 2 : integer
+    prof 3 : integer
+}
+
+.query_sell_info {
+    info 0 : *item_info
+}
+
+.sell_item {
+    id 0 : integer
+    price 1 : integer
+}
+
+.back_item {
+    id 0 : integer
+}
+
+.buy_item {
+    id 0 : integer
+}
+
+.add_watch {
+    id 0 : integer
+}
+
+.del_watch {
+    id 0 : integer
 }

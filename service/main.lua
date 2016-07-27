@@ -47,6 +47,8 @@ skynet.start(function()
     -- TODO: server shutdown time
     skynet.call(save_explore, "lua", "open")
     skynet.uniqueservice("offline_mgr")
+    skynet.uniqueservice("trade_mgr")
+    skynet.uniqueservice("save_trade")
     skynet.uniqueservice("agent_mgr")
 
 	local loginserver = skynet.newservice("logind")

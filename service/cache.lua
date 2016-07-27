@@ -89,7 +89,8 @@ skynet.start(function()
         local total_rate = 0
         if v.MoneyRate > 0 then
             rt[#rt+1] = {
-                type = base.BONUS_TYPE_MONEY,
+                type = base.BONUS_TYPE_ITEM,
+                item = base.MONEY_ITEM,
                 num = v.Money,
                 rate = v.MoneyRate,
             }
@@ -151,6 +152,15 @@ skynet.start(function()
                 rate = v.PassiveExpRate,
             }
             total_rate = total_rate + v.PassiveExpRate
+        end
+        if v.diamondRate > 0 then
+            rt[#rt+1] = {
+                type = base.BONUS_TYPE_ITEM,
+                item = base.RMB_ITEM,
+                num = v.diamond,
+                rate = v.diamondRate,
+            }
+            total_rate = total_rate + v.diamondRate
         end
         v.all_rate = rt
         v.total_rate = total_rate

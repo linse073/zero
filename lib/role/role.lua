@@ -50,6 +50,7 @@ local role_mgr
 local fight_point_rank
 local explore_mgr
 local offline_mgr
+local trade_mgr
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
@@ -90,6 +91,7 @@ skynet.init(function()
     fight_point_rank = skynet.queryservice("fight_point_rank")
     explore_mgr = skynet.queryservice("explore_mgr")
     offline_mgr = skynet.queryservice("offline_mgr")
+    trade_mgr = skynet.queryservice("trade_mgr")
 end)
 
 function role.init_module()
@@ -162,6 +164,7 @@ function role.exit()
         skynet.call(role_mgr, "lua", "logout", user.id)
         user.logout_time = floor(skynet.time())
         role.save_friend()
+        role.save_watch()
         role.save_user()
     end
     notify.exit()
@@ -207,8 +210,24 @@ function role.save_friend()
     end
 end
 
+function role.save_watch()
+    local user = data.user
+    local watch = user.watch
+    local del_item = {}
+    for k, v in pairs(watch) do
+        if not skynet.call(trade_mgr, "lua", "has", k) then
+            del_item[#del_item+1] = k
+        end
+    end
+    for k, v in ipairs(del_item) do
+        watch[v] = nil
+    end
+    user.watch_count = user.watch_count - #del_item
+end
+
 function role.save_routine()
     friend.update()
+    item.update()
     role.save_user()
 end
 
@@ -384,6 +403,12 @@ function role.repair(user)
     if not user.mail then
         user.mail = {}
     end
+    if not user.watch then
+        user.watch = {}
+    end
+    if not user.watch_count then
+        user.watch_count = 0
+    end
 end
 
 function role.explore_bonus(p, a)
@@ -492,6 +517,8 @@ function proc.create_user(msg)
         sign_in = sign_in,
         sign_in_day = 0,
         stage_award = {},
+        watch = {},
+        watch_count = 0,
 
         item = {},
         card = {},
@@ -597,6 +624,15 @@ local function enter_game(msg)
     end
     if #pack > 0 then
         ret.stage_award = pack
+    end
+    role.save_watch()
+    if user.watch_count > 0 then
+        local wpack = {}
+        for k, v in pairs(user.watch) do
+            local wi = skynet.call(trade_mgr, "lua", "get", k)
+            wpack[#wpack+1] = wi[1]
+        end
+        ret.watch = wpack
     end
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)

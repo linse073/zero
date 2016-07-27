@@ -48,8 +48,23 @@ function CMD.add(info, data)
     end
 end
 
+function CMD.get(id)
+    return item_list[id]
+end
+
+function CMD.has(id)
+    return item_list[id] ~= nil
+end
+
 function CMD.role_item(id)
-    return role_list[id]
+    local p = {}
+    local l = role_list[id]
+    if l then
+        for k, v in pairs(l) do
+            p[#p+1] = v[1]
+        end
+    end
+    return p
 end
 
 function CMD.del(id)
@@ -66,14 +81,15 @@ function CMD.del(id)
             l[1][info.id] = nil
             l[2] = l[2] - 1
         end
+        return true
     end
 end
 
-function CMD.query(it, quality, level, prof)
+function CMD.query(con)
     local p = {}
-    local t = type_list[it]
+    local t = type_list[con.type]
     if t then
-        local key = {quality, level, prof}
+        local key = {con.quality, con.level, con.prof}
         local a = t.all
         local c
         local has = false

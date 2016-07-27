@@ -36,7 +36,7 @@ function CMD.routine(key)
     timer.call_routine(key)
 end
 
-function CMD.open()
+skynet.start(function()
     local master = skynet.queryservice("dbmaster")
     tradedb = skynet.call(master, "lua", "get", "tradedb")
     local trade_mgr = skynet.queryservice("trade_mgr")
@@ -55,9 +55,7 @@ function CMD.open()
         end
     until index == "0"
     timer.add_routine("save_trade", save, 300)
-end
 
-skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])
         if session == 0 then

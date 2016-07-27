@@ -98,16 +98,24 @@ function proc.del_mail(msg)
     mail.del(m.id)
     local p = update_user()
     p.mail[1] = {id=m.id, status=m.status}
+    local pitem = p.item
     if m.item_info then
         for k, v in ipairs(m.item_info) do
             local d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
-            item.add_by_info(p, v, d)
+            item.add_by_info(v, d)
+            pitem[#pitem+1] = v
         end
     end
     if m.item_award then
         for k, v in ipairs(m.item_award) do
-            local d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
-            item.add_by_itemid(p, v.num, d)
+            if v.itemid == base.MONEY_ITEM then
+                role.add_money(p, v.num)
+            elseif v.itemid == base.RMB_ITEM then
+                role.add_rmb(p, v.num)
+            else
+                local d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
+                item.add_by_itemid(p, v.num, d)
+            end
         end
     end
     return "update_user", {update=p}

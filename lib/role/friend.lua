@@ -103,12 +103,7 @@ function friend.add(v)
             title = friend_title,
             content = string.format(blacklist_content, data.user.name),
         }
-        local agent = skynet.call(role_mgr, "lua", "get", v.id)
-        if agent then
-            skynet.call(agent, "lua", "action", "mail", m)
-        else
-            skynet.call(offline_mgr, "lua", "add", "mail", v.id, m)
-        end
+        skynet.call(offline_mgr, "lua", "add", "mail", v.id, m)
     end
     if nf then
         local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", v.id)
@@ -224,11 +219,7 @@ function proc.request_friend(msg)
         id = user.id,
         status = os,
     }
-    if agent then
-        skynet.call(agent, "lua", "action", "friend", info)
-    else
-        skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
-    end
+    skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
     return "update_user", {update=p}
 end
 
@@ -255,11 +246,7 @@ function proc.confirm_friend(msg)
             id = user.id,
             status = base.FRIEND_STATUS_NEW,
         }
-        if agent then
-            skynet.call(agent, "lua", "action", "friend", info)
-        else
-            skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
-        end
+        skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
         f.status = base.FRIEND_STATUS_NEW
         local p = update_user()
         p.friend[1] = {
@@ -278,14 +265,8 @@ function proc.confirm_friend(msg)
             id = user.id,
             status = base.FRIEND_STATUS_DELETE,
         }
-        local agent = skynet.call(role_mgr, "lua", "get", msg.id)
-        if agent then
-            skynet.call(agent, "lua", "action", "mail", m)
-            skynet.call(agent, "lua", "action", "friend", info)
-        else
-            skynet.call(offline_mgr, "lua", "add", "mail", msg.id, m)
-            skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
-        end
+        skynet.call(offline_mgr, "lua", "add", "mail", msg.id, m)
+        skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
         friend.del(msg.id)
         local p = update_user()
         p.friend[1] = {
@@ -328,12 +309,7 @@ function proc.blacklist(msg)
         id = user.id,
         status = base.FRIEND_STATUS_DELETE,
     }
-    local agent = skynet.call(role_mgr, "lua", "get", msg.id)
-    if agent then
-        skynet.call(agent, "lua", "action", "friend", info)
-    else
-        skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
-    end
+    skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
     return "update_user", {update=p}
 end
 
@@ -353,12 +329,7 @@ function proc.del_friend(msg)
         id = user.id,
         status = base.FRIEND_STATUS_DELETE,
     }
-    local agent = skynet.call(role_mgr, "lua", "get", msg.id)
-    if agent then
-        skynet.call(agent, "lua", "action", "friend", info)
-    else
-        skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
-    end
+    skynet.call(offline_mgr, "lua", "add", "friend", msg.id, info)
     return "update_user", {update=p}
 end
 

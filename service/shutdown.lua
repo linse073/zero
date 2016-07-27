@@ -7,6 +7,8 @@ skynet.start(function()
     skynet.call(explore_mgr, "lua", "shutdown")
     local save_explore = skynet.queryservice("save_explore")
     skynet.call(save_explore, "lua", "shutdown")
+    local save_trade = skynet.queryservice("save_trade")
+    skynet.call(save_trade, "lua", "shutdown")
     -- TODO: save server shutdown time
     skynet.error("shutdown finish.")
     skynet.exit()

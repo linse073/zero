@@ -131,8 +131,14 @@ local function bonus_item(ri, p)
         item.add_by_itemid(p, ri.num, idata)
     else
         if itemid then
-            local rid = assert(itemdata[itemid], string.format("No item data %d.", itemid))
-            item.add_by_itemid(p, ri.num, rid)
+            if itemid == base.MONEY_ITEM then
+                role.add_money(p, ri.num)
+            elseif itemid == base.RMB_ITEM then
+                role.add_rmb(p, ri.num)
+            else
+                local rid = assert(itemdata[itemid], string.format("No item data %d.", itemid))
+                item.add_by_itemid(p, ri.num, rid)
+            end
         else
             role.add_money(p, ri.num)
         end

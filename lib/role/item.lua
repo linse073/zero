@@ -496,6 +496,7 @@ function item.equip_prop(e, prop)
     end
 end
 
+-- TODO: split packet
 function item.update()
     local pi = {}
     local user = data.user

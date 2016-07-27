@@ -9,8 +9,8 @@ local string = string
 local itemdata
 
 local item_list = {}
-local type_list = {}
 local role_list = {}
+local type_list = {}
 
 local CMD = {}
 
@@ -25,29 +25,23 @@ end
 
 function CMD.add(info, data)
     assert(not item_list[info.id], string.format("Already has item %d.", info.id))
-    assert(info.owner~=0, "Error trade item owner.")
-    assert(info.status==1, "Error trade item status.")
     if not data then
         data = assert(itemdata[info.itemid], string.format("No item data %d.", info.itemid))
     end
     local i = {info, data}
     item_list[info.id] = i
     check_table(role_list, info.owner)[info.id] = i
-    local t = check_table(type_list, data.itemType)
-    check_table(t, "all")[info.id] = i
-    for k, v in ipairs(type_key) do
-        local l = check_table(check_table(t, k), data[v])
-        check_table(l, 1)[info.id] = i
-        l[2] = (l[2] or 0) + 1
+    local t = check_table(type_list, info.itemid)
+    check_table(t, 1)[info.id] = i
+    if data.overlay > 1 then
+        local p = check_table(check_table(t, 2), info.price)
+        check_table(p, 1)[info.id] = i
+        p[2] = (p[2] or 0) + info.num
     end
 end
 
 function CMD.get(id)
     return item_list[id]
-end
-
-function CMD.has(id)
-    return item_list[id] ~= nil
 end
 
 function CMD.role_item(id)
@@ -68,15 +62,25 @@ function CMD.del(id)
         local data = i[2]
         item_list[info.id] = nil
         role_list[info.owner][info.id] = nil
-        local t = type_list[data.itemType]
-        t.all[info.id] = nil
-        for k, v in ipairs(type_key) do
-            local l = t[k][data[v]]
-            l[1][info.id] = nil
-            l[2] = l[2] - 1
-        end
+        local t = type_list[data.itemid]
+        t[1][info.id] = nil
+        local p = t[2][info.price]
+        p[1][info.id] = nil
+        p[2] = p[2] - info.num
         return true
     end
+end
+
+function CMD.query(id)
+    local p = {}
+    local t = type_list[id]
+    if t then
+        local l = t[2]
+        if l then
+        else
+        end
+    end
+    return p
 end
 
 function CMD.query(con)

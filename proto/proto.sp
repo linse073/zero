@@ -116,11 +116,6 @@
     online 6 : boolean
 }
 
-.item_award {
-    itemid 0 : integer
-    num 1 : integer
-}
-
 .mail_info {
     id 0 : integer
     type 1 : integer
@@ -128,8 +123,7 @@
     status 3 : integer
     title 4 : string
     content 5 : string
-    item_award 6 : *item_award
-    item_info 7 : *item_info
+    item_info 6 : *item_info
 }
 
 .rank_info {
@@ -353,16 +347,14 @@
     type 0 : integer
     title 1 : string
     content 2 : string
-    item_award 3 : *item_award
-    item_info 4 : *item_info
+    item_info 3 : *item_info
 }
 
 .broadcast_mail {
     type 0 : integer
     title 1 : string
     content 2 : string
-    item_award 3 : *item_award
-    item_info 4 : *item_info
+    item_info 3 : *item_info
 }
 
 .upgrade_passive {

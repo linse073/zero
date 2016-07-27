@@ -22,6 +22,7 @@ skynet.init(function()
     sproto = share.sproto
 end)
 
+-- TODO: split packet
 local function pack()
     local q = notify_queue
     notify_queue = {}

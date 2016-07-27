@@ -134,7 +134,6 @@ function proc.add_mail(msg)
         status = base.MAIL_STATUS_UNREAD,
         title = msg.title,
         content = msg.content,
-        item_award = msg.item_award,
         item_info = msg.item_info,
     }
     mail.add(m)
@@ -153,7 +152,6 @@ function proc.broadcast_mail(msg)
         status = base.MAIL_STATUS_UNREAD,
         title = msg.title,
         content = msg.content,
-        item_award = msg.item_award,
         item_info = msg.item_info,
     }
     skynet.call(offline_mgr, "lua", "broadcast_mail", m)

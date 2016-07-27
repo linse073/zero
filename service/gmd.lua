@@ -23,7 +23,7 @@ function CMD.send_mail(id, mtype, title, content)
         time = floor(skynet.time()),
         title = title,
         content = content,
-        item_award = {
+        item_info = {
             {itemid=3000000091, num=2},
         },
     }
@@ -38,7 +38,7 @@ function CMD.broadcast_mail(mtype, title, content)
         time = floor(skynet.time()),
         title = title,
         content = content,
-        item_award = {
+        item_info = {
             {itemid=3000000091, num=2},
         },
     }

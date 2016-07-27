@@ -12,12 +12,6 @@ local item_list = {}
 local type_list = {}
 local role_list = {}
 
-local type_key = {
-    "quality",
-    "needLv",
-    "needJob",
-}
-
 local CMD = {}
 
 local function check_table(t, k)

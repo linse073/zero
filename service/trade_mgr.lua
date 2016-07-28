@@ -5,6 +5,7 @@ local assert = assert
 local ipairs = ipairs
 local pairs = pairs
 local string = string
+local table = table
 
 local itemdata
 
@@ -55,20 +56,63 @@ function CMD.role_item(id)
     return p
 end
 
-function CMD.del(id)
+function CMD.del(id, num)
     local i = item_list[id]
     if i then
         local info = i[1]
         local data = i[2]
-        item_list[info.id] = nil
-        role_list[info.owner][info.id] = nil
-        local t = type_list[data.itemid]
-        t[1][info.id] = nil
-        local p = t[2][info.price]
-        p[1][info.id] = nil
-        p[2] = p[2] - info.num
-        return true
+        if info.num > num then
+            info.num = info.num - num
+            if data.overlay > 1 then
+                local t = type_list[data.itemid]
+                local p = t[2][info.price]
+                p[2] = p[2] - num
+            end
+            return num
+        else
+            item_list[info.id] = nil
+            role_list[info.owner][info.id] = nil
+            local t = type_list[data.itemid]
+            t[1][info.id] = nil
+            if data.overlay > 1 then
+                local p = t[2][info.price]
+                p[1][info.id] = nil
+                p[2] = p[2] - info.num
+            end
+            return info.num
+        end
     end
+    return 0
+end
+
+local function sort(l, r)
+    return l.status_time < r.status_time
+end
+function CMD.del_by_itemid(id, price, num)
+    local t = type_list[id]
+    if t then
+        local p = t[2][price]
+        if p then
+            local l = {}
+            for k, v in pairs(p[1]) do
+                l[#l+1] = v[1]
+            end
+            table.sort(l, sort)
+            local r = {}
+            local rn = 0
+            for k, v in ipairs(l) do
+                local n = CMD.del(v.id, num)
+                num = num - n
+                rn = rn + n
+                r[v.owner] = (r[v.owner] or 0) + n
+                if num == 0 then
+                    break
+                end
+            end
+            return rn, r
+        end
+    end
+    return 0
 end
 
 function CMD.query(id)
@@ -77,56 +121,19 @@ function CMD.query(id)
     if t then
         local l = t[2]
         if l then
-        else
-        end
-    end
-    return p
-end
-
-function CMD.query(con)
-    local p = {}
-    local t = type_list[con.type]
-    if t then
-        local key = {con.quality, con.level, con.prof}
-        local a = t.all
-        local c
-        local has = false
-        for k, v in ipairs(type_key) do
-            local kv = key[k]
-            if kv then
-                has = true
-                local l = t[k][kv]
-                if l then
-                    local lc = l[2]
-                    if not c or lc < c then
-                        a = l[1]
-                        c = lc
-                    end
-                else
-                    a = nil
-                    break
+            for k, v in pairs(l) do
+                local num = v[2]
+                if num > 0 then
+                    p[#p+1] = {
+                        itemid = id,
+                        price = k,
+                        num = num,
+                    }
                 end
             end
-        end
-        if a then
-            if has then
-                for k, v in pairs(a) do
-                    local m = true
-                    for k1, v1 in ipairs(type_key) do
-                        local kv = key[k1]
-                        if kv and kv ~= v[2][v1] then
-                            m = false
-                            break
-                        end
-                    end
-                    if m then
-                        p[#p+1] = v[1]
-                    end
-                end
-            else
-                for k, v in pairs(a) do
-                    p[#p+1] = v[1]
-                end
+        else
+            for k, v in pairs(t[1]) do
+                p[#p+1] = v[1]
             end
         end
     end

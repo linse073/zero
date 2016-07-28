@@ -94,9 +94,9 @@ local error_code = {
     
     NO_SELL_ITEM = 3100,
     BUY_SELF_ITEM = 3101,
-    WATCH_COUNT_LIMIT = 3102,
-    ALREADY_WATCH_ITEM = 3103,
-    NOT_WATCH_ITEM = 3104,
+    TRADE_WATCH_COUNT_LIMIT = 3102,
+    ALREADY_TRADE_WATCH = 3103,
+    NO_TRADE_WATCH = 3104,
 }
 
 return error_code

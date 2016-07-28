@@ -164,7 +164,7 @@
     mail 6 : *mail_info
     explore 7 : explore_info
     stage_award 8 : *integer
-    watch 9 : *item_info
+    trade_watch 9 : *integer
 }
 
 .explore_award {

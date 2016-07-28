@@ -264,6 +264,7 @@ local base = {
     RMB_ITEM = 3000012271,
 
     MAX_TRADE_WATCH = 10,
+    TRADE_PAGE_ITEM = 6,
 }
 
 return base

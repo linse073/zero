@@ -15,6 +15,7 @@ local ipairs = ipairs
 local assert = assert
 local error = error
 local string = string
+local table = table
 local random = math.random
 local floor = math.floor
 
@@ -314,7 +315,8 @@ end
 function item.del_by_itemid(p, itemid, num)
     local t = assert(data.type_item[itemid], string.format("Item %d not exist.", itemid))
     local pack = p.item
-    for k, v in pairs(util.clone(t)) do
+    local del_item = {}
+    for k, v in pairs(t) do
         local vi = v[1]
         local diff = num
         if diff > vi.num then
@@ -327,7 +329,7 @@ function item.del_by_itemid(p, itemid, num)
             num = vi.num,
         }
         if vi.num == 0 then
-            item.del(v)
+            del_item[#del_item+1] = v
             pi.status = vi.status
             pi.status_time = vi.status_time
         end
@@ -335,6 +337,48 @@ function item.del_by_itemid(p, itemid, num)
         if num == 0 then
             break
         end
+    end
+    for k, v in ipairs(del_item) do
+        item.del(v)
+    end
+    assert(num==0, string.format("Item %d num %d insufficient.", itemid, num))
+end
+
+function item.sell(p, itemid, num, price)
+    local user = data.user
+    local t = assert(data.type_item[itemid], string.format("Item %d not exist.", itemid))
+    local del_item = {}
+    local pack = p.item
+    for k, v in pairs(t) do
+        local vi = v[1]
+        if vi.num > num then
+            local i = {
+                id = item.gen_id(),
+                itemid = itemid,
+                owner = 0,
+                num = vi.num - num,
+                pos = 0,
+                host = 0,
+                intensify = 0,
+                status = base.ITEM_STATUS_NORMAL,
+                status_time = 0,
+                price = 0,
+            }
+            local si = item.add(v, v[2])
+            user.item[i.id] = i
+            pack[#pack+1] = i
+            vi.num = num
+        end
+        vi.owner = user.id
+        vi.price = price
+        del_item[#del_item+1] = v
+        num = num - vi.num
+        if num == 0 then
+            break
+        end
+    end
+    for k, v in ipairs(del_item) do
+        item.del(v, base.ITEM_STATUS_SELL)
     end
     assert(num==0, string.format("Item %d num %d insufficient.", itemid, num))
 end
@@ -493,30 +537,6 @@ function item.equip_prop(e, prop)
                 end
             end
         end
-    end
-end
-
--- TODO: split packet
-function item.update()
-    local pi = {}
-    local user = data.user
-    local watch = user.watch
-    local del_item = {}
-    for k, v in pairs(watch) do
-        if not skynet.call(trade_mgr, "lua", "has", k) then
-            del_item[#del_item+1] = k
-        end
-    end
-    for k, v in ipairs(del_item) do
-        watch[v] = nil
-        pi[#pi+1] = {
-            id = v,
-            status = base.ITEM_STATUS_DELETE,
-        }
-    end
-    user.watch_count = user.watch_count - #del_item
-    if #pf > 0 then
-        notify.add("update_user", {update={watch=pf}})
     end
 end
 
@@ -922,12 +942,102 @@ function proc.uninlay_item(msg)
     return "update_user", {update=p}
 end
 
+local function sort(l, r)
+    return l.price < r.price
+end
+-- TODO: split packet
 function proc.query_sell(msg)
-    local p = skynet.call(trade_mgr, "lua", "query", msg)
+    local d = itemdata[msg.id]
+    if not d then
+        error{code = error_code.ITEM_ID_NOT_EXIST}
+    end
+    local p = skynet.call(trade_mgr, "lua", "query", msg.id)
+    if d.overlay > 1 then
+        if d.officialSale == 1 then
+            local user = data.user
+            local t = user.trade_item[msg.id]
+            if t then
+                local t1 = t[1]
+                local t2 = t[2]
+                local ti = 1
+                local len = #t1
+                for i = 1, base.TRADE_PAGE_ITEM do
+                    local m
+                    while ti <= len do
+                        local s = t1[ti]
+                        ti = ti + 1
+                        if s.num > 0 then
+                            m = {
+                                itemid = msg.id,
+                                price = s.price,
+                                num = s.num,
+                            }
+                            break
+                        end
+                    end
+                    if not m then
+                        local price = t1[len].price * random(d.priceUp1, d.priceUp2) // base.RAND_FACTOR
+                        m = {
+                            itemid = msg.id,
+                            price = price,
+                            num = d.officialNumber,
+                        }
+                        local n = {
+                            price = price,
+                            num = d.officialNumber,
+                        }
+                        len = len + 1
+                        t1[len] = n
+                        t2[price] = n
+                        ti = len + 1
+                    end
+                    p[#p+1] = m
+                end
+            else
+                local t1 = {}
+                local t2 = {}
+                local price = d.officialPrice
+                for i = 1, base.TRADE_PAGE_ITEM do
+                    p[#p+1] = {
+                        itemid = msg.id,
+                        price = price,
+                        num = d.officialNumber,
+                    }
+                    local n = {
+                        price = price,
+                        num = d.officialNumber,
+                    }
+                    t1[i] = n
+                    t2[price] = n
+                    price = price * random(d.priceUp1, d.priceUp2) // base.RAND_FACTOR
+                end
+                t = {t1, t2}
+                user.trade_item[msg.id] = t
+            end
+        end
+        table.sort(p, sort)
+        local np = {}
+        local pi
+        local c = 0
+        for k, v in ipairs(p) do
+            if pi and pi.price == v.price then
+                pi.num = pi.num + v.num
+            else
+                pi = v
+                c = c + 1
+                np[c] = pi
+                if c >= base.TRADE_PAGE_ITEM then
+                    break
+                end
+            end
+        end
+        p = np
+    end
     return "query_sell_info", {info=p}
 end
 
 function proc.sell_item(msg)
+
     local i = data.item[msg.id]
     if not i then
         error{code = error_code.ITEM_NOT_EXIST}
@@ -1027,35 +1137,28 @@ end
 
 function proc.add_watch(msg)
     local user = data.user
-    if user.watch_count >= base.MAX_TRADE_WATCH then
-        error{code = error_code.WATCH_COUNT_LIMIT}
+    if user.trade_watch_count >= base.MAX_TRADE_WATCH then
+        error{code = error_code.TRADE_WATCH_COUNT_LIMIT}
     end
-    if user.watch[msg.id] then
-        error{code = error_code.ALREADY_WATCH_ITEM}
+    if user.trade_watch[msg.id] then
+        error{code = error_code.ALREADY_TRADE_WATCH}
     end
-    local i = skynet.call(trade_mgr, "lua", "get", msg.id)
-    if not i then
-        error{code = error_code.NO_SELL_ITEM}
-    end
-    user.watch[msg.id] = msg.id
-    user.watch_count = user.watch_count + 1
+    user.trade_watch[msg.id] = msg.id
+    user.trade_watch_count = user.trade_watch_count + 1
     local p = update_user()
-    p.watch = {i[1]}
+    p.trade_watch = {msg.id}
     return "update_user", {update=p}
 end
 
 function proc.del_watch(msg)
     local user = data.user
-    if not user.watch[msg.id] then
-        error{code = error_code.NOT_WATCH_ITEM}
+    if not user.trade_watch[msg.id] then
+        error{code = error_code.NO_TRADE_WATCH}
     end
-    user.watch[msg.id] = nil
-    user.watch_count = user.watch_count - 1
+    user.trade_watch[msg.id] = nil
+    user.trade_watch_count = user.trade_watch_count - 1
     local p = update_user()
-    p.watch = {
-        id = msg.id,
-        status = base.ITEM_STATUS_DELETE,
-    }
+    p.trade_watch = {msg.id}
     return "update_user", {update=p}
 end
 

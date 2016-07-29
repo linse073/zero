@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
+local notify = require "notify"
 
 local item
 
@@ -71,6 +72,13 @@ end
 
 function mail.get(id)
     return data.mail[id]
+end
+
+function mail.notify(info)
+    mail.add(info)
+    local p = update_user()
+    p.mail[1] = info
+    notify.add("update_user", {update=p})
 end
 
 ---------------------------protocol process----------------------

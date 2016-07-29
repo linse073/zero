@@ -130,6 +130,15 @@ function friend.get(id)
     return data.friend[id]
 end
 
+function friend.notify(info)
+    local pf = friend.add(info)
+    if pf then
+        local p = update_user()
+        p.friend[1] = pf
+        notify.add("update_user", {update=p})
+    end
+end
+
 function friend.update()
     local pf = {}
     for k, v in pairs(data.friend) do

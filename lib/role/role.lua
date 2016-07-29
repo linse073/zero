@@ -56,22 +56,6 @@ local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
 local action
 
-local function notify_mail(info)
-    mail.add(info)
-    local p = update_user()
-    p.mail[1] = info
-    notify.add("update_user", {update=p})
-end
-
-local function notify_friend(info)
-    local pf = friend.add(info)
-    if pf then
-        local p = update_user()
-        p.friend[1] = pf
-        notify.add("update_user", {update=p})
-    end
-end
-
 skynet.init(function()
     expdata = share.expdata
     npcdata = share.npcdata
@@ -110,14 +94,14 @@ function role.init_module()
     action = {
         mail = {
             add = mail.add,
-            notify = notify_mail,
+            notify = mail.notify,
             get = mail.get,
         },
         friend = {
             add = friend.add,
-            notify = notify_friend,
+            notify = friend.notify,
             get = friend.get,
-        }
+        },
     }
     return proc
 end

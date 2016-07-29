@@ -137,9 +137,9 @@ function CMD.del_by_role(id, roleid, price)
                 p[#p+1] = s
             end
         end
-    end
-    for k, v in ipairs(p) do
-        CMD.del(v.id)
+        for k, v in ipairs(p) do
+            CMD.del(v.id)
+        end
     end
     return p
 end

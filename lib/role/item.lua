@@ -1222,6 +1222,13 @@ function proc.buy_item(msg)
             },
         }
         skynet.call(offline_mgr, "lua", "add", "mail", iv.owner, om)
+        local agent = skynet.call(role_mgr, "lua", "get", iv.owner)
+        if agent then
+            skynet.call(agent, "lua", "notify", "update_user", {update={item={
+                id = iv.id,
+                status = base.ITEM_STATUS_DELETE,
+            }}})
+        end
         return "update_user", {update=p}
     elseif msg.itemid and msg.num and msg.price then
         local d = itemdata[msg.itemid]
@@ -1259,9 +1266,25 @@ function proc.buy_item(msg)
         end)
         if del and #del > 0 then
             skynet.call(save_trade, "lua", "batch_update", del, false)
+            for k, v in ipairs(del) do
+                local agent = skynet.call(role_mgr, "lua", "get", v.owner)
+                if agent then
+                    skynet.call(agent, "lua", "notify", "update_user", {update={item={
+                        id = v.id,
+                        status = base.ITEM_STATUS_DELETE,
+                    }}})
+                end
+            end
         end
         if u then
             skynet.call(save_trade, "lua", "update", u.id, u)
+            local agent = skynet.call(role_mgr, "lua", "get", u.owner)
+            if agent then
+                skynet.call(agent, "lua", "notify", "update_user", {update={item={
+                    id = u.id,
+                    num = u.num,
+                }}})
+            end
         end
         local now = floor(skynet.time())
         local m = {
@@ -1323,3 +1346,4 @@ function proc.del_watch(msg)
 end
 
 return item
+        

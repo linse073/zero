@@ -23,8 +23,20 @@ local function save()
     save_list = {}
 end
 
-function CMD.update(roleid, info)
-    save_list[roleid] = info
+function CMD.update(id, info)
+    save_list[id] = info
+end
+
+function CMD.batch_update(info, save)
+    if save then
+        for k, v in ipairs(info) do
+            CMD.update(v.id, v)
+        end
+    else
+        for k, v in ipairs(info) do
+            CMD.update(v.id, false)
+        end
+    end
 end
 
 function CMD.shutdown()

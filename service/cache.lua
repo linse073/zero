@@ -67,6 +67,12 @@ skynet.start(function()
             end
             v.chest = chest
         end
+        if v.min > 0 then
+            v.minPrice = v.min * v.officialPrice // base.RAND_FACTOR
+        end
+        if v.max > 0 then
+            v.maxPrice = v.max * v.officialPrice // base.RAND_FACTOR
+        end
     end
 
     local area_stage = {}

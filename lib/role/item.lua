@@ -240,8 +240,8 @@ function item.add_by_itemid(p, num, d)
             end
             item.add(v, d)
             ui[v.id] = v
-            num = num - diff
             pack[#pack+1] = v
+            num = num - diff
         end
     end
 end
@@ -315,40 +315,42 @@ end
 function item.del_by_itemid(p, itemid, num)
     local t = assert(data.type_item[itemid], string.format("Item %d not exist.", itemid))
     local pack = p.item
-    local del_item = {}
+    local update_item = {}
     for k, v in pairs(t) do
         local vi = v[1]
         local diff = num
         if diff > vi.num then
-            diff = num
+            diff = vi.num
         end
         vi.num = vi.num - diff
         num = num - diff
+        update_item[#update_item+1] = v
+        if num == 0 then
+            break
+        end
+    end
+    for k, v in ipairs(update_item) do
+        local vi = v[1]
         local pi = {
             id = vi.id,
             num = vi.num,
         }
         if vi.num == 0 then
-            del_item[#del_item+1] = v
+            item.del(v)
             pi.status = vi.status
             pi.status_time = vi.status_time
         end
         pack[#pack+1] = pi
-        if num == 0 then
-            break
-        end
-    end
-    for k, v in ipairs(del_item) do
-        item.del(v)
     end
     assert(num==0, string.format("Item %d num %d insufficient.", itemid, num))
 end
 
-function item.sell(p, itemid, num, price)
-    local user = data.user
+function item.sell_by_itemid(p, itemid, num, price)
     local t = assert(data.type_item[itemid], string.format("Item %d not exist.", itemid))
+    local user = data.user
     local del_item = {}
     local pack = p.item
+    local last_num
     for k, v in pairs(t) do
         local vi = v[1]
         if vi.num > num then
@@ -364,13 +366,12 @@ function item.sell(p, itemid, num, price)
                 status_time = 0,
                 price = 0,
             }
-            local si = item.add(v, v[2])
+            item.add(i, v[2])
             user.item[i.id] = i
             pack[#pack+1] = i
             vi.num = num
+            last_num = num
         end
-        vi.owner = user.id
-        vi.price = price
         del_item[#del_item+1] = v
         num = num - vi.num
         if num == 0 then
@@ -378,9 +379,45 @@ function item.sell(p, itemid, num, price)
         end
     end
     for k, v in ipairs(del_item) do
-        item.del(v, base.ITEM_STATUS_SELL)
+        item.sell(p, v, price)
+    end
+    if last_num then
+        pack[#pack].num = last_num
     end
     assert(num==0, string.format("Item %d num %d insufficient.", itemid, num))
+    return del_item
+end
+
+function item.sell(p, v, price)
+    local user = data.user
+    local vi = v[1]
+    vi.owner = user.id
+    vi.price = price
+    item.del(v, base.ITEM_STATUS_SELL)
+    local pack = p.item
+    pack[#pack+1] = {
+        id = vi.id,
+        owner = vi.owner,
+        price = vi.price,
+        status = vi.status,
+        status_time = vi.status_time,
+    }
+end
+
+function item.back_by_itemid(p, itemid, items)
+    local d = assert(itemdata[itemid], string.format("No item data %d.", itemid))
+    local pack = p.item
+    for k, v in ipairs(items) do
+        item.add_by_info(v, d)
+        pack[#pack+1] = {
+            id = v.id,
+            status = v.status,
+            status_time = v.status_time,
+        }
+    end
+end
+
+function item.back(p, v, d)
 end
 
 -- NOTICE: can't delete equip, gem and item that has stone
@@ -952,53 +989,31 @@ function proc.query_sell(msg)
         error{code = error_code.ITEM_ID_NOT_EXIST}
     end
     local p = skynet.call(trade_mgr, "lua", "query", msg.id)
-    if d.overlay > 1 then
-        if d.officialSale == 1 then
-            local user = data.user
-            local t = user.trade_item[msg.id]
-            if t then
-                local t1 = t[1]
-                local t2 = t[2]
-                local ti = 1
-                local len = #t1
-                for i = 1, base.TRADE_PAGE_ITEM do
-                    local m
-                    while ti <= len do
-                        local s = t1[ti]
-                        ti = ti + 1
-                        if s.num > 0 then
-                            m = {
-                                itemid = msg.id,
-                                price = s.price,
-                                num = s.num,
-                            }
-                            break
-                        end
-                    end
-                    if not m then
-                        local price = t1[len].price * random(d.priceUp1, d.priceUp2) // base.RAND_FACTOR
+    if d.officialSale == 1 and d.officialNumber > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
+        local user = data.user
+        local t = user.trade_item[msg.id]
+        if t then
+            local t1 = t[1]
+            local t2 = t[2]
+            local ti = 1
+            local len = #t1
+            for i = 1, base.TRADE_PAGE_ITEM do
+                local m
+                while ti <= len do
+                    local s = t1[ti]
+                    ti = ti + 1
+                    if s.num > 0 then
                         m = {
                             itemid = msg.id,
-                            price = price,
-                            num = d.officialNumber,
+                            price = s.price,
+                            num = s.num,
                         }
-                        local n = {
-                            price = price,
-                            num = d.officialNumber,
-                        }
-                        len = len + 1
-                        t1[len] = n
-                        t2[price] = n
-                        ti = len + 1
+                        break
                     end
-                    p[#p+1] = m
                 end
-            else
-                local t1 = {}
-                local t2 = {}
-                local price = d.officialPrice
-                for i = 1, base.TRADE_PAGE_ITEM do
-                    p[#p+1] = {
+                if not m then
+                    local price = t1[len].price * random(d.priceUp1, d.priceUp2) // base.RAND_FACTOR
+                    m = {
                         itemid = msg.id,
                         price = price,
                         num = d.officialNumber,
@@ -1007,14 +1022,36 @@ function proc.query_sell(msg)
                         price = price,
                         num = d.officialNumber,
                     }
-                    t1[i] = n
+                    len = len + 1
+                    t1[len] = n
                     t2[price] = n
-                    price = price * random(d.priceUp1, d.priceUp2) // base.RAND_FACTOR
+                    ti = len + 1
                 end
-                t = {t1, t2}
-                user.trade_item[msg.id] = t
+                p[#p+1] = m
             end
+        else
+            local t1 = {}
+            local t2 = {}
+            local price = d.officialPrice
+            for i = 1, base.TRADE_PAGE_ITEM do
+                p[#p+1] = {
+                    itemid = msg.id,
+                    price = price,
+                    num = d.officialNumber,
+                }
+                local n = {
+                    price = price,
+                    num = d.officialNumber,
+                }
+                t1[i] = n
+                t2[price] = n
+                price = price * random(d.priceUp1, d.priceUp2) // base.RAND_FACTOR
+            end
+            t = {t1, t2}
+            user.trade_item[msg.id] = t
         end
+    end
+    if d.overlay > 1 then
         table.sort(p, sort)
         local np = {}
         local pi
@@ -1023,12 +1060,12 @@ function proc.query_sell(msg)
             if pi and pi.price == v.price then
                 pi.num = pi.num + v.num
             else
-                pi = v
-                c = c + 1
-                np[c] = pi
                 if c >= base.TRADE_PAGE_ITEM then
                     break
                 end
+                pi = v
+                c = c + 1
+                np[c] = pi
             end
         end
         p = np
@@ -1037,102 +1074,225 @@ function proc.query_sell(msg)
 end
 
 function proc.sell_item(msg)
-
-    local i = data.item[msg.id]
-    if not i then
-        error{code = error_code.ITEM_NOT_EXIST}
+    if msg.id then
+        local i = data.item[msg.id]
+        if not i then
+            error{code = error_code.ITEM_NOT_EXIST}
+        end
+        local iv = i[1]
+        if iv.pos > 0 then
+            error{code = error_code.ITEM_IN_USE}
+        end
+        local st = i[3]
+        if st and st.num > 0 then
+            error{code = error_code.ITEM_HAS_STONE}
+        end
+        local d = i[2]
+        if d.playerSale == 0 then
+            error{code = error_code.ITEM_CANNOT_SELL}
+        end
+        if d.minPrice and msg.price < d.minPrice then
+            error{code = error_code.LOWER_ITEM_PRICE}
+        end
+        if d.maxPrice and msg.price > d.maxPrice then
+            error{code = error_code.HIGHER_ITEM_PRICE}
+        end
+        local p = update_user()
+        item.sell(p, i, msg.price)
+        skynet.call(trade_mgr, "lua", "add", iv, d)
+        skynet.call(save_trade, "lua", "update", iv.id, iv)
+        return "update_user", {update=p}
+    elseif msg.itemid and msg.num then
+        local d = itemdata[msg.itemid]
+        if not d then
+            error{code = error_code.ITEM_ID_NOT_EXIST}
+        end
+        if d.playerSale == 0 then
+            error{code = error_code.ITEM_CANNOT_SELL}
+        end
+        if d.minPrice and msg.price < d.minPrice then
+            error{code = error_code.LOWER_ITEM_PRICE}
+        end
+        if d.maxPrice and msg.price > d.maxPrice then
+            error{code = error_code.HIGHER_ITEM_PRICE}
+        end
+        local c = item.count(msg.itemid)
+        if c < msg.num then
+            error{code = error_code.ITEM_NUM_LIMIT}
+        end
+        local p = update_user()
+        local is = item.sell_by_itemid(p, msg.itemid, msg.num, msg.price)
+        skynet.call(trade_mgr, "lua", "batch_add", is, d)
+        skynet.call(save_trade, "lua", "batch_update", is, true)
+        return "update_user", {update=p}
+    else
+        error{code = error_code.ERROR_ARGS}
     end
-    local iv = i[1]
-    if iv.pos > 0 then
-        error{code = error_code.ITEM_IN_USE}
-    end
-    local st = i[3]
-    if st and st.num > 0 then
-        error{code = error_code.ITEM_HAS_STONE}
-    end
-    item.del(i, base.ITEM_STATUS_SELL)
-    local user = data.user
-    iv.owner = user.id
-    iv.price = msg.price
-    skynet.call(trade_mgr, "lua", "add", iv, i[2])
-    skynet.call(save_trade, "lua", "update", iv.id, iv)
-    local p = update_user()
-    p.item[1] = {
-        id = iv.id,
-        status = iv.status,
-        status_time = iv.status_time,
-        owner = iv.owner,
-        iv.price = iv.price,
-    }
-    return "update_user", {update=p}
 end
 
 function proc.back_item(msg)
-    local i = skynet.call(trade_mgr, "lua", "get", msg.id)
-    if not i then
-        error{code = error_code.NO_SELL_ITEM}
+    if msg.id then
+        local i = skynet.call(trade_mgr, "lua", "get", msg.id)
+        if not i then
+            error{code = error_code.NO_SELL_ITEM}
+        end
+        local user = data.user
+        local iv = i[1]
+        if iv.owner ~= user.id then
+            error{code = error_code.ITEM_NOT_EXIST}
+        end
+        if skynet.call(trade_mgr, "lua", "del", msg.id) = 0 then
+            error{code = error_code.NO_SELL_ITEM}
+        end
+        skynet.call(save_trade, "lua", "update", iv.id, false)
+        item.add_by_info(iv, i[2])
+        local p = update_user()
+        p.item[1] = {
+            id = iv.id,
+            status = iv.status,
+            status_time = iv.status_time,
+        }
+        return "update_user", {update=p}
+    elseif msg.itemid and msg.price then
+        local d = itemdata[msg.itemid]
+        if not d then
+            error{code = error_code.ITEM_ID_NOT_EXIST}
+        end
+        local user = data.user
+        local is = skynet.call(trade_mgr, "lua", "del_by_role", msg.itemid, user.id, msg.price)
+        if #is == 0 then
+            error{code = error_code.NO_SELL_ITEM}
+        end
+        skynet.call(save_trade, "lua", "batch_update", is, false)
+        local p = update_user()
+        local pack = p.item
+        for k, v in ipairs(is) do
+            item.add_by_info(v, d)
+            pack[#pack+1] = {
+                id = v.id,
+                status = v.status,
+                status_time = v.status_time,
+            }
+        end
+        return "update_user", {update=p}
+    else
+        error{code = error_code.ERROR_ARGS}
     end
-    local user = dat.user
-    local iv = i[1]
-    if iv.owner ~= user.id then
-        error{code = error_code.ITEM_NOT_EXIST}
-    end
-    if not skynet.call(trade_mgr, "lua", "del", msg.id) then
-        error{code = error_code.NO_SELL_ITEM}
-    end
-    skynet.call(save_trade, "lua", "update", iv.id, false)
-    item.add_by_info(iv, i[2])
-    local p = update_user()
-    p.item[1] = {
-        id = iv.id,
-        status = iv.status,
-        status_time = iv.status_time,
-    }
-    return "update_user", {update=p}
 end
 
 function proc.buy_item(msg)
-    local i = skynet.call(trade_mgr, "lua", "get", msg.id)
-    if not i then
-        error{code = error_code.NO_SELL_ITEM}
-    end
-    local user = data.user
-    local iv = i[1]
-    if iv.owner == user.id then
-        error{code = error_code.BUY_SELF_ITEM}
-    end
-    local p = update_user()
-    proc_queue(cs, function()
-        if user.money < iv.price then
-            error{code = error_code.ROLE_MONEY_LIMIT}
-        end
-        if not skynet.call(trade_mgr, "lua", "del", msg.id) then
+    if msg.id then
+        local i = skynet.call(trade_mgr, "lua", "get", msg.id)
+        if not i then
             error{code = error_code.NO_SELL_ITEM}
         end
-        role.add_money(p, -iv.price)
-    end)
-    skynet.call(save_trade, "lua", "update", iv.id, false)
-    local now = floor(skynet.time())
-    local m = {
-        type = base.MAIL_TYPE_TRADE,
-        time = now,
-        title = trade_title,
-        content = buy_content,
-        item_info = {iv},
-    }
-    mail.add(m)
-    p.mail[1] = m
-    local om = {
-        type = base.MAIL_TYPE_TRADE,
-        time = now,
-        title = trade_title,
-        content = sell_content,
-        item_award = {
-            {itemid=base.MONEY_ITEM, num=iv.price},
-        },
-    }
-    skynet.call(offline_mgr, "lua", "add", "mail", iv.owner, om)
-    return "update_user", {update=p}
+        local user = data.user
+        local iv = i[1]
+        if iv.owner == user.id then
+            error{code = error_code.BUY_SELF_ITEM}
+        end
+        local p = update_user()
+        proc_queue(cs, function()
+            if user.money < iv.price then
+                error{code = error_code.ROLE_MONEY_LIMIT}
+            end
+            if skynet.call(trade_mgr, "lua", "del", msg.id) == 0 then
+                error{code = error_code.NO_SELL_ITEM}
+            end
+            role.add_money(p, -iv.price)
+        end)
+        skynet.call(save_trade, "lua", "update", iv.id, false)
+        local now = floor(skynet.time())
+        local m = {
+            type = base.MAIL_TYPE_TRADE,
+            time = now,
+            title = trade_title,
+            content = buy_content,
+            item_info = {iv},
+        }
+        mail.add(m)
+        p.mail[1] = m
+        local om = {
+            type = base.MAIL_TYPE_TRADE,
+            time = now,
+            title = trade_title,
+            content = sell_content,
+            item_info = {
+                {itemid=base.MONEY_ITEM, num=iv.price},
+            },
+        }
+        skynet.call(offline_mgr, "lua", "add", "mail", iv.owner, om)
+        return "update_user", {update=p}
+    elseif msg.itemid and msg.num and msg.price then
+        local d = itemdata[msg.itemid]
+        if not d then
+            error{code = error_code.ITEM_ID_NOT_EXIST}
+        end
+        local p = update_user()
+        local rn, r, del, u
+        proc_queue(cs, function()
+            if user.money < msg.price * msg.num then
+                error{code = error_code.ROLE_MONEY_LIMIT}
+            end
+            rn, r, del, u = skynet.call(trade_mgr, "lua", "del_by_itemid", msg.itemid, msg.price, msg.num)
+            if rn < msg.num then
+                if d.officialSale == 1 and d.officialNumber > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
+                    local user = data.user
+                    local t = user.trade_item[msg.itemid]
+                    if t then
+                        local n = t[2][msg.price]
+                        if n and n.num > 0 then
+                            local diff = msg.num - rn
+                            if diff > n.num then
+                                diff = n.num
+                            end
+                            n.num = n.num - diff
+                            rn = rn + diff
+                        end
+                    end
+                end
+            end
+            if rn == 0 then
+                error{code = error_code.NO_SELL_ITEM}
+            end
+            role.add_money(p, -rn*msg.price)
+        end)
+        if del and #del > 0 then
+            skynet.call(save_trade, "lua", "batch_update", del, false)
+        end
+        if u then
+            skynet.call(save_trade, "lua", "update", u.id, u)
+        end
+        local now = floor(skynet.time())
+        local m = {
+            type = base.MAIL_TYPE_TRADE,
+            time = now,
+            title = trade_title,
+            content = buy_content,
+            item_info = {
+                {itemid=msg.itemid, num=rn},
+            },
+        }
+        mail.add(m)
+        p.mail[1] = m
+        if r then
+            for k, v in pairs(r) do
+                local om = {
+                    type = base.MAIL_TYPE_TRADE,
+                    time = now,
+                    title = trade_title,
+                    content = sell_content,
+                    item_info = {
+                        {itemid=base.MONEY_ITEM, num=msg.price*v},
+                    },
+                }
+                skynet.call(offline_mgr, "lua", "add", "mail", k, om)
+            end
+        end
+        return "update_user", {update=p}
+    else
+        error{code = error_code.ERROR_ARGS}
+    end
 end
 
 function proc.add_watch(msg)

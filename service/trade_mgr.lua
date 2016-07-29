@@ -41,6 +41,12 @@ function CMD.add(info, data)
     end
 end
 
+function CMD.batch_add(info, data)
+    for k, v in ipairs(info) do
+        CMD.add(v, data)
+    end
+end
+
 function CMD.get(id)
     return item_list[id]
 end
@@ -61,14 +67,14 @@ function CMD.del(id, num)
     if i then
         local info = i[1]
         local data = i[2]
-        if info.num > num then
+        if num and info.num > num then
             info.num = info.num - num
             if data.overlay > 1 then
                 local t = type_list[data.itemid]
                 local p = t[2][info.price]
                 p[2] = p[2] - num
             end
-            return num
+            return num, info
         else
             item_list[info.id] = nil
             role_list[info.owner][info.id] = nil
@@ -100,19 +106,42 @@ function CMD.del_by_itemid(id, price, num)
             table.sort(l, sort)
             local r = {}
             local rn = 0
+            local del = {}
+            local u
             for k, v in ipairs(l) do
-                local n = CMD.del(v.id, num)
+                local n, u = CMD.del(v.id, num)
                 num = num - n
                 rn = rn + n
                 r[v.owner] = (r[v.owner] or 0) + n
+                del[#del+1] = v
                 if num == 0 then
                     break
                 end
             end
-            return rn, r
+            if u then
+                del[#del] = nil
+            end
+            return rn, r, del, u
         end
     end
     return 0
+end
+
+function CMD.del_by_role(id, roleid, price)
+    local p = {}
+    local l = role_list[roleid]
+    if l then
+        for k, v in pairs(l) do
+            local s = v[1]
+            if s.itemid == id and s.price == price then
+                p[#p+1] = s
+            end
+        end
+    end
+    for k, v in ipairs(p) do
+        CMD.del(v.id)
+    end
+    return p
 end
 
 function CMD.query(id)

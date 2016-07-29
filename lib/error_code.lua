@@ -5,6 +5,7 @@ local error_code = {
     INTERNAL_ERROR = 1000,
 
     ALREADY_NOTIFY = 1100,
+    ERROR_ARGS = 1101,
 
     MAX_ROLE = 2000,
     ROLE_NAME_EXIST = 2001,
@@ -97,6 +98,9 @@ local error_code = {
     TRADE_WATCH_COUNT_LIMIT = 3102,
     ALREADY_TRADE_WATCH = 3103,
     NO_TRADE_WATCH = 3104,
+    ITEM_CANNOT_SELL = 3105,
+    LOWER_ITEM_PRICE = 3106,
+    HIGHER_ITEM_PRICE = 3107,
 }
 
 return error_code

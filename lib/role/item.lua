@@ -57,9 +57,9 @@ skynet.init(function()
     save_trade = skynet.queryservice("save_trade")
     offline_mgr = skynet.queryservice("offline_mgr")
 
-    trade_title = func.get_string(198000005)
-    buy_content = func.get_string(198000006)
-    sell_content = func.get_string(198000007)
+    trade_title = func.get_string(198000004)
+    buy_content = func.get_string(198000005)
+    sell_content = func.get_string(198000006)
 end)
 
 function item.init_module()

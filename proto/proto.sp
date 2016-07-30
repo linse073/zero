@@ -189,6 +189,7 @@
     rand_seed 3 : integer
     compound_crit 4 : integer
     explore_award 5 : explore_award
+    add_watch 6 : boolean
 }
 
 .update_day {

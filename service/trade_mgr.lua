@@ -107,13 +107,13 @@ function CMD.del_by_itemid(id, price, num)
             local r = {}
             local rn = 0
             local del = {}
-            local u
+            local n, u
             for k, v in ipairs(l) do
-                local n, u = CMD.del(v.id, num)
-                num = num - n
+                n, u = CMD.del(v.id, num)
                 rn = rn + n
                 r[v.owner] = (r[v.owner] or 0) + n
                 del[#del+1] = v
+                num = num - n
                 if num == 0 then
                     break
                 end

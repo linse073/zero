@@ -1337,9 +1337,7 @@ function proc.add_watch(msg)
     end
     user.trade_watch[msg.id] = msg.id
     user.trade_watch_count = user.trade_watch_count + 1
-    local p = update_user()
-    p.trade_watch = {msg.id}
-    return "update_user", {update=p}
+    return "update_user", {update={trade_watch={msg.id}}}
 end
 
 function proc.del_watch(msg)
@@ -1349,9 +1347,7 @@ function proc.del_watch(msg)
     end
     user.trade_watch[msg.id] = nil
     user.trade_watch_count = user.trade_watch_count - 1
-    local p = update_user()
-    p.trade_watch = {msg.id}
-    return "update_user", {update=p}
+    return "update_user", {update={trade_watch={msg.id}}}
 end
 
 return item

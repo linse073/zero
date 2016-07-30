@@ -88,11 +88,12 @@ function item.enter()
 end
 
 function item.pack_all()
+    local user = data.user
     local pack = {}
-    for k, v in pairs(data.user.item) do
+    for k, v in pairs(user.item) do
         pack[#pack+1] = v
     end
-    local sell_pack = skynet.call(trade_mgr, "lua", "role_item", data.user.id)
+    local sell_pack = skynet.call(trade_mgr, "lua", "role_item", user.id)
     for k, v in ipairs(sell_pack) do
         pack[#pack+1] = v
     end
@@ -402,22 +403,6 @@ function item.sell(p, v, price)
         status = vi.status,
         status_time = vi.status_time,
     }
-end
-
-function item.back_by_itemid(p, itemid, items)
-    local d = assert(itemdata[itemid], string.format("No item data %d.", itemid))
-    local pack = p.item
-    for k, v in ipairs(items) do
-        item.add_by_info(v, d)
-        pack[#pack+1] = {
-            id = v.id,
-            status = v.status,
-            status_time = v.status_time,
-        }
-    end
-end
-
-function item.back(p, v, d)
 end
 
 -- NOTICE: can't delete equip, gem and item that has stone
@@ -1249,6 +1234,7 @@ function proc.buy_item(msg)
         end
         local p = update_user()
         local tn, del, ln, u
+        local user = data.user
         proc_queue(cs, function()
             if user.money < msg.price * msg.num then
                 error{code = error_code.ROLE_MONEY_LIMIT}
@@ -1256,7 +1242,6 @@ function proc.buy_item(msg)
             tn, del, ln, u = skynet.call(trade_mgr, "lua", "del_by_itemid", msg.itemid, msg.price, msg.num)
             if tn < msg.num then
                 if d.officialSale == 1 and d.officialNumber > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
-                    local user = data.user
                     local t = user.trade_item[msg.itemid]
                     if t then
                         local n = t[2][msg.price]

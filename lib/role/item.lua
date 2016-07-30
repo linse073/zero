@@ -1126,7 +1126,7 @@ function proc.back_item(msg)
         if iv.owner ~= user.id then
             error{code = error_code.ITEM_NOT_EXIST}
         end
-        if skynet.call(trade_mgr, "lua", "del", msg.id) = 0 then
+        if skynet.call(trade_mgr, "lua", "del", msg.id) == 0 then
             error{code = error_code.NO_SELL_ITEM}
         end
         skynet.call(save_trade, "lua", "update", iv.id, false)

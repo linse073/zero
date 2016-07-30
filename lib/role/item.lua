@@ -1055,7 +1055,7 @@ function proc.query_sell(msg)
         end
         p = np
     end
-    return "query_sell_info", {info=p}
+    return "query_sell_info", {id=msg.id, info=p}
 end
 
 function proc.sell_item(msg)
@@ -1226,7 +1226,8 @@ function proc.buy_item(msg)
             }
             skynet.call(agent, "lua", "notify", "update_user", {update=p})
         end
-        return "update_user", {update=p}
+        msg.itemid = iv.itemid
+        return "update_user", {update=p, buy_item=msg}
     elseif msg.itemid and msg.num and msg.price then
         local d = itemdata[msg.itemid]
         if not d then
@@ -1306,7 +1307,7 @@ function proc.buy_item(msg)
                 skynet.call(agent, "lua", "notify", "update_user", {update={item=v[2]}})
             end
         end
-        return "update_user", {update=p}
+        return "update_user", {update=p, buy_item=msg}
     else
         error{code = error_code.ERROR_ARGS}
     end

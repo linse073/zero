@@ -190,6 +190,7 @@
     compound_crit 4 : integer
     explore_award 5 : explore_award
     add_watch 6 : boolean
+    buy_item 7 : buy_item
 }
 
 .update_day {
@@ -455,7 +456,8 @@
 }
 
 .query_sell_info {
-    info 0 : *item_info
+    id 0 : integer
+    info 1 : *item_info
 }
 
 .sell_item {

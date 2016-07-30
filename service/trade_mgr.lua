@@ -104,16 +104,14 @@ function CMD.del_by_itemid(id, price, num)
                 l[#l+1] = v[1]
             end
             table.sort(l, sort)
-            local r = {}
-            local rn = 0
+            local tn = 0
             local del = {}
-            local n, u
+            local ln, u
             for k, v in ipairs(l) do
-                n, u = CMD.del(v.id, num)
-                rn = rn + n
-                r[v.owner] = (r[v.owner] or 0) + n
+                ln, u = CMD.del(v.id, num)
+                tn = tn + ln
                 del[#del+1] = v
-                num = num - n
+                num = num - ln
                 if num == 0 then
                     break
                 end
@@ -121,7 +119,7 @@ function CMD.del_by_itemid(id, price, num)
             if u then
                 del[#del] = nil
             end
-            return rn, r, del, u
+            return tn, del, ln, u
         end
     end
     return 0

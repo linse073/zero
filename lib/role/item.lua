@@ -1180,6 +1180,16 @@ function proc.back_item(msg)
     end
 end
 
+local function buy_update(r, id, num, u)
+    local t = r[id]
+    if t then
+        t[1] = t[1] + num
+        local t2 = t[2]
+        t2[#t2+1] = u
+    else
+        t = {num, {u}}
+    end
+end
 function proc.buy_item(msg)
     if msg.id then
         local i = skynet.call(trade_mgr, "lua", "get", msg.id)
@@ -1224,10 +1234,12 @@ function proc.buy_item(msg)
         skynet.call(offline_mgr, "lua", "add", "mail", iv.owner, om)
         local agent = skynet.call(role_mgr, "lua", "get", iv.owner)
         if agent then
-            skynet.call(agent, "lua", "notify", "update_user", {update={item={
+            local op = update_user()
+            op.item[1] = {
                 id = iv.id,
                 status = base.ITEM_STATUS_DELETE,
-            }}})
+            }
+            skynet.call(agent, "lua", "notify", "update_user", {update=p})
         end
         return "update_user", {update=p}
     elseif msg.itemid and msg.num and msg.price then
@@ -1236,55 +1248,50 @@ function proc.buy_item(msg)
             error{code = error_code.ITEM_ID_NOT_EXIST}
         end
         local p = update_user()
-        local rn, r, del, u
+        local tn, del, ln, u
         proc_queue(cs, function()
             if user.money < msg.price * msg.num then
                 error{code = error_code.ROLE_MONEY_LIMIT}
             end
-            rn, r, del, u = skynet.call(trade_mgr, "lua", "del_by_itemid", msg.itemid, msg.price, msg.num)
-            if rn < msg.num then
+            tn, del, ln, u = skynet.call(trade_mgr, "lua", "del_by_itemid", msg.itemid, msg.price, msg.num)
+            if tn < msg.num then
                 if d.officialSale == 1 and d.officialNumber > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
                     local user = data.user
                     local t = user.trade_item[msg.itemid]
                     if t then
                         local n = t[2][msg.price]
                         if n and n.num > 0 then
-                            local diff = msg.num - rn
+                            local diff = msg.num - tn
                             if diff > n.num then
                                 diff = n.num
                             end
                             n.num = n.num - diff
-                            rn = rn + diff
+                            tn = tn + diff
                         end
                     end
                 end
             end
-            if rn == 0 then
+            if tn == 0 then
                 error{code = error_code.NO_SELL_ITEM}
             end
-            role.add_money(p, -rn*msg.price)
+            role.add_money(p, -tn*msg.price)
         end)
-        if del and #del > 0 then
+        local r = {}
+        if del then
             skynet.call(save_trade, "lua", "batch_update", del, false)
             for k, v in ipairs(del) do
-                local agent = skynet.call(role_mgr, "lua", "get", v.owner)
-                if agent then
-                    skynet.call(agent, "lua", "notify", "update_user", {update={item={
-                        id = v.id,
-                        status = base.ITEM_STATUS_DELETE,
-                    }}})
-                end
+                buy_update(r, v.owner, v.num, {
+                    id = v.id,
+                    status = base.ITEM_STATUS_DELETE,
+                })
             end
         end
         if u then
             skynet.call(save_trade, "lua", "update", u.id, u)
-            local agent = skynet.call(role_mgr, "lua", "get", u.owner)
-            if agent then
-                skynet.call(agent, "lua", "notify", "update_user", {update={item={
-                    id = u.id,
-                    num = u.num,
-                }}})
-            end
+            buy_update(r, u.owner, ln, {
+                id = u.id,
+                num = u.num,
+            })
         end
         local now = floor(skynet.time())
         local m = {
@@ -1293,23 +1300,25 @@ function proc.buy_item(msg)
             title = trade_title,
             content = buy_content,
             item_info = {
-                {itemid=msg.itemid, num=rn},
+                {itemid=msg.itemid, num=tn},
             },
         }
         mail.add(m)
         p.mail[1] = m
-        if r then
-            for k, v in pairs(r) do
-                local om = {
-                    type = base.MAIL_TYPE_TRADE,
-                    time = now,
-                    title = trade_title,
-                    content = sell_content,
-                    item_info = {
-                        {itemid=base.MONEY_ITEM, num=msg.price*v},
-                    },
-                }
-                skynet.call(offline_mgr, "lua", "add", "mail", k, om)
+        for k, v in pairs(r) do
+            local om = {
+                type = base.MAIL_TYPE_TRADE,
+                time = now,
+                title = trade_title,
+                content = sell_content,
+                item_info = {
+                    {itemid=base.MONEY_ITEM, num=msg.price*v[1]},
+                },
+            }
+            skynet.call(offline_mgr, "lua", "add", "mail", k, om)
+            local agent = skynet.call(role_mgr, "lua", "get", k)
+            if agent then
+                skynet.call(agent, "lua", "notify", "update_user", {update={item=v[2]}})
             end
         end
         return "update_user", {update=p}

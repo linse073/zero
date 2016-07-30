@@ -450,10 +450,7 @@
 }
 
 .query_sell {
-    type 0 : integer
-    quality 1 : integer
-    level 2 : integer
-    prof 3 : integer
+    id 0 : integer
 }
 
 .query_sell_info {
@@ -462,15 +459,22 @@
 
 .sell_item {
     id 0 : integer
-    price 1 : integer
+    itemid 1 : integer
+    num 2 : integer
+    price 3 : integer
 }
 
 .back_item {
     id 0 : integer
+    itemid 1 : integer
+    price 2 : integer
 }
 
 .buy_item {
     id 0 : integer
+    itemid 1 : integer
+    num 2 : integer
+    price 3 : integer
 }
 
 .add_watch {

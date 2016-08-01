@@ -70,7 +70,7 @@ function CMD.del(id, num)
         if num and info.num > num then
             info.num = info.num - num
             if data.overlay > 1 then
-                local t = type_list[data.itemid]
+                local t = type_list[info.itemid]
                 local p = t[2][info.price]
                 p[2] = p[2] - num
             end
@@ -78,7 +78,7 @@ function CMD.del(id, num)
         else
             item_list[info.id] = nil
             role_list[info.owner][info.id] = nil
-            local t = type_list[data.itemid]
+            local t = type_list[info.itemid]
             t[1][info.id] = nil
             if data.overlay > 1 then
                 local p = t[2][info.price]

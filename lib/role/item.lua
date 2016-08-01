@@ -9,6 +9,7 @@ local notify = require "notify"
 local task
 local role
 local stage
+local mail
 
 local pairs = pairs
 local ipairs = ipairs
@@ -66,6 +67,7 @@ function item.init_module()
     task = require "role.task"
     role = require "role.role"
     stage = require "role.stage"
+    mail = require "role.mail"
     return proc
 end
 

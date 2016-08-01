@@ -350,6 +350,7 @@ function item.sell_by_itemid(p, itemid, num, price)
     local t = assert(data.type_item[itemid], string.format("Item %d not exist.", itemid))
     local user = data.user
     local del_item = {}
+    local ret_item = {}
     local pack = p.item
     local last_num
     for k, v in pairs(t) do
@@ -374,6 +375,7 @@ function item.sell_by_itemid(p, itemid, num, price)
             last_num = num
         end
         del_item[#del_item+1] = v
+        ret_item[#ret_item+1] = vi
         num = num - vi.num
         if num == 0 then
             break
@@ -386,7 +388,7 @@ function item.sell_by_itemid(p, itemid, num, price)
         pack[#pack].num = last_num
     end
     assert(num==0, string.format("Item %d num %d insufficient.", itemid, num))
-    return del_item
+    return ret_item
 end
 
 function item.sell(p, v, price)

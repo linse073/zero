@@ -34,6 +34,7 @@ local item_category
 local trade_mgr
 local save_trade
 local offline_mgr
+local role_mgr
 local data
 
 local trade_title
@@ -57,6 +58,7 @@ skynet.init(function()
     trade_mgr = skynet.queryservice("trade_mgr")
     save_trade = skynet.queryservice("save_trade")
     offline_mgr = skynet.queryservice("offline_mgr")
+    role_mgr = skynet.queryservice("role_mgr")
 
     trade_title = func.get_string(198000004)
     buy_content = func.get_string(198000005)

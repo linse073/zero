@@ -1192,15 +1192,16 @@ function proc.buy_item(msg)
         if iv.owner == user.id then
             error{code = error_code.BUY_SELF_ITEM}
         end
+        local total_price = iv.price * iv.num
         local p = update_user()
         proc_queue(cs, function()
-            if user.money < iv.price then
+            if user.money < total_price then
                 error{code = error_code.ROLE_MONEY_LIMIT}
             end
             if skynet.call(trade_mgr, "lua", "del", msg.id) == 0 then
                 error{code = error_code.NO_SELL_ITEM}
             end
-            role.add_money(p, -iv.price)
+            role.add_money(p, -total_price)
         end)
         skynet.call(save_trade, "lua", "update", iv.id, false)
         local now = floor(skynet.time())
@@ -1219,7 +1220,7 @@ function proc.buy_item(msg)
             title = trade_title,
             content = sell_content,
             item_info = {
-                {itemid=base.MONEY_ITEM, num=iv.price},
+                {itemid=base.MONEY_ITEM, num=total_price},
             },
         }
         skynet.call(offline_mgr, "lua", "add", "mail", iv.owner, om)

@@ -1231,7 +1231,7 @@ function proc.buy_item(msg)
                 id = iv.id,
                 status = base.ITEM_STATUS_DELETE,
             }
-            skynet.call(agent, "lua", "notify", "update_user", {update=p})
+            skynet.call(agent, "lua", "notify", "update_user", {update=op})
         end
         msg.itemid = iv.itemid
         return "update_user", {update=p, buy_item=msg}

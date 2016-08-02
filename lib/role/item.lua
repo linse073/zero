@@ -1179,6 +1179,7 @@ local function buy_update(r, id, num, u)
         t2[#t2+1] = u
     else
         t = {num, {u}}
+        r[id] = t
     end
 end
 function proc.buy_item(msg)

@@ -3,6 +3,7 @@ local share = require "share"
 local util = require "util"
 local notify = require "notify"
 
+local role
 local item
 
 local pairs = pairs
@@ -28,6 +29,7 @@ end)
 
 function mail.init_module()
     item = require "role.item"
+    role = require "role.role"
     return proc
 end
 

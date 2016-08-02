@@ -1,4 +1,21 @@
 local datas = {
+	[1800000000] = {
+		id = 1800000000,
+		vipLv = 0,
+		price = 0,
+		relive = 0,
+		golden = 1,
+		speedUp = 0,
+		weekGift = 0,
+		freeSignUp = 0,
+		gearIncome = 0,
+		taxes = 0,
+		searchIncome = 0,
+		composRate = 0,
+		intensifyRate = 0,
+		vipDes = 0,
+		GiftList = "",
+	},
 	[1800000001] = {
 		id = 1800000001,
 		vipLv = 1,

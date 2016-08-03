@@ -469,7 +469,7 @@ function role.charge(num)
                 item_info = l.mailItem,
             }
             mail.add(m)
-            pmail[#pmail+1] = m
+            pm[#pm+1] = m
         end
         user.vip = vip
         p.user.vip = vip

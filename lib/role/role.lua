@@ -175,7 +175,7 @@ local function update_day(user, od, nd)
         update_sign_in = true
     end
     user.trade_item = {}
-    user.exchange = 0
+    user.exchange_count = 0
     stage.update_day()
     return task.update_day(), update_sign_in
 end
@@ -840,10 +840,10 @@ end
 function proc.exchange(msg)
     local user = data.user
     local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
-    if user.exchange >= l.golden then
+    if user.exchange_count >= l.golden then
         error{code = error_code.EXCHANGE_LIMIT}
     end
-    local ec = user.exchange + 1
+    local ec = user.exchange_count + 1
     local e = assert(expdata[ec], string.format("No exp data %d.", ec))
     local p = update_user()
     proc_queue(cs, function()
@@ -853,8 +853,8 @@ function proc.exchange(msg)
         role.add_rmb(p, -e.diamondToGold)
     end)
     role.add_money(p, 10000)
-    user.exchange = ec
-    p.user.exchange = ec
+    user.exchange_count = ec
+    p.user.exchange_count = ec
     return "update_user", {update=p}
 end
 

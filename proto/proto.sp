@@ -360,6 +360,10 @@
     item_info 3 : *item_info
 }
 
+.test_charge {
+    num 0 : integer
+}
+
 .upgrade_passive {
     id 0 : integer
     skillid 1 : integer

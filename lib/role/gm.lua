@@ -158,4 +158,11 @@ function proc.broadcast_mail(msg)
     return "response", ""
 end
 
+function proc.test_charge(msg)
+    if data.user.gm_level == 0 then
+        error{code = error_code.ROLE_NO_PERMIT}
+    end
+    return role.charge(msg.num)
+end
+
 return gm

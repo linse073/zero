@@ -428,6 +428,36 @@ function role.action_info(otype, id)
     return action[otype].get(id)
 end
 
+function role.charge(num)
+    local user = data.user
+    local t
+    if user.charge == 0 then
+        t = base.REWARD_ACTION_FIRST_CHARGE
+    else
+        t = base.REWARD_ACTION_CHARGE
+    end
+    local r = type_reward[t][num]
+    if not r then
+        error{code = error_code.ERROR_CHARGE_NUM}
+    end
+    local p = update_user()
+    role.get_reward(p, r)
+    user.charge = user.charge + num
+    p.user.charge = user.charge
+    local vip = 0
+    for k, v in ipairs(vip_level) do
+        if user.charge < v.price then
+            vip = k - 1
+            break
+        end
+    end
+    if vip ~= user.vip then
+        user.vip = vip
+        p.user.vip = vip
+    end
+    return "update_user", {update=p}
+end
+
 -------------------protocol process--------------------------
 
 function proc.notify_info(msg)

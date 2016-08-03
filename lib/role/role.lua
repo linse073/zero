@@ -794,7 +794,8 @@ function proc.exchange(msg)
     if user.exchange >= l.golden then
         error{code = error_code.EXCHANGE_LIMIT}
     end
-    local e = assert(expdata[user.exchange], string.format("No exp data %d.", user.exchange))
+    local ec = user.exchange + 1
+    local e = assert(expdata[ec], string.format("No exp data %d.", ec))
     local p = update_user()
     proc_queue(cs, function()
         if user.rmb < e.diamondToGold then
@@ -803,8 +804,8 @@ function proc.exchange(msg)
         role.add_rmb(p, -e.diamondToGold)
     end)
     role.add_money(p, 10000)
-    user.exchange = user.exchange + 1
-    p.user.exchange = user.exchange
+    user.exchange = ec
+    p.user.exchange = ec
     return "update_user", {update=p}
 end
 

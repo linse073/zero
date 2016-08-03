@@ -252,6 +252,7 @@ local base = {
     MAIL_TYPE_EXPLORE = 3,
     MAIL_TYPE_ARENA = 4,
     MAIL_TYPE_TRADE = 5,
+    MAIL_TYPE_CHARGE = 6,
 
     FRIEND_STATUS_OLD = 1,
     FRIEND_STATUS_NEW = 2,

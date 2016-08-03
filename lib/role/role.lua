@@ -55,6 +55,9 @@ local trade_mgr
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
+local charge_title
+local charge_content
+
 local action
 
 skynet.init(function()
@@ -78,6 +81,9 @@ skynet.init(function()
     explore_mgr = skynet.queryservice("explore_mgr")
     offline_mgr = skynet.queryservice("offline_mgr")
     trade_mgr = skynet.queryservice("trade_mgr")
+
+    charge_title = func.get_string(198000007)
+    charge_content = func.get_string(198000008)
 end)
 
 function role.init_module()
@@ -452,6 +458,19 @@ function role.charge(num)
         end
     end
     if vip ~= user.vip then
+        local pm = p.mail
+        for i = user.vip+1, vip do
+            local l = vip_level[i]
+            local m = {
+                type = base.MAIL_TYPE_CHARGE,
+                time = now,
+                title = charge_title,
+                content = string.format(charge_content, i),
+                item_info = l.mailItem,
+            }
+            mail.add(m)
+            pmail[#pmail+1] = m
+        end
         user.vip = vip
         p.user.vip = vip
     end

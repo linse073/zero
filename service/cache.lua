@@ -2,7 +2,6 @@ local skynet = require "skynet"
 local sprotoloader = require "sprotoloader"
 local sharedata = require "sharedata"
 local proto = require "proto"
-local util = require "util"
 
 local string = string
 local pairs = pairs
@@ -11,6 +10,7 @@ local assert = assert
 local tonumber = tonumber
 local os = os
 local time = os.time
+local language = skynet.getenv("language")
 
 skynet.start(function()
     -- share data
@@ -29,6 +29,41 @@ skynet.start(function()
     local textdata = require("data.text")
     local vipdata = require("data.vip")
     local base = require("base")
+
+    local function get_string(id)
+        if id == 0 then
+            return ""
+        else
+            local t = assert(textdata[id], string.format("No text data %d.", id))
+            return t[language]
+        end
+    end
+
+    for k, v in pairs(carddata) do
+        v.name = get_string(v.name)
+        v.skillDes = get_string(v.skillDes)
+        v.cardDes = get_string(v.cardDes)
+    end
+
+    for k, v in pairs(itemdata) do
+        v.name = get_string(v.name)
+        v.Description = get_string(v.Description)
+    end
+
+    for k, v in pairs(passivedata) do
+        v.name = get_string(v.name)
+        v.des = get_string(v.des)
+    end
+
+    for k, v in pairs(stagedata) do
+        v.name = get_string(v.name)
+    end
+
+    for k, v in pairs(taskdata) do
+        v.taskTitle = get_string(v.taskTitle)
+        v.TaskName = get_string(v.TaskName)
+        v.TaskTalk = get_string(v.TaskTalk)
+    end
 
     local function is_equip(itemtype)
         return itemtype >= base.ITEM_TYPE_HEAD and itemtype <= base.ITEM_TYPE_NECKLACE
@@ -281,6 +316,15 @@ skynet.start(function()
 
     local vip_level = {}
     for k, v in pairs(vipdata) do
+        local giftItem = {}
+        local mailItem = {}
+        for v1 in string.gmatch(v.GiftList, "(%d+)") do
+            local itemid = tonumber(v1)
+            giftItem[#giftItem+1] = assert(itemdata[itemid], string.format("No item data %d.", itemid))
+            mailItem[#mailItem+1] = {itemid=itemid, num=1}
+        end
+        v.giftItem = giftItem
+        v.mailItem = mailItem
         vip_level[v.vipLv] = v
     end
 

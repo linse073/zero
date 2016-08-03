@@ -209,6 +209,7 @@ function task.update(p, completeType, condition, count, setCount)
     local user = data.user
     local accept_task = data.accept_task
     local done_task = {}
+    local new_task = {}
     for k, v in pairs(accept_task) do
         local vt = v[1]
         local d = v[2]
@@ -228,7 +229,7 @@ function task.update(p, completeType, condition, count, setCount)
                     status = vt.status,
                 }
                 if d.TaskType == base.TASK_TYPE_MASTER and d.TaskTalk == "" then
-                    task.finish(p, v)
+                    new_task[#new_task+1] = task.finish(p, v)
                 end
             else
                 ptask[#ptask+1] = {
@@ -240,6 +241,9 @@ function task.update(p, completeType, condition, count, setCount)
     end
     for k, v in ipairs(done_task) do
         accept_task[v] = nil
+    end
+    for k, v in ipairs(new_task) do
+        task.check_add(p, v, base.TASK_STATUS_ACCEPT)
     end
 end
 
@@ -254,8 +258,7 @@ function task.finish(p, t)
     task.award(p, t)
     local d = t[2]
     if d.TaskType == base.TASK_TYPE_MASTER and d.nextID > 0 then
-        local nd = assert(taskdata[d.nextID], string.format("No task data %d.", d.nextID))
-        task.check_add(p, nd, base.TASK_STATUS_ACCEPT)
+        return assert(taskdata[d.nextID], string.format("No task data %d.", d.nextID))
     end
 end
 
@@ -343,7 +346,10 @@ function proc.submit_task(msg)
             task.update(p, d.CompleteType, msg.condition, 1)
         end
     elseif vt.status == base.TASK_STATUS_DONE then
-        task.finish(p, t)
+        local nd = task.finish(p, t)
+        if nd then
+            task.check_add(p, nd, base.TASK_STATUS_ACCEPT)
+        end
     end
     return "update_user", {update=p}
 end

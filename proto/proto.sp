@@ -33,6 +33,7 @@
     des_pos 14 : position
     sign_in 15 : *boolean
     sign_in_day 16 : integer
+    exchange_count 17 : integer
 }
 
 .other_info {

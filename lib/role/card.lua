@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 local func = require "func"
+local proc_queue = require "proc_queue"
 
 local item
 local task
@@ -24,7 +25,7 @@ local itemdata
 local original_card
 local base
 local error_code
--- local cs
+local cs
 local data
 
 local card = {}
@@ -38,7 +39,7 @@ skynet.init(function()
     original_card = share.original_card
     base = share.base
     error_code = share.error_code
-    -- cs = share.cs
+    cs = share.cs
 end)
 
 function card.init_module()
@@ -399,10 +400,12 @@ function proc.upgrade_passive(msg)
     local mul = 1
     if msg.rmb and si.status > 0 then
         local rmb = idata.price * si.status
-        if user.rmb < rmb then
-            error{code = error_code.ROLE_RMB_LIMIT}
-        end
-        role.add_rmb(p, -rmb)
+        proc_queue(cs, function()
+            if user.rmb < rmb then
+                error{code = error_code.ROLE_RMB_LIMIT}
+            end
+            role.add_rmb(p, -rmb)
+        end)
         mul = 10 * si.status
         si.status = 0
     else

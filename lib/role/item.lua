@@ -1082,10 +1082,10 @@ function proc.sell_item(msg)
         if d.playerSale == 0 then
             error{code = error_code.ITEM_CANNOT_SELL}
         end
-        if d.minPrice and msg.price < d.minPrice then
+        if msg.price < d.minPrice then
             error{code = error_code.LOWER_ITEM_PRICE}
         end
-        if d.maxPrice and msg.price > d.maxPrice then
+        if msg.price > d.maxPrice then
             error{code = error_code.HIGHER_ITEM_PRICE}
         end
         local p = update_user()
@@ -1101,10 +1101,10 @@ function proc.sell_item(msg)
         if d.playerSale == 0 then
             error{code = error_code.ITEM_CANNOT_SELL}
         end
-        if d.minPrice and msg.price < d.minPrice then
+        if msg.price < d.minPrice then
             error{code = error_code.LOWER_ITEM_PRICE}
         end
-        if d.maxPrice and msg.price > d.maxPrice then
+        if msg.price > d.maxPrice then
             error{code = error_code.HIGHER_ITEM_PRICE}
         end
         local c = item.count(msg.itemid)

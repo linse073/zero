@@ -27,6 +27,7 @@ skynet.start(function()
     local rewarddata = require("data.reward")
     local searchdata = require("data.search")
     local textdata = require("data.text")
+    local vipdata = require("data.vip")
     local base = require("base")
 
     local function is_equip(itemtype)
@@ -67,10 +68,11 @@ skynet.start(function()
             end
             v.chest = chest
         end
-        if v.min > 0 then
+        if v.playerSale ~= 0 then
+            assert(v.officialPrice~=0, string.format("Error item price %d.", v.id))
+            assert(v.min~=0, string.format("Error item min price %d.", v.id))
             v.minPrice = v.min * v.officialPrice // base.RAND_FACTOR
-        end
-        if v.max > 0 then
+            assert(v.max~=0, string.format("Error item max price %d.", v.id))
             v.maxPrice = v.max * v.officialPrice // base.RAND_FACTOR
         end
     end
@@ -277,6 +279,11 @@ skynet.start(function()
         id = d.nextID
     until id == 0
 
+    local vip_level = {}
+    for k, v in pairs(vipdata) do
+        vip_level[v.vipLv] = v
+    end
+
     sharedata.new("carddata", carddata)
     sharedata.new("itemdata", itemdata)
     sharedata.new("stagedata", stagedata)
@@ -290,6 +297,7 @@ skynet.start(function()
     sharedata.new("rewarddata", rewarddata)
     sharedata.new("searchdata", searchdata)
     sharedata.new("textdata", textdata)
+    sharedata.new("vipdata", vipdata)
 
     sharedata.new("base", base)
     sharedata.new("error_code", require("error_code"))
@@ -301,6 +309,7 @@ skynet.start(function()
     sharedata.new("area_search", area_search)
     sharedata.new("area_stage", area_stage)
     sharedata.new("stage_reward", stage_reward)
+    sharedata.new("vip_level", vip_level)
 
     local level = base.MAX_LEVEL - 1
     local ed = assert(expdata[level], string.format("No exp data %d.", level))

@@ -69,6 +69,7 @@ local msg = {
     [2703] = "end_challenge",
 
     [2800] = "sign_in",
+    [2801] = "exchange",
 
     [2900] = "explore",
     [2901] = "quit_explore",

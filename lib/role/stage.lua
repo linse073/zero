@@ -3,6 +3,7 @@ local share = require "share"
 local util = require "util"
 local new_rand = require "random"
 local func = require "func"
+local proc_queue = require "proc_queue"
 
 local role
 local task
@@ -30,6 +31,7 @@ local stage_reward
 local stage_task_complete
 local data
 local role_mgr
+local cs
 
 local stage = {}
 local proc = {}
@@ -42,6 +44,7 @@ skynet.init(function()
     area_stage = share.area_stage
     stage_reward = share.stage_reward
     stage_task_complete = share.stage_task_complete
+    cs = share.cs
     role_mgr = skynet.queryservice("role_mgr")
 end)
 
@@ -423,19 +426,21 @@ function proc.open_chest(msg)
     local p = update_user()
     local bonus = {}
     local num = 0
-    if d.moneyType > 0 then
+    if d.moneyType > 0 and msg.pick_chest > 0 then
         local user = data.user
         local cost = base.STAGE_BONUS_COST[d.moneyType]
         local fn = role["add_" .. cost]
-        for i = 1, msg.pick_chest do
-            local money = i * d.moneyNum
-            if user[cost] >= money then
-                fn(p, -money)
-                num = num + 1
-            else
-                break
+        proc_queue(cs, function()
+            for i = 1, msg.pick_chest do
+                local money = i * d.moneyNum
+                if user[cost] >= money then
+                    fn(p, -money)
+                    num = num + 1
+                else
+                    break
+                end
             end
-        end
+        end)
     end
     bonus[#bonus+1] = {rand_num=2, num=num, data=d.bonus}
     stage.get_bonus(bonus, p)

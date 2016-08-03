@@ -20,6 +20,7 @@ skynet.init(function()
     share.rewarddata = sharedata.query("rewarddata")
     share.searchdata = sharedata.query("searchdata")
     share.textdata = sharedata.query("textdata")
+    share.vipdata = sharedata.query("vipdata")
 
     share.base = sharedata.query("base")
     share.error_code = sharedata.query("error_code")
@@ -31,6 +32,7 @@ skynet.init(function()
     share.area_search = sharedata.query("area_search")
     share.area_stage = sharedata.query("area_stage")
     share.stage_reward = sharedata.query("stage_reward")
+    share.vip_level = sharedata.query("vip_level")
 
     share.max_exp = sharedata.query("max_exp")
 

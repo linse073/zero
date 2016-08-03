@@ -73,6 +73,7 @@ local error_code = {
 
     ALREADY_SIGN_IN = 2600,
     NO_PATCH_SIGN_IN = 2601,
+    EXCHANGE_LIMIT = 2602,
 
     ALREADY_EXPLORE = 2700,
     ERROR_EXPLORE_AREA = 2701,

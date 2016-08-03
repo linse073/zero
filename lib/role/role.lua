@@ -42,6 +42,7 @@ local type_reward
 local cs
 local map_pos
 local max_exp
+local vip_level
 local data
 local module
 local role = {}
@@ -71,6 +72,7 @@ skynet.init(function()
     map_pos = func.map_pos
     game_day = func.game_day
     max_exp = share.max_exp
+    vip_level = share.vip_level
     role_mgr = skynet.queryservice("role_mgr")
     fight_point_rank = skynet.queryservice("fight_point_rank")
     explore_mgr = skynet.queryservice("explore_mgr")
@@ -167,6 +169,7 @@ local function update_day(user, od, nd)
         update_sign_in = true
     end
     user.trade_item = {}
+    user.exchange = 0
     stage.update_day()
     return task.update_day(), update_sign_in
 end
@@ -380,6 +383,9 @@ function role.repair(user)
     if not user.trade_item then
         user.trade_item = {}
     end
+    if not user.exchange_count then
+        user.exchange_count = 0
+    end
 end
 
 function role.explore_bonus(p, a)
@@ -491,6 +497,7 @@ function proc.create_user(msg)
         trade_watch = {},
         trade_watch_count = 0,
         trade_item = {},
+        exchange_count = 0,
 
         item = {},
         card = {},
@@ -779,6 +786,26 @@ function proc.get_role_info(msg)
         item = pitem,
     }
     return "role_info", {info=puser}
+end
+
+function proc.exchange(msg)
+    local user = data.user
+    local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
+    if user.exchange >= l.golden then
+        error{code = error_code.EXCHANGE_LIMIT}
+    end
+    local e = assert(expdata[user.exchange], string.format("No exp data %d.", user.exchange))
+    local p = update_user()
+    proc_queue(cs, function()
+        if user.rmb < e.diamondToGold then
+            error{code = error_code.ROLE_RMB_LIMIT}
+        end
+        role.add_rmb(p, -e.diamondToGold)
+    end)
+    role.add_money(p, 10000)
+    user.exchange = user.exchange + 1
+    p.user.exchange = user.exchange
+    return "update_user", {update=p}
 end
 
 return role

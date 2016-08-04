@@ -366,6 +366,10 @@
     num 0 : integer
 }
 
+.reset_online_award {
+    time 0 : integer
+}
+
 .upgrade_passive {
     id 0 : integer
     skillid 1 : integer

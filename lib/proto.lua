@@ -63,6 +63,7 @@ local msg = {
     [2606] = "add_mail",
     [2607] = "broadcast_mail",
     [2608] = "test_charge",
+    [2609] = "reset_online_award",
 
     [2700] = "query_rank",
     [2701] = "rank_list",

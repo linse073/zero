@@ -392,6 +392,13 @@ function role.repair(user)
     if not user.exchange_count then
         user.exchange_count = 0
     end
+    if not user.online_award_count then
+        user.online_award_count = 0
+    end
+    if not user.online_award_time then
+        local now = floor(skynet.time())
+        user.online_award_time = now
+    end
 end
 
 function role.explore_bonus(p, a)
@@ -477,6 +484,25 @@ function role.charge(num)
     return "update_user", {update=p}
 end
 
+function role.online_award()
+    local user = data.user
+    local ot, oc = user.online_award_time, user.online_award_count
+    if ot > 0 then
+        local now = floor(skynet.time())
+        local c = (now - ot) // base.ONLINE_AWARD_TIME
+        if c > 0 then
+            oc = oc + c
+            if oc >= 3 then
+                oc = 3
+                ot = 0
+            else
+                ot = ot + c * base.ONLINE_AWARD_TIME
+            end
+        end
+    end
+    return ot, oc
+end
+
 -------------------protocol process--------------------------
 
 function proc.notify_info(msg)
@@ -520,6 +546,7 @@ function proc.create_user(msg)
     for i = 1, base.MAX_SIGN_IN do
         sign_in[i] = false
     end
+    local now = floor(skynet.time())
     local u = {
         name = msg.name,
         id = roleid,
@@ -547,6 +574,8 @@ function proc.create_user(msg)
         trade_watch_count = 0,
         trade_item = {},
         exchange_count = 0,
+        online_award_count = 0,
+        online_award_time = now,
 
         item = {},
         card = {},
@@ -855,6 +884,31 @@ function proc.exchange(msg)
     role.add_money(p, 10000)
     user.exchange_count = ec
     p.user.exchange_count = ec
+    return "update_user", {update=p}
+end
+
+function proc.online_award(msg)
+    local ot, oc = role.online_award()
+    if oc <= 0 then
+        error{code = error_code.NO_ONLINE_AWARD}
+    end
+    local p = update_user()
+    oc = oc - 1
+    if ot == 0 then
+        local now = floor(skynet.time())
+        ot = now
+    end
+    local r = assert(type_reward[base.REWARD_ACTION_ONLINE][1], "No online award.")
+    role.get_reward(p, r)
+    local user = data.user
+    if ot ~= user.online_award_time then
+        user.online_award_time = ot
+        p.user.online_award_time = ot
+    end
+    if oc ~= user.online_award_count then
+        user.online_award_count = oc
+        p.user.online_award_count = oc
+    end
     return "update_user", {update=p}
 end
 

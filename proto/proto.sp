@@ -34,6 +34,8 @@
     sign_in 15 : *boolean
     sign_in_day 16 : integer
     exchange_count 17 : integer
+    online_award_time 18 : integer
+    online_award_count 19 : integer
 }
 
 .other_info {

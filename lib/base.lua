@@ -266,6 +266,8 @@ local base = {
 
     MAX_TRADE_WATCH = 10,
     TRADE_PAGE_ITEM = 6,
+
+    ONLINE_AWARD_TIME = 4 * 60 * 60,
 }
 
 return base

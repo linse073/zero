@@ -498,3 +498,9 @@
 .del_watch {
     id 0 : integer
 }
+
+.end_challenge {
+    rank_type 0 : integer
+    id 1 : integer
+    sign 2 : string
+}

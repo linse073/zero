@@ -399,6 +399,24 @@ function role.repair(user)
         local now = floor(skynet.time())
         user.online_award_time = now
     end
+    if not arena_cd then
+        arena_cd = 0
+    end
+    if not reflesh_arena_cd then
+        reflesh_arena_cd = 0
+    end
+    if not match_count then
+        match_count = 0
+    end
+    if not match_cd then
+        match_cd = 0
+    end
+    if not reflesh_match_cd then
+        reflesh_match_cd = 0
+    end
+    if not match_role then
+        match_role = {}
+    end
 end
 
 function role.explore_bonus(p, a)
@@ -576,6 +594,12 @@ function proc.create_user(msg)
         exchange_count = 0,
         online_award_count = 0,
         online_award_time = now,
+        arena_cd = 0,
+        reflesh_arena_cd = 0,
+        match_count = 0,
+        match_cd = 0,
+        reflesh_match_cd = 0,
+        match_role = {},
 
         item = {},
         card = {},

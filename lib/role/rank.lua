@@ -87,7 +87,7 @@ function rank.add(p)
     end
 end
 
-function rank.upate_day()
+function rank.update_day()
     -- TODO: arena award
 end
 

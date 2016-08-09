@@ -69,6 +69,7 @@ local msg = {
     [2701] = "rank_list",
     [2702] = "begin_challenge",
     [2703] = "end_challenge",
+    [2704] = "reflesh_arena",
 
     [2800] = "sign_in",
     [2801] = "exchange",

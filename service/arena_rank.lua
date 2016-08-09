@@ -49,8 +49,13 @@ function CMD.add(roleid)
     return ar + 1
 end
 
-function CMD.update(id1, rank1, id2, rank2)
-    skynet.call(rankdb, "lua", "zadd", "arena", rank1, id1, rank2, id2)
+function CMD.update(id1, id2)
+    local rank1 = skynet.call(rankdb, "lua", "zrank", "arena", id1)
+    local rank2 = skynet.call(rankdb, "lua", "zrank", "arena", id2)
+    if rank1 > rank2 then
+       skynet.call(rankdb, "lua", "zadd", "arena", rank2, id1, rank1, id2)
+       return rank2
+    end
 end
 
 function CMD.query(roleid)

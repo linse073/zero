@@ -108,6 +108,10 @@ function CMD.action_info(source, otype, id)
     return role.action_info(otype, id)
 end
 
+function CMD.update_rank(source)
+    role.update_rank()
+end
+
 skynet.start(function()
     msg = share.msg
     name_msg = share.name_msg

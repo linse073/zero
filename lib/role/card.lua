@@ -374,7 +374,7 @@ function proc.use_card(msg)
         local info = data.rank_info
         info.card = card.rank_card()
         if info.arena_rank == 0 and card.rank_card_full() then
-            p.user.arena_rank = rank.add()
+            rank.add(p)
         end
     end
     task.update(p, base.TASK_COMPLETE_USE_CARD, cv.cardid, 1)

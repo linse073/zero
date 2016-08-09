@@ -36,6 +36,12 @@
     exchange_count 17 : integer
     online_award_time 18 : integer
     online_award_count 19 : integer
+    arena_cd 20 : integer
+    reflesh_arena_cd  21 : integer
+    match_count 22 : integer
+    match_cd 23 : integer
+    reflesh_match_cd 24 : integer
+    match_win 25 : integer
 }
 
 .other_info {
@@ -144,6 +150,7 @@
     fight_point 4 : integer
     card 5 : *simple_card
     rank 6 : integer
+    win 7 : boolean
 }
 
 .explore_info {
@@ -194,11 +201,13 @@
     explore_award 5 : explore_award
     add_watch 6 : boolean
     buy_item 7 : buy_item
+    rank_list 8 : rank_list
 }
 
 .update_day {
     task 0 : *integer
     update_sign_in 1 : boolean
+    arena_award 2 : mail_info
 }
 
 .heart_beat {
@@ -313,6 +322,9 @@
     id 0 : integer
     rand_seed 1 : integer
     target 2 : user_all
+    rank_type 3 : integer
+    cd 4 : integer
+    count 5 : integer
 }
 
 .move {
@@ -384,6 +396,7 @@
     rank_type 0 : integer
     rank 1 : integer
     list 2 : *rank_info
+    cd 3 : integer
 }
 
 .begin_challenge {
@@ -502,5 +515,10 @@
 .end_challenge {
     rank_type 0 : integer
     id 1 : integer
-    sign 2 : string
+    time 2 : integer
+    sign 3 : string
+}
+
+.reflesh_arena {
+    rank_type 0 : integer
 }

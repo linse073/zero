@@ -268,6 +268,10 @@ local base = {
     TRADE_PAGE_ITEM = 6,
 
     ONLINE_AWARD_TIME = 4 * 60 * 60,
+    MATCH_REFLESH_TIME = 2 * 60 * 60,
+    MAX_ARENA_COUNT = 10,
+    MAX_MATCH_COUNT = 10,
+    ARENA_CHALLENGE_TIME = 5 * 60,
 }
 
 return base

@@ -176,14 +176,16 @@ local function update_day(user, od, nd)
     end
     user.trade_item = {}
     user.exchange_count = 0
+    user.reflesh_arena_cd = 0
+    user.reflesh_match_cd = 0
     stage.update_day()
-    return task.update_day(), update_sign_in
+    return task.update_day(), update_sign_in, rank.update_day()
 end
 
 function role.update_day(od, nd)
     local user = data.user
-    local pt, update_sign_in = update_day(user, od, nd)
-    notify.add("update_day", {task=pt, update_sign_in=update_sign_in})
+    local pt, update_sign_in, arena_award = update_day(user, od, nd)
+    notify.add("update_day", {task=pt, update_sign_in=update_sign_in, arena_award=arena_award})
 end
 
 function role.save_user()
@@ -399,23 +401,26 @@ function role.repair(user)
         local now = floor(skynet.time())
         user.online_award_time = now
     end
-    if not arena_cd then
-        arena_cd = 0
+    if not user.arena_cd then
+        user.arena_cd = 0
     end
-    if not reflesh_arena_cd then
-        reflesh_arena_cd = 0
+    if not user.reflesh_arena_cd then
+        user.reflesh_arena_cd = 0
     end
-    if not match_count then
-        match_count = 0
+    if not user.match_count then
+        user.match_count = 0
     end
-    if not match_cd then
-        match_cd = 0
+    if not user.match_cd then
+        user.match_cd = 0
     end
-    if not reflesh_match_cd then
-        reflesh_match_cd = 0
+    if not user.reflesh_match_cd then
+        user.reflesh_match_cd = 0
     end
-    if not match_role then
-        match_role = {}
+    if not user.match_role then
+        user.match_role = {}
+    end
+    if not user.match_win then
+        user.match_win = 0
     end
 end
 
@@ -521,6 +526,12 @@ function role.online_award()
     return ot, oc
 end
 
+function role.update_rank()
+    local p = update_user()
+    rank.add(p)
+    notify.add("update_user", {update=p})
+end
+
 -------------------protocol process--------------------------
 
 function proc.notify_info(msg)
@@ -600,6 +611,7 @@ function proc.create_user(msg)
         match_cd = 0,
         reflesh_match_cd = 0,
         match_role = {},
+        match_win = 0,
 
         item = {},
         card = {},
@@ -668,8 +680,9 @@ local function enter_game(msg)
         card = card.rank_card(),
     }
     role.init_prop()
+    local p = update_user()
     if card.rank_card_full() then
-        rank.add()
+        rank.add(p)
     end
     local ret = {user=user}
     local explore = skynet.call(explore_mgr, "lua", "get", user.id)
@@ -681,7 +694,6 @@ local function enter_game(msg)
             data.explore = explore
             ret.explore = e
             if a then
-                local p = update_user()
                 role.finish_explore(p, a)
                 task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
             end

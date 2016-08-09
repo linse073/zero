@@ -84,6 +84,14 @@ function CMD.query(roleid)
     end
 end
 
+function CMD.batch_get(r)
+    local cr = {}
+    for k, v in ipairs(r) do
+        cr[v] = skynet.call(rankdb, "lua", "zrank", "fight_point", v)
+    end
+    return cr
+end
+
 skynet.start(function()
     local master = skynet.queryservice("dbmaster")
     rankdb = skynet.call(master, "lua", "get", "rankdb")

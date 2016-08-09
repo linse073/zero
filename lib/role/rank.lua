@@ -248,7 +248,7 @@ function proc.end_challenge(msg)
         error{code = error_code.ERROR_CHALLENGE_TARGET}
     end
     if not check_sign(msg, data.secret) then
-        error{code = error_code.ERROR_CHALLENGE_SIGN}
+        error{code = error_code.ERROR_SIGN}
     end
     if msg.rank_type == base.RANK_ARENA then
         local user = data.user

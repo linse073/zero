@@ -315,7 +315,7 @@ function proc.end_stage(msg)
         error{code = error_code.ERROR_STAGE_SEED}
     end
     if not check_sign(msg, data.secret) then
-        error{code = error_code.ERROR_STAGE_SIGN}
+        error{code = error_code.ERROR_SIGN}
     end
     assert(msg.total_gold>=msg.pick_gold, string.format("error gold num, total %d, pick %d.", msg.total_gold, msg.pick_gold))
     local s = data.stage[msg.id]

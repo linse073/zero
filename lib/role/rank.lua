@@ -1,6 +1,7 @@
 local skynet = require "skynet"
 local share = require "share"
 local func = require "func"
+local util = require "util"
 
 local pairs = pairs
 local ipairs = ipairs

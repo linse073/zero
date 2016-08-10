@@ -10,6 +10,8 @@ local error = error
 local string = string
 local floor = math.floor
 
+local check_sign = util.check_sign
+local update_user = util.update_user
 local card
 local data
 local base

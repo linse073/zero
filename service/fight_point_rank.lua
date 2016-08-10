@@ -76,7 +76,7 @@ function CMD.query(roleid)
             local m = rank[i]
             local r = skynet.call(rankdb, "lua", "zrange", "fight_point", m, rank[j - 1])
             for k = i, j - 1 do
-                range[#range + 1] = r[rank[k] - m + 1]
+                range[#range + 1] = {r[rank[k] - m + 1], rank[k]}
             end
             i = j
         end

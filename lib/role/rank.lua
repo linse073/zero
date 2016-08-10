@@ -334,11 +334,12 @@ function proc.reflesh_arena(msg)
         local l = {}
         local match_role = {}
         for k, v in ipairs(list) do
-            local info = skynet.call(role_mgr, "lua", "get_rank_info", v)
-            info.rank = list[k] + 1
+            local id = v[1]
+            local info = skynet.call(role_mgr, "lua", "get_rank_info", id)
+            info.rank = v[2] + 1
             info.win = false
             l[k] = info
-            match_role[v] = false
+            match_role[id] = false
         end
         user.match_role = match_role
         local now = floor(skynet.time())

@@ -7,6 +7,7 @@ local ipairs = ipairs
 local assert = assert
 local error = error
 local string = string
+local floor = math.floor
 
 local card
 local data

@@ -131,10 +131,11 @@ function proc.query_rank(msg)
             for k, v in pairs(match_role) do
                 r[#r+1] = k
             end
-            if #r == 1 then
+            local cr = skynet.call(fight_point_rank, "lua", "batch_get", r)
+            local ur = cr[user.id]
+            if not ur then
                 error{code = error_code.NOT_IN_RANK}
             end
-            local cr = skynet.call(fight_point_rank, "lua", "batch_get", r)
             local l = {}
             for k, v in pairs(match_role) do
                 local info = skynet.call(role_mgr, "lua", "get_rank_info", k)
@@ -144,7 +145,7 @@ function proc.query_rank(msg)
             end
             return "rank_list", {
                 rank_type = msg.rank_type,
-                rank = cr[user.id] + 1,
+                rank = ur + 1,
                 list = l,
             }
         end

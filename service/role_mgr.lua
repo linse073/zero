@@ -148,7 +148,7 @@ function CMD.get_rank_info(roleid)
         if info then
             return skynet.unpack(info), false
         else
-            skynet.error(string.format("No role info %d.", roleid))
+            skynet.error(string.format("No role rank info %d.", roleid))
         end
     end
 end

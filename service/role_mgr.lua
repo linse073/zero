@@ -6,6 +6,7 @@ local assert = assert
 local string = string
 local ipairs = ipairs
 local pairs = pairs
+local type = type
 
 local MAX_AREA_ROLE = 100
 
@@ -121,6 +122,8 @@ function CMD.broadcast_area(msg, info)
 end
 
 function CMD.get_info(roleid)
+    local t = type(roleid)
+    assert(t=="number", string.format("Error argument type %s.", t))
     local role = role_list[roleid]
     if role then
         return skynet.call(role[1], "lua", "get_info"), true
@@ -128,11 +131,15 @@ function CMD.get_info(roleid)
         local info = skynet.call(userdb, "lua", "get", roleid)
         if info then
             return skynet.unpack(info), false
+        else
+            skynet.error(string.format("No role info %d.", roleid))
         end
     end
 end
 
 function CMD.get_rank_info(roleid)
+    local t = type(roleid)
+    assert(t=="number", string.format("Error argument type %s.", t))
     local role = role_list[roleid]
     if role then
         return skynet.call(role[1], "lua", "get_rank_info"), true
@@ -140,6 +147,8 @@ function CMD.get_rank_info(roleid)
         local info = skynet.call(rankinfodb, "lua", "get", roleid)
         if info then
             return skynet.unpack(info), false
+        else
+            skynet.error(string.format("No role info %d.", roleid))
         end
     end
 end

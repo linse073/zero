@@ -4,6 +4,7 @@ local queue = require "skynet.queue"
 local math = math
 local random = math.random
 local assert = assert
+local tonumber = tonumber
 local string = string
 local table = table
 
@@ -73,7 +74,7 @@ function CMD.query(roleid)
             local m = rank[i]
             local r = skynet.call(rankdb, "lua", "zrange", "arena", m, rank[j - 1])
             for k = i, j - 1 do
-                range[#range + 1] = {r[rank[k] - m + 1], rank[k]}
+                range[#range + 1] = {tonumber(r[rank[k] - m + 1]), rank[k]}
             end
             i = j
         end

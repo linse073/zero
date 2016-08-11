@@ -85,7 +85,7 @@ function rank.add(p)
         local match_role = {}
         local fight_rank, list = skynet.call(fight_point_rank, "lua", "query", user.id)
         for k, v in ipairs(list) do
-            match_role[v] = false
+            match_role[v[1]] = false
         end
         user.match_role = match_role
     end

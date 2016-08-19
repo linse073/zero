@@ -89,72 +89,87 @@ function rank.add(p)
         end
         user.match_role = match_role
     end
+    rank.update(p, now)
 end
 
 function rank.update_day()
     -- TODO: arena award
 end
 
+function rank.refresh_arena(p, t)
+    local user = data.user
+    local pu = p.user
+    local user_rank, list = skynet.call(fight_point_rank, "lua", "query", user.id)
+    local l = {}
+    local match_role = {}
+    for k, v in ipairs(list) do
+        local id = v[1]
+        local info = skynet.call(role_mgr, "lua", "get_rank_info", id)
+        info.rank = v[2] + 1
+        info.win = false
+        l[k] = info
+        match_role[id] = false
+    end
+    user.match_role = match_role
+    user.match_cd = t
+    pu.match_cd = t
+    user.match_count = 0
+    pu.match_count = 0
+    user.match_win = 0
+    pu.match_win = 0
+    return {
+        rank_type = base.RANK_FIGHT_POINT,
+        rank = user_rank + 1,
+        list = l,
+    }
+end
+
+function rank.update(p, now)
+    local user = data.user
+    if user.arena_rank ~= 0 then
+        local dt = now - user.match_cd
+        if dt >= base.MATCH_REFRESH_TIME then
+            local t = user.match_cd + dt // base.MATCH_REFRESH_TIME * base.MATCH_REFRESH_TIME
+            return rank.refresh_arena(p, t)
+        end
+    end
+end
+
 ---------------------------protocol process----------------------
 
 function proc.query_rank(msg)
+    local user = data.user
+    if user.arena_rank == 0 then
+        error{code = error_code.NOT_IN_RANK}
+    end
     if msg.rank_type == base.RANK_FIGHT_POINT then
-        local user = data.user
-        local now = floor(skynet.time())
-        local dt = now - user.match_cd
-        if dt >= base.MATCH_REFLESH_TIME then
-            local user_rank, list = skynet.call(fight_point_rank, "lua", "query", user.id)
-            if not user_rank then
-                error{code = error_code.NOT_IN_RANK}
-            end
-            local l = {}
-            local match_role = {}
-            for k, v in ipairs(list) do
-                local id = v[1]
-                local info = skynet.call(role_mgr, "lua", "get_rank_info", id)
-                info.rank = v[2] + 1
-                info.win = false
-                l[k] = info
-                match_role[id] = false
-            end
-            user.match_role = match_role
-            user.match_cd = user.match_cd + dt // base.MATCH_REFLESH_TIME * base.MATCH_REFLESH_TIME
-            return "rank_list", {
-                rank_type = msg.rank_type,
-                rank = user_rank + 1,
-                list = l,
-                cd = user.match_cd,
-            }
-        else
-            local match_role = user.match_role
-            local r = {user.id}
-            for k, v in pairs(match_role) do
-                r[#r+1] = k
-            end
-            local cr = skynet.call(fight_point_rank, "lua", "batch_get", r)
-            local ur = cr[user.id]
-            if not ur then
-                error{code = error_code.NOT_IN_RANK}
-            end
-            local l = {}
-            for k, v in pairs(match_role) do
-                local info = skynet.call(role_mgr, "lua", "get_rank_info", k)
-                info.rank = cr[k] + 1
-                info.win = v
-                l[#l+1] = info
-            end
-            return "rank_list", {
-                rank_type = msg.rank_type,
-                rank = ur + 1,
-                list = l,
-            }
+        local match_role = user.match_role
+        local r = {user.id}
+        for k, v in pairs(match_role) do
+            r[#r+1] = k
         end
+        local cr = skynet.call(fight_point_rank, "lua", "batch_get", r)
+        local ur = cr[user.id]
+        if not ur then
+            error{code = error_code.NOT_IN_RANK}
+        end
+        local l = {}
+        for k, v in pairs(match_role) do
+            local info = skynet.call(role_mgr, "lua", "get_rank_info", k)
+            info.rank = cr[k] + 1
+            info.win = v
+            l[#l+1] = info
+        end
+        return "rank_list", {
+            rank_type = msg.rank_type,
+            rank = ur + 1,
+            list = l,
+        }
     else
         local process = query_process[msg.rank_type]
         if not process then
             error{code = error_code.ERROR_QUERY_RANK_TYPE}
         end
-        local user = data.user
         local user_rank, list = skynet.call(process, "lua", "query", user.id)
         if not user_rank then
             error{code = error_code.NOT_IN_RANK}
@@ -270,6 +285,11 @@ function proc.end_challenge(msg)
                 skynet.call(agent, "lua", "update_rank")
             end
         end
+        local bmsg = {
+            id = user.id,
+            fight = false,
+        }
+        skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
         return "update_user", {update=p}
     elseif msg.rank_type == base.RANK_FIGHT_POINT then
         local user = data.user
@@ -297,18 +317,23 @@ function proc.end_challenge(msg)
             mail.add(m)
             p.mail[1] = m
         end
+        local bmsg = {
+            id = user.id,
+            fight = false,
+        }
+        skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
         return "update_user", {update=p}
     else
         error{code = error_code.ERROR_QUERY_RANK_TYPE}
     end
 end
 
-function proc.reflesh_arena(msg)
+function proc.refresh_arena(msg)
+    local user = data.user
+    if user.arena_rank == 0 then
+        error{code = error_code.NOT_IN_RANK}
+    end
     if msg.rank_type == base.RANK_ARENA then
-        local user = data.user
-        if user.arena_rank == 0 then
-            error{code = error_code.NOT_IN_RANK}
-        end
         local now = floor(skynet.time())
         if now - user.arena_cd >= base.ARENA_CHALLENGE_TIME then
             error{code = error_code.CHALLENGE_NOT_CD}
@@ -318,43 +343,17 @@ function proc.reflesh_arena(msg)
         local pu = p.user
         user.arena_cd = now - base.ARENA_CHALLENGE_TIME
         pu.arena_cd = user.arena_cd
-        user.reflesh_arena_cd = user.reflesh_arena_cd + 1
-        pu.reflesh_arena_cd = user.reflesh_arena_cd
+        user.refresh_arena_cd = user.refresh_arena_cd + 1
+        pu.refresh_arena_cd = user.refresh_arena_cd
         return "update_user", {update=p}
     elseif msg.rank_type == base.RANK_FIGHT_POINT then
-        local user = data.user
-        local user_rank, list = skynet.call(fight_point_rank, "lua", "query", user.id)
-        if not user_rank then
-            error{code = error_code.NOT_IN_RANK}
-        end
         -- TODO: rmb
         local p = update_user()
-        local pu = p.user
-        user.reflesh_match_cd = user.reflesh_match_cd + 1
-        pu.reflesh_match_cd = user.reflesh_match_cd
-        local l = {}
-        local match_role = {}
-        for k, v in ipairs(list) do
-            local id = v[1]
-            local info = skynet.call(role_mgr, "lua", "get_rank_info", id)
-            info.rank = v[2] + 1
-            info.win = false
-            l[k] = info
-            match_role[id] = false
-        end
-        user.match_role = match_role
+        user.refresh_match_cd = user.refresh_match_cd + 1
+        p.user.refresh_match_cd = user.refresh_match_cd
         local now = floor(skynet.time())
-        user.match_cd = now
-        pu.match_cd = now
-        user.match_count = 0
-        pu.match_count = 0
-        user.match_win = 0
-        pu.match_win = 0
-        return "update_user", {update=p, rank_list={
-            rank_type = msg.rank_type,
-            rank = user_rank + 1,
-            list = l,
-        }}
+        local rank_list = rank.refresh_arena(p, now)
+        return "update_user", {update=p, rank_list=rank_list}
     else
         error{code = error_code.ERROR_QUERY_RANK_TYPE}
     end

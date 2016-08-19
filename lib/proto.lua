@@ -53,6 +53,7 @@ local msg = {
     [2502] = "stage_seed",
     [2503] = "open_chest",
     [2504] = "get_stage_award",
+    [2505] = "fight_fail",
 
     [2600] = "add_item",
     [2601] = "add_exp",
@@ -69,7 +70,7 @@ local msg = {
     [2701] = "rank_list",
     [2702] = "begin_challenge",
     [2703] = "end_challenge",
-    [2704] = "reflesh_arena",
+    [2704] = "refresh_arena",
 
     [2800] = "sign_in",
     [2801] = "exchange",

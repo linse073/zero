@@ -413,6 +413,16 @@ function proc.end_stage(msg)
     return "update_user", {update=p}
 end
 
+function proc.fight_fail(msg)
+    local user = data.user
+    local bmsg = {
+        id = user.id,
+        fight = false,
+    }
+    skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
+    return "response", ""
+end
+
 function proc.open_chest(msg)
     assert(msg.pick_chest<=base.MAX_EXTRA_STAGE_BONUS, string.format("error chest num %d.", msg.pick_chest))
     local stage_seed = data.stage_seed

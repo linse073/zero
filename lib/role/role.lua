@@ -151,6 +151,7 @@ function role.exit()
     timer.del_routine("save_role")
     timer.del_day_routine("update_day")
     timer.del_routine("heart_beat")
+    timer.del_second_routine("update_second")
     local user = data.user
     if user then
         skynet.call(role_mgr, "lua", "logout", user.id)
@@ -176,8 +177,8 @@ local function update_day(user, od, nd)
     end
     user.trade_item = {}
     user.exchange_count = 0
-    user.reflesh_arena_cd = 0
-    user.reflesh_match_cd = 0
+    user.refresh_arena_cd = 0
+    user.refresh_match_cd = 0
     stage.update_day()
     return task.update_day(), update_sign_in, rank.update_day()
 end
@@ -186,6 +187,16 @@ function role.update_day(od, nd)
     local user = data.user
     local pt, update_sign_in, arena_award = update_day(user, od, nd)
     notify.add("update_day", {task=pt, update_sign_in=update_sign_in, arena_award=arena_award})
+end
+
+function role.update_second()
+    local now = floor(skynet.time())
+    local p = update_user()
+    local rank_list = rank.update(p, now)
+    local online_change = role.online_award(p, now)
+    if rank_list or online_change then
+        notify.add("update_user", {update=p, rank_list=rank_list})
+    end
 end
 
 function role.save_user()
@@ -404,8 +415,8 @@ function role.repair(user)
     if not user.arena_cd then
         user.arena_cd = 0
     end
-    if not user.reflesh_arena_cd then
-        user.reflesh_arena_cd = 0
+    if not user.refresh_arena_cd then
+        user.refresh_arena_cd = 0
     end
     if not user.match_count then
         user.match_count = 0
@@ -413,8 +424,8 @@ function role.repair(user)
     if not user.match_cd then
         user.match_cd = 0
     end
-    if not user.reflesh_match_cd then
-        user.reflesh_match_cd = 0
+    if not user.refresh_match_cd then
+        user.refresh_match_cd = 0
     end
     if not user.match_role then
         user.match_role = {}
@@ -507,11 +518,10 @@ function role.charge(num)
     return "update_user", {update=p}
 end
 
-function role.online_award()
+function role.online_award(p, now)
     local user = data.user
     local ot, oc = user.online_award_time, user.online_award_count
     if ot > 0 then
-        local now = floor(skynet.time())
         local c = (now - ot) // base.ONLINE_AWARD_TIME
         if c > 0 then
             oc = oc + c
@@ -521,9 +531,14 @@ function role.online_award()
             else
                 ot = ot + c * base.ONLINE_AWARD_TIME
             end
+            user.online_award_time = ot
+            user.online_award_count = oc
+            local pu = p.user
+            pu.online_award_time = ot
+            pu.online_award_count = oc
+            return true
         end
     end
-    return ot, oc
 end
 
 function role.update_rank()
@@ -606,10 +621,10 @@ function proc.create_user(msg)
         online_award_count = 0,
         online_award_time = now,
         arena_cd = 0,
-        reflesh_arena_cd = 0,
+        refresh_arena_cd = 0,
         match_count = 0,
         match_cd = 0,
-        reflesh_match_cd = 0,
+        refresh_match_cd = 0,
         match_role = {},
         match_win = 0,
 
@@ -684,6 +699,7 @@ local function enter_game(msg)
     if card.rank_card_full() then
         rank.add(p)
     end
+    role.online_award(p, now)
     local ret = {user=user}
     local explore = skynet.call(explore_mgr, "lua", "get", user.id)
     local a
@@ -727,6 +743,7 @@ local function enter_game(msg)
     end
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
+    timer.add_second_routine("update_second", role.update_second)
     local stageid, seed = stage.newbie_stage()
     local bmsg = {
         name = user.name,
@@ -924,27 +941,20 @@ function proc.exchange(msg)
 end
 
 function proc.online_award(msg)
-    local ot, oc = role.online_award()
-    if oc <= 0 then
+    local user = data.user
+    if user.online_award_count <= 0 then
         error{code = error_code.NO_ONLINE_AWARD}
     end
     local p = update_user()
-    oc = oc - 1
-    if ot == 0 then
-        local now = floor(skynet.time())
-        ot = now
+    local pu = p.user
+    user.online_award_count = user.online_award_count - 1
+    pu.online_award_count = user.online_award_count
+    if user.online_award_time == 0 then
+        user.online_award_time = floor(skynet.time())
+        pu.online_award_time = user.online_award_time
     end
     local r = assert(type_reward[base.REWARD_ACTION_ONLINE][1], "No online award.")
     role.get_reward(p, r)
-    local user = data.user
-    if ot ~= user.online_award_time then
-        user.online_award_time = ot
-        p.user.online_award_time = ot
-    end
-    if oc ~= user.online_award_count then
-        user.online_award_count = oc
-        p.user.online_award_count = oc
-    end
     return "update_user", {update=p}
 end
 

@@ -37,10 +37,10 @@
     online_award_time 18 : integer
     online_award_count 19 : integer
     arena_cd 20 : integer
-    reflesh_arena_cd  21 : integer
+    refresh_arena_cd  21 : integer
     match_count 22 : integer
     match_cd 23 : integer
-    reflesh_match_cd 24 : integer
+    refresh_match_cd 24 : integer
     match_win 25 : integer
 }
 
@@ -396,7 +396,6 @@
     rank_type 0 : integer
     rank 1 : integer
     list 2 : *rank_info
-    cd 3 : integer
 }
 
 .begin_challenge {
@@ -519,6 +518,6 @@
     sign 3 : string
 }
 
-.reflesh_arena {
+.refresh_arena {
     rank_type 0 : integer
 }

@@ -84,6 +84,10 @@ function CMD.day_routine(source, key, od, nd)
     timer.call_day_routine(key, od, nd)
 end
 
+function CMD.second_routine(source, key)
+    timer.call_second_routine(key)
+end
+
 function CMD.notify(source, msg, info)
     notify.add(msg, info)
 end

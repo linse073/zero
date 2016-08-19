@@ -10,9 +10,10 @@ local error = error
 local string = string
 local floor = math.floor
 
+local stage
+
 local check_sign = util.check_sign
 local update_user = util.update_user
-local card
 local data
 local base
 local error_code
@@ -51,7 +52,7 @@ skynet.init(function()
 end)
 
 function rank.init_module()
-    card = require "role.card"
+    stage = require "role.stage"
     return proc
 end
 
@@ -285,11 +286,7 @@ function proc.end_challenge(msg)
                 skynet.call(agent, "lua", "update_rank")
             end
         end
-        local bmsg = {
-            id = user.id,
-            fight = false,
-        }
-        skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
+        stage.finish()
         return "update_user", {update=p}
     elseif msg.rank_type == base.RANK_FIGHT_POINT then
         local user = data.user
@@ -317,11 +314,7 @@ function proc.end_challenge(msg)
             mail.add(m)
             p.mail[1] = m
         end
-        local bmsg = {
-            id = user.id,
-            fight = false,
-        }
-        skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
+        stage.finish()
         return "update_user", {update=p}
     else
         error{code = error_code.ERROR_QUERY_RANK_TYPE}

@@ -272,6 +272,20 @@ function stage.add_stage(p, id)
     end
 end
 
+function stage.finish()
+    data.stage_seed = {
+        id = 0,
+        seed = 0,
+        bonus = false,
+    }
+    local user = data.user
+    local bmsg = {
+        id = user.id,
+        fight = false,
+    }
+    skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
+end
+
 -----------------------------protocol process--------------------------
 
 function proc.begin_stage(msg)
@@ -404,22 +418,18 @@ function proc.end_stage(msg)
     -- user.cur_pos.x = des_pos.x
     -- user.cur_pos.y = des_pos.y
     -- p.user.des_pos = des_pos
-    local bmsg = {
-        id = user.id,
-        fight = false,
-        -- des_pos = des_pos,
-    }
-    skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
+    -- local bmsg = {
+    --     id = user.id,
+    --     fight = false,
+    --     -- des_pos = des_pos,
+    -- }
+    -- skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
+    stage.finish()
     return "update_user", {update=p}
 end
 
 function proc.fight_fail(msg)
-    local user = data.user
-    local bmsg = {
-        id = user.id,
-        fight = false,
-    }
-    skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
+    stage.finish()
     return "response", ""
 end
 

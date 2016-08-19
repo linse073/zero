@@ -16,18 +16,18 @@ local count
 
 local CMD = {}
 
-local function random_rank(user_rank, count, rank_count, dir)
+local function random_rank(user_rank, bc, rank_count, dir)
     local r = {}
-    if count <= rank_count then
-        for i = 1, count do
+    if bc <= rank_count then
+        for i = 1, bc do
             r[i] = user_rank + i * dir
         end
     else
         local mc = user_rank * rank_count // 20
         if mc < rank_count then
             mc = rank_count
-        elseif mc > count then
-            mc = count
+        elseif mc > bc then
+            mc = bc
         end
         local dis = mc * 1000 // rank_count
         for i = 1, rank_count do
@@ -37,7 +37,7 @@ local function random_rank(user_rank, count, rank_count, dir)
     return r
 end
 
-local function query_fight_point(user_rank, count)
+local function query_fight_point(user_rank)
     local r
     local bc = count - user_rank - 1
     if user_rank == 0 then
@@ -65,7 +65,7 @@ end
 function CMD.query(roleid)
     local cr = skynet.call(rankdb, "lua", "zrank", "fight_point", roleid)
     if cr then
-        local rank = query_fight_point(cr, count)
+        local rank = query_fight_point(cr)
         local i = 1
         local l = #rank
         local range = {}

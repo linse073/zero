@@ -15,7 +15,7 @@ local count
 local CMD = {}
 
 local max_arena_rank = 999
-local function query_arena(user_rank, count)
+local function query_arena(user_rank)
     local r = {}
     if user_rank <= 3 then
         local c = 4
@@ -62,7 +62,7 @@ end
 function CMD.query(roleid)
     local cr = skynet.call(rankdb, "lua", "zrank", "arena", roleid)
     if cr then
-        local rank = query_arena(cr, count)
+        local rank = query_arena(cr)
         local i = 1
         local l = #rank
         local range = {}

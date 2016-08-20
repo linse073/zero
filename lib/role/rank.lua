@@ -138,6 +138,9 @@ end
 
 ---------------------------protocol process----------------------
 
+local function sort(l, r)
+    return l.rank < r.rank
+end
 function proc.query_rank(msg)
     local user = data.user
     if user.arena_rank == 0 then
@@ -161,6 +164,7 @@ function proc.query_rank(msg)
             info.win = v
             l[#l+1] = info
         end
+        table.sort(l, sort)
         return "rank_list", {
             rank_type = msg.rank_type,
             rank = ur + 1,

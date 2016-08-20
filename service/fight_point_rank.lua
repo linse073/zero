@@ -38,7 +38,7 @@ local function random_forward(user_rank, bc, rank_count)
         end
         for i = 1, rank_count do
             local l = random(mc - i + 1)
-            local ti = 1
+            local ti
             for k, v in ipairs(r) do
                 if v <= l then
                     l = l + 1
@@ -47,7 +47,11 @@ local function random_forward(user_rank, bc, rank_count)
                     break
                 end
             end
-            table.insert(r, ti, l)
+            if ti then
+                table.insert(r, ti, l)
+            else
+                r[#r+1] = l
+            end
         end
         for k, v in ipairs(r) do
             r[k] = user_rank - v
@@ -77,7 +81,7 @@ local function random_backward(user_rank, bc, rank_count)
         end
         for i = 1, rank_count do
             local l = random(mc - i + 1)
-            local ti = 1
+            local ti
             for k, v in ipairs(r) do
                 if v <= l then
                     l = l + 1
@@ -86,7 +90,11 @@ local function random_backward(user_rank, bc, rank_count)
                     break
                 end
             end
-            table.insert(r, ti, l)
+            if ti then
+                table.insert(r, ti, l)
+            else
+                r[#r+1] = l
+            end
         end
         for k, v in ipairs(r) do
             r[k] = user_rank + v

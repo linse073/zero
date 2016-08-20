@@ -9,6 +9,7 @@ local string = string
 local table = table
 local tonumber = tonumber
 local merge = util.merge
+local ipairs = ipairs
 
 local cs = queue()
 local rankdb
@@ -16,22 +17,79 @@ local count
 
 local CMD = {}
 
-local function random_rank(user_rank, bc, rank_count, dir)
+local function random_forward(user_rank, bc, rank_count)
     local r = {}
     if bc <= rank_count then
         for i = 1, bc do
-            r[i] = user_rank + i * dir
+            r[i] = user_rank - i
         end
     else
-        local mc = user_rank * rank_count // 20
+        local sr = user_rank + 1
+        local mc
+        if sr <= 25 then
+            mc = rank_count * 5
+        else
+            mc = sr // 5
+        end
         if mc < rank_count then
             mc = rank_count
         elseif mc > bc then
             mc = bc
         end
-        local dis = mc * 1000 // rank_count
         for i = 1, rank_count do
-            r[i] = user_rank + ((i - 1) * dis + random(dis)) * dir // 1000
+            local l = random(mc - i + 1)
+            local ti = 1
+            for k, v in ipairs(r) do
+                if v <= l then
+                    l = l + 1
+                else
+                    ti = k
+                    break
+                end
+            end
+            table.insert(r, ti, l)
+        end
+        for k, v in ipairs(r) do
+            r[k] = user_rank - v
+        end
+    end
+    return r
+end
+
+local function random_backward(user_rank, bc, rank_count)
+    local r = {}
+    if bc <= rank_count then
+        for i = 1, bc do
+            r[i] = user_rank + i
+        end
+    else
+        local sr = user_rank + 1
+        local mc
+        if sr <= 25 then
+            mc = rank_count * 5
+        else
+            mc = sr * 16 // 10
+        end
+        if mc < rank_count then
+            mc = rank_count
+        elseif mc > bc then
+            mc = bc
+        end
+        for i = 1, rank_count do
+            local l = random(mc - i + 1)
+            local ti = 1
+            for k, v in ipairs(r) do
+                if v <= l then
+                    l = l + 1
+                else
+                    ti = k
+                    break
+                end
+            end
+            table.insert(r, ti, l)
+        end
+        for k, v in ipairs(r) do
+            r[k] = user_rank + v
         end
     end
     return r
@@ -41,10 +99,10 @@ local function query_fight_point(user_rank)
     local r
     local bc = count - user_rank - 1
     if user_rank == 0 then
-        r = random_rank(user_rank, bc, 9, 1)
+        r = random_backward(user_rank, bc, 9)
     else
-        r = random_rank(user_rank, bc, 8, 1)
-        merge(r, random_rank(user_rank, user_rank, 9 - #r, -1))
+        r = random_backward(user_rank, bc, 8)
+        merge(r, random_forward(user_rank, user_rank, 9 - #r))
         table.sort(r)
     end
     return r

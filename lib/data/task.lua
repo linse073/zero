@@ -22,6 +22,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000002] = {
 		TaskId = 900000002,
@@ -46,6 +47,7 @@ local datas = {
 			3004000031,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000003] = {
 		TaskId = 900000003,
@@ -70,6 +72,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000004] = {
 		TaskId = 900000004,
@@ -94,6 +97,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000005] = {
 		TaskId = 900000005,
@@ -118,6 +122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000006] = {
 		TaskId = 900000006,
@@ -142,6 +147,7 @@ local datas = {
 			0,
 		},
 		Item = "3000000091;1",
+		openHint = 0,
 	},
 	[900000007] = {
 		TaskId = 900000007,
@@ -166,6 +172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000008] = {
 		TaskId = 900000008,
@@ -190,6 +197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000009] = {
 		TaskId = 900000009,
@@ -214,6 +222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000010] = {
 		TaskId = 900000010,
@@ -238,6 +247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000011] = {
 		TaskId = 900000011,
@@ -262,6 +272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000012] = {
 		TaskId = 900000012,
@@ -286,6 +297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000013] = {
 		TaskId = 900000013,
@@ -310,6 +322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000014] = {
 		TaskId = 900000014,
@@ -319,7 +332,7 @@ local datas = {
 		levelLimit = 0,
 		TaskType = 1,
 		CompleteType = 400,
-		nextID = 900000015,
+		nextID = 900000016,
 		condition = 1300001024,
 		count = 1,
 		NpcId = 1000000001,
@@ -334,6 +347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000015] = {
 		TaskId = 900000015,
@@ -343,7 +357,7 @@ local datas = {
 		levelLimit = 0,
 		TaskType = 1,
 		CompleteType = 400,
-		nextID = 900000016,
+		nextID = 900000019,
 		condition = 1300001025,
 		count = 1,
 		NpcId = 1000000001,
@@ -358,6 +372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000016] = {
 		TaskId = 900000016,
@@ -382,6 +397,7 @@ local datas = {
 			0,
 		},
 		Item = "3000000331;10",
+		openHint = 0,
 	},
 	[900000017] = {
 		TaskId = 900000017,
@@ -406,6 +422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000018] = {
 		TaskId = 900000018,
@@ -415,7 +432,7 @@ local datas = {
 		levelLimit = 0,
 		TaskType = 1,
 		CompleteType = 403,
-		nextID = 900000019,
+		nextID = 900000015,
 		condition = 0,
 		count = 1,
 		NpcId = 1000000001,
@@ -430,6 +447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000019] = {
 		TaskId = 900000019,
@@ -454,6 +472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000020] = {
 		TaskId = 900000020,
@@ -478,6 +497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000021] = {
 		TaskId = 900000021,
@@ -502,6 +522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000022] = {
 		TaskId = 900000022,
@@ -526,6 +547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000023] = {
 		TaskId = 900000023,
@@ -550,6 +572,7 @@ local datas = {
 			3004010032,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000024] = {
 		TaskId = 900000024,
@@ -574,6 +597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000025] = {
 		TaskId = 900000025,
@@ -598,6 +622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000026] = {
 		TaskId = 900000026,
@@ -622,6 +647,7 @@ local datas = {
 			0,
 		},
 		Item = "3000000091;10",
+		openHint = 0,
 	},
 	[900000027] = {
 		TaskId = 900000027,
@@ -646,6 +672,7 @@ local datas = {
 			0,
 		},
 		Item = "3000000092;2",
+		openHint = 0,
 	},
 	[900000028] = {
 		TaskId = 900000028,
@@ -670,6 +697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000029] = {
 		TaskId = 900000029,
@@ -694,6 +722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000030] = {
 		TaskId = 900000030,
@@ -718,6 +747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000031] = {
 		TaskId = 900000031,
@@ -742,6 +772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000032] = {
 		TaskId = 900000032,
@@ -766,6 +797,7 @@ local datas = {
 			3004015022,
 		},
 		Item = "3000000103;9",
+		openHint = 0,
 	},
 	[900000033] = {
 		TaskId = 900000033,
@@ -790,6 +822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000034] = {
 		TaskId = 900000034,
@@ -814,6 +847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000035] = {
 		TaskId = 900000035,
@@ -838,6 +872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000036] = {
 		TaskId = 900000036,
@@ -862,6 +897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000037] = {
 		TaskId = 900000037,
@@ -886,6 +922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000038] = {
 		TaskId = 900000038,
@@ -910,6 +947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000039] = {
 		TaskId = 900000039,
@@ -934,6 +972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000040] = {
 		TaskId = 900000040,
@@ -958,6 +997,7 @@ local datas = {
 			0,
 		},
 		Item = "3000000210;1",
+		openHint = 108400001,
 	},
 	[900000041] = {
 		TaskId = 900000041,
@@ -982,6 +1022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000042] = {
 		TaskId = 900000042,
@@ -1006,6 +1047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000043] = {
 		TaskId = 900000043,
@@ -1030,6 +1072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000044] = {
 		TaskId = 900000044,
@@ -1054,6 +1097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000045] = {
 		TaskId = 900000045,
@@ -1078,6 +1122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000046] = {
 		TaskId = 900000046,
@@ -1102,6 +1147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 108400002,
 	},
 	[900000047] = {
 		TaskId = 900000047,
@@ -1126,6 +1172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000048] = {
 		TaskId = 900000048,
@@ -1150,6 +1197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000049] = {
 		TaskId = 900000049,
@@ -1174,6 +1222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000050] = {
 		TaskId = 900000050,
@@ -1198,6 +1247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000051] = {
 		TaskId = 900000051,
@@ -1222,6 +1272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000052] = {
 		TaskId = 900000052,
@@ -1246,6 +1297,7 @@ local datas = {
 			3004035072,
 		},
 		Item = "3000000191;1",
+		openHint = 0,
 	},
 	[900000053] = {
 		TaskId = 900000053,
@@ -1270,6 +1322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000054] = {
 		TaskId = 900000054,
@@ -1294,6 +1347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000055] = {
 		TaskId = 900000055,
@@ -1318,6 +1372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000056] = {
 		TaskId = 900000056,
@@ -1342,6 +1397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000057] = {
 		TaskId = 900000057,
@@ -1366,6 +1422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000058] = {
 		TaskId = 900000058,
@@ -1390,6 +1447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000059] = {
 		TaskId = 900000059,
@@ -1414,6 +1472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000060] = {
 		TaskId = 900000060,
@@ -1438,6 +1497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000061] = {
 		TaskId = 900000061,
@@ -1462,6 +1522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000062] = {
 		TaskId = 900000062,
@@ -1486,6 +1547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000063] = {
 		TaskId = 900000063,
@@ -1510,6 +1572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000064] = {
 		TaskId = 900000064,
@@ -1534,6 +1597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000065] = {
 		TaskId = 900000065,
@@ -1558,6 +1622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000066] = {
 		TaskId = 900000066,
@@ -1582,6 +1647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000067] = {
 		TaskId = 900000067,
@@ -1606,6 +1672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000068] = {
 		TaskId = 900000068,
@@ -1630,6 +1697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[900000069] = {
 		TaskId = 900000069,
@@ -1654,6 +1722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000001] = {
 		TaskId = 910000001,
@@ -1678,6 +1747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000002] = {
 		TaskId = 910000002,
@@ -1702,6 +1772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000003] = {
 		TaskId = 910000003,
@@ -1726,6 +1797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000004] = {
 		TaskId = 910000004,
@@ -1750,6 +1822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000005] = {
 		TaskId = 910000005,
@@ -1774,6 +1847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000006] = {
 		TaskId = 910000006,
@@ -1798,6 +1872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000007] = {
 		TaskId = 910000007,
@@ -1822,6 +1897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000008] = {
 		TaskId = 910000008,
@@ -1846,6 +1922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000009] = {
 		TaskId = 910000009,
@@ -1870,6 +1947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000010] = {
 		TaskId = 910000010,
@@ -1886,7 +1964,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 1000,
 		RMBMoney = 0,
-		EXP = 5,
+		EXP = 10,
 		profItemId = {
 			0,
 			0,
@@ -1894,6 +1972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000011] = {
 		TaskId = 910000011,
@@ -1918,6 +1997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000012] = {
 		TaskId = 910000012,
@@ -1942,6 +2022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000013] = {
 		TaskId = 910000013,
@@ -1966,6 +2047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000014] = {
 		TaskId = 910000014,
@@ -1990,6 +2072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000015] = {
 		TaskId = 910000015,
@@ -2014,6 +2097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000016] = {
 		TaskId = 910000016,
@@ -2038,6 +2122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000017] = {
 		TaskId = 910000017,
@@ -2062,6 +2147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000018] = {
 		TaskId = 910000018,
@@ -2086,6 +2172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[910000019] = {
 		TaskId = 910000019,
@@ -2110,6 +2197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920001001] = {
 		TaskId = 920001001,
@@ -2134,6 +2222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920001002] = {
 		TaskId = 920001002,
@@ -2158,6 +2247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920001003] = {
 		TaskId = 920001003,
@@ -2182,6 +2272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920001004] = {
 		TaskId = 920001004,
@@ -2206,6 +2297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920001005] = {
 		TaskId = 920001005,
@@ -2230,6 +2322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920001006] = {
 		TaskId = 920001006,
@@ -2254,6 +2347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920001007] = {
 		TaskId = 920001007,
@@ -2278,6 +2372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002001] = {
 		TaskId = 920002001,
@@ -2302,6 +2397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002002] = {
 		TaskId = 920002002,
@@ -2326,6 +2422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002003] = {
 		TaskId = 920002003,
@@ -2350,6 +2447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002004] = {
 		TaskId = 920002004,
@@ -2374,6 +2472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002005] = {
 		TaskId = 920002005,
@@ -2398,6 +2497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002006] = {
 		TaskId = 920002006,
@@ -2422,6 +2522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002007] = {
 		TaskId = 920002007,
@@ -2446,6 +2547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002008] = {
 		TaskId = 920002008,
@@ -2470,6 +2572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002009] = {
 		TaskId = 920002009,
@@ -2494,6 +2597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920002010] = {
 		TaskId = 920002010,
@@ -2518,6 +2622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003001] = {
 		TaskId = 920003001,
@@ -2542,6 +2647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003002] = {
 		TaskId = 920003002,
@@ -2566,6 +2672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003003] = {
 		TaskId = 920003003,
@@ -2590,6 +2697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003004] = {
 		TaskId = 920003004,
@@ -2614,6 +2722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003005] = {
 		TaskId = 920003005,
@@ -2638,6 +2747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003006] = {
 		TaskId = 920003006,
@@ -2662,6 +2772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003007] = {
 		TaskId = 920003007,
@@ -2686,6 +2797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003008] = {
 		TaskId = 920003008,
@@ -2710,6 +2822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003009] = {
 		TaskId = 920003009,
@@ -2734,6 +2847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920003010] = {
 		TaskId = 920003010,
@@ -2758,6 +2872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004001] = {
 		TaskId = 920004001,
@@ -2782,6 +2897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004002] = {
 		TaskId = 920004002,
@@ -2806,6 +2922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004003] = {
 		TaskId = 920004003,
@@ -2830,6 +2947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004004] = {
 		TaskId = 920004004,
@@ -2854,6 +2972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004005] = {
 		TaskId = 920004005,
@@ -2878,6 +2997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004006] = {
 		TaskId = 920004006,
@@ -2902,6 +3022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004007] = {
 		TaskId = 920004007,
@@ -2926,6 +3047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004008] = {
 		TaskId = 920004008,
@@ -2950,6 +3072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004009] = {
 		TaskId = 920004009,
@@ -2974,6 +3097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920004010] = {
 		TaskId = 920004010,
@@ -2998,6 +3122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920005001] = {
 		TaskId = 920005001,
@@ -3022,6 +3147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920005002] = {
 		TaskId = 920005002,
@@ -3046,6 +3172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920006001] = {
 		TaskId = 920006001,
@@ -3070,6 +3197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920006002] = {
 		TaskId = 920006002,
@@ -3094,6 +3222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920006003] = {
 		TaskId = 920006003,
@@ -3118,6 +3247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920006004] = {
 		TaskId = 920006004,
@@ -3142,6 +3272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920006005] = {
 		TaskId = 920006005,
@@ -3166,6 +3297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920006006] = {
 		TaskId = 920006006,
@@ -3190,6 +3322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920006007] = {
 		TaskId = 920006007,
@@ -3214,6 +3347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920006008] = {
 		TaskId = 920006008,
@@ -3238,6 +3372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920007001] = {
 		TaskId = 920007001,
@@ -3262,6 +3397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920007002] = {
 		TaskId = 920007002,
@@ -3286,6 +3422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920007003] = {
 		TaskId = 920007003,
@@ -3310,6 +3447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920007004] = {
 		TaskId = 920007004,
@@ -3334,6 +3472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920007005] = {
 		TaskId = 920007005,
@@ -3358,6 +3497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920007006] = {
 		TaskId = 920007006,
@@ -3382,6 +3522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920007007] = {
 		TaskId = 920007007,
@@ -3406,6 +3547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920007008] = {
 		TaskId = 920007008,
@@ -3430,6 +3572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920008001] = {
 		TaskId = 920008001,
@@ -3454,6 +3597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920008002] = {
 		TaskId = 920008002,
@@ -3478,6 +3622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920008003] = {
 		TaskId = 920008003,
@@ -3502,6 +3647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920008004] = {
 		TaskId = 920008004,
@@ -3526,6 +3672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920008005] = {
 		TaskId = 920008005,
@@ -3550,6 +3697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920008006] = {
 		TaskId = 920008006,
@@ -3574,6 +3722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920008007] = {
 		TaskId = 920008007,
@@ -3598,6 +3747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920008008] = {
 		TaskId = 920008008,
@@ -3622,6 +3772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920009001] = {
 		TaskId = 920009001,
@@ -3646,6 +3797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920009002] = {
 		TaskId = 920009002,
@@ -3670,6 +3822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920009003] = {
 		TaskId = 920009003,
@@ -3694,6 +3847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920009004] = {
 		TaskId = 920009004,
@@ -3718,6 +3872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920009005] = {
 		TaskId = 920009005,
@@ -3742,6 +3897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920009006] = {
 		TaskId = 920009006,
@@ -3766,6 +3922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920009007] = {
 		TaskId = 920009007,
@@ -3790,6 +3947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920009008] = {
 		TaskId = 920009008,
@@ -3814,6 +3972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920010001] = {
 		TaskId = 920010001,
@@ -3838,6 +3997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920010002] = {
 		TaskId = 920010002,
@@ -3862,6 +4022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920010003] = {
 		TaskId = 920010003,
@@ -3886,6 +4047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920010004] = {
 		TaskId = 920010004,
@@ -3910,6 +4072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920010005] = {
 		TaskId = 920010005,
@@ -3934,6 +4097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920010006] = {
 		TaskId = 920010006,
@@ -3958,6 +4122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920010007] = {
 		TaskId = 920010007,
@@ -3982,6 +4147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920010008] = {
 		TaskId = 920010008,
@@ -4006,6 +4172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920011001] = {
 		TaskId = 920011001,
@@ -4030,6 +4197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920011002] = {
 		TaskId = 920011002,
@@ -4054,6 +4222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920011003] = {
 		TaskId = 920011003,
@@ -4078,6 +4247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920011004] = {
 		TaskId = 920011004,
@@ -4102,6 +4272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920011005] = {
 		TaskId = 920011005,
@@ -4126,6 +4297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920011006] = {
 		TaskId = 920011006,
@@ -4150,6 +4322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920011007] = {
 		TaskId = 920011007,
@@ -4174,6 +4347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920011008] = {
 		TaskId = 920011008,
@@ -4198,6 +4372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920012001] = {
 		TaskId = 920012001,
@@ -4222,6 +4397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920012002] = {
 		TaskId = 920012002,
@@ -4246,6 +4422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920012003] = {
 		TaskId = 920012003,
@@ -4270,6 +4447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920012004] = {
 		TaskId = 920012004,
@@ -4294,6 +4472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920012005] = {
 		TaskId = 920012005,
@@ -4318,6 +4497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920012006] = {
 		TaskId = 920012006,
@@ -4342,6 +4522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920012007] = {
 		TaskId = 920012007,
@@ -4366,6 +4547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920012008] = {
 		TaskId = 920012008,
@@ -4390,6 +4572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920013001] = {
 		TaskId = 920013001,
@@ -4414,6 +4597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920013002] = {
 		TaskId = 920013002,
@@ -4438,6 +4622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920013003] = {
 		TaskId = 920013003,
@@ -4462,6 +4647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920013004] = {
 		TaskId = 920013004,
@@ -4486,6 +4672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920013005] = {
 		TaskId = 920013005,
@@ -4510,6 +4697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920013006] = {
 		TaskId = 920013006,
@@ -4534,6 +4722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920013007] = {
 		TaskId = 920013007,
@@ -4558,6 +4747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920013008] = {
 		TaskId = 920013008,
@@ -4582,6 +4772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014001] = {
 		TaskId = 920014001,
@@ -4606,6 +4797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014002] = {
 		TaskId = 920014002,
@@ -4630,6 +4822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014003] = {
 		TaskId = 920014003,
@@ -4654,6 +4847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014004] = {
 		TaskId = 920014004,
@@ -4678,6 +4872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014005] = {
 		TaskId = 920014005,
@@ -4702,6 +4897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014006] = {
 		TaskId = 920014006,
@@ -4726,6 +4922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014007] = {
 		TaskId = 920014007,
@@ -4750,6 +4947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014008] = {
 		TaskId = 920014008,
@@ -4774,6 +4972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014009] = {
 		TaskId = 920014009,
@@ -4798,6 +4997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014010] = {
 		TaskId = 920014010,
@@ -4822,6 +5022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014011] = {
 		TaskId = 920014011,
@@ -4846,6 +5047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014012] = {
 		TaskId = 920014012,
@@ -4870,6 +5072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920014013] = {
 		TaskId = 920014013,
@@ -4894,6 +5097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920015001] = {
 		TaskId = 920015001,
@@ -4918,6 +5122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920015002] = {
 		TaskId = 920015002,
@@ -4942,6 +5147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920015003] = {
 		TaskId = 920015003,
@@ -4966,6 +5172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920015004] = {
 		TaskId = 920015004,
@@ -4990,6 +5197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920015005] = {
 		TaskId = 920015005,
@@ -5014,6 +5222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920015006] = {
 		TaskId = 920015006,
@@ -5038,6 +5247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920015007] = {
 		TaskId = 920015007,
@@ -5062,6 +5272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920015008] = {
 		TaskId = 920015008,
@@ -5086,6 +5297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920016001] = {
 		TaskId = 920016001,
@@ -5110,6 +5322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920016002] = {
 		TaskId = 920016002,
@@ -5134,6 +5347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920016003] = {
 		TaskId = 920016003,
@@ -5158,6 +5372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920016004] = {
 		TaskId = 920016004,
@@ -5182,6 +5397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920016005] = {
 		TaskId = 920016005,
@@ -5206,6 +5422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920016006] = {
 		TaskId = 920016006,
@@ -5230,6 +5447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920016007] = {
 		TaskId = 920016007,
@@ -5254,6 +5472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920016008] = {
 		TaskId = 920016008,
@@ -5278,6 +5497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920017001] = {
 		TaskId = 920017001,
@@ -5302,6 +5522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920017002] = {
 		TaskId = 920017002,
@@ -5326,6 +5547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920017003] = {
 		TaskId = 920017003,
@@ -5350,6 +5572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920017004] = {
 		TaskId = 920017004,
@@ -5374,6 +5597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920017005] = {
 		TaskId = 920017005,
@@ -5398,6 +5622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920017006] = {
 		TaskId = 920017006,
@@ -5422,6 +5647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920017007] = {
 		TaskId = 920017007,
@@ -5446,6 +5672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920017008] = {
 		TaskId = 920017008,
@@ -5470,6 +5697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018001] = {
 		TaskId = 920018001,
@@ -5494,6 +5722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018002] = {
 		TaskId = 920018002,
@@ -5518,6 +5747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018003] = {
 		TaskId = 920018003,
@@ -5542,6 +5772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018004] = {
 		TaskId = 920018004,
@@ -5566,6 +5797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018005] = {
 		TaskId = 920018005,
@@ -5590,6 +5822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018006] = {
 		TaskId = 920018006,
@@ -5614,6 +5847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018007] = {
 		TaskId = 920018007,
@@ -5638,6 +5872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018008] = {
 		TaskId = 920018008,
@@ -5662,6 +5897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018009] = {
 		TaskId = 920018009,
@@ -5686,6 +5922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018010] = {
 		TaskId = 920018010,
@@ -5710,6 +5947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018011] = {
 		TaskId = 920018011,
@@ -5734,6 +5972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018012] = {
 		TaskId = 920018012,
@@ -5758,6 +5997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018013] = {
 		TaskId = 920018013,
@@ -5782,6 +6022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018014] = {
 		TaskId = 920018014,
@@ -5806,6 +6047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018015] = {
 		TaskId = 920018015,
@@ -5830,6 +6072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018016] = {
 		TaskId = 920018016,
@@ -5854,6 +6097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018017] = {
 		TaskId = 920018017,
@@ -5878,6 +6122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920018018] = {
 		TaskId = 920018018,
@@ -5902,6 +6147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920019001] = {
 		TaskId = 920019001,
@@ -5926,6 +6172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920019002] = {
 		TaskId = 920019002,
@@ -5950,6 +6197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920019003] = {
 		TaskId = 920019003,
@@ -5974,6 +6222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920019004] = {
 		TaskId = 920019004,
@@ -5998,6 +6247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920019005] = {
 		TaskId = 920019005,
@@ -6022,6 +6272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920019006] = {
 		TaskId = 920019006,
@@ -6046,6 +6297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920019007] = {
 		TaskId = 920019007,
@@ -6070,6 +6322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920019008] = {
 		TaskId = 920019008,
@@ -6094,6 +6347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920020001] = {
 		TaskId = 920020001,
@@ -6118,6 +6372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920020002] = {
 		TaskId = 920020002,
@@ -6142,6 +6397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920020003] = {
 		TaskId = 920020003,
@@ -6166,6 +6422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920020004] = {
 		TaskId = 920020004,
@@ -6190,6 +6447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920020005] = {
 		TaskId = 920020005,
@@ -6214,6 +6472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920020006] = {
 		TaskId = 920020006,
@@ -6238,6 +6497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920020007] = {
 		TaskId = 920020007,
@@ -6262,6 +6522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920020008] = {
 		TaskId = 920020008,
@@ -6286,6 +6547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920021001] = {
 		TaskId = 920021001,
@@ -6310,6 +6572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920021002] = {
 		TaskId = 920021002,
@@ -6334,6 +6597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920021003] = {
 		TaskId = 920021003,
@@ -6358,6 +6622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920021004] = {
 		TaskId = 920021004,
@@ -6382,6 +6647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920021005] = {
 		TaskId = 920021005,
@@ -6406,6 +6672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920021006] = {
 		TaskId = 920021006,
@@ -6430,6 +6697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920021007] = {
 		TaskId = 920021007,
@@ -6454,6 +6722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920021008] = {
 		TaskId = 920021008,
@@ -6478,6 +6747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920021009] = {
 		TaskId = 920021009,
@@ -6502,6 +6772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920022001] = {
 		TaskId = 920022001,
@@ -6526,6 +6797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920022002] = {
 		TaskId = 920022002,
@@ -6550,6 +6822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920022003] = {
 		TaskId = 920022003,
@@ -6574,6 +6847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920022004] = {
 		TaskId = 920022004,
@@ -6598,6 +6872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920022005] = {
 		TaskId = 920022005,
@@ -6622,6 +6897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920022006] = {
 		TaskId = 920022006,
@@ -6646,6 +6922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920022007] = {
 		TaskId = 920022007,
@@ -6670,6 +6947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920022008] = {
 		TaskId = 920022008,
@@ -6694,6 +6972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920023001] = {
 		TaskId = 920023001,
@@ -6718,6 +6997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920023002] = {
 		TaskId = 920023002,
@@ -6742,6 +7022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920023003] = {
 		TaskId = 920023003,
@@ -6766,6 +7047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920023004] = {
 		TaskId = 920023004,
@@ -6790,6 +7072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920023005] = {
 		TaskId = 920023005,
@@ -6814,6 +7097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920023006] = {
 		TaskId = 920023006,
@@ -6838,6 +7122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024001] = {
 		TaskId = 920024001,
@@ -6862,6 +7147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024002] = {
 		TaskId = 920024002,
@@ -6886,6 +7172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024003] = {
 		TaskId = 920024003,
@@ -6910,6 +7197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024004] = {
 		TaskId = 920024004,
@@ -6934,6 +7222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024005] = {
 		TaskId = 920024005,
@@ -6958,6 +7247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024006] = {
 		TaskId = 920024006,
@@ -6982,6 +7272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024007] = {
 		TaskId = 920024007,
@@ -7006,6 +7297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024008] = {
 		TaskId = 920024008,
@@ -7030,6 +7322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024009] = {
 		TaskId = 920024009,
@@ -7054,6 +7347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024010] = {
 		TaskId = 920024010,
@@ -7078,6 +7372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024011] = {
 		TaskId = 920024011,
@@ -7102,6 +7397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024012] = {
 		TaskId = 920024012,
@@ -7126,6 +7422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024013] = {
 		TaskId = 920024013,
@@ -7150,6 +7447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024014] = {
 		TaskId = 920024014,
@@ -7174,6 +7472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024015] = {
 		TaskId = 920024015,
@@ -7198,6 +7497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024016] = {
 		TaskId = 920024016,
@@ -7222,6 +7522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024017] = {
 		TaskId = 920024017,
@@ -7246,6 +7547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024018] = {
 		TaskId = 920024018,
@@ -7270,6 +7572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024019] = {
 		TaskId = 920024019,
@@ -7294,6 +7597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920024020] = {
 		TaskId = 920024020,
@@ -7318,6 +7622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025001] = {
 		TaskId = 920025001,
@@ -7342,6 +7647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025002] = {
 		TaskId = 920025002,
@@ -7366,6 +7672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025003] = {
 		TaskId = 920025003,
@@ -7390,6 +7697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025004] = {
 		TaskId = 920025004,
@@ -7414,6 +7722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025005] = {
 		TaskId = 920025005,
@@ -7438,6 +7747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025006] = {
 		TaskId = 920025006,
@@ -7462,6 +7772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025007] = {
 		TaskId = 920025007,
@@ -7486,6 +7797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025008] = {
 		TaskId = 920025008,
@@ -7510,6 +7822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025009] = {
 		TaskId = 920025009,
@@ -7534,6 +7847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025010] = {
 		TaskId = 920025010,
@@ -7558,6 +7872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025011] = {
 		TaskId = 920025011,
@@ -7582,6 +7897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025012] = {
 		TaskId = 920025012,
@@ -7606,6 +7922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025013] = {
 		TaskId = 920025013,
@@ -7630,6 +7947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920025014] = {
 		TaskId = 920025014,
@@ -7654,6 +7972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026001] = {
 		TaskId = 920026001,
@@ -7678,6 +7997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026002] = {
 		TaskId = 920026002,
@@ -7702,6 +8022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026003] = {
 		TaskId = 920026003,
@@ -7726,6 +8047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026004] = {
 		TaskId = 920026004,
@@ -7750,6 +8072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026005] = {
 		TaskId = 920026005,
@@ -7774,6 +8097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026006] = {
 		TaskId = 920026006,
@@ -7798,6 +8122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026007] = {
 		TaskId = 920026007,
@@ -7822,6 +8147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026008] = {
 		TaskId = 920026008,
@@ -7846,6 +8172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026009] = {
 		TaskId = 920026009,
@@ -7870,6 +8197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026010] = {
 		TaskId = 920026010,
@@ -7894,6 +8222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920026011] = {
 		TaskId = 920026011,
@@ -7918,6 +8247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920029001] = {
 		TaskId = 920029001,
@@ -7942,6 +8272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920029002] = {
 		TaskId = 920029002,
@@ -7966,6 +8297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920029003] = {
 		TaskId = 920029003,
@@ -7990,6 +8322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920029004] = {
 		TaskId = 920029004,
@@ -8014,6 +8347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920029005] = {
 		TaskId = 920029005,
@@ -8038,6 +8372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920029006] = {
 		TaskId = 920029006,
@@ -8062,6 +8397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920029007] = {
 		TaskId = 920029007,
@@ -8086,6 +8422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920029008] = {
 		TaskId = 920029008,
@@ -8110,6 +8447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920030001] = {
 		TaskId = 920030001,
@@ -8134,6 +8472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920030002] = {
 		TaskId = 920030002,
@@ -8158,6 +8497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920030003] = {
 		TaskId = 920030003,
@@ -8182,6 +8522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920030004] = {
 		TaskId = 920030004,
@@ -8206,6 +8547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920030005] = {
 		TaskId = 920030005,
@@ -8230,6 +8572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920030006] = {
 		TaskId = 920030006,
@@ -8254,6 +8597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920030007] = {
 		TaskId = 920030007,
@@ -8278,6 +8622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920030008] = {
 		TaskId = 920030008,
@@ -8302,6 +8647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920031001] = {
 		TaskId = 920031001,
@@ -8326,6 +8672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920031002] = {
 		TaskId = 920031002,
@@ -8350,6 +8697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920031003] = {
 		TaskId = 920031003,
@@ -8374,6 +8722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920031004] = {
 		TaskId = 920031004,
@@ -8398,6 +8747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920031005] = {
 		TaskId = 920031005,
@@ -8422,6 +8772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920031006] = {
 		TaskId = 920031006,
@@ -8446,6 +8797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920031007] = {
 		TaskId = 920031007,
@@ -8470,6 +8822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920031008] = {
 		TaskId = 920031008,
@@ -8494,6 +8847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920032001] = {
 		TaskId = 920032001,
@@ -8518,6 +8872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920032002] = {
 		TaskId = 920032002,
@@ -8542,6 +8897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920032003] = {
 		TaskId = 920032003,
@@ -8566,6 +8922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920032004] = {
 		TaskId = 920032004,
@@ -8590,6 +8947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920032005] = {
 		TaskId = 920032005,
@@ -8614,6 +8972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920032006] = {
 		TaskId = 920032006,
@@ -8638,6 +8997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920032007] = {
 		TaskId = 920032007,
@@ -8662,6 +9022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920032008] = {
 		TaskId = 920032008,
@@ -8686,6 +9047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920033001] = {
 		TaskId = 920033001,
@@ -8710,6 +9072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920033002] = {
 		TaskId = 920033002,
@@ -8734,6 +9097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920033003] = {
 		TaskId = 920033003,
@@ -8758,6 +9122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920033004] = {
 		TaskId = 920033004,
@@ -8782,6 +9147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920033005] = {
 		TaskId = 920033005,
@@ -8806,6 +9172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920033006] = {
 		TaskId = 920033006,
@@ -8830,6 +9197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920033007] = {
 		TaskId = 920033007,
@@ -8854,6 +9222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920033008] = {
 		TaskId = 920033008,
@@ -8878,6 +9247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920034001] = {
 		TaskId = 920034001,
@@ -8902,6 +9272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920034002] = {
 		TaskId = 920034002,
@@ -8926,6 +9297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920034003] = {
 		TaskId = 920034003,
@@ -8950,6 +9322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920034004] = {
 		TaskId = 920034004,
@@ -8974,6 +9347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920034005] = {
 		TaskId = 920034005,
@@ -8998,6 +9372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920034006] = {
 		TaskId = 920034006,
@@ -9022,6 +9397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920034007] = {
 		TaskId = 920034007,
@@ -9046,6 +9422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920034008] = {
 		TaskId = 920034008,
@@ -9070,6 +9447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920035001] = {
 		TaskId = 920035001,
@@ -9094,6 +9472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920035002] = {
 		TaskId = 920035002,
@@ -9118,6 +9497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920035003] = {
 		TaskId = 920035003,
@@ -9142,6 +9522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920035004] = {
 		TaskId = 920035004,
@@ -9166,6 +9547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920035005] = {
 		TaskId = 920035005,
@@ -9190,6 +9572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920035006] = {
 		TaskId = 920035006,
@@ -9214,6 +9597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920035007] = {
 		TaskId = 920035007,
@@ -9238,6 +9622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920035008] = {
 		TaskId = 920035008,
@@ -9262,6 +9647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920036001] = {
 		TaskId = 920036001,
@@ -9286,6 +9672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920036002] = {
 		TaskId = 920036002,
@@ -9310,6 +9697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920036003] = {
 		TaskId = 920036003,
@@ -9334,6 +9722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920036004] = {
 		TaskId = 920036004,
@@ -9358,6 +9747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920036005] = {
 		TaskId = 920036005,
@@ -9382,6 +9772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920036006] = {
 		TaskId = 920036006,
@@ -9406,6 +9797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920036007] = {
 		TaskId = 920036007,
@@ -9430,6 +9822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920036008] = {
 		TaskId = 920036008,
@@ -9454,6 +9847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920037001] = {
 		TaskId = 920037001,
@@ -9478,6 +9872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920037002] = {
 		TaskId = 920037002,
@@ -9502,6 +9897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920037003] = {
 		TaskId = 920037003,
@@ -9526,6 +9922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920037004] = {
 		TaskId = 920037004,
@@ -9550,6 +9947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920037005] = {
 		TaskId = 920037005,
@@ -9574,6 +9972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920037006] = {
 		TaskId = 920037006,
@@ -9598,6 +9997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920037007] = {
 		TaskId = 920037007,
@@ -9622,6 +10022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920037008] = {
 		TaskId = 920037008,
@@ -9646,6 +10047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920038001] = {
 		TaskId = 920038001,
@@ -9670,6 +10072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920038002] = {
 		TaskId = 920038002,
@@ -9694,6 +10097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920038003] = {
 		TaskId = 920038003,
@@ -9718,6 +10122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920038004] = {
 		TaskId = 920038004,
@@ -9742,6 +10147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920038005] = {
 		TaskId = 920038005,
@@ -9766,6 +10172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920038006] = {
 		TaskId = 920038006,
@@ -9790,6 +10197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920038007] = {
 		TaskId = 920038007,
@@ -9814,6 +10222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920038008] = {
 		TaskId = 920038008,
@@ -9838,6 +10247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920039001] = {
 		TaskId = 920039001,
@@ -9862,6 +10272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920039002] = {
 		TaskId = 920039002,
@@ -9886,6 +10297,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920039003] = {
 		TaskId = 920039003,
@@ -9910,6 +10322,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920039004] = {
 		TaskId = 920039004,
@@ -9934,6 +10347,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920039005] = {
 		TaskId = 920039005,
@@ -9958,6 +10372,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920039006] = {
 		TaskId = 920039006,
@@ -9982,6 +10397,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920039007] = {
 		TaskId = 920039007,
@@ -10006,6 +10422,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920039008] = {
 		TaskId = 920039008,
@@ -10030,6 +10447,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920040001] = {
 		TaskId = 920040001,
@@ -10054,6 +10472,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920040002] = {
 		TaskId = 920040002,
@@ -10078,6 +10497,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920040003] = {
 		TaskId = 920040003,
@@ -10102,6 +10522,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920040004] = {
 		TaskId = 920040004,
@@ -10126,6 +10547,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920040005] = {
 		TaskId = 920040005,
@@ -10150,6 +10572,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920041001] = {
 		TaskId = 920041001,
@@ -10174,6 +10597,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920041002] = {
 		TaskId = 920041002,
@@ -10198,6 +10622,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920041003] = {
 		TaskId = 920041003,
@@ -10222,6 +10647,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920041004] = {
 		TaskId = 920041004,
@@ -10246,6 +10672,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920041005] = {
 		TaskId = 920041005,
@@ -10270,6 +10697,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920041006] = {
 		TaskId = 920041006,
@@ -10294,6 +10722,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920041007] = {
 		TaskId = 920041007,
@@ -10318,6 +10747,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920041008] = {
 		TaskId = 920041008,
@@ -10342,6 +10772,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920042001] = {
 		TaskId = 920042001,
@@ -10366,6 +10797,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920042002] = {
 		TaskId = 920042002,
@@ -10390,6 +10822,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920042003] = {
 		TaskId = 920042003,
@@ -10414,6 +10847,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920042004] = {
 		TaskId = 920042004,
@@ -10438,6 +10872,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920042005] = {
 		TaskId = 920042005,
@@ -10462,6 +10897,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920042006] = {
 		TaskId = 920042006,
@@ -10486,6 +10922,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920042007] = {
 		TaskId = 920042007,
@@ -10510,6 +10947,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920042008] = {
 		TaskId = 920042008,
@@ -10534,6 +10972,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043001] = {
 		TaskId = 920043001,
@@ -10558,6 +10997,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043002] = {
 		TaskId = 920043002,
@@ -10582,6 +11022,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043003] = {
 		TaskId = 920043003,
@@ -10606,6 +11047,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043004] = {
 		TaskId = 920043004,
@@ -10630,6 +11072,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043005] = {
 		TaskId = 920043005,
@@ -10654,6 +11097,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043006] = {
 		TaskId = 920043006,
@@ -10678,6 +11122,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043007] = {
 		TaskId = 920043007,
@@ -10702,6 +11147,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043008] = {
 		TaskId = 920043008,
@@ -10726,6 +11172,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043009] = {
 		TaskId = 920043009,
@@ -10750,6 +11197,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043007] = {
 		TaskId = 920043007,
@@ -10774,6 +11222,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043008] = {
 		TaskId = 920043008,
@@ -10798,6 +11247,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 	[920043009] = {
 		TaskId = 920043009,
@@ -10822,6 +11272,7 @@ local datas = {
 			0,
 		},
 		Item = "",
+		openHint = 0,
 	},
 }
 

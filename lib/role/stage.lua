@@ -273,11 +273,11 @@ function stage.add_stage(p, id)
 end
 
 function stage.finish()
-    data.stage_seed = {
-        id = 0,
-        seed = 0,
-        bonus = false,
-    }
+    -- data.stage_seed = {
+    --     id = 0,
+    --     seed = 0,
+    --     bonus = false,
+    -- }
     local user = data.user
     local bmsg = {
         id = user.id,

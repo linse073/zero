@@ -11,6 +11,7 @@ local string = string
 local floor = math.floor
 
 local stage
+local mail
 
 local check_sign = util.check_sign
 local update_user = util.update_user
@@ -53,6 +54,7 @@ end)
 
 function rank.init_module()
     stage = require "role.stage"
+    mail = require "role.mail"
     return proc
 end
 

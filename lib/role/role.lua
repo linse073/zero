@@ -39,6 +39,7 @@ local is_stone
 local error_code
 local base
 local type_reward
+local mall_sale
 local cs
 local map_pos
 local max_exp
@@ -71,6 +72,7 @@ skynet.init(function()
     error_code = share.error_code
     base = share.base
     type_reward = share.type_reward
+    mall_sale = share.mall_sale
     cs = share.cs
     map_pos = func.map_pos
     game_day = func.game_day
@@ -163,6 +165,13 @@ function role.exit()
     data = nil
 end
 
+local function update_mall_random()
+    local mall_random = data.user.mall_random
+
+    local m1 = mall_sale[base.MALL_SALE_RANDOM_1]
+    local r1 = m1[random(#m1)]
+end
+
 local function update_day(user, od, nd)
     user.arena_count = 0
     user.charge_arena = 0
@@ -186,7 +195,11 @@ end
 function role.update_day(od, nd)
     local user = data.user
     local pt, update_sign_in, arena_award = update_day(user, od, nd)
-    notify.add("update_day", {task=pt, update_sign_in=update_sign_in, arena_award=arena_award})
+    notify.add("update_day", {
+        task = pt, 
+        update_sign_in = update_sign_in, 
+        arena_award = arena_award,
+    })
 end
 
 function role.update_second()
@@ -433,6 +446,9 @@ function role.repair(user)
     if not user.match_win then
         user.match_win = 0
     end
+    if not user.mall_random then
+        user.mall_random = {}
+    end
 end
 
 function role.explore_bonus(p, a)
@@ -627,6 +643,7 @@ function proc.create_user(msg)
         refresh_match_cd = 0,
         match_role = {},
         match_win = 0,
+        mall_random = {},
 
         item = {},
         card = {},

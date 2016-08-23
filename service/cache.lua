@@ -28,6 +28,7 @@ skynet.start(function()
     local searchdata = require("data.search")
     local textdata = require("data.text")
     local vipdata = require("data.vip")
+    local malldata = require("data.mall")
     local base = require("base")
 
     local function get_string(id)
@@ -328,6 +329,20 @@ skynet.start(function()
         vip_level[v.vipLv] = v
     end
 
+    local mall_sale = {}
+    for k, v in pairs(malldata) do
+        if v.preVip ~= "" then
+            local minVip, maxVip = string.match(v.preVip, "(%d+)~(%d+)")
+            v.minVip, v.maxVip = tonumber(minVip), tonumber(maxVip)
+        end
+        local ms = mall_sale[v.saleType]
+        if not ms then
+            ms = {}
+            mall_sale[v.saleType] = ms
+        end
+        ms[#ms+1] = v
+    end
+
     sharedata.new("carddata", carddata)
     sharedata.new("itemdata", itemdata)
     sharedata.new("stagedata", stagedata)
@@ -354,6 +369,7 @@ skynet.start(function()
     sharedata.new("area_stage", area_stage)
     sharedata.new("stage_reward", stage_reward)
     sharedata.new("vip_level", vip_level)
+    sharedata.new("mall_sale", mall_sale)
 
     local level = base.MAX_LEVEL - 1
     local ed = assert(expdata[level], string.format("No exp data %d.", level))

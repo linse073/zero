@@ -33,6 +33,7 @@ skynet.init(function()
     share.area_stage = sharedata.query("area_stage")
     share.stage_reward = sharedata.query("stage_reward")
     share.vip_level = sharedata.query("vip_level")
+    share.mall_sale = sharedata.query("mall_sale")
 
     share.max_exp = sharedata.query("max_exp")
 

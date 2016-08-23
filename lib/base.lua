@@ -272,6 +272,14 @@ local base = {
     MAX_ARENA_COUNT = 10,
     MAX_MATCH_COUNT = 10,
     ARENA_CHALLENGE_TIME = 5 * 60,
+
+    MALL_TYPE_PACK = 1,
+    MALL_TYPE_DAY = 2,
+    MALL_TYPE_TIME = 3,
+
+    MALL_SALE_NORMAL = 1,
+    MALL_SALE_RANDOM_1 = 2,
+    MALL_SALE_RANDOM_2 = 3,
 }
 
 return base

@@ -34,6 +34,7 @@ skynet.init(function()
     share.stage_reward = sharedata.query("stage_reward")
     share.vip_level = sharedata.query("vip_level")
     share.mall_sale = sharedata.query("mall_sale")
+    share.mall_limit = sharedata.query("mall_limit")
 
     share.max_exp = sharedata.query("max_exp")
 
@@ -41,6 +42,7 @@ skynet.init(function()
     share.complete_task = sharedata.query("complete_task")
     share.stage_task = sharedata.query("stage_task")
     share.stage_task_complete = sharedata.query("stage_task_complete")
+    share.random_sale = sharedata.query("random_sale")
 
     share.msg = sharedata.query("msg")
     share.name_msg = sharedata.query("name_msg")

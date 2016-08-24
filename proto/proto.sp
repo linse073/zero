@@ -175,6 +175,7 @@
     explore 7 : explore_info
     stage_award 8 : *integer
     trade_watch 9 : *integer
+    mall_random 10 : *integer
 }
 
 .explore_award {
@@ -208,7 +209,8 @@
     task 0 : *integer
     update_sign_in 1 : boolean
     arena_award 2 : mail_info
-    maill_random 3 : *integer
+    mall_random 3 : *integer
+    update_mall 4 : *integer
 }
 
 .heart_beat {

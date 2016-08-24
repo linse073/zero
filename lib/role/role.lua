@@ -40,10 +40,12 @@ local error_code
 local base
 local type_reward
 local mall_sale
+local mall_limit
 local cs
 local map_pos
 local max_exp
 local vip_level
+local random_sale
 local data
 local module
 local role = {}
@@ -73,11 +75,13 @@ skynet.init(function()
     base = share.base
     type_reward = share.type_reward
     mall_sale = share.mall_sale
+    mall_limit = share.mall_limit
     cs = share.cs
     map_pos = func.map_pos
     game_day = func.game_day
     max_exp = share.max_exp
     vip_level = share.vip_level
+    random_sale = share.random_sale
     role_mgr = skynet.queryservice("role_mgr")
     fight_point_rank = skynet.queryservice("fight_point_rank")
     explore_mgr = skynet.queryservice("explore_mgr")
@@ -166,10 +170,15 @@ function role.exit()
 end
 
 local function update_mall_random()
+    local mr = {}
     local mall_random = data.user.mall_random
-
-    local m1 = mall_sale[base.MALL_SALE_RANDOM_1]
-    local r1 = m1[random(#m1)]
+    for k, v in ipairs(random_sale) do
+        local m = mall_sale[v]
+        local r = m[random(#m)]
+        mall_random[v] = r.id
+        mr[#mr+1] = r.id
+    end
+    return mr
 end
 
 local function update_day(user, od, nd)
@@ -189,16 +198,38 @@ local function update_day(user, od, nd)
     user.refresh_arena_cd = 0
     user.refresh_match_cd = 0
     stage.update_day()
-    return task.update_day(), update_sign_in, rank.update_day()
+    local mld = mall_limit[base.MALL_LIMIT_DAY]
+    local mall_item = user.mall_item
+    for k, v in ipairs(mld) do
+        mall_item[v.id] = nil
+    end
+    local update_mall = {}
+    if od // 7 ~= nd // 7 then
+        local mlw = mall_limit[base.MALL_LIMIT_WEEK]
+        for k, v in ipairs(mlw) do
+            mall_item[v.id] = nil
+            update_mall[#update_mall+1] = v.id
+        end
+    end
+    if od // 10 ~= nd // 10 then
+        local mlt = mall_limit[base.MALL_LIMIT_TIME]
+        for k, v in ipairs(mlt) do
+            mall_item[v.id] = nil
+            update_mall[#update_mall+1] = v.id
+        end
+    end
+    return task.update_day(), update_sign_in, rank.update_day(), update_mall_random(), update_mall
 end
 
 function role.update_day(od, nd)
     local user = data.user
-    local pt, update_sign_in, arena_award = update_day(user, od, nd)
+    local pt, update_sign_in, arena_award, mall_random, update_mall = update_day(user, od, nd)
     notify.add("update_day", {
         task = pt, 
         update_sign_in = update_sign_in, 
         arena_award = arena_award,
+        mall_random = mall_random,
+        update_mall = update_mall,
     })
 end
 
@@ -448,6 +479,10 @@ function role.repair(user)
     end
     if not user.mall_random then
         user.mall_random = {}
+        update_mall_random()
+    end
+    if not user.mall_item then
+        user.mall_item = {}
     end
 end
 
@@ -644,6 +679,7 @@ function proc.create_user(msg)
         match_role = {},
         match_win = 0,
         mall_random = {},
+        mall_item = {},
 
         item = {},
         card = {},
@@ -758,6 +794,11 @@ local function enter_game(msg)
         end
         ret.trade_watch = wpack
     end
+    local mall_random = {}
+    for k, v in pairs(user.mall_random) do
+        mall_random[#mall_random+1] = v
+    end
+    ret.mall_random = mall_random
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     timer.add_second_routine("update_second", role.update_second)

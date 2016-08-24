@@ -280,6 +280,10 @@ local base = {
     MALL_SALE_NORMAL = 1,
     MALL_SALE_RANDOM_1 = 2,
     MALL_SALE_RANDOM_2 = 3,
+
+    MALL_LIMIT_DAY = 1,
+    MALL_LIMIT_WEEK = 2,
+    MALL_LIMIT_TIME = 3,
 }
 
 return base

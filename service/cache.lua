@@ -330,6 +330,7 @@ skynet.start(function()
     end
 
     local mall_sale = {}
+    local mall_limit = {}
     for k, v in pairs(malldata) do
         if v.preVip ~= "" then
             local minVip, maxVip = string.match(v.preVip, "(%d+)~(%d+)")
@@ -341,6 +342,14 @@ skynet.start(function()
             mall_sale[v.saleType] = ms
         end
         ms[#ms+1] = v
+        if v.limitType ~= 0 then
+            local ml = mall_limit[v.limitType]
+            if not ml then
+                ml = {}
+                mall_limit[v.limitType] = ml
+            end
+            ml[#ml+1] = v
+        end
     end
 
     sharedata.new("carddata", carddata)
@@ -370,6 +379,7 @@ skynet.start(function()
     sharedata.new("stage_reward", stage_reward)
     sharedata.new("vip_level", vip_level)
     sharedata.new("mall_sale", mall_sale)
+    sharedata.new("mall_limit", mall_limit)
 
     local level = base.MAX_LEVEL - 1
     local ed = assert(expdata[level], string.format("No exp data %d.", level))
@@ -420,6 +430,11 @@ skynet.start(function()
         FAIL = 2,
         ESCAPE = 3,
         QUIT = 4,
+    })
+
+    sharedata.new("random_sale", {
+        base.MALL_SALE_RANDOM_1,
+        base.MALL_SALE_RANDOM_2,
     })
 
     sharedata.new("msg", proto.msg)

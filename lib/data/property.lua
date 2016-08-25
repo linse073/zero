@@ -28281,7 +28281,7 @@ local datas = {
 	},
 	[700026000] = {
 		id = 700026000,
-		attack = 2,
+		attack = 3,
 		hp = 55,
 		sunder = 7,
 		defence = 4,
@@ -28295,7 +28295,7 @@ local datas = {
 	},
 	[700026001] = {
 		id = 700026001,
-		attack = 4,
+		attack = 6,
 		hp = 91,
 		sunder = 11,
 		defence = 6,
@@ -28309,7 +28309,7 @@ local datas = {
 	},
 	[700026002] = {
 		id = 700026002,
-		attack = 6,
+		attack = 8,
 		hp = 134,
 		sunder = 15,
 		defence = 8,
@@ -28323,7 +28323,7 @@ local datas = {
 	},
 	[700026003] = {
 		id = 700026003,
-		attack = 8,
+		attack = 11,
 		hp = 183,
 		sunder = 21,
 		defence = 11,
@@ -28337,7 +28337,7 @@ local datas = {
 	},
 	[700026004] = {
 		id = 700026004,
-		attack = 10,
+		attack = 15,
 		hp = 239,
 		sunder = 27,
 		defence = 14,
@@ -28351,7 +28351,7 @@ local datas = {
 	},
 	[700026005] = {
 		id = 700026005,
-		attack = 13,
+		attack = 19,
 		hp = 300,
 		sunder = 33,
 		defence = 18,
@@ -28365,7 +28365,7 @@ local datas = {
 	},
 	[700026006] = {
 		id = 700026006,
-		attack = 17,
+		attack = 26,
 		hp = 418,
 		sunder = 45,
 		defence = 24,
@@ -28379,7 +28379,7 @@ local datas = {
 	},
 	[700026007] = {
 		id = 700026007,
-		attack = 23,
+		attack = 35,
 		hp = 554,
 		sunder = 59,
 		defence = 32,
@@ -28393,7 +28393,7 @@ local datas = {
 	},
 	[700026008] = {
 		id = 700026008,
-		attack = 30,
+		attack = 44,
 		hp = 708,
 		sunder = 75,
 		defence = 40,
@@ -28407,7 +28407,7 @@ local datas = {
 	},
 	[700026009] = {
 		id = 700026009,
-		attack = 37,
+		attack = 55,
 		hp = 882,
 		sunder = 92,
 		defence = 50,
@@ -28421,7 +28421,7 @@ local datas = {
 	},
 	[700026010] = {
 		id = 700026010,
-		attack = 45,
+		attack = 67,
 		hp = 1073,
 		sunder = 112,
 		defence = 60,
@@ -28435,7 +28435,7 @@ local datas = {
 	},
 	[700026011] = {
 		id = 700026011,
-		attack = 52,
+		attack = 79,
 		hp = 1258,
 		sunder = 129,
 		defence = 69,
@@ -28449,7 +28449,7 @@ local datas = {
 	},
 	[700026012] = {
 		id = 700026012,
-		attack = 61,
+		attack = 91,
 		hp = 1457,
 		sunder = 147,
 		defence = 79,
@@ -28463,7 +28463,7 @@ local datas = {
 	},
 	[700026013] = {
 		id = 700026013,
-		attack = 70,
+		attack = 104,
 		hp = 1670,
 		sunder = 167,
 		defence = 90,
@@ -28477,7 +28477,7 @@ local datas = {
 	},
 	[700026014] = {
 		id = 700026014,
-		attack = 79,
+		attack = 119,
 		hp = 1899,
 		sunder = 188,
 		defence = 101,
@@ -28491,7 +28491,7 @@ local datas = {
 	},
 	[700026015] = {
 		id = 700026015,
-		attack = 89,
+		attack = 134,
 		hp = 2141,
 		sunder = 210,
 		defence = 113,
@@ -28505,7 +28505,7 @@ local datas = {
 	},
 	[700026016] = {
 		id = 700026016,
-		attack = 96,
+		attack = 145,
 		hp = 2315,
 		sunder = 224,
 		defence = 121,
@@ -28519,7 +28519,7 @@ local datas = {
 	},
 	[700026017] = {
 		id = 700026017,
-		attack = 104,
+		attack = 156,
 		hp = 2494,
 		sunder = 239,
 		defence = 129,
@@ -28533,7 +28533,7 @@ local datas = {
 	},
 	[700026018] = {
 		id = 700026018,
-		attack = 112,
+		attack = 167,
 		hp = 2678,
 		sunder = 253,
 		defence = 136,
@@ -28547,7 +28547,7 @@ local datas = {
 	},
 	[700026019] = {
 		id = 700026019,
-		attack = 119,
+		attack = 179,
 		hp = 2868,
 		sunder = 268,
 		defence = 145,
@@ -28561,7 +28561,7 @@ local datas = {
 	},
 	[700026020] = {
 		id = 700026020,
-		attack = 128,
+		attack = 191,
 		hp = 3062,
 		sunder = 284,
 		defence = 153,
@@ -28575,7 +28575,7 @@ local datas = {
 	},
 	[700026021] = {
 		id = 700026021,
-		attack = 139,
+		attack = 208,
 		hp = 3325,
 		sunder = 304,
 		defence = 164,
@@ -28589,7 +28589,7 @@ local datas = {
 	},
 	[700026022] = {
 		id = 700026022,
-		attack = 150,
+		attack = 225,
 		hp = 3597,
 		sunder = 325,
 		defence = 175,
@@ -28603,7 +28603,7 @@ local datas = {
 	},
 	[700026023] = {
 		id = 700026023,
-		attack = 162,
+		attack = 243,
 		hp = 3881,
 		sunder = 347,
 		defence = 187,
@@ -28617,7 +28617,7 @@ local datas = {
 	},
 	[700026024] = {
 		id = 700026024,
-		attack = 174,
+		attack = 261,
 		hp = 4175,
 		sunder = 370,
 		defence = 199,
@@ -28631,7 +28631,7 @@ local datas = {
 	},
 	[700026025] = {
 		id = 700026025,
-		attack = 187,
+		attack = 280,
 		hp = 4480,
 		sunder = 393,
 		defence = 212,
@@ -28645,7 +28645,7 @@ local datas = {
 	},
 	[700026026] = {
 		id = 700026026,
-		attack = 197,
+		attack = 295,
 		hp = 4718,
 		sunder = 410,
 		defence = 221,
@@ -28659,7 +28659,7 @@ local datas = {
 	},
 	[700026027] = {
 		id = 700026027,
-		attack = 207,
+		attack = 310,
 		hp = 4962,
 		sunder = 426,
 		defence = 229,
@@ -28673,7 +28673,7 @@ local datas = {
 	},
 	[700026028] = {
 		id = 700026028,
-		attack = 217,
+		attack = 326,
 		hp = 5211,
 		sunder = 443,
 		defence = 239,
@@ -28687,7 +28687,7 @@ local datas = {
 	},
 	[700026029] = {
 		id = 700026029,
-		attack = 228,
+		attack = 342,
 		hp = 5465,
 		sunder = 460,
 		defence = 248,
@@ -28701,7 +28701,7 @@ local datas = {
 	},
 	[700026030] = {
 		id = 700026030,
-		attack = 286,
+		attack = 429,
 		hp = 6870,
 		sunder = 477,
 		defence = 257,
@@ -28715,7 +28715,7 @@ local datas = {
 	},
 	[700026031] = {
 		id = 700026031,
-		attack = 304,
+		attack = 455,
 		hp = 7287,
 		sunder = 506,
 		defence = 272,
@@ -28729,7 +28729,7 @@ local datas = {
 	},
 	[700026032] = {
 		id = 700026032,
-		attack = 321,
+		attack = 482,
 		hp = 7716,
 		sunder = 536,
 		defence = 289,
@@ -28743,7 +28743,7 @@ local datas = {
 	},
 	[700026033] = {
 		id = 700026033,
-		attack = 340,
+		attack = 510,
 		hp = 8157,
 		sunder = 566,
 		defence = 305,
@@ -28757,7 +28757,7 @@ local datas = {
 	},
 	[700026034] = {
 		id = 700026034,
-		attack = 359,
+		attack = 538,
 		hp = 8611,
 		sunder = 598,
 		defence = 322,
@@ -28771,7 +28771,7 @@ local datas = {
 	},
 	[700026035] = {
 		id = 700026035,
-		attack = 378,
+		attack = 567,
 		hp = 9077,
 		sunder = 630,
 		defence = 339,
@@ -28785,7 +28785,7 @@ local datas = {
 	},
 	[700026036] = {
 		id = 700026036,
-		attack = 399,
+		attack = 598,
 		hp = 9576,
 		sunder = 665,
 		defence = 358,
@@ -28799,7 +28799,7 @@ local datas = {
 	},
 	[700026037] = {
 		id = 700026037,
-		attack = 420,
+		attack = 631,
 		hp = 10088,
 		sunder = 701,
 		defence = 377,
@@ -28813,7 +28813,7 @@ local datas = {
 	},
 	[700026038] = {
 		id = 700026038,
-		attack = 442,
+		attack = 663,
 		hp = 10614,
 		sunder = 737,
 		defence = 397,
@@ -28827,7 +28827,7 @@ local datas = {
 	},
 	[700026039] = {
 		id = 700026039,
-		attack = 465,
+		attack = 697,
 		hp = 11154,
 		sunder = 775,
 		defence = 417,
@@ -28841,7 +28841,7 @@ local datas = {
 	},
 	[700026040] = {
 		id = 700026040,
-		attack = 488,
+		attack = 732,
 		hp = 11706,
 		sunder = 813,
 		defence = 438,
@@ -28855,7 +28855,7 @@ local datas = {
 	},
 	[700026041] = {
 		id = 700026041,
-		attack = 509,
+		attack = 764,
 		hp = 12217,
 		sunder = 848,
 		defence = 457,
@@ -28869,7 +28869,7 @@ local datas = {
 	},
 	[700026042] = {
 		id = 700026042,
-		attack = 531,
+		attack = 796,
 		hp = 12738,
 		sunder = 885,
 		defence = 476,
@@ -28883,7 +28883,7 @@ local datas = {
 	},
 	[700026043] = {
 		id = 700026043,
-		attack = 553,
+		attack = 829,
 		hp = 13271,
 		sunder = 922,
 		defence = 496,
@@ -28897,7 +28897,7 @@ local datas = {
 	},
 	[700026044] = {
 		id = 700026044,
-		attack = 576,
+		attack = 863,
 		hp = 13814,
 		sunder = 959,
 		defence = 517,
@@ -28911,7 +28911,7 @@ local datas = {
 	},
 	[700026045] = {
 		id = 700026045,
-		attack = 599,
+		attack = 898,
 		hp = 14368,
 		sunder = 998,
 		defence = 537,
@@ -28925,7 +28925,7 @@ local datas = {
 	},
 	[700026046] = {
 		id = 700026046,
-		attack = 616,
+		attack = 924,
 		hp = 14780,
 		sunder = 1026,
 		defence = 553,
@@ -28939,7 +28939,7 @@ local datas = {
 	},
 	[700026047] = {
 		id = 700026047,
-		attack = 633,
+		attack = 950,
 		hp = 15197,
 		sunder = 1055,
 		defence = 568,
@@ -28953,7 +28953,7 @@ local datas = {
 	},
 	[700026048] = {
 		id = 700026048,
-		attack = 651,
+		attack = 976,
 		hp = 15618,
 		sunder = 1085,
 		defence = 584,
@@ -28967,7 +28967,7 @@ local datas = {
 	},
 	[700026049] = {
 		id = 700026049,
-		attack = 669,
+		attack = 1003,
 		hp = 16044,
 		sunder = 1114,
 		defence = 600,
@@ -28981,7 +28981,7 @@ local datas = {
 	},
 	[700026050] = {
 		id = 700026050,
-		attack = 801,
+		attack = 1201,
 		hp = 19220,
 		sunder = 1144,
 		defence = 616,
@@ -28995,7 +28995,7 @@ local datas = {
 	},
 	[700026051] = {
 		id = 700026051,
-		attack = 826,
+		attack = 1239,
 		hp = 19826,
 		sunder = 1180,
 		defence = 635,
@@ -29009,7 +29009,7 @@ local datas = {
 	},
 	[700026052] = {
 		id = 700026052,
-		attack = 852,
+		attack = 1278,
 		hp = 20441,
 		sunder = 1217,
 		defence = 655,
@@ -29023,7 +29023,7 @@ local datas = {
 	},
 	[700026053] = {
 		id = 700026053,
-		attack = 878,
+		attack = 1317,
 		hp = 21065,
 		sunder = 1254,
 		defence = 675,
@@ -29037,7 +29037,7 @@ local datas = {
 	},
 	[700026054] = {
 		id = 700026054,
-		attack = 904,
+		attack = 1356,
 		hp = 21698,
 		sunder = 1292,
 		defence = 695,
@@ -29051,7 +29051,7 @@ local datas = {
 	},
 	[700026055] = {
 		id = 700026055,
-		attack = 931,
+		attack = 1396,
 		hp = 22340,
 		sunder = 1330,
 		defence = 716,
@@ -29065,7 +29065,7 @@ local datas = {
 	},
 	[700026056] = {
 		id = 700026056,
-		attack = 965,
+		attack = 1448,
 		hp = 23164,
 		sunder = 1379,
 		defence = 742,
@@ -29079,7 +29079,7 @@ local datas = {
 	},
 	[700026057] = {
 		id = 700026057,
-		attack = 1000,
+		attack = 1500,
 		hp = 24003,
 		sunder = 1429,
 		defence = 769,
@@ -29093,7 +29093,7 @@ local datas = {
 	},
 	[700026058] = {
 		id = 700026058,
-		attack = 1036,
+		attack = 1554,
 		hp = 24857,
 		sunder = 1480,
 		defence = 797,
@@ -29107,7 +29107,7 @@ local datas = {
 	},
 	[700026059] = {
 		id = 700026059,
-		attack = 1072,
+		attack = 1608,
 		hp = 25726,
 		sunder = 1531,
 		defence = 825,
@@ -29121,7 +29121,7 @@ local datas = {
 	},
 	[700026060] = {
 		id = 700026060,
-		attack = 1109,
+		attack = 1663,
 		hp = 26610,
 		sunder = 1584,
 		defence = 853,
@@ -29135,7 +29135,7 @@ local datas = {
 	},
 	[700026061] = {
 		id = 700026061,
-		attack = 1135,
+		attack = 1703,
 		hp = 27240,
 		sunder = 1621,
 		defence = 873,
@@ -29149,7 +29149,7 @@ local datas = {
 	},
 	[700026062] = {
 		id = 700026062,
-		attack = 1162,
+		attack = 1742,
 		hp = 27877,
 		sunder = 1659,
 		defence = 893,
@@ -29163,7 +29163,7 @@ local datas = {
 	},
 	[700026063] = {
 		id = 700026063,
-		attack = 1188,
+		attack = 1783,
 		hp = 28520,
 		sunder = 1698,
 		defence = 914,
@@ -29177,7 +29177,7 @@ local datas = {
 	},
 	[700026064] = {
 		id = 700026064,
-		attack = 1215,
+		attack = 1823,
 		hp = 29170,
 		sunder = 1736,
 		defence = 935,
@@ -29191,7 +29191,7 @@ local datas = {
 	},
 	[700026065] = {
 		id = 700026065,
-		attack = 1243,
+		attack = 1864,
 		hp = 29826,
 		sunder = 1775,
 		defence = 956,
@@ -29205,7 +29205,7 @@ local datas = {
 	},
 	[700026066] = {
 		id = 700026066,
-		attack = 1286,
+		attack = 1929,
 		hp = 30864,
 		sunder = 1837,
 		defence = 989,
@@ -29219,7 +29219,7 @@ local datas = {
 	},
 	[700026067] = {
 		id = 700026067,
-		attack = 1330,
+		attack = 1995,
 		hp = 31920,
 		sunder = 1900,
 		defence = 1023,
@@ -29233,7 +29233,7 @@ local datas = {
 	},
 	[700026068] = {
 		id = 700026068,
-		attack = 1375,
+		attack = 2062,
 		hp = 32993,
 		sunder = 1964,
 		defence = 1057,
@@ -29247,7 +29247,7 @@ local datas = {
 	},
 	[700026069] = {
 		id = 700026069,
-		attack = 1420,
+		attack = 2130,
 		hp = 34084,
 		sunder = 2029,
 		defence = 1092,
@@ -29261,7 +29261,7 @@ local datas = {
 	},
 	[700026070] = {
 		id = 700026070,
-		attack = 1466,
+		attack = 2200,
 		hp = 35193,
 		sunder = 2095,
 		defence = 1128,
@@ -29275,7 +29275,7 @@ local datas = {
 	},
 	[700026071] = {
 		id = 700026071,
-		attack = 1505,
+		attack = 2257,
 		hp = 36110,
 		sunder = 2149,
 		defence = 1157,
@@ -29289,7 +29289,7 @@ local datas = {
 	},
 	[700026072] = {
 		id = 700026072,
-		attack = 1543,
+		attack = 2315,
 		hp = 37039,
 		sunder = 2205,
 		defence = 1187,
@@ -29303,7 +29303,7 @@ local datas = {
 	},
 	[700026073] = {
 		id = 700026073,
-		attack = 1582,
+		attack = 2374,
 		hp = 37979,
 		sunder = 2261,
 		defence = 1217,
@@ -29317,7 +29317,7 @@ local datas = {
 	},
 	[700026074] = {
 		id = 700026074,
-		attack = 1622,
+		attack = 2433,
 		hp = 38932,
 		sunder = 2317,
 		defence = 1248,
@@ -29331,7 +29331,7 @@ local datas = {
 	},
 	[700026075] = {
 		id = 700026075,
-		attack = 1662,
+		attack = 2493,
 		hp = 39896,
 		sunder = 2375,
 		defence = 1279,
@@ -29345,7 +29345,7 @@ local datas = {
 	},
 	[700026076] = {
 		id = 700026076,
-		attack = 1724,
+		attack = 2586,
 		hp = 41372,
 		sunder = 2463,
 		defence = 1326,
@@ -29359,7 +29359,7 @@ local datas = {
 	},
 	[700026077] = {
 		id = 700026077,
-		attack = 1786,
+		attack = 2680,
 		hp = 42874,
 		sunder = 2552,
 		defence = 1374,
@@ -29373,7 +29373,7 @@ local datas = {
 	},
 	[700026078] = {
 		id = 700026078,
-		attack = 1850,
+		attack = 2775,
 		hp = 44399,
 		sunder = 2643,
 		defence = 1423,
@@ -29387,7 +29387,7 @@ local datas = {
 	},
 	[700026079] = {
 		id = 700026079,
-		attack = 1915,
+		attack = 2872,
 		hp = 45950,
 		sunder = 2735,
 		defence = 1473,
@@ -29401,7 +29401,7 @@ local datas = {
 	},
 	[700026080] = {
 		id = 700026080,
-		attack = 1980,
+		attack = 2970,
 		hp = 47525,
 		sunder = 2829,
 		defence = 1523,
@@ -29415,7 +29415,7 @@ local datas = {
 	},
 	[700026081] = {
 		id = 700026081,
-		attack = 2023,
+		attack = 3035,
 		hp = 48563,
 		sunder = 2891,
 		defence = 1556,
@@ -29429,7 +29429,7 @@ local datas = {
 	},
 	[700026082] = {
 		id = 700026082,
-		attack = 2067,
+		attack = 3101,
 		hp = 49612,
 		sunder = 2953,
 		defence = 1590,
@@ -29443,7 +29443,7 @@ local datas = {
 	},
 	[700026083] = {
 		id = 700026083,
-		attack = 2111,
+		attack = 3167,
 		hp = 50672,
 		sunder = 3016,
 		defence = 1624,
@@ -29457,7 +29457,7 @@ local datas = {
 	},
 	[700026084] = {
 		id = 700026084,
-		attack = 2156,
+		attack = 3234,
 		hp = 51743,
 		sunder = 3080,
 		defence = 1658,
@@ -29471,7 +29471,7 @@ local datas = {
 	},
 	[700026085] = {
 		id = 700026085,
-		attack = 2201,
+		attack = 3302,
 		hp = 52825,
 		sunder = 3144,
 		defence = 1693,
@@ -29485,7 +29485,7 @@ local datas = {
 	},
 	[700026086] = {
 		id = 700026086,
-		attack = 2273,
+		attack = 3410,
 		hp = 54552,
 		sunder = 3247,
 		defence = 1748,
@@ -29499,7 +29499,7 @@ local datas = {
 	},
 	[700026087] = {
 		id = 700026087,
-		attack = 2346,
+		attack = 3519,
 		hp = 56305,
 		sunder = 3351,
 		defence = 1805,
@@ -29513,7 +29513,7 @@ local datas = {
 	},
 	[700026088] = {
 		id = 700026088,
-		attack = 2420,
+		attack = 3630,
 		hp = 58083,
 		sunder = 3457,
 		defence = 1862,
@@ -29527,7 +29527,7 @@ local datas = {
 	},
 	[700026089] = {
 		id = 700026089,
-		attack = 2495,
+		attack = 3743,
 		hp = 59886,
 		sunder = 3565,
 		defence = 1919,
@@ -29541,7 +29541,7 @@ local datas = {
 	},
 	[700026090] = {
 		id = 700026090,
-		attack = 2571,
+		attack = 3857,
 		hp = 61715,
 		sunder = 3674,
 		defence = 1978,
@@ -29555,7 +29555,7 @@ local datas = {
 	},
 	[700026091] = {
 		id = 700026091,
-		attack = 2627,
+		attack = 3940,
 		hp = 63045,
 		sunder = 3753,
 		defence = 2021,
@@ -29569,7 +29569,7 @@ local datas = {
 	},
 	[700026092] = {
 		id = 700026092,
-		attack = 2683,
+		attack = 4024,
 		hp = 64389,
 		sunder = 3833,
 		defence = 2064,
@@ -29583,7 +29583,7 @@ local datas = {
 	},
 	[700026093] = {
 		id = 700026093,
-		attack = 2739,
+		attack = 4109,
 		hp = 65748,
 		sunder = 3914,
 		defence = 2107,
@@ -29597,7 +29597,7 @@ local datas = {
 	},
 	[700026094] = {
 		id = 700026094,
-		attack = 2797,
+		attack = 4195,
 		hp = 67120,
 		sunder = 3995,
 		defence = 2151,
@@ -29611,7 +29611,7 @@ local datas = {
 	},
 	[700026095] = {
 		id = 700026095,
-		attack = 2854,
+		attack = 4282,
 		hp = 68507,
 		sunder = 4078,
 		defence = 2196,
@@ -29625,7 +29625,7 @@ local datas = {
 	},
 	[700026096] = {
 		id = 700026096,
-		attack = 2950,
+		attack = 4425,
 		hp = 70796,
 		sunder = 4214,
 		defence = 2269,
@@ -29639,7 +29639,7 @@ local datas = {
 	},
 	[700026097] = {
 		id = 700026097,
-		attack = 3047,
+		attack = 4570,
 		hp = 73117,
 		sunder = 4352,
 		defence = 2344,
@@ -29653,7 +29653,7 @@ local datas = {
 	},
 	[700026098] = {
 		id = 700026098,
-		attack = 3145,
+		attack = 4717,
 		hp = 75471,
 		sunder = 4492,
 		defence = 2419,
@@ -29667,7 +29667,7 @@ local datas = {
 	},
 	[700026099] = {
 		id = 700026099,
-		attack = 3244,
+		attack = 4866,
 		hp = 77857,
 		sunder = 4634,
 		defence = 2495,
@@ -29681,7 +29681,7 @@ local datas = {
 	},
 	[700026100] = {
 		id = 700026100,
-		attack = 3345,
+		attack = 5017,
 		hp = 80276,
 		sunder = 4778,
 		defence = 2573,
@@ -29695,7 +29695,7 @@ local datas = {
 	},
 	[700036000] = {
 		id = 700036000,
-		attack = 5,
+		attack = 7,
 		hp = 82,
 		sunder = 7,
 		defence = 4,
@@ -29709,7 +29709,7 @@ local datas = {
 	},
 	[700036001] = {
 		id = 700036001,
-		attack = 8,
+		attack = 11,
 		hp = 137,
 		sunder = 11,
 		defence = 6,
@@ -29723,7 +29723,7 @@ local datas = {
 	},
 	[700036002] = {
 		id = 700036002,
-		attack = 11,
+		attack = 17,
 		hp = 201,
 		sunder = 15,
 		defence = 8,
@@ -29737,7 +29737,7 @@ local datas = {
 	},
 	[700036003] = {
 		id = 700036003,
-		attack = 15,
+		attack = 23,
 		hp = 275,
 		sunder = 21,
 		defence = 11,
@@ -29751,7 +29751,7 @@ local datas = {
 	},
 	[700036004] = {
 		id = 700036004,
-		attack = 20,
+		attack = 30,
 		hp = 358,
 		sunder = 27,
 		defence = 14,
@@ -29765,7 +29765,7 @@ local datas = {
 	},
 	[700036005] = {
 		id = 700036005,
-		attack = 25,
+		attack = 38,
 		hp = 450,
 		sunder = 33,
 		defence = 18,
@@ -29779,7 +29779,7 @@ local datas = {
 	},
 	[700036006] = {
 		id = 700036006,
-		attack = 35,
+		attack = 52,
 		hp = 627,
 		sunder = 45,
 		defence = 24,
@@ -29793,7 +29793,7 @@ local datas = {
 	},
 	[700036007] = {
 		id = 700036007,
-		attack = 46,
+		attack = 69,
 		hp = 831,
 		sunder = 59,
 		defence = 32,
@@ -29807,7 +29807,7 @@ local datas = {
 	},
 	[700036008] = {
 		id = 700036008,
-		attack = 59,
+		attack = 89,
 		hp = 1062,
 		sunder = 75,
 		defence = 40,
@@ -29821,7 +29821,7 @@ local datas = {
 	},
 	[700036009] = {
 		id = 700036009,
-		attack = 73,
+		attack = 110,
 		hp = 1322,
 		sunder = 92,
 		defence = 50,
@@ -29835,7 +29835,7 @@ local datas = {
 	},
 	[700036010] = {
 		id = 700036010,
-		attack = 89,
+		attack = 134,
 		hp = 1610,
 		sunder = 112,
 		defence = 60,
@@ -29849,7 +29849,7 @@ local datas = {
 	},
 	[700036011] = {
 		id = 700036011,
-		attack = 105,
+		attack = 157,
 		hp = 1887,
 		sunder = 129,
 		defence = 69,
@@ -29863,7 +29863,7 @@ local datas = {
 	},
 	[700036012] = {
 		id = 700036012,
-		attack = 121,
+		attack = 182,
 		hp = 2185,
 		sunder = 147,
 		defence = 79,
@@ -29877,7 +29877,7 @@ local datas = {
 	},
 	[700036013] = {
 		id = 700036013,
-		attack = 139,
+		attack = 209,
 		hp = 2506,
 		sunder = 167,
 		defence = 90,
@@ -29891,7 +29891,7 @@ local datas = {
 	},
 	[700036014] = {
 		id = 700036014,
-		attack = 158,
+		attack = 237,
 		hp = 2848,
 		sunder = 188,
 		defence = 101,
@@ -29905,7 +29905,7 @@ local datas = {
 	},
 	[700036015] = {
 		id = 700036015,
-		attack = 178,
+		attack = 268,
 		hp = 3212,
 		sunder = 210,
 		defence = 113,
@@ -29919,7 +29919,7 @@ local datas = {
 	},
 	[700036016] = {
 		id = 700036016,
-		attack = 193,
+		attack = 289,
 		hp = 3473,
 		sunder = 224,
 		defence = 121,
@@ -29933,7 +29933,7 @@ local datas = {
 	},
 	[700036017] = {
 		id = 700036017,
-		attack = 208,
+		attack = 312,
 		hp = 3741,
 		sunder = 239,
 		defence = 129,
@@ -29947,7 +29947,7 @@ local datas = {
 	},
 	[700036018] = {
 		id = 700036018,
-		attack = 223,
+		attack = 335,
 		hp = 4017,
 		sunder = 253,
 		defence = 136,
@@ -29961,7 +29961,7 @@ local datas = {
 	},
 	[700036019] = {
 		id = 700036019,
-		attack = 239,
+		attack = 358,
 		hp = 4302,
 		sunder = 268,
 		defence = 145,
@@ -29975,7 +29975,7 @@ local datas = {
 	},
 	[700036020] = {
 		id = 700036020,
-		attack = 255,
+		attack = 383,
 		hp = 4594,
 		sunder = 284,
 		defence = 153,
@@ -29989,7 +29989,7 @@ local datas = {
 	},
 	[700036021] = {
 		id = 700036021,
-		attack = 277,
+		attack = 416,
 		hp = 4987,
 		sunder = 304,
 		defence = 164,
@@ -30003,7 +30003,7 @@ local datas = {
 	},
 	[700036022] = {
 		id = 700036022,
-		attack = 300,
+		attack = 450,
 		hp = 5396,
 		sunder = 325,
 		defence = 175,
@@ -30017,7 +30017,7 @@ local datas = {
 	},
 	[700036023] = {
 		id = 700036023,
-		attack = 323,
+		attack = 485,
 		hp = 5821,
 		sunder = 347,
 		defence = 187,
@@ -30031,7 +30031,7 @@ local datas = {
 	},
 	[700036024] = {
 		id = 700036024,
-		attack = 348,
+		attack = 522,
 		hp = 6262,
 		sunder = 370,
 		defence = 199,
@@ -30045,7 +30045,7 @@ local datas = {
 	},
 	[700036025] = {
 		id = 700036025,
-		attack = 373,
+		attack = 560,
 		hp = 6720,
 		sunder = 393,
 		defence = 212,
@@ -30059,7 +30059,7 @@ local datas = {
 	},
 	[700036026] = {
 		id = 700036026,
-		attack = 393,
+		attack = 590,
 		hp = 7078,
 		sunder = 410,
 		defence = 221,
@@ -30073,7 +30073,7 @@ local datas = {
 	},
 	[700036027] = {
 		id = 700036027,
-		attack = 414,
+		attack = 620,
 		hp = 7443,
 		sunder = 426,
 		defence = 229,
@@ -30087,7 +30087,7 @@ local datas = {
 	},
 	[700036028] = {
 		id = 700036028,
-		attack = 434,
+		attack = 651,
 		hp = 7817,
 		sunder = 443,
 		defence = 239,
@@ -30101,7 +30101,7 @@ local datas = {
 	},
 	[700036029] = {
 		id = 700036029,
-		attack = 455,
+		attack = 683,
 		hp = 8198,
 		sunder = 460,
 		defence = 248,
@@ -30115,7 +30115,7 @@ local datas = {
 	},
 	[700036030] = {
 		id = 700036030,
-		attack = 572,
+		attack = 859,
 		hp = 10305,
 		sunder = 477,
 		defence = 257,
@@ -30129,7 +30129,7 @@ local datas = {
 	},
 	[700036031] = {
 		id = 700036031,
-		attack = 607,
+		attack = 911,
 		hp = 10930,
 		sunder = 506,
 		defence = 272,
@@ -30143,7 +30143,7 @@ local datas = {
 	},
 	[700036032] = {
 		id = 700036032,
-		attack = 643,
+		attack = 964,
 		hp = 11574,
 		sunder = 536,
 		defence = 289,
@@ -30157,7 +30157,7 @@ local datas = {
 	},
 	[700036033] = {
 		id = 700036033,
-		attack = 680,
+		attack = 1020,
 		hp = 12236,
 		sunder = 566,
 		defence = 305,
@@ -30171,7 +30171,7 @@ local datas = {
 	},
 	[700036034] = {
 		id = 700036034,
-		attack = 718,
+		attack = 1076,
 		hp = 12916,
 		sunder = 598,
 		defence = 322,
@@ -30185,7 +30185,7 @@ local datas = {
 	},
 	[700036035] = {
 		id = 700036035,
-		attack = 756,
+		attack = 1135,
 		hp = 13615,
 		sunder = 630,
 		defence = 339,
@@ -30199,7 +30199,7 @@ local datas = {
 	},
 	[700036036] = {
 		id = 700036036,
-		attack = 798,
+		attack = 1197,
 		hp = 14364,
 		sunder = 665,
 		defence = 358,
@@ -30213,7 +30213,7 @@ local datas = {
 	},
 	[700036037] = {
 		id = 700036037,
-		attack = 841,
+		attack = 1261,
 		hp = 15133,
 		sunder = 701,
 		defence = 377,
@@ -30227,7 +30227,7 @@ local datas = {
 	},
 	[700036038] = {
 		id = 700036038,
-		attack = 885,
+		attack = 1327,
 		hp = 15921,
 		sunder = 737,
 		defence = 397,
@@ -30241,7 +30241,7 @@ local datas = {
 	},
 	[700036039] = {
 		id = 700036039,
-		attack = 929,
+		attack = 1394,
 		hp = 16730,
 		sunder = 775,
 		defence = 417,
@@ -30255,7 +30255,7 @@ local datas = {
 	},
 	[700036040] = {
 		id = 700036040,
-		attack = 976,
+		attack = 1463,
 		hp = 17559,
 		sunder = 813,
 		defence = 438,
@@ -30269,7 +30269,7 @@ local datas = {
 	},
 	[700036041] = {
 		id = 700036041,
-		attack = 1018,
+		attack = 1527,
 		hp = 18325,
 		sunder = 848,
 		defence = 457,
@@ -30283,7 +30283,7 @@ local datas = {
 	},
 	[700036042] = {
 		id = 700036042,
-		attack = 1062,
+		attack = 1592,
 		hp = 19107,
 		sunder = 885,
 		defence = 476,
@@ -30297,7 +30297,7 @@ local datas = {
 	},
 	[700036043] = {
 		id = 700036043,
-		attack = 1106,
+		attack = 1659,
 		hp = 19906,
 		sunder = 922,
 		defence = 496,
@@ -30311,7 +30311,7 @@ local datas = {
 	},
 	[700036044] = {
 		id = 700036044,
-		attack = 1151,
+		attack = 1727,
 		hp = 20720,
 		sunder = 959,
 		defence = 517,
@@ -30325,7 +30325,7 @@ local datas = {
 	},
 	[700036045] = {
 		id = 700036045,
-		attack = 1197,
+		attack = 1796,
 		hp = 21551,
 		sunder = 998,
 		defence = 537,
@@ -30339,7 +30339,7 @@ local datas = {
 	},
 	[700036046] = {
 		id = 700036046,
-		attack = 1232,
+		attack = 1847,
 		hp = 22170,
 		sunder = 1026,
 		defence = 553,
@@ -30353,7 +30353,7 @@ local datas = {
 	},
 	[700036047] = {
 		id = 700036047,
-		attack = 1266,
+		attack = 1900,
 		hp = 22795,
 		sunder = 1055,
 		defence = 568,
@@ -30367,7 +30367,7 @@ local datas = {
 	},
 	[700036048] = {
 		id = 700036048,
-		attack = 1302,
+		attack = 1952,
 		hp = 23427,
 		sunder = 1085,
 		defence = 584,
@@ -30381,7 +30381,7 @@ local datas = {
 	},
 	[700036049] = {
 		id = 700036049,
-		attack = 1337,
+		attack = 2006,
 		hp = 24066,
 		sunder = 1114,
 		defence = 600,
@@ -30395,7 +30395,7 @@ local datas = {
 	},
 	[700036050] = {
 		id = 700036050,
-		attack = 1602,
+		attack = 2402,
 		hp = 28830,
 		sunder = 1144,
 		defence = 616,
@@ -30409,7 +30409,7 @@ local datas = {
 	},
 	[700036051] = {
 		id = 700036051,
-		attack = 1652,
+		attack = 2478,
 		hp = 29739,
 		sunder = 1180,
 		defence = 635,
@@ -30423,7 +30423,7 @@ local datas = {
 	},
 	[700036052] = {
 		id = 700036052,
-		attack = 1703,
+		attack = 2555,
 		hp = 30662,
 		sunder = 1217,
 		defence = 655,
@@ -30437,7 +30437,7 @@ local datas = {
 	},
 	[700036053] = {
 		id = 700036053,
-		attack = 1755,
+		attack = 2633,
 		hp = 31598,
 		sunder = 1254,
 		defence = 675,
@@ -30451,7 +30451,7 @@ local datas = {
 	},
 	[700036054] = {
 		id = 700036054,
-		attack = 1808,
+		attack = 2712,
 		hp = 32547,
 		sunder = 1292,
 		defence = 695,
@@ -30465,7 +30465,7 @@ local datas = {
 	},
 	[700036055] = {
 		id = 700036055,
-		attack = 1862,
+		attack = 2792,
 		hp = 33510,
 		sunder = 1330,
 		defence = 716,
@@ -30479,7 +30479,7 @@ local datas = {
 	},
 	[700036056] = {
 		id = 700036056,
-		attack = 1930,
+		attack = 2896,
 		hp = 34746,
 		sunder = 1379,
 		defence = 742,
@@ -30493,7 +30493,7 @@ local datas = {
 	},
 	[700036057] = {
 		id = 700036057,
-		attack = 2000,
+		attack = 3000,
 		hp = 36005,
 		sunder = 1429,
 		defence = 769,
@@ -30507,7 +30507,7 @@ local datas = {
 	},
 	[700036058] = {
 		id = 700036058,
-		attack = 2071,
+		attack = 3107,
 		hp = 37286,
 		sunder = 1480,
 		defence = 797,
@@ -30521,7 +30521,7 @@ local datas = {
 	},
 	[700036059] = {
 		id = 700036059,
-		attack = 2144,
+		attack = 3216,
 		hp = 38589,
 		sunder = 1531,
 		defence = 825,
@@ -30535,7 +30535,7 @@ local datas = {
 	},
 	[700036060] = {
 		id = 700036060,
-		attack = 2218,
+		attack = 3326,
 		hp = 39915,
 		sunder = 1584,
 		defence = 853,
@@ -30549,7 +30549,7 @@ local datas = {
 	},
 	[700036061] = {
 		id = 700036061,
-		attack = 2270,
+		attack = 3405,
 		hp = 40861,
 		sunder = 1621,
 		defence = 873,
@@ -30563,7 +30563,7 @@ local datas = {
 	},
 	[700036062] = {
 		id = 700036062,
-		attack = 2323,
+		attack = 3485,
 		hp = 41816,
 		sunder = 1659,
 		defence = 893,
@@ -30577,7 +30577,7 @@ local datas = {
 	},
 	[700036063] = {
 		id = 700036063,
-		attack = 2377,
+		attack = 3565,
 		hp = 42780,
 		sunder = 1698,
 		defence = 914,
@@ -30591,7 +30591,7 @@ local datas = {
 	},
 	[700036064] = {
 		id = 700036064,
-		attack = 2431,
+		attack = 3646,
 		hp = 43755,
 		sunder = 1736,
 		defence = 935,
@@ -30605,7 +30605,7 @@ local datas = {
 	},
 	[700036065] = {
 		id = 700036065,
-		attack = 2485,
+		attack = 3728,
 		hp = 44739,
 		sunder = 1775,
 		defence = 956,
@@ -30619,7 +30619,7 @@ local datas = {
 	},
 	[700036066] = {
 		id = 700036066,
-		attack = 2572,
+		attack = 3858,
 		hp = 46296,
 		sunder = 1837,
 		defence = 989,
@@ -30633,7 +30633,7 @@ local datas = {
 	},
 	[700036067] = {
 		id = 700036067,
-		attack = 2660,
+		attack = 3990,
 		hp = 47880,
 		sunder = 1900,
 		defence = 1023,
@@ -30647,7 +30647,7 @@ local datas = {
 	},
 	[700036068] = {
 		id = 700036068,
-		attack = 2749,
+		attack = 4124,
 		hp = 49490,
 		sunder = 1964,
 		defence = 1057,
@@ -30661,7 +30661,7 @@ local datas = {
 	},
 	[700036069] = {
 		id = 700036069,
-		attack = 2840,
+		attack = 4261,
 		hp = 51126,
 		sunder = 2029,
 		defence = 1092,
@@ -30675,7 +30675,7 @@ local datas = {
 	},
 	[700036070] = {
 		id = 700036070,
-		attack = 2933,
+		attack = 4399,
 		hp = 52789,
 		sunder = 2095,
 		defence = 1128,
@@ -30689,7 +30689,7 @@ local datas = {
 	},
 	[700036071] = {
 		id = 700036071,
-		attack = 3009,
+		attack = 4514,
 		hp = 54165,
 		sunder = 2149,
 		defence = 1157,
@@ -30703,7 +30703,7 @@ local datas = {
 	},
 	[700036072] = {
 		id = 700036072,
-		attack = 3087,
+		attack = 4630,
 		hp = 55558,
 		sunder = 2205,
 		defence = 1187,
@@ -30717,7 +30717,7 @@ local datas = {
 	},
 	[700036073] = {
 		id = 700036073,
-		attack = 3165,
+		attack = 4747,
 		hp = 56969,
 		sunder = 2261,
 		defence = 1217,
@@ -30731,7 +30731,7 @@ local datas = {
 	},
 	[700036074] = {
 		id = 700036074,
-		attack = 3244,
+		attack = 4866,
 		hp = 58398,
 		sunder = 2317,
 		defence = 1248,
@@ -30745,7 +30745,7 @@ local datas = {
 	},
 	[700036075] = {
 		id = 700036075,
-		attack = 3325,
+		attack = 4987,
 		hp = 59844,
 		sunder = 2375,
 		defence = 1279,
@@ -30759,7 +30759,7 @@ local datas = {
 	},
 	[700036076] = {
 		id = 700036076,
-		attack = 3448,
+		attack = 5172,
 		hp = 62059,
 		sunder = 2463,
 		defence = 1326,
@@ -30773,7 +30773,7 @@ local datas = {
 	},
 	[700036077] = {
 		id = 700036077,
-		attack = 3573,
+		attack = 5359,
 		hp = 64310,
 		sunder = 2552,
 		defence = 1374,
@@ -30787,7 +30787,7 @@ local datas = {
 	},
 	[700036078] = {
 		id = 700036078,
-		attack = 3700,
+		attack = 5550,
 		hp = 66599,
 		sunder = 2643,
 		defence = 1423,
@@ -30801,7 +30801,7 @@ local datas = {
 	},
 	[700036079] = {
 		id = 700036079,
-		attack = 3829,
+		attack = 5744,
 		hp = 68924,
 		sunder = 2735,
 		defence = 1473,
@@ -30815,7 +30815,7 @@ local datas = {
 	},
 	[700036080] = {
 		id = 700036080,
-		attack = 3960,
+		attack = 5941,
 		hp = 71287,
 		sunder = 2829,
 		defence = 1523,
@@ -30829,7 +30829,7 @@ local datas = {
 	},
 	[700036081] = {
 		id = 700036081,
-		attack = 4047,
+		attack = 6070,
 		hp = 72844,
 		sunder = 2891,
 		defence = 1556,
@@ -30843,7 +30843,7 @@ local datas = {
 	},
 	[700036082] = {
 		id = 700036082,
-		attack = 4134,
+		attack = 6201,
 		hp = 74418,
 		sunder = 2953,
 		defence = 1590,
@@ -30857,7 +30857,7 @@ local datas = {
 	},
 	[700036083] = {
 		id = 700036083,
-		attack = 4223,
+		attack = 6334,
 		hp = 76008,
 		sunder = 3016,
 		defence = 1624,
@@ -30871,7 +30871,7 @@ local datas = {
 	},
 	[700036084] = {
 		id = 700036084,
-		attack = 4312,
+		attack = 6468,
 		hp = 77615,
 		sunder = 3080,
 		defence = 1658,
@@ -30885,7 +30885,7 @@ local datas = {
 	},
 	[700036085] = {
 		id = 700036085,
-		attack = 4402,
+		attack = 6603,
 		hp = 79238,
 		sunder = 3144,
 		defence = 1693,
@@ -30899,7 +30899,7 @@ local datas = {
 	},
 	[700036086] = {
 		id = 700036086,
-		attack = 4546,
+		attack = 6819,
 		hp = 81829,
 		sunder = 3247,
 		defence = 1748,
@@ -30913,7 +30913,7 @@ local datas = {
 	},
 	[700036087] = {
 		id = 700036087,
-		attack = 4692,
+		attack = 7038,
 		hp = 84457,
 		sunder = 3351,
 		defence = 1805,
@@ -30927,7 +30927,7 @@ local datas = {
 	},
 	[700036088] = {
 		id = 700036088,
-		attack = 4840,
+		attack = 7260,
 		hp = 87124,
 		sunder = 3457,
 		defence = 1862,
@@ -30941,7 +30941,7 @@ local datas = {
 	},
 	[700036089] = {
 		id = 700036089,
-		attack = 4991,
+		attack = 7486,
 		hp = 89829,
 		sunder = 3565,
 		defence = 1919,
@@ -30955,7 +30955,7 @@ local datas = {
 	},
 	[700036090] = {
 		id = 700036090,
-		attack = 5143,
+		attack = 7714,
 		hp = 92573,
 		sunder = 3674,
 		defence = 1978,
@@ -30969,7 +30969,7 @@ local datas = {
 	},
 	[700036091] = {
 		id = 700036091,
-		attack = 5254,
+		attack = 7881,
 		hp = 94568,
 		sunder = 3753,
 		defence = 2021,
@@ -30983,7 +30983,7 @@ local datas = {
 	},
 	[700036092] = {
 		id = 700036092,
-		attack = 5366,
+		attack = 8049,
 		hp = 96584,
 		sunder = 3833,
 		defence = 2064,
@@ -30997,7 +30997,7 @@ local datas = {
 	},
 	[700036093] = {
 		id = 700036093,
-		attack = 5479,
+		attack = 8218,
 		hp = 98621,
 		sunder = 3914,
 		defence = 2107,
@@ -31011,7 +31011,7 @@ local datas = {
 	},
 	[700036094] = {
 		id = 700036094,
-		attack = 5593,
+		attack = 8390,
 		hp = 100680,
 		sunder = 3995,
 		defence = 2151,
@@ -31025,7 +31025,7 @@ local datas = {
 	},
 	[700036095] = {
 		id = 700036095,
-		attack = 5709,
+		attack = 8563,
 		hp = 102760,
 		sunder = 4078,
 		defence = 2196,
@@ -31039,7 +31039,7 @@ local datas = {
 	},
 	[700036096] = {
 		id = 700036096,
-		attack = 5900,
+		attack = 8849,
 		hp = 106194,
 		sunder = 4214,
 		defence = 2269,
@@ -31053,7 +31053,7 @@ local datas = {
 	},
 	[700036097] = {
 		id = 700036097,
-		attack = 6093,
+		attack = 9140,
 		hp = 109676,
 		sunder = 4352,
 		defence = 2344,
@@ -31067,7 +31067,7 @@ local datas = {
 	},
 	[700036098] = {
 		id = 700036098,
-		attack = 6289,
+		attack = 9434,
 		hp = 113207,
 		sunder = 4492,
 		defence = 2419,
@@ -31081,7 +31081,7 @@ local datas = {
 	},
 	[700036099] = {
 		id = 700036099,
-		attack = 6488,
+		attack = 9732,
 		hp = 116786,
 		sunder = 4634,
 		defence = 2495,
@@ -31095,7 +31095,7 @@ local datas = {
 	},
 	[700036100] = {
 		id = 700036100,
-		attack = 6690,
+		attack = 10034,
 		hp = 120413,
 		sunder = 4778,
 		defence = 2573,
@@ -31109,7 +31109,7 @@ local datas = {
 	},
 	[700046000] = {
 		id = 700046000,
-		attack = 7,
+		attack = 10,
 		hp = 55,
 		sunder = 7,
 		defence = 4,
@@ -31123,7 +31123,7 @@ local datas = {
 	},
 	[700046001] = {
 		id = 700046001,
-		attack = 11,
+		attack = 17,
 		hp = 91,
 		sunder = 11,
 		defence = 6,
@@ -31137,7 +31137,7 @@ local datas = {
 	},
 	[700046002] = {
 		id = 700046002,
-		attack = 17,
+		attack = 25,
 		hp = 134,
 		sunder = 15,
 		defence = 8,
@@ -31151,7 +31151,7 @@ local datas = {
 	},
 	[700046003] = {
 		id = 700046003,
-		attack = 23,
+		attack = 34,
 		hp = 183,
 		sunder = 21,
 		defence = 11,
@@ -31165,7 +31165,7 @@ local datas = {
 	},
 	[700046004] = {
 		id = 700046004,
-		attack = 30,
+		attack = 45,
 		hp = 239,
 		sunder = 27,
 		defence = 14,
@@ -31179,7 +31179,7 @@ local datas = {
 	},
 	[700046005] = {
 		id = 700046005,
-		attack = 38,
+		attack = 56,
 		hp = 300,
 		sunder = 33,
 		defence = 18,
@@ -31193,7 +31193,7 @@ local datas = {
 	},
 	[700046006] = {
 		id = 700046006,
-		attack = 52,
+		attack = 78,
 		hp = 418,
 		sunder = 45,
 		defence = 24,
@@ -31207,7 +31207,7 @@ local datas = {
 	},
 	[700046007] = {
 		id = 700046007,
-		attack = 69,
+		attack = 104,
 		hp = 554,
 		sunder = 59,
 		defence = 32,
@@ -31221,7 +31221,7 @@ local datas = {
 	},
 	[700046008] = {
 		id = 700046008,
-		attack = 89,
+		attack = 133,
 		hp = 708,
 		sunder = 75,
 		defence = 40,
@@ -31235,7 +31235,7 @@ local datas = {
 	},
 	[700046009] = {
 		id = 700046009,
-		attack = 110,
+		attack = 165,
 		hp = 882,
 		sunder = 92,
 		defence = 50,
@@ -31249,7 +31249,7 @@ local datas = {
 	},
 	[700046010] = {
 		id = 700046010,
-		attack = 134,
+		attack = 201,
 		hp = 1073,
 		sunder = 112,
 		defence = 60,
@@ -31263,7 +31263,7 @@ local datas = {
 	},
 	[700046011] = {
 		id = 700046011,
-		attack = 157,
+		attack = 236,
 		hp = 1258,
 		sunder = 129,
 		defence = 69,
@@ -31277,7 +31277,7 @@ local datas = {
 	},
 	[700046012] = {
 		id = 700046012,
-		attack = 182,
+		attack = 273,
 		hp = 1457,
 		sunder = 147,
 		defence = 79,
@@ -31291,7 +31291,7 @@ local datas = {
 	},
 	[700046013] = {
 		id = 700046013,
-		attack = 209,
+		attack = 313,
 		hp = 1670,
 		sunder = 167,
 		defence = 90,
@@ -31305,7 +31305,7 @@ local datas = {
 	},
 	[700046014] = {
 		id = 700046014,
-		attack = 237,
+		attack = 356,
 		hp = 1899,
 		sunder = 188,
 		defence = 101,
@@ -31319,7 +31319,7 @@ local datas = {
 	},
 	[700046015] = {
 		id = 700046015,
-		attack = 268,
+		attack = 402,
 		hp = 2141,
 		sunder = 210,
 		defence = 113,
@@ -31333,7 +31333,7 @@ local datas = {
 	},
 	[700046016] = {
 		id = 700046016,
-		attack = 289,
+		attack = 434,
 		hp = 2315,
 		sunder = 224,
 		defence = 121,
@@ -31347,7 +31347,7 @@ local datas = {
 	},
 	[700046017] = {
 		id = 700046017,
-		attack = 312,
+		attack = 468,
 		hp = 2494,
 		sunder = 239,
 		defence = 129,
@@ -31361,7 +31361,7 @@ local datas = {
 	},
 	[700046018] = {
 		id = 700046018,
-		attack = 335,
+		attack = 502,
 		hp = 2678,
 		sunder = 253,
 		defence = 136,
@@ -31375,7 +31375,7 @@ local datas = {
 	},
 	[700046019] = {
 		id = 700046019,
-		attack = 358,
+		attack = 538,
 		hp = 2868,
 		sunder = 268,
 		defence = 145,
@@ -31389,7 +31389,7 @@ local datas = {
 	},
 	[700046020] = {
 		id = 700046020,
-		attack = 383,
+		attack = 574,
 		hp = 3062,
 		sunder = 284,
 		defence = 153,
@@ -31403,7 +31403,7 @@ local datas = {
 	},
 	[700046021] = {
 		id = 700046021,
-		attack = 416,
+		attack = 623,
 		hp = 3325,
 		sunder = 304,
 		defence = 164,
@@ -31417,7 +31417,7 @@ local datas = {
 	},
 	[700046022] = {
 		id = 700046022,
-		attack = 450,
+		attack = 675,
 		hp = 3597,
 		sunder = 325,
 		defence = 175,
@@ -31431,7 +31431,7 @@ local datas = {
 	},
 	[700046023] = {
 		id = 700046023,
-		attack = 485,
+		attack = 728,
 		hp = 3881,
 		sunder = 347,
 		defence = 187,
@@ -31445,7 +31445,7 @@ local datas = {
 	},
 	[700046024] = {
 		id = 700046024,
-		attack = 522,
+		attack = 783,
 		hp = 4175,
 		sunder = 370,
 		defence = 199,
@@ -31459,7 +31459,7 @@ local datas = {
 	},
 	[700046025] = {
 		id = 700046025,
-		attack = 560,
+		attack = 840,
 		hp = 4480,
 		sunder = 393,
 		defence = 212,
@@ -31473,7 +31473,7 @@ local datas = {
 	},
 	[700046026] = {
 		id = 700046026,
-		attack = 590,
+		attack = 885,
 		hp = 4718,
 		sunder = 410,
 		defence = 221,
@@ -31487,7 +31487,7 @@ local datas = {
 	},
 	[700046027] = {
 		id = 700046027,
-		attack = 620,
+		attack = 930,
 		hp = 4962,
 		sunder = 426,
 		defence = 229,
@@ -31501,7 +31501,7 @@ local datas = {
 	},
 	[700046028] = {
 		id = 700046028,
-		attack = 651,
+		attack = 977,
 		hp = 5211,
 		sunder = 443,
 		defence = 239,
@@ -31515,7 +31515,7 @@ local datas = {
 	},
 	[700046029] = {
 		id = 700046029,
-		attack = 683,
+		attack = 1025,
 		hp = 5465,
 		sunder = 460,
 		defence = 248,
@@ -31529,7 +31529,7 @@ local datas = {
 	},
 	[700046030] = {
 		id = 700046030,
-		attack = 859,
+		attack = 1288,
 		hp = 6870,
 		sunder = 477,
 		defence = 257,
@@ -31543,7 +31543,7 @@ local datas = {
 	},
 	[700046031] = {
 		id = 700046031,
-		attack = 911,
+		attack = 1366,
 		hp = 7287,
 		sunder = 506,
 		defence = 272,
@@ -31557,7 +31557,7 @@ local datas = {
 	},
 	[700046032] = {
 		id = 700046032,
-		attack = 964,
+		attack = 1447,
 		hp = 7716,
 		sunder = 536,
 		defence = 289,
@@ -31571,7 +31571,7 @@ local datas = {
 	},
 	[700046033] = {
 		id = 700046033,
-		attack = 1020,
+		attack = 1529,
 		hp = 8157,
 		sunder = 566,
 		defence = 305,
@@ -31585,7 +31585,7 @@ local datas = {
 	},
 	[700046034] = {
 		id = 700046034,
-		attack = 1076,
+		attack = 1615,
 		hp = 8611,
 		sunder = 598,
 		defence = 322,
@@ -31599,7 +31599,7 @@ local datas = {
 	},
 	[700046035] = {
 		id = 700046035,
-		attack = 1135,
+		attack = 1702,
 		hp = 9077,
 		sunder = 630,
 		defence = 339,
@@ -31613,7 +31613,7 @@ local datas = {
 	},
 	[700046036] = {
 		id = 700046036,
-		attack = 1197,
+		attack = 1795,
 		hp = 9576,
 		sunder = 665,
 		defence = 358,
@@ -31627,7 +31627,7 @@ local datas = {
 	},
 	[700046037] = {
 		id = 700046037,
-		attack = 1261,
+		attack = 1892,
 		hp = 10088,
 		sunder = 701,
 		defence = 377,
@@ -31641,7 +31641,7 @@ local datas = {
 	},
 	[700046038] = {
 		id = 700046038,
-		attack = 1327,
+		attack = 1990,
 		hp = 10614,
 		sunder = 737,
 		defence = 397,
@@ -31655,7 +31655,7 @@ local datas = {
 	},
 	[700046039] = {
 		id = 700046039,
-		attack = 1394,
+		attack = 2091,
 		hp = 11154,
 		sunder = 775,
 		defence = 417,
@@ -31669,7 +31669,7 @@ local datas = {
 	},
 	[700046040] = {
 		id = 700046040,
-		attack = 1463,
+		attack = 2195,
 		hp = 11706,
 		sunder = 813,
 		defence = 438,
@@ -31683,7 +31683,7 @@ local datas = {
 	},
 	[700046041] = {
 		id = 700046041,
-		attack = 1527,
+		attack = 2291,
 		hp = 12217,
 		sunder = 848,
 		defence = 457,
@@ -31697,7 +31697,7 @@ local datas = {
 	},
 	[700046042] = {
 		id = 700046042,
-		attack = 1592,
+		attack = 2388,
 		hp = 12738,
 		sunder = 885,
 		defence = 476,
@@ -31711,7 +31711,7 @@ local datas = {
 	},
 	[700046043] = {
 		id = 700046043,
-		attack = 1659,
+		attack = 2488,
 		hp = 13271,
 		sunder = 922,
 		defence = 496,
@@ -31725,7 +31725,7 @@ local datas = {
 	},
 	[700046044] = {
 		id = 700046044,
-		attack = 1727,
+		attack = 2590,
 		hp = 13814,
 		sunder = 959,
 		defence = 517,
@@ -31739,7 +31739,7 @@ local datas = {
 	},
 	[700046045] = {
 		id = 700046045,
-		attack = 1796,
+		attack = 2694,
 		hp = 14368,
 		sunder = 998,
 		defence = 537,
@@ -31753,7 +31753,7 @@ local datas = {
 	},
 	[700046046] = {
 		id = 700046046,
-		attack = 1847,
+		attack = 2771,
 		hp = 14780,
 		sunder = 1026,
 		defence = 553,
@@ -31767,7 +31767,7 @@ local datas = {
 	},
 	[700046047] = {
 		id = 700046047,
-		attack = 1900,
+		attack = 2849,
 		hp = 15197,
 		sunder = 1055,
 		defence = 568,
@@ -31781,7 +31781,7 @@ local datas = {
 	},
 	[700046048] = {
 		id = 700046048,
-		attack = 1952,
+		attack = 2928,
 		hp = 15618,
 		sunder = 1085,
 		defence = 584,
@@ -31795,7 +31795,7 @@ local datas = {
 	},
 	[700046049] = {
 		id = 700046049,
-		attack = 2006,
+		attack = 3008,
 		hp = 16044,
 		sunder = 1114,
 		defence = 600,
@@ -31809,7 +31809,7 @@ local datas = {
 	},
 	[700046050] = {
 		id = 700046050,
-		attack = 2402,
+		attack = 3604,
 		hp = 19220,
 		sunder = 1144,
 		defence = 616,
@@ -31823,7 +31823,7 @@ local datas = {
 	},
 	[700046051] = {
 		id = 700046051,
-		attack = 2478,
+		attack = 3717,
 		hp = 19826,
 		sunder = 1180,
 		defence = 635,
@@ -31837,7 +31837,7 @@ local datas = {
 	},
 	[700046052] = {
 		id = 700046052,
-		attack = 2555,
+		attack = 3833,
 		hp = 20441,
 		sunder = 1217,
 		defence = 655,
@@ -31851,7 +31851,7 @@ local datas = {
 	},
 	[700046053] = {
 		id = 700046053,
-		attack = 2633,
+		attack = 3950,
 		hp = 21065,
 		sunder = 1254,
 		defence = 675,
@@ -31865,7 +31865,7 @@ local datas = {
 	},
 	[700046054] = {
 		id = 700046054,
-		attack = 2712,
+		attack = 4068,
 		hp = 21698,
 		sunder = 1292,
 		defence = 695,
@@ -31879,7 +31879,7 @@ local datas = {
 	},
 	[700046055] = {
 		id = 700046055,
-		attack = 2792,
+		attack = 4189,
 		hp = 22340,
 		sunder = 1330,
 		defence = 716,
@@ -31893,7 +31893,7 @@ local datas = {
 	},
 	[700046056] = {
 		id = 700046056,
-		attack = 2896,
+		attack = 4343,
 		hp = 23164,
 		sunder = 1379,
 		defence = 742,
@@ -31907,7 +31907,7 @@ local datas = {
 	},
 	[700046057] = {
 		id = 700046057,
-		attack = 3000,
+		attack = 4501,
 		hp = 24003,
 		sunder = 1429,
 		defence = 769,
@@ -31921,7 +31921,7 @@ local datas = {
 	},
 	[700046058] = {
 		id = 700046058,
-		attack = 3107,
+		attack = 4661,
 		hp = 24857,
 		sunder = 1480,
 		defence = 797,
@@ -31935,7 +31935,7 @@ local datas = {
 	},
 	[700046059] = {
 		id = 700046059,
-		attack = 3216,
+		attack = 4824,
 		hp = 25726,
 		sunder = 1531,
 		defence = 825,
@@ -31949,7 +31949,7 @@ local datas = {
 	},
 	[700046060] = {
 		id = 700046060,
-		attack = 3326,
+		attack = 4989,
 		hp = 26610,
 		sunder = 1584,
 		defence = 853,
@@ -31963,7 +31963,7 @@ local datas = {
 	},
 	[700046061] = {
 		id = 700046061,
-		attack = 3405,
+		attack = 5108,
 		hp = 27240,
 		sunder = 1621,
 		defence = 873,
@@ -31977,7 +31977,7 @@ local datas = {
 	},
 	[700046062] = {
 		id = 700046062,
-		attack = 3485,
+		attack = 5227,
 		hp = 27877,
 		sunder = 1659,
 		defence = 893,
@@ -31991,7 +31991,7 @@ local datas = {
 	},
 	[700046063] = {
 		id = 700046063,
-		attack = 3565,
+		attack = 5348,
 		hp = 28520,
 		sunder = 1698,
 		defence = 914,
@@ -32005,7 +32005,7 @@ local datas = {
 	},
 	[700046064] = {
 		id = 700046064,
-		attack = 3646,
+		attack = 5469,
 		hp = 29170,
 		sunder = 1736,
 		defence = 935,
@@ -32019,7 +32019,7 @@ local datas = {
 	},
 	[700046065] = {
 		id = 700046065,
-		attack = 3728,
+		attack = 5592,
 		hp = 29826,
 		sunder = 1775,
 		defence = 956,
@@ -32033,7 +32033,7 @@ local datas = {
 	},
 	[700046066] = {
 		id = 700046066,
-		attack = 3858,
+		attack = 5787,
 		hp = 30864,
 		sunder = 1837,
 		defence = 989,
@@ -32047,7 +32047,7 @@ local datas = {
 	},
 	[700046067] = {
 		id = 700046067,
-		attack = 3990,
+		attack = 5985,
 		hp = 31920,
 		sunder = 1900,
 		defence = 1023,
@@ -32061,7 +32061,7 @@ local datas = {
 	},
 	[700046068] = {
 		id = 700046068,
-		attack = 4124,
+		attack = 6186,
 		hp = 32993,
 		sunder = 1964,
 		defence = 1057,
@@ -32075,7 +32075,7 @@ local datas = {
 	},
 	[700046069] = {
 		id = 700046069,
-		attack = 4261,
+		attack = 6391,
 		hp = 34084,
 		sunder = 2029,
 		defence = 1092,
@@ -32089,7 +32089,7 @@ local datas = {
 	},
 	[700046070] = {
 		id = 700046070,
-		attack = 4399,
+		attack = 6599,
 		hp = 35193,
 		sunder = 2095,
 		defence = 1128,
@@ -32103,7 +32103,7 @@ local datas = {
 	},
 	[700046071] = {
 		id = 700046071,
-		attack = 4514,
+		attack = 6771,
 		hp = 36110,
 		sunder = 2149,
 		defence = 1157,
@@ -32117,7 +32117,7 @@ local datas = {
 	},
 	[700046072] = {
 		id = 700046072,
-		attack = 4630,
+		attack = 6945,
 		hp = 37039,
 		sunder = 2205,
 		defence = 1187,
@@ -32131,7 +32131,7 @@ local datas = {
 	},
 	[700046073] = {
 		id = 700046073,
-		attack = 4747,
+		attack = 7121,
 		hp = 37979,
 		sunder = 2261,
 		defence = 1217,
@@ -32145,7 +32145,7 @@ local datas = {
 	},
 	[700046074] = {
 		id = 700046074,
-		attack = 4866,
+		attack = 7300,
 		hp = 38932,
 		sunder = 2317,
 		defence = 1248,
@@ -32159,7 +32159,7 @@ local datas = {
 	},
 	[700046075] = {
 		id = 700046075,
-		attack = 4987,
+		attack = 7480,
 		hp = 39896,
 		sunder = 2375,
 		defence = 1279,
@@ -32173,7 +32173,7 @@ local datas = {
 	},
 	[700046076] = {
 		id = 700046076,
-		attack = 5172,
+		attack = 7757,
 		hp = 41372,
 		sunder = 2463,
 		defence = 1326,
@@ -32187,7 +32187,7 @@ local datas = {
 	},
 	[700046077] = {
 		id = 700046077,
-		attack = 5359,
+		attack = 8039,
 		hp = 42874,
 		sunder = 2552,
 		defence = 1374,
@@ -32201,7 +32201,7 @@ local datas = {
 	},
 	[700046078] = {
 		id = 700046078,
-		attack = 5550,
+		attack = 8325,
 		hp = 44399,
 		sunder = 2643,
 		defence = 1423,
@@ -32215,7 +32215,7 @@ local datas = {
 	},
 	[700046079] = {
 		id = 700046079,
-		attack = 5744,
+		attack = 8616,
 		hp = 45950,
 		sunder = 2735,
 		defence = 1473,
@@ -32229,7 +32229,7 @@ local datas = {
 	},
 	[700046080] = {
 		id = 700046080,
-		attack = 5941,
+		attack = 8911,
 		hp = 47525,
 		sunder = 2829,
 		defence = 1523,
@@ -32243,7 +32243,7 @@ local datas = {
 	},
 	[700046081] = {
 		id = 700046081,
-		attack = 6070,
+		attack = 9105,
 		hp = 48563,
 		sunder = 2891,
 		defence = 1556,
@@ -32257,7 +32257,7 @@ local datas = {
 	},
 	[700046082] = {
 		id = 700046082,
-		attack = 6201,
+		attack = 9302,
 		hp = 49612,
 		sunder = 2953,
 		defence = 1590,
@@ -32271,7 +32271,7 @@ local datas = {
 	},
 	[700046083] = {
 		id = 700046083,
-		attack = 6334,
+		attack = 9501,
 		hp = 50672,
 		sunder = 3016,
 		defence = 1624,
@@ -32285,7 +32285,7 @@ local datas = {
 	},
 	[700046084] = {
 		id = 700046084,
-		attack = 6468,
+		attack = 9702,
 		hp = 51743,
 		sunder = 3080,
 		defence = 1658,
@@ -32299,7 +32299,7 @@ local datas = {
 	},
 	[700046085] = {
 		id = 700046085,
-		attack = 6603,
+		attack = 9905,
 		hp = 52825,
 		sunder = 3144,
 		defence = 1693,
@@ -32313,7 +32313,7 @@ local datas = {
 	},
 	[700046086] = {
 		id = 700046086,
-		attack = 6819,
+		attack = 10229,
 		hp = 54552,
 		sunder = 3247,
 		defence = 1748,
@@ -32327,7 +32327,7 @@ local datas = {
 	},
 	[700046087] = {
 		id = 700046087,
-		attack = 7038,
+		attack = 10557,
 		hp = 56305,
 		sunder = 3351,
 		defence = 1805,
@@ -32341,7 +32341,7 @@ local datas = {
 	},
 	[700046088] = {
 		id = 700046088,
-		attack = 7260,
+		attack = 10891,
 		hp = 58083,
 		sunder = 3457,
 		defence = 1862,
@@ -32355,7 +32355,7 @@ local datas = {
 	},
 	[700046089] = {
 		id = 700046089,
-		attack = 7486,
+		attack = 11229,
 		hp = 59886,
 		sunder = 3565,
 		defence = 1919,
@@ -32369,7 +32369,7 @@ local datas = {
 	},
 	[700046090] = {
 		id = 700046090,
-		attack = 7714,
+		attack = 11572,
 		hp = 61715,
 		sunder = 3674,
 		defence = 1978,
@@ -32383,7 +32383,7 @@ local datas = {
 	},
 	[700046091] = {
 		id = 700046091,
-		attack = 7881,
+		attack = 11821,
 		hp = 63045,
 		sunder = 3753,
 		defence = 2021,
@@ -32397,7 +32397,7 @@ local datas = {
 	},
 	[700046092] = {
 		id = 700046092,
-		attack = 8049,
+		attack = 12073,
 		hp = 64389,
 		sunder = 3833,
 		defence = 2064,
@@ -32411,7 +32411,7 @@ local datas = {
 	},
 	[700046093] = {
 		id = 700046093,
-		attack = 8218,
+		attack = 12328,
 		hp = 65748,
 		sunder = 3914,
 		defence = 2107,
@@ -32425,7 +32425,7 @@ local datas = {
 	},
 	[700046094] = {
 		id = 700046094,
-		attack = 8390,
+		attack = 12585,
 		hp = 67120,
 		sunder = 3995,
 		defence = 2151,
@@ -32439,7 +32439,7 @@ local datas = {
 	},
 	[700046095] = {
 		id = 700046095,
-		attack = 8563,
+		attack = 12845,
 		hp = 68507,
 		sunder = 4078,
 		defence = 2196,
@@ -32453,7 +32453,7 @@ local datas = {
 	},
 	[700046096] = {
 		id = 700046096,
-		attack = 8849,
+		attack = 13274,
 		hp = 70796,
 		sunder = 4214,
 		defence = 2269,
@@ -32467,7 +32467,7 @@ local datas = {
 	},
 	[700046097] = {
 		id = 700046097,
-		attack = 9140,
+		attack = 13710,
 		hp = 73117,
 		sunder = 4352,
 		defence = 2344,
@@ -32481,7 +32481,7 @@ local datas = {
 	},
 	[700046098] = {
 		id = 700046098,
-		attack = 9434,
+		attack = 14151,
 		hp = 75471,
 		sunder = 4492,
 		defence = 2419,
@@ -32495,7 +32495,7 @@ local datas = {
 	},
 	[700046099] = {
 		id = 700046099,
-		attack = 9732,
+		attack = 14598,
 		hp = 77857,
 		sunder = 4634,
 		defence = 2495,
@@ -32509,7 +32509,7 @@ local datas = {
 	},
 	[700046100] = {
 		id = 700046100,
-		attack = 10034,
+		attack = 15052,
 		hp = 80276,
 		sunder = 4778,
 		defence = 2573,
@@ -32523,7 +32523,7 @@ local datas = {
 	},
 	[700056000] = {
 		id = 700056000,
-		attack = 9,
+		attack = 14,
 		hp = 109,
 		sunder = 7,
 		defence = 4,
@@ -32537,7 +32537,7 @@ local datas = {
 	},
 	[700056001] = {
 		id = 700056001,
-		attack = 15,
+		attack = 23,
 		hp = 183,
 		sunder = 11,
 		defence = 6,
@@ -32551,7 +32551,7 @@ local datas = {
 	},
 	[700056002] = {
 		id = 700056002,
-		attack = 22,
+		attack = 34,
 		hp = 268,
 		sunder = 15,
 		defence = 8,
@@ -32565,7 +32565,7 @@ local datas = {
 	},
 	[700056003] = {
 		id = 700056003,
-		attack = 31,
+		attack = 46,
 		hp = 367,
 		sunder = 21,
 		defence = 11,
@@ -32579,7 +32579,7 @@ local datas = {
 	},
 	[700056004] = {
 		id = 700056004,
-		attack = 40,
+		attack = 60,
 		hp = 477,
 		sunder = 27,
 		defence = 14,
@@ -32593,7 +32593,7 @@ local datas = {
 	},
 	[700056005] = {
 		id = 700056005,
-		attack = 50,
+		attack = 75,
 		hp = 601,
 		sunder = 33,
 		defence = 18,
@@ -32607,7 +32607,7 @@ local datas = {
 	},
 	[700056006] = {
 		id = 700056006,
-		attack = 70,
+		attack = 104,
 		hp = 835,
 		sunder = 45,
 		defence = 24,
@@ -32621,7 +32621,7 @@ local datas = {
 	},
 	[700056007] = {
 		id = 700056007,
-		attack = 92,
+		attack = 138,
 		hp = 1107,
 		sunder = 59,
 		defence = 32,
@@ -32635,7 +32635,7 @@ local datas = {
 	},
 	[700056008] = {
 		id = 700056008,
-		attack = 118,
+		attack = 177,
 		hp = 1417,
 		sunder = 75,
 		defence = 40,
@@ -32649,7 +32649,7 @@ local datas = {
 	},
 	[700056009] = {
 		id = 700056009,
-		attack = 147,
+		attack = 220,
 		hp = 1763,
 		sunder = 92,
 		defence = 50,
@@ -32663,7 +32663,7 @@ local datas = {
 	},
 	[700056010] = {
 		id = 700056010,
-		attack = 179,
+		attack = 268,
 		hp = 2147,
 		sunder = 112,
 		defence = 60,
@@ -32677,7 +32677,7 @@ local datas = {
 	},
 	[700056011] = {
 		id = 700056011,
-		attack = 210,
+		attack = 314,
 		hp = 2516,
 		sunder = 129,
 		defence = 69,
@@ -32691,7 +32691,7 @@ local datas = {
 	},
 	[700056012] = {
 		id = 700056012,
-		attack = 243,
+		attack = 364,
 		hp = 2914,
 		sunder = 147,
 		defence = 79,
@@ -32705,7 +32705,7 @@ local datas = {
 	},
 	[700056013] = {
 		id = 700056013,
-		attack = 278,
+		attack = 418,
 		hp = 3341,
 		sunder = 167,
 		defence = 90,
@@ -32719,7 +32719,7 @@ local datas = {
 	},
 	[700056014] = {
 		id = 700056014,
-		attack = 316,
+		attack = 475,
 		hp = 3797,
 		sunder = 188,
 		defence = 101,
@@ -32733,7 +32733,7 @@ local datas = {
 	},
 	[700056015] = {
 		id = 700056015,
-		attack = 357,
+		attack = 535,
 		hp = 4283,
 		sunder = 210,
 		defence = 113,
@@ -32747,7 +32747,7 @@ local datas = {
 	},
 	[700056016] = {
 		id = 700056016,
-		attack = 386,
+		attack = 579,
 		hp = 4630,
 		sunder = 224,
 		defence = 121,
@@ -32761,7 +32761,7 @@ local datas = {
 	},
 	[700056017] = {
 		id = 700056017,
-		attack = 416,
+		attack = 624,
 		hp = 4988,
 		sunder = 239,
 		defence = 129,
@@ -32775,7 +32775,7 @@ local datas = {
 	},
 	[700056018] = {
 		id = 700056018,
-		attack = 446,
+		attack = 670,
 		hp = 5356,
 		sunder = 253,
 		defence = 136,
@@ -32789,7 +32789,7 @@ local datas = {
 	},
 	[700056019] = {
 		id = 700056019,
-		attack = 478,
+		attack = 717,
 		hp = 5735,
 		sunder = 268,
 		defence = 145,
@@ -32803,7 +32803,7 @@ local datas = {
 	},
 	[700056020] = {
 		id = 700056020,
-		attack = 510,
+		attack = 766,
 		hp = 6125,
 		sunder = 284,
 		defence = 153,
@@ -32817,7 +32817,7 @@ local datas = {
 	},
 	[700056021] = {
 		id = 700056021,
-		attack = 554,
+		attack = 831,
 		hp = 6649,
 		sunder = 304,
 		defence = 164,
@@ -32831,7 +32831,7 @@ local datas = {
 	},
 	[700056022] = {
 		id = 700056022,
-		attack = 600,
+		attack = 899,
 		hp = 7195,
 		sunder = 325,
 		defence = 175,
@@ -32845,7 +32845,7 @@ local datas = {
 	},
 	[700056023] = {
 		id = 700056023,
-		attack = 647,
+		attack = 970,
 		hp = 7762,
 		sunder = 347,
 		defence = 187,
@@ -32859,7 +32859,7 @@ local datas = {
 	},
 	[700056024] = {
 		id = 700056024,
-		attack = 696,
+		attack = 1044,
 		hp = 8350,
 		sunder = 370,
 		defence = 199,
@@ -32873,7 +32873,7 @@ local datas = {
 	},
 	[700056025] = {
 		id = 700056025,
-		attack = 747,
+		attack = 1120,
 		hp = 8960,
 		sunder = 393,
 		defence = 212,
@@ -32887,7 +32887,7 @@ local datas = {
 	},
 	[700056026] = {
 		id = 700056026,
-		attack = 786,
+		attack = 1180,
 		hp = 9437,
 		sunder = 410,
 		defence = 221,
@@ -32901,7 +32901,7 @@ local datas = {
 	},
 	[700056027] = {
 		id = 700056027,
-		attack = 827,
+		attack = 1241,
 		hp = 9925,
 		sunder = 426,
 		defence = 229,
@@ -32915,7 +32915,7 @@ local datas = {
 	},
 	[700056028] = {
 		id = 700056028,
-		attack = 869,
+		attack = 1303,
 		hp = 10423,
 		sunder = 443,
 		defence = 239,
@@ -32929,7 +32929,7 @@ local datas = {
 	},
 	[700056029] = {
 		id = 700056029,
-		attack = 911,
+		attack = 1366,
 		hp = 10931,
 		sunder = 460,
 		defence = 248,
@@ -32943,7 +32943,7 @@ local datas = {
 	},
 	[700056030] = {
 		id = 700056030,
-		attack = 1145,
+		attack = 1717,
 		hp = 13740,
 		sunder = 477,
 		defence = 257,
@@ -32957,7 +32957,7 @@ local datas = {
 	},
 	[700056031] = {
 		id = 700056031,
-		attack = 1214,
+		attack = 1822,
 		hp = 14573,
 		sunder = 506,
 		defence = 272,
@@ -32971,7 +32971,7 @@ local datas = {
 	},
 	[700056032] = {
 		id = 700056032,
-		attack = 1286,
+		attack = 1929,
 		hp = 15432,
 		sunder = 536,
 		defence = 289,
@@ -32985,7 +32985,7 @@ local datas = {
 	},
 	[700056033] = {
 		id = 700056033,
-		attack = 1360,
+		attack = 2039,
 		hp = 16314,
 		sunder = 566,
 		defence = 305,
@@ -32999,7 +32999,7 @@ local datas = {
 	},
 	[700056034] = {
 		id = 700056034,
-		attack = 1435,
+		attack = 2153,
 		hp = 17222,
 		sunder = 598,
 		defence = 322,
@@ -33013,7 +33013,7 @@ local datas = {
 	},
 	[700056035] = {
 		id = 700056035,
-		attack = 1513,
+		attack = 2269,
 		hp = 18154,
 		sunder = 630,
 		defence = 339,
@@ -33027,7 +33027,7 @@ local datas = {
 	},
 	[700056036] = {
 		id = 700056036,
-		attack = 1596,
+		attack = 2394,
 		hp = 19152,
 		sunder = 665,
 		defence = 358,
@@ -33041,7 +33041,7 @@ local datas = {
 	},
 	[700056037] = {
 		id = 700056037,
-		attack = 1681,
+		attack = 2522,
 		hp = 20177,
 		sunder = 701,
 		defence = 377,
@@ -33055,7 +33055,7 @@ local datas = {
 	},
 	[700056038] = {
 		id = 700056038,
-		attack = 1769,
+		attack = 2654,
 		hp = 21229,
 		sunder = 737,
 		defence = 397,
@@ -33069,7 +33069,7 @@ local datas = {
 	},
 	[700056039] = {
 		id = 700056039,
-		attack = 1859,
+		attack = 2788,
 		hp = 22307,
 		sunder = 775,
 		defence = 417,
@@ -33083,7 +33083,7 @@ local datas = {
 	},
 	[700056040] = {
 		id = 700056040,
-		attack = 1951,
+		attack = 2927,
 		hp = 23412,
 		sunder = 813,
 		defence = 438,
@@ -33097,7 +33097,7 @@ local datas = {
 	},
 	[700056041] = {
 		id = 700056041,
-		attack = 2036,
+		attack = 3054,
 		hp = 24434,
 		sunder = 848,
 		defence = 457,
@@ -33111,7 +33111,7 @@ local datas = {
 	},
 	[700056042] = {
 		id = 700056042,
-		attack = 2123,
+		attack = 3185,
 		hp = 25477,
 		sunder = 885,
 		defence = 476,
@@ -33125,7 +33125,7 @@ local datas = {
 	},
 	[700056043] = {
 		id = 700056043,
-		attack = 2212,
+		attack = 3318,
 		hp = 26541,
 		sunder = 922,
 		defence = 496,
@@ -33139,7 +33139,7 @@ local datas = {
 	},
 	[700056044] = {
 		id = 700056044,
-		attack = 2302,
+		attack = 3453,
 		hp = 27627,
 		sunder = 959,
 		defence = 517,
@@ -33153,7 +33153,7 @@ local datas = {
 	},
 	[700056045] = {
 		id = 700056045,
-		attack = 2395,
+		attack = 3592,
 		hp = 28735,
 		sunder = 998,
 		defence = 537,
@@ -33167,7 +33167,7 @@ local datas = {
 	},
 	[700056046] = {
 		id = 700056046,
-		attack = 2463,
+		attack = 3695,
 		hp = 29560,
 		sunder = 1026,
 		defence = 553,
@@ -33181,7 +33181,7 @@ local datas = {
 	},
 	[700056047] = {
 		id = 700056047,
-		attack = 2533,
+		attack = 3799,
 		hp = 30394,
 		sunder = 1055,
 		defence = 568,
@@ -33195,7 +33195,7 @@ local datas = {
 	},
 	[700056048] = {
 		id = 700056048,
-		attack = 2603,
+		attack = 3905,
 		hp = 31236,
 		sunder = 1085,
 		defence = 584,
@@ -33209,7 +33209,7 @@ local datas = {
 	},
 	[700056049] = {
 		id = 700056049,
-		attack = 2674,
+		attack = 4011,
 		hp = 32088,
 		sunder = 1114,
 		defence = 600,
@@ -33223,7 +33223,7 @@ local datas = {
 	},
 	[700056050] = {
 		id = 700056050,
-		attack = 3203,
+		attack = 4805,
 		hp = 38440,
 		sunder = 1144,
 		defence = 616,
@@ -33237,7 +33237,7 @@ local datas = {
 	},
 	[700056051] = {
 		id = 700056051,
-		attack = 3304,
+		attack = 4957,
 		hp = 39652,
 		sunder = 1180,
 		defence = 635,
@@ -33251,7 +33251,7 @@ local datas = {
 	},
 	[700056052] = {
 		id = 700056052,
-		attack = 3407,
+		attack = 5110,
 		hp = 40882,
 		sunder = 1217,
 		defence = 655,
@@ -33265,7 +33265,7 @@ local datas = {
 	},
 	[700056053] = {
 		id = 700056053,
-		attack = 3511,
+		attack = 5266,
 		hp = 42130,
 		sunder = 1254,
 		defence = 675,
@@ -33279,7 +33279,7 @@ local datas = {
 	},
 	[700056054] = {
 		id = 700056054,
-		attack = 3616,
+		attack = 5425,
 		hp = 43396,
 		sunder = 1292,
 		defence = 695,
@@ -33293,7 +33293,7 @@ local datas = {
 	},
 	[700056055] = {
 		id = 700056055,
-		attack = 3723,
+		attack = 5585,
 		hp = 44680,
 		sunder = 1330,
 		defence = 716,
@@ -33307,7 +33307,7 @@ local datas = {
 	},
 	[700056056] = {
 		id = 700056056,
-		attack = 3861,
+		attack = 5791,
 		hp = 46328,
 		sunder = 1379,
 		defence = 742,
@@ -33321,7 +33321,7 @@ local datas = {
 	},
 	[700056057] = {
 		id = 700056057,
-		attack = 4001,
+		attack = 6001,
 		hp = 48006,
 		sunder = 1429,
 		defence = 769,
@@ -33335,7 +33335,7 @@ local datas = {
 	},
 	[700056058] = {
 		id = 700056058,
-		attack = 4143,
+		attack = 6214,
 		hp = 49715,
 		sunder = 1480,
 		defence = 797,
@@ -33349,7 +33349,7 @@ local datas = {
 	},
 	[700056059] = {
 		id = 700056059,
-		attack = 4288,
+		attack = 6432,
 		hp = 51452,
 		sunder = 1531,
 		defence = 825,
@@ -33363,7 +33363,7 @@ local datas = {
 	},
 	[700056060] = {
 		id = 700056060,
-		attack = 4435,
+		attack = 6653,
 		hp = 53220,
 		sunder = 1584,
 		defence = 853,
@@ -33377,7 +33377,7 @@ local datas = {
 	},
 	[700056061] = {
 		id = 700056061,
-		attack = 4540,
+		attack = 6810,
 		hp = 54481,
 		sunder = 1621,
 		defence = 873,
@@ -33391,7 +33391,7 @@ local datas = {
 	},
 	[700056062] = {
 		id = 700056062,
-		attack = 4646,
+		attack = 6969,
 		hp = 55754,
 		sunder = 1659,
 		defence = 893,
@@ -33405,7 +33405,7 @@ local datas = {
 	},
 	[700056063] = {
 		id = 700056063,
-		attack = 4753,
+		attack = 7130,
 		hp = 57041,
 		sunder = 1698,
 		defence = 914,
@@ -33419,7 +33419,7 @@ local datas = {
 	},
 	[700056064] = {
 		id = 700056064,
-		attack = 4862,
+		attack = 7292,
 		hp = 58340,
 		sunder = 1736,
 		defence = 935,
@@ -33433,7 +33433,7 @@ local datas = {
 	},
 	[700056065] = {
 		id = 700056065,
-		attack = 4971,
+		attack = 7456,
 		hp = 59651,
 		sunder = 1775,
 		defence = 956,
@@ -33447,7 +33447,7 @@ local datas = {
 	},
 	[700056066] = {
 		id = 700056066,
-		attack = 5144,
+		attack = 7716,
 		hp = 61728,
 		sunder = 1837,
 		defence = 989,
@@ -33461,7 +33461,7 @@ local datas = {
 	},
 	[700056067] = {
 		id = 700056067,
-		attack = 5320,
+		attack = 7980,
 		hp = 63840,
 		sunder = 1900,
 		defence = 1023,
@@ -33475,7 +33475,7 @@ local datas = {
 	},
 	[700056068] = {
 		id = 700056068,
-		attack = 5499,
+		attack = 8248,
 		hp = 65987,
 		sunder = 1964,
 		defence = 1057,
@@ -33489,7 +33489,7 @@ local datas = {
 	},
 	[700056069] = {
 		id = 700056069,
-		attack = 5681,
+		attack = 8521,
 		hp = 68169,
 		sunder = 2029,
 		defence = 1092,
@@ -33503,7 +33503,7 @@ local datas = {
 	},
 	[700056070] = {
 		id = 700056070,
-		attack = 5865,
+		attack = 8798,
 		hp = 70385,
 		sunder = 2095,
 		defence = 1128,
@@ -33517,7 +33517,7 @@ local datas = {
 	},
 	[700056071] = {
 		id = 700056071,
-		attack = 6018,
+		attack = 9027,
 		hp = 72220,
 		sunder = 2149,
 		defence = 1157,
@@ -33531,7 +33531,7 @@ local datas = {
 	},
 	[700056072] = {
 		id = 700056072,
-		attack = 6173,
+		attack = 9260,
 		hp = 74077,
 		sunder = 2205,
 		defence = 1187,
@@ -33545,7 +33545,7 @@ local datas = {
 	},
 	[700056073] = {
 		id = 700056073,
-		attack = 6330,
+		attack = 9495,
 		hp = 75959,
 		sunder = 2261,
 		defence = 1217,
@@ -33559,7 +33559,7 @@ local datas = {
 	},
 	[700056074] = {
 		id = 700056074,
-		attack = 6489,
+		attack = 9733,
 		hp = 77863,
 		sunder = 2317,
 		defence = 1248,
@@ -33573,7 +33573,7 @@ local datas = {
 	},
 	[700056075] = {
 		id = 700056075,
-		attack = 6649,
+		attack = 9974,
 		hp = 79792,
 		sunder = 2375,
 		defence = 1279,
@@ -33587,7 +33587,7 @@ local datas = {
 	},
 	[700056076] = {
 		id = 700056076,
-		attack = 6895,
+		attack = 10343,
 		hp = 82745,
 		sunder = 2463,
 		defence = 1326,
@@ -33601,7 +33601,7 @@ local datas = {
 	},
 	[700056077] = {
 		id = 700056077,
-		attack = 7146,
+		attack = 10718,
 		hp = 85747,
 		sunder = 2552,
 		defence = 1374,
@@ -33615,7 +33615,7 @@ local datas = {
 	},
 	[700056078] = {
 		id = 700056078,
-		attack = 7400,
+		attack = 11100,
 		hp = 88799,
 		sunder = 2643,
 		defence = 1423,
@@ -33629,7 +33629,7 @@ local datas = {
 	},
 	[700056079] = {
 		id = 700056079,
-		attack = 7658,
+		attack = 11487,
 		hp = 91899,
 		sunder = 2735,
 		defence = 1473,
@@ -33643,7 +33643,7 @@ local datas = {
 	},
 	[700056080] = {
 		id = 700056080,
-		attack = 7921,
+		attack = 11881,
 		hp = 95049,
 		sunder = 2829,
 		defence = 1523,
@@ -33657,7 +33657,7 @@ local datas = {
 	},
 	[700056081] = {
 		id = 700056081,
-		attack = 8094,
+		attack = 12141,
 		hp = 97125,
 		sunder = 2891,
 		defence = 1556,
@@ -33671,7 +33671,7 @@ local datas = {
 	},
 	[700056082] = {
 		id = 700056082,
-		attack = 8269,
+		attack = 12403,
 		hp = 99223,
 		sunder = 2953,
 		defence = 1590,
@@ -33685,7 +33685,7 @@ local datas = {
 	},
 	[700056083] = {
 		id = 700056083,
-		attack = 8445,
+		attack = 12668,
 		hp = 101344,
 		sunder = 3016,
 		defence = 1624,
@@ -33699,7 +33699,7 @@ local datas = {
 	},
 	[700056084] = {
 		id = 700056084,
-		attack = 8624,
+		attack = 12936,
 		hp = 103486,
 		sunder = 3080,
 		defence = 1658,
@@ -33713,7 +33713,7 @@ local datas = {
 	},
 	[700056085] = {
 		id = 700056085,
-		attack = 8804,
+		attack = 13206,
 		hp = 105651,
 		sunder = 3144,
 		defence = 1693,
@@ -33727,7 +33727,7 @@ local datas = {
 	},
 	[700056086] = {
 		id = 700056086,
-		attack = 9092,
+		attack = 13638,
 		hp = 109105,
 		sunder = 3247,
 		defence = 1748,
@@ -33741,7 +33741,7 @@ local datas = {
 	},
 	[700056087] = {
 		id = 700056087,
-		attack = 9384,
+		attack = 14076,
 		hp = 112610,
 		sunder = 3351,
 		defence = 1805,
@@ -33755,7 +33755,7 @@ local datas = {
 	},
 	[700056088] = {
 		id = 700056088,
-		attack = 9680,
+		attack = 14521,
 		hp = 116166,
 		sunder = 3457,
 		defence = 1862,
@@ -33769,7 +33769,7 @@ local datas = {
 	},
 	[700056089] = {
 		id = 700056089,
-		attack = 9981,
+		attack = 14972,
 		hp = 119773,
 		sunder = 3565,
 		defence = 1919,
@@ -33783,7 +33783,7 @@ local datas = {
 	},
 	[700056090] = {
 		id = 700056090,
-		attack = 10286,
+		attack = 15429,
 		hp = 123430,
 		sunder = 3674,
 		defence = 1978,
@@ -33797,7 +33797,7 @@ local datas = {
 	},
 	[700056091] = {
 		id = 700056091,
-		attack = 10508,
+		attack = 15761,
 		hp = 126090,
 		sunder = 3753,
 		defence = 2021,
@@ -33811,7 +33811,7 @@ local datas = {
 	},
 	[700056092] = {
 		id = 700056092,
-		attack = 10732,
+		attack = 16097,
 		hp = 128778,
 		sunder = 3833,
 		defence = 2064,
@@ -33825,7 +33825,7 @@ local datas = {
 	},
 	[700056093] = {
 		id = 700056093,
-		attack = 10958,
+		attack = 16437,
 		hp = 131495,
 		sunder = 3914,
 		defence = 2107,
@@ -33839,7 +33839,7 @@ local datas = {
 	},
 	[700056094] = {
 		id = 700056094,
-		attack = 11187,
+		attack = 16780,
 		hp = 134240,
 		sunder = 3995,
 		defence = 2151,
@@ -33853,7 +33853,7 @@ local datas = {
 	},
 	[700056095] = {
 		id = 700056095,
-		attack = 11418,
+		attack = 17127,
 		hp = 137013,
 		sunder = 4078,
 		defence = 2196,
@@ -33867,7 +33867,7 @@ local datas = {
 	},
 	[700056096] = {
 		id = 700056096,
-		attack = 11799,
+		attack = 17699,
 		hp = 141592,
 		sunder = 4214,
 		defence = 2269,
@@ -33881,7 +33881,7 @@ local datas = {
 	},
 	[700056097] = {
 		id = 700056097,
-		attack = 12186,
+		attack = 18279,
 		hp = 146235,
 		sunder = 4352,
 		defence = 2344,
@@ -33895,7 +33895,7 @@ local datas = {
 	},
 	[700056098] = {
 		id = 700056098,
-		attack = 12579,
+		attack = 18868,
 		hp = 150942,
 		sunder = 4492,
 		defence = 2419,
@@ -33909,7 +33909,7 @@ local datas = {
 	},
 	[700056099] = {
 		id = 700056099,
-		attack = 12976,
+		attack = 19464,
 		hp = 155715,
 		sunder = 4634,
 		defence = 2495,
@@ -33923,7 +33923,7 @@ local datas = {
 	},
 	[700056100] = {
 		id = 700056100,
-		attack = 13379,
+		attack = 20069,
 		hp = 160551,
 		sunder = 4778,
 		defence = 2573,
@@ -33937,7 +33937,7 @@ local datas = {
 	},
 	[700066000] = {
 		id = 700066000,
-		attack = 14,
+		attack = 20,
 		hp = 109,
 		sunder = 7,
 		defence = 4,
@@ -33951,7 +33951,7 @@ local datas = {
 	},
 	[700066001] = {
 		id = 700066001,
-		attack = 23,
+		attack = 34,
 		hp = 183,
 		sunder = 11,
 		defence = 6,
@@ -33965,7 +33965,7 @@ local datas = {
 	},
 	[700066002] = {
 		id = 700066002,
-		attack = 34,
+		attack = 50,
 		hp = 268,
 		sunder = 15,
 		defence = 8,
@@ -33979,7 +33979,7 @@ local datas = {
 	},
 	[700066003] = {
 		id = 700066003,
-		attack = 46,
+		attack = 69,
 		hp = 367,
 		sunder = 21,
 		defence = 11,
@@ -33993,7 +33993,7 @@ local datas = {
 	},
 	[700066004] = {
 		id = 700066004,
-		attack = 60,
+		attack = 90,
 		hp = 477,
 		sunder = 27,
 		defence = 14,
@@ -34007,7 +34007,7 @@ local datas = {
 	},
 	[700066005] = {
 		id = 700066005,
-		attack = 75,
+		attack = 113,
 		hp = 601,
 		sunder = 33,
 		defence = 18,
@@ -34021,7 +34021,7 @@ local datas = {
 	},
 	[700066006] = {
 		id = 700066006,
-		attack = 104,
+		attack = 157,
 		hp = 835,
 		sunder = 45,
 		defence = 24,
@@ -34035,7 +34035,7 @@ local datas = {
 	},
 	[700066007] = {
 		id = 700066007,
-		attack = 138,
+		attack = 208,
 		hp = 1107,
 		sunder = 59,
 		defence = 32,
@@ -34049,7 +34049,7 @@ local datas = {
 	},
 	[700066008] = {
 		id = 700066008,
-		attack = 177,
+		attack = 266,
 		hp = 1417,
 		sunder = 75,
 		defence = 40,
@@ -34063,7 +34063,7 @@ local datas = {
 	},
 	[700066009] = {
 		id = 700066009,
-		attack = 220,
+		attack = 331,
 		hp = 1763,
 		sunder = 92,
 		defence = 50,
@@ -34077,7 +34077,7 @@ local datas = {
 	},
 	[700066010] = {
 		id = 700066010,
-		attack = 268,
+		attack = 403,
 		hp = 2147,
 		sunder = 112,
 		defence = 60,
@@ -34091,7 +34091,7 @@ local datas = {
 	},
 	[700066011] = {
 		id = 700066011,
-		attack = 314,
+		attack = 472,
 		hp = 2516,
 		sunder = 129,
 		defence = 69,
@@ -34105,7 +34105,7 @@ local datas = {
 	},
 	[700066012] = {
 		id = 700066012,
-		attack = 364,
+		attack = 546,
 		hp = 2914,
 		sunder = 147,
 		defence = 79,
@@ -34119,7 +34119,7 @@ local datas = {
 	},
 	[700066013] = {
 		id = 700066013,
-		attack = 418,
+		attack = 626,
 		hp = 3341,
 		sunder = 167,
 		defence = 90,
@@ -34133,7 +34133,7 @@ local datas = {
 	},
 	[700066014] = {
 		id = 700066014,
-		attack = 475,
+		attack = 712,
 		hp = 3797,
 		sunder = 188,
 		defence = 101,
@@ -34147,7 +34147,7 @@ local datas = {
 	},
 	[700066015] = {
 		id = 700066015,
-		attack = 535,
+		attack = 803,
 		hp = 4283,
 		sunder = 210,
 		defence = 113,
@@ -34161,7 +34161,7 @@ local datas = {
 	},
 	[700066016] = {
 		id = 700066016,
-		attack = 579,
+		attack = 868,
 		hp = 4630,
 		sunder = 224,
 		defence = 121,
@@ -34175,7 +34175,7 @@ local datas = {
 	},
 	[700066017] = {
 		id = 700066017,
-		attack = 624,
+		attack = 935,
 		hp = 4988,
 		sunder = 239,
 		defence = 129,
@@ -34189,7 +34189,7 @@ local datas = {
 	},
 	[700066018] = {
 		id = 700066018,
-		attack = 670,
+		attack = 1004,
 		hp = 5356,
 		sunder = 253,
 		defence = 136,
@@ -34203,7 +34203,7 @@ local datas = {
 	},
 	[700066019] = {
 		id = 700066019,
-		attack = 717,
+		attack = 1075,
 		hp = 5735,
 		sunder = 268,
 		defence = 145,
@@ -34217,7 +34217,7 @@ local datas = {
 	},
 	[700066020] = {
 		id = 700066020,
-		attack = 766,
+		attack = 1148,
 		hp = 6125,
 		sunder = 284,
 		defence = 153,
@@ -34231,7 +34231,7 @@ local datas = {
 	},
 	[700066021] = {
 		id = 700066021,
-		attack = 831,
+		attack = 1247,
 		hp = 6649,
 		sunder = 304,
 		defence = 164,
@@ -34245,7 +34245,7 @@ local datas = {
 	},
 	[700066022] = {
 		id = 700066022,
-		attack = 899,
+		attack = 1349,
 		hp = 7195,
 		sunder = 325,
 		defence = 175,
@@ -34259,7 +34259,7 @@ local datas = {
 	},
 	[700066023] = {
 		id = 700066023,
-		attack = 970,
+		attack = 1455,
 		hp = 7762,
 		sunder = 347,
 		defence = 187,
@@ -34273,7 +34273,7 @@ local datas = {
 	},
 	[700066024] = {
 		id = 700066024,
-		attack = 1044,
+		attack = 1566,
 		hp = 8350,
 		sunder = 370,
 		defence = 199,
@@ -34287,7 +34287,7 @@ local datas = {
 	},
 	[700066025] = {
 		id = 700066025,
-		attack = 1120,
+		attack = 1680,
 		hp = 8960,
 		sunder = 393,
 		defence = 212,
@@ -34301,7 +34301,7 @@ local datas = {
 	},
 	[700066026] = {
 		id = 700066026,
-		attack = 1180,
+		attack = 1769,
 		hp = 9437,
 		sunder = 410,
 		defence = 221,
@@ -34315,7 +34315,7 @@ local datas = {
 	},
 	[700066027] = {
 		id = 700066027,
-		attack = 1241,
+		attack = 1861,
 		hp = 9925,
 		sunder = 426,
 		defence = 229,
@@ -34329,7 +34329,7 @@ local datas = {
 	},
 	[700066028] = {
 		id = 700066028,
-		attack = 1303,
+		attack = 1954,
 		hp = 10423,
 		sunder = 443,
 		defence = 239,
@@ -34343,7 +34343,7 @@ local datas = {
 	},
 	[700066029] = {
 		id = 700066029,
-		attack = 1366,
+		attack = 2050,
 		hp = 10931,
 		sunder = 460,
 		defence = 248,
@@ -34357,7 +34357,7 @@ local datas = {
 	},
 	[700066030] = {
 		id = 700066030,
-		attack = 1717,
+		attack = 2576,
 		hp = 13740,
 		sunder = 477,
 		defence = 257,
@@ -34371,7 +34371,7 @@ local datas = {
 	},
 	[700066031] = {
 		id = 700066031,
-		attack = 1822,
+		attack = 2733,
 		hp = 14573,
 		sunder = 506,
 		defence = 272,
@@ -34385,7 +34385,7 @@ local datas = {
 	},
 	[700066032] = {
 		id = 700066032,
-		attack = 1929,
+		attack = 2893,
 		hp = 15432,
 		sunder = 536,
 		defence = 289,
@@ -34399,7 +34399,7 @@ local datas = {
 	},
 	[700066033] = {
 		id = 700066033,
-		attack = 2039,
+		attack = 3059,
 		hp = 16314,
 		sunder = 566,
 		defence = 305,
@@ -34413,7 +34413,7 @@ local datas = {
 	},
 	[700066034] = {
 		id = 700066034,
-		attack = 2153,
+		attack = 3229,
 		hp = 17222,
 		sunder = 598,
 		defence = 322,
@@ -34427,7 +34427,7 @@ local datas = {
 	},
 	[700066035] = {
 		id = 700066035,
-		attack = 2269,
+		attack = 3404,
 		hp = 18154,
 		sunder = 630,
 		defence = 339,
@@ -34441,7 +34441,7 @@ local datas = {
 	},
 	[700066036] = {
 		id = 700066036,
-		attack = 2394,
+		attack = 3591,
 		hp = 19152,
 		sunder = 665,
 		defence = 358,
@@ -34455,7 +34455,7 @@ local datas = {
 	},
 	[700066037] = {
 		id = 700066037,
-		attack = 2522,
+		attack = 3783,
 		hp = 20177,
 		sunder = 701,
 		defence = 377,
@@ -34469,7 +34469,7 @@ local datas = {
 	},
 	[700066038] = {
 		id = 700066038,
-		attack = 2654,
+		attack = 3980,
 		hp = 21229,
 		sunder = 737,
 		defence = 397,
@@ -34483,7 +34483,7 @@ local datas = {
 	},
 	[700066039] = {
 		id = 700066039,
-		attack = 2788,
+		attack = 4183,
 		hp = 22307,
 		sunder = 775,
 		defence = 417,
@@ -34497,7 +34497,7 @@ local datas = {
 	},
 	[700066040] = {
 		id = 700066040,
-		attack = 2927,
+		attack = 4390,
 		hp = 23412,
 		sunder = 813,
 		defence = 438,
@@ -34511,7 +34511,7 @@ local datas = {
 	},
 	[700066041] = {
 		id = 700066041,
-		attack = 3054,
+		attack = 4581,
 		hp = 24434,
 		sunder = 848,
 		defence = 457,
@@ -34525,7 +34525,7 @@ local datas = {
 	},
 	[700066042] = {
 		id = 700066042,
-		attack = 3185,
+		attack = 4777,
 		hp = 25477,
 		sunder = 885,
 		defence = 476,
@@ -34539,7 +34539,7 @@ local datas = {
 	},
 	[700066043] = {
 		id = 700066043,
-		attack = 3318,
+		attack = 4976,
 		hp = 26541,
 		sunder = 922,
 		defence = 496,
@@ -34553,7 +34553,7 @@ local datas = {
 	},
 	[700066044] = {
 		id = 700066044,
-		attack = 3453,
+		attack = 5180,
 		hp = 27627,
 		sunder = 959,
 		defence = 517,
@@ -34567,7 +34567,7 @@ local datas = {
 	},
 	[700066045] = {
 		id = 700066045,
-		attack = 3592,
+		attack = 5388,
 		hp = 28735,
 		sunder = 998,
 		defence = 537,
@@ -34581,7 +34581,7 @@ local datas = {
 	},
 	[700066046] = {
 		id = 700066046,
-		attack = 3695,
+		attack = 5542,
 		hp = 29560,
 		sunder = 1026,
 		defence = 553,
@@ -34595,7 +34595,7 @@ local datas = {
 	},
 	[700066047] = {
 		id = 700066047,
-		attack = 3799,
+		attack = 5699,
 		hp = 30394,
 		sunder = 1055,
 		defence = 568,
@@ -34609,7 +34609,7 @@ local datas = {
 	},
 	[700066048] = {
 		id = 700066048,
-		attack = 3905,
+		attack = 5857,
 		hp = 31236,
 		sunder = 1085,
 		defence = 584,
@@ -34623,7 +34623,7 @@ local datas = {
 	},
 	[700066049] = {
 		id = 700066049,
-		attack = 4011,
+		attack = 6017,
 		hp = 32088,
 		sunder = 1114,
 		defence = 600,
@@ -34637,7 +34637,7 @@ local datas = {
 	},
 	[700066050] = {
 		id = 700066050,
-		attack = 4805,
+		attack = 7207,
 		hp = 38440,
 		sunder = 1144,
 		defence = 616,
@@ -34651,7 +34651,7 @@ local datas = {
 	},
 	[700066051] = {
 		id = 700066051,
-		attack = 4957,
+		attack = 7435,
 		hp = 39652,
 		sunder = 1180,
 		defence = 635,
@@ -34665,7 +34665,7 @@ local datas = {
 	},
 	[700066052] = {
 		id = 700066052,
-		attack = 5110,
+		attack = 7665,
 		hp = 40882,
 		sunder = 1217,
 		defence = 655,
@@ -34679,7 +34679,7 @@ local datas = {
 	},
 	[700066053] = {
 		id = 700066053,
-		attack = 5266,
+		attack = 7899,
 		hp = 42130,
 		sunder = 1254,
 		defence = 675,
@@ -34693,7 +34693,7 @@ local datas = {
 	},
 	[700066054] = {
 		id = 700066054,
-		attack = 5425,
+		attack = 8137,
 		hp = 43396,
 		sunder = 1292,
 		defence = 695,
@@ -34707,7 +34707,7 @@ local datas = {
 	},
 	[700066055] = {
 		id = 700066055,
-		attack = 5585,
+		attack = 8377,
 		hp = 44680,
 		sunder = 1330,
 		defence = 716,
@@ -34721,7 +34721,7 @@ local datas = {
 	},
 	[700066056] = {
 		id = 700066056,
-		attack = 5791,
+		attack = 8687,
 		hp = 46328,
 		sunder = 1379,
 		defence = 742,
@@ -34735,7 +34735,7 @@ local datas = {
 	},
 	[700066057] = {
 		id = 700066057,
-		attack = 6001,
+		attack = 9001,
 		hp = 48006,
 		sunder = 1429,
 		defence = 769,
@@ -34749,7 +34749,7 @@ local datas = {
 	},
 	[700066058] = {
 		id = 700066058,
-		attack = 6214,
+		attack = 9321,
 		hp = 49715,
 		sunder = 1480,
 		defence = 797,
@@ -34763,7 +34763,7 @@ local datas = {
 	},
 	[700066059] = {
 		id = 700066059,
-		attack = 6432,
+		attack = 9647,
 		hp = 51452,
 		sunder = 1531,
 		defence = 825,
@@ -34777,7 +34777,7 @@ local datas = {
 	},
 	[700066060] = {
 		id = 700066060,
-		attack = 6653,
+		attack = 9979,
 		hp = 53220,
 		sunder = 1584,
 		defence = 853,
@@ -34791,7 +34791,7 @@ local datas = {
 	},
 	[700066061] = {
 		id = 700066061,
-		attack = 6810,
+		attack = 10215,
 		hp = 54481,
 		sunder = 1621,
 		defence = 873,
@@ -34805,7 +34805,7 @@ local datas = {
 	},
 	[700066062] = {
 		id = 700066062,
-		attack = 6969,
+		attack = 10454,
 		hp = 55754,
 		sunder = 1659,
 		defence = 893,
@@ -34819,7 +34819,7 @@ local datas = {
 	},
 	[700066063] = {
 		id = 700066063,
-		attack = 7130,
+		attack = 10695,
 		hp = 57041,
 		sunder = 1698,
 		defence = 914,
@@ -34833,7 +34833,7 @@ local datas = {
 	},
 	[700066064] = {
 		id = 700066064,
-		attack = 7292,
+		attack = 10939,
 		hp = 58340,
 		sunder = 1736,
 		defence = 935,
@@ -34847,7 +34847,7 @@ local datas = {
 	},
 	[700066065] = {
 		id = 700066065,
-		attack = 7456,
+		attack = 11185,
 		hp = 59651,
 		sunder = 1775,
 		defence = 956,
@@ -34861,7 +34861,7 @@ local datas = {
 	},
 	[700066066] = {
 		id = 700066066,
-		attack = 7716,
+		attack = 11574,
 		hp = 61728,
 		sunder = 1837,
 		defence = 989,
@@ -34875,7 +34875,7 @@ local datas = {
 	},
 	[700066067] = {
 		id = 700066067,
-		attack = 7980,
+		attack = 11970,
 		hp = 63840,
 		sunder = 1900,
 		defence = 1023,
@@ -34889,7 +34889,7 @@ local datas = {
 	},
 	[700066068] = {
 		id = 700066068,
-		attack = 8248,
+		attack = 12373,
 		hp = 65987,
 		sunder = 1964,
 		defence = 1057,
@@ -34903,7 +34903,7 @@ local datas = {
 	},
 	[700066069] = {
 		id = 700066069,
-		attack = 8521,
+		attack = 12782,
 		hp = 68169,
 		sunder = 2029,
 		defence = 1092,
@@ -34917,7 +34917,7 @@ local datas = {
 	},
 	[700066070] = {
 		id = 700066070,
-		attack = 8798,
+		attack = 13197,
 		hp = 70385,
 		sunder = 2095,
 		defence = 1128,
@@ -34931,7 +34931,7 @@ local datas = {
 	},
 	[700066071] = {
 		id = 700066071,
-		attack = 9027,
+		attack = 13541,
 		hp = 72220,
 		sunder = 2149,
 		defence = 1157,
@@ -34945,7 +34945,7 @@ local datas = {
 	},
 	[700066072] = {
 		id = 700066072,
-		attack = 9260,
+		attack = 13890,
 		hp = 74077,
 		sunder = 2205,
 		defence = 1187,
@@ -34959,7 +34959,7 @@ local datas = {
 	},
 	[700066073] = {
 		id = 700066073,
-		attack = 9495,
+		attack = 14242,
 		hp = 75959,
 		sunder = 2261,
 		defence = 1217,
@@ -34973,7 +34973,7 @@ local datas = {
 	},
 	[700066074] = {
 		id = 700066074,
-		attack = 9733,
+		attack = 14599,
 		hp = 77863,
 		sunder = 2317,
 		defence = 1248,
@@ -34987,7 +34987,7 @@ local datas = {
 	},
 	[700066075] = {
 		id = 700066075,
-		attack = 9974,
+		attack = 14961,
 		hp = 79792,
 		sunder = 2375,
 		defence = 1279,
@@ -35001,7 +35001,7 @@ local datas = {
 	},
 	[700066076] = {
 		id = 700066076,
-		attack = 10343,
+		attack = 15515,
 		hp = 82745,
 		sunder = 2463,
 		defence = 1326,
@@ -35015,7 +35015,7 @@ local datas = {
 	},
 	[700066077] = {
 		id = 700066077,
-		attack = 10718,
+		attack = 16078,
 		hp = 85747,
 		sunder = 2552,
 		defence = 1374,
@@ -35029,7 +35029,7 @@ local datas = {
 	},
 	[700066078] = {
 		id = 700066078,
-		attack = 11100,
+		attack = 16650,
 		hp = 88799,
 		sunder = 2643,
 		defence = 1423,
@@ -35043,7 +35043,7 @@ local datas = {
 	},
 	[700066079] = {
 		id = 700066079,
-		attack = 11487,
+		attack = 17231,
 		hp = 91899,
 		sunder = 2735,
 		defence = 1473,
@@ -35057,7 +35057,7 @@ local datas = {
 	},
 	[700066080] = {
 		id = 700066080,
-		attack = 11881,
+		attack = 17822,
 		hp = 95049,
 		sunder = 2829,
 		defence = 1523,
@@ -35071,7 +35071,7 @@ local datas = {
 	},
 	[700066081] = {
 		id = 700066081,
-		attack = 12141,
+		attack = 18211,
 		hp = 97125,
 		sunder = 2891,
 		defence = 1556,
@@ -35085,7 +35085,7 @@ local datas = {
 	},
 	[700066082] = {
 		id = 700066082,
-		attack = 12403,
+		attack = 18604,
 		hp = 99223,
 		sunder = 2953,
 		defence = 1590,
@@ -35099,7 +35099,7 @@ local datas = {
 	},
 	[700066083] = {
 		id = 700066083,
-		attack = 12668,
+		attack = 19002,
 		hp = 101344,
 		sunder = 3016,
 		defence = 1624,
@@ -35113,7 +35113,7 @@ local datas = {
 	},
 	[700066084] = {
 		id = 700066084,
-		attack = 12936,
+		attack = 19404,
 		hp = 103486,
 		sunder = 3080,
 		defence = 1658,
@@ -35127,7 +35127,7 @@ local datas = {
 	},
 	[700066085] = {
 		id = 700066085,
-		attack = 13206,
+		attack = 19810,
 		hp = 105651,
 		sunder = 3144,
 		defence = 1693,
@@ -35141,7 +35141,7 @@ local datas = {
 	},
 	[700066086] = {
 		id = 700066086,
-		attack = 13638,
+		attack = 20457,
 		hp = 109105,
 		sunder = 3247,
 		defence = 1748,
@@ -35155,7 +35155,7 @@ local datas = {
 	},
 	[700066087] = {
 		id = 700066087,
-		attack = 14076,
+		attack = 21114,
 		hp = 112610,
 		sunder = 3351,
 		defence = 1805,
@@ -35169,7 +35169,7 @@ local datas = {
 	},
 	[700066088] = {
 		id = 700066088,
-		attack = 14521,
+		attack = 21781,
 		hp = 116166,
 		sunder = 3457,
 		defence = 1862,
@@ -35183,7 +35183,7 @@ local datas = {
 	},
 	[700066089] = {
 		id = 700066089,
-		attack = 14972,
+		attack = 22457,
 		hp = 119773,
 		sunder = 3565,
 		defence = 1919,
@@ -35197,7 +35197,7 @@ local datas = {
 	},
 	[700066090] = {
 		id = 700066090,
-		attack = 15429,
+		attack = 23143,
 		hp = 123430,
 		sunder = 3674,
 		defence = 1978,
@@ -35211,7 +35211,7 @@ local datas = {
 	},
 	[700066091] = {
 		id = 700066091,
-		attack = 15761,
+		attack = 23642,
 		hp = 126090,
 		sunder = 3753,
 		defence = 2021,
@@ -35225,7 +35225,7 @@ local datas = {
 	},
 	[700066092] = {
 		id = 700066092,
-		attack = 16097,
+		attack = 24146,
 		hp = 128778,
 		sunder = 3833,
 		defence = 2064,
@@ -35239,7 +35239,7 @@ local datas = {
 	},
 	[700066093] = {
 		id = 700066093,
-		attack = 16437,
+		attack = 24655,
 		hp = 131495,
 		sunder = 3914,
 		defence = 2107,
@@ -35253,7 +35253,7 @@ local datas = {
 	},
 	[700066094] = {
 		id = 700066094,
-		attack = 16780,
+		attack = 25170,
 		hp = 134240,
 		sunder = 3995,
 		defence = 2151,
@@ -35267,7 +35267,7 @@ local datas = {
 	},
 	[700066095] = {
 		id = 700066095,
-		attack = 17127,
+		attack = 25690,
 		hp = 137013,
 		sunder = 4078,
 		defence = 2196,
@@ -35281,7 +35281,7 @@ local datas = {
 	},
 	[700066096] = {
 		id = 700066096,
-		attack = 17699,
+		attack = 26548,
 		hp = 141592,
 		sunder = 4214,
 		defence = 2269,
@@ -35295,7 +35295,7 @@ local datas = {
 	},
 	[700066097] = {
 		id = 700066097,
-		attack = 18279,
+		attack = 27419,
 		hp = 146235,
 		sunder = 4352,
 		defence = 2344,
@@ -35309,7 +35309,7 @@ local datas = {
 	},
 	[700066098] = {
 		id = 700066098,
-		attack = 18868,
+		attack = 28302,
 		hp = 150942,
 		sunder = 4492,
 		defence = 2419,
@@ -35323,7 +35323,7 @@ local datas = {
 	},
 	[700066099] = {
 		id = 700066099,
-		attack = 19464,
+		attack = 29196,
 		hp = 155715,
 		sunder = 4634,
 		defence = 2495,
@@ -35337,7 +35337,7 @@ local datas = {
 	},
 	[700066100] = {
 		id = 700066100,
-		attack = 20069,
+		attack = 30103,
 		hp = 160551,
 		sunder = 4778,
 		defence = 2573,
@@ -35351,7 +35351,7 @@ local datas = {
 	},
 	[700076000] = {
 		id = 700076000,
-		attack = 9,
+		attack = 14,
 		hp = 164,
 		sunder = 7,
 		defence = 4,
@@ -35365,7 +35365,7 @@ local datas = {
 	},
 	[700076001] = {
 		id = 700076001,
-		attack = 15,
+		attack = 23,
 		hp = 274,
 		sunder = 11,
 		defence = 6,
@@ -35379,7 +35379,7 @@ local datas = {
 	},
 	[700076002] = {
 		id = 700076002,
-		attack = 22,
+		attack = 34,
 		hp = 402,
 		sunder = 15,
 		defence = 8,
@@ -35393,7 +35393,7 @@ local datas = {
 	},
 	[700076003] = {
 		id = 700076003,
-		attack = 31,
+		attack = 46,
 		hp = 550,
 		sunder = 21,
 		defence = 11,
@@ -35407,7 +35407,7 @@ local datas = {
 	},
 	[700076004] = {
 		id = 700076004,
-		attack = 40,
+		attack = 60,
 		hp = 716,
 		sunder = 27,
 		defence = 14,
@@ -35421,7 +35421,7 @@ local datas = {
 	},
 	[700076005] = {
 		id = 700076005,
-		attack = 50,
+		attack = 75,
 		hp = 901,
 		sunder = 33,
 		defence = 18,
@@ -35435,7 +35435,7 @@ local datas = {
 	},
 	[700076006] = {
 		id = 700076006,
-		attack = 70,
+		attack = 104,
 		hp = 1253,
 		sunder = 45,
 		defence = 24,
@@ -35449,7 +35449,7 @@ local datas = {
 	},
 	[700076007] = {
 		id = 700076007,
-		attack = 92,
+		attack = 138,
 		hp = 1661,
 		sunder = 59,
 		defence = 32,
@@ -35463,7 +35463,7 @@ local datas = {
 	},
 	[700076008] = {
 		id = 700076008,
-		attack = 118,
+		attack = 177,
 		hp = 2125,
 		sunder = 75,
 		defence = 40,
@@ -35477,7 +35477,7 @@ local datas = {
 	},
 	[700076009] = {
 		id = 700076009,
-		attack = 147,
+		attack = 220,
 		hp = 2645,
 		sunder = 92,
 		defence = 50,
@@ -35491,7 +35491,7 @@ local datas = {
 	},
 	[700076010] = {
 		id = 700076010,
-		attack = 179,
+		attack = 268,
 		hp = 3220,
 		sunder = 112,
 		defence = 60,
@@ -35505,7 +35505,7 @@ local datas = {
 	},
 	[700076011] = {
 		id = 700076011,
-		attack = 210,
+		attack = 314,
 		hp = 3773,
 		sunder = 129,
 		defence = 69,
@@ -35519,7 +35519,7 @@ local datas = {
 	},
 	[700076012] = {
 		id = 700076012,
-		attack = 243,
+		attack = 364,
 		hp = 4370,
 		sunder = 147,
 		defence = 79,
@@ -35533,7 +35533,7 @@ local datas = {
 	},
 	[700076013] = {
 		id = 700076013,
-		attack = 278,
+		attack = 418,
 		hp = 5011,
 		sunder = 167,
 		defence = 90,
@@ -35547,7 +35547,7 @@ local datas = {
 	},
 	[700076014] = {
 		id = 700076014,
-		attack = 316,
+		attack = 475,
 		hp = 5696,
 		sunder = 188,
 		defence = 101,
@@ -35561,7 +35561,7 @@ local datas = {
 	},
 	[700076015] = {
 		id = 700076015,
-		attack = 357,
+		attack = 535,
 		hp = 6424,
 		sunder = 210,
 		defence = 113,
@@ -35575,7 +35575,7 @@ local datas = {
 	},
 	[700076016] = {
 		id = 700076016,
-		attack = 386,
+		attack = 579,
 		hp = 6945,
 		sunder = 224,
 		defence = 121,
@@ -35589,7 +35589,7 @@ local datas = {
 	},
 	[700076017] = {
 		id = 700076017,
-		attack = 416,
+		attack = 624,
 		hp = 7482,
 		sunder = 239,
 		defence = 129,
@@ -35603,7 +35603,7 @@ local datas = {
 	},
 	[700076018] = {
 		id = 700076018,
-		attack = 446,
+		attack = 670,
 		hp = 8035,
 		sunder = 253,
 		defence = 136,
@@ -35617,7 +35617,7 @@ local datas = {
 	},
 	[700076019] = {
 		id = 700076019,
-		attack = 478,
+		attack = 717,
 		hp = 8603,
 		sunder = 268,
 		defence = 145,
@@ -35631,7 +35631,7 @@ local datas = {
 	},
 	[700076020] = {
 		id = 700076020,
-		attack = 510,
+		attack = 766,
 		hp = 9187,
 		sunder = 284,
 		defence = 153,
@@ -35645,7 +35645,7 @@ local datas = {
 	},
 	[700076021] = {
 		id = 700076021,
-		attack = 554,
+		attack = 831,
 		hp = 9974,
 		sunder = 304,
 		defence = 164,
@@ -35659,7 +35659,7 @@ local datas = {
 	},
 	[700076022] = {
 		id = 700076022,
-		attack = 600,
+		attack = 899,
 		hp = 10792,
 		sunder = 325,
 		defence = 175,
@@ -35673,7 +35673,7 @@ local datas = {
 	},
 	[700076023] = {
 		id = 700076023,
-		attack = 647,
+		attack = 970,
 		hp = 11642,
 		sunder = 347,
 		defence = 187,
@@ -35687,7 +35687,7 @@ local datas = {
 	},
 	[700076024] = {
 		id = 700076024,
-		attack = 696,
+		attack = 1044,
 		hp = 12525,
 		sunder = 370,
 		defence = 199,
@@ -35701,7 +35701,7 @@ local datas = {
 	},
 	[700076025] = {
 		id = 700076025,
-		attack = 747,
+		attack = 1120,
 		hp = 13439,
 		sunder = 393,
 		defence = 212,
@@ -35715,7 +35715,7 @@ local datas = {
 	},
 	[700076026] = {
 		id = 700076026,
-		attack = 786,
+		attack = 1180,
 		hp = 14155,
 		sunder = 410,
 		defence = 221,
@@ -35729,7 +35729,7 @@ local datas = {
 	},
 	[700076027] = {
 		id = 700076027,
-		attack = 827,
+		attack = 1241,
 		hp = 14887,
 		sunder = 426,
 		defence = 229,
@@ -35743,7 +35743,7 @@ local datas = {
 	},
 	[700076028] = {
 		id = 700076028,
-		attack = 869,
+		attack = 1303,
 		hp = 15634,
 		sunder = 443,
 		defence = 239,
@@ -35757,7 +35757,7 @@ local datas = {
 	},
 	[700076029] = {
 		id = 700076029,
-		attack = 911,
+		attack = 1366,
 		hp = 16396,
 		sunder = 460,
 		defence = 248,
@@ -35771,7 +35771,7 @@ local datas = {
 	},
 	[700076030] = {
 		id = 700076030,
-		attack = 1145,
+		attack = 1717,
 		hp = 20609,
 		sunder = 477,
 		defence = 257,
@@ -35785,7 +35785,7 @@ local datas = {
 	},
 	[700076031] = {
 		id = 700076031,
-		attack = 1214,
+		attack = 1822,
 		hp = 21860,
 		sunder = 506,
 		defence = 272,
@@ -35799,7 +35799,7 @@ local datas = {
 	},
 	[700076032] = {
 		id = 700076032,
-		attack = 1286,
+		attack = 1929,
 		hp = 23148,
 		sunder = 536,
 		defence = 289,
@@ -35813,7 +35813,7 @@ local datas = {
 	},
 	[700076033] = {
 		id = 700076033,
-		attack = 1360,
+		attack = 2039,
 		hp = 24472,
 		sunder = 566,
 		defence = 305,
@@ -35827,7 +35827,7 @@ local datas = {
 	},
 	[700076034] = {
 		id = 700076034,
-		attack = 1435,
+		attack = 2153,
 		hp = 25833,
 		sunder = 598,
 		defence = 322,
@@ -35841,7 +35841,7 @@ local datas = {
 	},
 	[700076035] = {
 		id = 700076035,
-		attack = 1513,
+		attack = 2269,
 		hp = 27230,
 		sunder = 630,
 		defence = 339,
@@ -35855,7 +35855,7 @@ local datas = {
 	},
 	[700076036] = {
 		id = 700076036,
-		attack = 1596,
+		attack = 2394,
 		hp = 28728,
 		sunder = 665,
 		defence = 358,
@@ -35869,7 +35869,7 @@ local datas = {
 	},
 	[700076037] = {
 		id = 700076037,
-		attack = 1681,
+		attack = 2522,
 		hp = 30265,
 		sunder = 701,
 		defence = 377,
@@ -35883,7 +35883,7 @@ local datas = {
 	},
 	[700076038] = {
 		id = 700076038,
-		attack = 1769,
+		attack = 2654,
 		hp = 31843,
 		sunder = 737,
 		defence = 397,
@@ -35897,7 +35897,7 @@ local datas = {
 	},
 	[700076039] = {
 		id = 700076039,
-		attack = 1859,
+		attack = 2788,
 		hp = 33461,
 		sunder = 775,
 		defence = 417,
@@ -35911,7 +35911,7 @@ local datas = {
 	},
 	[700076040] = {
 		id = 700076040,
-		attack = 1951,
+		attack = 2927,
 		hp = 35118,
 		sunder = 813,
 		defence = 438,
@@ -35925,7 +35925,7 @@ local datas = {
 	},
 	[700076041] = {
 		id = 700076041,
-		attack = 2036,
+		attack = 3054,
 		hp = 36650,
 		sunder = 848,
 		defence = 457,
@@ -35939,7 +35939,7 @@ local datas = {
 	},
 	[700076042] = {
 		id = 700076042,
-		attack = 2123,
+		attack = 3185,
 		hp = 38215,
 		sunder = 885,
 		defence = 476,
@@ -35953,7 +35953,7 @@ local datas = {
 	},
 	[700076043] = {
 		id = 700076043,
-		attack = 2212,
+		attack = 3318,
 		hp = 39812,
 		sunder = 922,
 		defence = 496,
@@ -35967,7 +35967,7 @@ local datas = {
 	},
 	[700076044] = {
 		id = 700076044,
-		attack = 2302,
+		attack = 3453,
 		hp = 41441,
 		sunder = 959,
 		defence = 517,
@@ -35981,7 +35981,7 @@ local datas = {
 	},
 	[700076045] = {
 		id = 700076045,
-		attack = 2395,
+		attack = 3592,
 		hp = 43103,
 		sunder = 998,
 		defence = 537,
@@ -35995,7 +35995,7 @@ local datas = {
 	},
 	[700076046] = {
 		id = 700076046,
-		attack = 2463,
+		attack = 3695,
 		hp = 44340,
 		sunder = 1026,
 		defence = 553,
@@ -36009,7 +36009,7 @@ local datas = {
 	},
 	[700076047] = {
 		id = 700076047,
-		attack = 2533,
+		attack = 3799,
 		hp = 45591,
 		sunder = 1055,
 		defence = 568,
@@ -36023,7 +36023,7 @@ local datas = {
 	},
 	[700076048] = {
 		id = 700076048,
-		attack = 2603,
+		attack = 3905,
 		hp = 46855,
 		sunder = 1085,
 		defence = 584,
@@ -36037,7 +36037,7 @@ local datas = {
 	},
 	[700076049] = {
 		id = 700076049,
-		attack = 2674,
+		attack = 4011,
 		hp = 48132,
 		sunder = 1114,
 		defence = 600,
@@ -36051,7 +36051,7 @@ local datas = {
 	},
 	[700076050] = {
 		id = 700076050,
-		attack = 3203,
+		attack = 4805,
 		hp = 57660,
 		sunder = 1144,
 		defence = 616,
@@ -36065,7 +36065,7 @@ local datas = {
 	},
 	[700076051] = {
 		id = 700076051,
-		attack = 3304,
+		attack = 4957,
 		hp = 59478,
 		sunder = 1180,
 		defence = 635,
@@ -36079,7 +36079,7 @@ local datas = {
 	},
 	[700076052] = {
 		id = 700076052,
-		attack = 3407,
+		attack = 5110,
 		hp = 61324,
 		sunder = 1217,
 		defence = 655,
@@ -36093,7 +36093,7 @@ local datas = {
 	},
 	[700076053] = {
 		id = 700076053,
-		attack = 3511,
+		attack = 5266,
 		hp = 63195,
 		sunder = 1254,
 		defence = 675,
@@ -36107,7 +36107,7 @@ local datas = {
 	},
 	[700076054] = {
 		id = 700076054,
-		attack = 3616,
+		attack = 5425,
 		hp = 65094,
 		sunder = 1292,
 		defence = 695,
@@ -36121,7 +36121,7 @@ local datas = {
 	},
 	[700076055] = {
 		id = 700076055,
-		attack = 3723,
+		attack = 5585,
 		hp = 67020,
 		sunder = 1330,
 		defence = 716,
@@ -36135,7 +36135,7 @@ local datas = {
 	},
 	[700076056] = {
 		id = 700076056,
-		attack = 3861,
+		attack = 5791,
 		hp = 69492,
 		sunder = 1379,
 		defence = 742,
@@ -36149,7 +36149,7 @@ local datas = {
 	},
 	[700076057] = {
 		id = 700076057,
-		attack = 4001,
+		attack = 6001,
 		hp = 72010,
 		sunder = 1429,
 		defence = 769,
@@ -36163,7 +36163,7 @@ local datas = {
 	},
 	[700076058] = {
 		id = 700076058,
-		attack = 4143,
+		attack = 6214,
 		hp = 74572,
 		sunder = 1480,
 		defence = 797,
@@ -36177,7 +36177,7 @@ local datas = {
 	},
 	[700076059] = {
 		id = 700076059,
-		attack = 4288,
+		attack = 6432,
 		hp = 77179,
 		sunder = 1531,
 		defence = 825,
@@ -36191,7 +36191,7 @@ local datas = {
 	},
 	[700076060] = {
 		id = 700076060,
-		attack = 4435,
+		attack = 6653,
 		hp = 79830,
 		sunder = 1584,
 		defence = 853,
@@ -36205,7 +36205,7 @@ local datas = {
 	},
 	[700076061] = {
 		id = 700076061,
-		attack = 4540,
+		attack = 6810,
 		hp = 81721,
 		sunder = 1621,
 		defence = 873,
@@ -36219,7 +36219,7 @@ local datas = {
 	},
 	[700076062] = {
 		id = 700076062,
-		attack = 4646,
+		attack = 6969,
 		hp = 83631,
 		sunder = 1659,
 		defence = 893,
@@ -36233,7 +36233,7 @@ local datas = {
 	},
 	[700076063] = {
 		id = 700076063,
-		attack = 4753,
+		attack = 7130,
 		hp = 85561,
 		sunder = 1698,
 		defence = 914,
@@ -36247,7 +36247,7 @@ local datas = {
 	},
 	[700076064] = {
 		id = 700076064,
-		attack = 4862,
+		attack = 7292,
 		hp = 87509,
 		sunder = 1736,
 		defence = 935,
@@ -36261,7 +36261,7 @@ local datas = {
 	},
 	[700076065] = {
 		id = 700076065,
-		attack = 4971,
+		attack = 7456,
 		hp = 89477,
 		sunder = 1775,
 		defence = 956,
@@ -36275,7 +36275,7 @@ local datas = {
 	},
 	[700076066] = {
 		id = 700076066,
-		attack = 5144,
+		attack = 7716,
 		hp = 92592,
 		sunder = 1837,
 		defence = 989,
@@ -36289,7 +36289,7 @@ local datas = {
 	},
 	[700076067] = {
 		id = 700076067,
-		attack = 5320,
+		attack = 7980,
 		hp = 95760,
 		sunder = 1900,
 		defence = 1023,
@@ -36303,7 +36303,7 @@ local datas = {
 	},
 	[700076068] = {
 		id = 700076068,
-		attack = 5499,
+		attack = 8248,
 		hp = 98980,
 		sunder = 1964,
 		defence = 1057,
@@ -36317,7 +36317,7 @@ local datas = {
 	},
 	[700076069] = {
 		id = 700076069,
-		attack = 5681,
+		attack = 8521,
 		hp = 102253,
 		sunder = 2029,
 		defence = 1092,
@@ -36331,7 +36331,7 @@ local datas = {
 	},
 	[700076070] = {
 		id = 700076070,
-		attack = 5865,
+		attack = 8798,
 		hp = 105578,
 		sunder = 2095,
 		defence = 1128,
@@ -36345,7 +36345,7 @@ local datas = {
 	},
 	[700076071] = {
 		id = 700076071,
-		attack = 6018,
+		attack = 9027,
 		hp = 108329,
 		sunder = 2149,
 		defence = 1157,
@@ -36359,7 +36359,7 @@ local datas = {
 	},
 	[700076072] = {
 		id = 700076072,
-		attack = 6173,
+		attack = 9260,
 		hp = 111116,
 		sunder = 2205,
 		defence = 1187,
@@ -36373,7 +36373,7 @@ local datas = {
 	},
 	[700076073] = {
 		id = 700076073,
-		attack = 6330,
+		attack = 9495,
 		hp = 113938,
 		sunder = 2261,
 		defence = 1217,
@@ -36387,7 +36387,7 @@ local datas = {
 	},
 	[700076074] = {
 		id = 700076074,
-		attack = 6489,
+		attack = 9733,
 		hp = 116795,
 		sunder = 2317,
 		defence = 1248,
@@ -36401,7 +36401,7 @@ local datas = {
 	},
 	[700076075] = {
 		id = 700076075,
-		attack = 6649,
+		attack = 9974,
 		hp = 119688,
 		sunder = 2375,
 		defence = 1279,
@@ -36415,7 +36415,7 @@ local datas = {
 	},
 	[700076076] = {
 		id = 700076076,
-		attack = 6895,
+		attack = 10343,
 		hp = 124117,
 		sunder = 2463,
 		defence = 1326,
@@ -36429,7 +36429,7 @@ local datas = {
 	},
 	[700076077] = {
 		id = 700076077,
-		attack = 7146,
+		attack = 10718,
 		hp = 128621,
 		sunder = 2552,
 		defence = 1374,
@@ -36443,7 +36443,7 @@ local datas = {
 	},
 	[700076078] = {
 		id = 700076078,
-		attack = 7400,
+		attack = 11100,
 		hp = 133198,
 		sunder = 2643,
 		defence = 1423,
@@ -36457,7 +36457,7 @@ local datas = {
 	},
 	[700076079] = {
 		id = 700076079,
-		attack = 7658,
+		attack = 11487,
 		hp = 137849,
 		sunder = 2735,
 		defence = 1473,
@@ -36471,7 +36471,7 @@ local datas = {
 	},
 	[700076080] = {
 		id = 700076080,
-		attack = 7921,
+		attack = 11881,
 		hp = 142574,
 		sunder = 2829,
 		defence = 1523,
@@ -36485,7 +36485,7 @@ local datas = {
 	},
 	[700076081] = {
 		id = 700076081,
-		attack = 8094,
+		attack = 12141,
 		hp = 145688,
 		sunder = 2891,
 		defence = 1556,
@@ -36499,7 +36499,7 @@ local datas = {
 	},
 	[700076082] = {
 		id = 700076082,
-		attack = 8269,
+		attack = 12403,
 		hp = 148835,
 		sunder = 2953,
 		defence = 1590,
@@ -36513,7 +36513,7 @@ local datas = {
 	},
 	[700076083] = {
 		id = 700076083,
-		attack = 8445,
+		attack = 12668,
 		hp = 152016,
 		sunder = 3016,
 		defence = 1624,
@@ -36527,7 +36527,7 @@ local datas = {
 	},
 	[700076084] = {
 		id = 700076084,
-		attack = 8624,
+		attack = 12936,
 		hp = 155229,
 		sunder = 3080,
 		defence = 1658,
@@ -36541,7 +36541,7 @@ local datas = {
 	},
 	[700076085] = {
 		id = 700076085,
-		attack = 8804,
+		attack = 13206,
 		hp = 158476,
 		sunder = 3144,
 		defence = 1693,
@@ -36555,7 +36555,7 @@ local datas = {
 	},
 	[700076086] = {
 		id = 700076086,
-		attack = 9092,
+		attack = 13638,
 		hp = 163657,
 		sunder = 3247,
 		defence = 1748,
@@ -36569,7 +36569,7 @@ local datas = {
 	},
 	[700076087] = {
 		id = 700076087,
-		attack = 9384,
+		attack = 14076,
 		hp = 168915,
 		sunder = 3351,
 		defence = 1805,
@@ -36583,7 +36583,7 @@ local datas = {
 	},
 	[700076088] = {
 		id = 700076088,
-		attack = 9680,
+		attack = 14521,
 		hp = 174249,
 		sunder = 3457,
 		defence = 1862,
@@ -36597,7 +36597,7 @@ local datas = {
 	},
 	[700076089] = {
 		id = 700076089,
-		attack = 9981,
+		attack = 14972,
 		hp = 179659,
 		sunder = 3565,
 		defence = 1919,
@@ -36611,7 +36611,7 @@ local datas = {
 	},
 	[700076090] = {
 		id = 700076090,
-		attack = 10286,
+		attack = 15429,
 		hp = 185145,
 		sunder = 3674,
 		defence = 1978,
@@ -36625,7 +36625,7 @@ local datas = {
 	},
 	[700076091] = {
 		id = 700076091,
-		attack = 10508,
+		attack = 15761,
 		hp = 189135,
 		sunder = 3753,
 		defence = 2021,
@@ -36639,7 +36639,7 @@ local datas = {
 	},
 	[700076092] = {
 		id = 700076092,
-		attack = 10732,
+		attack = 16097,
 		hp = 193168,
 		sunder = 3833,
 		defence = 2064,
@@ -36653,7 +36653,7 @@ local datas = {
 	},
 	[700076093] = {
 		id = 700076093,
-		attack = 10958,
+		attack = 16437,
 		hp = 197243,
 		sunder = 3914,
 		defence = 2107,
@@ -36667,7 +36667,7 @@ local datas = {
 	},
 	[700076094] = {
 		id = 700076094,
-		attack = 11187,
+		attack = 16780,
 		hp = 201360,
 		sunder = 3995,
 		defence = 2151,
@@ -36681,7 +36681,7 @@ local datas = {
 	},
 	[700076095] = {
 		id = 700076095,
-		attack = 11418,
+		attack = 17127,
 		hp = 205520,
 		sunder = 4078,
 		defence = 2196,
@@ -36695,7 +36695,7 @@ local datas = {
 	},
 	[700076096] = {
 		id = 700076096,
-		attack = 11799,
+		attack = 17699,
 		hp = 212388,
 		sunder = 4214,
 		defence = 2269,
@@ -36709,7 +36709,7 @@ local datas = {
 	},
 	[700076097] = {
 		id = 700076097,
-		attack = 12186,
+		attack = 18279,
 		hp = 219352,
 		sunder = 4352,
 		defence = 2344,
@@ -36723,7 +36723,7 @@ local datas = {
 	},
 	[700076098] = {
 		id = 700076098,
-		attack = 12579,
+		attack = 18868,
 		hp = 226413,
 		sunder = 4492,
 		defence = 2419,
@@ -36737,7 +36737,7 @@ local datas = {
 	},
 	[700076099] = {
 		id = 700076099,
-		attack = 12976,
+		attack = 19464,
 		hp = 233572,
 		sunder = 4634,
 		defence = 2495,
@@ -36751,7 +36751,7 @@ local datas = {
 	},
 	[700076100] = {
 		id = 700076100,
-		attack = 13379,
+		attack = 20069,
 		hp = 240827,
 		sunder = 4778,
 		defence = 2573,
@@ -36765,7 +36765,7 @@ local datas = {
 	},
 	[700086000] = {
 		id = 700086000,
-		attack = 9,
+		attack = 14,
 		hp = 191,
 		sunder = 7,
 		defence = 4,
@@ -36779,7 +36779,7 @@ local datas = {
 	},
 	[700086001] = {
 		id = 700086001,
-		attack = 15,
+		attack = 23,
 		hp = 319,
 		sunder = 11,
 		defence = 6,
@@ -36793,7 +36793,7 @@ local datas = {
 	},
 	[700086002] = {
 		id = 700086002,
-		attack = 22,
+		attack = 34,
 		hp = 470,
 		sunder = 15,
 		defence = 8,
@@ -36807,7 +36807,7 @@ local datas = {
 	},
 	[700086003] = {
 		id = 700086003,
-		attack = 31,
+		attack = 46,
 		hp = 642,
 		sunder = 21,
 		defence = 11,
@@ -36821,7 +36821,7 @@ local datas = {
 	},
 	[700086004] = {
 		id = 700086004,
-		attack = 40,
+		attack = 60,
 		hp = 835,
 		sunder = 27,
 		defence = 14,
@@ -36835,7 +36835,7 @@ local datas = {
 	},
 	[700086005] = {
 		id = 700086005,
-		attack = 50,
+		attack = 75,
 		hp = 1051,
 		sunder = 33,
 		defence = 18,
@@ -36849,7 +36849,7 @@ local datas = {
 	},
 	[700086006] = {
 		id = 700086006,
-		attack = 70,
+		attack = 104,
 		hp = 1462,
 		sunder = 45,
 		defence = 24,
@@ -36863,7 +36863,7 @@ local datas = {
 	},
 	[700086007] = {
 		id = 700086007,
-		attack = 92,
+		attack = 138,
 		hp = 1938,
 		sunder = 59,
 		defence = 32,
@@ -36877,7 +36877,7 @@ local datas = {
 	},
 	[700086008] = {
 		id = 700086008,
-		attack = 118,
+		attack = 177,
 		hp = 2479,
 		sunder = 75,
 		defence = 40,
@@ -36891,7 +36891,7 @@ local datas = {
 	},
 	[700086009] = {
 		id = 700086009,
-		attack = 147,
+		attack = 220,
 		hp = 3085,
 		sunder = 92,
 		defence = 50,
@@ -36905,7 +36905,7 @@ local datas = {
 	},
 	[700086010] = {
 		id = 700086010,
-		attack = 179,
+		attack = 268,
 		hp = 3757,
 		sunder = 112,
 		defence = 60,
@@ -36919,7 +36919,7 @@ local datas = {
 	},
 	[700086011] = {
 		id = 700086011,
-		attack = 210,
+		attack = 314,
 		hp = 4402,
 		sunder = 129,
 		defence = 69,
@@ -36933,7 +36933,7 @@ local datas = {
 	},
 	[700086012] = {
 		id = 700086012,
-		attack = 243,
+		attack = 364,
 		hp = 5099,
 		sunder = 147,
 		defence = 79,
@@ -36947,7 +36947,7 @@ local datas = {
 	},
 	[700086013] = {
 		id = 700086013,
-		attack = 278,
+		attack = 418,
 		hp = 5846,
 		sunder = 167,
 		defence = 90,
@@ -36961,7 +36961,7 @@ local datas = {
 	},
 	[700086014] = {
 		id = 700086014,
-		attack = 316,
+		attack = 475,
 		hp = 6645,
 		sunder = 188,
 		defence = 101,
@@ -36975,7 +36975,7 @@ local datas = {
 	},
 	[700086015] = {
 		id = 700086015,
-		attack = 357,
+		attack = 535,
 		hp = 7495,
 		sunder = 210,
 		defence = 113,
@@ -36989,7 +36989,7 @@ local datas = {
 	},
 	[700086016] = {
 		id = 700086016,
-		attack = 386,
+		attack = 579,
 		hp = 8103,
 		sunder = 224,
 		defence = 121,
@@ -37003,7 +37003,7 @@ local datas = {
 	},
 	[700086017] = {
 		id = 700086017,
-		attack = 416,
+		attack = 624,
 		hp = 8729,
 		sunder = 239,
 		defence = 129,
@@ -37017,7 +37017,7 @@ local datas = {
 	},
 	[700086018] = {
 		id = 700086018,
-		attack = 446,
+		attack = 670,
 		hp = 9374,
 		sunder = 253,
 		defence = 136,
@@ -37031,7 +37031,7 @@ local datas = {
 	},
 	[700086019] = {
 		id = 700086019,
-		attack = 478,
+		attack = 717,
 		hp = 10037,
 		sunder = 268,
 		defence = 145,
@@ -37045,7 +37045,7 @@ local datas = {
 	},
 	[700086020] = {
 		id = 700086020,
-		attack = 510,
+		attack = 766,
 		hp = 10719,
 		sunder = 284,
 		defence = 153,
@@ -37059,7 +37059,7 @@ local datas = {
 	},
 	[700086021] = {
 		id = 700086021,
-		attack = 554,
+		attack = 831,
 		hp = 11636,
 		sunder = 304,
 		defence = 164,
@@ -37073,7 +37073,7 @@ local datas = {
 	},
 	[700086022] = {
 		id = 700086022,
-		attack = 600,
+		attack = 899,
 		hp = 12591,
 		sunder = 325,
 		defence = 175,
@@ -37087,7 +37087,7 @@ local datas = {
 	},
 	[700086023] = {
 		id = 700086023,
-		attack = 647,
+		attack = 970,
 		hp = 13583,
 		sunder = 347,
 		defence = 187,
@@ -37101,7 +37101,7 @@ local datas = {
 	},
 	[700086024] = {
 		id = 700086024,
-		attack = 696,
+		attack = 1044,
 		hp = 14612,
 		sunder = 370,
 		defence = 199,
@@ -37115,7 +37115,7 @@ local datas = {
 	},
 	[700086025] = {
 		id = 700086025,
-		attack = 747,
+		attack = 1120,
 		hp = 15679,
 		sunder = 393,
 		defence = 212,
@@ -37129,7 +37129,7 @@ local datas = {
 	},
 	[700086026] = {
 		id = 700086026,
-		attack = 786,
+		attack = 1180,
 		hp = 16515,
 		sunder = 410,
 		defence = 221,
@@ -37143,7 +37143,7 @@ local datas = {
 	},
 	[700086027] = {
 		id = 700086027,
-		attack = 827,
+		attack = 1241,
 		hp = 17368,
 		sunder = 426,
 		defence = 229,
@@ -37157,7 +37157,7 @@ local datas = {
 	},
 	[700086028] = {
 		id = 700086028,
-		attack = 869,
+		attack = 1303,
 		hp = 18239,
 		sunder = 443,
 		defence = 239,
@@ -37171,7 +37171,7 @@ local datas = {
 	},
 	[700086029] = {
 		id = 700086029,
-		attack = 911,
+		attack = 1366,
 		hp = 19129,
 		sunder = 460,
 		defence = 248,
@@ -37185,7 +37185,7 @@ local datas = {
 	},
 	[700086030] = {
 		id = 700086030,
-		attack = 1145,
+		attack = 1717,
 		hp = 24044,
 		sunder = 477,
 		defence = 257,
@@ -37199,7 +37199,7 @@ local datas = {
 	},
 	[700086031] = {
 		id = 700086031,
-		attack = 1214,
+		attack = 1822,
 		hp = 25503,
 		sunder = 506,
 		defence = 272,
@@ -37213,7 +37213,7 @@ local datas = {
 	},
 	[700086032] = {
 		id = 700086032,
-		attack = 1286,
+		attack = 1929,
 		hp = 27005,
 		sunder = 536,
 		defence = 289,
@@ -37227,7 +37227,7 @@ local datas = {
 	},
 	[700086033] = {
 		id = 700086033,
-		attack = 1360,
+		attack = 2039,
 		hp = 28550,
 		sunder = 566,
 		defence = 305,
@@ -37241,7 +37241,7 @@ local datas = {
 	},
 	[700086034] = {
 		id = 700086034,
-		attack = 1435,
+		attack = 2153,
 		hp = 30138,
 		sunder = 598,
 		defence = 322,
@@ -37255,7 +37255,7 @@ local datas = {
 	},
 	[700086035] = {
 		id = 700086035,
-		attack = 1513,
+		attack = 2269,
 		hp = 31769,
 		sunder = 630,
 		defence = 339,
@@ -37269,7 +37269,7 @@ local datas = {
 	},
 	[700086036] = {
 		id = 700086036,
-		attack = 1596,
+		attack = 2394,
 		hp = 33516,
 		sunder = 665,
 		defence = 358,
@@ -37283,7 +37283,7 @@ local datas = {
 	},
 	[700086037] = {
 		id = 700086037,
-		attack = 1681,
+		attack = 2522,
 		hp = 35310,
 		sunder = 701,
 		defence = 377,
@@ -37297,7 +37297,7 @@ local datas = {
 	},
 	[700086038] = {
 		id = 700086038,
-		attack = 1769,
+		attack = 2654,
 		hp = 37150,
 		sunder = 737,
 		defence = 397,
@@ -37311,7 +37311,7 @@ local datas = {
 	},
 	[700086039] = {
 		id = 700086039,
-		attack = 1859,
+		attack = 2788,
 		hp = 39037,
 		sunder = 775,
 		defence = 417,
@@ -37325,7 +37325,7 @@ local datas = {
 	},
 	[700086040] = {
 		id = 700086040,
-		attack = 1951,
+		attack = 2927,
 		hp = 40971,
 		sunder = 813,
 		defence = 438,
@@ -37339,7 +37339,7 @@ local datas = {
 	},
 	[700086041] = {
 		id = 700086041,
-		attack = 2036,
+		attack = 3054,
 		hp = 42759,
 		sunder = 848,
 		defence = 457,
@@ -37353,7 +37353,7 @@ local datas = {
 	},
 	[700086042] = {
 		id = 700086042,
-		attack = 2123,
+		attack = 3185,
 		hp = 44584,
 		sunder = 885,
 		defence = 476,
@@ -37367,7 +37367,7 @@ local datas = {
 	},
 	[700086043] = {
 		id = 700086043,
-		attack = 2212,
+		attack = 3318,
 		hp = 46447,
 		sunder = 922,
 		defence = 496,
@@ -37381,7 +37381,7 @@ local datas = {
 	},
 	[700086044] = {
 		id = 700086044,
-		attack = 2302,
+		attack = 3453,
 		hp = 48348,
 		sunder = 959,
 		defence = 517,
@@ -37395,7 +37395,7 @@ local datas = {
 	},
 	[700086045] = {
 		id = 700086045,
-		attack = 2395,
+		attack = 3592,
 		hp = 50286,
 		sunder = 998,
 		defence = 537,
@@ -37409,7 +37409,7 @@ local datas = {
 	},
 	[700086046] = {
 		id = 700086046,
-		attack = 2463,
+		attack = 3695,
 		hp = 51730,
 		sunder = 1026,
 		defence = 553,
@@ -37423,7 +37423,7 @@ local datas = {
 	},
 	[700086047] = {
 		id = 700086047,
-		attack = 2533,
+		attack = 3799,
 		hp = 53189,
 		sunder = 1055,
 		defence = 568,
@@ -37437,7 +37437,7 @@ local datas = {
 	},
 	[700086048] = {
 		id = 700086048,
-		attack = 2603,
+		attack = 3905,
 		hp = 54664,
 		sunder = 1085,
 		defence = 584,
@@ -37451,7 +37451,7 @@ local datas = {
 	},
 	[700086049] = {
 		id = 700086049,
-		attack = 2674,
+		attack = 4011,
 		hp = 56154,
 		sunder = 1114,
 		defence = 600,
@@ -37465,7 +37465,7 @@ local datas = {
 	},
 	[700086050] = {
 		id = 700086050,
-		attack = 3203,
+		attack = 4805,
 		hp = 67270,
 		sunder = 1144,
 		defence = 616,
@@ -37479,7 +37479,7 @@ local datas = {
 	},
 	[700086051] = {
 		id = 700086051,
-		attack = 3304,
+		attack = 4957,
 		hp = 69391,
 		sunder = 1180,
 		defence = 635,
@@ -37493,7 +37493,7 @@ local datas = {
 	},
 	[700086052] = {
 		id = 700086052,
-		attack = 3407,
+		attack = 5110,
 		hp = 71544,
 		sunder = 1217,
 		defence = 655,
@@ -37507,7 +37507,7 @@ local datas = {
 	},
 	[700086053] = {
 		id = 700086053,
-		attack = 3511,
+		attack = 5266,
 		hp = 73728,
 		sunder = 1254,
 		defence = 675,
@@ -37521,7 +37521,7 @@ local datas = {
 	},
 	[700086054] = {
 		id = 700086054,
-		attack = 3616,
+		attack = 5425,
 		hp = 75943,
 		sunder = 1292,
 		defence = 695,
@@ -37535,7 +37535,7 @@ local datas = {
 	},
 	[700086055] = {
 		id = 700086055,
-		attack = 3723,
+		attack = 5585,
 		hp = 78190,
 		sunder = 1330,
 		defence = 716,
@@ -37549,7 +37549,7 @@ local datas = {
 	},
 	[700086056] = {
 		id = 700086056,
-		attack = 3861,
+		attack = 5791,
 		hp = 81074,
 		sunder = 1379,
 		defence = 742,
@@ -37563,7 +37563,7 @@ local datas = {
 	},
 	[700086057] = {
 		id = 700086057,
-		attack = 4001,
+		attack = 6001,
 		hp = 84011,
 		sunder = 1429,
 		defence = 769,
@@ -37577,7 +37577,7 @@ local datas = {
 	},
 	[700086058] = {
 		id = 700086058,
-		attack = 4143,
+		attack = 6214,
 		hp = 87000,
 		sunder = 1480,
 		defence = 797,
@@ -37591,7 +37591,7 @@ local datas = {
 	},
 	[700086059] = {
 		id = 700086059,
-		attack = 4288,
+		attack = 6432,
 		hp = 90042,
 		sunder = 1531,
 		defence = 825,
@@ -37605,7 +37605,7 @@ local datas = {
 	},
 	[700086060] = {
 		id = 700086060,
-		attack = 4435,
+		attack = 6653,
 		hp = 93135,
 		sunder = 1584,
 		defence = 853,
@@ -37619,7 +37619,7 @@ local datas = {
 	},
 	[700086061] = {
 		id = 700086061,
-		attack = 4540,
+		attack = 6810,
 		hp = 95341,
 		sunder = 1621,
 		defence = 873,
@@ -37633,7 +37633,7 @@ local datas = {
 	},
 	[700086062] = {
 		id = 700086062,
-		attack = 4646,
+		attack = 6969,
 		hp = 97570,
 		sunder = 1659,
 		defence = 893,
@@ -37647,7 +37647,7 @@ local datas = {
 	},
 	[700086063] = {
 		id = 700086063,
-		attack = 4753,
+		attack = 7130,
 		hp = 99821,
 		sunder = 1698,
 		defence = 914,
@@ -37661,7 +37661,7 @@ local datas = {
 	},
 	[700086064] = {
 		id = 700086064,
-		attack = 4862,
+		attack = 7292,
 		hp = 102094,
 		sunder = 1736,
 		defence = 935,
@@ -37675,7 +37675,7 @@ local datas = {
 	},
 	[700086065] = {
 		id = 700086065,
-		attack = 4971,
+		attack = 7456,
 		hp = 104390,
 		sunder = 1775,
 		defence = 956,
@@ -37689,7 +37689,7 @@ local datas = {
 	},
 	[700086066] = {
 		id = 700086066,
-		attack = 5144,
+		attack = 7716,
 		hp = 108025,
 		sunder = 1837,
 		defence = 989,
@@ -37703,7 +37703,7 @@ local datas = {
 	},
 	[700086067] = {
 		id = 700086067,
-		attack = 5320,
+		attack = 7980,
 		hp = 111720,
 		sunder = 1900,
 		defence = 1023,
@@ -37717,7 +37717,7 @@ local datas = {
 	},
 	[700086068] = {
 		id = 700086068,
-		attack = 5499,
+		attack = 8248,
 		hp = 115477,
 		sunder = 1964,
 		defence = 1057,
@@ -37731,7 +37731,7 @@ local datas = {
 	},
 	[700086069] = {
 		id = 700086069,
-		attack = 5681,
+		attack = 8521,
 		hp = 119295,
 		sunder = 2029,
 		defence = 1092,
@@ -37745,7 +37745,7 @@ local datas = {
 	},
 	[700086070] = {
 		id = 700086070,
-		attack = 5865,
+		attack = 8798,
 		hp = 123174,
 		sunder = 2095,
 		defence = 1128,
@@ -37759,7 +37759,7 @@ local datas = {
 	},
 	[700086071] = {
 		id = 700086071,
-		attack = 6018,
+		attack = 9027,
 		hp = 126384,
 		sunder = 2149,
 		defence = 1157,
@@ -37773,7 +37773,7 @@ local datas = {
 	},
 	[700086072] = {
 		id = 700086072,
-		attack = 6173,
+		attack = 9260,
 		hp = 129635,
 		sunder = 2205,
 		defence = 1187,
@@ -37787,7 +37787,7 @@ local datas = {
 	},
 	[700086073] = {
 		id = 700086073,
-		attack = 6330,
+		attack = 9495,
 		hp = 132928,
 		sunder = 2261,
 		defence = 1217,
@@ -37801,7 +37801,7 @@ local datas = {
 	},
 	[700086074] = {
 		id = 700086074,
-		attack = 6489,
+		attack = 9733,
 		hp = 136261,
 		sunder = 2317,
 		defence = 1248,
@@ -37815,7 +37815,7 @@ local datas = {
 	},
 	[700086075] = {
 		id = 700086075,
-		attack = 6649,
+		attack = 9974,
 		hp = 139635,
 		sunder = 2375,
 		defence = 1279,
@@ -37829,7 +37829,7 @@ local datas = {
 	},
 	[700086076] = {
 		id = 700086076,
-		attack = 6895,
+		attack = 10343,
 		hp = 144804,
 		sunder = 2463,
 		defence = 1326,
@@ -37843,7 +37843,7 @@ local datas = {
 	},
 	[700086077] = {
 		id = 700086077,
-		attack = 7146,
+		attack = 10718,
 		hp = 150058,
 		sunder = 2552,
 		defence = 1374,
@@ -37857,7 +37857,7 @@ local datas = {
 	},
 	[700086078] = {
 		id = 700086078,
-		attack = 7400,
+		attack = 11100,
 		hp = 155398,
 		sunder = 2643,
 		defence = 1423,
@@ -37871,7 +37871,7 @@ local datas = {
 	},
 	[700086079] = {
 		id = 700086079,
-		attack = 7658,
+		attack = 11487,
 		hp = 160824,
 		sunder = 2735,
 		defence = 1473,
@@ -37885,7 +37885,7 @@ local datas = {
 	},
 	[700086080] = {
 		id = 700086080,
-		attack = 7921,
+		attack = 11881,
 		hp = 166336,
 		sunder = 2829,
 		defence = 1523,
@@ -37899,7 +37899,7 @@ local datas = {
 	},
 	[700086081] = {
 		id = 700086081,
-		attack = 8094,
+		attack = 12141,
 		hp = 169969,
 		sunder = 2891,
 		defence = 1556,
@@ -37913,7 +37913,7 @@ local datas = {
 	},
 	[700086082] = {
 		id = 700086082,
-		attack = 8269,
+		attack = 12403,
 		hp = 173641,
 		sunder = 2953,
 		defence = 1590,
@@ -37927,7 +37927,7 @@ local datas = {
 	},
 	[700086083] = {
 		id = 700086083,
-		attack = 8445,
+		attack = 12668,
 		hp = 177352,
 		sunder = 3016,
 		defence = 1624,
@@ -37941,7 +37941,7 @@ local datas = {
 	},
 	[700086084] = {
 		id = 700086084,
-		attack = 8624,
+		attack = 12936,
 		hp = 181101,
 		sunder = 3080,
 		defence = 1658,
@@ -37955,7 +37955,7 @@ local datas = {
 	},
 	[700086085] = {
 		id = 700086085,
-		attack = 8804,
+		attack = 13206,
 		hp = 184889,
 		sunder = 3144,
 		defence = 1693,
@@ -37969,7 +37969,7 @@ local datas = {
 	},
 	[700086086] = {
 		id = 700086086,
-		attack = 9092,
+		attack = 13638,
 		hp = 190934,
 		sunder = 3247,
 		defence = 1748,
@@ -37983,7 +37983,7 @@ local datas = {
 	},
 	[700086087] = {
 		id = 700086087,
-		attack = 9384,
+		attack = 14076,
 		hp = 197067,
 		sunder = 3351,
 		defence = 1805,
@@ -37997,7 +37997,7 @@ local datas = {
 	},
 	[700086088] = {
 		id = 700086088,
-		attack = 9680,
+		attack = 14521,
 		hp = 203290,
 		sunder = 3457,
 		defence = 1862,
@@ -38011,7 +38011,7 @@ local datas = {
 	},
 	[700086089] = {
 		id = 700086089,
-		attack = 9981,
+		attack = 14972,
 		hp = 209602,
 		sunder = 3565,
 		defence = 1919,
@@ -38025,7 +38025,7 @@ local datas = {
 	},
 	[700086090] = {
 		id = 700086090,
-		attack = 10286,
+		attack = 15429,
 		hp = 216003,
 		sunder = 3674,
 		defence = 1978,
@@ -38039,7 +38039,7 @@ local datas = {
 	},
 	[700086091] = {
 		id = 700086091,
-		attack = 10508,
+		attack = 15761,
 		hp = 220658,
 		sunder = 3753,
 		defence = 2021,
@@ -38053,7 +38053,7 @@ local datas = {
 	},
 	[700086092] = {
 		id = 700086092,
-		attack = 10732,
+		attack = 16097,
 		hp = 225362,
 		sunder = 3833,
 		defence = 2064,
@@ -38067,7 +38067,7 @@ local datas = {
 	},
 	[700086093] = {
 		id = 700086093,
-		attack = 10958,
+		attack = 16437,
 		hp = 230116,
 		sunder = 3914,
 		defence = 2107,
@@ -38081,7 +38081,7 @@ local datas = {
 	},
 	[700086094] = {
 		id = 700086094,
-		attack = 11187,
+		attack = 16780,
 		hp = 234920,
 		sunder = 3995,
 		defence = 2151,
@@ -38095,7 +38095,7 @@ local datas = {
 	},
 	[700086095] = {
 		id = 700086095,
-		attack = 11418,
+		attack = 17127,
 		hp = 239774,
 		sunder = 4078,
 		defence = 2196,
@@ -38109,7 +38109,7 @@ local datas = {
 	},
 	[700086096] = {
 		id = 700086096,
-		attack = 11799,
+		attack = 17699,
 		hp = 247786,
 		sunder = 4214,
 		defence = 2269,
@@ -38123,7 +38123,7 @@ local datas = {
 	},
 	[700086097] = {
 		id = 700086097,
-		attack = 12186,
+		attack = 18279,
 		hp = 255911,
 		sunder = 4352,
 		defence = 2344,
@@ -38137,7 +38137,7 @@ local datas = {
 	},
 	[700086098] = {
 		id = 700086098,
-		attack = 12579,
+		attack = 18868,
 		hp = 264149,
 		sunder = 4492,
 		defence = 2419,
@@ -38151,7 +38151,7 @@ local datas = {
 	},
 	[700086099] = {
 		id = 700086099,
-		attack = 12976,
+		attack = 19464,
 		hp = 272500,
 		sunder = 4634,
 		defence = 2495,
@@ -38165,7 +38165,7 @@ local datas = {
 	},
 	[700086100] = {
 		id = 700086100,
-		attack = 13379,
+		attack = 20069,
 		hp = 280965,
 		sunder = 4778,
 		defence = 2573,
@@ -38179,7 +38179,7 @@ local datas = {
 	},
 	[700096000] = {
 		id = 700096000,
-		attack = 14,
+		attack = 20,
 		hp = 137,
 		sunder = 7,
 		defence = 4,
@@ -38193,7 +38193,7 @@ local datas = {
 	},
 	[700096001] = {
 		id = 700096001,
-		attack = 23,
+		attack = 34,
 		hp = 228,
 		sunder = 11,
 		defence = 6,
@@ -38207,7 +38207,7 @@ local datas = {
 	},
 	[700096002] = {
 		id = 700096002,
-		attack = 34,
+		attack = 50,
 		hp = 335,
 		sunder = 15,
 		defence = 8,
@@ -38221,7 +38221,7 @@ local datas = {
 	},
 	[700096003] = {
 		id = 700096003,
-		attack = 46,
+		attack = 69,
 		hp = 458,
 		sunder = 21,
 		defence = 11,
@@ -38235,7 +38235,7 @@ local datas = {
 	},
 	[700096004] = {
 		id = 700096004,
-		attack = 60,
+		attack = 90,
 		hp = 597,
 		sunder = 27,
 		defence = 14,
@@ -38249,7 +38249,7 @@ local datas = {
 	},
 	[700096005] = {
 		id = 700096005,
-		attack = 75,
+		attack = 113,
 		hp = 751,
 		sunder = 33,
 		defence = 18,
@@ -38263,7 +38263,7 @@ local datas = {
 	},
 	[700096006] = {
 		id = 700096006,
-		attack = 104,
+		attack = 157,
 		hp = 1044,
 		sunder = 45,
 		defence = 24,
@@ -38277,7 +38277,7 @@ local datas = {
 	},
 	[700096007] = {
 		id = 700096007,
-		attack = 138,
+		attack = 208,
 		hp = 1384,
 		sunder = 59,
 		defence = 32,
@@ -38291,7 +38291,7 @@ local datas = {
 	},
 	[700096008] = {
 		id = 700096008,
-		attack = 177,
+		attack = 266,
 		hp = 1771,
 		sunder = 75,
 		defence = 40,
@@ -38305,7 +38305,7 @@ local datas = {
 	},
 	[700096009] = {
 		id = 700096009,
-		attack = 220,
+		attack = 331,
 		hp = 2204,
 		sunder = 92,
 		defence = 50,
@@ -38319,7 +38319,7 @@ local datas = {
 	},
 	[700096010] = {
 		id = 700096010,
-		attack = 268,
+		attack = 403,
 		hp = 2683,
 		sunder = 112,
 		defence = 60,
@@ -38333,7 +38333,7 @@ local datas = {
 	},
 	[700096011] = {
 		id = 700096011,
-		attack = 314,
+		attack = 472,
 		hp = 3144,
 		sunder = 129,
 		defence = 69,
@@ -38347,7 +38347,7 @@ local datas = {
 	},
 	[700096012] = {
 		id = 700096012,
-		attack = 364,
+		attack = 546,
 		hp = 3642,
 		sunder = 147,
 		defence = 79,
@@ -38361,7 +38361,7 @@ local datas = {
 	},
 	[700096013] = {
 		id = 700096013,
-		attack = 418,
+		attack = 626,
 		hp = 4176,
 		sunder = 167,
 		defence = 90,
@@ -38375,7 +38375,7 @@ local datas = {
 	},
 	[700096014] = {
 		id = 700096014,
-		attack = 475,
+		attack = 712,
 		hp = 4747,
 		sunder = 188,
 		defence = 101,
@@ -38389,7 +38389,7 @@ local datas = {
 	},
 	[700096015] = {
 		id = 700096015,
-		attack = 535,
+		attack = 803,
 		hp = 5354,
 		sunder = 210,
 		defence = 113,
@@ -38403,7 +38403,7 @@ local datas = {
 	},
 	[700096016] = {
 		id = 700096016,
-		attack = 579,
+		attack = 868,
 		hp = 5788,
 		sunder = 224,
 		defence = 121,
@@ -38417,7 +38417,7 @@ local datas = {
 	},
 	[700096017] = {
 		id = 700096017,
-		attack = 624,
+		attack = 935,
 		hp = 6235,
 		sunder = 239,
 		defence = 129,
@@ -38431,7 +38431,7 @@ local datas = {
 	},
 	[700096018] = {
 		id = 700096018,
-		attack = 670,
+		attack = 1004,
 		hp = 6696,
 		sunder = 253,
 		defence = 136,
@@ -38445,7 +38445,7 @@ local datas = {
 	},
 	[700096019] = {
 		id = 700096019,
-		attack = 717,
+		attack = 1075,
 		hp = 7169,
 		sunder = 268,
 		defence = 145,
@@ -38459,7 +38459,7 @@ local datas = {
 	},
 	[700096020] = {
 		id = 700096020,
-		attack = 766,
+		attack = 1148,
 		hp = 7656,
 		sunder = 284,
 		defence = 153,
@@ -38473,7 +38473,7 @@ local datas = {
 	},
 	[700096021] = {
 		id = 700096021,
-		attack = 831,
+		attack = 1247,
 		hp = 8311,
 		sunder = 304,
 		defence = 164,
@@ -38487,7 +38487,7 @@ local datas = {
 	},
 	[700096022] = {
 		id = 700096022,
-		attack = 899,
+		attack = 1349,
 		hp = 8993,
 		sunder = 325,
 		defence = 175,
@@ -38501,7 +38501,7 @@ local datas = {
 	},
 	[700096023] = {
 		id = 700096023,
-		attack = 970,
+		attack = 1455,
 		hp = 9702,
 		sunder = 347,
 		defence = 187,
@@ -38515,7 +38515,7 @@ local datas = {
 	},
 	[700096024] = {
 		id = 700096024,
-		attack = 1044,
+		attack = 1566,
 		hp = 10437,
 		sunder = 370,
 		defence = 199,
@@ -38529,7 +38529,7 @@ local datas = {
 	},
 	[700096025] = {
 		id = 700096025,
-		attack = 1120,
+		attack = 1680,
 		hp = 11200,
 		sunder = 393,
 		defence = 212,
@@ -38543,7 +38543,7 @@ local datas = {
 	},
 	[700096026] = {
 		id = 700096026,
-		attack = 1180,
+		attack = 1769,
 		hp = 11796,
 		sunder = 410,
 		defence = 221,
@@ -38557,7 +38557,7 @@ local datas = {
 	},
 	[700096027] = {
 		id = 700096027,
-		attack = 1241,
+		attack = 1861,
 		hp = 12406,
 		sunder = 426,
 		defence = 229,
@@ -38571,7 +38571,7 @@ local datas = {
 	},
 	[700096028] = {
 		id = 700096028,
-		attack = 1303,
+		attack = 1954,
 		hp = 13028,
 		sunder = 443,
 		defence = 239,
@@ -38585,7 +38585,7 @@ local datas = {
 	},
 	[700096029] = {
 		id = 700096029,
-		attack = 1366,
+		attack = 2050,
 		hp = 13664,
 		sunder = 460,
 		defence = 248,
@@ -38599,7 +38599,7 @@ local datas = {
 	},
 	[700096030] = {
 		id = 700096030,
-		attack = 1717,
+		attack = 2576,
 		hp = 17175,
 		sunder = 477,
 		defence = 257,
@@ -38613,7 +38613,7 @@ local datas = {
 	},
 	[700096031] = {
 		id = 700096031,
-		attack = 1822,
+		attack = 2733,
 		hp = 18217,
 		sunder = 506,
 		defence = 272,
@@ -38627,7 +38627,7 @@ local datas = {
 	},
 	[700096032] = {
 		id = 700096032,
-		attack = 1929,
+		attack = 2893,
 		hp = 19290,
 		sunder = 536,
 		defence = 289,
@@ -38641,7 +38641,7 @@ local datas = {
 	},
 	[700096033] = {
 		id = 700096033,
-		attack = 2039,
+		attack = 3059,
 		hp = 20393,
 		sunder = 566,
 		defence = 305,
@@ -38655,7 +38655,7 @@ local datas = {
 	},
 	[700096034] = {
 		id = 700096034,
-		attack = 2153,
+		attack = 3229,
 		hp = 21527,
 		sunder = 598,
 		defence = 322,
@@ -38669,7 +38669,7 @@ local datas = {
 	},
 	[700096035] = {
 		id = 700096035,
-		attack = 2269,
+		attack = 3404,
 		hp = 22692,
 		sunder = 630,
 		defence = 339,
@@ -38683,7 +38683,7 @@ local datas = {
 	},
 	[700096036] = {
 		id = 700096036,
-		attack = 2394,
+		attack = 3591,
 		hp = 23940,
 		sunder = 665,
 		defence = 358,
@@ -38697,7 +38697,7 @@ local datas = {
 	},
 	[700096037] = {
 		id = 700096037,
-		attack = 2522,
+		attack = 3783,
 		hp = 25221,
 		sunder = 701,
 		defence = 377,
@@ -38711,7 +38711,7 @@ local datas = {
 	},
 	[700096038] = {
 		id = 700096038,
-		attack = 2654,
+		attack = 3980,
 		hp = 26536,
 		sunder = 737,
 		defence = 397,
@@ -38725,7 +38725,7 @@ local datas = {
 	},
 	[700096039] = {
 		id = 700096039,
-		attack = 2788,
+		attack = 4183,
 		hp = 27884,
 		sunder = 775,
 		defence = 417,
@@ -38739,7 +38739,7 @@ local datas = {
 	},
 	[700096040] = {
 		id = 700096040,
-		attack = 2927,
+		attack = 4390,
 		hp = 29265,
 		sunder = 813,
 		defence = 438,
@@ -38753,7 +38753,7 @@ local datas = {
 	},
 	[700096041] = {
 		id = 700096041,
-		attack = 3054,
+		attack = 4581,
 		hp = 30542,
 		sunder = 848,
 		defence = 457,
@@ -38767,7 +38767,7 @@ local datas = {
 	},
 	[700096042] = {
 		id = 700096042,
-		attack = 3185,
+		attack = 4777,
 		hp = 31846,
 		sunder = 885,
 		defence = 476,
@@ -38781,7 +38781,7 @@ local datas = {
 	},
 	[700096043] = {
 		id = 700096043,
-		attack = 3318,
+		attack = 4976,
 		hp = 33176,
 		sunder = 922,
 		defence = 496,
@@ -38795,7 +38795,7 @@ local datas = {
 	},
 	[700096044] = {
 		id = 700096044,
-		attack = 3453,
+		attack = 5180,
 		hp = 34534,
 		sunder = 959,
 		defence = 517,
@@ -38809,7 +38809,7 @@ local datas = {
 	},
 	[700096045] = {
 		id = 700096045,
-		attack = 3592,
+		attack = 5388,
 		hp = 35919,
 		sunder = 998,
 		defence = 537,
@@ -38823,7 +38823,7 @@ local datas = {
 	},
 	[700096046] = {
 		id = 700096046,
-		attack = 3695,
+		attack = 5542,
 		hp = 36950,
 		sunder = 1026,
 		defence = 553,
@@ -38837,7 +38837,7 @@ local datas = {
 	},
 	[700096047] = {
 		id = 700096047,
-		attack = 3799,
+		attack = 5699,
 		hp = 37992,
 		sunder = 1055,
 		defence = 568,
@@ -38851,7 +38851,7 @@ local datas = {
 	},
 	[700096048] = {
 		id = 700096048,
-		attack = 3905,
+		attack = 5857,
 		hp = 39046,
 		sunder = 1085,
 		defence = 584,
@@ -38865,7 +38865,7 @@ local datas = {
 	},
 	[700096049] = {
 		id = 700096049,
-		attack = 4011,
+		attack = 6017,
 		hp = 40110,
 		sunder = 1114,
 		defence = 600,
@@ -38879,7 +38879,7 @@ local datas = {
 	},
 	[700096050] = {
 		id = 700096050,
-		attack = 4805,
+		attack = 7207,
 		hp = 48050,
 		sunder = 1144,
 		defence = 616,
@@ -38893,7 +38893,7 @@ local datas = {
 	},
 	[700096051] = {
 		id = 700096051,
-		attack = 4957,
+		attack = 7435,
 		hp = 49565,
 		sunder = 1180,
 		defence = 635,
@@ -38907,7 +38907,7 @@ local datas = {
 	},
 	[700096052] = {
 		id = 700096052,
-		attack = 5110,
+		attack = 7665,
 		hp = 51103,
 		sunder = 1217,
 		defence = 655,
@@ -38921,7 +38921,7 @@ local datas = {
 	},
 	[700096053] = {
 		id = 700096053,
-		attack = 5266,
+		attack = 7899,
 		hp = 52663,
 		sunder = 1254,
 		defence = 675,
@@ -38935,7 +38935,7 @@ local datas = {
 	},
 	[700096054] = {
 		id = 700096054,
-		attack = 5425,
+		attack = 8137,
 		hp = 54245,
 		sunder = 1292,
 		defence = 695,
@@ -38949,7 +38949,7 @@ local datas = {
 	},
 	[700096055] = {
 		id = 700096055,
-		attack = 5585,
+		attack = 8377,
 		hp = 55850,
 		sunder = 1330,
 		defence = 716,
@@ -38963,7 +38963,7 @@ local datas = {
 	},
 	[700096056] = {
 		id = 700096056,
-		attack = 5791,
+		attack = 8687,
 		hp = 57910,
 		sunder = 1379,
 		defence = 742,
@@ -38977,7 +38977,7 @@ local datas = {
 	},
 	[700096057] = {
 		id = 700096057,
-		attack = 6001,
+		attack = 9001,
 		hp = 60008,
 		sunder = 1429,
 		defence = 769,
@@ -38991,7 +38991,7 @@ local datas = {
 	},
 	[700096058] = {
 		id = 700096058,
-		attack = 6214,
+		attack = 9321,
 		hp = 62143,
 		sunder = 1480,
 		defence = 797,
@@ -39005,7 +39005,7 @@ local datas = {
 	},
 	[700096059] = {
 		id = 700096059,
-		attack = 6432,
+		attack = 9647,
 		hp = 64315,
 		sunder = 1531,
 		defence = 825,
@@ -39019,7 +39019,7 @@ local datas = {
 	},
 	[700096060] = {
 		id = 700096060,
-		attack = 6653,
+		attack = 9979,
 		hp = 66525,
 		sunder = 1584,
 		defence = 853,
@@ -39033,7 +39033,7 @@ local datas = {
 	},
 	[700096061] = {
 		id = 700096061,
-		attack = 6810,
+		attack = 10215,
 		hp = 68101,
 		sunder = 1621,
 		defence = 873,
@@ -39047,7 +39047,7 @@ local datas = {
 	},
 	[700096062] = {
 		id = 700096062,
-		attack = 6969,
+		attack = 10454,
 		hp = 69693,
 		sunder = 1659,
 		defence = 893,
@@ -39061,7 +39061,7 @@ local datas = {
 	},
 	[700096063] = {
 		id = 700096063,
-		attack = 7130,
+		attack = 10695,
 		hp = 71301,
 		sunder = 1698,
 		defence = 914,
@@ -39075,7 +39075,7 @@ local datas = {
 	},
 	[700096064] = {
 		id = 700096064,
-		attack = 7292,
+		attack = 10939,
 		hp = 72924,
 		sunder = 1736,
 		defence = 935,
@@ -39089,7 +39089,7 @@ local datas = {
 	},
 	[700096065] = {
 		id = 700096065,
-		attack = 7456,
+		attack = 11185,
 		hp = 74564,
 		sunder = 1775,
 		defence = 956,
@@ -39103,7 +39103,7 @@ local datas = {
 	},
 	[700096066] = {
 		id = 700096066,
-		attack = 7716,
+		attack = 11574,
 		hp = 77160,
 		sunder = 1837,
 		defence = 989,
@@ -39117,7 +39117,7 @@ local datas = {
 	},
 	[700096067] = {
 		id = 700096067,
-		attack = 7980,
+		attack = 11970,
 		hp = 79800,
 		sunder = 1900,
 		defence = 1023,
@@ -39131,7 +39131,7 @@ local datas = {
 	},
 	[700096068] = {
 		id = 700096068,
-		attack = 8248,
+		attack = 12373,
 		hp = 82484,
 		sunder = 1964,
 		defence = 1057,
@@ -39145,7 +39145,7 @@ local datas = {
 	},
 	[700096069] = {
 		id = 700096069,
-		attack = 8521,
+		attack = 12782,
 		hp = 85211,
 		sunder = 2029,
 		defence = 1092,
@@ -39159,7 +39159,7 @@ local datas = {
 	},
 	[700096070] = {
 		id = 700096070,
-		attack = 8798,
+		attack = 13197,
 		hp = 87982,
 		sunder = 2095,
 		defence = 1128,
@@ -39173,7 +39173,7 @@ local datas = {
 	},
 	[700096071] = {
 		id = 700096071,
-		attack = 9027,
+		attack = 13541,
 		hp = 90274,
 		sunder = 2149,
 		defence = 1157,
@@ -39187,7 +39187,7 @@ local datas = {
 	},
 	[700096072] = {
 		id = 700096072,
-		attack = 9260,
+		attack = 13890,
 		hp = 92597,
 		sunder = 2205,
 		defence = 1187,
@@ -39201,7 +39201,7 @@ local datas = {
 	},
 	[700096073] = {
 		id = 700096073,
-		attack = 9495,
+		attack = 14242,
 		hp = 94948,
 		sunder = 2261,
 		defence = 1217,
@@ -39215,7 +39215,7 @@ local datas = {
 	},
 	[700096074] = {
 		id = 700096074,
-		attack = 9733,
+		attack = 14599,
 		hp = 97329,
 		sunder = 2317,
 		defence = 1248,
@@ -39229,7 +39229,7 @@ local datas = {
 	},
 	[700096075] = {
 		id = 700096075,
-		attack = 9974,
+		attack = 14961,
 		hp = 99740,
 		sunder = 2375,
 		defence = 1279,
@@ -39243,7 +39243,7 @@ local datas = {
 	},
 	[700096076] = {
 		id = 700096076,
-		attack = 10343,
+		attack = 15515,
 		hp = 103431,
 		sunder = 2463,
 		defence = 1326,
@@ -39257,7 +39257,7 @@ local datas = {
 	},
 	[700096077] = {
 		id = 700096077,
-		attack = 10718,
+		attack = 16078,
 		hp = 107184,
 		sunder = 2552,
 		defence = 1374,
@@ -39271,7 +39271,7 @@ local datas = {
 	},
 	[700096078] = {
 		id = 700096078,
-		attack = 11100,
+		attack = 16650,
 		hp = 110998,
 		sunder = 2643,
 		defence = 1423,
@@ -39285,7 +39285,7 @@ local datas = {
 	},
 	[700096079] = {
 		id = 700096079,
-		attack = 11487,
+		attack = 17231,
 		hp = 114874,
 		sunder = 2735,
 		defence = 1473,
@@ -39299,7 +39299,7 @@ local datas = {
 	},
 	[700096080] = {
 		id = 700096080,
-		attack = 11881,
+		attack = 17822,
 		hp = 118811,
 		sunder = 2829,
 		defence = 1523,
@@ -39313,7 +39313,7 @@ local datas = {
 	},
 	[700096081] = {
 		id = 700096081,
-		attack = 12141,
+		attack = 18211,
 		hp = 121407,
 		sunder = 2891,
 		defence = 1556,
@@ -39327,7 +39327,7 @@ local datas = {
 	},
 	[700096082] = {
 		id = 700096082,
-		attack = 12403,
+		attack = 18604,
 		hp = 124029,
 		sunder = 2953,
 		defence = 1590,
@@ -39341,7 +39341,7 @@ local datas = {
 	},
 	[700096083] = {
 		id = 700096083,
-		attack = 12668,
+		attack = 19002,
 		hp = 126680,
 		sunder = 3016,
 		defence = 1624,
@@ -39355,7 +39355,7 @@ local datas = {
 	},
 	[700096084] = {
 		id = 700096084,
-		attack = 12936,
+		attack = 19404,
 		hp = 129358,
 		sunder = 3080,
 		defence = 1658,
@@ -39369,7 +39369,7 @@ local datas = {
 	},
 	[700096085] = {
 		id = 700096085,
-		attack = 13206,
+		attack = 19810,
 		hp = 132063,
 		sunder = 3144,
 		defence = 1693,
@@ -39383,7 +39383,7 @@ local datas = {
 	},
 	[700096086] = {
 		id = 700096086,
-		attack = 13638,
+		attack = 20457,
 		hp = 136381,
 		sunder = 3247,
 		defence = 1748,
@@ -39397,7 +39397,7 @@ local datas = {
 	},
 	[700096087] = {
 		id = 700096087,
-		attack = 14076,
+		attack = 21114,
 		hp = 140762,
 		sunder = 3351,
 		defence = 1805,
@@ -39411,7 +39411,7 @@ local datas = {
 	},
 	[700096088] = {
 		id = 700096088,
-		attack = 14521,
+		attack = 21781,
 		hp = 145207,
 		sunder = 3457,
 		defence = 1862,
@@ -39425,7 +39425,7 @@ local datas = {
 	},
 	[700096089] = {
 		id = 700096089,
-		attack = 14972,
+		attack = 22457,
 		hp = 149716,
 		sunder = 3565,
 		defence = 1919,
@@ -39439,7 +39439,7 @@ local datas = {
 	},
 	[700096090] = {
 		id = 700096090,
-		attack = 15429,
+		attack = 23143,
 		hp = 154288,
 		sunder = 3674,
 		defence = 1978,
@@ -39453,7 +39453,7 @@ local datas = {
 	},
 	[700096091] = {
 		id = 700096091,
-		attack = 15761,
+		attack = 23642,
 		hp = 157613,
 		sunder = 3753,
 		defence = 2021,
@@ -39467,7 +39467,7 @@ local datas = {
 	},
 	[700096092] = {
 		id = 700096092,
-		attack = 16097,
+		attack = 24146,
 		hp = 160973,
 		sunder = 3833,
 		defence = 2064,
@@ -39481,7 +39481,7 @@ local datas = {
 	},
 	[700096093] = {
 		id = 700096093,
-		attack = 16437,
+		attack = 24655,
 		hp = 164369,
 		sunder = 3914,
 		defence = 2107,
@@ -39495,7 +39495,7 @@ local datas = {
 	},
 	[700096094] = {
 		id = 700096094,
-		attack = 16780,
+		attack = 25170,
 		hp = 167800,
 		sunder = 3995,
 		defence = 2151,
@@ -39509,7 +39509,7 @@ local datas = {
 	},
 	[700096095] = {
 		id = 700096095,
-		attack = 17127,
+		attack = 25690,
 		hp = 171267,
 		sunder = 4078,
 		defence = 2196,
@@ -39523,7 +39523,7 @@ local datas = {
 	},
 	[700096096] = {
 		id = 700096096,
-		attack = 17699,
+		attack = 26548,
 		hp = 176990,
 		sunder = 4214,
 		defence = 2269,
@@ -39537,7 +39537,7 @@ local datas = {
 	},
 	[700096097] = {
 		id = 700096097,
-		attack = 18279,
+		attack = 27419,
 		hp = 182793,
 		sunder = 4352,
 		defence = 2344,
@@ -39551,7 +39551,7 @@ local datas = {
 	},
 	[700096098] = {
 		id = 700096098,
-		attack = 18868,
+		attack = 28302,
 		hp = 188678,
 		sunder = 4492,
 		defence = 2419,
@@ -39565,7 +39565,7 @@ local datas = {
 	},
 	[700096099] = {
 		id = 700096099,
-		attack = 19464,
+		attack = 29196,
 		hp = 194643,
 		sunder = 4634,
 		defence = 2495,
@@ -39579,7 +39579,7 @@ local datas = {
 	},
 	[700096100] = {
 		id = 700096100,
-		attack = 20069,
+		attack = 30103,
 		hp = 200689,
 		sunder = 4778,
 		defence = 2573,
@@ -39593,7 +39593,7 @@ local datas = {
 	},
 	[700106000] = {
 		id = 700106000,
-		attack = 14,
+		attack = 20,
 		hp = 191,
 		sunder = 7,
 		defence = 4,
@@ -39607,7 +39607,7 @@ local datas = {
 	},
 	[700106001] = {
 		id = 700106001,
-		attack = 23,
+		attack = 34,
 		hp = 319,
 		sunder = 11,
 		defence = 6,
@@ -39621,7 +39621,7 @@ local datas = {
 	},
 	[700106002] = {
 		id = 700106002,
-		attack = 34,
+		attack = 50,
 		hp = 470,
 		sunder = 15,
 		defence = 8,
@@ -39635,7 +39635,7 @@ local datas = {
 	},
 	[700106003] = {
 		id = 700106003,
-		attack = 46,
+		attack = 69,
 		hp = 642,
 		sunder = 21,
 		defence = 11,
@@ -39649,7 +39649,7 @@ local datas = {
 	},
 	[700106004] = {
 		id = 700106004,
-		attack = 60,
+		attack = 90,
 		hp = 835,
 		sunder = 27,
 		defence = 14,
@@ -39663,7 +39663,7 @@ local datas = {
 	},
 	[700106005] = {
 		id = 700106005,
-		attack = 75,
+		attack = 113,
 		hp = 1051,
 		sunder = 33,
 		defence = 18,
@@ -39677,7 +39677,7 @@ local datas = {
 	},
 	[700106006] = {
 		id = 700106006,
-		attack = 104,
+		attack = 157,
 		hp = 1462,
 		sunder = 45,
 		defence = 24,
@@ -39691,7 +39691,7 @@ local datas = {
 	},
 	[700106007] = {
 		id = 700106007,
-		attack = 138,
+		attack = 208,
 		hp = 1938,
 		sunder = 59,
 		defence = 32,
@@ -39705,7 +39705,7 @@ local datas = {
 	},
 	[700106008] = {
 		id = 700106008,
-		attack = 177,
+		attack = 266,
 		hp = 2479,
 		sunder = 75,
 		defence = 40,
@@ -39719,7 +39719,7 @@ local datas = {
 	},
 	[700106009] = {
 		id = 700106009,
-		attack = 220,
+		attack = 331,
 		hp = 3085,
 		sunder = 92,
 		defence = 50,
@@ -39733,7 +39733,7 @@ local datas = {
 	},
 	[700106010] = {
 		id = 700106010,
-		attack = 268,
+		attack = 403,
 		hp = 3757,
 		sunder = 112,
 		defence = 60,
@@ -39747,7 +39747,7 @@ local datas = {
 	},
 	[700106011] = {
 		id = 700106011,
-		attack = 314,
+		attack = 472,
 		hp = 4402,
 		sunder = 129,
 		defence = 69,
@@ -39761,7 +39761,7 @@ local datas = {
 	},
 	[700106012] = {
 		id = 700106012,
-		attack = 364,
+		attack = 546,
 		hp = 5099,
 		sunder = 147,
 		defence = 79,
@@ -39775,7 +39775,7 @@ local datas = {
 	},
 	[700106013] = {
 		id = 700106013,
-		attack = 418,
+		attack = 626,
 		hp = 5846,
 		sunder = 167,
 		defence = 90,
@@ -39789,7 +39789,7 @@ local datas = {
 	},
 	[700106014] = {
 		id = 700106014,
-		attack = 475,
+		attack = 712,
 		hp = 6645,
 		sunder = 188,
 		defence = 101,
@@ -39803,7 +39803,7 @@ local datas = {
 	},
 	[700106015] = {
 		id = 700106015,
-		attack = 535,
+		attack = 803,
 		hp = 7495,
 		sunder = 210,
 		defence = 113,
@@ -39817,7 +39817,7 @@ local datas = {
 	},
 	[700106016] = {
 		id = 700106016,
-		attack = 579,
+		attack = 868,
 		hp = 8103,
 		sunder = 224,
 		defence = 121,
@@ -39831,7 +39831,7 @@ local datas = {
 	},
 	[700106017] = {
 		id = 700106017,
-		attack = 624,
+		attack = 935,
 		hp = 8729,
 		sunder = 239,
 		defence = 129,
@@ -39845,7 +39845,7 @@ local datas = {
 	},
 	[700106018] = {
 		id = 700106018,
-		attack = 670,
+		attack = 1004,
 		hp = 9374,
 		sunder = 253,
 		defence = 136,
@@ -39859,7 +39859,7 @@ local datas = {
 	},
 	[700106019] = {
 		id = 700106019,
-		attack = 717,
+		attack = 1075,
 		hp = 10037,
 		sunder = 268,
 		defence = 145,
@@ -39873,7 +39873,7 @@ local datas = {
 	},
 	[700106020] = {
 		id = 700106020,
-		attack = 766,
+		attack = 1148,
 		hp = 10719,
 		sunder = 284,
 		defence = 153,
@@ -39887,7 +39887,7 @@ local datas = {
 	},
 	[700106021] = {
 		id = 700106021,
-		attack = 831,
+		attack = 1247,
 		hp = 11636,
 		sunder = 304,
 		defence = 164,
@@ -39901,7 +39901,7 @@ local datas = {
 	},
 	[700106022] = {
 		id = 700106022,
-		attack = 899,
+		attack = 1349,
 		hp = 12591,
 		sunder = 325,
 		defence = 175,
@@ -39915,7 +39915,7 @@ local datas = {
 	},
 	[700106023] = {
 		id = 700106023,
-		attack = 970,
+		attack = 1455,
 		hp = 13583,
 		sunder = 347,
 		defence = 187,
@@ -39929,7 +39929,7 @@ local datas = {
 	},
 	[700106024] = {
 		id = 700106024,
-		attack = 1044,
+		attack = 1566,
 		hp = 14612,
 		sunder = 370,
 		defence = 199,
@@ -39943,7 +39943,7 @@ local datas = {
 	},
 	[700106025] = {
 		id = 700106025,
-		attack = 1120,
+		attack = 1680,
 		hp = 15679,
 		sunder = 393,
 		defence = 212,
@@ -39957,7 +39957,7 @@ local datas = {
 	},
 	[700106026] = {
 		id = 700106026,
-		attack = 1180,
+		attack = 1769,
 		hp = 16515,
 		sunder = 410,
 		defence = 221,
@@ -39971,7 +39971,7 @@ local datas = {
 	},
 	[700106027] = {
 		id = 700106027,
-		attack = 1241,
+		attack = 1861,
 		hp = 17368,
 		sunder = 426,
 		defence = 229,
@@ -39985,7 +39985,7 @@ local datas = {
 	},
 	[700106028] = {
 		id = 700106028,
-		attack = 1303,
+		attack = 1954,
 		hp = 18239,
 		sunder = 443,
 		defence = 239,
@@ -39999,7 +39999,7 @@ local datas = {
 	},
 	[700106029] = {
 		id = 700106029,
-		attack = 1366,
+		attack = 2050,
 		hp = 19129,
 		sunder = 460,
 		defence = 248,
@@ -40013,7 +40013,7 @@ local datas = {
 	},
 	[700106030] = {
 		id = 700106030,
-		attack = 1717,
+		attack = 2576,
 		hp = 24044,
 		sunder = 477,
 		defence = 257,
@@ -40027,7 +40027,7 @@ local datas = {
 	},
 	[700106031] = {
 		id = 700106031,
-		attack = 1822,
+		attack = 2733,
 		hp = 25503,
 		sunder = 506,
 		defence = 272,
@@ -40041,7 +40041,7 @@ local datas = {
 	},
 	[700106032] = {
 		id = 700106032,
-		attack = 1929,
+		attack = 2893,
 		hp = 27005,
 		sunder = 536,
 		defence = 289,
@@ -40055,7 +40055,7 @@ local datas = {
 	},
 	[700106033] = {
 		id = 700106033,
-		attack = 2039,
+		attack = 3059,
 		hp = 28550,
 		sunder = 566,
 		defence = 305,
@@ -40069,7 +40069,7 @@ local datas = {
 	},
 	[700106034] = {
 		id = 700106034,
-		attack = 2153,
+		attack = 3229,
 		hp = 30138,
 		sunder = 598,
 		defence = 322,
@@ -40083,7 +40083,7 @@ local datas = {
 	},
 	[700106035] = {
 		id = 700106035,
-		attack = 2269,
+		attack = 3404,
 		hp = 31769,
 		sunder = 630,
 		defence = 339,
@@ -40097,7 +40097,7 @@ local datas = {
 	},
 	[700106036] = {
 		id = 700106036,
-		attack = 2394,
+		attack = 3591,
 		hp = 33516,
 		sunder = 665,
 		defence = 358,
@@ -40111,7 +40111,7 @@ local datas = {
 	},
 	[700106037] = {
 		id = 700106037,
-		attack = 2522,
+		attack = 3783,
 		hp = 35310,
 		sunder = 701,
 		defence = 377,
@@ -40125,7 +40125,7 @@ local datas = {
 	},
 	[700106038] = {
 		id = 700106038,
-		attack = 2654,
+		attack = 3980,
 		hp = 37150,
 		sunder = 737,
 		defence = 397,
@@ -40139,7 +40139,7 @@ local datas = {
 	},
 	[700106039] = {
 		id = 700106039,
-		attack = 2788,
+		attack = 4183,
 		hp = 39037,
 		sunder = 775,
 		defence = 417,
@@ -40153,7 +40153,7 @@ local datas = {
 	},
 	[700106040] = {
 		id = 700106040,
-		attack = 2927,
+		attack = 4390,
 		hp = 40971,
 		sunder = 813,
 		defence = 438,
@@ -40167,7 +40167,7 @@ local datas = {
 	},
 	[700106041] = {
 		id = 700106041,
-		attack = 3054,
+		attack = 4581,
 		hp = 42759,
 		sunder = 848,
 		defence = 457,
@@ -40181,7 +40181,7 @@ local datas = {
 	},
 	[700106042] = {
 		id = 700106042,
-		attack = 3185,
+		attack = 4777,
 		hp = 44584,
 		sunder = 885,
 		defence = 476,
@@ -40195,7 +40195,7 @@ local datas = {
 	},
 	[700106043] = {
 		id = 700106043,
-		attack = 3318,
+		attack = 4976,
 		hp = 46447,
 		sunder = 922,
 		defence = 496,
@@ -40209,7 +40209,7 @@ local datas = {
 	},
 	[700106044] = {
 		id = 700106044,
-		attack = 3453,
+		attack = 5180,
 		hp = 48348,
 		sunder = 959,
 		defence = 517,
@@ -40223,7 +40223,7 @@ local datas = {
 	},
 	[700106045] = {
 		id = 700106045,
-		attack = 3592,
+		attack = 5388,
 		hp = 50286,
 		sunder = 998,
 		defence = 537,
@@ -40237,7 +40237,7 @@ local datas = {
 	},
 	[700106046] = {
 		id = 700106046,
-		attack = 3695,
+		attack = 5542,
 		hp = 51730,
 		sunder = 1026,
 		defence = 553,
@@ -40251,7 +40251,7 @@ local datas = {
 	},
 	[700106047] = {
 		id = 700106047,
-		attack = 3799,
+		attack = 5699,
 		hp = 53189,
 		sunder = 1055,
 		defence = 568,
@@ -40265,7 +40265,7 @@ local datas = {
 	},
 	[700106048] = {
 		id = 700106048,
-		attack = 3905,
+		attack = 5857,
 		hp = 54664,
 		sunder = 1085,
 		defence = 584,
@@ -40279,7 +40279,7 @@ local datas = {
 	},
 	[700106049] = {
 		id = 700106049,
-		attack = 4011,
+		attack = 6017,
 		hp = 56154,
 		sunder = 1114,
 		defence = 600,
@@ -40293,7 +40293,7 @@ local datas = {
 	},
 	[700106050] = {
 		id = 700106050,
-		attack = 4805,
+		attack = 7207,
 		hp = 67270,
 		sunder = 1144,
 		defence = 616,
@@ -40307,7 +40307,7 @@ local datas = {
 	},
 	[700106051] = {
 		id = 700106051,
-		attack = 4957,
+		attack = 7435,
 		hp = 69391,
 		sunder = 1180,
 		defence = 635,
@@ -40321,7 +40321,7 @@ local datas = {
 	},
 	[700106052] = {
 		id = 700106052,
-		attack = 5110,
+		attack = 7665,
 		hp = 71544,
 		sunder = 1217,
 		defence = 655,
@@ -40335,7 +40335,7 @@ local datas = {
 	},
 	[700106053] = {
 		id = 700106053,
-		attack = 5266,
+		attack = 7899,
 		hp = 73728,
 		sunder = 1254,
 		defence = 675,
@@ -40349,7 +40349,7 @@ local datas = {
 	},
 	[700106054] = {
 		id = 700106054,
-		attack = 5425,
+		attack = 8137,
 		hp = 75943,
 		sunder = 1292,
 		defence = 695,
@@ -40363,7 +40363,7 @@ local datas = {
 	},
 	[700106055] = {
 		id = 700106055,
-		attack = 5585,
+		attack = 8377,
 		hp = 78190,
 		sunder = 1330,
 		defence = 716,
@@ -40377,7 +40377,7 @@ local datas = {
 	},
 	[700106056] = {
 		id = 700106056,
-		attack = 5791,
+		attack = 8687,
 		hp = 81074,
 		sunder = 1379,
 		defence = 742,
@@ -40391,7 +40391,7 @@ local datas = {
 	},
 	[700106057] = {
 		id = 700106057,
-		attack = 6001,
+		attack = 9001,
 		hp = 84011,
 		sunder = 1429,
 		defence = 769,
@@ -40405,7 +40405,7 @@ local datas = {
 	},
 	[700106058] = {
 		id = 700106058,
-		attack = 6214,
+		attack = 9321,
 		hp = 87000,
 		sunder = 1480,
 		defence = 797,
@@ -40419,7 +40419,7 @@ local datas = {
 	},
 	[700106059] = {
 		id = 700106059,
-		attack = 6432,
+		attack = 9647,
 		hp = 90042,
 		sunder = 1531,
 		defence = 825,
@@ -40433,7 +40433,7 @@ local datas = {
 	},
 	[700106060] = {
 		id = 700106060,
-		attack = 6653,
+		attack = 9979,
 		hp = 93135,
 		sunder = 1584,
 		defence = 853,
@@ -40447,7 +40447,7 @@ local datas = {
 	},
 	[700106061] = {
 		id = 700106061,
-		attack = 6810,
+		attack = 10215,
 		hp = 95341,
 		sunder = 1621,
 		defence = 873,
@@ -40461,7 +40461,7 @@ local datas = {
 	},
 	[700106062] = {
 		id = 700106062,
-		attack = 6969,
+		attack = 10454,
 		hp = 97570,
 		sunder = 1659,
 		defence = 893,
@@ -40475,7 +40475,7 @@ local datas = {
 	},
 	[700106063] = {
 		id = 700106063,
-		attack = 7130,
+		attack = 10695,
 		hp = 99821,
 		sunder = 1698,
 		defence = 914,
@@ -40489,7 +40489,7 @@ local datas = {
 	},
 	[700106064] = {
 		id = 700106064,
-		attack = 7292,
+		attack = 10939,
 		hp = 102094,
 		sunder = 1736,
 		defence = 935,
@@ -40503,7 +40503,7 @@ local datas = {
 	},
 	[700106065] = {
 		id = 700106065,
-		attack = 7456,
+		attack = 11185,
 		hp = 104390,
 		sunder = 1775,
 		defence = 956,
@@ -40517,7 +40517,7 @@ local datas = {
 	},
 	[700106066] = {
 		id = 700106066,
-		attack = 7716,
+		attack = 11574,
 		hp = 108025,
 		sunder = 1837,
 		defence = 989,
@@ -40531,7 +40531,7 @@ local datas = {
 	},
 	[700106067] = {
 		id = 700106067,
-		attack = 7980,
+		attack = 11970,
 		hp = 111720,
 		sunder = 1900,
 		defence = 1023,
@@ -40545,7 +40545,7 @@ local datas = {
 	},
 	[700106068] = {
 		id = 700106068,
-		attack = 8248,
+		attack = 12373,
 		hp = 115477,
 		sunder = 1964,
 		defence = 1057,
@@ -40559,7 +40559,7 @@ local datas = {
 	},
 	[700106069] = {
 		id = 700106069,
-		attack = 8521,
+		attack = 12782,
 		hp = 119295,
 		sunder = 2029,
 		defence = 1092,
@@ -40573,7 +40573,7 @@ local datas = {
 	},
 	[700106070] = {
 		id = 700106070,
-		attack = 8798,
+		attack = 13197,
 		hp = 123174,
 		sunder = 2095,
 		defence = 1128,
@@ -40587,7 +40587,7 @@ local datas = {
 	},
 	[700106071] = {
 		id = 700106071,
-		attack = 9027,
+		attack = 13541,
 		hp = 126384,
 		sunder = 2149,
 		defence = 1157,
@@ -40601,7 +40601,7 @@ local datas = {
 	},
 	[700106072] = {
 		id = 700106072,
-		attack = 9260,
+		attack = 13890,
 		hp = 129635,
 		sunder = 2205,
 		defence = 1187,
@@ -40615,7 +40615,7 @@ local datas = {
 	},
 	[700106073] = {
 		id = 700106073,
-		attack = 9495,
+		attack = 14242,
 		hp = 132928,
 		sunder = 2261,
 		defence = 1217,
@@ -40629,7 +40629,7 @@ local datas = {
 	},
 	[700106074] = {
 		id = 700106074,
-		attack = 9733,
+		attack = 14599,
 		hp = 136261,
 		sunder = 2317,
 		defence = 1248,
@@ -40643,7 +40643,7 @@ local datas = {
 	},
 	[700106075] = {
 		id = 700106075,
-		attack = 9974,
+		attack = 14961,
 		hp = 139635,
 		sunder = 2375,
 		defence = 1279,
@@ -40657,7 +40657,7 @@ local datas = {
 	},
 	[700106076] = {
 		id = 700106076,
-		attack = 10343,
+		attack = 15515,
 		hp = 144804,
 		sunder = 2463,
 		defence = 1326,
@@ -40671,7 +40671,7 @@ local datas = {
 	},
 	[700106077] = {
 		id = 700106077,
-		attack = 10718,
+		attack = 16078,
 		hp = 150058,
 		sunder = 2552,
 		defence = 1374,
@@ -40685,7 +40685,7 @@ local datas = {
 	},
 	[700106078] = {
 		id = 700106078,
-		attack = 11100,
+		attack = 16650,
 		hp = 155398,
 		sunder = 2643,
 		defence = 1423,
@@ -40699,7 +40699,7 @@ local datas = {
 	},
 	[700106079] = {
 		id = 700106079,
-		attack = 11487,
+		attack = 17231,
 		hp = 160824,
 		sunder = 2735,
 		defence = 1473,
@@ -40713,7 +40713,7 @@ local datas = {
 	},
 	[700106080] = {
 		id = 700106080,
-		attack = 11881,
+		attack = 17822,
 		hp = 166336,
 		sunder = 2829,
 		defence = 1523,
@@ -40727,7 +40727,7 @@ local datas = {
 	},
 	[700106081] = {
 		id = 700106081,
-		attack = 12141,
+		attack = 18211,
 		hp = 169969,
 		sunder = 2891,
 		defence = 1556,
@@ -40741,7 +40741,7 @@ local datas = {
 	},
 	[700106082] = {
 		id = 700106082,
-		attack = 12403,
+		attack = 18604,
 		hp = 173641,
 		sunder = 2953,
 		defence = 1590,
@@ -40755,7 +40755,7 @@ local datas = {
 	},
 	[700106083] = {
 		id = 700106083,
-		attack = 12668,
+		attack = 19002,
 		hp = 177352,
 		sunder = 3016,
 		defence = 1624,
@@ -40769,7 +40769,7 @@ local datas = {
 	},
 	[700106084] = {
 		id = 700106084,
-		attack = 12936,
+		attack = 19404,
 		hp = 181101,
 		sunder = 3080,
 		defence = 1658,
@@ -40783,7 +40783,7 @@ local datas = {
 	},
 	[700106085] = {
 		id = 700106085,
-		attack = 13206,
+		attack = 19810,
 		hp = 184889,
 		sunder = 3144,
 		defence = 1693,
@@ -40797,7 +40797,7 @@ local datas = {
 	},
 	[700106086] = {
 		id = 700106086,
-		attack = 13638,
+		attack = 20457,
 		hp = 190934,
 		sunder = 3247,
 		defence = 1748,
@@ -40811,7 +40811,7 @@ local datas = {
 	},
 	[700106087] = {
 		id = 700106087,
-		attack = 14076,
+		attack = 21114,
 		hp = 197067,
 		sunder = 3351,
 		defence = 1805,
@@ -40825,7 +40825,7 @@ local datas = {
 	},
 	[700106088] = {
 		id = 700106088,
-		attack = 14521,
+		attack = 21781,
 		hp = 203290,
 		sunder = 3457,
 		defence = 1862,
@@ -40839,7 +40839,7 @@ local datas = {
 	},
 	[700106089] = {
 		id = 700106089,
-		attack = 14972,
+		attack = 22457,
 		hp = 209602,
 		sunder = 3565,
 		defence = 1919,
@@ -40853,7 +40853,7 @@ local datas = {
 	},
 	[700106090] = {
 		id = 700106090,
-		attack = 15429,
+		attack = 23143,
 		hp = 216003,
 		sunder = 3674,
 		defence = 1978,
@@ -40867,7 +40867,7 @@ local datas = {
 	},
 	[700106091] = {
 		id = 700106091,
-		attack = 15761,
+		attack = 23642,
 		hp = 220658,
 		sunder = 3753,
 		defence = 2021,
@@ -40881,7 +40881,7 @@ local datas = {
 	},
 	[700106092] = {
 		id = 700106092,
-		attack = 16097,
+		attack = 24146,
 		hp = 225362,
 		sunder = 3833,
 		defence = 2064,
@@ -40895,7 +40895,7 @@ local datas = {
 	},
 	[700106093] = {
 		id = 700106093,
-		attack = 16437,
+		attack = 24655,
 		hp = 230116,
 		sunder = 3914,
 		defence = 2107,
@@ -40909,7 +40909,7 @@ local datas = {
 	},
 	[700106094] = {
 		id = 700106094,
-		attack = 16780,
+		attack = 25170,
 		hp = 234920,
 		sunder = 3995,
 		defence = 2151,
@@ -40923,7 +40923,7 @@ local datas = {
 	},
 	[700106095] = {
 		id = 700106095,
-		attack = 17127,
+		attack = 25690,
 		hp = 239774,
 		sunder = 4078,
 		defence = 2196,
@@ -40937,7 +40937,7 @@ local datas = {
 	},
 	[700106096] = {
 		id = 700106096,
-		attack = 17699,
+		attack = 26548,
 		hp = 247786,
 		sunder = 4214,
 		defence = 2269,
@@ -40951,7 +40951,7 @@ local datas = {
 	},
 	[700106097] = {
 		id = 700106097,
-		attack = 18279,
+		attack = 27419,
 		hp = 255911,
 		sunder = 4352,
 		defence = 2344,
@@ -40965,7 +40965,7 @@ local datas = {
 	},
 	[700106098] = {
 		id = 700106098,
-		attack = 18868,
+		attack = 28302,
 		hp = 264149,
 		sunder = 4492,
 		defence = 2419,
@@ -40979,7 +40979,7 @@ local datas = {
 	},
 	[700106099] = {
 		id = 700106099,
-		attack = 19464,
+		attack = 29196,
 		hp = 272500,
 		sunder = 4634,
 		defence = 2495,
@@ -40993,7 +40993,7 @@ local datas = {
 	},
 	[700106100] = {
 		id = 700106100,
-		attack = 20069,
+		attack = 30103,
 		hp = 280965,
 		sunder = 4778,
 		defence = 2573,
@@ -42421,7 +42421,7 @@ local datas = {
 	},
 	[700126000] = {
 		id = 700126000,
-		attack = 23,
+		attack = 34,
 		hp = 1092,
 		sunder = 7,
 		defence = 4,
@@ -42435,7 +42435,7 @@ local datas = {
 	},
 	[700126001] = {
 		id = 700126001,
-		attack = 38,
+		attack = 57,
 		hp = 1825,
 		sunder = 11,
 		defence = 6,
@@ -42449,7 +42449,7 @@ local datas = {
 	},
 	[700126002] = {
 		id = 700126002,
-		attack = 56,
+		attack = 84,
 		hp = 2683,
 		sunder = 15,
 		defence = 8,
@@ -42463,7 +42463,7 @@ local datas = {
 	},
 	[700126003] = {
 		id = 700126003,
-		attack = 76,
+		attack = 115,
 		hp = 3666,
 		sunder = 21,
 		defence = 11,
@@ -42477,7 +42477,7 @@ local datas = {
 	},
 	[700126004] = {
 		id = 700126004,
-		attack = 99,
+		attack = 149,
 		hp = 4774,
 		sunder = 27,
 		defence = 14,
@@ -42491,7 +42491,7 @@ local datas = {
 	},
 	[700126005] = {
 		id = 700126005,
-		attack = 125,
+		attack = 188,
 		hp = 6006,
 		sunder = 33,
 		defence = 18,
@@ -42505,7 +42505,7 @@ local datas = {
 	},
 	[700126006] = {
 		id = 700126006,
-		attack = 174,
+		attack = 261,
 		hp = 8354,
 		sunder = 45,
 		defence = 24,
@@ -42519,7 +42519,7 @@ local datas = {
 	},
 	[700126007] = {
 		id = 700126007,
-		attack = 231,
+		attack = 346,
 		hp = 11074,
 		sunder = 59,
 		defence = 32,
@@ -42533,7 +42533,7 @@ local datas = {
 	},
 	[700126008] = {
 		id = 700126008,
-		attack = 295,
+		attack = 443,
 		hp = 14166,
 		sunder = 75,
 		defence = 40,
@@ -42547,7 +42547,7 @@ local datas = {
 	},
 	[700126009] = {
 		id = 700126009,
-		attack = 367,
+		attack = 551,
 		hp = 17631,
 		sunder = 92,
 		defence = 50,
@@ -42561,7 +42561,7 @@ local datas = {
 	},
 	[700126010] = {
 		id = 700126010,
-		attack = 447,
+		attack = 671,
 		hp = 21468,
 		sunder = 112,
 		defence = 60,
@@ -42575,7 +42575,7 @@ local datas = {
 	},
 	[700126011] = {
 		id = 700126011,
-		attack = 524,
+		attack = 786,
 		hp = 25156,
 		sunder = 129,
 		defence = 69,
@@ -42589,7 +42589,7 @@ local datas = {
 	},
 	[700126012] = {
 		id = 700126012,
-		attack = 607,
+		attack = 910,
 		hp = 29136,
 		sunder = 147,
 		defence = 79,
@@ -42603,7 +42603,7 @@ local datas = {
 	},
 	[700126013] = {
 		id = 700126013,
-		attack = 696,
+		attack = 1044,
 		hp = 33408,
 		sunder = 167,
 		defence = 90,
@@ -42617,7 +42617,7 @@ local datas = {
 	},
 	[700126014] = {
 		id = 700126014,
-		attack = 791,
+		attack = 1187,
 		hp = 37973,
 		sunder = 188,
 		defence = 101,
@@ -42631,7 +42631,7 @@ local datas = {
 	},
 	[700126015] = {
 		id = 700126015,
-		attack = 892,
+		attack = 1338,
 		hp = 42830,
 		sunder = 210,
 		defence = 113,
@@ -42645,7 +42645,7 @@ local datas = {
 	},
 	[700126016] = {
 		id = 700126016,
-		attack = 965,
+		attack = 1447,
 		hp = 46302,
 		sunder = 224,
 		defence = 121,
@@ -42659,7 +42659,7 @@ local datas = {
 	},
 	[700126017] = {
 		id = 700126017,
-		attack = 1039,
+		attack = 1559,
 		hp = 49880,
 		sunder = 239,
 		defence = 129,
@@ -42673,7 +42673,7 @@ local datas = {
 	},
 	[700126018] = {
 		id = 700126018,
-		attack = 1116,
+		attack = 1674,
 		hp = 53564,
 		sunder = 253,
 		defence = 136,
@@ -42687,7 +42687,7 @@ local datas = {
 	},
 	[700126019] = {
 		id = 700126019,
-		attack = 1195,
+		attack = 1792,
 		hp = 57354,
 		sunder = 268,
 		defence = 145,
@@ -42701,7 +42701,7 @@ local datas = {
 	},
 	[700126020] = {
 		id = 700126020,
-		attack = 1276,
+		attack = 1914,
 		hp = 61250,
 		sunder = 284,
 		defence = 153,
@@ -42715,7 +42715,7 @@ local datas = {
 	},
 	[700126021] = {
 		id = 700126021,
-		attack = 1385,
+		attack = 2078,
 		hp = 66491,
 		sunder = 304,
 		defence = 164,
@@ -42729,7 +42729,7 @@ local datas = {
 	},
 	[700126022] = {
 		id = 700126022,
-		attack = 1499,
+		attack = 2248,
 		hp = 71947,
 		sunder = 325,
 		defence = 175,
@@ -42743,7 +42743,7 @@ local datas = {
 	},
 	[700126023] = {
 		id = 700126023,
-		attack = 1617,
+		attack = 2426,
 		hp = 77617,
 		sunder = 347,
 		defence = 187,
@@ -42757,7 +42757,7 @@ local datas = {
 	},
 	[700126024] = {
 		id = 700126024,
-		attack = 1740,
+		attack = 2609,
 		hp = 83500,
 		sunder = 370,
 		defence = 199,
@@ -42771,7 +42771,7 @@ local datas = {
 	},
 	[700126025] = {
 		id = 700126025,
-		attack = 1867,
+		attack = 2800,
 		hp = 89596,
 		sunder = 393,
 		defence = 212,
@@ -42785,7 +42785,7 @@ local datas = {
 	},
 	[700126026] = {
 		id = 700126026,
-		attack = 1966,
+		attack = 2949,
 		hp = 94369,
 		sunder = 410,
 		defence = 221,
@@ -42799,7 +42799,7 @@ local datas = {
 	},
 	[700126027] = {
 		id = 700126027,
-		attack = 2068,
+		attack = 3101,
 		hp = 99245,
 		sunder = 426,
 		defence = 229,
@@ -42813,7 +42813,7 @@ local datas = {
 	},
 	[700126028] = {
 		id = 700126028,
-		attack = 2171,
+		attack = 3257,
 		hp = 104225,
 		sunder = 443,
 		defence = 239,
@@ -42827,7 +42827,7 @@ local datas = {
 	},
 	[700126029] = {
 		id = 700126029,
-		attack = 2277,
+		attack = 3416,
 		hp = 109309,
 		sunder = 460,
 		defence = 248,
@@ -42841,7 +42841,7 @@ local datas = {
 	},
 	[700126030] = {
 		id = 700126030,
-		attack = 2862,
+		attack = 4294,
 		hp = 137396,
 		sunder = 477,
 		defence = 257,
@@ -42855,7 +42855,7 @@ local datas = {
 	},
 	[700126031] = {
 		id = 700126031,
-		attack = 3036,
+		attack = 4554,
 		hp = 145734,
 		sunder = 506,
 		defence = 272,
@@ -42869,7 +42869,7 @@ local datas = {
 	},
 	[700126032] = {
 		id = 700126032,
-		attack = 3215,
+		attack = 4822,
 		hp = 154317,
 		sunder = 536,
 		defence = 289,
@@ -42883,7 +42883,7 @@ local datas = {
 	},
 	[700126033] = {
 		id = 700126033,
-		attack = 3399,
+		attack = 5098,
 		hp = 163145,
 		sunder = 566,
 		defence = 305,
@@ -42897,7 +42897,7 @@ local datas = {
 	},
 	[700126034] = {
 		id = 700126034,
-		attack = 3588,
+		attack = 5382,
 		hp = 172218,
 		sunder = 598,
 		defence = 322,
@@ -42911,7 +42911,7 @@ local datas = {
 	},
 	[700126035] = {
 		id = 700126035,
-		attack = 3782,
+		attack = 5673,
 		hp = 181536,
 		sunder = 630,
 		defence = 339,
@@ -42925,7 +42925,7 @@ local datas = {
 	},
 	[700126036] = {
 		id = 700126036,
-		attack = 3990,
+		attack = 5985,
 		hp = 191519,
 		sunder = 665,
 		defence = 358,
@@ -42939,7 +42939,7 @@ local datas = {
 	},
 	[700126037] = {
 		id = 700126037,
-		attack = 4204,
+		attack = 6305,
 		hp = 201769,
 		sunder = 701,
 		defence = 377,
@@ -42953,7 +42953,7 @@ local datas = {
 	},
 	[700126038] = {
 		id = 700126038,
-		attack = 4423,
+		attack = 6634,
 		hp = 212286,
 		sunder = 737,
 		defence = 397,
@@ -42967,7 +42967,7 @@ local datas = {
 	},
 	[700126039] = {
 		id = 700126039,
-		attack = 4647,
+		attack = 6971,
 		hp = 223070,
 		sunder = 775,
 		defence = 417,
@@ -42981,7 +42981,7 @@ local datas = {
 	},
 	[700126040] = {
 		id = 700126040,
-		attack = 4878,
+		attack = 7316,
 		hp = 234122,
 		sunder = 813,
 		defence = 438,
@@ -42995,7 +42995,7 @@ local datas = {
 	},
 	[700126041] = {
 		id = 700126041,
-		attack = 5090,
+		attack = 7636,
 		hp = 244336,
 		sunder = 848,
 		defence = 457,
@@ -43009,7 +43009,7 @@ local datas = {
 	},
 	[700126042] = {
 		id = 700126042,
-		attack = 5308,
+		attack = 7961,
 		hp = 254766,
 		sunder = 885,
 		defence = 476,
@@ -43023,7 +43023,7 @@ local datas = {
 	},
 	[700126043] = {
 		id = 700126043,
-		attack = 5529,
+		attack = 8294,
 		hp = 265412,
 		sunder = 922,
 		defence = 496,
@@ -43037,7 +43037,7 @@ local datas = {
 	},
 	[700126044] = {
 		id = 700126044,
-		attack = 5756,
+		attack = 8634,
 		hp = 276273,
 		sunder = 959,
 		defence = 517,
@@ -43051,7 +43051,7 @@ local datas = {
 	},
 	[700126045] = {
 		id = 700126045,
-		attack = 5986,
+		attack = 8980,
 		hp = 287351,
 		sunder = 998,
 		defence = 537,
@@ -43065,7 +43065,7 @@ local datas = {
 	},
 	[700126046] = {
 		id = 700126046,
-		attack = 6158,
+		attack = 9237,
 		hp = 295600,
 		sunder = 1026,
 		defence = 553,
@@ -43079,7 +43079,7 @@ local datas = {
 	},
 	[700126047] = {
 		id = 700126047,
-		attack = 6332,
+		attack = 9498,
 		hp = 303938,
 		sunder = 1055,
 		defence = 568,
@@ -43093,7 +43093,7 @@ local datas = {
 	},
 	[700126048] = {
 		id = 700126048,
-		attack = 6508,
+		attack = 9761,
 		hp = 312365,
 		sunder = 1085,
 		defence = 584,
@@ -43107,7 +43107,7 @@ local datas = {
 	},
 	[700126049] = {
 		id = 700126049,
-		attack = 6685,
+		attack = 10028,
 		hp = 320881,
 		sunder = 1114,
 		defence = 600,
@@ -43121,7 +43121,7 @@ local datas = {
 	},
 	[700126050] = {
 		id = 700126050,
-		attack = 8008,
+		attack = 12012,
 		hp = 384400,
 		sunder = 1144,
 		defence = 616,
@@ -43135,7 +43135,7 @@ local datas = {
 	},
 	[700126051] = {
 		id = 700126051,
-		attack = 8261,
+		attack = 12391,
 		hp = 396522,
 		sunder = 1180,
 		defence = 635,
@@ -43149,7 +43149,7 @@ local datas = {
 	},
 	[700126052] = {
 		id = 700126052,
-		attack = 8517,
+		attack = 12776,
 		hp = 408823,
 		sunder = 1217,
 		defence = 655,
@@ -43163,7 +43163,7 @@ local datas = {
 	},
 	[700126053] = {
 		id = 700126053,
-		attack = 8777,
+		attack = 13166,
 		hp = 421303,
 		sunder = 1254,
 		defence = 675,
@@ -43177,7 +43177,7 @@ local datas = {
 	},
 	[700126054] = {
 		id = 700126054,
-		attack = 9041,
+		attack = 13561,
 		hp = 433961,
 		sunder = 1292,
 		defence = 695,
@@ -43191,7 +43191,7 @@ local datas = {
 	},
 	[700126055] = {
 		id = 700126055,
-		attack = 9308,
+		attack = 13962,
 		hp = 446798,
 		sunder = 1330,
 		defence = 716,
@@ -43205,7 +43205,7 @@ local datas = {
 	},
 	[700126056] = {
 		id = 700126056,
-		attack = 9652,
+		attack = 14478,
 		hp = 463282,
 		sunder = 1379,
 		defence = 742,
@@ -43219,7 +43219,7 @@ local datas = {
 	},
 	[700126057] = {
 		id = 700126057,
-		attack = 10001,
+		attack = 15002,
 		hp = 480064,
 		sunder = 1429,
 		defence = 769,
@@ -43233,7 +43233,7 @@ local datas = {
 	},
 	[700126058] = {
 		id = 700126058,
-		attack = 10357,
+		attack = 15536,
 		hp = 497145,
 		sunder = 1480,
 		defence = 797,
@@ -43247,7 +43247,7 @@ local datas = {
 	},
 	[700126059] = {
 		id = 700126059,
-		attack = 10719,
+		attack = 16079,
 		hp = 514524,
 		sunder = 1531,
 		defence = 825,
@@ -43261,7 +43261,7 @@ local datas = {
 	},
 	[700126060] = {
 		id = 700126060,
-		attack = 11088,
+		attack = 16631,
 		hp = 532201,
 		sunder = 1584,
 		defence = 853,
@@ -43275,7 +43275,7 @@ local datas = {
 	},
 	[700126061] = {
 		id = 700126061,
-		attack = 11350,
+		attack = 17025,
 		hp = 544808,
 		sunder = 1621,
 		defence = 873,
@@ -43289,7 +43289,7 @@ local datas = {
 	},
 	[700126062] = {
 		id = 700126062,
-		attack = 11615,
+		attack = 17423,
 		hp = 557543,
 		sunder = 1659,
 		defence = 893,
@@ -43303,7 +43303,7 @@ local datas = {
 	},
 	[700126063] = {
 		id = 700126063,
-		attack = 11883,
+		attack = 17825,
 		hp = 570405,
 		sunder = 1698,
 		defence = 914,
@@ -43317,7 +43317,7 @@ local datas = {
 	},
 	[700126064] = {
 		id = 700126064,
-		attack = 12154,
+		attack = 18231,
 		hp = 583395,
 		sunder = 1736,
 		defence = 935,
@@ -43331,7 +43331,7 @@ local datas = {
 	},
 	[700126065] = {
 		id = 700126065,
-		attack = 12427,
+		attack = 18641,
 		hp = 596513,
 		sunder = 1775,
 		defence = 956,
@@ -43345,7 +43345,7 @@ local datas = {
 	},
 	[700126066] = {
 		id = 700126066,
-		attack = 12860,
+		attack = 19290,
 		hp = 617283,
 		sunder = 1837,
 		defence = 989,
@@ -43359,7 +43359,7 @@ local datas = {
 	},
 	[700126067] = {
 		id = 700126067,
-		attack = 13300,
+		attack = 19950,
 		hp = 638402,
 		sunder = 1900,
 		defence = 1023,
@@ -43373,7 +43373,7 @@ local datas = {
 	},
 	[700126068] = {
 		id = 700126068,
-		attack = 13747,
+		attack = 20621,
 		hp = 659870,
 		sunder = 1964,
 		defence = 1057,
@@ -43387,7 +43387,7 @@ local datas = {
 	},
 	[700126069] = {
 		id = 700126069,
-		attack = 14202,
+		attack = 21303,
 		hp = 681687,
 		sunder = 2029,
 		defence = 1092,
@@ -43401,7 +43401,7 @@ local datas = {
 	},
 	[700126070] = {
 		id = 700126070,
-		attack = 14664,
+		attack = 21995,
 		hp = 703852,
 		sunder = 2095,
 		defence = 1128,
@@ -43415,7 +43415,7 @@ local datas = {
 	},
 	[700126071] = {
 		id = 700126071,
-		attack = 15046,
+		attack = 22569,
 		hp = 722196,
 		sunder = 2149,
 		defence = 1157,
@@ -43429,7 +43429,7 @@ local datas = {
 	},
 	[700126072] = {
 		id = 700126072,
-		attack = 15433,
+		attack = 23149,
 		hp = 740774,
 		sunder = 2205,
 		defence = 1187,
@@ -43443,7 +43443,7 @@ local datas = {
 	},
 	[700126073] = {
 		id = 700126073,
-		attack = 15825,
+		attack = 23737,
 		hp = 759587,
 		sunder = 2261,
 		defence = 1217,
@@ -43457,7 +43457,7 @@ local datas = {
 	},
 	[700126074] = {
 		id = 700126074,
-		attack = 16222,
+		attack = 24332,
 		hp = 778635,
 		sunder = 2317,
 		defence = 1248,
@@ -43471,7 +43471,7 @@ local datas = {
 	},
 	[700126075] = {
 		id = 700126075,
-		attack = 16623,
+		attack = 24935,
 		hp = 797917,
 		sunder = 2375,
 		defence = 1279,
@@ -43485,7 +43485,7 @@ local datas = {
 	},
 	[700126076] = {
 		id = 700126076,
-		attack = 17239,
+		attack = 25858,
 		hp = 827449,
 		sunder = 2463,
 		defence = 1326,
@@ -43499,7 +43499,7 @@ local datas = {
 	},
 	[700126077] = {
 		id = 700126077,
-		attack = 17864,
+		attack = 26796,
 		hp = 857472,
 		sunder = 2552,
 		defence = 1374,
@@ -43513,7 +43513,7 @@ local datas = {
 	},
 	[700126078] = {
 		id = 700126078,
-		attack = 18500,
+		attack = 27750,
 		hp = 887987,
 		sunder = 2643,
 		defence = 1423,
@@ -43527,7 +43527,7 @@ local datas = {
 	},
 	[700126079] = {
 		id = 700126079,
-		attack = 19146,
+		attack = 28719,
 		hp = 918993,
 		sunder = 2735,
 		defence = 1473,
@@ -43541,7 +43541,7 @@ local datas = {
 	},
 	[700126080] = {
 		id = 700126080,
-		attack = 19802,
+		attack = 29703,
 		hp = 950491,
 		sunder = 2829,
 		defence = 1523,
@@ -43555,7 +43555,7 @@ local datas = {
 	},
 	[700126081] = {
 		id = 700126081,
-		attack = 20234,
+		attack = 30352,
 		hp = 971253,
 		sunder = 2891,
 		defence = 1556,
@@ -43569,7 +43569,7 @@ local datas = {
 	},
 	[700126082] = {
 		id = 700126082,
-		attack = 20672,
+		attack = 31007,
 		hp = 992235,
 		sunder = 2953,
 		defence = 1590,
@@ -43583,7 +43583,7 @@ local datas = {
 	},
 	[700126083] = {
 		id = 700126083,
-		attack = 21113,
+		attack = 31670,
 		hp = 1013438,
 		sunder = 3016,
 		defence = 1624,
@@ -43597,7 +43597,7 @@ local datas = {
 	},
 	[700126084] = {
 		id = 700126084,
-		attack = 21560,
+		attack = 32339,
 		hp = 1034863,
 		sunder = 3080,
 		defence = 1658,
@@ -43611,7 +43611,7 @@ local datas = {
 	},
 	[700126085] = {
 		id = 700126085,
-		attack = 22011,
+		attack = 33016,
 		hp = 1056508,
 		sunder = 3144,
 		defence = 1693,
@@ -43625,7 +43625,7 @@ local datas = {
 	},
 	[700126086] = {
 		id = 700126086,
-		attack = 22730,
+		attack = 34095,
 		hp = 1091049,
 		sunder = 3247,
 		defence = 1748,
@@ -43639,7 +43639,7 @@ local datas = {
 	},
 	[700126087] = {
 		id = 700126087,
-		attack = 23460,
+		attack = 35191,
 		hp = 1126099,
 		sunder = 3351,
 		defence = 1805,
@@ -43653,7 +43653,7 @@ local datas = {
 	},
 	[700126088] = {
 		id = 700126088,
-		attack = 24201,
+		attack = 36302,
 		hp = 1161658,
 		sunder = 3457,
 		defence = 1862,
@@ -43667,7 +43667,7 @@ local datas = {
 	},
 	[700126089] = {
 		id = 700126089,
-		attack = 24953,
+		attack = 37429,
 		hp = 1197726,
 		sunder = 3565,
 		defence = 1919,
@@ -43681,7 +43681,7 @@ local datas = {
 	},
 	[700126090] = {
 		id = 700126090,
-		attack = 25715,
+		attack = 38572,
 		hp = 1234303,
 		sunder = 3674,
 		defence = 1978,
@@ -43695,7 +43695,7 @@ local datas = {
 	},
 	[700126091] = {
 		id = 700126091,
-		attack = 26269,
+		attack = 39403,
 		hp = 1260902,
 		sunder = 3753,
 		defence = 2021,
@@ -43709,7 +43709,7 @@ local datas = {
 	},
 	[700126092] = {
 		id = 700126092,
-		attack = 26829,
+		attack = 40243,
 		hp = 1287785,
 		sunder = 3833,
 		defence = 2064,
@@ -43723,7 +43723,7 @@ local datas = {
 	},
 	[700126093] = {
 		id = 700126093,
-		attack = 27395,
+		attack = 41092,
 		hp = 1314951,
 		sunder = 3914,
 		defence = 2107,
@@ -43737,7 +43737,7 @@ local datas = {
 	},
 	[700126094] = {
 		id = 700126094,
-		attack = 27967,
+		attack = 41950,
 		hp = 1342401,
 		sunder = 3995,
 		defence = 2151,
@@ -43751,7 +43751,7 @@ local datas = {
 	},
 	[700126095] = {
 		id = 700126095,
-		attack = 28544,
+		attack = 42817,
 		hp = 1370134,
 		sunder = 4078,
 		defence = 2196,
@@ -43765,7 +43765,7 @@ local datas = {
 	},
 	[700126096] = {
 		id = 700126096,
-		attack = 29498,
+		attack = 44247,
 		hp = 1415918,
 		sunder = 4214,
 		defence = 2269,
@@ -43779,7 +43779,7 @@ local datas = {
 	},
 	[700126097] = {
 		id = 700126097,
-		attack = 30466,
+		attack = 45698,
 		hp = 1462348,
 		sunder = 4352,
 		defence = 2344,
@@ -43793,7 +43793,7 @@ local datas = {
 	},
 	[700126098] = {
 		id = 700126098,
-		attack = 31446,
+		attack = 47169,
 		hp = 1509423,
 		sunder = 4492,
 		defence = 2419,
@@ -43807,7 +43807,7 @@ local datas = {
 	},
 	[700126099] = {
 		id = 700126099,
-		attack = 32441,
+		attack = 48661,
 		hp = 1557145,
 		sunder = 4634,
 		defence = 2495,
@@ -43821,7 +43821,7 @@ local datas = {
 	},
 	[700126100] = {
 		id = 700126100,
-		attack = 33448,
+		attack = 50172,
 		hp = 1605513,
 		sunder = 4778,
 		defence = 2573,
@@ -43835,7 +43835,7 @@ local datas = {
 	},
 	[700136000] = {
 		id = 700136000,
-		attack = 9,
+		attack = 14,
 		hp = 109,
 		sunder = 7,
 		defence = 4,
@@ -43849,7 +43849,7 @@ local datas = {
 	},
 	[700136001] = {
 		id = 700136001,
-		attack = 15,
+		attack = 23,
 		hp = 183,
 		sunder = 11,
 		defence = 6,
@@ -43863,7 +43863,7 @@ local datas = {
 	},
 	[700136002] = {
 		id = 700136002,
-		attack = 22,
+		attack = 34,
 		hp = 268,
 		sunder = 15,
 		defence = 8,
@@ -43877,7 +43877,7 @@ local datas = {
 	},
 	[700136003] = {
 		id = 700136003,
-		attack = 31,
+		attack = 46,
 		hp = 367,
 		sunder = 21,
 		defence = 11,
@@ -43891,7 +43891,7 @@ local datas = {
 	},
 	[700136004] = {
 		id = 700136004,
-		attack = 40,
+		attack = 60,
 		hp = 477,
 		sunder = 27,
 		defence = 14,
@@ -43905,7 +43905,7 @@ local datas = {
 	},
 	[700136005] = {
 		id = 700136005,
-		attack = 50,
+		attack = 75,
 		hp = 601,
 		sunder = 33,
 		defence = 18,
@@ -43919,7 +43919,7 @@ local datas = {
 	},
 	[700136006] = {
 		id = 700136006,
-		attack = 70,
+		attack = 104,
 		hp = 835,
 		sunder = 45,
 		defence = 24,
@@ -43933,7 +43933,7 @@ local datas = {
 	},
 	[700136007] = {
 		id = 700136007,
-		attack = 92,
+		attack = 138,
 		hp = 1107,
 		sunder = 59,
 		defence = 32,
@@ -43947,7 +43947,7 @@ local datas = {
 	},
 	[700136008] = {
 		id = 700136008,
-		attack = 118,
+		attack = 177,
 		hp = 1417,
 		sunder = 75,
 		defence = 40,
@@ -43961,7 +43961,7 @@ local datas = {
 	},
 	[700136009] = {
 		id = 700136009,
-		attack = 147,
+		attack = 220,
 		hp = 1763,
 		sunder = 92,
 		defence = 50,
@@ -43975,7 +43975,7 @@ local datas = {
 	},
 	[700136010] = {
 		id = 700136010,
-		attack = 179,
+		attack = 268,
 		hp = 2147,
 		sunder = 112,
 		defence = 60,
@@ -43989,7 +43989,7 @@ local datas = {
 	},
 	[700136011] = {
 		id = 700136011,
-		attack = 210,
+		attack = 314,
 		hp = 2516,
 		sunder = 129,
 		defence = 69,
@@ -44003,7 +44003,7 @@ local datas = {
 	},
 	[700136012] = {
 		id = 700136012,
-		attack = 243,
+		attack = 364,
 		hp = 2914,
 		sunder = 147,
 		defence = 79,
@@ -44017,7 +44017,7 @@ local datas = {
 	},
 	[700136013] = {
 		id = 700136013,
-		attack = 278,
+		attack = 418,
 		hp = 3341,
 		sunder = 167,
 		defence = 90,
@@ -44031,7 +44031,7 @@ local datas = {
 	},
 	[700136014] = {
 		id = 700136014,
-		attack = 316,
+		attack = 475,
 		hp = 3797,
 		sunder = 188,
 		defence = 101,
@@ -44045,7 +44045,7 @@ local datas = {
 	},
 	[700136015] = {
 		id = 700136015,
-		attack = 357,
+		attack = 535,
 		hp = 4283,
 		sunder = 210,
 		defence = 113,
@@ -44059,7 +44059,7 @@ local datas = {
 	},
 	[700136016] = {
 		id = 700136016,
-		attack = 386,
+		attack = 579,
 		hp = 4630,
 		sunder = 224,
 		defence = 121,
@@ -44073,7 +44073,7 @@ local datas = {
 	},
 	[700136017] = {
 		id = 700136017,
-		attack = 416,
+		attack = 624,
 		hp = 4988,
 		sunder = 239,
 		defence = 129,
@@ -44087,7 +44087,7 @@ local datas = {
 	},
 	[700136018] = {
 		id = 700136018,
-		attack = 446,
+		attack = 670,
 		hp = 5356,
 		sunder = 253,
 		defence = 136,
@@ -44101,7 +44101,7 @@ local datas = {
 	},
 	[700136019] = {
 		id = 700136019,
-		attack = 478,
+		attack = 717,
 		hp = 5735,
 		sunder = 268,
 		defence = 145,
@@ -44115,7 +44115,7 @@ local datas = {
 	},
 	[700136020] = {
 		id = 700136020,
-		attack = 510,
+		attack = 766,
 		hp = 6125,
 		sunder = 284,
 		defence = 153,
@@ -44129,7 +44129,7 @@ local datas = {
 	},
 	[700136021] = {
 		id = 700136021,
-		attack = 554,
+		attack = 831,
 		hp = 6649,
 		sunder = 304,
 		defence = 164,
@@ -44143,7 +44143,7 @@ local datas = {
 	},
 	[700136022] = {
 		id = 700136022,
-		attack = 600,
+		attack = 899,
 		hp = 7195,
 		sunder = 325,
 		defence = 175,
@@ -44157,7 +44157,7 @@ local datas = {
 	},
 	[700136023] = {
 		id = 700136023,
-		attack = 647,
+		attack = 970,
 		hp = 7762,
 		sunder = 347,
 		defence = 187,
@@ -44171,7 +44171,7 @@ local datas = {
 	},
 	[700136024] = {
 		id = 700136024,
-		attack = 696,
+		attack = 1044,
 		hp = 8350,
 		sunder = 370,
 		defence = 199,
@@ -44185,7 +44185,7 @@ local datas = {
 	},
 	[700136025] = {
 		id = 700136025,
-		attack = 747,
+		attack = 1120,
 		hp = 8960,
 		sunder = 393,
 		defence = 212,
@@ -44199,7 +44199,7 @@ local datas = {
 	},
 	[700136026] = {
 		id = 700136026,
-		attack = 786,
+		attack = 1180,
 		hp = 9437,
 		sunder = 410,
 		defence = 221,
@@ -44213,7 +44213,7 @@ local datas = {
 	},
 	[700136027] = {
 		id = 700136027,
-		attack = 827,
+		attack = 1241,
 		hp = 9925,
 		sunder = 426,
 		defence = 229,
@@ -44227,7 +44227,7 @@ local datas = {
 	},
 	[700136028] = {
 		id = 700136028,
-		attack = 869,
+		attack = 1303,
 		hp = 10423,
 		sunder = 443,
 		defence = 239,
@@ -44241,7 +44241,7 @@ local datas = {
 	},
 	[700136029] = {
 		id = 700136029,
-		attack = 911,
+		attack = 1366,
 		hp = 10931,
 		sunder = 460,
 		defence = 248,
@@ -44255,7 +44255,7 @@ local datas = {
 	},
 	[700136030] = {
 		id = 700136030,
-		attack = 1145,
+		attack = 1717,
 		hp = 13740,
 		sunder = 477,
 		defence = 257,
@@ -44269,7 +44269,7 @@ local datas = {
 	},
 	[700136031] = {
 		id = 700136031,
-		attack = 1214,
+		attack = 1822,
 		hp = 14573,
 		sunder = 506,
 		defence = 272,
@@ -44283,7 +44283,7 @@ local datas = {
 	},
 	[700136032] = {
 		id = 700136032,
-		attack = 1286,
+		attack = 1929,
 		hp = 15432,
 		sunder = 536,
 		defence = 289,
@@ -44297,7 +44297,7 @@ local datas = {
 	},
 	[700136033] = {
 		id = 700136033,
-		attack = 1360,
+		attack = 2039,
 		hp = 16314,
 		sunder = 566,
 		defence = 305,
@@ -44311,7 +44311,7 @@ local datas = {
 	},
 	[700136034] = {
 		id = 700136034,
-		attack = 1435,
+		attack = 2153,
 		hp = 17222,
 		sunder = 598,
 		defence = 322,
@@ -44325,7 +44325,7 @@ local datas = {
 	},
 	[700136035] = {
 		id = 700136035,
-		attack = 1513,
+		attack = 2269,
 		hp = 18154,
 		sunder = 630,
 		defence = 339,
@@ -44339,7 +44339,7 @@ local datas = {
 	},
 	[700136036] = {
 		id = 700136036,
-		attack = 1596,
+		attack = 2394,
 		hp = 19152,
 		sunder = 665,
 		defence = 358,
@@ -44353,7 +44353,7 @@ local datas = {
 	},
 	[700136037] = {
 		id = 700136037,
-		attack = 1681,
+		attack = 2522,
 		hp = 20177,
 		sunder = 701,
 		defence = 377,
@@ -44367,7 +44367,7 @@ local datas = {
 	},
 	[700136038] = {
 		id = 700136038,
-		attack = 1769,
+		attack = 2654,
 		hp = 21229,
 		sunder = 737,
 		defence = 397,
@@ -44381,7 +44381,7 @@ local datas = {
 	},
 	[700136039] = {
 		id = 700136039,
-		attack = 1859,
+		attack = 2788,
 		hp = 22307,
 		sunder = 775,
 		defence = 417,
@@ -44395,7 +44395,7 @@ local datas = {
 	},
 	[700136040] = {
 		id = 700136040,
-		attack = 1951,
+		attack = 2927,
 		hp = 23412,
 		sunder = 813,
 		defence = 438,
@@ -44409,7 +44409,7 @@ local datas = {
 	},
 	[700136041] = {
 		id = 700136041,
-		attack = 2036,
+		attack = 3054,
 		hp = 24434,
 		sunder = 848,
 		defence = 457,
@@ -44423,7 +44423,7 @@ local datas = {
 	},
 	[700136042] = {
 		id = 700136042,
-		attack = 2123,
+		attack = 3185,
 		hp = 25477,
 		sunder = 885,
 		defence = 476,
@@ -44437,7 +44437,7 @@ local datas = {
 	},
 	[700136043] = {
 		id = 700136043,
-		attack = 2212,
+		attack = 3318,
 		hp = 26541,
 		sunder = 922,
 		defence = 496,
@@ -44451,7 +44451,7 @@ local datas = {
 	},
 	[700136044] = {
 		id = 700136044,
-		attack = 2302,
+		attack = 3453,
 		hp = 27627,
 		sunder = 959,
 		defence = 517,
@@ -44465,7 +44465,7 @@ local datas = {
 	},
 	[700136045] = {
 		id = 700136045,
-		attack = 2395,
+		attack = 3592,
 		hp = 28735,
 		sunder = 998,
 		defence = 537,
@@ -44479,7 +44479,7 @@ local datas = {
 	},
 	[700136046] = {
 		id = 700136046,
-		attack = 2463,
+		attack = 3695,
 		hp = 29560,
 		sunder = 1026,
 		defence = 553,
@@ -44493,7 +44493,7 @@ local datas = {
 	},
 	[700136047] = {
 		id = 700136047,
-		attack = 2533,
+		attack = 3799,
 		hp = 30394,
 		sunder = 1055,
 		defence = 568,
@@ -44507,7 +44507,7 @@ local datas = {
 	},
 	[700136048] = {
 		id = 700136048,
-		attack = 2603,
+		attack = 3905,
 		hp = 31236,
 		sunder = 1085,
 		defence = 584,
@@ -44521,7 +44521,7 @@ local datas = {
 	},
 	[700136049] = {
 		id = 700136049,
-		attack = 2674,
+		attack = 4011,
 		hp = 32088,
 		sunder = 1114,
 		defence = 600,
@@ -44535,7 +44535,7 @@ local datas = {
 	},
 	[700136050] = {
 		id = 700136050,
-		attack = 3203,
+		attack = 4805,
 		hp = 38440,
 		sunder = 1144,
 		defence = 616,
@@ -44549,7 +44549,7 @@ local datas = {
 	},
 	[700136051] = {
 		id = 700136051,
-		attack = 3304,
+		attack = 4957,
 		hp = 39652,
 		sunder = 1180,
 		defence = 635,
@@ -44563,7 +44563,7 @@ local datas = {
 	},
 	[700136052] = {
 		id = 700136052,
-		attack = 3407,
+		attack = 5110,
 		hp = 40882,
 		sunder = 1217,
 		defence = 655,
@@ -44577,7 +44577,7 @@ local datas = {
 	},
 	[700136053] = {
 		id = 700136053,
-		attack = 3511,
+		attack = 5266,
 		hp = 42130,
 		sunder = 1254,
 		defence = 675,
@@ -44591,7 +44591,7 @@ local datas = {
 	},
 	[700136054] = {
 		id = 700136054,
-		attack = 3616,
+		attack = 5425,
 		hp = 43396,
 		sunder = 1292,
 		defence = 695,
@@ -44605,7 +44605,7 @@ local datas = {
 	},
 	[700136055] = {
 		id = 700136055,
-		attack = 3723,
+		attack = 5585,
 		hp = 44680,
 		sunder = 1330,
 		defence = 716,
@@ -44619,7 +44619,7 @@ local datas = {
 	},
 	[700136056] = {
 		id = 700136056,
-		attack = 3861,
+		attack = 5791,
 		hp = 46328,
 		sunder = 1379,
 		defence = 742,
@@ -44633,7 +44633,7 @@ local datas = {
 	},
 	[700136057] = {
 		id = 700136057,
-		attack = 4001,
+		attack = 6001,
 		hp = 48006,
 		sunder = 1429,
 		defence = 769,
@@ -44647,7 +44647,7 @@ local datas = {
 	},
 	[700136058] = {
 		id = 700136058,
-		attack = 4143,
+		attack = 6214,
 		hp = 49715,
 		sunder = 1480,
 		defence = 797,
@@ -44661,7 +44661,7 @@ local datas = {
 	},
 	[700136059] = {
 		id = 700136059,
-		attack = 4288,
+		attack = 6432,
 		hp = 51452,
 		sunder = 1531,
 		defence = 825,
@@ -44675,7 +44675,7 @@ local datas = {
 	},
 	[700136060] = {
 		id = 700136060,
-		attack = 4435,
+		attack = 6653,
 		hp = 53220,
 		sunder = 1584,
 		defence = 853,
@@ -44689,7 +44689,7 @@ local datas = {
 	},
 	[700136061] = {
 		id = 700136061,
-		attack = 4540,
+		attack = 6810,
 		hp = 54481,
 		sunder = 1621,
 		defence = 873,
@@ -44703,7 +44703,7 @@ local datas = {
 	},
 	[700136062] = {
 		id = 700136062,
-		attack = 4646,
+		attack = 6969,
 		hp = 55754,
 		sunder = 1659,
 		defence = 893,
@@ -44717,7 +44717,7 @@ local datas = {
 	},
 	[700136063] = {
 		id = 700136063,
-		attack = 4753,
+		attack = 7130,
 		hp = 57041,
 		sunder = 1698,
 		defence = 914,
@@ -44731,7 +44731,7 @@ local datas = {
 	},
 	[700136064] = {
 		id = 700136064,
-		attack = 4862,
+		attack = 7292,
 		hp = 58340,
 		sunder = 1736,
 		defence = 935,
@@ -44745,7 +44745,7 @@ local datas = {
 	},
 	[700136065] = {
 		id = 700136065,
-		attack = 4971,
+		attack = 7456,
 		hp = 59651,
 		sunder = 1775,
 		defence = 956,
@@ -44759,7 +44759,7 @@ local datas = {
 	},
 	[700136066] = {
 		id = 700136066,
-		attack = 5144,
+		attack = 7716,
 		hp = 61728,
 		sunder = 1837,
 		defence = 989,
@@ -44773,7 +44773,7 @@ local datas = {
 	},
 	[700136067] = {
 		id = 700136067,
-		attack = 5320,
+		attack = 7980,
 		hp = 63840,
 		sunder = 1900,
 		defence = 1023,
@@ -44787,7 +44787,7 @@ local datas = {
 	},
 	[700136068] = {
 		id = 700136068,
-		attack = 5499,
+		attack = 8248,
 		hp = 65987,
 		sunder = 1964,
 		defence = 1057,
@@ -44801,7 +44801,7 @@ local datas = {
 	},
 	[700136069] = {
 		id = 700136069,
-		attack = 5681,
+		attack = 8521,
 		hp = 68169,
 		sunder = 2029,
 		defence = 1092,
@@ -44815,7 +44815,7 @@ local datas = {
 	},
 	[700136070] = {
 		id = 700136070,
-		attack = 5865,
+		attack = 8798,
 		hp = 70385,
 		sunder = 2095,
 		defence = 1128,
@@ -44829,7 +44829,7 @@ local datas = {
 	},
 	[700136071] = {
 		id = 700136071,
-		attack = 6018,
+		attack = 9027,
 		hp = 72220,
 		sunder = 2149,
 		defence = 1157,
@@ -44843,7 +44843,7 @@ local datas = {
 	},
 	[700136072] = {
 		id = 700136072,
-		attack = 6173,
+		attack = 9260,
 		hp = 74077,
 		sunder = 2205,
 		defence = 1187,
@@ -44857,7 +44857,7 @@ local datas = {
 	},
 	[700136073] = {
 		id = 700136073,
-		attack = 6330,
+		attack = 9495,
 		hp = 75959,
 		sunder = 2261,
 		defence = 1217,
@@ -44871,7 +44871,7 @@ local datas = {
 	},
 	[700136074] = {
 		id = 700136074,
-		attack = 6489,
+		attack = 9733,
 		hp = 77863,
 		sunder = 2317,
 		defence = 1248,
@@ -44885,7 +44885,7 @@ local datas = {
 	},
 	[700136075] = {
 		id = 700136075,
-		attack = 6649,
+		attack = 9974,
 		hp = 79792,
 		sunder = 2375,
 		defence = 1279,
@@ -44899,7 +44899,7 @@ local datas = {
 	},
 	[700136076] = {
 		id = 700136076,
-		attack = 6895,
+		attack = 10343,
 		hp = 82745,
 		sunder = 2463,
 		defence = 1326,
@@ -44913,7 +44913,7 @@ local datas = {
 	},
 	[700136077] = {
 		id = 700136077,
-		attack = 7146,
+		attack = 10718,
 		hp = 85747,
 		sunder = 2552,
 		defence = 1374,
@@ -44927,7 +44927,7 @@ local datas = {
 	},
 	[700136078] = {
 		id = 700136078,
-		attack = 7400,
+		attack = 11100,
 		hp = 88799,
 		sunder = 2643,
 		defence = 1423,
@@ -44941,7 +44941,7 @@ local datas = {
 	},
 	[700136079] = {
 		id = 700136079,
-		attack = 7658,
+		attack = 11487,
 		hp = 91899,
 		sunder = 2735,
 		defence = 1473,
@@ -44955,7 +44955,7 @@ local datas = {
 	},
 	[700136080] = {
 		id = 700136080,
-		attack = 7921,
+		attack = 11881,
 		hp = 95049,
 		sunder = 2829,
 		defence = 1523,
@@ -44969,7 +44969,7 @@ local datas = {
 	},
 	[700136081] = {
 		id = 700136081,
-		attack = 8094,
+		attack = 12141,
 		hp = 97125,
 		sunder = 2891,
 		defence = 1556,
@@ -44983,7 +44983,7 @@ local datas = {
 	},
 	[700136082] = {
 		id = 700136082,
-		attack = 8269,
+		attack = 12403,
 		hp = 99223,
 		sunder = 2953,
 		defence = 1590,
@@ -44997,7 +44997,7 @@ local datas = {
 	},
 	[700136083] = {
 		id = 700136083,
-		attack = 8445,
+		attack = 12668,
 		hp = 101344,
 		sunder = 3016,
 		defence = 1624,
@@ -45011,7 +45011,7 @@ local datas = {
 	},
 	[700136084] = {
 		id = 700136084,
-		attack = 8624,
+		attack = 12936,
 		hp = 103486,
 		sunder = 3080,
 		defence = 1658,
@@ -45025,7 +45025,7 @@ local datas = {
 	},
 	[700136085] = {
 		id = 700136085,
-		attack = 8804,
+		attack = 13206,
 		hp = 105651,
 		sunder = 3144,
 		defence = 1693,
@@ -45039,7 +45039,7 @@ local datas = {
 	},
 	[700136086] = {
 		id = 700136086,
-		attack = 9092,
+		attack = 13638,
 		hp = 109105,
 		sunder = 3247,
 		defence = 1748,
@@ -45053,7 +45053,7 @@ local datas = {
 	},
 	[700136087] = {
 		id = 700136087,
-		attack = 9384,
+		attack = 14076,
 		hp = 112610,
 		sunder = 3351,
 		defence = 1805,
@@ -45067,7 +45067,7 @@ local datas = {
 	},
 	[700136088] = {
 		id = 700136088,
-		attack = 9680,
+		attack = 14521,
 		hp = 116166,
 		sunder = 3457,
 		defence = 1862,
@@ -45081,7 +45081,7 @@ local datas = {
 	},
 	[700136089] = {
 		id = 700136089,
-		attack = 9981,
+		attack = 14972,
 		hp = 119773,
 		sunder = 3565,
 		defence = 1919,
@@ -45095,7 +45095,7 @@ local datas = {
 	},
 	[700136090] = {
 		id = 700136090,
-		attack = 10286,
+		attack = 15429,
 		hp = 123430,
 		sunder = 3674,
 		defence = 1978,
@@ -45109,7 +45109,7 @@ local datas = {
 	},
 	[700136091] = {
 		id = 700136091,
-		attack = 10508,
+		attack = 15761,
 		hp = 126090,
 		sunder = 3753,
 		defence = 2021,
@@ -45123,7 +45123,7 @@ local datas = {
 	},
 	[700136092] = {
 		id = 700136092,
-		attack = 10732,
+		attack = 16097,
 		hp = 128778,
 		sunder = 3833,
 		defence = 2064,
@@ -45137,7 +45137,7 @@ local datas = {
 	},
 	[700136093] = {
 		id = 700136093,
-		attack = 10958,
+		attack = 16437,
 		hp = 131495,
 		sunder = 3914,
 		defence = 2107,
@@ -45151,7 +45151,7 @@ local datas = {
 	},
 	[700136094] = {
 		id = 700136094,
-		attack = 11187,
+		attack = 16780,
 		hp = 134240,
 		sunder = 3995,
 		defence = 2151,
@@ -45165,7 +45165,7 @@ local datas = {
 	},
 	[700136095] = {
 		id = 700136095,
-		attack = 11418,
+		attack = 17127,
 		hp = 137013,
 		sunder = 4078,
 		defence = 2196,
@@ -45179,7 +45179,7 @@ local datas = {
 	},
 	[700136096] = {
 		id = 700136096,
-		attack = 11799,
+		attack = 17699,
 		hp = 141592,
 		sunder = 4214,
 		defence = 2269,
@@ -45193,7 +45193,7 @@ local datas = {
 	},
 	[700136097] = {
 		id = 700136097,
-		attack = 12186,
+		attack = 18279,
 		hp = 146235,
 		sunder = 4352,
 		defence = 2344,
@@ -45207,7 +45207,7 @@ local datas = {
 	},
 	[700136098] = {
 		id = 700136098,
-		attack = 12579,
+		attack = 18868,
 		hp = 150942,
 		sunder = 4492,
 		defence = 2419,
@@ -45221,7 +45221,7 @@ local datas = {
 	},
 	[700136099] = {
 		id = 700136099,
-		attack = 12976,
+		attack = 19464,
 		hp = 155715,
 		sunder = 4634,
 		defence = 2495,
@@ -45235,7 +45235,7 @@ local datas = {
 	},
 	[700136100] = {
 		id = 700136100,
-		attack = 13379,
+		attack = 20069,
 		hp = 160551,
 		sunder = 4778,
 		defence = 2573,
@@ -45249,7 +45249,7 @@ local datas = {
 	},
 	[700146000] = {
 		id = 700146000,
-		attack = 5,
+		attack = 7,
 		hp = 55,
 		sunder = 7,
 		defence = 4,
@@ -45263,7 +45263,7 @@ local datas = {
 	},
 	[700146001] = {
 		id = 700146001,
-		attack = 8,
+		attack = 11,
 		hp = 91,
 		sunder = 11,
 		defence = 6,
@@ -45277,7 +45277,7 @@ local datas = {
 	},
 	[700146002] = {
 		id = 700146002,
-		attack = 11,
+		attack = 17,
 		hp = 134,
 		sunder = 15,
 		defence = 8,
@@ -45291,7 +45291,7 @@ local datas = {
 	},
 	[700146003] = {
 		id = 700146003,
-		attack = 15,
+		attack = 23,
 		hp = 183,
 		sunder = 21,
 		defence = 11,
@@ -45305,7 +45305,7 @@ local datas = {
 	},
 	[700146004] = {
 		id = 700146004,
-		attack = 20,
+		attack = 30,
 		hp = 239,
 		sunder = 27,
 		defence = 14,
@@ -45319,7 +45319,7 @@ local datas = {
 	},
 	[700146005] = {
 		id = 700146005,
-		attack = 25,
+		attack = 38,
 		hp = 300,
 		sunder = 33,
 		defence = 18,
@@ -45333,7 +45333,7 @@ local datas = {
 	},
 	[700146006] = {
 		id = 700146006,
-		attack = 35,
+		attack = 52,
 		hp = 418,
 		sunder = 45,
 		defence = 24,
@@ -45347,7 +45347,7 @@ local datas = {
 	},
 	[700146007] = {
 		id = 700146007,
-		attack = 46,
+		attack = 69,
 		hp = 554,
 		sunder = 59,
 		defence = 32,
@@ -45361,7 +45361,7 @@ local datas = {
 	},
 	[700146008] = {
 		id = 700146008,
-		attack = 59,
+		attack = 89,
 		hp = 708,
 		sunder = 75,
 		defence = 40,
@@ -45375,7 +45375,7 @@ local datas = {
 	},
 	[700146009] = {
 		id = 700146009,
-		attack = 73,
+		attack = 110,
 		hp = 882,
 		sunder = 92,
 		defence = 50,
@@ -45389,7 +45389,7 @@ local datas = {
 	},
 	[700146010] = {
 		id = 700146010,
-		attack = 89,
+		attack = 134,
 		hp = 1073,
 		sunder = 112,
 		defence = 60,
@@ -45403,7 +45403,7 @@ local datas = {
 	},
 	[700146011] = {
 		id = 700146011,
-		attack = 105,
+		attack = 157,
 		hp = 1258,
 		sunder = 129,
 		defence = 69,
@@ -45417,7 +45417,7 @@ local datas = {
 	},
 	[700146012] = {
 		id = 700146012,
-		attack = 121,
+		attack = 182,
 		hp = 1457,
 		sunder = 147,
 		defence = 79,
@@ -45431,7 +45431,7 @@ local datas = {
 	},
 	[700146013] = {
 		id = 700146013,
-		attack = 139,
+		attack = 209,
 		hp = 1670,
 		sunder = 167,
 		defence = 90,
@@ -45445,7 +45445,7 @@ local datas = {
 	},
 	[700146014] = {
 		id = 700146014,
-		attack = 158,
+		attack = 237,
 		hp = 1899,
 		sunder = 188,
 		defence = 101,
@@ -45459,7 +45459,7 @@ local datas = {
 	},
 	[700146015] = {
 		id = 700146015,
-		attack = 178,
+		attack = 268,
 		hp = 2141,
 		sunder = 210,
 		defence = 113,
@@ -45473,7 +45473,7 @@ local datas = {
 	},
 	[700146016] = {
 		id = 700146016,
-		attack = 193,
+		attack = 289,
 		hp = 2315,
 		sunder = 224,
 		defence = 121,
@@ -45487,7 +45487,7 @@ local datas = {
 	},
 	[700146017] = {
 		id = 700146017,
-		attack = 208,
+		attack = 312,
 		hp = 2494,
 		sunder = 239,
 		defence = 129,
@@ -45501,7 +45501,7 @@ local datas = {
 	},
 	[700146018] = {
 		id = 700146018,
-		attack = 223,
+		attack = 335,
 		hp = 2678,
 		sunder = 253,
 		defence = 136,
@@ -45515,7 +45515,7 @@ local datas = {
 	},
 	[700146019] = {
 		id = 700146019,
-		attack = 239,
+		attack = 358,
 		hp = 2868,
 		sunder = 268,
 		defence = 145,
@@ -45529,7 +45529,7 @@ local datas = {
 	},
 	[700146020] = {
 		id = 700146020,
-		attack = 255,
+		attack = 383,
 		hp = 3062,
 		sunder = 284,
 		defence = 153,
@@ -45543,7 +45543,7 @@ local datas = {
 	},
 	[700146021] = {
 		id = 700146021,
-		attack = 277,
+		attack = 416,
 		hp = 3325,
 		sunder = 304,
 		defence = 164,
@@ -45557,7 +45557,7 @@ local datas = {
 	},
 	[700146022] = {
 		id = 700146022,
-		attack = 300,
+		attack = 450,
 		hp = 3597,
 		sunder = 325,
 		defence = 175,
@@ -45571,7 +45571,7 @@ local datas = {
 	},
 	[700146023] = {
 		id = 700146023,
-		attack = 323,
+		attack = 485,
 		hp = 3881,
 		sunder = 347,
 		defence = 187,
@@ -45585,7 +45585,7 @@ local datas = {
 	},
 	[700146024] = {
 		id = 700146024,
-		attack = 348,
+		attack = 522,
 		hp = 4175,
 		sunder = 370,
 		defence = 199,
@@ -45599,7 +45599,7 @@ local datas = {
 	},
 	[700146025] = {
 		id = 700146025,
-		attack = 373,
+		attack = 560,
 		hp = 4480,
 		sunder = 393,
 		defence = 212,
@@ -45613,7 +45613,7 @@ local datas = {
 	},
 	[700146026] = {
 		id = 700146026,
-		attack = 393,
+		attack = 590,
 		hp = 4718,
 		sunder = 410,
 		defence = 221,
@@ -45627,7 +45627,7 @@ local datas = {
 	},
 	[700146027] = {
 		id = 700146027,
-		attack = 414,
+		attack = 620,
 		hp = 4962,
 		sunder = 426,
 		defence = 229,
@@ -45641,7 +45641,7 @@ local datas = {
 	},
 	[700146028] = {
 		id = 700146028,
-		attack = 434,
+		attack = 651,
 		hp = 5211,
 		sunder = 443,
 		defence = 239,
@@ -45655,7 +45655,7 @@ local datas = {
 	},
 	[700146029] = {
 		id = 700146029,
-		attack = 455,
+		attack = 683,
 		hp = 5465,
 		sunder = 460,
 		defence = 248,
@@ -45669,7 +45669,7 @@ local datas = {
 	},
 	[700146030] = {
 		id = 700146030,
-		attack = 572,
+		attack = 859,
 		hp = 6870,
 		sunder = 477,
 		defence = 257,
@@ -45683,7 +45683,7 @@ local datas = {
 	},
 	[700146031] = {
 		id = 700146031,
-		attack = 607,
+		attack = 911,
 		hp = 7287,
 		sunder = 506,
 		defence = 272,
@@ -45697,7 +45697,7 @@ local datas = {
 	},
 	[700146032] = {
 		id = 700146032,
-		attack = 643,
+		attack = 964,
 		hp = 7716,
 		sunder = 536,
 		defence = 289,
@@ -45711,7 +45711,7 @@ local datas = {
 	},
 	[700146033] = {
 		id = 700146033,
-		attack = 680,
+		attack = 1020,
 		hp = 8157,
 		sunder = 566,
 		defence = 305,
@@ -45725,7 +45725,7 @@ local datas = {
 	},
 	[700146034] = {
 		id = 700146034,
-		attack = 718,
+		attack = 1076,
 		hp = 8611,
 		sunder = 598,
 		defence = 322,
@@ -45739,7 +45739,7 @@ local datas = {
 	},
 	[700146035] = {
 		id = 700146035,
-		attack = 756,
+		attack = 1135,
 		hp = 9077,
 		sunder = 630,
 		defence = 339,
@@ -45753,7 +45753,7 @@ local datas = {
 	},
 	[700146036] = {
 		id = 700146036,
-		attack = 798,
+		attack = 1197,
 		hp = 9576,
 		sunder = 665,
 		defence = 358,
@@ -45767,7 +45767,7 @@ local datas = {
 	},
 	[700146037] = {
 		id = 700146037,
-		attack = 841,
+		attack = 1261,
 		hp = 10088,
 		sunder = 701,
 		defence = 377,
@@ -45781,7 +45781,7 @@ local datas = {
 	},
 	[700146038] = {
 		id = 700146038,
-		attack = 885,
+		attack = 1327,
 		hp = 10614,
 		sunder = 737,
 		defence = 397,
@@ -45795,7 +45795,7 @@ local datas = {
 	},
 	[700146039] = {
 		id = 700146039,
-		attack = 929,
+		attack = 1394,
 		hp = 11154,
 		sunder = 775,
 		defence = 417,
@@ -45809,7 +45809,7 @@ local datas = {
 	},
 	[700146040] = {
 		id = 700146040,
-		attack = 976,
+		attack = 1463,
 		hp = 11706,
 		sunder = 813,
 		defence = 438,
@@ -45823,7 +45823,7 @@ local datas = {
 	},
 	[700146041] = {
 		id = 700146041,
-		attack = 1018,
+		attack = 1527,
 		hp = 12217,
 		sunder = 848,
 		defence = 457,
@@ -45837,7 +45837,7 @@ local datas = {
 	},
 	[700146042] = {
 		id = 700146042,
-		attack = 1062,
+		attack = 1592,
 		hp = 12738,
 		sunder = 885,
 		defence = 476,
@@ -45851,7 +45851,7 @@ local datas = {
 	},
 	[700146043] = {
 		id = 700146043,
-		attack = 1106,
+		attack = 1659,
 		hp = 13271,
 		sunder = 922,
 		defence = 496,
@@ -45865,7 +45865,7 @@ local datas = {
 	},
 	[700146044] = {
 		id = 700146044,
-		attack = 1151,
+		attack = 1727,
 		hp = 13814,
 		sunder = 959,
 		defence = 517,
@@ -45879,7 +45879,7 @@ local datas = {
 	},
 	[700146045] = {
 		id = 700146045,
-		attack = 1197,
+		attack = 1796,
 		hp = 14368,
 		sunder = 998,
 		defence = 537,
@@ -45893,7 +45893,7 @@ local datas = {
 	},
 	[700146046] = {
 		id = 700146046,
-		attack = 1232,
+		attack = 1847,
 		hp = 14780,
 		sunder = 1026,
 		defence = 553,
@@ -45907,7 +45907,7 @@ local datas = {
 	},
 	[700146047] = {
 		id = 700146047,
-		attack = 1266,
+		attack = 1900,
 		hp = 15197,
 		sunder = 1055,
 		defence = 568,
@@ -45921,7 +45921,7 @@ local datas = {
 	},
 	[700146048] = {
 		id = 700146048,
-		attack = 1302,
+		attack = 1952,
 		hp = 15618,
 		sunder = 1085,
 		defence = 584,
@@ -45935,7 +45935,7 @@ local datas = {
 	},
 	[700146049] = {
 		id = 700146049,
-		attack = 1337,
+		attack = 2006,
 		hp = 16044,
 		sunder = 1114,
 		defence = 600,
@@ -45949,7 +45949,7 @@ local datas = {
 	},
 	[700146050] = {
 		id = 700146050,
-		attack = 1602,
+		attack = 2402,
 		hp = 19220,
 		sunder = 1144,
 		defence = 616,
@@ -45963,7 +45963,7 @@ local datas = {
 	},
 	[700146051] = {
 		id = 700146051,
-		attack = 1652,
+		attack = 2478,
 		hp = 19826,
 		sunder = 1180,
 		defence = 635,
@@ -45977,7 +45977,7 @@ local datas = {
 	},
 	[700146052] = {
 		id = 700146052,
-		attack = 1703,
+		attack = 2555,
 		hp = 20441,
 		sunder = 1217,
 		defence = 655,
@@ -45991,7 +45991,7 @@ local datas = {
 	},
 	[700146053] = {
 		id = 700146053,
-		attack = 1755,
+		attack = 2633,
 		hp = 21065,
 		sunder = 1254,
 		defence = 675,
@@ -46005,7 +46005,7 @@ local datas = {
 	},
 	[700146054] = {
 		id = 700146054,
-		attack = 1808,
+		attack = 2712,
 		hp = 21698,
 		sunder = 1292,
 		defence = 695,
@@ -46019,7 +46019,7 @@ local datas = {
 	},
 	[700146055] = {
 		id = 700146055,
-		attack = 1862,
+		attack = 2792,
 		hp = 22340,
 		sunder = 1330,
 		defence = 716,
@@ -46033,7 +46033,7 @@ local datas = {
 	},
 	[700146056] = {
 		id = 700146056,
-		attack = 1930,
+		attack = 2896,
 		hp = 23164,
 		sunder = 1379,
 		defence = 742,
@@ -46047,7 +46047,7 @@ local datas = {
 	},
 	[700146057] = {
 		id = 700146057,
-		attack = 2000,
+		attack = 3000,
 		hp = 24003,
 		sunder = 1429,
 		defence = 769,
@@ -46061,7 +46061,7 @@ local datas = {
 	},
 	[700146058] = {
 		id = 700146058,
-		attack = 2071,
+		attack = 3107,
 		hp = 24857,
 		sunder = 1480,
 		defence = 797,
@@ -46075,7 +46075,7 @@ local datas = {
 	},
 	[700146059] = {
 		id = 700146059,
-		attack = 2144,
+		attack = 3216,
 		hp = 25726,
 		sunder = 1531,
 		defence = 825,
@@ -46089,7 +46089,7 @@ local datas = {
 	},
 	[700146060] = {
 		id = 700146060,
-		attack = 2218,
+		attack = 3326,
 		hp = 26610,
 		sunder = 1584,
 		defence = 853,
@@ -46103,7 +46103,7 @@ local datas = {
 	},
 	[700146061] = {
 		id = 700146061,
-		attack = 2270,
+		attack = 3405,
 		hp = 27240,
 		sunder = 1621,
 		defence = 873,
@@ -46117,7 +46117,7 @@ local datas = {
 	},
 	[700146062] = {
 		id = 700146062,
-		attack = 2323,
+		attack = 3485,
 		hp = 27877,
 		sunder = 1659,
 		defence = 893,
@@ -46131,7 +46131,7 @@ local datas = {
 	},
 	[700146063] = {
 		id = 700146063,
-		attack = 2377,
+		attack = 3565,
 		hp = 28520,
 		sunder = 1698,
 		defence = 914,
@@ -46145,7 +46145,7 @@ local datas = {
 	},
 	[700146064] = {
 		id = 700146064,
-		attack = 2431,
+		attack = 3646,
 		hp = 29170,
 		sunder = 1736,
 		defence = 935,
@@ -46159,7 +46159,7 @@ local datas = {
 	},
 	[700146065] = {
 		id = 700146065,
-		attack = 2485,
+		attack = 3728,
 		hp = 29826,
 		sunder = 1775,
 		defence = 956,
@@ -46173,7 +46173,7 @@ local datas = {
 	},
 	[700146066] = {
 		id = 700146066,
-		attack = 2572,
+		attack = 3858,
 		hp = 30864,
 		sunder = 1837,
 		defence = 989,
@@ -46187,7 +46187,7 @@ local datas = {
 	},
 	[700146067] = {
 		id = 700146067,
-		attack = 2660,
+		attack = 3990,
 		hp = 31920,
 		sunder = 1900,
 		defence = 1023,
@@ -46201,7 +46201,7 @@ local datas = {
 	},
 	[700146068] = {
 		id = 700146068,
-		attack = 2749,
+		attack = 4124,
 		hp = 32993,
 		sunder = 1964,
 		defence = 1057,
@@ -46215,7 +46215,7 @@ local datas = {
 	},
 	[700146069] = {
 		id = 700146069,
-		attack = 2840,
+		attack = 4261,
 		hp = 34084,
 		sunder = 2029,
 		defence = 1092,
@@ -46229,7 +46229,7 @@ local datas = {
 	},
 	[700146070] = {
 		id = 700146070,
-		attack = 2933,
+		attack = 4399,
 		hp = 35193,
 		sunder = 2095,
 		defence = 1128,
@@ -46243,7 +46243,7 @@ local datas = {
 	},
 	[700146071] = {
 		id = 700146071,
-		attack = 3009,
+		attack = 4514,
 		hp = 36110,
 		sunder = 2149,
 		defence = 1157,
@@ -46257,7 +46257,7 @@ local datas = {
 	},
 	[700146072] = {
 		id = 700146072,
-		attack = 3087,
+		attack = 4630,
 		hp = 37039,
 		sunder = 2205,
 		defence = 1187,
@@ -46271,7 +46271,7 @@ local datas = {
 	},
 	[700146073] = {
 		id = 700146073,
-		attack = 3165,
+		attack = 4747,
 		hp = 37979,
 		sunder = 2261,
 		defence = 1217,
@@ -46285,7 +46285,7 @@ local datas = {
 	},
 	[700146074] = {
 		id = 700146074,
-		attack = 3244,
+		attack = 4866,
 		hp = 38932,
 		sunder = 2317,
 		defence = 1248,
@@ -46299,7 +46299,7 @@ local datas = {
 	},
 	[700146075] = {
 		id = 700146075,
-		attack = 3325,
+		attack = 4987,
 		hp = 39896,
 		sunder = 2375,
 		defence = 1279,
@@ -46313,7 +46313,7 @@ local datas = {
 	},
 	[700146076] = {
 		id = 700146076,
-		attack = 3448,
+		attack = 5172,
 		hp = 41372,
 		sunder = 2463,
 		defence = 1326,
@@ -46327,7 +46327,7 @@ local datas = {
 	},
 	[700146077] = {
 		id = 700146077,
-		attack = 3573,
+		attack = 5359,
 		hp = 42874,
 		sunder = 2552,
 		defence = 1374,
@@ -46341,7 +46341,7 @@ local datas = {
 	},
 	[700146078] = {
 		id = 700146078,
-		attack = 3700,
+		attack = 5550,
 		hp = 44399,
 		sunder = 2643,
 		defence = 1423,
@@ -46355,7 +46355,7 @@ local datas = {
 	},
 	[700146079] = {
 		id = 700146079,
-		attack = 3829,
+		attack = 5744,
 		hp = 45950,
 		sunder = 2735,
 		defence = 1473,
@@ -46369,7 +46369,7 @@ local datas = {
 	},
 	[700146080] = {
 		id = 700146080,
-		attack = 3960,
+		attack = 5941,
 		hp = 47525,
 		sunder = 2829,
 		defence = 1523,
@@ -46383,7 +46383,7 @@ local datas = {
 	},
 	[700146081] = {
 		id = 700146081,
-		attack = 4047,
+		attack = 6070,
 		hp = 48563,
 		sunder = 2891,
 		defence = 1556,
@@ -46397,7 +46397,7 @@ local datas = {
 	},
 	[700146082] = {
 		id = 700146082,
-		attack = 4134,
+		attack = 6201,
 		hp = 49612,
 		sunder = 2953,
 		defence = 1590,
@@ -46411,7 +46411,7 @@ local datas = {
 	},
 	[700146083] = {
 		id = 700146083,
-		attack = 4223,
+		attack = 6334,
 		hp = 50672,
 		sunder = 3016,
 		defence = 1624,
@@ -46425,7 +46425,7 @@ local datas = {
 	},
 	[700146084] = {
 		id = 700146084,
-		attack = 4312,
+		attack = 6468,
 		hp = 51743,
 		sunder = 3080,
 		defence = 1658,
@@ -46439,7 +46439,7 @@ local datas = {
 	},
 	[700146085] = {
 		id = 700146085,
-		attack = 4402,
+		attack = 6603,
 		hp = 52825,
 		sunder = 3144,
 		defence = 1693,
@@ -46453,7 +46453,7 @@ local datas = {
 	},
 	[700146086] = {
 		id = 700146086,
-		attack = 4546,
+		attack = 6819,
 		hp = 54552,
 		sunder = 3247,
 		defence = 1748,
@@ -46467,7 +46467,7 @@ local datas = {
 	},
 	[700146087] = {
 		id = 700146087,
-		attack = 4692,
+		attack = 7038,
 		hp = 56305,
 		sunder = 3351,
 		defence = 1805,
@@ -46481,7 +46481,7 @@ local datas = {
 	},
 	[700146088] = {
 		id = 700146088,
-		attack = 4840,
+		attack = 7260,
 		hp = 58083,
 		sunder = 3457,
 		defence = 1862,
@@ -46495,7 +46495,7 @@ local datas = {
 	},
 	[700146089] = {
 		id = 700146089,
-		attack = 4991,
+		attack = 7486,
 		hp = 59886,
 		sunder = 3565,
 		defence = 1919,
@@ -46509,7 +46509,7 @@ local datas = {
 	},
 	[700146090] = {
 		id = 700146090,
-		attack = 5143,
+		attack = 7714,
 		hp = 61715,
 		sunder = 3674,
 		defence = 1978,
@@ -46523,7 +46523,7 @@ local datas = {
 	},
 	[700146091] = {
 		id = 700146091,
-		attack = 5254,
+		attack = 7881,
 		hp = 63045,
 		sunder = 3753,
 		defence = 2021,
@@ -46537,7 +46537,7 @@ local datas = {
 	},
 	[700146092] = {
 		id = 700146092,
-		attack = 5366,
+		attack = 8049,
 		hp = 64389,
 		sunder = 3833,
 		defence = 2064,
@@ -46551,7 +46551,7 @@ local datas = {
 	},
 	[700146093] = {
 		id = 700146093,
-		attack = 5479,
+		attack = 8218,
 		hp = 65748,
 		sunder = 3914,
 		defence = 2107,
@@ -46565,7 +46565,7 @@ local datas = {
 	},
 	[700146094] = {
 		id = 700146094,
-		attack = 5593,
+		attack = 8390,
 		hp = 67120,
 		sunder = 3995,
 		defence = 2151,
@@ -46579,7 +46579,7 @@ local datas = {
 	},
 	[700146095] = {
 		id = 700146095,
-		attack = 5709,
+		attack = 8563,
 		hp = 68507,
 		sunder = 4078,
 		defence = 2196,
@@ -46593,7 +46593,7 @@ local datas = {
 	},
 	[700146096] = {
 		id = 700146096,
-		attack = 5900,
+		attack = 8849,
 		hp = 70796,
 		sunder = 4214,
 		defence = 2269,
@@ -46607,7 +46607,7 @@ local datas = {
 	},
 	[700146097] = {
 		id = 700146097,
-		attack = 6093,
+		attack = 9140,
 		hp = 73117,
 		sunder = 4352,
 		defence = 2344,
@@ -46621,7 +46621,7 @@ local datas = {
 	},
 	[700146098] = {
 		id = 700146098,
-		attack = 6289,
+		attack = 9434,
 		hp = 75471,
 		sunder = 4492,
 		defence = 2419,
@@ -46635,7 +46635,7 @@ local datas = {
 	},
 	[700146099] = {
 		id = 700146099,
-		attack = 6488,
+		attack = 9732,
 		hp = 77857,
 		sunder = 4634,
 		defence = 2495,
@@ -46649,7 +46649,7 @@ local datas = {
 	},
 	[700146100] = {
 		id = 700146100,
-		attack = 6690,
+		attack = 10034,
 		hp = 80276,
 		sunder = 4778,
 		defence = 2573,
@@ -67873,7 +67873,7 @@ local datas = {
 	},
 	[710026000] = {
 		id = 710026000,
-		attack = 36,
+		attack = 54,
 		hp = 859,
 		sunder = 102,
 		defence = 55,
@@ -67887,7 +67887,7 @@ local datas = {
 	},
 	[710026001] = {
 		id = 710026001,
-		attack = 45,
+		attack = 68,
 		hp = 1081,
 		sunder = 128,
 		defence = 69,
@@ -67901,7 +67901,7 @@ local datas = {
 	},
 	[710026002] = {
 		id = 710026002,
-		attack = 49,
+		attack = 73,
 		hp = 1165,
 		sunder = 138,
 		defence = 74,
@@ -67915,7 +67915,7 @@ local datas = {
 	},
 	[710026003] = {
 		id = 710026003,
-		attack = 46,
+		attack = 69,
 		hp = 1111,
 		sunder = 130,
 		defence = 70,
@@ -67929,7 +67929,7 @@ local datas = {
 	},
 	[710026004] = {
 		id = 710026004,
-		attack = 38,
+		attack = 57,
 		hp = 918,
 		sunder = 106,
 		defence = 57,
@@ -67943,7 +67943,7 @@ local datas = {
 	},
 	[710026005] = {
 		id = 710026005,
-		attack = 24,
+		attack = 37,
 		hp = 587,
 		sunder = 65,
 		defence = 35,
@@ -67957,7 +67957,7 @@ local datas = {
 	},
 	[710026006] = {
 		id = 710026006,
-		attack = 30,
+		attack = 45,
 		hp = 726,
 		sunder = 79,
 		defence = 43,
@@ -67971,7 +67971,7 @@ local datas = {
 	},
 	[710026007] = {
 		id = 710026007,
-		attack = 37,
+		attack = 55,
 		hp = 880,
 		sunder = 95,
 		defence = 51,
@@ -67985,7 +67985,7 @@ local datas = {
 	},
 	[710026008] = {
 		id = 710026008,
-		attack = 44,
+		attack = 65,
 		hp = 1047,
 		sunder = 111,
 		defence = 60,
@@ -67999,7 +67999,7 @@ local datas = {
 	},
 	[710026009] = {
 		id = 710026009,
-		attack = 51,
+		attack = 77,
 		hp = 1228,
 		sunder = 129,
 		defence = 70,
@@ -68013,7 +68013,7 @@ local datas = {
 	},
 	[710026010] = {
 		id = 710026010,
-		attack = 59,
+		attack = 89,
 		hp = 1423,
 		sunder = 148,
 		defence = 80,
@@ -68027,7 +68027,7 @@ local datas = {
 	},
 	[710026011] = {
 		id = 710026011,
-		attack = 66,
+		attack = 98,
 		hp = 1575,
 		sunder = 162,
 		defence = 87,
@@ -68041,7 +68041,7 @@ local datas = {
 	},
 	[710026012] = {
 		id = 710026012,
-		attack = 72,
+		attack = 108,
 		hp = 1732,
 		sunder = 176,
 		defence = 95,
@@ -68055,7 +68055,7 @@ local datas = {
 	},
 	[710026013] = {
 		id = 710026013,
-		attack = 79,
+		attack = 118,
 		hp = 1895,
 		sunder = 190,
 		defence = 102,
@@ -68069,7 +68069,7 @@ local datas = {
 	},
 	[710026014] = {
 		id = 710026014,
-		attack = 86,
+		attack = 129,
 		hp = 2062,
 		sunder = 205,
 		defence = 110,
@@ -68083,7 +68083,7 @@ local datas = {
 	},
 	[710026015] = {
 		id = 710026015,
-		attack = 93,
+		attack = 140,
 		hp = 2235,
 		sunder = 219,
 		defence = 118,
@@ -68097,7 +68097,7 @@ local datas = {
 	},
 	[710026016] = {
 		id = 710026016,
-		attack = 102,
+		attack = 154,
 		hp = 2459,
 		sunder = 238,
 		defence = 128,
@@ -68111,7 +68111,7 @@ local datas = {
 	},
 	[710026017] = {
 		id = 710026017,
-		attack = 112,
+		attack = 168,
 		hp = 2693,
 		sunder = 258,
 		defence = 139,
@@ -68125,7 +68125,7 @@ local datas = {
 	},
 	[710026018] = {
 		id = 710026018,
-		attack = 122,
+		attack = 184,
 		hp = 2938,
 		sunder = 278,
 		defence = 150,
@@ -68139,7 +68139,7 @@ local datas = {
 	},
 	[710026019] = {
 		id = 710026019,
-		attack = 133,
+		attack = 200,
 		hp = 3193,
 		sunder = 299,
 		defence = 161,
@@ -68153,7 +68153,7 @@ local datas = {
 	},
 	[710026020] = {
 		id = 710026020,
-		attack = 144,
+		attack = 216,
 		hp = 3458,
 		sunder = 320,
 		defence = 172,
@@ -68167,7 +68167,7 @@ local datas = {
 	},
 	[710026021] = {
 		id = 710026021,
-		attack = 154,
+		attack = 231,
 		hp = 3701,
 		sunder = 339,
 		defence = 182,
@@ -68181,7 +68181,7 @@ local datas = {
 	},
 	[710026022] = {
 		id = 710026022,
-		attack = 165,
+		attack = 247,
 		hp = 3951,
 		sunder = 358,
 		defence = 193,
@@ -68195,7 +68195,7 @@ local datas = {
 	},
 	[710026023] = {
 		id = 710026023,
-		attack = 175,
+		attack = 263,
 		hp = 4209,
 		sunder = 377,
 		defence = 203,
@@ -68209,7 +68209,7 @@ local datas = {
 	},
 	[710026024] = {
 		id = 710026024,
-		attack = 186,
+		attack = 280,
 		hp = 4475,
 		sunder = 396,
 		defence = 213,
@@ -68223,7 +68223,7 @@ local datas = {
 	},
 	[710026025] = {
 		id = 710026025,
-		attack = 198,
+		attack = 297,
 		hp = 4747,
 		sunder = 416,
 		defence = 224,
@@ -68237,7 +68237,7 @@ local datas = {
 	},
 	[710026026] = {
 		id = 710026026,
-		attack = 209,
+		attack = 313,
 		hp = 5005,
 		sunder = 434,
 		defence = 234,
@@ -68251,7 +68251,7 @@ local datas = {
 	},
 	[710026027] = {
 		id = 710026027,
-		attack = 219,
+		attack = 329,
 		hp = 5268,
 		sunder = 452,
 		defence = 244,
@@ -68265,7 +68265,7 @@ local datas = {
 	},
 	[710026028] = {
 		id = 710026028,
-		attack = 231,
+		attack = 346,
 		hp = 5537,
 		sunder = 471,
 		defence = 253,
@@ -68279,7 +68279,7 @@ local datas = {
 	},
 	[710026029] = {
 		id = 710026029,
-		attack = 242,
+		attack = 363,
 		hp = 5812,
 		sunder = 489,
 		defence = 263,
@@ -68293,7 +68293,7 @@ local datas = {
 	},
 	[710026030] = {
 		id = 710026030,
-		attack = 254,
+		attack = 381,
 		hp = 7311,
 		sunder = 508,
 		defence = 273,
@@ -68307,7 +68307,7 @@ local datas = {
 	},
 	[710026031] = {
 		id = 710026031,
-		attack = 270,
+		attack = 404,
 		hp = 7762,
 		sunder = 539,
 		defence = 290,
@@ -68321,7 +68321,7 @@ local datas = {
 	},
 	[710026032] = {
 		id = 710026032,
-		attack = 286,
+		attack = 429,
 		hp = 8228,
 		sunder = 571,
 		defence = 308,
@@ -68335,7 +68335,7 @@ local datas = {
 	},
 	[710026033] = {
 		id = 710026033,
-		attack = 302,
+		attack = 453,
 		hp = 8707,
 		sunder = 605,
 		defence = 326,
@@ -68349,7 +68349,7 @@ local datas = {
 	},
 	[710026034] = {
 		id = 710026034,
-		attack = 319,
+		attack = 479,
 		hp = 9199,
 		sunder = 639,
 		defence = 344,
@@ -68363,7 +68363,7 @@ local datas = {
 	},
 	[710026035] = {
 		id = 710026035,
-		attack = 337,
+		attack = 505,
 		hp = 9705,
 		sunder = 674,
 		defence = 363,
@@ -68377,7 +68377,7 @@ local datas = {
 	},
 	[710026036] = {
 		id = 710026036,
-		attack = 354,
+		attack = 531,
 		hp = 10186,
 		sunder = 707,
 		defence = 381,
@@ -68391,7 +68391,7 @@ local datas = {
 	},
 	[710026037] = {
 		id = 710026037,
-		attack = 371,
+		attack = 556,
 		hp = 10679,
 		sunder = 742,
 		defence = 399,
@@ -68405,7 +68405,7 @@ local datas = {
 	},
 	[710026038] = {
 		id = 710026038,
-		attack = 388,
+		attack = 582,
 		hp = 11183,
 		sunder = 777,
 		defence = 418,
@@ -68419,7 +68419,7 @@ local datas = {
 	},
 	[710026039] = {
 		id = 710026039,
-		attack = 406,
+		attack = 609,
 		hp = 11699,
 		sunder = 812,
 		defence = 437,
@@ -68433,7 +68433,7 @@ local datas = {
 	},
 	[710026040] = {
 		id = 710026040,
-		attack = 425,
+		attack = 637,
 		hp = 12226,
 		sunder = 849,
 		defence = 457,
@@ -68447,7 +68447,7 @@ local datas = {
 	},
 	[710026041] = {
 		id = 710026041,
-		attack = 444,
+		attack = 665,
 		hp = 12774,
 		sunder = 887,
 		defence = 478,
@@ -68461,7 +68461,7 @@ local datas = {
 	},
 	[710026042] = {
 		id = 710026042,
-		attack = 463,
+		attack = 694,
 		hp = 13334,
 		sunder = 926,
 		defence = 499,
@@ -68475,7 +68475,7 @@ local datas = {
 	},
 	[710026043] = {
 		id = 710026043,
-		attack = 483,
+		attack = 724,
 		hp = 13906,
 		sunder = 966,
 		defence = 520,
@@ -68489,7 +68489,7 @@ local datas = {
 	},
 	[710026044] = {
 		id = 710026044,
-		attack = 503,
+		attack = 755,
 		hp = 14490,
 		sunder = 1006,
 		defence = 542,
@@ -68503,7 +68503,7 @@ local datas = {
 	},
 	[710026045] = {
 		id = 710026045,
-		attack = 524,
+		attack = 786,
 		hp = 15085,
 		sunder = 1048,
 		defence = 564,
@@ -68517,7 +68517,7 @@ local datas = {
 	},
 	[710026046] = {
 		id = 710026046,
-		attack = 542,
+		attack = 814,
 		hp = 15622,
 		sunder = 1085,
 		defence = 584,
@@ -68531,7 +68531,7 @@ local datas = {
 	},
 	[710026047] = {
 		id = 710026047,
-		attack = 561,
+		attack = 842,
 		hp = 16168,
 		sunder = 1123,
 		defence = 605,
@@ -68545,7 +68545,7 @@ local datas = {
 	},
 	[710026048] = {
 		id = 710026048,
-		attack = 581,
+		attack = 871,
 		hp = 16723,
 		sunder = 1161,
 		defence = 625,
@@ -68559,7 +68559,7 @@ local datas = {
 	},
 	[710026049] = {
 		id = 710026049,
-		attack = 600,
+		attack = 900,
 		hp = 17287,
 		sunder = 1200,
 		defence = 646,
@@ -68573,7 +68573,7 @@ local datas = {
 	},
 	[710026050] = {
 		id = 710026050,
-		attack = 620,
+		attack = 930,
 		hp = 20836,
 		sunder = 1240,
 		defence = 668,
@@ -68587,7 +68587,7 @@ local datas = {
 	},
 	[710026051] = {
 		id = 710026051,
-		attack = 636,
+		attack = 954,
 		hp = 21376,
 		sunder = 1272,
 		defence = 685,
@@ -68601,7 +68601,7 @@ local datas = {
 	},
 	[710026052] = {
 		id = 710026052,
-		attack = 652,
+		attack = 979,
 		hp = 21921,
 		sunder = 1305,
 		defence = 703,
@@ -68615,7 +68615,7 @@ local datas = {
 	},
 	[710026053] = {
 		id = 710026053,
-		attack = 669,
+		attack = 1003,
 		hp = 22471,
 		sunder = 1338,
 		defence = 720,
@@ -68629,7 +68629,7 @@ local datas = {
 	},
 	[710026054] = {
 		id = 710026054,
-		attack = 685,
+		attack = 1028,
 		hp = 23027,
 		sunder = 1371,
 		defence = 738,
@@ -68643,7 +68643,7 @@ local datas = {
 	},
 	[710026055] = {
 		id = 710026055,
-		attack = 702,
+		attack = 1053,
 		hp = 23588,
 		sunder = 1404,
 		defence = 756,
@@ -68657,7 +68657,7 @@ local datas = {
 	},
 	[710026056] = {
 		id = 710026056,
-		attack = 729,
+		attack = 1093,
 		hp = 24481,
 		sunder = 1457,
 		defence = 785,
@@ -68671,7 +68671,7 @@ local datas = {
 	},
 	[710026057] = {
 		id = 710026057,
-		attack = 756,
+		attack = 1134,
 		hp = 25391,
 		sunder = 1511,
 		defence = 814,
@@ -68685,7 +68685,7 @@ local datas = {
 	},
 	[710026058] = {
 		id = 710026058,
-		attack = 783,
+		attack = 1175,
 		hp = 26317,
 		sunder = 1566,
 		defence = 843,
@@ -68699,7 +68699,7 @@ local datas = {
 	},
 	[710026059] = {
 		id = 710026059,
-		attack = 811,
+		attack = 1217,
 		hp = 27260,
 		sunder = 1623,
 		defence = 874,
@@ -68713,7 +68713,7 @@ local datas = {
 	},
 	[710026060] = {
 		id = 710026060,
-		attack = 840,
+		attack = 1260,
 		hp = 28219,
 		sunder = 1680,
 		defence = 904,
@@ -68727,7 +68727,7 @@ local datas = {
 	},
 	[710026061] = {
 		id = 710026061,
-		attack = 860,
+		attack = 1290,
 		hp = 28892,
 		sunder = 1720,
 		defence = 926,
@@ -68741,7 +68741,7 @@ local datas = {
 	},
 	[710026062] = {
 		id = 710026062,
-		attack = 880,
+		attack = 1320,
 		hp = 29573,
 		sunder = 1760,
 		defence = 948,
@@ -68755,7 +68755,7 @@ local datas = {
 	},
 	[710026063] = {
 		id = 710026063,
-		attack = 901,
+		attack = 1351,
 		hp = 30260,
 		sunder = 1801,
 		defence = 970,
@@ -68769,7 +68769,7 @@ local datas = {
 	},
 	[710026064] = {
 		id = 710026064,
-		attack = 921,
+		attack = 1382,
 		hp = 30954,
 		sunder = 1842,
 		defence = 992,
@@ -68783,7 +68783,7 @@ local datas = {
 	},
 	[710026065] = {
 		id = 710026065,
-		attack = 942,
+		attack = 1413,
 		hp = 31655,
 		sunder = 1884,
 		defence = 1015,
@@ -68797,7 +68797,7 @@ local datas = {
 	},
 	[710026066] = {
 		id = 710026066,
-		attack = 979,
+		attack = 1469,
 		hp = 32904,
 		sunder = 1959,
 		defence = 1055,
@@ -68811,7 +68811,7 @@ local datas = {
 	},
 	[710026067] = {
 		id = 710026067,
-		attack = 1017,
+		attack = 1526,
 		hp = 34177,
 		sunder = 2034,
 		defence = 1095,
@@ -68825,7 +68825,7 @@ local datas = {
 	},
 	[710026068] = {
 		id = 710026068,
-		attack = 1056,
+		attack = 1584,
 		hp = 35472,
 		sunder = 2111,
 		defence = 1137,
@@ -68839,7 +68839,7 @@ local datas = {
 	},
 	[710026069] = {
 		id = 710026069,
-		attack = 1095,
+		attack = 1642,
 		hp = 36790,
 		sunder = 2190,
 		defence = 1179,
@@ -68853,7 +68853,7 @@ local datas = {
 	},
 	[710026070] = {
 		id = 710026070,
-		attack = 1135,
+		attack = 1702,
 		hp = 38131,
 		sunder = 2270,
 		defence = 1222,
@@ -68867,7 +68867,7 @@ local datas = {
 	},
 	[710026071] = {
 		id = 710026071,
-		attack = 1165,
+		attack = 1747,
 		hp = 39130,
 		sunder = 2329,
 		defence = 1254,
@@ -68881,7 +68881,7 @@ local datas = {
 	},
 	[710026072] = {
 		id = 710026072,
-		attack = 1195,
+		attack = 1792,
 		hp = 40142,
 		sunder = 2389,
 		defence = 1287,
@@ -68895,7 +68895,7 @@ local datas = {
 	},
 	[710026073] = {
 		id = 710026073,
-		attack = 1225,
+		attack = 1838,
 		hp = 41166,
 		sunder = 2450,
 		defence = 1319,
@@ -68909,7 +68909,7 @@ local datas = {
 	},
 	[710026074] = {
 		id = 710026074,
-		attack = 1256,
+		attack = 1884,
 		hp = 42204,
 		sunder = 2512,
 		defence = 1353,
@@ -68923,7 +68923,7 @@ local datas = {
 	},
 	[710026075] = {
 		id = 710026075,
-		attack = 1287,
+		attack = 1931,
 		hp = 43254,
 		sunder = 2575,
 		defence = 1386,
@@ -68937,7 +68937,7 @@ local datas = {
 	},
 	[710026076] = {
 		id = 710026076,
-		attack = 1331,
+		attack = 1997,
 		hp = 44732,
 		sunder = 2663,
 		defence = 1434,
@@ -68951,7 +68951,7 @@ local datas = {
 	},
 	[710026077] = {
 		id = 710026077,
-		attack = 1376,
+		attack = 2064,
 		hp = 46233,
 		sunder = 2752,
 		defence = 1482,
@@ -68965,7 +68965,7 @@ local datas = {
 	},
 	[710026078] = {
 		id = 710026078,
-		attack = 1421,
+		attack = 2132,
 		hp = 47758,
 		sunder = 2843,
 		defence = 1531,
@@ -68979,7 +68979,7 @@ local datas = {
 	},
 	[710026079] = {
 		id = 710026079,
-		attack = 1467,
+		attack = 2201,
 		hp = 49306,
 		sunder = 2935,
 		defence = 1580,
@@ -68993,7 +68993,7 @@ local datas = {
 	},
 	[710026080] = {
 		id = 710026080,
-		attack = 1514,
+		attack = 2271,
 		hp = 50878,
 		sunder = 3028,
 		defence = 1631,
@@ -69007,7 +69007,7 @@ local datas = {
 	},
 	[710026081] = {
 		id = 710026081,
-		attack = 1548,
+		attack = 2322,
 		hp = 52005,
 		sunder = 3096,
 		defence = 1667,
@@ -69021,7 +69021,7 @@ local datas = {
 	},
 	[710026082] = {
 		id = 710026082,
-		attack = 1582,
+		attack = 2372,
 		hp = 53143,
 		sunder = 3163,
 		defence = 1703,
@@ -69035,7 +69035,7 @@ local datas = {
 	},
 	[710026083] = {
 		id = 710026083,
-		attack = 1616,
+		attack = 2424,
 		hp = 54294,
 		sunder = 3232,
 		defence = 1740,
@@ -69049,7 +69049,7 @@ local datas = {
 	},
 	[710026084] = {
 		id = 710026084,
-		attack = 1651,
+		attack = 2476,
 		hp = 55457,
 		sunder = 3301,
 		defence = 1777,
@@ -69063,7 +69063,7 @@ local datas = {
 	},
 	[710026085] = {
 		id = 710026085,
-		attack = 1685,
+		attack = 2528,
 		hp = 56633,
 		sunder = 3371,
 		defence = 1815,
@@ -69077,7 +69077,7 @@ local datas = {
 	},
 	[710026086] = {
 		id = 710026086,
-		attack = 1742,
+		attack = 2613,
 		hp = 58530,
 		sunder = 3484,
 		defence = 1876,
@@ -69091,7 +69091,7 @@ local datas = {
 	},
 	[710026087] = {
 		id = 710026087,
-		attack = 1799,
+		attack = 2699,
 		hp = 60455,
 		sunder = 3599,
 		defence = 1938,
@@ -69105,7 +69105,7 @@ local datas = {
 	},
 	[710026088] = {
 		id = 710026088,
-		attack = 1857,
+		attack = 2786,
 		hp = 62408,
 		sunder = 3715,
 		defence = 2000,
@@ -69119,7 +69119,7 @@ local datas = {
 	},
 	[710026089] = {
 		id = 710026089,
-		attack = 1916,
+		attack = 2875,
 		hp = 64390,
 		sunder = 3833,
 		defence = 2064,
@@ -69133,7 +69133,7 @@ local datas = {
 	},
 	[710026090] = {
 		id = 710026090,
-		attack = 1976,
+		attack = 2964,
 		hp = 66400,
 		sunder = 3952,
 		defence = 2128,
@@ -69147,7 +69147,7 @@ local datas = {
 	},
 	[710026091] = {
 		id = 710026091,
-		attack = 2021,
+		attack = 3032,
 		hp = 67918,
 		sunder = 4043,
 		defence = 2177,
@@ -69161,7 +69161,7 @@ local datas = {
 	},
 	[710026092] = {
 		id = 710026092,
-		attack = 2067,
+		attack = 3101,
 		hp = 69452,
 		sunder = 4134,
 		defence = 2226,
@@ -69175,7 +69175,7 @@ local datas = {
 	},
 	[710026093] = {
 		id = 710026093,
-		attack = 2113,
+		attack = 3170,
 		hp = 71004,
 		sunder = 4226,
 		defence = 2276,
@@ -69189,7 +69189,7 @@ local datas = {
 	},
 	[710026094] = {
 		id = 710026094,
-		attack = 2160,
+		attack = 3240,
 		hp = 72573,
 		sunder = 4320,
 		defence = 2326,
@@ -69203,7 +69203,7 @@ local datas = {
 	},
 	[710026095] = {
 		id = 710026095,
-		attack = 2207,
+		attack = 3311,
 		hp = 74159,
 		sunder = 4414,
 		defence = 2377,
@@ -69217,7 +69217,7 @@ local datas = {
 	},
 	[710026096] = {
 		id = 710026096,
-		attack = 2346,
+		attack = 3519,
 		hp = 78815,
 		sunder = 4691,
 		defence = 2526,
@@ -69231,7 +69231,7 @@ local datas = {
 	},
 	[710026097] = {
 		id = 710026097,
-		attack = 2487,
+		attack = 3730,
 		hp = 83551,
 		sunder = 4973,
 		defence = 2678,
@@ -69245,7 +69245,7 @@ local datas = {
 	},
 	[710026098] = {
 		id = 710026098,
-		attack = 2630,
+		attack = 3945,
 		hp = 88367,
 		sunder = 5260,
 		defence = 2832,
@@ -69259,7 +69259,7 @@ local datas = {
 	},
 	[710026099] = {
 		id = 710026099,
-		attack = 2776,
+		attack = 4163,
 		hp = 93262,
 		sunder = 5551,
 		defence = 2989,
@@ -69273,7 +69273,7 @@ local datas = {
 	},
 	[710026100] = {
 		id = 710026100,
-		attack = 2924,
+		attack = 4386,
 		hp = 98237,
 		sunder = 5847,
 		defence = 3149,
@@ -69287,7 +69287,7 @@ local datas = {
 	},
 	[710036000] = {
 		id = 710036000,
-		attack = 72,
+		attack = 107,
 		hp = 1289,
 		sunder = 102,
 		defence = 55,
@@ -69301,7 +69301,7 @@ local datas = {
 	},
 	[710036001] = {
 		id = 710036001,
-		attack = 90,
+		attack = 135,
 		hp = 1622,
 		sunder = 128,
 		defence = 69,
@@ -69315,7 +69315,7 @@ local datas = {
 	},
 	[710036002] = {
 		id = 710036002,
-		attack = 97,
+		attack = 146,
 		hp = 1748,
 		sunder = 138,
 		defence = 74,
@@ -69329,7 +69329,7 @@ local datas = {
 	},
 	[710036003] = {
 		id = 710036003,
-		attack = 93,
+		attack = 139,
 		hp = 1666,
 		sunder = 130,
 		defence = 70,
@@ -69343,7 +69343,7 @@ local datas = {
 	},
 	[710036004] = {
 		id = 710036004,
-		attack = 76,
+		attack = 115,
 		hp = 1377,
 		sunder = 106,
 		defence = 57,
@@ -69357,7 +69357,7 @@ local datas = {
 	},
 	[710036005] = {
 		id = 710036005,
-		attack = 49,
+		attack = 73,
 		hp = 881,
 		sunder = 65,
 		defence = 35,
@@ -69371,7 +69371,7 @@ local datas = {
 	},
 	[710036006] = {
 		id = 710036006,
-		attack = 61,
+		attack = 91,
 		hp = 1090,
 		sunder = 79,
 		defence = 43,
@@ -69385,7 +69385,7 @@ local datas = {
 	},
 	[710036007] = {
 		id = 710036007,
-		attack = 73,
+		attack = 110,
 		hp = 1319,
 		sunder = 95,
 		defence = 51,
@@ -69399,7 +69399,7 @@ local datas = {
 	},
 	[710036008] = {
 		id = 710036008,
-		attack = 87,
+		attack = 131,
 		hp = 1570,
 		sunder = 111,
 		defence = 60,
@@ -69413,7 +69413,7 @@ local datas = {
 	},
 	[710036009] = {
 		id = 710036009,
-		attack = 102,
+		attack = 153,
 		hp = 1842,
 		sunder = 129,
 		defence = 70,
@@ -69427,7 +69427,7 @@ local datas = {
 	},
 	[710036010] = {
 		id = 710036010,
-		attack = 119,
+		attack = 178,
 		hp = 2134,
 		sunder = 148,
 		defence = 80,
@@ -69441,7 +69441,7 @@ local datas = {
 	},
 	[710036011] = {
 		id = 710036011,
-		attack = 131,
+		attack = 197,
 		hp = 2362,
 		sunder = 162,
 		defence = 87,
@@ -69455,7 +69455,7 @@ local datas = {
 	},
 	[710036012] = {
 		id = 710036012,
-		attack = 144,
+		attack = 217,
 		hp = 2598,
 		sunder = 176,
 		defence = 95,
@@ -69469,7 +69469,7 @@ local datas = {
 	},
 	[710036013] = {
 		id = 710036013,
-		attack = 158,
+		attack = 237,
 		hp = 2842,
 		sunder = 190,
 		defence = 102,
@@ -69483,7 +69483,7 @@ local datas = {
 	},
 	[710036014] = {
 		id = 710036014,
-		attack = 172,
+		attack = 258,
 		hp = 3093,
 		sunder = 205,
 		defence = 110,
@@ -69497,7 +69497,7 @@ local datas = {
 	},
 	[710036015] = {
 		id = 710036015,
-		attack = 186,
+		attack = 279,
 		hp = 3352,
 		sunder = 219,
 		defence = 118,
@@ -69511,7 +69511,7 @@ local datas = {
 	},
 	[710036016] = {
 		id = 710036016,
-		attack = 205,
+		attack = 307,
 		hp = 3689,
 		sunder = 238,
 		defence = 128,
@@ -69525,7 +69525,7 @@ local datas = {
 	},
 	[710036017] = {
 		id = 710036017,
-		attack = 224,
+		attack = 337,
 		hp = 4040,
 		sunder = 258,
 		defence = 139,
@@ -69539,7 +69539,7 @@ local datas = {
 	},
 	[710036018] = {
 		id = 710036018,
-		attack = 245,
+		attack = 367,
 		hp = 4407,
 		sunder = 278,
 		defence = 150,
@@ -69553,7 +69553,7 @@ local datas = {
 	},
 	[710036019] = {
 		id = 710036019,
-		attack = 266,
+		attack = 399,
 		hp = 4789,
 		sunder = 299,
 		defence = 161,
@@ -69567,7 +69567,7 @@ local datas = {
 	},
 	[710036020] = {
 		id = 710036020,
-		attack = 288,
+		attack = 432,
 		hp = 5187,
 		sunder = 320,
 		defence = 172,
@@ -69581,7 +69581,7 @@ local datas = {
 	},
 	[710036021] = {
 		id = 710036021,
-		attack = 308,
+		attack = 463,
 		hp = 5552,
 		sunder = 339,
 		defence = 182,
@@ -69595,7 +69595,7 @@ local datas = {
 	},
 	[710036022] = {
 		id = 710036022,
-		attack = 329,
+		attack = 494,
 		hp = 5927,
 		sunder = 358,
 		defence = 193,
@@ -69609,7 +69609,7 @@ local datas = {
 	},
 	[710036023] = {
 		id = 710036023,
-		attack = 351,
+		attack = 526,
 		hp = 6314,
 		sunder = 377,
 		defence = 203,
@@ -69623,7 +69623,7 @@ local datas = {
 	},
 	[710036024] = {
 		id = 710036024,
-		attack = 373,
+		attack = 559,
 		hp = 6712,
 		sunder = 396,
 		defence = 213,
@@ -69637,7 +69637,7 @@ local datas = {
 	},
 	[710036025] = {
 		id = 710036025,
-		attack = 396,
+		attack = 593,
 		hp = 7121,
 		sunder = 416,
 		defence = 224,
@@ -69651,7 +69651,7 @@ local datas = {
 	},
 	[710036026] = {
 		id = 710036026,
-		attack = 417,
+		attack = 626,
 		hp = 7507,
 		sunder = 434,
 		defence = 234,
@@ -69665,7 +69665,7 @@ local datas = {
 	},
 	[710036027] = {
 		id = 710036027,
-		attack = 439,
+		attack = 658,
 		hp = 7902,
 		sunder = 452,
 		defence = 244,
@@ -69679,7 +69679,7 @@ local datas = {
 	},
 	[710036028] = {
 		id = 710036028,
-		attack = 461,
+		attack = 692,
 		hp = 8305,
 		sunder = 471,
 		defence = 253,
@@ -69693,7 +69693,7 @@ local datas = {
 	},
 	[710036029] = {
 		id = 710036029,
-		attack = 484,
+		attack = 726,
 		hp = 8717,
 		sunder = 489,
 		defence = 263,
@@ -69707,7 +69707,7 @@ local datas = {
 	},
 	[710036030] = {
 		id = 710036030,
-		attack = 508,
+		attack = 762,
 		hp = 10966,
 		sunder = 508,
 		defence = 273,
@@ -69721,7 +69721,7 @@ local datas = {
 	},
 	[710036031] = {
 		id = 710036031,
-		attack = 539,
+		attack = 809,
 		hp = 11644,
 		sunder = 539,
 		defence = 290,
@@ -69735,7 +69735,7 @@ local datas = {
 	},
 	[710036032] = {
 		id = 710036032,
-		attack = 571,
+		attack = 857,
 		hp = 12342,
 		sunder = 571,
 		defence = 308,
@@ -69749,7 +69749,7 @@ local datas = {
 	},
 	[710036033] = {
 		id = 710036033,
-		attack = 605,
+		attack = 907,
 		hp = 13060,
 		sunder = 605,
 		defence = 326,
@@ -69763,7 +69763,7 @@ local datas = {
 	},
 	[710036034] = {
 		id = 710036034,
-		attack = 639,
+		attack = 958,
 		hp = 13799,
 		sunder = 639,
 		defence = 344,
@@ -69777,7 +69777,7 @@ local datas = {
 	},
 	[710036035] = {
 		id = 710036035,
-		attack = 674,
+		attack = 1011,
 		hp = 14558,
 		sunder = 674,
 		defence = 363,
@@ -69791,7 +69791,7 @@ local datas = {
 	},
 	[710036036] = {
 		id = 710036036,
-		attack = 707,
+		attack = 1061,
 		hp = 15280,
 		sunder = 707,
 		defence = 381,
@@ -69805,7 +69805,7 @@ local datas = {
 	},
 	[710036037] = {
 		id = 710036037,
-		attack = 742,
+		attack = 1112,
 		hp = 16019,
 		sunder = 742,
 		defence = 399,
@@ -69819,7 +69819,7 @@ local datas = {
 	},
 	[710036038] = {
 		id = 710036038,
-		attack = 777,
+		attack = 1165,
 		hp = 16775,
 		sunder = 777,
 		defence = 418,
@@ -69833,7 +69833,7 @@ local datas = {
 	},
 	[710036039] = {
 		id = 710036039,
-		attack = 812,
+		attack = 1219,
 		hp = 17548,
 		sunder = 812,
 		defence = 437,
@@ -69847,7 +69847,7 @@ local datas = {
 	},
 	[710036040] = {
 		id = 710036040,
-		attack = 849,
+		attack = 1274,
 		hp = 18339,
 		sunder = 849,
 		defence = 457,
@@ -69861,7 +69861,7 @@ local datas = {
 	},
 	[710036041] = {
 		id = 710036041,
-		attack = 887,
+		attack = 1331,
 		hp = 19161,
 		sunder = 887,
 		defence = 478,
@@ -69875,7 +69875,7 @@ local datas = {
 	},
 	[710036042] = {
 		id = 710036042,
-		attack = 926,
+		attack = 1389,
 		hp = 20001,
 		sunder = 926,
 		defence = 499,
@@ -69889,7 +69889,7 @@ local datas = {
 	},
 	[710036043] = {
 		id = 710036043,
-		attack = 966,
+		attack = 1449,
 		hp = 20859,
 		sunder = 966,
 		defence = 520,
@@ -69903,7 +69903,7 @@ local datas = {
 	},
 	[710036044] = {
 		id = 710036044,
-		attack = 1006,
+		attack = 1509,
 		hp = 21735,
 		sunder = 1006,
 		defence = 542,
@@ -69917,7 +69917,7 @@ local datas = {
 	},
 	[710036045] = {
 		id = 710036045,
-		attack = 1048,
+		attack = 1571,
 		hp = 22628,
 		sunder = 1048,
 		defence = 564,
@@ -69931,7 +69931,7 @@ local datas = {
 	},
 	[710036046] = {
 		id = 710036046,
-		attack = 1085,
+		attack = 1627,
 		hp = 23433,
 		sunder = 1085,
 		defence = 584,
@@ -69945,7 +69945,7 @@ local datas = {
 	},
 	[710036047] = {
 		id = 710036047,
-		attack = 1123,
+		attack = 1684,
 		hp = 24252,
 		sunder = 1123,
 		defence = 605,
@@ -69959,7 +69959,7 @@ local datas = {
 	},
 	[710036048] = {
 		id = 710036048,
-		attack = 1161,
+		attack = 1742,
 		hp = 25084,
 		sunder = 1161,
 		defence = 625,
@@ -69973,7 +69973,7 @@ local datas = {
 	},
 	[710036049] = {
 		id = 710036049,
-		attack = 1200,
+		attack = 1801,
 		hp = 25930,
 		sunder = 1200,
 		defence = 646,
@@ -69987,7 +69987,7 @@ local datas = {
 	},
 	[710036050] = {
 		id = 710036050,
-		attack = 1240,
+		attack = 1860,
 		hp = 31254,
 		sunder = 1240,
 		defence = 668,
@@ -70001,7 +70001,7 @@ local datas = {
 	},
 	[710036051] = {
 		id = 710036051,
-		attack = 1272,
+		attack = 1909,
 		hp = 32064,
 		sunder = 1272,
 		defence = 685,
@@ -70015,7 +70015,7 @@ local datas = {
 	},
 	[710036052] = {
 		id = 710036052,
-		attack = 1305,
+		attack = 1957,
 		hp = 32882,
 		sunder = 1305,
 		defence = 703,
@@ -70029,7 +70029,7 @@ local datas = {
 	},
 	[710036053] = {
 		id = 710036053,
-		attack = 1338,
+		attack = 2006,
 		hp = 33707,
 		sunder = 1338,
 		defence = 720,
@@ -70043,7 +70043,7 @@ local datas = {
 	},
 	[710036054] = {
 		id = 710036054,
-		attack = 1371,
+		attack = 2056,
 		hp = 34540,
 		sunder = 1371,
 		defence = 738,
@@ -70057,7 +70057,7 @@ local datas = {
 	},
 	[710036055] = {
 		id = 710036055,
-		attack = 1404,
+		attack = 2106,
 		hp = 35382,
 		sunder = 1404,
 		defence = 756,
@@ -70071,7 +70071,7 @@ local datas = {
 	},
 	[710036056] = {
 		id = 710036056,
-		attack = 1457,
+		attack = 2186,
 		hp = 36721,
 		sunder = 1457,
 		defence = 785,
@@ -70085,7 +70085,7 @@ local datas = {
 	},
 	[710036057] = {
 		id = 710036057,
-		attack = 1511,
+		attack = 2267,
 		hp = 38086,
 		sunder = 1511,
 		defence = 814,
@@ -70099,7 +70099,7 @@ local datas = {
 	},
 	[710036058] = {
 		id = 710036058,
-		attack = 1566,
+		attack = 2350,
 		hp = 39475,
 		sunder = 1566,
 		defence = 843,
@@ -70113,7 +70113,7 @@ local datas = {
 	},
 	[710036059] = {
 		id = 710036059,
-		attack = 1623,
+		attack = 2434,
 		hp = 40890,
 		sunder = 1623,
 		defence = 874,
@@ -70127,7 +70127,7 @@ local datas = {
 	},
 	[710036060] = {
 		id = 710036060,
-		attack = 1680,
+		attack = 2520,
 		hp = 42329,
 		sunder = 1680,
 		defence = 904,
@@ -70141,7 +70141,7 @@ local datas = {
 	},
 	[710036061] = {
 		id = 710036061,
-		attack = 1720,
+		attack = 2580,
 		hp = 43339,
 		sunder = 1720,
 		defence = 926,
@@ -70155,7 +70155,7 @@ local datas = {
 	},
 	[710036062] = {
 		id = 710036062,
-		attack = 1760,
+		attack = 2640,
 		hp = 44359,
 		sunder = 1760,
 		defence = 948,
@@ -70169,7 +70169,7 @@ local datas = {
 	},
 	[710036063] = {
 		id = 710036063,
-		attack = 1801,
+		attack = 2702,
 		hp = 45390,
 		sunder = 1801,
 		defence = 970,
@@ -70183,7 +70183,7 @@ local datas = {
 	},
 	[710036064] = {
 		id = 710036064,
-		attack = 1842,
+		attack = 2764,
 		hp = 46431,
 		sunder = 1842,
 		defence = 992,
@@ -70197,7 +70197,7 @@ local datas = {
 	},
 	[710036065] = {
 		id = 710036065,
-		attack = 1884,
+		attack = 2826,
 		hp = 47482,
 		sunder = 1884,
 		defence = 1015,
@@ -70211,7 +70211,7 @@ local datas = {
 	},
 	[710036066] = {
 		id = 710036066,
-		attack = 1959,
+		attack = 2938,
 		hp = 49357,
 		sunder = 1959,
 		defence = 1055,
@@ -70225,7 +70225,7 @@ local datas = {
 	},
 	[710036067] = {
 		id = 710036067,
-		attack = 2034,
+		attack = 3051,
 		hp = 51265,
 		sunder = 2034,
 		defence = 1095,
@@ -70239,7 +70239,7 @@ local datas = {
 	},
 	[710036068] = {
 		id = 710036068,
-		attack = 2111,
+		attack = 3167,
 		hp = 53208,
 		sunder = 2111,
 		defence = 1137,
@@ -70253,7 +70253,7 @@ local datas = {
 	},
 	[710036069] = {
 		id = 710036069,
-		attack = 2190,
+		attack = 3285,
 		hp = 55185,
 		sunder = 2190,
 		defence = 1179,
@@ -70267,7 +70267,7 @@ local datas = {
 	},
 	[710036070] = {
 		id = 710036070,
-		attack = 2270,
+		attack = 3405,
 		hp = 57196,
 		sunder = 2270,
 		defence = 1222,
@@ -70281,7 +70281,7 @@ local datas = {
 	},
 	[710036071] = {
 		id = 710036071,
-		attack = 2329,
+		attack = 3494,
 		hp = 58695,
 		sunder = 2329,
 		defence = 1254,
@@ -70295,7 +70295,7 @@ local datas = {
 	},
 	[710036072] = {
 		id = 710036072,
-		attack = 2389,
+		attack = 3584,
 		hp = 60212,
 		sunder = 2389,
 		defence = 1287,
@@ -70309,7 +70309,7 @@ local datas = {
 	},
 	[710036073] = {
 		id = 710036073,
-		attack = 2450,
+		attack = 3676,
 		hp = 61749,
 		sunder = 2450,
 		defence = 1319,
@@ -70323,7 +70323,7 @@ local datas = {
 	},
 	[710036074] = {
 		id = 710036074,
-		attack = 2512,
+		attack = 3768,
 		hp = 63306,
 		sunder = 2512,
 		defence = 1353,
@@ -70337,7 +70337,7 @@ local datas = {
 	},
 	[710036075] = {
 		id = 710036075,
-		attack = 2575,
+		attack = 3862,
 		hp = 64881,
 		sunder = 2575,
 		defence = 1386,
@@ -70351,7 +70351,7 @@ local datas = {
 	},
 	[710036076] = {
 		id = 710036076,
-		attack = 2663,
+		attack = 3994,
 		hp = 67098,
 		sunder = 2663,
 		defence = 1434,
@@ -70365,7 +70365,7 @@ local datas = {
 	},
 	[710036077] = {
 		id = 710036077,
-		attack = 2752,
+		attack = 4128,
 		hp = 69350,
 		sunder = 2752,
 		defence = 1482,
@@ -70379,7 +70379,7 @@ local datas = {
 	},
 	[710036078] = {
 		id = 710036078,
-		attack = 2843,
+		attack = 4264,
 		hp = 71637,
 		sunder = 2843,
 		defence = 1531,
@@ -70393,7 +70393,7 @@ local datas = {
 	},
 	[710036079] = {
 		id = 710036079,
-		attack = 2935,
+		attack = 4402,
 		hp = 73959,
 		sunder = 2935,
 		defence = 1580,
@@ -70407,7 +70407,7 @@ local datas = {
 	},
 	[710036080] = {
 		id = 710036080,
-		attack = 3028,
+		attack = 4543,
 		hp = 76317,
 		sunder = 3028,
 		defence = 1631,
@@ -70421,7 +70421,7 @@ local datas = {
 	},
 	[710036081] = {
 		id = 710036081,
-		attack = 3096,
+		attack = 4643,
 		hp = 78007,
 		sunder = 3096,
 		defence = 1667,
@@ -70435,7 +70435,7 @@ local datas = {
 	},
 	[710036082] = {
 		id = 710036082,
-		attack = 3163,
+		attack = 4745,
 		hp = 79715,
 		sunder = 3163,
 		defence = 1703,
@@ -70449,7 +70449,7 @@ local datas = {
 	},
 	[710036083] = {
 		id = 710036083,
-		attack = 3232,
+		attack = 4848,
 		hp = 81441,
 		sunder = 3232,
 		defence = 1740,
@@ -70463,7 +70463,7 @@ local datas = {
 	},
 	[710036084] = {
 		id = 710036084,
-		attack = 3301,
+		attack = 4952,
 		hp = 83186,
 		sunder = 3301,
 		defence = 1777,
@@ -70477,7 +70477,7 @@ local datas = {
 	},
 	[710036085] = {
 		id = 710036085,
-		attack = 3371,
+		attack = 5056,
 		hp = 84949,
 		sunder = 3371,
 		defence = 1815,
@@ -70491,7 +70491,7 @@ local datas = {
 	},
 	[710036086] = {
 		id = 710036086,
-		attack = 3484,
+		attack = 5226,
 		hp = 87794,
 		sunder = 3484,
 		defence = 1876,
@@ -70505,7 +70505,7 @@ local datas = {
 	},
 	[710036087] = {
 		id = 710036087,
-		attack = 3599,
+		attack = 5398,
 		hp = 90682,
 		sunder = 3599,
 		defence = 1938,
@@ -70519,7 +70519,7 @@ local datas = {
 	},
 	[710036088] = {
 		id = 710036088,
-		attack = 3715,
+		attack = 5572,
 		hp = 93613,
 		sunder = 3715,
 		defence = 2000,
@@ -70533,7 +70533,7 @@ local datas = {
 	},
 	[710036089] = {
 		id = 710036089,
-		attack = 3833,
+		attack = 5749,
 		hp = 96585,
 		sunder = 3833,
 		defence = 2064,
@@ -70547,7 +70547,7 @@ local datas = {
 	},
 	[710036090] = {
 		id = 710036090,
-		attack = 3952,
+		attack = 5929,
 		hp = 99600,
 		sunder = 3952,
 		defence = 2128,
@@ -70561,7 +70561,7 @@ local datas = {
 	},
 	[710036091] = {
 		id = 710036091,
-		attack = 4043,
+		attack = 6064,
 		hp = 101877,
 		sunder = 4043,
 		defence = 2177,
@@ -70575,7 +70575,7 @@ local datas = {
 	},
 	[710036092] = {
 		id = 710036092,
-		attack = 4134,
+		attack = 6201,
 		hp = 104178,
 		sunder = 4134,
 		defence = 2226,
@@ -70589,7 +70589,7 @@ local datas = {
 	},
 	[710036093] = {
 		id = 710036093,
-		attack = 4226,
+		attack = 6340,
 		hp = 106506,
 		sunder = 4226,
 		defence = 2276,
@@ -70603,7 +70603,7 @@ local datas = {
 	},
 	[710036094] = {
 		id = 710036094,
-		attack = 4320,
+		attack = 6480,
 		hp = 108859,
 		sunder = 4320,
 		defence = 2326,
@@ -70617,7 +70617,7 @@ local datas = {
 	},
 	[710036095] = {
 		id = 710036095,
-		attack = 4414,
+		attack = 6621,
 		hp = 111238,
 		sunder = 4414,
 		defence = 2377,
@@ -70631,7 +70631,7 @@ local datas = {
 	},
 	[710036096] = {
 		id = 710036096,
-		attack = 4691,
+		attack = 7037,
 		hp = 118223,
 		sunder = 4691,
 		defence = 2526,
@@ -70645,7 +70645,7 @@ local datas = {
 	},
 	[710036097] = {
 		id = 710036097,
-		attack = 4973,
+		attack = 7460,
 		hp = 125327,
 		sunder = 4973,
 		defence = 2678,
@@ -70659,7 +70659,7 @@ local datas = {
 	},
 	[710036098] = {
 		id = 710036098,
-		attack = 5260,
+		attack = 7890,
 		hp = 132551,
 		sunder = 5260,
 		defence = 2832,
@@ -70673,7 +70673,7 @@ local datas = {
 	},
 	[710036099] = {
 		id = 710036099,
-		attack = 5551,
+		attack = 8327,
 		hp = 139893,
 		sunder = 5551,
 		defence = 2989,
@@ -70687,7 +70687,7 @@ local datas = {
 	},
 	[710036100] = {
 		id = 710036100,
-		attack = 5847,
+		attack = 8771,
 		hp = 147355,
 		sunder = 5847,
 		defence = 3149,
@@ -70701,7 +70701,7 @@ local datas = {
 	},
 	[710046000] = {
 		id = 710046000,
-		attack = 107,
+		attack = 161,
 		hp = 859,
 		sunder = 102,
 		defence = 55,
@@ -70715,7 +70715,7 @@ local datas = {
 	},
 	[710046001] = {
 		id = 710046001,
-		attack = 135,
+		attack = 203,
 		hp = 1081,
 		sunder = 128,
 		defence = 69,
@@ -70729,7 +70729,7 @@ local datas = {
 	},
 	[710046002] = {
 		id = 710046002,
-		attack = 146,
+		attack = 218,
 		hp = 1165,
 		sunder = 138,
 		defence = 74,
@@ -70743,7 +70743,7 @@ local datas = {
 	},
 	[710046003] = {
 		id = 710046003,
-		attack = 139,
+		attack = 208,
 		hp = 1111,
 		sunder = 130,
 		defence = 70,
@@ -70757,7 +70757,7 @@ local datas = {
 	},
 	[710046004] = {
 		id = 710046004,
-		attack = 115,
+		attack = 172,
 		hp = 918,
 		sunder = 106,
 		defence = 57,
@@ -70771,7 +70771,7 @@ local datas = {
 	},
 	[710046005] = {
 		id = 710046005,
-		attack = 73,
+		attack = 110,
 		hp = 587,
 		sunder = 65,
 		defence = 35,
@@ -70785,7 +70785,7 @@ local datas = {
 	},
 	[710046006] = {
 		id = 710046006,
-		attack = 91,
+		attack = 136,
 		hp = 726,
 		sunder = 79,
 		defence = 43,
@@ -70799,7 +70799,7 @@ local datas = {
 	},
 	[710046007] = {
 		id = 710046007,
-		attack = 110,
+		attack = 165,
 		hp = 880,
 		sunder = 95,
 		defence = 51,
@@ -70813,7 +70813,7 @@ local datas = {
 	},
 	[710046008] = {
 		id = 710046008,
-		attack = 131,
+		attack = 196,
 		hp = 1047,
 		sunder = 111,
 		defence = 60,
@@ -70827,7 +70827,7 @@ local datas = {
 	},
 	[710046009] = {
 		id = 710046009,
-		attack = 153,
+		attack = 230,
 		hp = 1228,
 		sunder = 129,
 		defence = 70,
@@ -70841,7 +70841,7 @@ local datas = {
 	},
 	[710046010] = {
 		id = 710046010,
-		attack = 178,
+		attack = 267,
 		hp = 1423,
 		sunder = 148,
 		defence = 80,
@@ -70855,7 +70855,7 @@ local datas = {
 	},
 	[710046011] = {
 		id = 710046011,
-		attack = 197,
+		attack = 295,
 		hp = 1575,
 		sunder = 162,
 		defence = 87,
@@ -70869,7 +70869,7 @@ local datas = {
 	},
 	[710046012] = {
 		id = 710046012,
-		attack = 217,
+		attack = 325,
 		hp = 1732,
 		sunder = 176,
 		defence = 95,
@@ -70883,7 +70883,7 @@ local datas = {
 	},
 	[710046013] = {
 		id = 710046013,
-		attack = 237,
+		attack = 355,
 		hp = 1895,
 		sunder = 190,
 		defence = 102,
@@ -70897,7 +70897,7 @@ local datas = {
 	},
 	[710046014] = {
 		id = 710046014,
-		attack = 258,
+		attack = 387,
 		hp = 2062,
 		sunder = 205,
 		defence = 110,
@@ -70911,7 +70911,7 @@ local datas = {
 	},
 	[710046015] = {
 		id = 710046015,
-		attack = 279,
+		attack = 419,
 		hp = 2235,
 		sunder = 219,
 		defence = 118,
@@ -70925,7 +70925,7 @@ local datas = {
 	},
 	[710046016] = {
 		id = 710046016,
-		attack = 307,
+		attack = 461,
 		hp = 2459,
 		sunder = 238,
 		defence = 128,
@@ -70939,7 +70939,7 @@ local datas = {
 	},
 	[710046017] = {
 		id = 710046017,
-		attack = 337,
+		attack = 505,
 		hp = 2693,
 		sunder = 258,
 		defence = 139,
@@ -70953,7 +70953,7 @@ local datas = {
 	},
 	[710046018] = {
 		id = 710046018,
-		attack = 367,
+		attack = 551,
 		hp = 2938,
 		sunder = 278,
 		defence = 150,
@@ -70967,7 +70967,7 @@ local datas = {
 	},
 	[710046019] = {
 		id = 710046019,
-		attack = 399,
+		attack = 599,
 		hp = 3193,
 		sunder = 299,
 		defence = 161,
@@ -70981,7 +70981,7 @@ local datas = {
 	},
 	[710046020] = {
 		id = 710046020,
-		attack = 432,
+		attack = 648,
 		hp = 3458,
 		sunder = 320,
 		defence = 172,
@@ -70995,7 +70995,7 @@ local datas = {
 	},
 	[710046021] = {
 		id = 710046021,
-		attack = 463,
+		attack = 694,
 		hp = 3701,
 		sunder = 339,
 		defence = 182,
@@ -71009,7 +71009,7 @@ local datas = {
 	},
 	[710046022] = {
 		id = 710046022,
-		attack = 494,
+		attack = 741,
 		hp = 3951,
 		sunder = 358,
 		defence = 193,
@@ -71023,7 +71023,7 @@ local datas = {
 	},
 	[710046023] = {
 		id = 710046023,
-		attack = 526,
+		attack = 789,
 		hp = 4209,
 		sunder = 377,
 		defence = 203,
@@ -71037,7 +71037,7 @@ local datas = {
 	},
 	[710046024] = {
 		id = 710046024,
-		attack = 559,
+		attack = 839,
 		hp = 4475,
 		sunder = 396,
 		defence = 213,
@@ -71051,7 +71051,7 @@ local datas = {
 	},
 	[710046025] = {
 		id = 710046025,
-		attack = 593,
+		attack = 890,
 		hp = 4747,
 		sunder = 416,
 		defence = 224,
@@ -71065,7 +71065,7 @@ local datas = {
 	},
 	[710046026] = {
 		id = 710046026,
-		attack = 626,
+		attack = 938,
 		hp = 5005,
 		sunder = 434,
 		defence = 234,
@@ -71079,7 +71079,7 @@ local datas = {
 	},
 	[710046027] = {
 		id = 710046027,
-		attack = 658,
+		attack = 988,
 		hp = 5268,
 		sunder = 452,
 		defence = 244,
@@ -71093,7 +71093,7 @@ local datas = {
 	},
 	[710046028] = {
 		id = 710046028,
-		attack = 692,
+		attack = 1038,
 		hp = 5537,
 		sunder = 471,
 		defence = 253,
@@ -71107,7 +71107,7 @@ local datas = {
 	},
 	[710046029] = {
 		id = 710046029,
-		attack = 726,
+		attack = 1090,
 		hp = 5812,
 		sunder = 489,
 		defence = 263,
@@ -71121,7 +71121,7 @@ local datas = {
 	},
 	[710046030] = {
 		id = 710046030,
-		attack = 762,
+		attack = 1142,
 		hp = 7311,
 		sunder = 508,
 		defence = 273,
@@ -71135,7 +71135,7 @@ local datas = {
 	},
 	[710046031] = {
 		id = 710046031,
-		attack = 809,
+		attack = 1213,
 		hp = 7762,
 		sunder = 539,
 		defence = 290,
@@ -71149,7 +71149,7 @@ local datas = {
 	},
 	[710046032] = {
 		id = 710046032,
-		attack = 857,
+		attack = 1286,
 		hp = 8228,
 		sunder = 571,
 		defence = 308,
@@ -71163,7 +71163,7 @@ local datas = {
 	},
 	[710046033] = {
 		id = 710046033,
-		attack = 907,
+		attack = 1360,
 		hp = 8707,
 		sunder = 605,
 		defence = 326,
@@ -71177,7 +71177,7 @@ local datas = {
 	},
 	[710046034] = {
 		id = 710046034,
-		attack = 958,
+		attack = 1437,
 		hp = 9199,
 		sunder = 639,
 		defence = 344,
@@ -71191,7 +71191,7 @@ local datas = {
 	},
 	[710046035] = {
 		id = 710046035,
-		attack = 1011,
+		attack = 1516,
 		hp = 9705,
 		sunder = 674,
 		defence = 363,
@@ -71205,7 +71205,7 @@ local datas = {
 	},
 	[710046036] = {
 		id = 710046036,
-		attack = 1061,
+		attack = 1592,
 		hp = 10186,
 		sunder = 707,
 		defence = 381,
@@ -71219,7 +71219,7 @@ local datas = {
 	},
 	[710046037] = {
 		id = 710046037,
-		attack = 1112,
+		attack = 1669,
 		hp = 10679,
 		sunder = 742,
 		defence = 399,
@@ -71233,7 +71233,7 @@ local datas = {
 	},
 	[710046038] = {
 		id = 710046038,
-		attack = 1165,
+		attack = 1747,
 		hp = 11183,
 		sunder = 777,
 		defence = 418,
@@ -71247,7 +71247,7 @@ local datas = {
 	},
 	[710046039] = {
 		id = 710046039,
-		attack = 1219,
+		attack = 1828,
 		hp = 11699,
 		sunder = 812,
 		defence = 437,
@@ -71261,7 +71261,7 @@ local datas = {
 	},
 	[710046040] = {
 		id = 710046040,
-		attack = 1274,
+		attack = 1910,
 		hp = 12226,
 		sunder = 849,
 		defence = 457,
@@ -71275,7 +71275,7 @@ local datas = {
 	},
 	[710046041] = {
 		id = 710046041,
-		attack = 1331,
+		attack = 1996,
 		hp = 12774,
 		sunder = 887,
 		defence = 478,
@@ -71289,7 +71289,7 @@ local datas = {
 	},
 	[710046042] = {
 		id = 710046042,
-		attack = 1389,
+		attack = 2083,
 		hp = 13334,
 		sunder = 926,
 		defence = 499,
@@ -71303,7 +71303,7 @@ local datas = {
 	},
 	[710046043] = {
 		id = 710046043,
-		attack = 1449,
+		attack = 2173,
 		hp = 13906,
 		sunder = 966,
 		defence = 520,
@@ -71317,7 +71317,7 @@ local datas = {
 	},
 	[710046044] = {
 		id = 710046044,
-		attack = 1509,
+		attack = 2264,
 		hp = 14490,
 		sunder = 1006,
 		defence = 542,
@@ -71331,7 +71331,7 @@ local datas = {
 	},
 	[710046045] = {
 		id = 710046045,
-		attack = 1571,
+		attack = 2357,
 		hp = 15085,
 		sunder = 1048,
 		defence = 564,
@@ -71345,7 +71345,7 @@ local datas = {
 	},
 	[710046046] = {
 		id = 710046046,
-		attack = 1627,
+		attack = 2441,
 		hp = 15622,
 		sunder = 1085,
 		defence = 584,
@@ -71359,7 +71359,7 @@ local datas = {
 	},
 	[710046047] = {
 		id = 710046047,
-		attack = 1684,
+		attack = 2526,
 		hp = 16168,
 		sunder = 1123,
 		defence = 605,
@@ -71373,7 +71373,7 @@ local datas = {
 	},
 	[710046048] = {
 		id = 710046048,
-		attack = 1742,
+		attack = 2613,
 		hp = 16723,
 		sunder = 1161,
 		defence = 625,
@@ -71387,7 +71387,7 @@ local datas = {
 	},
 	[710046049] = {
 		id = 710046049,
-		attack = 1801,
+		attack = 2701,
 		hp = 17287,
 		sunder = 1200,
 		defence = 646,
@@ -71401,7 +71401,7 @@ local datas = {
 	},
 	[710046050] = {
 		id = 710046050,
-		attack = 1860,
+		attack = 2791,
 		hp = 20836,
 		sunder = 1240,
 		defence = 668,
@@ -71415,7 +71415,7 @@ local datas = {
 	},
 	[710046051] = {
 		id = 710046051,
-		attack = 1909,
+		attack = 2863,
 		hp = 21376,
 		sunder = 1272,
 		defence = 685,
@@ -71429,7 +71429,7 @@ local datas = {
 	},
 	[710046052] = {
 		id = 710046052,
-		attack = 1957,
+		attack = 2936,
 		hp = 21921,
 		sunder = 1305,
 		defence = 703,
@@ -71443,7 +71443,7 @@ local datas = {
 	},
 	[710046053] = {
 		id = 710046053,
-		attack = 2006,
+		attack = 3010,
 		hp = 22471,
 		sunder = 1338,
 		defence = 720,
@@ -71457,7 +71457,7 @@ local datas = {
 	},
 	[710046054] = {
 		id = 710046054,
-		attack = 2056,
+		attack = 3084,
 		hp = 23027,
 		sunder = 1371,
 		defence = 738,
@@ -71471,7 +71471,7 @@ local datas = {
 	},
 	[710046055] = {
 		id = 710046055,
-		attack = 2106,
+		attack = 3159,
 		hp = 23588,
 		sunder = 1404,
 		defence = 756,
@@ -71485,7 +71485,7 @@ local datas = {
 	},
 	[710046056] = {
 		id = 710046056,
-		attack = 2186,
+		attack = 3279,
 		hp = 24481,
 		sunder = 1457,
 		defence = 785,
@@ -71499,7 +71499,7 @@ local datas = {
 	},
 	[710046057] = {
 		id = 710046057,
-		attack = 2267,
+		attack = 3401,
 		hp = 25391,
 		sunder = 1511,
 		defence = 814,
@@ -71513,7 +71513,7 @@ local datas = {
 	},
 	[710046058] = {
 		id = 710046058,
-		attack = 2350,
+		attack = 3525,
 		hp = 26317,
 		sunder = 1566,
 		defence = 843,
@@ -71527,7 +71527,7 @@ local datas = {
 	},
 	[710046059] = {
 		id = 710046059,
-		attack = 2434,
+		attack = 3651,
 		hp = 27260,
 		sunder = 1623,
 		defence = 874,
@@ -71541,7 +71541,7 @@ local datas = {
 	},
 	[710046060] = {
 		id = 710046060,
-		attack = 2520,
+		attack = 3779,
 		hp = 28219,
 		sunder = 1680,
 		defence = 904,
@@ -71555,7 +71555,7 @@ local datas = {
 	},
 	[710046061] = {
 		id = 710046061,
-		attack = 2580,
+		attack = 3870,
 		hp = 28892,
 		sunder = 1720,
 		defence = 926,
@@ -71569,7 +71569,7 @@ local datas = {
 	},
 	[710046062] = {
 		id = 710046062,
-		attack = 2640,
+		attack = 3961,
 		hp = 29573,
 		sunder = 1760,
 		defence = 948,
@@ -71583,7 +71583,7 @@ local datas = {
 	},
 	[710046063] = {
 		id = 710046063,
-		attack = 2702,
+		attack = 4053,
 		hp = 30260,
 		sunder = 1801,
 		defence = 970,
@@ -71597,7 +71597,7 @@ local datas = {
 	},
 	[710046064] = {
 		id = 710046064,
-		attack = 2764,
+		attack = 4146,
 		hp = 30954,
 		sunder = 1842,
 		defence = 992,
@@ -71611,7 +71611,7 @@ local datas = {
 	},
 	[710046065] = {
 		id = 710046065,
-		attack = 2826,
+		attack = 4239,
 		hp = 31655,
 		sunder = 1884,
 		defence = 1015,
@@ -71625,7 +71625,7 @@ local datas = {
 	},
 	[710046066] = {
 		id = 710046066,
-		attack = 2938,
+		attack = 4407,
 		hp = 32904,
 		sunder = 1959,
 		defence = 1055,
@@ -71639,7 +71639,7 @@ local datas = {
 	},
 	[710046067] = {
 		id = 710046067,
-		attack = 3051,
+		attack = 4577,
 		hp = 34177,
 		sunder = 2034,
 		defence = 1095,
@@ -71653,7 +71653,7 @@ local datas = {
 	},
 	[710046068] = {
 		id = 710046068,
-		attack = 3167,
+		attack = 4751,
 		hp = 35472,
 		sunder = 2111,
 		defence = 1137,
@@ -71667,7 +71667,7 @@ local datas = {
 	},
 	[710046069] = {
 		id = 710046069,
-		attack = 3285,
+		attack = 4927,
 		hp = 36790,
 		sunder = 2190,
 		defence = 1179,
@@ -71681,7 +71681,7 @@ local datas = {
 	},
 	[710046070] = {
 		id = 710046070,
-		attack = 3405,
+		attack = 5107,
 		hp = 38131,
 		sunder = 2270,
 		defence = 1222,
@@ -71695,7 +71695,7 @@ local datas = {
 	},
 	[710046071] = {
 		id = 710046071,
-		attack = 3494,
+		attack = 5241,
 		hp = 39130,
 		sunder = 2329,
 		defence = 1254,
@@ -71709,7 +71709,7 @@ local datas = {
 	},
 	[710046072] = {
 		id = 710046072,
-		attack = 3584,
+		attack = 5376,
 		hp = 40142,
 		sunder = 2389,
 		defence = 1287,
@@ -71723,7 +71723,7 @@ local datas = {
 	},
 	[710046073] = {
 		id = 710046073,
-		attack = 3676,
+		attack = 5513,
 		hp = 41166,
 		sunder = 2450,
 		defence = 1319,
@@ -71737,7 +71737,7 @@ local datas = {
 	},
 	[710046074] = {
 		id = 710046074,
-		attack = 3768,
+		attack = 5652,
 		hp = 42204,
 		sunder = 2512,
 		defence = 1353,
@@ -71751,7 +71751,7 @@ local datas = {
 	},
 	[710046075] = {
 		id = 710046075,
-		attack = 3862,
+		attack = 5793,
 		hp = 43254,
 		sunder = 2575,
 		defence = 1386,
@@ -71765,7 +71765,7 @@ local datas = {
 	},
 	[710046076] = {
 		id = 710046076,
-		attack = 3994,
+		attack = 5991,
 		hp = 44732,
 		sunder = 2663,
 		defence = 1434,
@@ -71779,7 +71779,7 @@ local datas = {
 	},
 	[710046077] = {
 		id = 710046077,
-		attack = 4128,
+		attack = 6192,
 		hp = 46233,
 		sunder = 2752,
 		defence = 1482,
@@ -71793,7 +71793,7 @@ local datas = {
 	},
 	[710046078] = {
 		id = 710046078,
-		attack = 4264,
+		attack = 6396,
 		hp = 47758,
 		sunder = 2843,
 		defence = 1531,
@@ -71807,7 +71807,7 @@ local datas = {
 	},
 	[710046079] = {
 		id = 710046079,
-		attack = 4402,
+		attack = 6604,
 		hp = 49306,
 		sunder = 2935,
 		defence = 1580,
@@ -71821,7 +71821,7 @@ local datas = {
 	},
 	[710046080] = {
 		id = 710046080,
-		attack = 4543,
+		attack = 6814,
 		hp = 50878,
 		sunder = 3028,
 		defence = 1631,
@@ -71835,7 +71835,7 @@ local datas = {
 	},
 	[710046081] = {
 		id = 710046081,
-		attack = 4643,
+		attack = 6965,
 		hp = 52005,
 		sunder = 3096,
 		defence = 1667,
@@ -71849,7 +71849,7 @@ local datas = {
 	},
 	[710046082] = {
 		id = 710046082,
-		attack = 4745,
+		attack = 7117,
 		hp = 53143,
 		sunder = 3163,
 		defence = 1703,
@@ -71863,7 +71863,7 @@ local datas = {
 	},
 	[710046083] = {
 		id = 710046083,
-		attack = 4848,
+		attack = 7272,
 		hp = 54294,
 		sunder = 3232,
 		defence = 1740,
@@ -71877,7 +71877,7 @@ local datas = {
 	},
 	[710046084] = {
 		id = 710046084,
-		attack = 4952,
+		attack = 7427,
 		hp = 55457,
 		sunder = 3301,
 		defence = 1777,
@@ -71891,7 +71891,7 @@ local datas = {
 	},
 	[710046085] = {
 		id = 710046085,
-		attack = 5056,
+		attack = 7585,
 		hp = 56633,
 		sunder = 3371,
 		defence = 1815,
@@ -71905,7 +71905,7 @@ local datas = {
 	},
 	[710046086] = {
 		id = 710046086,
-		attack = 5226,
+		attack = 7839,
 		hp = 58530,
 		sunder = 3484,
 		defence = 1876,
@@ -71919,7 +71919,7 @@ local datas = {
 	},
 	[710046087] = {
 		id = 710046087,
-		attack = 5398,
+		attack = 8097,
 		hp = 60455,
 		sunder = 3599,
 		defence = 1938,
@@ -71933,7 +71933,7 @@ local datas = {
 	},
 	[710046088] = {
 		id = 710046088,
-		attack = 5572,
+		attack = 8358,
 		hp = 62408,
 		sunder = 3715,
 		defence = 2000,
@@ -71947,7 +71947,7 @@ local datas = {
 	},
 	[710046089] = {
 		id = 710046089,
-		attack = 5749,
+		attack = 8624,
 		hp = 64390,
 		sunder = 3833,
 		defence = 2064,
@@ -71961,7 +71961,7 @@ local datas = {
 	},
 	[710046090] = {
 		id = 710046090,
-		attack = 5929,
+		attack = 8893,
 		hp = 66400,
 		sunder = 3952,
 		defence = 2128,
@@ -71975,7 +71975,7 @@ local datas = {
 	},
 	[710046091] = {
 		id = 710046091,
-		attack = 6064,
+		attack = 9096,
 		hp = 67918,
 		sunder = 4043,
 		defence = 2177,
@@ -71989,7 +71989,7 @@ local datas = {
 	},
 	[710046092] = {
 		id = 710046092,
-		attack = 6201,
+		attack = 9302,
 		hp = 69452,
 		sunder = 4134,
 		defence = 2226,
@@ -72003,7 +72003,7 @@ local datas = {
 	},
 	[710046093] = {
 		id = 710046093,
-		attack = 6340,
+		attack = 9509,
 		hp = 71004,
 		sunder = 4226,
 		defence = 2276,
@@ -72017,7 +72017,7 @@ local datas = {
 	},
 	[710046094] = {
 		id = 710046094,
-		attack = 6480,
+		attack = 9720,
 		hp = 72573,
 		sunder = 4320,
 		defence = 2326,
@@ -72031,7 +72031,7 @@ local datas = {
 	},
 	[710046095] = {
 		id = 710046095,
-		attack = 6621,
+		attack = 9932,
 		hp = 74159,
 		sunder = 4414,
 		defence = 2377,
@@ -72045,7 +72045,7 @@ local datas = {
 	},
 	[710046096] = {
 		id = 710046096,
-		attack = 7037,
+		attack = 10556,
 		hp = 78815,
 		sunder = 4691,
 		defence = 2526,
@@ -72059,7 +72059,7 @@ local datas = {
 	},
 	[710046097] = {
 		id = 710046097,
-		attack = 7460,
+		attack = 11190,
 		hp = 83551,
 		sunder = 4973,
 		defence = 2678,
@@ -72073,7 +72073,7 @@ local datas = {
 	},
 	[710046098] = {
 		id = 710046098,
-		attack = 7890,
+		attack = 11835,
 		hp = 88367,
 		sunder = 5260,
 		defence = 2832,
@@ -72087,7 +72087,7 @@ local datas = {
 	},
 	[710046099] = {
 		id = 710046099,
-		attack = 8327,
+		attack = 12490,
 		hp = 93262,
 		sunder = 5551,
 		defence = 2989,
@@ -72101,7 +72101,7 @@ local datas = {
 	},
 	[710046100] = {
 		id = 710046100,
-		attack = 8771,
+		attack = 13157,
 		hp = 98237,
 		sunder = 5847,
 		defence = 3149,
@@ -72115,7 +72115,7 @@ local datas = {
 	},
 	[710056000] = {
 		id = 710056000,
-		attack = 143,
+		attack = 215,
 		hp = 1718,
 		sunder = 102,
 		defence = 55,
@@ -72129,7 +72129,7 @@ local datas = {
 	},
 	[710056001] = {
 		id = 710056001,
-		attack = 180,
+		attack = 270,
 		hp = 2163,
 		sunder = 128,
 		defence = 69,
@@ -72143,7 +72143,7 @@ local datas = {
 	},
 	[710056002] = {
 		id = 710056002,
-		attack = 194,
+		attack = 291,
 		hp = 2330,
 		sunder = 138,
 		defence = 74,
@@ -72157,7 +72157,7 @@ local datas = {
 	},
 	[710056003] = {
 		id = 710056003,
-		attack = 185,
+		attack = 278,
 		hp = 2221,
 		sunder = 130,
 		defence = 70,
@@ -72171,7 +72171,7 @@ local datas = {
 	},
 	[710056004] = {
 		id = 710056004,
-		attack = 153,
+		attack = 229,
 		hp = 1836,
 		sunder = 106,
 		defence = 57,
@@ -72185,7 +72185,7 @@ local datas = {
 	},
 	[710056005] = {
 		id = 710056005,
-		attack = 98,
+		attack = 147,
 		hp = 1174,
 		sunder = 65,
 		defence = 35,
@@ -72199,7 +72199,7 @@ local datas = {
 	},
 	[710056006] = {
 		id = 710056006,
-		attack = 121,
+		attack = 182,
 		hp = 1453,
 		sunder = 79,
 		defence = 43,
@@ -72213,7 +72213,7 @@ local datas = {
 	},
 	[710056007] = {
 		id = 710056007,
-		attack = 147,
+		attack = 220,
 		hp = 1759,
 		sunder = 95,
 		defence = 51,
@@ -72227,7 +72227,7 @@ local datas = {
 	},
 	[710056008] = {
 		id = 710056008,
-		attack = 174,
+		attack = 262,
 		hp = 2094,
 		sunder = 111,
 		defence = 60,
@@ -72241,7 +72241,7 @@ local datas = {
 	},
 	[710056009] = {
 		id = 710056009,
-		attack = 205,
+		attack = 307,
 		hp = 2456,
 		sunder = 129,
 		defence = 70,
@@ -72255,7 +72255,7 @@ local datas = {
 	},
 	[710056010] = {
 		id = 710056010,
-		attack = 237,
+		attack = 356,
 		hp = 2845,
 		sunder = 148,
 		defence = 80,
@@ -72269,7 +72269,7 @@ local datas = {
 	},
 	[710056011] = {
 		id = 710056011,
-		attack = 262,
+		attack = 394,
 		hp = 3150,
 		sunder = 162,
 		defence = 87,
@@ -72283,7 +72283,7 @@ local datas = {
 	},
 	[710056012] = {
 		id = 710056012,
-		attack = 289,
+		attack = 433,
 		hp = 3464,
 		sunder = 176,
 		defence = 95,
@@ -72297,7 +72297,7 @@ local datas = {
 	},
 	[710056013] = {
 		id = 710056013,
-		attack = 316,
+		attack = 474,
 		hp = 3789,
 		sunder = 190,
 		defence = 102,
@@ -72311,7 +72311,7 @@ local datas = {
 	},
 	[710056014] = {
 		id = 710056014,
-		attack = 344,
+		attack = 516,
 		hp = 4124,
 		sunder = 205,
 		defence = 110,
@@ -72325,7 +72325,7 @@ local datas = {
 	},
 	[710056015] = {
 		id = 710056015,
-		attack = 372,
+		attack = 559,
 		hp = 4470,
 		sunder = 219,
 		defence = 118,
@@ -72339,7 +72339,7 @@ local datas = {
 	},
 	[710056016] = {
 		id = 710056016,
-		attack = 410,
+		attack = 615,
 		hp = 4918,
 		sunder = 238,
 		defence = 128,
@@ -72353,7 +72353,7 @@ local datas = {
 	},
 	[710056017] = {
 		id = 710056017,
-		attack = 449,
+		attack = 673,
 		hp = 5387,
 		sunder = 258,
 		defence = 139,
@@ -72367,7 +72367,7 @@ local datas = {
 	},
 	[710056018] = {
 		id = 710056018,
-		attack = 490,
+		attack = 735,
 		hp = 5876,
 		sunder = 278,
 		defence = 150,
@@ -72381,7 +72381,7 @@ local datas = {
 	},
 	[710056019] = {
 		id = 710056019,
-		attack = 532,
+		attack = 798,
 		hp = 6386,
 		sunder = 299,
 		defence = 161,
@@ -72395,7 +72395,7 @@ local datas = {
 	},
 	[710056020] = {
 		id = 710056020,
-		attack = 576,
+		attack = 865,
 		hp = 6916,
 		sunder = 320,
 		defence = 172,
@@ -72409,7 +72409,7 @@ local datas = {
 	},
 	[710056021] = {
 		id = 710056021,
-		attack = 617,
+		attack = 925,
 		hp = 7402,
 		sunder = 339,
 		defence = 182,
@@ -72423,7 +72423,7 @@ local datas = {
 	},
 	[710056022] = {
 		id = 710056022,
-		attack = 659,
+		attack = 988,
 		hp = 7903,
 		sunder = 358,
 		defence = 193,
@@ -72437,7 +72437,7 @@ local datas = {
 	},
 	[710056023] = {
 		id = 710056023,
-		attack = 702,
+		attack = 1052,
 		hp = 8419,
 		sunder = 377,
 		defence = 203,
@@ -72451,7 +72451,7 @@ local datas = {
 	},
 	[710056024] = {
 		id = 710056024,
-		attack = 746,
+		attack = 1119,
 		hp = 8949,
 		sunder = 396,
 		defence = 213,
@@ -72465,7 +72465,7 @@ local datas = {
 	},
 	[710056025] = {
 		id = 710056025,
-		attack = 791,
+		attack = 1187,
 		hp = 9495,
 		sunder = 416,
 		defence = 224,
@@ -72479,7 +72479,7 @@ local datas = {
 	},
 	[710056026] = {
 		id = 710056026,
-		attack = 834,
+		attack = 1251,
 		hp = 10009,
 		sunder = 434,
 		defence = 234,
@@ -72493,7 +72493,7 @@ local datas = {
 	},
 	[710056027] = {
 		id = 710056027,
-		attack = 878,
+		attack = 1317,
 		hp = 10536,
 		sunder = 452,
 		defence = 244,
@@ -72507,7 +72507,7 @@ local datas = {
 	},
 	[710056028] = {
 		id = 710056028,
-		attack = 923,
+		attack = 1384,
 		hp = 11073,
 		sunder = 471,
 		defence = 253,
@@ -72521,7 +72521,7 @@ local datas = {
 	},
 	[710056029] = {
 		id = 710056029,
-		attack = 969,
+		attack = 1453,
 		hp = 11623,
 		sunder = 489,
 		defence = 263,
@@ -72535,7 +72535,7 @@ local datas = {
 	},
 	[710056030] = {
 		id = 710056030,
-		attack = 1015,
+		attack = 1523,
 		hp = 14621,
 		sunder = 508,
 		defence = 273,
@@ -72549,7 +72549,7 @@ local datas = {
 	},
 	[710056031] = {
 		id = 710056031,
-		attack = 1078,
+		attack = 1617,
 		hp = 15525,
 		sunder = 539,
 		defence = 290,
@@ -72563,7 +72563,7 @@ local datas = {
 	},
 	[710056032] = {
 		id = 710056032,
-		attack = 1143,
+		attack = 1714,
 		hp = 16456,
 		sunder = 571,
 		defence = 308,
@@ -72577,7 +72577,7 @@ local datas = {
 	},
 	[710056033] = {
 		id = 710056033,
-		attack = 1209,
+		attack = 1814,
 		hp = 17414,
 		sunder = 605,
 		defence = 326,
@@ -72591,7 +72591,7 @@ local datas = {
 	},
 	[710056034] = {
 		id = 710056034,
-		attack = 1278,
+		attack = 1917,
 		hp = 18399,
 		sunder = 639,
 		defence = 344,
@@ -72605,7 +72605,7 @@ local datas = {
 	},
 	[710056035] = {
 		id = 710056035,
-		attack = 1348,
+		attack = 2022,
 		hp = 19411,
 		sunder = 674,
 		defence = 363,
@@ -72619,7 +72619,7 @@ local datas = {
 	},
 	[710056036] = {
 		id = 710056036,
-		attack = 1415,
+		attack = 2122,
 		hp = 20373,
 		sunder = 707,
 		defence = 381,
@@ -72633,7 +72633,7 @@ local datas = {
 	},
 	[710056037] = {
 		id = 710056037,
-		attack = 1483,
+		attack = 2225,
 		hp = 21358,
 		sunder = 742,
 		defence = 399,
@@ -72647,7 +72647,7 @@ local datas = {
 	},
 	[710056038] = {
 		id = 710056038,
-		attack = 1553,
+		attack = 2330,
 		hp = 22366,
 		sunder = 777,
 		defence = 418,
@@ -72661,7 +72661,7 @@ local datas = {
 	},
 	[710056039] = {
 		id = 710056039,
-		attack = 1625,
+		attack = 2437,
 		hp = 23398,
 		sunder = 812,
 		defence = 437,
@@ -72675,7 +72675,7 @@ local datas = {
 	},
 	[710056040] = {
 		id = 710056040,
-		attack = 1698,
+		attack = 2547,
 		hp = 24452,
 		sunder = 849,
 		defence = 457,
@@ -72689,7 +72689,7 @@ local datas = {
 	},
 	[710056041] = {
 		id = 710056041,
-		attack = 1774,
+		attack = 2661,
 		hp = 25548,
 		sunder = 887,
 		defence = 478,
@@ -72703,7 +72703,7 @@ local datas = {
 	},
 	[710056042] = {
 		id = 710056042,
-		attack = 1852,
+		attack = 2778,
 		hp = 26668,
 		sunder = 926,
 		defence = 499,
@@ -72717,7 +72717,7 @@ local datas = {
 	},
 	[710056043] = {
 		id = 710056043,
-		attack = 1931,
+		attack = 2897,
 		hp = 27812,
 		sunder = 966,
 		defence = 520,
@@ -72731,7 +72731,7 @@ local datas = {
 	},
 	[710056044] = {
 		id = 710056044,
-		attack = 2012,
+		attack = 3019,
 		hp = 28979,
 		sunder = 1006,
 		defence = 542,
@@ -72745,7 +72745,7 @@ local datas = {
 	},
 	[710056045] = {
 		id = 710056045,
-		attack = 2095,
+		attack = 3143,
 		hp = 30171,
 		sunder = 1048,
 		defence = 564,
@@ -72759,7 +72759,7 @@ local datas = {
 	},
 	[710056046] = {
 		id = 710056046,
-		attack = 2170,
+		attack = 3255,
 		hp = 31245,
 		sunder = 1085,
 		defence = 584,
@@ -72773,7 +72773,7 @@ local datas = {
 	},
 	[710056047] = {
 		id = 710056047,
-		attack = 2246,
+		attack = 3368,
 		hp = 32336,
 		sunder = 1123,
 		defence = 605,
@@ -72787,7 +72787,7 @@ local datas = {
 	},
 	[710056048] = {
 		id = 710056048,
-		attack = 2323,
+		attack = 3484,
 		hp = 33446,
 		sunder = 1161,
 		defence = 625,
@@ -72801,7 +72801,7 @@ local datas = {
 	},
 	[710056049] = {
 		id = 710056049,
-		attack = 2401,
+		attack = 3601,
 		hp = 34574,
 		sunder = 1200,
 		defence = 646,
@@ -72815,7 +72815,7 @@ local datas = {
 	},
 	[710056050] = {
 		id = 710056050,
-		attack = 2480,
+		attack = 3721,
 		hp = 41672,
 		sunder = 1240,
 		defence = 668,
@@ -72829,7 +72829,7 @@ local datas = {
 	},
 	[710056051] = {
 		id = 710056051,
-		attack = 2545,
+		attack = 3817,
 		hp = 42752,
 		sunder = 1272,
 		defence = 685,
@@ -72843,7 +72843,7 @@ local datas = {
 	},
 	[710056052] = {
 		id = 710056052,
-		attack = 2610,
+		attack = 3914,
 		hp = 43842,
 		sunder = 1305,
 		defence = 703,
@@ -72857,7 +72857,7 @@ local datas = {
 	},
 	[710056053] = {
 		id = 710056053,
-		attack = 2675,
+		attack = 4013,
 		hp = 44943,
 		sunder = 1338,
 		defence = 720,
@@ -72871,7 +72871,7 @@ local datas = {
 	},
 	[710056054] = {
 		id = 710056054,
-		attack = 2741,
+		attack = 4112,
 		hp = 46054,
 		sunder = 1371,
 		defence = 738,
@@ -72885,7 +72885,7 @@ local datas = {
 	},
 	[710056055] = {
 		id = 710056055,
-		attack = 2808,
+		attack = 4212,
 		hp = 47176,
 		sunder = 1404,
 		defence = 756,
@@ -72899,7 +72899,7 @@ local datas = {
 	},
 	[710056056] = {
 		id = 710056056,
-		attack = 2914,
+		attack = 4372,
 		hp = 48962,
 		sunder = 1457,
 		defence = 785,
@@ -72913,7 +72913,7 @@ local datas = {
 	},
 	[710056057] = {
 		id = 710056057,
-		attack = 3023,
+		attack = 4534,
 		hp = 50781,
 		sunder = 1511,
 		defence = 814,
@@ -72927,7 +72927,7 @@ local datas = {
 	},
 	[710056058] = {
 		id = 710056058,
-		attack = 3133,
+		attack = 4699,
 		hp = 52634,
 		sunder = 1566,
 		defence = 843,
@@ -72941,7 +72941,7 @@ local datas = {
 	},
 	[710056059] = {
 		id = 710056059,
-		attack = 3245,
+		attack = 4868,
 		hp = 54519,
 		sunder = 1623,
 		defence = 874,
@@ -72955,7 +72955,7 @@ local datas = {
 	},
 	[710056060] = {
 		id = 710056060,
-		attack = 3359,
+		attack = 5039,
 		hp = 56438,
 		sunder = 1680,
 		defence = 904,
@@ -72969,7 +72969,7 @@ local datas = {
 	},
 	[710056061] = {
 		id = 710056061,
-		attack = 3440,
+		attack = 5159,
 		hp = 57785,
 		sunder = 1720,
 		defence = 926,
@@ -72983,7 +72983,7 @@ local datas = {
 	},
 	[710056062] = {
 		id = 710056062,
-		attack = 3521,
+		attack = 5281,
 		hp = 59145,
 		sunder = 1760,
 		defence = 948,
@@ -72997,7 +72997,7 @@ local datas = {
 	},
 	[710056063] = {
 		id = 710056063,
-		attack = 3602,
+		attack = 5404,
 		hp = 60520,
 		sunder = 1801,
 		defence = 970,
@@ -73011,7 +73011,7 @@ local datas = {
 	},
 	[710056064] = {
 		id = 710056064,
-		attack = 3685,
+		attack = 5527,
 		hp = 61908,
 		sunder = 1842,
 		defence = 992,
@@ -73025,7 +73025,7 @@ local datas = {
 	},
 	[710056065] = {
 		id = 710056065,
-		attack = 3768,
+		attack = 5653,
 		hp = 63310,
 		sunder = 1884,
 		defence = 1015,
@@ -73039,7 +73039,7 @@ local datas = {
 	},
 	[710056066] = {
 		id = 710056066,
-		attack = 3917,
+		attack = 5876,
 		hp = 65809,
 		sunder = 1959,
 		defence = 1055,
@@ -73053,7 +73053,7 @@ local datas = {
 	},
 	[710056067] = {
 		id = 710056067,
-		attack = 4069,
+		attack = 6103,
 		hp = 68353,
 		sunder = 2034,
 		defence = 1095,
@@ -73067,7 +73067,7 @@ local datas = {
 	},
 	[710056068] = {
 		id = 710056068,
-		attack = 4223,
+		attack = 6334,
 		hp = 70944,
 		sunder = 2111,
 		defence = 1137,
@@ -73081,7 +73081,7 @@ local datas = {
 	},
 	[710056069] = {
 		id = 710056069,
-		attack = 4380,
+		attack = 6570,
 		hp = 73580,
 		sunder = 2190,
 		defence = 1179,
@@ -73095,7 +73095,7 @@ local datas = {
 	},
 	[710056070] = {
 		id = 710056070,
-		attack = 4539,
+		attack = 6809,
 		hp = 76262,
 		sunder = 2270,
 		defence = 1222,
@@ -73109,7 +73109,7 @@ local datas = {
 	},
 	[710056071] = {
 		id = 710056071,
-		attack = 4658,
+		attack = 6987,
 		hp = 78259,
 		sunder = 2329,
 		defence = 1254,
@@ -73123,7 +73123,7 @@ local datas = {
 	},
 	[710056072] = {
 		id = 710056072,
-		attack = 4779,
+		attack = 7168,
 		hp = 80283,
 		sunder = 2389,
 		defence = 1287,
@@ -73137,7 +73137,7 @@ local datas = {
 	},
 	[710056073] = {
 		id = 710056073,
-		attack = 4901,
+		attack = 7351,
 		hp = 82333,
 		sunder = 2450,
 		defence = 1319,
@@ -73151,7 +73151,7 @@ local datas = {
 	},
 	[710056074] = {
 		id = 710056074,
-		attack = 5024,
+		attack = 7536,
 		hp = 84408,
 		sunder = 2512,
 		defence = 1353,
@@ -73165,7 +73165,7 @@ local datas = {
 	},
 	[710056075] = {
 		id = 710056075,
-		attack = 5149,
+		attack = 7724,
 		hp = 86509,
 		sunder = 2575,
 		defence = 1386,
@@ -73179,7 +73179,7 @@ local datas = {
 	},
 	[710056076] = {
 		id = 710056076,
-		attack = 5325,
+		attack = 7988,
 		hp = 89464,
 		sunder = 2663,
 		defence = 1434,
@@ -73193,7 +73193,7 @@ local datas = {
 	},
 	[710056077] = {
 		id = 710056077,
-		attack = 5504,
+		attack = 8256,
 		hp = 92467,
 		sunder = 2752,
 		defence = 1482,
@@ -73207,7 +73207,7 @@ local datas = {
 	},
 	[710056078] = {
 		id = 710056078,
-		attack = 5685,
+		attack = 8528,
 		hp = 95516,
 		sunder = 2843,
 		defence = 1531,
@@ -73221,7 +73221,7 @@ local datas = {
 	},
 	[710056079] = {
 		id = 710056079,
-		attack = 5870,
+		attack = 8805,
 		hp = 98613,
 		sunder = 2935,
 		defence = 1580,
@@ -73235,7 +73235,7 @@ local datas = {
 	},
 	[710056080] = {
 		id = 710056080,
-		attack = 6057,
+		attack = 9085,
 		hp = 101756,
 		sunder = 3028,
 		defence = 1631,
@@ -73249,7 +73249,7 @@ local datas = {
 	},
 	[710056081] = {
 		id = 710056081,
-		attack = 6191,
+		attack = 9287,
 		hp = 104009,
 		sunder = 3096,
 		defence = 1667,
@@ -73263,7 +73263,7 @@ local datas = {
 	},
 	[710056082] = {
 		id = 710056082,
-		attack = 6327,
+		attack = 9490,
 		hp = 106287,
 		sunder = 3163,
 		defence = 1703,
@@ -73277,7 +73277,7 @@ local datas = {
 	},
 	[710056083] = {
 		id = 710056083,
-		attack = 6464,
+		attack = 9695,
 		hp = 108589,
 		sunder = 3232,
 		defence = 1740,
@@ -73291,7 +73291,7 @@ local datas = {
 	},
 	[710056084] = {
 		id = 710056084,
-		attack = 6602,
+		attack = 9903,
 		hp = 110915,
 		sunder = 3301,
 		defence = 1777,
@@ -73305,7 +73305,7 @@ local datas = {
 	},
 	[710056085] = {
 		id = 710056085,
-		attack = 6742,
+		attack = 10113,
 		hp = 113266,
 		sunder = 3371,
 		defence = 1815,
@@ -73319,7 +73319,7 @@ local datas = {
 	},
 	[710056086] = {
 		id = 710056086,
-		attack = 6968,
+		attack = 10452,
 		hp = 117059,
 		sunder = 3484,
 		defence = 1876,
@@ -73333,7 +73333,7 @@ local datas = {
 	},
 	[710056087] = {
 		id = 710056087,
-		attack = 7197,
+		attack = 10796,
 		hp = 120910,
 		sunder = 3599,
 		defence = 1938,
@@ -73347,7 +73347,7 @@ local datas = {
 	},
 	[710056088] = {
 		id = 710056088,
-		attack = 7430,
+		attack = 11144,
 		hp = 124817,
 		sunder = 3715,
 		defence = 2000,
@@ -73361,7 +73361,7 @@ local datas = {
 	},
 	[710056089] = {
 		id = 710056089,
-		attack = 7665,
+		attack = 11498,
 		hp = 128780,
 		sunder = 3833,
 		defence = 2064,
@@ -73375,7 +73375,7 @@ local datas = {
 	},
 	[710056090] = {
 		id = 710056090,
-		attack = 7905,
+		attack = 11857,
 		hp = 132801,
 		sunder = 3952,
 		defence = 2128,
@@ -73389,7 +73389,7 @@ local datas = {
 	},
 	[710056091] = {
 		id = 710056091,
-		attack = 8085,
+		attack = 12128,
 		hp = 135835,
 		sunder = 4043,
 		defence = 2177,
@@ -73403,7 +73403,7 @@ local datas = {
 	},
 	[710056092] = {
 		id = 710056092,
-		attack = 8268,
+		attack = 12402,
 		hp = 138905,
 		sunder = 4134,
 		defence = 2226,
@@ -73417,7 +73417,7 @@ local datas = {
 	},
 	[710056093] = {
 		id = 710056093,
-		attack = 8453,
+		attack = 12679,
 		hp = 142008,
 		sunder = 4226,
 		defence = 2276,
@@ -73431,7 +73431,7 @@ local datas = {
 	},
 	[710056094] = {
 		id = 710056094,
-		attack = 8640,
+		attack = 12959,
 		hp = 145145,
 		sunder = 4320,
 		defence = 2326,
@@ -73445,7 +73445,7 @@ local datas = {
 	},
 	[710056095] = {
 		id = 710056095,
-		attack = 8828,
+		attack = 13243,
 		hp = 148317,
 		sunder = 4414,
 		defence = 2377,
@@ -73459,7 +73459,7 @@ local datas = {
 	},
 	[710056096] = {
 		id = 710056096,
-		attack = 9383,
+		attack = 14074,
 		hp = 157631,
 		sunder = 4691,
 		defence = 2526,
@@ -73473,7 +73473,7 @@ local datas = {
 	},
 	[710056097] = {
 		id = 710056097,
-		attack = 9947,
+		attack = 14920,
 		hp = 167103,
 		sunder = 4973,
 		defence = 2678,
@@ -73487,7 +73487,7 @@ local datas = {
 	},
 	[710056098] = {
 		id = 710056098,
-		attack = 10520,
+		attack = 15780,
 		hp = 176734,
 		sunder = 5260,
 		defence = 2832,
@@ -73501,7 +73501,7 @@ local datas = {
 	},
 	[710056099] = {
 		id = 710056099,
-		attack = 11103,
+		attack = 16654,
 		hp = 186524,
 		sunder = 5551,
 		defence = 2989,
@@ -73515,7 +73515,7 @@ local datas = {
 	},
 	[710056100] = {
 		id = 710056100,
-		attack = 11695,
+		attack = 17542,
 		hp = 196473,
 		sunder = 5847,
 		defence = 3149,
@@ -73529,7 +73529,7 @@ local datas = {
 	},
 	[710066000] = {
 		id = 710066000,
-		attack = 215,
+		attack = 322,
 		hp = 1718,
 		sunder = 102,
 		defence = 55,
@@ -73543,7 +73543,7 @@ local datas = {
 	},
 	[710066001] = {
 		id = 710066001,
-		attack = 270,
+		attack = 405,
 		hp = 2163,
 		sunder = 128,
 		defence = 69,
@@ -73557,7 +73557,7 @@ local datas = {
 	},
 	[710066002] = {
 		id = 710066002,
-		attack = 291,
+		attack = 437,
 		hp = 2330,
 		sunder = 138,
 		defence = 74,
@@ -73571,7 +73571,7 @@ local datas = {
 	},
 	[710066003] = {
 		id = 710066003,
-		attack = 278,
+		attack = 417,
 		hp = 2221,
 		sunder = 130,
 		defence = 70,
@@ -73585,7 +73585,7 @@ local datas = {
 	},
 	[710066004] = {
 		id = 710066004,
-		attack = 229,
+		attack = 344,
 		hp = 1836,
 		sunder = 106,
 		defence = 57,
@@ -73599,7 +73599,7 @@ local datas = {
 	},
 	[710066005] = {
 		id = 710066005,
-		attack = 147,
+		attack = 220,
 		hp = 1174,
 		sunder = 65,
 		defence = 35,
@@ -73613,7 +73613,7 @@ local datas = {
 	},
 	[710066006] = {
 		id = 710066006,
-		attack = 182,
+		attack = 272,
 		hp = 1453,
 		sunder = 79,
 		defence = 43,
@@ -73627,7 +73627,7 @@ local datas = {
 	},
 	[710066007] = {
 		id = 710066007,
-		attack = 220,
+		attack = 330,
 		hp = 1759,
 		sunder = 95,
 		defence = 51,
@@ -73641,7 +73641,7 @@ local datas = {
 	},
 	[710066008] = {
 		id = 710066008,
-		attack = 262,
+		attack = 393,
 		hp = 2094,
 		sunder = 111,
 		defence = 60,
@@ -73655,7 +73655,7 @@ local datas = {
 	},
 	[710066009] = {
 		id = 710066009,
-		attack = 307,
+		attack = 460,
 		hp = 2456,
 		sunder = 129,
 		defence = 70,
@@ -73669,7 +73669,7 @@ local datas = {
 	},
 	[710066010] = {
 		id = 710066010,
-		attack = 356,
+		attack = 534,
 		hp = 2845,
 		sunder = 148,
 		defence = 80,
@@ -73683,7 +73683,7 @@ local datas = {
 	},
 	[710066011] = {
 		id = 710066011,
-		attack = 394,
+		attack = 591,
 		hp = 3150,
 		sunder = 162,
 		defence = 87,
@@ -73697,7 +73697,7 @@ local datas = {
 	},
 	[710066012] = {
 		id = 710066012,
-		attack = 433,
+		attack = 650,
 		hp = 3464,
 		sunder = 176,
 		defence = 95,
@@ -73711,7 +73711,7 @@ local datas = {
 	},
 	[710066013] = {
 		id = 710066013,
-		attack = 474,
+		attack = 710,
 		hp = 3789,
 		sunder = 190,
 		defence = 102,
@@ -73725,7 +73725,7 @@ local datas = {
 	},
 	[710066014] = {
 		id = 710066014,
-		attack = 516,
+		attack = 773,
 		hp = 4124,
 		sunder = 205,
 		defence = 110,
@@ -73739,7 +73739,7 @@ local datas = {
 	},
 	[710066015] = {
 		id = 710066015,
-		attack = 559,
+		attack = 838,
 		hp = 4470,
 		sunder = 219,
 		defence = 118,
@@ -73753,7 +73753,7 @@ local datas = {
 	},
 	[710066016] = {
 		id = 710066016,
-		attack = 615,
+		attack = 922,
 		hp = 4918,
 		sunder = 238,
 		defence = 128,
@@ -73767,7 +73767,7 @@ local datas = {
 	},
 	[710066017] = {
 		id = 710066017,
-		attack = 673,
+		attack = 1010,
 		hp = 5387,
 		sunder = 258,
 		defence = 139,
@@ -73781,7 +73781,7 @@ local datas = {
 	},
 	[710066018] = {
 		id = 710066018,
-		attack = 735,
+		attack = 1102,
 		hp = 5876,
 		sunder = 278,
 		defence = 150,
@@ -73795,7 +73795,7 @@ local datas = {
 	},
 	[710066019] = {
 		id = 710066019,
-		attack = 798,
+		attack = 1197,
 		hp = 6386,
 		sunder = 299,
 		defence = 161,
@@ -73809,7 +73809,7 @@ local datas = {
 	},
 	[710066020] = {
 		id = 710066020,
-		attack = 865,
+		attack = 1297,
 		hp = 6916,
 		sunder = 320,
 		defence = 172,
@@ -73823,7 +73823,7 @@ local datas = {
 	},
 	[710066021] = {
 		id = 710066021,
-		attack = 925,
+		attack = 1388,
 		hp = 7402,
 		sunder = 339,
 		defence = 182,
@@ -73837,7 +73837,7 @@ local datas = {
 	},
 	[710066022] = {
 		id = 710066022,
-		attack = 988,
+		attack = 1482,
 		hp = 7903,
 		sunder = 358,
 		defence = 193,
@@ -73851,7 +73851,7 @@ local datas = {
 	},
 	[710066023] = {
 		id = 710066023,
-		attack = 1052,
+		attack = 1578,
 		hp = 8419,
 		sunder = 377,
 		defence = 203,
@@ -73865,7 +73865,7 @@ local datas = {
 	},
 	[710066024] = {
 		id = 710066024,
-		attack = 1119,
+		attack = 1678,
 		hp = 8949,
 		sunder = 396,
 		defence = 213,
@@ -73879,7 +73879,7 @@ local datas = {
 	},
 	[710066025] = {
 		id = 710066025,
-		attack = 1187,
+		attack = 1780,
 		hp = 9495,
 		sunder = 416,
 		defence = 224,
@@ -73893,7 +73893,7 @@ local datas = {
 	},
 	[710066026] = {
 		id = 710066026,
-		attack = 1251,
+		attack = 1877,
 		hp = 10009,
 		sunder = 434,
 		defence = 234,
@@ -73907,7 +73907,7 @@ local datas = {
 	},
 	[710066027] = {
 		id = 710066027,
-		attack = 1317,
+		attack = 1975,
 		hp = 10536,
 		sunder = 452,
 		defence = 244,
@@ -73921,7 +73921,7 @@ local datas = {
 	},
 	[710066028] = {
 		id = 710066028,
-		attack = 1384,
+		attack = 2076,
 		hp = 11073,
 		sunder = 471,
 		defence = 253,
@@ -73935,7 +73935,7 @@ local datas = {
 	},
 	[710066029] = {
 		id = 710066029,
-		attack = 1453,
+		attack = 2179,
 		hp = 11623,
 		sunder = 489,
 		defence = 263,
@@ -73949,7 +73949,7 @@ local datas = {
 	},
 	[710066030] = {
 		id = 710066030,
-		attack = 1523,
+		attack = 2285,
 		hp = 14621,
 		sunder = 508,
 		defence = 273,
@@ -73963,7 +73963,7 @@ local datas = {
 	},
 	[710066031] = {
 		id = 710066031,
-		attack = 1617,
+		attack = 2426,
 		hp = 15525,
 		sunder = 539,
 		defence = 290,
@@ -73977,7 +73977,7 @@ local datas = {
 	},
 	[710066032] = {
 		id = 710066032,
-		attack = 1714,
+		attack = 2571,
 		hp = 16456,
 		sunder = 571,
 		defence = 308,
@@ -73991,7 +73991,7 @@ local datas = {
 	},
 	[710066033] = {
 		id = 710066033,
-		attack = 1814,
+		attack = 2721,
 		hp = 17414,
 		sunder = 605,
 		defence = 326,
@@ -74005,7 +74005,7 @@ local datas = {
 	},
 	[710066034] = {
 		id = 710066034,
-		attack = 1917,
+		attack = 2875,
 		hp = 18399,
 		sunder = 639,
 		defence = 344,
@@ -74019,7 +74019,7 @@ local datas = {
 	},
 	[710066035] = {
 		id = 710066035,
-		attack = 2022,
+		attack = 3033,
 		hp = 19411,
 		sunder = 674,
 		defence = 363,
@@ -74033,7 +74033,7 @@ local datas = {
 	},
 	[710066036] = {
 		id = 710066036,
-		attack = 2122,
+		attack = 3183,
 		hp = 20373,
 		sunder = 707,
 		defence = 381,
@@ -74047,7 +74047,7 @@ local datas = {
 	},
 	[710066037] = {
 		id = 710066037,
-		attack = 2225,
+		attack = 3337,
 		hp = 21358,
 		sunder = 742,
 		defence = 399,
@@ -74061,7 +74061,7 @@ local datas = {
 	},
 	[710066038] = {
 		id = 710066038,
-		attack = 2330,
+		attack = 3495,
 		hp = 22366,
 		sunder = 777,
 		defence = 418,
@@ -74075,7 +74075,7 @@ local datas = {
 	},
 	[710066039] = {
 		id = 710066039,
-		attack = 2437,
+		attack = 3656,
 		hp = 23398,
 		sunder = 812,
 		defence = 437,
@@ -74089,7 +74089,7 @@ local datas = {
 	},
 	[710066040] = {
 		id = 710066040,
-		attack = 2547,
+		attack = 3821,
 		hp = 24452,
 		sunder = 849,
 		defence = 457,
@@ -74103,7 +74103,7 @@ local datas = {
 	},
 	[710066041] = {
 		id = 710066041,
-		attack = 2661,
+		attack = 3992,
 		hp = 25548,
 		sunder = 887,
 		defence = 478,
@@ -74117,7 +74117,7 @@ local datas = {
 	},
 	[710066042] = {
 		id = 710066042,
-		attack = 2778,
+		attack = 4167,
 		hp = 26668,
 		sunder = 926,
 		defence = 499,
@@ -74131,7 +74131,7 @@ local datas = {
 	},
 	[710066043] = {
 		id = 710066043,
-		attack = 2897,
+		attack = 4346,
 		hp = 27812,
 		sunder = 966,
 		defence = 520,
@@ -74145,7 +74145,7 @@ local datas = {
 	},
 	[710066044] = {
 		id = 710066044,
-		attack = 3019,
+		attack = 4528,
 		hp = 28979,
 		sunder = 1006,
 		defence = 542,
@@ -74159,7 +74159,7 @@ local datas = {
 	},
 	[710066045] = {
 		id = 710066045,
-		attack = 3143,
+		attack = 4714,
 		hp = 30171,
 		sunder = 1048,
 		defence = 564,
@@ -74173,7 +74173,7 @@ local datas = {
 	},
 	[710066046] = {
 		id = 710066046,
-		attack = 3255,
+		attack = 4882,
 		hp = 31245,
 		sunder = 1085,
 		defence = 584,
@@ -74187,7 +74187,7 @@ local datas = {
 	},
 	[710066047] = {
 		id = 710066047,
-		attack = 3368,
+		attack = 5053,
 		hp = 32336,
 		sunder = 1123,
 		defence = 605,
@@ -74201,7 +74201,7 @@ local datas = {
 	},
 	[710066048] = {
 		id = 710066048,
-		attack = 3484,
+		attack = 5226,
 		hp = 33446,
 		sunder = 1161,
 		defence = 625,
@@ -74215,7 +74215,7 @@ local datas = {
 	},
 	[710066049] = {
 		id = 710066049,
-		attack = 3601,
+		attack = 5402,
 		hp = 34574,
 		sunder = 1200,
 		defence = 646,
@@ -74229,7 +74229,7 @@ local datas = {
 	},
 	[710066050] = {
 		id = 710066050,
-		attack = 3721,
+		attack = 5581,
 		hp = 41672,
 		sunder = 1240,
 		defence = 668,
@@ -74243,7 +74243,7 @@ local datas = {
 	},
 	[710066051] = {
 		id = 710066051,
-		attack = 3817,
+		attack = 5726,
 		hp = 42752,
 		sunder = 1272,
 		defence = 685,
@@ -74257,7 +74257,7 @@ local datas = {
 	},
 	[710066052] = {
 		id = 710066052,
-		attack = 3914,
+		attack = 5872,
 		hp = 43842,
 		sunder = 1305,
 		defence = 703,
@@ -74271,7 +74271,7 @@ local datas = {
 	},
 	[710066053] = {
 		id = 710066053,
-		attack = 4013,
+		attack = 6019,
 		hp = 44943,
 		sunder = 1338,
 		defence = 720,
@@ -74285,7 +74285,7 @@ local datas = {
 	},
 	[710066054] = {
 		id = 710066054,
-		attack = 4112,
+		attack = 6168,
 		hp = 46054,
 		sunder = 1371,
 		defence = 738,
@@ -74299,7 +74299,7 @@ local datas = {
 	},
 	[710066055] = {
 		id = 710066055,
-		attack = 4212,
+		attack = 6318,
 		hp = 47176,
 		sunder = 1404,
 		defence = 756,
@@ -74313,7 +74313,7 @@ local datas = {
 	},
 	[710066056] = {
 		id = 710066056,
-		attack = 4372,
+		attack = 6557,
 		hp = 48962,
 		sunder = 1457,
 		defence = 785,
@@ -74327,7 +74327,7 @@ local datas = {
 	},
 	[710066057] = {
 		id = 710066057,
-		attack = 4534,
+		attack = 6801,
 		hp = 50781,
 		sunder = 1511,
 		defence = 814,
@@ -74341,7 +74341,7 @@ local datas = {
 	},
 	[710066058] = {
 		id = 710066058,
-		attack = 4699,
+		attack = 7049,
 		hp = 52634,
 		sunder = 1566,
 		defence = 843,
@@ -74355,7 +74355,7 @@ local datas = {
 	},
 	[710066059] = {
 		id = 710066059,
-		attack = 4868,
+		attack = 7302,
 		hp = 54519,
 		sunder = 1623,
 		defence = 874,
@@ -74369,7 +74369,7 @@ local datas = {
 	},
 	[710066060] = {
 		id = 710066060,
-		attack = 5039,
+		attack = 7559,
 		hp = 56438,
 		sunder = 1680,
 		defence = 904,
@@ -74383,7 +74383,7 @@ local datas = {
 	},
 	[710066061] = {
 		id = 710066061,
-		attack = 5159,
+		attack = 7739,
 		hp = 57785,
 		sunder = 1720,
 		defence = 926,
@@ -74397,7 +74397,7 @@ local datas = {
 	},
 	[710066062] = {
 		id = 710066062,
-		attack = 5281,
+		attack = 7921,
 		hp = 59145,
 		sunder = 1760,
 		defence = 948,
@@ -74411,7 +74411,7 @@ local datas = {
 	},
 	[710066063] = {
 		id = 710066063,
-		attack = 5404,
+		attack = 8105,
 		hp = 60520,
 		sunder = 1801,
 		defence = 970,
@@ -74425,7 +74425,7 @@ local datas = {
 	},
 	[710066064] = {
 		id = 710066064,
-		attack = 5527,
+		attack = 8291,
 		hp = 61908,
 		sunder = 1842,
 		defence = 992,
@@ -74439,7 +74439,7 @@ local datas = {
 	},
 	[710066065] = {
 		id = 710066065,
-		attack = 5653,
+		attack = 8479,
 		hp = 63310,
 		sunder = 1884,
 		defence = 1015,
@@ -74453,7 +74453,7 @@ local datas = {
 	},
 	[710066066] = {
 		id = 710066066,
-		attack = 5876,
+		attack = 8814,
 		hp = 65809,
 		sunder = 1959,
 		defence = 1055,
@@ -74467,7 +74467,7 @@ local datas = {
 	},
 	[710066067] = {
 		id = 710066067,
-		attack = 6103,
+		attack = 9154,
 		hp = 68353,
 		sunder = 2034,
 		defence = 1095,
@@ -74481,7 +74481,7 @@ local datas = {
 	},
 	[710066068] = {
 		id = 710066068,
-		attack = 6334,
+		attack = 9501,
 		hp = 70944,
 		sunder = 2111,
 		defence = 1137,
@@ -74495,7 +74495,7 @@ local datas = {
 	},
 	[710066069] = {
 		id = 710066069,
-		attack = 6570,
+		attack = 9854,
 		hp = 73580,
 		sunder = 2190,
 		defence = 1179,
@@ -74509,7 +74509,7 @@ local datas = {
 	},
 	[710066070] = {
 		id = 710066070,
-		attack = 6809,
+		attack = 10214,
 		hp = 76262,
 		sunder = 2270,
 		defence = 1222,
@@ -74523,7 +74523,7 @@ local datas = {
 	},
 	[710066071] = {
 		id = 710066071,
-		attack = 6987,
+		attack = 10481,
 		hp = 78259,
 		sunder = 2329,
 		defence = 1254,
@@ -74537,7 +74537,7 @@ local datas = {
 	},
 	[710066072] = {
 		id = 710066072,
-		attack = 7168,
+		attack = 10752,
 		hp = 80283,
 		sunder = 2389,
 		defence = 1287,
@@ -74551,7 +74551,7 @@ local datas = {
 	},
 	[710066073] = {
 		id = 710066073,
-		attack = 7351,
+		attack = 11027,
 		hp = 82333,
 		sunder = 2450,
 		defence = 1319,
@@ -74565,7 +74565,7 @@ local datas = {
 	},
 	[710066074] = {
 		id = 710066074,
-		attack = 7536,
+		attack = 11305,
 		hp = 84408,
 		sunder = 2512,
 		defence = 1353,
@@ -74579,7 +74579,7 @@ local datas = {
 	},
 	[710066075] = {
 		id = 710066075,
-		attack = 7724,
+		attack = 11586,
 		hp = 86509,
 		sunder = 2575,
 		defence = 1386,
@@ -74593,7 +74593,7 @@ local datas = {
 	},
 	[710066076] = {
 		id = 710066076,
-		attack = 7988,
+		attack = 11982,
 		hp = 89464,
 		sunder = 2663,
 		defence = 1434,
@@ -74607,7 +74607,7 @@ local datas = {
 	},
 	[710066077] = {
 		id = 710066077,
-		attack = 8256,
+		attack = 12384,
 		hp = 92467,
 		sunder = 2752,
 		defence = 1482,
@@ -74621,7 +74621,7 @@ local datas = {
 	},
 	[710066078] = {
 		id = 710066078,
-		attack = 8528,
+		attack = 12792,
 		hp = 95516,
 		sunder = 2843,
 		defence = 1531,
@@ -74635,7 +74635,7 @@ local datas = {
 	},
 	[710066079] = {
 		id = 710066079,
-		attack = 8805,
+		attack = 13207,
 		hp = 98613,
 		sunder = 2935,
 		defence = 1580,
@@ -74649,7 +74649,7 @@ local datas = {
 	},
 	[710066080] = {
 		id = 710066080,
-		attack = 9085,
+		attack = 13628,
 		hp = 101756,
 		sunder = 3028,
 		defence = 1631,
@@ -74663,7 +74663,7 @@ local datas = {
 	},
 	[710066081] = {
 		id = 710066081,
-		attack = 9287,
+		attack = 13930,
 		hp = 104009,
 		sunder = 3096,
 		defence = 1667,
@@ -74677,7 +74677,7 @@ local datas = {
 	},
 	[710066082] = {
 		id = 710066082,
-		attack = 9490,
+		attack = 14235,
 		hp = 106287,
 		sunder = 3163,
 		defence = 1703,
@@ -74691,7 +74691,7 @@ local datas = {
 	},
 	[710066083] = {
 		id = 710066083,
-		attack = 9695,
+		attack = 14543,
 		hp = 108589,
 		sunder = 3232,
 		defence = 1740,
@@ -74705,7 +74705,7 @@ local datas = {
 	},
 	[710066084] = {
 		id = 710066084,
-		attack = 9903,
+		attack = 14855,
 		hp = 110915,
 		sunder = 3301,
 		defence = 1777,
@@ -74719,7 +74719,7 @@ local datas = {
 	},
 	[710066085] = {
 		id = 710066085,
-		attack = 10113,
+		attack = 15169,
 		hp = 113266,
 		sunder = 3371,
 		defence = 1815,
@@ -74733,7 +74733,7 @@ local datas = {
 	},
 	[710066086] = {
 		id = 710066086,
-		attack = 10452,
+		attack = 15678,
 		hp = 117059,
 		sunder = 3484,
 		defence = 1876,
@@ -74747,7 +74747,7 @@ local datas = {
 	},
 	[710066087] = {
 		id = 710066087,
-		attack = 10796,
+		attack = 16193,
 		hp = 120910,
 		sunder = 3599,
 		defence = 1938,
@@ -74761,7 +74761,7 @@ local datas = {
 	},
 	[710066088] = {
 		id = 710066088,
-		attack = 11144,
+		attack = 16717,
 		hp = 124817,
 		sunder = 3715,
 		defence = 2000,
@@ -74775,7 +74775,7 @@ local datas = {
 	},
 	[710066089] = {
 		id = 710066089,
-		attack = 11498,
+		attack = 17247,
 		hp = 128780,
 		sunder = 3833,
 		defence = 2064,
@@ -74789,7 +74789,7 @@ local datas = {
 	},
 	[710066090] = {
 		id = 710066090,
-		attack = 11857,
+		attack = 17786,
 		hp = 132801,
 		sunder = 3952,
 		defence = 2128,
@@ -74803,7 +74803,7 @@ local datas = {
 	},
 	[710066091] = {
 		id = 710066091,
-		attack = 12128,
+		attack = 18192,
 		hp = 135835,
 		sunder = 4043,
 		defence = 2177,
@@ -74817,7 +74817,7 @@ local datas = {
 	},
 	[710066092] = {
 		id = 710066092,
-		attack = 12402,
+		attack = 18603,
 		hp = 138905,
 		sunder = 4134,
 		defence = 2226,
@@ -74831,7 +74831,7 @@ local datas = {
 	},
 	[710066093] = {
 		id = 710066093,
-		attack = 12679,
+		attack = 19019,
 		hp = 142008,
 		sunder = 4226,
 		defence = 2276,
@@ -74845,7 +74845,7 @@ local datas = {
 	},
 	[710066094] = {
 		id = 710066094,
-		attack = 12959,
+		attack = 19439,
 		hp = 145145,
 		sunder = 4320,
 		defence = 2326,
@@ -74859,7 +74859,7 @@ local datas = {
 	},
 	[710066095] = {
 		id = 710066095,
-		attack = 13243,
+		attack = 19864,
 		hp = 148317,
 		sunder = 4414,
 		defence = 2377,
@@ -74873,7 +74873,7 @@ local datas = {
 	},
 	[710066096] = {
 		id = 710066096,
-		attack = 14074,
+		attack = 21111,
 		hp = 157631,
 		sunder = 4691,
 		defence = 2526,
@@ -74887,7 +74887,7 @@ local datas = {
 	},
 	[710066097] = {
 		id = 710066097,
-		attack = 14920,
+		attack = 22380,
 		hp = 167103,
 		sunder = 4973,
 		defence = 2678,
@@ -74901,7 +74901,7 @@ local datas = {
 	},
 	[710066098] = {
 		id = 710066098,
-		attack = 15780,
+		attack = 23670,
 		hp = 176734,
 		sunder = 5260,
 		defence = 2832,
@@ -74915,7 +74915,7 @@ local datas = {
 	},
 	[710066099] = {
 		id = 710066099,
-		attack = 16654,
+		attack = 24981,
 		hp = 186524,
 		sunder = 5551,
 		defence = 2989,
@@ -74929,7 +74929,7 @@ local datas = {
 	},
 	[710066100] = {
 		id = 710066100,
-		attack = 17542,
+		attack = 26313,
 		hp = 196473,
 		sunder = 5847,
 		defence = 3149,
@@ -74943,7 +74943,7 @@ local datas = {
 	},
 	[710076000] = {
 		id = 710076000,
-		attack = 143,
+		attack = 215,
 		hp = 2577,
 		sunder = 102,
 		defence = 55,
@@ -74957,7 +74957,7 @@ local datas = {
 	},
 	[710076001] = {
 		id = 710076001,
-		attack = 180,
+		attack = 270,
 		hp = 3244,
 		sunder = 128,
 		defence = 69,
@@ -74971,7 +74971,7 @@ local datas = {
 	},
 	[710076002] = {
 		id = 710076002,
-		attack = 194,
+		attack = 291,
 		hp = 3495,
 		sunder = 138,
 		defence = 74,
@@ -74985,7 +74985,7 @@ local datas = {
 	},
 	[710076003] = {
 		id = 710076003,
-		attack = 185,
+		attack = 278,
 		hp = 3332,
 		sunder = 130,
 		defence = 70,
@@ -74999,7 +74999,7 @@ local datas = {
 	},
 	[710076004] = {
 		id = 710076004,
-		attack = 153,
+		attack = 229,
 		hp = 2754,
 		sunder = 106,
 		defence = 57,
@@ -75013,7 +75013,7 @@ local datas = {
 	},
 	[710076005] = {
 		id = 710076005,
-		attack = 98,
+		attack = 147,
 		hp = 1761,
 		sunder = 65,
 		defence = 35,
@@ -75027,7 +75027,7 @@ local datas = {
 	},
 	[710076006] = {
 		id = 710076006,
-		attack = 121,
+		attack = 182,
 		hp = 2179,
 		sunder = 79,
 		defence = 43,
@@ -75041,7 +75041,7 @@ local datas = {
 	},
 	[710076007] = {
 		id = 710076007,
-		attack = 147,
+		attack = 220,
 		hp = 2639,
 		sunder = 95,
 		defence = 51,
@@ -75055,7 +75055,7 @@ local datas = {
 	},
 	[710076008] = {
 		id = 710076008,
-		attack = 174,
+		attack = 262,
 		hp = 3140,
 		sunder = 111,
 		defence = 60,
@@ -75069,7 +75069,7 @@ local datas = {
 	},
 	[710076009] = {
 		id = 710076009,
-		attack = 205,
+		attack = 307,
 		hp = 3683,
 		sunder = 129,
 		defence = 70,
@@ -75083,7 +75083,7 @@ local datas = {
 	},
 	[710076010] = {
 		id = 710076010,
-		attack = 237,
+		attack = 356,
 		hp = 4268,
 		sunder = 148,
 		defence = 80,
@@ -75097,7 +75097,7 @@ local datas = {
 	},
 	[710076011] = {
 		id = 710076011,
-		attack = 262,
+		attack = 394,
 		hp = 4725,
 		sunder = 162,
 		defence = 87,
@@ -75111,7 +75111,7 @@ local datas = {
 	},
 	[710076012] = {
 		id = 710076012,
-		attack = 289,
+		attack = 433,
 		hp = 5196,
 		sunder = 176,
 		defence = 95,
@@ -75125,7 +75125,7 @@ local datas = {
 	},
 	[710076013] = {
 		id = 710076013,
-		attack = 316,
+		attack = 474,
 		hp = 5684,
 		sunder = 190,
 		defence = 102,
@@ -75139,7 +75139,7 @@ local datas = {
 	},
 	[710076014] = {
 		id = 710076014,
-		attack = 344,
+		attack = 516,
 		hp = 6187,
 		sunder = 205,
 		defence = 110,
@@ -75153,7 +75153,7 @@ local datas = {
 	},
 	[710076015] = {
 		id = 710076015,
-		attack = 372,
+		attack = 559,
 		hp = 6705,
 		sunder = 219,
 		defence = 118,
@@ -75167,7 +75167,7 @@ local datas = {
 	},
 	[710076016] = {
 		id = 710076016,
-		attack = 410,
+		attack = 615,
 		hp = 7377,
 		sunder = 238,
 		defence = 128,
@@ -75181,7 +75181,7 @@ local datas = {
 	},
 	[710076017] = {
 		id = 710076017,
-		attack = 449,
+		attack = 673,
 		hp = 8080,
 		sunder = 258,
 		defence = 139,
@@ -75195,7 +75195,7 @@ local datas = {
 	},
 	[710076018] = {
 		id = 710076018,
-		attack = 490,
+		attack = 735,
 		hp = 8814,
 		sunder = 278,
 		defence = 150,
@@ -75209,7 +75209,7 @@ local datas = {
 	},
 	[710076019] = {
 		id = 710076019,
-		attack = 532,
+		attack = 798,
 		hp = 9579,
 		sunder = 299,
 		defence = 161,
@@ -75223,7 +75223,7 @@ local datas = {
 	},
 	[710076020] = {
 		id = 710076020,
-		attack = 576,
+		attack = 865,
 		hp = 10374,
 		sunder = 320,
 		defence = 172,
@@ -75237,7 +75237,7 @@ local datas = {
 	},
 	[710076021] = {
 		id = 710076021,
-		attack = 617,
+		attack = 925,
 		hp = 11103,
 		sunder = 339,
 		defence = 182,
@@ -75251,7 +75251,7 @@ local datas = {
 	},
 	[710076022] = {
 		id = 710076022,
-		attack = 659,
+		attack = 988,
 		hp = 11854,
 		sunder = 358,
 		defence = 193,
@@ -75265,7 +75265,7 @@ local datas = {
 	},
 	[710076023] = {
 		id = 710076023,
-		attack = 702,
+		attack = 1052,
 		hp = 12628,
 		sunder = 377,
 		defence = 203,
@@ -75279,7 +75279,7 @@ local datas = {
 	},
 	[710076024] = {
 		id = 710076024,
-		attack = 746,
+		attack = 1119,
 		hp = 13424,
 		sunder = 396,
 		defence = 213,
@@ -75293,7 +75293,7 @@ local datas = {
 	},
 	[710076025] = {
 		id = 710076025,
-		attack = 791,
+		attack = 1187,
 		hp = 14242,
 		sunder = 416,
 		defence = 224,
@@ -75307,7 +75307,7 @@ local datas = {
 	},
 	[710076026] = {
 		id = 710076026,
-		attack = 834,
+		attack = 1251,
 		hp = 15014,
 		sunder = 434,
 		defence = 234,
@@ -75321,7 +75321,7 @@ local datas = {
 	},
 	[710076027] = {
 		id = 710076027,
-		attack = 878,
+		attack = 1317,
 		hp = 15803,
 		sunder = 452,
 		defence = 244,
@@ -75335,7 +75335,7 @@ local datas = {
 	},
 	[710076028] = {
 		id = 710076028,
-		attack = 923,
+		attack = 1384,
 		hp = 16610,
 		sunder = 471,
 		defence = 253,
@@ -75349,7 +75349,7 @@ local datas = {
 	},
 	[710076029] = {
 		id = 710076029,
-		attack = 969,
+		attack = 1453,
 		hp = 17435,
 		sunder = 489,
 		defence = 263,
@@ -75363,7 +75363,7 @@ local datas = {
 	},
 	[710076030] = {
 		id = 710076030,
-		attack = 1015,
+		attack = 1523,
 		hp = 21932,
 		sunder = 508,
 		defence = 273,
@@ -75377,7 +75377,7 @@ local datas = {
 	},
 	[710076031] = {
 		id = 710076031,
-		attack = 1078,
+		attack = 1617,
 		hp = 23287,
 		sunder = 539,
 		defence = 290,
@@ -75391,7 +75391,7 @@ local datas = {
 	},
 	[710076032] = {
 		id = 710076032,
-		attack = 1143,
+		attack = 1714,
 		hp = 24684,
 		sunder = 571,
 		defence = 308,
@@ -75405,7 +75405,7 @@ local datas = {
 	},
 	[710076033] = {
 		id = 710076033,
-		attack = 1209,
+		attack = 1814,
 		hp = 26120,
 		sunder = 605,
 		defence = 326,
@@ -75419,7 +75419,7 @@ local datas = {
 	},
 	[710076034] = {
 		id = 710076034,
-		attack = 1278,
+		attack = 1917,
 		hp = 27598,
 		sunder = 639,
 		defence = 344,
@@ -75433,7 +75433,7 @@ local datas = {
 	},
 	[710076035] = {
 		id = 710076035,
-		attack = 1348,
+		attack = 2022,
 		hp = 29116,
 		sunder = 674,
 		defence = 363,
@@ -75447,7 +75447,7 @@ local datas = {
 	},
 	[710076036] = {
 		id = 710076036,
-		attack = 1415,
+		attack = 2122,
 		hp = 30559,
 		sunder = 707,
 		defence = 381,
@@ -75461,7 +75461,7 @@ local datas = {
 	},
 	[710076037] = {
 		id = 710076037,
-		attack = 1483,
+		attack = 2225,
 		hp = 32037,
 		sunder = 742,
 		defence = 399,
@@ -75475,7 +75475,7 @@ local datas = {
 	},
 	[710076038] = {
 		id = 710076038,
-		attack = 1553,
+		attack = 2330,
 		hp = 33550,
 		sunder = 777,
 		defence = 418,
@@ -75489,7 +75489,7 @@ local datas = {
 	},
 	[710076039] = {
 		id = 710076039,
-		attack = 1625,
+		attack = 2437,
 		hp = 35097,
 		sunder = 812,
 		defence = 437,
@@ -75503,7 +75503,7 @@ local datas = {
 	},
 	[710076040] = {
 		id = 710076040,
-		attack = 1698,
+		attack = 2547,
 		hp = 36678,
 		sunder = 849,
 		defence = 457,
@@ -75517,7 +75517,7 @@ local datas = {
 	},
 	[710076041] = {
 		id = 710076041,
-		attack = 1774,
+		attack = 2661,
 		hp = 38322,
 		sunder = 887,
 		defence = 478,
@@ -75531,7 +75531,7 @@ local datas = {
 	},
 	[710076042] = {
 		id = 710076042,
-		attack = 1852,
+		attack = 2778,
 		hp = 40002,
 		sunder = 926,
 		defence = 499,
@@ -75545,7 +75545,7 @@ local datas = {
 	},
 	[710076043] = {
 		id = 710076043,
-		attack = 1931,
+		attack = 2897,
 		hp = 41718,
 		sunder = 966,
 		defence = 520,
@@ -75559,7 +75559,7 @@ local datas = {
 	},
 	[710076044] = {
 		id = 710076044,
-		attack = 2012,
+		attack = 3019,
 		hp = 43469,
 		sunder = 1006,
 		defence = 542,
@@ -75573,7 +75573,7 @@ local datas = {
 	},
 	[710076045] = {
 		id = 710076045,
-		attack = 2095,
+		attack = 3143,
 		hp = 45256,
 		sunder = 1048,
 		defence = 564,
@@ -75587,7 +75587,7 @@ local datas = {
 	},
 	[710076046] = {
 		id = 710076046,
-		attack = 2170,
+		attack = 3255,
 		hp = 46867,
 		sunder = 1085,
 		defence = 584,
@@ -75601,7 +75601,7 @@ local datas = {
 	},
 	[710076047] = {
 		id = 710076047,
-		attack = 2246,
+		attack = 3368,
 		hp = 48504,
 		sunder = 1123,
 		defence = 605,
@@ -75615,7 +75615,7 @@ local datas = {
 	},
 	[710076048] = {
 		id = 710076048,
-		attack = 2323,
+		attack = 3484,
 		hp = 50169,
 		sunder = 1161,
 		defence = 625,
@@ -75629,7 +75629,7 @@ local datas = {
 	},
 	[710076049] = {
 		id = 710076049,
-		attack = 2401,
+		attack = 3601,
 		hp = 51860,
 		sunder = 1200,
 		defence = 646,
@@ -75643,7 +75643,7 @@ local datas = {
 	},
 	[710076050] = {
 		id = 710076050,
-		attack = 2480,
+		attack = 3721,
 		hp = 62509,
 		sunder = 1240,
 		defence = 668,
@@ -75657,7 +75657,7 @@ local datas = {
 	},
 	[710076051] = {
 		id = 710076051,
-		attack = 2545,
+		attack = 3817,
 		hp = 64128,
 		sunder = 1272,
 		defence = 685,
@@ -75671,7 +75671,7 @@ local datas = {
 	},
 	[710076052] = {
 		id = 710076052,
-		attack = 2610,
+		attack = 3914,
 		hp = 65763,
 		sunder = 1305,
 		defence = 703,
@@ -75685,7 +75685,7 @@ local datas = {
 	},
 	[710076053] = {
 		id = 710076053,
-		attack = 2675,
+		attack = 4013,
 		hp = 67414,
 		sunder = 1338,
 		defence = 720,
@@ -75699,7 +75699,7 @@ local datas = {
 	},
 	[710076054] = {
 		id = 710076054,
-		attack = 2741,
+		attack = 4112,
 		hp = 69081,
 		sunder = 1371,
 		defence = 738,
@@ -75713,7 +75713,7 @@ local datas = {
 	},
 	[710076055] = {
 		id = 710076055,
-		attack = 2808,
+		attack = 4212,
 		hp = 70763,
 		sunder = 1404,
 		defence = 756,
@@ -75727,7 +75727,7 @@ local datas = {
 	},
 	[710076056] = {
 		id = 710076056,
-		attack = 2914,
+		attack = 4372,
 		hp = 73443,
 		sunder = 1457,
 		defence = 785,
@@ -75741,7 +75741,7 @@ local datas = {
 	},
 	[710076057] = {
 		id = 710076057,
-		attack = 3023,
+		attack = 4534,
 		hp = 76172,
 		sunder = 1511,
 		defence = 814,
@@ -75755,7 +75755,7 @@ local datas = {
 	},
 	[710076058] = {
 		id = 710076058,
-		attack = 3133,
+		attack = 4699,
 		hp = 78951,
 		sunder = 1566,
 		defence = 843,
@@ -75769,7 +75769,7 @@ local datas = {
 	},
 	[710076059] = {
 		id = 710076059,
-		attack = 3245,
+		attack = 4868,
 		hp = 81779,
 		sunder = 1623,
 		defence = 874,
@@ -75783,7 +75783,7 @@ local datas = {
 	},
 	[710076060] = {
 		id = 710076060,
-		attack = 3359,
+		attack = 5039,
 		hp = 84657,
 		sunder = 1680,
 		defence = 904,
@@ -75797,7 +75797,7 @@ local datas = {
 	},
 	[710076061] = {
 		id = 710076061,
-		attack = 3440,
+		attack = 5159,
 		hp = 86677,
 		sunder = 1720,
 		defence = 926,
@@ -75811,7 +75811,7 @@ local datas = {
 	},
 	[710076062] = {
 		id = 710076062,
-		attack = 3521,
+		attack = 5281,
 		hp = 88718,
 		sunder = 1760,
 		defence = 948,
@@ -75825,7 +75825,7 @@ local datas = {
 	},
 	[710076063] = {
 		id = 710076063,
-		attack = 3602,
+		attack = 5404,
 		hp = 90779,
 		sunder = 1801,
 		defence = 970,
@@ -75839,7 +75839,7 @@ local datas = {
 	},
 	[710076064] = {
 		id = 710076064,
-		attack = 3685,
+		attack = 5527,
 		hp = 92862,
 		sunder = 1842,
 		defence = 992,
@@ -75853,7 +75853,7 @@ local datas = {
 	},
 	[710076065] = {
 		id = 710076065,
-		attack = 3768,
+		attack = 5653,
 		hp = 94965,
 		sunder = 1884,
 		defence = 1015,
@@ -75867,7 +75867,7 @@ local datas = {
 	},
 	[710076066] = {
 		id = 710076066,
-		attack = 3917,
+		attack = 5876,
 		hp = 98713,
 		sunder = 1959,
 		defence = 1055,
@@ -75881,7 +75881,7 @@ local datas = {
 	},
 	[710076067] = {
 		id = 710076067,
-		attack = 4069,
+		attack = 6103,
 		hp = 102530,
 		sunder = 2034,
 		defence = 1095,
@@ -75895,7 +75895,7 @@ local datas = {
 	},
 	[710076068] = {
 		id = 710076068,
-		attack = 4223,
+		attack = 6334,
 		hp = 106416,
 		sunder = 2111,
 		defence = 1137,
@@ -75909,7 +75909,7 @@ local datas = {
 	},
 	[710076069] = {
 		id = 710076069,
-		attack = 4380,
+		attack = 6570,
 		hp = 110370,
 		sunder = 2190,
 		defence = 1179,
@@ -75923,7 +75923,7 @@ local datas = {
 	},
 	[710076070] = {
 		id = 710076070,
-		attack = 4539,
+		attack = 6809,
 		hp = 114392,
 		sunder = 2270,
 		defence = 1222,
@@ -75937,7 +75937,7 @@ local datas = {
 	},
 	[710076071] = {
 		id = 710076071,
-		attack = 4658,
+		attack = 6987,
 		hp = 117389,
 		sunder = 2329,
 		defence = 1254,
@@ -75951,7 +75951,7 @@ local datas = {
 	},
 	[710076072] = {
 		id = 710076072,
-		attack = 4779,
+		attack = 7168,
 		hp = 120425,
 		sunder = 2389,
 		defence = 1287,
@@ -75965,7 +75965,7 @@ local datas = {
 	},
 	[710076073] = {
 		id = 710076073,
-		attack = 4901,
+		attack = 7351,
 		hp = 123499,
 		sunder = 2450,
 		defence = 1319,
@@ -75979,7 +75979,7 @@ local datas = {
 	},
 	[710076074] = {
 		id = 710076074,
-		attack = 5024,
+		attack = 7536,
 		hp = 126612,
 		sunder = 2512,
 		defence = 1353,
@@ -75993,7 +75993,7 @@ local datas = {
 	},
 	[710076075] = {
 		id = 710076075,
-		attack = 5149,
+		attack = 7724,
 		hp = 129763,
 		sunder = 2575,
 		defence = 1386,
@@ -76007,7 +76007,7 @@ local datas = {
 	},
 	[710076076] = {
 		id = 710076076,
-		attack = 5325,
+		attack = 7988,
 		hp = 134196,
 		sunder = 2663,
 		defence = 1434,
@@ -76021,7 +76021,7 @@ local datas = {
 	},
 	[710076077] = {
 		id = 710076077,
-		attack = 5504,
+		attack = 8256,
 		hp = 138700,
 		sunder = 2752,
 		defence = 1482,
@@ -76035,7 +76035,7 @@ local datas = {
 	},
 	[710076078] = {
 		id = 710076078,
-		attack = 5685,
+		attack = 8528,
 		hp = 143274,
 		sunder = 2843,
 		defence = 1531,
@@ -76049,7 +76049,7 @@ local datas = {
 	},
 	[710076079] = {
 		id = 710076079,
-		attack = 5870,
+		attack = 8805,
 		hp = 147919,
 		sunder = 2935,
 		defence = 1580,
@@ -76063,7 +76063,7 @@ local datas = {
 	},
 	[710076080] = {
 		id = 710076080,
-		attack = 6057,
+		attack = 9085,
 		hp = 152634,
 		sunder = 3028,
 		defence = 1631,
@@ -76077,7 +76077,7 @@ local datas = {
 	},
 	[710076081] = {
 		id = 710076081,
-		attack = 6191,
+		attack = 9287,
 		hp = 156014,
 		sunder = 3096,
 		defence = 1667,
@@ -76091,7 +76091,7 @@ local datas = {
 	},
 	[710076082] = {
 		id = 710076082,
-		attack = 6327,
+		attack = 9490,
 		hp = 159430,
 		sunder = 3163,
 		defence = 1703,
@@ -76105,7 +76105,7 @@ local datas = {
 	},
 	[710076083] = {
 		id = 710076083,
-		attack = 6464,
+		attack = 9695,
 		hp = 162883,
 		sunder = 3232,
 		defence = 1740,
@@ -76119,7 +76119,7 @@ local datas = {
 	},
 	[710076084] = {
 		id = 710076084,
-		attack = 6602,
+		attack = 9903,
 		hp = 166372,
 		sunder = 3301,
 		defence = 1777,
@@ -76133,7 +76133,7 @@ local datas = {
 	},
 	[710076085] = {
 		id = 710076085,
-		attack = 6742,
+		attack = 10113,
 		hp = 169898,
 		sunder = 3371,
 		defence = 1815,
@@ -76147,7 +76147,7 @@ local datas = {
 	},
 	[710076086] = {
 		id = 710076086,
-		attack = 6968,
+		attack = 10452,
 		hp = 175589,
 		sunder = 3484,
 		defence = 1876,
@@ -76161,7 +76161,7 @@ local datas = {
 	},
 	[710076087] = {
 		id = 710076087,
-		attack = 7197,
+		attack = 10796,
 		hp = 181365,
 		sunder = 3599,
 		defence = 1938,
@@ -76175,7 +76175,7 @@ local datas = {
 	},
 	[710076088] = {
 		id = 710076088,
-		attack = 7430,
+		attack = 11144,
 		hp = 187225,
 		sunder = 3715,
 		defence = 2000,
@@ -76189,7 +76189,7 @@ local datas = {
 	},
 	[710076089] = {
 		id = 710076089,
-		attack = 7665,
+		attack = 11498,
 		hp = 193171,
 		sunder = 3833,
 		defence = 2064,
@@ -76203,7 +76203,7 @@ local datas = {
 	},
 	[710076090] = {
 		id = 710076090,
-		attack = 7905,
+		attack = 11857,
 		hp = 199201,
 		sunder = 3952,
 		defence = 2128,
@@ -76217,7 +76217,7 @@ local datas = {
 	},
 	[710076091] = {
 		id = 710076091,
-		attack = 8085,
+		attack = 12128,
 		hp = 203753,
 		sunder = 4043,
 		defence = 2177,
@@ -76231,7 +76231,7 @@ local datas = {
 	},
 	[710076092] = {
 		id = 710076092,
-		attack = 8268,
+		attack = 12402,
 		hp = 208357,
 		sunder = 4134,
 		defence = 2226,
@@ -76245,7 +76245,7 @@ local datas = {
 	},
 	[710076093] = {
 		id = 710076093,
-		attack = 8453,
+		attack = 12679,
 		hp = 213012,
 		sunder = 4226,
 		defence = 2276,
@@ -76259,7 +76259,7 @@ local datas = {
 	},
 	[710076094] = {
 		id = 710076094,
-		attack = 8640,
+		attack = 12959,
 		hp = 217718,
 		sunder = 4320,
 		defence = 2326,
@@ -76273,7 +76273,7 @@ local datas = {
 	},
 	[710076095] = {
 		id = 710076095,
-		attack = 8828,
+		attack = 13243,
 		hp = 222476,
 		sunder = 4414,
 		defence = 2377,
@@ -76287,7 +76287,7 @@ local datas = {
 	},
 	[710076096] = {
 		id = 710076096,
-		attack = 9383,
+		attack = 14074,
 		hp = 236446,
 		sunder = 4691,
 		defence = 2526,
@@ -76301,7 +76301,7 @@ local datas = {
 	},
 	[710076097] = {
 		id = 710076097,
-		attack = 9947,
+		attack = 14920,
 		hp = 250654,
 		sunder = 4973,
 		defence = 2678,
@@ -76315,7 +76315,7 @@ local datas = {
 	},
 	[710076098] = {
 		id = 710076098,
-		attack = 10520,
+		attack = 15780,
 		hp = 265101,
 		sunder = 5260,
 		defence = 2832,
@@ -76329,7 +76329,7 @@ local datas = {
 	},
 	[710076099] = {
 		id = 710076099,
-		attack = 11103,
+		attack = 16654,
 		hp = 279786,
 		sunder = 5551,
 		defence = 2989,
@@ -76343,7 +76343,7 @@ local datas = {
 	},
 	[710076100] = {
 		id = 710076100,
-		attack = 11695,
+		attack = 17542,
 		hp = 294710,
 		sunder = 5847,
 		defence = 3149,
@@ -76357,7 +76357,7 @@ local datas = {
 	},
 	[710086000] = {
 		id = 710086000,
-		attack = 143,
+		attack = 215,
 		hp = 3007,
 		sunder = 102,
 		defence = 55,
@@ -76371,7 +76371,7 @@ local datas = {
 	},
 	[710086001] = {
 		id = 710086001,
-		attack = 180,
+		attack = 270,
 		hp = 3784,
 		sunder = 128,
 		defence = 69,
@@ -76385,7 +76385,7 @@ local datas = {
 	},
 	[710086002] = {
 		id = 710086002,
-		attack = 194,
+		attack = 291,
 		hp = 4078,
 		sunder = 138,
 		defence = 74,
@@ -76399,7 +76399,7 @@ local datas = {
 	},
 	[710086003] = {
 		id = 710086003,
-		attack = 185,
+		attack = 278,
 		hp = 3887,
 		sunder = 130,
 		defence = 70,
@@ -76413,7 +76413,7 @@ local datas = {
 	},
 	[710086004] = {
 		id = 710086004,
-		attack = 153,
+		attack = 229,
 		hp = 3213,
 		sunder = 106,
 		defence = 57,
@@ -76427,7 +76427,7 @@ local datas = {
 	},
 	[710086005] = {
 		id = 710086005,
-		attack = 98,
+		attack = 147,
 		hp = 2055,
 		sunder = 65,
 		defence = 35,
@@ -76441,7 +76441,7 @@ local datas = {
 	},
 	[710086006] = {
 		id = 710086006,
-		attack = 121,
+		attack = 182,
 		hp = 2542,
 		sunder = 79,
 		defence = 43,
@@ -76455,7 +76455,7 @@ local datas = {
 	},
 	[710086007] = {
 		id = 710086007,
-		attack = 147,
+		attack = 220,
 		hp = 3079,
 		sunder = 95,
 		defence = 51,
@@ -76469,7 +76469,7 @@ local datas = {
 	},
 	[710086008] = {
 		id = 710086008,
-		attack = 174,
+		attack = 262,
 		hp = 3664,
 		sunder = 111,
 		defence = 60,
@@ -76483,7 +76483,7 @@ local datas = {
 	},
 	[710086009] = {
 		id = 710086009,
-		attack = 205,
+		attack = 307,
 		hp = 4297,
 		sunder = 129,
 		defence = 70,
@@ -76497,7 +76497,7 @@ local datas = {
 	},
 	[710086010] = {
 		id = 710086010,
-		attack = 237,
+		attack = 356,
 		hp = 4980,
 		sunder = 148,
 		defence = 80,
@@ -76511,7 +76511,7 @@ local datas = {
 	},
 	[710086011] = {
 		id = 710086011,
-		attack = 262,
+		attack = 394,
 		hp = 5512,
 		sunder = 162,
 		defence = 87,
@@ -76525,7 +76525,7 @@ local datas = {
 	},
 	[710086012] = {
 		id = 710086012,
-		attack = 289,
+		attack = 433,
 		hp = 6062,
 		sunder = 176,
 		defence = 95,
@@ -76539,7 +76539,7 @@ local datas = {
 	},
 	[710086013] = {
 		id = 710086013,
-		attack = 316,
+		attack = 474,
 		hp = 6631,
 		sunder = 190,
 		defence = 102,
@@ -76553,7 +76553,7 @@ local datas = {
 	},
 	[710086014] = {
 		id = 710086014,
-		attack = 344,
+		attack = 516,
 		hp = 7218,
 		sunder = 205,
 		defence = 110,
@@ -76567,7 +76567,7 @@ local datas = {
 	},
 	[710086015] = {
 		id = 710086015,
-		attack = 372,
+		attack = 559,
 		hp = 7822,
 		sunder = 219,
 		defence = 118,
@@ -76581,7 +76581,7 @@ local datas = {
 	},
 	[710086016] = {
 		id = 710086016,
-		attack = 410,
+		attack = 615,
 		hp = 8607,
 		sunder = 238,
 		defence = 128,
@@ -76595,7 +76595,7 @@ local datas = {
 	},
 	[710086017] = {
 		id = 710086017,
-		attack = 449,
+		attack = 673,
 		hp = 9427,
 		sunder = 258,
 		defence = 139,
@@ -76609,7 +76609,7 @@ local datas = {
 	},
 	[710086018] = {
 		id = 710086018,
-		attack = 490,
+		attack = 735,
 		hp = 10283,
 		sunder = 278,
 		defence = 150,
@@ -76623,7 +76623,7 @@ local datas = {
 	},
 	[710086019] = {
 		id = 710086019,
-		attack = 532,
+		attack = 798,
 		hp = 11175,
 		sunder = 299,
 		defence = 161,
@@ -76637,7 +76637,7 @@ local datas = {
 	},
 	[710086020] = {
 		id = 710086020,
-		attack = 576,
+		attack = 865,
 		hp = 12103,
 		sunder = 320,
 		defence = 172,
@@ -76651,7 +76651,7 @@ local datas = {
 	},
 	[710086021] = {
 		id = 710086021,
-		attack = 617,
+		attack = 925,
 		hp = 12954,
 		sunder = 339,
 		defence = 182,
@@ -76665,7 +76665,7 @@ local datas = {
 	},
 	[710086022] = {
 		id = 710086022,
-		attack = 659,
+		attack = 988,
 		hp = 13830,
 		sunder = 358,
 		defence = 193,
@@ -76679,7 +76679,7 @@ local datas = {
 	},
 	[710086023] = {
 		id = 710086023,
-		attack = 702,
+		attack = 1052,
 		hp = 14732,
 		sunder = 377,
 		defence = 203,
@@ -76693,7 +76693,7 @@ local datas = {
 	},
 	[710086024] = {
 		id = 710086024,
-		attack = 746,
+		attack = 1119,
 		hp = 15661,
 		sunder = 396,
 		defence = 213,
@@ -76707,7 +76707,7 @@ local datas = {
 	},
 	[710086025] = {
 		id = 710086025,
-		attack = 791,
+		attack = 1187,
 		hp = 16616,
 		sunder = 416,
 		defence = 224,
@@ -76721,7 +76721,7 @@ local datas = {
 	},
 	[710086026] = {
 		id = 710086026,
-		attack = 834,
+		attack = 1251,
 		hp = 17516,
 		sunder = 434,
 		defence = 234,
@@ -76735,7 +76735,7 @@ local datas = {
 	},
 	[710086027] = {
 		id = 710086027,
-		attack = 878,
+		attack = 1317,
 		hp = 18437,
 		sunder = 452,
 		defence = 244,
@@ -76749,7 +76749,7 @@ local datas = {
 	},
 	[710086028] = {
 		id = 710086028,
-		attack = 923,
+		attack = 1384,
 		hp = 19379,
 		sunder = 471,
 		defence = 253,
@@ -76763,7 +76763,7 @@ local datas = {
 	},
 	[710086029] = {
 		id = 710086029,
-		attack = 969,
+		attack = 1453,
 		hp = 20340,
 		sunder = 489,
 		defence = 263,
@@ -76777,7 +76777,7 @@ local datas = {
 	},
 	[710086030] = {
 		id = 710086030,
-		attack = 1015,
+		attack = 1523,
 		hp = 25587,
 		sunder = 508,
 		defence = 273,
@@ -76791,7 +76791,7 @@ local datas = {
 	},
 	[710086031] = {
 		id = 710086031,
-		attack = 1078,
+		attack = 1617,
 		hp = 27168,
 		sunder = 539,
 		defence = 290,
@@ -76805,7 +76805,7 @@ local datas = {
 	},
 	[710086032] = {
 		id = 710086032,
-		attack = 1143,
+		attack = 1714,
 		hp = 28797,
 		sunder = 571,
 		defence = 308,
@@ -76819,7 +76819,7 @@ local datas = {
 	},
 	[710086033] = {
 		id = 710086033,
-		attack = 1209,
+		attack = 1814,
 		hp = 30474,
 		sunder = 605,
 		defence = 326,
@@ -76833,7 +76833,7 @@ local datas = {
 	},
 	[710086034] = {
 		id = 710086034,
-		attack = 1278,
+		attack = 1917,
 		hp = 32198,
 		sunder = 639,
 		defence = 344,
@@ -76847,7 +76847,7 @@ local datas = {
 	},
 	[710086035] = {
 		id = 710086035,
-		attack = 1348,
+		attack = 2022,
 		hp = 33969,
 		sunder = 674,
 		defence = 363,
@@ -76861,7 +76861,7 @@ local datas = {
 	},
 	[710086036] = {
 		id = 710086036,
-		attack = 1415,
+		attack = 2122,
 		hp = 35653,
 		sunder = 707,
 		defence = 381,
@@ -76875,7 +76875,7 @@ local datas = {
 	},
 	[710086037] = {
 		id = 710086037,
-		attack = 1483,
+		attack = 2225,
 		hp = 37377,
 		sunder = 742,
 		defence = 399,
@@ -76889,7 +76889,7 @@ local datas = {
 	},
 	[710086038] = {
 		id = 710086038,
-		attack = 1553,
+		attack = 2330,
 		hp = 39141,
 		sunder = 777,
 		defence = 418,
@@ -76903,7 +76903,7 @@ local datas = {
 	},
 	[710086039] = {
 		id = 710086039,
-		attack = 1625,
+		attack = 2437,
 		hp = 40946,
 		sunder = 812,
 		defence = 437,
@@ -76917,7 +76917,7 @@ local datas = {
 	},
 	[710086040] = {
 		id = 710086040,
-		attack = 1698,
+		attack = 2547,
 		hp = 42791,
 		sunder = 849,
 		defence = 457,
@@ -76931,7 +76931,7 @@ local datas = {
 	},
 	[710086041] = {
 		id = 710086041,
-		attack = 1774,
+		attack = 2661,
 		hp = 44709,
 		sunder = 887,
 		defence = 478,
@@ -76945,7 +76945,7 @@ local datas = {
 	},
 	[710086042] = {
 		id = 710086042,
-		attack = 1852,
+		attack = 2778,
 		hp = 46669,
 		sunder = 926,
 		defence = 499,
@@ -76959,7 +76959,7 @@ local datas = {
 	},
 	[710086043] = {
 		id = 710086043,
-		attack = 1931,
+		attack = 2897,
 		hp = 48670,
 		sunder = 966,
 		defence = 520,
@@ -76973,7 +76973,7 @@ local datas = {
 	},
 	[710086044] = {
 		id = 710086044,
-		attack = 2012,
+		attack = 3019,
 		hp = 50714,
 		sunder = 1006,
 		defence = 542,
@@ -76987,7 +76987,7 @@ local datas = {
 	},
 	[710086045] = {
 		id = 710086045,
-		attack = 2095,
+		attack = 3143,
 		hp = 52799,
 		sunder = 1048,
 		defence = 564,
@@ -77001,7 +77001,7 @@ local datas = {
 	},
 	[710086046] = {
 		id = 710086046,
-		attack = 2170,
+		attack = 3255,
 		hp = 54678,
 		sunder = 1085,
 		defence = 584,
@@ -77015,7 +77015,7 @@ local datas = {
 	},
 	[710086047] = {
 		id = 710086047,
-		attack = 2246,
+		attack = 3368,
 		hp = 56588,
 		sunder = 1123,
 		defence = 605,
@@ -77029,7 +77029,7 @@ local datas = {
 	},
 	[710086048] = {
 		id = 710086048,
-		attack = 2323,
+		attack = 3484,
 		hp = 58530,
 		sunder = 1161,
 		defence = 625,
@@ -77043,7 +77043,7 @@ local datas = {
 	},
 	[710086049] = {
 		id = 710086049,
-		attack = 2401,
+		attack = 3601,
 		hp = 60504,
 		sunder = 1200,
 		defence = 646,
@@ -77057,7 +77057,7 @@ local datas = {
 	},
 	[710086050] = {
 		id = 710086050,
-		attack = 2480,
+		attack = 3721,
 		hp = 72927,
 		sunder = 1240,
 		defence = 668,
@@ -77071,7 +77071,7 @@ local datas = {
 	},
 	[710086051] = {
 		id = 710086051,
-		attack = 2545,
+		attack = 3817,
 		hp = 74816,
 		sunder = 1272,
 		defence = 685,
@@ -77085,7 +77085,7 @@ local datas = {
 	},
 	[710086052] = {
 		id = 710086052,
-		attack = 2610,
+		attack = 3914,
 		hp = 76724,
 		sunder = 1305,
 		defence = 703,
@@ -77099,7 +77099,7 @@ local datas = {
 	},
 	[710086053] = {
 		id = 710086053,
-		attack = 2675,
+		attack = 4013,
 		hp = 78650,
 		sunder = 1338,
 		defence = 720,
@@ -77113,7 +77113,7 @@ local datas = {
 	},
 	[710086054] = {
 		id = 710086054,
-		attack = 2741,
+		attack = 4112,
 		hp = 80594,
 		sunder = 1371,
 		defence = 738,
@@ -77127,7 +77127,7 @@ local datas = {
 	},
 	[710086055] = {
 		id = 710086055,
-		attack = 2808,
+		attack = 4212,
 		hp = 82557,
 		sunder = 1404,
 		defence = 756,
@@ -77141,7 +77141,7 @@ local datas = {
 	},
 	[710086056] = {
 		id = 710086056,
-		attack = 2914,
+		attack = 4372,
 		hp = 85683,
 		sunder = 1457,
 		defence = 785,
@@ -77155,7 +77155,7 @@ local datas = {
 	},
 	[710086057] = {
 		id = 710086057,
-		attack = 3023,
+		attack = 4534,
 		hp = 88867,
 		sunder = 1511,
 		defence = 814,
@@ -77169,7 +77169,7 @@ local datas = {
 	},
 	[710086058] = {
 		id = 710086058,
-		attack = 3133,
+		attack = 4699,
 		hp = 92109,
 		sunder = 1566,
 		defence = 843,
@@ -77183,7 +77183,7 @@ local datas = {
 	},
 	[710086059] = {
 		id = 710086059,
-		attack = 3245,
+		attack = 4868,
 		hp = 95409,
 		sunder = 1623,
 		defence = 874,
@@ -77197,7 +77197,7 @@ local datas = {
 	},
 	[710086060] = {
 		id = 710086060,
-		attack = 3359,
+		attack = 5039,
 		hp = 98767,
 		sunder = 1680,
 		defence = 904,
@@ -77211,7 +77211,7 @@ local datas = {
 	},
 	[710086061] = {
 		id = 710086061,
-		attack = 3440,
+		attack = 5159,
 		hp = 101123,
 		sunder = 1720,
 		defence = 926,
@@ -77225,7 +77225,7 @@ local datas = {
 	},
 	[710086062] = {
 		id = 710086062,
-		attack = 3521,
+		attack = 5281,
 		hp = 103504,
 		sunder = 1760,
 		defence = 948,
@@ -77239,7 +77239,7 @@ local datas = {
 	},
 	[710086063] = {
 		id = 710086063,
-		attack = 3602,
+		attack = 5404,
 		hp = 105909,
 		sunder = 1801,
 		defence = 970,
@@ -77253,7 +77253,7 @@ local datas = {
 	},
 	[710086064] = {
 		id = 710086064,
-		attack = 3685,
+		attack = 5527,
 		hp = 108339,
 		sunder = 1842,
 		defence = 992,
@@ -77267,7 +77267,7 @@ local datas = {
 	},
 	[710086065] = {
 		id = 710086065,
-		attack = 3768,
+		attack = 5653,
 		hp = 110792,
 		sunder = 1884,
 		defence = 1015,
@@ -77281,7 +77281,7 @@ local datas = {
 	},
 	[710086066] = {
 		id = 710086066,
-		attack = 3917,
+		attack = 5876,
 		hp = 115165,
 		sunder = 1959,
 		defence = 1055,
@@ -77295,7 +77295,7 @@ local datas = {
 	},
 	[710086067] = {
 		id = 710086067,
-		attack = 4069,
+		attack = 6103,
 		hp = 119618,
 		sunder = 2034,
 		defence = 1095,
@@ -77309,7 +77309,7 @@ local datas = {
 	},
 	[710086068] = {
 		id = 710086068,
-		attack = 4223,
+		attack = 6334,
 		hp = 124151,
 		sunder = 2111,
 		defence = 1137,
@@ -77323,7 +77323,7 @@ local datas = {
 	},
 	[710086069] = {
 		id = 710086069,
-		attack = 4380,
+		attack = 6570,
 		hp = 128765,
 		sunder = 2190,
 		defence = 1179,
@@ -77337,7 +77337,7 @@ local datas = {
 	},
 	[710086070] = {
 		id = 710086070,
-		attack = 4539,
+		attack = 6809,
 		hp = 133458,
 		sunder = 2270,
 		defence = 1222,
@@ -77351,7 +77351,7 @@ local datas = {
 	},
 	[710086071] = {
 		id = 710086071,
-		attack = 4658,
+		attack = 6987,
 		hp = 136954,
 		sunder = 2329,
 		defence = 1254,
@@ -77365,7 +77365,7 @@ local datas = {
 	},
 	[710086072] = {
 		id = 710086072,
-		attack = 4779,
+		attack = 7168,
 		hp = 140496,
 		sunder = 2389,
 		defence = 1287,
@@ -77379,7 +77379,7 @@ local datas = {
 	},
 	[710086073] = {
 		id = 710086073,
-		attack = 4901,
+		attack = 7351,
 		hp = 144082,
 		sunder = 2450,
 		defence = 1319,
@@ -77393,7 +77393,7 @@ local datas = {
 	},
 	[710086074] = {
 		id = 710086074,
-		attack = 5024,
+		attack = 7536,
 		hp = 147714,
 		sunder = 2512,
 		defence = 1353,
@@ -77407,7 +77407,7 @@ local datas = {
 	},
 	[710086075] = {
 		id = 710086075,
-		attack = 5149,
+		attack = 7724,
 		hp = 151390,
 		sunder = 2575,
 		defence = 1386,
@@ -77421,7 +77421,7 @@ local datas = {
 	},
 	[710086076] = {
 		id = 710086076,
-		attack = 5325,
+		attack = 7988,
 		hp = 156562,
 		sunder = 2663,
 		defence = 1434,
@@ -77435,7 +77435,7 @@ local datas = {
 	},
 	[710086077] = {
 		id = 710086077,
-		attack = 5504,
+		attack = 8256,
 		hp = 161817,
 		sunder = 2752,
 		defence = 1482,
@@ -77449,7 +77449,7 @@ local datas = {
 	},
 	[710086078] = {
 		id = 710086078,
-		attack = 5685,
+		attack = 8528,
 		hp = 167153,
 		sunder = 2843,
 		defence = 1531,
@@ -77463,7 +77463,7 @@ local datas = {
 	},
 	[710086079] = {
 		id = 710086079,
-		attack = 5870,
+		attack = 8805,
 		hp = 172572,
 		sunder = 2935,
 		defence = 1580,
@@ -77477,7 +77477,7 @@ local datas = {
 	},
 	[710086080] = {
 		id = 710086080,
-		attack = 6057,
+		attack = 9085,
 		hp = 178073,
 		sunder = 3028,
 		defence = 1631,
@@ -77491,7 +77491,7 @@ local datas = {
 	},
 	[710086081] = {
 		id = 710086081,
-		attack = 6191,
+		attack = 9287,
 		hp = 182016,
 		sunder = 3096,
 		defence = 1667,
@@ -77505,7 +77505,7 @@ local datas = {
 	},
 	[710086082] = {
 		id = 710086082,
-		attack = 6327,
+		attack = 9490,
 		hp = 186002,
 		sunder = 3163,
 		defence = 1703,
@@ -77519,7 +77519,7 @@ local datas = {
 	},
 	[710086083] = {
 		id = 710086083,
-		attack = 6464,
+		attack = 9695,
 		hp = 190030,
 		sunder = 3232,
 		defence = 1740,
@@ -77533,7 +77533,7 @@ local datas = {
 	},
 	[710086084] = {
 		id = 710086084,
-		attack = 6602,
+		attack = 9903,
 		hp = 194101,
 		sunder = 3301,
 		defence = 1777,
@@ -77547,7 +77547,7 @@ local datas = {
 	},
 	[710086085] = {
 		id = 710086085,
-		attack = 6742,
+		attack = 10113,
 		hp = 198215,
 		sunder = 3371,
 		defence = 1815,
@@ -77561,7 +77561,7 @@ local datas = {
 	},
 	[710086086] = {
 		id = 710086086,
-		attack = 6968,
+		attack = 10452,
 		hp = 204854,
 		sunder = 3484,
 		defence = 1876,
@@ -77575,7 +77575,7 @@ local datas = {
 	},
 	[710086087] = {
 		id = 710086087,
-		attack = 7197,
+		attack = 10796,
 		hp = 211592,
 		sunder = 3599,
 		defence = 1938,
@@ -77589,7 +77589,7 @@ local datas = {
 	},
 	[710086088] = {
 		id = 710086088,
-		attack = 7430,
+		attack = 11144,
 		hp = 218429,
 		sunder = 3715,
 		defence = 2000,
@@ -77603,7 +77603,7 @@ local datas = {
 	},
 	[710086089] = {
 		id = 710086089,
-		attack = 7665,
+		attack = 11498,
 		hp = 225366,
 		sunder = 3833,
 		defence = 2064,
@@ -77617,7 +77617,7 @@ local datas = {
 	},
 	[710086090] = {
 		id = 710086090,
-		attack = 7905,
+		attack = 11857,
 		hp = 232401,
 		sunder = 3952,
 		defence = 2128,
@@ -77631,7 +77631,7 @@ local datas = {
 	},
 	[710086091] = {
 		id = 710086091,
-		attack = 8085,
+		attack = 12128,
 		hp = 237712,
 		sunder = 4043,
 		defence = 2177,
@@ -77645,7 +77645,7 @@ local datas = {
 	},
 	[710086092] = {
 		id = 710086092,
-		attack = 8268,
+		attack = 12402,
 		hp = 243083,
 		sunder = 4134,
 		defence = 2226,
@@ -77659,7 +77659,7 @@ local datas = {
 	},
 	[710086093] = {
 		id = 710086093,
-		attack = 8453,
+		attack = 12679,
 		hp = 248514,
 		sunder = 4226,
 		defence = 2276,
@@ -77673,7 +77673,7 @@ local datas = {
 	},
 	[710086094] = {
 		id = 710086094,
-		attack = 8640,
+		attack = 12959,
 		hp = 254004,
 		sunder = 4320,
 		defence = 2326,
@@ -77687,7 +77687,7 @@ local datas = {
 	},
 	[710086095] = {
 		id = 710086095,
-		attack = 8828,
+		attack = 13243,
 		hp = 259555,
 		sunder = 4414,
 		defence = 2377,
@@ -77701,7 +77701,7 @@ local datas = {
 	},
 	[710086096] = {
 		id = 710086096,
-		attack = 9383,
+		attack = 14074,
 		hp = 275854,
 		sunder = 4691,
 		defence = 2526,
@@ -77715,7 +77715,7 @@ local datas = {
 	},
 	[710086097] = {
 		id = 710086097,
-		attack = 9947,
+		attack = 14920,
 		hp = 292430,
 		sunder = 4973,
 		defence = 2678,
@@ -77729,7 +77729,7 @@ local datas = {
 	},
 	[710086098] = {
 		id = 710086098,
-		attack = 10520,
+		attack = 15780,
 		hp = 309285,
 		sunder = 5260,
 		defence = 2832,
@@ -77743,7 +77743,7 @@ local datas = {
 	},
 	[710086099] = {
 		id = 710086099,
-		attack = 11103,
+		attack = 16654,
 		hp = 326417,
 		sunder = 5551,
 		defence = 2989,
@@ -77757,7 +77757,7 @@ local datas = {
 	},
 	[710086100] = {
 		id = 710086100,
-		attack = 11695,
+		attack = 17542,
 		hp = 343828,
 		sunder = 5847,
 		defence = 3149,
@@ -77771,7 +77771,7 @@ local datas = {
 	},
 	[710096000] = {
 		id = 710096000,
-		attack = 215,
+		attack = 322,
 		hp = 2148,
 		sunder = 102,
 		defence = 55,
@@ -77785,7 +77785,7 @@ local datas = {
 	},
 	[710096001] = {
 		id = 710096001,
-		attack = 270,
+		attack = 405,
 		hp = 2703,
 		sunder = 128,
 		defence = 69,
@@ -77799,7 +77799,7 @@ local datas = {
 	},
 	[710096002] = {
 		id = 710096002,
-		attack = 291,
+		attack = 437,
 		hp = 2913,
 		sunder = 138,
 		defence = 74,
@@ -77813,7 +77813,7 @@ local datas = {
 	},
 	[710096003] = {
 		id = 710096003,
-		attack = 278,
+		attack = 417,
 		hp = 2777,
 		sunder = 130,
 		defence = 70,
@@ -77827,7 +77827,7 @@ local datas = {
 	},
 	[710096004] = {
 		id = 710096004,
-		attack = 229,
+		attack = 344,
 		hp = 2295,
 		sunder = 106,
 		defence = 57,
@@ -77841,7 +77841,7 @@ local datas = {
 	},
 	[710096005] = {
 		id = 710096005,
-		attack = 147,
+		attack = 220,
 		hp = 1468,
 		sunder = 65,
 		defence = 35,
@@ -77855,7 +77855,7 @@ local datas = {
 	},
 	[710096006] = {
 		id = 710096006,
-		attack = 182,
+		attack = 272,
 		hp = 1816,
 		sunder = 79,
 		defence = 43,
@@ -77869,7 +77869,7 @@ local datas = {
 	},
 	[710096007] = {
 		id = 710096007,
-		attack = 220,
+		attack = 330,
 		hp = 2199,
 		sunder = 95,
 		defence = 51,
@@ -77883,7 +77883,7 @@ local datas = {
 	},
 	[710096008] = {
 		id = 710096008,
-		attack = 262,
+		attack = 393,
 		hp = 2617,
 		sunder = 111,
 		defence = 60,
@@ -77897,7 +77897,7 @@ local datas = {
 	},
 	[710096009] = {
 		id = 710096009,
-		attack = 307,
+		attack = 460,
 		hp = 3070,
 		sunder = 129,
 		defence = 70,
@@ -77911,7 +77911,7 @@ local datas = {
 	},
 	[710096010] = {
 		id = 710096010,
-		attack = 356,
+		attack = 534,
 		hp = 3557,
 		sunder = 148,
 		defence = 80,
@@ -77925,7 +77925,7 @@ local datas = {
 	},
 	[710096011] = {
 		id = 710096011,
-		attack = 394,
+		attack = 591,
 		hp = 3937,
 		sunder = 162,
 		defence = 87,
@@ -77939,7 +77939,7 @@ local datas = {
 	},
 	[710096012] = {
 		id = 710096012,
-		attack = 433,
+		attack = 650,
 		hp = 4330,
 		sunder = 176,
 		defence = 95,
@@ -77953,7 +77953,7 @@ local datas = {
 	},
 	[710096013] = {
 		id = 710096013,
-		attack = 474,
+		attack = 710,
 		hp = 4736,
 		sunder = 190,
 		defence = 102,
@@ -77967,7 +77967,7 @@ local datas = {
 	},
 	[710096014] = {
 		id = 710096014,
-		attack = 516,
+		attack = 773,
 		hp = 5156,
 		sunder = 205,
 		defence = 110,
@@ -77981,7 +77981,7 @@ local datas = {
 	},
 	[710096015] = {
 		id = 710096015,
-		attack = 559,
+		attack = 838,
 		hp = 5587,
 		sunder = 219,
 		defence = 118,
@@ -77995,7 +77995,7 @@ local datas = {
 	},
 	[710096016] = {
 		id = 710096016,
-		attack = 615,
+		attack = 922,
 		hp = 6148,
 		sunder = 238,
 		defence = 128,
@@ -78009,7 +78009,7 @@ local datas = {
 	},
 	[710096017] = {
 		id = 710096017,
-		attack = 673,
+		attack = 1010,
 		hp = 6733,
 		sunder = 258,
 		defence = 139,
@@ -78023,7 +78023,7 @@ local datas = {
 	},
 	[710096018] = {
 		id = 710096018,
-		attack = 735,
+		attack = 1102,
 		hp = 7345,
 		sunder = 278,
 		defence = 150,
@@ -78037,7 +78037,7 @@ local datas = {
 	},
 	[710096019] = {
 		id = 710096019,
-		attack = 798,
+		attack = 1197,
 		hp = 7982,
 		sunder = 299,
 		defence = 161,
@@ -78051,7 +78051,7 @@ local datas = {
 	},
 	[710096020] = {
 		id = 710096020,
-		attack = 865,
+		attack = 1297,
 		hp = 8645,
 		sunder = 320,
 		defence = 172,
@@ -78065,7 +78065,7 @@ local datas = {
 	},
 	[710096021] = {
 		id = 710096021,
-		attack = 925,
+		attack = 1388,
 		hp = 9253,
 		sunder = 339,
 		defence = 182,
@@ -78079,7 +78079,7 @@ local datas = {
 	},
 	[710096022] = {
 		id = 710096022,
-		attack = 988,
+		attack = 1482,
 		hp = 9879,
 		sunder = 358,
 		defence = 193,
@@ -78093,7 +78093,7 @@ local datas = {
 	},
 	[710096023] = {
 		id = 710096023,
-		attack = 1052,
+		attack = 1578,
 		hp = 10523,
 		sunder = 377,
 		defence = 203,
@@ -78107,7 +78107,7 @@ local datas = {
 	},
 	[710096024] = {
 		id = 710096024,
-		attack = 1119,
+		attack = 1678,
 		hp = 11186,
 		sunder = 396,
 		defence = 213,
@@ -78121,7 +78121,7 @@ local datas = {
 	},
 	[710096025] = {
 		id = 710096025,
-		attack = 1187,
+		attack = 1780,
 		hp = 11868,
 		sunder = 416,
 		defence = 224,
@@ -78135,7 +78135,7 @@ local datas = {
 	},
 	[710096026] = {
 		id = 710096026,
-		attack = 1251,
+		attack = 1877,
 		hp = 12512,
 		sunder = 434,
 		defence = 234,
@@ -78149,7 +78149,7 @@ local datas = {
 	},
 	[710096027] = {
 		id = 710096027,
-		attack = 1317,
+		attack = 1975,
 		hp = 13169,
 		sunder = 452,
 		defence = 244,
@@ -78163,7 +78163,7 @@ local datas = {
 	},
 	[710096028] = {
 		id = 710096028,
-		attack = 1384,
+		attack = 2076,
 		hp = 13842,
 		sunder = 471,
 		defence = 253,
@@ -78177,7 +78177,7 @@ local datas = {
 	},
 	[710096029] = {
 		id = 710096029,
-		attack = 1453,
+		attack = 2179,
 		hp = 14529,
 		sunder = 489,
 		defence = 263,
@@ -78191,7 +78191,7 @@ local datas = {
 	},
 	[710096030] = {
 		id = 710096030,
-		attack = 1523,
+		attack = 2285,
 		hp = 18276,
 		sunder = 508,
 		defence = 273,
@@ -78205,7 +78205,7 @@ local datas = {
 	},
 	[710096031] = {
 		id = 710096031,
-		attack = 1617,
+		attack = 2426,
 		hp = 19406,
 		sunder = 539,
 		defence = 290,
@@ -78219,7 +78219,7 @@ local datas = {
 	},
 	[710096032] = {
 		id = 710096032,
-		attack = 1714,
+		attack = 2571,
 		hp = 20570,
 		sunder = 571,
 		defence = 308,
@@ -78233,7 +78233,7 @@ local datas = {
 	},
 	[710096033] = {
 		id = 710096033,
-		attack = 1814,
+		attack = 2721,
 		hp = 21767,
 		sunder = 605,
 		defence = 326,
@@ -78247,7 +78247,7 @@ local datas = {
 	},
 	[710096034] = {
 		id = 710096034,
-		attack = 1917,
+		attack = 2875,
 		hp = 22998,
 		sunder = 639,
 		defence = 344,
@@ -78261,7 +78261,7 @@ local datas = {
 	},
 	[710096035] = {
 		id = 710096035,
-		attack = 2022,
+		attack = 3033,
 		hp = 24264,
 		sunder = 674,
 		defence = 363,
@@ -78275,7 +78275,7 @@ local datas = {
 	},
 	[710096036] = {
 		id = 710096036,
-		attack = 2122,
+		attack = 3183,
 		hp = 25466,
 		sunder = 707,
 		defence = 381,
@@ -78289,7 +78289,7 @@ local datas = {
 	},
 	[710096037] = {
 		id = 710096037,
-		attack = 2225,
+		attack = 3337,
 		hp = 26698,
 		sunder = 742,
 		defence = 399,
@@ -78303,7 +78303,7 @@ local datas = {
 	},
 	[710096038] = {
 		id = 710096038,
-		attack = 2330,
+		attack = 3495,
 		hp = 27958,
 		sunder = 777,
 		defence = 418,
@@ -78317,7 +78317,7 @@ local datas = {
 	},
 	[710096039] = {
 		id = 710096039,
-		attack = 2437,
+		attack = 3656,
 		hp = 29247,
 		sunder = 812,
 		defence = 437,
@@ -78331,7 +78331,7 @@ local datas = {
 	},
 	[710096040] = {
 		id = 710096040,
-		attack = 2547,
+		attack = 3821,
 		hp = 30565,
 		sunder = 849,
 		defence = 457,
@@ -78345,7 +78345,7 @@ local datas = {
 	},
 	[710096041] = {
 		id = 710096041,
-		attack = 2661,
+		attack = 3992,
 		hp = 31935,
 		sunder = 887,
 		defence = 478,
@@ -78359,7 +78359,7 @@ local datas = {
 	},
 	[710096042] = {
 		id = 710096042,
-		attack = 2778,
+		attack = 4167,
 		hp = 33335,
 		sunder = 926,
 		defence = 499,
@@ -78373,7 +78373,7 @@ local datas = {
 	},
 	[710096043] = {
 		id = 710096043,
-		attack = 2897,
+		attack = 4346,
 		hp = 34765,
 		sunder = 966,
 		defence = 520,
@@ -78387,7 +78387,7 @@ local datas = {
 	},
 	[710096044] = {
 		id = 710096044,
-		attack = 3019,
+		attack = 4528,
 		hp = 36224,
 		sunder = 1006,
 		defence = 542,
@@ -78401,7 +78401,7 @@ local datas = {
 	},
 	[710096045] = {
 		id = 710096045,
-		attack = 3143,
+		attack = 4714,
 		hp = 37714,
 		sunder = 1048,
 		defence = 564,
@@ -78415,7 +78415,7 @@ local datas = {
 	},
 	[710096046] = {
 		id = 710096046,
-		attack = 3255,
+		attack = 4882,
 		hp = 39056,
 		sunder = 1085,
 		defence = 584,
@@ -78429,7 +78429,7 @@ local datas = {
 	},
 	[710096047] = {
 		id = 710096047,
-		attack = 3368,
+		attack = 5053,
 		hp = 40420,
 		sunder = 1123,
 		defence = 605,
@@ -78443,7 +78443,7 @@ local datas = {
 	},
 	[710096048] = {
 		id = 710096048,
-		attack = 3484,
+		attack = 5226,
 		hp = 41807,
 		sunder = 1161,
 		defence = 625,
@@ -78457,7 +78457,7 @@ local datas = {
 	},
 	[710096049] = {
 		id = 710096049,
-		attack = 3601,
+		attack = 5402,
 		hp = 43217,
 		sunder = 1200,
 		defence = 646,
@@ -78471,7 +78471,7 @@ local datas = {
 	},
 	[710096050] = {
 		id = 710096050,
-		attack = 3721,
+		attack = 5581,
 		hp = 52090,
 		sunder = 1240,
 		defence = 668,
@@ -78485,7 +78485,7 @@ local datas = {
 	},
 	[710096051] = {
 		id = 710096051,
-		attack = 3817,
+		attack = 5726,
 		hp = 53440,
 		sunder = 1272,
 		defence = 685,
@@ -78499,7 +78499,7 @@ local datas = {
 	},
 	[710096052] = {
 		id = 710096052,
-		attack = 3914,
+		attack = 5872,
 		hp = 54803,
 		sunder = 1305,
 		defence = 703,
@@ -78513,7 +78513,7 @@ local datas = {
 	},
 	[710096053] = {
 		id = 710096053,
-		attack = 4013,
+		attack = 6019,
 		hp = 56178,
 		sunder = 1338,
 		defence = 720,
@@ -78527,7 +78527,7 @@ local datas = {
 	},
 	[710096054] = {
 		id = 710096054,
-		attack = 4112,
+		attack = 6168,
 		hp = 57567,
 		sunder = 1371,
 		defence = 738,
@@ -78541,7 +78541,7 @@ local datas = {
 	},
 	[710096055] = {
 		id = 710096055,
-		attack = 4212,
+		attack = 6318,
 		hp = 58969,
 		sunder = 1404,
 		defence = 756,
@@ -78555,7 +78555,7 @@ local datas = {
 	},
 	[710096056] = {
 		id = 710096056,
-		attack = 4372,
+		attack = 6557,
 		hp = 61202,
 		sunder = 1457,
 		defence = 785,
@@ -78569,7 +78569,7 @@ local datas = {
 	},
 	[710096057] = {
 		id = 710096057,
-		attack = 4534,
+		attack = 6801,
 		hp = 63477,
 		sunder = 1511,
 		defence = 814,
@@ -78583,7 +78583,7 @@ local datas = {
 	},
 	[710096058] = {
 		id = 710096058,
-		attack = 4699,
+		attack = 7049,
 		hp = 65792,
 		sunder = 1566,
 		defence = 843,
@@ -78597,7 +78597,7 @@ local datas = {
 	},
 	[710096059] = {
 		id = 710096059,
-		attack = 4868,
+		attack = 7302,
 		hp = 68149,
 		sunder = 1623,
 		defence = 874,
@@ -78611,7 +78611,7 @@ local datas = {
 	},
 	[710096060] = {
 		id = 710096060,
-		attack = 5039,
+		attack = 7559,
 		hp = 70548,
 		sunder = 1680,
 		defence = 904,
@@ -78625,7 +78625,7 @@ local datas = {
 	},
 	[710096061] = {
 		id = 710096061,
-		attack = 5159,
+		attack = 7739,
 		hp = 72231,
 		sunder = 1720,
 		defence = 926,
@@ -78639,7 +78639,7 @@ local datas = {
 	},
 	[710096062] = {
 		id = 710096062,
-		attack = 5281,
+		attack = 7921,
 		hp = 73931,
 		sunder = 1760,
 		defence = 948,
@@ -78653,7 +78653,7 @@ local datas = {
 	},
 	[710096063] = {
 		id = 710096063,
-		attack = 5404,
+		attack = 8105,
 		hp = 75649,
 		sunder = 1801,
 		defence = 970,
@@ -78667,7 +78667,7 @@ local datas = {
 	},
 	[710096064] = {
 		id = 710096064,
-		attack = 5527,
+		attack = 8291,
 		hp = 77385,
 		sunder = 1842,
 		defence = 992,
@@ -78681,7 +78681,7 @@ local datas = {
 	},
 	[710096065] = {
 		id = 710096065,
-		attack = 5653,
+		attack = 8479,
 		hp = 79137,
 		sunder = 1884,
 		defence = 1015,
@@ -78695,7 +78695,7 @@ local datas = {
 	},
 	[710096066] = {
 		id = 710096066,
-		attack = 5876,
+		attack = 8814,
 		hp = 82261,
 		sunder = 1959,
 		defence = 1055,
@@ -78709,7 +78709,7 @@ local datas = {
 	},
 	[710096067] = {
 		id = 710096067,
-		attack = 6103,
+		attack = 9154,
 		hp = 85442,
 		sunder = 2034,
 		defence = 1095,
@@ -78723,7 +78723,7 @@ local datas = {
 	},
 	[710096068] = {
 		id = 710096068,
-		attack = 6334,
+		attack = 9501,
 		hp = 88680,
 		sunder = 2111,
 		defence = 1137,
@@ -78737,7 +78737,7 @@ local datas = {
 	},
 	[710096069] = {
 		id = 710096069,
-		attack = 6570,
+		attack = 9854,
 		hp = 91975,
 		sunder = 2190,
 		defence = 1179,
@@ -78751,7 +78751,7 @@ local datas = {
 	},
 	[710096070] = {
 		id = 710096070,
-		attack = 6809,
+		attack = 10214,
 		hp = 95327,
 		sunder = 2270,
 		defence = 1222,
@@ -78765,7 +78765,7 @@ local datas = {
 	},
 	[710096071] = {
 		id = 710096071,
-		attack = 6987,
+		attack = 10481,
 		hp = 97824,
 		sunder = 2329,
 		defence = 1254,
@@ -78779,7 +78779,7 @@ local datas = {
 	},
 	[710096072] = {
 		id = 710096072,
-		attack = 7168,
+		attack = 10752,
 		hp = 100354,
 		sunder = 2389,
 		defence = 1287,
@@ -78793,7 +78793,7 @@ local datas = {
 	},
 	[710096073] = {
 		id = 710096073,
-		attack = 7351,
+		attack = 11027,
 		hp = 102916,
 		sunder = 2450,
 		defence = 1319,
@@ -78807,7 +78807,7 @@ local datas = {
 	},
 	[710096074] = {
 		id = 710096074,
-		attack = 7536,
+		attack = 11305,
 		hp = 105510,
 		sunder = 2512,
 		defence = 1353,
@@ -78821,7 +78821,7 @@ local datas = {
 	},
 	[710096075] = {
 		id = 710096075,
-		attack = 7724,
+		attack = 11586,
 		hp = 108136,
 		sunder = 2575,
 		defence = 1386,
@@ -78835,7 +78835,7 @@ local datas = {
 	},
 	[710096076] = {
 		id = 710096076,
-		attack = 7988,
+		attack = 11982,
 		hp = 111830,
 		sunder = 2663,
 		defence = 1434,
@@ -78849,7 +78849,7 @@ local datas = {
 	},
 	[710096077] = {
 		id = 710096077,
-		attack = 8256,
+		attack = 12384,
 		hp = 115583,
 		sunder = 2752,
 		defence = 1482,
@@ -78863,7 +78863,7 @@ local datas = {
 	},
 	[710096078] = {
 		id = 710096078,
-		attack = 8528,
+		attack = 12792,
 		hp = 119395,
 		sunder = 2843,
 		defence = 1531,
@@ -78877,7 +78877,7 @@ local datas = {
 	},
 	[710096079] = {
 		id = 710096079,
-		attack = 8805,
+		attack = 13207,
 		hp = 123266,
 		sunder = 2935,
 		defence = 1580,
@@ -78891,7 +78891,7 @@ local datas = {
 	},
 	[710096080] = {
 		id = 710096080,
-		attack = 9085,
+		attack = 13628,
 		hp = 127195,
 		sunder = 3028,
 		defence = 1631,
@@ -78905,7 +78905,7 @@ local datas = {
 	},
 	[710096081] = {
 		id = 710096081,
-		attack = 9287,
+		attack = 13930,
 		hp = 130011,
 		sunder = 3096,
 		defence = 1667,
@@ -78919,7 +78919,7 @@ local datas = {
 	},
 	[710096082] = {
 		id = 710096082,
-		attack = 9490,
+		attack = 14235,
 		hp = 132858,
 		sunder = 3163,
 		defence = 1703,
@@ -78933,7 +78933,7 @@ local datas = {
 	},
 	[710096083] = {
 		id = 710096083,
-		attack = 9695,
+		attack = 14543,
 		hp = 135736,
 		sunder = 3232,
 		defence = 1740,
@@ -78947,7 +78947,7 @@ local datas = {
 	},
 	[710096084] = {
 		id = 710096084,
-		attack = 9903,
+		attack = 14855,
 		hp = 138644,
 		sunder = 3301,
 		defence = 1777,
@@ -78961,7 +78961,7 @@ local datas = {
 	},
 	[710096085] = {
 		id = 710096085,
-		attack = 10113,
+		attack = 15169,
 		hp = 141582,
 		sunder = 3371,
 		defence = 1815,
@@ -78975,7 +78975,7 @@ local datas = {
 	},
 	[710096086] = {
 		id = 710096086,
-		attack = 10452,
+		attack = 15678,
 		hp = 146324,
 		sunder = 3484,
 		defence = 1876,
@@ -78989,7 +78989,7 @@ local datas = {
 	},
 	[710096087] = {
 		id = 710096087,
-		attack = 10796,
+		attack = 16193,
 		hp = 151137,
 		sunder = 3599,
 		defence = 1938,
@@ -79003,7 +79003,7 @@ local datas = {
 	},
 	[710096088] = {
 		id = 710096088,
-		attack = 11144,
+		attack = 16717,
 		hp = 156021,
 		sunder = 3715,
 		defence = 2000,
@@ -79017,7 +79017,7 @@ local datas = {
 	},
 	[710096089] = {
 		id = 710096089,
-		attack = 11498,
+		attack = 17247,
 		hp = 160975,
 		sunder = 3833,
 		defence = 2064,
@@ -79031,7 +79031,7 @@ local datas = {
 	},
 	[710096090] = {
 		id = 710096090,
-		attack = 11857,
+		attack = 17786,
 		hp = 166001,
 		sunder = 3952,
 		defence = 2128,
@@ -79045,7 +79045,7 @@ local datas = {
 	},
 	[710096091] = {
 		id = 710096091,
-		attack = 12128,
+		attack = 18192,
 		hp = 169794,
 		sunder = 4043,
 		defence = 2177,
@@ -79059,7 +79059,7 @@ local datas = {
 	},
 	[710096092] = {
 		id = 710096092,
-		attack = 12402,
+		attack = 18603,
 		hp = 173631,
 		sunder = 4134,
 		defence = 2226,
@@ -79073,7 +79073,7 @@ local datas = {
 	},
 	[710096093] = {
 		id = 710096093,
-		attack = 12679,
+		attack = 19019,
 		hp = 177510,
 		sunder = 4226,
 		defence = 2276,
@@ -79087,7 +79087,7 @@ local datas = {
 	},
 	[710096094] = {
 		id = 710096094,
-		attack = 12959,
+		attack = 19439,
 		hp = 181432,
 		sunder = 4320,
 		defence = 2326,
@@ -79101,7 +79101,7 @@ local datas = {
 	},
 	[710096095] = {
 		id = 710096095,
-		attack = 13243,
+		attack = 19864,
 		hp = 185396,
 		sunder = 4414,
 		defence = 2377,
@@ -79115,7 +79115,7 @@ local datas = {
 	},
 	[710096096] = {
 		id = 710096096,
-		attack = 14074,
+		attack = 21111,
 		hp = 197038,
 		sunder = 4691,
 		defence = 2526,
@@ -79129,7 +79129,7 @@ local datas = {
 	},
 	[710096097] = {
 		id = 710096097,
-		attack = 14920,
+		attack = 22380,
 		hp = 208879,
 		sunder = 4973,
 		defence = 2678,
@@ -79143,7 +79143,7 @@ local datas = {
 	},
 	[710096098] = {
 		id = 710096098,
-		attack = 15780,
+		attack = 23670,
 		hp = 220918,
 		sunder = 5260,
 		defence = 2832,
@@ -79157,7 +79157,7 @@ local datas = {
 	},
 	[710096099] = {
 		id = 710096099,
-		attack = 16654,
+		attack = 24981,
 		hp = 233155,
 		sunder = 5551,
 		defence = 2989,
@@ -79171,7 +79171,7 @@ local datas = {
 	},
 	[710096100] = {
 		id = 710096100,
-		attack = 17542,
+		attack = 26313,
 		hp = 245592,
 		sunder = 5847,
 		defence = 3149,
@@ -79185,7 +79185,7 @@ local datas = {
 	},
 	[710106000] = {
 		id = 710106000,
-		attack = 215,
+		attack = 322,
 		hp = 3007,
 		sunder = 102,
 		defence = 55,
@@ -79199,7 +79199,7 @@ local datas = {
 	},
 	[710106001] = {
 		id = 710106001,
-		attack = 270,
+		attack = 405,
 		hp = 3784,
 		sunder = 128,
 		defence = 69,
@@ -79213,7 +79213,7 @@ local datas = {
 	},
 	[710106002] = {
 		id = 710106002,
-		attack = 291,
+		attack = 437,
 		hp = 4078,
 		sunder = 138,
 		defence = 74,
@@ -79227,7 +79227,7 @@ local datas = {
 	},
 	[710106003] = {
 		id = 710106003,
-		attack = 278,
+		attack = 417,
 		hp = 3887,
 		sunder = 130,
 		defence = 70,
@@ -79241,7 +79241,7 @@ local datas = {
 	},
 	[710106004] = {
 		id = 710106004,
-		attack = 229,
+		attack = 344,
 		hp = 3213,
 		sunder = 106,
 		defence = 57,
@@ -79255,7 +79255,7 @@ local datas = {
 	},
 	[710106005] = {
 		id = 710106005,
-		attack = 147,
+		attack = 220,
 		hp = 2055,
 		sunder = 65,
 		defence = 35,
@@ -79269,7 +79269,7 @@ local datas = {
 	},
 	[710106006] = {
 		id = 710106006,
-		attack = 182,
+		attack = 272,
 		hp = 2542,
 		sunder = 79,
 		defence = 43,
@@ -79283,7 +79283,7 @@ local datas = {
 	},
 	[710106007] = {
 		id = 710106007,
-		attack = 220,
+		attack = 330,
 		hp = 3079,
 		sunder = 95,
 		defence = 51,
@@ -79297,7 +79297,7 @@ local datas = {
 	},
 	[710106008] = {
 		id = 710106008,
-		attack = 262,
+		attack = 393,
 		hp = 3664,
 		sunder = 111,
 		defence = 60,
@@ -79311,7 +79311,7 @@ local datas = {
 	},
 	[710106009] = {
 		id = 710106009,
-		attack = 307,
+		attack = 460,
 		hp = 4297,
 		sunder = 129,
 		defence = 70,
@@ -79325,7 +79325,7 @@ local datas = {
 	},
 	[710106010] = {
 		id = 710106010,
-		attack = 356,
+		attack = 534,
 		hp = 4980,
 		sunder = 148,
 		defence = 80,
@@ -79339,7 +79339,7 @@ local datas = {
 	},
 	[710106011] = {
 		id = 710106011,
-		attack = 394,
+		attack = 591,
 		hp = 5512,
 		sunder = 162,
 		defence = 87,
@@ -79353,7 +79353,7 @@ local datas = {
 	},
 	[710106012] = {
 		id = 710106012,
-		attack = 433,
+		attack = 650,
 		hp = 6062,
 		sunder = 176,
 		defence = 95,
@@ -79367,7 +79367,7 @@ local datas = {
 	},
 	[710106013] = {
 		id = 710106013,
-		attack = 474,
+		attack = 710,
 		hp = 6631,
 		sunder = 190,
 		defence = 102,
@@ -79381,7 +79381,7 @@ local datas = {
 	},
 	[710106014] = {
 		id = 710106014,
-		attack = 516,
+		attack = 773,
 		hp = 7218,
 		sunder = 205,
 		defence = 110,
@@ -79395,7 +79395,7 @@ local datas = {
 	},
 	[710106015] = {
 		id = 710106015,
-		attack = 559,
+		attack = 838,
 		hp = 7822,
 		sunder = 219,
 		defence = 118,
@@ -79409,7 +79409,7 @@ local datas = {
 	},
 	[710106016] = {
 		id = 710106016,
-		attack = 615,
+		attack = 922,
 		hp = 8607,
 		sunder = 238,
 		defence = 128,
@@ -79423,7 +79423,7 @@ local datas = {
 	},
 	[710106017] = {
 		id = 710106017,
-		attack = 673,
+		attack = 1010,
 		hp = 9427,
 		sunder = 258,
 		defence = 139,
@@ -79437,7 +79437,7 @@ local datas = {
 	},
 	[710106018] = {
 		id = 710106018,
-		attack = 735,
+		attack = 1102,
 		hp = 10283,
 		sunder = 278,
 		defence = 150,
@@ -79451,7 +79451,7 @@ local datas = {
 	},
 	[710106019] = {
 		id = 710106019,
-		attack = 798,
+		attack = 1197,
 		hp = 11175,
 		sunder = 299,
 		defence = 161,
@@ -79465,7 +79465,7 @@ local datas = {
 	},
 	[710106020] = {
 		id = 710106020,
-		attack = 865,
+		attack = 1297,
 		hp = 12103,
 		sunder = 320,
 		defence = 172,
@@ -79479,7 +79479,7 @@ local datas = {
 	},
 	[710106021] = {
 		id = 710106021,
-		attack = 925,
+		attack = 1388,
 		hp = 12954,
 		sunder = 339,
 		defence = 182,
@@ -79493,7 +79493,7 @@ local datas = {
 	},
 	[710106022] = {
 		id = 710106022,
-		attack = 988,
+		attack = 1482,
 		hp = 13830,
 		sunder = 358,
 		defence = 193,
@@ -79507,7 +79507,7 @@ local datas = {
 	},
 	[710106023] = {
 		id = 710106023,
-		attack = 1052,
+		attack = 1578,
 		hp = 14732,
 		sunder = 377,
 		defence = 203,
@@ -79521,7 +79521,7 @@ local datas = {
 	},
 	[710106024] = {
 		id = 710106024,
-		attack = 1119,
+		attack = 1678,
 		hp = 15661,
 		sunder = 396,
 		defence = 213,
@@ -79535,7 +79535,7 @@ local datas = {
 	},
 	[710106025] = {
 		id = 710106025,
-		attack = 1187,
+		attack = 1780,
 		hp = 16616,
 		sunder = 416,
 		defence = 224,
@@ -79549,7 +79549,7 @@ local datas = {
 	},
 	[710106026] = {
 		id = 710106026,
-		attack = 1251,
+		attack = 1877,
 		hp = 17516,
 		sunder = 434,
 		defence = 234,
@@ -79563,7 +79563,7 @@ local datas = {
 	},
 	[710106027] = {
 		id = 710106027,
-		attack = 1317,
+		attack = 1975,
 		hp = 18437,
 		sunder = 452,
 		defence = 244,
@@ -79577,7 +79577,7 @@ local datas = {
 	},
 	[710106028] = {
 		id = 710106028,
-		attack = 1384,
+		attack = 2076,
 		hp = 19379,
 		sunder = 471,
 		defence = 253,
@@ -79591,7 +79591,7 @@ local datas = {
 	},
 	[710106029] = {
 		id = 710106029,
-		attack = 1453,
+		attack = 2179,
 		hp = 20340,
 		sunder = 489,
 		defence = 263,
@@ -79605,7 +79605,7 @@ local datas = {
 	},
 	[710106030] = {
 		id = 710106030,
-		attack = 1523,
+		attack = 2285,
 		hp = 25587,
 		sunder = 508,
 		defence = 273,
@@ -79619,7 +79619,7 @@ local datas = {
 	},
 	[710106031] = {
 		id = 710106031,
-		attack = 1617,
+		attack = 2426,
 		hp = 27168,
 		sunder = 539,
 		defence = 290,
@@ -79633,7 +79633,7 @@ local datas = {
 	},
 	[710106032] = {
 		id = 710106032,
-		attack = 1714,
+		attack = 2571,
 		hp = 28797,
 		sunder = 571,
 		defence = 308,
@@ -79647,7 +79647,7 @@ local datas = {
 	},
 	[710106033] = {
 		id = 710106033,
-		attack = 1814,
+		attack = 2721,
 		hp = 30474,
 		sunder = 605,
 		defence = 326,
@@ -79661,7 +79661,7 @@ local datas = {
 	},
 	[710106034] = {
 		id = 710106034,
-		attack = 1917,
+		attack = 2875,
 		hp = 32198,
 		sunder = 639,
 		defence = 344,
@@ -79675,7 +79675,7 @@ local datas = {
 	},
 	[710106035] = {
 		id = 710106035,
-		attack = 2022,
+		attack = 3033,
 		hp = 33969,
 		sunder = 674,
 		defence = 363,
@@ -79689,7 +79689,7 @@ local datas = {
 	},
 	[710106036] = {
 		id = 710106036,
-		attack = 2122,
+		attack = 3183,
 		hp = 35653,
 		sunder = 707,
 		defence = 381,
@@ -79703,7 +79703,7 @@ local datas = {
 	},
 	[710106037] = {
 		id = 710106037,
-		attack = 2225,
+		attack = 3337,
 		hp = 37377,
 		sunder = 742,
 		defence = 399,
@@ -79717,7 +79717,7 @@ local datas = {
 	},
 	[710106038] = {
 		id = 710106038,
-		attack = 2330,
+		attack = 3495,
 		hp = 39141,
 		sunder = 777,
 		defence = 418,
@@ -79731,7 +79731,7 @@ local datas = {
 	},
 	[710106039] = {
 		id = 710106039,
-		attack = 2437,
+		attack = 3656,
 		hp = 40946,
 		sunder = 812,
 		defence = 437,
@@ -79745,7 +79745,7 @@ local datas = {
 	},
 	[710106040] = {
 		id = 710106040,
-		attack = 2547,
+		attack = 3821,
 		hp = 42791,
 		sunder = 849,
 		defence = 457,
@@ -79759,7 +79759,7 @@ local datas = {
 	},
 	[710106041] = {
 		id = 710106041,
-		attack = 2661,
+		attack = 3992,
 		hp = 44709,
 		sunder = 887,
 		defence = 478,
@@ -79773,7 +79773,7 @@ local datas = {
 	},
 	[710106042] = {
 		id = 710106042,
-		attack = 2778,
+		attack = 4167,
 		hp = 46669,
 		sunder = 926,
 		defence = 499,
@@ -79787,7 +79787,7 @@ local datas = {
 	},
 	[710106043] = {
 		id = 710106043,
-		attack = 2897,
+		attack = 4346,
 		hp = 48670,
 		sunder = 966,
 		defence = 520,
@@ -79801,7 +79801,7 @@ local datas = {
 	},
 	[710106044] = {
 		id = 710106044,
-		attack = 3019,
+		attack = 4528,
 		hp = 50714,
 		sunder = 1006,
 		defence = 542,
@@ -79815,7 +79815,7 @@ local datas = {
 	},
 	[710106045] = {
 		id = 710106045,
-		attack = 3143,
+		attack = 4714,
 		hp = 52799,
 		sunder = 1048,
 		defence = 564,
@@ -79829,7 +79829,7 @@ local datas = {
 	},
 	[710106046] = {
 		id = 710106046,
-		attack = 3255,
+		attack = 4882,
 		hp = 54678,
 		sunder = 1085,
 		defence = 584,
@@ -79843,7 +79843,7 @@ local datas = {
 	},
 	[710106047] = {
 		id = 710106047,
-		attack = 3368,
+		attack = 5053,
 		hp = 56588,
 		sunder = 1123,
 		defence = 605,
@@ -79857,7 +79857,7 @@ local datas = {
 	},
 	[710106048] = {
 		id = 710106048,
-		attack = 3484,
+		attack = 5226,
 		hp = 58530,
 		sunder = 1161,
 		defence = 625,
@@ -79871,7 +79871,7 @@ local datas = {
 	},
 	[710106049] = {
 		id = 710106049,
-		attack = 3601,
+		attack = 5402,
 		hp = 60504,
 		sunder = 1200,
 		defence = 646,
@@ -79885,7 +79885,7 @@ local datas = {
 	},
 	[710106050] = {
 		id = 710106050,
-		attack = 3721,
+		attack = 5581,
 		hp = 72927,
 		sunder = 1240,
 		defence = 668,
@@ -79899,7 +79899,7 @@ local datas = {
 	},
 	[710106051] = {
 		id = 710106051,
-		attack = 3817,
+		attack = 5726,
 		hp = 74816,
 		sunder = 1272,
 		defence = 685,
@@ -79913,7 +79913,7 @@ local datas = {
 	},
 	[710106052] = {
 		id = 710106052,
-		attack = 3914,
+		attack = 5872,
 		hp = 76724,
 		sunder = 1305,
 		defence = 703,
@@ -79927,7 +79927,7 @@ local datas = {
 	},
 	[710106053] = {
 		id = 710106053,
-		attack = 4013,
+		attack = 6019,
 		hp = 78650,
 		sunder = 1338,
 		defence = 720,
@@ -79941,7 +79941,7 @@ local datas = {
 	},
 	[710106054] = {
 		id = 710106054,
-		attack = 4112,
+		attack = 6168,
 		hp = 80594,
 		sunder = 1371,
 		defence = 738,
@@ -79955,7 +79955,7 @@ local datas = {
 	},
 	[710106055] = {
 		id = 710106055,
-		attack = 4212,
+		attack = 6318,
 		hp = 82557,
 		sunder = 1404,
 		defence = 756,
@@ -79969,7 +79969,7 @@ local datas = {
 	},
 	[710106056] = {
 		id = 710106056,
-		attack = 4372,
+		attack = 6557,
 		hp = 85683,
 		sunder = 1457,
 		defence = 785,
@@ -79983,7 +79983,7 @@ local datas = {
 	},
 	[710106057] = {
 		id = 710106057,
-		attack = 4534,
+		attack = 6801,
 		hp = 88867,
 		sunder = 1511,
 		defence = 814,
@@ -79997,7 +79997,7 @@ local datas = {
 	},
 	[710106058] = {
 		id = 710106058,
-		attack = 4699,
+		attack = 7049,
 		hp = 92109,
 		sunder = 1566,
 		defence = 843,
@@ -80011,7 +80011,7 @@ local datas = {
 	},
 	[710106059] = {
 		id = 710106059,
-		attack = 4868,
+		attack = 7302,
 		hp = 95409,
 		sunder = 1623,
 		defence = 874,
@@ -80025,7 +80025,7 @@ local datas = {
 	},
 	[710106060] = {
 		id = 710106060,
-		attack = 5039,
+		attack = 7559,
 		hp = 98767,
 		sunder = 1680,
 		defence = 904,
@@ -80039,7 +80039,7 @@ local datas = {
 	},
 	[710106061] = {
 		id = 710106061,
-		attack = 5159,
+		attack = 7739,
 		hp = 101123,
 		sunder = 1720,
 		defence = 926,
@@ -80053,7 +80053,7 @@ local datas = {
 	},
 	[710106062] = {
 		id = 710106062,
-		attack = 5281,
+		attack = 7921,
 		hp = 103504,
 		sunder = 1760,
 		defence = 948,
@@ -80067,7 +80067,7 @@ local datas = {
 	},
 	[710106063] = {
 		id = 710106063,
-		attack = 5404,
+		attack = 8105,
 		hp = 105909,
 		sunder = 1801,
 		defence = 970,
@@ -80081,7 +80081,7 @@ local datas = {
 	},
 	[710106064] = {
 		id = 710106064,
-		attack = 5527,
+		attack = 8291,
 		hp = 108339,
 		sunder = 1842,
 		defence = 992,
@@ -80095,7 +80095,7 @@ local datas = {
 	},
 	[710106065] = {
 		id = 710106065,
-		attack = 5653,
+		attack = 8479,
 		hp = 110792,
 		sunder = 1884,
 		defence = 1015,
@@ -80109,7 +80109,7 @@ local datas = {
 	},
 	[710106066] = {
 		id = 710106066,
-		attack = 5876,
+		attack = 8814,
 		hp = 115165,
 		sunder = 1959,
 		defence = 1055,
@@ -80123,7 +80123,7 @@ local datas = {
 	},
 	[710106067] = {
 		id = 710106067,
-		attack = 6103,
+		attack = 9154,
 		hp = 119618,
 		sunder = 2034,
 		defence = 1095,
@@ -80137,7 +80137,7 @@ local datas = {
 	},
 	[710106068] = {
 		id = 710106068,
-		attack = 6334,
+		attack = 9501,
 		hp = 124151,
 		sunder = 2111,
 		defence = 1137,
@@ -80151,7 +80151,7 @@ local datas = {
 	},
 	[710106069] = {
 		id = 710106069,
-		attack = 6570,
+		attack = 9854,
 		hp = 128765,
 		sunder = 2190,
 		defence = 1179,
@@ -80165,7 +80165,7 @@ local datas = {
 	},
 	[710106070] = {
 		id = 710106070,
-		attack = 6809,
+		attack = 10214,
 		hp = 133458,
 		sunder = 2270,
 		defence = 1222,
@@ -80179,7 +80179,7 @@ local datas = {
 	},
 	[710106071] = {
 		id = 710106071,
-		attack = 6987,
+		attack = 10481,
 		hp = 136954,
 		sunder = 2329,
 		defence = 1254,
@@ -80193,7 +80193,7 @@ local datas = {
 	},
 	[710106072] = {
 		id = 710106072,
-		attack = 7168,
+		attack = 10752,
 		hp = 140496,
 		sunder = 2389,
 		defence = 1287,
@@ -80207,7 +80207,7 @@ local datas = {
 	},
 	[710106073] = {
 		id = 710106073,
-		attack = 7351,
+		attack = 11027,
 		hp = 144082,
 		sunder = 2450,
 		defence = 1319,
@@ -80221,7 +80221,7 @@ local datas = {
 	},
 	[710106074] = {
 		id = 710106074,
-		attack = 7536,
+		attack = 11305,
 		hp = 147714,
 		sunder = 2512,
 		defence = 1353,
@@ -80235,7 +80235,7 @@ local datas = {
 	},
 	[710106075] = {
 		id = 710106075,
-		attack = 7724,
+		attack = 11586,
 		hp = 151390,
 		sunder = 2575,
 		defence = 1386,
@@ -80249,7 +80249,7 @@ local datas = {
 	},
 	[710106076] = {
 		id = 710106076,
-		attack = 7988,
+		attack = 11982,
 		hp = 156562,
 		sunder = 2663,
 		defence = 1434,
@@ -80263,7 +80263,7 @@ local datas = {
 	},
 	[710106077] = {
 		id = 710106077,
-		attack = 8256,
+		attack = 12384,
 		hp = 161817,
 		sunder = 2752,
 		defence = 1482,
@@ -80277,7 +80277,7 @@ local datas = {
 	},
 	[710106078] = {
 		id = 710106078,
-		attack = 8528,
+		attack = 12792,
 		hp = 167153,
 		sunder = 2843,
 		defence = 1531,
@@ -80291,7 +80291,7 @@ local datas = {
 	},
 	[710106079] = {
 		id = 710106079,
-		attack = 8805,
+		attack = 13207,
 		hp = 172572,
 		sunder = 2935,
 		defence = 1580,
@@ -80305,7 +80305,7 @@ local datas = {
 	},
 	[710106080] = {
 		id = 710106080,
-		attack = 9085,
+		attack = 13628,
 		hp = 178073,
 		sunder = 3028,
 		defence = 1631,
@@ -80319,7 +80319,7 @@ local datas = {
 	},
 	[710106081] = {
 		id = 710106081,
-		attack = 9287,
+		attack = 13930,
 		hp = 182016,
 		sunder = 3096,
 		defence = 1667,
@@ -80333,7 +80333,7 @@ local datas = {
 	},
 	[710106082] = {
 		id = 710106082,
-		attack = 9490,
+		attack = 14235,
 		hp = 186002,
 		sunder = 3163,
 		defence = 1703,
@@ -80347,7 +80347,7 @@ local datas = {
 	},
 	[710106083] = {
 		id = 710106083,
-		attack = 9695,
+		attack = 14543,
 		hp = 190030,
 		sunder = 3232,
 		defence = 1740,
@@ -80361,7 +80361,7 @@ local datas = {
 	},
 	[710106084] = {
 		id = 710106084,
-		attack = 9903,
+		attack = 14855,
 		hp = 194101,
 		sunder = 3301,
 		defence = 1777,
@@ -80375,7 +80375,7 @@ local datas = {
 	},
 	[710106085] = {
 		id = 710106085,
-		attack = 10113,
+		attack = 15169,
 		hp = 198215,
 		sunder = 3371,
 		defence = 1815,
@@ -80389,7 +80389,7 @@ local datas = {
 	},
 	[710106086] = {
 		id = 710106086,
-		attack = 10452,
+		attack = 15678,
 		hp = 204854,
 		sunder = 3484,
 		defence = 1876,
@@ -80403,7 +80403,7 @@ local datas = {
 	},
 	[710106087] = {
 		id = 710106087,
-		attack = 10796,
+		attack = 16193,
 		hp = 211592,
 		sunder = 3599,
 		defence = 1938,
@@ -80417,7 +80417,7 @@ local datas = {
 	},
 	[710106088] = {
 		id = 710106088,
-		attack = 11144,
+		attack = 16717,
 		hp = 218429,
 		sunder = 3715,
 		defence = 2000,
@@ -80431,7 +80431,7 @@ local datas = {
 	},
 	[710106089] = {
 		id = 710106089,
-		attack = 11498,
+		attack = 17247,
 		hp = 225366,
 		sunder = 3833,
 		defence = 2064,
@@ -80445,7 +80445,7 @@ local datas = {
 	},
 	[710106090] = {
 		id = 710106090,
-		attack = 11857,
+		attack = 17786,
 		hp = 232401,
 		sunder = 3952,
 		defence = 2128,
@@ -80459,7 +80459,7 @@ local datas = {
 	},
 	[710106091] = {
 		id = 710106091,
-		attack = 12128,
+		attack = 18192,
 		hp = 237712,
 		sunder = 4043,
 		defence = 2177,
@@ -80473,7 +80473,7 @@ local datas = {
 	},
 	[710106092] = {
 		id = 710106092,
-		attack = 12402,
+		attack = 18603,
 		hp = 243083,
 		sunder = 4134,
 		defence = 2226,
@@ -80487,7 +80487,7 @@ local datas = {
 	},
 	[710106093] = {
 		id = 710106093,
-		attack = 12679,
+		attack = 19019,
 		hp = 248514,
 		sunder = 4226,
 		defence = 2276,
@@ -80501,7 +80501,7 @@ local datas = {
 	},
 	[710106094] = {
 		id = 710106094,
-		attack = 12959,
+		attack = 19439,
 		hp = 254004,
 		sunder = 4320,
 		defence = 2326,
@@ -80515,7 +80515,7 @@ local datas = {
 	},
 	[710106095] = {
 		id = 710106095,
-		attack = 13243,
+		attack = 19864,
 		hp = 259555,
 		sunder = 4414,
 		defence = 2377,
@@ -80529,7 +80529,7 @@ local datas = {
 	},
 	[710106096] = {
 		id = 710106096,
-		attack = 14074,
+		attack = 21111,
 		hp = 275854,
 		sunder = 4691,
 		defence = 2526,
@@ -80543,7 +80543,7 @@ local datas = {
 	},
 	[710106097] = {
 		id = 710106097,
-		attack = 14920,
+		attack = 22380,
 		hp = 292430,
 		sunder = 4973,
 		defence = 2678,
@@ -80557,7 +80557,7 @@ local datas = {
 	},
 	[710106098] = {
 		id = 710106098,
-		attack = 15780,
+		attack = 23670,
 		hp = 309285,
 		sunder = 5260,
 		defence = 2832,
@@ -80571,7 +80571,7 @@ local datas = {
 	},
 	[710106099] = {
 		id = 710106099,
-		attack = 16654,
+		attack = 24981,
 		hp = 326417,
 		sunder = 5551,
 		defence = 2989,
@@ -80585,7 +80585,7 @@ local datas = {
 	},
 	[710106100] = {
 		id = 710106100,
-		attack = 17542,
+		attack = 26313,
 		hp = 343828,
 		sunder = 5847,
 		defence = 3149,
@@ -82013,7 +82013,7 @@ local datas = {
 	},
 	[710126000] = {
 		id = 710126000,
-		attack = 358,
+		attack = 537,
 		hp = 17182,
 		sunder = 102,
 		defence = 55,
@@ -82027,7 +82027,7 @@ local datas = {
 	},
 	[710126001] = {
 		id = 710126001,
-		attack = 451,
+		attack = 676,
 		hp = 21625,
 		sunder = 128,
 		defence = 69,
@@ -82041,7 +82041,7 @@ local datas = {
 	},
 	[710126002] = {
 		id = 710126002,
-		attack = 485,
+		attack = 728,
 		hp = 23302,
 		sunder = 138,
 		defence = 74,
@@ -82055,7 +82055,7 @@ local datas = {
 	},
 	[710126003] = {
 		id = 710126003,
-		attack = 463,
+		attack = 694,
 		hp = 22214,
 		sunder = 130,
 		defence = 70,
@@ -82069,7 +82069,7 @@ local datas = {
 	},
 	[710126004] = {
 		id = 710126004,
-		attack = 382,
+		attack = 574,
 		hp = 18360,
 		sunder = 106,
 		defence = 57,
@@ -82083,7 +82083,7 @@ local datas = {
 	},
 	[710126005] = {
 		id = 710126005,
-		attack = 245,
+		attack = 367,
 		hp = 11740,
 		sunder = 65,
 		defence = 35,
@@ -82097,7 +82097,7 @@ local datas = {
 	},
 	[710126006] = {
 		id = 710126006,
-		attack = 303,
+		attack = 454,
 		hp = 14528,
 		sunder = 79,
 		defence = 43,
@@ -82111,7 +82111,7 @@ local datas = {
 	},
 	[710126007] = {
 		id = 710126007,
-		attack = 367,
+		attack = 550,
 		hp = 17593,
 		sunder = 95,
 		defence = 51,
@@ -82125,7 +82125,7 @@ local datas = {
 	},
 	[710126008] = {
 		id = 710126008,
-		attack = 436,
+		attack = 654,
 		hp = 20936,
 		sunder = 111,
 		defence = 60,
@@ -82139,7 +82139,7 @@ local datas = {
 	},
 	[710126009] = {
 		id = 710126009,
-		attack = 512,
+		attack = 767,
 		hp = 24556,
 		sunder = 129,
 		defence = 70,
@@ -82153,7 +82153,7 @@ local datas = {
 	},
 	[710126010] = {
 		id = 710126010,
-		attack = 593,
+		attack = 889,
 		hp = 28454,
 		sunder = 148,
 		defence = 80,
@@ -82167,7 +82167,7 @@ local datas = {
 	},
 	[710126011] = {
 		id = 710126011,
-		attack = 656,
+		attack = 984,
 		hp = 31497,
 		sunder = 162,
 		defence = 87,
@@ -82181,7 +82181,7 @@ local datas = {
 	},
 	[710126012] = {
 		id = 710126012,
-		attack = 722,
+		attack = 1083,
 		hp = 34643,
 		sunder = 176,
 		defence = 95,
@@ -82195,7 +82195,7 @@ local datas = {
 	},
 	[710126013] = {
 		id = 710126013,
-		attack = 789,
+		attack = 1184,
 		hp = 37892,
 		sunder = 190,
 		defence = 102,
@@ -82209,7 +82209,7 @@ local datas = {
 	},
 	[710126014] = {
 		id = 710126014,
-		attack = 859,
+		attack = 1289,
 		hp = 41244,
 		sunder = 205,
 		defence = 110,
@@ -82223,7 +82223,7 @@ local datas = {
 	},
 	[710126015] = {
 		id = 710126015,
-		attack = 931,
+		attack = 1397,
 		hp = 44700,
 		sunder = 219,
 		defence = 118,
@@ -82237,7 +82237,7 @@ local datas = {
 	},
 	[710126016] = {
 		id = 710126016,
-		attack = 1025,
+		attack = 1537,
 		hp = 49181,
 		sunder = 238,
 		defence = 128,
@@ -82251,7 +82251,7 @@ local datas = {
 	},
 	[710126017] = {
 		id = 710126017,
-		attack = 1122,
+		attack = 1683,
 		hp = 53868,
 		sunder = 258,
 		defence = 139,
@@ -82265,7 +82265,7 @@ local datas = {
 	},
 	[710126018] = {
 		id = 710126018,
-		attack = 1224,
+		attack = 1836,
 		hp = 58760,
 		sunder = 278,
 		defence = 150,
@@ -82279,7 +82279,7 @@ local datas = {
 	},
 	[710126019] = {
 		id = 710126019,
-		attack = 1330,
+		attack = 1996,
 		hp = 63858,
 		sunder = 299,
 		defence = 161,
@@ -82293,7 +82293,7 @@ local datas = {
 	},
 	[710126020] = {
 		id = 710126020,
-		attack = 1441,
+		attack = 2161,
 		hp = 69162,
 		sunder = 320,
 		defence = 172,
@@ -82307,7 +82307,7 @@ local datas = {
 	},
 	[710126021] = {
 		id = 710126021,
-		attack = 1542,
+		attack = 2313,
 		hp = 74021,
 		sunder = 339,
 		defence = 182,
@@ -82321,7 +82321,7 @@ local datas = {
 	},
 	[710126022] = {
 		id = 710126022,
-		attack = 1646,
+		attack = 2470,
 		hp = 79029,
 		sunder = 358,
 		defence = 193,
@@ -82335,7 +82335,7 @@ local datas = {
 	},
 	[710126023] = {
 		id = 710126023,
-		attack = 1754,
+		attack = 2631,
 		hp = 84186,
 		sunder = 377,
 		defence = 203,
@@ -82349,7 +82349,7 @@ local datas = {
 	},
 	[710126024] = {
 		id = 710126024,
-		attack = 1864,
+		attack = 2797,
 		hp = 89492,
 		sunder = 396,
 		defence = 213,
@@ -82363,7 +82363,7 @@ local datas = {
 	},
 	[710126025] = {
 		id = 710126025,
-		attack = 1978,
+		attack = 2967,
 		hp = 94947,
 		sunder = 416,
 		defence = 224,
@@ -82377,7 +82377,7 @@ local datas = {
 	},
 	[710126026] = {
 		id = 710126026,
-		attack = 2085,
+		attack = 3128,
 		hp = 100093,
 		sunder = 434,
 		defence = 234,
@@ -82391,7 +82391,7 @@ local datas = {
 	},
 	[710126027] = {
 		id = 710126027,
-		attack = 2195,
+		attack = 3292,
 		hp = 105356,
 		sunder = 452,
 		defence = 244,
@@ -82405,7 +82405,7 @@ local datas = {
 	},
 	[710126028] = {
 		id = 710126028,
-		attack = 2307,
+		attack = 3460,
 		hp = 110735,
 		sunder = 471,
 		defence = 253,
@@ -82419,7 +82419,7 @@ local datas = {
 	},
 	[710126029] = {
 		id = 710126029,
-		attack = 2421,
+		attack = 3632,
 		hp = 116230,
 		sunder = 489,
 		defence = 263,
@@ -82433,7 +82433,7 @@ local datas = {
 	},
 	[710126030] = {
 		id = 710126030,
-		attack = 2538,
+		attack = 3808,
 		hp = 146211,
 		sunder = 508,
 		defence = 273,
@@ -82447,7 +82447,7 @@ local datas = {
 	},
 	[710126031] = {
 		id = 710126031,
-		attack = 2695,
+		attack = 4043,
 		hp = 155248,
 		sunder = 539,
 		defence = 290,
@@ -82461,7 +82461,7 @@ local datas = {
 	},
 	[710126032] = {
 		id = 710126032,
-		attack = 2857,
+		attack = 4285,
 		hp = 164557,
 		sunder = 571,
 		defence = 308,
@@ -82475,7 +82475,7 @@ local datas = {
 	},
 	[710126033] = {
 		id = 710126033,
-		attack = 3023,
+		attack = 4535,
 		hp = 174137,
 		sunder = 605,
 		defence = 326,
@@ -82489,7 +82489,7 @@ local datas = {
 	},
 	[710126034] = {
 		id = 710126034,
-		attack = 3194,
+		attack = 4791,
 		hp = 183987,
 		sunder = 639,
 		defence = 344,
@@ -82503,7 +82503,7 @@ local datas = {
 	},
 	[710126035] = {
 		id = 710126035,
-		attack = 3370,
+		attack = 5055,
 		hp = 194108,
 		sunder = 674,
 		defence = 363,
@@ -82517,7 +82517,7 @@ local datas = {
 	},
 	[710126036] = {
 		id = 710126036,
-		attack = 3537,
+		attack = 5305,
 		hp = 203730,
 		sunder = 707,
 		defence = 381,
@@ -82531,7 +82531,7 @@ local datas = {
 	},
 	[710126037] = {
 		id = 710126037,
-		attack = 3708,
+		attack = 5562,
 		hp = 213582,
 		sunder = 742,
 		defence = 399,
@@ -82545,7 +82545,7 @@ local datas = {
 	},
 	[710126038] = {
 		id = 710126038,
-		attack = 3883,
+		attack = 5825,
 		hp = 223664,
 		sunder = 777,
 		defence = 418,
@@ -82559,7 +82559,7 @@ local datas = {
 	},
 	[710126039] = {
 		id = 710126039,
-		attack = 4062,
+		attack = 6093,
 		hp = 233977,
 		sunder = 812,
 		defence = 437,
@@ -82573,7 +82573,7 @@ local datas = {
 	},
 	[710126040] = {
 		id = 710126040,
-		attack = 4245,
+		attack = 6368,
 		hp = 244520,
 		sunder = 849,
 		defence = 457,
@@ -82587,7 +82587,7 @@ local datas = {
 	},
 	[710126041] = {
 		id = 710126041,
-		attack = 4435,
+		attack = 6653,
 		hp = 255480,
 		sunder = 887,
 		defence = 478,
@@ -82601,7 +82601,7 @@ local datas = {
 	},
 	[710126042] = {
 		id = 710126042,
-		attack = 4630,
+		attack = 6945,
 		hp = 266679,
 		sunder = 926,
 		defence = 499,
@@ -82615,7 +82615,7 @@ local datas = {
 	},
 	[710126043] = {
 		id = 710126043,
-		attack = 4828,
+		attack = 7243,
 		hp = 278117,
 		sunder = 966,
 		defence = 520,
@@ -82629,7 +82629,7 @@ local datas = {
 	},
 	[710126044] = {
 		id = 710126044,
-		attack = 5031,
+		attack = 7547,
 		hp = 289794,
 		sunder = 1006,
 		defence = 542,
@@ -82643,7 +82643,7 @@ local datas = {
 	},
 	[710126045] = {
 		id = 710126045,
-		attack = 5238,
+		attack = 7857,
 		hp = 301710,
 		sunder = 1048,
 		defence = 564,
@@ -82657,7 +82657,7 @@ local datas = {
 	},
 	[710126046] = {
 		id = 710126046,
-		attack = 5424,
+		attack = 8137,
 		hp = 312446,
 		sunder = 1085,
 		defence = 584,
@@ -82671,7 +82671,7 @@ local datas = {
 	},
 	[710126047] = {
 		id = 710126047,
-		attack = 5614,
+		attack = 8421,
 		hp = 323363,
 		sunder = 1123,
 		defence = 605,
@@ -82685,7 +82685,7 @@ local datas = {
 	},
 	[710126048] = {
 		id = 710126048,
-		attack = 5807,
+		attack = 8710,
 		hp = 334459,
 		sunder = 1161,
 		defence = 625,
@@ -82699,7 +82699,7 @@ local datas = {
 	},
 	[710126049] = {
 		id = 710126049,
-		attack = 6002,
+		attack = 9004,
 		hp = 345735,
 		sunder = 1200,
 		defence = 646,
@@ -82713,7 +82713,7 @@ local datas = {
 	},
 	[710126050] = {
 		id = 710126050,
-		attack = 6201,
+		attack = 9302,
 		hp = 416723,
 		sunder = 1240,
 		defence = 668,
@@ -82727,7 +82727,7 @@ local datas = {
 	},
 	[710126051] = {
 		id = 710126051,
-		attack = 6362,
+		attack = 9543,
 		hp = 427520,
 		sunder = 1272,
 		defence = 685,
@@ -82741,7 +82741,7 @@ local datas = {
 	},
 	[710126052] = {
 		id = 710126052,
-		attack = 6524,
+		attack = 9786,
 		hp = 438421,
 		sunder = 1305,
 		defence = 703,
@@ -82755,7 +82755,7 @@ local datas = {
 	},
 	[710126053] = {
 		id = 710126053,
-		attack = 6688,
+		attack = 10032,
 		hp = 449428,
 		sunder = 1338,
 		defence = 720,
@@ -82769,7 +82769,7 @@ local datas = {
 	},
 	[710126054] = {
 		id = 710126054,
-		attack = 6853,
+		attack = 10280,
 		hp = 460539,
 		sunder = 1371,
 		defence = 738,
@@ -82783,7 +82783,7 @@ local datas = {
 	},
 	[710126055] = {
 		id = 710126055,
-		attack = 7020,
+		attack = 10530,
 		hp = 471756,
 		sunder = 1404,
 		defence = 756,
@@ -82797,7 +82797,7 @@ local datas = {
 	},
 	[710126056] = {
 		id = 710126056,
-		attack = 7286,
+		attack = 10929,
 		hp = 489619,
 		sunder = 1457,
 		defence = 785,
@@ -82811,7 +82811,7 @@ local datas = {
 	},
 	[710126057] = {
 		id = 710126057,
-		attack = 7557,
+		attack = 11335,
 		hp = 507814,
 		sunder = 1511,
 		defence = 814,
@@ -82825,7 +82825,7 @@ local datas = {
 	},
 	[710126058] = {
 		id = 710126058,
-		attack = 7832,
+		attack = 11749,
 		hp = 526339,
 		sunder = 1566,
 		defence = 843,
@@ -82839,7 +82839,7 @@ local datas = {
 	},
 	[710126059] = {
 		id = 710126059,
-		attack = 8113,
+		attack = 12170,
 		hp = 545194,
 		sunder = 1623,
 		defence = 874,
@@ -82853,7 +82853,7 @@ local datas = {
 	},
 	[710126060] = {
 		id = 710126060,
-		attack = 8399,
+		attack = 12598,
 		hp = 564380,
 		sunder = 1680,
 		defence = 904,
@@ -82867,7 +82867,7 @@ local datas = {
 	},
 	[710126061] = {
 		id = 710126061,
-		attack = 8599,
+		attack = 12898,
 		hp = 577847,
 		sunder = 1720,
 		defence = 926,
@@ -82881,7 +82881,7 @@ local datas = {
 	},
 	[710126062] = {
 		id = 710126062,
-		attack = 8801,
+		attack = 13202,
 		hp = 591452,
 		sunder = 1760,
 		defence = 948,
@@ -82895,7 +82895,7 @@ local datas = {
 	},
 	[710126063] = {
 		id = 710126063,
-		attack = 9006,
+		attack = 13509,
 		hp = 605195,
 		sunder = 1801,
 		defence = 970,
@@ -82909,7 +82909,7 @@ local datas = {
 	},
 	[710126064] = {
 		id = 710126064,
-		attack = 9212,
+		attack = 13819,
 		hp = 619077,
 		sunder = 1842,
 		defence = 992,
@@ -82923,7 +82923,7 @@ local datas = {
 	},
 	[710126065] = {
 		id = 710126065,
-		attack = 9421,
+		attack = 14132,
 		hp = 633098,
 		sunder = 1884,
 		defence = 1015,
@@ -82937,7 +82937,7 @@ local datas = {
 	},
 	[710126066] = {
 		id = 710126066,
-		attack = 9793,
+		attack = 14689,
 		hp = 658087,
 		sunder = 1959,
 		defence = 1055,
@@ -82951,7 +82951,7 @@ local datas = {
 	},
 	[710126067] = {
 		id = 710126067,
-		attack = 10172,
+		attack = 15257,
 		hp = 683534,
 		sunder = 2034,
 		defence = 1095,
@@ -82965,7 +82965,7 @@ local datas = {
 	},
 	[710126068] = {
 		id = 710126068,
-		attack = 10557,
+		attack = 15836,
 		hp = 709437,
 		sunder = 2111,
 		defence = 1137,
@@ -82979,7 +82979,7 @@ local datas = {
 	},
 	[710126069] = {
 		id = 710126069,
-		attack = 10949,
+		attack = 16424,
 		hp = 735798,
 		sunder = 2190,
 		defence = 1179,
@@ -82993,7 +82993,7 @@ local datas = {
 	},
 	[710126070] = {
 		id = 710126070,
-		attack = 11348,
+		attack = 17023,
 		hp = 762615,
 		sunder = 2270,
 		defence = 1222,
@@ -83007,7 +83007,7 @@ local datas = {
 	},
 	[710126071] = {
 		id = 710126071,
-		attack = 11646,
+		attack = 17469,
 		hp = 782595,
 		sunder = 2329,
 		defence = 1254,
@@ -83021,7 +83021,7 @@ local datas = {
 	},
 	[710126072] = {
 		id = 710126072,
-		attack = 11947,
+		attack = 17920,
 		hp = 802832,
 		sunder = 2389,
 		defence = 1287,
@@ -83035,7 +83035,7 @@ local datas = {
 	},
 	[710126073] = {
 		id = 710126073,
-		attack = 12252,
+		attack = 18378,
 		hp = 823326,
 		sunder = 2450,
 		defence = 1319,
@@ -83049,7 +83049,7 @@ local datas = {
 	},
 	[710126074] = {
 		id = 710126074,
-		attack = 12561,
+		attack = 18841,
 		hp = 844077,
 		sunder = 2512,
 		defence = 1353,
@@ -83063,7 +83063,7 @@ local datas = {
 	},
 	[710126075] = {
 		id = 710126075,
-		attack = 12873,
+		attack = 19310,
 		hp = 865086,
 		sunder = 2575,
 		defence = 1386,
@@ -83077,7 +83077,7 @@ local datas = {
 	},
 	[710126076] = {
 		id = 710126076,
-		attack = 13313,
+		attack = 19970,
 		hp = 894641,
 		sunder = 2663,
 		defence = 1434,
@@ -83091,7 +83091,7 @@ local datas = {
 	},
 	[710126077] = {
 		id = 710126077,
-		attack = 13760,
+		attack = 20640,
 		hp = 924666,
 		sunder = 2752,
 		defence = 1482,
@@ -83105,7 +83105,7 @@ local datas = {
 	},
 	[710126078] = {
 		id = 710126078,
-		attack = 14214,
+		attack = 21321,
 		hp = 955161,
 		sunder = 2843,
 		defence = 1531,
@@ -83119,7 +83119,7 @@ local datas = {
 	},
 	[710126079] = {
 		id = 710126079,
-		attack = 14674,
+		attack = 22012,
 		hp = 986126,
 		sunder = 2935,
 		defence = 1580,
@@ -83133,7 +83133,7 @@ local datas = {
 	},
 	[710126080] = {
 		id = 710126080,
-		attack = 15142,
+		attack = 22713,
 		hp = 1017560,
 		sunder = 3028,
 		defence = 1631,
@@ -83147,7 +83147,7 @@ local datas = {
 	},
 	[710126081] = {
 		id = 710126081,
-		attack = 15478,
+		attack = 23216,
 		hp = 1040091,
 		sunder = 3096,
 		defence = 1667,
@@ -83161,7 +83161,7 @@ local datas = {
 	},
 	[710126082] = {
 		id = 710126082,
-		attack = 15816,
+		attack = 23725,
 		hp = 1062867,
 		sunder = 3163,
 		defence = 1703,
@@ -83175,7 +83175,7 @@ local datas = {
 	},
 	[710126083] = {
 		id = 710126083,
-		attack = 16159,
+		attack = 24239,
 		hp = 1085886,
 		sunder = 3232,
 		defence = 1740,
@@ -83189,7 +83189,7 @@ local datas = {
 	},
 	[710126084] = {
 		id = 710126084,
-		attack = 16505,
+		attack = 24758,
 		hp = 1109149,
 		sunder = 3301,
 		defence = 1777,
@@ -83203,7 +83203,7 @@ local datas = {
 	},
 	[710126085] = {
 		id = 710126085,
-		attack = 16855,
+		attack = 25282,
 		hp = 1132656,
 		sunder = 3371,
 		defence = 1815,
@@ -83217,7 +83217,7 @@ local datas = {
 	},
 	[710126086] = {
 		id = 710126086,
-		attack = 17420,
+		attack = 26129,
 		hp = 1170593,
 		sunder = 3484,
 		defence = 1876,
@@ -83231,7 +83231,7 @@ local datas = {
 	},
 	[710126087] = {
 		id = 710126087,
-		attack = 17993,
+		attack = 26989,
 		hp = 1209097,
 		sunder = 3599,
 		defence = 1938,
@@ -83245,7 +83245,7 @@ local datas = {
 	},
 	[710126088] = {
 		id = 710126088,
-		attack = 18574,
+		attack = 27861,
 		hp = 1248167,
 		sunder = 3715,
 		defence = 2000,
@@ -83259,7 +83259,7 @@ local datas = {
 	},
 	[710126089] = {
 		id = 710126089,
-		attack = 19164,
+		attack = 28746,
 		hp = 1287803,
 		sunder = 3833,
 		defence = 2064,
@@ -83273,7 +83273,7 @@ local datas = {
 	},
 	[710126090] = {
 		id = 710126090,
-		attack = 19762,
+		attack = 29643,
 		hp = 1328006,
 		sunder = 3952,
 		defence = 2128,
@@ -83287,7 +83287,7 @@ local datas = {
 	},
 	[710126091] = {
 		id = 710126091,
-		attack = 20214,
+		attack = 30320,
 		hp = 1358355,
 		sunder = 4043,
 		defence = 2177,
@@ -83301,7 +83301,7 @@ local datas = {
 	},
 	[710126092] = {
 		id = 710126092,
-		attack = 20670,
+		attack = 31005,
 		hp = 1389046,
 		sunder = 4134,
 		defence = 2226,
@@ -83315,7 +83315,7 @@ local datas = {
 	},
 	[710126093] = {
 		id = 710126093,
-		attack = 21132,
+		attack = 31698,
 		hp = 1420079,
 		sunder = 4226,
 		defence = 2276,
@@ -83329,7 +83329,7 @@ local datas = {
 	},
 	[710126094] = {
 		id = 710126094,
-		attack = 21599,
+		attack = 32399,
 		hp = 1451454,
 		sunder = 4320,
 		defence = 2326,
@@ -83343,7 +83343,7 @@ local datas = {
 	},
 	[710126095] = {
 		id = 710126095,
-		attack = 22071,
+		attack = 33107,
 		hp = 1483172,
 		sunder = 4414,
 		defence = 2377,
@@ -83357,7 +83357,7 @@ local datas = {
 	},
 	[710126096] = {
 		id = 710126096,
-		attack = 23457,
+		attack = 35185,
 		hp = 1576306,
 		sunder = 4691,
 		defence = 2526,
@@ -83371,7 +83371,7 @@ local datas = {
 	},
 	[710126097] = {
 		id = 710126097,
-		attack = 24867,
+		attack = 37300,
 		hp = 1671030,
 		sunder = 4973,
 		defence = 2678,
@@ -83385,7 +83385,7 @@ local datas = {
 	},
 	[710126098] = {
 		id = 710126098,
-		attack = 26300,
+		attack = 39450,
 		hp = 1767342,
 		sunder = 5260,
 		defence = 2832,
@@ -83399,7 +83399,7 @@ local datas = {
 	},
 	[710126099] = {
 		id = 710126099,
-		attack = 27757,
+		attack = 41635,
 		hp = 1865243,
 		sunder = 5551,
 		defence = 2989,
@@ -83413,7 +83413,7 @@ local datas = {
 	},
 	[710126100] = {
 		id = 710126100,
-		attack = 29237,
+		attack = 43856,
 		hp = 1964732,
 		sunder = 5847,
 		defence = 3149,
@@ -83427,7 +83427,7 @@ local datas = {
 	},
 	[710136000] = {
 		id = 710136000,
-		attack = 143,
+		attack = 215,
 		hp = 1718,
 		sunder = 102,
 		defence = 55,
@@ -83441,7 +83441,7 @@ local datas = {
 	},
 	[710136001] = {
 		id = 710136001,
-		attack = 180,
+		attack = 270,
 		hp = 2163,
 		sunder = 128,
 		defence = 69,
@@ -83455,7 +83455,7 @@ local datas = {
 	},
 	[710136002] = {
 		id = 710136002,
-		attack = 194,
+		attack = 291,
 		hp = 2330,
 		sunder = 138,
 		defence = 74,
@@ -83469,7 +83469,7 @@ local datas = {
 	},
 	[710136003] = {
 		id = 710136003,
-		attack = 185,
+		attack = 278,
 		hp = 2221,
 		sunder = 130,
 		defence = 70,
@@ -83483,7 +83483,7 @@ local datas = {
 	},
 	[710136004] = {
 		id = 710136004,
-		attack = 153,
+		attack = 229,
 		hp = 1836,
 		sunder = 106,
 		defence = 57,
@@ -83497,7 +83497,7 @@ local datas = {
 	},
 	[710136005] = {
 		id = 710136005,
-		attack = 98,
+		attack = 147,
 		hp = 1174,
 		sunder = 65,
 		defence = 35,
@@ -83511,7 +83511,7 @@ local datas = {
 	},
 	[710136006] = {
 		id = 710136006,
-		attack = 121,
+		attack = 182,
 		hp = 1453,
 		sunder = 79,
 		defence = 43,
@@ -83525,7 +83525,7 @@ local datas = {
 	},
 	[710136007] = {
 		id = 710136007,
-		attack = 147,
+		attack = 220,
 		hp = 1759,
 		sunder = 95,
 		defence = 51,
@@ -83539,7 +83539,7 @@ local datas = {
 	},
 	[710136008] = {
 		id = 710136008,
-		attack = 174,
+		attack = 262,
 		hp = 2094,
 		sunder = 111,
 		defence = 60,
@@ -83553,7 +83553,7 @@ local datas = {
 	},
 	[710136009] = {
 		id = 710136009,
-		attack = 205,
+		attack = 307,
 		hp = 2456,
 		sunder = 129,
 		defence = 70,
@@ -83567,7 +83567,7 @@ local datas = {
 	},
 	[710136010] = {
 		id = 710136010,
-		attack = 237,
+		attack = 356,
 		hp = 2845,
 		sunder = 148,
 		defence = 80,
@@ -83581,7 +83581,7 @@ local datas = {
 	},
 	[710136011] = {
 		id = 710136011,
-		attack = 262,
+		attack = 394,
 		hp = 3150,
 		sunder = 162,
 		defence = 87,
@@ -83595,7 +83595,7 @@ local datas = {
 	},
 	[710136012] = {
 		id = 710136012,
-		attack = 289,
+		attack = 433,
 		hp = 3464,
 		sunder = 176,
 		defence = 95,
@@ -83609,7 +83609,7 @@ local datas = {
 	},
 	[710136013] = {
 		id = 710136013,
-		attack = 316,
+		attack = 474,
 		hp = 3789,
 		sunder = 190,
 		defence = 102,
@@ -83623,7 +83623,7 @@ local datas = {
 	},
 	[710136014] = {
 		id = 710136014,
-		attack = 344,
+		attack = 516,
 		hp = 4124,
 		sunder = 205,
 		defence = 110,
@@ -83637,7 +83637,7 @@ local datas = {
 	},
 	[710136015] = {
 		id = 710136015,
-		attack = 372,
+		attack = 559,
 		hp = 4470,
 		sunder = 219,
 		defence = 118,
@@ -83651,7 +83651,7 @@ local datas = {
 	},
 	[710136016] = {
 		id = 710136016,
-		attack = 410,
+		attack = 615,
 		hp = 4918,
 		sunder = 238,
 		defence = 128,
@@ -83665,7 +83665,7 @@ local datas = {
 	},
 	[710136017] = {
 		id = 710136017,
-		attack = 449,
+		attack = 673,
 		hp = 5387,
 		sunder = 258,
 		defence = 139,
@@ -83679,7 +83679,7 @@ local datas = {
 	},
 	[710136018] = {
 		id = 710136018,
-		attack = 490,
+		attack = 735,
 		hp = 5876,
 		sunder = 278,
 		defence = 150,
@@ -83693,7 +83693,7 @@ local datas = {
 	},
 	[710136019] = {
 		id = 710136019,
-		attack = 532,
+		attack = 798,
 		hp = 6386,
 		sunder = 299,
 		defence = 161,
@@ -83707,7 +83707,7 @@ local datas = {
 	},
 	[710136020] = {
 		id = 710136020,
-		attack = 576,
+		attack = 865,
 		hp = 6916,
 		sunder = 320,
 		defence = 172,
@@ -83721,7 +83721,7 @@ local datas = {
 	},
 	[710136021] = {
 		id = 710136021,
-		attack = 617,
+		attack = 925,
 		hp = 7402,
 		sunder = 339,
 		defence = 182,
@@ -83735,7 +83735,7 @@ local datas = {
 	},
 	[710136022] = {
 		id = 710136022,
-		attack = 659,
+		attack = 988,
 		hp = 7903,
 		sunder = 358,
 		defence = 193,
@@ -83749,7 +83749,7 @@ local datas = {
 	},
 	[710136023] = {
 		id = 710136023,
-		attack = 702,
+		attack = 1052,
 		hp = 8419,
 		sunder = 377,
 		defence = 203,
@@ -83763,7 +83763,7 @@ local datas = {
 	},
 	[710136024] = {
 		id = 710136024,
-		attack = 746,
+		attack = 1119,
 		hp = 8949,
 		sunder = 396,
 		defence = 213,
@@ -83777,7 +83777,7 @@ local datas = {
 	},
 	[710136025] = {
 		id = 710136025,
-		attack = 791,
+		attack = 1187,
 		hp = 9495,
 		sunder = 416,
 		defence = 224,
@@ -83791,7 +83791,7 @@ local datas = {
 	},
 	[710136026] = {
 		id = 710136026,
-		attack = 834,
+		attack = 1251,
 		hp = 10009,
 		sunder = 434,
 		defence = 234,
@@ -83805,7 +83805,7 @@ local datas = {
 	},
 	[710136027] = {
 		id = 710136027,
-		attack = 878,
+		attack = 1317,
 		hp = 10536,
 		sunder = 452,
 		defence = 244,
@@ -83819,7 +83819,7 @@ local datas = {
 	},
 	[710136028] = {
 		id = 710136028,
-		attack = 923,
+		attack = 1384,
 		hp = 11073,
 		sunder = 471,
 		defence = 253,
@@ -83833,7 +83833,7 @@ local datas = {
 	},
 	[710136029] = {
 		id = 710136029,
-		attack = 969,
+		attack = 1453,
 		hp = 11623,
 		sunder = 489,
 		defence = 263,
@@ -83847,7 +83847,7 @@ local datas = {
 	},
 	[710136030] = {
 		id = 710136030,
-		attack = 1015,
+		attack = 1523,
 		hp = 14621,
 		sunder = 508,
 		defence = 273,
@@ -83861,7 +83861,7 @@ local datas = {
 	},
 	[710136031] = {
 		id = 710136031,
-		attack = 1078,
+		attack = 1617,
 		hp = 15525,
 		sunder = 539,
 		defence = 290,
@@ -83875,7 +83875,7 @@ local datas = {
 	},
 	[710136032] = {
 		id = 710136032,
-		attack = 1143,
+		attack = 1714,
 		hp = 16456,
 		sunder = 571,
 		defence = 308,
@@ -83889,7 +83889,7 @@ local datas = {
 	},
 	[710136033] = {
 		id = 710136033,
-		attack = 1209,
+		attack = 1814,
 		hp = 17414,
 		sunder = 605,
 		defence = 326,
@@ -83903,7 +83903,7 @@ local datas = {
 	},
 	[710136034] = {
 		id = 710136034,
-		attack = 1278,
+		attack = 1917,
 		hp = 18399,
 		sunder = 639,
 		defence = 344,
@@ -83917,7 +83917,7 @@ local datas = {
 	},
 	[710136035] = {
 		id = 710136035,
-		attack = 1348,
+		attack = 2022,
 		hp = 19411,
 		sunder = 674,
 		defence = 363,
@@ -83931,7 +83931,7 @@ local datas = {
 	},
 	[710136036] = {
 		id = 710136036,
-		attack = 1415,
+		attack = 2122,
 		hp = 20373,
 		sunder = 707,
 		defence = 381,
@@ -83945,7 +83945,7 @@ local datas = {
 	},
 	[710136037] = {
 		id = 710136037,
-		attack = 1483,
+		attack = 2225,
 		hp = 21358,
 		sunder = 742,
 		defence = 399,
@@ -83959,7 +83959,7 @@ local datas = {
 	},
 	[710136038] = {
 		id = 710136038,
-		attack = 1553,
+		attack = 2330,
 		hp = 22366,
 		sunder = 777,
 		defence = 418,
@@ -83973,7 +83973,7 @@ local datas = {
 	},
 	[710136039] = {
 		id = 710136039,
-		attack = 1625,
+		attack = 2437,
 		hp = 23398,
 		sunder = 812,
 		defence = 437,
@@ -83987,7 +83987,7 @@ local datas = {
 	},
 	[710136040] = {
 		id = 710136040,
-		attack = 1698,
+		attack = 2547,
 		hp = 24452,
 		sunder = 849,
 		defence = 457,
@@ -84001,7 +84001,7 @@ local datas = {
 	},
 	[710136041] = {
 		id = 710136041,
-		attack = 1774,
+		attack = 2661,
 		hp = 25548,
 		sunder = 887,
 		defence = 478,
@@ -84015,7 +84015,7 @@ local datas = {
 	},
 	[710136042] = {
 		id = 710136042,
-		attack = 1852,
+		attack = 2778,
 		hp = 26668,
 		sunder = 926,
 		defence = 499,
@@ -84029,7 +84029,7 @@ local datas = {
 	},
 	[710136043] = {
 		id = 710136043,
-		attack = 1931,
+		attack = 2897,
 		hp = 27812,
 		sunder = 966,
 		defence = 520,
@@ -84043,7 +84043,7 @@ local datas = {
 	},
 	[710136044] = {
 		id = 710136044,
-		attack = 2012,
+		attack = 3019,
 		hp = 28979,
 		sunder = 1006,
 		defence = 542,
@@ -84057,7 +84057,7 @@ local datas = {
 	},
 	[710136045] = {
 		id = 710136045,
-		attack = 2095,
+		attack = 3143,
 		hp = 30171,
 		sunder = 1048,
 		defence = 564,
@@ -84071,7 +84071,7 @@ local datas = {
 	},
 	[710136046] = {
 		id = 710136046,
-		attack = 2170,
+		attack = 3255,
 		hp = 31245,
 		sunder = 1085,
 		defence = 584,
@@ -84085,7 +84085,7 @@ local datas = {
 	},
 	[710136047] = {
 		id = 710136047,
-		attack = 2246,
+		attack = 3368,
 		hp = 32336,
 		sunder = 1123,
 		defence = 605,
@@ -84099,7 +84099,7 @@ local datas = {
 	},
 	[710136048] = {
 		id = 710136048,
-		attack = 2323,
+		attack = 3484,
 		hp = 33446,
 		sunder = 1161,
 		defence = 625,
@@ -84113,7 +84113,7 @@ local datas = {
 	},
 	[710136049] = {
 		id = 710136049,
-		attack = 2401,
+		attack = 3601,
 		hp = 34574,
 		sunder = 1200,
 		defence = 646,
@@ -84127,7 +84127,7 @@ local datas = {
 	},
 	[710136050] = {
 		id = 710136050,
-		attack = 2480,
+		attack = 3721,
 		hp = 41672,
 		sunder = 1240,
 		defence = 668,
@@ -84141,7 +84141,7 @@ local datas = {
 	},
 	[710136051] = {
 		id = 710136051,
-		attack = 2545,
+		attack = 3817,
 		hp = 42752,
 		sunder = 1272,
 		defence = 685,
@@ -84155,7 +84155,7 @@ local datas = {
 	},
 	[710136052] = {
 		id = 710136052,
-		attack = 2610,
+		attack = 3914,
 		hp = 43842,
 		sunder = 1305,
 		defence = 703,
@@ -84169,7 +84169,7 @@ local datas = {
 	},
 	[710136053] = {
 		id = 710136053,
-		attack = 2675,
+		attack = 4013,
 		hp = 44943,
 		sunder = 1338,
 		defence = 720,
@@ -84183,7 +84183,7 @@ local datas = {
 	},
 	[710136054] = {
 		id = 710136054,
-		attack = 2741,
+		attack = 4112,
 		hp = 46054,
 		sunder = 1371,
 		defence = 738,
@@ -84197,7 +84197,7 @@ local datas = {
 	},
 	[710136055] = {
 		id = 710136055,
-		attack = 2808,
+		attack = 4212,
 		hp = 47176,
 		sunder = 1404,
 		defence = 756,
@@ -84211,7 +84211,7 @@ local datas = {
 	},
 	[710136056] = {
 		id = 710136056,
-		attack = 2914,
+		attack = 4372,
 		hp = 48962,
 		sunder = 1457,
 		defence = 785,
@@ -84225,7 +84225,7 @@ local datas = {
 	},
 	[710136057] = {
 		id = 710136057,
-		attack = 3023,
+		attack = 4534,
 		hp = 50781,
 		sunder = 1511,
 		defence = 814,
@@ -84239,7 +84239,7 @@ local datas = {
 	},
 	[710136058] = {
 		id = 710136058,
-		attack = 3133,
+		attack = 4699,
 		hp = 52634,
 		sunder = 1566,
 		defence = 843,
@@ -84253,7 +84253,7 @@ local datas = {
 	},
 	[710136059] = {
 		id = 710136059,
-		attack = 3245,
+		attack = 4868,
 		hp = 54519,
 		sunder = 1623,
 		defence = 874,
@@ -84267,7 +84267,7 @@ local datas = {
 	},
 	[710136060] = {
 		id = 710136060,
-		attack = 3359,
+		attack = 5039,
 		hp = 56438,
 		sunder = 1680,
 		defence = 904,
@@ -84281,7 +84281,7 @@ local datas = {
 	},
 	[710136061] = {
 		id = 710136061,
-		attack = 3440,
+		attack = 5159,
 		hp = 57785,
 		sunder = 1720,
 		defence = 926,
@@ -84295,7 +84295,7 @@ local datas = {
 	},
 	[710136062] = {
 		id = 710136062,
-		attack = 3521,
+		attack = 5281,
 		hp = 59145,
 		sunder = 1760,
 		defence = 948,
@@ -84309,7 +84309,7 @@ local datas = {
 	},
 	[710136063] = {
 		id = 710136063,
-		attack = 3602,
+		attack = 5404,
 		hp = 60520,
 		sunder = 1801,
 		defence = 970,
@@ -84323,7 +84323,7 @@ local datas = {
 	},
 	[710136064] = {
 		id = 710136064,
-		attack = 3685,
+		attack = 5527,
 		hp = 61908,
 		sunder = 1842,
 		defence = 992,
@@ -84337,7 +84337,7 @@ local datas = {
 	},
 	[710136065] = {
 		id = 710136065,
-		attack = 3768,
+		attack = 5653,
 		hp = 63310,
 		sunder = 1884,
 		defence = 1015,
@@ -84351,7 +84351,7 @@ local datas = {
 	},
 	[710136066] = {
 		id = 710136066,
-		attack = 3917,
+		attack = 5876,
 		hp = 65809,
 		sunder = 1959,
 		defence = 1055,
@@ -84365,7 +84365,7 @@ local datas = {
 	},
 	[710136067] = {
 		id = 710136067,
-		attack = 4069,
+		attack = 6103,
 		hp = 68353,
 		sunder = 2034,
 		defence = 1095,
@@ -84379,7 +84379,7 @@ local datas = {
 	},
 	[710136068] = {
 		id = 710136068,
-		attack = 4223,
+		attack = 6334,
 		hp = 70944,
 		sunder = 2111,
 		defence = 1137,
@@ -84393,7 +84393,7 @@ local datas = {
 	},
 	[710136069] = {
 		id = 710136069,
-		attack = 4380,
+		attack = 6570,
 		hp = 73580,
 		sunder = 2190,
 		defence = 1179,
@@ -84407,7 +84407,7 @@ local datas = {
 	},
 	[710136070] = {
 		id = 710136070,
-		attack = 4539,
+		attack = 6809,
 		hp = 76262,
 		sunder = 2270,
 		defence = 1222,
@@ -84421,7 +84421,7 @@ local datas = {
 	},
 	[710136071] = {
 		id = 710136071,
-		attack = 4658,
+		attack = 6987,
 		hp = 78259,
 		sunder = 2329,
 		defence = 1254,
@@ -84435,7 +84435,7 @@ local datas = {
 	},
 	[710136072] = {
 		id = 710136072,
-		attack = 4779,
+		attack = 7168,
 		hp = 80283,
 		sunder = 2389,
 		defence = 1287,
@@ -84449,7 +84449,7 @@ local datas = {
 	},
 	[710136073] = {
 		id = 710136073,
-		attack = 4901,
+		attack = 7351,
 		hp = 82333,
 		sunder = 2450,
 		defence = 1319,
@@ -84463,7 +84463,7 @@ local datas = {
 	},
 	[710136074] = {
 		id = 710136074,
-		attack = 5024,
+		attack = 7536,
 		hp = 84408,
 		sunder = 2512,
 		defence = 1353,
@@ -84477,7 +84477,7 @@ local datas = {
 	},
 	[710136075] = {
 		id = 710136075,
-		attack = 5149,
+		attack = 7724,
 		hp = 86509,
 		sunder = 2575,
 		defence = 1386,
@@ -84491,7 +84491,7 @@ local datas = {
 	},
 	[710136076] = {
 		id = 710136076,
-		attack = 5325,
+		attack = 7988,
 		hp = 89464,
 		sunder = 2663,
 		defence = 1434,
@@ -84505,7 +84505,7 @@ local datas = {
 	},
 	[710136077] = {
 		id = 710136077,
-		attack = 5504,
+		attack = 8256,
 		hp = 92467,
 		sunder = 2752,
 		defence = 1482,
@@ -84519,7 +84519,7 @@ local datas = {
 	},
 	[710136078] = {
 		id = 710136078,
-		attack = 5685,
+		attack = 8528,
 		hp = 95516,
 		sunder = 2843,
 		defence = 1531,
@@ -84533,7 +84533,7 @@ local datas = {
 	},
 	[710136079] = {
 		id = 710136079,
-		attack = 5870,
+		attack = 8805,
 		hp = 98613,
 		sunder = 2935,
 		defence = 1580,
@@ -84547,7 +84547,7 @@ local datas = {
 	},
 	[710136080] = {
 		id = 710136080,
-		attack = 6057,
+		attack = 9085,
 		hp = 101756,
 		sunder = 3028,
 		defence = 1631,
@@ -84561,7 +84561,7 @@ local datas = {
 	},
 	[710136081] = {
 		id = 710136081,
-		attack = 6191,
+		attack = 9287,
 		hp = 104009,
 		sunder = 3096,
 		defence = 1667,
@@ -84575,7 +84575,7 @@ local datas = {
 	},
 	[710136082] = {
 		id = 710136082,
-		attack = 6327,
+		attack = 9490,
 		hp = 106287,
 		sunder = 3163,
 		defence = 1703,
@@ -84589,7 +84589,7 @@ local datas = {
 	},
 	[710136083] = {
 		id = 710136083,
-		attack = 6464,
+		attack = 9695,
 		hp = 108589,
 		sunder = 3232,
 		defence = 1740,
@@ -84603,7 +84603,7 @@ local datas = {
 	},
 	[710136084] = {
 		id = 710136084,
-		attack = 6602,
+		attack = 9903,
 		hp = 110915,
 		sunder = 3301,
 		defence = 1777,
@@ -84617,7 +84617,7 @@ local datas = {
 	},
 	[710136085] = {
 		id = 710136085,
-		attack = 6742,
+		attack = 10113,
 		hp = 113266,
 		sunder = 3371,
 		defence = 1815,
@@ -84631,7 +84631,7 @@ local datas = {
 	},
 	[710136086] = {
 		id = 710136086,
-		attack = 6968,
+		attack = 10452,
 		hp = 117059,
 		sunder = 3484,
 		defence = 1876,
@@ -84645,7 +84645,7 @@ local datas = {
 	},
 	[710136087] = {
 		id = 710136087,
-		attack = 7197,
+		attack = 10796,
 		hp = 120910,
 		sunder = 3599,
 		defence = 1938,
@@ -84659,7 +84659,7 @@ local datas = {
 	},
 	[710136088] = {
 		id = 710136088,
-		attack = 7430,
+		attack = 11144,
 		hp = 124817,
 		sunder = 3715,
 		defence = 2000,
@@ -84673,7 +84673,7 @@ local datas = {
 	},
 	[710136089] = {
 		id = 710136089,
-		attack = 7665,
+		attack = 11498,
 		hp = 128780,
 		sunder = 3833,
 		defence = 2064,
@@ -84687,7 +84687,7 @@ local datas = {
 	},
 	[710136090] = {
 		id = 710136090,
-		attack = 7905,
+		attack = 11857,
 		hp = 132801,
 		sunder = 3952,
 		defence = 2128,
@@ -84701,7 +84701,7 @@ local datas = {
 	},
 	[710136091] = {
 		id = 710136091,
-		attack = 8085,
+		attack = 12128,
 		hp = 135835,
 		sunder = 4043,
 		defence = 2177,
@@ -84715,7 +84715,7 @@ local datas = {
 	},
 	[710136092] = {
 		id = 710136092,
-		attack = 8268,
+		attack = 12402,
 		hp = 138905,
 		sunder = 4134,
 		defence = 2226,
@@ -84729,7 +84729,7 @@ local datas = {
 	},
 	[710136093] = {
 		id = 710136093,
-		attack = 8453,
+		attack = 12679,
 		hp = 142008,
 		sunder = 4226,
 		defence = 2276,
@@ -84743,7 +84743,7 @@ local datas = {
 	},
 	[710136094] = {
 		id = 710136094,
-		attack = 8640,
+		attack = 12959,
 		hp = 145145,
 		sunder = 4320,
 		defence = 2326,
@@ -84757,7 +84757,7 @@ local datas = {
 	},
 	[710136095] = {
 		id = 710136095,
-		attack = 8828,
+		attack = 13243,
 		hp = 148317,
 		sunder = 4414,
 		defence = 2377,
@@ -84771,7 +84771,7 @@ local datas = {
 	},
 	[710136096] = {
 		id = 710136096,
-		attack = 9383,
+		attack = 14074,
 		hp = 157631,
 		sunder = 4691,
 		defence = 2526,
@@ -84785,7 +84785,7 @@ local datas = {
 	},
 	[710136097] = {
 		id = 710136097,
-		attack = 9947,
+		attack = 14920,
 		hp = 167103,
 		sunder = 4973,
 		defence = 2678,
@@ -84799,7 +84799,7 @@ local datas = {
 	},
 	[710136098] = {
 		id = 710136098,
-		attack = 10520,
+		attack = 15780,
 		hp = 176734,
 		sunder = 5260,
 		defence = 2832,
@@ -84813,7 +84813,7 @@ local datas = {
 	},
 	[710136099] = {
 		id = 710136099,
-		attack = 11103,
+		attack = 16654,
 		hp = 186524,
 		sunder = 5551,
 		defence = 2989,
@@ -84827,7 +84827,7 @@ local datas = {
 	},
 	[710136100] = {
 		id = 710136100,
-		attack = 11695,
+		attack = 17542,
 		hp = 196473,
 		sunder = 5847,
 		defence = 3149,
@@ -84841,7 +84841,7 @@ local datas = {
 	},
 	[710146000] = {
 		id = 710146000,
-		attack = 72,
+		attack = 107,
 		hp = 859,
 		sunder = 102,
 		defence = 55,
@@ -84855,7 +84855,7 @@ local datas = {
 	},
 	[710146001] = {
 		id = 710146001,
-		attack = 90,
+		attack = 135,
 		hp = 1081,
 		sunder = 128,
 		defence = 69,
@@ -84869,7 +84869,7 @@ local datas = {
 	},
 	[710146002] = {
 		id = 710146002,
-		attack = 97,
+		attack = 146,
 		hp = 1165,
 		sunder = 138,
 		defence = 74,
@@ -84883,7 +84883,7 @@ local datas = {
 	},
 	[710146003] = {
 		id = 710146003,
-		attack = 93,
+		attack = 139,
 		hp = 1111,
 		sunder = 130,
 		defence = 70,
@@ -84897,7 +84897,7 @@ local datas = {
 	},
 	[710146004] = {
 		id = 710146004,
-		attack = 76,
+		attack = 115,
 		hp = 918,
 		sunder = 106,
 		defence = 57,
@@ -84911,7 +84911,7 @@ local datas = {
 	},
 	[710146005] = {
 		id = 710146005,
-		attack = 49,
+		attack = 73,
 		hp = 587,
 		sunder = 65,
 		defence = 35,
@@ -84925,7 +84925,7 @@ local datas = {
 	},
 	[710146006] = {
 		id = 710146006,
-		attack = 61,
+		attack = 91,
 		hp = 726,
 		sunder = 79,
 		defence = 43,
@@ -84939,7 +84939,7 @@ local datas = {
 	},
 	[710146007] = {
 		id = 710146007,
-		attack = 73,
+		attack = 110,
 		hp = 880,
 		sunder = 95,
 		defence = 51,
@@ -84953,7 +84953,7 @@ local datas = {
 	},
 	[710146008] = {
 		id = 710146008,
-		attack = 87,
+		attack = 131,
 		hp = 1047,
 		sunder = 111,
 		defence = 60,
@@ -84967,7 +84967,7 @@ local datas = {
 	},
 	[710146009] = {
 		id = 710146009,
-		attack = 102,
+		attack = 153,
 		hp = 1228,
 		sunder = 129,
 		defence = 70,
@@ -84981,7 +84981,7 @@ local datas = {
 	},
 	[710146010] = {
 		id = 710146010,
-		attack = 119,
+		attack = 178,
 		hp = 1423,
 		sunder = 148,
 		defence = 80,
@@ -84995,7 +84995,7 @@ local datas = {
 	},
 	[710146011] = {
 		id = 710146011,
-		attack = 131,
+		attack = 197,
 		hp = 1575,
 		sunder = 162,
 		defence = 87,
@@ -85009,7 +85009,7 @@ local datas = {
 	},
 	[710146012] = {
 		id = 710146012,
-		attack = 144,
+		attack = 217,
 		hp = 1732,
 		sunder = 176,
 		defence = 95,
@@ -85023,7 +85023,7 @@ local datas = {
 	},
 	[710146013] = {
 		id = 710146013,
-		attack = 158,
+		attack = 237,
 		hp = 1895,
 		sunder = 190,
 		defence = 102,
@@ -85037,7 +85037,7 @@ local datas = {
 	},
 	[710146014] = {
 		id = 710146014,
-		attack = 172,
+		attack = 258,
 		hp = 2062,
 		sunder = 205,
 		defence = 110,
@@ -85051,7 +85051,7 @@ local datas = {
 	},
 	[710146015] = {
 		id = 710146015,
-		attack = 186,
+		attack = 279,
 		hp = 2235,
 		sunder = 219,
 		defence = 118,
@@ -85065,7 +85065,7 @@ local datas = {
 	},
 	[710146016] = {
 		id = 710146016,
-		attack = 205,
+		attack = 307,
 		hp = 2459,
 		sunder = 238,
 		defence = 128,
@@ -85079,7 +85079,7 @@ local datas = {
 	},
 	[710146017] = {
 		id = 710146017,
-		attack = 224,
+		attack = 337,
 		hp = 2693,
 		sunder = 258,
 		defence = 139,
@@ -85093,7 +85093,7 @@ local datas = {
 	},
 	[710146018] = {
 		id = 710146018,
-		attack = 245,
+		attack = 367,
 		hp = 2938,
 		sunder = 278,
 		defence = 150,
@@ -85107,7 +85107,7 @@ local datas = {
 	},
 	[710146019] = {
 		id = 710146019,
-		attack = 266,
+		attack = 399,
 		hp = 3193,
 		sunder = 299,
 		defence = 161,
@@ -85121,7 +85121,7 @@ local datas = {
 	},
 	[710146020] = {
 		id = 710146020,
-		attack = 288,
+		attack = 432,
 		hp = 3458,
 		sunder = 320,
 		defence = 172,
@@ -85135,7 +85135,7 @@ local datas = {
 	},
 	[710146021] = {
 		id = 710146021,
-		attack = 308,
+		attack = 463,
 		hp = 3701,
 		sunder = 339,
 		defence = 182,
@@ -85149,7 +85149,7 @@ local datas = {
 	},
 	[710146022] = {
 		id = 710146022,
-		attack = 329,
+		attack = 494,
 		hp = 3951,
 		sunder = 358,
 		defence = 193,
@@ -85163,7 +85163,7 @@ local datas = {
 	},
 	[710146023] = {
 		id = 710146023,
-		attack = 351,
+		attack = 526,
 		hp = 4209,
 		sunder = 377,
 		defence = 203,
@@ -85177,7 +85177,7 @@ local datas = {
 	},
 	[710146024] = {
 		id = 710146024,
-		attack = 373,
+		attack = 559,
 		hp = 4475,
 		sunder = 396,
 		defence = 213,
@@ -85191,7 +85191,7 @@ local datas = {
 	},
 	[710146025] = {
 		id = 710146025,
-		attack = 396,
+		attack = 593,
 		hp = 4747,
 		sunder = 416,
 		defence = 224,
@@ -85205,7 +85205,7 @@ local datas = {
 	},
 	[710146026] = {
 		id = 710146026,
-		attack = 417,
+		attack = 626,
 		hp = 5005,
 		sunder = 434,
 		defence = 234,
@@ -85219,7 +85219,7 @@ local datas = {
 	},
 	[710146027] = {
 		id = 710146027,
-		attack = 439,
+		attack = 658,
 		hp = 5268,
 		sunder = 452,
 		defence = 244,
@@ -85233,7 +85233,7 @@ local datas = {
 	},
 	[710146028] = {
 		id = 710146028,
-		attack = 461,
+		attack = 692,
 		hp = 5537,
 		sunder = 471,
 		defence = 253,
@@ -85247,7 +85247,7 @@ local datas = {
 	},
 	[710146029] = {
 		id = 710146029,
-		attack = 484,
+		attack = 726,
 		hp = 5812,
 		sunder = 489,
 		defence = 263,
@@ -85261,7 +85261,7 @@ local datas = {
 	},
 	[710146030] = {
 		id = 710146030,
-		attack = 508,
+		attack = 762,
 		hp = 7311,
 		sunder = 508,
 		defence = 273,
@@ -85275,7 +85275,7 @@ local datas = {
 	},
 	[710146031] = {
 		id = 710146031,
-		attack = 539,
+		attack = 809,
 		hp = 7762,
 		sunder = 539,
 		defence = 290,
@@ -85289,7 +85289,7 @@ local datas = {
 	},
 	[710146032] = {
 		id = 710146032,
-		attack = 571,
+		attack = 857,
 		hp = 8228,
 		sunder = 571,
 		defence = 308,
@@ -85303,7 +85303,7 @@ local datas = {
 	},
 	[710146033] = {
 		id = 710146033,
-		attack = 605,
+		attack = 907,
 		hp = 8707,
 		sunder = 605,
 		defence = 326,
@@ -85317,7 +85317,7 @@ local datas = {
 	},
 	[710146034] = {
 		id = 710146034,
-		attack = 639,
+		attack = 958,
 		hp = 9199,
 		sunder = 639,
 		defence = 344,
@@ -85331,7 +85331,7 @@ local datas = {
 	},
 	[710146035] = {
 		id = 710146035,
-		attack = 674,
+		attack = 1011,
 		hp = 9705,
 		sunder = 674,
 		defence = 363,
@@ -85345,7 +85345,7 @@ local datas = {
 	},
 	[710146036] = {
 		id = 710146036,
-		attack = 707,
+		attack = 1061,
 		hp = 10186,
 		sunder = 707,
 		defence = 381,
@@ -85359,7 +85359,7 @@ local datas = {
 	},
 	[710146037] = {
 		id = 710146037,
-		attack = 742,
+		attack = 1112,
 		hp = 10679,
 		sunder = 742,
 		defence = 399,
@@ -85373,7 +85373,7 @@ local datas = {
 	},
 	[710146038] = {
 		id = 710146038,
-		attack = 777,
+		attack = 1165,
 		hp = 11183,
 		sunder = 777,
 		defence = 418,
@@ -85387,7 +85387,7 @@ local datas = {
 	},
 	[710146039] = {
 		id = 710146039,
-		attack = 812,
+		attack = 1219,
 		hp = 11699,
 		sunder = 812,
 		defence = 437,
@@ -85401,7 +85401,7 @@ local datas = {
 	},
 	[710146040] = {
 		id = 710146040,
-		attack = 849,
+		attack = 1274,
 		hp = 12226,
 		sunder = 849,
 		defence = 457,
@@ -85415,7 +85415,7 @@ local datas = {
 	},
 	[710146041] = {
 		id = 710146041,
-		attack = 887,
+		attack = 1331,
 		hp = 12774,
 		sunder = 887,
 		defence = 478,
@@ -85429,7 +85429,7 @@ local datas = {
 	},
 	[710146042] = {
 		id = 710146042,
-		attack = 926,
+		attack = 1389,
 		hp = 13334,
 		sunder = 926,
 		defence = 499,
@@ -85443,7 +85443,7 @@ local datas = {
 	},
 	[710146043] = {
 		id = 710146043,
-		attack = 966,
+		attack = 1449,
 		hp = 13906,
 		sunder = 966,
 		defence = 520,
@@ -85457,7 +85457,7 @@ local datas = {
 	},
 	[710146044] = {
 		id = 710146044,
-		attack = 1006,
+		attack = 1509,
 		hp = 14490,
 		sunder = 1006,
 		defence = 542,
@@ -85471,7 +85471,7 @@ local datas = {
 	},
 	[710146045] = {
 		id = 710146045,
-		attack = 1048,
+		attack = 1571,
 		hp = 15085,
 		sunder = 1048,
 		defence = 564,
@@ -85485,7 +85485,7 @@ local datas = {
 	},
 	[710146046] = {
 		id = 710146046,
-		attack = 1085,
+		attack = 1627,
 		hp = 15622,
 		sunder = 1085,
 		defence = 584,
@@ -85499,7 +85499,7 @@ local datas = {
 	},
 	[710146047] = {
 		id = 710146047,
-		attack = 1123,
+		attack = 1684,
 		hp = 16168,
 		sunder = 1123,
 		defence = 605,
@@ -85513,7 +85513,7 @@ local datas = {
 	},
 	[710146048] = {
 		id = 710146048,
-		attack = 1161,
+		attack = 1742,
 		hp = 16723,
 		sunder = 1161,
 		defence = 625,
@@ -85527,7 +85527,7 @@ local datas = {
 	},
 	[710146049] = {
 		id = 710146049,
-		attack = 1200,
+		attack = 1801,
 		hp = 17287,
 		sunder = 1200,
 		defence = 646,
@@ -85541,7 +85541,7 @@ local datas = {
 	},
 	[710146050] = {
 		id = 710146050,
-		attack = 1240,
+		attack = 1860,
 		hp = 20836,
 		sunder = 1240,
 		defence = 668,
@@ -85555,7 +85555,7 @@ local datas = {
 	},
 	[710146051] = {
 		id = 710146051,
-		attack = 1272,
+		attack = 1909,
 		hp = 21376,
 		sunder = 1272,
 		defence = 685,
@@ -85569,7 +85569,7 @@ local datas = {
 	},
 	[710146052] = {
 		id = 710146052,
-		attack = 1305,
+		attack = 1957,
 		hp = 21921,
 		sunder = 1305,
 		defence = 703,
@@ -85583,7 +85583,7 @@ local datas = {
 	},
 	[710146053] = {
 		id = 710146053,
-		attack = 1338,
+		attack = 2006,
 		hp = 22471,
 		sunder = 1338,
 		defence = 720,
@@ -85597,7 +85597,7 @@ local datas = {
 	},
 	[710146054] = {
 		id = 710146054,
-		attack = 1371,
+		attack = 2056,
 		hp = 23027,
 		sunder = 1371,
 		defence = 738,
@@ -85611,7 +85611,7 @@ local datas = {
 	},
 	[710146055] = {
 		id = 710146055,
-		attack = 1404,
+		attack = 2106,
 		hp = 23588,
 		sunder = 1404,
 		defence = 756,
@@ -85625,7 +85625,7 @@ local datas = {
 	},
 	[710146056] = {
 		id = 710146056,
-		attack = 1457,
+		attack = 2186,
 		hp = 24481,
 		sunder = 1457,
 		defence = 785,
@@ -85639,7 +85639,7 @@ local datas = {
 	},
 	[710146057] = {
 		id = 710146057,
-		attack = 1511,
+		attack = 2267,
 		hp = 25391,
 		sunder = 1511,
 		defence = 814,
@@ -85653,7 +85653,7 @@ local datas = {
 	},
 	[710146058] = {
 		id = 710146058,
-		attack = 1566,
+		attack = 2350,
 		hp = 26317,
 		sunder = 1566,
 		defence = 843,
@@ -85667,7 +85667,7 @@ local datas = {
 	},
 	[710146059] = {
 		id = 710146059,
-		attack = 1623,
+		attack = 2434,
 		hp = 27260,
 		sunder = 1623,
 		defence = 874,
@@ -85681,7 +85681,7 @@ local datas = {
 	},
 	[710146060] = {
 		id = 710146060,
-		attack = 1680,
+		attack = 2520,
 		hp = 28219,
 		sunder = 1680,
 		defence = 904,
@@ -85695,7 +85695,7 @@ local datas = {
 	},
 	[710146061] = {
 		id = 710146061,
-		attack = 1720,
+		attack = 2580,
 		hp = 28892,
 		sunder = 1720,
 		defence = 926,
@@ -85709,7 +85709,7 @@ local datas = {
 	},
 	[710146062] = {
 		id = 710146062,
-		attack = 1760,
+		attack = 2640,
 		hp = 29573,
 		sunder = 1760,
 		defence = 948,
@@ -85723,7 +85723,7 @@ local datas = {
 	},
 	[710146063] = {
 		id = 710146063,
-		attack = 1801,
+		attack = 2702,
 		hp = 30260,
 		sunder = 1801,
 		defence = 970,
@@ -85737,7 +85737,7 @@ local datas = {
 	},
 	[710146064] = {
 		id = 710146064,
-		attack = 1842,
+		attack = 2764,
 		hp = 30954,
 		sunder = 1842,
 		defence = 992,
@@ -85751,7 +85751,7 @@ local datas = {
 	},
 	[710146065] = {
 		id = 710146065,
-		attack = 1884,
+		attack = 2826,
 		hp = 31655,
 		sunder = 1884,
 		defence = 1015,
@@ -85765,7 +85765,7 @@ local datas = {
 	},
 	[710146066] = {
 		id = 710146066,
-		attack = 1959,
+		attack = 2938,
 		hp = 32904,
 		sunder = 1959,
 		defence = 1055,
@@ -85779,7 +85779,7 @@ local datas = {
 	},
 	[710146067] = {
 		id = 710146067,
-		attack = 2034,
+		attack = 3051,
 		hp = 34177,
 		sunder = 2034,
 		defence = 1095,
@@ -85793,7 +85793,7 @@ local datas = {
 	},
 	[710146068] = {
 		id = 710146068,
-		attack = 2111,
+		attack = 3167,
 		hp = 35472,
 		sunder = 2111,
 		defence = 1137,
@@ -85807,7 +85807,7 @@ local datas = {
 	},
 	[710146069] = {
 		id = 710146069,
-		attack = 2190,
+		attack = 3285,
 		hp = 36790,
 		sunder = 2190,
 		defence = 1179,
@@ -85821,7 +85821,7 @@ local datas = {
 	},
 	[710146070] = {
 		id = 710146070,
-		attack = 2270,
+		attack = 3405,
 		hp = 38131,
 		sunder = 2270,
 		defence = 1222,
@@ -85835,7 +85835,7 @@ local datas = {
 	},
 	[710146071] = {
 		id = 710146071,
-		attack = 2329,
+		attack = 3494,
 		hp = 39130,
 		sunder = 2329,
 		defence = 1254,
@@ -85849,7 +85849,7 @@ local datas = {
 	},
 	[710146072] = {
 		id = 710146072,
-		attack = 2389,
+		attack = 3584,
 		hp = 40142,
 		sunder = 2389,
 		defence = 1287,
@@ -85863,7 +85863,7 @@ local datas = {
 	},
 	[710146073] = {
 		id = 710146073,
-		attack = 2450,
+		attack = 3676,
 		hp = 41166,
 		sunder = 2450,
 		defence = 1319,
@@ -85877,7 +85877,7 @@ local datas = {
 	},
 	[710146074] = {
 		id = 710146074,
-		attack = 2512,
+		attack = 3768,
 		hp = 42204,
 		sunder = 2512,
 		defence = 1353,
@@ -85891,7 +85891,7 @@ local datas = {
 	},
 	[710146075] = {
 		id = 710146075,
-		attack = 2575,
+		attack = 3862,
 		hp = 43254,
 		sunder = 2575,
 		defence = 1386,
@@ -85905,7 +85905,7 @@ local datas = {
 	},
 	[710146076] = {
 		id = 710146076,
-		attack = 2663,
+		attack = 3994,
 		hp = 44732,
 		sunder = 2663,
 		defence = 1434,
@@ -85919,7 +85919,7 @@ local datas = {
 	},
 	[710146077] = {
 		id = 710146077,
-		attack = 2752,
+		attack = 4128,
 		hp = 46233,
 		sunder = 2752,
 		defence = 1482,
@@ -85933,7 +85933,7 @@ local datas = {
 	},
 	[710146078] = {
 		id = 710146078,
-		attack = 2843,
+		attack = 4264,
 		hp = 47758,
 		sunder = 2843,
 		defence = 1531,
@@ -85947,7 +85947,7 @@ local datas = {
 	},
 	[710146079] = {
 		id = 710146079,
-		attack = 2935,
+		attack = 4402,
 		hp = 49306,
 		sunder = 2935,
 		defence = 1580,
@@ -85961,7 +85961,7 @@ local datas = {
 	},
 	[710146080] = {
 		id = 710146080,
-		attack = 3028,
+		attack = 4543,
 		hp = 50878,
 		sunder = 3028,
 		defence = 1631,
@@ -85975,7 +85975,7 @@ local datas = {
 	},
 	[710146081] = {
 		id = 710146081,
-		attack = 3096,
+		attack = 4643,
 		hp = 52005,
 		sunder = 3096,
 		defence = 1667,
@@ -85989,7 +85989,7 @@ local datas = {
 	},
 	[710146082] = {
 		id = 710146082,
-		attack = 3163,
+		attack = 4745,
 		hp = 53143,
 		sunder = 3163,
 		defence = 1703,
@@ -86003,7 +86003,7 @@ local datas = {
 	},
 	[710146083] = {
 		id = 710146083,
-		attack = 3232,
+		attack = 4848,
 		hp = 54294,
 		sunder = 3232,
 		defence = 1740,
@@ -86017,7 +86017,7 @@ local datas = {
 	},
 	[710146084] = {
 		id = 710146084,
-		attack = 3301,
+		attack = 4952,
 		hp = 55457,
 		sunder = 3301,
 		defence = 1777,
@@ -86031,7 +86031,7 @@ local datas = {
 	},
 	[710146085] = {
 		id = 710146085,
-		attack = 3371,
+		attack = 5056,
 		hp = 56633,
 		sunder = 3371,
 		defence = 1815,
@@ -86045,7 +86045,7 @@ local datas = {
 	},
 	[710146086] = {
 		id = 710146086,
-		attack = 3484,
+		attack = 5226,
 		hp = 58530,
 		sunder = 3484,
 		defence = 1876,
@@ -86059,7 +86059,7 @@ local datas = {
 	},
 	[710146087] = {
 		id = 710146087,
-		attack = 3599,
+		attack = 5398,
 		hp = 60455,
 		sunder = 3599,
 		defence = 1938,
@@ -86073,7 +86073,7 @@ local datas = {
 	},
 	[710146088] = {
 		id = 710146088,
-		attack = 3715,
+		attack = 5572,
 		hp = 62408,
 		sunder = 3715,
 		defence = 2000,
@@ -86087,7 +86087,7 @@ local datas = {
 	},
 	[710146089] = {
 		id = 710146089,
-		attack = 3833,
+		attack = 5749,
 		hp = 64390,
 		sunder = 3833,
 		defence = 2064,
@@ -86101,7 +86101,7 @@ local datas = {
 	},
 	[710146090] = {
 		id = 710146090,
-		attack = 3952,
+		attack = 5929,
 		hp = 66400,
 		sunder = 3952,
 		defence = 2128,
@@ -86115,7 +86115,7 @@ local datas = {
 	},
 	[710146091] = {
 		id = 710146091,
-		attack = 4043,
+		attack = 6064,
 		hp = 67918,
 		sunder = 4043,
 		defence = 2177,
@@ -86129,7 +86129,7 @@ local datas = {
 	},
 	[710146092] = {
 		id = 710146092,
-		attack = 4134,
+		attack = 6201,
 		hp = 69452,
 		sunder = 4134,
 		defence = 2226,
@@ -86143,7 +86143,7 @@ local datas = {
 	},
 	[710146093] = {
 		id = 710146093,
-		attack = 4226,
+		attack = 6340,
 		hp = 71004,
 		sunder = 4226,
 		defence = 2276,
@@ -86157,7 +86157,7 @@ local datas = {
 	},
 	[710146094] = {
 		id = 710146094,
-		attack = 4320,
+		attack = 6480,
 		hp = 72573,
 		sunder = 4320,
 		defence = 2326,
@@ -86171,7 +86171,7 @@ local datas = {
 	},
 	[710146095] = {
 		id = 710146095,
-		attack = 4414,
+		attack = 6621,
 		hp = 74159,
 		sunder = 4414,
 		defence = 2377,
@@ -86185,7 +86185,7 @@ local datas = {
 	},
 	[710146096] = {
 		id = 710146096,
-		attack = 4691,
+		attack = 7037,
 		hp = 78815,
 		sunder = 4691,
 		defence = 2526,
@@ -86199,7 +86199,7 @@ local datas = {
 	},
 	[710146097] = {
 		id = 710146097,
-		attack = 4973,
+		attack = 7460,
 		hp = 83551,
 		sunder = 4973,
 		defence = 2678,
@@ -86213,7 +86213,7 @@ local datas = {
 	},
 	[710146098] = {
 		id = 710146098,
-		attack = 5260,
+		attack = 7890,
 		hp = 88367,
 		sunder = 5260,
 		defence = 2832,
@@ -86227,7 +86227,7 @@ local datas = {
 	},
 	[710146099] = {
 		id = 710146099,
-		attack = 5551,
+		attack = 8327,
 		hp = 93262,
 		sunder = 5551,
 		defence = 2989,
@@ -86241,7 +86241,7 @@ local datas = {
 	},
 	[710146100] = {
 		id = 710146100,
-		attack = 5847,
+		attack = 8771,
 		hp = 98237,
 		sunder = 5847,
 		defence = 3149,

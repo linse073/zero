@@ -350,6 +350,7 @@ skynet.start(function()
             end
             ml[#ml+1] = v
         end
+        v.data = assert(itemdata[v.goods], string.format("No item data %d.", v.goods))
     end
 
     sharedata.new("carddata", carddata)

@@ -169,6 +169,9 @@ local base = {
     },
     MAX_EXTRA_STAGE_BONUS = 2,
 
+    COST_TYPE_MONEY = 1,
+    COST_TYPE_RMB = 2,
+
     -- map
     MAP_RECT = {
         x = 580,

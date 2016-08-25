@@ -165,6 +165,11 @@
 }
 
 .user_all {
+    .mall_item = {
+        mallid 0 : integer
+        count 1 : integer
+    }
+
     user 0 : user_info
     item 1 : *item_info
     stage 2 : *stage_info
@@ -176,6 +181,7 @@
     stage_award 8 : *integer
     trade_watch 9 : *integer
     mall_random 10 : *integer
+    mall_item 11 : *mall_item
 }
 
 .explore_award {
@@ -523,4 +529,8 @@
 
 .refresh_arena {
     rank_type 0 : integer
+}
+
+.mall_item {
+    id 0 : integer
 }

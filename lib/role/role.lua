@@ -799,6 +799,14 @@ local function enter_game(msg)
         mall_random[#mall_random+1] = v
     end
     ret.mall_random = mall_random
+    local mall_item = {}
+    for k, v in pairs(user.mall_item) do
+        mall_item[#mall_item+1] = {
+            mallid = k,
+            count = v,
+        }
+    end
+    ret.mall_item = mall_item
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     timer.add_second_routine("update_second", role.update_second)

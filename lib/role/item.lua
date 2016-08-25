@@ -24,6 +24,7 @@ local update_user = util.update_user
 local itemdata
 local expdata
 local intensifydata
+local malldata
 local base
 local error_code
 local cs
@@ -48,6 +49,7 @@ skynet.init(function()
     itemdata = share.itemdata
     expdata = share.expdata
     intensifydata = share.intensifydata
+    malldata = share.malldata
     base = share.base
     error_code = share.error_code
     cs = share.cs
@@ -1344,5 +1346,60 @@ function proc.del_watch(msg)
     return "update_user", {update={trade_watch={msg.id}}, add_watch=false}
 end
 
+function proc.mall_item(msg)
+    local md = malldata[msg.id]
+    if not md then
+        error{code = error_code.ERROR_MALL_ITEM}
+    end
+    local user == data.user
+    if md.saleType == base.MALL_SALE_RANDOM_1 then
+        if user.mall_random[base.MALL_SALE_RANDOM_1] ~= msg.id then
+            error{code = error_code.ERROR_RANDOM_MALL}
+        end
+    elseif md.saleType == base.MALL_SALE_RANDOM_2 then
+        if user.mall_random[base.MALL_SALE_RANDOM_1] ~= msg.id then
+            error{code = error_code.ERROR_RANDOM_MALL}
+        end
+    end
+    if md.minVip and md.maxVip then
+        if not (user.vip >= md.minVip and user.vip <= md.maxVip) then
+            error{code = error_code.ROLE_VIP_LIMIT}
+        end
+    end
+    if not data.stage[md.preStage] then
+        error{code = error_code.PRE_STAGE_NOT_COMPLETE}
+    end
+    local num = user.mall_item[msg.id] or 0
+    if md.limitNum ~= 0 and num >= md.limitNum then
+        error{code = error_code.MALL_COUNT_LIMIT}
+    end
+    if md.type == base.MALL_TYPE_TIME then
+        local now = floor(skynet.time())
+        local nt = func.game_day(now) % 10
+        if nt ~= 2 and nt ~= 3 then
+            error{code = error_code.MALL_TIME_LIMIT}
+        end
+    end
+    local p = update_user()
+    if d.priceType == base.COST_TYPE_MONEY then
+        proc_queue(cd, function()
+            if user.money < d.price then
+                error{code = error_code.ROLE_MONEY_LIMIT}
+            end
+            role.add_money(p, -d.price)
+        end)
+    elseif d.priceType == base.COST_TYPE_RMB then
+        proc_queue(cd, function()
+            if user.rmb < d.price then
+                error{code = error_code.ROLE_RMB_LIMIT}
+            end
+            role.add_rmb(p, -d.price)
+        end)
+    else
+        error{code = error_code.ERROR_COST_TYPE}
+    end
+    item.add_by_itemid(p, 1, md.data)
+    return "update_user", {update=p}
+end
+
 return item
-        

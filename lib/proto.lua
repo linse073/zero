@@ -101,6 +101,7 @@ local msg = {
     [3304] = "buy_item",
     [3305] = "add_watch",
     [3306] = "del_watch",
+    [3307] = "mall_item",
 }
 local name_msg = {}
 

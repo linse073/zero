@@ -1351,7 +1351,7 @@ function proc.mall_item(msg)
     if not md then
         error{code = error_code.ERROR_MALL_ITEM}
     end
-    local user == data.user
+    local user = data.user
     if md.saleType == base.MALL_SALE_RANDOM_1 then
         if user.mall_random[base.MALL_SALE_RANDOM_1] ~= msg.id then
             error{code = error_code.ERROR_RANDOM_MALL}

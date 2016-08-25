@@ -1369,7 +1369,7 @@ function proc.mall_item(msg)
     if not data.stage[md.preStage] then
         error{code = error_code.PRE_STAGE_NOT_COMPLETE}
     end
-    local num = user.mall_item[msg.id] or 0
+    local num = user.mall_count[msg.id] or 0
     if md.limitNum ~= 0 and num >= md.limitNum then
         error{code = error_code.MALL_COUNT_LIMIT}
     end
@@ -1399,7 +1399,7 @@ function proc.mall_item(msg)
         error{code = error_code.ERROR_COST_TYPE}
     end
     item.add_by_itemid(p, 1, md.data)
-    user.mall_item[msg.id] = num + 1
+    user.mall_count[msg.id] = num + 1
     return "update_user", {update=p}
 end
 

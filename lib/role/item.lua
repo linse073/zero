@@ -1382,14 +1382,14 @@ function proc.mall_item(msg)
     end
     local p = update_user()
     if md.priceType == base.COST_TYPE_MONEY then
-        proc_queue(cd, function()
+        proc_queue(cs, function()
             if user.money < md.price then
                 error{code = error_code.ROLE_MONEY_LIMIT}
             end
             role.add_money(p, -md.price)
         end)
     elseif md.priceType == base.COST_TYPE_RMB then
-        proc_queue(cd, function()
+        proc_queue(cs, function()
             if user.rmb < md.price then
                 error{code = error_code.ROLE_RMB_LIMIT}
             end

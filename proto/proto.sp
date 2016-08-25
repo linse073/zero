@@ -165,7 +165,7 @@
 }
 
 .user_all {
-    .mall_count = {
+    .mall_count {
         id 0 : integer
         count 1 : integer
     }

@@ -481,7 +481,6 @@ function role.repair(user)
     end
     if not user.mall_random then
         user.mall_random = {}
-        update_mall_random()
     end
     if not user.mall_count then
         user.mall_count = {}
@@ -795,6 +794,9 @@ local function enter_game(msg)
             wpack[#wpack+1] = k
         end
         ret.trade_watch = wpack
+    end
+    if util.empty(user.mall_random) then
+        update_mall_random()
     end
     local mall_random = {}
     for k, v in pairs(user.mall_random) do

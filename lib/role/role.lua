@@ -802,7 +802,7 @@ local function enter_game(msg)
     local mall_item = {}
     for k, v in pairs(user.mall_item) do
         mall_item[#mall_item+1] = {
-            mallid = k,
+            id = k,
             count = v,
         }
     end

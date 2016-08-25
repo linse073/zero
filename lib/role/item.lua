@@ -1357,7 +1357,7 @@ function proc.mall_item(msg)
             error{code = error_code.ERROR_RANDOM_MALL}
         end
     elseif md.saleType == base.MALL_SALE_RANDOM_2 then
-        if user.mall_random[base.MALL_SALE_RANDOM_1] ~= msg.id then
+        if user.mall_random[base.MALL_SALE_RANDOM_2] ~= msg.id then
             error{code = error_code.ERROR_RANDOM_MALL}
         end
     end
@@ -1399,6 +1399,7 @@ function proc.mall_item(msg)
         error{code = error_code.ERROR_COST_TYPE}
     end
     item.add_by_itemid(p, 1, md.data)
+    user.mall_item[msg.id] = num + 1
     return "update_user", {update=p}
 end
 

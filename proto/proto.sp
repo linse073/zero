@@ -165,8 +165,8 @@
 }
 
 .user_all {
-    .mall_item = {
-        mallid 0 : integer
+    .mall_count = {
+        id 0 : integer
         count 1 : integer
     }
 
@@ -181,7 +181,7 @@
     stage_award 8 : *integer
     trade_watch 9 : *integer
     mall_random 10 : *integer
-    mall_item 11 : *mall_item
+    mall_count 11 : *mall_count
 }
 
 .explore_award {

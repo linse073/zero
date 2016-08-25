@@ -367,6 +367,7 @@ skynet.start(function()
     sharedata.new("searchdata", searchdata)
     sharedata.new("textdata", textdata)
     sharedata.new("vipdata", vipdata)
+    sharedata.new("malldata", malldata)
 
     sharedata.new("base", base)
     sharedata.new("error_code", require("error_code"))

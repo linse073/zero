@@ -216,7 +216,8 @@
     update_sign_in 1 : boolean
     arena_award 2 : mail_info
     mall_random 3 : *integer
-    update_mall 4 : *integer
+    mall_week 4 : boolean
+    mall_time 5 : boolean
 }
 
 .heart_beat {

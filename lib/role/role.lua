@@ -199,37 +199,39 @@ local function update_day(user, od, nd)
     user.refresh_match_cd = 0
     stage.update_day()
     local mld = mall_limit[base.MALL_LIMIT_DAY]
-    local mall_item = user.mall_item
+    local mall_count = user.mall_count
     for k, v in ipairs(mld) do
-        mall_item[v.id] = nil
+        mall_count[v.id] = nil
     end
-    local update_mall = {}
+    local mall_week = false
     if od // 7 ~= nd // 7 then
         local mlw = mall_limit[base.MALL_LIMIT_WEEK]
         for k, v in ipairs(mlw) do
-            mall_item[v.id] = nil
-            update_mall[#update_mall+1] = v.id
+            mall_count[v.id] = nil
         end
+        mall_week = true
     end
+    local mall_time = false
     if od // 10 ~= nd // 10 then
         local mlt = mall_limit[base.MALL_LIMIT_TIME]
         for k, v in ipairs(mlt) do
-            mall_item[v.id] = nil
-            update_mall[#update_mall+1] = v.id
+            mall_count[v.id] = nil
         end
+        mall_time = true
     end
-    return task.update_day(), update_sign_in, rank.update_day(), update_mall_random(), update_mall
+    return task.update_day(), update_sign_in, rank.update_day(), update_mall_random(), mall_week, mall_time
 end
 
 function role.update_day(od, nd)
     local user = data.user
-    local pt, update_sign_in, arena_award, mall_random, update_mall = update_day(user, od, nd)
+    local pt, update_sign_in, arena_award, mall_random, mall_week, mall_time = update_day(user, od, nd)
     notify.add("update_day", {
         task = pt, 
         update_sign_in = update_sign_in, 
         arena_award = arena_award,
         mall_random = mall_random,
-        update_mall = update_mall,
+        mall_week = mall_week,
+        mall_time = mall_time,
     })
 end
 
@@ -481,8 +483,8 @@ function role.repair(user)
         user.mall_random = {}
         update_mall_random()
     end
-    if not user.mall_item then
-        user.mall_item = {}
+    if not user.mall_count then
+        user.mall_count = {}
     end
 end
 
@@ -679,7 +681,7 @@ function proc.create_user(msg)
         match_role = {},
         match_win = 0,
         mall_random = {},
-        mall_item = {},
+        mall_count = {},
 
         item = {},
         card = {},
@@ -799,14 +801,14 @@ local function enter_game(msg)
         mall_random[#mall_random+1] = v
     end
     ret.mall_random = mall_random
-    local mall_item = {}
-    for k, v in pairs(user.mall_item) do
-        mall_item[#mall_item+1] = {
+    local mall_count = {}
+    for k, v in pairs(user.mall_count) do
+        mall_count[#mall_count+1] = {
             id = k,
             count = v,
         }
     end
-    ret.mall_item = mall_item
+    ret.mall_count = mall_count
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     timer.add_second_routine("update_second", role.update_second)

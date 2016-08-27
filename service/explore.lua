@@ -3,6 +3,7 @@ local timer = require "timer"
 local queue = require "skynet.queue"
 local sharedata = require "sharedata"
 local new_rand = require "random"
+local func = require "func"
 
 local assert = assert
 local string = string

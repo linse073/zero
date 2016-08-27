@@ -317,8 +317,7 @@ function proc.end_challenge(msg)
                     {itemid=base.RMB_ITEM, num=rw.reward},
                 }
             end
-            mail.add(m)
-            p.mail[1] = m
+            mail.add(m, p)
         end
         stage.finish()
         return "update_user", {update=p}

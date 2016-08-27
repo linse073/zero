@@ -33,9 +33,11 @@ end
 
 skynet.start(function()
     local searchdata = sharedata.query("searchdata")
+    local bonusdata = sharedata.query("bonusdata")
     for k, v in pairs(searchdata) do
+        local bonus = assert(bonusdata[v.bonusId], string.format("No bonus data %d.", v.bonusId))
         local explore = skynet.newservice("explore")
-        skynet.call(explore, "lua", "open", v, skynet.self())
+        skynet.call(explore, "lua", "open", v, bonus, skynet.self())
         explore_area[v.area] = explore
     end
 

@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local timer = require "timer"
 local queue = require "skynet.queue"
 local sharedata = require "sharedata"
+local new_rand = require "random"
 
 local assert = assert
 local string = string
@@ -16,9 +17,11 @@ local cs = queue()
 local explore_status
 local explore_reason
 local data
+local bonus_data
 local rankdb
 local rankname
 local explore_mgr
+local offline_mgr
 local save_explore
 local ratio_min
 local role_mgr
@@ -32,6 +35,19 @@ local ENCOUNTER_SECOND = ENCOUNTER_MIN * 60
 local ENCOUNTER_RANK = 3
 local BONUS_TIME = 120
 local UPDATE_TIME = 60
+
+local MONEY_ITEM = 3000004271
+local RMB_ITEM = 3000012271
+local EXP_ITEM = 3000024271
+
+local MAIL_TYPE_EXPLORE = 3
+
+local explore_title
+local explore_win
+local explore_fail
+local explore_normal
+local explore_escape
+local explore_quit
 
 local CMD = {}
 
@@ -71,17 +87,87 @@ local function battle(info, tinfo)
     end
 end
 
+local function bonus_item(ri, award)
+    local itemid = ri.item
+    local idata = ri.data
+    if idata then
+        award[idata.id] = (award[idata.id] or 0) + ri.num
+    else
+        if itemid then
+            award[itemid] = (award[itemid] or 0) + ri.num
+        else
+            award[MONEY_ITEM] = (award[MONEY_ITEM] or 0) + ri.num
+        end
+    end
+end
+
+local function get_bonus(bonus, award, prof)
+    local rand_item = {}
+    for i = 1, bonus.rand_num do
+        rand_item[i] = func.rand_bonus(bonus.data, prof)
+    end
+    if bonus.num then
+        if type(bonus.num) == "table" then
+            for k1, v1 in ipairs(bonus.num) do
+                bonus_item(rand_item[v1], award)
+            end
+        else
+            for i = 1, bonus.num do
+                bonus_item(rand_item[i], award)
+            end
+        end
+    else
+        for k1, v1 in ipairs(rand_item) do
+            bonus_item(v1, award)
+        end
+    end
+end
+
+local function mail_bonus(money, num, exp, t, prof)
+    local award = {}
+    if money > 0 then
+        award[MONEY_ITEM] = money
+    end
+    if exp > 0 then
+        award[EXP_ITEM] = exp
+    end
+    local m = {
+        type = MAIL_TYPE_EXPLORE,
+        time = t,
+        title = explore_title,
+    }
+    if num > 0 then
+        new_rand.init(t)
+        get_bonus({rand_num=num, data=bonus_data}, award, prof)
+        local item = {}
+        for k, v in pairs(award) do
+            item[#item+1] = {
+                itemid = k,
+                num = v,
+            }
+        end
+        m.item_info = item
+    end
+    return m
+end
+
 local function win(t, info, tinfo)
-    local dm = (t - tinfo.start_time) // 60
+    local tdt = t - tinfo.start_time
+    local dm = tdt // 60
     local money = data.money * dm // data.searchTime
-    info.money = info.money + money * data.lootRatio // RAND_FACTOR
+    money = money * data.lootRatio // RAND_FACTOR
     local num = dm // BONUS_TIME
+    local bonus = 0
     for i = 1, num do
         local rnum = random(RAND_FACTOR)
         if rnum <= data.lootRatio then
-            info.bonus = info.bonus + 1
+            bonus = bonus + 1
         end
     end
+    local m = mail_bonus(money, bonus, 0, t, info.prof)
+    m.content = string.format(explore_win, tinfo.name)
+    m.win = true
+    skynet.call(offline_mgr, "lua", "add", "mail", info.roleid, m)
     local dt = t - info.start_time
     if dt >= data.searchSecond - ENCOUNTER_SECOND then
         info.status = explore_status.IDLE
@@ -91,7 +177,6 @@ local function win(t, info, tinfo)
         rank_count = rank_count + 1
     end
     info.time = t
-    info.win = info.win + 1
     local agent = skynet.call(role_mgr, "lua", "get", info.roleid)
     if agent then
         skynet.send(agent, "lua", "notify", "update_user", {update={explore={
@@ -100,22 +185,19 @@ local function win(t, info, tinfo)
         }}})
     end
     skynet.call(save_explore, "lua", "update", info.roleid, info)
+    local exp = data.exp * tdt // 3600
+    local tm = mail_bonus(0, 0, exp)
+    tm.content = string.format(explore_fail, info.name)
+    tm.fail = true
+    tm.finish = true
+    skynet.call(offline_mgr, "lua", "add", "mail", tinfo.roleid, tm)
+    tinfo.status = explore_status.FINISH
     tinfo.reason = explore_reason.FAIL
-    info.fail = info.fail + 1
-    local tagent = skynet.call(role_mgr, "lua", "get", tinfo.roleid)
-    if tagent then
-        tinfo.status = explore_status.FINISH
-        skynet.call(tagent, "lua", "explore_award", 
-            {status=tinfo.status, reason=tinfo.reason}, 
-            {money=tinfo.money, bonus=data.bonusId, num=tinfo.bonus, win=tinfo.win, fail=tinfo.fail})
-    else
-        tinfo.status = explore_status.DONE
-    end
-    skynet.call(save_explore, "lua", "update", tinfo.roleid, tinfo)
 end
 
 local function update()
     local now = floor(skynet.time())
+    local del_list = {}
     for k, v in pairs(role_list) do
         if v.status == explore_status.NORMAL then
             local t = now - v.start_time
@@ -164,40 +246,60 @@ local function update()
                 local tinfo = role_list[v.tid]
                 if battle(v, tinfo) then
                     win(now, v, tinfo)
+                    del_list[#del_list+1] = tinfo
                 else
                     win(now, tinfo, v)
+                    del_list[#del_list+1] = v
                 end
             end
         elseif v.status == explore_status.IDLE then
             local t = now - v.start_time
             if t >= data.searchSecond then
-                v.money = v.money + data.money
-                v.bonus = v.bonus + data.searchTime // BONUS_TIME
+                local bonus = data.searchTime // BONUS_TIME
+                local exp = data.exp * data.searchSecond // 3600
+                local m = mail_bonus(data.money, bonus, exp, now, v.prof)
+                m.content = explore_normal
+                m.finish = true
+                skynet.call(offline_mgr, "lua", "add", "mail", v.roleid, m)
+                v.status = explore_status.FINISH
                 v.reason = explore_reason.NORMAL
-                local agent = skynet.call(role_mgr, "lua", "get", k)
-                if agent then
-                    v.status = explore_status.FINISH
-                    skynet.call(agent, "lua", "explore_award", 
-                        {status=v.status, reason=v.reason},
-                        {money=v.money, bonus=data.bonusId, num=v.bonus, win=v.win, fail=v.fail})
-                else
-                    v.status = explore_status.DONE
-                end
-                skynet.call(save_explore, "lua", "update", k, v)
+                del_list[#del_list+1] = v
             end
         end
     end
+    for k, v in ipairs(del_list) do
+        local roleid = v.roleid
+        local tagent = skynet.call(role_mgr, "lua", "get", roleid)
+        if tagent then
+            skynet.send(tagent, "lua", "notify", "update_user", {update={explore={
+                status = v.status, 
+                reason = v.reason,
+            }}})
+        end
+        role_list[roleid] = nil
+        skynet.call(save_explore, "lua", "update", roleid, false)
+        skynet.call(explore_mgr, "lua", "del", roleid)
+    end
 end
 
-function CMD.open(d, mgr)
+function CMD.open(d, bd, mgr)
+    local textdata = sharedata.query("textdata")
+    explore_title = func.get_string(198000011)
+    explore_win = func.get_string(198000012)
+    explore_fail = func.get_string(198000013)
+    explore_normal = func.get_string(198000014)
+    explore_escape = func.get_string(198000015)
+    explore_quit = func.get_string(198000016)
     explore_status = sharedata.query("explore_status")
     explore_reason = sharedata.query("explore_reason")
     data = d
+    bonus_data = bd
     explore_mgr = mgr
     rankname = "explore_" .. d.area
     ratio_min = MAX_ENCOUNTER_RATIO // (d.searchTime - ENCOUNTER_MIN)
     save_explore = skynet.queryservice("save_explore")
     role_mgr = skynet.queryservice("role_mgr")
+    offline_mgr = skynet.queryservice("offline_mgr")
     local master = skynet.queryservice("dbmaster")
     rankdb = skynet.call(master, "lua", "get", "rankdb")
     skynet.call(rankdb, "lua", "zrem_by_rank", rankname, 0, -1)
@@ -208,18 +310,6 @@ end
 function CMD.enter(roleid)
     local info = role_list[roleid]
     if info then
-        local award
-        if info.status == explore_status.DONE then
-            info.status = explore_status.FINISH
-            skynet.call(save_explore, "lua", "update", roleid, info)
-            award = {
-                money = info.money,
-                bonus = data.bonusId,
-                num = info.bonus,
-                win = info.win,
-                fail = info.fail,
-            }
-        end
         local ti
         if info.tid then
             ti = skynet.call(role_mgr, "lua", "get_rank_info", info.tid)
@@ -233,7 +323,7 @@ function CMD.enter(roleid)
             ack = info.ack,
             tack = info.tack,
             reason = info.reason,
-        }, award
+        }
     end
 end
 
@@ -246,22 +336,20 @@ function CMD.add(info)
     skynet.call(explore_mgr, "lua", "add", info.roleid, skynet.self())
 end
 
-function CMD.explore(roleid, fight_point)
+function CMD.explore(roleid, fight_point, name, prof)
     skynet.call(rankdb, "lua", "zadd", rankname, -fight_point, roleid)
     rank_count = rank_count + 1
     local now = floor(skynet.time())
     local info = {
         roleid = roleid,
         fight_point = fight_point,
+        name = name,
+        prof = prof,
         area = data.area,
         start_time = now,
         status = explore_status.NORMAL,
         time = now,
         update_time = now,
-        money = 0,
-        bonus = 0,
-        win = 0,
-        fail = 0,
     }
     role_list[roleid] = info
     skynet.call(explore_mgr, "lua", "add", roleid, skynet.self())
@@ -280,26 +368,41 @@ function CMD.quit(roleid)
         if info.status == explore_status.ENCOUNTER then
             local t = floor(skynet.time())
             local tinfo = role_list[info.tid]
-            local dm = (t - info.start_time) // 60
+            local tdt = t - info.start_time
+            local dm = tdt // 60
             local money = data.money * dm // data.searchTime
-            info.money = info.money + money * data.escapeKeepRatio // RAND_FACTOR
-            tinfo.money = tinfo.money + money * data.escapeLootRatio // RAND_FACTOR
+            local imoney = money * data.escapeKeepRatio // RAND_FACTOR
+            local exp = data.exp * tdt // 3600
+            local tmoney = money * data.escapeLootRatio // RAND_FACTOR
             local num = dm // BONUS_TIME
+            local ibonus = 0
+            local tbonus = 0
             for i = 1, num do
                 local rnum = random(RAND_FACTOR)
                 if rnum <= data.escapeKeepRatio then
-                    info.bonus = info.bonus + 1
+                    ibonus = ibonus + 1
                 else
                     local tnum = random(RAND_FACTOR)
                     if tnum <= data.escapeLootRatio then
-                        tinfo.bonus = tinfo.bonus + 1
+                        tbonus = tbonus + 1
                     end
                 end
             end
+            local m = mail_bonus(imoney, ibonus, exp, t, info.prof)
+            m.content = string.format(explore_escape, tinfo.name)
+            m.fail = true
+            m.finish = true
+            skynet.call(offline_mgr, "lua", "add", "mail", roleid, m)
             info.status = explore_status.FINISH
             info.reason = explore_reason.ESCAPE
             info.ack = 2
-            skynet.call(save_explore, "lua", "update", roleid, info)
+            role_list[roleid] = nil
+            skynet.call(save_explore, "lua", "update", roleid, false)
+            skynet.call(explore_mgr, "lua", "del", roleid)
+            local tm = mail_bonus(tmoney, tbonus, 0, t, tinfo.prof)
+            tm.content = string.format(explore_win, info.name)
+            tm.win = true
+            skynet.call(offline_mgr, "lua", "add", "mail", tinfo.roleid, tm)
             local dt = t - tinfo.start_time
             if dt >= data.searchSecond - ENCOUNTER_SECOND then
                 tinfo.status = explore_status.IDLE
@@ -319,38 +422,29 @@ function CMD.quit(roleid)
                 }}})
             end
             skynet.call(save_explore, "lua", "update", tinfo.roleid, tinfo)
-            return {status=info.status, ack=info.ack, reason=info.reason}, 
-            {money=info.money, bonus=data.bonusId, num=info.bonus, win=info.win, fail=info.fail}
-        elseif info.status == explore_status.DONE then
-            info.status = explore_status.FINISH
-            skynet.call(save_explore, "lua", "update", roleid, info)
-            return {status=info.status},
-            {money=info.money, bonus=data.bonusId, num=info.bonus, win=info.win, fail=info.fail}
+            return {status=info.status, ack=info.ack, reason=info.reason}
         elseif info.status == explore_status.NORMAL or info.status == explore_status.IDLE then
             if info.status == explore_status.NORMAL then
                 skynet.call(rankdb, "lua", "zrem", rankname, roleid)
                 rank_count = rank_count - 1
             end
             local t = floor(skynet.time())
-            local dm = (t - info.start_time) // 60
-            info.money = info.money + data.money * dm // data.searchTime
-            info.bonus = info.bonus + dm // BONUS_TIME
+            local tdt = t - info.start_time
+            local dm = tdt // 60
+            local money = data.money * dm // data.searchTime
+            local exp = data.exp * tdt // 3600
+            local bonus = info.bonus + dm // BONUS_TIME
+            local m = mail_bonus(money, bonus, exp, t, info.prof)
+            m.content = explore_quit
+            m.finish = true
+            skynet.call(offline_mgr, "lua", "add", "mail", roleid, m)
             info.status = explore_status.FINISH
             info.reason = explore_reason.QUIT
-            skynet.call(save_explore, "lua", "update", roleid, info)
-            return {status=info.status, reason=info.reason},
-            {money=info.money, bonus=data.bonusId, num=info.bonus, win=info.win, fail=info.fail}
+            role_list[roleid] = nil
+            skynet.call(save_explore, "lua", "update", roleid, false)
+            skynet.call(explore_mgr, "lua", "del", roleid)
+            return {status=info.status, reason=info.reason}
         end
-    end
-end
-
-function CMD.confirm(roleid)
-    local info = role_list[roleid]
-    if info and info.status == explore_status.FINISH then
-        role_list[roleid] = nil
-        skynet.call(save_explore, "lua", "update", roleid, false)
-        skynet.call(explore_mgr, "lua", "del", roleid)
-        return true
     end
 end
 
@@ -380,7 +474,6 @@ function CMD.update(roleid, fight_point)
         end
         info.fight_point = fight_point
         skynet.call(save_explore, "lua", "update", roleid, info)
-        return true
     end
 end
 

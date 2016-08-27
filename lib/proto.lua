@@ -78,8 +78,7 @@ local msg = {
 
     [2900] = "explore",
     [2901] = "quit_explore",
-    [2902] = "confirm_explore",
-    [2903] = "explore_fight",
+    [2902] = "explore_fight",
 
     [3000] = "chat_info",
 

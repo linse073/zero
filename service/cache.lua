@@ -423,8 +423,7 @@ skynet.start(function()
         NORMAL = 1,
         ENCOUNTER = 2,
         IDLE = 3,
-        DONE = 4,
-        FINISH = 5,
+        FINISH = 4,
     })
 
     sharedata.new("explore_reason", {

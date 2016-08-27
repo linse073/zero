@@ -32,7 +32,6 @@ local game_day
 local expdata
 local npcdata
 local propertydata
-local bonusdata
 local itemdata
 local is_equip
 local is_stone
@@ -67,7 +66,6 @@ skynet.init(function()
     expdata = share.expdata
     npcdata = share.npcdata
     propertydata = share.propertydata
-    bonusdata = share.bonusdata
     itemdata = share.itemdata
     is_equip = func.is_equip
     is_stone = func.is_stone
@@ -487,38 +485,6 @@ function role.repair(user)
     end
 end
 
-function role.explore_bonus(p, a)
-    local d = assert(bonusdata[a.bonus], string.format("No bonus data %d.", a.bonus))
-    local bonus = {{rand_num=a.num, data=d}}
-    local rand_seed = floor(skynet.time())
-    a.rand_seed = rand_seed
-    new_rand.init(rand_seed)
-    stage.get_bonus(bonus, p)
-end
-
-function role.finish_explore(p, a)
-    if a.money > 0 then
-        role.add_money(p, a.money)
-    end
-    if a.num > 0 then
-        role.explore_bonus(p, a)
-    end
-    if a.win > 0 then
-        task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 1, a.win)
-    end
-    if a.fail > 0 then
-        task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 2, a.fail)
-    end
-end
-
-function role.explore_award(e, a)
-    local p = update_user()
-    role.finish_explore(p, a)
-    task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
-    p.explore = e
-    notify.add("update_user", {update=p, explore_award=a})
-end
-
 function role.action(otype, info)
     action[otype].notify(info)
 end
@@ -551,7 +517,6 @@ function role.charge(num)
         end
     end
     if vip ~= user.vip then
-        local pm = p.mail
         for i = user.vip+1, vip do
             local l = vip_level[i]
             local m = {
@@ -561,8 +526,7 @@ function role.charge(num)
                 content = string.format(charge_content, i),
                 item_info = l.mailItem,
             }
-            mail.add(m)
-            pm[#pm+1] = m
+            mail.add(m, p)
         end
         user.vip = vip
         p.user.vip = vip
@@ -756,23 +720,14 @@ local function enter_game(msg)
     role.online_award(p, now)
     local ret = {user=user}
     local explore = skynet.call(explore_mgr, "lua", "get", user.id)
-    local a
     if explore then
-        local e
-        e, a = skynet.call(explore, "lua", "enter", user.id)
-        if e then
-            data.explore = explore
-            ret.explore = e
-            if a then
-                role.finish_explore(p, a)
-                task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
-            end
-        end
+        data.explore = explore
+        ret.explore = skynet.call(explore, "lua", "enter", user.id)
     end
     local om = skynet.call(offline_mgr, "lua", "get", user.id)
     if om then
         for k, v in ipairs(om) do
-            action[v[1]].add(v[2])
+            action[v[1]].add(v[2], p)
         end
     end
     for k, v in ipairs(module) do
@@ -825,7 +780,7 @@ local function enter_game(msg)
         fight = stageid ~= nil,
     }
     skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
-    return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, rand_seed=seed, explore_award=a}
+    return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, rand_seed=seed}
 end
 function proc.enter_game(msg)
     return proc_queue(cs, enter_game, msg)
@@ -891,7 +846,7 @@ function proc.explore(msg)
         error{code = error_code.STAGE_STAR_LIMIT}
     end
     local user = data.user
-    local e = skynet.call(explore, "lua", "explore", user.id, user.fight_point)
+    local e = skynet.call(explore, "lua", "explore", user.id, user.fight_point, user.name, user.prof)
     data.explore = explore
     return "update_user", {update={explore=e}}
 end
@@ -901,27 +856,12 @@ function proc.quit_explore(msg)
         error{code = error_code.NOT_EXPLORE}
     end
     local user = data.user
-    local e, a = skynet.call(data.explore, "lua", "quit", user.id)
+    local e = skynet.call(data.explore, "lua", "quit", user.id)
     if not e then
         error{code = error_code.ERROR_EXPLORE_STATUS}
     end
-    local p = update_user()
-    role.finish_explore(p, a)
-    p.explore = e
-    return "update_user", {update=p, explore_award=a}
-end
-
-function proc.confirm_explore(msg)
-    if not data.explore then
-        error{code = error_code.NOT_EXPLORE}
-    end
-    local user = data.user
-    local r = skynet.call(data.explore, "lua", "confirm", user.id)
-    if not r then
-        error{code = error_code.ERROR_EXPLORE_STATUS}
-    end
     data.explore = nil
-    return "response", ""
+    return "update_user", {update={explore=e}}
 end
 
 function proc.explore_fight(msg)

@@ -100,10 +100,6 @@ function CMD.get_rank_info(source)
     return data.rank_info
 end
 
-function CMD.explore_award(source, explore, award)
-    role.explore_award(explore, award)
-end
-
 function CMD.action(source, otype, info)
     role.action(otype, info)
 end

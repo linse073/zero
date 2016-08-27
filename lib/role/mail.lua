@@ -57,14 +57,29 @@ function mail.gen_id()
     return skynet.call(data.server, "lua", "gen_mail")
 end
 
-function mail.add(v)
+function mail.add(v, p)
     if not v.id then
         v.id = mail.gen_id()
     end
     if not v.status then
         v.status = base.MAIL_STATUS_UNREAD
     end
+    if v.win then
+        task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 1, 1)
+        v.win = nil
+    end
+    if v.fail then
+        task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 2, 1)
+        v.fail = nil
+    end
+    if v.finish then
+        task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
+        v.finish = nil
+        data.explore = nil
+    end
     data.mail[v.id] = v
+    local pm = p.mail
+    pm[#pm+1] = v
     return v
 end
 
@@ -77,9 +92,8 @@ function mail.get(id)
 end
 
 function mail.notify(info)
-    mail.add(info)
     local p = update_user()
-    p.mail[1] = info
+    mail.add(info, p)
     notify.add("update_user", {update=p})
 end
 
@@ -120,6 +134,8 @@ function proc.del_mail(msg)
                     role.add_money(p, v.num)
                 elseif v.itemid == base.RMB_ITEM then
                     role.add_rmb(p, v.num)
+                elseif v.itemid == base.EXP_ITEM then
+                    role.add_exp(p, v.num)
                 else
                     local d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
                     item.add_by_itemid(p, v.num, d)

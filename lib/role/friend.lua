@@ -64,7 +64,7 @@ function friend.pack_all()
     return "friend", pack
 end
 
-function friend.add(v)
+function friend.add(v, p)
     local bm
     local nf
     local pf
@@ -119,6 +119,8 @@ function friend.add(v)
         data.friend[v.id] = f
         pf = f
     end
+    local pfriend = p.friend
+    pfriend[#pfriend+1] = pf
     return pf
 end
 
@@ -131,10 +133,9 @@ function friend.get(id)
 end
 
 function friend.notify(info)
-    local pf = friend.add(info)
+    local p = update_user()
+    local pf = friend.add(info, p)
     if pf then
-        local p = update_user()
-        p.friend[1] = pf
         notify.add("update_user", {update=p})
     end
 end

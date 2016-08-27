@@ -1215,8 +1215,7 @@ function proc.buy_item(msg)
             content = buy_content,
             item_info = {iv},
         }
-        mail.add(m)
-        p.mail[1] = m
+        mail.add(m, p)
         local om = {
             type = base.MAIL_TYPE_TRADE,
             time = now,
@@ -1299,8 +1298,7 @@ function proc.buy_item(msg)
                 {itemid=msg.itemid, num=tn},
             },
         }
-        mail.add(m)
-        p.mail[1] = m
+        mail.add(m, p)
         for k, v in pairs(r) do
             local om = {
                 type = base.MAIL_TYPE_TRADE,

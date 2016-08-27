@@ -184,19 +184,11 @@
     mall_count 11 : *mall_count
 }
 
-.explore_award {
-    money 0 : integer
-    num 1 : integer
-    bonus 2 : integer
-    rand_seed 3 : integer
-}
-
 .info_all {
     user 0 : user_all
     start_time 1 : integer
     stage_id 2 : integer
     rand_seed 3 : integer
-    explore_award 4 : explore_award
 }
 
 .update_user {
@@ -205,10 +197,9 @@
     sign_in 2 : integer
     rand_seed 3 : integer
     compound_crit 4 : integer
-    explore_award 5 : explore_award
-    add_watch 6 : boolean
-    buy_item 7 : buy_item
-    rank_list 8 : rank_list
+    add_watch 5 : boolean
+    buy_item 6 : buy_item
+    rank_list 7 : rank_list
 }
 
 .update_day {

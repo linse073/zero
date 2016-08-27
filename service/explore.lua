@@ -285,12 +285,12 @@ end
 
 function CMD.open(d, bd, mgr)
     local textdata = sharedata.query("textdata")
-    explore_title = func.get_string(198000011)
-    explore_win = func.get_string(198000012)
-    explore_fail = func.get_string(198000013)
-    explore_normal = func.get_string(198000014)
-    explore_escape = func.get_string(198000015)
-    explore_quit = func.get_string(198000016)
+    explore_title = func.get_string(198000012)
+    explore_win = func.get_string(198000013)
+    explore_fail = func.get_string(198000014)
+    explore_normal = func.get_string(198000015)
+    explore_escape = func.get_string(198000016)
+    explore_quit = func.get_string(198000017)
     explore_status = sharedata.query("explore_status")
     explore_reason = sharedata.query("explore_reason")
     data = d

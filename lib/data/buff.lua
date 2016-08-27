@@ -21260,7 +21260,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 0.5,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21285,7 +21285,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 0.5,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21310,7 +21310,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21335,7 +21335,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21360,7 +21360,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21385,7 +21385,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 2,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21410,7 +21410,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 2,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21435,7 +21435,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21460,7 +21460,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21485,7 +21485,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21510,7 +21510,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1.5,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21535,13 +21535,13 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 15,
 		intervalTime = 3,
-		buffType = 2,
+		buffType = 3,
 		damage = {
-			22.275,
-			0.2475,
-			0.0275,
+			0,
+			0,
+			0,
 		},
-		maxHp_HarmRatio = 0,
+		maxHp_HarmRatio = 0.15,
 		addStatus = 0,
 		effectPath = "state_002",
 		statusData = 0,
@@ -21558,15 +21558,15 @@ local datas = {
 		attr = 0,
 		attrData = 0,
 		attrLevelPercent = 0,
-		continuedTime = 3,
-		intervalTime = 3,
-		buffType = 2,
+		continuedTime = 1.5,
+		intervalTime = 1.5,
+		buffType = 3,
 		damage = {
-			2.784375,
-			0.0309375,
-			0.0034375,
+			0,
+			0,
+			0,
 		},
-		maxHp_HarmRatio = 0,
+		maxHp_HarmRatio = 0.02,
 		addStatus = 0,
 		effectPath = "state_002",
 		statusData = 0,
@@ -21583,15 +21583,15 @@ local datas = {
 		attr = 0,
 		attrData = 0,
 		attrLevelPercent = 0,
-		continuedTime = 3,
-		intervalTime = 3,
-		buffType = 2,
+		continuedTime = 1.5,
+		intervalTime = 1.5,
+		buffType = 3,
 		damage = {
-			2.784375,
-			0.0309375,
-			0.0034375,
+			0,
+			0,
+			0,
 		},
-		maxHp_HarmRatio = 0,
+		maxHp_HarmRatio = 0.02,
 		addStatus = 0,
 		effectPath = "state_002",
 		statusData = 0,
@@ -21610,7 +21610,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21635,7 +21635,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21660,7 +21660,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21685,7 +21685,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21710,7 +21710,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21735,7 +21735,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21760,7 +21760,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21785,7 +21785,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 3,
 		intervalTime = 1,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21810,7 +21810,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21835,7 +21835,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21860,7 +21860,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -21885,7 +21885,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21910,7 +21910,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21935,7 +21935,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21960,7 +21960,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -21985,7 +21985,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22010,7 +22010,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 3,
 		intervalTime = 1,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -22035,7 +22035,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22060,7 +22060,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -22085,7 +22085,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22110,7 +22110,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 0.5,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -22135,7 +22135,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22160,7 +22160,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22185,7 +22185,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22210,7 +22210,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22235,7 +22235,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22260,7 +22260,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22285,7 +22285,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22310,7 +22310,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22335,7 +22335,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22360,7 +22360,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22385,7 +22385,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22410,7 +22410,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -22435,7 +22435,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22460,7 +22460,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22485,7 +22485,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22510,7 +22510,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22535,7 +22535,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22560,7 +22560,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22585,7 +22585,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -22610,7 +22610,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			22.275,
 			0.2475,
@@ -22635,7 +22635,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22660,7 +22660,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 3,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,
@@ -22685,7 +22685,7 @@ local datas = {
 		attrLevelPercent = 0,
 		continuedTime = 1,
 		intervalTime = 0,
-		buffType = 2,
+		buffType = 3,
 		damage = {
 			0,
 			0,

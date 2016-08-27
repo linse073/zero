@@ -9,6 +9,7 @@ local assert = assert
 local error = error
 local string = string
 local floor = math.floor
+local tonumber = tonumber
 
 local stage
 local mail
@@ -25,6 +26,7 @@ local is_stone
 local arena_rank
 local fight_point_rank
 local role_mgr
+local rank_mgr
 local query_process
 
 local match_title
@@ -43,6 +45,7 @@ skynet.init(function()
     arena_rank = skynet.queryservice("arena_rank")
     fight_point_rank = skynet.queryservice("fight_point_rank")
     role_mgr = skynet.queryservice("role_mgr")
+    rank_mgr = skynet.queryservice("rank_mgr")
     query_process = {
         [base.RANK_ARENA] = arena_rank,
         [base.RANK_FIGHT_POINT] = fight_point_rank,
@@ -282,6 +285,9 @@ function proc.end_challenge(msg)
     end
     if msg.rank_type == base.RANK_ARENA then
         local user = data.user
+        user.arena_win = user.arena_win + 1
+        local sa = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_ARENA)
+        skynet.call(sa, "lua", "update", user.id, user.arena_win)
         local r1 = skynet.call(arena_rank, "lua", "update", user.id, msg.id)
         local p = update_user()
         if r1 then
@@ -355,6 +361,29 @@ function proc.refresh_arena(msg)
     else
         error{code = error_code.ERROR_QUERY_RANK_TYPE}
     end
+end
+
+function proc.slave_rank(msg)
+    local sr = skynet.call(rank_mgr, "lua", "get", sr)
+    if not sr then
+        error{code = error_code.ERROR_SLAVE_RANK}
+    end
+    local user = data.user
+    local cr, cs, r = skynet.call(sr, "lua", "query", user.id, 0, 99)
+    cr = tonumber(cr) + 1
+    cs = -tonumber(cs)
+    local list = {}
+    for k, v in ipairs(r) do
+        local info = skynet.call(role_mgr, "lua", "get_rank_info", tonumber(v))
+        info.rank = k + 1
+        list[#list+1] = info
+    end
+    return "slave_rank_list", {
+        type = msg.type,
+        rank = cr,
+        value = cs,
+        list = list,
+    }
 end
 
 return rank

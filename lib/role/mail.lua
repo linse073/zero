@@ -18,6 +18,7 @@ local itemdata
 local data
 local base
 local error_code
+local rank_mgr
 
 local mail = {}
 local proc = {}
@@ -26,6 +27,7 @@ skynet.init(function()
     itemdata = share.itemdata
     base = share.base
     error_code = share.error_code
+    rank_mgr = skynet.queryservice("rank_mgr")
 end)
 
 function mail.init_module()
@@ -126,6 +128,7 @@ function proc.del_mail(msg)
     p.mail[1] = {id=m.id, status=m.status}
     local pitem = p.item
     if m.item_info then
+        local money = 0
         for k, v in ipairs(m.item_info) do
             if v.id then
                 local d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
@@ -134,6 +137,7 @@ function proc.del_mail(msg)
             else
                 if v.itemid == base.MONEY_ITEM then
                     role.add_money(p, v.num)
+                    money = money + v.num
                 elseif v.itemid == base.RMB_ITEM then
                     role.add_rmb(p, v.num)
                 elseif v.itemid == base.EXP_ITEM then
@@ -143,6 +147,12 @@ function proc.del_mail(msg)
                     item.add_by_itemid(p, v.num, d)
                 end
             end
+        end
+        if money > 0 and m.type == base.MAIL_TYPE_EXPLORE then
+            local user = data.user
+            user.explore_award = user.explore_award + money
+            local se = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_EXPLORE)
+            skynet.call(se, "lua", "update", user.id, user.explore_award)
         end
     end
     return "update_user", {update=p}

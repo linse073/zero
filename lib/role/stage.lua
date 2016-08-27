@@ -31,6 +31,7 @@ local stage_reward
 local stage_task_complete
 local data
 local role_mgr
+local rank_mgr
 local cs
 
 local stage = {}
@@ -46,6 +47,7 @@ skynet.init(function()
     stage_task_complete = share.stage_task_complete
     cs = share.cs
     role_mgr = skynet.queryservice("role_mgr")
+    rank_mgr = skynet.queryservice("rank_mgr")
 end)
 
 function stage.init_module()
@@ -269,6 +271,8 @@ function stage.add_stage(p, id)
         stage.star(sv)
         ps[#ps+1] = sv
         data.stage_star = data.stage_star + sv.star
+        local ss = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_STAGE)
+        skynet.call(ss, "lua", "update", user.id, data.stage_star)
     end
 end
 
@@ -410,6 +414,8 @@ function proc.end_stage(msg)
     if old_star ~= sv.star then
         data.stage_star = data.stage_star - old_star + sv.star
         task.update(p, base.TASK_COMPLETE_STAGE_STAR, 0, 0, data.stage_star)
+        local ss = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_STAGE)
+        skynet.call(ss, "lua", "update", user.id, data.stage_star)
     end
     -- local initRect = base.INIT_RECT
     -- local des_pos = user.des_pos

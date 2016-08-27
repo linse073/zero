@@ -54,6 +54,7 @@ local fight_point_rank
 local explore_mgr
 local offline_mgr
 local trade_mgr
+local rank_mgr
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
@@ -85,6 +86,7 @@ skynet.init(function()
     explore_mgr = skynet.queryservice("explore_mgr")
     offline_mgr = skynet.queryservice("offline_mgr")
     trade_mgr = skynet.queryservice("trade_mgr")
+    rank_mgr = skynet.queryservice("rank_mgr")
 
     charge_title = func.get_string(198000007)
     charge_content = func.get_string(198000008)
@@ -307,6 +309,8 @@ function role.add_exp(p, exp)
             role.fight_point(p)
             task.update_level(p, oldLevel, newLevel)
             task.update(p, base.TASK_COMPLETE_LEVEL, 0, 0, newLevel)
+            local sl = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_LEVEL)
+            skynet.call(sl, "lua", "update", user.id, newLevel)
             local bmsg = {
                 id = user.id,
                 level = newLevel,
@@ -350,6 +354,8 @@ function role.fight_point(p)
     if data.explore then
         skynet.send(data.explore, "lua", "update", user.id, user.fight_point)
     end
+    local sf = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_FIGHT)
+    skynet.call(sf, "lua", "update", user.id, user.fight_point)
 end
 
 function role.get_reward(p, reward)
@@ -483,6 +489,12 @@ function role.repair(user)
     if not user.mall_count then
         user.mall_count = {}
     end
+    if not user.arena_win then
+        user.arena_win = 0
+    end
+    if not user.explore_award then
+        user.explore_award = 0
+    end
 end
 
 function role.action(otype, info)
@@ -561,6 +573,20 @@ function role.update_rank()
     local p = update_user()
     rank.add(p)
     notify.add("update_user", {update=p})
+end
+
+function role.add_rank()
+    local user = data.user
+    local sl = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_LEVEL)
+    skynet.call(sl, "lua", "add", user.id, user.level)
+    local sf = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_FIGHT)
+    skynet.call(sf, "lua", "add", user.id, user.fight_point)
+    local sa = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_ARENA)
+    skynet.call(sa, "lua", "add", user.id, user.arena_win)
+    local se = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_EXPLORE)
+    skynet.call(se, "lua", "add", user.id, user.explore_award)
+    local ss = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_STAGE)
+    skynet.call(ss, "lua", "add", user.id, data.stage_star)
 end
 
 -------------------protocol process--------------------------
@@ -645,6 +671,8 @@ function proc.create_user(msg)
         match_win = 0,
         mall_random = {},
         mall_count = {},
+        arena_win = 0,
+        explore_award = 0,
 
         item = {},
         card = {},
@@ -730,6 +758,7 @@ local function enter_game(msg)
             action[v[1]].add(v[2], p)
         end
     end
+    role.add_rank()
     for k, v in ipairs(module) do
         if v.pack_all then
             local key, pack = v.pack_all()

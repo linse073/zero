@@ -526,3 +526,14 @@
 .mall_item {
     id 0 : integer
 }
+
+.slave_rank {
+    type 0 : integer
+}
+
+.slave_rank_list {
+    type 0 : integer
+    rank 1 : integer
+    value 2 : integer
+    list 3 : *rank_info
+}

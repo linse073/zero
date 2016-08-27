@@ -49,6 +49,10 @@ function CMD.zrank(rt, key)
     return db:zrank(rt, key)
 end
 
+function CMD.zscore(rt, key)
+    return db:zscore(rt, key)
+end
+
 function CMD.zcount(rt, r1, r2)
     if not r1 then
         r1 = "-inf"

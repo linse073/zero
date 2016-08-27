@@ -5,6 +5,7 @@ local notify = require "notify"
 
 local role
 local item
+local task
 
 local pairs = pairs
 local ipairs = ipairs
@@ -30,6 +31,7 @@ end)
 function mail.init_module()
     item = require "role.item"
     role = require "role.role"
+    task = require "role.task"
     return proc
 end
 

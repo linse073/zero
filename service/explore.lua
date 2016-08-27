@@ -434,7 +434,7 @@ function CMD.quit(roleid)
             local dm = tdt // 60
             local money = data.money * dm // data.searchTime
             local exp = data.exp * tdt // 3600
-            local bonus = info.bonus + dm // BONUS_TIME
+            local bonus = dm // BONUS_TIME
             local m = mail_bonus(money, bonus, exp, t, info.prof)
             m.content = explore_quit
             m.finish = true

@@ -34,7 +34,7 @@ local MAX_ENCOUNTER_RATIO = RAND_FACTOR / 2
 local ENCOUNTER_MIN = 5
 local ENCOUNTER_SECOND = ENCOUNTER_MIN * 60
 local ENCOUNTER_RANK = 3
-local BONUS_TIME = 120
+local BONUS_TIME = 120 * 60
 local UPDATE_TIME = 60
 
 local MONEY_ITEM = 3000004271
@@ -154,10 +154,9 @@ end
 
 local function win(t, info, tinfo)
     local tdt = t - tinfo.start_time
-    local dm = tdt // 60
-    local money = data.money * dm // data.searchTime
+    local money = data.money * tdt // data.searchSecond
     money = money * data.lootRatio // RAND_FACTOR
-    local num = dm // BONUS_TIME
+    local num = tdt // BONUS_TIME
     local bonus = 0
     for i = 1, num do
         local rnum = random(RAND_FACTOR)
@@ -256,7 +255,7 @@ local function update()
         elseif v.status == explore_status.IDLE then
             local t = now - v.start_time
             if t >= data.searchSecond then
-                local bonus = data.searchTime // BONUS_TIME
+                local bonus = data.searchSecond // BONUS_TIME
                 local exp = data.exp * data.searchSecond // 3600
                 local m = mail_bonus(data.money, bonus, exp, now, v.prof)
                 m.content = explore_normal
@@ -370,12 +369,11 @@ function CMD.quit(roleid)
             local t = floor(skynet.time())
             local tinfo = role_list[info.tid]
             local tdt = t - info.start_time
-            local dm = tdt // 60
-            local money = data.money * dm // data.searchTime
+            local money = data.money * tdt // data.searchSecond
             local imoney = money * data.escapeKeepRatio // RAND_FACTOR
             local exp = data.exp * tdt // 3600
             local tmoney = money * data.escapeLootRatio // RAND_FACTOR
-            local num = dm // BONUS_TIME
+            local num = tdt // BONUS_TIME
             local ibonus = 0
             local tbonus = 0
             for i = 1, num do
@@ -431,10 +429,9 @@ function CMD.quit(roleid)
             end
             local t = floor(skynet.time())
             local tdt = t - info.start_time
-            local dm = tdt // 60
-            local money = data.money * dm // data.searchTime
+            local money = data.money * tdt // data.searchSecond
             local exp = data.exp * tdt // 3600
-            local bonus = dm // BONUS_TIME
+            local bonus = tdt // BONUS_TIME
             local m = mail_bonus(money, bonus, exp, t, info.prof)
             m.content = explore_quit
             m.finish = true

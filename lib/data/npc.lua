@@ -7616,7 +7616,7 @@ local datas = {
 		fix = 0,
 		frontEffect = "attack1",
 		backEffect = "",
-		aiName = "monster_1073",
+		aiName = "monster",
 	},
 	[1220001011] = {
 		id = 1220001011,

@@ -416,11 +416,11 @@ local datas = {
 	[606000001] = {
 		id = 606000001,
 		type = 6,
-		data = 10,
+		data = 1,
 		rewardType = 1,
 		reward = 3000188230,
 		rewardNum = 13,
-		dropItemList = "",
+		dropItemList = "3000188230;13",
 	},
 	[607000001] = {
 		id = 607000001,

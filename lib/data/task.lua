@@ -1739,7 +1739,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 40,
 		profItemId = {
 			0,
 			0,
@@ -1764,7 +1764,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 15,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,
@@ -1789,7 +1789,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 1000,
 		RMBMoney = 0,
-		EXP = 5,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,
@@ -1814,7 +1814,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 40,
 		profItemId = {
 			0,
 			0,
@@ -1839,7 +1839,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 15,
+		EXP = 40,
 		profItemId = {
 			0,
 			0,
@@ -1864,7 +1864,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 40,
 		profItemId = {
 			0,
 			0,
@@ -1889,7 +1889,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 40,
 		profItemId = {
 			0,
 			0,
@@ -1914,7 +1914,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 15,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -1939,7 +1939,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 4000,
 		RMBMoney = 0,
-		EXP = 20,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -1964,7 +1964,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 1000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,
@@ -1979,7 +1979,7 @@ local datas = {
 		taskTitle = 108100011,
 		TaskName = 108200011,
 		imgPath = "icon/523.png",
-		levelLimit = 10,
+		levelLimit = 30,
 		TaskType = 2,
 		CompleteType = 201,
 		nextID = 0,
@@ -1989,7 +1989,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 4000,
 		RMBMoney = 0,
-		EXP = 20,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -2014,7 +2014,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,
@@ -2029,7 +2029,7 @@ local datas = {
 		taskTitle = 108100013,
 		TaskName = 108200013,
 		imgPath = "icon/528.png",
-		levelLimit = 10,
+		levelLimit = 20,
 		TaskType = 2,
 		CompleteType = 105,
 		nextID = 0,
@@ -2039,7 +2039,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 4000,
 		RMBMoney = 0,
-		EXP = 20,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -2054,7 +2054,7 @@ local datas = {
 		taskTitle = 108100014,
 		TaskName = 108200014,
 		imgPath = "icon/531.png",
-		levelLimit = 30,
+		levelLimit = 25,
 		TaskType = 2,
 		CompleteType = 517,
 		nextID = 0,
@@ -2064,7 +2064,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 15,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -2089,7 +2089,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -2104,7 +2104,7 @@ local datas = {
 		taskTitle = 108100016,
 		TaskName = 108200016,
 		imgPath = "icon/534.png",
-		levelLimit = 25,
+		levelLimit = 30,
 		TaskType = 2,
 		CompleteType = 520,
 		nextID = 0,
@@ -2114,7 +2114,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 15,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -2139,7 +2139,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -2164,7 +2164,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,
@@ -2189,7 +2189,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 10,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,

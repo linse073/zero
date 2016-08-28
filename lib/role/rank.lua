@@ -364,7 +364,7 @@ function proc.refresh_arena(msg)
 end
 
 function proc.slave_rank(msg)
-    local sr = skynet.call(rank_mgr, "lua", "get", sr)
+    local sr = skynet.call(rank_mgr, "lua", "get", msg.type)
     if not sr then
         error{code = error_code.ERROR_SLAVE_RANK}
     end

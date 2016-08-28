@@ -45,6 +45,10 @@ function CMD.zrange(rt, r1, r2)
     return db:zrange(rt, r1, r2)
 end
 
+function CMD.zrangescore(rt, r1, r2)
+    return db:zrange(rt, r1, r2, "WITHSCORES")
+end
+
 function CMD.zrank(rt, key)
     return db:zrank(rt, key)
 end

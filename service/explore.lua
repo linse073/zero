@@ -189,7 +189,7 @@ local function win(t, info, tinfo)
     local tm = mail_bonus(0, 0, exp, t, tinfo.prof)
     tm.content = string.format(explore_fail, info.name)
     tm.fail = true
-    tm.finish = true
+    -- tm.finish = true
     skynet.call(offline_mgr, "lua", "add", "mail", tinfo.roleid, tm)
     tinfo.status = explore_status.FINISH
     tinfo.reason = explore_reason.FAIL
@@ -390,7 +390,7 @@ function CMD.quit(roleid)
             local m = mail_bonus(imoney, ibonus, exp, t, info.prof)
             m.content = string.format(explore_escape, tinfo.name)
             m.fail = true
-            m.finish = true
+            -- m.finish = true
             skynet.call(offline_mgr, "lua", "add", "mail", roleid, m)
             info.status = explore_status.FINISH
             info.reason = explore_reason.ESCAPE
@@ -434,7 +434,7 @@ function CMD.quit(roleid)
             local bonus = tdt // BONUS_TIME
             local m = mail_bonus(money, bonus, exp, t, info.prof)
             m.content = explore_quit
-            m.finish = true
+            -- m.finish = true
             skynet.call(offline_mgr, "lua", "add", "mail", roleid, m)
             info.status = explore_status.FINISH
             info.reason = explore_reason.QUIT

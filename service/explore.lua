@@ -140,15 +140,15 @@ local function mail_bonus(money, num, exp, t, prof)
     if num > 0 then
         new_rand.init(t)
         get_bonus({rand_num=num, data=bonus_data}, award, prof)
-        local item = {}
-        for k, v in pairs(award) do
-            item[#item+1] = {
-                itemid = k,
-                num = v,
-            }
-        end
-        m.item_info = item
     end
+    local item = {}
+    for k, v in pairs(award) do
+        item[#item+1] = {
+            itemid = k,
+            num = v,
+        }
+    end
+    m.item_info = item
     return m
 end
 
@@ -186,7 +186,7 @@ local function win(t, info, tinfo)
     end
     skynet.call(save_explore, "lua", "update", info.roleid, info)
     local exp = data.exp * tdt // 3600
-    local tm = mail_bonus(0, 0, exp)
+    local tm = mail_bonus(0, 0, exp, t, tinfo.prof)
     tm.content = string.format(explore_fail, info.name)
     tm.fail = true
     tm.finish = true

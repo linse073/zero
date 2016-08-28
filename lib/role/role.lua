@@ -997,4 +997,12 @@ function proc.online_award(msg)
     return "update_user", {update=p}
 end
 
+function proc.add_offline_exp(msg)
+    
+end
+
+function proc.get_offline_exp(msg)
+    
+end
+
 return role

@@ -77,6 +77,8 @@ local msg = {
     [2800] = "sign_in",
     [2801] = "exchange",
     [2802] = "online_award",
+    [2803] = "add_offline_exp",
+    [2804] = "get_offline_exp",
 
     [2900] = "explore",
     [2901] = "quit_explore",

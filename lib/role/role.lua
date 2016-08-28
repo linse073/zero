@@ -419,7 +419,7 @@ function role.init_prop()
     data.prop = prop
 end
 
-function role.repair(user)
+function role.repair(user, now)
     local sign_in = user.sign_in
     if sign_in then
         for i = 1, base.MAX_SIGN_IN do
@@ -459,7 +459,6 @@ function role.repair(user)
         user.online_award_count = 0
     end
     if not user.online_award_time then
-        local now = floor(skynet.time())
         user.online_award_time = now
     end
     if not user.arena_cd then
@@ -494,6 +493,12 @@ function role.repair(user)
     end
     if not user.explore_award then
         user.explore_award = 0
+    end
+    if not user.offline_exp_time then
+        user.offline_exp_time = now
+    end
+    if not user.offline_exp_count then
+        user.offline_exp_count = 0
     end
 end
 
@@ -673,6 +678,8 @@ function proc.create_user(msg)
         mall_count = {},
         arena_win = 0,
         explore_award = 0,
+        offline_exp_time = now,
+        offline_exp_count = 0,
 
         item = {},
         card = {},
@@ -704,8 +711,8 @@ local function enter_game(msg)
         error{code = error_code.ROLE_NOT_EXIST}
     end
     user = skynet.unpack(user)
-    role.repair(user)
     local now = floor(skynet.time())
+    role.repair(user, now)
     user.last_login_time = user.login_time
     user.login_time = now
     data.suser = suser
@@ -998,11 +1005,39 @@ function proc.online_award(msg)
 end
 
 function proc.add_offline_exp(msg)
-    
+    local user = data.user
+    local now = floor(skynet.time())
+    local dt = now - user.offline_exp_time
+    if dt > base.OFFLINE_EXP_TIME then
+        dt = base.OFFLINE_EXP_TIME
+    end
+    dt = dt + OFFLINE_EXP_TIME
+    local exp = dt * MAX_OFFLINE_EXP // OFFLINE_EXP_TIME
+    -- TODO: rmb
+    local p = update_user()
+    local pu = p.user
+    user.offline_exp_time = now
+    pu.offline_exp_time = now
+    user.offline_exp_count = user.offline_exp_count + 1
+    pu.offline_exp_count = user.offline_exp_count
+    role.add_exp(p, exp)
+    return "update_user", {update=p}
 end
 
 function proc.get_offline_exp(msg)
-    
+    local user = data.user
+    local now = floor(skynet.time())
+    local dt = now - user.offline_exp_time
+    if dt > base.OFFLINE_EXP_TIME then
+        dt = base.OFFLINE_EXP_TIME
+    end
+    local exp = dt * MAX_OFFLINE_EXP // OFFLINE_EXP_TIME
+    local p = update_user()
+    local pu = p.user
+    user.offline_exp_time = now
+    pu.offline_exp_time = now
+    role.add_exp(p, exp)
+    return "update_user", {update=p}
 end
 
 return role

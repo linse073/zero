@@ -294,6 +294,9 @@ local base = {
     MALL_LIMIT_DAY = 1,
     MALL_LIMIT_WEEK = 2,
     MALL_LIMIT_TIME = 3,
+
+    OFFLINE_EXP_TIME = 12 * 60 * 60,
+    MAX_OFFLINE_EXP = 120,
 }
 
 return base

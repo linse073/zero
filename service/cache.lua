@@ -319,7 +319,7 @@ skynet.start(function()
     for k, v in pairs(vipdata) do
         local giftItem = {}
         local mailItem = {}
-        for v1 in string.gmatch(v.GiftList, "(%d+)") do
+        for v1 in string.gmatch(v.giftList, "(%d+)") do
             local itemid = tonumber(v1)
             giftItem[#giftItem+1] = assert(itemdata[itemid], string.format("No item data %d.", itemid))
             mailItem[#mailItem+1] = {itemid=itemid, num=1}

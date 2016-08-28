@@ -1011,8 +1011,8 @@ function proc.add_offline_exp(msg)
     if dt > base.OFFLINE_EXP_TIME then
         dt = base.OFFLINE_EXP_TIME
     end
-    dt = dt + OFFLINE_EXP_TIME
-    local exp = dt * MAX_OFFLINE_EXP // OFFLINE_EXP_TIME
+    dt = dt + base.OFFLINE_EXP_TIME
+    local exp = dt * base.MAX_OFFLINE_EXP // base.OFFLINE_EXP_TIME
     -- TODO: rmb
     local p = update_user()
     local pu = p.user
@@ -1031,7 +1031,7 @@ function proc.get_offline_exp(msg)
     if dt > base.OFFLINE_EXP_TIME then
         dt = base.OFFLINE_EXP_TIME
     end
-    local exp = dt * MAX_OFFLINE_EXP // OFFLINE_EXP_TIME
+    local exp = dt * base.MAX_OFFLINE_EXP // base.OFFLINE_EXP_TIME
     local p = update_user()
     local pu = p.user
     user.offline_exp_time = now

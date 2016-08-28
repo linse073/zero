@@ -531,9 +531,19 @@
     type 0 : integer
 }
 
+.simple_rank_info {
+    id 0 : integer
+    name 1 : string
+    prof 2 : integer
+    level 3 : integer
+    fight_point 4 : integer
+    rank 5 : integer
+    value 6 : integer
+}
+
 .slave_rank_list {
     type 0 : integer
     rank 1 : integer
     value 2 : integer
-    list 3 : *rank_info
+    list 3 : *simple_rank_info
 }

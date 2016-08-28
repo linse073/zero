@@ -373,9 +373,14 @@ function proc.slave_rank(msg)
     cr = tonumber(cr) + 1
     cs = -tonumber(cs)
     local list = {}
-    for k, v in ipairs(r) do
-        local info = skynet.call(role_mgr, "lua", "get_rank_info", tonumber(v))
-        info.rank = k + 1
+    local len = #r // 2
+    for i = 1, len do
+        local n = i * 2
+        local roleid = tonumber(r[n - 1])
+        local value = -tonumber(r[n])
+        local info = skynet.call(role_mgr, "lua", "get_rank_info", roleid)
+        info.rank = i
+        info.value = value
         list[#list+1] = info
     end
     return "slave_rank_list", {

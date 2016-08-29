@@ -197,6 +197,7 @@ local function update_day(user, od, nd)
     user.exchange_count = 0
     user.refresh_arena_cd = 0
     user.refresh_match_cd = 0
+    user.offline_exp_count = 0
     stage.update_day()
     local mld = mall_limit[base.MALL_LIMIT_DAY]
     local mall_count = user.mall_count

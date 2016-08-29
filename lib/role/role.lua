@@ -198,6 +198,7 @@ local function update_day(user, od, nd)
     user.refresh_arena_cd = 0
     user.refresh_match_cd = 0
     user.offline_exp_count = 0
+    user.revive_count = 0
     stage.update_day()
     local mld = mall_limit[base.MALL_LIMIT_DAY]
     local mall_count = user.mall_count
@@ -501,6 +502,9 @@ function role.repair(user, now)
     if not user.offline_exp_count then
         user.offline_exp_count = 0
     end
+    if not user.revive_count then
+        user.revive_count = 0
+    end
 end
 
 function role.action(otype, info)
@@ -681,6 +685,7 @@ function proc.create_user(msg)
         explore_award = 0,
         offline_exp_time = now,
         offline_exp_count = 0,
+        revive_count = 0,
 
         item = {},
         card = {},

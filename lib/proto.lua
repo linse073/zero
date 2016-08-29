@@ -54,6 +54,7 @@ local msg = {
     [2503] = "open_chest",
     [2504] = "get_stage_award",
     [2505] = "fight_fail",
+    [2506] = "revive",
 
     [2600] = "add_item",
     [2601] = "add_exp",

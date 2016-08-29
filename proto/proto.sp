@@ -44,6 +44,7 @@
     match_win 25 : integer
     offline_exp_time 26 : integer
     offline_exp_count 27 : integer
+    revive_count 28 : integer
 }
 
 .other_info {

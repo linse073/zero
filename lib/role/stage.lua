@@ -495,4 +495,17 @@ function proc.get_stage_award(msg)
     return "update_user", {update=p}
 end
 
+function proc.revive(msg)
+    local user = data.user
+    if user.revive_count >= MAX_REVIVE_COUNT then
+        error{code = error_code.REVIVE_COUNT_LIMIT}
+    end
+    -- TODO: rmb
+    local p = update_user()
+    local pu = p.user
+    user.revive_count = user.revive_count + 1
+    pu.revive_count = user.revive_count
+    return "update_user", {update=p}
+end
+
 return stage

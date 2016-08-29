@@ -297,6 +297,8 @@ local base = {
 
     OFFLINE_EXP_TIME = 12 * 60 * 60,
     MAX_OFFLINE_EXP = 120,
+
+    MAX_REVIVE_COUNT = 10,
 }
 
 return base

@@ -42,6 +42,8 @@
     match_cd 23 : integer
     refresh_match_cd 24 : integer
     match_win 25 : integer
+    offline_exp_time 26 : integer
+    offline_exp_count 27 : integer
 }
 
 .other_info {

@@ -113,6 +113,25 @@ local datas = {
 		IconLayer = 0,
 		IconDis = 300,
 	},
+	[1000000007] = {
+		NpcId = 1000000007,
+		NpcName = 0,
+		NpcTitle = 0,
+		TownID = 1001,
+		NpcPosX = 2620,
+		NpcPosY = 290,
+		NpcTalk = 0,
+		NpcBigHead = "ccsresources/N_0001.png",
+		NpcSmallHead = "ccsresources/T_0000.png",
+		res = "collection01",
+		openUiType = 4,
+		layer = 0,
+		icon = "",
+		IconOffsetX = 0,
+		IconOffsetY = 0,
+		IconLayer = 0,
+		IconDis = 0,
+	},
 }
 
 return datas

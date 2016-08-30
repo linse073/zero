@@ -1397,7 +1397,11 @@ function proc.mall_item(msg)
         error{code = error_code.ERROR_COST_TYPE}
     end
     item.add_by_itemid(p, 1, md.data)
-    user.mall_count[msg.id] = num + 1
+    local newnum = num + 1
+    user.mall_count[msg.id] = newnum
+    p.mall_count = {
+        {id=msg.id, count=newnum},
+    }
     return "update_user", {update=p}
 end
 

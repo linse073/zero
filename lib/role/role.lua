@@ -534,8 +534,9 @@ function role.charge(num)
     local vip = 0
     for k, v in ipairs(vip_level) do
         if user.charge < v.price then
-            vip = k - 1
             break
+        else
+            vip = k
         end
     end
     if vip ~= user.vip then

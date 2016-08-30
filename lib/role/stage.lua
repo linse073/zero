@@ -497,7 +497,7 @@ end
 
 function proc.revive(msg)
     local user = data.user
-    if user.revive_count >= MAX_REVIVE_COUNT then
+    if user.revive_count >= bae.MAX_REVIVE_COUNT then
         error{code = error_code.REVIVE_COUNT_LIMIT}
     end
     -- TODO: rmb

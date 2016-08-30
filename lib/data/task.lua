@@ -1734,12 +1734,12 @@ local datas = {
 		CompleteType = 502,
 		nextID = 0,
 		condition = 2,
-		count = 4,
+		count = 2,
 		NpcId = 0,
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 40,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -1764,7 +1764,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 20,
+		EXP = 120,
 		profItemId = {
 			0,
 			0,
@@ -1789,7 +1789,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 1000,
 		RMBMoney = 0,
-		EXP = 20,
+		EXP = 120,
 		profItemId = {
 			0,
 			0,
@@ -1814,7 +1814,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 40,
+		EXP = 60,
 		profItemId = {
 			0,
 			0,
@@ -1839,7 +1839,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 40,
+		EXP = 120,
 		profItemId = {
 			0,
 			0,
@@ -1864,7 +1864,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 40,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,
@@ -1889,7 +1889,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 40,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -1914,7 +1914,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 80,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,
@@ -1939,7 +1939,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 4000,
 		RMBMoney = 0,
-		EXP = 80,
+		EXP = 10,
 		profItemId = {
 			0,
 			0,
@@ -1964,7 +1964,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 1000,
 		RMBMoney = 0,
-		EXP = 20,
+		EXP = 10,
 		profItemId = {
 			0,
 			0,
@@ -1989,7 +1989,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 4000,
 		RMBMoney = 0,
-		EXP = 80,
+		EXP = 10,
 		profItemId = {
 			0,
 			0,
@@ -2014,7 +2014,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 20,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -2039,7 +2039,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 4000,
 		RMBMoney = 0,
-		EXP = 80,
+		EXP = 10,
 		profItemId = {
 			0,
 			0,
@@ -2064,7 +2064,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 80,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,
@@ -2089,7 +2089,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 80,
+		EXP = 10,
 		profItemId = {
 			0,
 			0,
@@ -2114,7 +2114,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 80,
+		EXP = 20,
 		profItemId = {
 			0,
 			0,
@@ -2139,7 +2139,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 80,
+		EXP = 10,
 		profItemId = {
 			0,
 			0,
@@ -2164,7 +2164,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 20,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -2189,7 +2189,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 20,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,

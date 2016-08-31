@@ -199,6 +199,7 @@ local function update_day(user, od, nd)
     user.refresh_match_cd = 0
     user.offline_exp_count = 0
     user.revive_count = 0
+    user.patch_sign_in = 0
     stage.update_day()
     local mld = mall_limit[base.MALL_LIMIT_DAY]
     local mall_count = user.mall_count
@@ -505,6 +506,9 @@ function role.repair(user, now)
     if not user.revive_count then
         user.revive_count = 0
     end
+    if not user.patch_sign_in then
+        user.patch_sign_in = 0
+    end
 end
 
 function role.action(otype, info)
@@ -687,6 +691,7 @@ function proc.create_user(msg)
         offline_exp_time = now,
         offline_exp_count = 0,
         revive_count = 0,
+        patch_sign_in = 0,
 
         item = {},
         card = {},
@@ -851,6 +856,7 @@ function proc.sign_in(msg)
     local user = data.user
     local sign_in = user.sign_in
     local pindex
+    local p = update_user()
     if msg.patch then
         for i = 1, index do
             if not sign_in[i] then
@@ -861,13 +867,26 @@ function proc.sign_in(msg)
         if not pindex then
             error{code = error_code.NO_PATCH_SIGN_IN}
         end
+        local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
+        local count = user.patch_sign_in + 1
+        if count > l.freeSignUp then
+            local dc = count - l.freeSignUp
+            local e = assert(expdata[dc], string.format("No exp data %d.", dc))
+            proc_queue(cs, function()
+                if user.rmb < e.signUpPrice then
+                    error{code = error_code.ROLE_RMB_LIMIT}
+                end
+                role.add_rmb(p, -e.signUpPrice)
+            end)
+        end
+        user.patch_sign_in = count
+        p.user.patch_sign_in = count
     else
         pindex = index
         if sign_in[pindex] then
             error{code = error_code.ALREADY_SIGN_IN}
         end
     end
-    local p = update_user()
     local rand_seed = floor(skynet.time())
     new_rand.init(rand_seed)
     role.sign_in(p, pindex)
@@ -1013,6 +1032,19 @@ end
 
 function proc.add_offline_exp(msg)
     local user = data.user
+    local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
+    local count = user.offline_exp_count + 1
+    local p = update_user()
+    if count > l.expLimit then
+        local dc = count - l.expLimit
+        local e = assert(expdata[dc], string.format("No exp data %d.", dc))
+        proc_queue(cs, function()
+            if user.rmb < e.energyPrice then
+                error{code = error_code.ROLE_RMB_LIMIT}
+            end
+            role.add_rmb(p, -e.energyPrice)
+        end)
+    end
     local now = floor(skynet.time())
     local dt = now - user.offline_exp_time
     if dt > base.OFFLINE_EXP_TIME then
@@ -1020,13 +1052,11 @@ function proc.add_offline_exp(msg)
     end
     dt = dt + base.OFFLINE_EXP_TIME
     local exp = dt * base.MAX_OFFLINE_EXP // base.OFFLINE_EXP_TIME
-    -- TODO: rmb
-    local p = update_user()
     local pu = p.user
     user.offline_exp_time = now
     pu.offline_exp_time = now
-    user.offline_exp_count = user.offline_exp_count + 1
-    pu.offline_exp_count = user.offline_exp_count
+    user.offline_exp_count = count
+    pu.offline_exp_count = count
     role.add_exp(p, exp)
     return "update_user", {update=p}
 end

@@ -27,6 +27,7 @@ local intensifydata
 local malldata
 local base
 local error_code
+local vip_level
 local cs
 local is_equip
 local is_material
@@ -52,6 +53,7 @@ skynet.init(function()
     malldata = share.malldata
     base = share.base
     error_code = share.error_code
+    vip_level = share.vip_level
     cs = share.cs
     is_equip = func.is_equip
     is_material = func.is_material
@@ -653,8 +655,10 @@ function proc.compound_item(msg)
     local mul = 1
     if edata.composTotalRatio > 0 then
         local r = random(edata.composTotalRatio)
+        local user = data.user
+        local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
         for k, v in ipairs(edata.composRatio) do
-            if r <= v[1] then
+            if r <= v[1] + l.composRate then
                 mul = v[2]
                 break
             end
@@ -819,7 +823,11 @@ function proc.intensify_item(msg)
     item.del_by_itemid(p, base.INTENSIFY_ITEM, 1)
     local pitem = p.item
     local r = random(base.RAND_FACTOR)
-    if r <= idata.rate then
+    local rate = idata.rate
+    local user = data.user
+    local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
+    rate = rate + l.intensifyRate
+    if r <= rate then
         iv.intensify = iv.intensify + 1
         i[5] = idata
         pitem[#pitem+1] = {
@@ -1368,6 +1376,13 @@ function proc.mall_item(msg)
         error{code = error_code.PRE_STAGE_NOT_COMPLETE}
     end
     local num = user.mall_count[msg.id] or 0
+    local limitNum = md.limitNum
+    local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
+    if md.type == base.MALL_TYPE_DAY then
+        limitNum = limitNum + l.mallDay
+    elseif md.type == base.MALL_TYPE_TIME then
+        limitNum = limitNum + l.mallLimit
+    end
     if md.limitNum ~= 0 and num >= md.limitNum then
         error{code = error_code.MALL_COUNT_LIMIT}
     end

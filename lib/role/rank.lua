@@ -20,6 +20,7 @@ local data
 local base
 local error_code
 local itemdata
+local expdata
 local type_reward
 local is_equip
 local is_stone
@@ -39,6 +40,7 @@ skynet.init(function()
     base = share.base
     error_code = share.error_code
     itemdata = share.itemdata
+    expdata = share.expdata
     type_reward = share.type_reward
     is_equip = func.is_equip
     is_stone = func.is_stone
@@ -342,19 +344,33 @@ function proc.refresh_arena(msg)
         if now - user.arena_cd >= base.ARENA_CHALLENGE_TIME then
             error{code = error_code.CHALLENGE_NOT_CD}
         end
-        -- TODO: rmb
+        local count = user.refresh_arena_cd + 1
+        local e = assert(expdata[count], string.format("No exp data %d.", count))
         local p = update_user()
+        proc_queue(cs, function()
+            if user.rmb < e.arenaDiamond then
+                error{code = error_code.ROLE_RMB_LIMIT}
+            end
+            role.add_rmb(p, -e.arenaDiamond)
+        end)
         local pu = p.user
         user.arena_cd = now - base.ARENA_CHALLENGE_TIME
         pu.arena_cd = user.arena_cd
-        user.refresh_arena_cd = user.refresh_arena_cd + 1
-        pu.refresh_arena_cd = user.refresh_arena_cd
+        user.refresh_arena_cd = count
+        pu.refresh_arena_cd = count
         return "update_user", {update=p}
     elseif msg.rank_type == base.RANK_FIGHT_POINT then
-        -- TODO: rmb
+        local count = user.refresh_match_cd + 1
+        local e = assert(expdata[count], string.format("No exp data %d.", count))
         local p = update_user()
-        user.refresh_match_cd = user.refresh_match_cd + 1
-        p.user.refresh_match_cd = user.refresh_match_cd
+        proc_queue(cs, function()
+            if user.rmb < e.matchDiamond then
+                error{code = error_code.ROLE_RMB_LIMIT}
+            end
+            role.add_rmb(p, -e.matchDiamond)
+        end)
+        user.refresh_match_cd = count
+        p.user.refresh_match_cd = count
         local now = floor(skynet.time())
         local rank_list = rank.refresh_arena(p, now)
         return "update_user", {update=p, rank_list=rank_list}

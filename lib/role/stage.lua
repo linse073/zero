@@ -26,9 +26,11 @@ local error_code
 local base
 local stagedata
 local itemdata
+local expdata
 local area_stage
 local stage_reward
 local stage_task_complete
+local vip_level
 local data
 local role_mgr
 local rank_mgr
@@ -42,9 +44,11 @@ skynet.init(function()
     base = share.base
     stagedata = share.stagedata
     itemdata = share.itemdata
+    expdata = share.expdata
     area_stage = share.area_stage
     stage_reward = share.stage_reward
     stage_task_complete = share.stage_task_complete
+    vip_level = share.vip_level
     cs = share.cs
     role_mgr = skynet.queryservice("role_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
@@ -87,14 +91,22 @@ function stage.pack_all()
     return "stage", pack
 end
 
-function stage.star(v)
-    -- TODO calculate stage star
-    v.star = 3
+function stage.star(v, d)
+    local star = 1
+    if v.hp_score >= d.remainHp // 100 then
+        star = star + 1
+    end
+    if v.time <= d.finishTime then
+        star = star + 1
+    end
+    if not v.star or star > v.star then
+        v.star = star
+    end
 end
 
-function stage.repair(v)
+function stage.repair(v, d)
     if not v.star then
-        stage.star(v)
+        stage.star(v, d)
     end
 end
 
@@ -102,7 +114,7 @@ function stage.add(v, d)
     if not d then
         d = assert(stagedata[v.id], string.format("No stage data %d.", v.id))
     end
-    stage.repair(v)
+    stage.repair(v, d)
     local s = {v, d}
     data.stage[v.id] = s
     return s
@@ -268,7 +280,7 @@ function stage.add_stage(p, id)
         role.add_money(p, d.goldTotal)
         local sv = s[1]
         sv.count = sv.count + 1
-        stage.star(sv)
+        stage.star(sv, d)
         ps[#ps+1] = sv
         data.stage_star = data.stage_star + sv.star
         local ss = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_STAGE)
@@ -382,7 +394,7 @@ function proc.end_stage(msg)
         sv.hp_score = msg.hp_score
     end
     local old_star = sv.star
-    stage.star(sv)
+    stage.star(sv, d)
     local pstage = p.stage
     pstage[#pstage+1] = sv
     task.update(p, base.TASK_COMPLETE_STAGE, msg.id, 1)
@@ -497,14 +509,25 @@ end
 
 function proc.revive(msg)
     local user = data.user
-    if user.revive_count >= base.MAX_REVIVE_COUNT then
-        error{code = error_code.REVIVE_COUNT_LIMIT}
-    end
-    -- TODO: rmb
+    local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
+    -- if user.revive_count >= base.MAX_REVIVE_COUNT then
+    --     error{code = error_code.REVIVE_COUNT_LIMIT}
+    -- end
+    local count = user.revive_count + 1
     local p = update_user()
+    if count > l.relive then
+        local dc = count - l.relive
+        local e = assert(expdata[dc], string.format("No exp data %d.", dc))
+        proc_queue(cs, function()
+            if user.rmb < e.revivePrice then
+                error{code = error_code.ROLE_RMB_LIMIT}
+            end
+            role.add_rmb(p, -e.revivePrice)
+        end)
+    end
     local pu = p.user
-    user.revive_count = user.revive_count + 1
-    pu.revive_count = user.revive_count
+    user.revive_count = count
+    pu.revive_count = count
     return "update_user", {update=p}
 end
 

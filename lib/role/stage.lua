@@ -280,6 +280,8 @@ function stage.add_stage(p, id)
         role.add_money(p, d.goldTotal)
         local sv = s[1]
         sv.count = sv.count + 1
+        sv.time = d.finishTime
+        sv.hp_score = 100
         stage.star(sv, d)
         ps[#ps+1] = sv
         data.stage_star = data.stage_star + sv.star

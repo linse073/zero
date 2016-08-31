@@ -1376,15 +1376,17 @@ function proc.mall_item(msg)
         error{code = error_code.PRE_STAGE_NOT_COMPLETE}
     end
     local num = user.mall_count[msg.id] or 0
-    local limitNum = md.limitNum
-    local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
-    if md.type == base.MALL_TYPE_DAY then
-        limitNum = limitNum + l.mallDay
-    elseif md.type == base.MALL_TYPE_TIME then
-        limitNum = limitNum + l.mallLimit
-    end
-    if md.limitNum ~= 0 and num >= md.limitNum then
-        error{code = error_code.MALL_COUNT_LIMIT}
+    if md.limitNum ~= 0 then
+        local limitNum = md.limitNum
+        local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
+        if md.type == base.MALL_TYPE_DAY then
+            limitNum = limitNum + l.mallDay
+        elseif md.type == base.MALL_TYPE_TIME then
+            limitNum = limitNum + l.mallLimit
+        end
+        if num >= limitNum then
+            error{code = error_code.MALL_COUNT_LIMIT}
+        end
     end
     if md.type == base.MALL_TYPE_TIME then
         local now = floor(skynet.time())

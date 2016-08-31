@@ -18,6 +18,7 @@ local datas = {
 		arenaDiamond = 200,
 		energyPrice = 50,
 		revivePrice = 50,
+		signUpPrice = 50,
 	},
 	[2] = {
 		lv = 2,
@@ -38,6 +39,7 @@ local datas = {
 		arenaDiamond = 220,
 		energyPrice = 100,
 		revivePrice = 60,
+		signUpPrice = 60,
 	},
 	[3] = {
 		lv = 3,
@@ -58,6 +60,7 @@ local datas = {
 		arenaDiamond = 240,
 		energyPrice = 150,
 		revivePrice = 70,
+		signUpPrice = 70,
 	},
 	[4] = {
 		lv = 4,
@@ -78,6 +81,7 @@ local datas = {
 		arenaDiamond = 260,
 		energyPrice = 200,
 		revivePrice = 80,
+		signUpPrice = 80,
 	},
 	[5] = {
 		lv = 5,
@@ -98,6 +102,7 @@ local datas = {
 		arenaDiamond = 280,
 		energyPrice = 250,
 		revivePrice = 90,
+		signUpPrice = 90,
 	},
 	[6] = {
 		lv = 6,
@@ -118,6 +123,7 @@ local datas = {
 		arenaDiamond = 300,
 		energyPrice = 300,
 		revivePrice = 100,
+		signUpPrice = 100,
 	},
 	[7] = {
 		lv = 7,
@@ -138,6 +144,7 @@ local datas = {
 		arenaDiamond = 320,
 		energyPrice = 350,
 		revivePrice = 110,
+		signUpPrice = 110,
 	},
 	[8] = {
 		lv = 8,
@@ -158,6 +165,7 @@ local datas = {
 		arenaDiamond = 340,
 		energyPrice = 400,
 		revivePrice = 120,
+		signUpPrice = 120,
 	},
 	[9] = {
 		lv = 9,
@@ -178,6 +186,7 @@ local datas = {
 		arenaDiamond = 360,
 		energyPrice = 450,
 		revivePrice = 130,
+		signUpPrice = 130,
 	},
 	[10] = {
 		lv = 10,
@@ -198,6 +207,7 @@ local datas = {
 		arenaDiamond = 380,
 		energyPrice = 500,
 		revivePrice = 140,
+		signUpPrice = 140,
 	},
 	[11] = {
 		lv = 11,
@@ -218,6 +228,7 @@ local datas = {
 		arenaDiamond = 400,
 		energyPrice = 550,
 		revivePrice = 150,
+		signUpPrice = 150,
 	},
 	[12] = {
 		lv = 12,
@@ -238,6 +249,7 @@ local datas = {
 		arenaDiamond = 420,
 		energyPrice = 600,
 		revivePrice = 160,
+		signUpPrice = 160,
 	},
 	[13] = {
 		lv = 13,
@@ -258,6 +270,7 @@ local datas = {
 		arenaDiamond = 440,
 		energyPrice = 650,
 		revivePrice = 170,
+		signUpPrice = 170,
 	},
 	[14] = {
 		lv = 14,
@@ -278,6 +291,7 @@ local datas = {
 		arenaDiamond = 460,
 		energyPrice = 700,
 		revivePrice = 180,
+		signUpPrice = 180,
 	},
 	[15] = {
 		lv = 15,
@@ -298,6 +312,7 @@ local datas = {
 		arenaDiamond = 480,
 		energyPrice = 750,
 		revivePrice = 190,
+		signUpPrice = 190,
 	},
 	[16] = {
 		lv = 16,
@@ -318,6 +333,7 @@ local datas = {
 		arenaDiamond = 500,
 		energyPrice = 800,
 		revivePrice = 200,
+		signUpPrice = 200,
 	},
 	[17] = {
 		lv = 17,
@@ -338,6 +354,7 @@ local datas = {
 		arenaDiamond = 520,
 		energyPrice = 850,
 		revivePrice = 210,
+		signUpPrice = 210,
 	},
 	[18] = {
 		lv = 18,
@@ -358,6 +375,7 @@ local datas = {
 		arenaDiamond = 540,
 		energyPrice = 900,
 		revivePrice = 220,
+		signUpPrice = 220,
 	},
 	[19] = {
 		lv = 19,
@@ -378,6 +396,7 @@ local datas = {
 		arenaDiamond = 560,
 		energyPrice = 950,
 		revivePrice = 230,
+		signUpPrice = 230,
 	},
 	[20] = {
 		lv = 20,
@@ -398,6 +417,7 @@ local datas = {
 		arenaDiamond = 580,
 		energyPrice = 1000,
 		revivePrice = 240,
+		signUpPrice = 240,
 	},
 	[21] = {
 		lv = 21,
@@ -418,6 +438,7 @@ local datas = {
 		arenaDiamond = 600,
 		energyPrice = 1050,
 		revivePrice = 250,
+		signUpPrice = 250,
 	},
 	[22] = {
 		lv = 22,
@@ -438,6 +459,7 @@ local datas = {
 		arenaDiamond = 620,
 		energyPrice = 1100,
 		revivePrice = 260,
+		signUpPrice = 260,
 	},
 	[23] = {
 		lv = 23,
@@ -458,6 +480,7 @@ local datas = {
 		arenaDiamond = 640,
 		energyPrice = 1150,
 		revivePrice = 270,
+		signUpPrice = 270,
 	},
 	[24] = {
 		lv = 24,
@@ -478,6 +501,7 @@ local datas = {
 		arenaDiamond = 660,
 		energyPrice = 1200,
 		revivePrice = 280,
+		signUpPrice = 280,
 	},
 	[25] = {
 		lv = 25,
@@ -498,6 +522,7 @@ local datas = {
 		arenaDiamond = 680,
 		energyPrice = 1250,
 		revivePrice = 290,
+		signUpPrice = 290,
 	},
 	[26] = {
 		lv = 26,
@@ -518,6 +543,7 @@ local datas = {
 		arenaDiamond = 700,
 		energyPrice = 1300,
 		revivePrice = 300,
+		signUpPrice = 300,
 	},
 	[27] = {
 		lv = 27,
@@ -538,6 +564,7 @@ local datas = {
 		arenaDiamond = 720,
 		energyPrice = 1350,
 		revivePrice = 310,
+		signUpPrice = 310,
 	},
 	[28] = {
 		lv = 28,
@@ -558,6 +585,7 @@ local datas = {
 		arenaDiamond = 740,
 		energyPrice = 1400,
 		revivePrice = 320,
+		signUpPrice = 320,
 	},
 	[29] = {
 		lv = 29,
@@ -578,6 +606,7 @@ local datas = {
 		arenaDiamond = 760,
 		energyPrice = 1450,
 		revivePrice = 330,
+		signUpPrice = 330,
 	},
 	[30] = {
 		lv = 30,
@@ -598,6 +627,7 @@ local datas = {
 		arenaDiamond = 780,
 		energyPrice = 1500,
 		revivePrice = 340,
+		signUpPrice = 340,
 	},
 	[31] = {
 		lv = 31,
@@ -618,6 +648,7 @@ local datas = {
 		arenaDiamond = 800,
 		energyPrice = 1550,
 		revivePrice = 350,
+		signUpPrice = 350,
 	},
 	[32] = {
 		lv = 32,
@@ -638,6 +669,7 @@ local datas = {
 		arenaDiamond = 820,
 		energyPrice = 1600,
 		revivePrice = 360,
+		signUpPrice = 360,
 	},
 	[33] = {
 		lv = 33,
@@ -658,6 +690,7 @@ local datas = {
 		arenaDiamond = 840,
 		energyPrice = 1650,
 		revivePrice = 370,
+		signUpPrice = 370,
 	},
 	[34] = {
 		lv = 34,
@@ -678,6 +711,7 @@ local datas = {
 		arenaDiamond = 860,
 		energyPrice = 1700,
 		revivePrice = 380,
+		signUpPrice = 380,
 	},
 	[35] = {
 		lv = 35,
@@ -698,6 +732,7 @@ local datas = {
 		arenaDiamond = 880,
 		energyPrice = 1750,
 		revivePrice = 390,
+		signUpPrice = 390,
 	},
 	[36] = {
 		lv = 36,
@@ -718,6 +753,7 @@ local datas = {
 		arenaDiamond = 900,
 		energyPrice = 1800,
 		revivePrice = 400,
+		signUpPrice = 400,
 	},
 	[37] = {
 		lv = 37,
@@ -738,6 +774,7 @@ local datas = {
 		arenaDiamond = 920,
 		energyPrice = 1850,
 		revivePrice = 410,
+		signUpPrice = 410,
 	},
 	[38] = {
 		lv = 38,
@@ -758,6 +795,7 @@ local datas = {
 		arenaDiamond = 940,
 		energyPrice = 1900,
 		revivePrice = 420,
+		signUpPrice = 420,
 	},
 	[39] = {
 		lv = 39,
@@ -778,6 +816,7 @@ local datas = {
 		arenaDiamond = 960,
 		energyPrice = 1950,
 		revivePrice = 430,
+		signUpPrice = 430,
 	},
 	[40] = {
 		lv = 40,
@@ -798,6 +837,7 @@ local datas = {
 		arenaDiamond = 980,
 		energyPrice = 2000,
 		revivePrice = 440,
+		signUpPrice = 440,
 	},
 	[41] = {
 		lv = 41,
@@ -818,6 +858,7 @@ local datas = {
 		arenaDiamond = 1000,
 		energyPrice = 2050,
 		revivePrice = 450,
+		signUpPrice = 450,
 	},
 	[42] = {
 		lv = 42,
@@ -838,6 +879,7 @@ local datas = {
 		arenaDiamond = 1020,
 		energyPrice = 2100,
 		revivePrice = 460,
+		signUpPrice = 460,
 	},
 	[43] = {
 		lv = 43,
@@ -858,6 +900,7 @@ local datas = {
 		arenaDiamond = 1040,
 		energyPrice = 2150,
 		revivePrice = 470,
+		signUpPrice = 470,
 	},
 	[44] = {
 		lv = 44,
@@ -878,6 +921,7 @@ local datas = {
 		arenaDiamond = 1060,
 		energyPrice = 2200,
 		revivePrice = 480,
+		signUpPrice = 480,
 	},
 	[45] = {
 		lv = 45,
@@ -898,6 +942,7 @@ local datas = {
 		arenaDiamond = 1080,
 		energyPrice = 2250,
 		revivePrice = 490,
+		signUpPrice = 490,
 	},
 	[46] = {
 		lv = 46,
@@ -918,6 +963,7 @@ local datas = {
 		arenaDiamond = 1100,
 		energyPrice = 2300,
 		revivePrice = 500,
+		signUpPrice = 500,
 	},
 	[47] = {
 		lv = 47,
@@ -938,6 +984,7 @@ local datas = {
 		arenaDiamond = 1120,
 		energyPrice = 2350,
 		revivePrice = 510,
+		signUpPrice = 510,
 	},
 	[48] = {
 		lv = 48,
@@ -958,6 +1005,7 @@ local datas = {
 		arenaDiamond = 1140,
 		energyPrice = 2400,
 		revivePrice = 520,
+		signUpPrice = 520,
 	},
 	[49] = {
 		lv = 49,
@@ -978,6 +1026,7 @@ local datas = {
 		arenaDiamond = 1160,
 		energyPrice = 2450,
 		revivePrice = 530,
+		signUpPrice = 530,
 	},
 	[50] = {
 		lv = 50,
@@ -998,6 +1047,7 @@ local datas = {
 		arenaDiamond = 1180,
 		energyPrice = 2500,
 		revivePrice = 540,
+		signUpPrice = 540,
 	},
 	[51] = {
 		lv = 51,
@@ -1018,6 +1068,7 @@ local datas = {
 		arenaDiamond = 1200,
 		energyPrice = 2550,
 		revivePrice = 550,
+		signUpPrice = 550,
 	},
 	[52] = {
 		lv = 52,
@@ -1038,6 +1089,7 @@ local datas = {
 		arenaDiamond = 1220,
 		energyPrice = 2600,
 		revivePrice = 560,
+		signUpPrice = 560,
 	},
 	[53] = {
 		lv = 53,
@@ -1058,6 +1110,7 @@ local datas = {
 		arenaDiamond = 1240,
 		energyPrice = 2650,
 		revivePrice = 570,
+		signUpPrice = 570,
 	},
 	[54] = {
 		lv = 54,
@@ -1078,6 +1131,7 @@ local datas = {
 		arenaDiamond = 1260,
 		energyPrice = 2700,
 		revivePrice = 580,
+		signUpPrice = 580,
 	},
 	[55] = {
 		lv = 55,
@@ -1098,6 +1152,7 @@ local datas = {
 		arenaDiamond = 1280,
 		energyPrice = 2750,
 		revivePrice = 590,
+		signUpPrice = 590,
 	},
 	[56] = {
 		lv = 56,
@@ -1118,6 +1173,7 @@ local datas = {
 		arenaDiamond = 1300,
 		energyPrice = 2800,
 		revivePrice = 600,
+		signUpPrice = 600,
 	},
 	[57] = {
 		lv = 57,
@@ -1138,6 +1194,7 @@ local datas = {
 		arenaDiamond = 1320,
 		energyPrice = 2850,
 		revivePrice = 610,
+		signUpPrice = 610,
 	},
 	[58] = {
 		lv = 58,
@@ -1158,6 +1215,7 @@ local datas = {
 		arenaDiamond = 1340,
 		energyPrice = 2900,
 		revivePrice = 620,
+		signUpPrice = 620,
 	},
 	[59] = {
 		lv = 59,
@@ -1178,6 +1236,7 @@ local datas = {
 		arenaDiamond = 1360,
 		energyPrice = 2950,
 		revivePrice = 630,
+		signUpPrice = 630,
 	},
 	[60] = {
 		lv = 60,
@@ -1198,6 +1257,7 @@ local datas = {
 		arenaDiamond = 1380,
 		energyPrice = 3000,
 		revivePrice = 640,
+		signUpPrice = 640,
 	},
 	[61] = {
 		lv = 61,
@@ -1218,6 +1278,7 @@ local datas = {
 		arenaDiamond = 1400,
 		energyPrice = 3050,
 		revivePrice = 650,
+		signUpPrice = 650,
 	},
 	[62] = {
 		lv = 62,
@@ -1238,6 +1299,7 @@ local datas = {
 		arenaDiamond = 1420,
 		energyPrice = 3100,
 		revivePrice = 660,
+		signUpPrice = 660,
 	},
 	[63] = {
 		lv = 63,
@@ -1258,6 +1320,7 @@ local datas = {
 		arenaDiamond = 1440,
 		energyPrice = 3150,
 		revivePrice = 670,
+		signUpPrice = 670,
 	},
 	[64] = {
 		lv = 64,
@@ -1278,6 +1341,7 @@ local datas = {
 		arenaDiamond = 1460,
 		energyPrice = 3200,
 		revivePrice = 680,
+		signUpPrice = 680,
 	},
 	[65] = {
 		lv = 65,
@@ -1298,6 +1362,7 @@ local datas = {
 		arenaDiamond = 1480,
 		energyPrice = 3250,
 		revivePrice = 690,
+		signUpPrice = 690,
 	},
 	[66] = {
 		lv = 66,
@@ -1318,6 +1383,7 @@ local datas = {
 		arenaDiamond = 1500,
 		energyPrice = 3300,
 		revivePrice = 700,
+		signUpPrice = 700,
 	},
 	[67] = {
 		lv = 67,
@@ -1338,6 +1404,7 @@ local datas = {
 		arenaDiamond = 1520,
 		energyPrice = 3350,
 		revivePrice = 710,
+		signUpPrice = 710,
 	},
 	[68] = {
 		lv = 68,
@@ -1358,6 +1425,7 @@ local datas = {
 		arenaDiamond = 1540,
 		energyPrice = 3400,
 		revivePrice = 720,
+		signUpPrice = 720,
 	},
 	[69] = {
 		lv = 69,
@@ -1378,6 +1446,7 @@ local datas = {
 		arenaDiamond = 1560,
 		energyPrice = 3450,
 		revivePrice = 730,
+		signUpPrice = 730,
 	},
 	[70] = {
 		lv = 70,
@@ -1398,6 +1467,7 @@ local datas = {
 		arenaDiamond = 1580,
 		energyPrice = 3500,
 		revivePrice = 740,
+		signUpPrice = 740,
 	},
 	[71] = {
 		lv = 71,
@@ -1418,6 +1488,7 @@ local datas = {
 		arenaDiamond = 1600,
 		energyPrice = 3550,
 		revivePrice = 750,
+		signUpPrice = 750,
 	},
 	[72] = {
 		lv = 72,
@@ -1438,6 +1509,7 @@ local datas = {
 		arenaDiamond = 1620,
 		energyPrice = 3600,
 		revivePrice = 760,
+		signUpPrice = 760,
 	},
 	[73] = {
 		lv = 73,
@@ -1458,6 +1530,7 @@ local datas = {
 		arenaDiamond = 1640,
 		energyPrice = 3650,
 		revivePrice = 770,
+		signUpPrice = 770,
 	},
 	[74] = {
 		lv = 74,
@@ -1478,6 +1551,7 @@ local datas = {
 		arenaDiamond = 1660,
 		energyPrice = 3700,
 		revivePrice = 780,
+		signUpPrice = 780,
 	},
 	[75] = {
 		lv = 75,
@@ -1498,6 +1572,7 @@ local datas = {
 		arenaDiamond = 1680,
 		energyPrice = 3750,
 		revivePrice = 790,
+		signUpPrice = 790,
 	},
 	[76] = {
 		lv = 76,
@@ -1518,6 +1593,7 @@ local datas = {
 		arenaDiamond = 1700,
 		energyPrice = 3800,
 		revivePrice = 800,
+		signUpPrice = 800,
 	},
 	[77] = {
 		lv = 77,
@@ -1538,6 +1614,7 @@ local datas = {
 		arenaDiamond = 1720,
 		energyPrice = 3850,
 		revivePrice = 810,
+		signUpPrice = 810,
 	},
 	[78] = {
 		lv = 78,
@@ -1558,6 +1635,7 @@ local datas = {
 		arenaDiamond = 1740,
 		energyPrice = 3900,
 		revivePrice = 820,
+		signUpPrice = 820,
 	},
 	[79] = {
 		lv = 79,
@@ -1578,6 +1656,7 @@ local datas = {
 		arenaDiamond = 1760,
 		energyPrice = 3950,
 		revivePrice = 830,
+		signUpPrice = 830,
 	},
 	[80] = {
 		lv = 80,
@@ -1598,6 +1677,7 @@ local datas = {
 		arenaDiamond = 1780,
 		energyPrice = 4000,
 		revivePrice = 840,
+		signUpPrice = 840,
 	},
 	[81] = {
 		lv = 81,
@@ -1618,6 +1698,7 @@ local datas = {
 		arenaDiamond = 1800,
 		energyPrice = 4050,
 		revivePrice = 850,
+		signUpPrice = 850,
 	},
 	[82] = {
 		lv = 82,
@@ -1638,6 +1719,7 @@ local datas = {
 		arenaDiamond = 1820,
 		energyPrice = 4100,
 		revivePrice = 860,
+		signUpPrice = 860,
 	},
 	[83] = {
 		lv = 83,
@@ -1658,6 +1740,7 @@ local datas = {
 		arenaDiamond = 1840,
 		energyPrice = 4150,
 		revivePrice = 870,
+		signUpPrice = 870,
 	},
 	[84] = {
 		lv = 84,
@@ -1678,6 +1761,7 @@ local datas = {
 		arenaDiamond = 1860,
 		energyPrice = 4200,
 		revivePrice = 880,
+		signUpPrice = 880,
 	},
 	[85] = {
 		lv = 85,
@@ -1698,6 +1782,7 @@ local datas = {
 		arenaDiamond = 1880,
 		energyPrice = 4250,
 		revivePrice = 890,
+		signUpPrice = 890,
 	},
 	[86] = {
 		lv = 86,
@@ -1718,6 +1803,7 @@ local datas = {
 		arenaDiamond = 1900,
 		energyPrice = 4300,
 		revivePrice = 900,
+		signUpPrice = 900,
 	},
 	[87] = {
 		lv = 87,
@@ -1738,6 +1824,7 @@ local datas = {
 		arenaDiamond = 1920,
 		energyPrice = 4350,
 		revivePrice = 910,
+		signUpPrice = 910,
 	},
 	[88] = {
 		lv = 88,
@@ -1758,6 +1845,7 @@ local datas = {
 		arenaDiamond = 1940,
 		energyPrice = 4400,
 		revivePrice = 920,
+		signUpPrice = 920,
 	},
 	[89] = {
 		lv = 89,
@@ -1778,6 +1866,7 @@ local datas = {
 		arenaDiamond = 1960,
 		energyPrice = 4450,
 		revivePrice = 930,
+		signUpPrice = 930,
 	},
 	[90] = {
 		lv = 90,
@@ -1798,6 +1887,7 @@ local datas = {
 		arenaDiamond = 1980,
 		energyPrice = 4500,
 		revivePrice = 940,
+		signUpPrice = 940,
 	},
 	[91] = {
 		lv = 91,
@@ -1818,6 +1908,7 @@ local datas = {
 		arenaDiamond = 2000,
 		energyPrice = 4550,
 		revivePrice = 950,
+		signUpPrice = 950,
 	},
 	[92] = {
 		lv = 92,
@@ -1838,6 +1929,7 @@ local datas = {
 		arenaDiamond = 2020,
 		energyPrice = 4600,
 		revivePrice = 960,
+		signUpPrice = 960,
 	},
 	[93] = {
 		lv = 93,
@@ -1858,6 +1950,7 @@ local datas = {
 		arenaDiamond = 2040,
 		energyPrice = 4650,
 		revivePrice = 970,
+		signUpPrice = 970,
 	},
 	[94] = {
 		lv = 94,
@@ -1878,6 +1971,7 @@ local datas = {
 		arenaDiamond = 2060,
 		energyPrice = 4700,
 		revivePrice = 980,
+		signUpPrice = 980,
 	},
 	[95] = {
 		lv = 95,
@@ -1898,6 +1992,7 @@ local datas = {
 		arenaDiamond = 2080,
 		energyPrice = 4750,
 		revivePrice = 990,
+		signUpPrice = 990,
 	},
 	[96] = {
 		lv = 96,
@@ -1918,6 +2013,7 @@ local datas = {
 		arenaDiamond = 2100,
 		energyPrice = 4800,
 		revivePrice = 1000,
+		signUpPrice = 1000,
 	},
 	[97] = {
 		lv = 97,
@@ -1938,6 +2034,7 @@ local datas = {
 		arenaDiamond = 2120,
 		energyPrice = 4850,
 		revivePrice = 1010,
+		signUpPrice = 1010,
 	},
 	[98] = {
 		lv = 98,
@@ -1958,6 +2055,7 @@ local datas = {
 		arenaDiamond = 2140,
 		energyPrice = 4900,
 		revivePrice = 1020,
+		signUpPrice = 1020,
 	},
 	[99] = {
 		lv = 99,
@@ -1978,6 +2076,7 @@ local datas = {
 		arenaDiamond = 2160,
 		energyPrice = 4950,
 		revivePrice = 1030,
+		signUpPrice = 1030,
 	},
 	[100] = {
 		lv = 100,
@@ -1998,6 +2097,7 @@ local datas = {
 		arenaDiamond = 2180,
 		energyPrice = 5000,
 		revivePrice = 1040,
+		signUpPrice = 1040,
 	},
 	[101] = {
 		lv = 101,
@@ -2018,6 +2118,7 @@ local datas = {
 		arenaDiamond = 2200,
 		energyPrice = 5050,
 		revivePrice = 1050,
+		signUpPrice = 1050,
 	},
 }
 

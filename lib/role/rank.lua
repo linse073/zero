@@ -14,6 +14,7 @@ local tonumber = tonumber
 
 local stage
 local mail
+local role
 
 local check_sign = util.check_sign
 local update_user = util.update_user
@@ -63,6 +64,7 @@ end)
 function rank.init_module()
     stage = require "role.stage"
     mail = require "role.mail"
+    role = require "role.role"
     return proc
 end
 

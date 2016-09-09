@@ -25,6 +25,7 @@ local expdata
 local type_reward
 local is_equip
 local is_stone
+local cs
 local arena_rank
 local fight_point_rank
 local role_mgr
@@ -45,6 +46,7 @@ skynet.init(function()
     type_reward = share.type_reward
     is_equip = func.is_equip
     is_stone = func.is_stone
+    cs = share.cs
     arena_rank = skynet.queryservice("arena_rank")
     fight_point_rank = skynet.queryservice("fight_point_rank")
     role_mgr = skynet.queryservice("role_mgr")

@@ -1739,7 +1739,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 100,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -1764,7 +1764,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 3000,
 		RMBMoney = 0,
-		EXP = 120,
+		EXP = 200,
 		profItemId = {
 			0,
 			0,
@@ -1789,7 +1789,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 1000,
 		RMBMoney = 0,
-		EXP = 120,
+		EXP = 80,
 		profItemId = {
 			0,
 			0,
@@ -1889,7 +1889,7 @@ local datas = {
 		TaskTalk = 0,
 		Gold = 2000,
 		RMBMoney = 0,
-		EXP = 80,
+		EXP = 60,
 		profItemId = {
 			0,
 			0,

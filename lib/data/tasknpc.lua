@@ -130,7 +130,7 @@ local datas = {
 		IconOffsetX = 0,
 		IconOffsetY = 0,
 		IconLayer = 0,
-		IconDis = 0,
+		IconDis = 100,
 	},
 }
 

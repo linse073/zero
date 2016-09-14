@@ -75,6 +75,7 @@ function mail.add(v, p)
     if v.fail then
         task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 2, 1)
         v.fail = nil
+        data.explore = nil
     end
     if v.finish then
         task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)

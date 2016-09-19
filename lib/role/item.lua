@@ -612,12 +612,6 @@ function proc.use_item(msg)
             item.del_by_itemid(p, idata.key, 1)
         end
         item.del_by_id(p, i, 1)
-        local pitem = p.item
-        pitem[#pitem+1] = {
-            id = iv.id,
-            status = iv.status,
-            status_time = iv.status_time,
-        }
         local bonus = {}
         for k, v in ipairs(idata.chest) do
             bonus[k] = {rand_num=1, data=v}

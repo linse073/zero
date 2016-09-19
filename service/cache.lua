@@ -318,7 +318,7 @@ skynet.start(function()
     local vip_level = {}
     for k, v in pairs(vipdata) do
         local giftItem = {}
-        local mailItem = {itemid=v.gift, num=1}
+        local mailItem = {{itemid=v.gift, num=1}}
         for v1 in string.gmatch(v.giftList, "(%d+)") do
             local itemid = tonumber(v1)
             giftItem[#giftItem+1] = assert(itemdata[itemid], string.format("No item data %d.", itemid))

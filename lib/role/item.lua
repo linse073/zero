@@ -354,6 +354,20 @@ function item.del_by_itemid(p, itemid, num)
     assert(num==0, string.format("Item %d num %d insufficient.", itemid, num))
 end
 
+function item.del_by_id(p, i, num)
+    local vi = i[1]
+    assert(vi.num>=num, string.format("Error delete item %d num %d.", vi.num, num))
+    local pack = p.item
+    vi.num = vi.num - num
+    local pi = {id=vi.id, num=vi.num}
+    if vi.num == 0 then
+        item.del(i)
+        pi.status = vi.status
+        pi.status_time = vi.status_time
+    end
+    pack[#pack+1] = pi
+end
+
 function item.sell_by_itemid(p, itemid, num, price)
     local t = assert(data.type_item[itemid], string.format("Item %d not exist.", itemid))
     local user = data.user
@@ -597,7 +611,7 @@ function proc.use_item(msg)
             end
             item.del_by_itemid(p, idata.key, 1)
         end
-        item.del(i)
+        item.del_by_id(p, i, 1)
         local pitem = p.item
         pitem[#pitem+1] = {
             id = iv.id,

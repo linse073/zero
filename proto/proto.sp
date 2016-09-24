@@ -422,9 +422,10 @@
 
 .chat_info {
     .chat_item {
-        itemid 0 : integer
-        intensify 1 : integer
-        rand_prop 2 : *rand_prop
+        id 0 : integer
+        itemid 1 : integer
+        intensify 2 : integer
+        rand_prop 3 : *rand_prop
     }
 
     id 0 : integer

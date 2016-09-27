@@ -244,6 +244,7 @@ function task.update_level(p, ol, nl)
         end
     end
     if ol < base.WEEK_TASK_LEVEL and nl >= base.WEEK_TASK_LEVEL then
+        local pt = p.task
         local now = floor(skynet.time())
         local wd = util.week_time(now)
         local dwt = data.week_task
@@ -255,6 +256,10 @@ function task.update_level(p, ol, nl)
             ti.status = base.TASK_STATUS_ACCEPT
             accept_task[ti.id] = t
             dwt[ti.id] = t
+            pt[#pt+1] = {
+                id = ti.id,
+                status = base.TASK_STATUS_ACCEPT,
+            }
         end
     end
 end

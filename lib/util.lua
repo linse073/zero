@@ -202,4 +202,13 @@ function util.day_time(t)
     return time(st)
 end
 
+function util.week_time(t)
+    local st = date("*t", t)
+    if st.hour >= 4 then
+        return (st.wday + 6) % 7 + 1
+    else
+        return (st.wday + 5) % 7 + 1
+    end
+end
+
 return util

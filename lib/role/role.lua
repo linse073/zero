@@ -227,7 +227,7 @@ end
 
 function role.update_day(od, nd)
     local user = data.user
-    local pt, update_sign_in, arena_award, mall_random, mall_week, mall_time = update_day(user, od, nd)
+    local pt, wd, update_sign_in, arena_award, mall_random, mall_week, mall_time = update_day(user, od, nd)
     notify.add("update_day", {
         task = pt, 
         update_sign_in = update_sign_in, 
@@ -235,6 +235,7 @@ function role.update_day(od, nd)
         mall_random = mall_random,
         mall_week = mall_week,
         mall_time = mall_time,
+        week_day = wd,
     })
 end
 
@@ -749,6 +750,9 @@ local function enter_game(msg)
         if od ~= nd then
             update_day(user, od, nd)
         end
+    end
+    if user.level >= base.WEEK_TASK_LEVEL then
+        task.update_week_task()
     end
     data.rank_info = {
         name = user.name,

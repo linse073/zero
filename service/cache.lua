@@ -212,6 +212,7 @@ skynet.start(function()
 
     local day_task = {}
     local achi_task = {}
+    local week_task = {}
     for k, v in pairs(taskdata) do
         if v.TaskType == base.TASK_TYPE_DAY then
             local t = day_task[v.levelLimit]
@@ -222,6 +223,14 @@ skynet.start(function()
             end
         elseif v.TaskType == base.TASK_TYPE_ACHIEVEMENT then
             achi_task[#achi_task+1] = v
+        elseif v.TaskType >= base.TASK_TYPE_WEEK_1 and v.TaskType <= base.TASK_TYPE_WEEK_7 then
+            local index = v.TaskType-base.TASK_TYPE_WEEK_1+1
+            local t = week_task[index]
+            if t then
+                t[#t+1] = v
+            else
+                week_task[index] = {v}
+            end
         end
 
         local profItem = {}
@@ -373,6 +382,7 @@ skynet.start(function()
 
     sharedata.new("day_task", day_task)
     sharedata.new("achi_task", achi_task)
+    sharedata.new("week_task", week_task)
     sharedata.new("original_card", original_card)
     sharedata.new("type_reward", type_reward)
     sharedata.new("area_search", area_search)

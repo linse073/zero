@@ -20,6 +20,7 @@ local update_user = util.update_user
 local taskdata
 local achi_task
 local day_task
+local week_task
 local complete_task
 local stage_task
 local base
@@ -32,6 +33,7 @@ skynet.init(function()
     taskdata = share.taskdata
     achi_task = share.achi_task
     day_task = share.day_task
+    week_task = share.week_task
     complete_task = share.complete_task
     stage_task = share.stage_task
     base = share.base
@@ -58,6 +60,7 @@ function task.enter()
     data.task = dt
     data.day_task = {}
     data.accept_task = {}
+    data.week_task = {}
     data.master_task = nil
     for k, v in pairs(user.task) do
         task.add(v)
@@ -88,6 +91,16 @@ function task.enter()
     for k, v in ipairs(achi_task) do
         if not dt[v.TaskId] then
             task.add_by_data(v, base.TASK_STATUS_ACCEPT)
+        end
+    end
+    -- repair week task
+    if level >= base.WEEK_TASK_LEVEL then
+        for k, v in ipairs(week_task) do
+            for k1, v1 in ipairs(v) do
+                if not dt[v1.TaskId] then
+                    task.add_by_data(v1, base.TASK_STATUS_NOT_ACCEPT)
+                end
+            end
         end
     end
 end
@@ -133,6 +146,10 @@ function task.add(v, d)
         end
     elseif d.TaskType == base.TASK_TYPE_DAY then
         data.day_task[v.id] = t
+    elseif d.TaskType >= base.TASK_TYPE_WEEK_1 and d.TaskType <= base.TASK_TYPE_WEEK_7 then
+        if t.status ~= base.TASK_STATUS_NOT_ACCEPT then
+            data.week_task[v.id] = t
+        end
     end
     data.task[v.id] = t
     if v.status == base.TASK_STATUS_ACCEPT then
@@ -190,7 +207,31 @@ function task.update_day()
         accept_task[vt.id] = v
         pack[#pack+1] = vt.id
     end
-    return pack
+    local now = floor(skynet.time())
+    local wd = util.week_time(now)
+    local user = data.user
+    if user.level >= base.WEEK_TASK_LEVEL then
+        for k, v in pairs(data.week_task) do
+            local vt = v[1]
+            if vt.status == base.TASK_STATUS_ACCEPT then
+                accept_task[vt.id] = nil
+            end
+            vt.count = 0
+            vt.status = base.TASK_STATUS_NOT_ACCEPT
+        end
+        local dwt = {}
+        local wt = week_task[wd]
+        local dt = data.task
+        for k, v in ipairs(wt) do
+            local t = dt[v.TaskId]
+            local ti = t[1]
+            ti.status = base.TASK_STATUS_ACCEPT
+            accept_task[ti.id] = t
+            dwt[ti.id] = t
+        end
+        data.week_task = dwt
+    end
+    return pack, wd
 end
 
 function task.update_level(p, ol, nl)
@@ -200,6 +241,37 @@ function task.update_level(p, ol, nl)
             for k, v in ipairs(lt) do
                 task.check_add(p, v, base.TASK_STATUS_ACCEPT)
             end
+        end
+    end
+    if ol < base.WEEK_TASK_LEVEL and nl >= base.WEEK_TASK_LEVEL then
+        local now = floor(skynet.time())
+        local wd = util.week_time(now)
+        local dwt = data.week_task
+        local wt = week_task[wd]
+        local dt = data.task
+        for k, v in ipairs(wt) do
+            local t = dt[v.TaskId]
+            local ti = t[1]
+            ti.status = base.TASK_STATUS_ACCEPT
+            accept_task[ti.id] = t
+            dwt[ti.id] = t
+        end
+    end
+end
+
+function task.update_week_task()
+    local now = floor(skynet.time())
+    local wd = util.week_time(now)
+    local dwt = data.week_task
+    local wt = week_task[wd]
+    local dt = data.task
+    for k, v in ipairs(wt) do
+        local t = dt[v.TaskId]
+        local ti = t[1]
+        if ti.status == base.TASK_STATUS_NOT_ACCEPT then
+            ti.status = base.TASK_STATUS_ACCEPT
+            accept_task[ti.id] = t
+            dwt[ti.id] = t
         end
     end
 end

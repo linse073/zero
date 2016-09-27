@@ -213,6 +213,7 @@
     mall_random 3 : *integer
     mall_week 4 : boolean
     mall_time 5 : boolean
+    week_day 6 : integer
 }
 
 .heart_beat {

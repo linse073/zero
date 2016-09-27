@@ -16,6 +16,13 @@ local base = {
     TASK_TYPE_MASTER = 1,
     TASK_TYPE_DAY = 2,
     TASK_TYPE_ACHIEVEMENT = 3,
+    TASK_TYPE_WEEK_1 = 4,
+    TASK_TYPE_WEEK_2 = 5,
+    TASK_TYPE_WEEK_3 = 6,
+    TASK_TYPE_WEEK_4 = 7,
+    TASK_TYPE_WEEK_5 = 8,
+    TASK_TYPE_WEEK_6 = 9,
+    TASK_TYPE_WEEK_7 = 10,
 
     TASK_STATUS_NOT_ACCEPT = 0,
     TASK_STATUS_ACCEPT = 1,
@@ -299,6 +306,7 @@ local base = {
     MAX_OFFLINE_EXP = 120,
 
     MAX_REVIVE_COUNT = 10,
+    WEEK_TASK_LEVEL = 30,
 }
 
 return base

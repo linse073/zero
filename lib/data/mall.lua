@@ -538,9 +538,9 @@ local datas = {
 		limitType = 3,
 		limitNum = 20,
 		priceType = 2,
-		price = 10,
-		goods = 3009032300,
-		dropItemList = "3000004271;10000",
+		price = 80,
+		goods = 3009033300,
+		dropItemList = "3000004271;100000",
 		des = 111200032,
 	},
 	[1900000033] = {

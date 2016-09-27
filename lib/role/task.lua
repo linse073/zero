@@ -250,6 +250,7 @@ function task.update_level(p, ol, nl)
         local dwt = data.week_task
         local wt = week_task[wd]
         local dt = data.task
+        local accept_task = data.accept_task
         for k, v in ipairs(wt) do
             local t = dt[v.TaskId]
             local ti = t[1]
@@ -270,6 +271,7 @@ function task.update_week_task()
     local dwt = data.week_task
     local wt = week_task[wd]
     local dt = data.task
+    local accept_task = data.accept_task
     for k, v in ipairs(wt) do
         local t = dt[v.TaskId]
         local ti = t[1]

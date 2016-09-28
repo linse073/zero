@@ -23,6 +23,7 @@ local datas = {
 		repel = 2000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000120] = {
 		id = 300000120,
@@ -48,6 +49,7 @@ local datas = {
 		repel = 2000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000130] = {
 		id = 300000130,
@@ -73,6 +75,7 @@ local datas = {
 		repel = 2000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000140] = {
 		id = 300000140,
@@ -98,6 +101,7 @@ local datas = {
 		repel = 6000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000150] = {
 		id = 300000150,
@@ -113,8 +117,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			4,
-			0.4,
+			2.5,
+			0.5,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -123,6 +127,7 @@ local datas = {
 		repel = 3000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000210] = {
 		id = 300000210,
@@ -148,6 +153,7 @@ local datas = {
 		repel = 2000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000220] = {
 		id = 300000220,
@@ -173,6 +179,7 @@ local datas = {
 		repel = 2000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000230] = {
 		id = 300000230,
@@ -198,6 +205,7 @@ local datas = {
 		repel = 2000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000240] = {
 		id = 300000240,
@@ -223,6 +231,7 @@ local datas = {
 		repel = 6000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000250] = {
 		id = 300000250,
@@ -238,8 +247,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.666666667,
-			0.066666667,
+			0.416666667,
+			0.083333333,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -248,6 +257,7 @@ local datas = {
 		repel = 333,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000310] = {
 		id = 300000310,
@@ -273,6 +283,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000320] = {
 		id = 300000320,
@@ -298,6 +309,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000330] = {
 		id = 300000330,
@@ -323,6 +335,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000340] = {
 		id = 300000340,
@@ -348,6 +361,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000350] = {
 		id = 300000350,
@@ -363,8 +377,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			4,
-			0.4,
+			2.5,
+			0.5,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -373,6 +387,7 @@ local datas = {
 		repel = 15000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000410] = {
 		id = 300000410,
@@ -398,6 +413,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000420] = {
 		id = 300000420,
@@ -423,6 +439,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000430] = {
 		id = 300000430,
@@ -448,6 +465,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000440] = {
 		id = 300000440,
@@ -473,6 +491,7 @@ local datas = {
 		repel = 3000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000450] = {
 		id = 300000450,
@@ -488,8 +507,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.8,
-			0.08,
+			0.5,
+			0.1,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -498,6 +517,7 @@ local datas = {
 		repel = 200,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[300000111] = {
 		id = 300000111,
@@ -523,6 +543,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000121] = {
 		id = 300000121,
@@ -548,6 +569,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000131] = {
 		id = 300000131,
@@ -573,6 +595,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000141] = {
 		id = 300000141,
@@ -598,6 +621,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000151] = {
 		id = 300000151,
@@ -623,6 +647,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000211] = {
 		id = 300000211,
@@ -648,6 +673,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000221] = {
 		id = 300000221,
@@ -673,6 +699,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000231] = {
 		id = 300000231,
@@ -698,6 +725,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000241] = {
 		id = 300000241,
@@ -723,6 +751,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000251] = {
 		id = 300000251,
@@ -748,6 +777,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000311] = {
 		id = 300000311,
@@ -773,6 +803,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000321] = {
 		id = 300000321,
@@ -798,6 +829,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000331] = {
 		id = 300000331,
@@ -823,6 +855,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000341] = {
 		id = 300000341,
@@ -848,6 +881,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000351] = {
 		id = 300000351,
@@ -873,6 +907,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000411] = {
 		id = 300000411,
@@ -898,6 +933,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000421] = {
 		id = 300000421,
@@ -923,6 +959,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000431] = {
 		id = 300000431,
@@ -948,6 +985,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000441] = {
 		id = 300000441,
@@ -973,6 +1011,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[300000451] = {
 		id = 300000451,
@@ -998,6 +1037,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[310010410] = {
 		id = 310010410,
@@ -1013,8 +1053,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.3,
-			0.03,
+			0.1875,
+			0.0375,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1023,6 +1063,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.01,
 		des = "",
+		frame = 8,
 	},
 	[310010240] = {
 		id = 310010240,
@@ -1038,8 +1079,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.3,
-			0.03,
+			0.1875,
+			0.0375,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1048,6 +1089,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.01,
 		des = "",
+		frame = 8,
 	},
 	[310012010] = {
 		id = 310012010,
@@ -1063,8 +1105,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.4,
-			0.04,
+			0.25,
+			0.05,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1073,6 +1115,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 6,
 	},
 	[310011740] = {
 		id = 310011740,
@@ -1088,8 +1131,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.7,
-			0.07,
+			0.4375,
+			0.0875,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1098,6 +1141,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 4,
 	},
 	[310011750] = {
 		id = 310011750,
@@ -1113,8 +1157,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.533333333,
-			0.053333333,
+			0.333333333,
+			0.066666667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1123,6 +1167,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 6,
 	},
 	[310011800] = {
 		id = 310011800,
@@ -1138,8 +1183,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.7,
-			0.07,
+			0.4375,
+			0.0875,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1148,6 +1193,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 4,
 	},
 	[310010730] = {
 		id = 310010730,
@@ -1163,8 +1209,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.64,
-			0.064,
+			0.4,
+			0.08,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1173,6 +1219,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.01,
 		des = "",
+		frame = 5,
 	},
 	[310010110] = {
 		id = 310010110,
@@ -1188,8 +1235,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.4,
-			0.04,
+			0.25,
+			0.05,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1198,6 +1245,7 @@ local datas = {
 		repel = 500,
 		repelTime = 0.01,
 		des = "",
+		frame = 7,
 	},
 	[310012070] = {
 		id = 310012070,
@@ -1213,8 +1261,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.457142857,
-			0.045714286,
+			0.285714286,
+			0.057142857,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1223,6 +1271,7 @@ local datas = {
 		repel = 500,
 		repelTime = 0.01,
 		des = "",
+		frame = 7,
 	},
 	[310011760] = {
 		id = 310011760,
@@ -1238,8 +1287,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.066666667,
-			0.106666667,
+			0.666666667,
+			0.133333333,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1248,6 +1297,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.01,
 		des = "",
+		frame = 3,
 	},
 	[310011850] = {
 		id = 310011850,
@@ -1263,8 +1313,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.72,
-			0.072,
+			0.45,
+			0.09,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1273,6 +1323,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.01,
 		des = "",
+		frame = 5,
 	},
 	[310011700] = {
 		id = 310011700,
@@ -1288,8 +1339,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.8,
-			0.08,
+			0.5,
+			0.1,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1298,6 +1349,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 3,
 	},
 	[310011730] = {
 		id = 310011730,
@@ -1313,8 +1365,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.6,
-			0.06,
+			0.375,
+			0.075,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1323,6 +1375,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.01,
 		des = "",
+		frame = 4,
 	},
 	[310010070] = {
 		id = 310010070,
@@ -1338,8 +1391,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.6,
-			0.06,
+			0.375,
+			0.075,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1348,6 +1401,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.01,
 		des = "",
+		frame = 4,
 	},
 	[310011560] = {
 		id = 310011560,
@@ -1363,8 +1417,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.2,
-			0.02,
+			0.125,
+			0.025,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1373,6 +1427,7 @@ local datas = {
 		repel = 214,
 		repelTime = 0.01,
 		des = "",
+		frame = 14,
 	},
 	[310011720] = {
 		id = 310011720,
@@ -1388,8 +1443,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.64,
-			0.064,
+			0.4,
+			0.08,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1398,6 +1453,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 5,
 	},
 	[310011710] = {
 		id = 310011710,
@@ -1413,8 +1469,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.7,
-			0.07,
+			0.4375,
+			0.0875,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1423,6 +1479,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.01,
 		des = "",
+		frame = 4,
 	},
 	[310011940] = {
 		id = 310011940,
@@ -1438,8 +1495,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.6,
-			0.16,
+			1,
+			0.2,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1448,6 +1505,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.01,
 		des = "",
+		frame = 2,
 	},
 	[310011880] = {
 		id = 310011880,
@@ -1463,8 +1521,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.6,
-			0.16,
+			1,
+			0.2,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1473,6 +1531,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.01,
 		des = "",
+		frame = 2,
 	},
 	[310011890] = {
 		id = 310011890,
@@ -1488,8 +1547,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.2,
-			0.12,
+			0.75,
+			0.15,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1498,6 +1557,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 3,
 	},
 	[310010060] = {
 		id = 310010060,
@@ -1513,8 +1573,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.342857143,
-			0.034285714,
+			0.214285714,
+			0.042857143,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1523,6 +1583,7 @@ local datas = {
 		repel = 500,
 		repelTime = 0.01,
 		des = "",
+		frame = 7,
 	},
 	[310011540] = {
 		id = 310011540,
@@ -1538,8 +1599,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.48,
-			0.048,
+			0.3,
+			0.06,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1548,6 +1609,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.01,
 		des = "",
+		frame = 5,
 	},
 	[310011680] = {
 		id = 310011680,
@@ -1563,8 +1625,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.342857143,
-			0.034285714,
+			0.214285714,
+			0.042857143,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1573,6 +1635,7 @@ local datas = {
 		repel = 500,
 		repelTime = 0.01,
 		des = "",
+		frame = 7,
 	},
 	[310010100] = {
 		id = 310010100,
@@ -1588,8 +1651,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.4,
-			0.14,
+			0.875,
+			0.175,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1598,6 +1661,7 @@ local datas = {
 		repel = 3000,
 		repelTime = 0.01,
 		des = "",
+		frame = 2,
 	},
 	[310010920] = {
 		id = 310010920,
@@ -1613,8 +1677,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.533333333,
-			0.053333333,
+			0.333333333,
+			0.066666667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1623,6 +1687,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 6,
 	},
 	[310010150] = {
 		id = 310010150,
@@ -1638,8 +1703,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.311111111,
-			0.031111111,
+			0.194444444,
+			0.038888889,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1648,6 +1713,7 @@ local datas = {
 		repel = 375,
 		repelTime = 0.01,
 		des = "",
+		frame = 9,
 	},
 	[310011550] = {
 		id = 310011550,
@@ -1663,8 +1729,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.4,
-			0.04,
+			0.25,
+			0.05,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1673,6 +1739,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.01,
 		des = "",
+		frame = 8,
 	},
 	[310011840] = {
 		id = 310011840,
@@ -1688,8 +1755,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.066666667,
-			0.106666667,
+			0.666666667,
+			0.133333333,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1698,6 +1765,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.01,
 		des = "",
+		frame = 3,
 	},
 	[310011930] = {
 		id = 310011930,
@@ -1713,8 +1781,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.9,
-			0.09,
+			0.5625,
+			0.1125,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1723,6 +1791,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 4,
 	},
 	[310010800] = {
 		id = 310010800,
@@ -1738,8 +1807,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.342857143,
-			0.034285714,
+			0.214285714,
+			0.042857143,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1748,6 +1817,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.03,
 		des = "",
+		frame = 7,
 	},
 	[310011600] = {
 		id = 310011600,
@@ -1763,8 +1833,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.342857143,
-			0.034285714,
+			0.214285714,
+			0.042857143,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1773,6 +1843,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.03,
 		des = "",
+		frame = 7,
 	},
 	[310010910] = {
 		id = 310010910,
@@ -1788,8 +1859,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.2,
-			0.12,
+			0.75,
+			0.15,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1798,6 +1869,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.03,
 		des = "",
+		frame = 2,
 	},
 	[310010040] = {
 		id = 310010040,
@@ -1813,8 +1885,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.933333333,
-			0.093333333,
+			0.583333333,
+			0.116666667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1823,6 +1895,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.03,
 		des = "",
+		frame = 3,
 	},
 	[310012020] = {
 		id = 310012020,
@@ -1838,8 +1911,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			3.2,
-			0.32,
+			2,
+			0.4,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1848,6 +1921,7 @@ local datas = {
 		repel = 3000,
 		repelTime = 0.03,
 		des = "",
+		frame = 1,
 	},
 	[310011770] = {
 		id = 310011770,
@@ -1863,8 +1937,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			2.8,
-			0.28,
+			1.75,
+			0.35,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1873,6 +1947,7 @@ local datas = {
 		repel = 3000,
 		repelTime = 0.03,
 		des = "",
+		frame = 1,
 	},
 	[310011780] = {
 		id = 310011780,
@@ -1888,8 +1963,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.6,
-			0.16,
+			1,
+			0.2,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1898,6 +1973,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.03,
 		des = "",
+		frame = 2,
 	},
 	[310011900] = {
 		id = 310011900,
@@ -1913,8 +1989,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.457142857,
-			0.045714286,
+			0.285714286,
+			0.057142857,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1923,6 +1999,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.03,
 		des = "",
+		frame = 7,
 	},
 	[310011060] = {
 		id = 310011060,
@@ -1938,8 +2015,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.6,
-			0.06,
+			0.375,
+			0.075,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1948,6 +2025,7 @@ local datas = {
 		repel = 500,
 		repelTime = 0.03,
 		des = "",
+		frame = 6,
 	},
 	[310010850] = {
 		id = 310010850,
@@ -1963,8 +2041,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.48,
-			0.048,
+			0.3,
+			0.06,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1973,6 +2051,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.01,
 		des = "",
+		frame = 5,
 	},
 	[310011820] = {
 		id = 310011820,
@@ -1988,8 +2067,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.2,
-			0.12,
+			0.75,
+			0.15,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -1998,6 +2077,7 @@ local datas = {
 		repel = 3000,
 		repelTime = 0.01,
 		des = "",
+		frame = 2,
 	},
 	[310011910] = {
 		id = 310011910,
@@ -2013,8 +2093,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.6,
-			0.06,
+			0.375,
+			0.075,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2023,6 +2103,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 4,
 	},
 	[310011810] = {
 		id = 310011810,
@@ -2038,8 +2119,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.466666667,
-			0.046666667,
+			0.291666667,
+			0.058333333,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2048,6 +2129,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 6,
 	},
 	[310011830] = {
 		id = 310011830,
@@ -2063,8 +2145,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.533333333,
-			0.053333333,
+			0.333333333,
+			0.066666667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2073,6 +2155,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 6,
 	},
 	[310011870] = {
 		id = 310011870,
@@ -2088,8 +2171,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.466666667,
-			0.046666667,
+			0.291666667,
+			0.058333333,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2098,6 +2181,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 6,
 	},
 	[310011920] = {
 		id = 310011920,
@@ -2113,8 +2197,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.066666667,
-			0.106666667,
+			0.666666667,
+			0.133333333,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2123,6 +2207,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.01,
 		des = "",
+		frame = 3,
 	},
 	[310011950] = {
 		id = 310011950,
@@ -2138,8 +2223,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.533333333,
-			0.053333333,
+			0.333333333,
+			0.066666667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2148,6 +2233,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 6,
 	},
 	[310010720] = {
 		id = 310010720,
@@ -2163,8 +2249,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.36,
-			0.036,
+			0.225,
+			0.045,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2173,6 +2259,7 @@ local datas = {
 		repel = 333,
 		repelTime = 0.01,
 		des = "",
+		frame = 10,
 	},
 	[310010130] = {
 		id = 310010130,
@@ -2188,8 +2275,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.8,
-			0.08,
+			0.5,
+			0.1,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2198,6 +2285,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.03,
 		des = "",
+		frame = 3,
 	},
 	[310011000] = {
 		id = 310011000,
@@ -2213,8 +2301,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.48,
-			0.048,
+			0.3,
+			0.06,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2223,6 +2311,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.03,
 		des = "",
+		frame = 5,
 	},
 	[310011670] = {
 		id = 310011670,
@@ -2238,8 +2327,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.48,
-			0.048,
+			0.3,
+			0.06,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2248,6 +2337,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.03,
 		des = "",
+		frame = 5,
 	},
 	[310011960] = {
 		id = 310011960,
@@ -2263,8 +2353,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.4,
-			0.14,
+			0.875,
+			0.175,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2273,6 +2363,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.03,
 		des = "",
+		frame = 2,
 	},
 	[310010160] = {
 		id = 310010160,
@@ -2288,8 +2379,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.8,
-			0.08,
+			0.5,
+			0.1,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2298,6 +2389,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.03,
 		des = "",
+		frame = 4,
 	},
 	[310011660] = {
 		id = 310011660,
@@ -2313,8 +2405,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.7,
-			0.07,
+			0.4375,
+			0.0875,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2323,6 +2415,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.03,
 		des = "",
+		frame = 4,
 	},
 	[310010190] = {
 		id = 310010190,
@@ -2338,8 +2431,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.457142857,
-			0.045714286,
+			0.285714286,
+			0.057142857,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2348,6 +2441,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.03,
 		des = "",
+		frame = 7,
 	},
 	[310010620] = {
 		id = 310010620,
@@ -2363,8 +2457,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.066666667,
-			0.106666667,
+			0.666666667,
+			0.133333333,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2373,6 +2467,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.03,
 		des = "",
+		frame = 3,
 	},
 	[310010610] = {
 		id = 310010610,
@@ -2388,8 +2483,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.327272727,
-			0.032727273,
+			0.204545455,
+			0.040909091,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2398,6 +2493,7 @@ local datas = {
 		repel = 272,
 		repelTime = 0.03,
 		des = "",
+		frame = 11,
 	},
 	[310011020] = {
 		id = 310011020,
@@ -2413,8 +2509,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.342857143,
-			0.034285714,
+			0.214285714,
+			0.042857143,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2423,6 +2519,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.01,
 		des = "",
+		frame = 7,
 	},
 	[310010660] = {
 		id = 310010660,
@@ -2438,8 +2535,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.8,
-			0.08,
+			0.5,
+			0.1,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2448,6 +2545,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 3,
 	},
 	[310010370] = {
 		id = 310010370,
@@ -2463,8 +2561,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.8,
-			0.08,
+			0.5,
+			0.1,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2473,6 +2571,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 3,
 	},
 	[310011970] = {
 		id = 310011970,
@@ -2488,8 +2587,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.56,
-			0.056,
+			0.35,
+			0.07,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2498,6 +2597,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 5,
 	},
 	[310010330] = {
 		id = 310010330,
@@ -2513,8 +2613,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.457142857,
-			0.045714286,
+			0.285714286,
+			0.057142857,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2523,6 +2623,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.01,
 		des = "",
+		frame = 7,
 	},
 	[310011790] = {
 		id = 310011790,
@@ -2538,8 +2639,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.4,
-			0.14,
+			0.875,
+			0.175,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2548,6 +2649,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.01,
 		des = "",
+		frame = 2,
 	},
 	[310011580] = {
 		id = 310011580,
@@ -2563,8 +2665,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.64,
-			0.064,
+			0.4,
+			0.08,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2573,6 +2675,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.01,
 		des = "",
+		frame = 5,
 	},
 	[310011860] = {
 		id = 310011860,
@@ -2588,8 +2691,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			1.6,
-			0.16,
+			1,
+			0.2,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2598,6 +2701,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.01,
 		des = "",
+		frame = 2,
 	},
 	[310010380] = {
 		id = 310010380,
@@ -2613,8 +2717,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.9,
-			0.09,
+			0.5625,
+			0.1125,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2623,6 +2727,7 @@ local datas = {
 		repel = 750,
 		repelTime = 0.01,
 		des = "",
+		frame = 4,
 	},
 	[310011500] = {
 		id = 310011500,
@@ -2638,8 +2743,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.363636364,
-			0.036363636,
+			0.227272727,
+			0.045454545,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2648,6 +2753,7 @@ local datas = {
 		repel = 300,
 		repelTime = 0.01,
 		des = "",
+		frame = 11,
 	},
 	[310011590] = {
 		id = 310011590,
@@ -2663,8 +2769,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.5,
-			0.05,
+			0.3125,
+			0.0625,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2673,6 +2779,7 @@ local datas = {
 		repel = 375,
 		repelTime = 0.01,
 		des = "",
+		frame = 8,
 	},
 	[310011490] = {
 		id = 310011490,
@@ -2688,8 +2795,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.363636364,
-			0.036363636,
+			0.227272727,
+			0.045454545,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2698,6 +2805,7 @@ local datas = {
 		repel = 300,
 		repelTime = 0.01,
 		des = "",
+		frame = 11,
 	},
 	[310012040] = {
 		id = 310012040,
@@ -2713,8 +2821,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.8,
-			0.08,
+			0.5,
+			0.1,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2723,6 +2831,7 @@ local datas = {
 		repel = 600,
 		repelTime = 0.03,
 		des = "",
+		frame = 5,
 	},
 	[310012030] = {
 		id = 310012030,
@@ -2738,8 +2847,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.571428571,
-			0.057142857,
+			0.357142857,
+			0.071428571,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2748,6 +2857,7 @@ local datas = {
 		repel = 428,
 		repelTime = 0.01,
 		des = "",
+		frame = 7,
 	},
 	[310012050] = {
 		id = 310012050,
@@ -2763,8 +2873,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			2,
-			0.2,
+			1.25,
+			0.25,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2773,6 +2883,7 @@ local datas = {
 		repel = 1500,
 		repelTime = 0.03,
 		des = "",
+		frame = 2,
 	},
 	[310011480] = {
 		id = 310011480,
@@ -2788,8 +2899,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.4,
-			0.04,
+			0.25,
+			0.05,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2798,6 +2909,7 @@ local datas = {
 		repel = 300,
 		repelTime = 0.01,
 		des = "",
+		frame = 10,
 	},
 	[310011510] = {
 		id = 310011510,
@@ -2813,8 +2925,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.4,
-			0.04,
+			0.25,
+			0.05,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2823,6 +2935,7 @@ local datas = {
 		repel = 300,
 		repelTime = 0.01,
 		des = "",
+		frame = 10,
 	},
 	[310010411] = {
 		id = 310010411,
@@ -2838,8 +2951,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.1,
-			0.01,
+			0.0625,
+			0.0125,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2848,6 +2961,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010241] = {
 		id = 310010241,
@@ -2863,8 +2977,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.1,
-			0.01,
+			0.0625,
+			0.0125,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2873,6 +2987,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012011] = {
 		id = 310012011,
@@ -2888,8 +3003,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.133333333,
-			0.013333333,
+			0.083333333,
+			0.016666667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2898,6 +3013,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011741] = {
 		id = 310011741,
@@ -2913,8 +3029,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.233333333,
-			0.023333333,
+			0.145833333,
+			0.029166667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2923,6 +3039,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011751] = {
 		id = 310011751,
@@ -2938,8 +3055,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.177777778,
-			0.017777778,
+			0.111111111,
+			0.022222222,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2948,6 +3065,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011801] = {
 		id = 310011801,
@@ -2963,8 +3081,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.233333333,
-			0.023333333,
+			0.145833333,
+			0.029166667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2973,6 +3091,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010731] = {
 		id = 310010731,
@@ -2988,8 +3107,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.213333333,
-			0.021333333,
+			0.133333333,
+			0.026666667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -2998,6 +3117,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010111] = {
 		id = 310010111,
@@ -3013,8 +3133,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.133333333,
-			0.013333333,
+			0.083333333,
+			0.016666667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3023,6 +3143,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012071] = {
 		id = 310012071,
@@ -3038,8 +3159,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.152380952,
-			0.015238095,
+			0.095238095,
+			0.019047619,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3048,6 +3169,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011761] = {
 		id = 310011761,
@@ -3063,8 +3185,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.355555556,
-			0.035555556,
+			0.222222222,
+			0.044444444,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3073,6 +3195,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011851] = {
 		id = 310011851,
@@ -3088,8 +3211,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.24,
-			0.024,
+			0.15,
+			0.03,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3098,6 +3221,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011701] = {
 		id = 310011701,
@@ -3123,6 +3247,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011731] = {
 		id = 310011731,
@@ -3148,6 +3273,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010071] = {
 		id = 310010071,
@@ -3173,6 +3299,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011561] = {
 		id = 310011561,
@@ -3198,6 +3325,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011721] = {
 		id = 310011721,
@@ -3223,6 +3351,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011711] = {
 		id = 310011711,
@@ -3248,6 +3377,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011941] = {
 		id = 310011941,
@@ -3273,6 +3403,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011881] = {
 		id = 310011881,
@@ -3298,6 +3429,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011891] = {
 		id = 310011891,
@@ -3323,6 +3455,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010061] = {
 		id = 310010061,
@@ -3338,8 +3471,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.114285714,
-			0.011428571,
+			0.071428571,
+			0.014285714,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3348,6 +3481,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011541] = {
 		id = 310011541,
@@ -3363,8 +3497,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.16,
-			0.016,
+			0.1,
+			0.02,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3373,6 +3507,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011681] = {
 		id = 310011681,
@@ -3388,8 +3523,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.114285714,
-			0.011428571,
+			0.071428571,
+			0.014285714,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3398,6 +3533,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010101] = {
 		id = 310010101,
@@ -3413,8 +3549,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.466666667,
-			0.046666667,
+			0.291666667,
+			0.058333333,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3423,6 +3559,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010921] = {
 		id = 310010921,
@@ -3438,8 +3575,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.177777778,
-			0.017777778,
+			0.111111111,
+			0.022222222,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3448,6 +3585,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010151] = {
 		id = 310010151,
@@ -3463,8 +3601,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.103703704,
-			0.01037037,
+			0.064814815,
+			0.012962963,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3473,6 +3611,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011551] = {
 		id = 310011551,
@@ -3488,8 +3627,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.133333333,
-			0.013333333,
+			0.083333333,
+			0.016666667,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3498,6 +3637,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011841] = {
 		id = 310011841,
@@ -3513,8 +3653,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.355555556,
-			0.035555556,
+			0.222222222,
+			0.044444444,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3523,6 +3663,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011931] = {
 		id = 310011931,
@@ -3538,8 +3679,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.3,
-			0.03,
+			0.1875,
+			0.0375,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3548,6 +3689,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010801] = {
 		id = 310010801,
@@ -3573,6 +3715,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011601] = {
 		id = 310011601,
@@ -3598,6 +3741,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010911] = {
 		id = 310010911,
@@ -3623,6 +3767,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010041] = {
 		id = 310010041,
@@ -3648,6 +3793,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012021] = {
 		id = 310012021,
@@ -3673,6 +3819,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011771] = {
 		id = 310011771,
@@ -3698,6 +3845,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011781] = {
 		id = 310011781,
@@ -3723,6 +3871,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011901] = {
 		id = 310011901,
@@ -3748,6 +3897,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011061] = {
 		id = 310011061,
@@ -3773,6 +3923,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010851] = {
 		id = 310010851,
@@ -3788,8 +3939,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.16,
-			0.016,
+			0.1,
+			0.02,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3798,6 +3949,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011821] = {
 		id = 310011821,
@@ -3813,8 +3965,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.4,
-			0.04,
+			0.25,
+			0.05,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3823,6 +3975,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011911] = {
 		id = 310011911,
@@ -3838,8 +3991,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.2,
-			0.02,
+			0.125,
+			0.025,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3848,6 +4001,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011811] = {
 		id = 310011811,
@@ -3863,8 +4017,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.155555556,
-			0.015555556,
+			0.097222222,
+			0.019444444,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3873,6 +4027,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011831] = {
 		id = 310011831,
@@ -3888,8 +4043,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.177777778,
-			0.017777778,
+			0.111111111,
+			0.022222222,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3898,6 +4053,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011871] = {
 		id = 310011871,
@@ -3913,8 +4069,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.155555556,
-			0.015555556,
+			0.097222222,
+			0.019444444,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3923,6 +4079,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011921] = {
 		id = 310011921,
@@ -3938,8 +4095,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.355555556,
-			0.035555556,
+			0.222222222,
+			0.044444444,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3948,6 +4105,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011951] = {
 		id = 310011951,
@@ -3963,8 +4121,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.177777778,
-			0.017777778,
+			0.111111111,
+			0.022222222,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3973,6 +4131,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010721] = {
 		id = 310010721,
@@ -3988,8 +4147,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.12,
-			0.012,
+			0.075,
+			0.015,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -3998,6 +4157,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010131] = {
 		id = 310010131,
@@ -4023,6 +4183,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011001] = {
 		id = 310011001,
@@ -4048,6 +4209,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011671] = {
 		id = 310011671,
@@ -4073,6 +4235,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011961] = {
 		id = 310011961,
@@ -4098,6 +4261,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010161] = {
 		id = 310010161,
@@ -4123,6 +4287,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011661] = {
 		id = 310011661,
@@ -4148,6 +4313,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010191] = {
 		id = 310010191,
@@ -4173,6 +4339,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010621] = {
 		id = 310010621,
@@ -4198,6 +4365,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010611] = {
 		id = 310010611,
@@ -4223,6 +4391,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011021] = {
 		id = 310011021,
@@ -4248,6 +4417,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010661] = {
 		id = 310010661,
@@ -4273,6 +4443,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010371] = {
 		id = 310010371,
@@ -4298,6 +4469,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011971] = {
 		id = 310011971,
@@ -4323,6 +4495,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010331] = {
 		id = 310010331,
@@ -4348,6 +4521,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011791] = {
 		id = 310011791,
@@ -4373,6 +4547,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011581] = {
 		id = 310011581,
@@ -4398,6 +4573,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011861] = {
 		id = 310011861,
@@ -4423,6 +4599,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010381] = {
 		id = 310010381,
@@ -4448,6 +4625,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011501] = {
 		id = 310011501,
@@ -4463,8 +4641,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.121212121,
-			0.012121212,
+			0.075757576,
+			0.015151515,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -4473,6 +4651,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011591] = {
 		id = 310011591,
@@ -4498,6 +4677,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011491] = {
 		id = 310011491,
@@ -4513,8 +4693,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.121212121,
-			0.012121212,
+			0.075757576,
+			0.015151515,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -4523,6 +4703,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310012041] = {
 		id = 310012041,
@@ -4548,6 +4729,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012031] = {
 		id = 310012031,
@@ -4563,8 +4745,8 @@ local datas = {
 		buffType = 2,
 		damage = {
 			0,
-			0.19047619,
-			0.019047619,
+			0.119047619,
+			0.023809524,
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 0,
@@ -4573,6 +4755,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310012051] = {
 		id = 310012051,
@@ -4598,6 +4781,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011481] = {
 		id = 310011481,
@@ -4623,6 +4807,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011511] = {
 		id = 310011511,
@@ -4648,6 +4833,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱",
+		frame = 0,
 	},
 	[310010412] = {
 		id = 310010412,
@@ -4673,6 +4859,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010242] = {
 		id = 310010242,
@@ -4698,6 +4885,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012012] = {
 		id = 310012012,
@@ -4723,6 +4911,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011742] = {
 		id = 310011742,
@@ -4748,6 +4937,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011752] = {
 		id = 310011752,
@@ -4773,6 +4963,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011802] = {
 		id = 310011802,
@@ -4798,6 +4989,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010732] = {
 		id = 310010732,
@@ -4823,6 +5015,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010112] = {
 		id = 310010112,
@@ -4848,6 +5041,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012072] = {
 		id = 310012072,
@@ -4873,6 +5067,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011762] = {
 		id = 310011762,
@@ -4898,6 +5093,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011852] = {
 		id = 310011852,
@@ -4923,6 +5119,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011702] = {
 		id = 310011702,
@@ -4948,6 +5145,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011732] = {
 		id = 310011732,
@@ -4973,6 +5171,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010072] = {
 		id = 310010072,
@@ -4998,6 +5197,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011562] = {
 		id = 310011562,
@@ -5023,6 +5223,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011722] = {
 		id = 310011722,
@@ -5048,6 +5249,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011712] = {
 		id = 310011712,
@@ -5073,6 +5275,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011942] = {
 		id = 310011942,
@@ -5098,6 +5301,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011882] = {
 		id = 310011882,
@@ -5123,6 +5327,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011892] = {
 		id = 310011892,
@@ -5148,6 +5353,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010062] = {
 		id = 310010062,
@@ -5173,6 +5379,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011542] = {
 		id = 310011542,
@@ -5198,6 +5405,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011682] = {
 		id = 310011682,
@@ -5223,6 +5431,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010102] = {
 		id = 310010102,
@@ -5248,6 +5457,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010922] = {
 		id = 310010922,
@@ -5273,6 +5483,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010152] = {
 		id = 310010152,
@@ -5298,6 +5509,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011552] = {
 		id = 310011552,
@@ -5323,6 +5535,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011842] = {
 		id = 310011842,
@@ -5348,6 +5561,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011932] = {
 		id = 310011932,
@@ -5373,6 +5587,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010802] = {
 		id = 310010802,
@@ -5398,6 +5613,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011602] = {
 		id = 310011602,
@@ -5423,6 +5639,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010912] = {
 		id = 310010912,
@@ -5448,6 +5665,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010042] = {
 		id = 310010042,
@@ -5473,6 +5691,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012022] = {
 		id = 310012022,
@@ -5498,6 +5717,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011772] = {
 		id = 310011772,
@@ -5523,6 +5743,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011782] = {
 		id = 310011782,
@@ -5548,6 +5769,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011902] = {
 		id = 310011902,
@@ -5573,6 +5795,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011062] = {
 		id = 310011062,
@@ -5598,6 +5821,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010852] = {
 		id = 310010852,
@@ -5623,6 +5847,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011822] = {
 		id = 310011822,
@@ -5648,6 +5873,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011912] = {
 		id = 310011912,
@@ -5673,6 +5899,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011812] = {
 		id = 310011812,
@@ -5698,6 +5925,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011832] = {
 		id = 310011832,
@@ -5723,6 +5951,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011872] = {
 		id = 310011872,
@@ -5748,6 +5977,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011922] = {
 		id = 310011922,
@@ -5773,6 +6003,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011952] = {
 		id = 310011952,
@@ -5798,6 +6029,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010722] = {
 		id = 310010722,
@@ -5823,6 +6055,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010132] = {
 		id = 310010132,
@@ -5848,6 +6081,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011002] = {
 		id = 310011002,
@@ -5873,6 +6107,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011672] = {
 		id = 310011672,
@@ -5898,6 +6133,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011962] = {
 		id = 310011962,
@@ -5923,6 +6159,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010162] = {
 		id = 310010162,
@@ -5948,6 +6185,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011662] = {
 		id = 310011662,
@@ -5973,6 +6211,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010192] = {
 		id = 310010192,
@@ -5998,6 +6237,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010622] = {
 		id = 310010622,
@@ -6023,6 +6263,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010612] = {
 		id = 310010612,
@@ -6048,6 +6289,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011022] = {
 		id = 310011022,
@@ -6073,6 +6315,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010662] = {
 		id = 310010662,
@@ -6098,6 +6341,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010372] = {
 		id = 310010372,
@@ -6123,6 +6367,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011972] = {
 		id = 310011972,
@@ -6148,6 +6393,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010332] = {
 		id = 310010332,
@@ -6173,6 +6419,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011792] = {
 		id = 310011792,
@@ -6198,6 +6445,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011582] = {
 		id = 310011582,
@@ -6223,6 +6471,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011862] = {
 		id = 310011862,
@@ -6248,6 +6497,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010382] = {
 		id = 310010382,
@@ -6273,6 +6523,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011502] = {
 		id = 310011502,
@@ -6298,6 +6549,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011592] = {
 		id = 310011592,
@@ -6323,6 +6575,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011492] = {
 		id = 310011492,
@@ -6348,6 +6601,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310012042] = {
 		id = 310012042,
@@ -6373,6 +6627,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012032] = {
 		id = 310012032,
@@ -6398,6 +6653,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310012052] = {
 		id = 310012052,
@@ -6423,6 +6679,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011482] = {
 		id = 310011482,
@@ -6448,6 +6705,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011512] = {
 		id = 310011512,
@@ -6473,6 +6731,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱",
+		frame = 0,
 	},
 	[310010413] = {
 		id = 310010413,
@@ -6498,6 +6757,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010243] = {
 		id = 310010243,
@@ -6523,6 +6783,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012013] = {
 		id = 310012013,
@@ -6548,6 +6809,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011743] = {
 		id = 310011743,
@@ -6573,6 +6835,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011753] = {
 		id = 310011753,
@@ -6598,6 +6861,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011803] = {
 		id = 310011803,
@@ -6623,6 +6887,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010733] = {
 		id = 310010733,
@@ -6648,6 +6913,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010113] = {
 		id = 310010113,
@@ -6673,6 +6939,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012073] = {
 		id = 310012073,
@@ -6698,6 +6965,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011763] = {
 		id = 310011763,
@@ -6723,6 +6991,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011853] = {
 		id = 310011853,
@@ -6748,6 +7017,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011703] = {
 		id = 310011703,
@@ -6773,6 +7043,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011733] = {
 		id = 310011733,
@@ -6798,6 +7069,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010073] = {
 		id = 310010073,
@@ -6823,6 +7095,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011563] = {
 		id = 310011563,
@@ -6848,6 +7121,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011723] = {
 		id = 310011723,
@@ -6873,6 +7147,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011713] = {
 		id = 310011713,
@@ -6898,6 +7173,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011943] = {
 		id = 310011943,
@@ -6923,6 +7199,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011883] = {
 		id = 310011883,
@@ -6948,6 +7225,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011893] = {
 		id = 310011893,
@@ -6973,6 +7251,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010063] = {
 		id = 310010063,
@@ -6998,6 +7277,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011543] = {
 		id = 310011543,
@@ -7023,6 +7303,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011683] = {
 		id = 310011683,
@@ -7048,6 +7329,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010103] = {
 		id = 310010103,
@@ -7073,6 +7355,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010923] = {
 		id = 310010923,
@@ -7098,6 +7381,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010153] = {
 		id = 310010153,
@@ -7123,6 +7407,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011553] = {
 		id = 310011553,
@@ -7148,6 +7433,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011843] = {
 		id = 310011843,
@@ -7173,6 +7459,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011933] = {
 		id = 310011933,
@@ -7198,6 +7485,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010803] = {
 		id = 310010803,
@@ -7223,6 +7511,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011603] = {
 		id = 310011603,
@@ -7248,6 +7537,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010913] = {
 		id = 310010913,
@@ -7273,6 +7563,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010043] = {
 		id = 310010043,
@@ -7298,6 +7589,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012023] = {
 		id = 310012023,
@@ -7323,6 +7615,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011773] = {
 		id = 310011773,
@@ -7348,6 +7641,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011783] = {
 		id = 310011783,
@@ -7373,6 +7667,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011903] = {
 		id = 310011903,
@@ -7398,6 +7693,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011063] = {
 		id = 310011063,
@@ -7423,6 +7719,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010853] = {
 		id = 310010853,
@@ -7448,6 +7745,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011823] = {
 		id = 310011823,
@@ -7473,6 +7771,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011913] = {
 		id = 310011913,
@@ -7498,6 +7797,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011813] = {
 		id = 310011813,
@@ -7523,6 +7823,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011833] = {
 		id = 310011833,
@@ -7548,6 +7849,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011873] = {
 		id = 310011873,
@@ -7573,6 +7875,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011923] = {
 		id = 310011923,
@@ -7598,6 +7901,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011953] = {
 		id = 310011953,
@@ -7623,6 +7927,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010723] = {
 		id = 310010723,
@@ -7648,6 +7953,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010133] = {
 		id = 310010133,
@@ -7673,6 +7979,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011003] = {
 		id = 310011003,
@@ -7698,6 +8005,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011673] = {
 		id = 310011673,
@@ -7723,6 +8031,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011963] = {
 		id = 310011963,
@@ -7748,6 +8057,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010163] = {
 		id = 310010163,
@@ -7773,6 +8083,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011663] = {
 		id = 310011663,
@@ -7798,6 +8109,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010193] = {
 		id = 310010193,
@@ -7823,6 +8135,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010623] = {
 		id = 310010623,
@@ -7848,6 +8161,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010613] = {
 		id = 310010613,
@@ -7873,6 +8187,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011023] = {
 		id = 310011023,
@@ -7898,6 +8213,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010663] = {
 		id = 310010663,
@@ -7923,6 +8239,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010373] = {
 		id = 310010373,
@@ -7948,6 +8265,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011973] = {
 		id = 310011973,
@@ -7973,6 +8291,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010333] = {
 		id = 310010333,
@@ -7998,6 +8317,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011793] = {
 		id = 310011793,
@@ -8023,6 +8343,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011583] = {
 		id = 310011583,
@@ -8048,6 +8369,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011863] = {
 		id = 310011863,
@@ -8073,6 +8395,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010383] = {
 		id = 310010383,
@@ -8098,6 +8421,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011503] = {
 		id = 310011503,
@@ -8123,6 +8447,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011593] = {
 		id = 310011593,
@@ -8148,6 +8473,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011493] = {
 		id = 310011493,
@@ -8173,6 +8499,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310012043] = {
 		id = 310012043,
@@ -8198,6 +8525,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012033] = {
 		id = 310012033,
@@ -8223,6 +8551,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310012053] = {
 		id = 310012053,
@@ -8248,6 +8577,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011483] = {
 		id = 310011483,
@@ -8273,6 +8603,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011513] = {
 		id = 310011513,
@@ -8298,6 +8629,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱",
+		frame = 0,
 	},
 	[310010414] = {
 		id = 310010414,
@@ -8323,6 +8655,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010244] = {
 		id = 310010244,
@@ -8348,6 +8681,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012014] = {
 		id = 310012014,
@@ -8373,6 +8707,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011744] = {
 		id = 310011744,
@@ -8398,6 +8733,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011754] = {
 		id = 310011754,
@@ -8423,6 +8759,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011804] = {
 		id = 310011804,
@@ -8448,6 +8785,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010734] = {
 		id = 310010734,
@@ -8473,6 +8811,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010114] = {
 		id = 310010114,
@@ -8498,6 +8837,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012074] = {
 		id = 310012074,
@@ -8523,6 +8863,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011764] = {
 		id = 310011764,
@@ -8548,6 +8889,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011854] = {
 		id = 310011854,
@@ -8573,6 +8915,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011704] = {
 		id = 310011704,
@@ -8598,6 +8941,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011734] = {
 		id = 310011734,
@@ -8623,6 +8967,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010074] = {
 		id = 310010074,
@@ -8648,6 +8993,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011564] = {
 		id = 310011564,
@@ -8673,6 +9019,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011724] = {
 		id = 310011724,
@@ -8698,6 +9045,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011714] = {
 		id = 310011714,
@@ -8723,6 +9071,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011944] = {
 		id = 310011944,
@@ -8748,6 +9097,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011884] = {
 		id = 310011884,
@@ -8773,6 +9123,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011894] = {
 		id = 310011894,
@@ -8798,6 +9149,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010064] = {
 		id = 310010064,
@@ -8823,6 +9175,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011544] = {
 		id = 310011544,
@@ -8848,6 +9201,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011684] = {
 		id = 310011684,
@@ -8873,6 +9227,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010104] = {
 		id = 310010104,
@@ -8898,6 +9253,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010924] = {
 		id = 310010924,
@@ -8923,6 +9279,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010154] = {
 		id = 310010154,
@@ -8948,6 +9305,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011554] = {
 		id = 310011554,
@@ -8973,6 +9331,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011844] = {
 		id = 310011844,
@@ -8998,6 +9357,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011934] = {
 		id = 310011934,
@@ -9023,6 +9383,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010804] = {
 		id = 310010804,
@@ -9048,6 +9409,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011604] = {
 		id = 310011604,
@@ -9073,6 +9435,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010914] = {
 		id = 310010914,
@@ -9098,6 +9461,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010044] = {
 		id = 310010044,
@@ -9123,6 +9487,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012024] = {
 		id = 310012024,
@@ -9148,6 +9513,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011774] = {
 		id = 310011774,
@@ -9173,6 +9539,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011784] = {
 		id = 310011784,
@@ -9198,6 +9565,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011904] = {
 		id = 310011904,
@@ -9223,6 +9591,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011064] = {
 		id = 310011064,
@@ -9248,6 +9617,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010854] = {
 		id = 310010854,
@@ -9273,6 +9643,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011824] = {
 		id = 310011824,
@@ -9298,6 +9669,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011914] = {
 		id = 310011914,
@@ -9323,6 +9695,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011814] = {
 		id = 310011814,
@@ -9348,6 +9721,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011834] = {
 		id = 310011834,
@@ -9373,6 +9747,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011874] = {
 		id = 310011874,
@@ -9398,6 +9773,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011924] = {
 		id = 310011924,
@@ -9423,6 +9799,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011954] = {
 		id = 310011954,
@@ -9448,6 +9825,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010724] = {
 		id = 310010724,
@@ -9473,6 +9851,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010134] = {
 		id = 310010134,
@@ -9498,6 +9877,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011004] = {
 		id = 310011004,
@@ -9523,6 +9903,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011674] = {
 		id = 310011674,
@@ -9548,6 +9929,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011964] = {
 		id = 310011964,
@@ -9573,6 +9955,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010164] = {
 		id = 310010164,
@@ -9598,6 +9981,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011664] = {
 		id = 310011664,
@@ -9623,6 +10007,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010194] = {
 		id = 310010194,
@@ -9648,6 +10033,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010624] = {
 		id = 310010624,
@@ -9673,6 +10059,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010614] = {
 		id = 310010614,
@@ -9698,6 +10085,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011024] = {
 		id = 310011024,
@@ -9723,6 +10111,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010664] = {
 		id = 310010664,
@@ -9748,6 +10137,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010374] = {
 		id = 310010374,
@@ -9773,6 +10163,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011974] = {
 		id = 310011974,
@@ -9798,6 +10189,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010334] = {
 		id = 310010334,
@@ -9823,6 +10215,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011794] = {
 		id = 310011794,
@@ -9848,6 +10241,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011584] = {
 		id = 310011584,
@@ -9873,6 +10267,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011864] = {
 		id = 310011864,
@@ -9898,6 +10293,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010384] = {
 		id = 310010384,
@@ -9923,6 +10319,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011504] = {
 		id = 310011504,
@@ -9948,6 +10345,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011594] = {
 		id = 310011594,
@@ -9973,6 +10371,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011494] = {
 		id = 310011494,
@@ -9998,6 +10397,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310012044] = {
 		id = 310012044,
@@ -10023,6 +10423,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012034] = {
 		id = 310012034,
@@ -10048,6 +10449,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310012054] = {
 		id = 310012054,
@@ -10073,6 +10475,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011484] = {
 		id = 310011484,
@@ -10098,6 +10501,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011514] = {
 		id = 310011514,
@@ -10123,6 +10527,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱",
+		frame = 0,
 	},
 	[310010415] = {
 		id = 310010415,
@@ -10148,6 +10553,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010245] = {
 		id = 310010245,
@@ -10173,6 +10579,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012015] = {
 		id = 310012015,
@@ -10198,6 +10605,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011745] = {
 		id = 310011745,
@@ -10223,6 +10631,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011755] = {
 		id = 310011755,
@@ -10248,6 +10657,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011805] = {
 		id = 310011805,
@@ -10273,6 +10683,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010735] = {
 		id = 310010735,
@@ -10298,6 +10709,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310010115] = {
 		id = 310010115,
@@ -10323,6 +10735,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310012075] = {
 		id = 310012075,
@@ -10348,6 +10761,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011765] = {
 		id = 310011765,
@@ -10373,6 +10787,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011855] = {
 		id = 310011855,
@@ -10398,6 +10813,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011705] = {
 		id = 310011705,
@@ -10423,6 +10839,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011735] = {
 		id = 310011735,
@@ -10448,6 +10865,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010075] = {
 		id = 310010075,
@@ -10473,6 +10891,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011565] = {
 		id = 310011565,
@@ -10498,6 +10917,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011725] = {
 		id = 310011725,
@@ -10523,6 +10943,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011715] = {
 		id = 310011715,
@@ -10548,6 +10969,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011945] = {
 		id = 310011945,
@@ -10573,6 +10995,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011885] = {
 		id = 310011885,
@@ -10598,6 +11021,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011895] = {
 		id = 310011895,
@@ -10623,6 +11047,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310010065] = {
 		id = 310010065,
@@ -10648,6 +11073,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011545] = {
 		id = 310011545,
@@ -10673,6 +11099,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011685] = {
 		id = 310011685,
@@ -10698,6 +11125,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010105] = {
 		id = 310010105,
@@ -10723,6 +11151,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010925] = {
 		id = 310010925,
@@ -10748,6 +11177,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010155] = {
 		id = 310010155,
@@ -10773,6 +11203,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011555] = {
 		id = 310011555,
@@ -10798,6 +11229,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011845] = {
 		id = 310011845,
@@ -10823,6 +11255,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310011935] = {
 		id = 310011935,
@@ -10848,6 +11281,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310010805] = {
 		id = 310010805,
@@ -10873,6 +11307,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011605] = {
 		id = 310011605,
@@ -10898,6 +11333,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010915] = {
 		id = 310010915,
@@ -10923,6 +11359,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010045] = {
 		id = 310010045,
@@ -10948,6 +11385,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012025] = {
 		id = 310012025,
@@ -10973,6 +11411,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011775] = {
 		id = 310011775,
@@ -10998,6 +11437,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011785] = {
 		id = 310011785,
@@ -11023,6 +11463,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011905] = {
 		id = 310011905,
@@ -11048,6 +11489,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310011065] = {
 		id = 310011065,
@@ -11073,6 +11515,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310010855] = {
 		id = 310010855,
@@ -11098,6 +11541,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011825] = {
 		id = 310011825,
@@ -11123,6 +11567,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011915] = {
 		id = 310011915,
@@ -11148,6 +11593,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011815] = {
 		id = 310011815,
@@ -11173,6 +11619,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011835] = {
 		id = 310011835,
@@ -11198,6 +11645,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011875] = {
 		id = 310011875,
@@ -11223,6 +11671,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011925] = {
 		id = 310011925,
@@ -11248,6 +11697,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310011955] = {
 		id = 310011955,
@@ -11273,6 +11723,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010725] = {
 		id = 310010725,
@@ -11298,6 +11749,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310010135] = {
 		id = 310010135,
@@ -11323,6 +11775,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011005] = {
 		id = 310011005,
@@ -11348,6 +11801,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011675] = {
 		id = 310011675,
@@ -11373,6 +11827,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011965] = {
 		id = 310011965,
@@ -11398,6 +11853,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010165] = {
 		id = 310010165,
@@ -11423,6 +11879,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011665] = {
 		id = 310011665,
@@ -11448,6 +11905,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010195] = {
 		id = 310010195,
@@ -11473,6 +11931,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010625] = {
 		id = 310010625,
@@ -11498,6 +11957,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310010615] = {
 		id = 310010615,
@@ -11523,6 +11983,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011025] = {
 		id = 310011025,
@@ -11548,6 +12009,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010665] = {
 		id = 310010665,
@@ -11573,6 +12035,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010375] = {
 		id = 310010375,
@@ -11598,6 +12061,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011975] = {
 		id = 310011975,
@@ -11623,6 +12087,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010335] = {
 		id = 310010335,
@@ -11648,6 +12113,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011795] = {
 		id = 310011795,
@@ -11673,6 +12139,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011585] = {
 		id = 310011585,
@@ -11698,6 +12165,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011865] = {
 		id = 310011865,
@@ -11723,6 +12191,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310010385] = {
 		id = 310010385,
@@ -11748,6 +12217,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011505] = {
 		id = 310011505,
@@ -11773,6 +12243,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱灼烧",
+		frame = 0,
 	},
 	[310011595] = {
 		id = 310011595,
@@ -11798,6 +12269,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "沉默减速",
+		frame = 0,
 	},
 	[310011495] = {
 		id = 310011495,
@@ -11823,6 +12295,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "缠绕减血",
+		frame = 0,
 	},
 	[310012045] = {
 		id = 310012045,
@@ -11848,6 +12321,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "震屏眩晕击退",
+		frame = 0,
 	},
 	[310012035] = {
 		id = 310012035,
@@ -11873,6 +12347,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "中毒减速",
+		frame = 0,
 	},
 	[310012055] = {
 		id = 310012055,
@@ -11898,6 +12373,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "击飞减速",
+		frame = 0,
 	},
 	[310011485] = {
 		id = 310011485,
@@ -11923,6 +12399,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "冰冻减速",
+		frame = 0,
 	},
 	[310011515] = {
 		id = 310011515,
@@ -11948,6 +12425,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "混乱",
+		frame = 0,
 	},
 	[321015100] = {
 		id = 321015100,
@@ -11973,6 +12451,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321015110] = {
 		id = 321015110,
@@ -11998,6 +12477,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321015111] = {
 		id = 321015111,
@@ -12023,6 +12503,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321015120] = {
 		id = 321015120,
@@ -12048,6 +12529,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321015130] = {
 		id = 321015130,
@@ -12073,6 +12555,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321015131] = {
 		id = 321015131,
@@ -12098,6 +12581,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321015140] = {
 		id = 321015140,
@@ -12123,6 +12607,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321025110] = {
 		id = 321025110,
@@ -12148,6 +12633,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321025120] = {
 		id = 321025120,
@@ -12173,6 +12659,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321025130] = {
 		id = 321025130,
@@ -12198,6 +12685,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321025140] = {
 		id = 321025140,
@@ -12223,6 +12711,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321035110] = {
 		id = 321035110,
@@ -12248,6 +12737,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321035120] = {
 		id = 321035120,
@@ -12273,6 +12763,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321035130] = {
 		id = 321035130,
@@ -12298,6 +12789,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321035140] = {
 		id = 321035140,
@@ -12323,6 +12815,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321035150] = {
 		id = 321035150,
@@ -12348,6 +12841,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321045100] = {
 		id = 321045100,
@@ -12373,6 +12867,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321045110] = {
 		id = 321045110,
@@ -12398,6 +12893,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321045111] = {
 		id = 321045111,
@@ -12423,6 +12919,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321045120] = {
 		id = 321045120,
@@ -12448,6 +12945,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321045121] = {
 		id = 321045121,
@@ -12473,6 +12971,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321055100] = {
 		id = 321055100,
@@ -12498,6 +12997,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321055110] = {
 		id = 321055110,
@@ -12523,6 +13023,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321055111] = {
 		id = 321055111,
@@ -12548,6 +13049,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321055120] = {
 		id = 321055120,
@@ -12573,6 +13075,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321055200] = {
 		id = 321055200,
@@ -12598,6 +13101,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321055210] = {
 		id = 321055210,
@@ -12623,6 +13127,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321055211] = {
 		id = 321055211,
@@ -12648,6 +13153,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321055220] = {
 		id = 321055220,
@@ -12673,6 +13179,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321055230] = {
 		id = 321055230,
@@ -12698,6 +13205,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321055240] = {
 		id = 321055240,
@@ -12723,6 +13231,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321065100] = {
 		id = 321065100,
@@ -12748,6 +13257,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321065110] = {
 		id = 321065110,
@@ -12773,6 +13283,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321065120] = {
 		id = 321065120,
@@ -12798,6 +13309,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321065130] = {
 		id = 321065130,
@@ -12823,6 +13335,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321065200] = {
 		id = 321065200,
@@ -12848,6 +13361,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321065210] = {
 		id = 321065210,
@@ -12873,6 +13387,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321065220] = {
 		id = 321065220,
@@ -12898,6 +13413,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321065221] = {
 		id = 321065221,
@@ -12923,6 +13439,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321075100] = {
 		id = 321075100,
@@ -12948,6 +13465,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321075110] = {
 		id = 321075110,
@@ -12973,6 +13491,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321075120] = {
 		id = 321075120,
@@ -12998,6 +13517,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321075130] = {
 		id = 321075130,
@@ -13023,6 +13543,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321075140] = {
 		id = 321075140,
@@ -13048,6 +13569,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321085100] = {
 		id = 321085100,
@@ -13073,6 +13595,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321085110] = {
 		id = 321085110,
@@ -13098,6 +13621,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321085111] = {
 		id = 321085111,
@@ -13123,6 +13647,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321085120] = {
 		id = 321085120,
@@ -13148,6 +13673,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321085130] = {
 		id = 321085130,
@@ -13173,6 +13699,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321095110] = {
 		id = 321095110,
@@ -13198,6 +13725,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321095120] = {
 		id = 321095120,
@@ -13223,6 +13751,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321095130] = {
 		id = 321095130,
@@ -13248,6 +13777,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321095140] = {
 		id = 321095140,
@@ -13273,6 +13803,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105110] = {
 		id = 321105110,
@@ -13298,6 +13829,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105120] = {
 		id = 321105120,
@@ -13323,6 +13855,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105130] = {
 		id = 321105130,
@@ -13348,6 +13881,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105140] = {
 		id = 321105140,
@@ -13373,6 +13907,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105150] = {
 		id = 321105150,
@@ -13398,6 +13933,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105210] = {
 		id = 321105210,
@@ -13423,6 +13959,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105211] = {
 		id = 321105211,
@@ -13448,6 +13985,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321105220] = {
 		id = 321105220,
@@ -13473,6 +14011,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105221] = {
 		id = 321105221,
@@ -13498,6 +14037,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[321105230] = {
 		id = 321105230,
@@ -13523,6 +14063,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105240] = {
 		id = 321105240,
@@ -13548,6 +14089,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105250] = {
 		id = 321105250,
@@ -13573,6 +14115,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[321105260] = {
 		id = 321105260,
@@ -13598,6 +14141,7 @@ local datas = {
 		repel = 5000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[323011110] = {
 		id = 323011110,
@@ -13623,6 +14167,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[323011120] = {
 		id = 323011120,
@@ -13648,6 +14193,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[323011130] = {
 		id = 323011130,
@@ -13673,6 +14219,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[323011140] = {
 		id = 323011140,
@@ -13698,6 +14245,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[323011150] = {
 		id = 323011150,
@@ -13723,6 +14271,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[323016110] = {
 		id = 323016110,
@@ -13748,6 +14297,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[323016120] = {
 		id = 323016120,
@@ -13773,6 +14323,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[323016130] = {
 		id = 323016130,
@@ -13798,6 +14349,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[323016140] = {
 		id = 323016140,
@@ -13823,6 +14375,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[330100100] = {
 		id = 330100100,
@@ -13848,6 +14401,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330100200] = {
 		id = 330100200,
@@ -13873,6 +14427,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330100300] = {
 		id = 330100300,
@@ -13898,6 +14453,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330100400] = {
 		id = 330100400,
@@ -13923,6 +14479,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330100500] = {
 		id = 330100500,
@@ -13948,6 +14505,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330100600] = {
 		id = 330100600,
@@ -13973,6 +14531,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330100700] = {
 		id = 330100700,
@@ -13998,6 +14557,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330100800] = {
 		id = 330100800,
@@ -14023,6 +14583,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330100900] = {
 		id = 330100900,
@@ -14048,6 +14609,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101000] = {
 		id = 330101000,
@@ -14073,6 +14635,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101100] = {
 		id = 330101100,
@@ -14098,6 +14661,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101200] = {
 		id = 330101200,
@@ -14123,6 +14687,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101300] = {
 		id = 330101300,
@@ -14148,6 +14713,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101400] = {
 		id = 330101400,
@@ -14173,6 +14739,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101500] = {
 		id = 330101500,
@@ -14198,6 +14765,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101501] = {
 		id = 330101501,
@@ -14223,6 +14791,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101600] = {
 		id = 330101600,
@@ -14248,6 +14817,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101700] = {
 		id = 330101700,
@@ -14273,6 +14843,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101800] = {
 		id = 330101800,
@@ -14298,6 +14869,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101900] = {
 		id = 330101900,
@@ -14323,6 +14895,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102000] = {
 		id = 330102000,
@@ -14348,6 +14921,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102100] = {
 		id = 330102100,
@@ -14373,6 +14947,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102200] = {
 		id = 330102200,
@@ -14398,6 +14973,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102300] = {
 		id = 330102300,
@@ -14423,6 +14999,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102400] = {
 		id = 330102400,
@@ -14448,6 +15025,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102500] = {
 		id = 330102500,
@@ -14473,6 +15051,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102600] = {
 		id = 330102600,
@@ -14498,6 +15077,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102700] = {
 		id = 330102700,
@@ -14523,6 +15103,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102800] = {
 		id = 330102800,
@@ -14548,6 +15129,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330102900] = {
 		id = 330102900,
@@ -14573,6 +15155,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103000] = {
 		id = 330103000,
@@ -14598,6 +15181,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103100] = {
 		id = 330103100,
@@ -14623,6 +15207,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103200] = {
 		id = 330103200,
@@ -14648,6 +15233,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103300] = {
 		id = 330103300,
@@ -14673,6 +15259,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103400] = {
 		id = 330103400,
@@ -14698,6 +15285,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103500] = {
 		id = 330103500,
@@ -14723,6 +15311,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103600] = {
 		id = 330103600,
@@ -14748,6 +15337,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103700] = {
 		id = 330103700,
@@ -14773,6 +15363,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103800] = {
 		id = 330103800,
@@ -14798,6 +15389,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330103900] = {
 		id = 330103900,
@@ -14823,6 +15415,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330104000] = {
 		id = 330104000,
@@ -14848,6 +15441,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330104100] = {
 		id = 330104100,
@@ -14873,6 +15467,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330104200] = {
 		id = 330104200,
@@ -14898,6 +15493,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330104300] = {
 		id = 330104300,
@@ -14923,6 +15519,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330104400] = {
 		id = 330104400,
@@ -14948,6 +15545,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330104500] = {
 		id = 330104500,
@@ -14973,6 +15571,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330104600] = {
 		id = 330104600,
@@ -14998,6 +15597,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330104800] = {
 		id = 330104800,
@@ -15023,6 +15623,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330104900] = {
 		id = 330104900,
@@ -15048,6 +15649,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105000] = {
 		id = 330105000,
@@ -15073,6 +15675,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105100] = {
 		id = 330105100,
@@ -15098,6 +15701,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105200] = {
 		id = 330105200,
@@ -15123,6 +15727,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105300] = {
 		id = 330105300,
@@ -15148,6 +15753,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105400] = {
 		id = 330105400,
@@ -15173,6 +15779,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105500] = {
 		id = 330105500,
@@ -15198,6 +15805,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105600] = {
 		id = 330105600,
@@ -15223,6 +15831,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105610] = {
 		id = 330105610,
@@ -15248,6 +15857,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105700] = {
 		id = 330105700,
@@ -15273,6 +15883,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105800] = {
 		id = 330105800,
@@ -15298,6 +15909,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105900] = {
 		id = 330105900,
@@ -15323,6 +15935,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106000] = {
 		id = 330106000,
@@ -15348,6 +15961,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106100] = {
 		id = 330106100,
@@ -15373,6 +15987,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106200] = {
 		id = 330106200,
@@ -15398,6 +16013,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106300] = {
 		id = 330106300,
@@ -15423,6 +16039,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106400] = {
 		id = 330106400,
@@ -15448,6 +16065,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106500] = {
 		id = 330106500,
@@ -15473,6 +16091,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106600] = {
 		id = 330106600,
@@ -15498,6 +16117,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106700] = {
 		id = 330106700,
@@ -15523,6 +16143,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106800] = {
 		id = 330106800,
@@ -15548,6 +16169,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106900] = {
 		id = 330106900,
@@ -15573,6 +16195,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107000] = {
 		id = 330107000,
@@ -15598,6 +16221,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107100] = {
 		id = 330107100,
@@ -15623,6 +16247,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107200] = {
 		id = 330107200,
@@ -15648,6 +16273,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107300] = {
 		id = 330107300,
@@ -15673,6 +16299,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107400] = {
 		id = 330107400,
@@ -15698,6 +16325,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107500] = {
 		id = 330107500,
@@ -15723,6 +16351,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107600] = {
 		id = 330107600,
@@ -15748,6 +16377,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107700] = {
 		id = 330107700,
@@ -15773,6 +16403,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107800] = {
 		id = 330107800,
@@ -15798,6 +16429,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107900] = {
 		id = 330107900,
@@ -15823,6 +16455,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108000] = {
 		id = 330108000,
@@ -15848,6 +16481,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108100] = {
 		id = 330108100,
@@ -15873,6 +16507,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108200] = {
 		id = 330108200,
@@ -15898,6 +16533,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108300] = {
 		id = 330108300,
@@ -15923,6 +16559,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108400] = {
 		id = 330108400,
@@ -15948,6 +16585,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108500] = {
 		id = 330108500,
@@ -15973,6 +16611,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108600] = {
 		id = 330108600,
@@ -15998,6 +16637,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108700] = {
 		id = 330108700,
@@ -16023,6 +16663,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108800] = {
 		id = 330108800,
@@ -16048,6 +16689,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108900] = {
 		id = 330108900,
@@ -16073,6 +16715,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109000] = {
 		id = 330109000,
@@ -16098,6 +16741,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109100] = {
 		id = 330109100,
@@ -16123,6 +16767,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109200] = {
 		id = 330109200,
@@ -16148,6 +16793,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109300] = {
 		id = 330109300,
@@ -16173,6 +16819,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109400] = {
 		id = 330109400,
@@ -16198,6 +16845,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109500] = {
 		id = 330109500,
@@ -16223,6 +16871,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109600] = {
 		id = 330109600,
@@ -16248,6 +16897,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109700] = {
 		id = 330109700,
@@ -16273,6 +16923,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109800] = {
 		id = 330109800,
@@ -16298,6 +16949,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109900] = {
 		id = 330109900,
@@ -16323,6 +16975,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110000] = {
 		id = 330110000,
@@ -16348,6 +17001,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110100] = {
 		id = 330110100,
@@ -16373,6 +17027,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110200] = {
 		id = 330110200,
@@ -16398,6 +17053,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110300] = {
 		id = 330110300,
@@ -16423,6 +17079,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110400] = {
 		id = 330110400,
@@ -16448,6 +17105,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110500] = {
 		id = 330110500,
@@ -16473,6 +17131,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110600] = {
 		id = 330110600,
@@ -16498,6 +17157,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110700] = {
 		id = 330110700,
@@ -16523,6 +17183,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110800] = {
 		id = 330110800,
@@ -16548,6 +17209,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110900] = {
 		id = 330110900,
@@ -16573,6 +17235,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111000] = {
 		id = 330111000,
@@ -16598,6 +17261,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111100] = {
 		id = 330111100,
@@ -16623,6 +17287,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111200] = {
 		id = 330111200,
@@ -16648,6 +17313,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111300] = {
 		id = 330111300,
@@ -16673,6 +17339,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111400] = {
 		id = 330111400,
@@ -16698,6 +17365,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111500] = {
 		id = 330111500,
@@ -16723,6 +17391,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111600] = {
 		id = 330111600,
@@ -16748,6 +17417,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111700] = {
 		id = 330111700,
@@ -16773,6 +17443,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111800] = {
 		id = 330111800,
@@ -16798,6 +17469,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111900] = {
 		id = 330111900,
@@ -16823,6 +17495,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112000] = {
 		id = 330112000,
@@ -16848,6 +17521,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112100] = {
 		id = 330112100,
@@ -16873,6 +17547,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112200] = {
 		id = 330112200,
@@ -16898,6 +17573,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112300] = {
 		id = 330112300,
@@ -16923,6 +17599,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112400] = {
 		id = 330112400,
@@ -16948,6 +17625,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112500] = {
 		id = 330112500,
@@ -16973,6 +17651,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112600] = {
 		id = 330112600,
@@ -16998,6 +17677,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112700] = {
 		id = 330112700,
@@ -17023,6 +17703,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112800] = {
 		id = 330112800,
@@ -17048,6 +17729,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112900] = {
 		id = 330112900,
@@ -17073,6 +17755,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113000] = {
 		id = 330113000,
@@ -17098,6 +17781,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113100] = {
 		id = 330113100,
@@ -17123,6 +17807,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113200] = {
 		id = 330113200,
@@ -17148,6 +17833,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113300] = {
 		id = 330113300,
@@ -17173,6 +17859,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113400] = {
 		id = 330113400,
@@ -17198,6 +17885,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113500] = {
 		id = 330113500,
@@ -17223,6 +17911,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113600] = {
 		id = 330113600,
@@ -17248,6 +17937,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113700] = {
 		id = 330113700,
@@ -17273,6 +17963,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113800] = {
 		id = 330113800,
@@ -17298,6 +17989,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113900] = {
 		id = 330113900,
@@ -17323,6 +18015,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330114000] = {
 		id = 330114000,
@@ -17348,6 +18041,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330114100] = {
 		id = 330114100,
@@ -17373,6 +18067,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330114200] = {
 		id = 330114200,
@@ -17398,6 +18093,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330114300] = {
 		id = 330114300,
@@ -17423,6 +18119,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330114600] = {
 		id = 330114600,
@@ -17448,6 +18145,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330114700] = {
 		id = 330114700,
@@ -17473,6 +18171,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330115400] = {
 		id = 330115400,
@@ -17498,6 +18197,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330115500] = {
 		id = 330115500,
@@ -17523,6 +18223,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330115600] = {
 		id = 330115600,
@@ -17548,6 +18249,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330115800] = {
 		id = 330115800,
@@ -17573,6 +18275,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330116000] = {
 		id = 330116000,
@@ -17598,6 +18301,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[330116100] = {
 		id = 330116100,
@@ -17623,6 +18327,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[330116600] = {
 		id = 330116600,
@@ -17648,6 +18353,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330116700] = {
 		id = 330116700,
@@ -17673,6 +18379,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330116800] = {
 		id = 330116800,
@@ -17698,6 +18405,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330116900] = {
 		id = 330116900,
@@ -17723,6 +18431,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117000] = {
 		id = 330117000,
@@ -17748,6 +18457,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117100] = {
 		id = 330117100,
@@ -17773,6 +18483,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117200] = {
 		id = 330117200,
@@ -17798,6 +18509,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117300] = {
 		id = 330117300,
@@ -17823,6 +18535,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117400] = {
 		id = 330117400,
@@ -17848,6 +18561,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117500] = {
 		id = 330117500,
@@ -17873,6 +18587,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117600] = {
 		id = 330117600,
@@ -17898,6 +18613,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117700] = {
 		id = 330117700,
@@ -17923,6 +18639,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117800] = {
 		id = 330117800,
@@ -17948,6 +18665,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117900] = {
 		id = 330117900,
@@ -17973,6 +18691,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118000] = {
 		id = 330118000,
@@ -17998,6 +18717,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118100] = {
 		id = 330118100,
@@ -18023,6 +18743,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118200] = {
 		id = 330118200,
@@ -18048,6 +18769,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118300] = {
 		id = 330118300,
@@ -18073,6 +18795,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118400] = {
 		id = 330118400,
@@ -18098,6 +18821,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118500] = {
 		id = 330118500,
@@ -18123,6 +18847,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118600] = {
 		id = 330118600,
@@ -18148,6 +18873,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118700] = {
 		id = 330118700,
@@ -18173,6 +18899,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118800] = {
 		id = 330118800,
@@ -18198,6 +18925,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118900] = {
 		id = 330118900,
@@ -18223,6 +18951,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119000] = {
 		id = 330119000,
@@ -18248,6 +18977,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119100] = {
 		id = 330119100,
@@ -18273,6 +19003,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119200] = {
 		id = 330119200,
@@ -18298,6 +19029,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119300] = {
 		id = 330119300,
@@ -18323,6 +19055,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119400] = {
 		id = 330119400,
@@ -18348,6 +19081,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119500] = {
 		id = 330119500,
@@ -18373,6 +19107,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119600] = {
 		id = 330119600,
@@ -18398,6 +19133,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119700] = {
 		id = 330119700,
@@ -18423,6 +19159,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330120100] = {
 		id = 330120100,
@@ -18448,6 +19185,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330120200] = {
 		id = 330120200,
@@ -18473,6 +19211,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330120700] = {
 		id = 330120700,
@@ -18498,6 +19237,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330100410] = {
 		id = 330100410,
@@ -18523,6 +19263,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101110] = {
 		id = 330101110,
@@ -18548,6 +19289,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330101510] = {
 		id = 330101510,
@@ -18573,6 +19315,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105010] = {
 		id = 330105010,
@@ -18598,6 +19341,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105110] = {
 		id = 330105110,
@@ -18623,6 +19367,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105410] = {
 		id = 330105410,
@@ -18648,6 +19393,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105510] = {
 		id = 330105510,
@@ -18673,6 +19419,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105610] = {
 		id = 330105610,
@@ -18698,6 +19445,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330105810] = {
 		id = 330105810,
@@ -18723,6 +19471,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106010] = {
 		id = 330106010,
@@ -18748,6 +19497,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106410] = {
 		id = 330106410,
@@ -18773,6 +19523,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330106510] = {
 		id = 330106510,
@@ -18798,6 +19549,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330107910] = {
 		id = 330107910,
@@ -18823,6 +19575,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108310] = {
 		id = 330108310,
@@ -18848,6 +19601,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108510] = {
 		id = 330108510,
@@ -18873,6 +19627,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108810] = {
 		id = 330108810,
@@ -18898,6 +19653,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330108910] = {
 		id = 330108910,
@@ -18923,6 +19679,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109510] = {
 		id = 330109510,
@@ -18948,6 +19705,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109610] = {
 		id = 330109610,
@@ -18973,6 +19731,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330109910] = {
 		id = 330109910,
@@ -18998,6 +19757,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110310] = {
 		id = 330110310,
@@ -19023,6 +19783,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110410] = {
 		id = 330110410,
@@ -19048,6 +19809,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330110810] = {
 		id = 330110810,
@@ -19073,6 +19835,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111010] = {
 		id = 330111010,
@@ -19098,6 +19861,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111210] = {
 		id = 330111210,
@@ -19123,6 +19887,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330111510] = {
 		id = 330111510,
@@ -19148,6 +19913,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112310] = {
 		id = 330112310,
@@ -19173,6 +19939,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112510] = {
 		id = 330112510,
@@ -19198,6 +19965,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112810] = {
 		id = 330112810,
@@ -19223,6 +19991,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330112910] = {
 		id = 330112910,
@@ -19248,6 +20017,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113210] = {
 		id = 330113210,
@@ -19273,6 +20043,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330113610] = {
 		id = 330113610,
@@ -19298,6 +20069,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330114010] = {
 		id = 330114010,
@@ -19323,6 +20095,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330114210] = {
 		id = 330114210,
@@ -19348,6 +20121,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330117810] = {
 		id = 330117810,
@@ -19373,6 +20147,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118310] = {
 		id = 330118310,
@@ -19398,6 +20173,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118320] = {
 		id = 330118320,
@@ -19423,6 +20199,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118330] = {
 		id = 330118330,
@@ -19448,6 +20225,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330118910] = {
 		id = 330118910,
@@ -19473,6 +20251,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119210] = {
 		id = 330119210,
@@ -19498,6 +20277,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119310] = {
 		id = 330119310,
@@ -19523,6 +20303,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[330119410] = {
 		id = 330119410,
@@ -19548,6 +20329,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331104100] = {
 		id = 331104100,
@@ -19573,6 +20355,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331102400] = {
 		id = 331102400,
@@ -19598,6 +20381,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331120100] = {
 		id = 331120100,
@@ -19623,6 +20407,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117400] = {
 		id = 331117400,
@@ -19648,6 +20433,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117500] = {
 		id = 331117500,
@@ -19673,6 +20459,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118000] = {
 		id = 331118000,
@@ -19698,6 +20485,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331107300] = {
 		id = 331107300,
@@ -19723,6 +20511,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331101100] = {
 		id = 331101100,
@@ -19748,6 +20537,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331120700] = {
 		id = 331120700,
@@ -19773,6 +20563,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117600] = {
 		id = 331117600,
@@ -19798,6 +20589,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118500] = {
 		id = 331118500,
@@ -19823,6 +20615,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331101300] = {
 		id = 331101300,
@@ -19848,6 +20641,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331110000] = {
 		id = 331110000,
@@ -19873,6 +20667,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331116700] = {
 		id = 331116700,
@@ -19898,6 +20693,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331119600] = {
 		id = 331119600,
@@ -19923,6 +20719,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331101600] = {
 		id = 331101600,
@@ -19948,6 +20745,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331116600] = {
 		id = 331116600,
@@ -19973,6 +20771,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331101900] = {
 		id = 331101900,
@@ -19998,6 +20797,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331106200] = {
 		id = 331106200,
@@ -20023,6 +20823,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331106100] = {
 		id = 331106100,
@@ -20048,6 +20849,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331100600] = {
 		id = 331100600,
@@ -20073,6 +20875,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331115400] = {
 		id = 331115400,
@@ -20098,6 +20901,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331116800] = {
 		id = 331116800,
@@ -20123,6 +20927,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331101000] = {
 		id = 331101000,
@@ -20148,6 +20953,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331109200] = {
 		id = 331109200,
@@ -20173,6 +20979,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331101500] = {
 		id = 331101500,
@@ -20198,6 +21005,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331115500] = {
 		id = 331115500,
@@ -20223,6 +21031,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118400] = {
 		id = 331118400,
@@ -20248,6 +21057,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331119300] = {
 		id = 331119300,
@@ -20273,6 +21083,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117000] = {
 		id = 331117000,
@@ -20298,6 +21109,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117300] = {
 		id = 331117300,
@@ -20323,6 +21135,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331100700] = {
 		id = 331100700,
@@ -20348,6 +21161,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331115600] = {
 		id = 331115600,
@@ -20373,6 +21187,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117200] = {
 		id = 331117200,
@@ -20398,6 +21213,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117100] = {
 		id = 331117100,
@@ -20423,6 +21239,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331119400] = {
 		id = 331119400,
@@ -20448,6 +21265,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118800] = {
 		id = 331118800,
@@ -20473,6 +21291,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118900] = {
 		id = 331118900,
@@ -20498,6 +21317,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331110200] = {
 		id = 331110200,
@@ -20523,6 +21343,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331106600] = {
 		id = 331106600,
@@ -20548,6 +21369,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331103700] = {
 		id = 331103700,
@@ -20573,6 +21395,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331119700] = {
 		id = 331119700,
@@ -20598,6 +21421,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331103300] = {
 		id = 331103300,
@@ -20623,6 +21447,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117900] = {
 		id = 331117900,
@@ -20648,6 +21473,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331115800] = {
 		id = 331115800,
@@ -20673,6 +21499,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118600] = {
 		id = 331118600,
@@ -20698,6 +21525,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331103800] = {
 		id = 331103800,
@@ -20723,6 +21551,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331108000] = {
 		id = 331108000,
@@ -20748,6 +21577,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331116000] = {
 		id = 331116000,
@@ -20773,6 +21603,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331109100] = {
 		id = 331109100,
@@ -20798,6 +21629,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331100400] = {
 		id = 331100400,
@@ -20823,6 +21655,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331120200] = {
 		id = 331120200,
@@ -20848,6 +21681,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117700] = {
 		id = 331117700,
@@ -20873,6 +21707,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331117800] = {
 		id = 331117800,
@@ -20898,6 +21733,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331119000] = {
 		id = 331119000,
@@ -20923,6 +21759,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331110600] = {
 		id = 331110600,
@@ -20948,6 +21785,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331108500] = {
 		id = 331108500,
@@ -20973,6 +21811,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118200] = {
 		id = 331118200,
@@ -20998,6 +21837,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331119100] = {
 		id = 331119100,
@@ -21023,6 +21863,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118100] = {
 		id = 331118100,
@@ -21048,6 +21889,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118300] = {
 		id = 331118300,
@@ -21073,6 +21915,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331118700] = {
 		id = 331118700,
@@ -21098,6 +21941,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331119200] = {
 		id = 331119200,
@@ -21123,6 +21967,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331119500] = {
 		id = 331119500,
@@ -21148,6 +21993,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[331107200] = {
 		id = 331107200,
@@ -21173,6 +22019,7 @@ local datas = {
 		repel = 1000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[390000010] = {
 		id = 390000010,
@@ -21198,6 +22045,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[390000020] = {
 		id = 390000020,
@@ -21223,6 +22071,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[390000030] = {
 		id = 390000030,
@@ -21248,6 +22097,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[390000040] = {
 		id = 390000040,
@@ -21273,6 +22123,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391014010] = {
 		id = 391014010,
@@ -21298,6 +22149,7 @@ local datas = {
 		repel = 12000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[391014020] = {
 		id = 391014020,
@@ -21323,6 +22175,7 @@ local datas = {
 		repel = 12000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[391014030] = {
 		id = 391014030,
@@ -21348,6 +22201,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391014040] = {
 		id = 391014040,
@@ -21373,6 +22227,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391015010] = {
 		id = 391015010,
@@ -21398,6 +22253,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391015020] = {
 		id = 391015020,
@@ -21423,6 +22279,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391015030] = {
 		id = 391015030,
@@ -21448,6 +22305,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391015040] = {
 		id = 391015040,
@@ -21473,6 +22331,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391021010] = {
 		id = 391021010,
@@ -21498,6 +22357,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391021020] = {
 		id = 391021020,
@@ -21523,6 +22383,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391022010] = {
 		id = 391022010,
@@ -21548,6 +22409,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391022020] = {
 		id = 391022020,
@@ -21573,6 +22435,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391023010] = {
 		id = 391023010,
@@ -21598,6 +22461,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391023020] = {
 		id = 391023020,
@@ -21623,6 +22487,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391024010] = {
 		id = 391024010,
@@ -21648,6 +22513,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391024020] = {
 		id = 391024020,
@@ -21673,6 +22539,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391025010] = {
 		id = 391025010,
@@ -21698,6 +22565,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391031010] = {
 		id = 391031010,
@@ -21723,6 +22591,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391032010] = {
 		id = 391032010,
@@ -21748,6 +22617,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391032020] = {
 		id = 391032020,
@@ -21773,6 +22643,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391032030] = {
 		id = 391032030,
@@ -21798,6 +22669,7 @@ local datas = {
 		repel = 12000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[391033010] = {
 		id = 391033010,
@@ -21823,6 +22695,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391035010] = {
 		id = 391035010,
@@ -21848,6 +22721,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391035020] = {
 		id = 391035020,
@@ -21873,6 +22747,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391035030] = {
 		id = 391035030,
@@ -21898,6 +22773,7 @@ local datas = {
 		repel = 12000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[391043010] = {
 		id = 391043010,
@@ -21923,6 +22799,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391045010] = {
 		id = 391045010,
@@ -21948,6 +22825,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391051010] = {
 		id = 391051010,
@@ -21973,6 +22851,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391051020] = {
 		id = 391051020,
@@ -21998,6 +22877,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391051030] = {
 		id = 391051030,
@@ -22023,6 +22903,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391051040] = {
 		id = 391051040,
@@ -22048,6 +22929,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391051050] = {
 		id = 391051050,
@@ -22073,6 +22955,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391051060] = {
 		id = 391051060,
@@ -22098,6 +22981,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391051070] = {
 		id = 391051070,
@@ -22123,6 +23007,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391053010] = {
 		id = 391053010,
@@ -22148,6 +23033,7 @@ local datas = {
 		repel = 12000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[391061010] = {
 		id = 391061010,
@@ -22173,6 +23059,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391061020] = {
 		id = 391061020,
@@ -22198,6 +23085,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391062010] = {
 		id = 391062010,
@@ -22223,6 +23111,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391062020] = {
 		id = 391062020,
@@ -22248,6 +23137,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391063010] = {
 		id = 391063010,
@@ -22273,6 +23163,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391063020] = {
 		id = 391063020,
@@ -22298,6 +23189,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391063030] = {
 		id = 391063030,
@@ -22323,6 +23215,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391064010] = {
 		id = 391064010,
@@ -22348,6 +23241,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391064020] = {
 		id = 391064020,
@@ -22373,6 +23267,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391064030] = {
 		id = 391064030,
@@ -22398,6 +23293,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391065010] = {
 		id = 391065010,
@@ -22423,6 +23319,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391065020] = {
 		id = 391065020,
@@ -22448,6 +23345,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391065030] = {
 		id = 391065030,
@@ -22473,6 +23371,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391073010] = {
 		id = 391073010,
@@ -22498,6 +23397,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391073020] = {
 		id = 391073020,
@@ -22523,6 +23423,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391073030] = {
 		id = 391073030,
@@ -22548,6 +23449,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391073040] = {
 		id = 391073040,
@@ -22573,6 +23475,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391073050] = {
 		id = 391073050,
@@ -22598,6 +23501,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391093010] = {
 		id = 391093010,
@@ -22623,6 +23527,7 @@ local datas = {
 		repel = 12000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[391095010] = {
 		id = 391095010,
@@ -22648,6 +23553,7 @@ local datas = {
 		repel = 12000,
 		repelTime = 0.01,
 		des = "",
+		frame = 0,
 	},
 	[392002010] = {
 		id = 392002010,
@@ -22673,6 +23579,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392002020] = {
 		id = 392002020,
@@ -22698,6 +23605,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392002030] = {
 		id = 392002030,
@@ -22723,6 +23631,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393013010] = {
 		id = 393013010,
@@ -22748,6 +23657,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393013020] = {
 		id = 393013020,
@@ -22773,6 +23683,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000010] = {
 		id = 391000010,
@@ -22798,6 +23709,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000020] = {
 		id = 391000020,
@@ -22823,6 +23735,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000030] = {
 		id = 391000030,
@@ -22848,6 +23761,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000040] = {
 		id = 391000040,
@@ -22873,6 +23787,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000050] = {
 		id = 391000050,
@@ -22898,6 +23813,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000060] = {
 		id = 391000060,
@@ -22923,6 +23839,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000070] = {
 		id = 391000070,
@@ -22948,6 +23865,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000080] = {
 		id = 391000080,
@@ -22973,6 +23891,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000090] = {
 		id = 391000090,
@@ -22998,6 +23917,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[391000100] = {
 		id = 391000100,
@@ -23023,6 +23943,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000010] = {
 		id = 392000010,
@@ -23048,6 +23969,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000020] = {
 		id = 392000020,
@@ -23073,6 +23995,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000030] = {
 		id = 392000030,
@@ -23098,6 +24021,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000040] = {
 		id = 392000040,
@@ -23123,6 +24047,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000050] = {
 		id = 392000050,
@@ -23148,6 +24073,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000060] = {
 		id = 392000060,
@@ -23173,6 +24099,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000070] = {
 		id = 392000070,
@@ -23198,6 +24125,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000080] = {
 		id = 392000080,
@@ -23223,6 +24151,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000090] = {
 		id = 392000090,
@@ -23248,6 +24177,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[392000100] = {
 		id = 392000100,
@@ -23273,6 +24203,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000010] = {
 		id = 393000010,
@@ -23298,6 +24229,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000020] = {
 		id = 393000020,
@@ -23323,6 +24255,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000030] = {
 		id = 393000030,
@@ -23348,6 +24281,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000040] = {
 		id = 393000040,
@@ -23373,6 +24307,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000050] = {
 		id = 393000050,
@@ -23398,6 +24333,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000060] = {
 		id = 393000060,
@@ -23423,6 +24359,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000070] = {
 		id = 393000070,
@@ -23448,6 +24385,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000080] = {
 		id = 393000080,
@@ -23473,6 +24411,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000090] = {
 		id = 393000090,
@@ -23498,6 +24437,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[393000100] = {
 		id = 393000100,
@@ -23523,6 +24463,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "",
+		frame = 0,
 	},
 	[340110410] = {
 		id = 340110410,
@@ -23548,6 +24489,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "破甲增加",
+		frame = 0,
 	},
 	[340112010] = {
 		id = 340112010,
@@ -23573,6 +24515,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "防御减少",
+		frame = 0,
 	},
 	[340411800] = {
 		id = 340411800,
@@ -23598,6 +24541,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "格挡增加",
+		frame = 0,
 	},
 	[340110110] = {
 		id = 340110110,
@@ -23623,6 +24567,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "暴击增加",
+		frame = 0,
 	},
 	[340410110] = {
 		id = 340410110,
@@ -23648,6 +24593,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "暴击增加",
+		frame = 0,
 	},
 	[340411760] = {
 		id = 340411760,
@@ -23673,6 +24619,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "破甲增加",
+		frame = 0,
 	},
 	[340511760] = {
 		id = 340511760,
@@ -23698,6 +24645,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "暴击增加",
+		frame = 0,
 	},
 	[340110130] = {
 		id = 340110130,
@@ -23723,6 +24671,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "破甲增加",
+		frame = 0,
 	},
 	[340111670] = {
 		id = 340111670,
@@ -23748,6 +24697,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "穿刺增加",
+		frame = 0,
 	},
 	[340411960] = {
 		id = 340411960,
@@ -23773,6 +24723,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "防御增加",
+		frame = 0,
 	},
 	[340510620] = {
 		id = 340510620,
@@ -23798,6 +24749,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "破甲增加",
+		frame = 0,
 	},
 	[340110060] = {
 		id = 340110060,
@@ -23823,6 +24775,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "破甲增加",
+		frame = 0,
 	},
 	[340111540] = {
 		id = 340111540,
@@ -23848,6 +24801,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "暴击增加",
+		frame = 0,
 	},
 	[340411840] = {
 		id = 340411840,
@@ -23873,6 +24827,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "穿刺增加",
+		frame = 0,
 	},
 	[340511840] = {
 		id = 340511840,
@@ -23898,6 +24853,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "生命增加",
+		frame = 0,
 	},
 	[340111700] = {
 		id = 340111700,
@@ -23923,6 +24879,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "韧性增加",
+		frame = 0,
 	},
 	[340111730] = {
 		id = 340111730,
@@ -23948,6 +24905,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "破甲增加",
+		frame = 0,
 	},
 	[340110070] = {
 		id = 340110070,
@@ -23973,6 +24931,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "防御减少",
+		frame = 0,
 	},
 	[340411710] = {
 		id = 340411710,
@@ -23998,6 +24957,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "暴击增加",
+		frame = 0,
 	},
 	[340411880] = {
 		id = 340411880,
@@ -24023,6 +24983,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "穿刺增加",
+		frame = 0,
 	},
 	[340511880] = {
 		id = 340511880,
@@ -24048,6 +25009,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "韧性增加",
+		frame = 0,
 	},
 	[340111020] = {
 		id = 340111020,
@@ -24073,6 +25035,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "命中增加",
+		frame = 0,
 	},
 	[340110660] = {
 		id = 340110660,
@@ -24098,6 +25061,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "穿刺增加",
+		frame = 0,
 	},
 	[340110370] = {
 		id = 340110370,
@@ -24123,6 +25087,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "暴击增加",
+		frame = 0,
 	},
 	[340411790] = {
 		id = 340411790,
@@ -24148,6 +25113,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "暴击增加",
+		frame = 0,
 	},
 	[340411860] = {
 		id = 340411860,
@@ -24173,6 +25139,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "防御增加",
+		frame = 0,
 	},
 	[340511860] = {
 		id = 340511860,
@@ -24198,6 +25165,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "格挡增加",
+		frame = 0,
 	},
 	[340110800] = {
 		id = 340110800,
@@ -24223,6 +25191,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "命中减少",
+		frame = 0,
 	},
 	[340111600] = {
 		id = 340111600,
@@ -24248,6 +25217,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "防御增加",
+		frame = 0,
 	},
 	[340410040] = {
 		id = 340410040,
@@ -24273,6 +25243,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "格挡增加",
+		frame = 0,
 	},
 	[340411770] = {
 		id = 340411770,
@@ -24298,6 +25269,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "格挡减少",
+		frame = 0,
 	},
 	[340411900] = {
 		id = 340411900,
@@ -24323,6 +25295,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "破甲增加",
+		frame = 0,
 	},
 	[340511900] = {
 		id = 340511900,
@@ -24348,6 +25321,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "防御增加",
+		frame = 0,
 	},
 	[340110850] = {
 		id = 340110850,
@@ -24373,6 +25347,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "穿刺增加",
+		frame = 0,
 	},
 	[340111820] = {
 		id = 340111820,
@@ -24398,6 +25373,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "防御减少",
+		frame = 0,
 	},
 	[340111910] = {
 		id = 340111910,
@@ -24423,6 +25399,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "韧性减少",
+		frame = 0,
 	},
 	[340411810] = {
 		id = 340411810,
@@ -24448,6 +25425,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "防御减少",
+		frame = 0,
 	},
 	[340411870] = {
 		id = 340411870,
@@ -24473,6 +25451,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "防御增加",
+		frame = 0,
 	},
 	[340511950] = {
 		id = 340511950,
@@ -24498,6 +25477,7 @@ local datas = {
 		repel = 0,
 		repelTime = 0,
 		des = "命中增加",
+		frame = 0,
 	},
 }
 

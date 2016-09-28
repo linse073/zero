@@ -288,28 +288,34 @@ function task.update(p, completeType, condition, count, setCount)
         local vt = v[1]
         local d = v[2]
         if user.level >= d.levelLimit and completeType == d.CompleteType and (d.condition == 0 or d.condition == condition) then
+            local nc
             if setCount then
-                vt.count = setCount
-            else
-                vt.count = vt.count + count
-            end
-            if vt.count >= d.count then
-                vt.count = d.count
-                vt.status = base.TASK_STATUS_DONE
-                done_task[#done_task+1] = vt.id
-                ptask[#ptask+1] = {
-                    id = vt.id,
-                    count = vt.count,
-                    status = vt.status,
-                }
-                if d.TaskType == base.TASK_TYPE_MASTER and d.TaskTalk == "" then
-                    new_task[#new_task+1] = task.finish(p, v)
+                if setCount > vt.count then
+                    nc = setCount
                 end
             else
-                ptask[#ptask+1] = {
-                    id = vt.id,
-                    count = vt.count,
-                }
+                nc = vt.count + count
+            end
+            if nc then
+                vt.count = nc
+                if vt.count >= d.count then
+                    vt.count = d.count
+                    vt.status = base.TASK_STATUS_DONE
+                    done_task[#done_task+1] = vt.id
+                    ptask[#ptask+1] = {
+                        id = vt.id,
+                        count = vt.count,
+                        status = vt.status,
+                    }
+                    if d.TaskType == base.TASK_TYPE_MASTER and d.TaskTalk == "" then
+                        new_task[#new_task+1] = task.finish(p, v)
+                    end
+                else
+                    ptask[#ptask+1] = {
+                        id = vt.id,
+                        count = vt.count,
+                    }
+                end
             end
         end
     end

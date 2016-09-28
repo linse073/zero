@@ -332,6 +332,7 @@
     rank_type 3 : integer
     cd 4 : integer
     count 5 : integer
+    update 6 : update_user
 }
 
 .move {

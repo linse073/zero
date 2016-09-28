@@ -75,6 +75,7 @@ local base = {
     TASK_COMPLETE_ARENA = 508,
     TASK_COMPLETE_FRIEND = 509,
     TASK_COMPLETE_EXPLORE_MONEY = 510,
+    TASK_COMPLETE_TRADE = 511,
 
     -- card
     MAX_EQUIP_CARD = 4,
@@ -166,6 +167,9 @@ local base = {
     STAGE_TYPE_ARENA = 4,
     STAGE_TYPE_RUNMAP_X = 5,
     STAGE_TYPE_RUNMAP_Y = 6,
+
+    STAGE_SEED_NORMAL = 1,
+    STAGE_SEED_ARENA = 2,
 
     -- bonus
     BONUS_TYPE_EQUIP = 1,

@@ -112,6 +112,20 @@ function CMD.update_rank(source)
     role.update_rank()
 end
 
+local function update_user(msg, info)
+    info.msgid = msg
+end
+local function stage_seed(msg, info)
+    local update = info.update
+    if update then
+        update.msgid = msg
+    end
+end
+local update_msg = {
+    update_user = update_user,
+    stage_seed = stage_seed,
+}
+
 skynet.start(function()
     msg = share.msg
     name_msg = share.name_msg
@@ -148,8 +162,11 @@ skynet.start(function()
             end
             info.msgid = id
             rmsg = "error_code"
-        elseif rmsg == "update_user" then
-            info.msgid = id
+        else
+            local u = update_msg[rmsg]
+            if u then
+                u(id, info)
+            end
         end
         if sproto:exist_type(rmsg) then
             info = sproto:pencode(rmsg, info)

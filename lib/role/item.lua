@@ -1222,6 +1222,7 @@ function proc.buy_item(msg)
             end
             role.add_money(p, -total_price)
         end)
+        task.update(p, base.TASK_COMPLETE_TRADE, 1, 0, total_price)
         skynet.call(save_trade, "lua", "update", iv.id, false)
         local now = floor(skynet.time())
         local m = {

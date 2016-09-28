@@ -75,6 +75,7 @@ function stage.enter()
         id = 0,
         seed = 0,
         bonus = false,
+        type = 0,
     }
     data.stage_star = 0
     for k, v in pairs(data.user.stage) do
@@ -333,6 +334,7 @@ function proc.begin_stage(msg)
     stage_seed.seed = random(floor(skynet.time())+msg.id)
     stage_seed.data = d
     stage_seed.bonus = false
+    stage_seed.type = base.STAGE_SEED_NORMAL
     local bmsg = {
         id = user.id,
         fight = true,
@@ -450,7 +452,16 @@ end
 
 function proc.fight_fail(msg)
     stage.finish()
-    return "response", ""
+    local p = update_user()
+    local stage_seed = data.stage_seed
+    if stage_seed.type == base.STAGE_SEED_ARENA then
+        if stage_seed.rank_type == base.RANK_ARENA then
+            task.update(p, base.TASK_COMPLETE_ARENA, 3, 1)
+        elseif stage_seed.rank_type == base.RANK_FIGHT_POINT then
+            task.update(p, base.TASK_COMPLETE_MATCH, 3, 1)
+        end
+    end
+    return "update_user", {update=p}
 end
 
 function proc.open_chest(msg)

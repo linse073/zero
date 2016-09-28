@@ -11,6 +11,8 @@ local error = error
 local string = string
 local floor = math.floor
 
+local task
+
 local update_user = util.update_user
 local gen_key = util.gen_key
 local data
@@ -40,6 +42,7 @@ skynet.init(function()
 end)
 
 function friend.init_module()
+    task = require "role.task"
     return proc
 end
 
@@ -263,6 +266,7 @@ function proc.confirm_friend(msg)
             id = msg.id,
             status = f.status,
         }
+        task.update(p, base.TASK_COMPLETE_FRIEND, 0, 1)
         return "update_user", {update=p}
     else
         local m = {

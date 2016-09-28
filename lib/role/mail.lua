@@ -149,11 +149,16 @@ function proc.del_mail(msg)
                 end
             end
         end
-        if money > 0 and m.type == base.MAIL_TYPE_EXPLORE then
-            local user = data.user
-            user.explore_award = user.explore_award + money
-            local se = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_EXPLORE)
-            skynet.call(se, "lua", "update", user.id, user.explore_award)
+        if money > 0 then
+            if m.type == base.MAIL_TYPE_EXPLORE then
+                local user = data.user
+                user.explore_award = user.explore_award + money
+                local se = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_EXPLORE)
+                skynet.call(se, "lua", "update", user.id, user.explore_award)
+                task.update(p, base.TASK_COMPLETE_EXPLORE_MONEY, 0, 0, user.explore_award)
+            elseif m.type == base.MAIL_TYPE_TRADE then
+                task.update(p, base.TASK_COMPLETE_TRADE, 2, 0, money)
+            end
         end
     end
     return "update_user", {update=p}

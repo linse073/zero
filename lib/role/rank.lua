@@ -15,6 +15,7 @@ local tonumber = tonumber
 local stage
 local mail
 local role
+local task
 
 local check_sign = util.check_sign
 local update_user = util.update_user
@@ -65,6 +66,7 @@ function rank.init_module()
     stage = require "role.stage"
     mail = require "role.mail"
     role = require "role.role"
+    task = require "role.task"
     return proc
 end
 
@@ -216,6 +218,7 @@ function proc.begin_challenge(msg)
         id = base.RANK_STAGE,
         rank_type = msg.rank_type,
     }
+    local p = update_user()
     if msg.rank_type == base.RANK_ARENA then
         if user.arena_count >= base.MAX_ARENA_COUNT then
             error{code = error_code.ARENA_COUNT_LIMIT}
@@ -228,6 +231,7 @@ function proc.begin_challenge(msg)
         u.cd = now
         user.arena_count = user.arena_count + 1
         u.count = user.arena_count
+        task.update(p, base.TASK_COMPLETE_ARENA, 1, 1)
     elseif msg.rank_type == base.RANK_FIGHT_POINT then
         if user.match_count >= base.MAX_MATCH_COUNT then
             error{code = error_code.MATCH_COUNT_LIMIT}
@@ -237,6 +241,7 @@ function proc.begin_challenge(msg)
         end
         user.match_count = user.match_count + 1
         u.count = user.match_count
+        task.update(p, base.TASK_COMPLETE_MATCH, 1, 1)
     else
         error{code = error_code.ERROR_QUERY_RANK_TYPE}
     end
@@ -270,10 +275,12 @@ function proc.begin_challenge(msg)
         item = pitem,
         card = pcard,
     }
+    u.update = {update=p}
     local stage_seed = data.stage_seed
     stage_seed.id = base.RANK_STAGE
     stage_seed.rank_type = msg.rank_type
     stage_seed.target = msg.id
+    stage_seed.type = base.STAGE_SEED_ARENA
     local bmsg = {
         id = user.id,
         fight = true,
@@ -306,6 +313,7 @@ function proc.end_challenge(msg)
             end
         end
         stage.finish()
+        task.update(p, base.TASK_COMPLETE_ARENA, 2, 1)
         return "update_user", {update=p}
     elseif msg.rank_type == base.RANK_FIGHT_POINT then
         local user = data.user
@@ -333,6 +341,7 @@ function proc.end_challenge(msg)
             mail.add(m, p)
         end
         stage.finish()
+        task.update(p, base.TASK_COMPLETE_MATCH, 2, 1)
         return "update_user", {update=p}
     else
         error{code = error_code.ERROR_QUERY_RANK_TYPE}

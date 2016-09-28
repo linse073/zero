@@ -46,6 +46,7 @@
     offline_exp_count 27 : integer
     revive_count 28 : integer
     patch_sign_in 29 : integer
+    week_day 30 : integer
 }
 
 .other_info {

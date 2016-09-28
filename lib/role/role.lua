@@ -182,6 +182,8 @@ local function update_mall_random()
 end
 
 local function update_day(user, od, nd)
+    local now = floor(skynet.time())
+    user.week_day = util.week_time(now)
     user.arena_count = 0
     user.charge_arena = 0
     local update_sign_in = false
@@ -227,7 +229,7 @@ end
 
 function role.update_day(od, nd)
     local user = data.user
-    local pt, wd, update_sign_in, arena_award, mall_random, mall_week, mall_time = update_day(user, od, nd)
+    local pt, update_sign_in, arena_award, mall_random, mall_week, mall_time = update_day(user, od, nd)
     notify.add("update_day", {
         task = pt, 
         update_sign_in = update_sign_in, 
@@ -235,7 +237,7 @@ function role.update_day(od, nd)
         mall_random = mall_random,
         mall_week = mall_week,
         mall_time = mall_time,
-        week_day = wd,
+        week_day = user.week_day,
     })
 end
 
@@ -510,6 +512,9 @@ function role.repair(user, now)
     if not user.patch_sign_in then
         user.patch_sign_in = 0
     end
+    if not user.week_day then
+        user.week_day = util.week_time(now)
+    end
 end
 
 function role.action(otype, info)
@@ -693,6 +698,7 @@ function proc.create_user(msg)
         offline_exp_count = 0,
         revive_count = 0,
         patch_sign_in = 0,
+        week_day = util.week_time(now),
 
         item = {},
         card = {},
@@ -752,7 +758,7 @@ local function enter_game(msg)
         end
     end
     if user.level >= base.WEEK_TASK_LEVEL then
-        task.update_week_task()
+        task.update_week_task(user.week_day)
     end
     data.rank_info = {
         name = user.name,

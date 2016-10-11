@@ -1,5 +1,6 @@
 local skynet = require "skynet"
 local func = require "func"
+local util = require "util"
 
 local pairs = pairs
 local assert = assert

@@ -262,7 +262,8 @@ local function update()
             if t >= data.searchSecond then
                 local bonus = data.searchSecond // BONUS_TIME
                 local exp = data.exp * data.searchSecond // 3600
-                local m = mail_bonus(data.money, bonus, exp, now, v.prof)
+                local money = data.money * data.searchSecond // 3600
+                local m = mail_bonus(money, bonus, exp, now, v.prof)
                 m.content = explore_normal
                 m.finish = true
                 skynet.call(offline_mgr, "lua", "add", "mail", v.roleid, m)

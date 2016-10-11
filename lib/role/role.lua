@@ -761,10 +761,6 @@ local function enter_game(msg)
     if user.level >= base.WEEK_TASK_LEVEL then
         task.update_week_task(user.week_day)
     end
-    role.init_prop()
-    if user.fight_point ~= suser.fight_point then
-        suser.fight_point = user.fight_point
-    end
     data.rank_info = {
         name = user.name,
         id = user.id,
@@ -774,6 +770,7 @@ local function enter_game(msg)
         fight_point = user.fight_point,
         card = card.rank_card(),
     }
+    role.init_prop()
     local p = update_user()
     if card.rank_card_full() then
         rank.add(p)

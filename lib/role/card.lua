@@ -248,14 +248,10 @@ function card.use(p, c, pos_type, pos)
     if oc then
         local ocv = oc[1]
         ocv.pos[pos_type] = opos
-        if opos > 0 then
-            equip_card[opos] = oc
-        end
         pack[#pack+1] = {id=ocv.id, pos=ocv.pos}
-    else
-        if opos > 0 then
-            equip_card[opos] = nil
-        end
+    end
+    if opos > 0 then
+        equip_card[opos] = oc
     end
     cv.pos[pos_type] = pos
     if pos > 0 then

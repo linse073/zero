@@ -16,8 +16,8 @@ local function new_agent(num)
     local l = #free_list
     for k, v in ipairs(t) do
         l = l + 1
-        free_list[l] = agent
-        agent_list[agent] = l
+        free_list[l] = v
+        agent_list[v] = l
     end
 end
 

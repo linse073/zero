@@ -425,9 +425,11 @@ function proc.slave_rank(msg)
         local roleid = tonumber(r[n - 1])
         local value = -tonumber(r[n])
         local info = skynet.call(role_mgr, "lua", "get_rank_info", roleid)
-        info.rank = i
-        info.value = value
-        list[#list+1] = info
+        if info then
+            info.rank = i
+            info.value = value
+            list[#list+1] = info
+        end
     end
     return "slave_rank_list", {
         type = msg.type,

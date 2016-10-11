@@ -21,10 +21,12 @@ local cs = queue()
 
 local CMD = {}
 
+local MAIL_TYPE_TASK_RANK = 7
+
 local function award(r, bonus)
     for k, v in ipairs(r) do
         local m = {
-            type = base.MAIL_TYPE_TASK_RANK,
+            type = MAIL_TYPE_TASK_RANK,
             time = floor(skynet.time()),
             title = title,
             content = string.format(content, k),

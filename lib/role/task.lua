@@ -96,12 +96,10 @@ function task.enter()
         end
     end
     -- repair week task
-    if level >= base.WEEK_TASK_LEVEL then
-        for k, v in ipairs(week_task) do
-            for k1, v1 in ipairs(v) do
-                if not dt[v1.TaskId] then
-                    task.add_by_data(v1, base.TASK_STATUS_NOT_ACCEPT)
-                end
+    for k, v in ipairs(week_task) do
+        for k1, v1 in ipairs(v) do
+            if not dt[v1.TaskId] then
+                task.add_by_data(v1, base.TASK_STATUS_NOT_ACCEPT)
             end
         end
     end

@@ -156,7 +156,7 @@ end
 
 local function win(t, info, tinfo)
     local tdt = t - tinfo.start_time
-    local money = data.money * tdt // data.searchSecond
+    local money = data.money * tdt // 3600
     money = money * data.lootRatio // RAND_FACTOR
     local num = tdt // BONUS_TIME
     local bonus = 0
@@ -377,7 +377,7 @@ function CMD.quit(roleid)
             local t = floor(skynet.time())
             local tinfo = role_list[info.tid]
             local tdt = t - info.start_time
-            local money = data.money * tdt // data.searchSecond
+            local money = data.money * tdt // 3600
             local imoney = money * data.escapeKeepRatio // RAND_FACTOR
             local exp = data.exp * tdt // 3600
             local tmoney = money * data.escapeLootRatio // RAND_FACTOR
@@ -437,7 +437,7 @@ function CMD.quit(roleid)
             end
             local t = floor(skynet.time())
             local tdt = t - info.start_time
-            local money = data.money * tdt // data.searchSecond
+            local money = data.money * tdt // 3600
             local exp = data.exp * tdt // 3600
             local bonus = tdt // BONUS_TIME
             local m = mail_bonus(money, bonus, exp, t, info.prof)

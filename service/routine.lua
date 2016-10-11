@@ -99,6 +99,12 @@ function CMD.del_second(key)
     second_routine_list[key] = nil
 end
 
+function CMD.update_day()
+    for k, v in pairs(day_routine_list) do
+        skynet.send(v, "lua", "day_routine", k, cur_day, cur_day, cur_wday, cur_wday)
+    end
+end
+
 skynet.start(function()
     game_day = func.game_day
     local now = floor(skynet.time())

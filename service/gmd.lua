@@ -46,6 +46,11 @@ function CMD.broadcast_mail(mtype, title, content)
     skynet.call(offline_mgr, "lua", "broadcast_mail", m)
 end
 
+function CMD.test_update_day()
+    local routine = skynet.queryservice("routine")
+    skynet.call(routine, "lua", "update_day")
+end
+
 skynet.start(function()
 	local command = arg[1]
 	local c = CMD[command]

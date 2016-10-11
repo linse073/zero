@@ -240,6 +240,23 @@ function role.update_day(od, nd, owd, nwd)
     })
 end
 
+function role.test_update_day()
+    local now = floor(skynet.time())
+    local nd = game_day(now)
+    local nwd = util.week_time(now)
+    local user = data.user
+    local pt, update_sign_in, arena_award, mall_random, mall_week, mall_time = update_day(user, nd, nd, nwd, nwd)
+    return "update_day", {
+        task = pt, 
+        update_sign_in = update_sign_in, 
+        arena_award = arena_award,
+        mall_random = mall_random,
+        mall_week = mall_week,
+        mall_time = mall_time,
+        week_day = user.week_day,
+    }
+end
+
 function role.update_second()
     local now = floor(skynet.time())
     local p = update_user()

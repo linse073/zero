@@ -176,4 +176,11 @@ function proc.reset_online_award(msg)
     return "update_user", {update=p}
 end
 
+function proc.test_update_day(msg)
+    if data.user.gm_level == 0 then
+        error{code = error_code.ROLE_NO_PERMIT}
+    end
+    return role.test_update_day()
+end
+
 return gm

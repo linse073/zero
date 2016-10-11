@@ -19,6 +19,7 @@ local data
 local base
 local error_code
 local rank_mgr
+local task_rank
 
 local mail = {}
 local proc = {}
@@ -28,6 +29,7 @@ skynet.init(function()
     base = share.base
     error_code = share.error_code
     rank_mgr = skynet.queryservice("rank_mgr")
+    task_rank = skynet.queryservice("task_rank")
 end)
 
 function mail.init_module()
@@ -156,6 +158,9 @@ function proc.del_mail(msg)
                 local se = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_EXPLORE)
                 skynet.call(se, "lua", "update", user.id, user.explore_award)
                 task.update(p, base.TASK_COMPLETE_EXPLORE_MONEY, 0, 0, user.explore_award)
+                if user.level >= base.WEEK_TASK_LEVEL then
+                    skynet.call(task_rank, "lua", "update", 2, user.id, money)
+                end
             elseif m.type == base.MAIL_TYPE_TRADE then
                 task.update(p, base.TASK_COMPLETE_TRADE, 2, 0, money)
             end

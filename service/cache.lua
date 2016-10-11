@@ -29,6 +29,7 @@ skynet.start(function()
     local textdata = require("data.text")
     local vipdata = require("data.vip")
     local malldata = require("data.mall")
+    local taskrankdata = require("data.taskrank")
     local base = require("base")
 
     local function get_string(id)
@@ -361,6 +362,23 @@ skynet.start(function()
         v.data = assert(itemdata[v.goods], string.format("No item data %d.", v.goods))
     end
 
+    local task_rank_type = {}
+    for k, v in pairs(taskrankdata) do
+        local bonus = {}
+        for i = 1, 3 do
+            local b1, b2 = string.match(v["bonus" .. i], "(%d+);(%d+)")
+            b1, b2 = tonumber(b1), tonumber(b2)
+            assert(itemdata[b1], string.format("No item data %d.", b1))
+            assert(itmedata[b2], string.format("No item data %d.", b2))
+            bonus[i] = {
+                {{itemid=b1, num=1}},
+                {{itemid=b1, num=1}, {itemid=b2, num=1}},
+            }
+        end
+        v.bonus = bonus
+        task_rank_type[v.timeType] = v
+    end
+
     sharedata.new("carddata", carddata)
     sharedata.new("itemdata", itemdata)
     sharedata.new("stagedata", stagedata)
@@ -376,6 +394,7 @@ skynet.start(function()
     sharedata.new("textdata", textdata)
     sharedata.new("vipdata", vipdata)
     sharedata.new("malldata", malldata)
+    sharedata.new("taskrankdata", taskrankdata)
 
     sharedata.new("base", base)
     sharedata.new("error_code", require("error_code"))
@@ -391,6 +410,7 @@ skynet.start(function()
     sharedata.new("vip_level", vip_level)
     sharedata.new("mall_sale", mall_sale)
     sharedata.new("mall_limit", mall_limit)
+    sharedata.new("task_rank_type", task_rank_type)
 
     local level = base.MAX_LEVEL - 1
     local ed = assert(expdata[level], string.format("No exp data %d.", level))

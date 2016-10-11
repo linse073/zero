@@ -181,9 +181,8 @@ local function update_mall_random()
     return mr
 end
 
-local function update_day(user, od, nd)
-    local now = floor(skynet.time())
-    user.week_day = util.week_time(now)
+local function update_day(user, od, nd, owd, nwd)
+    user.week_day = nwd
     user.arena_count = 0
     user.charge_arena = 0
     local update_sign_in = false
@@ -227,9 +226,9 @@ local function update_day(user, od, nd)
     return task.update_day(), update_sign_in, rank.update_day(), update_mall_random(), mall_week, mall_time
 end
 
-function role.update_day(od, nd)
+function role.update_day(od, nd, owd, nwd)
     local user = data.user
-    local pt, update_sign_in, arena_award, mall_random, mall_week, mall_time = update_day(user, od, nd)
+    local pt, update_sign_in, arena_award, mall_random, mall_week, mall_time = update_day(user, od, nd, owd, nwd)
     notify.add("update_day", {
         task = pt, 
         update_sign_in = update_sign_in, 
@@ -592,7 +591,7 @@ end
 
 function role.update_rank()
     local p = update_user()
-    rank.add(p)
+    rank.update_arena(p)
     notify.add("update_user", {update=p})
 end
 
@@ -736,7 +735,7 @@ local function enter_game(msg)
     user.login_time = now
     data.suser = suser
     data.user = user
-    if user.level > suser.level then
+    if user.level ~= suser.level then
         suser.level = user.level
     end
     local npcID = base.PROF_NPC_BASE + user.prof
@@ -754,11 +753,17 @@ local function enter_game(msg)
         local od = game_day(user.logout_time)
         local nd = game_day(now)
         if od ~= nd then
-            update_day(user, od, nd)
+            local owd = util.week_time(user.logout_time)
+            local nwd = util.week_time(now)
+            update_day(user, od, nd, owd, nwd)
         end
     end
     if user.level >= base.WEEK_TASK_LEVEL then
         task.update_week_task(user.week_day)
+    end
+    role.init_prop()
+    if user.fight_point ~= suser.fight_point then
+        suser.fight_point = user.fight_point
     end
     data.rank_info = {
         name = user.name,
@@ -769,7 +774,6 @@ local function enter_game(msg)
         fight_point = user.fight_point,
         card = card.rank_card(),
     }
-    role.init_prop()
     local p = update_user()
     if card.rank_card_full() then
         rank.add(p)
@@ -918,7 +922,7 @@ function proc.explore(msg)
         error{code = error_code.STAGE_STAR_LIMIT}
     end
     local user = data.user
-    local e = skynet.call(explore, "lua", "explore", user.id, user.fight_point, user.name, user.prof)
+    local e = skynet.call(explore, "lua", "explore", user.id, user.fight_point, user.name, user.prof, user.level)
     data.explore = explore
     return "update_user", {update={explore=e}}
 end

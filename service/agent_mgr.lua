@@ -3,26 +3,29 @@ local skynet = require "skynet"
 local assert = assert
 local pcall = pcall
 local string = string
+local ipairs = ipairs
 
 local free_list = {}
 local agent_list = {}
-local fork_new = false
-local fork_del = false
 
 local function new_agent(num)
-    local l = #free_list + 1
+    local t = {}
     for i = 1, num do
-        local agent = skynet.newservice("agent") 
+        t[i] = skynet.newservice("agent") 
+    end
+    local l = #free_list
+    for k, v in ipairs(t) do
+        l = l + 1
         free_list[l] = agent
         agent_list[agent] = l
-        l = l + 1
     end
-    fork_new = false
 end
 
 local function del_agent(num)
     local l = #free_list
-    assert(num < l, string.format("Delete agent error %d, free agent %d.", num, l))
+    if num > l then
+        num = l
+    end
     local t = {}
     for i = 1, num do
         local agent = free_list[l]
@@ -31,7 +34,6 @@ local function del_agent(num)
         agent_list[agent] = nil
         l = l - 1
     end
-    fork_del = false
     for k, v in ipairs(t) do
         -- NOTICE: logout may call skynet.exit, so you should use pcall.
         pcall(skynet.call, v, "lua", "exit")
@@ -47,9 +49,8 @@ function CMD.get()
         agent = free_list[l]
         free_list[l] = nil
         agent_list[agent] = 0
-        if not fork_new and l <= 10 then
+        if l <= 10 then
             skynet.fork(new_agent, 10)
-            fork_new = true
         end
     else
         agent = skynet.newservice("agent")
@@ -63,9 +64,8 @@ function CMD.free(agent)
         local l = #free_list + 1
         free_list[l] = agent
         agent_list[agent] = l
-        if not fork_del and l >= 150 then
+        if l >= 150 then
             skynet.fork(del_agent, 50)
-            fork_del = true
         end
     end
 end

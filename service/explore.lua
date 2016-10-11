@@ -26,6 +26,7 @@ local offline_mgr
 local save_explore
 local ratio_min
 local role_mgr
+local task_rank
 local rank_count
 local role_list = {}
 
@@ -36,6 +37,7 @@ local ENCOUNTER_SECOND = ENCOUNTER_MIN * 60
 local ENCOUNTER_RANK = 3
 local BONUS_TIME = 120 * 60
 local UPDATE_TIME = 60
+local WEEK_TASK_LEVEL = 25
 
 local MONEY_ITEM = 3000004271
 local RMB_ITEM = 3000012271
@@ -168,6 +170,9 @@ local function win(t, info, tinfo)
     m.content = string.format(explore_win, tinfo.name)
     m.win = true
     skynet.call(offline_mgr, "lua", "add", "mail", info.roleid, m)
+    if m.level >= WEEK_TASK_LEVEL then
+        skynet.call(task_rank, "lua", "update", 6, info.roleid, tinfo.fight_point)
+    end
     local dt = t - info.start_time
     if dt >= data.searchSecond - ENCOUNTER_SECOND then
         info.status = explore_status.IDLE
@@ -299,6 +304,7 @@ function CMD.open(d, bd, mgr)
     ratio_min = MAX_ENCOUNTER_RATIO // (d.searchTime - ENCOUNTER_MIN)
     save_explore = skynet.queryservice("save_explore")
     role_mgr = skynet.queryservice("role_mgr")
+    task_rank = skynet.queryservice("task_rank")
     offline_mgr = skynet.queryservice("offline_mgr")
     local master = skynet.queryservice("dbmaster")
     rankdb = skynet.call(master, "lua", "get", "rankdb")
@@ -336,7 +342,7 @@ function CMD.add(info)
     skynet.call(explore_mgr, "lua", "add", info.roleid, skynet.self())
 end
 
-function CMD.explore(roleid, fight_point, name, prof)
+function CMD.explore(roleid, fight_point, name, prof, level)
     skynet.call(rankdb, "lua", "zadd", rankname, -fight_point, roleid)
     rank_count = rank_count + 1
     local now = floor(skynet.time())
@@ -345,6 +351,7 @@ function CMD.explore(roleid, fight_point, name, prof)
         fight_point = fight_point,
         name = name,
         prof = prof,
+        level = level,
         area = data.area,
         start_time = now,
         status = explore_status.NORMAL,

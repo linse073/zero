@@ -74,6 +74,8 @@ local msg = {
     [2704] = "refresh_arena",
     [2705] = "slave_rank",
     [2706] = "slave_rank_list",
+    [2707] = "task_rank",
+    [2708] = "task_rank_info",
 
     [2800] = "sign_in",
     [2801] = "exchange",

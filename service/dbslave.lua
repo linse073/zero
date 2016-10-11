@@ -67,6 +67,10 @@ function CMD.zcount(rt, r1, r2)
     return db:zcount(rt, r1, r2)
 end
 
+function CMD.zcard(rt)
+    return db:zcard(rt)
+end
+
 function CMD.scan(i)
     return db:scan(i)
 end

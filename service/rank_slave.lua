@@ -33,7 +33,7 @@ end
 skynet.start(function()
     local master = skynet.queryservice("dbmaster")
     rankdb = skynet.call(master, "lua", "get", "rankdb")
-    count = skynet.call(rankdb, "lua", "zcount", rank_name)
+    count = skynet.call(rankdb, "lua", "zcard", rank_name)
 
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

@@ -13,6 +13,7 @@ local day_routine_list = {}
 local second_routine_list = {}
 local running = false
 local cur_day
+local cur_wday
 
 local function time_routine()
     for k, v in pairs(second_routine_list) do
@@ -32,12 +33,15 @@ local function time_routine()
             skynet.send(v.address, "lua", "once_routine", k)
         end
     end
-    local day = game_day(floor(now))
+    local fnow = floor(now)
+    local day = game_day(fnow)
     if day ~= cur_day then
+        local wday = util.week_time(fnow)
         for k, v in pairs(day_routine_list) do
-            skynet.send(v, "lua", "day_routine", k, cur_day, day)
+            skynet.send(v, "lua", "day_routine", k, cur_day, day, cur_wday, wday)
         end
         cur_day = day
+        cur_wday = wday
     end
     if running then
         skynet.timeout(100, time_routine)
@@ -96,7 +100,9 @@ end
 
 skynet.start(function()
     game_day = func.game_day
-    cur_day = game_day(floor(skynet.time()))
+    local now = floor(skynet.time())
+    cur_day = game_day(now)
+    cur_wday = util.week_time(now)
     running = true
     skynet.timeout(100, time_routine)
     

@@ -4,6 +4,7 @@ local pairs = pairs
 local ipairs = ipairs
 local type = type
 local print = print
+local tonumber = tonumber
 local string = string
 local table = table
 local tostring = tostring
@@ -209,6 +210,19 @@ function util.week_time(t)
     else
         return (st.wday + 4) % 7 + 1
     end
+end
+
+function util.parse_time(t)
+    local year, month, day, hour, min, sec = string.match(t, "(%d+)-(%d+)-(%d+) (%d+):(%d+):(%d+)")
+    local st = {
+        year = tonumber(year),
+        month = tonumber(month),
+        day = tonumber(day),
+        hour = tonumber(hour),
+        min = tonumber(min),
+        sec = tonumber(sec),
+    }
+    return time(st)
 end
 
 return util

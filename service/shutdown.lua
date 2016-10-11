@@ -1,5 +1,7 @@
 local skynet = require "skynet"
 
+local floor = math.floor
+
 skynet.start(function()
     local server_mgr = skynet.queryservice("server_mgr")
     skynet.call(server_mgr, "lua", "shutdown")
@@ -9,6 +11,11 @@ skynet.start(function()
     skynet.call(save_explore, "lua", "shutdown")
     local save_trade = skynet.queryservice("save_trade")
     skynet.call(save_trade, "lua", "shutdown")
+    local task_rank = skynet.queryservice("task_rank")
+    skynet.call(task_rank, "lua", "shutdown")
+    local master = skynet.queryservice("dbmaster")
+    local statusdb = skynet.call(master, "lua", "get", "statusdb")
+    skynet.call(statusdb, "lua", "save", "shutdown_time", floor(skynet.time()))
     -- TODO: save server shutdown time
     skynet.error("shutdown finish.")
     skynet.exit()

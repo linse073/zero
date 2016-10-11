@@ -17,8 +17,10 @@ local assert = assert
 local error = error
 local string = string
 local table = table
+local math = math
 local random = math.random
 local floor = math.floor
+local pow = math.pow
 
 local update_user = util.update_user
 local itemdata
@@ -37,6 +39,7 @@ local trade_mgr
 local save_trade
 local offline_mgr
 local role_mgr
+local task_rank
 local data
 
 local trade_title
@@ -63,6 +66,7 @@ skynet.init(function()
     save_trade = skynet.queryservice("save_trade")
     offline_mgr = skynet.queryservice("offline_mgr")
     role_mgr = skynet.queryservice("role_mgr")
+    task_rank = skynet.queryservice("task_rank")
 
     trade_title = func.get_string(198000004)
     buy_content = func.get_string(198000005)
@@ -661,9 +665,9 @@ function proc.compound_item(msg)
     local p = update_user()
     item.del_by_itemid(p, msg.itemid, comnum * 5)
     local mul = 1
+    local user = data.user
     if edata.composTotalRatio > 0 then
         local r = random(edata.composTotalRatio)
-        local user = data.user
         local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
         for k, v in ipairs(edata.composRatio) do
             if r <= v[1] + l.composRate then
@@ -674,6 +678,9 @@ function proc.compound_item(msg)
     end
     item.add_by_itemid(p, comnum * mul, compounddata)
     task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, compounddata.quality, 1)
+    if user.level >= base.WEEK_TASK_LEVEL then
+        skynet.call(task_rank, "lua", "update", 4, comnum * pow(3, compounddata.quality - 2))
+    end
     return "update_user", {update=p, compound_crit=mul}
 end
 

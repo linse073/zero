@@ -34,6 +34,7 @@ local vip_level
 local data
 local role_mgr
 local rank_mgr
+local task_rank
 local cs
 
 local stage = {}
@@ -52,6 +53,7 @@ skynet.init(function()
     cs = share.cs
     role_mgr = skynet.queryservice("role_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
+    task_rank = skynet.queryservice("task_rank")
 end)
 
 function stage.init_module()
@@ -432,6 +434,13 @@ function proc.end_stage(msg)
         task.update(p, base.TASK_COMPLETE_STAGE_STAR, 0, 0, data.stage_star)
         local ss = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_STAGE)
         skynet.call(ss, "lua", "update", user.id, data.stage_star)
+    end
+    if user.level >= base.WEEK_TASK_LEVEL then
+        local point = d.limitLevel
+        if d.stageType == base.STAGE_TYPE_HARD then
+            point = point * 3
+        end
+        skynet.call(task_rank, "lua", "update", 5, user.id, point)
     end
     -- local initRect = base.INIT_RECT
     -- local des_pos = user.des_pos

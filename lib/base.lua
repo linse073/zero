@@ -277,6 +277,7 @@ local base = {
     MAIL_TYPE_ARENA = 4,
     MAIL_TYPE_TRADE = 5,
     MAIL_TYPE_CHARGE = 6,
+    MAIL_TYPE_TASK_RANK = 7,
 
     FRIEND_STATUS_OLD = 1,
     FRIEND_STATUS_NEW = 2,
@@ -314,7 +315,7 @@ local base = {
     MAX_OFFLINE_EXP = 120,
 
     MAX_REVIVE_COUNT = 10,
-    WEEK_TASK_LEVEL = 30,
+    WEEK_TASK_LEVEL = 25,
 }
 
 return base

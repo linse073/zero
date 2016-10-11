@@ -80,8 +80,8 @@ function CMD.once_routine(source, key)
     timer.call_once_routine(key)
 end
 
-function CMD.day_routine(source, key, od, nd)
-    timer.call_day_routine(key, od, nd)
+function CMD.day_routine(source, key, od, nd, owd, nwd)
+    timer.call_day_routine(key, od, nd, owd, nwd)
 end
 
 function CMD.second_routine(source, key)

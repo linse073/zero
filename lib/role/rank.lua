@@ -32,6 +32,7 @@ local arena_rank
 local fight_point_rank
 local role_mgr
 local rank_mgr
+local task_rank
 local query_process
 
 local match_title
@@ -53,6 +54,7 @@ skynet.init(function()
     fight_point_rank = skynet.queryservice("fight_point_rank")
     role_mgr = skynet.queryservice("role_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
+    task_rank = skynet.queryservice("task_rank")
     query_process = {
         [base.RANK_ARENA] = arena_rank,
         [base.RANK_FIGHT_POINT] = fight_point_rank,
@@ -105,6 +107,16 @@ function rank.add(p)
         user.match_role = match_role
     end
     rank.update(p, now)
+end
+
+function rank.update_arena(p)
+    local user = data.user
+    local info = data.rank_info
+    local arena_rank = skynet.call(arena_rank, "lua", "add", info.id)
+    user.arena_rank = arena_rank
+    info.arena_rank = arena_rank
+    local pu = p.user
+    pu.arena_rank = arena_rank
 end
 
 function rank.update_day()
@@ -342,6 +354,10 @@ function proc.end_challenge(msg)
         end
         stage.finish()
         task.update(p, base.TASK_COMPLETE_MATCH, 2, 1)
+        if user.level >= base.WEEK_TASK_LEVEL then
+            local target = skynet.call(role_mgr, "lua", "get_rank_info", msg.id)
+            skynet.call(task_rank, "lua", "update", 1, user.id, target.fight_point)
+        end
         return "update_user", {update=p}
     else
         error{code = error_code.ERROR_QUERY_RANK_TYPE}
@@ -400,7 +416,7 @@ function proc.slave_rank(msg)
     end
     local user = data.user
     local cr, cs, r = skynet.call(sr, "lua", "query", user.id, 0, 99)
-    cr = tonumber(cr) + 1
+    cr = cr + 1
     cs = -tonumber(cs)
     local list = {}
     local len = #r // 2

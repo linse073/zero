@@ -22,6 +22,7 @@ skynet.init(function()
     share.textdata = sharedata.query("textdata")
     share.vipdata = sharedata.query("vipdata")
     share.malldata = sharedata.query("malldata")
+    share.taskrankdata = sharedata.query("taskrankdata")
 
     share.base = sharedata.query("base")
     share.error_code = sharedata.query("error_code")
@@ -37,6 +38,7 @@ skynet.init(function()
     share.vip_level = sharedata.query("vip_level")
     share.mall_sale = sharedata.query("mall_sale")
     share.mall_limit = sharedata.query("mall_limit")
+    share.task_rank_type = sharedata.query("task_rank_type")
 
     share.max_exp = sharedata.query("max_exp")
 

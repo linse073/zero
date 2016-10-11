@@ -27,6 +27,7 @@ local base
 local error_code
 local cs
 local data
+local task_rank
 
 local card = {}
 local proc = {}
@@ -40,6 +41,7 @@ skynet.init(function()
     base = share.base
     error_code = share.error_code
     cs = share.cs
+    task_rank = skynet.queryservice("task_rank")
 end)
 
 function card.init_module()
@@ -414,7 +416,8 @@ function proc.upgrade_passive(msg)
         end
         item.del_by_itemid(p, idata.id, 1)
     end
-    si.exp = si.exp + idata.exp * mul
+    local addexp = idata.exp * mul
+    si.exp = si.exp + addexp
     local olditem = ps[3].passiveItem
     while true do
         if si.exp < ps[3].passiveExp then
@@ -442,6 +445,9 @@ function proc.upgrade_passive(msg)
         passive_skill = {si},
     }
     task.update(p, base.TASK_COMPLETE_UPGRADE_PASSIVE, si.level, 1)
+    if user.level >= base.WEEK_TASK_LEVEL then
+        skynet.call(task_rank, "lua", "update", 3, user.id, addexp)
+    end
     return "update_user", {update=p}
 end
 

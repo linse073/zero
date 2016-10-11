@@ -25,6 +25,7 @@ local complete_task
 local stage_task
 local base
 local data
+local task_rank
 
 local task = {}
 local proc = {}
@@ -37,6 +38,7 @@ skynet.init(function()
     complete_task = share.complete_task
     stage_task = share.stage_task
     base = share.base
+    task_rank = skynet.queryservice("task_rank")
 end)
 
 function task.init_module()
@@ -432,6 +434,15 @@ function proc.submit_task(msg)
         end
     end
     return "update_user", {update=p}
+end
+
+function proc.task_rank(msg)
+    local user = data.user
+    local cr, cs = skynet.call(task_rank, "lua", "get", user.id)
+    return "task_rank_info", {
+        rank = cr,
+        value = cs,
+    }
 end
 
 return task

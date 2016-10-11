@@ -555,3 +555,8 @@
     value 2 : integer
     list 3 : *simple_rank_info
 }
+
+.task_rank_info {
+    rank 0 : integer
+    value 1 : integer
+}

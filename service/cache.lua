@@ -369,7 +369,7 @@ skynet.start(function()
             local b1, b2 = string.match(v["bonus" .. i], "(%d+);(%d+)")
             b1, b2 = tonumber(b1), tonumber(b2)
             assert(itemdata[b1], string.format("No item data %d.", b1))
-            assert(itmedata[b2], string.format("No item data %d.", b2))
+            assert(itemdata[b2], string.format("No item data %d.", b2))
             bonus[i] = {
                 {{itemid=b1, num=1}},
                 {{itemid=b1, num=1}, {itemid=b2, num=1}},

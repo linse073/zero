@@ -242,16 +242,20 @@ end
 function card.use(p, c, pos_type, pos)
     local pack = p.card
     local cv = c[1]
+    local opos = cv.pos[pos_type]
     local equip_card = data.equip_card[pos_type]
     local oc = equip_card[pos]
     if oc then
-        local opos = cv.pos[pos_type]
         local ocv = oc[1]
         ocv.pos[pos_type] = opos
         if opos > 0 then
             equip_card[opos] = oc
         end
         pack[#pack+1] = {id=ocv.id, pos=ocv.pos}
+    else
+        if opos > 0 then
+            equip_card[opos] = nil
+        end
     end
     cv.pos[pos_type] = pos
     if pos > 0 then

@@ -32,18 +32,18 @@ local function award(r, bonus)
             content = string.format(content, k),
         }
         if k == 1 then
-            m.item_info = bonus[2]
+            m.item_info = bonus[1][2]
         elseif k < 100 then
             if k % 10 == 0 then
-                m.item_info = bonus[2]
+                m.item_info = bonus[2][2]
             else
-                m.item_info = bonus[1]
+                m.item_info = bonus[2][1]
             end
         else
             if k % 100 == 0 then
-                m.item_info = bonus[2]
+                m.item_info = bonus[3][2]
             else
-                m.item_info = bonus[1]
+                m.item_info = bonus[3][1]
             end
         end
         local id = tonumber(v)

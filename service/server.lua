@@ -48,12 +48,16 @@ function CMD.open(conf, gatename)
         if not status.mailid then
             status.mailid = 1
         end
+        if not status.guildid then
+            status.guildid = 1
+        end
     else
         status = {
             roleid = 1,
             itemid = 1,
             cardid = 1,
             mailid = 1,
+            guildid = 1,
         }
     end
 
@@ -93,6 +97,13 @@ function CMD.gen_mail()
     status.mailid = status.mailid + 1
     skynet.call(statusdb, "lua", "save", status_key, skynet.packstring(status))
     return mailid
+end
+
+function CMD.gen_guild()
+    local guildid = status.guildid * 10000 + 5000 + config.serverid
+    status.guildid = status.guildid + 1
+    skynet.call(statusdb, "lua", "save", status_key, skynet.packstring(status))
+    return guildid
 end
 
 skynet.start(function()

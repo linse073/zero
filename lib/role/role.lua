@@ -724,6 +724,16 @@ function proc.create_user(msg)
         mail = {},
     }
     skynet.call(data.userdb, "lua", "save", roleid, skynet.packstring(u))
+    local rank_info = {
+        name = u.name,
+        id = u.id,
+        prof = u.prof,
+        level = u.level,
+        arena_rank = u.arena_rank,
+        fight_point = u.fight_point,
+        card = {},
+    }
+    skynet.call(data.rankinfodb, "lua", "save", roleid, skynet.packstring(rank_info))
     return "simple_user", su
 end
 

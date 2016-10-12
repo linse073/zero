@@ -31,8 +31,12 @@ local function award(r, bonus)
             title = title,
             content = string.format(content, k),
         }
-        if k == 1 then
-            m.item_info = bonus[1][2]
+        if k < 10 then
+            if k == 1 then
+                m.item_info = bonus[1][2]
+            else
+                m.item_info = bonus[1][1]
+            end
         elseif k < 100 then
             if k % 10 == 0 then
                 m.item_info = bonus[2][2]

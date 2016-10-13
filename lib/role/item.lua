@@ -20,7 +20,6 @@ local table = table
 local math = math
 local random = math.random
 local floor = math.floor
-local pow = math.pow
 
 local update_user = util.update_user
 local itemdata
@@ -679,7 +678,7 @@ function proc.compound_item(msg)
     item.add_by_itemid(p, comnum * mul, compounddata)
     task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, compounddata.quality, 1)
     if user.level >= base.WEEK_TASK_LEVEL then
-        skynet.call(task_rank, "lua", "update", 4, comnum * pow(3, compounddata.quality - 2))
+        skynet.call(task_rank, "lua", "update", 4, floor(comnum * 3 ^ (compounddata.quality - 2)))
     end
     return "update_user", {update=p, compound_crit=mul}
 end

@@ -71,6 +71,12 @@ config.db = {
         db = db_base + 8,
         name = "statusdb",
     },
+    {
+        host = "127.0.0.1",
+        port = 6379,
+        db = db_base + 9,
+        name = "guilddb",
+    },
 }
 
 return config

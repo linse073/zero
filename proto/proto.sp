@@ -169,6 +169,51 @@
     tack 7 : integer
 }
 
+.guild_member {
+    id 0 : integer
+    name 1 : string
+    prof 2 : integer
+    level 3 : integer
+    fight_point 4 : integer
+    pos 5 : integer
+    contribute 6 : integer
+    last_login_time 7 : integer
+    online 8 : boolean
+}
+
+.guild_log {
+    type 0 : integer
+    id 1 : integer
+    name 2 : string
+    time 3 : integer
+}
+
+.guild_proposer {
+    id 0 : integer
+    name 1 : string
+    prof 2 : integer
+    level 3 : integer
+    fight_point 4 : integer
+    time 5 : integer
+}
+
+.guild_info {
+    id 0 : integer
+    name 1 : integer
+    icon 2 : integer
+    notice 3 : string
+    exp 4 : integer
+    level 5 : integer
+    rank 6 : integer
+    active 7 : integer
+}
+
+.guild_all {
+    info 0 : guild_info
+    log 1 : *guild_log
+    member 2 : *guild_member
+}
+
 .user_all {
     .mall_count {
         id 0 : integer
@@ -187,6 +232,7 @@
     trade_watch 9 : *integer
     mall_random 10 : *integer
     mall_count 11 : *mall_count
+    guild 12 : guild_all
 }
 
 .info_all {

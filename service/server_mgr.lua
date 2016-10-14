@@ -22,7 +22,6 @@ function CMD.shutdown()
     for k, v in pairs(server_list) do
         skynet.call(v, "lua", "shutdown")
     end
-    -- skynet.call(gate, "lua", "close")
     skynet.call(gate, "lua", "shutdown")
 end
 

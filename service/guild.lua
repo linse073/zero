@@ -24,7 +24,11 @@ function CMD.update_rank(rank)
     -- TODO: broadcast
 end
 
+function CMD.base_info(roleid)
+end
+
 skynet.start(function()
+    -- TODO: save routine
 
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])

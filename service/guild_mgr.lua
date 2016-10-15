@@ -109,10 +109,32 @@ function CMD.query(roleid, name)
     return r
 end
 
-function CMD.list(page)
+function CMD.list(roleid, page)
+    local b, e = (page-1)*PAGE_GUILD+1, page*PAGE_GUILD
+    local l = #len
+    if e > l then
+        e = l
+    end
+    local g = {}
+    for i = b, e do
+        g[#g+1] = rank_list[i].addr
+    end
+    local r = {}
+    for k, v in ipairs(g) do
+        r[k] = skynet.call(v, "lua", "base_info", roleid)
+    end
+    return r, l
 end
 
 function CMD.query_proposer(roleid)
+    local p = proposer[roleid]
+    if p then
+        local r = {}
+        for k, v in ipairs(p) do
+            r[k] = skynet.call(v, "lua", "base_info", roleid)
+        end
+        return p
+    end
 end
 
 function CMD.shutdown()

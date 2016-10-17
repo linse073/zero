@@ -8,6 +8,10 @@ local pairs = pairs
 local ipairs = ipairs
 local tonumber = tonumber
 local table = table
+local math = math
+local randomseed = math.randomseed
+local random = math.random
+local floor = math.floor
 
 local guild_list = {}
 local rank_list = {}
@@ -22,8 +26,9 @@ local CMD = {}
 
 local function add(info)
     local g = skynet.newservice("guild")
-    skynet.call(g, "lua", "open", info)
-    guild_list[util.gen_key(info.id%1000, info.name)] = g
+    skynet.call(g, "lua", "open", info, random(300))
+    local key = util.gen_key(info.id%1000, info.name)
+    guild_list[key] = g
     guild_list[info.id] = g
     local l = #rank_list
     if info.rank == 0 then
@@ -39,13 +44,34 @@ local function add(info)
     end
     for k, v in pairs(info.proposer) do
         local p = proposer[v.id]
-        if p then
-            p[#p+1] = g
-        else
-            proposer[v.id] = {g}
+        if not p then
+            p = {}
+            proposer[v.id] = p
         end
+        p[info.id] = g
     end
     return g
+end
+
+local function del(g, info)
+    local info = skynet.call(g, "lua", "info")
+    assert(util.empty(info.member), string.format("Not empty guild %d.", info.id))
+    local key = util.gen_key(info.id%1000, info.name)
+    assert(guild_list[key]==g, string.format("Mismatch guild key %s.", key))
+    guild_list[key] = nil
+    guild_list[info.id] = nil
+    assert(rank_list[info.rank].addr==g, string.format("Mismatch guild rank %d.", info.rank))
+    rank_list[info.rank] = nil
+    for k, v in pairs(info.proposer) do
+        local p = proposer[v.id]
+        p[info.id] = nil
+    end
+end
+
+local function save()
+    for k, v in pairs(guild_list) do
+        skynet.call(v, "lua", "save")
+    end
 end
 
 local function predict_2(l, r)
@@ -58,11 +84,11 @@ local function update_day(od, nd, owd, nwd)
     table.sort(rank_list, predict_2)
     for k, v in ipairs(rank_list) do
         v.rank = k
-        skynet.call(v.addr, "lua", "update_rank", k)
+        skynet.send(v.addr, "lua", "update_rank", k)
     end
 end
 
-local function create(server, name)
+function CMD.found(server, name)
     for k, v in pairs(server_list) do
         if guild_list[util.gen_key(k, name)] then
             return
@@ -81,10 +107,6 @@ local function create(server, name)
         member = {},
         proposer = {},
     })
-end
-
-function CMD.create(server, name)
-    return cs(create, server, name)
 end
 
 function CMD.get(roleid)
@@ -111,17 +133,13 @@ end
 
 function CMD.list(roleid, page)
     local b, e = (page-1)*PAGE_GUILD+1, page*PAGE_GUILD
-    local l = #len
+    local l = #rank_list
     if e > l then
         e = l
     end
     local g = {}
     for i = b, e do
-        g[#g+1] = rank_list[i].addr
-    end
-    local r = {}
-    for k, v in ipairs(g) do
-        r[k] = skynet.call(v, "lua", "base_info", roleid)
+        g[#g+1] = skynet.call(rank_list[i].addr, "lua", "base_info", roleid)
     end
     return r, l
 end
@@ -130,14 +148,30 @@ function CMD.query_proposer(roleid)
     local p = proposer[roleid]
     if p then
         local r = {}
-        for k, v in ipairs(p) do
-            r[k] = skynet.call(v, "lua", "base_info", roleid)
+        for k, v in pairs(p) do
+            r[#r+1] = skynet.call(v, "lua", "base_info", roleid)
         end
         return p
     end
 end
 
+function CMD.del_proposer(roleid)
+    local p = proposer[roleid]
+    if p then
+        for k, v in pairs(p) do
+            skynet.call(v, "lua", "del_proposer", roleid)
+        end
+    end
+end
+
+function CMD.dismiss(g)
+    local info = skynet.call(g, "lua", "info")
+    -- TODO: del role
+    del(g, info)
+end
+
 function CMD.shutdown()
+    save()
     timer.del_day_routine("guild_rank")
 end
 
@@ -149,6 +183,7 @@ local function predict_1(l, r)
     return l.rank < r.rank
 end
 skynet.start(function()
+    randomseed(floor(skynet.time()))
     local server_mgr = skynet.queryservice("server_mgr")
     server_list = skynet.call(server_mgr, "lua", "get_all")
     local master = skynet.queryservice("dbmaster")
@@ -172,9 +207,9 @@ skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])
         if session == 0 then
-            f(...)
+            cs(f, ...)
         else
-            skynet.retpack(f(...))
+            skynet.retpack(cs(f, ...))
         end
 	end)
 end)

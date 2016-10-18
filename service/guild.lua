@@ -1,10 +1,13 @@
 local skynet = require "skynet"
 local timer = require "timer"
+local sharedata = require "sharedata"
 
 local assert = assert
 
+local error_code
 local info
 local guilddb
+local role_mgr
 
 local CMD = {}
 
@@ -20,8 +23,10 @@ end
 function CMD.open(i, delay)
     info = i
 
+    error_code = sharedata.query("error_code")
     local master = skynet.queryservice("dbmaster")
     guilddb = skynet.call(master, "lua", "get", "guilddb")
+    role_mgr = skynet.queryservice("role_mgr")
     time.add_once_routine("delay_save", delay_save, delay)
 end
 
@@ -29,23 +34,35 @@ function CMD.active()
     return info.active
 end
 
+function CMD.join(roleid, pos)
+end
+
 function CMD.update_rank(rank)
     info.rank = rank
     -- TODO: broadcast
 end
 
-function CMD.base_info(roleid)
+function CMD.rank_info(roleid)
 end
 
-function CMD.info()
-    return info
+function CMD.apply(roleid)
+end
+
+function CMD.pack_info()
 end
 
 function CMD.broadcast()
 end
 
-function CMD.del_proposer(roleid)
-    info.proposer[roleid] = nil
+function CMD.del_apply(roleid)
+    info.apply[roleid] = nil
+end
+
+function CMD.dismiss(roleid)
+    local m = info.member[roleid]
+    if not m then
+        return error_code.NOT_GUILD_MEMBER
+    end
 end
 
 function CMD.shutdown()

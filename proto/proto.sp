@@ -188,7 +188,7 @@
     time 3 : integer
 }
 
-.guild_proposer {
+.guild_apply {
     id 0 : integer
     name 1 : string
     prof 2 : integer

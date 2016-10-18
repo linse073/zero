@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local util = require "util"
 local timer = require "timer"
 local queue = require "skynet.queue"
+local sharedata = require "sharedata"
 
 local assert = assert
 local pairs = pairs
@@ -16,9 +17,11 @@ local floor = math.floor
 local guild_list = {}
 local rank_list = {}
 local role_list = {}
-local proposer = {}
+local handle_list = {}
+local apply = {}
 local server_list
 local cs = queue()
+local error_code
 
 local PAGE_GUILD = 10
 
@@ -30,6 +33,7 @@ local function add(info)
     local key = util.gen_key(info.id%1000, info.name)
     guild_list[key] = g
     guild_list[info.id] = g
+    handle_list[g] = info.id
     local l = #rank_list
     if info.rank == 0 then
         info.rank = l + 1
@@ -42,11 +46,11 @@ local function add(info)
     for k, v in pairs(info.member) do
         role_list[v.id] = g
     end
-    for k, v in pairs(info.proposer) do
-        local p = proposer[v.id]
+    for k, v in pairs(info.apply) do
+        local p = apply[v.id]
         if not p then
             p = {}
-            proposer[v.id] = p
+            apply[v.id] = p
         end
         p[info.id] = g
     end
@@ -54,16 +58,17 @@ local function add(info)
 end
 
 local function del(g, info)
-    local info = skynet.call(g, "lua", "info")
     assert(util.empty(info.member), string.format("Not empty guild %d.", info.id))
     local key = util.gen_key(info.id%1000, info.name)
     assert(guild_list[key]==g, string.format("Mismatch guild key %s.", key))
     guild_list[key] = nil
     guild_list[info.id] = nil
+    assert(handle_list[g]==info.id, string.format("Mismatch guild id %d.", info.id))
+    handle_list[g] = nil
     assert(rank_list[info.rank].addr==g, string.format("Mismatch guild rank %d.", info.rank))
     rank_list[info.rank] = nil
-    for k, v in pairs(info.proposer) do
-        local p = proposer[v.id]
+    for k, v in pairs(info.apply) do
+        local p = apply[v.id]
         p[info.id] = nil
     end
 end
@@ -71,6 +76,16 @@ end
 local function save()
     for k, v in pairs(guild_list) do
         skynet.call(v, "lua", "save")
+    end
+end
+
+local function del_apply(roleid)
+    local p = apply[roleid]
+    if p then
+        for k, v in pairs(p) do
+            skynet.call(v, "lua", "del_apply", roleid)
+        end
+        apply[roleid] = nil
     end
 end
 
@@ -88,13 +103,16 @@ local function update_day(od, nd, owd, nwd)
     end
 end
 
-function CMD.found(server, name)
+function CMD.found(roleid, server, name)
+    if role_list[roleid] then
+        return error_code.ALREADY_HAS_GUILD
+    end
     for k, v in pairs(server_list) do
         if guild_list[util.gen_key(k, name)] then
-            return
+            return error_code.GUILD_NAME_EXIST
         end
     end
-    return add({
+    local g = add({
         id = skynet.call(server, "lua", "gen_guild"),
         name = name,
         icon = "",
@@ -105,8 +123,23 @@ function CMD.found(server, name)
         active = 0,
         log = {},
         member = {},
-        proposer = {},
+        apply = {},
     })
+    skynet.call(g, "lua", "join", roleid, pos)
+    del_apply(roleid)
+    return error_code.OK, g
+end
+
+function CMD.join(roleid, g, pos)
+    if role_list[roleid] then
+        return error_code.ALREADY_HAS_GUILD
+    end
+    if not handle_list[g] then
+        return error_code.GUILD_NOT_EXIST
+    end
+    skynet.call(g, "lua", "join", roleid, pos)
+    del_apply(roleid)
+    return error_code.OK
 end
 
 function CMD.get(roleid)
@@ -119,13 +152,13 @@ function CMD.query(roleid, name)
     if id then
         local g = guild_list[id]
         if g then
-            r[#r+1] = skynet.call(g, "lua", "base_info", roleid)
+            r[#r+1] = skynet.call(g, "lua", "rank_info", roleid)
         end
     end
     for k, v in pairs(server_list) do
         local g = guild_list[util.gen_key(k, name)]
         if g then
-            r[#r+1] = skynet.call(g, "lua", "base_info", roleid)
+            r[#r+1] = skynet.call(g, "lua", "rank_info", roleid)
         end
     end
     return r
@@ -139,32 +172,44 @@ function CMD.list(roleid, page)
     end
     local g = {}
     for i = b, e do
-        g[#g+1] = skynet.call(rank_list[i].addr, "lua", "base_info", roleid)
+        g[#g+1] = skynet.call(rank_list[i].addr, "lua", "rank_info", roleid)
     end
     return r, l
 end
 
-function CMD.query_proposer(roleid)
-    local p = proposer[roleid]
+function CMD.query_apply(roleid)
+    local p = apply[roleid]
     if p then
         local r = {}
         for k, v in pairs(p) do
-            r[#r+1] = skynet.call(v, "lua", "base_info", roleid)
+            r[#r+1] = skynet.call(v, "lua", "rank_info", roleid)
         end
-        return p
+        return r
     end
 end
 
-function CMD.del_proposer(roleid)
-    local p = proposer[roleid]
-    if p then
-        for k, v in pairs(p) do
-            skynet.call(v, "lua", "del_proposer", roleid)
-        end
+function CMD.apply(roleid, guildid)
+    if role_list[roleid] then
+        return error_code.ALREADY_HAS_GUILD
     end
+    local g = guild_list[guildid]
+    if not g then
+        return error_code.GUILD_NOT_EXIST
+    end
+    local p = apply[roleid]
+    if p and p[guildid] then
+        return error_code.ALREADY_APPLY_GUILD
+    end
+    skynet.call(g, "lua", "apply", roleid)
+    if not p then
+        p = {}
+        apply[roleid] = p
+    end
+    p[guildid] = g
+    return error_code.OK
 end
 
-function CMD.dismiss(g)
+function CMD.dismiss(roleid, g)
     local info = skynet.call(g, "lua", "info")
     -- TODO: del role
     del(g, info)
@@ -184,6 +229,7 @@ local function predict_1(l, r)
 end
 skynet.start(function()
     randomseed(floor(skynet.time()))
+    error_code = sharedata.query("error_code")
     local server_mgr = skynet.queryservice("server_mgr")
     server_list = skynet.call(server_mgr, "lua", "get_all")
     local master = skynet.queryservice("dbmaster")
@@ -202,6 +248,7 @@ skynet.start(function()
         end
     until index == "0"
     table.sort(rank_list, predict_1)
+    -- TODO: repair rank
     timer.add_day_routine("guild_rank", update_day)
 
 	skynet.dispatch("lua", function(session, source, command, ...)

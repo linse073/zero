@@ -15,6 +15,7 @@ local task
 local gm
 local rank
 local mail
+local guild
 
 local pairs = pairs
 local ipairs = ipairs
@@ -101,7 +102,8 @@ function role.init_module()
     gm = require "role.gm"
     rank = require "role.rank"
     mail = require "role.mail"
-    module = {card, friend, item, stage, task, gm, rank, mail}
+    guild = require "role.guild"
+    module = {card, friend, item, stage, task, gm, rank, mail, guild}
     for k, v in ipairs(module) do
         merge_table(proc, v.init_module())
     end

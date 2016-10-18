@@ -733,6 +733,7 @@ function proc.create_user(msg)
         level = u.level,
         arena_rank = u.arena_rank,
         fight_point = u.fight_point,
+        last_login_time = now,
         card = {},
     }
     skynet.call(data.rankinfodb, "lua", "save", roleid, skynet.packstring(rank_info))
@@ -797,6 +798,7 @@ local function enter_game(msg)
         level = user.level,
         arena_rank = user.arena_rank,
         fight_point = user.fight_point,
+        last_login_time = now,
         card = card.rank_card(),
     }
     role.init_prop()

@@ -58,7 +58,7 @@ local function add(info)
 end
 
 local function del(g, info)
-    assert(util.empty(info.member), string.format("Not empty guild %d.", info.id))
+    assert(util.empty(info.member) and info.count==0, string.format("Not empty guild %d.", info.id))
     local key = util.gen_key(info.id%1000, info.name)
     assert(guild_list[key]==g, string.format("Mismatch guild key %s.", key))
     guild_list[key] = nil
@@ -121,6 +121,7 @@ function CMD.found(roleid, server, name)
         level = 1,
         rank = 0,
         active = 0,
+        count = 0,
         log = {},
         member = {},
         apply = {},

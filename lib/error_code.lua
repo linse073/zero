@@ -125,6 +125,8 @@ local error_code = {
     GUILD_NAME_EXIST = 3203,
     NOT_JOIN_GUILD = 3204,
     NOT_GUILD_MEMBER = 3205,
+    NO_GUILD_PERMIT = 3206,
+    GUILD_DISMISS_LIMIT = 3207,
 }
 
 return error_code

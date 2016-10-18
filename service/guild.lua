@@ -3,11 +3,16 @@ local timer = require "timer"
 local sharedata = require "sharedata"
 
 local assert = assert
+local string = string
 
 local error_code
 local info
 local guilddb
 local role_mgr
+
+local GUILD_POS_MEMBER = 0
+local GUILD_POS_A_CHIEF = 1
+local GUILD_POS_CHIEF = 2
 
 local CMD = {}
 
@@ -35,6 +40,23 @@ function CMD.active()
 end
 
 function CMD.join(roleid, pos)
+    assert(not info.member[roleid], string.format("Already member %d.", roleid))
+    local info, online = skynet.call(role_mgr, "lua", "get_rank_info", roleid)
+    info.member[roleid] = {
+        id = info.id,
+        name = info.name,
+        prof = info.prof,
+        level = info.level,
+        fight_point = info.fight_point,
+        pos = pos or GUILD_POS_MEMBER,
+        contribute = 0,
+        last_login_time = info.last_login_time or 0,
+        online = online,
+    }
+    info.count = info.count + 1
+end
+
+function CMD.del(roleid)
 end
 
 function CMD.update_rank(rank)
@@ -63,6 +85,14 @@ function CMD.dismiss(roleid)
     if not m then
         return error_code.NOT_GUILD_MEMBER
     end
+    if m.pos ~= GUILD_POS_CHIEF then
+        return error_code.NO_GUILD_PERMIT
+    end
+    if info.count > 1 then
+        return error_code.GUILD_DISMISS_LIMIT
+    end
+    info.member[roleid] = nil
+    info.count = info.count - 1
 end
 
 function CMD.shutdown()

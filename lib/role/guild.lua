@@ -1,5 +1,6 @@
 local skynet = require "skynet"
 local share = require "share"
+local notify = require "notify"
 
 local error_code
 local data
@@ -23,6 +24,12 @@ end
 
 function guild.exit()
     data = nil
+end
+
+function guild.join(g)
+    data.guild = g
+    local info = skynet.call(g, "lua", "pack_info")
+    notify.add("update_user", {update={guild=info}})
 end
 
 --------------------------protocol process-----------------------
@@ -76,18 +83,19 @@ function proc.found_guild(msg)
         error{code = r}
     end
     local info = skynet.call(g, "lua", "pack_info")
-    return "update_user", 
+    return "update_user", {update={guild=info}}
 end
 
 function proc.dismiss_guild(msg)
     if not data.guild then
         error_code{code = error_code.NOT_JOIN_GUILD}
     end
-    local r = skynet.call(guild_mgr, "lua", "dismiss", user.id, data.guild)
+    local r = skynet.call(guild_mgr, "lua", "dismiss", user.id)
     if r ~= error_code.OK then
         error{code = r}
     end
-    return "update_user", 
+    data.guild = nil
+    return "update_user", {dismiss_guild=true}
 end
 
 return guild

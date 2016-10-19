@@ -127,6 +127,9 @@ local error_code = {
     NOT_GUILD_MEMBER = 3205,
     NO_GUILD_PERMIT = 3206,
     GUILD_DISMISS_LIMIT = 3207,
+    TARGET_HAS_GUILD = 3208,
+    TARGET_NOT_APPLY_GUILD = 3209,
+    TARGET_NOT_GUILD_MEMBER = 3210,
 }
 
 return error_code

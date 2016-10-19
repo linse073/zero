@@ -179,6 +179,7 @@
     contribute 6 : integer
     last_login_time 7 : integer
     online 8 : boolean
+    del 9 : boolean
 }
 
 .guild_log {
@@ -199,13 +200,26 @@
 
 .guild_info {
     id 0 : integer
-    name 1 : integer
-    icon 2 : integer
+    name 1 : string
+    icon 2 : string
     notice 3 : string
     exp 4 : integer
     level 5 : integer
     rank 6 : integer
     active 7 : integer
+    apply_level 8 : integer
+    apply_vip 9 : integer
+}
+
+.guild_rank_info {
+    id 0 : integer
+    name 1 : string
+    icon 2 : string
+    notice 3 : string
+    level 4 : integer
+    rank 5 : integer
+    count 6 : integer
+    apply 7 : boolean
 }
 
 .guild_all {
@@ -251,6 +265,7 @@
     add_watch 5 : boolean
     buy_item 6 : buy_item
     rank_list 7 : rank_list
+    dismiss_guild : boolean
 }
 
 .update_day {

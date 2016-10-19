@@ -70,19 +70,26 @@ function mail.add(v, p)
     if not v.status then
         v.status = base.MAIL_STATUS_UNREAD
     end
-    if v.win then
-        task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 1, 1)
-        v.win = nil
-    end
-    if v.fail then
-        task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 2, 1)
-        v.fail = nil
-        data.explore = nil
-    end
-    if v.finish then
-        task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
-        v.finish = nil
-        data.explore = nil
+    if v.type == base.MAIL_TYPE_EXPLORE then
+        if v.win then
+            task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 1, 1)
+            v.win = nil
+        end
+        if v.fail then
+            task.update(p, base.TASK_COMPLETE_EXPLORE_ENCOUNTER, 2, 1)
+            v.fail = nil
+            data.explore = nil
+        end
+        if v.finish then
+            task.update(p, base.TASK_COMPLETE_EXPLORE, 0, 1)
+            v.finish = nil
+            data.explore = nil
+        end
+    elseif v.type == base.MAIL_TYPE_GUILD then
+        if v.del then
+            v.del = nil
+            data.guild = nil
+        end
     end
     data.mail[v.id] = v
     local pm = p.mail

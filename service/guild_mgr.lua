@@ -17,13 +17,13 @@ local floor = math.floor
 local guild_list = {}
 local rank_list = {}
 local role_list = {}
-local handle_list = {}
 local apply = {}
 local server_list
-local cs = queue()
 local error_code
+local cs = queue()
 
 local PAGE_GUILD = 10
+local GUILD_POS_CHIEF = 2
 
 local CMD = {}
 
@@ -33,7 +33,6 @@ local function add(info)
     local key = util.gen_key(info.id%1000, info.name)
     guild_list[key] = g
     guild_list[info.id] = g
-    handle_list[g] = info.id
     local l = #rank_list
     if info.rank == 0 then
         info.rank = l + 1
@@ -63,10 +62,13 @@ local function del(g, info)
     assert(guild_list[key]==g, string.format("Mismatch guild key %s.", key))
     guild_list[key] = nil
     guild_list[info.id] = nil
-    assert(handle_list[g]==info.id, string.format("Mismatch guild id %d.", info.id))
-    handle_list[g] = nil
     assert(rank_list[info.rank].addr==g, string.format("Mismatch guild rank %d.", info.rank))
-    rank_list[info.rank] = nil
+    table.remove(rank_list, info.rank)
+    for i = info.rank, #rank_list do
+        local ni = rank_list[i]
+        ni.rank = i
+        skynet.send(ni.addr, "lua", "broadcast_update", "rank", i)
+    end
     for k, v in pairs(info.apply) do
         local p = apply[v.id]
         p[info.id] = nil
@@ -94,12 +96,12 @@ local function predict_2(l, r)
 end
 local function update_day(od, nd, owd, nwd)
     for k, v in ipairs(rank_list) do
-        v.active = skynet.call(v.addr, "lua", "active")
+        v.active = skynet.call(v.addr, "lua", "get", "active")
     end
     table.sort(rank_list, predict_2)
     for k, v in ipairs(rank_list) do
         v.rank = k
-        skynet.send(v.addr, "lua", "update_rank", k)
+        skynet.send(v.addr, "lua", "broadcast_update", "rank", k)
     end
 end
 
@@ -121,25 +123,96 @@ function CMD.found(roleid, server, name)
         level = 1,
         rank = 0,
         active = 0,
+        apply_level = 0,
+        apply_vip = 0,
         count = 0,
         log = {},
         member = {},
         apply = {},
     })
-    skynet.call(g, "lua", "join", roleid, pos)
+    skynet.call(g, "lua", "join", roleid, GUILD_POS_CHIEF)
+    role_list[roleid] = g
     del_apply(roleid)
     return error_code.OK, g
 end
 
-function CMD.join(roleid, g, pos)
+function CMD.accept(chief, roleid)
+    local g = role_list[chief]
+    if not g then
+        return error_code.NOT_JOIN_GUILD
+    end
     if role_list[roleid] then
-        return error_code.ALREADY_HAS_GUILD
+        return error_code.TARGET_HAS_GUILD
     end
-    if not handle_list[g] then
-        return error_code.GUILD_NOT_EXIST
+    local r = skynet.call(g, "lua", "accept", chief, roleid)
+    if r ~= error_code.OK then
+        return r
     end
-    skynet.call(g, "lua", "join", roleid, pos)
+    role_list[roleid] = g
     del_apply(roleid)
+    return error_code.OK
+end
+
+function CMD.accept_all(chief)
+    local g = role_list[chief]
+    if not g then
+        return error_code.NOT_JOIN_GUILD
+    end
+    local r, a = skynet.call(g, "lua", "accept_all", chief)
+    if r ~= error_code.OK then
+        return r
+    end
+    for k, v in ipairs(a) do
+        role_list[v] = g
+        del_apply(v)
+    end
+    return error_code.OK
+end
+
+function CMD.refuse(chief, roleid)
+    local g = role_list[chief]
+    if not g then
+        return error_code.NOT_JOIN_GUILD
+    end
+    local r, id = skynet.call(g, "lua", "refuse", chief, roleid)
+    if r ~= error_code.OK then
+        return r
+    end
+    local p = apply[roleid]
+    if p then
+        p[id] = nil
+    end
+    return error_code.OK
+end
+
+function CMD.refuse_all(chief)
+    local g = role_list[chief]
+    if not g then
+        return error_code.NOT_JOIN_GUILD
+    end
+    local r, id, a = skynet.call(g, "lua", "refuse_all", chief)
+    if r ~= error_code.OK then
+        return r
+    end
+    for k, v in ipairs(a) do
+        local p = apply[v]
+        if p then
+            p[id] = nil
+        end
+    end
+    return error_code.OK
+end
+
+function CMD.expel(chief, roleid)
+    local g = role_list[chief]
+    if not g then
+        return error_code.NOT_JOIN_GUILD
+    end
+    local r = skynet.call(g, "lua", "expel", chief, roleid)
+    if r ~= error_code.OK then
+        return r
+    end
+    role_list[roleid] = nil
     return error_code.OK
 end
 
@@ -210,10 +283,18 @@ function CMD.apply(roleid, guildid)
     return error_code.OK
 end
 
-function CMD.dismiss(roleid, g)
-    local info = skynet.call(g, "lua", "info")
-    -- TODO: del role
+function CMD.dismiss(roleid)
+    local g = role_list[chief]
+    if not g then
+        return error_code.NOT_JOIN_GUILD
+    end
+    local r, info = skynet.call(g, "lua", "dismiss", roleid)
+    if r ~= error_code.OK then
+        return r
+    end
+    role_list[roleid] = nil
     del(g, info)
+    return error_code.OK
 end
 
 function CMD.shutdown()
@@ -249,7 +330,12 @@ skynet.start(function()
         end
     until index == "0"
     table.sort(rank_list, predict_1)
-    -- TODO: repair rank
+    -- NOTICE: repair rank
+    for k, v in ipairs(rank_list) do
+        if v.rank ~= k then
+            skynet.call(v.addr, "lua", "update", "rank", k)
+        end
+    end
     timer.add_day_routine("guild_rank", update_day)
 
 	skynet.dispatch("lua", function(session, source, command, ...)

@@ -97,6 +97,16 @@ function CMD.broadcast(msg, info, exclude)
     end
 end
 
+function CMD.broadcast_range(msg, info, range)
+    local c = pack_msg(msg, info)
+    for k, v in ipairs(range) do
+        local role = role_list[v]
+        if role then
+            skynet.send(role[1], "lua", "notify", c)
+        end
+    end
+end
+
 function CMD.broadcast_area(msg, info)
     local id = info.id
     local role = assert(role_list[id], string.format("No role %d.", id))

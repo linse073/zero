@@ -278,6 +278,7 @@ local base = {
     MAIL_TYPE_TRADE = 5,
     MAIL_TYPE_CHARGE = 6,
     MAIL_TYPE_TASK_RANK = 7,
+    MAIL_TYPE_GUILD = 8,
 
     FRIEND_STATUS_OLD = 1,
     FRIEND_STATUS_NEW = 2,

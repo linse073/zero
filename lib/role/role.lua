@@ -118,6 +118,9 @@ function role.init_module()
             notify = friend.notify,
             get = friend.get,
         },
+        guild = {
+            join = guild.join,
+        },
     }
     return proc
 end
@@ -533,6 +536,9 @@ function role.repair(user, now)
     if not user.week_day then
         user.week_day = util.week_time(now)
     end
+    if not user.contribute then
+        user.contribute = 0
+    end
 end
 
 function role.action(otype, info)
@@ -717,6 +723,7 @@ function proc.create_user(msg)
         revive_count = 0,
         patch_sign_in = 0,
         week_day = util.week_time(now),
+        contribute = 0,
 
         item = {},
         card = {},
@@ -734,6 +741,7 @@ function proc.create_user(msg)
         arena_rank = u.arena_rank,
         fight_point = u.fight_point,
         last_login_time = now,
+        contribute = u.contribute,
         card = {},
     }
     skynet.call(data.rankinfodb, "lua", "save", roleid, skynet.packstring(rank_info))
@@ -799,6 +807,7 @@ local function enter_game(msg)
         arena_rank = user.arena_rank,
         fight_point = user.fight_point,
         last_login_time = now,
+        contribute = user.contribute,
         card = card.rank_card(),
     }
     role.init_prop()

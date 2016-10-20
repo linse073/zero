@@ -625,3 +625,69 @@
     rank 0 : integer
     value 1 : integer
 }
+
+.list_guild {
+    page 0 : integer
+}
+
+.list_guid_info {
+    info 0 : *guild_rank_info
+    page 1 : integer
+    total 2 : integer
+}
+
+.query_guild {
+    name 0 : string
+}
+
+.query_guild_info {
+    info 0 : *guild_rank_info
+}
+
+.query_apply_info {
+    info 0 : *guild_rank_info
+}
+
+.apply_guild {
+    id 0 : integer
+}
+
+.found_guild {
+    name 0 : string
+}
+
+.guild_notice {
+    notice 0 : string
+}
+
+.guild_apply_level {
+    apply_level 0 : integer
+}
+
+.guild_apply_vip {
+    apply_vip 0 : integer
+}
+
+.accept_apply {
+    id 0 : integer
+}
+
+.refuse_apply {
+    id 0 : integer
+}
+
+.guild_expel {
+    id 0 : integer
+}
+
+.guild_promote {
+    id 0 : integer
+}
+
+.guild_demote {
+    id 0 : integer
+}
+
+.guild_demise {
+    id 0 : integer
+}

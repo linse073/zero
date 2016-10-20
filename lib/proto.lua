@@ -109,6 +109,28 @@ local msg = {
     [3305] = "add_watch",
     [3306] = "del_watch",
     [3307] = "mall_item",
+
+    [3400] = "list_guild",
+    [3401] = "list_guild_info",
+    [3402] = "query_guild",
+    [3403] = "query_guild_info",
+    [3404] = "query_apply",
+    [3405] = "query_apply_info",
+    [3406] = "apply_guild",
+    [3407] = "found_guild",
+    [3408] = "dismiss_guild",
+    [3409] = "guild_notice",
+    [3410] = "guild_apply_level",
+    [3411] = "guild_apply_vip",
+    [3412] = "accept_apply",
+    [3413] = "accept_all_apply",
+    [3414] = "refuse_apply",
+    [3415] = "refuse_all_apply",
+    [3416] = "guild_expel",
+    [3417] = "guild_promote",
+    [3418] = "guild_demote",
+    [3419] = "guild_demise",
+    [3420] = "quit_guild",
 }
 local name_msg = {}
 

@@ -135,6 +135,7 @@ local error_code = {
     PROMOTE_COUNT_LIMIT = 3213,
     GUILD_MEMBER_LIMIT = 3214,
     RANDOM_JOIN_GUILD_LIMIT = 3215,
+    GUILD_CHIEF_QUIT_LIMIT = 3216,
 }
 
 return error_code

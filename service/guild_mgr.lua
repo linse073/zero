@@ -236,7 +236,10 @@ function CMD.expel(chief, roleid)
 end
 
 function CMD.get(roleid)
-    return role_list[roleid]
+    local si = role_list[roleid]
+    if si then
+        return si.addr, si.id
+    end
 end
 
 function CMD.query(roleid, name)
@@ -337,6 +340,19 @@ function CMD.dismiss(roleid)
     end
     role_list[roleid] = nil
     del(si, a)
+    return r
+end
+
+function CMD.quit(roleid)
+    local si = role_list[roleid]
+    if not si then
+        return error_code.NOT_JOIN_GUILD
+    end
+    local r, update = skynet.call(si.addr, "lua", "quit", roleid)
+    if r ~= error_code.OK then
+        return r
+    end
+    role_list[roleid] = nil
     return r
 end
 

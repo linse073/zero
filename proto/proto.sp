@@ -47,6 +47,7 @@
     revive_count 28 : integer
     patch_sign_in 29 : integer
     week_day 30 : integer
+    contribute 31 : integer
 }
 
 .other_info {
@@ -177,9 +178,11 @@
     fight_point 4 : integer
     pos 5 : integer
     contribute 6 : integer
-    last_login_time 7 : integer
-    online 8 : boolean
-    del 9 : boolean
+    explore 7 : integer
+    active 8 : integer
+    last_login_time 9 : integer
+    online 10 : boolean
+    del 11 : boolean
 }
 
 .guild_log {
@@ -265,7 +268,8 @@
     add_watch 5 : boolean
     buy_item 6 : buy_item
     rank_list 7 : rank_list
-    dismiss_guild : boolean
+    dismiss_guild 8 : boolean
+    quit_guild 9 : boolean
 }
 
 .update_day {

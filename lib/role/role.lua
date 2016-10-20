@@ -56,6 +56,7 @@ local explore_mgr
 local offline_mgr
 local trade_mgr
 local rank_mgr
+local guild_mgr
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
@@ -88,6 +89,7 @@ skynet.init(function()
     offline_mgr = skynet.queryservice("offline_mgr")
     trade_mgr = skynet.queryservice("trade_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
+    guild_mgr = skynet.queryservice("guild_mgr")
 
     charge_title = func.get_string(198000007)
     charge_content = func.get_string(198000008)
@@ -741,7 +743,6 @@ function proc.create_user(msg)
         arena_rank = u.arena_rank,
         fight_point = u.fight_point,
         last_login_time = now,
-        contribute = u.contribute,
         card = {},
     }
     skynet.call(data.rankinfodb, "lua", "save", roleid, skynet.packstring(rank_info))
@@ -782,6 +783,7 @@ local function enter_game(msg)
     data.expdata = assert(expdata[user.level], string.format("No exp data %d.", user.level))
     local pid = npc.propertyId + user.level
     data.property = assert(propertydata[pid], string.format("No property data %d.", pid))
+    data.guild, data.guildid = skynet.call(guild_mgr, "lua", "get", user.id)
     for k, v in ipairs(module) do
         if v.enter then
             v.enter()
@@ -807,7 +809,6 @@ local function enter_game(msg)
         arena_rank = user.arena_rank,
         fight_point = user.fight_point,
         last_login_time = now,
-        contribute = user.contribute,
         card = card.rank_card(),
     }
     role.init_prop()
@@ -834,6 +835,9 @@ local function enter_game(msg)
             local key, pack = v.pack_all()
             ret[key] = pack
         end
+    end
+    if data.guild then
+        ret.guild = skynet.call(data.guild, "lua", "login", user.id, now)
     end
     local pack = {}
     for k, v in pairs(user.stage_award) do
@@ -1006,6 +1010,13 @@ function proc.chat_info(msg)
             return "chat_info", msg
         else
             error{code = error_code.ROLE_OFFLINE}
+        end
+    elseif msg.type == base.CHAT_TYPE_GUILD then
+        if data.guild then
+            skynet.call(data.guild, "lua", "broadcast", "chat_info", msg, user.id)
+            return "chat_info", msg
+        else
+            error{code = error_code.NOT_JOIN_GUILD}
         end
     else
         error{code = error_code.ERROR_CHAT_TYPE}

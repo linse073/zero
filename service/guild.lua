@@ -12,11 +12,13 @@ local string = string
 local floor = math.floor
 
 local error_code
+local guild_member_count
 local data
 local guilddb
 local role_mgr
 local offline_mgr
 local cs = queue()
+local a_chief = 0
 
 local guild_title
 local expel_content
@@ -31,7 +33,7 @@ local CMD = {}
 local function save()
     local pm = {}
     for k, v in pairs(data.member) do
-        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", v.id)
+        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", k)
         local nm = {}
         if v.level ~= ri.level then
             v.level = ri.level
@@ -46,7 +48,7 @@ local function save()
             nm.online = online
         end
         if not util.empty(nm) then
-            nm.id = v.id
+            nm.id = k
             pm[#pm+1] = nm
         end
     end
@@ -55,7 +57,7 @@ local function save()
         CMD.broadcast("update_user", {update={guild=update}})
     end
     for k, v in pairs(data.apply) do
-        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", v.id)
+        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", k)
         if v.level ~= ri.level then
             v.level = ri.level
         end
@@ -95,10 +97,16 @@ end
 
 function CMD.open(info, delay)
     data = info
+    for k, v in pairs(data.member) do
+        if v.pos == GUILD_POS_A_CHIEF then
+            a_chief = a_chief + 1
+        end
+    end
 
     guild_title = func.get_string(198100001)
     expel_content = func.get_string(198100002)
     error_code = sharedata.query("error_code")
+    guild_member_count = sharedata.query("guild_member_count")
     local master = skynet.queryservice("dbmaster")
     guilddb = skynet.call(master, "lua", "get", "guilddb")
     role_mgr = skynet.queryservice("role_mgr")
@@ -106,8 +114,12 @@ function CMD.open(info, delay)
     time.add_once_routine("delay_save", delay_save, delay)
 end
 
-function CMD.join(roleid, pos)
-    local m = add(roleid, pos)
+function CMD.own(roleid)
+    add(roleid, GUILD_POS_CHIEF)
+end
+
+function CMD.join(roleid)
+    local m = add(roleid)
     local update = {member={m}}
     CMD.broadcast("update_user", {update={guild=update}}, roleid)
 end
@@ -123,14 +135,28 @@ function CMD.accept(chief, roleid)
     if not data.apply[roleid] then
         return error_code.TARGET_NOT_APPLY_GUILD
     end
-    CMD.join(roleid)
+    if data.count >= guild_member_count[data.level] then
+        return error_code.GUILD_MEMBER_LIMIT
+    end
+    local range = {}
+    for k, v in pairs(data.member) do
+        if chief ~= k then
+            range[#range+1] = k
+        end
+    end
+    local m = add(roleid)
+    local update = {member={m}}
+    skynet.call(role_mgr, "lua", "broadcast_range", "update_user", {update={guild=update}}, range)
     local agent = skynet.call(role_mgr, "lua", "get", roleid)
     if agent then
-        skynet.call(agent, "lua", "action", "guild", "join", skynet.self())
+        skynet.call(agent, "lua", "action", "guild", "join", {skynet.self(), data.id})
     end
-    return error_code.OK
+    return error_code.OK, update
 end
 
+local function predict(l, r)
+    return l.time < r.time
+end
 function CMD.accept_all(chief)
     local m = data.member[chief]
     if not m then
@@ -139,26 +165,45 @@ function CMD.accept_all(chief)
     if m.pos ~= GUILD_POS_CHIEF or m.pos ~= GUILD_POS_A_CHIEF then
         return error_code.NO_GUILD_PERMIT
     end
-    -- TODO: if data.apply is empty?
-    local range = {}
-    for k, v in pairs(data.member) do
-        range[#range+1] = v.id
+    local limit_count = guild_member_count[data.level]
+    if data.count >= limit_count then
+        return error_code.GUILD_MEMBER_LIMIT
     end
-    local u = {}
     local a = {}
-    for k, v in pairs(data.apply) do
-        u[#u+1] = add(v.id)
-        a[#a+1] = v.id
-    end
-    local update = {member=u}
-    skynet.call(role_mgr, "lua", "broadcast_range", "update_user", {update={guild=update}}, range)
-    for k, v in ipairs(a) do
-        local agent = skynet.call(role_mgr, "lua", "get", v)
-        if agent then
-            skynet.call(agent, "lua", "action", "guild", "join", skynet.self())
+    if not util.empty(data.apply) then
+        local range = {}
+        for k, v in pairs(data.member) do
+            if k ~= chief then
+                range[#range+1] = k
+            end
+        end
+        local ta = {}
+        for k, v in pairs(data.apply) do
+            ta[#ta+1] = v
+        end
+        table.sort(ta, predict)
+        local l = #ta
+        local d = limit_count - data.count
+        if l > d then
+            l = d
+        end
+        local u = {}
+        for i = 1, l do
+            local v = ta[i]
+            u[#u+1] = add(v.id)
+            a[#a+1] = v.id
+        end
+        local update = {member=u}
+        skynet.call(role_mgr, "lua", "broadcast_range", "update_user", {update={guild=update}}, range)
+        for k, v in ipairs(a) do
+            local ji = {skynet.self(), data.id}
+            local agent = skynet.call(role_mgr, "lua", "get", v)
+            if agent then
+                skynet.call(agent, "lua", "action", "guild", "join", ji)
+            end
         end
     end
-    return error_code.OK, a
+    return error_code.OK, a, update
 end
 
 function CMD.refuse(chief, roleid)
@@ -173,7 +218,7 @@ function CMD.refuse(chief, roleid)
         return error_code.TARGET_NOT_APPLY_GUILD
     end
     data.apply[roleid] = nil
-    return error_code.OK, data.id
+    return error_code.OK
 end
 
 function CMD.refuse_all(chief)
@@ -186,10 +231,10 @@ function CMD.refuse_all(chief)
     end
     local a = {}
     for k, v in pairs(data.apply) do
-        a[#a+1] = v.id
+        a[#a+1] = k
     end
     data.apply = {}
-    return error_code.OK, data.id, a
+    return error_code.OK, a
 end
 
 function CMD.expel(chief, roleid)
@@ -210,7 +255,7 @@ function CMD.expel(chief, roleid)
     data.member[roleid] = nil
     data.count = data.count - 1
     local update = {member={{id=roleid, del=true}}}
-    CMD.broadcast("update_user", {update={guild=update}})
+    CMD.broadcast("update_user", {update={guild=update}}, chief)
     local mail = {
         type = MAIL_TYPE_GUILD,
         time = floor(skynet.time()),
@@ -219,7 +264,7 @@ function CMD.expel(chief, roleid)
         del = true,
     }
     skynet.call(offline_mgr, "lua", "add", "mail", roleid, mail)
-    return error_code.OK
+    return error_code.OK, update
 end
 
 function CMD.login(roleid, now)
@@ -246,6 +291,70 @@ function CMD.broadcast_update(key, value)
     local update = {}
     update[key] = value
     CMD.broadcast("update_user", {update={guild={info=update}}})
+end
+
+function CMD.config(chief, key, value)
+    local m = data.member[chief]
+    if not m then
+        return error_code.NOT_GUILD_MEMBER
+    end
+    if m.pos ~= GUILD_POS_CHIEF or m.pos ~= GUILD_POS_A_CHIEF then
+        return error_code.NO_GUILD_PERMIT
+    end
+    data[key] = value
+    local update = {}
+    update[key] = value
+    CMD.broadcast("update_user", {update={guild={info=update}}}, chief)
+    return error_code.OK, update
+end
+
+function CMD.promote(chief, roleid)
+    local m = data.member[chief]
+    if not m then
+        return error_code.NOT_GUILD_MEMBER
+    end
+    if m.pos ~= GUILD_POS_CHIEF then
+        return error_code.NO_GUILD_PERMIT
+    end
+    if a_chief >= 2 then
+        return error_code.PROMOTE_COUNT_LIMIT
+    end
+    local rm = data.member[roleid]
+    if not rm then
+        return error_code.TARGET_NOT_GUILD_MEMBER
+    end
+    if rm.pos ~= GUILD_POS_MEMBER then
+        return error_code.TARGET_PROMOTE_LIMIT
+    end
+    rm.pos = GUILD_POS_A_CHIEF
+    a_chief = a_chief + 1
+    local update = {member={{id=roleid, pos=rm.pos}}}
+    CMD.broadcast("update_user", {update={guild=update}}, chief)
+    return error_code.OK, update
+end
+
+function CMD.demote(chief, roleid)
+    local m = data.member[chief]
+    if not m then
+        return error_code.NOT_GUILD_MEMBER
+    end
+    if m.pos ~= GUILD_POS_CHIEF then
+        return error_code.NO_GUILD_PERMIT
+    end
+    local rm = data.member[roleid]
+    if not rm then
+        return error_code.TARGET_NOT_GUILD_MEMBER
+    end
+    if rm.pos ~= GUILD_POS_A_CHIEF then
+        return error_code.TARGET_DEMOTE_LIMIT
+    end
+    if rm.pos == GUILD_POS_A_CHIEF then
+        a_chief = a_chief - 1
+    end
+    rm.pos = GUILD_POS_MEMBER
+    local update = {member={{id=roleid, pos=rm.pos}}}
+    CMD.broadcast("update_user", {update={guild=update}}, chief)
+    return error_code.OK, update
 end
 
 function CMD.rank_info(roleid)
@@ -299,8 +408,8 @@ end
 function CMD.broadcast(msg, info, exclude)
     local range = {}
     for k, v in pairs(data.member) do
-        if v.id ~= exclude then
-            range[#range+1] = v.id
+        if k ~= exclude then
+            range[#range+1] = k
         end
     end
     if #range > 0 then
@@ -325,7 +434,11 @@ function CMD.dismiss(roleid)
     end
     data.member[roleid] = nil
     data.count = data.count - 1
-    return error_code.OK, data
+    local a = {}
+    for k, v in pairs(data.apply) do
+        a[#a+1] = k
+    end
+    return error_code.OK, a
 end
 
 function CMD.shutdown()

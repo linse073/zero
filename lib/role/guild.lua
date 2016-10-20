@@ -26,8 +26,9 @@ function guild.exit()
     data = nil
 end
 
-function guild.join(g)
-    data.guild = g
+function guild.join(i)
+    data.guild = i[1]
+    data.guildid = i[2]
     local info = skynet.call(g, "lua", "pack_info")
     notify.add("update_user", {update={guild=info}})
 end
@@ -63,11 +64,18 @@ function proc.apply_guild(msg)
     if data.guild then
         error{code = error_code.ALREADY_HAS_GUILD}
     end
-    local r = skynet.call(guild_mgr, "lua", "apply", user.id, msg.id)
+    local r, g, id = skynet.call(guild_mgr, "lua", "apply", user.id, msg.id, user.level, user.vip)
     if r ~= error_code.OK then
         error{code = r}
     end
-    return "apply_guild_response", {id=msg.id}
+    if g then
+        data.guild = g
+        data.guildid = id
+        local info = skynet.call(g, "lua", "pack_info")
+        return "update_user", {update={guild=info}}
+    else
+        return "apply_guild", {id=msg.id}
+    end
 end
 
 function proc.found_guild(msg)
@@ -78,10 +86,12 @@ function proc.found_guild(msg)
     if data.guild then
         error{code = error_code.ALREADY_HAS_GUILD}
     end
-    local r, g = skynet.call(guild_mgr, "lua", "found", user.id, data.server, msg.name)
+    local r, g, id = skynet.call(guild_mgr, "lua", "found", user.id, data.server, msg.name)
     if r ~= error_code.OK then
         error{code = r}
     end
+    data.guild = g
+    data.guildid = id
     local info = skynet.call(g, "lua", "pack_info")
     return "update_user", {update={guild=info}}
 end
@@ -95,6 +105,7 @@ function proc.dismiss_guild(msg)
         error{code = r}
     end
     data.guild = nil
+    data.guildid = nil
     return "update_user", {dismiss_guild=true}
 end
 

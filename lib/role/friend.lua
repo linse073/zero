@@ -62,8 +62,8 @@ end
 
 function friend.pack_all()
     local pack = {}
-    for k, v in pairs(data.user.friend) do
-        v.online = skynet.call(role_mgr, "lua", "online", v.id)
+    for k, v in pairs(data.friend) do
+        v.online = skynet.call(role_mgr, "lua", "online", k)
         pack[#pack+1] = v
     end
     return "friend", pack
@@ -148,7 +148,7 @@ end
 function friend.update()
     local pf = {}
     for k, v in pairs(data.friend) do
-        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", v.id)
+        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", k)
         local nf = {}
         if v.level ~= ri.level then
             v.level = ri.level
@@ -163,7 +163,7 @@ function friend.update()
             nf.online = online
         end
         if not util.empty(nf) then
-            nf.id = v.id
+            nf.id = k
             pf[#pf+1] = nf
         end
     end

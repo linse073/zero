@@ -467,6 +467,10 @@ skynet.start(function()
         base.MALL_SALE_RANDOM_2,
     })
 
+    sharedata.new("guild_member_count", {
+        10, 20, 30, 40, 50,
+    })
+
     sharedata.new("msg", proto.msg)
     sharedata.new("name_msg", proto.name_msg)
 

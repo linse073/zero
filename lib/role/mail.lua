@@ -89,6 +89,7 @@ function mail.add(v, p)
         if v.del then
             v.del = nil
             data.guild = nil
+            data.guildid = nil
         end
     end
     data.mail[v.id] = v

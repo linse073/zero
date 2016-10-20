@@ -47,6 +47,7 @@ skynet.init(function()
     share.stage_task = sharedata.query("stage_task")
     share.stage_task_complete = sharedata.query("stage_task_complete")
     share.random_sale = sharedata.query("random_sale")
+    share.guild_member_count = sharedata.query("guild_member_count")
 
     share.msg = sharedata.query("msg")
     share.name_msg = sharedata.query("name_msg")

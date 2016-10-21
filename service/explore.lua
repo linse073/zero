@@ -170,7 +170,7 @@ local function win(t, info, tinfo)
     m.content = string.format(explore_win, tinfo.name)
     m.win = true
     skynet.call(offline_mgr, "lua", "add", "mail", info.roleid, m)
-    if m.level >= WEEK_TASK_LEVEL then
+    if info.level >= WEEK_TASK_LEVEL then
         skynet.call(task_rank, "lua", "update", 6, info.roleid, tinfo.fight_point)
     end
     local dt = t - info.start_time

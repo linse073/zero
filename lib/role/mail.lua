@@ -53,7 +53,7 @@ end
 
 function mail.pack_all()
     local pack = {}
-    for k, v in pairs(data.user.mail) do
+    for k, v in pairs(data.mail) do
         pack[#pack+1] = v
     end
     return "mail", pack

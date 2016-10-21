@@ -270,4 +270,16 @@ function proc.quit_guild(msg)
     return "update_user", {quit_guild=true}
 end
 
+function proc.get_apply(msg)
+    if not data.guild then
+        error{code = error_code.NOT_JOIN_GUILD}
+    end
+    local user = data.user
+    local r, a = skynet.call(data.guild, "lua", "get_apply", user.id)
+    if r ~= error_code.OK then
+        error{code = r}
+    end
+    return "apply_info", {info=a}
+end
+
 return guild

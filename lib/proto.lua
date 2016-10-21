@@ -131,6 +131,8 @@ local msg = {
     [3418] = "guild_demote",
     [3419] = "guild_demise",
     [3420] = "quit_guild",
+    [3421] = "get_apply",
+    [3222] = "apply_info",
 }
 local name_msg = {}
 

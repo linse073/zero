@@ -501,7 +501,7 @@ end
 function CMD.quit(roleid)
     local m = data.member[roleid]
     if not m then
-        return error_code.NOT_JOIN_GUILD
+        return error_code.NOT_GUILD_MEMBER
     end
     if m.pos == POS_CHIEF then
         return error_code.GUILD_CHIEF_QUIT_LIMIT
@@ -514,6 +514,21 @@ function CMD.quit(roleid)
     local update = {member={{id=roleid, del=true}}}
     CMD.broadcast("update_user", {update={guild=update}})
     return error_code.OK
+end
+
+function CMD.get_apply(roleid)
+    local m = data.member[roleid]
+    if not m then
+        return error_code.NOT_GUILD_MEMBER
+    end
+    if m.pos ~= POS_CHIEF or m.pos ~= POS_A_CHIEF then
+        return error_code.NO_GUILD_PERMIT
+    end
+    local a = {}
+    for k, v in pairs(data.apply) do
+        a[#a+1] = v
+    end
+    return error_code.OK, a
 end
 
 function CMD.shutdown()

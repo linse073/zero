@@ -691,3 +691,7 @@
 .guild_demise {
     id 0 : integer
 }
+
+.apply_info {
+    info 0 : *guild_apply
+}

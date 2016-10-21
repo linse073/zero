@@ -270,7 +270,7 @@ function CMD.list(roleid, page)
     for i = b, e do
         r[#r+1] = skynet.call(rank_list[i].addr, "lua", "rank_info", roleid)
     end
-    return r, l
+    return r, (l+PAGE_GUILD-1)//PAGE_GUILD
 end
 
 function CMD.query_apply(roleid)

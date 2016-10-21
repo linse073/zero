@@ -64,15 +64,12 @@ local function save()
         CMD.broadcast("update_user", {update={guild=update}})
     end
     for k, v in pairs(data.apply) do
-        local ri, online = skynet.call(role_mgr, "lua", "get_rank_info", k)
+        local ri = skynet.call(role_mgr, "lua", "get_rank_info", k)
         if v.level ~= ri.level then
             v.level = ri.level
         end
         if v.fight_point ~= ri.fight_point then
             v.fight_point = ri.fight_point
-        end
-        if v.online ~= online then
-            v.online = online
         end
     end
     skynet.call(guilddb, "lua", "save", skynet.packstring(data))

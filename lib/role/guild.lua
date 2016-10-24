@@ -125,6 +125,7 @@ function proc.dismiss_guild(msg)
     if not data.guild then
         error{code = error_code.NOT_JOIN_GUILD}
     end
+    local user = data.user
     local r = skynet.call(guild_mgr, "lua", "dismiss", user.id)
     if r ~= error_code.OK then
         error{code = r}

@@ -252,7 +252,8 @@ function CMD.query(roleid, name)
         end
     end
     for k, v in pairs(server_list) do
-        local si = guild_list[util.gen_key(k, name)]
+        local key = util.gen_key(k, name)
+        local si = guild_list[key]
         if si then
             r[#r+1] = skynet.call(si.addr, "lua", "rank_info", roleid)
         end

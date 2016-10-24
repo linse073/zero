@@ -4,7 +4,6 @@ local sharedata = require "sharedata"
 local util = require "util"
 local func = require "func"
 local queue = require "skynet.queue"
-local timer = require "timer"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -134,7 +133,7 @@ function CMD.open(info, delay)
     guilddb = skynet.call(master, "lua", "get", "guilddb")
     role_mgr = skynet.queryservice("role_mgr")
     offline_mgr = skynet.queryservice("offline_mgr")
-    time.add_once_routine("delay_save", delay_save, delay)
+    timer.add_once_routine("delay_save", delay_save, delay)
 end
 
 function CMD.own(roleid)

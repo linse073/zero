@@ -4,6 +4,8 @@ local notify = require "notify"
 local util = require "util"
 local proc_queue = require "proc_queue"
 
+local role
+
 local update_user = util.update_user
 local error_code
 local data
@@ -20,6 +22,7 @@ skynet.init(function()
 end)
 
 function guild.init_module()
+    role = require "role.role"
     return proc
 end
 

@@ -307,13 +307,13 @@ function CMD.apply(roleid, guildid, level, vip)
             del_apply(roleid)
             return error_code.OK, si.addr, si.id
         else
-            skynet.call(si.addr, "lua", "apply", roleid)
+            local info = skynet.call(si.addr, "lua", "apply", roleid)
             if not p then
                 p = {}
                 apply[roleid] = p
             end
             p[guildid] = si.addr
-            return error_code.OK
+            return error_code.OK, info
         end
     else
         for k, v in ipairs(rank_list) do

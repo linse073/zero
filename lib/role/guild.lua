@@ -70,13 +70,13 @@ function proc.apply_guild(msg)
     if r ~= error_code.OK then
         error{code = r}
     end
-    if g then
+    if id then
         data.guild = g
         data.guildid = id
         local info = skynet.call(g, "lua", "pack_info")
         return "update_user", {update={guild=info}}
     else
-        return "apply_guild", {id=msg.id}
+        return "guild_rank_info", g
     end
 end
 

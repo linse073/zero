@@ -26,6 +26,12 @@ local msg = {
     [2015] = "move",
     [2016] = "get_role_info",
     [2017] = "role_info",
+    [2018] = "guild_member",
+    [2019] = "guild_log",
+    [2020] = "guild_apply",
+    [2021] = "guild_info",
+    [2022] = "guild_rank_info",
+    [2023] = "guild_all",
 
     [2100] = "get_account_info",
     [2101] = "create_user",

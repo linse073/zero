@@ -171,7 +171,7 @@ function CMD.accept(chief, roleid)
     skynet.call(role_mgr, "lua", "broadcast_range", "update_user", {update={guild=update}}, range)
     local agent = skynet.call(role_mgr, "lua", "get", roleid)
     if agent then
-        skynet.call(agent, "lua", "action", "guild", {skynet.self(), data.id})
+        skynet.send(agent, "lua", "action", "guild", {skynet.self(), data.id})
     end
     return error_code.OK, update
 end
@@ -222,7 +222,7 @@ function CMD.accept_all(chief)
         for k, v in ipairs(a) do
             local agent = skynet.call(role_mgr, "lua", "get", v)
             if agent then
-                skynet.call(agent, "lua", "action", "guild", ji)
+                skynet.send(agent, "lua", "action", "guild", ji)
             end
         end
     end
@@ -288,7 +288,7 @@ function CMD.expel(chief, roleid)
     skynet.call(offline_mgr, "lua", "add", "mail", roleid, mail)
     local agent = skynet.call(role_mgr, "lua", "get", roleid)
     if agent then
-        skynet.call(agent, "lua", "action", "guild")
+        skynet.send(agent, "lua", "action", "guild")
     end
     return error_code.OK, update
 end

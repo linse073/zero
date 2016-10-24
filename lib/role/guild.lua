@@ -38,7 +38,7 @@ function guild.notify(i)
     if i then
         data.guild = i[1]
         data.guildid = i[2]
-        local info = skynet.call(g, "lua", "pack_info")
+        local info = skynet.call(i[1], "lua", "pack_info")
         notify.add("update_user", {update={guild=info}})
     else
         data.guild = nil

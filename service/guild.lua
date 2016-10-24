@@ -72,7 +72,7 @@ local function save()
             v.fight_point = ri.fight_point
         end
     end
-    skynet.call(guilddb, "lua", "save", skynet.packstring(data))
+    skynet.call(guilddb, "lua", "save", data.id, skynet.packstring(data))
 end
 
 local function delay_save()

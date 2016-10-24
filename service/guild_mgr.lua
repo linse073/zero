@@ -78,6 +78,7 @@ local function del(si, a)
         local p = apply[v]
         p[si.id] = nil
     end
+    pcall(skynet.call, si.addr, "lua", "exit")
 end
 
 local function save()

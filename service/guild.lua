@@ -536,8 +536,17 @@ function CMD.get_apply(roleid)
 end
 
 function CMD.shutdown()
-    skynet.call(guilddb, "lua", "save", skynet.packstring(data))
+    timer.del_once_routine("delay_save")
     timer.del_routine("save_guild")
+    skynet.call(guilddb, "lua", "save", skynet.packstring(data))
+end
+
+function CMD.exit()
+    timer.del_once_routine("delay_save")
+    timer.del_routine("save_guild")
+    skynet.call(guilddb, "lua", "del", data.id)
+    assert(data.count==0, string.format("Guild %d has member %d.", data.id, data.count))
+    skynet.exit()
 end
 
 function CMD.once_routine(key)

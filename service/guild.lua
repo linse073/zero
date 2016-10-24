@@ -538,7 +538,7 @@ end
 function CMD.shutdown()
     timer.del_once_routine("delay_save")
     timer.del_routine("save_guild")
-    skynet.call(guilddb, "lua", "save", skynet.packstring(data))
+    skynet.call(guilddb, "lua", "save", data.id, skynet.packstring(data))
 end
 
 function CMD.exit()

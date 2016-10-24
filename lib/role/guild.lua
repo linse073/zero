@@ -2,6 +2,7 @@ local skynet = require "skynet"
 local share = require "share"
 local notify = require "notify"
 local util = require "util"
+local proc_queue = require "proc_queue"
 
 local update_user = util.update_user
 local error_code

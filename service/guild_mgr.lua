@@ -370,7 +370,7 @@ end
 local function predict_1(l, r)
     return l.rank < r.rank
 end
-skynet.start(function()
+function CMD.open()
     randomseed(floor(skynet.time()))
     error_code = sharedata.query("error_code")
     guild_member_count = sharedata.query("guild_member_count")
@@ -399,7 +399,9 @@ skynet.start(function()
         end
     end
     timer.add_day_routine("guild_rank", update_day)
+end
 
+skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])
         if session == 0 then

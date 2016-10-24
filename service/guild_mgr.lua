@@ -120,7 +120,8 @@ function CMD.found(roleid, server, name)
         return error_code.ALREADY_HAS_GUILD
     end
     for k, v in pairs(server_list) do
-        if guild_list[util.gen_key(k, name)] then
+        local key = util.gen_key(k, name)
+        if guild_list[key] then
             return error_code.GUILD_NAME_EXIST
         end
     end

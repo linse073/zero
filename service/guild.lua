@@ -82,11 +82,11 @@ end
 
 local function add_log(log)
     local l = data.log
-    local len = #l
+    local len = #l + 1
+    l[len] = log
     if len >= 100 then
         table.remove(l, 1)
     end
-    l[len] = log
     return log
 end
 

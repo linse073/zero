@@ -151,7 +151,7 @@ function CMD.accept(chief, roleid)
     if not m then
         return error_code.NOT_GUILD_MEMBER
     end
-    if m.pos ~= POS_CHIEF or m.pos ~= POS_A_CHIEF then
+    if m.pos ~= POS_CHIEF and m.pos ~= POS_A_CHIEF then
         return error_code.NO_GUILD_PERMIT
     end
     if not data.apply[roleid] then
@@ -184,7 +184,7 @@ function CMD.accept_all(chief)
     if not m then
         return error_code.NOT_GUILD_MEMBER
     end
-    if m.pos ~= POS_CHIEF or m.pos ~= POS_A_CHIEF then
+    if m.pos ~= POS_CHIEF and m.pos ~= POS_A_CHIEF then
         return error_code.NO_GUILD_PERMIT
     end
     local limit_count = guild_member_count[data.level]
@@ -234,7 +234,7 @@ function CMD.refuse(chief, roleid)
     if not m then
         return error_code.NOT_GUILD_MEMBER
     end
-    if m.pos ~= POS_CHIEF or m.pos ~= POS_A_CHIEF then
+    if m.pos ~= POS_CHIEF and m.pos ~= POS_A_CHIEF then
         return error_code.NO_GUILD_PERMIT
     end
     if not data.apply[roleid] then
@@ -249,7 +249,7 @@ function CMD.refuse_all(chief)
     if not m then
         return error_code.NOT_GUILD_MEMBER
     end
-    if m.pos ~= POS_CHIEF or m.pos ~= POS_A_CHIEF then
+    if m.pos ~= POS_CHIEF and m.pos ~= POS_A_CHIEF then
         return error_code.NO_GUILD_PERMIT
     end
     local a = {}
@@ -265,7 +265,7 @@ function CMD.expel(chief, roleid)
     if not m then
         return error_code.NOT_GUILD_MEMBER
     end
-    if m.pos ~= POS_CHIEF or m.pos ~= POS_A_CHIEF then
+    if m.pos ~= POS_CHIEF and m.pos ~= POS_A_CHIEF then
         return error_code.NO_GUILD_PERMIT
     end
     local rm = data.member[roleid]
@@ -324,7 +324,7 @@ function CMD.config(chief, key, value)
     if not m then
         return error_code.NOT_GUILD_MEMBER
     end
-    if m.pos ~= POS_CHIEF or m.pos ~= POS_A_CHIEF then
+    if m.pos ~= POS_CHIEF and m.pos ~= POS_A_CHIEF then
         return error_code.NO_GUILD_PERMIT
     end
     data[key] = value
@@ -525,7 +525,7 @@ function CMD.get_apply(roleid)
     if not m then
         return error_code.NOT_GUILD_MEMBER
     end
-    if m.pos ~= POS_CHIEF or m.pos ~= POS_A_CHIEF then
+    if m.pos ~= POS_CHIEF and m.pos ~= POS_A_CHIEF then
         return error_code.NO_GUILD_PERMIT
     end
     local a = {}

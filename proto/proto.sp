@@ -630,7 +630,7 @@
     page 0 : integer
 }
 
-.list_guid_info {
+.list_guild_info {
     info 0 : *guild_rank_info
     page 1 : integer
     total 2 : integer

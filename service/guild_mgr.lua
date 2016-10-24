@@ -18,7 +18,7 @@ local guild_list = {}
 local rank_list = {}
 local role_list = {}
 local apply = {}
-local server_list
+local server_mgr
 local error_code
 local guild_member_count
 local cs = queue()
@@ -119,6 +119,7 @@ function CMD.found(roleid, server, name)
     if role_list[roleid] then
         return error_code.ALREADY_HAS_GUILD
     end
+    local server_list = skynet.call(server_mgr, "lua", "get_all")
     for k, v in pairs(server_list) do
         local key = util.gen_key(k, name)
         if guild_list[key] then
@@ -252,6 +253,7 @@ function CMD.query(roleid, name)
             r[#r+1] = skynet.call(si.addr, "lua", "rank_info", roleid)
         end
     end
+    local server_list = skynet.call(server_mgr, "lua", "get_all")
     for k, v in pairs(server_list) do
         local key = util.gen_key(k, name)
         local si = guild_list[key]
@@ -374,8 +376,7 @@ skynet.start(function()
     randomseed(floor(skynet.time()))
     error_code = sharedata.query("error_code")
     guild_member_count = sharedata.query("guild_member_count")
-    local server_mgr = skynet.queryservice("server_mgr")
-    server_list = skynet.call(server_mgr, "lua", "get_all")
+    server_mgr = skynet.queryservice("server_mgr")
     local master = skynet.queryservice("dbmaster")
     local guilddb = skynet.call(master, "lua", "get", "guilddb")
     local index = 0

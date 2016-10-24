@@ -60,6 +60,8 @@ skynet.start(function()
     skynet.call(save_explore, "lua", "open")
     skynet.uniqueservice("trade_mgr")
     skynet.uniqueservice("save_trade")
+    skynet.uniqueservice("guild_mgr")
+    skynet.uniqueservice("agent_mgr")
 
 	local loginserver = skynet.newservice("logind")
     local gate = skynet.newservice("gated", loginserver)
@@ -68,8 +70,6 @@ skynet.start(function()
         local server = skynet.newservice("server", loginserver)
         skynet.call(server, "lua", "open", v, config.gate.servername)
     end
-    skynet.uniqueservice("guild_mgr")
-    skynet.uniqueservice("agent_mgr")
     
     skynet.exit()
 end)

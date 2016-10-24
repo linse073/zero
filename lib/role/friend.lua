@@ -21,7 +21,6 @@ local error_code
 local server_mgr
 local role_mgr
 local offline_mgr
-local server_list
 
 local friend_title
 local refuse_content
@@ -36,7 +35,6 @@ skynet.init(function()
     server_mgr = skynet.queryservice("server_mgr")
     role_mgr = skynet.queryservice("role_mgr")
     offline_mgr = skynet.queryservice("offline_mgr")
-    server_list = skynet.call(server_mgr, "lua", "get_all")
 
     friend_title = func.get_string(198000001)
     refuse_content = func.get_string(198000002)
@@ -363,6 +361,7 @@ function proc.query_friend(msg)
         error{code = error_code.ERROR_FRIEND_NAME}
     end
     local info = {}
+    local server_list = skynet.call(server_mgr, "lua", "get_all")
     for k, v in pairs(server_list) do
         local namekey = gen_key(k, msg.name)
         local roleid = skynet.call(data.namedb, "lua", "get", namekey)

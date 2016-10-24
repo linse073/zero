@@ -8,12 +8,14 @@ local update_user = util.update_user
 local error_code
 local data
 local guild_mgr
+local cs
 
 local guild = {}
 local proc = {}
 
 skynet.init(function()
     error_code = share.error_code
+    cs = share.cs
     guild_mgr = skynet.queryservice("guild_mgr")
 end)
 

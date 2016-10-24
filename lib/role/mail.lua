@@ -85,12 +85,6 @@ function mail.add(v, p)
             v.finish = nil
             data.explore = nil
         end
-    elseif v.type == base.MAIL_TYPE_GUILD then
-        if v.del then
-            v.del = nil
-            data.guild = nil
-            data.guildid = nil
-        end
     end
     data.mail[v.id] = v
     local pm = p.mail

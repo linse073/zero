@@ -121,7 +121,7 @@ function role.init_module()
             get = friend.get,
         },
         guild = {
-            join = guild.join,
+            notify = guild.notify,
         },
     }
     return proc

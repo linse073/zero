@@ -28,11 +28,17 @@ function guild.exit()
     data = nil
 end
 
-function guild.join(i)
-    data.guild = i[1]
-    data.guildid = i[2]
-    local info = skynet.call(g, "lua", "pack_info")
-    notify.add("update_user", {update={guild=info}})
+function guild.notify(i)
+    if i then
+        data.guild = i[1]
+        data.guildid = i[2]
+        local info = skynet.call(g, "lua", "pack_info")
+        notify.add("update_user", {update={guild=info}})
+    else
+        data.guild = nil
+        data.guildid = nil
+        notify.add("update_user", {quit_guild=true})
+    end
 end
 
 --------------------------protocol process-----------------------

@@ -334,7 +334,7 @@ function CMD.apply(roleid, guildid, level, vip)
 end
 
 function CMD.dismiss(roleid)
-    local si = role_list[chief]
+    local si = role_list[roleid]
     if not si then
         return error_code.NOT_JOIN_GUILD
     end

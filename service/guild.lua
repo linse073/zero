@@ -414,7 +414,7 @@ function CMD.apply(roleid)
         time = floor(skynet.time()),
     }
     data.apply[roleid] = a
-    return CMD.rank_info()
+    return CMD.rank_info(roleid)
 end
 
 -- TODO: add guild log

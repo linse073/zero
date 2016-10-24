@@ -4,6 +4,7 @@ local sharedata = require "sharedata"
 local util = require "util"
 local func = require "func"
 local queue = require "skynet.queue"
+local timer = require "timer"
 
 local pairs = pairs
 local ipairs = ipairs

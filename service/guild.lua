@@ -298,7 +298,7 @@ function CMD.login(roleid, now)
     if m then
         m.last_login_time = now
         m.online = true
-        local update = {member={{last_login_time=now, online=true}}}
+        local update = {member={{id=roleid, last_login_time=now, online=true}}}
         CMD.broadcast("update_user", {update={guild=update}}, roleid)
         return CMD.pack_info()
     end

@@ -57,6 +57,9 @@ end
 
 function proc.query_guild(msg)
     local user = data.user
+    if not msg.name then
+        error{code = error_code.ERROR_ARGS}
+    end
     local r = skynet.call(guild_mgr, "lua", "query", user.id, msg.name)
     return "query_guild_info", {info=r}
 end

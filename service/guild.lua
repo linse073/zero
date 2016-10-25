@@ -168,7 +168,9 @@ function CMD.accept(chief, roleid)
     end
     local m, l = add(roleid)
     local update = {member={m}, log={l}}
-    skynet.call(role_mgr, "lua", "broadcast_range", "update_user", {update={guild=update}}, range)
+    if #range > 0 then
+        skynet.call(role_mgr, "lua", "broadcast_range", "update_user", {update={guild=update}}, range)
+    end
     local agent = skynet.call(role_mgr, "lua", "get", roleid)
     if agent then
         skynet.send(agent, "lua", "action", "guild", {skynet.self(), data.id})
@@ -217,7 +219,9 @@ function CMD.accept_all(chief)
             a[#a+1] = v.id
         end
         local update = {member=u, log=l}
-        skynet.call(role_mgr, "lua", "broadcast_range", "update_user", {update={guild=update}}, range)
+        if #range > 0 then
+            skynet.call(role_mgr, "lua", "broadcast_range", "update_user", {update={guild=update}}, range)
+        end
         local ji = {skynet.self(), data.id}
         for k, v in ipairs(a) do
             local agent = skynet.call(role_mgr, "lua", "get", v)

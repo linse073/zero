@@ -194,6 +194,7 @@ function CMD.accept_all(chief)
         return error_code.GUILD_MEMBER_LIMIT
     end
     local a = {}
+    local update
     if not util.empty(data.apply) then
         local range = {}
         for k, v in pairs(data.member) do
@@ -218,7 +219,7 @@ function CMD.accept_all(chief)
             u[#u+1], l[#l+1] = add(v.id)
             a[#a+1] = v.id
         end
-        local update = {member=u, log=l}
+        update = {member=u, log=l}
         if #range > 0 then
             skynet.call(role_mgr, "lua", "broadcast_range", "update_user", {update={guild=update}}, range)
         end

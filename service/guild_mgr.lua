@@ -235,6 +235,7 @@ function CMD.expel(chief, roleid)
         return r
     end
     role_list[roleid] = nil
+    si.count = si.count - 1
     return r, update
 end
 
@@ -344,6 +345,7 @@ function CMD.dismiss(roleid)
         return r
     end
     role_list[roleid] = nil
+    si.count = si.count - 1
     del(si, a)
     return r
 end
@@ -358,6 +360,7 @@ function CMD.quit(roleid)
         return r
     end
     role_list[roleid] = nil
+    si.count = si.count - 1
     return r
 end
 

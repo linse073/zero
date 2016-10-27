@@ -255,7 +255,7 @@ local function set(info, del, notice)
             end
         end
     end
-    if info.guildid > 0 then
+    if info.guildid then
         local gid
         local g = guild_rank[1]
         if g[1] >= 6 then

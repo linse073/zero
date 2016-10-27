@@ -335,7 +335,7 @@ function CMD.apply(roleid, guildid, level, vip)
                 v.count = v.count + 1
                 role_list[roleid] = v
                 del_apply(roleid)
-                return error_code.OK, si.addr, si.id
+                return error_code.OK, v.addr, v.id
             end
         end
         return error_code.RANDOM_JOIN_GUILD_LIMIT

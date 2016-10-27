@@ -139,6 +139,7 @@ local msg = {
     [3420] = "quit_guild",
     [3421] = "get_apply",
     [3222] = "apply_info",
+    [3223] = "guild_icon",
 }
 local name_msg = {}
 

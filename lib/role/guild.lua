@@ -10,6 +10,8 @@ local update_user = util.update_user
 local error_code
 local data
 local guild_mgr
+local explore_mgr
+local role_mgr
 local cs
 
 local guild = {}
@@ -19,6 +21,8 @@ skynet.init(function()
     error_code = share.error_code
     cs = share.cs
     guild_mgr = skynet.queryservice("guild_mgr")
+    explore_mgr = skynet.queryservice("explore_mgr")
+    role_mgr = skynet.queryservice("role_mgr")
 end)
 
 function guild.init_module()
@@ -143,6 +147,30 @@ function proc.guild_notice(msg)
     local r, update = skynet.call(data.guild, "lua", "config", user.id, "notice", msg.notice)
     if r ~= error_code.OK then
         error{code = r}
+    end
+    return "update_user", {update={guild={info=update}}}
+end
+
+function proc.guild_icon(msg)
+    if not data.guild then
+        error{code = error_code.NOT_JOIN_GUILD}
+    end
+    local user = data.user
+    local r, update = skynet.call(data.guild, "lua", "config", user.id, "icon", msg.icon)
+    if r ~= error_code.OK then
+        error{code = r}
+    end
+    local occupy_area = skynet.call(explore_mgr, "lua", "occupy_area", data.guildid)
+    if not util.empty(occupy_area) then
+        local gi = skynet.call(guild_mgr, "lua", "simple_info", data.guildid)
+        local ag = {}
+        for k, v in pairs(occupy_area) do
+            ag[#ag+1] = {
+                area = k,
+                info = gi,
+            }
+        end
+        skynet.call(role_mgr, "lua", "broadcast", "update_user", {update={area_guild=ag}})
     end
     return "update_user", {update={guild={info=update}}}
 end

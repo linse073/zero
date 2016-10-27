@@ -869,6 +869,18 @@ local function enter_game(msg)
         }
     end
     ret.mall_count = mall_count
+    local area_guild = skynet.call(explore_mgr, "lua", "area_guild")
+    local ag = {}
+    for k, v in pairs(ag) do
+        local gi = skynet.call(guild_mgr, "lua", "simple_info", v)
+        if gi then
+            ag[#ag+1] = {
+                area = k,
+                info = gi,
+            }
+        end
+    end
+    ret.area_guild = ag
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)
     timer.add_second_routine("update_second", role.update_second)

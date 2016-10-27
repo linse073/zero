@@ -407,6 +407,14 @@ function CMD.rank_info(roleid)
     }
 end
 
+function CMD.simple_info()
+    return {
+        id = data.id,
+        name = data.name,
+        icon = data.icon,
+    }
+end
+
 function CMD.apply(roleid)
     assert(not data.apply[roleid], string.format("Role %d already apply guild %d.", roleid, data.id))
     local info = skynet.call(role_mgr, "lua", "get_rank_info", roleid)

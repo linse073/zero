@@ -3,9 +3,12 @@ local sharedata = require "sharedata"
 
 local assert = assert
 local string = string
+local pairs = pairs
 
 local explore_area = {}
 local role_list = {}
+local area_guild = {}
+local guild = {}
 
 local CMD = {}
 
@@ -19,6 +22,10 @@ function CMD.get_explore(area)
     return explore_area[area]
 end
 
+function CMD.get_all_explore()
+    return explore_area
+end
+
 function CMD.get(roleid)
     return role_list[roleid]
 end
@@ -29,6 +36,28 @@ end
 
 function CMD.del(roleid)
     role_list[roleid] = nil
+end
+
+function CMD.occupy_guild(area, gid)
+    local og = area_guild[area]
+    if og then
+        guild[og][area] = nil
+    end
+    area_guild[area] = gid
+    local a = guild[gid]
+    if not a then
+        a = {}
+        guild[gid] = a
+    end
+    a[area] = area
+end
+
+function CMD.area_guild()
+    return area_guild
+end
+
+function CMD.occupy_area(id)
+    return guild[id]
 end
 
 skynet.start(function()

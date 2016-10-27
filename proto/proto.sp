@@ -214,6 +214,12 @@
     apply_vip 9 : integer
 }
 
+.guild_simple_info {
+    id 0 : integer
+    name 1 : string
+    icon 2 : string
+}
+
 .guild_rank_info {
     id 0 : integer
     name 1 : string
@@ -236,6 +242,10 @@
         id 0 : integer
         count 1 : integer
     }
+    .area_guild {
+        area 0 : integer
+        info 1 : guild_simple_info
+    }
 
     user 0 : user_info
     item 1 : *item_info
@@ -250,6 +260,7 @@
     mall_random 10 : *integer
     mall_count 11 : *mall_count
     guild 12 : guild_all
+    area_guild 13 : *area_guild
 }
 
 .info_all {
@@ -694,4 +705,8 @@
 
 .apply_info {
     info 0 : *guild_apply
+}
+
+.guild_icon {
+    icon 0 : string
 }

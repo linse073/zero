@@ -27,7 +27,11 @@ local save_explore
 local ratio_min
 local role_mgr
 local task_rank
+local guild_mgr
 local rank_count
+local occupy_guild
+local guild = {}
+local guild_rank = {}
 local role_list = {}
 
 local RAND_FACTOR = 10000
@@ -42,6 +46,7 @@ local WEEK_TASK_LEVEL = 25
 local MONEY_ITEM = 3000004271
 local RMB_ITEM = 3000012271
 local EXP_ITEM = 3000024271
+local SP_ITEM = 3000024271
 
 local MAIL_TYPE_EXPLORE = 3
 
@@ -126,13 +131,16 @@ local function get_bonus(bonus, award, prof)
     end
 end
 
-local function mail_bonus(money, num, exp, t, prof)
+local function mail_bonus(money, num, exp, sp, t, prof)
     local award = {}
     if money > 0 then
         award[MONEY_ITEM] = money
     end
     if exp > 0 then
         award[EXP_ITEM] = exp
+    end
+    if sp > 0 then
+        award[SP_ITEM] = sp
     end
     local m = {
         type = MAIL_TYPE_EXPLORE,
@@ -198,6 +206,70 @@ local function win(t, info, tinfo)
     skynet.call(offline_mgr, "lua", "add", "mail", tinfo.roleid, tm)
     tinfo.status = explore_status.FINISH
     tinfo.reason = explore_reason.FAIL
+end
+
+local function set(info, del, notice)
+    if del then
+        role_list[info.roleid] = nil
+        if info.guildid then
+            local g = guild[info.guildid]
+            g[1] = g[1] - 1
+            local r = g[2]
+            local len = #guild_list
+            while r < len do
+                local r1 = r + 1
+                local g1 = guild_list[r1]
+                if g[1] < g1[1] then
+                    g[2], g1[2] = r1, r
+                    guild_list[r], guild_list[r1] = g1, g
+                    r = r1
+                else
+                    break
+                end
+            end
+        end
+    else
+        role_list[info.roleid] = info
+        if info.guildid then
+            local g = guild[info.guildid]
+            if g then
+                g[1] = g[1] + 1
+                local r = g[2]
+                while r > 1 do
+                    local r1 = r - 1
+                    local g1 = guild_list[r1]
+                    if g[1] > g1[1] then
+                        g[2], g1[2] = r1, r
+                        guild_list[r], guild_list[r1] = g1, g
+                        r = r1
+                    else
+                        break
+                    end
+                end
+            else
+                local len = #guild_rank + 1
+                g = {1, len, info.guildid}
+                guild_rank[len] = g
+                guild[info.guildid] = g
+            end
+        end
+    end
+    local gid
+    local g = rank_list[1]
+    if g[1] >= 6 then
+        gid = g[3]
+    end
+    if gid ~= occupy_guild then
+        skynet.call(explore_mgr, "lua", "occupy_guild", data.area, gid)
+        if notice then
+            local ag = {area=data.area}
+            if gid then
+                ag.info = skynet.call(guild_mgr, "lua", "simple_info", gid)
+            end
+            skynet.call(role_mgr, "lua", "broadcast", "update_user", {update={area_guild={ag}}})
+        end
+        occupy_guild = gid
+    end
 end
 
 local function update()
@@ -282,7 +354,7 @@ local function update()
                 reason = v.reason,
             }}})
         end
-        role_list[roleid] = nil
+        set(v, true, true)
         skynet.call(save_explore, "lua", "update", roleid, false)
         skynet.call(explore_mgr, "lua", "del", roleid)
     end
@@ -307,6 +379,7 @@ function CMD.open(d, bd, mgr)
     role_mgr = skynet.queryservice("role_mgr")
     task_rank = skynet.queryservice("task_rank")
     offline_mgr = skynet.queryservice("offline_mgr")
+    guild_mgr = skynet.queryservice("guild_mgr")
     local master = skynet.queryservice("dbmaster")
     rankdb = skynet.call(master, "lua", "get", "rankdb")
     skynet.call(rankdb, "lua", "zrem_by_rank", rankname, 0, -1)
@@ -339,11 +412,11 @@ function CMD.add(info)
         skynet.call(rankdb, "lua", "zadd", rankname, -info.fight_point, info.roleid)
         rank_count = rank_count + 1
     end
-    role_list[info.roleid] = info
+    set(info, false, false)
     skynet.call(explore_mgr, "lua", "add", info.roleid, skynet.self())
 end
 
-function CMD.explore(roleid, fight_point, name, prof, level)
+function CMD.explore(roleid, fight_point, name, prof, level, guildid)
     skynet.call(rankdb, "lua", "zadd", rankname, -fight_point, roleid)
     rank_count = rank_count + 1
     local now = floor(skynet.time())
@@ -353,13 +426,14 @@ function CMD.explore(roleid, fight_point, name, prof, level)
         name = name,
         prof = prof,
         level = level,
+        guildid = guildid,
         area = data.area,
         start_time = now,
         status = explore_status.NORMAL,
         time = now,
         update_time = now,
     }
-    role_list[roleid] = info
+    set(info, false, true)
     skynet.call(explore_mgr, "lua", "add", roleid, skynet.self())
     skynet.call(save_explore, "lua", "update", roleid, info)
     return {
@@ -403,7 +477,7 @@ function CMD.quit(roleid)
             info.status = explore_status.FINISH
             info.reason = explore_reason.ESCAPE
             info.ack = 2
-            role_list[roleid] = nil
+            set(info, true, true)
             skynet.call(save_explore, "lua", "update", roleid, false)
             skynet.call(explore_mgr, "lua", "del", roleid)
             local tm = mail_bonus(tmoney, tbonus, 0, t, tinfo.prof)
@@ -446,7 +520,7 @@ function CMD.quit(roleid)
             skynet.call(offline_mgr, "lua", "add", "mail", roleid, m)
             info.status = explore_status.FINISH
             info.reason = explore_reason.QUIT
-            role_list[roleid] = nil
+            set(info, true, true)
             skynet.call(save_explore, "lua", "update", roleid, false)
             skynet.call(explore_mgr, "lua", "del", roleid)
             return {status=info.status, reason=info.reason}

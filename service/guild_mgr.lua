@@ -246,6 +246,13 @@ function CMD.get(roleid)
     end
 end
 
+function CMD.simple_info(id)
+    local si = guild_list[id]
+    if si then
+        return skynet.call(si.addr, "lua", "simple_info")
+    end
+end
+
 function CMD.query(roleid, name)
     local r = {}
     local id = tonumber(name)

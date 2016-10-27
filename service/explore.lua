@@ -255,21 +255,23 @@ local function set(info, del, notice)
             end
         end
     end
-    local gid
-    local g = guild_rank[1]
-    if g[1] >= 6 then
-        gid = g[3]
-    end
-    if gid ~= occupy_guild then
-        skynet.call(explore_mgr, "lua", "occupy_guild", data.area, gid)
-        if notice then
-            local ag = {area=data.area}
-            if gid then
-                ag.info = skynet.call(guild_mgr, "lua", "simple_info", gid)
-            end
-            skynet.call(role_mgr, "lua", "broadcast", "update_user", {update={area_guild={ag}}})
+    if info.guildid > 0 then
+        local gid
+        local g = guild_rank[1]
+        if g[1] >= 6 then
+            gid = g[3]
         end
-        occupy_guild = gid
+        if gid ~= occupy_guild then
+            skynet.call(explore_mgr, "lua", "occupy_guild", data.area, gid)
+            if notice then
+                local ag = {area=data.area}
+                if gid then
+                    ag.info = skynet.call(guild_mgr, "lua", "simple_info", gid)
+                end
+                skynet.call(role_mgr, "lua", "broadcast", "update_user", {update={area_guild={ag}}})
+            end
+            occupy_guild = gid
+        end
     end
 end
 

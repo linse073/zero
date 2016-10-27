@@ -975,7 +975,7 @@ function proc.explore(msg)
         error{code = error_code.STAGE_STAR_LIMIT}
     end
     local user = data.user
-    local e = skynet.call(explore, "lua", "explore", user.id, user.fight_point, user.name, user.prof, user.level)
+    local e = skynet.call(explore, "lua", "explore", user.id, user.fight_point, user.name, user.prof, user.level, data.guildid)
     data.explore = explore
     return "update_user", {update={explore=e}}
 end

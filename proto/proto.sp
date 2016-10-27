@@ -281,6 +281,7 @@
     rank_list 7 : rank_list
     dismiss_guild 8 : boolean
     quit_guild 9 : boolean
+    decay_active 10 : boolean
 }
 
 .update_day {

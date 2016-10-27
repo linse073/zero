@@ -309,6 +309,14 @@ function CMD.login(roleid, now)
     end
 end
 
+function CMD.update_day()
+    for k, v in pairs(data.member) do
+        v.active = floor(v.active * 0.9)
+    end
+    data.active = floor(data.active * 0.9)
+    return data.active
+end
+
 function CMD.update(key, value)
     data[key] = value
 end
@@ -317,11 +325,11 @@ function CMD.get(key)
     return data[key]
 end
 
-function CMD.broadcast_update(key, value)
+function CMD.broadcast_update(key, value, decay_active)
     data[key] = value
     local update = {}
     update[key] = value
-    CMD.broadcast("update_user", {update={guild={info=update}}})
+    CMD.broadcast("update_user", {update={guild={info=update}}, decay_active=decay_active})
 end
 
 function CMD.config(chief, key, value)

@@ -101,10 +101,13 @@ local function predict_2(l, r)
     return l.active > r.active
 end
 local function update_day(od, nd, owd, nwd)
+    for k, v in ipairs(rank_list) do
+        v.active = skynet.call(v.addr, "lua", "update_day")
+    end
     table.sort(rank_list, predict_2)
     for k, v in ipairs(rank_list) do
         v.rank = k
-        skynet.send(v.addr, "lua", "broadcast_update", "rank", k)
+        skynet.send(v.addr, "lua", "broadcast_update", "rank", k, true)
     end
 end
 

@@ -131,6 +131,7 @@ function proc.del_mail(msg)
     mail.del(m.id)
     local p = update_user()
     p.mail[1] = {id=m.id, status=m.status}
+    local user = data.user
     local pitem = p.item
     if m.item_info then
         local money = 0
@@ -147,6 +148,10 @@ function proc.del_mail(msg)
                     role.add_rmb(p, v.num)
                 elseif v.itemid == base.EXP_ITEM then
                     role.add_exp(p, v.num)
+                elseif v.itemid == base.SP_ITEM then
+                    if data.guild then
+                        p.guild = skynet.call(data.guild, "lua", "explore", user.id, v.num)
+                    end
                 else
                     local d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
                     item.add_by_itemid(p, v.num, d)
@@ -155,7 +160,6 @@ function proc.del_mail(msg)
         end
         if money > 0 then
             if m.type == base.MAIL_TYPE_EXPLORE then
-                local user = data.user
                 user.explore_award = user.explore_award + money
                 local se = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_EXPLORE)
                 skynet.call(se, "lua", "update", user.id, user.explore_award)

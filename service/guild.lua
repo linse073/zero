@@ -548,6 +548,16 @@ function CMD.get_apply(roleid)
     return error_code.OK, a
 end
 
+function CMD.explore(roleid, num)
+    local m = data.member[roleid]
+    if m then
+        m.explore = m.explore + num
+        local update = {member={{id=roleid, explore=m.explore}}}
+        CMD.broadcast("update_user", {update={guild=update}}, roleid)
+        return update
+    end
+end
+
 function CMD.shutdown()
     timer.del_once_routine("delay_save")
     timer.del_routine("save_guild")

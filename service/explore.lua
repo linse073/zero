@@ -46,7 +46,7 @@ local WEEK_TASK_LEVEL = 25
 local MONEY_ITEM = 3000004271
 local RMB_ITEM = 3000012271
 local EXP_ITEM = 3000024271
-local SP_ITEM = 3000024271
+local SP_ITEM = 3000031271
 
 local MAIL_TYPE_EXPLORE = 3
 
@@ -174,7 +174,7 @@ local function win(t, info, tinfo)
             bonus = bonus + 1
         end
     end
-    local m = mail_bonus(money, bonus, 0, t, info.prof)
+    local m = mail_bonus(money, bonus, 0, 0, t, info.prof)
     m.content = string.format(explore_win, tinfo.name)
     m.win = true
     skynet.call(offline_mgr, "lua", "add", "mail", info.roleid, m)
@@ -199,7 +199,8 @@ local function win(t, info, tinfo)
     end
     skynet.call(save_explore, "lua", "update", info.roleid, info)
     local exp = data.exp * tdt // 3600
-    local tm = mail_bonus(0, 0, exp, t, tinfo.prof)
+    local sp = data.sp * tdt // 3600
+    local tm = mail_bonus(0, 0, exp, sp, t, tinfo.prof)
     tm.content = string.format(explore_fail, info.name)
     tm.fail = true
     -- tm.finish = true
@@ -335,7 +336,8 @@ local function update()
                 local bonus = data.searchSecond // BONUS_TIME
                 local exp = data.exp * data.searchSecond // 3600
                 local money = data.money * data.searchSecond // 3600
-                local m = mail_bonus(money, bonus, exp, now, v.prof)
+                local sp = data.sp * data.searchSecond // 3600
+                local m = mail_bonus(money, bonus, exp, sp, now, v.prof)
                 m.content = explore_normal
                 m.finish = true
                 skynet.call(offline_mgr, "lua", "add", "mail", v.roleid, m)
@@ -454,6 +456,7 @@ function CMD.quit(roleid)
             local money = data.money * tdt // 3600
             local imoney = money * data.escapeKeepRatio // RAND_FACTOR
             local exp = data.exp * tdt // 3600
+            local sp = data.sp * tdt // 3600
             local tmoney = money * data.escapeLootRatio // RAND_FACTOR
             local num = tdt // BONUS_TIME
             local ibonus = 0
@@ -469,7 +472,7 @@ function CMD.quit(roleid)
                     end
                 end
             end
-            local m = mail_bonus(imoney, ibonus, exp, t, info.prof)
+            local m = mail_bonus(imoney, ibonus, exp, sp, t, info.prof)
             m.content = string.format(explore_escape, tinfo.name)
             m.fail = true
             -- m.finish = true
@@ -480,7 +483,7 @@ function CMD.quit(roleid)
             set(info, true, true)
             skynet.call(save_explore, "lua", "update", roleid, false)
             skynet.call(explore_mgr, "lua", "del", roleid)
-            local tm = mail_bonus(tmoney, tbonus, 0, t, tinfo.prof)
+            local tm = mail_bonus(tmoney, tbonus, 0, 0, t, tinfo.prof)
             tm.content = string.format(explore_win, info.name)
             tm.win = true
             skynet.call(offline_mgr, "lua", "add", "mail", tinfo.roleid, tm)
@@ -513,8 +516,9 @@ function CMD.quit(roleid)
             local tdt = t - info.start_time
             local money = data.money * tdt // 3600
             local exp = data.exp * tdt // 3600
+            local sp = data.sp * tdt // 3600
             local bonus = tdt // BONUS_TIME
-            local m = mail_bonus(money, bonus, exp, t, info.prof)
+            local m = mail_bonus(money, bonus, exp, sp, t, info.prof)
             m.content = explore_quit
             -- m.finish = true
             skynet.call(offline_mgr, "lua", "add", "mail", roleid, m)

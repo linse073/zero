@@ -470,6 +470,27 @@ skynet.start(function()
     sharedata.new("guild_member_count", {
         10, 20, 30, 40, 50,
     })
+    
+    local gs = {
+        [3009012290] = 300,
+        [3009013290] = 300,
+        [3009014290] = 300,
+        [3009015290] = 300,
+        [3009016290] = 300,
+        [3009017290] = 300,
+        [3009018290] = 300,
+        [3009019290] = 300,
+        [3009020290] = 300,
+        [3009021290] = 300,
+    }
+    local guild_store = {}
+    for k, v in pairs(gs) do
+        guild_store[k] = {
+            assert(itemdata[k], string.format("No item data %d.", k)),
+            v,
+        }
+    end
+    sharedata.new("guild_store", guild_store)
 
     sharedata.new("msg", proto.msg)
     sharedata.new("name_msg", proto.name_msg)

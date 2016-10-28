@@ -115,6 +115,7 @@ local msg = {
     [3305] = "add_watch",
     [3306] = "del_watch",
     [3307] = "mall_item",
+    [3308] = "guild_item",
 
     [3400] = "list_guild",
     [3401] = "list_guild_info",

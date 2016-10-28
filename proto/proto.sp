@@ -238,7 +238,7 @@
 }
 
 .user_all {
-    .mall_count {
+    .item_count {
         id 0 : integer
         count 1 : integer
     }
@@ -258,9 +258,10 @@
     stage_award 8 : *integer
     trade_watch 9 : *integer
     mall_random 10 : *integer
-    mall_count 11 : *mall_count
+    mall_count 11 : *item_count
     guild 12 : guild_all
     area_guild 13 : *area_guild
+    guild_item 14 : *item_count
 }
 
 .info_all {
@@ -609,6 +610,10 @@
 }
 
 .mall_item {
+    id 0 : integer
+}
+
+.guild_item {
     id 0 : integer
 }
 

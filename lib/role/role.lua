@@ -202,6 +202,7 @@ local function update_day(user, od, nd, owd, nwd)
         update_sign_in = true
     end
     user.trade_item = {}
+    user.guild_item = {}
     user.exchange_count = 0
     user.refresh_arena_cd = 0
     user.refresh_match_cd = 0
@@ -358,6 +359,14 @@ function role.add_money(p, money)
     if money < 0 then
         task.update(p, base.TASK_COMPLETE_USE_MONEY, 0, -money)
     end
+end
+
+function role.add_contribute(p, contribute)
+    local user = data.user
+    local puser = p.user
+    user.contribute = user.contribute + contribute
+    puser.contribute = user.contribute
+    -- TODO: contribute task
 end
 
 function role.add_rmb(p, rmb)
@@ -540,6 +549,9 @@ function role.repair(user, now)
     end
     if not user.contribute then
         user.contribute = 0
+    end
+    if not user.guild_item then
+        user.guild_item = {}
     end
 end
 
@@ -726,6 +738,7 @@ function proc.create_user(msg)
         patch_sign_in = 0,
         week_day = util.week_time(now),
         contribute = 0,
+        guild_item = {},
 
         item = {},
         card = {},
@@ -869,6 +882,14 @@ local function enter_game(msg)
         }
     end
     ret.mall_count = mall_count
+    local guild_item = {}
+    for k, v in pairs(user.guild_item) do
+        guild_item[#guild_item+1] = {
+            id = k,
+            count = v,
+        }
+    end
+    ret.guild_item = guild_item
     local area_guild = skynet.call(explore_mgr, "lua", "area_guild")
     local ag = {}
     for k, v in pairs(area_guild) do

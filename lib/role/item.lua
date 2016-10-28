@@ -29,6 +29,7 @@ local malldata
 local base
 local error_code
 local vip_level
+local guild_store
 local cs
 local is_equip
 local is_material
@@ -56,6 +57,7 @@ skynet.init(function()
     base = share.base
     error_code = share.error_code
     vip_level = share.vip_level
+    guild_store = share.guild_store
     cs = share.cs
     is_equip = func.is_equip
     is_material = func.is_material
@@ -1432,6 +1434,35 @@ function proc.mall_item(msg)
     local newnum = num + 1
     user.mall_count[msg.id] = newnum
     p.mall_count = {
+        {id=msg.id, count=newnum},
+    }
+    return "update_user", {update=p}
+end
+
+function proc.guild_item(msg)
+    local gi = guild_store[msg.id]
+    if not gi then
+        error{code = error_code.ERROR_GUILD_ITEM}
+    end
+    local user = data.user
+    local num = user.guild_item[msg.id] or 0
+    -- TODO: limit number by guild technology
+    local limitNum = 1
+    if num >= limitNum then
+        error{code = error_code.GUILD_ITEM_COUNT_LIMIT}
+    end
+    local p = update_user()
+    local price = gi[2]
+    proc_queue(cs, function()
+        if user.contribute < price then
+            error{code = error_code.ROLE_CONTRIBUTE_LIMIT}
+        end
+        role.add_contribute(p, -price)
+    end)
+    item.add_by_itemid(p, 1, gi[1])
+    local newnum = num + 1
+    user.guild_item[msg.id] = newnum
+    p.guild_item = {
         {id=msg.id, count=newnum},
     }
     return "update_user", {update=p}

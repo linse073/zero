@@ -216,13 +216,13 @@ local function set(info, del, notice)
             local g = guild[info.guildid]
             g[1] = g[1] - 1
             local r = g[2]
-            local len = #guild_list
+            local len = #guild_rank
             while r < len do
                 local r1 = r + 1
-                local g1 = guild_list[r1]
+                local g1 = guild_rank[r1]
                 if g[1] < g1[1] then
                     g[2], g1[2] = r1, r
-                    guild_list[r], guild_list[r1] = g1, g
+                    guild_rank[r], guild_rank[r1] = g1, g
                     r = r1
                 else
                     break
@@ -238,10 +238,10 @@ local function set(info, del, notice)
                 local r = g[2]
                 while r > 1 do
                     local r1 = r - 1
-                    local g1 = guild_list[r1]
+                    local g1 = guild_rank[r1]
                     if g[1] > g1[1] then
                         g[2], g1[2] = r1, r
-                        guild_list[r], guild_list[r1] = g1, g
+                        guild_rank[r], guild_rank[r1] = g1, g
                         r = r1
                     else
                         break

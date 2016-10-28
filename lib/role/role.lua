@@ -201,7 +201,7 @@ local function update_day(user, od, nd, owd, nwd)
         user.sign_in_day = 0
         update_sign_in = true
     end
-    user.trade_item = {}
+    -- user.trade_item = {}
     user.guild_item = {}
     user.exchange_count = 0
     user.refresh_arena_cd = 0
@@ -272,6 +272,11 @@ function role.update_second()
     local online_change = role.online_award(p, now)
     if rank_list or online_change then
         notify.add("update_user", {update=p, rank_list=rank_list})
+    end
+    local user = data.user
+    if now >= user.trade_refresh_time then
+        user.trade_item = {}
+        user.trade_refresh_time = now + random(14400, 28800)
     end
 end
 
@@ -489,6 +494,9 @@ function role.repair(user, now)
     end
     if not user.trade_item then
         user.trade_item = {}
+    end
+    if not user.trade_refresh_time then
+        user.trade_refresh_time = now + random(14400, 28800)
     end
     if not user.exchange_count then
         user.exchange_count = 0
@@ -718,6 +726,7 @@ function proc.create_user(msg)
         trade_watch = {},
         trade_watch_count = 0,
         trade_item = {},
+        trade_refresh_time = now + random(14400, 28800),
         exchange_count = 0,
         online_award_count = 0,
         online_award_time = now,

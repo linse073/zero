@@ -443,7 +443,7 @@ function CMD.pack_info()
     local info = {
         id = data.id,
         name = data.name,
-        icont = data.icon,
+        icon = data.icon,
         notice = data.notice,
         exp = data.exp,
         level = data.level,

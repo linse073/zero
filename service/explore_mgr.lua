@@ -44,12 +44,14 @@ function CMD.occupy_guild(area, gid)
         guild[og][area] = nil
     end
     area_guild[area] = gid
-    local a = guild[gid]
-    if not a then
-        a = {}
-        guild[gid] = a
+    if gid then
+        local a = guild[gid]
+        if not a then
+            a = {}
+            guild[gid] = a
+        end
+        a[area] = area
     end
-    a[area] = area
 end
 
 function CMD.area_guild()

@@ -161,7 +161,7 @@ function proc.guild_icon(msg)
         error{code = r}
     end
     local occupy_area = skynet.call(explore_mgr, "lua", "occupy_area", data.guildid)
-    if not util.empty(occupy_area) then
+    if occupy_area and not util.empty(occupy_area) then
         local gi = skynet.call(guild_mgr, "lua", "simple_info", data.guildid)
         local ag = {}
         for k, v in pairs(occupy_area) do

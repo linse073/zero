@@ -23,6 +23,7 @@ skynet.init(function()
     share.vipdata = sharedata.query("vipdata")
     share.malldata = sharedata.query("malldata")
     share.taskrankdata = sharedata.query("taskrankdata")
+    share.guildtechdata = sharedata.query("guildtechdata")
 
     share.base = sharedata.query("base")
     share.error_code = sharedata.query("error_code")

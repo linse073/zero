@@ -12,6 +12,8 @@ local string = string
 local floor = math.floor
 local table = table
 
+local guildtechdata
+local expdata
 local error_code
 local guild_member_count
 local data
@@ -127,6 +129,8 @@ function CMD.open(info, delay)
 
     guild_title = func.get_string(198100001)
     expel_content = func.get_string(198100002)
+    guildtechdata = sharedata.query("guildtechdata")
+    expdata = sharedata.query("expdata")
     error_code = sharedata.query("error_code")
     guild_member_count = sharedata.query("guild_member_count")
     local master = skynet.queryservice("dbmaster")
@@ -563,6 +567,55 @@ function CMD.explore(roleid, num)
         local update = {member={{id=roleid, explore=m.explore}}}
         CMD.broadcast("update_user", {update={guild=update}}, roleid)
         return update
+    end
+end
+
+function CMD.upgrade_skill(roleid, use, rmb, id)
+    local m = data.member[roleid]
+    if not m then
+        return error_code.NOT_GUILD_MEMBER
+    end
+    local sd = guildtechdata[id]
+    if not sd then
+        return error_code.ERROR_GUILD_SKILL
+    end
+    local s = data.skill[id]
+    if not s then
+        s = {
+            id = id,
+            exp = 0,
+            level = 1,
+            status = 0,
+        }
+        data.skill[id] = s
+    end
+    local update = {id=roleid}
+    local mul = 1
+    local ur
+    if use and s.status > 0 then
+        ur = 100 * si.status
+        if ur < rmb then
+            return error_code.ROLE_RMB_LIMIT
+        end
+        mul = 10 * s.status
+        s.status = 0
+    else
+        if m.explore < 100 then
+            return error_code.GUILD_EXPLORE_LIMIT
+        end
+        m.explore = m.explore - 100
+        update.explore = m.explore
+    end
+    m.contribute = m.contribute + 10 * mul
+    update.contribute = m.contribute
+    m.active = m.active + mul
+    update.active = m.active
+    data.active = data.active + mul
+    local addexp = 10 * mul
+    local e = assert(expdata[s.level], string.format("No exp data %d.", s.level))
+    while true do
+        if s.exp < e[] then
+        end
     end
 end
 

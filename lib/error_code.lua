@@ -139,6 +139,8 @@ local error_code = {
     GUILD_MEMBER_LIMIT = 3214,
     RANDOM_JOIN_GUILD_LIMIT = 3215,
     GUILD_CHIEF_QUIT_LIMIT = 3216,
+    GUILD_EXPLORE_LIMIT = 3217,
+    ERROR_GUILD_SKILL = 3218,
 }
 
 return error_code

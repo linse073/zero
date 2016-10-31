@@ -28,6 +28,9 @@ local PAGE_GUILD = 10
 local CMD = {}
 
 local function add(info)
+    if not info.skill then
+        info.skill = {}
+    end
     local l = #rank_list
     if info.rank == 0 then
         info.rank = l + 1
@@ -145,6 +148,7 @@ function CMD.found(roleid, server, name)
         log = {},
         member = {},
         apply = {},
+        skill = {},
     })
     skynet.call(si.addr, "lua", "own", roleid)
     si.count = si.count + 1

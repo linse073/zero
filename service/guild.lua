@@ -600,7 +600,7 @@ function CMD.upgrade_skill(roleid, use, rmb, id)
     local sv = s[1]
     local sd = s[2]
     if sv.level >= sd.uplimit then
-        return error_code.GUILD_SkILL_UPLIMIT
+        return error_code.GUILD_SKILL_UPLIMIT
     end
     local mu = {id=roleid}
     local mul = 1

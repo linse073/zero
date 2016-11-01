@@ -69,7 +69,7 @@ local function add(info)
         rank = info.rank,
         active = info.active,
         count = info.count,
-        count_limit = info.count_limit
+        count_limit = info.count_limit,
         apply_level = info.apply_level,
         apply_vip = info.apply_vip,
     }

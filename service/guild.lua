@@ -128,6 +128,11 @@ end
 
 function CMD.open(info, sid, delay)
     randomseed(floor(skynet.time()))
+    guild_title = func.get_string(198100001)
+    expel_content = func.get_string(198100002)
+    guildtechdata = sharedata.query("guildtechdata")
+    expdata = sharedata.query("expdata")
+    error_code = sharedata.query("error_code")
     data = info
     stock_skill_id = sid
     skill = {}
@@ -143,11 +148,6 @@ function CMD.open(info, sid, delay)
         end
     end
 
-    guild_title = func.get_string(198100001)
-    expel_content = func.get_string(198100002)
-    guildtechdata = sharedata.query("guildtechdata")
-    expdata = sharedata.query("expdata")
-    error_code = sharedata.query("error_code")
     local master = skynet.queryservice("dbmaster")
     guilddb = skynet.call(master, "lua", "get", "guilddb")
     role_mgr = skynet.queryservice("role_mgr")

@@ -602,6 +602,15 @@ function CMD.upgrade_skill(roleid, use, rmb, id)
     if sv.level >= sd.uplimit then
         return error_code.GUILD_SKILL_UPLIMIT
     end
+    if sd.preTech > 0 then
+        local ps = skill[sd.preTech]
+        if not ps then
+            return error_code.GUILD_PRESKILL_LIMIT
+        end
+        if ps[1].level < ps[2].uplimit then
+            return error_code.GUILD_PRESKILL_LIMIT
+        end
+    end
     local mu = {id=roleid}
     local mul = 1
     local ur

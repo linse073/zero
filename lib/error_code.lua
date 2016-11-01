@@ -142,6 +142,7 @@ local error_code = {
     GUILD_EXPLORE_LIMIT = 3217,
     ERROR_GUILD_SKILL = 3218,
     GUILD_SKILL_UPLIMIT = 3219,
+    GUILD_PRESKILL_LIMIT = 3220,
 }
 
 return error_code

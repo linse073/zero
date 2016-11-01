@@ -183,4 +183,16 @@ function proc.test_update_day(msg)
     return role.test_update_day()
 end
 
+function proc.add_guild_explore(msg)
+    local user = data.user
+    if user.gm_level == 0 then
+        error{code = error_code.ROLE_NO_PERMIT}
+    end
+    if not data.guild then
+        error{code = error_code.NOT_JOIN_GUILD}
+    end
+    local update = skynet.call(data.guild, "lua", "explore", user.id, msg.explore)
+    return "update_user", {update={guild=update}}
+end
+
 return gm

@@ -476,6 +476,10 @@
     time 0 : integer
 }
 
+.add_guild_explore {
+    explore 0 : integer
+}
+
 .upgrade_passive {
     id 0 : integer
     skillid 1 : integer

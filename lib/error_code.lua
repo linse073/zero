@@ -141,6 +141,7 @@ local error_code = {
     GUILD_CHIEF_QUIT_LIMIT = 3216,
     GUILD_EXPLORE_LIMIT = 3217,
     ERROR_GUILD_SKILL = 3218,
+    GUILD_SKILL_UPLIMIT = 3219,
 }
 
 return error_code

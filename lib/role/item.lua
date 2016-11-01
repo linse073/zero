@@ -1440,14 +1440,16 @@ function proc.mall_item(msg)
 end
 
 function proc.guild_item(msg)
+    if not data.guild then
+        error{code = error_code.NOT_JOIN_GUILD}
+    end
     local gi = guild_store[msg.id]
     if not gi then
         error{code = error_code.ERROR_GUILD_ITEM}
     end
     local user = data.user
     local num = user.guild_item[msg.id] or 0
-    -- TODO: limit number by guild technology
-    local limitNum = 1
+    local limitNum = skynet.call(data.guild, "lua", "stock_count")
     if num >= limitNum then
         error{code = error_code.GUILD_ITEM_COUNT_LIMIT}
     end

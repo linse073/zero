@@ -332,9 +332,9 @@ function proc.upgrade_guild_skill(msg)
     end
     local user = data.user
     local p = update_user()
-    local r, update, rmb
+    local r, update, contribute, rmb, count_limit
     proc_queue(cs, function()
-        local r, update, rmb = skynet.call(data.guild, "lua", "upgrade_skill", user.id, msg.rmb, user.rmb, msg.id)
+        r, update, contribute, rmb, count_limit = skynet.call(data.guild, "lua", "upgrade_skill", user.id, msg.rmb, user.rmb, msg.id)
         if r ~= error_code.OK then
             error{code = r}
         end
@@ -342,6 +342,10 @@ function proc.upgrade_guild_skill(msg)
             role.add_rmb(p, -rmb)
         end
     end)
+    role.add_contribute(p, contribute)
+    if count_limit then
+        skynet.call(guild_mgr, "lua", "update", data.guildid, "count_limit", count_limit)
+    end
     p.guild = update
     return "update_user", {update=p}
 end

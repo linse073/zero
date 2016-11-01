@@ -380,6 +380,11 @@ skynet.start(function()
         task_rank_type[v.timeType] = v
     end
 
+    local guild_tech_effect = {}
+    for k, v in pairs(guildtechdata) do
+        guild_tech_effect[v.effectType] = v
+    end
+
     sharedata.new("carddata", carddata)
     sharedata.new("itemdata", itemdata)
     sharedata.new("stagedata", stagedata)
@@ -413,6 +418,7 @@ skynet.start(function()
     sharedata.new("mall_sale", mall_sale)
     sharedata.new("mall_limit", mall_limit)
     sharedata.new("task_rank_type", task_rank_type)
+    sharedata.new("guild_tech_effect", guild_tech_effect)
 
     local level = base.MAX_LEVEL - 1
     local ed = assert(expdata[level], string.format("No exp data %d.", level))
@@ -467,10 +473,6 @@ skynet.start(function()
     sharedata.new("random_sale", {
         base.MALL_SALE_RANDOM_1,
         base.MALL_SALE_RANDOM_2,
-    })
-
-    sharedata.new("guild_member_count", {
-        10, 20, 30, 40, 50,
     })
     
     local gs = {

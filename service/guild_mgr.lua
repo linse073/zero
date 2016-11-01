@@ -20,23 +20,48 @@ local role_list = {}
 local apply = {}
 local server_mgr
 local error_code
-local guild_member_count
+local guildtechdata
+local develop_skill
+local stock_skill_id
+local level_1_exp
 local cs = queue()
 
 local PAGE_GUILD = 10
+local GUILD_EFFECT_DEVELOP = 1
+local GUILD_EFFECT_STOCK = 6
 
 local CMD = {}
 
 local function add(info)
-    if not info.skill then
-        info.skill = {}
+    local skill = info.skill
+    if not skill then
+        skill = {}
+        info.skill = skill
+    end
+    for k, v in pairs(guildtechdata) do
+        if not skill[k] then
+            skill[k] = {
+                id = k,
+                exp = 0,
+                level = 0,
+                status = 0,
+            }
+        end
+    end
+    local ds = skill[develop_skill.id]
+    if ds.level == 0 then
+        ds.exp = level_1_exp[develop_skill.exp]
+        ds.level = 1
+    end
+    if not info.count_limit then
+        info.count_limit = ds.level * develop_skill.perlevel
     end
     local l = #rank_list
     if info.rank == 0 then
         info.rank = l + 1
     end
     local g = skynet.newservice("guild")
-    skynet.call(g, "lua", "open", info, random(300))
+    skynet.call(g, "lua", "open", info, stock_skill_id, random(300))
     local si = {
         id = info.id,
         name = info.name,
@@ -44,7 +69,7 @@ local function add(info)
         rank = info.rank,
         active = info.active,
         count = info.count,
-        level = info.level,
+        count_limit = info.count_limit
         apply_level = info.apply_level,
         apply_vip = info.apply_vip,
     }
@@ -114,7 +139,7 @@ local function update_day(od, nd, owd, nwd)
     end
 end
 
--- TODO: update active, level, apply_level, apply_vip
+-- TODO: update active, count_limit, apply_level, apply_vip
 function CMD.update(guildid, key, value)
     local si = guild_list[guildid]
     if si then
@@ -165,7 +190,7 @@ function CMD.accept(chief, roleid)
     if role_list[roleid] then
         return error_code.TARGET_HAS_GUILD
     end
-    if si.count >= guild_member_count[si.level] then
+    if si.count >= si.count_limit then
         return error_code.GUILD_MEMBER_LIMIT
     end
     local r, update = skynet.call(si.addr, "lua", "accept", chief, roleid)
@@ -183,7 +208,7 @@ function CMD.accept_all(chief)
     if not si then
         return error_code.NOT_JOIN_GUILD
     end
-    if si.count >= guild_member_count[si.level] then
+    if si.count >= si.count_limit then
         return error_code.GUILD_MEMBER_LIMIT
     end
     local r, a, update = skynet.call(si.addr, "lua", "accept_all", chief)
@@ -313,7 +338,7 @@ function CMD.apply(roleid, guildid, level, vip)
         if not si then
             return error_code.GUILD_NOT_EXIST
         end
-        if si.count >= guild_member_count[si.level] then
+        if si.count >= si.count_limit then
             return error_code.GUILD_MEMBER_LIMIT
         end
         local p = apply[roleid]
@@ -337,7 +362,7 @@ function CMD.apply(roleid, guildid, level, vip)
         end
     else
         for k, v in ipairs(rank_list) do
-            if level >= v.apply_level and vip >= v.apply_vip and v.count < guild_member_count[v.level] then
+            if level >= v.apply_level and vip >= v.apply_vip and v.count < v.count_limit then
                 skynet.call(v.addr, "lua", "join", roleid)
                 v.count = v.count + 1
                 role_list[roleid] = v
@@ -393,7 +418,13 @@ end
 skynet.start(function()
     randomseed(floor(skynet.time()))
     error_code = sharedata.query("error_code")
-    guild_member_count = sharedata.query("guild_member_count")
+    guildtechdata = sharedata.query("guildtechdata")
+    local guild_tech_effect = sharedata.query("guild_tech_effect")
+    develop_skill = assert(guild_tech_effect[GUILD_EFFECT_DEVELOP], string.format("No guild skill effect %d.", GUILD_EFFECT_DEVELOP))
+    local stock_skill = assert(guild_tech_effect[GUILD_EFFECT_STOCK], string.format("No guild skill effect %d.", GUILD_EFFECT_STOCK))
+    stock_skill_id = stock_skill.id
+    local expdata = sharedata.query("expdata")
+    level_1_exp = expdata[1]
     server_mgr = skynet.queryservice("server_mgr")
     local master = skynet.queryservice("dbmaster")
     local guilddb = skynet.call(master, "lua", "get", "guilddb")

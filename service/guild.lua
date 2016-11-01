@@ -18,13 +18,14 @@ local random = math.random
 local guildtechdata
 local expdata
 local error_code
-local guild_member_count
 local data
+local skill
 local guilddb
 local role_mgr
 local offline_mgr
 local cs = queue()
 local a_chief = 0
+local stock_skill_id
 
 local guild_title
 local expel_content
@@ -39,6 +40,9 @@ local LOG_ADD_MEMBER = 1
 local LOG_PROMOTE = 2
 local LOG_SKILL = 3
 local LOG_CONTRIBUTE = 4
+
+local RAND_FACTOR = 10000
+local GUILD_EFFECT_DEVELOP = 1
 
 local CMD = {}
 
@@ -122,9 +126,17 @@ local function add(roleid, pos)
     return m, l
 end
 
-function CMD.open(info, delay)
+function CMD.open(info, sid, delay)
     randomseed(floor(skynet.time()))
     data = info
+    stock_skill_id = sid
+    skill = {}
+    for k, v in pairs(info.skill) do
+        skill[k] = {
+            v,
+            assert(guildtechdata[k], string.format("No guild tech data %d.", k)),
+        }
+    end
     for k, v in pairs(data.member) do
         if v.pos == POS_A_CHIEF then
             a_chief = a_chief + 1
@@ -136,7 +148,6 @@ function CMD.open(info, delay)
     guildtechdata = sharedata.query("guildtechdata")
     expdata = sharedata.query("expdata")
     error_code = sharedata.query("error_code")
-    guild_member_count = sharedata.query("guild_member_count")
     local master = skynet.queryservice("dbmaster")
     guilddb = skynet.call(master, "lua", "get", "guilddb")
     role_mgr = skynet.queryservice("role_mgr")
@@ -165,7 +176,7 @@ function CMD.accept(chief, roleid)
     if not data.apply[roleid] then
         return error_code.TARGET_NOT_APPLY_GUILD
     end
-    if data.count >= guild_member_count[data.level] then
+    if data.count >= data.count_limit then
         return error_code.GUILD_MEMBER_LIMIT
     end
     local range = {}
@@ -197,8 +208,7 @@ function CMD.accept_all(chief)
     if m.pos ~= POS_CHIEF and m.pos ~= POS_A_CHIEF then
         return error_code.NO_GUILD_PERMIT
     end
-    local limit_count = guild_member_count[data.level]
-    if data.count >= limit_count then
+    if data.count >= data.count_limit then
         return error_code.GUILD_MEMBER_LIMIT
     end
     local a = {}
@@ -216,7 +226,7 @@ function CMD.accept_all(chief)
         end
         table.sort(ta, predict)
         local len = #ta
-        local d = limit_count - data.count
+        local d = data.count_limit - data.count
         if len > d then
             len = d
         end
@@ -583,30 +593,25 @@ function CMD.upgrade_skill(roleid, use, rmb, id)
     if not m then
         return error_code.NOT_GUILD_MEMBER
     end
-    local sd = guildtechdata[id]
-    if not sd then
+    local s = skill[id]
+    if not s then
         return error_code.ERROR_GUILD_SKILL
     end
-    local s = data.skill[id]
-    if not s then
-        s = {
-            id = id,
-            exp = 0,
-            level = 1,
-            status = 0,
-        }
-        data.skill[id] = s
+    local sv = s[1]
+    local sd = s[2]
+    if sv.level >= sd.uplimit then
+        return error_code.GUILD_SkILL_UPLIMIT
     end
     local mu = {id=roleid}
     local mul = 1
     local ur
-    if use and s.status > 0 then
+    if use and sv.status > 0 then
         ur = 100 * si.status
         if ur < rmb then
             return error_code.ROLE_RMB_LIMIT
         end
-        mul = 10 * s.status
-        s.status = 0
+        mul = 10 * sv.status
+        sv.status = 0
     else
         if m.explore < 100 then
             return error_code.GUILD_EXPLORE_LIMIT
@@ -614,36 +619,49 @@ function CMD.upgrade_skill(roleid, use, rmb, id)
         m.explore = m.explore - 100
         mu.explore = m.explore
     end
-    m.contribute = m.contribute + 10 * mul
+    local addexp = 10 * mul
+    m.contribute = m.contribute + addexp
     mu.contribute = m.contribute
     m.active = m.active + mul
     mu.active = m.active
     data.active = data.active + mul
-    local addexp = 10 * mul
-    s.exp = s.exp + addexp
-    local e = assert(expdata[s.level], string.format("No exp data %d.", s.level))
-    while true do
-        if s.exp < e[sd.exp] then
+    sv.exp = sv.exp + addexp
+    local ol = sv.level
+    local nl = ol + 1
+    local e = assert(expdata[nl], string.format("No exp data %d.", nl))[sd.exp]
+    while e > 0 do
+        if sv.exp < e then
             break
         end
-        s.level = s.level + 1
-        e = assert(expdata[s.level], string.format("No exp data %d.", s.level))
+        sv.level = nl
+        nl = nl + 1
+        e = assert(expdata[nl], string.format("No exp data %d.", nl))[sd.exp]
     end
-    if mul == 1 and s.status == 0 then
-        local r = random(base.RAND_FACTOR)
+    if mul == 1 and sv.status == 0 then
+        local r = random(RAND_FACTOR)
         if r <= 500 then
-            s.status = 2
+            sv.status = 2
         elseif r <= 1500 then
-            s.status = 1
+            sv.status = 1
         end
     end
     local update = {
         info = {active=data.active},
         member = {mu},
-        skill = {s},
+        skill = {sv},
     }
     CMD.broadcast("update_user", {update={guild=update}}, roleid)
-    return error_code.OK, update, ur
+    local cl
+    if sd.effectType == GUILD_EFFECT_DEVELOP and ol ~= sv.level then
+        data.count_limit = sv.level * sd.perlevel
+        cl = data.count_limit
+    end
+    return error_code.OK, update, addexp, ur, cl
+end
+
+function CMD.stock_count()
+    local s = skill[stock_skill_id]
+    return 1 + s[1].level * s[2].perlevel
 end
 
 function CMD.shutdown()

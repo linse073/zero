@@ -11,6 +11,9 @@ local assert = assert
 local string = string
 local floor = math.floor
 local table = table
+local math = math
+local randomseed = math.randomseed
+local random = math.random
 
 local guildtechdata
 local expdata
@@ -120,6 +123,7 @@ local function add(roleid, pos)
 end
 
 function CMD.open(info, delay)
+    randomseed(floor(skynet.time()))
     data = info
     for k, v in pairs(data.member) do
         if v.pos == POS_A_CHIEF then
@@ -460,7 +464,11 @@ function CMD.pack_info()
     for k, v in pairs(data.member) do
         m[#m+1] = v
     end
-    return {info=info, log=data.log, member=m}
+    local s = {}
+    for k, v in pairs(data.skill) do
+        s[#s+1] = v
+    end
+    return {info=info, log=data.log, member=m, skill=s}
 end
 
 function CMD.broadcast(msg, info, exclude)
@@ -589,7 +597,7 @@ function CMD.upgrade_skill(roleid, use, rmb, id)
         }
         data.skill[id] = s
     end
-    local update = {id=roleid}
+    local mu = {id=roleid}
     local mul = 1
     local ur
     if use and s.status > 0 then
@@ -604,19 +612,38 @@ function CMD.upgrade_skill(roleid, use, rmb, id)
             return error_code.GUILD_EXPLORE_LIMIT
         end
         m.explore = m.explore - 100
-        update.explore = m.explore
+        mu.explore = m.explore
     end
     m.contribute = m.contribute + 10 * mul
-    update.contribute = m.contribute
+    mu.contribute = m.contribute
     m.active = m.active + mul
-    update.active = m.active
+    mu.active = m.active
     data.active = data.active + mul
     local addexp = 10 * mul
+    s.exp = s.exp + addexp
     local e = assert(expdata[s.level], string.format("No exp data %d.", s.level))
     while true do
-        if s.exp < e[] then
+        if s.exp < e[sd.exp] then
+            break
+        end
+        s.level = s.level + 1
+        e = assert(expdata[s.level], string.format("No exp data %d.", s.level))
+    end
+    if mul == 1 and s.status == 0 then
+        local r = random(base.RAND_FACTOR)
+        if r <= 500 then
+            s.status = 2
+        elseif r <= 1500 then
+            s.status = 1
         end
     end
+    local update = {
+        info = {active=data.active},
+        member = {mu},
+        skill = {s},
+    }
+    CMD.broadcast("update_user", {update={guild=update}}, roleid)
+    return error_code.OK, update, ur
 end
 
 function CMD.shutdown()

@@ -326,4 +326,24 @@ function proc.get_apply(msg)
     return "apply_info", {info=a}
 end
 
+function proc.upgrade_guild_skill(msg)
+    if not data.guild then
+        error{code = error_code.NOT_JOIN_GUILD}
+    end
+    local user = data.user
+    local p = update_user()
+    local r, update, rmb
+    proc_queue(cs, function()
+        local r, update, rmb = skynet.call(data.guild, "lua", "upgrade_skill", user.id, msg.rmb, user.rmb, msg.id)
+        if r ~= error_code.OK then
+            error{code = r}
+        end
+        if rmb then
+            role.add_rmb(p, -rmb)
+        end
+    end)
+    p.guild = update
+    return "update_user", {update=p}
+end
+
 return guild

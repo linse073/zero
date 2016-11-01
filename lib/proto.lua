@@ -32,6 +32,7 @@ local msg = {
     [2021] = "guild_info",
     [2022] = "guild_rank_info",
     [2023] = "guild_all",
+    [2024] = "guild_skill",
 
     [2100] = "get_account_info",
     [2101] = "create_user",
@@ -141,6 +142,7 @@ local msg = {
     [3421] = "get_apply",
     [3222] = "apply_info",
     [3223] = "guild_icon",
+    [3224] = "upgrade_guild_skill",
 }
 local name_msg = {}
 

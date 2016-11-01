@@ -201,6 +201,13 @@
     time 5 : integer
 }
 
+.guild_skill {
+    id 0 : integer
+    exp 1 : integer
+    level 2 : integer
+    status 3 : integer
+}
+
 .guild_info {
     id 0 : integer
     name 1 : string
@@ -235,6 +242,7 @@
     info 0 : guild_info
     log 1 : *guild_log
     member 2 : *guild_member
+    skill 3 : *guild_skill
 }
 
 .user_all {
@@ -715,4 +723,9 @@
 
 .guild_icon {
     icon 0 : string
+}
+
+.upgrade_guild_skill {
+    id 0 : integer
+    rmb 1 : boolean
 }

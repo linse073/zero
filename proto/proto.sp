@@ -480,6 +480,10 @@
     explore 0 : integer
 }
 
+.add_contribute {
+    contribute 0 : integer
+}
+
 .upgrade_passive {
     id 0 : integer
     skillid 1 : integer

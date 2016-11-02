@@ -166,11 +166,11 @@ function proc.test_charge(msg)
 end
 
 function proc.reset_online_award(msg)
-    if data.user.gm_level == 0 then
+    local user = data.user
+    if user.gm_level == 0 then
         error{code = error_code.ROLE_NO_PERMIT}
     end
     local p = update_user()
-    local user = data.user
     user.online_award_time = msg.time
     p.user.online_award_time = msg.time
     return "update_user", {update=p}
@@ -193,6 +193,16 @@ function proc.add_guild_explore(msg)
     end
     local update = skynet.call(data.guild, "lua", "explore", user.id, msg.explore)
     return "update_user", {update={guild=update}}
+end
+
+function proc.add_contribute(msg)
+    local user = data.user
+    if user.gm_level == 0 then
+        error{code = error_code.ROLE_NO_PERMIT}
+    end
+    local p = update_user()
+    role.add_contribute(p, msg.contribute)
+    return "update_user", {update=p}
 end
 
 return gm

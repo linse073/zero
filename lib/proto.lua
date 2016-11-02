@@ -75,6 +75,7 @@ local msg = {
     [2609] = "reset_online_award",
     [2610] = "test_update_day",
     [2611] = "add_guild_explore",
+    [2612] = "add_contribute",
 
     [2700] = "query_rank",
     [2701] = "rank_list",

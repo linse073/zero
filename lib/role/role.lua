@@ -561,6 +561,9 @@ function role.repair(user, now)
     if not user.guild_item then
         user.guild_item = {}
     end
+    if not user.first_charge then
+        user.first_charge = {}
+    end
 end
 
 function role.action(otype, info)
@@ -574,10 +577,10 @@ end
 function role.charge(num)
     local user = data.user
     local t
-    if user.charge == 0 then
-        t = base.REWARD_ACTION_FIRST_CHARGE
-    else
+    if user.first_charge[num] then
         t = base.REWARD_ACTION_CHARGE
+    else
+        t = base.REWARD_ACTION_FIRST_CHARGE
     end
     local r = type_reward[t][num]
     if not r then
@@ -587,6 +590,8 @@ function role.charge(num)
     role.get_reward(p, r)
     user.charge = user.charge + num
     p.user.charge = user.charge
+    user.first_charge[num] = true
+    p.first_charge = {num}
     local vip = 0
     for k, v in ipairs(vip_level) do
         if user.charge < v.price then
@@ -748,6 +753,7 @@ function proc.create_user(msg)
         week_day = util.week_time(now),
         contribute = 0,
         guild_item = {},
+        first_charge = {},
 
         item = {},
         card = {},
@@ -867,6 +873,13 @@ local function enter_game(msg)
     end
     if #pack > 0 then
         ret.stage_award = pack
+    end
+    local first_charge = {}
+    for k, v in pairs(user.first_charge) do
+        first_charge[#first_charge+1] = k
+    end
+    if #first_charge > 0 then
+        ret.first_charge = first_charge
     end
     if user.trade_watch_count > 0 then
         local wpack = {}

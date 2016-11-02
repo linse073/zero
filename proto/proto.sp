@@ -270,6 +270,7 @@
     guild 12 : guild_all
     area_guild 13 : *area_guild
     guild_item 14 : *item_count
+    first_charge 15 : *integer
 }
 
 .info_all {

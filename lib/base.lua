@@ -1,7 +1,7 @@
 
 local base = {
     MAX_ROLE = 4,
-    MAX_LEVEL = 100,
+    MAX_LEVEL = 50,
     RAND_FACTOR = 10000,
     FLOAT_FACTOR = 1000,
 

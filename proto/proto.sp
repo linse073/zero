@@ -48,6 +48,7 @@
     patch_sign_in 29 : integer
     week_day 30 : integer
     contribute 31 : integer
+    charge_award 32 : boolean
 }
 
 .other_info {

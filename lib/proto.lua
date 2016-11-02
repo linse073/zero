@@ -92,6 +92,7 @@ local msg = {
     [2802] = "online_award",
     [2803] = "add_offline_exp",
     [2804] = "get_offline_exp",
+    [2805] = "first_charge_award",
 
     [2900] = "explore",
     [2901] = "quit_explore",

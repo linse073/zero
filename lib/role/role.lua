@@ -564,6 +564,9 @@ function role.repair(user, now)
     if not user.first_charge then
         user.first_charge = {}
     end
+    if not user.charge_award then
+        user.charge_award = false
+    end
 end
 
 function role.action(otype, info)
@@ -754,6 +757,7 @@ function proc.create_user(msg)
         contribute = 0,
         guild_item = {},
         first_charge = {},
+        charge_award = false,
 
         item = {},
         card = {},
@@ -1203,6 +1207,22 @@ function proc.get_offline_exp(msg)
     user.offline_exp_time = now
     pu.offline_exp_time = now
     role.add_exp(p, exp)
+    return "update_user", {update=p}
+end
+
+function proc.first_charge_award(msg)
+    local user = data.user
+    if user.charge == 0 then
+        error{code = error_code.ROLE_CHARGE_LIMIT}
+    end
+    if user.charge_award then
+        error{code = error_code.ALREADY_GET_STAGE_AWRAD}
+    end
+    local p = update_user()
+    local reward = assert(type_reward[base.REWARD_ACTION_VIP][1], string.format("No first charge reward data %d.", 1))
+    role.get_reward(p, reward)
+    user.charge_award = true
+    p.user.charge_award = true
     return "update_user", {update=p}
 end
 

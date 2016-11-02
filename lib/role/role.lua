@@ -1125,10 +1125,20 @@ function proc.exchange(msg)
         end
         role.add_rmb(p, -e.diamondToGold)
     end)
-    role.add_money(p, 10000)
+    local mul = 1
+    if e.diamondTotalRatio > 0 then
+        local r = random(e.diamondTotalRatio)
+        for k, v in ipairs(e.diamondRatio) do
+            if r <= v[1] then
+                mul = v[2]
+                break
+            end
+        end
+    end
+    role.add_money(p, 10000*mul)
     user.exchange_count = ec
     p.user.exchange_count = ec
-    return "update_user", {update=p}
+    return "update_user", {update=p, exchange_crit=mul}
 end
 
 function proc.online_award(msg)

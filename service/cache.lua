@@ -307,6 +307,12 @@ skynet.start(function()
             {v.compos1+v.compos2, 2},
             {v.compos1+v.compos2+v.compos5, 5},
         }
+        v.diamondTotalRatio = v.diamondToGold1 + v.diamondToGold2 + v.diamondToGold5
+        v.diamondRatio = {
+            {v.diamondToGold1, 1},
+            {v.diamondToGold1+v.diamondToGold2, 2},
+            {v.diamondToGold1+v.diamondToGold2+v.diamondToGold5, 5},
+        }
     end
 
     local area_search = {}

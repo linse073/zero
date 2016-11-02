@@ -292,6 +292,7 @@
     dismiss_guild 8 : boolean
     quit_guild 9 : boolean
     decay_active 10 : boolean
+    exchange_crit 11 : integer
 }
 
 .update_day {

@@ -1030,14 +1030,15 @@ function proc.query_sell(msg)
                 end
                 if not m then
                     local price = t1[len].price * random(d.priceUp1, d.priceUp2) // base.RAND_FACTOR
+                    local count = random(d.officialNumber1, d.officialNumber2)
                     m = {
                         itemid = msg.id,
                         price = price,
-                        num = d.officialNumber,
+                        num = count,
                     }
                     local n = {
                         price = price,
-                        num = d.officialNumber,
+                        num = count,
                     }
                     len = len + 1
                     t1[len] = n
@@ -1050,19 +1051,21 @@ function proc.query_sell(msg)
             local t1 = {}
             local t2 = {}
             local price = d.officialPrice
+            local count = random(d.officialNumber1, d.officialNumber2)
             for i = 1, base.TRADE_PAGE_ITEM do
                 p[#p+1] = {
                     itemid = msg.id,
                     price = price,
-                    num = d.officialNumber,
+                    num = count,
                 }
                 local n = {
                     price = price,
-                    num = d.officialNumber,
+                    num = count,
                 }
                 t1[i] = n
                 t2[price] = n
                 price = price * random(d.priceUp1, d.priceUp2) // base.RAND_FACTOR
+                count = random(d.officialNumber1, d.officialNumber2)
             end
             t = {t1, t2}
             user.trade_item[msg.id] = t

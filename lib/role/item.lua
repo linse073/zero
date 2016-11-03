@@ -1118,6 +1118,13 @@ function proc.sell_item(msg)
             error{code = error_code.HIGHER_ITEM_PRICE}
         end
         local p = update_user()
+        local user = data.user
+        proc_queue(cs, function()
+            if user.money < 500 then
+                error{code = error_code.ROLE_MONEY_LIMIT}
+            end
+            role.add_money(p, -500)
+        end)
         item.sell(p, i, msg.price)
         skynet.call(trade_mgr, "lua", "add", iv, d)
         skynet.call(save_trade, "lua", "update", iv.id, iv)
@@ -1141,6 +1148,13 @@ function proc.sell_item(msg)
             error{code = error_code.ITEM_NUM_LIMIT}
         end
         local p = update_user()
+        local user = data.user
+        proc_queue(cs, function()
+            if user.money < 500 then
+                error{code = error_code.ROLE_MONEY_LIMIT}
+            end
+            role.add_money(p, -500)
+        end)
         local is = item.sell_by_itemid(p, msg.itemid, msg.num, msg.price)
         skynet.call(trade_mgr, "lua", "batch_add", is, d)
         skynet.call(save_trade, "lua", "batch_update", is, true)
@@ -1211,6 +1225,21 @@ local function buy_update(r, id, num, u)
         r[id] = t
     end
 end
+local function get_tax(price)
+    local tax
+    if price > 10000 then
+        tax = 3000
+        if price > 50000 then
+            tax = tax + 14000
+            tax = tax + (price - 50000) * 4 // 10
+        else
+            tax = tax + (price - 10000) * 35 // 100
+        end
+    else
+        tax = price * 3 // 10
+    end
+    return tax
+end
 function proc.buy_item(msg)
     if msg.id then
         local i = skynet.call(trade_mgr, "lua", "get", msg.id)
@@ -1244,13 +1273,14 @@ function proc.buy_item(msg)
             item_info = {iv},
         }
         mail.add(m, p)
+        local tax = get_tax(iv.price)
         local om = {
             type = base.MAIL_TYPE_TRADE,
             time = now,
             title = trade_title,
-            content = sell_content,
+            content = string.format(sell_content, tax*iv.num),
             item_info = {
-                {itemid=base.MONEY_ITEM, num=total_price},
+                {itemid=base.MONEY_ITEM, num=(iv.price-tax)*iv.num},
             },
         }
         skynet.call(offline_mgr, "lua", "add", "mail", iv.owner, om)
@@ -1327,14 +1357,15 @@ function proc.buy_item(msg)
             },
         }
         mail.add(m, p)
+        local tax = get_tax(msg.price)
         for k, v in pairs(r) do
             local om = {
                 type = base.MAIL_TYPE_TRADE,
                 time = now,
                 title = trade_title,
-                content = sell_content,
+                content = string.format(sell_content, tax*v[1]),
                 item_info = {
-                    {itemid=base.MONEY_ITEM, num=msg.price*v[1]},
+                    {itemid=base.MONEY_ITEM, num=(msg.price-tax)*v[1]},
                 },
             }
             skynet.call(offline_mgr, "lua", "add", "mail", k, om)

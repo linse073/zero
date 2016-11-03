@@ -193,7 +193,8 @@ local function update_day(user, od, nd, owd, nwd)
     user.arena_count = 0
     user.charge_arena = 0
     local update_sign_in = false
-    if od // base.MAX_SIGN_IN ~= nd // base.MAX_SIGN_IN then
+    local dd = game_day(user.create_time)
+    if (od - dd) // base.MAX_SIGN_IN ~= (nd - dd) // base.MAX_SIGN_IN then
         local sign_in = user.sign_in
         for i = 1, base.MAX_SIGN_IN do
             sign_in[i] = false
@@ -249,10 +250,10 @@ function role.update_day(od, nd, owd, nwd)
 end
 
 function role.test_update_day()
+    local user = data.user
     local now = floor(skynet.time())
     local nd = game_day(now)
     local nwd = util.week_time(now)
-    local user = data.user
     local pt, update_sign_in, arena_award, mall_random, mall_week, mall_time = update_day(user, nd, nd, nwd, nwd)
     return "update_day", {
         task = pt, 
@@ -567,6 +568,9 @@ function role.repair(user, now)
     if not user.charge_award then
         user.charge_award = false
     end
+    if not user.create_time then
+        user.create_time = start_utc_time
+    end
 end
 
 function role.action(otype, info)
@@ -758,6 +762,7 @@ function proc.create_user(msg)
         guild_item = {},
         first_charge = {},
         charge_award = false,
+        create_time = now,
 
         item = {},
         card = {},
@@ -967,9 +972,10 @@ function proc.move(msg)
 end
 
 function proc.sign_in(msg)
-    local index = game_day(floor(skynet.time())) % base.MAX_SIGN_IN + 1
-    assert(index<=base.MAX_SIGN_IN, string.format("Illegal sign in index %d.", index))
     local user = data.user
+    local now = floor(skynet.time())
+    local index = game_day(now, user.create_time) % base.MAX_SIGN_IN + 1
+    -- assert(index<=base.MAX_SIGN_IN, string.format("Illegal sign in index %d.", index))
     local sign_in = user.sign_in
     local pindex
     local p = update_user()

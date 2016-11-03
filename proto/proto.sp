@@ -49,6 +49,7 @@
     week_day 30 : integer
     contribute 31 : integer
     charge_award 32 : boolean
+    create_time 33 : integer
 }
 
 .other_info {

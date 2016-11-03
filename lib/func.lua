@@ -20,9 +20,14 @@ end)
 
 local func = {}
 
-function func.game_day(t)
+function func.game_day(t, start_time)
+    if start_time then
+        start_time = util.day_time(start_time)
+    else
+        start_time = start_routine_time
+    end
     local st = util.day_time(t)
-    return (st - start_routine_time) // day_second
+    return (st - start_time) // day_second
 end
 
 function func.gen_itemid(prof, level, itemtype, quality)

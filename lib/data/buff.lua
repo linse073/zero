@@ -22118,7 +22118,7 @@ local datas = {
 		},
 		maxHp_HarmRatio = 0,
 		addStatus = 2,
-		effectPath = "stage_031",
+		effectPath = "state_031",
 		statusData = 0,
 		repel = 0,
 		repelTime = 0,

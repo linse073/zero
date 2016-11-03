@@ -1166,18 +1166,19 @@ end
 function proc.add_offline_exp(msg)
     local user = data.user
     local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
+    local limit_count = l.expLimit + 1
+    if user.offline_exp_count >= limit_count then
+        error{code = error_code.OFFLINE_EXP_COUNT_LIMIT}
+    end
     local count = user.offline_exp_count + 1
     local p = update_user()
-    if count > l.expLimit then
-        local dc = count - l.expLimit
-        local e = assert(expdata[dc], string.format("No exp data %d.", dc))
-        proc_queue(cs, function()
-            if user.rmb < e.energyPrice then
-                error{code = error_code.ROLE_RMB_LIMIT}
-            end
-            role.add_rmb(p, -e.energyPrice)
-        end)
-    end
+    local e = assert(expdata[count], string.format("No exp data %d.", count))
+    proc_queue(cs, function()
+        if user.rmb < e.energyPrice then
+            error{code = error_code.ROLE_RMB_LIMIT}
+        end
+        role.add_rmb(p, -e.energyPrice)
+    end)
     local now = floor(skynet.time())
     local dt = now - user.offline_exp_time
     if dt > base.OFFLINE_EXP_TIME then

@@ -1006,7 +1006,7 @@ function proc.query_sell(msg)
         error{code = error_code.ITEM_ID_NOT_EXIST}
     end
     local p = skynet.call(trade_mgr, "lua", "query", msg.id)
-    if d.officialSale == 1 and d.officialNumber > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
+    if d.officialSale == 1 and d.officialNumber1 > 0 and d.officialNumber2 > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
         local user = data.user
         local t = user.trade_item[msg.id]
         if t then
@@ -1279,7 +1279,7 @@ function proc.buy_item(msg)
             end
             tn, del, ln, u = skynet.call(trade_mgr, "lua", "del_by_itemid", msg.itemid, msg.price, msg.num)
             if tn < msg.num then
-                if d.officialSale == 1 and d.officialNumber > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
+                if d.officialSale == 1 and d.officialNumber1 > 0 and d.officialNumber2 > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
                     local t = user.trade_item[msg.itemid]
                     if t then
                         local n = t[2][msg.price]

@@ -84,7 +84,7 @@ end
 
 function CMD.get(rank)
     local r = skynet.call(rankdb, "lua", "zrange", "arena", rank, rank)
-    return r[1]
+    return tonumber(r[1])
 end
 
 skynet.start(function()

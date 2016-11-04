@@ -26,6 +26,7 @@ local math = math
 local floor = math.floor
 local randomseed = math.randomseed
 local random = math.random
+local tonumber = tonumber
 
 local update_user = util.update_user
 local merge_table = util.merge_table

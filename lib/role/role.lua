@@ -57,6 +57,7 @@ local offline_mgr
 local trade_mgr
 local rank_mgr
 local guild_mgr
+local arena_rank
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 
@@ -90,6 +91,7 @@ skynet.init(function()
     trade_mgr = skynet.queryservice("trade_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
     guild_mgr = skynet.queryservice("guild_mgr")
+    arena_rank = skynet.queryservice("arena_rank")
 
     charge_title = func.get_string(198000007)
     charge_content = func.get_string(198000008)
@@ -934,6 +936,10 @@ local function enter_game(msg)
     end
     if #ag > 0 then
         ret.area_guild = ag
+    end
+    local kid = skynet.call(arena_rank, "lua", "get", 0)
+    if kid then
+        ret.king = skynet.call(role_mgr, "lua", "get_rank_info", kid)
     end
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)

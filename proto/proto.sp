@@ -273,6 +273,7 @@
     area_guild 13 : *area_guild
     guild_item 14 : *item_count
     first_charge 15 : *integer
+    king 16 : rank_info
 }
 
 .info_all {

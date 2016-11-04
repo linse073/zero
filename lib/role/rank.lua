@@ -415,7 +415,7 @@ function proc.slave_rank(msg)
         error{code = error_code.ERROR_SLAVE_RANK}
     end
     local user = data.user
-    local cr, cs, r = skynet.call(sr, "lua", "query", user.id, 0, 99)
+    local cr, cs, r = skynet.call(sr, "lua", "query", user.id, 0, 49)
     cr = cr + 1
     cs = -tonumber(cs)
     local list = {}

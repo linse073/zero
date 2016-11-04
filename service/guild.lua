@@ -615,7 +615,7 @@ function CMD.upgrade_skill(roleid, use, rmb, id)
     local mul = 1
     local ur
     if use and sv.status > 0 then
-        ur = 100 * si.status
+        ur = 100 * sv.status
         if ur < rmb then
             return error_code.ROLE_RMB_LIMIT
         end

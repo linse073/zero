@@ -143,9 +143,9 @@ local msg = {
     [3419] = "guild_demise",
     [3420] = "quit_guild",
     [3421] = "get_apply",
-    [3222] = "apply_info",
-    [3223] = "guild_icon",
-    [3224] = "upgrade_guild_skill",
+    [3422] = "apply_info",
+    [3423] = "guild_icon",
+    [3424] = "upgrade_guild_skill",
 }
 local name_msg = {}
 

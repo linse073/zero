@@ -83,12 +83,12 @@ end
 function rank.add(p)
     local user = data.user
     local info = data.rank_info
-    local arena_rank = skynet.call(arena_rank, "lua", "add", info.id)
+    local ar = skynet.call(arena_rank, "lua", "add", info.id)
     skynet.call(fight_point_rank, "lua", "add", info.id, info.fight_point)
-    user.arena_rank = arena_rank
-    info.arena_rank = arena_rank
+    user.arena_rank = ar
+    info.arena_rank = ar
     local pu = p.user
-    pu.arena_rank = arena_rank
+    pu.arena_rank = ar
     local now = floor(skynet.time())
     if user.arena_cd == 0 then
         user.arena_cd = now - base.ARENA_CHALLENGE_TIME
@@ -112,11 +112,11 @@ end
 function rank.update_arena(p)
     local user = data.user
     local info = data.rank_info
-    local arena_rank = skynet.call(arena_rank, "lua", "add", info.id)
-    user.arena_rank = arena_rank
-    info.arena_rank = arena_rank
+    local ar = skynet.call(arena_rank, "lua", "add", info.id)
+    user.arena_rank = ar
+    info.arena_rank = ar
     local pu = p.user
-    pu.arena_rank = arena_rank
+    pu.arena_rank = ar
 end
 
 function rank.update_day()
@@ -317,11 +317,17 @@ function proc.end_challenge(msg)
         local r1 = skynet.call(arena_rank, "lua", "update", user.id, msg.id)
         local p = update_user()
         if r1 then
+            local info = data.rank_info
             user.arena_rank = r1 + 1
+            info.arena_rank = user.arena_rank
             p.user.arena_rank = user.arena_rank
             local agent = skynet.call(role_mgr, "lua", "get", msg.id)
             if agent then
                 skynet.call(agent, "lua", "update_rank")
+            end
+            if user.arena_rank == 1 then
+                skynet.call(role_mgr, "broadcast", "update_user", {update={king=info}}, user.id)
+                p.king = info
             end
         end
         stage.finish()

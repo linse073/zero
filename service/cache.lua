@@ -256,6 +256,8 @@ skynet.start(function()
     end
 
     local original_card = {}
+    local class_card = {}
+    local normal_card = {}
     for k, v in pairs(carddata) do
         local original = original_card[k] or k
         local d = v
@@ -264,6 +266,11 @@ skynet.start(function()
             d = carddata[d.evolveId]
         until not d
 
+        if v.cardType == base.CARD_TYPE_CLASS then
+            class_card[v.cardAttr] = v
+        elseif v.cardType == base.CARD_TYPE_NORMAL then
+            normal_card[v.id] = v
+        end
         v.starLvExp = assert(expdata[v.starLv], string.format("No exp data %d.", v.starLv))
         if v.evolveId > 0 then
             v.evolveItemData = assert(itemdata[v.evolveItem], string.format("No item data %d.", v.evolveItem))
@@ -416,6 +423,8 @@ skynet.start(function()
     sharedata.new("achi_task", achi_task)
     sharedata.new("week_task", week_task)
     sharedata.new("original_card", original_card)
+    sharedata.new("class_card", class_card)
+    sharedata.new("normal_card", normal_card)
     sharedata.new("type_reward", type_reward)
     sharedata.new("area_search", area_search)
     sharedata.new("area_stage", area_stage)

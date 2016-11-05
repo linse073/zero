@@ -434,7 +434,8 @@ function role.calc_fight(prop)
         local factor = base.PROP_FACTOR[k] or 1
         fight_point = fight_point + v * factor
     end
-    return floor(fight_point)
+    fight_point = fight_point / 6.5
+    return fight_point
 end
 
 function role.equip_fight(e)
@@ -443,7 +444,7 @@ function role.equip_fight(e)
         prop[v] = 0
     end
     item.equip_prop(e, prop)
-    return role.calc_fight(prop)
+    return floor(role.calc_fight(prop))
 end
 
 function role.init_prop()
@@ -460,7 +461,7 @@ function role.init_prop()
             item.equip_prop(e, prop)
         end
     end
-    user.fight_point = role.calc_fight(prop)
+    user.fight_point = floor(role.calc_fight(prop)+prop.attack*0.5*(1+card.calc_fight()))
     data.suser.fight_point = user.fight_point
     data.rank_info.fight_point = user.fight_point
     data.prop = prop

@@ -81,6 +81,7 @@ local base = {
     MAX_EQUIP_CARD = 4,
     MAX_CARD_POSITION_TYPE = 2,
     MAX_CARD_STAR_LEVEL = 15,
+    STUNT_CARD_POS = 5,
 
     CARD_TYPE_NORMAL = 1,
     CARD_TYPE_CLASS = 2,

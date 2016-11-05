@@ -23,6 +23,7 @@ local expdata
 local passivedata
 local itemdata
 local original_card
+local class_card
 local base
 local error_code
 local cs
@@ -38,6 +39,7 @@ skynet.init(function()
     passivedata = share.passivedata
     itemdata = share.itemdata
     original_card = share.original_card
+    class_card = share.class_card
     base = share.base
     error_code = share.error_code
     cs = share.cs
@@ -258,6 +260,76 @@ function card.use(p, c, pos_type, pos)
         equip_card[pos] = c
     end
     pack[#pack+1] = {id=cv.id, pos=cv.pos}
+    card.change()
+end
+
+function card.change()
+    local stuntAttr
+    local level
+    local use = data.equip_card[1]
+    local first = use[1]
+    if first then
+        local attr = first[2].cardAttr
+        level = first[1].level
+        local sameAttr = true
+        for i = 2, base.MAX_EQUIP_CARD do
+            local card = use[i]
+            if not card or card[2].cardAttr ~= attr then
+                sameAttr = false
+                break
+            end
+            level = level + card[1].level
+        end
+        if sameAttr then
+            stuntAttr = attr
+        end
+    end
+    local oldStunt = use[base.STUNT_CARD_POS]
+    local oldAttr
+    local oldLevel
+    if oldStunt then
+        oldAttr = oldStunt.attr
+        oldLevel = oldStunt.total_level
+    end
+    if oldAttr ~= stuntAttr or (stuntAttr and oldLevel ~= level) then
+        local stuntCard
+        if stuntAttr then
+            local cardData = class_card[stuntAttr]
+            if cardData then
+                stuntCard = {
+                    cardid = cardData.id,
+                    data = cardData,
+                    total_level = level,
+                    attr = stuntAttr,
+                    level = level // base.MAX_EQUIP_CARD,
+                }
+            end
+        end
+        use[base.STUNT_CARD_POS] = stuntCard
+    end
+    -- TODO: change pvp stunt card
+end
+
+function card.calc_fight()
+    local fight_point = 0
+    local ec = data.equip_card[1]
+    for i = 1, base.MAX_EQUIP_CARD do
+        local c = ec[i]
+        if c then
+            local cv = c[1]
+            local cd = c[2]
+            local l = 0
+            for k, v in ipairs(cv.passive_skill) do
+                l = l + v.level
+            end
+            fight_point = fight_point+cd.fightPoint*(0.4+0.04*cv.level)*(1+l*0.015)
+        end
+    end
+    local stuntCard = ec[base.STUNT_CARD_POS]
+    if stuntCard then
+        fight_point = fight_point+stuntCard.data.fightPoint*(0.4+0.04*stuntCard.level)
+    end
+    return fight_point
 end
 
 --------------------------protocol process-----------------------
@@ -325,6 +397,16 @@ function proc.upgrade_card(msg)
     local pcard = p.card
     pcard[#pcard+1] = pc
     task.update(p, base.TASK_COMPLETE_UPGRADE_CARD, cv.cardid, 1)
+    local change = false
+    for i = 1, base.MAX_CARD_POSITION_TYPE do
+        if cv.pos[i] > 0 then
+            change = true
+            break
+        end
+    end
+    if change then
+        card.change()
+    end
     return "update_user", {update=p}
 end
 

@@ -852,6 +852,7 @@ local function enter_game(msg)
         last_login_time = now,
         card = card.rank_card(),
     }
+    local old_point = user.fight_point
     role.init_prop()
     local p = update_user()
     if card.rank_card_full() then
@@ -957,6 +958,17 @@ local function enter_game(msg)
         fight = stageid ~= nil,
     }
     skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
+    if old_point ~= user.fight_point then
+        task.update(p, base.TASK_COMPLETE_FIGHT_POINT, 0, 0, user.fight_point)
+        if user.arena_rank ~= 0 then
+            skynet.send(fight_point_rank, "lua", "update", user.id, user.fight_point)
+        end
+        if data.explore then
+            skynet.send(data.explore, "lua", "update", user.id, user.fight_point)
+        end
+        local sf = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_FIGHT)
+        skynet.call(sf, "lua", "update", user.id, user.fight_point)
+    end
     return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, rand_seed=seed}
 end
 function proc.enter_game(msg)

@@ -824,7 +824,10 @@ local function enter_game(msg)
     data.expdata = assert(expdata[user.level], string.format("No exp data %d.", user.level))
     local pid = npc.propertyId + user.level
     data.property = assert(propertydata[pid], string.format("No property data %d.", pid))
-    data.guild, data.guildid = skynet.call(guild_mgr, "lua", "get", user.id)
+    local si = skynet.call(guild_mgr, "lua", "get", user.id)
+    if si then
+        data.guild, data.guildid = si.addr, si.id
+    end
     for k, v in ipairs(module) do
         if v.enter then
             v.enter()
@@ -942,7 +945,12 @@ local function enter_game(msg)
     end
     local kid = skynet.call(arena_rank, "lua", "get", 0)
     if kid then
-        ret.king = skynet.call(role_mgr, "lua", "get_rank_info", kid)
+        local king = skynet.call(role_mgr, "lua", "get_rank_info", kid)
+        local ksi = skynet.call(guild_mgr, "lua", "get", kid)
+        if ksi then
+            king.guildid, king.guild_name, king.guild_icon = ksi.id, ksi.name, ksi.icon
+        end
+        ret.king = king
     end
     timer.add_routine("save_role", role.save_routine, 300)
     timer.add_day_routine("update_day", role.update_day)

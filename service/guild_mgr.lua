@@ -65,6 +65,7 @@ local function add(info)
     local si = {
         id = info.id,
         name = info.name,
+        icon = info.icon,
         addr = g,
         rank = info.rank,
         active = info.active,
@@ -272,10 +273,7 @@ function CMD.expel(chief, roleid)
 end
 
 function CMD.get(roleid)
-    local si = role_list[roleid]
-    if si then
-        return si.addr, si.id
-    end
+    return role_list[roleid]
 end
 
 function CMD.simple_info(id)

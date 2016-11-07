@@ -160,6 +160,7 @@ function proc.guild_icon(msg)
     if r ~= error_code.OK then
         error{code = r}
     end
+    skynet.call(guild_mgr, "lua", "update", data.guildid, "icon", msg.icon)
     local occupy_area = skynet.call(explore_mgr, "lua", "occupy_area", data.guildid)
     if occupy_area and not util.empty(occupy_area) then
         local gi = skynet.call(guild_mgr, "lua", "simple_info", data.guildid)

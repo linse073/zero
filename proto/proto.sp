@@ -159,6 +159,9 @@
     card 5 : *simple_card
     rank 6 : integer
     win 7 : boolean
+    guildid 8 : integer
+    guild_name 9 : integer
+    guild_icon 10 : string
 }
 
 .explore_info {

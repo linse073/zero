@@ -435,6 +435,10 @@ function proc.slave_rank(msg)
         if info then
             info.rank = i
             info.value = value
+            local si = skynet.call(guild_mgr, "lua", "get", roleid)
+            if si then
+                info.guildid, info.guild_name = si.id, si.name
+            end
             list[#list+1] = info
         end
     end

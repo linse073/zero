@@ -456,6 +456,8 @@ skynet.start(function()
         [base.TASK_COMPLETE_EXPLORE_GUIDE] = true,
         [base.TASK_COMPLETE_NEW_FUNCTION] = true,
         [base.TASK_COMPLETE_GUIDE_CARD] = true,
+        [base.TASK_COMPLETE_GUIDE_TRADE] = true,
+        [base.TASK_COMPLETE_GUIDE_GUILD] = true,
     })
 
     sharedata.new("stage_task", {

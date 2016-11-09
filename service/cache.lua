@@ -275,7 +275,7 @@ skynet.start(function()
                 if quality > 0 then
                     if v.soulType > 0 then
                         assert(card_soul[v.soulType], string.format("Error attribute %d soul rate.", v.soulType))
-                        assert(card_soul[v.soulType][quality], string.format("Error attribute %d quality % soul rate.", v.soulType, quality))
+                        assert(card_soul[v.soulType][quality], string.format("Error attribute %d quality %d soul rate.", v.soulType, quality))
                     end
                     rt[#rt+1] = {
                         type = base.BONUS_TYPE_SOUL,

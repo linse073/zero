@@ -165,16 +165,19 @@ end
 local function win(t, info, tinfo)
     local tdt = t - tinfo.start_time
     local money = data.money * tdt // 3600
-    money = money * data.lootRatio // RAND_FACTOR
+    local wmoney = money * data.lootRatio // RAND_FACTOR
     local num = tdt // BONUS_TIME
-    local bonus = 0
+    local wbonus = 0
+    local lbonus = 0
     for i = 1, num do
         local rnum = random(RAND_FACTOR)
         if rnum <= data.lootRatio then
-            bonus = bonus + 1
+            wbonus = wbonus + 1
+        else
+            lbonus = lbonus = 1
         end
     end
-    local m = mail_bonus(money, bonus, 0, 0, t, info.prof)
+    local m = mail_bonus(wmoney, wbonus, 0, 0, t, info.prof)
     m.content = string.format(explore_win, tinfo.name)
     m.win = true
     skynet.call(offline_mgr, "lua", "add", "mail", info.roleid, m)
@@ -198,9 +201,10 @@ local function win(t, info, tinfo)
         }}})
     end
     skynet.call(save_explore, "lua", "update", info.roleid, info)
+    local lmoney = money * data.loseKeepRatio // RAND_FACTOR
     local exp = data.exp * tdt // 3600
     local sp = data.sp * tdt // 3600
-    local tm = mail_bonus(0, 0, exp, sp, t, tinfo.prof)
+    local tm = mail_bonus(lmoney, lbonus, exp, sp, t, tinfo.prof)
     tm.content = string.format(explore_fail, info.name)
     tm.fail = true
     -- tm.finish = true
@@ -515,7 +519,7 @@ function CMD.quit(roleid)
                 rank_count = rank_count - 1
             end
             local t = floor(skynet.time())
-            local tdt = t - info.start_time
+            local tdt = (t - info.start_time) * data.quitKeepRatio // RAND_FACTOR
             local money = data.money * tdt // 3600
             local exp = data.exp * tdt // 3600
             local sp = data.sp * tdt // 3600

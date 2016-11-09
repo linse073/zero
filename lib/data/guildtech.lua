@@ -9,6 +9,7 @@ local datas = {
 		des = 114100001,
 		uplimit = 5,
 		exp = "guildTech2",
+		baseData = 0,
 		perlevel = 10,
 	},
 	[2100000002] = {
@@ -21,7 +22,8 @@ local datas = {
 		des = 114100002,
 		uplimit = 10,
 		exp = "guildTech1",
-		perlevel = 500,
+		baseData = 0,
+		perlevel = 300,
 	},
 	[2100000003] = {
 		id = 2100000003,
@@ -33,7 +35,8 @@ local datas = {
 		des = 114100003,
 		uplimit = 10,
 		exp = "guildTech1",
-		perlevel = 1000,
+		baseData = 0,
+		perlevel = 500,
 	},
 	[2100000004] = {
 		id = 2100000004,
@@ -43,9 +46,10 @@ local datas = {
 		iconPath = "icon/888.png",
 		preTech = 0,
 		des = 114100004,
-		uplimit = 10,
-		exp = "guildTech1",
-		perlevel = 50,
+		uplimit = 5,
+		exp = "guildTech2",
+		baseData = 200,
+		perlevel = 40,
 	},
 	[2100000005] = {
 		id = 2100000005,
@@ -57,6 +61,7 @@ local datas = {
 		des = 114100005,
 		uplimit = 5,
 		exp = "guildTech2",
+		baseData = 5,
 		perlevel = 1,
 	},
 	[2100000006] = {
@@ -69,6 +74,7 @@ local datas = {
 		des = 114100006,
 		uplimit = 5,
 		exp = "guildTech2",
+		baseData = 1,
 		perlevel = 1,
 	},
 	[2100000101] = {
@@ -81,6 +87,7 @@ local datas = {
 		des = 114100007,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100000102] = {
@@ -93,6 +100,7 @@ local datas = {
 		des = 114100008,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100000103] = {
@@ -105,6 +113,7 @@ local datas = {
 		des = 114100009,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 	[2100000201] = {
@@ -117,6 +126,7 @@ local datas = {
 		des = 114100010,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100000202] = {
@@ -129,6 +139,7 @@ local datas = {
 		des = 114100011,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100000203] = {
@@ -141,6 +152,7 @@ local datas = {
 		des = 114100012,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 	[2100000301] = {
@@ -153,6 +165,7 @@ local datas = {
 		des = 114100013,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100000302] = {
@@ -165,6 +178,7 @@ local datas = {
 		des = 114100014,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100000303] = {
@@ -177,6 +191,7 @@ local datas = {
 		des = 114100015,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 	[2100000401] = {
@@ -189,6 +204,7 @@ local datas = {
 		des = 114100016,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100000402] = {
@@ -201,6 +217,7 @@ local datas = {
 		des = 114100017,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100000403] = {
@@ -213,6 +230,7 @@ local datas = {
 		des = 114100018,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 	[2100000501] = {
@@ -225,6 +243,7 @@ local datas = {
 		des = 114100019,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100000502] = {
@@ -237,6 +256,7 @@ local datas = {
 		des = 114100020,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100000503] = {
@@ -249,6 +269,7 @@ local datas = {
 		des = 114100021,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 	[2100000601] = {
@@ -261,6 +282,7 @@ local datas = {
 		des = 114100022,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100000602] = {
@@ -273,6 +295,7 @@ local datas = {
 		des = 114100023,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100000603] = {
@@ -285,6 +308,7 @@ local datas = {
 		des = 114100024,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 	[2100000701] = {
@@ -297,6 +321,7 @@ local datas = {
 		des = 114100025,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100000702] = {
@@ -309,6 +334,7 @@ local datas = {
 		des = 114100026,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100000703] = {
@@ -321,6 +347,7 @@ local datas = {
 		des = 114100027,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 	[2100000801] = {
@@ -333,6 +360,7 @@ local datas = {
 		des = 114100028,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100000802] = {
@@ -345,6 +373,7 @@ local datas = {
 		des = 114100029,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100000803] = {
@@ -357,6 +386,7 @@ local datas = {
 		des = 114100030,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 	[2100000901] = {
@@ -369,6 +399,7 @@ local datas = {
 		des = 114100031,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100000902] = {
@@ -381,6 +412,7 @@ local datas = {
 		des = 114100032,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100000903] = {
@@ -393,6 +425,7 @@ local datas = {
 		des = 114100033,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 	[2100001001] = {
@@ -405,6 +438,7 @@ local datas = {
 		des = 114100034,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 100,
 	},
 	[2100001002] = {
@@ -417,6 +451,7 @@ local datas = {
 		des = 114100035,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 200,
 	},
 	[2100001003] = {
@@ -429,6 +464,7 @@ local datas = {
 		des = 114100036,
 		uplimit = 10,
 		exp = "guildTech1",
+		baseData = 0,
 		perlevel = 300,
 	},
 }

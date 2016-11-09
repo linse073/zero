@@ -17765,7 +17765,7 @@ local datas = {
 			0,
 		},
 		dropItem = "",
-		soulType = 4,
+		soulType = 0,
 		soulQua = {
 			1,
 			2,
@@ -17918,7 +17918,7 @@ local datas = {
 			0,
 		},
 		dropItem = "",
-		soulType = 7,
+		soulType = 0,
 		soulQua = {
 			1,
 			2,
@@ -18071,7 +18071,7 @@ local datas = {
 			0,
 		},
 		dropItem = "",
-		soulType = 10,
+		soulType = 0,
 		soulQua = {
 			1,
 			2,
@@ -18275,7 +18275,7 @@ local datas = {
 			0,
 		},
 		dropItem = "",
-		soulType = 4,
+		soulType = 0,
 		soulQua = {
 			1,
 			2,
@@ -18428,7 +18428,7 @@ local datas = {
 			0,
 		},
 		dropItem = "",
-		soulType = 7,
+		soulType = 0,
 		soulQua = {
 			1,
 			2,
@@ -18581,7 +18581,7 @@ local datas = {
 			0,
 		},
 		dropItem = "",
-		soulType = 10,
+		soulType = 0,
 		soulQua = {
 			1,
 			2,

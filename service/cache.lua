@@ -274,6 +274,7 @@ skynet.start(function()
                 local quality = v.soulQua[k1]
                 if quality > 0 then
                     if v.soulType > 0 then
+                        assert(card_soul[v.soulType], string.format("Error attribute %d soul rate.", v.soulType))
                         assert(card_soul[v.soulType][quality], string.format("Error attribute %d quality % soul rate.", v.soulType, quality))
                     end
                     rt[#rt+1] = {

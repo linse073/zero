@@ -33,6 +33,7 @@ local fight_point_rank
 local role_mgr
 local rank_mgr
 local task_rank
+local guild_mgr
 local query_process
 
 local match_title
@@ -55,6 +56,7 @@ skynet.init(function()
     role_mgr = skynet.queryservice("role_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
     task_rank = skynet.queryservice("task_rank")
+    guild_mgr = skynet.queryservice("guild_mgr")
     query_process = {
         [base.RANK_ARENA] = arena_rank,
         [base.RANK_FIGHT_POINT] = fight_point_rank,

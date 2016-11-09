@@ -168,12 +168,12 @@ skynet.start(function()
                 card_attr = {}
                 card_soul[v.cardAttr] = card_attr
             end
-            local card_level = card_soul[v.starLv]
+            local card_level = card_attr[v.starLv]
             if not card_level then
                 card_level = {}
-                card_level[v.starLv] = card_level
+                card_attr[v.starLv] = card_level
             end
-            card_level[#card_level+1] = v.id
+            card_level[#card_level+1] = v.soulId
             local cq = temp_card_quality[v.starLv]
             if not cq then
                 cq = {}

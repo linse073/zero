@@ -79,7 +79,7 @@ end
 
 function proc.apply_guild(msg)
     local user = data.user
-    if user.level < 20 then
+    if user.level < 15 then
         error{code = error_code.ROLE_LEVEL_LIMIT}
     end
     if data.guild then
@@ -101,7 +101,7 @@ end
 
 function proc.found_guild(msg)
     local user = data.user
-    if user.level < 30 then
+    if user.level < 20 then
         error{code = error_code.ROLE_LEVEL_LIMIT}
     end
     if data.guild then

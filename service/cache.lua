@@ -130,6 +130,67 @@ skynet.start(function()
         end
     end
 
+    local original_card = {}
+    local class_card = {}
+    local normal_card = {}
+    local card_soul = {}
+    local card_quality = {}
+    local temp_card_soul = {}
+    local temp_card_quality = {}
+    for k, v in pairs(carddata) do
+        local original = original_card[k] or k
+        local d = v
+        repeat
+            original_card[d.id] = original
+            d = carddata[d.evolveId]
+        until not d
+
+        if v.cardType == base.CARD_TYPE_CLASS then
+            class_card[v.cardAttr] = v
+        elseif v.cardType == base.CARD_TYPE_NORMAL then
+            normal_card[v.id] = v
+        end
+        v.starLvExp = assert(expdata[v.starLv], string.format("No exp data %d.", v.starLv))
+        if v.evolveId > 0 then
+            v.evolveItemData = assert(itemdata[v.evolveItem], string.format("No item data %d.", v.evolveItem))
+        end
+        local passive = {}
+        for k1, v1 in ipairs(v.PassiveId) do
+            if v1 > 0 then
+                passive[#passive+1] = assert(passivedata[v1], string.format("No passive data %d.", v1))
+            end
+        end
+        v.passive = passive
+        if v.soulId > 0 and not temp_card_soul[v.soulId] then
+            temp_card_soul[v.soulId] = true
+            local card_attr = card_soul[v.cardAttr]
+            if not card_attr then
+                card_attr = {}
+                card_soul[v.cardAttr] = card_attr
+            end
+            local card_level = card_soul[v.starLv]
+            if not card_level then
+                card_level = {}
+                card_level[v.starLv] = card_level
+            end
+            card_level[#card_level+1] = v.id
+            local cq = temp_card_quality[v.starLv]
+            if not cq then
+                cq = {}
+                temp_card_quality[v.starLv] = cq
+            end
+            cq[v.cardAttr] = true
+        end
+    end
+    for k, v in pairs(temp_card_quality) do
+        local l = {}
+        for k1, v1 in pairs(v) do
+            l[#l+1] = k1
+        end
+        table.sort(l)
+        card_quality[k] = l
+    end
+
     for k, v in pairs(bonusdata) do
         local rt = {}
         local total_rate = 0
@@ -208,6 +269,33 @@ skynet.start(function()
             }
             total_rate = total_rate + v.diamondRate
         end
+        for k1, v1 in ipairs(v.soulRate) do
+            if v1 > 0 then
+                local quality = v.soulQua[k1]
+                if quality > 0 then
+                    if v.soulType > 0 then
+                        assert(card_soul[v.soulType][quality], string.format("Error attribute %d quality % soul rate.", v.soulType, quality))
+                    end
+                    rt[#rt+1] = {
+                        type = base.BONUS_TYPE_SOUL,
+                        attr = v.soulType,
+                        num = v.soulNum[k1],
+                        quality = quality,
+                        rate = v1,
+                    }
+                    total_rate = total_rate + v1
+                end
+            end
+        end
+        if v.intensifyRate > 0 then
+            rt[#rt+1] = {
+                type = base.BONUS_TYPE_INTENSIFY,
+                item = base.INTENSIFY_ITEM,
+                num = v.intensifyNum,
+                rate = v.intensifyRate,
+            }
+            total_rate = total_rate + v.intensifyRate
+        end
         v.all_rate = rt
         v.total_rate = total_rate
     end
@@ -253,35 +341,6 @@ skynet.start(function()
         end
         v.awardItem = awardItem
         v.task_level = 0
-    end
-
-    local original_card = {}
-    local class_card = {}
-    local normal_card = {}
-    for k, v in pairs(carddata) do
-        local original = original_card[k] or k
-        local d = v
-        repeat
-            original_card[d.id] = original
-            d = carddata[d.evolveId]
-        until not d
-
-        if v.cardType == base.CARD_TYPE_CLASS then
-            class_card[v.cardAttr] = v
-        elseif v.cardType == base.CARD_TYPE_NORMAL then
-            normal_card[v.id] = v
-        end
-        v.starLvExp = assert(expdata[v.starLv], string.format("No exp data %d.", v.starLv))
-        if v.evolveId > 0 then
-            v.evolveItemData = assert(itemdata[v.evolveItem], string.format("No item data %d.", v.evolveItem))
-        end
-        local passive = {}
-        for k1, v1 in ipairs(v.PassiveId) do
-            if v1 > 0 then
-                passive[#passive+1] = assert(passivedata[v1], string.format("No passive data %d.", v1))
-            end
-        end
-        v.passive = passive
     end
 
     local type_reward = {}
@@ -425,6 +484,8 @@ skynet.start(function()
     sharedata.new("original_card", original_card)
     sharedata.new("class_card", class_card)
     sharedata.new("normal_card", normal_card)
+    sharedata.new("card_soul", card_soul)
+    sharedata.new("card_quality", card_quality)
     sharedata.new("type_reward", type_reward)
     sharedata.new("area_search", area_search)
     sharedata.new("area_stage", area_stage)

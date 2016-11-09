@@ -8,6 +8,8 @@ local ipairs = ipairs
 local string = string
 local base
 local textdata
+local card_soul
+local card_quality
 local day_second = 24 * 60 * 60
 local start_routine_time = tonumber(skynet.getenv("start_routine_time"))
 local randi = new_rand.randi
@@ -16,6 +18,8 @@ local language = skynet.getenv("language")
 skynet.init(function()
     base = sharedata.query("base")
     textdata = sharedata.query("textdata")
+    card_soul = sharedata.query("card_soul")
+    card_quality = sharedata.query("card_quality")
 end)
 
 local func = {}
@@ -102,6 +106,15 @@ function func.rand_bonus(d, p)
                     itemtype = randi(base.ITEM_TYPE_FIRE_EXP, base.ITEM_TYPE_MAGIC_EXP)
                 end
                 bonus.item = func.gen_itemid(0, 0, itemtype, v.quality)
+            elseif v.type == base.BONUS_TYPE_SOUL then
+                local attr = v.attr
+                if attr == 0 then
+                    local cq = card_quality[v.quality]
+                    attr = cq[randi(#cq)]
+                end
+                local ci = card_soul[attr]
+                local c = ci[v.quality]
+                bonus.item = c[randi(#c)]
             else
                 bonus.item = v.item
             end

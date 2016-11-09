@@ -181,6 +181,8 @@ local base = {
     BONUS_TYPE_MATERIAL = 3,
     BONUS_TYPE_STONE = 4,
     BONUS_TYPE_PASSIVE_EXP = 5,
+    BONUS_TYPE_SOUL = 6,
+    BONUS_TYPE_INTENSIFY = 7,
 
     STAGE_BONUS_COST = {
         "money",

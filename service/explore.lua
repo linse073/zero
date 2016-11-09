@@ -174,7 +174,7 @@ local function win(t, info, tinfo)
         if rnum <= data.lootRatio then
             wbonus = wbonus + 1
         else
-            lbonus = lbonus = 1
+            lbonus = lbonus + 1
         end
     end
     local m = mail_bonus(wmoney, wbonus, 0, 0, t, info.prof)

@@ -8451,7 +8451,7 @@ local datas = {
 		stringID = 102200014,
 		cn = "云叶是狡猾的对手。它们一开始会包围你，然后“嘭”…",
 		tw = "云叶是狡猾的对手。它们一开始会包围你，然后“嘭”…",
-		en = "Cloud leaves are cunning opponents. They will begin to surround you, then bang"...",
+		en = "Cloud leaves are cunning opponents. They will begin to surround you, then bang...",
 	},
 	[102200015] = {
 		stringID = 102200015,
@@ -8673,7 +8673,7 @@ local datas = {
 		stringID = 102200051,
 		cn = "奥格尔逢人就说说“我的刀太钝了，你的头骨借我磨一下。”",
 		tw = "奥格尔逢人就说说“我的刀太钝了，你的头骨借我磨一下。”",
-		en = "Auger said, "my knife is too blunt, you have to wear it."."",
+		en = "Auger said, my knife is too blunt, you have to wear it..",
 	},
 	[102200052] = {
 		stringID = 102200052,
@@ -13095,7 +13095,7 @@ local datas = {
 		stringID = 107200002,
 		cn = "深藏在地下的宝藏是什么样的？唯一线索就是探险者的日记本“小心那些诡异的机关，眼疾手快和耐心是你最需要的！”",
 		tw = "深藏在地下的宝藏是什么样的？唯一线索就是探险者的日记本“小心那些诡异的机关，眼疾手快和耐心是你最需要的！”",
-		en = "What kind of hidden treasure is buried in the ground? The only clue is the diary "Beware of strange organ, eye and patience is all you need!"",
+		en = "What kind of hidden treasure is buried in the ground? The only clue is the diary Beware of strange organ, eye and patience is all you need!",
 	},
 	[107200003] = {
 		stringID = 107200003,
@@ -18807,7 +18807,7 @@ local datas = {
 		stringID = 113100005,
 		cn = "[1. 规定时间内，通关关卡即可获得关卡等级相同的积分。通关英雄关卡积分X3。][2. 1000名积分最高的玩家,并分不同奖励的3个档位。][3. 每1档的幸运者可以拿到额外奖励。][4. 奖励按照邮件发放.]",
 		tw = "[1. 规定时间内，通关关卡即可获得关卡等级相同的积分。通关英雄关卡积分X3。][2. 1000名积分最高的玩家,并分不同奖励的3个档位。][3. 每1档的幸运者可以拿到额外奖励。][4. 奖励按照邮件发放.]",
-		en = "[1. within the specified time, clearance levels to get the same level of points. Clearance hero points X3. ][2. 1000 players with the highest points, and points of different awards 3 stalls. ][3. lucky for every 1 files can get additional incentives. ][4. mail issued "rewards in accordance with the",
+		en = "[1. within the specified time, clearance levels to get the same level of points. Clearance hero points X3. ][2. 1000 players with the highest points, and points of different awards 3 stalls. ][3. lucky for every 1 files can get additional incentives. ][4. mail issued rewards in accordance with the",
 	},
 	[113100006] = {
 		stringID = 113100006,
@@ -20361,7 +20361,7 @@ local datas = {
 		stringID = 199000185,
 		cn = "name欢迎来到天空之城，这座城市用强大的魔力浮在空中，要到达下面的大陆要通过[转送门]哦~",
 		tw = "name欢迎来到天空之城，这座城市用强大的魔力浮在空中，要到达下面的大陆要通过[转送门]哦~",
-		en = "Name welcome to the city of the sky, the city with a powerful magic floating in the air, to arrive at the mainland to pass through the "transfer door" Oh ~",
+		en = "Name welcome to the city of the sky, the city with a powerful magic floating in the air, to arrive at the mainland to pass through the transfer door Oh ~",
 	},
 	[199000186] = {
 		stringID = 199000186,
@@ -20505,7 +20505,7 @@ local datas = {
 		stringID = 199000209,
 		cn = "注意了，探索过程中会[遇到其他玩家]哦。你可以发动[主动攻击]与其他玩家对战~",
 		tw = "注意了，探索过程中会[遇到其他玩家]哦。你可以发动[主动攻击]与其他玩家对战~",
-		en = "Note that the exploration process will encounter other players, oh. You can launch a "active attack" against other players.",
+		en = "Note that the exploration process will encounter other players, oh. You can launch a active attack against other players.",
 	},
 	[199000210] = {
 		stringID = 199000210,
@@ -20727,7 +20727,7 @@ local datas = {
 		stringID = 199000246,
 		cn = "目前想要组建探险团可能还不是时候，等你通关了“4-5尘封年轮”就可以组建自己的探险团。",
 		tw = "目前想要组建探险团可能还不是时候，等你通关了“4-5尘封年轮”就可以组建自己的探险团。",
-		en = "Now want to form an exploration group may not come, so you clearance "4-5 dust ring" can set up their own exploration mission.",
+		en = "Now want to form an exploration group may not come, so you clearance 4-5 dust ring can set up their own exploration mission.",
 	},
 	[199000247] = {
 		stringID = 199000247,

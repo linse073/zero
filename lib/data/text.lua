@@ -1183,8 +1183,8 @@ local datas = {
 	},
 	[101110197] = {
 		stringID = 101110197,
-		cn = "钱袋",
-		tw = "钱袋",
+		cn = "一堆金币",
+		tw = "一堆金币",
 		en = "Moneybag",
 	},
 	[101110198] = {
@@ -18517,14 +18517,14 @@ local datas = {
 	},
 	[111200010] = {
 		stringID = 111200010,
-		cn = "金光闪闪的宝箱，有概率开出珍贵的魔物魂魄",
-		tw = "金光闪闪的宝箱，有概率开出珍贵的魔物魂魄",
+		cn = "魔能宝箱，需要魔能钥匙才能打开，有概率开出珍贵的魔物魂魄",
+		tw = "魔能宝箱，需要魔能钥匙才能打开，有概率开出珍贵的魔物魂魄",
 		en = "Golden chest, probability out of precious monster soul",
 	},
 	[111200011] = {
 		stringID = 111200011,
-		cn = "用于开启金箱子",
-		tw = "用于开启金箱子",
+		cn = "用于开启魔能宝箱",
+		tw = "用于开启魔能宝箱",
 		en = "Used to open Jin Xiangzi",
 	},
 	[111200012] = {
@@ -21385,9 +21385,9 @@ local datas = {
 	},
 	[199000356] = {
 		stringID = 199000356,
-		cn = "[object Object]",
-		tw = "[object Object]",
-		en = "name：",
+		cn = "姓名:",
+		tw = "姓名:",
+		en = "name:",
 	},
 	[199000357] = {
 		stringID = 199000357,
@@ -21889,8 +21889,8 @@ local datas = {
 	},
 	[198000008] = {
 		stringID = 198000008,
-		cn = "尊敬的冒险家，你的VIP特权%d礼包已经送达，请注意查收！",
-		tw = "尊敬的冒险家，你的VIP特权%d礼包已经送达，请注意查收！",
+		cn = "尊敬的探险家，你的VIP特权%d礼包已经送达，请注意查收！",
+		tw = "尊敬的探险家，你的VIP特权%d礼包已经送达，请注意查收！",
 		en = "Dear adventurer, your VIP%d privilege packs have been served, please note that check!",
 	},
 	[198000009] = {
@@ -21901,8 +21901,8 @@ local datas = {
 	},
 	[198000010] = {
 		stringID = 198000010,
-		cn = "强大的冒险家，恭喜你在竞技场内以无敌姿态战胜其他玩家%d场，快来领取奖励吧。",
-		tw = "强大的冒险家，恭喜你在竞技场内以无敌姿态战胜其他玩家%d场，快来领取奖励吧。",
+		cn = "强大的探险家，恭喜你在竞技场内以无敌姿态战胜其他玩家%d场，快来领取奖励吧。",
+		tw = "强大的探险家，恭喜你在竞技场内以无敌姿态战胜其他玩家%d场，快来领取奖励吧。",
 		en = "Strong adventurer, congratulations to you in the arena to win over the other game player%d field invincible attitude, come to receive the award.",
 	},
 	[198000011] = {
@@ -21931,8 +21931,8 @@ local datas = {
 	},
 	[198000015] = {
 		stringID = 198000015,
-		cn = "完成探索活动并获得奖励！你快点看看获得哪些奖励吧。",
-		tw = "完成探索活动并获得奖励！你快点看看获得哪些奖励吧。",
+		cn = "尊敬的探险家，你成功的完成了一次野外探索，快去看看你的收获吧！",
+		tw = "尊敬的探险家，你成功的完成了一次野外探索，快去看看你的收获吧！",
 		en = "Complete exploration activities and get rewards! You quickly see what the reward it.",
 	},
 	[198000016] = {
@@ -21943,8 +21943,8 @@ local datas = {
 	},
 	[198000017] = {
 		stringID = 198000017,
-		cn = "完成探索活动并获得奖励！你快点看看获得哪些奖励吧。",
-		tw = "完成探索活动并获得奖励！你快点看看获得哪些奖励吧。",
+		cn = "尊敬的探险家，你成功的完成了一次野外探索，快去看看你的收获吧！",
+		tw = "尊敬的探险家，你成功的完成了一次野外探索，快去看看你的收获吧！",
 		en = "Complete exploration activities and get rewards! You quickly see what the reward it.",
 	},
 	[198000018] = {
@@ -22129,9 +22129,21 @@ local datas = {
 	},
 	[198100002] = {
 		stringID = 198100002,
-		cn = "你被%s踢出冒险团",
-		tw = "你被%s踢出冒险团",
+		cn = "你被%s踢出探险团",
+		tw = "你被%s踢出探险团",
 		en = "You were kicked out of the%s.",
+	},
+	[198100003] = {
+		stringID = 198100003,
+		cn = "欢迎%s加入探险团",
+		tw = "欢迎%s加入探险团",
+		en = "%s，Welcome to join the expedition.",
+	},
+	[198100004] = {
+		stringID = 198100004,
+		cn = "%s被晋升为",
+		tw = "%s被晋升为",
+		en = "%s was promoted.",
 	},
 }
 

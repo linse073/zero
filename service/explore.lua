@@ -312,13 +312,15 @@ local function update()
                         local er = skynet.call(rankdb, "lua", "zrange", rankname, minr, maxr)
                         table.remove(er, rank - minr + 1)
                         local tid = tonumber(er[random(#er)])
-                        skynet.call(rankdb, "lua", "zrem", rankname, k)
-                        encounter(v, now, tid)
                         local tinfo = role_list[tid]
-                        skynet.call(rankdb, "lua", "zrem", rankname, tid)
-                        encounter(tinfo, now, k)
-                        rank_count = rank_count - 2
-                        skynet.call(save_explore, "lua", "update", tid, tinfo)
+                        if tinfo.guildid ~= v.guildid then
+                            skynet.call(rankdb, "lua", "zrem", rankname, k)
+                            encounter(v, now, tid)
+                            skynet.call(rankdb, "lua", "zrem", rankname, tid)
+                            encounter(tinfo, now, k)
+                            rank_count = rank_count - 2
+                            skynet.call(save_explore, "lua", "update", tid, tinfo)
+                        end
                     end
                 end
                 v.update_time = v.update_time + UPDATE_TIME

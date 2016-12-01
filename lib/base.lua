@@ -144,7 +144,7 @@ local base = {
 
     INTENSIFY_ITEM = 3000000210,
     MAX_INTENSIFY = 18,
-    MAX_QUALITY = 6,
+    MAX_QUALITY = 9,
     MAX_RAND_PROP = 2,
     MAX_EQUIP = 8,
 

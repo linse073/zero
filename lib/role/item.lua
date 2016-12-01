@@ -891,8 +891,10 @@ function proc.intensify_item(msg)
                 end
             end
             item.change(i, punishitem, pdata)
-            update.status = iv.status
-            update.status_time = iv.status_time
+            update.itemid = punishitem
+            update.rand_prop = iv.rand_prop
+            -- update.status = iv.status
+            -- update.status_time = iv.status_time
         end
         pitem[#pitem+1] = update
         task.update(p, base.TASK_COMPLETE_INTENSIFY_ITEM_FAIL, 0, 1)

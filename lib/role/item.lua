@@ -666,7 +666,7 @@ function proc.compound_item(msg)
     local p = update_user()
     item.del_by_itemid(p, msg.itemid, comnum * 5)
     local user = data.user
-    local mul
+    local mul = 1
     local total = 0
     if edata.composTotalRatio > 0 then
         local r = random(edata.composTotalRatio)

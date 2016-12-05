@@ -665,24 +665,35 @@ function proc.compound_item(msg)
     local edata = assert(expdata[compounddata.quality], string.format("No exp data %d.", compounddata.quality))
     local p = update_user()
     item.del_by_itemid(p, msg.itemid, comnum * 5)
-    local mul = 1
     local user = data.user
+    local mul
+    local total = 0
     if edata.composTotalRatio > 0 then
         local r = random(edata.composTotalRatio)
         local l = assert(vip_level[user.vip], string.format("No vip level %d.", user.vip))
-        for k, v in ipairs(edata.composRatio) do
-            if r <= v[1] + l.composRate then
-                mul = v[2]
-                break
+        for i = 1, comnum do
+            mul = 1
+            for k, v in ipairs(edata.composRatio) do
+                if r <= v[1] + l.composRate then
+                    mul = v[2]
+                    break
+                end
             end
+            total = total + mul
         end
+    else
+        total = comnum
     end
-    item.add_by_itemid(p, comnum * mul, compounddata)
-    task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, compounddata.quality, 1)
+    item.add_by_itemid(p, total, compounddata)
+    task.update(p, base.TASK_COMPLETE_COMPOUND_ITEM, compounddata.quality, total)
     if user.level >= base.WEEK_TASK_LEVEL then
-        skynet.call(task_rank, "lua", "update", 4, user.id, comnum * floor(3 ^ (compounddata.quality - 2)))
+        skynet.call(task_rank, "lua", "update", 4, user.id, total * floor(3 ^ (compounddata.quality - 2)))
     end
-    return "update_user", {update=p, compound_crit=mul}
+    if comnum == 1 then
+        return "update_user", {update=p, compound_crit=mul}
+    else
+        return "update_user", {update=p}
+    end
 end
 
 function proc.improve_item(msg)

@@ -157,10 +157,21 @@ function item.after_add()
     end
 end
 
+function item.repair(v, d)
+    if is_equip(d.itemType) then
+        for k1, v1 in pairs(d.attr) do
+            if not v[k1] then
+                v[k1] = random(v1[1], v1[2])
+            end
+        end
+    end
+end
+
 function item.add(v, d)
     if not d then
         d = assert(itemdata[v.itemid], string.format("No item data %d.", v.itemid))
     end
+    item.repair(v, d)
     local i = {v, d}
     if v.intensify > 0 then
         i[5] = assert(intensifydata[v.intensify], string.format("No intensify data %d.", v.intensify))
@@ -557,14 +568,13 @@ function item.equip_prop(e, prop)
     if indata then
         inprop = inprop + indata.proportion
     end
-    local ed = e[2]
+    local iv = e[1]
     for k, v in ipairs(base.PROP_NAME) do
-        local ev = ed[v]
+        local ev = iv[v]
         if ev then
             prop[v] = prop[v] + ev * inprop
         end
     end
-    local iv = e[1]
     local rand_prop = iv.rand_prop
     for j = 1, base.MAX_RAND_PROP do
         local randProp = rand_prop[j]
@@ -575,7 +585,7 @@ function item.equip_prop(e, prop)
     end
     local stone = e[3]
     if stone and stone.num > 0 then
-        local slot = ed.needLv // 10
+        local slot = e[2].needLv // 10
         for j = 1, slot do
             local s = stone[j]
             if s then

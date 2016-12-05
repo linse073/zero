@@ -90,6 +90,16 @@
     status 8 : integer
     status_time 9 : integer
     price 10 : integer
+    hp 11 : integer
+    attack 12 : integer
+    defence 13 : integer
+    sunder 14 : integer
+    dodge 15 : integer
+    hit 16 : integer
+    crit 17 : integer
+    tenacity 18 : integer
+    impale 19 : integer
+    block 20 : integer
 }
 
 .card_info {

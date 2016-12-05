@@ -97,6 +97,14 @@ skynet.start(function()
                 local upgradeItem = k + 5000
                 assert(itemdata[upgradeItem], string.format("No item data %d.", upgradeItem))
             end
+            local attr = {}
+            for k1, v1 in ipairs(base.PROP_NAME) do
+                local bv = v[v1]
+                if bv then
+                    attr[v1] = {bv * 80 // 100, bv * 120 // 100}
+                end
+            end
+            v.attr = attr
         elseif is_chest(v.itemType) then
             assert(v.chestID~="", string.format("Illegal chest %d.", v.id))
             local chest = {}

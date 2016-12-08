@@ -625,6 +625,11 @@ function role.charge(num)
         end
         user.vip = vip
         p.user.vip = vip
+        local bmsg = {
+            id = user.id,
+            vip = vip,
+        }
+        skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
     end
     return "update_user", {update=p}
 end
@@ -964,6 +969,7 @@ local function enter_game(msg)
         cur_pos = user.cur_pos,
         des_pos = user.des_pos,
         fight = stageid ~= nil,
+        vip = user.vip,
     }
     skynet.call(role_mgr, "lua", "enter", bmsg, skynet.self())
     if old_point ~= user.fight_point then

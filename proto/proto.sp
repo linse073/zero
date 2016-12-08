@@ -60,6 +60,7 @@
     cur_pos 4 : position
     des_pos 5 : position
     fight 6 : boolean
+    vip 7 : integer
 }
 
 .other_all {

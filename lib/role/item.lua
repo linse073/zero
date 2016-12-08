@@ -256,6 +256,11 @@ function item.add_by_itemid(p, num, d)
                 status_time = 0,
                 price = 0,
             }
+            if is_equip(d.itemType) then
+                for k1, v1 in pairs(d.attr) do
+                    v[k1] = random(v1[1], v1[2])
+                end
+            end
             if category == base.ITEM_DEFENCE then
                 v.rand_prop = {{}, {}}
                 item.rand_prop(v, d, {1, 2, 3, 4}) -- defence, tenacity, block, dodge

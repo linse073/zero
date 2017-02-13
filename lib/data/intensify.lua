@@ -68,7 +68,7 @@ local datas = {
 		levelRate = 0,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 40,
+		levelLimit = 25,
 		qualityLimit = 0,
 	},
 	[7] = {
@@ -80,7 +80,7 @@ local datas = {
 		levelRate = 1500,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 45,
+		levelLimit = 30,
 		qualityLimit = 0,
 	},
 	[8] = {
@@ -92,7 +92,7 @@ local datas = {
 		levelRate = 3000,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 50,
+		levelLimit = 35,
 		qualityLimit = 0,
 	},
 	[9] = {
@@ -104,7 +104,7 @@ local datas = {
 		levelRate = 4500,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 55,
+		levelLimit = 40,
 		qualityLimit = 0,
 	},
 	[10] = {
@@ -116,7 +116,7 @@ local datas = {
 		levelRate = 6000,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 60,
+		levelLimit = 45,
 		qualityLimit = 0,
 	},
 	[11] = {
@@ -128,7 +128,7 @@ local datas = {
 		levelRate = 0,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 65,
+		levelLimit = 50,
 		qualityLimit = 0,
 	},
 	[12] = {
@@ -140,7 +140,7 @@ local datas = {
 		levelRate = 1500,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 70,
+		levelLimit = 55,
 		qualityLimit = 0,
 	},
 	[13] = {
@@ -152,7 +152,7 @@ local datas = {
 		levelRate = 3000,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 75,
+		levelLimit = 60,
 		qualityLimit = 0,
 	},
 	[14] = {
@@ -164,7 +164,7 @@ local datas = {
 		levelRate = 4500,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 80,
+		levelLimit = 65,
 		qualityLimit = 0,
 	},
 	[15] = {
@@ -176,7 +176,7 @@ local datas = {
 		levelRate = 6000,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 85,
+		levelLimit = 70,
 		qualityLimit = 0,
 	},
 	[16] = {
@@ -188,7 +188,7 @@ local datas = {
 		levelRate = 0,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 90,
+		levelLimit = 80,
 		qualityLimit = 0,
 	},
 	[17] = {
@@ -200,7 +200,7 @@ local datas = {
 		levelRate = 1500,
 		punishQuality = 0,
 		qualityRate = 0,
-		levelLimit = 95,
+		levelLimit = 90,
 		qualityLimit = 0,
 	},
 	[18] = {

@@ -1,3 +1,6 @@
 [submodule "3rd/skynet"]
 	path = 3rd/skynet
 	url = https://github.com/cloudwu/skynet.git
+[submodule "3rd/cjson"]
+	path = 3rd/cjson
+	url = https://github.com/mpx/lua-cjson.git

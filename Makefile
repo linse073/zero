@@ -18,7 +18,7 @@ $(LUA_CLIB_PATH)/rand.so : lib-src/rand.c | $(LUA_CLIB_PATH)
 	$(CC) $(CFLAGS) $(SHARED) $^ -o $@	
 	
 $(LUA_CLIB_PATH)/webclient.so : lib-src/webclient.c | $(LUA_CLIB_PATH)
-	$(CC) $(CFLAGS) $(SHARED) $^ -o $@	
+	$(CC) $(CFLAGS) $(SHARED) $^ -o $@ -lcurl
 
 clean :
 	rm -f $(foreach v, $(LUA_CLIB), $(LUA_CLIB_PATH)/$(v).so)

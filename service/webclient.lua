@@ -5,7 +5,7 @@
 
 local skynet = require "skynet"
 local webclientlib = require "webclient"
-local logger = require "log"
+-- local logger = require "log"
 local webclient = webclientlib.create()
 local requests = nil
 
@@ -29,7 +29,8 @@ local function query()
             local request = requests[finish_key];
             assert(request)
 
-            xpcall(resopnd, function() logger.Error(debug.traceback()) end, request)
+            -- xpcall(resopnd, function() logger.Error(debug.traceback()) end, request)
+            xpcall(resopnd, function() skynet.error(debug.traceback()) end, request)
 
             webclient:remove_request(request.req)
             requests[finish_key] = nil

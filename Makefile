@@ -21,7 +21,7 @@ $(LUA_CLIB_PATH)/webclient.so : lib-src/webclient.c | $(LUA_CLIB_PATH)
 	$(CC) $(CFLAGS) $(SHARED) $^ -o $@ -lcurl
 	
 $(LUA_CLIB_PATH)/cjson.so : 3rd/cjson/lua_cjson.c 3rd/cjson/strbuf.c 3rd/cjson/fpconv.c | $(LUA_CLIB_PATH)
-	$(CC) $(CFLAGS) $(SHARED) -pedantic -DNDEBUG -I3rd/cjson $^ -o $@
+	$(CC) $(CFLAGS) $(SHARED) -DNDEBUG -I3rd/cjson $^ -o $@
 
 clean :
 	rm -f $(foreach v, $(LUA_CLIB), $(LUA_CLIB_PATH)/$(v).so)

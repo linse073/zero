@@ -2,6 +2,7 @@ local login = require "snax.loginserver"
 local crypt = require "crypt"
 local skynet = require "skynet"
 local util = require "util"
+local cjson = require "cjson"
 
 local assert = assert
 local error = error
@@ -39,6 +40,10 @@ local auth_proc = {
         local result, content = skynet.call(webclient, "lua", "request", 
             "https://api.weixin.qq.com/sns/auth", {openid=user, access_token=access_token})
         print(result, content)
+        local content = cjson.decode(content)
+        if content.errcode ~= 0 then
+            return content.errmsg
+        end
     end,
     [LOGIN_QQ] = function(user, data)
         

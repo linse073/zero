@@ -1,5 +1,10 @@
 
-local base = {
+local base = {	
+    LOGIN_PASSWORD = 1,
+    LOGIN_PASSER = 2,
+	LOGIN_WEIXIN = 3,
+	LOGIN_QQ = 4,
+
     MAX_ROLE = 4,
     MAX_LEVEL = 50,
     RAND_FACTOR = 10000,

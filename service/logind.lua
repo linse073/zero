@@ -6,11 +6,11 @@ local util = require "util"
 local assert = assert
 local error = error
 local string = string
+local tonumber = tonumber
 
 local server = {
 	port = skynet.getenv("login"),
 	multilogin = true,	-- allow same user login different server
-	name = "login_master",
 }
 
 local gen_id = util.gen_id
@@ -18,15 +18,49 @@ local server_list = {}
 local gate_list = {}
 local user_online = {}
 local user_login = {}
+local webclient
 
-function server.auth_handler(token)
-	-- the token is base64(user)@base64(server):base64(password)
-	local user, server, password = token:match("([^@]+)@([^:]+):(.+)")
+local LOGIN_PASSWORD = 1
+local LOGIN_PASSER = 2
+local LOGIN_WEIXIN = 3
+local LOGIN_QQ = 4
+
+local auth_proc = {
+    [LOGIN_PASSWORD] = function(user, data)
+        
+    end,
+    [LOGIN_PASSER] = function(user, data)
+        
+    end,
+    [LOGIN_WEIXIN] = function(user, data)
+        local access_token, refresh_token = data:match("([^:]+):(.+)")
+        access_token = crypt.base64decode(access_token)
+        refresh_token = crypt.base64decode(refresh_token)
+        local result, content = skynet.call(webclient, "lua", "request", 
+            "https://api.weixin.qq.com/sns/auth", {openid=user, access_token=access_token})
+        print(result, content)
+    end,
+    [LOGIN_QQ] = function(user, data)
+        
+    end,
+}
+
+skynet.init(function()
+    webclient = skynet.queryservice("webclient")
+end)
+
+function server.auth_handler(token, other)
+	-- the token is base64(user)@base64(server):loginType
+	local user, server, loginType = token:match("([^@]+)@([^:]+):(.+)")
 	user = crypt.base64decode(user)
 	server = crypt.base64decode(server)
-	password = crypt.base64decode(password)
-	assert(password == "password", "Invalid password")
-	return server, user
+	loginType = tonumber(loginType)
+    local msg = assert(auth_proc[loginType], string.format("Unsupported login type %d.", loginType))(user, other)
+    if msg then
+        error(msg)
+    else
+        return server, user
+    end
 end
 
 function server.login_handler(server, uid, secret)

@@ -62,6 +62,7 @@ skynet.start(function()
     skynet.uniqueservice("trade_mgr")
     skynet.uniqueservice("save_trade")
     skynet.uniqueservice("agent_mgr")
+    skynet.uniqueservice("webclient")
 
 	local loginserver = skynet.newservice("logind")
     local gate = skynet.newservice("gated", loginserver)

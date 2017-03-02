@@ -60,12 +60,15 @@ function server.auth_handler(token, other)
 	user = crypt.base64decode(user)
 	server = crypt.base64decode(server)
 	loginType = tonumber(loginType)
-    local msg = assert(auth_proc[loginType], string.format("Unsupported login type %d.", loginType))(user, other)
+    local proc = auth_proc[loginType]
+    if not proc then
+        error(string.format("Unsupported login type %d.", loginType))
+    end
+    local msg = proc(user, other)
     if msg then
         error(msg)
-    else
-        return server, user
     end
+    return server, user
 end
 
 function server.login_handler(server, uid, secret)

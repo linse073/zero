@@ -16,3 +16,4 @@ login = 8001
 gm_level = 1
 start_time = "2016-05-10 00:00:00"
 language = "cn"
+apple_web = 8002

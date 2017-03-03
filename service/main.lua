@@ -63,7 +63,7 @@ skynet.start(function()
     skynet.uniqueservice("save_trade")
     skynet.uniqueservice("agent_mgr")
     skynet.uniqueservice("webclient")
-    skynet.uniqueservice("apple_web")
+    -- skynet.uniqueservice("apple_web")
 
 	local loginserver = skynet.newservice("logind")
     local gate = skynet.newservice("gated", loginserver)

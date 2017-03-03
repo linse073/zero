@@ -13,6 +13,14 @@ skynet.start(function()
     skynet.setenv("start_utc_time", t)
     skynet.setenv("start_routine_time", util.day_time(t))
 
+    -- ios charge
+    print(type(skynet.getenv("ios_sandbox")))
+    if skynet.getenv("ios_sandbox") then
+        skynet.setenv("ios_url", "https://sandbox.itunes.apple.com/verifyReceipt")
+    else
+        skynet.setenv("ios_url", "https://buy.itunes.apple.com/verifyReceipt")
+    end
+
     -- debug service
     if not skynet.getenv("daemon") then
         skynet.newservice("console")

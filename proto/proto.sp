@@ -295,6 +295,7 @@
     start_time 1 : integer
     stage_id 2 : integer
     rand_seed 3 : integer
+    ios_sandbox 4 : boolean
 }
 
 .update_user {
@@ -310,6 +311,7 @@
     quit_guild 9 : boolean
     decay_active 10 : boolean
     exchange_crit 11 : integer
+    ios_index 12 : integer
 }
 
 .update_day {
@@ -489,6 +491,11 @@
 
 .test_charge {
     num 0 : integer
+}
+
+.apple_charge {
+    index 0 : integer
+    receipt 1 : string
 }
 
 .reset_online_award {

@@ -6,6 +6,7 @@ local util = require "util"
 local func = require "func"
 local proc_queue = require "proc_queue"
 local new_rand = require "random"
+local cjson = require "cjson"
 
 local card
 local friend
@@ -59,8 +60,11 @@ local trade_mgr
 local rank_mgr
 local guild_mgr
 local arena_rank
+local webclient
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
+local ios_sandbox = skynet.getenv("ios_sandbox")
+local ios_url = skynet.getenv("ios_url")
 
 local charge_title
 local charge_content
@@ -93,6 +97,7 @@ skynet.init(function()
     rank_mgr = skynet.queryservice("rank_mgr")
     guild_mgr = skynet.queryservice("guild_mgr")
     arena_rank = skynet.queryservice("arena_rank")
+    webclient = skynet.queryservice("webclient")
 
     charge_title = func.get_string(198000007)
     charge_content = func.get_string(198000008)
@@ -983,7 +988,7 @@ local function enter_game(msg)
         local sf = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_FIGHT)
         skynet.call(sf, "lua", "update", user.id, user.fight_point)
     end
-    return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, rand_seed=seed}
+    return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, rand_seed=seed, ios_sandbox=ios_sandbox}
 end
 function proc.enter_game(msg)
     return proc_queue(cs, enter_game, msg)
@@ -1265,6 +1270,17 @@ function proc.first_charge_award(msg)
     user.charge_award = true
     p.user.charge_award = true
     return "update_user", {update=p}
+end
+
+function proc.apple_charge(msg)
+    if not msg.receipt then
+        error{code = error_code.ERROR_ARGS}
+    end
+    local post = cjson.encode({receipt_data=msg.receipt})
+    local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, post, {"Content-Type: application/json"})
+    print(result, content)
+    local content = cjson.decode(content)
+    return "response", ""
 end
 
 return role

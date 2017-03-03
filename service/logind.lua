@@ -40,7 +40,7 @@ local auth_proc = {
         -- NOTICE: umeng uid is unionid, not openid if unionid exist.
         local result, content = skynet.call(webclient, "lua", "request", 
             "https://api.weixin.qq.com/sns/userinfo", {openid=user, access_token=access_token, lang="zh_CN"})
-        print(result, content)
+        -- print(result, content)
         local content = cjson.decode(content)
         if content.errcode ~= 0 then
             return content.errmsg

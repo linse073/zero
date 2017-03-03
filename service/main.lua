@@ -14,7 +14,7 @@ skynet.start(function()
     skynet.setenv("start_routine_time", util.day_time(t))
 
     -- ios charge
-    if skynet.getenv("ios_sandbox") == 1 then
+    if skynet.getenv("ios_sandbox") == "true" then
         skynet.setenv("ios_url", "https://sandbox.itunes.apple.com/verifyReceipt")
     else
         skynet.setenv("ios_url", "https://buy.itunes.apple.com/verifyReceipt")

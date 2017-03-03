@@ -61,9 +61,9 @@ local rank_mgr
 local guild_mgr
 local arena_rank
 local webclient
-local gm_level = skynet.getenv("gm_level")
+local gm_level = tonumber(skynet.getenv("gm_level"))
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
-local ios_sandbox = (skynet.getenv("ios_sandbox") == 1)
+local ios_sandbox = (skynet.getenv("ios_sandbox") == "true")
 local ios_url = skynet.getenv("ios_url")
 
 local charge_title
@@ -1276,8 +1276,7 @@ function proc.apple_charge(msg)
     if not msg.receipt then
         error{code = error_code.ERROR_ARGS}
     end
-    local post = cjson.encode({receipt_data=msg.receipt})
-    local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, post, {"Content-Type: application/json"})
+    local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, msg.receipt, {"Content-Type: application/json"})
     print(result, content)
     local content = cjson.decode(content)
     return "response", ""

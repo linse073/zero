@@ -15413,6 +15413,12 @@ local datas = {
 		tw = "闯关大师",
 		en = "Enter the master",
 	},
+	[108100381] = {
+		stringID = 108100381,
+		cn = "分享",
+		tw = "分享",
+		en = "Share",
+	},
 	[108101001] = {
 		stringID = 108101001,
 		cn = "魔物战争",
@@ -17776,6 +17782,12 @@ local datas = {
 		cn = "累积获得关卡评星300个",
 		tw = "累积获得关卡评星300个",
 		en = "Accumulated 300 points to the star",
+	},
+	[108200381] = {
+		stringID = 108200381,
+		cn = "分享到微信朋友圈",
+		tw = "分享到微信朋友圈。",
+		en = "Share to friends",
 	},
 	[108201001] = {
 		stringID = 108201001,
@@ -22186,6 +22198,12 @@ local datas = {
 		cn = "%s被晋升为",
 		tw = "%s被晋升为",
 		en = "%s was promoted.",
+	},
+	[198100005] = {
+		stringID = 198100005,
+		cn = "请确认密码相同",
+		tw = "请确认密码相同",
+		en = "Password must be the same",
 	},
 	[198200001] = {
 		stringID = 198200001,

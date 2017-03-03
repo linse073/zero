@@ -63,7 +63,7 @@ local arena_rank
 local webclient
 local gm_level = skynet.getenv("gm_level")
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
-local ios_sandbox = skynet.getenv("ios_sandbox")
+local ios_sandbox = (skynet.getenv("ios_sandbox") == 1)
 local ios_url = skynet.getenv("ios_url")
 
 local charge_title

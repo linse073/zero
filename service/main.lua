@@ -14,8 +14,7 @@ skynet.start(function()
     skynet.setenv("start_routine_time", util.day_time(t))
 
     -- ios charge
-    print(type(skynet.getenv("ios_sandbox")))
-    if skynet.getenv("ios_sandbox") then
+    if skynet.getenv("ios_sandbox") == 1 then
         skynet.setenv("ios_url", "https://sandbox.itunes.apple.com/verifyReceipt")
     else
         skynet.setenv("ios_url", "https://buy.itunes.apple.com/verifyReceipt")
@@ -53,6 +52,7 @@ skynet.start(function()
     end
     skynet.setenv("shutdown_time", shutdown_time)
 
+    skynet.uniqueservice("webclient")
 	skynet.uniqueservice("cache")
     skynet.uniqueservice("server_mgr")
     skynet.uniqueservice("routine")
@@ -70,7 +70,6 @@ skynet.start(function()
     skynet.uniqueservice("trade_mgr")
     skynet.uniqueservice("save_trade")
     skynet.uniqueservice("agent_mgr")
-    skynet.uniqueservice("webclient")
 
 	local loginserver = skynet.newservice("logind")
     local gate = skynet.newservice("gated", loginserver)

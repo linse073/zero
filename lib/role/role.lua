@@ -1276,8 +1276,7 @@ function proc.apple_charge(msg)
     if not msg.receipt then
         error{code = error_code.ERROR_ARGS}
     end
-    local post = cjson.encode({["receipt-data"]=msg.receipt})
-    local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, post, {"Content-Type: application/json"})
+    local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, msg.receipt, {"Content-Type: application/json"})
     print(result, content)
     local content = cjson.decode(content)
     return "response", ""

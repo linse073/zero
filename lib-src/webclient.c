@@ -226,7 +226,7 @@ static int webclient_request(lua_State* l)
             lua_gettable(l, 4);
             if (lua_isstring(l, -1))
                 chunk = curl_slist_append(chunk, lua_tostring(l, -1));
-            lua_pop(L, 1);
+            lua_pop(l, 1);
         }
     }
 

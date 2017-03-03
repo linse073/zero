@@ -49,6 +49,7 @@ struct webrequest
     char* content;
     size_t content_length;
     size_t content_maxlength;
+    struct curl_slist* header;
 };
 
 static int webclient_create(lua_State* l)
@@ -182,14 +183,15 @@ static struct webrequest* webclient_realrequest(struct webclient* webclient, con
     
     if (curl_multi_add_handle(webclient->curlm, handle) == CURLM_OK) {
         webrequest->curl = handle;
+        webrequest->header = header;
         return webrequest;
     }
     
 failed:
-    if (handle) {
+    if (handle)
         curl_easy_cleanup(handle);
-        handle = NULL;
-    }
+    if (header)
+        curl_slist_free_all(header);
     free(webrequest);
     return NULL;
 }
@@ -232,7 +234,6 @@ static int webclient_request(lua_State* l)
     }
 
     struct webrequest* webrequest = webclient_realrequest(webclient, url, postdata, postdatalen, chunk, connect_timeout_ms);
-    curl_slist_free_all(chunk);
     if (!webrequest)
         return 0;
     
@@ -253,6 +254,8 @@ static int webclient_removerequest(lua_State* l)
     
     curl_multi_remove_handle(webclient->curlm, webrequest->curl);
     curl_easy_cleanup(webrequest->curl);
+    if (webrequest->header)
+        curl_slist_free_all(webrequest->header)
     if (webrequest->content)
         free(webrequest->content);
     free(webrequest);

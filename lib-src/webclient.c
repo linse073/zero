@@ -255,7 +255,7 @@ static int webclient_removerequest(lua_State* l)
     curl_multi_remove_handle(webclient->curlm, webrequest->curl);
     curl_easy_cleanup(webrequest->curl);
     if (webrequest->header)
-        curl_slist_free_all(webrequest->header)
+        curl_slist_free_all(webrequest->header);
     if (webrequest->content)
         free(webrequest->content);
     free(webrequest);

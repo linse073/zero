@@ -220,7 +220,7 @@ static int webclient_request(lua_State* l)
     
     struct curl_slist* chunk = NULL;
     if (top > 3 && lua_istable(l, 4)) {
-        size_t len = lua_objlen(l, 4);
+        size_t len = lua_rawlen(l, 4);
         size_t i = 0;
         for (i = 0; i < len; i++) {
             lua_pushnumber(l, i+1);

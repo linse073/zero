@@ -33,6 +33,7 @@ local msg = {
     [2022] = "guild_rank_info",
     [2023] = "guild_all",
     [2024] = "guild_skill",
+    [2025] = "apple_charge",
 
     [2100] = "get_account_info",
     [2101] = "create_user",

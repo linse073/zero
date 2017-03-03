@@ -590,7 +590,7 @@ function role.action_info(otype, id)
     return action[otype].get(id)
 end
 
-function role.charge(num)
+function role.charge(p, num)
     local user = data.user
     local t
     if user.first_charge[num] then
@@ -602,7 +602,6 @@ function role.charge(num)
     if not r then
         error{code = error_code.ERROR_CHARGE_NUM}
     end
-    local p = update_user()
     role.get_reward(p, r)
     user.charge = user.charge + num
     p.user.charge = user.charge
@@ -636,7 +635,6 @@ function role.charge(num)
         }
         skynet.send(role_mgr, "lua", "broadcast_area", "update_other", bmsg)
     end
-    return "update_user", {update=p}
 end
 
 function role.online_award(p, now)
@@ -1277,9 +1275,15 @@ function proc.apple_charge(msg)
         error{code = error_code.ERROR_ARGS}
     end
     local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, msg.receipt, {"Content-Type: application/json"})
-    print(result, content)
     local content = cjson.decode(content)
-    return "response", ""
+    if content.status == 0 then
+        local num = string.match(content.receipt.pruduct_id, "com.moyi.zero.store_(%d)")
+        local p = update_user()
+        role.charge(p, num)
+        return "update_user", {update=p, ios_index=msg.index}
+    else
+        error{code = error_code.IOS_CHARGE_FAIL}
+    end
 end
 
 return role

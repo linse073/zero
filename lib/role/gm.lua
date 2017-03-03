@@ -162,7 +162,9 @@ function proc.test_charge(msg)
     if data.user.gm_level == 0 then
         error{code = error_code.ROLE_NO_PERMIT}
     end
-    return role.charge(msg.num)
+    local p = update_user()
+    role.charge(p, msg.num)
+    return "update_user", {update=p}
 end
 
 function proc.reset_online_award(msg)

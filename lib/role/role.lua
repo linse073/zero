@@ -1277,9 +1277,9 @@ function proc.apple_charge(msg)
     local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, msg.receipt, {"Content-Type: application/json"})
     local content = cjson.decode(content)
     if content.status == 0 then
-        local num = string.match(content.receipt.product_id, "com.moyi.zero.store_(%d)")
+        local num = string.match(content.receipt.product_id, "com.moyi.zero.store_(%d+)")
         local p = update_user()
-        role.charge(p, num)
+        role.charge(p, tonumber(num))
         return "update_user", {update=p, ios_index=msg.index}
     else
         error{code = error_code.IOS_CHARGE_FAIL}

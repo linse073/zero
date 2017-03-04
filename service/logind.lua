@@ -39,6 +39,9 @@ local auth_proc = {
         local result, content = skynet.call(webclient, "lua", "request", 
             "https://api.weixin.qq.com/sns/userinfo", {openid=user, access_token=access_token, lang="zh_CN"})
         -- print(result, content)
+        if not result then
+            error("network error")
+        end
         local content = cjson.decode(content)
         if content.errcode ~= 0 then
             error(content.errmsg)

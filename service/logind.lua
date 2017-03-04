@@ -43,7 +43,7 @@ local auth_proc = {
             error("network error")
         end
         local content = cjson.decode(content)
-        if content.errcode ~= 0 then
+        if content.errcode then
             error(content.errmsg)
         end
     end,

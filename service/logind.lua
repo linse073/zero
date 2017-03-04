@@ -26,7 +26,7 @@ local LOGIN_QQ = 4
 
 local auth_proc = {
     [LOGIN_PASSWORD] = function(user, data)
-        return = crypt.base64decode(data)
+        return crypt.base64decode(data)
     end,
     [LOGIN_PASSER] = function(user, data)
         

@@ -124,11 +124,7 @@ local function accept(conf, s, fd, addr)
 
 	if not ok then
 		if ok ~= nil then
-            if info == "password error" then
-                write("response 500", fd, "500 Password Error\n")
-            else
-                write("response 401", fd, "401 Unauthorized\n")
-            end
+            write("response 401", fd, "401 Unauthorized\n")
 		end
 		error(info)
 	end
@@ -149,10 +145,14 @@ local function accept(conf, s, fd, addr)
 	-- user_login[uid] = nil
 
 	if ok then
-		err = err or ""
+		-- err = err or ""
 		write("response 200", fd, "200 "..crypt.base64encode(err).."\n")
 	else
-		write("response 403", fd, "403 Forbidden\n")
+        if err == "password error" then
+            write("response 500", fd, "500 Password Error\n")
+        else
+            write("response 403", fd, "403 Forbidden\n")
+        end
 		error(err)
 	end
 end

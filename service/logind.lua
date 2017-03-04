@@ -82,7 +82,7 @@ function server.login_handler(info, secret)
     if gameserver.shutdown then
     	error(string.format("server %s shutdown", sname))
     end
-    local account, errmsg = skynet.call(info.address, "lua", "gen_account", info.loginType, info.uid, info.password)
+    local account, errmsg = skynet.call(gameserver.address, "lua", "gen_account", info.loginType, info.uid, info.password)
     if errmsg then
         error(errmsg)
     end

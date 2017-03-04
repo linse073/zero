@@ -93,7 +93,7 @@ function server.userid(username)
 end
 
 function server.username(uid, subid, servername)
-	return string.format("%s@%s#%s", b64encode(uid), b64encode(servername), b64encode(tostring(subid)))
+	return string.format("%s@%s#%s", b64encode(tostring(uid)), b64encode(servername), b64encode(tostring(subid)))
 end
 
 function server.logout(username)

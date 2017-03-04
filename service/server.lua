@@ -7,14 +7,42 @@ local loginservice = tonumber(...)
 local assert = assert
 
 local gen_key = util.gen_key
+local gen_account = util.gen_account
 local cs = queue()
 local statusdb
 local namedb
+local accountnamedb
 local status_key
 local status
 local config
 
 local CMD = {}
+
+local function check_account(logintype, name, pass)
+    local namekey = gen_account(logintype, config.serverid, name)
+    local account = skynet.call(accountnamedb, "lua", "get", namekey)
+    if account then
+        account = skynet.unpack(account)
+        if pass then
+            if pass == account.password then
+                return false, account
+            else
+                return false, nil, "password error"
+            end
+        else
+            return false, account
+        end
+    else
+        local accountid = status.accountid * 10000 + 6000 + config.serverid
+        status.accountid = status.accountid + 1
+        local account = {
+            id = accountid,
+            password = pass,
+        }
+        skynet.call(accountnamedb, "lua", "save", namekey, skynet.packstring(account))
+        return true, account
+    end
+end
 
 local function check_name(name)
     local namekey = gen_key(config.serverid, name)
@@ -33,6 +61,7 @@ function CMD.open(conf, gatename)
     local master = skynet.queryservice("dbmaster")
     statusdb = skynet.call(master, "lua", "get", "statusdb")
     namedb = skynet.call(master, "lua", "get", "namedb")
+    accountnamedb = skynet.call(master, "lua", "get", "accountnamedb")
     status_key = gen_key(config.serverid, "status")
     status = skynet.call(statusdb, "lua", "get", status_key)
     if not status then
@@ -51,8 +80,12 @@ function CMD.open(conf, gatename)
         if not status.guildid then
             status.guildid = 1
         end
+        if not status.accountid then
+            status.accountid = 1
+        end
     else
         status = {
+            accountid = 1,
             roleid = 1,
             itemid = 1,
             cardid = 1,
@@ -63,11 +96,19 @@ function CMD.open(conf, gatename)
 
     local server_mgr = skynet.queryservice("server_mgr")
     skynet.call(server_mgr, "lua", "register", config.serverid, skynet.self())
-    skynet.call(loginservice, "lua", "register_server", conf, gatename)
+    skynet.call(loginservice, "lua", "register_server", conf, gatename, skynet.self())
 end
 
 function CMD.shutdown()
     skynet.call(loginservice, "lua", "unregister_server", config.servername)
+end
+
+function CMD.gen_account(logintype, name, pass)
+    local new, account, errmsg = cs(check_account, logintype, name, pass)
+    if new then
+        skynet.call(statusdb, "lua", "save", status_key, skynet.packstring(status))
+    end
+    return account, errmsg
 end
 
 function CMD.gen_role(name)

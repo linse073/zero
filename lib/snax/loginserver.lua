@@ -124,7 +124,11 @@ local function accept(conf, s, fd, addr)
 
 	if not ok then
 		if ok ~= nil then
-			write("response 401", fd, "401 Unauthorized\n")
+            if server == "password error" then
+                write("response 500", fd, "500 Password Error\n")
+            else
+                write("response 401", fd, "401 Unauthorized\n")
+            end
 		end
 		error(server)
 	end
@@ -132,7 +136,7 @@ local function accept(conf, s, fd, addr)
 	if not conf.multilogin then
 		if user_login[uid] then
 			write("response 406", fd, "406 Not Acceptable\n")
-			error(string.format("User %s is already login", uid))
+			error(string.format("User %d is already login", uid))
 		end
 
 		user_login[uid] = true
@@ -144,9 +148,9 @@ local function accept(conf, s, fd, addr)
 
 	if ok then
 		err = err or ""
-		write("response 200",fd,  "200 "..crypt.base64encode(err).."\n")
+		write("response 200", fd, "200 "..crypt.base64encode(err).."\n")
 	else
-		write("response 403",fd,  "403 Forbidden\n")
+		write("response 403", fd, "403 Forbidden\n")
 		error(err)
 	end
 end

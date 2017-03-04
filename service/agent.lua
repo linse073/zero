@@ -2,7 +2,6 @@ local skynet = require "skynet"
 local role = require "role.role"
 local timer = require "timer"
 local share = require "share"
-local util = require "util"
 local notify = require "notify"
 
 local assert = assert
@@ -17,8 +16,6 @@ skynet.register_protocol {
 }
 
 local proc = role.init_module()
-local gen_key = util.gen_key
-local gen_id = util.gen_id
 local msg
 local name_msg
 local base
@@ -31,7 +28,7 @@ local CMD = {}
 
 function CMD.login(source, uid, sid, secret, serverid, servername)
 	-- you may use secret to make a encrypted data stream
-	skynet.error(string.format("%s is login", uid))
+	skynet.error(string.format("%d is login", uid))
     data = {
         gate = source,
         userid = uid,
@@ -39,8 +36,6 @@ function CMD.login(source, uid, sid, secret, serverid, servername)
         secret = secret,
         serverid = serverid,
         servername = servername,
-        userkey = gen_key(serverid, uid),
-        id = gen_id(uid, servername),
     }
     role.init(data)
 end
@@ -48,9 +43,9 @@ end
 local function logout()
     local d = data
     data = nil
-    skynet.error(string.format("%s is logout from agent", d.id))
+    skynet.error(string.format("%d is logout from agent", d.userid))
     role.exit()
-    skynet.call(d.gate, "lua", "logout", d.id)
+    skynet.call(d.gate, "lua", "logout", d.userid)
 end
 
 function CMD.logout(source)
@@ -63,12 +58,12 @@ end
 function CMD.afk(source)
 	-- the connection is broken, but the user may back
     if data then
-        skynet.error(string.format("%s afk", data.id))
+        skynet.error(string.format("%d afk", data.userid))
     end
 end
 
 function CMD.exit(source)
-    assert(not data, string.format("Agent exit error %s.", data.id))
+    assert(not data, string.format("Agent exit error %d.", data.userid))
 	skynet.exit()
 end
 

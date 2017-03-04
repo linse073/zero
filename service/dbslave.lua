@@ -29,6 +29,22 @@ function CMD.del(key)
     db:del(key)
 end
 
+function CMD.hhas(k1, k2)
+    return db:hexists(k1, k2)
+end
+
+function CMD.hget(k1, k2)
+    return db:hget(k1, k2)
+end
+
+function CMD.hsave(k1, k2, v)
+    db:hset(k1, k2, v)
+end
+
+function CMD.hdel(k1, k2)
+    db:hdel(k1, k2)
+end
+
 function CMD.zadd(rt, ...)
     db:zadd(rt, ...)
 end

@@ -50,8 +50,12 @@ function util.gen_key(serverid, key)
     return string.format("%d@%s", serverid, key)
 end
 
-function util.gen_id(uid, servername)
-    return string.format("%s@%s", uid, servername)
+-- function util.gen_id(uid, servername)
+--     return string.format("%s@%s", uid, servername)
+-- end
+
+function util.gen_account(logintype, serverid, key)
+    return string.format("%d@%d@%s", logintype, serverid, key)
 end
 
 local to_string

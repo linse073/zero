@@ -147,7 +147,7 @@ function role.init(userdata)
     data.userdb = skynet.call(master, "lua", "get", "userdb")
     data.namedb = skynet.call(master, "lua", "get", "namedb")
     data.rankinfodb = skynet.call(master, "lua", "get", "rankinfodb")
-    local account = skynet.call(data.accdb, "lua", "get", data.userkey)
+    local account = skynet.call(data.accdb, "lua", "get", data.userid)
     if account then
         data.account = skynet.unpack(account)
     else
@@ -291,7 +291,7 @@ end
 
 function role.save_user()
     local user = data.user
-    skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(data.account))
+    skynet.call(data.accdb, "lua", "save", data.userid, skynet.packstring(data.account))
     skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
     skynet.call(data.rankinfodb, "lua", "save", user.id, skynet.packstring(data.rank_info))
 end
@@ -317,8 +317,8 @@ end
 
 function role.heart_beat()
     if data.heart_beat == 0 then
-        skynet.error(string.format("heart beat kick user %s.", data.id))
-        skynet.call(data.gate, "lua", "kick", data.id) -- data is nil
+        skynet.error(string.format("heart beat kick user %d.", data.userid))
+        skynet.call(data.gate, "lua", "kick", data.userid) -- data is nil
     else
         data.heart_beat = 0
     end
@@ -715,7 +715,7 @@ function proc.create_user(msg)
         fight_point = 0,
     }
     account[#account+1] = su
-    skynet.call(data.accdb, "lua", "save", data.userkey, skynet.packstring(account))
+    skynet.call(data.accdb, "lua", "save", data.userid, skynet.packstring(account))
     local initRect = base.INIT_RECT
     local x = random(initRect.x, initRect.ex)
     local y = random(initRect.y, initRect.ey)

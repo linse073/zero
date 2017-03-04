@@ -1,6 +1,5 @@
 local msgserver = require "snax.msgserver"
 local skynet = require "skynet"
-local util = require "util"
 
 local error = error
 local assert = assert
@@ -8,7 +7,6 @@ local string = string
 
 local loginservice = tonumber(...)
 
-local gen_id = util.gen_id
 local server = {}
 local users = {}
 local username_map = {}
@@ -18,9 +16,8 @@ local agent_mgr
 -- login server disallow multi login, so login_handler never be reentry
 -- call by login server
 function server.login_handler(uid, secret, servername, serverid)
-    local id = gen_id(uid, servername)
-	if users[id] then
-		error(string.format("%s is already login", id))
+	if users[uid] then
+		error(string.format("%s is already login", uid))
 	end
 
 	internal_id = internal_id + 1
@@ -41,7 +38,7 @@ function server.login_handler(uid, secret, servername, serverid)
 	-- trash subid (no used)
 	skynet.call(agent, "lua", "login", uid, sid, secret, serverid, servername)
 
-	users[id] = u
+	users[uid] = u
 	username_map[username] = u
 
 	msgserver.login(username, secret)
@@ -66,7 +63,7 @@ end
 
 -- call by login server
 function server.kick_handler(id)
-    skynet.error(string.format("kick user %s.", id))
+    skynet.error(string.format("kick user %d.", id))
 	local u = users[id]
 	if u then
 		local username = msgserver.username(u.uid, u.subid, u.servername)

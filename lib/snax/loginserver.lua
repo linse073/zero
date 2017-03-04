@@ -148,7 +148,7 @@ local function accept(conf, s, fd, addr)
 		-- err = err or ""
 		write("response 200", fd, "200 "..crypt.base64encode(err).."\n")
 	else
-        if err == "password error" then
+        if err:match("password error") then
             write("response 500", fd, "500 Password Error\n")
         else
             write("response 403", fd, "403 Forbidden\n")

@@ -96,7 +96,7 @@ function server.login_handler(sname, uid, secret)
 	end
     local gate = gameserver.gate
 	local subid = skynet.call(gate.address, "lua", "login", uid, secret, sname, gameserver.id)
-    user_online[uid] = {gate = gate, subid = subid, server = sname}
+    user_online[uid] = {gate=gate, subid=subid, server=sname}
     user_login[uid] = nil
     return string.format("%d@%d@%s:%s", uid, subid, gate.ip, gate.port)
 end

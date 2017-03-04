@@ -80,9 +80,9 @@ local function launch_slave(auth_handler)
         local eother = assert_socket("auth", socket.readline(fd), fd)
         local other = crypt.desdecode(secret, crypt.base64decode(eother))
 
-		local ok, server, uid = pcall(auth_handler, token, other)
+		local ok, info = pcall(auth_handler, token, other)
 
-		return ok, server, uid, secret
+		return ok, info, secret
 	end
 
 	local function ret_pack(ok, err, ...)
@@ -119,32 +119,34 @@ local user_login = {}
 
 local function accept(conf, s, fd, addr)
 	-- call slave auth
-	local ok, server, uid, secret = skynet.call(s, "lua", fd, addr)
+	local ok, info, secret = skynet.call(s, "lua", fd, addr)
 	-- slave will accept(start) fd, so we can write to fd later
 
 	if not ok then
 		if ok ~= nil then
-            if server == "password error" then
+            if info == "password error" then
                 write("response 500", fd, "500 Password Error\n")
             else
                 write("response 401", fd, "401 Unauthorized\n")
             end
 		end
-		error(server)
+		error(info)
 	end
 
-	if not conf.multilogin then
-		if user_login[uid] then
-			write("response 406", fd, "406 Not Acceptable\n")
-			error(string.format("User %d is already login", uid))
-		end
+    -- NOTICE: uid is not unique.
+    -- local uid = info.uid
+	-- if not conf.multilogin then
+		-- if user_login[uid] then
+			-- write("response 406", fd, "406 Not Acceptable\n")
+			-- error(string.format("User %d is already login", uid))
+		-- end
 
-		user_login[uid] = true
-	end
+		-- user_login[uid] = true
+	-- end
 
-	local ok, err = pcall(conf.login_handler, server, uid, secret)
+	local ok, err = pcall(conf.login_handler, info, secret)
 	-- unlock login
-	user_login[uid] = nil
+	-- user_login[uid] = nil
 
 	if ok then
 		err = err or ""

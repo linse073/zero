@@ -10,7 +10,7 @@ local tonumber = tonumber
 
 local server = {
 	port = skynet.getenv("login"),
-	multilogin = true,	-- allow same user login different server
+	-- multilogin = true,	-- allow same user login different server
 }
 
 local server_list = {}
@@ -64,41 +64,47 @@ function server.auth_handler(token, other)
         error(string.format("Unsupported login type %d.", loginType))
     end
     local password = proc(user, other)
-    local info = server_list[sname]
-    if not info then
-        error(string.format("Unknown server %s.", sname))
-    end
-    local account, errmsg = skynet.call(info.address, "lua", "gen_account", loginType, user, password)
-    if errmsg then
-        error(errmsg)
-    end
-    return sname, account.id
+    return {
+        server = sname,
+        loginType = loginType,
+        uid = user,
+        password = password,
+    }
 end
 
-function server.login_handler(sname, uid, secret)
-	skynet.error(string.format("%d is login, secret is %s", uid, crypt.hexencode(secret)))
-	local gameserver = assert(server_list[sname], string.format("Unknown server %s.", sname))
+function server.login_handler(info, secret)
+    local sname = info.server
+	local gameserver = server_list[sname]
+    if not gameserver then
+        error(string.format("Unknown server %s.", sname))
+    end
     -- allow same user login different server
     if gameserver.shutdown then
     	error(string.format("server %s shutdown", sname))
     end
-    if user_login[uid] then
-        error(string.format("user %d is already login", uid))
+    local account, errmsg = skynet.call(info.address, "lua", "gen_account", info.loginType, info.uid, info.password)
+    if errmsg then
+        error(errmsg)
     end
-	user_login[uid] = true
-	local last = user_online[uid]
+    local id = account.id
+	skynet.error(string.format("%d is login, secret is %s", id, crypt.hexencode(secret)))
+    if user_login[id] then
+        error(string.format("user %d is already login", id))
+    end
+	user_login[id] = true
+	local last = user_online[id]
 	if last then
-	    skynet.call(last.gate.address, "lua", "kick", uid)
+	    skynet.call(last.gate.address, "lua", "kick", id)
 	end
-	if user_online[uid] then
-        user_login[uid] = nil
-	    error(string.format("user %d is already online", uid))
+	if user_online[id] then
+        user_login[id] = nil
+	    error(string.format("user %d is already online", id))
 	end
     local gate = gameserver.gate
-	local subid = skynet.call(gate.address, "lua", "login", uid, secret, sname, gameserver.id)
-    user_online[uid] = {gate=gate, subid=subid, server=sname}
-    user_login[uid] = nil
-    return string.format("%d@%d@%s:%s", uid, subid, gate.ip, gate.port)
+	local subid = skynet.call(gate.address, "lua", "login", id, secret, sname, gameserver.id)
+    user_online[id] = {gate=gate, subid=subid, server=sname}
+    user_login[id] = nil
+    return string.format("%d@%d@%s:%s", id, subid, gate.ip, gate.port)
 end
 
 local CMD = {}

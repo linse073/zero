@@ -29,9 +29,10 @@ skynet.start(function()
     -- service
     local master = skynet.uniqueservice("dbmaster")
     local config = require(skynet.getenv("config"))
-    for k, v in ipairs(config.db) do
+    local db = config.db
+    for k, v in ipairs(db.name) do
         local dbslave = skynet.newservice("dbslave")
-        skynet.call(dbslave, "lua", "open", v)
+        skynet.call(dbslave, "lua", "open", {host=db.host, port=db.port, db=db.base+k-1}, v)
     end
     local statusdb = skynet.call(master, "lua", "get", "statusdb")
     local open_time = skynet.call(statusdb, "lua", "get", "open_time")

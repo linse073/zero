@@ -5,10 +5,10 @@ local db
 
 local CMD = {}
 
-function CMD.open(conf)
+function CMD.open(conf, name)
     db = redis.connect(conf)
     local master = skynet.queryservice("dbmaster")
-    skynet.call(master, "lua", "register", conf.name, skynet.self())
+    skynet.call(master, "lua", "register", name, skynet.self())
 end
 
 function CMD.has(key)

@@ -150,6 +150,8 @@ local function accept(conf, s, fd, addr)
 	else
         if err:match("password error") then
             write("response 500", fd, "500 Password Error\n")
+        elseif err:match("name exist") then
+            write("response 501", fd, "501 Name Exist\n")
         else
             write("response 403", fd, "403 Forbidden\n")
         end

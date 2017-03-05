@@ -26,7 +26,10 @@ local LOGIN_QQ = 4
 
 local auth_proc = {
     [LOGIN_PASSWORD] = function(user, data)
-        return crypt.base64decode(data)
+        local password, register = data:match("([^:]+):(.+)")
+        password = crypt.base64decode(password)
+        register = (crypt.base64decode(register)=="true")
+        return password, register
     end,
     [LOGIN_PASSER] = function(user, data)
         
@@ -66,12 +69,13 @@ function server.auth_handler(token, other)
     if not proc then
         error(string.format("Unsupported login type %d.", loginType))
     end
-    local password = proc(user, other)
+    local password, register = proc(user, other)
     return {
         server = sname,
         loginType = loginType,
         uid = user,
         password = password,
+        register = register,
     }
 end
 
@@ -85,7 +89,7 @@ function server.login_handler(info, secret)
     if gameserver.shutdown then
     	error(string.format("server %s shutdown", sname))
     end
-    local account, errmsg = skynet.call(gameserver.address, "lua", "gen_account", info.loginType, info.uid, info.password)
+    local account, errmsg = skynet.call(gameserver.address, "lua", "gen_account", info.loginType, info.uid, info.password, info.register)
     if errmsg then
         error(errmsg)
     end

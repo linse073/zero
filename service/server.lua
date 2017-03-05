@@ -18,19 +18,23 @@ local config
 
 local CMD = {}
 
-local function check_account(logintype, name, pass)
+local function check_account(logintype, name, pass, register)
     local namekey = gen_account(logintype, config.serverid, name)
     local account = skynet.call(accountnamedb, "lua", "get", namekey)
     if account then
-        account = skynet.unpack(account)
-        if pass then
-            if pass == account.password then
-                return false, account
-            else
-                return false, nil, "password error"
-            end
+        if register then
+            return false, nil, "name exist"
         else
-            return false, account
+            account = skynet.unpack(account)
+            if pass then
+                if pass == account.password then
+                    return false, account
+                else
+                    return false, nil, "password error"
+                end
+            else
+                return false, account
+            end
         end
     else
         local accountid = status.accountid * 10000 + 6000 + config.serverid
@@ -103,8 +107,8 @@ function CMD.shutdown()
     skynet.call(loginservice, "lua", "unregister_server", config.servername)
 end
 
-function CMD.gen_account(logintype, name, pass)
-    local new, account, errmsg = cs(check_account, logintype, name, pass)
+function CMD.gen_account(logintype, name, pass, register)
+    local new, account, errmsg = cs(check_account, logintype, name, pass, register)
     if new then
         skynet.call(statusdb, "lua", "save", status_key, skynet.packstring(status))
     end

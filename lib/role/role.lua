@@ -1282,10 +1282,15 @@ function proc.apple_charge(msg)
     if content.status == 0 then
         local receipt = content.receipt
         local ret = skynet.call(ioscharge_log, "lua", "findOne", {transaction_id=receipt.transaction_id})
-        local num = string.match(receipt.product_id, "com.moyi.zero.store_(%d+)")
-        local p = update_user()
-        role.charge(p, tonumber(num))
-        return "update_user", {update=p, ios_index=msg.index}
+        if ret then
+            return "update_user", {ios_index=msg.index}
+        else
+            skynet.call(ioscharge_log, "lua", "safe_insert", receipt)
+            local num = string.match(receipt.product_id, "com.moyi.zero.store_(%d+)")
+            local p = update_user()
+            role.charge(p, tonumber(num))
+            return "update_user", {update=p, ios_index=msg.index}
+        end
     else
         error{code = error_code.IOS_CHARGE_FAIL}
     end

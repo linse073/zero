@@ -27,10 +27,10 @@ skynet.start(function()
 	skynet.newservice("debug_console", skynet.getenv("debug_console"))
 
     -- service
+    local config = require(skynet.getenv("config"))
     local log_mgr = skynet.uniqueservice("log_mgr")
     skynet.call(log_mgr, "lua", "open", config.log)
     local master = skynet.uniqueservice("dbmaster")
-    local config = require(skynet.getenv("config"))
     local db = config.db
     for k, v in ipairs(db.name) do
         local dbslave = skynet.newservice("dbslave")

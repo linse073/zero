@@ -61,6 +61,7 @@ local rank_mgr
 local guild_mgr
 local arena_rank
 local webclient
+local ioscharge_log
 local gm_level = tonumber(skynet.getenv("gm_level"))
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 local ios_sandbox = (skynet.getenv("ios_sandbox") == "true")
@@ -98,6 +99,8 @@ skynet.init(function()
     guild_mgr = skynet.queryservice("guild_mgr")
     arena_rank = skynet.queryservice("arena_rank")
     webclient = skynet.queryservice("webclient")
+    local log_mgr = skynet.queryservice("log_mgr")
+    ioscharge_log = skynet.call(log_mgr, "lua", "get", "ioscharge")
 
     charge_title = func.get_string(198000007)
     charge_content = func.get_string(198000008)
@@ -1277,7 +1280,9 @@ function proc.apple_charge(msg)
     local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, msg.receipt, {"Content-Type: application/json"})
     local content = cjson.decode(content)
     if content.status == 0 then
-        local num = string.match(content.receipt.product_id, "com.moyi.zero.store_(%d+)")
+        local receipt = content.receipt
+        local ret = skynet.call(ioscharge_log, "lua", "findOne", {transaction_id=receipt.transaction_id})
+        local num = string.match(receipt.product_id, "com.moyi.zero.store_(%d+)")
         local p = update_user()
         role.charge(p, tonumber(num))
         return "update_user", {update=p, ios_index=msg.index}

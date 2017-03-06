@@ -34,4 +34,12 @@ config.db = {
     }
 }
 
+config.log = {
+    host = "127.0.0.1",
+    name = {
+        "ioscharge",
+        "register",
+    }
+}
+
 return config

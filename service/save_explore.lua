@@ -15,7 +15,7 @@ local CMD = {}
 local function save()
     for k, v in pairs(save_list) do
         if v then
-            skynet.call(exploredb, "lua", "save", k, skynet.packstring(v))
+            skynet.call(exploredb, "lua", "set", k, skynet.packstring(v))
         else
             skynet.call(exploredb, "lua", "del", k)
         end

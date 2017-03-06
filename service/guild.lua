@@ -81,7 +81,7 @@ local function save()
             v.fight_point = ri.fight_point
         end
     end
-    skynet.call(guilddb, "lua", "save", data.id, skynet.packstring(data))
+    skynet.call(guilddb, "lua", "set", data.id, skynet.packstring(data))
 end
 
 local function delay_save()
@@ -676,7 +676,7 @@ end
 function CMD.shutdown()
     timer.del_once_routine("delay_save")
     timer.del_routine("save_guild")
-    skynet.call(guilddb, "lua", "save", data.id, skynet.packstring(data))
+    skynet.call(guilddb, "lua", "set", data.id, skynet.packstring(data))
 end
 
 function CMD.exit()

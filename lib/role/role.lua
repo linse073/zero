@@ -294,9 +294,9 @@ end
 
 function role.save_user()
     local user = data.user
-    skynet.call(data.accdb, "lua", "save", data.userid, skynet.packstring(data.account))
-    skynet.call(data.userdb, "lua", "save", user.id, skynet.packstring(user))
-    skynet.call(data.rankinfodb, "lua", "save", user.id, skynet.packstring(data.rank_info))
+    skynet.call(data.accdb, "lua", "set", data.userid, skynet.packstring(data.account))
+    skynet.call(data.userdb, "lua", "set", user.id, skynet.packstring(user))
+    skynet.call(data.rankinfodb, "lua", "set", user.id, skynet.packstring(data.rank_info))
 end
 
 function role.save_friend()
@@ -718,7 +718,7 @@ function proc.create_user(msg)
         fight_point = 0,
     }
     account[#account+1] = su
-    skynet.call(data.accdb, "lua", "save", data.userid, skynet.packstring(account))
+    skynet.call(data.accdb, "lua", "set", data.userid, skynet.packstring(account))
     local initRect = base.INIT_RECT
     local x = random(initRect.x, initRect.ex)
     local y = random(initRect.y, initRect.ey)
@@ -786,7 +786,7 @@ function proc.create_user(msg)
         friend = {},
         mail = {},
     }
-    skynet.call(data.userdb, "lua", "save", roleid, skynet.packstring(u))
+    skynet.call(data.userdb, "lua", "set", roleid, skynet.packstring(u))
     local rank_info = {
         name = u.name,
         id = u.id,
@@ -797,7 +797,7 @@ function proc.create_user(msg)
         last_login_time = now,
         card = {},
     }
-    skynet.call(data.rankinfodb, "lua", "save", roleid, skynet.packstring(rank_info))
+    skynet.call(data.rankinfodb, "lua", "set", roleid, skynet.packstring(rank_info))
     return "simple_user", su
 end
 

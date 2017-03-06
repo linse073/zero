@@ -57,7 +57,7 @@ end
 
 local function update_day(od, nd, owd, nwd)
     local r = skynet.call(rankdb, "lua", "zrange", "task", 0, 999)
-    skynet.call(rankdb, "lua", "zrem_by_rank", "task", 0, -1)
+    skynet.call(rankdb, "lua", "zremrangebyrank", "task", 0, -1)
     skynet.fork(award, r, task_rank_data.bonus)
     task_rank_data = task_rank_type[nwd]
 end

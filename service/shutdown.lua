@@ -17,7 +17,7 @@ skynet.start(function()
     skynet.call(guild_mgr, "lua", "shutdonw")
     local master = skynet.queryservice("dbmaster")
     local statusdb = skynet.call(master, "lua", "get", "statusdb")
-    skynet.call(statusdb, "lua", "save", "shutdown_time", floor(skynet.time()))
+    skynet.call(statusdb, "lua", "set", "shutdown_time", floor(skynet.time()))
     -- TODO: save server shutdown time
     skynet.error("shutdown finish.")
     skynet.exit()

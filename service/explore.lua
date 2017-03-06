@@ -392,7 +392,7 @@ function CMD.open(d, bd, mgr)
     guild_mgr = skynet.queryservice("guild_mgr")
     local master = skynet.queryservice("dbmaster")
     rankdb = skynet.call(master, "lua", "get", "rankdb")
-    skynet.call(rankdb, "lua", "zrem_by_rank", rankname, 0, -1)
+    skynet.call(rankdb, "lua", "zremrangebyrank", rankname, 0, -1)
     rank_count = 0
     timer.add_second_routine("update_explore", update)
 end

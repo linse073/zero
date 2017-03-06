@@ -1273,6 +1273,15 @@ function proc.first_charge_award(msg)
     return "update_user", {update=p}
 end
 
+local function find_transaction(receipt)
+    local ret = skynet.call(ioscharge_log, "lua", "findOne", {transaction_id=receipt.transaction_id})
+    if ret then
+        return true
+    else
+        skynet.call(ioscharge_log, "lua", "safe_insert", receipt)
+        return false
+    end
+end
 function proc.apple_charge(msg)
     if not msg.receipt then
         error{code = error_code.ERROR_ARGS}
@@ -1281,11 +1290,9 @@ function proc.apple_charge(msg)
     local content = cjson.decode(content)
     if content.status == 0 then
         local receipt = content.receipt
-        local ret = skynet.call(ioscharge_log, "lua", "findOne", {transaction_id=receipt.transaction_id})
-        if ret then
+        if cs(find_transaction, receipt) then
             return "update_user", {ios_index=msg.index}
         else
-            skynet.call(ioscharge_log, "lua", "safe_insert", receipt)
             local num = string.match(receipt.product_id, "com.moyi.zero.store_(%d+)")
             local p = update_user()
             role.charge(p, tonumber(num))

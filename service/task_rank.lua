@@ -77,8 +77,8 @@ end
 function CMD.get(roleid)
     local cr = skynet.call(rankdb, "lua", "zrank", "task", roleid)
     if cr then
-        local cs = skynet.call(rankdb, "lua", "zscore", "task", roleid)
-        return cr + 1, -tonumber(cs)
+        local score = skynet.call(rankdb, "lua", "zscore", "task", roleid)
+        return cr + 1, -tonumber(score)
     end
 end
 

@@ -25,9 +25,9 @@ end
 
 function CMD.query(roleid, min, max)
     local cr = skynet.call(rankdb, "lua", "zrank", rank_name, roleid)
-    local cs = skynet.call(rankdb, "lua", "zscore", rank_name, roleid)
+    local score = skynet.call(rankdb, "lua", "zscore", rank_name, roleid)
     local r = skynet.call(rankdb, "lua", "zrangescore", rank_name, min, max)
-    return cr, cs, r
+    return cr, score, r
 end
 
 skynet.start(function()

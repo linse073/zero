@@ -436,10 +436,10 @@ end
 
 function proc.task_rank(msg)
     local user = data.user
-    local cr, cs = skynet.call(task_rank, "lua", "get", user.id)
+    local cr, score = skynet.call(task_rank, "lua", "get", user.id)
     return "task_rank_info", {
         rank = cr,
-        value = cs,
+        value = score,
     }
 end
 

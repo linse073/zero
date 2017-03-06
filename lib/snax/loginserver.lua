@@ -116,8 +116,13 @@ local function launch_slave(auth_handler)
 end
 
 local user_login = {}
-
-local function accept(conf, s, fd, addr)
+local LOGIN_TYPE_STR = {
+    "password",
+    "passer",
+    "weixin",
+    "qq",
+}
+local function accept(conf, s, fd, addr, log)
 	-- call slave auth
 	local ok, info, secret = skynet.call(s, "lua", fd, addr)
 	-- slave will accept(start) fd, so we can write to fd later
@@ -140,13 +145,22 @@ local function accept(conf, s, fd, addr)
 		-- user_login[uid] = true
 	-- end
 
-	local ok, err = pcall(conf.login_handler, info, secret)
+	local ok, err, id, new = pcall(conf.login_handler, info, secret)
 	-- unlock login
 	-- user_login[uid] = nil
 
 	if ok then
 		-- err = err or ""
 		write("response 200", fd, "200 "..crypt.base64encode(err).."\n")
+        if new then
+            skynet.send(log, "lua", "safe_insert", {
+                account = info.uid,
+                loginType = LOGIN_TYPE_STR[info.loginType],
+                server = info.server,
+                accountID = id,
+                ip = addr,
+            })
+        end
 	else
         if err:match("password error") then
             write("response 500", fd, "500 Password Error\n")
@@ -166,6 +180,8 @@ local function launch_master(conf)
 	local port = assert(tonumber(conf.port))
 	local slave = {}
 	local balance = 1
+    local log_mgr = skynet.queryservice("log_mgr")
+    local register_log = skynet.call(log_mgr, "lua", "get", "register")
 
 	skynet.dispatch("lua", function(_,source,command, ...)
 		skynet.ret(skynet.pack(conf.command_handler(command, ...)))
@@ -183,7 +199,7 @@ local function launch_master(conf)
 		if balance > #slave then
 			balance = 1
 		end
-		local ok, err = pcall(accept, conf, s, fd, addr)
+		local ok, err = pcall(accept, conf, s, fd, addr, register_log)
 		if not ok then
 			if err ~= socket_error then
 				skynet.error(string.format("invalid client (fd = %d) error = %s", fd, err))

@@ -112,7 +112,7 @@ function CMD.gen_account(logintype, name, pass, register)
     if new then
         skynet.call(statusdb, "lua", "set", status_key, skynet.packstring(status))
     end
-    return account, errmsg
+    return new, account, errmsg
 end
 
 function CMD.gen_role(name)

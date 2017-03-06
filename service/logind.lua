@@ -19,22 +19,17 @@ local user_online = {}
 local user_login = {}
 local webclient
 
-local LOGIN_PASSWORD = 1
-local LOGIN_PASSER = 2
-local LOGIN_WEIXIN = 3
-local LOGIN_QQ = 4
-
 local auth_proc = {
-    [LOGIN_PASSWORD] = function(user, data)
+    function(user, data) -- password login
         local password, register = data:match("([^:]+):(.+)")
         password = crypt.base64decode(password)
         register = (crypt.base64decode(register)=="true")
         return password, register
     end,
-    [LOGIN_PASSER] = function(user, data)
+    function(user, data) -- passer login
         
     end,
-    [LOGIN_WEIXIN] = function(user, data)
+    function(user, data) -- weixin login
         local access_token, refresh_token = data:match("([^:]+):(.+)")
         access_token = crypt.base64decode(access_token)
         refresh_token = crypt.base64decode(refresh_token)
@@ -50,7 +45,7 @@ local auth_proc = {
             error(content.errmsg)
         end
     end,
-    [LOGIN_QQ] = function(user, data)
+    function(user, data) -- qq login
         
     end,
 }
@@ -89,7 +84,7 @@ function server.login_handler(info, secret)
     if gameserver.shutdown then
     	error(string.format("server %s shutdown", sname))
     end
-    local account, errmsg = skynet.call(gameserver.address, "lua", "gen_account", info.loginType, info.uid, info.password, info.register)
+    local new, account, errmsg = skynet.call(gameserver.address, "lua", "gen_account", info.loginType, info.uid, info.password, info.register)
     if errmsg then
         error(errmsg)
     end
@@ -111,7 +106,7 @@ function server.login_handler(info, secret)
 	local subid = skynet.call(gate.address, "lua", "login", id, secret, sname, gameserver.id)
     user_online[id] = {gate=gate, subid=subid, server=sname}
     user_login[id] = nil
-    return string.format("%d@%d@%s:%s", id, subid, gate.ip, gate.port)
+    return string.format("%d@%d@%s:%s", id, subid, gate.ip, gate.port), id, new
 end
 
 local CMD = {}

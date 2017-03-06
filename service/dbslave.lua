@@ -1,6 +1,8 @@
 local skynet = require "skynet"
 local redis = require "redis"
 
+local assert = assert
+
 local db
 
 local CMD = {}

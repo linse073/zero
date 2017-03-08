@@ -15,6 +15,7 @@ local traceback = debug.traceback
 local os = os
 local date = os.date
 local time = os.time
+local setmetatable = setmetatable
 
 local util = {}
 
@@ -227,6 +228,21 @@ function util.parse_time(t)
         sec = tonumber(sec),
     }
     return time(st)
+end
+
+function util.cmd_wrap(cmd, wrap)
+    setmetatable(cmd, {
+        __index = function(self, key)
+            local v = wrap[key]
+            if v then
+                local f = function(...)
+                    return v(wrap, ...)
+                end
+                cmd[key] = f
+                return f
+            end
+        end,
+    })
 end
 
 return util

@@ -296,6 +296,7 @@
     stage_id 2 : integer
     rand_seed 3 : integer
     ios_sandbox 4 : boolean
+    show_vip 5 : boolean
 }
 
 .update_user {

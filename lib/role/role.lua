@@ -66,6 +66,7 @@ local gm_level = tonumber(skynet.getenv("gm_level"))
 local start_utc_time = tonumber(skynet.getenv("start_utc_time"))
 local ios_sandbox = (skynet.getenv("ios_sandbox") == "true")
 local ios_url = skynet.getenv("ios_url")
+local show_vip = (skynet.getenv("show_vip") == "true")
 
 local charge_title
 local charge_content
@@ -619,16 +620,18 @@ function role.charge(p, num)
         end
     end
     if vip ~= user.vip then
-        for i = user.vip+1, vip do
-            local l = vip_level[i]
-            local m = {
-                type = base.MAIL_TYPE_CHARGE,
-                time = now,
-                title = charge_title,
-                content = string.format(charge_content, i),
-                item_info = l.mailItem,
-            }
-            mail.add(m, p)
+        if show_vip then
+            for i = user.vip+1, vip do
+                local l = vip_level[i]
+                local m = {
+                    type = base.MAIL_TYPE_CHARGE,
+                    time = now,
+                    title = charge_title,
+                    content = string.format(charge_content, i),
+                    item_info = l.mailItem,
+                }
+                mail.add(m, p)
+            end
         end
         user.vip = vip
         p.user.vip = vip
@@ -989,7 +992,8 @@ local function enter_game(msg)
         local sf = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_FIGHT)
         skynet.call(sf, "lua", "update", user.id, user.fight_point)
     end
-    return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, rand_seed=seed, ios_sandbox=ios_sandbox}
+    return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, 
+                        rand_seed=seed, ios_sandbox=ios_sandbox, show_vip=show_vip}
 end
 function proc.enter_game(msg)
     return proc_queue(cs, enter_game, msg)

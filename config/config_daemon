@@ -18,3 +18,4 @@ gm_level = 1
 start_time = "2016-05-10 00:00:00"
 language = "cn"
 ios_sandbox = true
+show_vip = false

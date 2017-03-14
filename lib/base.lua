@@ -192,11 +192,13 @@ local base = {
     STAGE_BONUS_COST = {
         "money",
         "rmb",
+        "yuan",
     },
     MAX_EXTRA_STAGE_BONUS = 2,
 
     COST_TYPE_MONEY = 1,
     COST_TYPE_RMB = 2,
+    COST_TYPE_YUAN = 3,
 
     -- map
     MAP_RECT = {

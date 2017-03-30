@@ -208,7 +208,7 @@ static int webclient_request(lua_State* l)
     
     const char* postdata = NULL;
     size_t postdatalen = 0;
-    long connect_timeout_ms = 5000;
+    long connect_timeout_ms = 30000;
     
     int top = lua_gettop(l);
     if (top > 2 && lua_isstring(l, 3)) 

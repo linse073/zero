@@ -46,6 +46,7 @@ skynet.start(function()
     end
     skynet.call(statusdb, "lua", "set", "last_open_time", open_time)
     skynet.setenv("last_open_time", open_time)
+    skynet.call(statusdb, "lua", "set", "open_time", now)
     skynet.setenv("open_time", now)
     local shutdown_time = skynet.call(statusdb, "lua", "get", "shutdown_time")
     if shutdown_time then

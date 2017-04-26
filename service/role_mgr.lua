@@ -35,7 +35,7 @@ local function gen_area()
     return area
 end
 
-function notify_area(roleid, agent, area)
+local function notify_area(roleid, agent, area)
     local pack = {}
     for k, v in pairs(area.role) do
         if k ~= roleid then

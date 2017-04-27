@@ -17,7 +17,7 @@ local agent_mgr
 -- call by login server
 function server.login_handler(uid, secret, servername, serverid)
 	if users[uid] then
-		error(string.format("%s is already login", uid))
+		error(string.format("%d is already login", uid))
 	end
 
 	internal_id = internal_id + 1

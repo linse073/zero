@@ -21,7 +21,7 @@ local webclient
 
 local auth_proc = {
     function(user, data) -- password login
-        local password, register = data:match("([^:]+):(.+)")
+        local password, register = data:match("([^:]*):(.*)")
         password = crypt.base64decode(password)
         register = (crypt.base64decode(register)=="true")
         return password, register

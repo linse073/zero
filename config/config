@@ -11,8 +11,8 @@ cpath = "./cservice/?.so"
 lua_path = root.."lib/?.lua;"..root.."lib/?/init.lua;./lualib/?.lua;./lualib/?/init.lua"
 
 config = "config.config"
-debug_console = 8100
-login = 8001
+debug_console = 8110
+login = 8011
 gm_level = 1
 start_time = "2016-05-10 00:00:00"
 language = "cn"

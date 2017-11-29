@@ -313,7 +313,7 @@ local function update()
                         table.remove(er, rank - minr + 1)
                         local tid = tonumber(er[random(#er)])
                         local tinfo = role_list[tid]
-                        if tinfo.guildid ~= v.guildid then
+                        if tinfo.guildid ~= v.guildid or not v.guildid then
                             skynet.call(rankdb, "lua", "zrem", rankname, k)
                             encounter(v, now, tid)
                             skynet.call(rankdb, "lua", "zrem", rankname, tid)

@@ -26,7 +26,7 @@ local datas = {
 		shakeTime = 0.15,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 1.11111111111111,
+		power = 1.1111111111111,
 		recoveryTime = "",
 	},
 	[500000103] = {
@@ -41,7 +41,7 @@ local datas = {
 		shakeTime = 0.21,
 		shakeRange = 4,
 		shakeInterval = 0.1,
-		power = 1.22222222222222,
+		power = 1.2222222222222,
 		recoveryTime = "",
 	},
 	[500000104] = {
@@ -56,7 +56,7 @@ local datas = {
 		shakeTime = 0.12,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 1.44444444444444,
+		power = 1.4444444444444,
 		recoveryTime = "",
 	},
 	[500000105] = {
@@ -131,7 +131,7 @@ local datas = {
 		shakeTime = 0.21,
 		shakeRange = 4,
 		shakeInterval = 0.1,
-		power = 1.42222222222222,
+		power = 1.4222222222222,
 		recoveryTime = "",
 	},
 	[500000205] = {
@@ -176,7 +176,7 @@ local datas = {
 		shakeTime = 0.15,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 1.51111111111111,
+		power = 1.5111111111111,
 		recoveryTime = "",
 	},
 	[500000303] = {
@@ -206,7 +206,7 @@ local datas = {
 		shakeTime = 0.1,
 		shakeRange = 2.4,
 		shakeInterval = 0.1,
-		power = 1.79444444444444,
+		power = 1.7944444444444,
 		recoveryTime = "",
 	},
 	[500000305] = {
@@ -326,7 +326,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 10.5555555541667,
+		power = 10.555555554167,
 		recoveryTime = "",
 	},
 	[510012010] = {
@@ -341,7 +341,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 9.02777777916667,
+		power = 9.0277777791667,
 		recoveryTime = "",
 	},
 	[510011740] = {
@@ -371,7 +371,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 11.8055555541667,
+		power = 11.805555554167,
 		recoveryTime = "",
 	},
 	[510011800] = {
@@ -386,7 +386,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 7.22222222083333,
+		power = 7.2222222208333,
 		recoveryTime = "",
 	},
 	[510010730] = {
@@ -416,7 +416,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 9.44444444583333,
+		power = 9.4444444458333,
 		recoveryTime = "",
 	},
 	[510012070] = {
@@ -446,7 +446,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 7.08333333333333,
+		power = 7.0833333333333,
 		recoveryTime = "",
 	},
 	[510011850] = {
@@ -476,7 +476,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 7.77777777916667,
+		power = 7.7777777791667,
 		recoveryTime = "",
 	},
 	[510011730] = {
@@ -491,7 +491,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 8.05555555416667,
+		power = 8.0555555541667,
 		recoveryTime = "",
 	},
 	[510010070] = {
@@ -506,7 +506,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 10.4166666666667,
+		power = 10.416666666667,
 		recoveryTime = "",
 	},
 	[510011560] = {
@@ -521,7 +521,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 24.3055555541667,
+		power = 24.305555554167,
 		recoveryTime = "",
 	},
 	[510011720] = {
@@ -536,7 +536,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 10.4166666666667,
+		power = 10.416666666667,
 		recoveryTime = "",
 	},
 	[510011710] = {
@@ -551,7 +551,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 9.02777777916667,
+		power = 9.0277777791667,
 		recoveryTime = "",
 	},
 	[510011940] = {
@@ -566,7 +566,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 7.08333333333333,
+		power = 7.0833333333333,
 		recoveryTime = "",
 	},
 	[510011880] = {
@@ -581,7 +581,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 7.08333333333333,
+		power = 7.0833333333333,
 		recoveryTime = "",
 	},
 	[510011890] = {
@@ -611,7 +611,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 6.29166666666667,
+		power = 6.2916666666667,
 		recoveryTime = "",
 	},
 	[510011540] = {
@@ -626,7 +626,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 9.30555555416667,
+		power = 9.3055555541667,
 		recoveryTime = "",
 	},
 	[510011680] = {
@@ -701,7 +701,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 12.2222222208333,
+		power = 12.222222220833,
 		recoveryTime = "",
 	},
 	[510011840] = {
@@ -716,7 +716,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 6.80555555416667,
+		power = 6.8055555541667,
 		recoveryTime = "",
 	},
 	[510011930] = {
@@ -776,7 +776,7 @@ local datas = {
 		shakeTime = 0.8,
 		shakeRange = 12,
 		shakeInterval = 0.1,
-		power = 6.94444444583333,
+		power = 6.9444444458333,
 		recoveryTime = "",
 	},
 	[510010040] = {
@@ -791,7 +791,7 @@ local datas = {
 		shakeTime = 0.8,
 		shakeRange = 12,
 		shakeInterval = 0.1,
-		power = 7.08333333333333,
+		power = 7.0833333333333,
 		recoveryTime = "",
 	},
 	[510012020] = {
@@ -836,7 +836,7 @@ local datas = {
 		shakeTime = 0.8,
 		shakeRange = 12,
 		shakeInterval = 0.1,
-		power = 7.08333333333333,
+		power = 7.0833333333333,
 		recoveryTime = "",
 	},
 	[510011900] = {
@@ -851,7 +851,7 @@ local datas = {
 		shakeTime = 0.8,
 		shakeRange = 12,
 		shakeInterval = 0.1,
-		power = 10.5555555541667,
+		power = 10.555555554167,
 		recoveryTime = "",
 	},
 	[510011060] = {
@@ -881,7 +881,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 7.08333333333333,
+		power = 7.0833333333333,
 		recoveryTime = "",
 	},
 	[510011820] = {
@@ -911,7 +911,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 9.16666666666667,
+		power = 9.1666666666667,
 		recoveryTime = "",
 	},
 	[510011810] = {
@@ -926,7 +926,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 11.5277777791667,
+		power = 11.527777779167,
 		recoveryTime = "",
 	},
 	[510011830] = {
@@ -941,7 +941,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 9.72222222083333,
+		power = 9.7222222208333,
 		recoveryTime = "",
 	},
 	[510011870] = {
@@ -971,7 +971,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 6.94444444583333,
+		power = 6.9444444458333,
 		recoveryTime = "",
 	},
 	[510011950] = {
@@ -1016,7 +1016,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 8.05555555416667,
+		power = 8.0555555541667,
 		recoveryTime = "",
 	},
 	[510011000] = {
@@ -1031,7 +1031,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 9.16666666666667,
+		power = 9.1666666666667,
 		recoveryTime = "",
 	},
 	[510011670] = {
@@ -1046,7 +1046,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 10.9722222208333,
+		power = 10.972222220833,
 		recoveryTime = "",
 	},
 	[510011960] = {
@@ -1091,7 +1091,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 8.33333333333333,
+		power = 8.3333333333333,
 		recoveryTime = "",
 	},
 	[510010190] = {
@@ -1136,7 +1136,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 11.8055555541667,
+		power = 11.805555554167,
 		recoveryTime = "",
 	},
 	[510011020] = {
@@ -1226,7 +1226,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 6.94444444583333,
+		power = 6.9444444458333,
 		recoveryTime = "",
 	},
 	[510011580] = {
@@ -1241,7 +1241,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 9.02777777916667,
+		power = 9.0277777791667,
 		recoveryTime = "",
 	},
 	[510011860] = {
@@ -1256,7 +1256,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 7.08333333333333,
+		power = 7.0833333333333,
 		recoveryTime = "",
 	},
 	[510010380] = {
@@ -1271,7 +1271,7 @@ local datas = {
 		shakeTime = 0.2,
 		shakeRange = 3,
 		shakeInterval = 0.1,
-		power = 9.58333333333333,
+		power = 9.5833333333333,
 		recoveryTime = "",
 	},
 	[510011500] = {
@@ -4684,7 +4684,7 @@ local datas = {
 		name = 0,
 		cd = 0,
 		buffId = 330116900,
-		effect = "",
+		effect = "3000;4000",
 		skillfloat = 0,
 		maxRange = 380,
 		pauseTime = 0,
@@ -5802,7 +5802,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531102400] = {
 		id = 531102400,
@@ -5817,7 +5817,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531120100] = {
 		id = 531120100,
@@ -5832,7 +5832,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117400] = {
 		id = 531117400,
@@ -5847,7 +5847,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117500] = {
 		id = 531117500,
@@ -5862,7 +5862,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118000] = {
 		id = 531118000,
@@ -5877,7 +5877,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531107300] = {
 		id = 531107300,
@@ -5892,7 +5892,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531101100] = {
 		id = 531101100,
@@ -5907,7 +5907,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531120700] = {
 		id = 531120700,
@@ -5922,7 +5922,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117600] = {
 		id = 531117600,
@@ -5937,7 +5937,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118500] = {
 		id = 531118500,
@@ -5952,7 +5952,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117000] = {
 		id = 531117000,
@@ -5967,7 +5967,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117300] = {
 		id = 531117300,
@@ -5982,7 +5982,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531100700] = {
 		id = 531100700,
@@ -5997,7 +5997,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531115600] = {
 		id = 531115600,
@@ -6012,7 +6012,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117200] = {
 		id = 531117200,
@@ -6027,7 +6027,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117100] = {
 		id = 531117100,
@@ -6042,7 +6042,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531119400] = {
 		id = 531119400,
@@ -6057,7 +6057,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118800] = {
 		id = 531118800,
@@ -6072,7 +6072,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118900] = {
 		id = 531118900,
@@ -6087,7 +6087,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531100600] = {
 		id = 531100600,
@@ -6102,7 +6102,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531115400] = {
 		id = 531115400,
@@ -6117,7 +6117,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531116800] = {
 		id = 531116800,
@@ -6132,7 +6132,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531101000] = {
 		id = 531101000,
@@ -6147,7 +6147,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531109200] = {
 		id = 531109200,
@@ -6162,7 +6162,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531101500] = {
 		id = 531101500,
@@ -6177,7 +6177,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531115500] = {
 		id = 531115500,
@@ -6192,7 +6192,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118400] = {
 		id = 531118400,
@@ -6207,7 +6207,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531119300] = {
 		id = 531119300,
@@ -6222,7 +6222,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531108000] = {
 		id = 531108000,
@@ -6237,7 +6237,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531116000] = {
 		id = 531116000,
@@ -6252,7 +6252,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531109100] = {
 		id = 531109100,
@@ -6267,7 +6267,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531100400] = {
 		id = 531100400,
@@ -6282,7 +6282,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531120200] = {
 		id = 531120200,
@@ -6297,7 +6297,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117700] = {
 		id = 531117700,
@@ -6312,7 +6312,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117800] = {
 		id = 531117800,
@@ -6327,7 +6327,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531119000] = {
 		id = 531119000,
@@ -6342,7 +6342,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531110600] = {
 		id = 531110600,
@@ -6357,7 +6357,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531108500] = {
 		id = 531108500,
@@ -6372,7 +6372,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118200] = {
 		id = 531118200,
@@ -6387,7 +6387,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531119100] = {
 		id = 531119100,
@@ -6402,7 +6402,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118100] = {
 		id = 531118100,
@@ -6417,7 +6417,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118300] = {
 		id = 531118300,
@@ -6432,7 +6432,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118700] = {
 		id = 531118700,
@@ -6447,7 +6447,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531119200] = {
 		id = 531119200,
@@ -6462,7 +6462,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531119500] = {
 		id = 531119500,
@@ -6477,7 +6477,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531107200] = {
 		id = 531107200,
@@ -6492,7 +6492,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531101300] = {
 		id = 531101300,
@@ -6507,7 +6507,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531110000] = {
 		id = 531110000,
@@ -6522,7 +6522,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531116700] = {
 		id = 531116700,
@@ -6537,7 +6537,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531119600] = {
 		id = 531119600,
@@ -6552,7 +6552,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531101600] = {
 		id = 531101600,
@@ -6567,7 +6567,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531116600] = {
 		id = 531116600,
@@ -6582,7 +6582,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531101900] = {
 		id = 531101900,
@@ -6597,7 +6597,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531106200] = {
 		id = 531106200,
@@ -6612,7 +6612,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531106100] = {
 		id = 531106100,
@@ -6627,7 +6627,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531110200] = {
 		id = 531110200,
@@ -6642,7 +6642,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531106600] = {
 		id = 531106600,
@@ -6657,7 +6657,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531103700] = {
 		id = 531103700,
@@ -6672,7 +6672,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531119700] = {
 		id = 531119700,
@@ -6687,7 +6687,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531103300] = {
 		id = 531103300,
@@ -6702,7 +6702,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531117900] = {
 		id = 531117900,
@@ -6717,7 +6717,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531115800] = {
 		id = 531115800,
@@ -6732,7 +6732,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531118600] = {
 		id = 531118600,
@@ -6747,7 +6747,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[531103800] = {
 		id = 531103800,
@@ -6762,7 +6762,7 @@ local datas = {
 		shakeRange = 0,
 		shakeInterval = 0,
 		power = 0,
-		recoveryTime = "3000;4000",
+		recoveryTime = "50职业普攻，51卡牌，52BOSS,53怪物，54被动（在passive表中用140开头），59机关",
 	},
 	[590000010] = {
 		id = 590000010,

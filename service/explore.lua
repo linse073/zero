@@ -1,7 +1,7 @@
 local skynet = require "skynet"
 local timer = require "timer"
 local queue = require "skynet.queue"
-local sharedata = require "sharedata"
+local sharedata = require "skynet.sharedata"
 local new_rand = require "random"
 local func = require "func"
 

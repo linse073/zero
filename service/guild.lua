@@ -1,6 +1,6 @@
 local skynet = require "skynet"
 local timer = require "timer"
-local sharedata = require "sharedata"
+local sharedata = require "skynet.sharedata"
 local util = require "util"
 local func = require "func"
 local queue = require "skynet.queue"

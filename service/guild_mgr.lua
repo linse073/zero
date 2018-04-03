@@ -2,7 +2,7 @@ local skynet = require "skynet"
 local util = require "util"
 local timer = require "timer"
 local queue = require "skynet.queue"
-local sharedata = require "sharedata"
+local sharedata = require "skynet.sharedata"
 
 local assert = assert
 local pairs = pairs

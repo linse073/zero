@@ -2,7 +2,6 @@ local skynet = require "skynet"
 local share = require "share"
 local util = require "util"
 local func = require "func"
-local proc_queue = require "proc_queue"
 
 local item
 local task
@@ -26,7 +25,7 @@ local original_card
 local class_card
 local base
 local error_code
-local cs
+local cz
 local data
 local task_rank
 
@@ -42,15 +41,15 @@ skynet.init(function()
     class_card = share.class_card
     base = share.base
     error_code = share.error_code
-    cs = share.cs
+    cz = share.cz
     task_rank = skynet.queryservice("task_rank")
 end)
 
 function card.init_module()
-    item = require "role.item"
-    task = require "role.task"
-    role = require "role.role"
-    rank = require "role.rank"
+    item = require "game.item"
+    task = require "game.task"
+    role = require "game.role"
+    rank = require "game.rank"
     return proc
 end
 
@@ -108,7 +107,6 @@ function card.add_newbie_card(cardid)
             }
         end
         local v = {
-            -- id = cs(card.gen_id),
             id = card.gen_id(),
             cardid = cardid,
             level = d.starLv,
@@ -221,7 +219,6 @@ function card.add_by_cardid(p, d)
         }
     end
     local v = {
-        -- id = cs(card.gen_id),
         id = card.gen_id(),
         cardid = d.id,
         level = d.starLv,
@@ -484,12 +481,12 @@ function proc.upgrade_passive(msg)
     local mul = 1
     if msg.rmb and si.status > 0 then
         local rmb = idata.price * si.status * 5
-        proc_queue(cs, function()
-            if user.rmb < rmb then
-                error{code = error_code.ROLE_RMB_LIMIT}
-            end
-            role.add_rmb(p, -rmb)
-        end)
+        cz.start()
+        if user.rmb < rmb then
+            error{code = error_code.ROLE_RMB_LIMIT}
+        end
+        role.add_rmb(p, -rmb)
+        cz.finish()
         mul = 10 * si.status
         si.status = 0
     else

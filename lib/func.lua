@@ -1,6 +1,6 @@
 local skynet = require "skynet"
 local util = require "util"
-local sharedata = require "sharedata"
+local sharedata = require "skynet.sharedata"
 local new_rand = require "random"
 
 local assert = assert

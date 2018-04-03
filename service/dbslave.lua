@@ -1,5 +1,5 @@
 local skynet = require "skynet"
-local redis = require "redis"
+local redis = require "skynet.db.redis"
 local util = require "util"
 
 local assert = assert
@@ -16,6 +16,10 @@ end
 skynet.start(function()
 	skynet.dispatch("lua", function(session, source, command, ...)
 		local f = assert(CMD[command])
-        skynet.retpack(f(...))
+        if session == 0 then
+            f(...)
+        else
+            skynet.retpack(f(...))
+        end
 	end)
 end)

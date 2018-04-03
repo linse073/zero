@@ -1,5 +1,5 @@
 local login = require "snax.loginserver"
-local crypt = require "crypt"
+local crypt = require "skynet.crypt"
 local skynet = require "skynet"
 local cjson = require "cjson"
 
@@ -24,10 +24,13 @@ local auth_proc = {
         local password, register = data:match("([^:]*):(.*)")
         password = crypt.base64decode(password)
         register = (crypt.base64decode(register)=="true")
-        return password, register
+		return {
+			password = password,
+			register = register,
+		}
     end,
     function(user, data) -- passer login
-        
+		return {}
     end,
     function(user, data) -- weixin login
         local access_token, refresh_token = data:match("([^:]+):(.+)")
@@ -44,9 +47,16 @@ local auth_proc = {
         if content.errcode then
             error(content.errmsg)
         end
-    end,
-    function(user, data) -- qq login
-        
+		return {
+			nick_name = content.nickname,
+			sex = content.sex,
+			head_img = content.headimgurl,
+            openid = content.openid,
+            unionid = content.unionid,
+		}
+	function(user, data) -- qq login
+        	return {}
+    	end,
     end,
 }
 
@@ -64,18 +74,15 @@ function server.auth_handler(token, other)
     if not proc then
         error(string.format("Unsupported login type %d.", loginType))
     end
-    local password, register = proc(user, other)
-    return {
-        server = sname,
-        loginType = loginType,
-        uid = user,
-        password = password,
-        register = register,
-    }
+    local info = proc(user, other)
+    	info.servername = sname
+	info.loginType = loginType
+	info.uid = user
+	return info
 end
 
-function server.login_handler(info, secret)
-    local sname = info.server
+function server.login_handler(info)
+    local sname = info.servername
 	local gameserver = server_list[sname]
     if not gameserver then
         error(string.format("Unknown server %s.", sname))
@@ -84,12 +91,12 @@ function server.login_handler(info, secret)
     if gameserver.shutdown then
     	error(string.format("server %s shutdown", sname))
     end
-    local new, account, errmsg = skynet.call(gameserver.address, "lua", "gen_account", info.loginType, info.uid, info.password, info.register)
+    local new, account, errmsg = skynet.call(gameserver.address, "lua", "gen_account", info)
     if errmsg then
         error(errmsg)
     end
     local id = account.id
-	skynet.error(string.format("%d is login, secret is %s", id, crypt.hexencode(secret)))
+	skynet.error(string.format("%d is login, secret is %s", id, crypt.hexencode(info.secret)))
     if user_login[id] then
         error(string.format("user %d is already login", id))
     end
@@ -103,7 +110,10 @@ function server.login_handler(info, secret)
 	    error(string.format("user %d is already online", id))
 	end
     local gate = gameserver.gate
-	local subid = skynet.call(gate.address, "lua", "login", id, secret, sname, gameserver.id)
+	info.userid = id
+	info.serverid = gameserver.id
+    info.server_address = gameserver.address
+	local subid = skynet.call(gate.address, "lua", "login", info)
     user_online[id] = {gate=gate, subid=subid, server=sname}
     user_login[id] = nil
     return string.format("%d@%d@%s:%s", id, subid, gate.ip, gate.port), id, new

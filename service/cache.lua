@@ -1,6 +1,6 @@
 local skynet = require "skynet"
 local sprotoloader = require "sprotoloader"
-local sharedata = require "sharedata"
+local sharedata = require "skynet.sharedata"
 local proto = require "proto"
 
 local string = string
@@ -485,7 +485,8 @@ skynet.start(function()
     sharedata.new("guildtechdata", guildtechdata)
 
     sharedata.new("base", base)
-    sharedata.new("error_code", require("error_code"))
+    local error_code = require("error_code")
+    sharedata.new("error_code", error_code.code)
 
     sharedata.new("day_task", day_task)
     sharedata.new("achi_task", achi_task)

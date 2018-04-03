@@ -42,7 +42,7 @@ skynet.init(function()
 end)
 
 function friend.init_module()
-    task = require "role.task"
+    task = require "game.task"
     return proc
 end
 

@@ -1,4 +1,4 @@
-local crypt = require "crypt"
+local crypt = require "skynet.crypt"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -45,6 +45,15 @@ function util.empty(t)
         return false
     end
     return true
+end
+
+function util.reverse(t)
+    local l = #t
+    for i = 1, l//2 do
+        local j = l - i + 1
+        t[i], t[j] = t[j], t[i]
+    end
+    return t
 end
 
 function util.gen_key(serverid, key)
@@ -243,6 +252,57 @@ function util.cmd_wrap(cmd, wrap)
             end
         end,
     })
+end
+
+local timer_protocol = {
+	routine = "call_routine",
+	second_routine = "call_second_routine",
+	day_routine = "call_day_routine",
+	once_routine = "call_once_routine",
+}
+function util.timer_wrap(cmd)
+    local timer = require "timer"
+    setmetatable(cmd, {
+        __index = function(self, key)
+            local v = timer_protocol[key]
+            if v then
+                local f = function(...)
+					return timer[v](...)
+                end
+                cmd[key] = f
+                return f
+            end
+        end,
+    })
+end
+
+local function encode_char(char)
+    return "%" .. string.format("%02X", string.byte(char))
+end
+function util.url_encode(input)
+    -- convert line endings
+    input = string.gsub(tostring(input), "\n", "\r\n")
+    -- escape all characters but alphanumeric, '.' and '-'
+    input = string.gsub(input, "([^%w%.%- ])", encode_char)
+    -- convert spaces to "+" symbols
+    return string.gsub(input, " ", "+")
+end
+
+local function decode_char(h)
+    return string.char(tonumber(h, 16))
+end
+function util.url_decode(input)
+    input = string.gsub(input, "+", " ")
+    input = string.gsub(input, "%%(%x%x)", decode_char)
+    return string.gsub(input, "\r\n", "\n")
+end
+
+function util.url_query(q)
+    local t = {}
+    for k, v in pairs(q) do
+        t[#t+1] = string.format("%s=%s", util.url_encode(k), util.url_encode(v))
+    end
+    return table.concat(t, "&")
 end
 
 return util

@@ -18,16 +18,16 @@ local config
 
 local CMD = {}
 
-local function check_account(logintype, name, pass, register)
-    local namekey = gen_account(logintype, config.serverid, name)
+local function check_account(info)
+    local namekey = gen_account(info.loginType, config.serverid, info.uid)
     local account = skynet.call(accountnamedb, "lua", "get", namekey)
     if account then
-        if register then
+        if info.register then
             return false, nil, "name exist"
         else
             account = skynet.unpack(account)
-            if pass then
-                if pass == account.password then
+            if info.password then
+                if info.password == account.password then
                     return false, account
                 else
                     return false, nil, "password error"
@@ -37,14 +37,18 @@ local function check_account(logintype, name, pass, register)
             end
         end
     else
-        local accountid = status.accountid * 10000 + 6000 + config.serverid
-        status.accountid = status.accountid + 1
-        local account = {
-            id = accountid,
-            password = pass,
-        }
-        skynet.call(accountnamedb, "lua", "set", namekey, skynet.packstring(account))
-        return true, account
+        if info.register or not info.password then
+	        local accountid = status.accountid * 10000 + 6000 + config.serverid
+	        status.accountid = status.accountid + 1
+	        local account = {
+	            id = accountid,
+	            password = info.password,
+	        }
+	        skynet.call(accountnamedb, "lua", "set", namekey, skynet.packstring(account))
+	        return true, account
+	else
+		return false, nil, "account not exist"
+	end
     end
 end
 
@@ -107,8 +111,8 @@ function CMD.shutdown()
     skynet.call(loginservice, "lua", "unregister_server", config.servername)
 end
 
-function CMD.gen_account(logintype, name, pass, register)
-    local new, account, errmsg = cs(check_account, logintype, name, pass, register)
+function CMD.gen_account(info)
+    local new, account, errmsg = cs(check_account, info)
     if new then
         skynet.call(statusdb, "lua", "set", status_key, skynet.packstring(status))
     end

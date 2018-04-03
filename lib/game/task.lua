@@ -42,9 +42,9 @@ skynet.init(function()
 end)
 
 function task.init_module()
-    role = require "role.role"
-    item = require "role.item"
-    stage = require "role.stage"
+    role = require "game.role"
+    item = require "game.item"
+    stage = require "game.stage"
     return proc
 end
 

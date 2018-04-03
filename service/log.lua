@@ -1,5 +1,5 @@
 local skynet = require "skynet"
-local mongo = require "mongo"
+local mongo = require "skynet.db.mongo"
 local util = require "util"
 
 local assert = assert

@@ -2,7 +2,6 @@ local skynet = require "skynet"
 local share = require "share"
 local notify = require "notify"
 local util = require "util"
-local proc_queue = require "proc_queue"
 
 local role
 
@@ -12,21 +11,21 @@ local data
 local guild_mgr
 local explore_mgr
 local role_mgr
-local cs
+local cz
 
 local guild = {}
 local proc = {}
 
 skynet.init(function()
     error_code = share.error_code
-    cs = share.cs
+    cz = share.cz
     guild_mgr = skynet.queryservice("guild_mgr")
     explore_mgr = skynet.queryservice("explore_mgr")
     role_mgr = skynet.queryservice("role_mgr")
 end)
 
 function guild.init_module()
-    role = require "role.role"
+    role = require "game.role"
     return proc
 end
 
@@ -108,17 +107,16 @@ function proc.found_guild(msg)
         error{code = error_code.ALREADY_HAS_GUILD}
     end
     local p = update_user()
-    local r, g, id
-    proc_queue(cs, function()
-        if user.rmb < 500 then
-            error{code = error_code.ROLE_RMB_LIMIT}
-        end
-        r, g, id = skynet.call(guild_mgr, "lua", "found", user.id, data.server, msg.name)
-        if r ~= error_code.OK then
-            error{code = r}
-        end
-        role.add_rmb(p, -500)
-    end)
+    cz.start()
+    if user.rmb < 500 then
+        error{code = error_code.ROLE_RMB_LIMIT}
+    end
+    local r, g, id = skynet.call(guild_mgr, "lua", "found", user.id, data.server, msg.name)
+    if r ~= error_code.OK then
+        error{code = r}
+    end
+    role.add_rmb(p, -500)
+    cz.finish()
     data.guild = g
     data.guildid = id
     p.guild = skynet.call(g, "lua", "pack_info")
@@ -333,16 +331,15 @@ function proc.upgrade_guild_skill(msg)
     end
     local user = data.user
     local p = update_user()
-    local r, update, contribute, rmb, count_limit
-    proc_queue(cs, function()
-        r, update, contribute, rmb, count_limit = skynet.call(data.guild, "lua", "upgrade_skill", user.id, msg.rmb, user.rmb, msg.id)
-        if r ~= error_code.OK then
-            error{code = r}
-        end
-        if rmb then
-            role.add_rmb(p, -rmb)
-        end
-    end)
+    cz.start()
+    local r, update, contribute, rmb, count_limit = skynet.call(data.guild, "lua", "upgrade_skill", user.id, msg.rmb, user.rmb, msg.id)
+    if r ~= error_code.OK then
+        error{code = r}
+    end
+    if rmb then
+        role.add_rmb(p, -rmb)
+    end
+    cz.finish()
     role.add_contribute(p, contribute)
     if count_limit then
         skynet.call(guild_mgr, "lua", "update", data.guildid, "count_limit", count_limit)

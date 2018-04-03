@@ -3,7 +3,6 @@ local share = require "share"
 local util = require "util"
 local new_rand = require "random"
 local func = require "func"
-local proc_queue = require "proc_queue"
 local notify = require "notify"
 
 local task
@@ -30,7 +29,7 @@ local base
 local error_code
 local vip_level
 local guild_store
-local cs
+local cz
 local is_equip
 local is_material
 local is_chest
@@ -58,7 +57,7 @@ skynet.init(function()
     error_code = share.error_code
     vip_level = share.vip_level
     guild_store = share.guild_store
-    cs = share.cs
+    cz = share.cz
     is_equip = func.is_equip
     is_material = func.is_material
     is_chest = func.is_chest
@@ -75,10 +74,10 @@ skynet.init(function()
 end)
 
 function item.init_module()
-    task = require "role.task"
-    role = require "role.role"
-    stage = require "role.stage"
-    mail = require "role.mail"
+    task = require "game.task"
+    role = require "game.role"
+    stage = require "game.stage"
+    mail = require "game.mail"
     return proc
 end
 
@@ -244,7 +243,6 @@ function item.add_by_itemid(p, num, d)
                 diff = overlay
             end
             local v = {
-                -- id = cs(item.gen_id),
                 id = item.gen_id(),
                 itemid = itemid,
                 owner = 0,
@@ -502,7 +500,6 @@ function item.split(p, itemid)
                     num = iv.num,
                 }
                 local v = {
-                    -- id = cs(item.gen_id),
                     id = item.gen_id(),
                     itemid = itemid,
                     owner = 0,
@@ -1147,12 +1144,12 @@ function proc.sell_item(msg)
         end
         local p = update_user()
         local user = data.user
-        proc_queue(cs, function()
-            if user.money < 500 then
-                error{code = error_code.ROLE_MONEY_LIMIT}
-            end
-            role.add_money(p, -500)
-        end)
+        cz.start()
+        if user.money < 500 then
+            error{code = error_code.ROLE_MONEY_LIMIT}
+        end
+        role.add_money(p, -500)
+        cz.finish()
         item.sell(p, i, msg.price)
         skynet.call(trade_mgr, "lua", "add", iv, d)
         skynet.call(save_trade, "lua", "update", iv.id, iv)
@@ -1177,12 +1174,12 @@ function proc.sell_item(msg)
         end
         local p = update_user()
         local user = data.user
-        proc_queue(cs, function()
-            if user.money < 500 then
-                error{code = error_code.ROLE_MONEY_LIMIT}
-            end
-            role.add_money(p, -500)
-        end)
+        cz.start()
+        if user.money < 500 then
+            error{code = error_code.ROLE_MONEY_LIMIT}
+        end
+        role.add_money(p, -500)
+        cz.finish()
         local is = item.sell_by_itemid(p, msg.itemid, msg.num, msg.price)
         skynet.call(trade_mgr, "lua", "batch_add", is, d)
         skynet.call(save_trade, "lua", "batch_update", is, true)
@@ -1281,15 +1278,15 @@ function proc.buy_item(msg)
         end
         local total_price = iv.price * iv.num
         local p = update_user()
-        proc_queue(cs, function()
-            if user.money < total_price then
-                error{code = error_code.ROLE_MONEY_LIMIT}
-            end
-            if skynet.call(trade_mgr, "lua", "del", msg.id) == 0 then
-                error{code = error_code.NO_SELL_ITEM}
-            end
-            role.add_money(p, -total_price)
-        end)
+        cz.start()
+        if user.money < total_price then
+            error{code = error_code.ROLE_MONEY_LIMIT}
+        end
+        if skynet.call(trade_mgr, "lua", "del", msg.id) == 0 then
+            error{code = error_code.NO_SELL_ITEM}
+        end
+        role.add_money(p, -total_price)
+        cz.finish()
         task.update(p, base.TASK_COMPLETE_TRADE, 1, 0, total_price)
         skynet.call(save_trade, "lua", "update", iv.id, false)
         local now = floor(skynet.time())
@@ -1331,32 +1328,32 @@ function proc.buy_item(msg)
         local p = update_user()
         local tn, del, ln, u
         local user = data.user
-        proc_queue(cs, function()
-            if user.money < msg.price * msg.num then
-                error{code = error_code.ROLE_MONEY_LIMIT}
-            end
-            tn, del, ln, u = skynet.call(trade_mgr, "lua", "del_by_itemid", msg.itemid, msg.price, msg.num)
-            if tn < msg.num then
-                if d.officialSale == 1 and d.officialNumber1 > 0 and d.officialNumber2 > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
-                    local t = user.trade_item[msg.itemid]
-                    if t then
-                        local n = t[2][msg.price]
-                        if n and n.num > 0 then
-                            local diff = msg.num - tn
-                            if diff > n.num then
-                                diff = n.num
-                            end
-                            n.num = n.num - diff
-                            tn = tn + diff
+        cz.start()
+        if user.money < msg.price * msg.num then
+            error{code = error_code.ROLE_MONEY_LIMIT}
+        end
+        tn, del, ln, u = skynet.call(trade_mgr, "lua", "del_by_itemid", msg.itemid, msg.price, msg.num)
+        if tn < msg.num then
+            if d.officialSale == 1 and d.officialNumber1 > 0 and d.officialNumber2 > 0 and (d.PreId == 0 or data.stage[d.PreId]) then
+                local t = user.trade_item[msg.itemid]
+                if t then
+                    local n = t[2][msg.price]
+                    if n and n.num > 0 then
+                        local diff = msg.num - tn
+                        if diff > n.num then
+                            diff = n.num
                         end
+                        n.num = n.num - diff
+                        tn = tn + diff
                     end
                 end
             end
-            if tn == 0 then
-                error{code = error_code.NO_SELL_ITEM}
-            end
-            role.add_money(p, -tn*msg.price)
-        end)
+        end
+        if tn == 0 then
+            error{code = error_code.NO_SELL_ITEM}
+        end
+        role.add_money(p, -tn*msg.price)
+        cz.finish()
         local r = {}
         if del then
             skynet.call(save_trade, "lua", "batch_update", del, false)
@@ -1476,19 +1473,19 @@ function proc.mall_item(msg)
     end
     local p = update_user()
     if md.priceType == base.COST_TYPE_MONEY then
-        proc_queue(cs, function()
-            if user.money < md.price then
-                error{code = error_code.ROLE_MONEY_LIMIT}
-            end
-            role.add_money(p, -md.price)
-        end)
+        cz.start()
+        if user.money < md.price then
+            error{code = error_code.ROLE_MONEY_LIMIT}
+        end
+        role.add_money(p, -md.price)
+        cz.finish()
     elseif md.priceType == base.COST_TYPE_RMB then
-        proc_queue(cs, function()
-            if user.rmb < md.price then
-                error{code = error_code.ROLE_RMB_LIMIT}
-            end
-            role.add_rmb(p, -md.price)
-        end)
+        cz.start()
+        if user.rmb < md.price then
+            error{code = error_code.ROLE_RMB_LIMIT}
+        end
+        role.add_rmb(p, -md.price)
+        cz.finish()
     else
         error{code = error_code.ERROR_COST_TYPE}
     end
@@ -1517,12 +1514,12 @@ function proc.guild_item(msg)
     end
     local p = update_user()
     local price = gi[2]
-    proc_queue(cs, function()
-        if user.contribute < price then
-            error{code = error_code.ROLE_CONTRIBUTE_LIMIT}
-        end
-        role.add_contribute(p, -price)
-    end)
+    cz.start()
+    if user.contribute < price then
+        error{code = error_code.ROLE_CONTRIBUTE_LIMIT}
+    end
+    role.add_contribute(p, -price)
+    cz.finish()
     item.add_by_itemid(p, 1, gi[1])
     local newnum = num + 1
     user.guild_item[msg.id] = newnum

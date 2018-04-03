@@ -1,7 +1,7 @@
 local skynet = require "skynet"
-local sharedata = require "sharedata"
+local sharedata = require "skynet.sharedata"
 local sprotoloader = require "sprotoloader"
-local queue = require "skynet.queue"
+local crit_zone = require "crit_zone"
 
 local share = {}
 
@@ -60,7 +60,7 @@ skynet.init(function()
 
     -- share in current service
     share.sproto = sprotoloader.load(1)
-    share.cs = queue() -- avoid dead lock, there is only one queue in a agent
+    share.cz = crit_zone() -- avoid dead lock, there is only one crit_zone in a agent
 end)
 
 return share

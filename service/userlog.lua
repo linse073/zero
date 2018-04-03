@@ -1,6 +1,8 @@
 local skynet = require "skynet"
 require "skynet.manager"
 
+local assert = assert
+local string = string
 local date = os.date
 local floor = math.floor
 
@@ -13,7 +15,7 @@ skynet.register_protocol {
 	unpack = skynet.tostring,
 	dispatch = function(_, address, msg)
 		p(string.format("[%s][%s]: %s", skynet.address(address), date("%m/%d/%Y %X", floor(skynet.time())), msg))
-	end
+    end,
 }
 
 local function change_log()

@@ -33,9 +33,9 @@ skynet.init(function()
 end)
 
 function mail.init_module()
-    item = require "role.item"
-    role = require "role.role"
-    task = require "role.task"
+    item = require "game.item"
+    role = require "game.role"
+    task = require "game.task"
     return proc
 end
 

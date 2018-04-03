@@ -16,12 +16,14 @@ local agent_mgr
 -- login server disallow multi login, so login_handler never be reentry
 -- call by login server
 function server.login_handler(uid, secret, servername, serverid)
+	local uid = info.userid
 	if users[uid] then
 		error(string.format("%d is already login", uid))
 	end
 
 	internal_id = internal_id + 1
 	local sid = internal_id	-- don't use internal_id directly
+	local servername = info.servername
 	local username = msgserver.username(uid, sid, servername)
 
 	-- you can use a pool to alloc new agent
@@ -36,12 +38,14 @@ function server.login_handler(uid, secret, servername, serverid)
 	}
 
 	-- trash subid (no used)
-	skynet.call(agent, "lua", "login", uid, sid, secret, serverid, servername)
+	info.gate = skynet.self()
+	info.subid = sid
+	skynet.call(agent, "lua", "login", info)
 
 	users[uid] = u
 	username_map[username] = u
 
-	msgserver.login(username, secret)
+	msgserver.login(username, info.secret)
 
 	-- you should return unique subid
 	return sid
@@ -84,6 +88,14 @@ function server.disconnect_handler(username)
 	if u then
 		skynet.call(u.agent, "lua", "afk")
 	end
+end
+
+function server.connect_handler(username, addr)
+    local u = username_map[username]
+    if u then
+        addr = addr:match("^(.*):")
+        skynet.call(u.agent, "lua", "btk", addr)
+    end
 end
 
 -- call by self (when recv a request from client)

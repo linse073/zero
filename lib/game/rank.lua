@@ -2,7 +2,6 @@ local skynet = require "skynet"
 local share = require "share"
 local func = require "func"
 local util = require "util"
-local proc_queue = require "proc_queue"
 
 local pairs = pairs
 local ipairs = ipairs
@@ -27,7 +26,7 @@ local expdata
 local type_reward
 local is_equip
 local is_stone
-local cs
+local cz
 local arena_rank
 local fight_point_rank
 local role_mgr
@@ -50,7 +49,7 @@ skynet.init(function()
     type_reward = share.type_reward
     is_equip = func.is_equip
     is_stone = func.is_stone
-    cs = share.cs
+    cz = share.cz
     arena_rank = skynet.queryservice("arena_rank")
     fight_point_rank = skynet.queryservice("fight_point_rank")
     role_mgr = skynet.queryservice("role_mgr")
@@ -67,10 +66,10 @@ skynet.init(function()
 end)
 
 function rank.init_module()
-    stage = require "role.stage"
-    mail = require "role.mail"
-    role = require "role.role"
-    task = require "role.task"
+    stage = require "game.stage"
+    mail = require "game.mail"
+    role = require "game.role"
+    task = require "game.task"
     return proc
 end
 
@@ -385,12 +384,12 @@ function proc.refresh_arena(msg)
         local count = user.refresh_arena_cd + 1
         local e = assert(expdata[count], string.format("No exp data %d.", count))
         local p = update_user()
-        proc_queue(cs, function()
-            if user.rmb < e.arenaDiamond then
-                error{code = error_code.ROLE_RMB_LIMIT}
-            end
-            role.add_rmb(p, -e.arenaDiamond)
-        end)
+        cz.start()
+        if user.rmb < e.arenaDiamond then
+            error{code = error_code.ROLE_RMB_LIMIT}
+        end
+        role.add_rmb(p, -e.arenaDiamond)
+        cz.finish()
         local pu = p.user
         user.arena_cd = now - base.ARENA_CHALLENGE_TIME
         pu.arena_cd = user.arena_cd
@@ -401,12 +400,12 @@ function proc.refresh_arena(msg)
         local count = user.refresh_match_cd + 1
         local e = assert(expdata[count], string.format("No exp data %d.", count))
         local p = update_user()
-        proc_queue(cs, function()
-            if user.rmb < e.matchDiamond then
-                error{code = error_code.ROLE_RMB_LIMIT}
-            end
-            role.add_rmb(p, -e.matchDiamond)
-        end)
+        cz.start()
+        if user.rmb < e.matchDiamond then
+            error{code = error_code.ROLE_RMB_LIMIT}
+        end
+        role.add_rmb(p, -e.matchDiamond)
+        cz.finish()
         user.refresh_match_cd = count
         p.user.refresh_match_cd = count
         local now = floor(skynet.time())

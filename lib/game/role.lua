@@ -4,7 +4,6 @@ local share = require "share"
 local notify = require "notify"
 local util = require "util"
 local func = require "func"
-local proc_queue = require "proc_queue"
 local new_rand = require "random"
 local cjson = require "cjson"
 
@@ -43,7 +42,7 @@ local base
 local type_reward
 local mall_sale
 local mall_limit
-local cs
+local cz
 local map_pos
 local max_exp
 local vip_level
@@ -85,7 +84,7 @@ skynet.init(function()
     type_reward = share.type_reward
     mall_sale = share.mall_sale
     mall_limit = share.mall_limit
-    cs = share.cs
+    cz = share.cz
     map_pos = func.map_pos
     game_day = func.game_day
     max_exp = share.max_exp
@@ -108,15 +107,15 @@ skynet.init(function()
 end)
 
 function role.init_module()
-    card = require "role.card"
-    friend = require "role.friend"
-    item = require "role.item"
-    stage = require "role.stage"
-    task = require "role.task"
-    gm = require "role.gm"
-    rank = require "role.rank"
-    mail = require "role.mail"
-    guild = require "role.guild"
+    card = require "game.card"
+    friend = require "game.friend"
+    item = require "game.item"
+    stage = require "game.stage"
+    task = require "game.task"
+    gm = require "game.gm"
+    rank = require "game.rank"
+    mail = require "game.mail"
+    guild = require "game.guild"
     module = {card, friend, item, stage, task, gm, rank, mail, guild}
     for k, v in ipairs(module) do
         merge_table(proc, v.init_module())
@@ -327,6 +326,12 @@ function role.heart_beat()
     else
         data.heart_beat = 0
     end
+end
+
+function role.afk()
+end
+
+function role.btk(addr)
 end
 
 function role.add_exp(p, exp)
@@ -805,7 +810,8 @@ function proc.create_user(msg)
     return "simple_user", su
 end
 
-local function enter_game(msg)
+function proc.enter_game(msg)
+    cz.start()
     if data.user then
         error{code = error_code.ROLE_ALREADY_ENTER}
     end
@@ -993,11 +999,9 @@ local function enter_game(msg)
         local sf = skynet.call(rank_mgr, "lua", "get", base.RANK_SLAVE_FIGHT)
         skynet.call(sf, "lua", "update", user.id, user.fight_point)
     end
+    cz.finish()
     return "info_all", {user=ret, start_time=start_utc_time, stage_id=stageid, 
                         rand_seed=seed, ios_sandbox=ios_sandbox, show_vip=show_vip}
-end
-function proc.enter_game(msg)
-    return proc_queue(cs, enter_game, msg)
 end
 
 function proc.move(msg)
@@ -1039,12 +1043,12 @@ function proc.sign_in(msg)
         if count > l.freeSignUp then
             local dc = count - l.freeSignUp
             local e = assert(expdata[dc], string.format("No exp data %d.", dc))
-            proc_queue(cs, function()
-                if user.rmb < e.signUpPrice then
-                    error{code = error_code.ROLE_RMB_LIMIT}
-                end
-                role.add_rmb(p, -e.signUpPrice)
-            end)
+            cz.start()
+            if user.rmb < e.signUpPrice then
+                error{code = error_code.ROLE_RMB_LIMIT}
+            end
+            role.add_rmb(p, -e.signUpPrice)
+            cz.finish()
         end
         user.patch_sign_in = count
         p.user.patch_sign_in = count
@@ -1174,12 +1178,12 @@ function proc.exchange(msg)
     local ec = user.exchange_count + 1
     local e = assert(expdata[ec], string.format("No exp data %d.", ec))
     local p = update_user()
-    proc_queue(cs, function()
-        if user.rmb < e.diamondToGold then
-            error{code = error_code.ROLE_RMB_LIMIT}
-        end
-        role.add_rmb(p, -e.diamondToGold)
-    end)
+    cz.start()
+    if user.rmb < e.diamondToGold then
+        error{code = error_code.ROLE_RMB_LIMIT}
+    end
+    role.add_rmb(p, -e.diamondToGold)
+    cz.finish()
     local mul = 1
     if e.diamondTotalRatio > 0 then
         local r = random(e.diamondTotalRatio)
@@ -1224,12 +1228,12 @@ function proc.add_offline_exp(msg)
     local count = user.offline_exp_count + 1
     local p = update_user()
     local e = assert(expdata[count], string.format("No exp data %d.", count))
-    proc_queue(cs, function()
-        if user.rmb < e.energyPrice then
-            error{code = error_code.ROLE_RMB_LIMIT}
-        end
-        role.add_rmb(p, -e.energyPrice)
-    end)
+    cz.start()
+    if user.rmb < e.energyPrice then
+        error{code = error_code.ROLE_RMB_LIMIT}
+    end
+    role.add_rmb(p, -e.energyPrice)
+    cz.finish()
     local now = floor(skynet.time())
     local dt = now - user.offline_exp_time
     if dt > base.OFFLINE_EXP_TIME then
@@ -1291,14 +1295,20 @@ function proc.apple_charge(msg)
     if not msg.receipt then
         error{code = error_code.ERROR_ARGS}
     end
-    local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, msg.receipt, {"Content-Type: application/json"})
+    local result, content = skynet.call(webclient, "lua", "request", ios_url, nil, msg.receipt, false, "Content-Type: application/json")
     local content = cjson.decode(content)
     if content.status == 0 then
         local receipt = content.receipt
-        if cs(find_transaction, receipt) then
+        cz.start()
+        local has = skynet.call(ioscharge_log, "lua", "findOne", {transaction_id=receipt.transaction_id})
+        if not has then
+            skynet.call(ioscharge_log, "lua", "safe_insert", receipt)
+        end
+        cz.finish()
+        if has then
             return "update_user", {ios_index=msg.index}
         else
-            local num = string.match(receipt.product_id, "com.moyi.zero.store_(%d+)")
+            local num = string.match(receipt.product_id, "store_(%d+)")
             local p = update_user()
             role.charge(p, tonumber(num))
             return "update_user", {update=p, ios_index=msg.index}

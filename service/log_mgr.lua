@@ -2,6 +2,7 @@ local skynet = require "skynet"
 
 local assert = assert
 local string = string
+local ipairs = ipairs
 
 local log_list = {}
 

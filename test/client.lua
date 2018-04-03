@@ -3,7 +3,7 @@ package.cpath = "luaclib/?.so"
 package.path = root.."lib/?.lua;./lualib/?.lua;./lualib/?/init.lua"
 
 local socket = require "clientsocket"
-local crypt = require "crypt"
+local crypt = require "skynet.crypt"
 local sprotoloader = require "sprotoloader"
 local proto = require "proto"
 

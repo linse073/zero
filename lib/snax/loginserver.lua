@@ -1,7 +1,7 @@
 local skynet = require "skynet"
 require "skynet.manager"
-local socket = require "socket"
-local crypt = require "crypt"
+local socket = require "skynet.socket"
+local crypt = require "skynet.crypt"
 local table = table
 local string = string
 local assert = assert
@@ -105,7 +105,7 @@ local function launch_slave(auth_handler)
 		return msg, len
 	end
 
-	skynet.dispatch("lua", function(_,_,...)
+	skynet.dispatch("lua", function(_, _, ...)
 		local ok, msg, len = pcall(auth_fd, ...)
 		if ok then
 			skynet.ret(msg, len)
@@ -123,6 +123,7 @@ local LOGIN_TYPE_STR = {
     "qq",
 }
 local function accept(conf, s, fd, addr, log)
+	addr = addr:match("^(.*):")
 	-- call slave auth
 	local ok, info, secret = skynet.call(s, "lua", fd, addr)
 	-- slave will accept(start) fd, so we can write to fd later
@@ -144,8 +145,9 @@ local function accept(conf, s, fd, addr, log)
 
 		-- user_login[uid] = true
 	-- end
-
-	local ok, err, id, new = pcall(conf.login_handler, info, secret)
+	info.ip = addr
+	info.secret = secret
+	local ok, err, id, new = pcall(conf.login_handler, info)
 	-- unlock login
 	-- user_login[uid] = nil
 
@@ -166,6 +168,8 @@ local function accept(conf, s, fd, addr, log)
             write("response 500", fd, "500 Password Error\n")
         elseif err:match("name exist") then
             write("response 501", fd, "501 Name Exist\n")
+        elseif err:match("account not exist") then
+            write("response 502", fd, "502 Account Not Exist\n")
         else
             write("response 403", fd, "403 Forbidden\n")
         end
@@ -183,14 +187,14 @@ local function launch_master(conf)
     local log_mgr = skynet.queryservice("log_mgr")
     local register_log = skynet.call(log_mgr, "lua", "get", "register")
 
-	skynet.dispatch("lua", function(_,source,command, ...)
+	skynet.dispatch("lua", function(_, source, command, ...)
 		skynet.ret(skynet.pack(conf.command_handler(command, ...)))
 	end)
 
-	for i=1,instance do
+	for i = 1, instance do
 		table.insert(slave, skynet.newservice(SERVICE_NAME))
 	end
-
+ 
 	skynet.error(string.format("login server listen at : %s %d", host, port))
 	local id = socket.listen(host, port)
 	socket.start(id , function(fd, addr)

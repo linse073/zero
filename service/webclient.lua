@@ -5,7 +5,6 @@
 
 local skynet = require "skynet"
 local webclientlib = require "webclient"
--- local logger = require "log"
 local webclient = webclientlib.create()
 local requests = nil
 
@@ -14,11 +13,16 @@ local function resopnd(request)
         return
     end
 
-    local content, errmsg = webclient:get_respond(request.req)
+    local content, errmsg = webclient:get_respond(request.req)  
     if not errmsg then
         request.response(true, true, content)
     else
-        request.response(true, false, errmsg)
+        local info = webclient:get_info(request.req) 
+        if info.response_code == 200 and not info.content_save_failed then
+            request.response(true, true, content, errmsg)
+        else
+            request.response(true, false, errmsg, info)
+        end
     end
 end
 
@@ -29,7 +33,6 @@ local function query()
             local request = requests[finish_key];
             assert(request)
 
-            -- xpcall(resopnd, function() logger.Error(debug.traceback()) end, request)
             xpcall(resopnd, function() skynet.error(debug.traceback()) end, request)
 
             webclient:remove_request(request.req)
@@ -51,7 +54,7 @@ end
 -- @treturn string 当成功时，返回内容，当失败时，返回出错原因 
 -- @usage skynet.call(webclient, "lua", "request", "http://www.dpull.com")
 -- @usage skynet.send(webclient, "lua", "request", "http://www.dpull.com", nil, nil, true)
-local function request(url, get, post, header, no_reply)
+local function request(url, get, post, no_reply, ...)
     if get then
         local i = 0
         for k, v in pairs(get) do
@@ -74,11 +77,13 @@ local function request(url, get, post, header, no_reply)
         post = table.concat(data , "&")
     end   
 
-    local req, key = webclient:request(url, post, header)
+    local req, key = webclient:request(url, post)
     if not req then
         return skynet.ret()
     end
     assert(key)
+
+    webclient:set_httpheader(req, ...)
 
     local response = nil
     if not no_reply then

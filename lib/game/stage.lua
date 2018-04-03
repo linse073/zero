@@ -3,7 +3,6 @@ local share = require "share"
 local util = require "util"
 local new_rand = require "random"
 local func = require "func"
-local proc_queue = require "proc_queue"
 
 local role
 local task
@@ -35,7 +34,7 @@ local data
 local role_mgr
 local rank_mgr
 local task_rank
-local cs
+local cz
 
 local stage = {}
 local proc = {}
@@ -50,16 +49,16 @@ skynet.init(function()
     stage_reward = share.stage_reward
     stage_task_complete = share.stage_task_complete
     vip_level = share.vip_level
-    cs = share.cs
+    cz = share.cz
     role_mgr = skynet.queryservice("role_mgr")
     rank_mgr = skynet.queryservice("rank_mgr")
     task_rank = skynet.queryservice("task_rank")
 end)
 
 function stage.init_module()
-    role = require "role.role"
-    task = require "role.task"
-    item = require "role.item"
+    role = require "game.role"
+    task = require "game.task"
+    item = require "game.item"
     return proc
 end
 
@@ -490,17 +489,17 @@ function proc.open_chest(msg)
         local user = data.user
         local cost = base.STAGE_BONUS_COST[d.moneyType]
         local fn = role["add_" .. cost]
-        proc_queue(cs, function()
-            for i = 1, msg.pick_chest do
-                local money = i * d.moneyNum
-                if user[cost] >= money then
-                    fn(p, -money)
-                    num = num + 1
-                else
-                    break
-                end
+        cz.start()
+        for i = 1, msg.pick_chest do
+            local money = i * d.moneyNum
+            if user[cost] >= money then
+                fn(p, -money)
+                num = num + 1
+            else
+                break
             end
-        end)
+        end
+        cz.finish()
     end
     bonus[#bonus+1] = {rand_num=2, num=num, data=d.bonus}
     stage.get_bonus(bonus, p)
@@ -540,12 +539,12 @@ function proc.revive(msg)
     if count > l.relive then
         local dc = count - l.relive
         local e = assert(expdata[dc], string.format("No exp data %d.", dc))
-        proc_queue(cs, function()
-            if user.rmb < e.revivePrice then
-                error{code = error_code.ROLE_RMB_LIMIT}
-            end
-            role.add_rmb(p, -e.revivePrice)
-        end)
+        cz.start()
+        if user.rmb < e.revivePrice then
+            error{code = error_code.ROLE_RMB_LIMIT}
+        end
+        role.add_rmb(p, -e.revivePrice)
+        cz.finish()
     end
     local pu = p.user
     user.revive_count = count

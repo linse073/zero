@@ -54,9 +54,9 @@ local auth_proc = {
             openid = content.openid,
             unionid = content.unionid,
 		}
+    end,
 	function(user, data) -- qq login
-        	return {}
-    	end,
+        return {}
     end,
 }
 

@@ -3,6 +3,7 @@ local role = require "game.role"
 local timer = require "timer"
 local share = require "share"
 local notify = require "notify"
+local util = require "util"
 
 local assert = assert
 local pcall = pcall

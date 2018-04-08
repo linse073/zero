@@ -15,7 +15,7 @@ local agent_mgr
 
 -- login server disallow multi login, so login_handler never be reentry
 -- call by login server
-function server.login_handler(uid, secret, servername, serverid)
+function server.login_handler(info)
 	local uid = info.userid
 	if users[uid] then
 		error(string.format("%d is already login", uid))

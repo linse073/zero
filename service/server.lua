@@ -37,18 +37,14 @@ local function check_account(info)
             end
         end
     else
-        if info.register or not info.password then
-	        local accountid = status.accountid * 10000 + 6000 + config.serverid
-	        status.accountid = status.accountid + 1
-	        local account = {
-	            id = accountid,
-	            password = info.password,
-	        }
-	        skynet.call(accountnamedb, "lua", "set", namekey, skynet.packstring(account))
-	        return true, account
-	else
-		return false, nil, "account not exist"
-	end
+        local accountid = status.accountid * 10000 + 6000 + config.serverid
+        status.accountid = status.accountid + 1
+        local account = {
+            id = accountid,
+            password = info.password,
+        }
+        skynet.call(accountnamedb, "lua", "set", namekey, skynet.packstring(account))
+        return true, account
     end
 end
 

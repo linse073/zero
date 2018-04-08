@@ -54,14 +54,14 @@ function CMD.afk()
 	-- the connection is broken, but the user may back
     if data then
         skynet.error(string.format("%d afk", data.userid))
-	role.afk()
+        role.afk()
     end
 end
 
 function CMD.btk(addr)
     if data then
         skynet.error(string.format("%d btk", data.userid))
-	role.bfk(addr)
+        role.bfk(addr)
     end
 end
 

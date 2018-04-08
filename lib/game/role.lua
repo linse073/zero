@@ -331,7 +331,7 @@ end
 function role.afk()
 end
 
-function role.btk(addr)
+function role.bfk(addr)
 end
 
 function role.add_exp(p, exp)
